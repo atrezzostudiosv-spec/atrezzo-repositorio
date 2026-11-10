@@ -57,3 +57,7 @@ La resolución estricta y la exportación de un único ID superaron CI. La [pág
 ## Fase 5 — ATREZZO NAVIGATION 01
 
 Tres nuevos módulos individuales de código original Atrezzo Studios: [Immersive Menu](components/navegacion/ATZ-NAV-001.md), [Chapter Rail](components/navegacion/ATZ-NAV-002.md) y [Context Dock](components/navegacion/ATZ-NAV-003.md). No dependen de GSAP. El registro ahora cuenta con **14 IDs y 3 categorías**. Los tres están en `validation` y usan composiciones abstractas provisionales, no fotografías sin autorización. Consultar [informe de ingesta](ATREZZO-NAVIGATION-INGEST-REPORT.md).
+
+## Sticky Sections 15 — Colección aprobada
+
+Quince variaciones adicionales de salida de secciones sticky mediante scroll, registradas como `ATZ-STK-001` a `ATZ-STK-015`. Fuente: Codrops *Animations for Sticky Sections* (código MIT), aportada en `ATREZZO_03_StickySections_15_MAC_LISTO(1).zip`. Cada efecto tiene HTML, JS, ficha y demo individual; CSS y ciclo de vida compartidos. Las ilustraciones originales de terceros se sustituyen por SVG abstractos de referencia. El Lenis global de la demo no se instala en los clientes. El total del catálogo pasa a **29 componentes**.

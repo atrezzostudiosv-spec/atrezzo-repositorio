@@ -31,3 +31,7 @@ Leer `docs/AI-INTEGRATION-WORKFLOW.md`. Resolver el ID exacto en `registry/compo
 ## Fase 5 — Navegación
 
 Los IDs ATZ-NAV-001, ATZ-NAV-002 y ATZ-NAV-003 proceden de código original Atrezzo y no usan GSAP. Instalar solamente el HTML/CSS/JS del ID solicitado con `components/navegacion/runtime.js`, sin copiar otras variantes. Conservar navegación accesible sin JavaScript, scroll nativo, Escape, flechas o anclas según el patrón. No reutilizar las fotos originales de la demo sin licencia comercial.
+
+## Sticky Sections 15: componentes aprobados por el usuario
+
+El ZIP `ATREZZO_03_StickySections_15_MAC_LISTO(1).zip` aporta quince **efectos controlados por scroll**, identificados `ATZ-STK-001`…`ATZ-STK-015`. Son distintos de `ATZ-NAV-003`, que cambia de imagen mediante clic. Para cualquier STK importar **únicamente** `components/scroll/ATZ-STK-XXX.html`, `.js`, `components/runtime/atrezzo-sticky.css`, `components/runtime/sticky-lifecycle.js`; GSAP y ScrollTrigger deben estar disponibles. Respetar seis paneles, transformaciones y sincronización originales. La demo de origen usa Lenis global; no imponerlo sobre otros websites. Las imágenes de Annas Muslimin/Vecteezy del ZIP no están autorizadas automáticamente y se sustituyen por SVG abstractos en catálogo. **El diseño y movimiento aprobados son fuente maestra; no reinterpretar el efecto.**

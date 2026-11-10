@@ -17,6 +17,7 @@ async function boot() {
     text("#pre-desc",e.description+" · Uso recomendado: "+e.recommended_for+".");
     text("#pre-use","Patrón de referencia en "+e.status+". "+e.avoid_when+". Antes de migrarlo a un cliente hay que revisar comportamiento, dependencias y contenido autorizado.");
     document.title=e.id+" — "+e.title+" | ATREZZO";
+    if(e.id.startsWith("ATZ-STK-"))document.querySelector(".pre-footer").textContent="© Codrops / Sticky Sections · Código MIT · Imágenes originales de Vecteezy excluidas; composiciones abstractas de prueba."; 
     if(e.category==="navegacion")document.querySelector(".pre-footer").textContent="© ATREZZO STUDIOS · ATREZZO NAVIGATION 01 · Fotografías originales excluidas por licencia no acreditada.";
     document.querySelector("#pre-guide").href="../"+e.technical_guide;
     const copyButton=document.querySelector("#copy-instruction");
@@ -25,12 +26,12 @@ async function boot() {
       try { await navigator.clipboard.writeText(value);copyButton.textContent="Instrucción copiada ✓"; }
       catch {copyButton.textContent="Copia manualmente el ID "+e.id;}
     });
-    if(!/^components\/(scroll|transiciones|navegacion)\/ATZ-(SCR|TRN|NAV)-\d{3}\.html$/.test(e.component_html))throw Error("Ruta HTML inválida");
-    if(!/^components\/(scroll|transiciones|navegacion)\/ATZ-(SCR|TRN|NAV)-\d{3}\.js$/.test(e.component_js))throw Error("Ruta JS inválida");
+    if(!/^components\/(scroll|transiciones|navegacion)\/ATZ-(SCR|TRN|NAV|STK)-\d{3}\.html$/.test(e.component_html))throw Error("Ruta HTML inválida");
+    if(!/^components\/(scroll|transiciones|navegacion)\/ATZ-(SCR|TRN|NAV|STK)-\d{3}\.js$/.test(e.component_js))throw Error("Ruta JS inválida");
     const htmlR=await fetch(repoRoot+e.component_html);
     if(!htmlR.ok) throw Error("Fragmento HTML no disponible para "+id);
     const parsed=new DOMParser().parseFromString(await htmlR.text(),"text/html");
-    const scene=parsed.body.querySelector(e.category==="navegacion"?".atz-nav":".atz-motion");
+    const scene=parsed.body.querySelector(e.id.startsWith("ATZ-STK-")?".atz-sticky":e.category==="navegacion"?".atz-nav":".atz-motion");
     if(!scene)throw Error("Escena aislada sin clase .atz-motion");
     demo.replaceChildren(scene);
     if(document.readyState!=="complete")await new Promise(resolve=>window.addEventListener("load",resolve,{once:true}));
@@ -42,7 +43,7 @@ async function boot() {
     window.addEventListener("pagehide",()=>instance.destroy(),{once:true});
   } catch(err) {
     console.error("ATREZZO preview:",err);
-    if(!demo.querySelector(".atz-motion")&&!demo.querySelector(".atz-nav"))demo.innerHTML='<div class="error">Esta preview no está disponible. Consulta su ficha técnica desde el catálogo.</div>';
+    if(!demo.querySelector(".atz-motion")&&!demo.querySelector(".atz-nav")&&!demo.querySelector(".atz-sticky"))demo.innerHTML='<div class="error">Esta preview no está disponible. Consulta su ficha técnica desde el catálogo.</div>';
     demo.dataset.motion="unavailable";
   }
 }
