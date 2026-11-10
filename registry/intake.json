@@ -1,0 +1,78 @@
+{
+  "updated_at": "2026-11-10",
+  "status": "pending",
+  "packages": [
+    {
+      "package_name": "Atrezzo_Navigation_01_COMPLETO.zip",
+      "category": "navegacion",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "ELEGANT_MASSAGE_01_HERO_ARCHIVOS.zip",
+      "category": "heroes",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Scroll_Sections_01.zip",
+      "category": "scroll",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Scroll_Sections_02.zip",
+      "category": "scroll",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Scroll_Sections_03_COMPLETO.zip",
+      "category": "scroll",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Editorial_Gallery_01_COMPLETO.zip",
+      "category": "galerias",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Real_Estate_Gallery_01_COMPLETO.zip",
+      "category": "galerias",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Service_Showcase_01_COMPLETO.zip",
+      "category": "servicios",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Cards_01_COMPLETO.zip",
+      "category": "tarjetas",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "Atrezzo_Modals_01_COMPLETO.zip",
+      "category": "modales",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "ATREZZO_TRANSITIONS_01_COMPLETO.zip",
+      "category": "transiciones",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    },
+    {
+      "package_name": "ELEGANT_MASSAGE_02_SCROLL_SECCIONES_ORIGINALES.zip",
+      "category": "scroll",
+      "status": "pending_ingestion",
+      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+    }
+  ]
+}
