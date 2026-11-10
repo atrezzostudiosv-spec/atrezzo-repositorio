@@ -1,6 +1,8 @@
 # ATREZZO COMPONENT LIBRARY — Dirección visual 1.0
 **Fecha:** 2026-11-10
-**Estado:** línea estética elegida por el usuario; implementación visual en validación.
+**Estado:** DIRECCIÓN VISUAL APROBADA POR EL USUARIO (2026-11-10). La implementación técnica permanece en validación.
+
+**Control de continuidad:** conservar paleta cromática, tipografías, jerarquía, navegación, hero y estilo de las tarjetas aprobadas. Las correcciones técnicas, de accesibilidad o responsive no autorizan un rediseño general; justificar cualquier cambio visual necesario.
 
 ## Referencias de dirección estética aportadas por el usuario
 - `korvio_saas_website.html`: escala cromática oscura azul-negro, acentos violeta y cian, paneles sobrios, organización de dashboard, tipografía Inter y Plus Jakarta Sans.
