@@ -4,12 +4,15 @@
 
 | Fase | Estado | Evidencia |
 |---|---|---|
-| Auditoría del repositorio | CERRADA | Repositorio público vacío; sin código previo que preservar |
-| Auditoría ZIP On-Scroll Layout Formations | CERRADA | 10 grids + 1 efecto header, funciones y selectores de código original identificados |
-| Arquitectura de IDs, categorías e instrucciones IA | EN VALIDACIÓN | Registro estructurado y fichas creadas; revisar su uso práctico con otro chat |
-| Catálogo visual online | EN PROCESO | Interfaz y demos a integrar y probar |
-| Ingesta de otros ZIP | PENDIENTE | Inventariados, no se presentan como listos |
-| Verificación 375 / 768 / 1024 / 1440 y reduced-motion | PENDIENTE | No sustituir una inspección de código por una prueba de navegador |
-| Publicación GitHub Pages | PENDIENTE | Requiere habilitar Pages, publicar y comprobar URL |
+| Auditoría del repositorio | CERRADA | El repositorio se inició vacío, sin código previo |
+| Auditoría ZIP On-Scroll Layout Formations | CERRADA | 10 patrones de grid + 1 efecto de cabecera identificados y fichados |
+| Arquitectura de IDs, categorías e instrucciones IA | EN VALIDACIÓN | Registro JSON, 11 fichas y AGENTS.md disponibles; probar integración en un repositorio cliente |
+| Dirección visual del catálogo | EN VALIDACIÓN | Referencias Korvio + PixelCraft aportadas; paleta y sistema en ATREZZO-LIBRARY-DESIGN.md; primer prototipo implementado |
+| Catálogo visual y vistas individuales | EN VALIDACIÓN | Se han creado catalog/index.html, styles.css, app.js, preview.html y preview.js; pruebas reales de navegador pendientes |
+| Ingesta de otros ZIP | PENDIENTE | 12 paquetes inventariados; no certificados |
+| Verificación 375 / 768 / 1024 / 1440 y reduced-motion | PENDIENTE | Inspección de código no sustituye verificación visual/interactiva |
+| Publicación GitHub Pages | PENDIENTE | La configuración de Pages y URL publicada no han sido verificadas |
 
-**Decisión cerrada:** una variante = ID persistente + preview individual + ficha técnica + referencia de origen. No registrar un ZIP entero como movimiento único.
+**Decisión cerrada:** una variante = ID persistente + preview individual + ficha técnica + función concreta del origen.
+
+**Siguiente acción:** habilitar GitHub Pages para `main / (root)`, abrir el catálogo y validar los 11 previews antes de declarar Fase 2 cerrada.
