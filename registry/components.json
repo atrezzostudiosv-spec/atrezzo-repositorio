@@ -40,8 +40,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-001.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-001.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-002",
@@ -80,8 +81,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-002.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-002.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-003",
@@ -120,8 +122,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-003.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-003.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-004",
@@ -160,8 +163,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-004.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-004.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-005",
@@ -200,8 +204,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-005.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-005.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-006",
@@ -240,8 +245,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-006.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-006.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-007",
@@ -280,8 +286,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-007.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-007.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-008",
@@ -320,8 +327,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-008.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-008.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-009",
@@ -360,8 +368,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-009.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-009.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-SCR-010",
@@ -400,8 +409,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/scroll/ATZ-SCR-010.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/scroll/ATZ-SCR-010.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     },
     {
       "id": "ATZ-TRN-001",
@@ -440,8 +450,9 @@
       "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
       "component_html": "components/transiciones/ATZ-TRN-001.html",
       "component_css": "components/runtime/atrezzo-motion.css",
-      "component_js": "components/runtime/atrezzo-motion.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
+      "component_js": "components/transiciones/ATZ-TRN-001.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
+      "component_runtime": "components/runtime/lifecycle.js"
     }
   ]
 }
