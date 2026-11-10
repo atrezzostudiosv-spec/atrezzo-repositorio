@@ -14,6 +14,12 @@ const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=u
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
+   if(requestPath==="/__multi"){
+     const htmlA=await fs.readFile(join(root,"components/scroll/ATZ-SCR-001.html"),"utf8");
+     const htmlB=await fs.readFile(join(root,"components/scroll/ATZ-SCR-003.html"),"utf8");
+     const source='<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/components/runtime/atrezzo-motion.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script></head><body style="margin:0;background:#0b0f17"><main id="scene-a">'+htmlA+'</main><main id="scene-b">'+htmlB+'</main><script type="module">import {mount as m1} from "/components/scroll/ATZ-SCR-001.js";import {mount as m2} from "/components/scroll/ATZ-SCR-003.js";window.motionA=m1(document.querySelector("#scene-a"));window.motionB=m2(document.querySelector("#scene-b"));</script></body></html>';
+     res.writeHead(200,{"content-type":"text/html; charset=utf-8"});res.end(source);return;
+   }
    if(requestPath==="/__no_js"){
      const html=await fs.readFile(join(root,"components/scroll/ATZ-SCR-001.html"),"utf8");
      res.writeHead(200,{"content-type":"text/html; charset=utf-8"});
@@ -108,13 +114,23 @@ try {
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
+ const independent=await browser.newPage({viewport:{width:1440,height:900}});
+ await setup(independent);
+ await independent.goto(origin+"/__multi",{waitUntil:"domcontentloaded"});
+ await independent.waitForFunction(()=>Boolean(window.motionA&&window.motionB));
+ assert.equal(await independent.evaluate(()=>ScrollTrigger.getAll().length),2,"Two isolated timelines should coexist");
+ await independent.evaluate(()=>window.motionA.destroy());
+ assert.equal(await independent.evaluate(()=>ScrollTrigger.getAll().length),1,"Destroying first scene must not affect second");
+ await independent.evaluate(()=>window.motionB.destroy());
+ assert.equal(await independent.evaluate(()=>ScrollTrigger.getAll().length),0,"Both scenes must release triggers");
+ await independent.close();
  const staticPage=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
  await staticPage.goto(origin+"/__no_js",{waitUntil:"load"});
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
  const report={passed:true,checks:results.length,variants:registry.entries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",results};
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
