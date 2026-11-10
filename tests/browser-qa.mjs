@@ -124,13 +124,46 @@ try {
  await independent.evaluate(()=>window.motionB.destroy());
  assert.equal(await independent.evaluate(()=>ScrollTrigger.getAll().length),0,"Both scenes must release triggers");
  await independent.close();
+ for(const width of [375,768,1024,1440]){
+   const fixture=await browser.newPage({viewport:{width,height:900}});
+   await setup(fixture);
+   const requests=[];
+   fixture.on("request",r=>{if(r.url().includes("/components/scroll/ATZ-SCR-"))requests.push(r.url());});
+   await fixture.goto(origin+"/examples/ai-ATZ-SCR-008/",{waitUntil:"domcontentloaded"});
+   await fixture.waitForFunction(()=>Boolean(window.__atrezzoFixture),{timeout:12000});
+   const info=await fixture.evaluate(()=>({
+     id:document.querySelector(".atz-motion")?.getAttribute("data-atz-id"),
+     mode:window.__atrezzoFixture.mode,
+     triggers:window.ScrollTrigger?.getAll().length??0,
+     hostHeader:getComputedStyle(document.querySelector(".lab-header")).backgroundColor,
+     overflow:document.documentElement.scrollWidth>innerWidth+2,
+     images:document.querySelectorAll("#atrezzo-scene .grid__img").length
+   }));
+   assert.equal(info.id,"ATZ-SCR-008","Fixture must use requested ID only");
+   assert.equal(info.mode,width<=700?"static":"animated","Fixture motion mismatch at "+width);
+   assert.equal(info.triggers,width<=700?0:1,"Fixture trigger mismatch");
+   assert.equal(info.images,13,"Fixture must contain only requested grid");
+   assert.equal(info.overflow,false,"Fixture horizontal overflow at "+width);
+   assert.equal(info.hostHeader,"rgb(21, 27, 43)","Component CSS must not replace host design");
+   assert.equal(requests.length,1,"Fixture must import exactly one ATZ-SCR module");
+   assert(requests[0].includes("ATZ-SCR-008.js"),"Wrong variant imported");
+   if(width===1440 || width===375)await fixture.screenshot({path:join(artifacts,"phase4-integration-"+width+".png"),fullPage:false});
+   await fixture.evaluate(()=>window.__atrezzoFixture.destroy());
+   assert.equal(await fixture.evaluate(()=>window.ScrollTrigger?.getAll().length??0),0,"Fixture must clean GSAP on exit");
+   await fixture.close();
+ }
+ const withoutJs=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
+ await withoutJs.goto(origin+"/examples/ai-ATZ-SCR-008/",{waitUntil:"domcontentloaded"});
+ assert.equal(await withoutJs.locator("#atrezzo-scene .grid__img").count(),13,"Fixture content must exist without JS");
+ assert((await withoutJs.locator(".atz-motion").boundingBox()).height>0,"No-JS fixture must remain visible");
+ await withoutJs.close();
  const staticPage=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
  await staticPage.goto(origin+"/__no_js",{waitUntil:"load"});
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
  const report={passed:true,checks:results.length,variants:registry.entries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",results};
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){

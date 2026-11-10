@@ -1,7 +1,7 @@
 # ATZ-SCR-002 — Formación radial desde el centro
 
 **Categoría:** scroll  
-**Estado:** REFERENCIA; pendiente de validación responsive, accesibilidad, scroll inverso y uso real.  
+**Estado:** EN VALIDACIÓN — batería interna de GitHub Actions aprobada; falta integración real en cliente y certificación de producción.  
 **Intensidad sugerida:** M3 (sujeta a dirección de arte).  
 **Fuente:** https://github.com/codrops/OnScrollLayoutFormations  
 **Demo original:** https://tympanus.net/Development/OnScrollLayoutFormations/  
@@ -16,7 +16,7 @@ Columnas aparecen desde abajo con rotación creciente hacia los extremos; textos
 - Sección real en: `sources/codrops-layout-formations/index.html`
 - CSS original: `sources/codrops-layout-formations/css/base.css`
 - JS original: `sources/codrops-layout-formations/js/index.js`
-- Motor de previews aisladas: `sources/codrops-layout-formations/js/pattern-engine.js`
+- Motor vigente: módulo individual y controlador `components/runtime/lifecycle.js` (no importar pattern-engine histórico)
 - Preview individual: [Abrir demo](../../catalog/preview.html?id=ATZ-SCR-002)
 
 ## Criterio editorial
