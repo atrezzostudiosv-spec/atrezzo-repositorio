@@ -77,8 +77,8 @@
     {
       "package_name": "ATREZZO_03_StickySections_15_MAC_LISTO(1).zip",
       "category": "scroll",
-      "status": "ingested_validation",
-      "note": "15 patrones scroll aprobados registrados como ATZ-STK-001..015, fuente Codrops MIT; originales GSAP preservados, medios terceros reemplazados por SVG abstractos. Pendientes tests de navegador."
+      "status": "ingested_internal_validated",
+      "note": "15 patrones sticky originales del ZIP del usuario; 15 módulos con ID ATZ-STK-001..015, 6 paneles cada uno, GSAP original preservado y alternativas SVG abstractas. Contrato Node y Chromium 116 checks aprobados. Pendientes Safari/iOS, uso de fotografías autorizadas y QA en cliente."
     }
   ]
 }

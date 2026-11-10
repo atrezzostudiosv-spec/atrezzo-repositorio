@@ -583,7 +583,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-002",
@@ -619,7 +620,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-003",
@@ -655,7 +657,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-004",
@@ -691,7 +694,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-005",
@@ -727,7 +731,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-006",
@@ -763,7 +768,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-007",
@@ -799,7 +805,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-008",
@@ -835,7 +842,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-009",
@@ -871,7 +879,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-010",
@@ -907,7 +916,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-011",
@@ -943,7 +953,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-012",
@@ -979,7 +990,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-013",
@@ -1015,7 +1027,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-014",
@@ -1051,7 +1064,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     },
     {
       "id": "ATZ-STK-015",
@@ -1087,7 +1101,8 @@
       ],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
-      "validation_notes": "Extraído del ZIP aprobado con parámetros GSAP conservados. Aún no validado en la biblioteca ni en web cliente. Suavizado Lenis del original es opcional y no se inyecta globalmente."
+      "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
     }
   ]
 }
