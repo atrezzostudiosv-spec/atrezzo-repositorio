@@ -33,3 +33,22 @@ Mosaico de 36 elementos converge desde distintas posiciones con rotación y prof
 6. Verificar la sección real a 375, 768, 1024 y 1440 px, scroll rápido/inverso, teclado, CTA y rendimiento.
 
 **No es una aprobación de uso comercial:** material de referencia visual exclusivamente hasta completar las pruebas y los derechos de los medios.
+
+## Fase 3 — Paquete individual extraído
+
+- HTML para copiar al website: [`ATZ-SCR-004.html`](./ATZ-SCR-004.html).
+- JS de esta variante **únicamente**: [`ATZ-SCR-004.js`](./ATZ-SCR-004.js). Exporta `mount(host,{gsap,ScrollTrigger})`.
+- Dependencias compartidas: `components/runtime/lifecycle.js` y `components/runtime/atrezzo-motion.css`.
+- **No utilizar** `sources/codrops-layout-formations/js/index.js` ni copiar el conjunto de la demo para integrar este ID.
+- Imágenes de gradiente son marcadores provisionales; sustituirlas por fotografías autorizadas del cliente.
+- No declarar listo para producción hasta pasar la batería visual de navegador y una integración real.
+
+Ejemplo:
+```js
+import { mount } from "/components/scroll/ATZ-SCR-004.js";
+const scene = mount(document.querySelector("#mi-contenedor"), {
+  gsap: window.gsap,
+  ScrollTrigger: window.ScrollTrigger
+});
+// Al abandonar la página en una SPA: scene.destroy();
+```
