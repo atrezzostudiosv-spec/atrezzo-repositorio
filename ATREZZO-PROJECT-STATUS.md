@@ -8,11 +8,13 @@
 | Auditoría ZIP On-Scroll Layout Formations | CERRADA | 10 patrones de grid + 1 efecto de cabecera identificados y fichados |
 | Arquitectura de IDs, categorías e instrucciones IA | EN VALIDACIÓN | Registro JSON, 11 fichas y AGENTS.md disponibles; probar integración en un repositorio cliente |
 | Dirección visual del catálogo | APROBADA / CERRADA | Usuario aprueba expresamente la estética de la biblioteca el 2026-11-10. Diseño protegido; no rediseñar durante validaciones técnicas |
-| Catálogo visual y vistas individuales | EN VALIDACIÓN | Se han creado catalog/index.html, styles.css, app.js, preview.html y preview.js. Miniaturas abstractas provisionales; demos individuales por ID conectadas al motor original, todavía sin prueba de navegador ni captura real |
+| FASE 2 — Catálogo y validación funcional | APROBADA POR EL USUARIO | El usuario aprueba expresamente la validación funcional el 2026-11-10. La aceptación no equivale a auditoría técnica independiente ni a certificación de las 11 variantes |
 | Ingesta de otros ZIP | PENDIENTE | 12 paquetes inventariados; no certificados |
-| Verificación 375 / 768 / 1024 / 1440 y reduced-motion | PENDIENTE | Inspección de código no sustituye verificación visual/interactiva |
-| Publicación GitHub Pages | EN VALIDACIÓN | Configuración confirmada en GitHub: Deploy from a branch, main / (root), HTTPS activo; GitHub indica que está construyendo el sitio; URL pública y navegación aún sin verificar |
+| FASE 3 — Aislamiento e integración técnica | EN CURSO | Siguiente trabajo: revisar cada variante, dependencias, seguridad del scroll, controles responsive, fallback sin JS y reduced-motion; no declarar client_ready hasta tener pruebas |
+| Publicación GitHub Pages | CONFIGURADA; NO VERIFICADA EXTERNAMENTE | GitHub indica main / (root) y HTTPS. La comprobación externa de URL pública no ha sido concluyente desde esta sesión |
 
 **Decisión cerrada:** una variante = ID persistente + preview individual + ficha técnica + función concreta del origen.
 
-**Siguiente acción:** comprobar la publicación real en `https://atrezzostudiosv-spec.github.io/atrezzo-repositorio/catalog/` y auditar filtros, navegación y los 11 previews individuales (incluidas pruebas responsive) antes de declarar Fase 2 cerrada.
+**Cierre de continuidad:** la Fase 2 queda aprobada por el usuario (diseño y aceptación funcional). Los ajustes de Fase 3 deben preservar el diseño aprobado y no confundir la aceptación del usuario con certificación técnica.
+
+**Siguiente acción:** Fase 3 — aislar y probar por ID las 11 variantes; verificar el sitio y las vistas a 375 / 768 / 1024 / 1440, scroll inverso, accesibilidad, reducción de movimiento, JS deshabilitado y dependencias externas. Solo entonces marcar una variante como `client_ready: true`.
