@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root=join(dirname(fileURLToPath(import.meta.url)),"..");
 const registry=JSON.parse(readFileSync(join(root,"registry/components.json"),"utf8"));
 assert.equal(registry.entries.length,14,"First collection plus navigation must contain 14 IDs");
-assert.equal(new Set(registry.entries.map(e=>e.id)).size,11,"IDs must be unique");
+assert.equal(new Set(registry.entries.map(e=>e.id)).size,registry.entries.length,"IDs must be unique");
 const css=readFileSync(join(root,"components/runtime/atrezzo-motion.css"),"utf8");
 assert(css.includes(".atz-motion .grid"),"CSS must be isolated");
 assert(!/(^|\n)\s*body\s*\{/.test(css),"Runtime CSS must not override client body");
