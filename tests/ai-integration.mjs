@@ -46,7 +46,7 @@ try{
   assert.throws(()=>exportComponent("ATZ-SCR-008",temp),/ya existe/,"Must not silently overwrite");
   assert(!existsSync(join(temp,"index.html")),"Do not modify host website");
   const navOut=exportComponent("ATZ-NAV-002",join(temp,"navigation"));
-  assert.equal(navOut.files.length,5);
+  assert.equal(navOut.files.length,4,"Original Atrezzo navigation must not import Codrops license");
   const navItems=readdirSync(join(temp,"navigation","atrezzo"),{recursive:true}).filter(v=>/\.(html|css|js)$/.test(v));
   assert.equal(navItems.length,4,"Navigation export must contain only one pattern plus runtime");
   assert(navItems.some(v=>v.endsWith("ATZ-NAV-002.js")));

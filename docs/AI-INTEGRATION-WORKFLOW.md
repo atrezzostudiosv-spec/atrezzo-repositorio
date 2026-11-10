@@ -12,7 +12,7 @@
 2. Consultar `technical_guide` y los campos `component_html`, `component_css`, `component_js`, `component_runtime`. Importar **únicamente esos cuatro archivos**, no el motor histórico completo.
 3. Revisar el repositorio del cliente antes de editar: arquitectura, estilos, componentes aprobados, dependencias existentes, scroll, SEO y fuentes fotográficas.
 4. Adaptar el componente a la identidad y contenido confirmados; no copiar demos, fotografías o claims de terceros. Preservar los selectores y nodos necesarios para el efecto.
-5. Instalar GSAP y ScrollTrigger conforme a las licencias aplicables. Mantener scroll nativo, fallback sin JavaScript y compatibilidad `prefers-reduced-motion`.
+5. Revisar `dependencies` por ID: GSAP y ScrollTrigger se instalan **solo** si el componente lo exige; `ATZ-NAV-001/002/003` no requieren librerías externas. Mantener scroll nativo, fallback sin JavaScript y compatibilidad `prefers-reduced-motion`.
 6. Probar 375, 768, 1024 y 1440 px, teclado, scroll rápido y reverso, montaje/desmontaje, ausencia de errores JS y rendimiento.
 7. Documentar los archivos modificados, pruebas realizadas, estado y evidencias. `client_ready:false` significa que no está certificado para clientes, incluso si su demo funciona.
 8. No modificar sitios de clientes sin tener acceso a su repositorio y una solicitud concreta de integración.
@@ -21,7 +21,7 @@
 
 - `node scripts/resolve-component.mjs ATZ-SCR-008` devuelve el manifiesto JSON de **un único ID**.
 - `node scripts/resolve-component.mjs ATZ-SCR-008 --prompt` devuelve las instrucciones correspondientes listas para ChatGPT.
-- `node scripts/export-component.mjs ATZ-SCR-008 --out ./salida` copia únicamente los cuatro archivos funcionales y la licencia de la fuente a `./salida/atrezzo/`. No edita páginas existentes ni sobrescribe otra exportación.
+- `node scripts/export-component.mjs ATZ-SCR-008 --out ./salida` copia los cuatro archivos funcionales y añade la licencia Codrops MIT solo para los componentes procedentes de Codrops a `./salida/atrezzo/`. No edita páginas existentes ni sobrescribe otra exportación.
 
 ## Prueba sin tocar un cliente
 

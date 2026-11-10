@@ -53,3 +53,7 @@ Consulta [contrato IA](docs/AI-INTEGRATION-WORKFLOW.md). `node scripts/resolve-c
 ## Fase 4 — Resultado técnico
 
 La resolución estricta y la exportación de un único ID superaron CI. La [página de laboratorio](examples/ai-ATZ-SCR-008/) pasó pruebas Chromium con un módulo y estilos anfitriones independientes. Ver [informe de Fase 4](ATREZZO-PHASE4-REPORT.md). La integración real con clientes aún requiere auditoría y autorización específica.
+
+## Fase 5 — ATREZZO NAVIGATION 01
+
+Tres nuevos módulos individuales de código original Atrezzo Studios: [Immersive Menu](components/navegacion/ATZ-NAV-001.md), [Chapter Rail](components/navegacion/ATZ-NAV-002.md) y [Context Dock](components/navegacion/ATZ-NAV-003.md). No dependen de GSAP. El registro ahora cuenta con **14 IDs y 3 categorías**. Los tres están en `validation` y usan composiciones abstractas provisionales, no fotografías sin autorización. Consultar [informe de ingesta](ATREZZO-NAVIGATION-INGEST-REPORT.md).
