@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-10",
+  "state": "staged_offline_not_published_in_catalog",
+  "package": "ATREZZO_SCROLL_01_02_03_NUEVE_COMPONENTES_PARA_INTEGRACION.zip",
+  "sha256": "cb2cfb625eea913647e64d9361daad484e4baa78de783323faf93a12490841a0",
+  "component_total": 9,
+  "source_references": [
+    "Atrezzo_Scroll_Sections_01(1).zip",
+    "Atrezzo_Scroll_Sections_02(1).zip",
+    "Atrezzo_Scroll_Sections_03_COMPLETO(1).zip"
+  ],
+  "ids": [
+    {
+      "id": "ATZ-SEC-001",
+      "family": "01",
+      "variant": "expand"
+    },
+    {
+      "id": "ATZ-SEC-002",
+      "family": "01",
+      "variant": "split"
+    },
+    {
+      "id": "ATZ-SEC-003",
+      "family": "01",
+      "variant": "sequence"
+    },
+    {
+      "id": "ATZ-SEC-004",
+      "family": "02",
+      "variant": "handoff"
+    },
+    {
+      "id": "ATZ-SEC-005",
+      "family": "02",
+      "variant": "film"
+    },
+    {
+      "id": "ATZ-SEC-006",
+      "family": "02",
+      "variant": "depth"
+    },
+    {
+      "id": "ATZ-SEC-007",
+      "family": "03",
+      "variant": "full"
+    },
+    {
+      "id": "ATZ-SEC-008",
+      "family": "03",
+      "variant": "panel"
+    },
+    {
+      "id": "ATZ-SEC-009",
+      "family": "03",
+      "variant": "split"
+    }
+  ],
+  "verification": [
+    "Node.js syntax check on three family engines passed",
+    "Structural checks of nine HTML scopes and image placeholders passed"
+  ],
+  "pending": [
+    "Transfer normalized source files into GitHub",
+    "Update 29 component registry only after source files exist",
+    "Add CSS to preview loader and exercise all nine in browser QA",
+    "Confirm visual fidelity with source screenshots",
+    "Use authorized media in client projects"
+  ],
+  "notes": "The normalized ZIP exists as a conversation artifact. A sandbox link must not be treated as a durable GitHub URL. All nine IDs are RESERVED, not ACTIVE. Images in ZIP are abstract reference data URIs, not licensed commercial photographs."
+}
