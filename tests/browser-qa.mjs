@@ -16,6 +16,15 @@ const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=u
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
+   if(requestPath==="/__navigation_nojs"){
+     const requested=new URL(req.url,"http://127.0.0.1").searchParams.get("id");
+     if(!/^ATZ-NAV-00[123]$/.test(requested||"")){res.writeHead(400);res.end("Invalid ID");return;}
+     const html=await fs.readFile(join(root,"components/navegacion/"+requested+".html"),"utf8");
+     const css="/components/navegacion/"+requested+".css";
+     res.writeHead(200,{"content-type":"text/html; charset=utf-8"});
+     res.end('<!doctype html><html lang="es"><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="'+css+'"></head><body style="margin:0">'+html+'</body></html>');
+     return;
+   }
    if(requestPath==="/__multi"){
      const htmlA=await fs.readFile(join(root,"components/scroll/ATZ-SCR-001.html"),"utf8");
      const htmlB=await fs.readFile(join(root,"components/scroll/ATZ-SCR-003.html"),"utf8");
@@ -134,6 +143,45 @@ try {
      await page.close();
    }
  }
+ // Navigation must remain usable without scripts; only allowed CSS is loaded.
+ for(const id of ["ATZ-NAV-001","ATZ-NAV-002","ATZ-NAV-003"]){
+   const page=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
+   await page.goto(origin+"/__navigation_nojs?id="+id,{waitUntil:"load"});
+   assert.equal(await page.locator('[data-atz-id="'+id+'"]').count(),1,id+" static markup missing");
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,id+" no-JS overflow");
+   if(id==="ATZ-NAV-001"){
+     assert.equal(await page.locator(".atz-nav-fallback a").count(),3,"No-JS menu links missing");
+     assert.equal(await page.locator(".atz-nav-trigger").isVisible(),false,"No-JS menu toggle must remain hidden");
+   }else if(id==="ATZ-NAV-002"){
+     assert.equal(await page.locator("[data-azn1-rail] a").count(),3,"No-JS native chapter anchors missing");
+   }else{
+     assert.equal(await page.locator("[data-azn1-project].is-active").count(),1,"No-JS active project missing");
+     assert.equal(await page.locator("[data-azn1-dock]").isVisible(),false,"No-JS floating dock should stay hidden");
+   }
+   await page.close();
+ }
+ // Accessible keyboard flow and motion preference for immersive overlay.
+ const menuKeyboard=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
+ await setup(menuKeyboard);
+ await menuKeyboard.goto(origin+"/catalog/preview.html?id=ATZ-NAV-001",{waitUntil:"domcontentloaded"});
+ await menuKeyboard.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
+ const toggle=menuKeyboard.locator("[data-azn1-menu-trigger]");
+ await toggle.focus();await menuKeyboard.keyboard.press("Enter");
+ await menuKeyboard.waitForTimeout(90);
+ assert.equal(await toggle.getAttribute("aria-expanded"),"true");
+ assert.equal(await menuKeyboard.evaluate(()=>document.querySelector("main").inert),true,"Background main must be inert");
+ const closeButton=menuKeyboard.locator("[data-azn1-menu-close]");
+ assert.equal(await closeButton.evaluate(el=>document.activeElement===el),true,"Focus should enter modal");
+ await menuKeyboard.keyboard.press("Shift+Tab");
+ assert.equal(await menuKeyboard.locator("[data-azn1-menu-link]").last().evaluate(el=>document.activeElement===el),true,"Shift+Tab should wrap to last link");
+ await menuKeyboard.keyboard.press("Tab");
+ assert.equal(await closeButton.evaluate(el=>document.activeElement===el),true,"Tab should wrap back to close");
+ await menuKeyboard.keyboard.press("Escape");
+ assert.equal(await toggle.getAttribute("aria-expanded"),"false");
+ assert.equal(await menuKeyboard.evaluate(()=>document.querySelector("main").inert),false,"Main inert must be reset");
+ assert.equal(await menuKeyboard.evaluate(()=>document.body.classList.contains("atz-nav-scroll-locked")),false,"Scroll lock must clear");
+ assert.equal(await toggle.evaluate(el=>document.activeElement===el),true,"Focus should return to trigger");
+ await menuKeyboard.close();
  const reduced=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
  await setup(reduced);
  await reduced.goto(origin+"/catalog/preview.html?id=ATZ-SCR-005",{waitUntil:"domcontentloaded"});
@@ -208,7 +256,7 @@ try {
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
  const report={passed:true,checks:results.length,variants:registry.entries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",results};
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
