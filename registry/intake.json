@@ -17,20 +17,20 @@
     {
       "package_name": "Atrezzo_Scroll_Sections_01.zip",
       "category": "scroll",
-      "status": "pending_ingestion",
-      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+      "status": "source_approved_audited_pending_ingestion",
+      "note": "La versión (1) reenviada el 2026-11-10 es binariamente idéntica al ZIP disponible. Material fuente aprobado para migración. Aún no hay IDs, previews ni integración de estas variantes en la biblioteca."
     },
     {
       "package_name": "Atrezzo_Scroll_Sections_02.zip",
       "category": "scroll",
-      "status": "pending_ingestion",
-      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+      "status": "source_approved_audited_pending_ingestion",
+      "note": "La versión (1) reenviada el 2026-11-10 es binariamente idéntica al ZIP disponible. Material fuente aprobado para migración. Aún no hay IDs, previews ni integración de estas variantes en la biblioteca."
     },
     {
       "package_name": "Atrezzo_Scroll_Sections_03_COMPLETO.zip",
       "category": "scroll",
-      "status": "pending_ingestion",
-      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+      "status": "source_approved_audited_pending_ingestion",
+      "note": "La versión (1) reenviada el 2026-11-10 es binariamente idéntica al ZIP disponible. Material fuente aprobado para migración. Aún no hay IDs, previews ni integración de estas variantes en la biblioteca."
     },
     {
       "package_name": "Atrezzo_Editorial_Gallery_01_COMPLETO.zip",
@@ -79,6 +79,62 @@
       "category": "scroll",
       "status": "ingested_internal_validated",
       "note": "15 patrones sticky originales del ZIP del usuario; 15 módulos con ID ATZ-STK-001..015, 6 paneles cada uno, GSAP original preservado y alternativas SVG abstractas. Contrato Node y Chromium 116 checks aprobados. Pendientes Safari/iOS, uso de fotografías autorizadas y QA en cliente."
+    },
+    {
+      "package_name": "001- Scroll-Transition-main.zip",
+      "category": "scroll",
+      "status": "source_approved_audited_pending_ingestion",
+      "candidate_variants": 4,
+      "source": "Scroll-Transition-main/index.html + index2.html + index3.html + index4.html",
+      "dependencies": [
+        "GSAP",
+        "ScrollTrigger",
+        "Lenis demo-only"
+      ],
+      "note": "Cuatro variantes SVG Mask, script.js a script4.js. Código MIT de Codrops, imágenes de demo con derechos no acreditados."
+    },
+    {
+      "package_name": "02- ATREZZO INTRO.zip",
+      "category": "tipografia",
+      "status": "source_approved_audited_pending_ingestion",
+      "candidate_variants": 1,
+      "source": "ScrollTextMotion-main/index.html + js/index.js",
+      "dependencies": [
+        "GSAP",
+        "Flip",
+        "ScrambleTextPlugin",
+        "ScrollTrigger",
+        "ScrollSmoother"
+      ],
+      "note": "Un sistema tipográfico completo; no fraccionar arbitrariamente cada fragmento .el en un componente. Código MIT de Codrops; revisar uso de plugins GSAP y scroll suave global."
+    },
+    {
+      "package_name": "ScrollBasedLayoutAnimations-main(1).zip",
+      "category": "galerias",
+      "status": "source_approved_audited_pending_ingestion",
+      "candidate_variants": 19,
+      "source": "index.html: 9 galerías; index2.html: 10 galerías",
+      "dependencies": [
+        "GSAP",
+        "Flip",
+        "ScrollTrigger",
+        "Lenis demo-only"
+      ],
+      "note": "19 variaciones (9+10); layout transformado con GSAP Flip. Fotos generativas/Unsplash no autorizadas automáticamente para clientes. Código MIT de Codrops."
+    },
+    {
+      "package_name": "StickySections-main(1).zip",
+      "category": "scroll",
+      "status": "duplicate_existing_by_motion",
+      "candidate_variants": 15,
+      "existing_ids": "ATZ-STK-001…ATZ-STK-015",
+      "source": "15 demos index.html a index15.html",
+      "dependencies": [
+        "GSAP",
+        "ScrollTrigger",
+        "Lenis demo-only"
+      ],
+      "note": "No sumar al catálogo: mismas fórmulas de movimiento que el ZIP MAC aprobado ya incorporado; cambia el loader de ES modules y metadatos."
     }
   ]
 }

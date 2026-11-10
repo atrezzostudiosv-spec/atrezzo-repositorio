@@ -42,3 +42,8 @@
 
 
 **Evidencia de cierre Sticky 15:** [Tests Node PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196661), [Chromium PASS — 116 casos](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669), [GitHub Pages PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812195207). Se inspeccionaron las capturas de los 15 casos desktop y se corrigió el contraste en variantes claras; ver `ATREZZO-STICKY-15-INGEST-REPORT.md`. Esto **no** significa que los 15 módulos estén certificados para publicación comercial: `client_ready:false` en todos.
+
+
+## Nuevo lote aprobado · siete ZIP (2026-11-10)
+
+**AUDITORÍA CERRADA / IMPORTACIÓN PENDIENTE.** Se verificaron 33 candidatos nuevos y 15 patrones StickySections duplicados que **no** se registrarán de nuevo. Las colecciones propias 01/02/03 son versiones byte a byte idénticas a las ya entregadas. Reglas y detalles: `ATREZZO-APPROVED-UPLOADS-AUDIT-2026-11-10.md` y `registry/approved-source-audit-2026-11-10.json`. Se mantiene el catálogo en **29** componentes hasta cargar código individual y pasar QA. Próxima ingesta: 9 patrones originales ATREZZO SCROLL SECTIONS 01/02/03.

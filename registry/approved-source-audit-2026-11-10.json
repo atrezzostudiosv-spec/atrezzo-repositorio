@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-10",
+  "batch": "User-approved source uploads",
+  "files": 7,
+  "current_catalog_entries": 29,
+  "new_candidate_patterns": 33,
+  "already_registered_duplicate_patterns": 15,
+  "status": "audited_not_integrated",
+  "packages": [
+    {
+      "name": "001- Scroll-Transition-main.zip",
+      "patterns": 4,
+      "kind": "scroll SVG-mask",
+      "integration": "pending",
+      "license": "MIT source code; separate image clearance"
+    },
+    {
+      "name": "02- ATREZZO INTRO.zip",
+      "patterns": 1,
+      "kind": "scroll typography",
+      "integration": "pending",
+      "license": "MIT source code; plugins and typefaces need separate verification"
+    },
+    {
+      "name": "Atrezzo_Scroll_Sections_01(1).zip",
+      "patterns": 3,
+      "kind": "original ATREZZO scroll",
+      "integration": "pending",
+      "duplicate_upload": true,
+      "identical_to": "Atrezzo_Scroll_Sections_01.zip",
+      "variants": [
+        "expand",
+        "split",
+        "sequence"
+      ],
+      "license": "original Atrezzo; images test-only"
+    },
+    {
+      "name": "Atrezzo_Scroll_Sections_02(1).zip",
+      "patterns": 3,
+      "kind": "original ATREZZO scroll",
+      "integration": "pending",
+      "duplicate_upload": true,
+      "identical_to": "Atrezzo_Scroll_Sections_02.zip",
+      "variants": [
+        "handoff",
+        "film",
+        "depth"
+      ],
+      "license": "original Atrezzo; images test-only"
+    },
+    {
+      "name": "Atrezzo_Scroll_Sections_03_COMPLETO(1).zip",
+      "patterns": 3,
+      "kind": "original ATREZZO scroll",
+      "integration": "pending",
+      "duplicate_upload": true,
+      "identical_to": "Atrezzo_Scroll_Sections_03_COMPLETO.zip",
+      "variants": [
+        "full",
+        "panel",
+        "split"
+      ],
+      "license": "original Atrezzo; images test-only"
+    },
+    {
+      "name": "ScrollBasedLayoutAnimations-main(1).zip",
+      "patterns": 19,
+      "kind": "GSAP Flip scroll galleries",
+      "integration": "pending",
+      "variants": [
+        "gallery-1",
+        "gallery-2",
+        "gallery-3",
+        "gallery-4",
+        "gallery-5",
+        "gallery-6",
+        "gallery-7",
+        "gallery-8",
+        "gallery-9",
+        "gallery-carousel",
+        "gallery-pyramid",
+        "gallery-sunflower",
+        "gallery-sun",
+        "gallery-pile",
+        "gallery-slices",
+        "gallery-stairs",
+        "gallery-question",
+        "gallery-deal",
+        "gallery-reflow"
+      ],
+      "license": "MIT source code; generated imagery separate rights"
+    },
+    {
+      "name": "StickySections-main(1).zip",
+      "patterns": 15,
+      "kind": "sticky",
+      "integration": "deduplicated",
+      "existing_ids": "ATZ-STK-001…ATZ-STK-015",
+      "license": "MIT Codrops; image rights separate"
+    }
+  ]
+}
