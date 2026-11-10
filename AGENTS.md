@@ -23,3 +23,7 @@ Las previews son muestras de una mecánica aislada. No certifican por sí solas 
 
 ## Fase 3 — Importación autónoma
 Para `ATZ-SCR-004`, usar `components/scroll/ATZ-SCR-004.html` + `components/runtime/atrezzo-motion.css` + `components/scroll/ATZ-SCR-004.js` (que importa `components/runtime/lifecycle.js`). La API del módulo individual es `mount(host,{gsap,ScrollTrigger})`; devolverá una instancia con `refresh()` y `destroy()`. Consulta `components/runtime/README.md`. Los 11 módulos siguen en `validation`, con `client_ready:false`.
+
+## Fase 4 — Identificadores para ChatGPT
+
+Leer `docs/AI-INTEGRATION-WORKFLOW.md`. Resolver el ID exacto en `registry/components.json`. Cuando exista terminal, `node scripts/resolve-component.mjs ATZ-SCR-008` devuelve el contrato JSON y `--prompt` la instrucción de integración. `node scripts/export-component.mjs ATZ-SCR-008 --out ./salida` prepara cuatro archivos aislados sin modificar el código del cliente. Demostración: `examples/ai-ATZ-SCR-008/`. No elegir otro ID, ni publicar una variante `validation` sin QA en cliente.

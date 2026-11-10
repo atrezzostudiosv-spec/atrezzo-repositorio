@@ -45,3 +45,7 @@ No copiar el layout completo de una demo ni asumir autorización comercial de fo
 
 ## Fase 3 — Código independiente por componente
 Los 11 IDs cuentan ahora con archivos `.html` y `.js` propios. Solo comparten `components/runtime/lifecycle.js` y `components/runtime/atrezzo-motion.css`. Cada módulo activa **una** timeline y ofrece `mount(host,{gsap,ScrollTrigger})`, `refresh()` y `destroy()`. Consulta [guía de integración](components/runtime/README.md). Estado: `validation` hasta completar pruebas reales de navegador y en proyectos clientes.
+
+## Fase 4 — Selección con ChatGPT
+
+Consulta [contrato IA](docs/AI-INTEGRATION-WORKFLOW.md). `node scripts/resolve-component.mjs ATZ-SCR-008` devuelve un solo ID; añade `--prompt` para la instrucción de ChatGPT. `node scripts/export-component.mjs ATZ-SCR-008 --out ./salida` prepara la copia independiente para integrarla más tarde en un cliente. [Laboratorio autónomo](examples/ai-ATZ-SCR-008/). No modifica automáticamente ninguna web comercial.

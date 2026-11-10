@@ -14,11 +14,10 @@ Esta carpeta contiene la extracción individual de los 11 movimientos del primer
 import { mount } from "/components/scroll/ATZ-SCR-004.js";
 
 // El HTML del ID ya está en <main id="atrezzo-scene">.
-const instance = mountAtrezzoMotion(
-  document.querySelector("#atrezzo-scene"),
-  "fourth",
-  { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger }
-);
+const instance = mount(document.querySelector("#atrezzo-scene"), {
+  gsap: window.gsap,
+  ScrollTrigger: window.ScrollTrigger
+});
 
 // Navegación SPA: desmontar antes de cambiar de página.
 instance.destroy();
