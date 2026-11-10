@@ -39,4 +39,4 @@ instance.destroy();
 
 **Atribución:** Codrops — On Scroll Layout Formations, licencia MIT para el código; ver `sources/codrops-layout-formations/LICENSE`. La licencia del código no certifica fotografías ni tipografías.
 
-**Importante:** `components/runtime/atrezzo-motion.js` se conserva temporalmente como adaptación monolítica histórica de Fase 3; no importarlo en nuevas integraciones. El sistema vigente son los 11 módulos independientes + `lifecycle.js`.
+**Importante:** la adaptación monolítica temporal ha sido retirada. Solo se emplean los 11 módulos independientes más `lifecycle.js`. El código histórico de Codrops permanece preservado bajo `sources/`.

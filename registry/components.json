@@ -41,8 +41,9 @@
       "component_html": "components/scroll/ATZ-SCR-001.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-001.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-002",
@@ -82,8 +83,9 @@
       "component_html": "components/scroll/ATZ-SCR-002.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-002.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-003",
@@ -123,8 +125,9 @@
       "component_html": "components/scroll/ATZ-SCR-003.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-003.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-004",
@@ -164,8 +167,9 @@
       "component_html": "components/scroll/ATZ-SCR-004.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-004.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-005",
@@ -205,8 +209,9 @@
       "component_html": "components/scroll/ATZ-SCR-005.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-005.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-006",
@@ -246,8 +251,9 @@
       "component_html": "components/scroll/ATZ-SCR-006.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-006.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-007",
@@ -287,8 +293,9 @@
       "component_html": "components/scroll/ATZ-SCR-007.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-007.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-008",
@@ -328,8 +335,9 @@
       "component_html": "components/scroll/ATZ-SCR-008.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-008.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-009",
@@ -369,8 +377,9 @@
       "component_html": "components/scroll/ATZ-SCR-009.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-009.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-SCR-010",
@@ -410,8 +419,9 @@
       "component_html": "components/scroll/ATZ-SCR-010.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/scroll/ATZ-SCR-010.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     },
     {
       "id": "ATZ-TRN-001",
@@ -451,8 +461,9 @@
       "component_html": "components/transiciones/ATZ-TRN-001.html",
       "component_css": "components/runtime/atrezzo-motion.css",
       "component_js": "components/transiciones/ATZ-TRN-001.js",
-      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes.",
-      "component_runtime": "components/runtime/lifecycle.js"
+      "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
+      "component_runtime": "components/runtime/lifecycle.js",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
     }
   ]
 }
