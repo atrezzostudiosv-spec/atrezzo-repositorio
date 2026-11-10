@@ -6,7 +6,7 @@ import { resolveComponent, createIntegrationPrompt } from "../scripts/resolve-co
 import { exportComponent } from "../scripts/export-component.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(registry.entries.length,11);
+assert.equal(registry.entries.length,14);
 for(const e of registry.entries){
   const contract=resolveComponent(e.id);
   assert.equal(contract.id,e.id);
@@ -14,7 +14,7 @@ for(const e of registry.entries){
   assert.equal(contract.client_ready,false);
   assert.equal(Object.keys(contract.files).length,4,"Only four functional file references");
   const script=readFileSync(new URL("../"+contract.files.js,import.meta.url),"utf8");
-  assert(script.includes("../runtime/lifecycle.js"),e.id+" must import shared lifecycle");
+  assert(script.includes(e.category==="navegacion"?"./runtime.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
   for(const other of registry.entries.filter(x=>x.id!==e.id)) {
     assert(!script.includes(other.id+".js"),e.id+" has unwanted dependency on "+other.id);
   }
@@ -45,5 +45,12 @@ try{
   assert.equal(m.client_ready,false);
   assert.throws(()=>exportComponent("ATZ-SCR-008",temp),/ya existe/,"Must not silently overwrite");
   assert(!existsSync(join(temp,"index.html")),"Do not modify host website");
+  const navOut=exportComponent("ATZ-NAV-002",join(temp,"navigation"));
+  assert.equal(navOut.files.length,5);
+  const navItems=readdirSync(join(temp,"navigation","atrezzo"),{recursive:true}).filter(v=>/\.(html|css|js)$/.test(v));
+  assert.equal(navItems.length,4,"Navigation export must contain only one pattern plus runtime");
+  assert(navItems.some(v=>v.endsWith("ATZ-NAV-002.js")));
+  assert(!navItems.some(v=>v.endsWith("ATZ-NAV-001.js")));
+  assert(!navItems.some(v=>v.endsWith("ATZ-NAV-003.js")));
 }finally{rmSync(temp,{recursive:true,force:true});}
-console.log("PASS FASE 4: exact ID resolution for 11, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
+console.log("PASS FASE 4+5: exact ID resolution for 14, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");

@@ -6,6 +6,8 @@ import { chromium } from "playwright";
 
 const root=process.cwd();
 const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"),"utf8"));
+const motionEntries=registry.entries.filter(e=>e.category!=="navegacion");
+const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
 const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
  "ATZ-SCR-008":13,"ATZ-SCR-009":36,"ATZ-SCR-010":5,"ATZ-TRN-001":0};
@@ -53,7 +55,7 @@ try {
  for(const width of [375,768,1024,1440]){
    const page=await browser.newPage({viewport:{width,height:900},reducedMotion:"no-preference"});
    await setup(page);
-   for(const e of registry.entries){
+   for(const e of motionEntries){
      const errors=[];
      const onError=err=>errors.push(err.message);
      page.on("pageerror",onError);
@@ -89,6 +91,49 @@ try {
    }
    await page.close();
  }
+ // FASE 5 — verify every independent navigation pattern in the real catalog preview.
+ for(const width of [375,768,1024,1440]){
+   for(const entry of navigationEntries){
+     const page=await browser.newPage({viewport:{width,height:900},reducedMotion:"no-preference"});
+     await setup(page);
+     const errors=[];page.on("pageerror",e=>errors.push(e.message));
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id,{waitUntil:"domcontentloaded"});
+     await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+     assert.equal(await page.locator("#demo [data-atz-id]").getAttribute("data-atz-id"),entry.id);
+     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,entry.id+" overflow at "+width);
+     if(entry.id==="ATZ-NAV-001"){
+       const trigger=page.locator("[data-azn1-menu-trigger]");
+       await trigger.click();
+       await page.waitForTimeout(100);
+       assert.equal(await trigger.getAttribute("aria-expanded"),"true","Menu must open");
+       assert.equal(await page.locator("[data-azn1-menu]").getAttribute("aria-modal"),"true");
+       assert.equal(await page.evaluate(()=>document.body.classList.contains("atz-nav-scroll-locked")),true);
+       await page.keyboard.press("Escape");
+       assert.equal(await trigger.getAttribute("aria-expanded"),"false","Escape closes menu");
+       assert.equal(await page.evaluate(()=>document.body.classList.contains("atz-nav-scroll-locked")),false);
+     } else if(entry.id==="ATZ-NAV-002"){
+       await page.locator("#atz-chapter-two").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(150);
+       assert.equal(await page.locator('[data-azn1-rail] a[href="#atz-chapter-two"]').getAttribute("aria-current"),"location","Rail must track chapter 2");
+       await page.locator("#atz-chapter-one").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(150);
+       assert.equal(await page.locator('[data-azn1-rail] a[href="#atz-chapter-one"]').getAttribute("aria-current"),"location","Rail must track reverse scroll");
+     } else {
+       await page.locator("[data-azn1-projects]").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(150);
+       await page.locator("[data-azn1-dock-next]").click();
+       assert.equal(await page.locator("[data-azn1-dock-title]").textContent(),"Reflected Forms");
+       await page.locator("[data-azn1-dock-prev]").click();
+       assert.equal(await page.locator("[data-azn1-dock-title]").textContent(),"Quiet Residence");
+       assert.equal(await page.locator('[data-azn1-project].is-active').count(),1);
+     }
+     assert.equal(errors.length,0,entry.id+" JavaScript errors "+errors.join("; "));
+     if(width===1440)await page.screenshot({path:join(artifacts,entry.id+".png"),fullPage:false});
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
+     results.push({id:entry.id,width,mode:"interactive",test:"navigation",teardown:"ok"});
+     await page.close();
+   }
+ }
  const reduced=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
  await setup(reduced);
  await reduced.goto(origin+"/catalog/preview.html?id=ATZ-SCR-005",{waitUntil:"domcontentloaded"});
@@ -99,7 +144,7 @@ try {
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===11);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===14);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
