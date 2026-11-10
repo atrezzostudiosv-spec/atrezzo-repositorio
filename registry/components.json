@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "updated_at": "2026-11-10",
   "instructions": "AGENTS.md",
   "entries": [
@@ -17,7 +17,7 @@
       "avoid_when": "Evitar como lista de servicios urgentes",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-001",
       "technical_guide": "components/scroll/ATZ-SCR-001.md",
@@ -37,7 +37,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-001.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-002",
@@ -53,7 +57,7 @@
       "avoid_when": "No sobrecargar de párrafos",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-002",
       "technical_guide": "components/scroll/ATZ-SCR-002.md",
@@ -73,7 +77,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-002.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-003",
@@ -89,7 +97,7 @@
       "avoid_when": "Oscurecimiento limita lectura superpuesta",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-003",
       "technical_guide": "components/scroll/ATZ-SCR-003.md",
@@ -109,7 +117,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-003.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-004",
@@ -125,7 +137,7 @@
       "avoid_when": "Efecto pesado: revisar rendimiento móvil",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-004",
       "technical_guide": "components/scroll/ATZ-SCR-004.md",
@@ -145,7 +157,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-004.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-005",
@@ -161,7 +177,7 @@
       "avoid_when": "3D intenso: reducido en móvil",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-005",
       "technical_guide": "components/scroll/ATZ-SCR-005.md",
@@ -181,7 +197,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-005.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-006",
@@ -197,7 +217,7 @@
       "avoid_when": "Evitar para lectura continua",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-006",
       "technical_guide": "components/scroll/ATZ-SCR-006.md",
@@ -217,7 +237,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-006.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-007",
@@ -233,7 +257,7 @@
       "avoid_when": "Recorte y desbordamiento deben controlarse",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-007",
       "technical_guide": "components/scroll/ATZ-SCR-007.md",
@@ -253,7 +277,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-007.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-008",
@@ -269,7 +297,7 @@
       "avoid_when": "Contiene estructura interna .grid__img-inner obligatoria",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-008",
       "technical_guide": "components/scroll/ATZ-SCR-008.md",
@@ -289,7 +317,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-008.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-009",
@@ -305,7 +337,7 @@
       "avoid_when": "Demasiados elementos para móviles modestos",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-009",
       "technical_guide": "components/scroll/ATZ-SCR-009.md",
@@ -325,7 +357,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-009.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-SCR-010",
@@ -341,7 +377,7 @@
       "avoid_when": "No sustituye un listado accesible de servicios",
       "level": "M3",
       "uses_pin": true,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SCR-010",
       "technical_guide": "components/scroll/ATZ-SCR-010.md",
@@ -361,7 +397,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/scroll/ATZ-SCR-010.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     },
     {
       "id": "ATZ-TRN-001",
@@ -377,7 +417,7 @@
       "avoid_when": "No aplicar al menú fijo principal",
       "level": "M2",
       "uses_pin": false,
-      "status": "reference",
+      "status": "validation",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-TRN-001",
       "technical_guide": "components/transiciones/ATZ-TRN-001.md",
@@ -397,7 +437,11 @@
         "ScrollTrigger"
       ],
       "requires_reduced_motion_fallback": true,
-      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes."
+      "photo_usage": "Material de demo de terceros; NO autorizado automáticamente para proyectos de clientes.",
+      "component_html": "components/transiciones/ATZ-TRN-001.html",
+      "component_css": "components/runtime/atrezzo-motion.css",
+      "component_js": "components/runtime/atrezzo-motion.js",
+      "validation_notes": "DOM y runtime aislados; pruebas visuales de navegador y de integración en un sitio cliente pendientes."
     }
   ]
 }
