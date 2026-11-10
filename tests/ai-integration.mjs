@@ -55,7 +55,7 @@ try{
   const stickyOut=exportComponent("ATZ-STK-015",join(temp,"sticky"));
   assert.equal(stickyOut.files.length,5,"Sticky export must contain four module files and its original MIT license");
   assert(existsSync(join(stickyOut.target,"sources/codrops-sticky-sections/LICENSE")));
-  const stickyItems=readdirSync(stickyOut.target,{recursive:true}).filter(v=>/\\.(html|css|js)$/.test(v));
+  const stickyItems=readdirSync(stickyOut.target,{recursive:true}).filter(v=>/\.(html|css|js)$/.test(v));
   assert.equal(stickyItems.length,4,"Sticky export must not bring other variants");
   assert(stickyItems.some(v=>v.endsWith("ATZ-STK-015.js")));
   assert(!stickyItems.some(v=>v.endsWith("ATZ-STK-014.js")));
