@@ -6,7 +6,7 @@
 |---|---|---|
 | Auditoría del repositorio | CERRADA | El repositorio se inició vacío, sin código previo |
 | Auditoría ZIP On-Scroll Layout Formations | CERRADA | 10 patrones de grid + 1 efecto de cabecera identificados y fichados |
-| Arquitectura de IDs, categorías e instrucciones IA | EN VALIDACIÓN | Registro JSON, 11 fichas y AGENTS.md disponibles; probar integración en un repositorio cliente |
+| Arquitectura de IDs y contrato de selección IA | VALIDADA INTERNAMENTE | 11 IDs resueltos por coincidencia exacta; exportación segura de una única variante, manifest y guías verificados en CI. Integración en web cliente real pendiente |
 | Dirección visual del catálogo | APROBADA / CERRADA | Usuario aprueba expresamente la estética de la biblioteca el 2026-11-10. Diseño protegido; no rediseñar durante validaciones técnicas |
 | FASE 2 — Catálogo y validación funcional | APROBADA POR EL USUARIO | El usuario aprueba expresamente la validación funcional el 2026-11-10. La aceptación no equivale a auditoría técnica independiente ni a certificación de las 11 variantes |
 | Ingesta de otros ZIP | PENDIENTE | 12 paquetes inventariados; no certificados |
@@ -25,4 +25,9 @@
 
 ## Fase 4 — Contrato con ChatGPT
 
-**Estado: EN PRUEBAS.** Se han incorporado `scripts/resolve-component.mjs`, `scripts/export-component.mjs`, `docs/AI-INTEGRATION-WORKFLOW.md` y el laboratorio `examples/ai-ATZ-SCR-008/`. La prueba automatizada comprueba que un ID seleccionado no importa otros efectos y que no sobrescribe código del cliente. Cierre sujeto al resultado de GitHub Actions y a confirmar el funcionamiento del laboratorio.
+**Estado: CERRADA — VALIDACIÓN INTERNA.** Implementado `scripts/resolve-component.mjs` para 11/11 IDs, `scripts/export-component.mjs` para exportación sin sobrescritura y `docs/AI-INTEGRATION-WORKFLOW.md` como protocolo para ChatGPT. Laboratorio `examples/ai-ATZ-SCR-008/` validado con Chromium a 375/768/1024/1440 px, importando solo su módulo; fallback sin JS y desmontaje verificados. Evidencia: [pruebas de contrato](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42801875846), [pruebas de navegador](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42801875815) y [despliegue Pages](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42801874386).
+
+
+**Límite de Fase 4:** no se ha realizado una prueba de obediencia del modelo en otro chat ni una implementación en un repositorio de cliente. El contrato es consultable y el exportador es determinista, pero ChatGPT debe leerlo y tener acceso a GitHub. `client_ready:false` permanece vigente.
+
+**Próximo paso estratégico:** FASE 5 — inventariar los otros ZIP, deduplicar, asignar IDs individuales e incorporar por lotes sin perder la arquitectura ni el diseño aprobado. Priorizar clasificación antes de carga indiscriminada.

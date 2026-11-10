@@ -49,3 +49,7 @@ Los 11 IDs cuentan ahora con archivos `.html` y `.js` propios. Solo comparten `c
 ## Fase 4 — Selección con ChatGPT
 
 Consulta [contrato IA](docs/AI-INTEGRATION-WORKFLOW.md). `node scripts/resolve-component.mjs ATZ-SCR-008` devuelve un solo ID; añade `--prompt` para la instrucción de ChatGPT. `node scripts/export-component.mjs ATZ-SCR-008 --out ./salida` prepara la copia independiente para integrarla más tarde en un cliente. [Laboratorio autónomo](examples/ai-ATZ-SCR-008/). No modifica automáticamente ninguna web comercial.
+
+## Fase 4 — Resultado técnico
+
+La resolución estricta y la exportación de un único ID superaron CI. La [página de laboratorio](examples/ai-ATZ-SCR-008/) pasó pruebas Chromium con un módulo y estilos anfitriones independientes. Ver [informe de Fase 4](ATREZZO-PHASE4-REPORT.md). La integración real con clientes aún requiere auditoría y autorización específica.
