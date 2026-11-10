@@ -7,7 +7,7 @@
 | Auditoría del repositorio | CERRADA | El repositorio se inició vacío, sin código previo |
 | Auditoría ZIP On-Scroll Layout Formations | CERRADA | 10 patrones de grid + 1 efecto de cabecera identificados y fichados |
 | Arquitectura de IDs, categorías e instrucciones IA | EN VALIDACIÓN | Registro JSON, 11 fichas y AGENTS.md disponibles; probar integración en un repositorio cliente |
-| Dirección visual del catálogo | EN VALIDACIÓN | Referencias Korvio + PixelCraft aportadas; paleta y sistema en ATREZZO-LIBRARY-DESIGN.md; primer prototipo implementado |
+| Dirección visual del catálogo | APROBADA / CERRADA | Usuario aprueba expresamente la estética de la biblioteca el 2026-11-10. Diseño protegido; no rediseñar durante validaciones técnicas |
 | Catálogo visual y vistas individuales | EN VALIDACIÓN | Se han creado catalog/index.html, styles.css, app.js, preview.html y preview.js. Miniaturas abstractas provisionales; demos individuales por ID conectadas al motor original, todavía sin prueba de navegador ni captura real |
 | Ingesta de otros ZIP | PENDIENTE | 12 paquetes inventariados; no certificados |
 | Verificación 375 / 768 / 1024 / 1440 y reduced-motion | PENDIENTE | Inspección de código no sustituye verificación visual/interactiva |
