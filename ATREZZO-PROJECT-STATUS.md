@@ -11,8 +11,8 @@
 | Catálogo visual y vistas individuales | EN VALIDACIÓN | Se han creado catalog/index.html, styles.css, app.js, preview.html y preview.js. Miniaturas abstractas provisionales; demos individuales por ID conectadas al motor original, todavía sin prueba de navegador ni captura real |
 | Ingesta de otros ZIP | PENDIENTE | 12 paquetes inventariados; no certificados |
 | Verificación 375 / 768 / 1024 / 1440 y reduced-motion | PENDIENTE | Inspección de código no sustituye verificación visual/interactiva |
-| Publicación GitHub Pages | PENDIENTE | La configuración de Pages y URL publicada no han sido verificadas |
+| Publicación GitHub Pages | EN VALIDACIÓN | Configuración confirmada en GitHub: Deploy from a branch, main / (root), HTTPS activo; GitHub indica que está construyendo el sitio; URL pública y navegación aún sin verificar |
 
 **Decisión cerrada:** una variante = ID persistente + preview individual + ficha técnica + función concreta del origen.
 
-**Siguiente acción:** habilitar GitHub Pages para `main / (root)`, abrir el catálogo y validar los 11 previews antes de declarar Fase 2 cerrada.
+**Siguiente acción:** comprobar la publicación real en `https://atrezzostudiosv-spec.github.io/atrezzo-repositorio/catalog/` y auditar filtros, navegación y los 11 previews individuales (incluidas pruebas responsive) antes de declarar Fase 2 cerrada.
