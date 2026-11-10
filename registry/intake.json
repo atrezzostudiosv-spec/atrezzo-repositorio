@@ -5,8 +5,8 @@
     {
       "package_name": "Atrezzo_Navigation_01_COMPLETO.zip",
       "category": "navegacion",
-      "status": "ingested_validation",
-      "note": "3 variantes importadas ATZ-NAV-001/002/003, pendientes de validación de navegador y cliente. Fotografías no incorporadas por licencia no acreditada."
+      "status": "ingested_internal_validated",
+      "note": "ATZ-NAV-001/002/003 separados y publicados en GitHub; 56 combinaciones navegador más teclado, movimiento reducido y fallback sin JS, CI aprobada. No certificados para uso de cliente: fotografías de licencia no acreditada, Safari/iOS e integración real pendientes."
     },
     {
       "package_name": "ELEGANT_MASSAGE_01_HERO_ARCHIVOS.zip",

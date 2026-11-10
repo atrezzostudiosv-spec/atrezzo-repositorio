@@ -26,8 +26,12 @@
 
 ## Comprobaciones
 
-El ZIP original trae pruebas de Chromium y capturas locales de 375/390/768/1024/1440 px, pero solo acreditan su entorno de demo anterior. Esta adaptación nueva debe volver a superar GitHub Actions y las interacciones del catálogo antes de cerrar su validación interna.
+El ZIP original trae pruebas de Chromium y capturas locales de 375/390/768/1024/1440 px, pero solo acreditan su entorno de demo anterior. Esta adaptación **ha superado las pruebas internas**. [Node/selección por ID](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730542) y [Chromium UI/teclado/fallback](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241) finalizaron correctamente. GitHub Pages publicó la versión: [deployment](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805729582). Total biblioteca: 56 combinaciones (14 × 4), además de verificaciones de foco, Escape, inert, dock anterior/siguiente, rail, sin JS y reduced-motion.
 
 ## Pendiente para producción
 
 Licencias de medios, fotografía autorizada, auditoría visual con medios reales, Safari/iOS, navegación entre rutas reales, y primera integración verificada en un website cliente. Ninguno de los tres ID es `client_ready`.
+
+## Estado de continuidad
+
+**Lote ATREZZO NAVIGATION 01: CERRADO A NIVEL INTERNO**. Esta fase solo confirma extracción por ID y QA Chromium. Los tres módulos se mantienen en `validation` y `client_ready:false` para webs de clientes. **Fase 5 principal EN PROCESO:** quedan 11 paquetes ZIP por auditar e incorporar. El siguiente lote recomendado es el HERO original de Elegant Massage, sin modificar el sitio del cliente.

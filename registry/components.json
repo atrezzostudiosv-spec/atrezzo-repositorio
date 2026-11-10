@@ -490,7 +490,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "Gradientes provisionales. Fotografías del ZIP original no acreditadas para publicación comercial.",
-      "validation_notes": "Código individual incorporado. Pruebas CI pendientes. No certificado en websites reales."
+      "validation_notes": "Validación interna completada: prueba Node de resolución/exportación por ID y Playwright Chromium en 375/768/1024/1440 px. Probados menú Escape, teclado/foco, bloqueo de scroll, chapter rail, dock, fallback sin JavaScript y reducción de movimiento. Pendientes fotos autorizadas, revisión visual final, Safari/iOS e integración real en cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241"
     },
     {
       "id": "ATZ-NAV-002",
@@ -517,7 +518,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "Gradientes provisionales. Fotografías del ZIP original no acreditadas para publicación comercial.",
-      "validation_notes": "Código individual incorporado. Pruebas CI pendientes. No certificado en websites reales."
+      "validation_notes": "Validación interna completada: prueba Node de resolución/exportación por ID y Playwright Chromium en 375/768/1024/1440 px. Probados menú Escape, teclado/foco, bloqueo de scroll, chapter rail, dock, fallback sin JavaScript y reducción de movimiento. Pendientes fotos autorizadas, revisión visual final, Safari/iOS e integración real en cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241"
     },
     {
       "id": "ATZ-NAV-003",
@@ -544,7 +546,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "Gradientes provisionales. Fotografías del ZIP original no acreditadas para publicación comercial.",
-      "validation_notes": "Código individual incorporado. Pruebas CI pendientes. No certificado en websites reales."
+      "validation_notes": "Validación interna completada: prueba Node de resolución/exportación por ID y Playwright Chromium en 375/768/1024/1440 px. Probados menú Escape, teclado/foco, bloqueo de scroll, chapter rail, dock, fallback sin JavaScript y reducción de movimiento. Pendientes fotos autorizadas, revisión visual final, Safari/iOS e integración real en cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241"
     }
   ]
 }
