@@ -31,3 +31,7 @@
 **Límite de Fase 4:** no se ha realizado una prueba de obediencia del modelo en otro chat ni una implementación en un repositorio de cliente. El contrato es consultable y el exportador es determinista, pero ChatGPT debe leerlo y tener acceso a GitHub. `client_ready:false` permanece vigente.
 
 **Próximo paso estratégico:** FASE 5 — inventariar los otros ZIP, deduplicar, asignar IDs individuales e incorporar por lotes sin perder la arquitectura ni el diseño aprobado. Priorizar clasificación antes de carga indiscriminada.
+
+## Fase 5 — Navegación original
+
+**EN VALIDACIÓN.** ZIP original Atrezzo_Navigation_01_COMPLETO auditado, 3 componentes confirmados y añadidos bajo `ATZ-NAV-001`, `ATZ-NAV-002`, `ATZ-NAV-003`. El registro aumenta de 11 a 14. Cada ID tiene HTML, CSS y JS individual, más controlador compartido nativo, sin GSAP. No se ha rediseñado el catálogo ni se han incorporado fotos sin licencia comercial acreditada. Pendientes pruebas de integración y navegador.

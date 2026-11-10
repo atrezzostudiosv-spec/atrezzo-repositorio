@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const registryPath=join(root,"registry/components.json");
-const allowedId=/^ATZ-(SCR|TRN)-\d{3}$/;
-const allowedFiles=/^components\/(scroll|transiciones|runtime)\/[A-Za-z0-9-]+\.(html|css|js)$/;
+const allowedId=/^ATZ-(SCR|TRN|NAV)-\d{3}$/;
+const allowedFiles=/^components\/(scroll|transiciones|navegacion|runtime)\/[A-Za-z0-9-]+\.(html|css|js)$/;
 
 function requireFile(path){
   if(!allowedFiles.test(path))throw Error("Ruta del registro no permitida: "+path);
@@ -28,7 +28,7 @@ export function resolveComponent(id){
       js:requireFile(e.component_js),runtime:requireFile(e.component_runtime)
     },
     technical_guide:e.technical_guide,preview:e.preview,
-    licensing:"Código Codrops MIT. Revisar GSAP, fotografías y fuentes por separado.",
+    licensing:e.category==="navegacion"?"Código original Atrezzo. Fotografías no autorizadas automáticamente.":"Código Codrops MIT. Revisar GSAP, fotografías y fuentes por separado.",
     instruction:"Usar solo cuatro archivos del ID; auditar proyecto cliente y preservar diseño. No publicar sin QA en cliente."
   };
   if(!selected.files.js.endsWith("/"+id+".js"))throw Error("El JS no coincide con el ID");
@@ -46,7 +46,7 @@ export function createIntegrationPrompt(id){
     "Antes de modificar: AGENTS.md y "+e.technical_guide,
     "Archivos que se deben incorporar exclusivamente:",
     "- "+e.files.html,"- "+e.files.css,"- "+e.files.js,"- "+e.files.runtime,
-    "Dependencias externas: GSAP y ScrollTrigger; comprobar licencia.",
+    e.category==="navegacion"?"Dependencias externas: ninguna.":"Dependencias externas: GSAP y ScrollTrigger; comprobar licencia.",
     "Auditar primero el sitio del cliente, conservar su diseño y contenido aprobado.",
     "No importar otros IDs ni fotos del paquete original.",
     "Validar a 375/768/1024/1440 px, teclado, scroll inverso, reduced-motion y rendimiento.",

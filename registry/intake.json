@@ -1,12 +1,12 @@
 {
   "updated_at": "2026-11-10",
-  "status": "pending",
+  "status": "in_progress",
   "packages": [
     {
       "package_name": "Atrezzo_Navigation_01_COMPLETO.zip",
       "category": "navegacion",
-      "status": "pending_ingestion",
-      "note": "Archivo entregado en chat; sus variantes todavía no están importadas ni verificadas individualmente en GitHub."
+      "status": "ingested_validation",
+      "note": "3 variantes importadas ATZ-NAV-001/002/003, pendientes de validación de navegador y cliente. Fotografías no incorporadas por licencia no acreditada."
     },
     {
       "package_name": "ELEGANT_MASSAGE_01_HERO_ARCHIVOS.zip",

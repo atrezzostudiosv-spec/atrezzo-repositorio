@@ -27,3 +27,7 @@ Para `ATZ-SCR-004`, usar `components/scroll/ATZ-SCR-004.html` + `components/runt
 ## Fase 4 — Identificadores para ChatGPT
 
 Leer `docs/AI-INTEGRATION-WORKFLOW.md`. Resolver el ID exacto en `registry/components.json`. Cuando exista terminal, `node scripts/resolve-component.mjs ATZ-SCR-008` devuelve el contrato JSON y `--prompt` la instrucción de integración. `node scripts/export-component.mjs ATZ-SCR-008 --out ./salida` prepara cuatro archivos aislados sin modificar el código del cliente. Demostración: `examples/ai-ATZ-SCR-008/`. No elegir otro ID, ni publicar una variante `validation` sin QA en cliente.
+
+## Fase 5 — Navegación
+
+Los IDs ATZ-NAV-001, ATZ-NAV-002 y ATZ-NAV-003 proceden de código original Atrezzo y no usan GSAP. Instalar solamente el HTML/CSS/JS del ID solicitado con `components/navegacion/runtime.js`, sin copiar otras variantes. Conservar navegación accesible sin JavaScript, scroll nativo, Escape, flechas o anclas según el patrón. No reutilizar las fotos originales de la demo sin licencia comercial.
