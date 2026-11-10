@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ATREZZO | Biblioteca de Componentes</title>
+  <meta name="description" content="Biblioteca visual de componentes y movimientos web de ATREZZO Studios. Previews individuales e IDs reutilizables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#library">Saltar al catálogo</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Atrezzo — inicio de la biblioteca">
+      <span class="brand-symbol" aria-hidden="true"><span></span></span>
+      <span class="brand-text">ATREZZO <span class="brand-sub">/ COMPONENTS</span></span>
+    </a>
+    <div class="topbar-right">
+      <span class="edition">DESIGN SYSTEM <span class="edition-dot"></span> 2026</span>
+      <a href="../registry/components.json" class="header-link" target="_blank" rel="noopener">Registro técnico <span aria-hidden="true">↗</span></a>
+      <a class="source-link" href="https://github.com/atrezzostudiosv-spec/atrezzo-repositorio" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegación del catálogo">
+      <div class="sidebar-inner">
+        <div class="sidebar-kicker">EXPLORAR BIBLIOTECA</div>
+        <nav id="category-nav" class="side-nav" aria-label="Categorías de componentes">
+          <a class="side-link current" href="#library">Todos los componentes <span>11</span></a>
+          <a class="side-link" href="#library">Scroll & motion</a>
+          <a class="side-link" href="#library">Transiciones</a>
+        </nav>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-kicker">RECURSOS</div>
+        <nav class="side-nav" aria-label="Documentación">
+          <a class="side-link resource" href="../AGENTS.md" target="_blank" rel="noopener">Guía para ChatGPT <span aria-hidden="true">↗</span></a>
+          <a class="side-link resource" href="../registry/components.json" target="_blank" rel="noopener">Registro JSON <span aria-hidden="true">↗</span></a>
+          <a class="side-link resource" href="../ATREZZO-PROJECT-STATUS.md" target="_blank" rel="noopener">Estado del proyecto <span aria-hidden="true">↗</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true"></span>
+          <strong>Un efecto. Un identificador.</strong>
+          <p>Selecciona una variante y comparte su ID para integrarla sin arrastrar toda la colección.</p>
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-glow hero-glow-violet"></div>
+        <div class="hero-glow hero-glow-cyan"></div>
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-line"></span> ATREZZO DESIGN SYSTEM / 001</span>
+          <h1 id="page-title">Every interaction<br><span class="gradient-text">has its place.</span></h1>
+          <p class="hero-description">Nuestra colección de componentes, animaciones y experiencias web. Explora visualmente, identifica el movimiento exacto y llévalo a un nuevo proyecto.</p>
+          <a class="btn-primary" href="#library">Explorar biblioteca <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-topline"><span class="live-point"></span> INTERACTION STUDY <span>001 / MOTION</span></div>
+          <div class="art-stage">
+            <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+            <div class="art-tile art-tile-a"></div><div class="art-tile art-tile-b"></div><div class="art-tile art-tile-c"></div>
+            <div class="art-tile art-tile-d"></div><div class="art-tile art-tile-e"></div>
+            <div class="art-center"><span>ATZ</span><small>DESIGN SYSTEM</small></div>
+          </div>
+          <div class="art-bottomline"><span>01 — COMPOSITION ENGINE</span><span>SCROLL / INTERACTION / UI</span></div>
+        </div>
+      </section>
+      <section class="metrics" aria-label="Estado de la biblioteca">
+        <div class="metric"><span class="metric-number" id="count-total">11</span><span class="metric-label">VARIANTES CATALOGADAS</span></div>
+        <div class="metric"><span class="metric-number" id="count-categories">02</span><span class="metric-label">CATEGORÍAS ACTIVAS</span></div>
+        <div class="metric"><span class="metric-number" id="count-ready">00</span><span class="metric-label">LISTAS PARA CLIENTES</span></div>
+        <div class="metric metric-caption"><span class="metric-kicker"><span class="cyan-dot"></span> FIRST COLLECTION</span><span>On-Scroll Layout Formations</span></div>
+      </section>
+      <section class="catalog" id="library" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div><span class="section-eyebrow">01 / THE COLLECTION</span><h2 id="catalog-title">Biblioteca de componentes<span class="title-period">.</span></h2><p>Una preview por variante. Nunca un ZIP entero como un único movimiento.</p></div>
+          <span class="catalog-counter" id="result-count">11 COMPONENTES</span>
+        </div>
+        <div class="toolbar">
+          <label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar componentes</span><input id="search" type="search" autocomplete="off" placeholder="Buscar por nombre, ID o comportamiento…"></label>
+          <div class="filters" id="filters" aria-label="Filtrar por categoría">
+            <button class="filter active" type="button" data-category="all" aria-pressed="true">Todos</button>
+            <button class="filter" type="button" data-category="scroll" aria-pressed="false">Scroll</button>
+            <button class="filter" type="button" data-category="transiciones" aria-pressed="false">Transiciones</button>
+          </div>
+        </div>
+        <div id="component-grid" class="component-grid" aria-live="polite">
+          <div class="loading-catalog">Cargando registro de componentes…</div>
+        </div>
+        <p id="empty-state" class="empty-state" hidden>No hay resultados para esta búsqueda. Prueba con otro nombre o ID.</p>
+      </section>
+      <section class="use-banner">
+        <div class="banner-icon" aria-hidden="true">{ / }</div>
+        <div><span class="section-eyebrow">AI-READY WORKFLOW</span><h2>Diseñado para trabajar con ChatGPT.</h2><p>Cada ID apunta a una ficha técnica, a una función concreta y a una preview de referencia.</p></div>
+        <button class="btn-outline" id="copy-example" type="button">Copiar instrucción <span aria-hidden="true">↗</span></button>
+      </section>
+      <footer class="footer"><span>© 2026 ATREZZO STUDIOS</span><span>COMPONENT LIBRARY / VISUAL SYSTEM V1.0</span><a href="https://github.com/codrops/OnScrollLayoutFormations" target="_blank" rel="noopener">Referencias acreditadas ↗</a></footer>
+    </main>
+  </div>
+  <div role="status" class="toast" id="toast" aria-live="polite"></div>
+</body>
+</html>
