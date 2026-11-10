@@ -6,7 +6,7 @@ import { resolveComponent, createIntegrationPrompt } from "../scripts/resolve-co
 import { exportComponent } from "../scripts/export-component.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(registry.entries.length,14);
+assert.equal(registry.entries.length,29);
 for(const e of registry.entries){
   const contract=resolveComponent(e.id);
   assert.equal(contract.id,e.id);
@@ -14,7 +14,7 @@ for(const e of registry.entries){
   assert.equal(contract.client_ready,false);
   assert.equal(Object.keys(contract.files).length,4,"Only four functional file references");
   const script=readFileSync(new URL("../"+contract.files.js,import.meta.url),"utf8");
-  assert(script.includes(e.category==="navegacion"?"./runtime.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
+  assert(script.includes(e.category==="navegacion"?"./runtime.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
   for(const other of registry.entries.filter(x=>x.id!==e.id)) {
     assert(!script.includes(other.id+".js"),e.id+" has unwanted dependency on "+other.id);
   }
@@ -52,5 +52,12 @@ try{
   assert(navItems.some(v=>v.endsWith("ATZ-NAV-002.js")));
   assert(!navItems.some(v=>v.endsWith("ATZ-NAV-001.js")));
   assert(!navItems.some(v=>v.endsWith("ATZ-NAV-003.js")));
+  const stickyOut=exportComponent("ATZ-STK-015",join(temp,"sticky"));
+  assert.equal(stickyOut.files.length,5,"Sticky export must contain four module files and its original MIT license");
+  assert(existsSync(join(stickyOut.target,"sources/codrops-sticky-sections/LICENSE")));
+  const stickyItems=readdirSync(stickyOut.target,{recursive:true}).filter(v=>/\\.(html|css|js)$/.test(v));
+  assert.equal(stickyItems.length,4,"Sticky export must not bring other variants");
+  assert(stickyItems.some(v=>v.endsWith("ATZ-STK-015.js")));
+  assert(!stickyItems.some(v=>v.endsWith("ATZ-STK-014.js")));
 }finally{rmSync(temp,{recursive:true,force:true});}
-console.log("PASS FASE 4+5: exact ID resolution for 14, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
+console.log("PASS FASE 4+5: exact ID resolution for 29, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");

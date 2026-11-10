@@ -4,7 +4,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 const root=join(dirname(fileURLToPath(import.meta.url)),"..");
 const registry=JSON.parse(readFileSync(join(root,"registry/components.json"),"utf8"));
-assert.equal(registry.entries.length,14,"First collection plus navigation must contain 14 IDs");
+assert.equal(registry.entries.length,29,"All approved collections must contain 29 IDs");
 assert.equal(new Set(registry.entries.map(e=>e.id)).size,registry.entries.length,"IDs must be unique");
 const css=readFileSync(join(root,"components/runtime/atrezzo-motion.css"),"utf8");
 assert(css.includes(".atz-motion .grid"),"CSS must be isolated");
@@ -29,7 +29,7 @@ let mounts=0,reverts=0,registers=0;
 const timeline=()=>{mounts++;return {to(){return this;},from(){return this;},fromTo(){return this;},set(){return this;}};};
 const gsap={timeline,utils:{random:(a,b)=>(a+b)/2},registerPlugin(){registers++;},context(fn){fn();return {revert(){reverts++;}};}};
 const ScrollTrigger={refresh(){}};
-for(const e of registry.entries.filter(item=>item.category!=="navegacion")){
+for(const e of registry.entries.filter(item=>item.id.startsWith("ATZ-SCR-")||item.id.startsWith("ATZ-TRN-"))){
   const markup=readFileSync(join(root,e.component_html),"utf8");
   assert(markup.includes('data-atz-id="'+e.id+'"'),e.id+" HTML identity mismatch");
   assert(markup.includes("atz-motion"),e.id+" missing scoped CSS root");

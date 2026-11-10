@@ -6,7 +6,8 @@ import { chromium } from "playwright";
 
 const root=process.cwd();
 const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"),"utf8"));
-const motionEntries=registry.entries.filter(e=>e.category!=="navegacion");
+const motionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SCR-")||e.id.startsWith("ATZ-TRN-"));
+const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
 const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
 const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
@@ -16,6 +17,14 @@ const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=u
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
+   if(requestPath==="/__sticky_nojs"){
+     const value=new URL(req.url,"http://127.0.0.1").searchParams.get("id");
+     if(!/^ATZ-STK-0(0[1-9]|1[0-5])$/.test(value||"")){res.writeHead(400);res.end("Invalid ID");return;}
+     const html=await fs.readFile(join(root,"components/scroll/"+value+".html"),"utf8");
+     res.writeHead(200,{"content-type":"text/html; charset=utf-8"});
+     res.end('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/components/runtime/atrezzo-sticky.css"></head><body style="margin:0">'+html+'</body></html>');
+     return;
+   }
    if(requestPath==="/__navigation_nojs"){
      const requested=new URL(req.url,"http://127.0.0.1").searchParams.get("id");
      if(!/^ATZ-NAV-00[123]$/.test(requested||"")){res.writeHead(400);res.end("Invalid ID");return;}
@@ -182,6 +191,68 @@ try {
  assert.equal(await menuKeyboard.evaluate(()=>document.body.classList.contains("atz-nav-scroll-locked")),false,"Scroll lock must clear");
  assert.equal(await toggle.evaluate(el=>document.activeElement===el),true,"Focus should return to trigger");
  await menuKeyboard.close();
+ // Approved Sticky Sections source: all 15 original scroll-driven animations at four viewports.
+ for(const width of [375,768,1024,1440]){
+   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:"no-preference"});
+   await setup(page);
+   for(const entry of stickyEntries){
+     const errors=[];
+     const onError=e=>errors.push(e.message);page.on("pageerror",onError);
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id,{waitUntil:"domcontentloaded"});
+     await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance)||document.querySelector("#demo")?.dataset.motion==="unavailable",{timeout:12000});
+     const info=await page.evaluate(()=>({
+       id:document.querySelector(".atz-sticky")?.getAttribute("data-atz-id"),
+       panels:document.querySelectorAll(".atz-sticky .content--sticky").length,
+       pictures:document.querySelectorAll(".atz-sticky .content__img").length,
+       mode:window.__atrezzoPreviewInstance?.mode,
+       triggers:window.ScrollTrigger?.getAll().length??0,
+       overflow:document.documentElement.scrollWidth>innerWidth+2,
+       visible:(document.querySelector(".atz-sticky")?.getBoundingClientRect().height??0)>innerHeight*3
+     }));
+     assert.equal(info.id,entry.id,"Wrong StickySections variant");
+     assert.equal(info.panels,6,entry.id+" has wrong scene count");
+     assert.equal(info.pictures,6,entry.id+" wrong image count");
+     assert.equal(info.mode,"animated",entry.id+" must be scroll-driven at "+width);
+     assert(info.triggers>=6,entry.id+" missing ScrollTriggers at "+width);
+     assert.equal(info.overflow,false,entry.id+" horizontal overflow at "+width);
+     assert.equal(info.visible,true,entry.id+" scene too short");
+     assert.equal(errors.length,0,entry.id+" JavaScript error: "+errors.join("; "));
+     const first=await page.evaluate(()=>{
+       const t=ScrollTrigger.getAll().find(x=>x.trigger?.classList?.contains("content--sticky"));
+       if(!t)return null;
+       const start=t.start,end=t.end;
+       return {start,end};
+     });
+     assert(first&&Number.isFinite(first.start)&&first.end>first.start,entry.id+" invalid scroll range");
+     await page.evaluate(y=>scrollTo(0,y),(first.start+first.end)/2);
+     await page.waitForTimeout(150);
+     const active=await page.evaluate(()=>ScrollTrigger.getAll().some(x=>x.progress>.05&&x.progress<.95));
+     assert(active,entry.id+" scroll was not controlling animation at "+width);
+     if(width===1440)await page.screenshot({path:join(artifacts,entry.id+".png"),fullPage:false});
+     await page.evaluate(()=>scrollTo(0,0));
+     await page.waitForTimeout(120);
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
+     assert.equal(await page.evaluate(()=>window.ScrollTrigger.getAll().length),0,entry.id+" teardown left ScrollTriggers");
+     results.push({id:entry.id,width,mode:info.mode,test:"sticky-scroll",teardown:"ok"});
+     page.off("pageerror",onError);
+   }
+   await page.close();
+ }
+ // Fallback with no JavaScript, and reduced motion static composition.
+ for(const id of ["ATZ-STK-001","ATZ-STK-007","ATZ-STK-015"]){
+   const staticPage=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
+   await staticPage.goto(origin+"/__sticky_nojs?id="+id,{waitUntil:"load"});
+   assert.equal(await staticPage.locator(".content--sticky").count(),6,id+" no-JS panels");
+   assert.equal(await staticPage.locator(".content__img").count(),6,id+" no-JS images");
+   await staticPage.close();
+ }
+ const staticMotion=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
+ await setup(staticMotion);
+ await staticMotion.goto(origin+"/catalog/preview.html?id=ATZ-STK-006",{waitUntil:"domcontentloaded"});
+ await staticMotion.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
+ assert.equal(await staticMotion.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static","Sticky reduced motion mode");
+ assert.equal(await staticMotion.evaluate(()=>window.ScrollTrigger.getAll().length),0,"Sticky reduced motion should not create triggers");
+ await staticMotion.close();
  const reduced=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
  await setup(reduced);
  await reduced.goto(origin+"/catalog/preview.html?id=ATZ-SCR-005",{waitUntil:"domcontentloaded"});
@@ -192,7 +263,7 @@ try {
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===14);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===29);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
@@ -203,7 +274,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===14);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===29);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -255,8 +326,8 @@ try {
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
- const report={passed:true,checks:results.length,variants:registry.entries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",results};
+ const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,widths:[375,768,1024,1440],
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
