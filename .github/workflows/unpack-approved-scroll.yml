@@ -1,0 +1,43 @@
+name: Unpack approved Atrezzo scroll modules
+on:
+  push:
+    paths:
+      - "sources/approved-imports/native-scroll-03.tar.xz"
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate archive and extract isolated modules
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import tarfile
+          file=Path("sources/approved-imports/native-scroll-03.tar.xz")
+          with tarfile.open(file,"r:xz") as archive:
+              members=archive.getmembers()
+              assert len(members)==8, f"Unexpected file count: {len(members)}"
+              for member in members:
+                  assert member.isfile()
+                  assert member.name.startswith("components/secciones/")
+                  assert ".." not in Path(member.name).parts
+                  assert member.name.endswith((".html",".css",".js"))
+                  assert not Path(member.name).exists(), f"Would overwrite: {member.name}"
+              archive.extractall(filter="data")
+          print("Validated and unpacked 8 per-ID source files")
+          PY
+      - name: Verify JavaScript syntax
+        run: |
+          node --check components/secciones/ats3-engine.js
+          node --check components/secciones/ATZ-SEC-007.js
+          node --check components/secciones/ATZ-SEC-008.js
+          node --check components/secciones/ATZ-SEC-009.js
+      - name: Commit extracted source to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add components/secciones/
+          git diff --cached --quiet || (git commit -m "Unpack approved Atrezzo Scroll Sections 03 originals" && git push origin HEAD:main)
