@@ -1,15 +1,47 @@
-import {ATREZZO_VARIANTS} from '../sources/codrops-layout-formations/js/pattern-engine.js';
-const id=new URLSearchParams(location.search).get('id');const base='../sources/codrops-layout-formations/';const demo=document.querySelector('#demo');
-const images=['photo-1460925895917-afdab827c52f','photo-1472851294608-062f824d29cc','photo-1497366216548-37526070297c','photo-1555396273-367ea4eb4db5','photo-1534438327276-14e5300c3a48','photo-1504384308090-c894fdcc538d'];const fallback=['#352768','#086277','#45367b','#184d69','#552d70','#08556b'];
+const id = new URLSearchParams(location.search).get("id");
+const demo = document.querySelector("#demo");
+const repoRoot = "../";
 function text(selector,value){document.querySelector(selector).textContent=value}
-function instruction(e){return `Integra únicamente el componente ${e.id} (${e.title}), desde https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Abre ${e.technical_guide}, identifica ${e.selector} y ${e.animation_function}, conserva la identidad aprobada del cliente y verifica responsive, teclado, scroll natural, sin JS y prefers-reduced-motion. Estado actual: ${e.status}; no certificado para producción.`}
-function replaceDemoMedia(root){root.querySelectorAll('[style*="background-image"]').forEach((el,i)=>{const img=images[i%images.length];el.style.backgroundImage=`linear-gradient(135deg, transparent, ${fallback[i%fallback.length]}22),url(https://images.unsplash.com/${img}?auto=format&fit=crop&w=600&q=70)`;el.style.backgroundColor=fallback[i%fallback.length];el.style.backgroundPosition='center';el.style.backgroundSize='cover'})}
-async function boot(){try{const [regR,srcR]=await Promise.all([fetch('../registry/components.json'),fetch(base+'index.html')]);if(!regR.ok||!srcR.ok)throw Error('No se ha podido recuperar la fuente');const data=await regR.json(),e=data.entries.find(x=>x.id===id);if(!e){text('#pre-title','Componente no encontrado');throw Error('ID desconocido '+id)}text('#pre-id',e.id+' / '+e.category.toUpperCase());text('#pre-title',e.title);text('#pre-desc',e.description+' · Uso recomendado: '+e.recommended_for+'.');text('#pre-use','Patrón de referencia ('+e.status+'). '+e.avoid_when+'. Antes de migrarlo, revisar dependencias, licencia de imágenes y su comportamiento real en móvil.');document.title=e.id+' — '+e.title+' | ATREZZO';document.querySelector('#pre-guide').href='../'+e.technical_guide;document.querySelector('#copy-instruction').addEventListener('click',async()=>{const msg=instruction(e);try{await navigator.clipboard.writeText(msg);text('#copy-instruction','Instrucción copiada ✓')}catch{text('#copy-instruction','Copia manualmente el ID '+e.id)}});
-const parsed=new DOMParser().parseFromString(await srcR.text(),'text/html');let source=e.variant==='frame'?parsed.querySelector('.frame'):parsed.querySelector(e.selector);if(!source)throw Error('Selector faltante: '+e.selector);let part=e.variant==='frame'?source:source.closest('section.content');if(!part)throw Error('Contenedor de sección no encontrado');const clone=part.cloneNode(true);if(e.variant==='frame'){clone.querySelector('.frame__title').textContent='ATREZZO';const sl=clone.querySelector('.frame__subline');if(sl)sl.textContent='Component Library / Motion Study';const logo=clone.querySelector('.frame__logo');if(logo)logo.textContent='ATZ'}
-replaceDemoMedia(clone);demo.replaceChildren(clone);
-const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;const narrow=matchMedia('(max-width: 700px)').matches;if(reduce||narrow){demo.dataset.motion='off';return}
-if(!window.gsap||!window.ScrollTrigger){demo.dataset.motion='unavailable';console.warn('GSAP unavailable; static composition shown');return}
-gsap.registerPlugin(ScrollTrigger);const fn=ATREZZO_VARIANTS[e.variant];if(!fn)throw Error('Función no identificada: '+e.variant);
-await new Promise(resolve=>{if(document.readyState==='complete')resolve();else window.addEventListener('load',resolve,{once:true})});
-fn();ScrollTrigger.refresh();demo.dataset.motion='on';
-}catch(err){console.error(err);if(!demo.querySelector('.content')&&!demo.querySelector('.frame'))demo.innerHTML='<div class="error">Esta preview no está disponible. Consulta la ficha técnica desde el catálogo.</div>'}}boot();
+function instruction(e) {
+  return `Integra únicamente ${e.id} (${e.title}) del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Usa exclusivamente ${e.component_html}, ${e.component_css}, ${e.component_js} y su dependencia compartida ${e.component_runtime}. No importes los demás efectos ni fotografías no autorizadas. Respeta la identidad de cliente y verifica móvil, scroll inverso, GSAP y prefers-reduced-motion. Estado ${e.status}; no certificado automáticamente para producción.`;
+}
+async function boot() {
+  try {
+    const registryR = await fetch("../registry/components.json");
+    if(!registryR.ok) throw Error("Registro no disponible");
+    const registry = await registryR.json();
+    const e=registry.entries.find(x=>x.id===id);
+    if(!e) { text("#pre-title","Componente no encontrado"); throw Error("ID desconocido: "+id); }
+    text("#pre-id",e.id+" / "+e.category.toUpperCase());
+    text("#pre-title",e.title);
+    text("#pre-desc",e.description+" · Uso recomendado: "+e.recommended_for+".");
+    text("#pre-use","Patrón de referencia en "+e.status+". "+e.avoid_when+". Antes de migrarlo a un cliente hay que revisar comportamiento, dependencias y contenido autorizado.");
+    document.title=e.id+" — "+e.title+" | ATREZZO";
+    document.querySelector("#pre-guide").href="../"+e.technical_guide;
+    const copyButton=document.querySelector("#copy-instruction");
+    copyButton.addEventListener("click",async()=>{
+      const value=instruction(e);
+      try { await navigator.clipboard.writeText(value);copyButton.textContent="Instrucción copiada ✓"; }
+      catch {copyButton.textContent="Copia manualmente el ID "+e.id;}
+    });
+    if(!/^components\/(scroll|transiciones)\/ATZ-(SCR|TRN)-\d{3}\.html$/.test(e.component_html))throw Error("Ruta HTML inválida");
+    if(!/^components\/(scroll|transiciones)\/ATZ-(SCR|TRN)-\d{3}\.js$/.test(e.component_js))throw Error("Ruta JS inválida");
+    const htmlR=await fetch(repoRoot+e.component_html);
+    if(!htmlR.ok) throw Error("Fragmento HTML no disponible para "+id);
+    const parsed=new DOMParser().parseFromString(await htmlR.text(),"text/html");
+    const scene=parsed.body.querySelector(".atz-motion");
+    if(!scene)throw Error("Escena aislada sin clase .atz-motion");
+    demo.replaceChildren(scene);
+    if(document.readyState!=="complete")await new Promise(resolve=>window.addEventListener("load",resolve,{once:true}));
+    // A single variant module is loaded; the other ten are not imported.
+    const {mount}=await import(repoRoot+e.component_js);
+    const instance=mount(demo,{gsap:window.gsap,ScrollTrigger:window.ScrollTrigger});
+    demo.dataset.motion=instance.mode;
+    window.__atrezzoPreviewInstance=instance;
+  } catch(err) {
+    console.error("ATREZZO preview:",err);
+    if(!demo.querySelector(".atz-motion"))demo.innerHTML='<div class="error">Esta preview no está disponible. Consulta su ficha técnica desde el catálogo.</div>';
+    demo.dataset.motion="unavailable";
+  }
+}
+boot();

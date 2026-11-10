@@ -8,7 +8,7 @@ Biblioteca centralizada y catálogo visual de patrones frontend para **ATREZZO W
 - Instrucciones operativas: [AGENTS.md](AGENTS.md).
 - Estado de fases: [ATREZZO-PROJECT-STATUS.md](ATREZZO-PROJECT-STATUS.md).
 
-> La URL de Pages es **prevista, no verificada**. Debe activarse GitHub Pages en **Settings → Pages → Deploy from branch → main / (root)**.
+> GitHub Pages está configurado en **main / (root)**. Su funcionamiento público completo no está verificado automáticamente desde este entorno.
 
 ## Organización
 
@@ -16,12 +16,12 @@ Biblioteca centralizada y catálogo visual de patrones frontend para **ATREZZO W
 catalog/                     Catálogo con filtros y previews individuales
 registry/components.json     Inventario estructurado para ChatGPT
 registry/intake.json         Material recibido pendiente de ingestión
-components/scroll/           Fichas de variantes separadas por ID
+components/scroll/           HTML + JS por cada ID (10 scrolls) + fichas técnicas\ncomponents/transiciones/    HTML + JS por cada ID (1 transición)\ncomponents/runtime/         lifecycle.js (instalación/desmontaje individual) + CSS encapsulado
 sources/codrops-layout-formations/
   index.html                 HTML original bajo licencia MIT
   css/base.css               CSS original
   js/index.js                JS original (fuente de referencia)
-  js/pattern-engine.js       Funciones de movimiento sin inicialización global
+  js/pattern-engine.js       Archivo histórico, no usar en nuevas integraciones
   LICENSE                    Licencia original de código
 AGENTS.md                    Contrato de selección e integración IA
 ```
@@ -42,3 +42,6 @@ AGENTS.md                    Contrato de selección e integración IA
 No copiar el layout completo de una demo ni asumir autorización comercial de fotografías/fuentes. No inventar testimonios, proyectos, equipo o datos del cliente. No forzar scroll, respetar `prefers-reduced-motion`, verificar 375/768/1024/1440 px, navegar por teclado y mantener el contenido visible sin JS.
 
 **Origen del primer paquete:** Codrops, *On-Scroll Layout Formations*, © 2024, licencia MIT para el código. Imágenes de demostración externas: **solo referencia visual**, derechos de uso comercial no certificados.
+
+## Fase 3 — Código independiente por componente
+Los 11 IDs cuentan ahora con archivos `.html` y `.js` propios. Solo comparten `components/runtime/lifecycle.js` y `components/runtime/atrezzo-motion.css`. Cada módulo activa **una** timeline y ofrece `mount(host,{gsap,ScrollTrigger})`, `refresh()` y `destroy()`. Consulta [guía de integración](components/runtime/README.md). Estado: `validation` hasta completar pruebas reales de navegador y en proyectos clientes.
