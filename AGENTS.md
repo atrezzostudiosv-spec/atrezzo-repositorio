@@ -43,3 +43,7 @@ Los IDs `ATZ-SEC-001…009` pertenecen al material original aprobado. Usar **sol
 ## Catalogación por comportamiento y favoritos (2026-11-11)
 
 `discovery_group` identifica la familia funcional (galerias, sticky, narrativa, navegacion, transiciones); `discovery_trigger` diferencia scroll, clic y mixto. Estas etiquetas no alteran el movimiento original. `catalog_qa_status:passed_internal` permite mostrar «Demo probada» por las pruebas internas aprobadas; **no** significa `client_ready:true` (todos permanecen false). Los favoritos de `catalog/favorites-store.js` viven en `localStorage` del navegador, no en la cuenta ni GitHub, y no se sincronizan entre dispositivos. Elegir por ID exacto y ficha técnica, no por orden de tarjetas.
+
+## ATREZZO Motion Library V1 — siete efectos extraídos (2026-11-11)
+
+Los IDs `ATZ-MOT-001…007` provienen de los dos ZIP de la biblioteca Motion V1, cuyos motores JavaScript y CSS eran idénticos. Su código fuente fue autorizado en el proyecto de origen, pero sus medios no lo están automáticamente. Se incorporaron solo siete patrones visuales; no importar el runtime monolítico, menús, modales ni el bloqueador global de scroll, que tenía un defecto de multiinstancia documentado en `ATREZZO-MOTION-LIBRARY-V1-AUDIT.md`. Usar por ID solo HTML, JS y CSS declarados en el registro más `components/motion/runtime.js`. Los movimientos tipográficos, hero, parallax, journey y burned responden a scroll o entrada en pantalla según `discovery_trigger`. **Nunca publicar fotos o vídeo del cliente original.** Todos permanecen `client_ready:false`.

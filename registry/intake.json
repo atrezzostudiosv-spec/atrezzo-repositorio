@@ -135,6 +135,18 @@
         "Lenis demo-only"
       ],
       "note": "No sumar al catálogo: mismas fórmulas de movimiento que el ZIP MAC aprobado ya incorporado; cambia el loader de ES modules y metadatos."
+    },
+    {
+      "package_name": "ATREZZO_MOTION_COMPONENTES_PARA_WEB_V1.zip",
+      "category": "scroll",
+      "status": "ingested_validation",
+      "note": "Mismo motor que el ZIP completo. Siete patrones visuales extraídos como ATZ-MOT-001..007; no se migraron los overlays ni medios del cliente original."
+    },
+    {
+      "package_name": "ATREZZO_MOTION_LIBRARY_V1_COMPLETA.zip",
+      "category": "scroll",
+      "status": "ingested_validation",
+      "note": "Siete patrones originales reutilizables incorporados individualmente como ATZ-MOT-001..007, con CSS aislado, imágenes abstractas, sin overlays globales. Resto de familias se preserva como fuente auditada pendiente de revisión."
     }
   ]
 }

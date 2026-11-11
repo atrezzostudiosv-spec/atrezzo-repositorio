@@ -65,3 +65,7 @@ Quince variaciones adicionales de salida de secciones sticky mediante scroll, re
 ## ATREZZO SCROLL SECTIONS 01–03 — nueve componentes originales
 
 Disponibles `ATZ-SEC-001…009`, extraídos del paquete aprobado `ATREZZO_SCROLL_01_02_03_NUEVE_COMPONENTES_PARA_INTEGRACION.zip`. Familias 01 (Expand, Split, Sequence), 02 (Cinematic Handoff, Horizontal Filmstrip, Depth Chapters) y 03 (Full-Bleed Chapters, Editorial Layered Panels, Split Narrative). HTML/JS por ID y CSS/motor compartidos por familia. **Sin GSAP**: navegación por scroll nativo, reduced motion y fallback. Estado de biblioteca: `validation`; 38 IDs registrados; ver fichas en `components/secciones/`.
+
+## Motion Library V1: siete módulos visuales nativos
+
+Se han separado e incorporado `ATZ-MOT-001..007`: Text Reveal, Text Scrub, Image Parallax, Home Hero Collage, Cinematic Hero Reveal, Editorial Journey y Burned Image. No GSAP, Lenis ni motor global. Grupo de descubrimiento nuevo para **Tipografía** y **Heroes**. Código de autoría ATREZZO; imágenes de demo sustituidas por composiciones CSS abstractas. Mantener el catálogo en `noindex` y no confundir QA de librería con certificación de cliente.
