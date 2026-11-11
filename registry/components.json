@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "updated_at": "2026-11-11",
   "instructions": "AGENTS.md",
   "entries": [
@@ -43,7 +43,21 @@
       "component_js": "components/scroll/ATZ-SCR-001.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "first",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-002",
@@ -85,7 +99,21 @@
       "component_js": "components/scroll/ATZ-SCR-002.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "second",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-003",
@@ -127,7 +155,21 @@
       "component_js": "components/scroll/ATZ-SCR-003.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "third",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-004",
@@ -169,7 +211,21 @@
       "component_js": "components/scroll/ATZ-SCR-004.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "fourth",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-005",
@@ -211,7 +267,21 @@
       "component_js": "components/scroll/ATZ-SCR-005.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "fourth-v2",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-006",
@@ -253,7 +323,21 @@
       "component_js": "components/scroll/ATZ-SCR-006.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "fifth",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-007",
@@ -295,7 +379,21 @@
       "component_js": "components/scroll/ATZ-SCR-007.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "sixth",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-008",
@@ -337,7 +435,21 @@
       "component_js": "components/scroll/ATZ-SCR-008.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "seventh",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-009",
@@ -379,7 +491,21 @@
       "component_js": "components/scroll/ATZ-SCR-009.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "eighth",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-SCR-010",
@@ -421,7 +547,21 @@
       "component_js": "components/scroll/ATZ-SCR-010.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "SCR",
+        "M3",
+        "ninth",
+        "grid",
+        "mosaico",
+        "fotografia",
+        "galeria"
+      ]
     },
     {
       "id": "ATZ-TRN-001",
@@ -463,7 +603,19 @@
       "component_js": "components/transiciones/ATZ-TRN-001.js",
       "validation_notes": "Fase 3: módulo HTML/JS individual y CSS encapsulado. GitHub Actions tests Node + navegador Chromium aprobaron 44 combinaciones a 375/768/1024/1440 px, fallback de movimiento reducido, scroll inverso y aislamiento de múltiples instancias. Pendiente: implementación real en cliente, revisión humana de capturas, rendimiento con imágenes reales y otros motores de navegador.",
       "component_runtime": "components/runtime/lifecycle.js",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42795290385",
+      "discovery_group": "transiciones",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-on-scroll-layout-formations",
+        "TRN",
+        "M2",
+        "frame",
+        "hero",
+        "cabecera"
+      ]
     },
     {
       "id": "ATZ-NAV-001",
@@ -491,7 +643,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "Gradientes provisionales. Fotografías del ZIP original no acreditadas para publicación comercial.",
       "validation_notes": "Validación interna completada: prueba Node de resolución/exportación por ID y Playwright Chromium en 375/768/1024/1440 px. Probados menú Escape, teclado/foco, bloqueo de scroll, chapter rail, dock, fallback sin JavaScript y reducción de movimiento. Pendientes fotos autorizadas, revisión visual final, Safari/iOS e integración real en cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241",
+      "discovery_group": "navegacion",
+      "discovery_trigger": "click",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-navigation-01",
+        "NAV",
+        "M2",
+        "immersive-menu",
+        "menu",
+        "overlay",
+        "teclado"
+      ]
     },
     {
       "id": "ATZ-NAV-002",
@@ -519,7 +684,17 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "Gradientes provisionales. Fotografías del ZIP original no acreditadas para publicación comercial.",
       "validation_notes": "Validación interna completada: prueba Node de resolución/exportación por ID y Playwright Chromium en 375/768/1024/1440 px. Probados menú Escape, teclado/foco, bloqueo de scroll, chapter rail, dock, fallback sin JavaScript y reducción de movimiento. Pendientes fotos autorizadas, revisión visual final, Safari/iOS e integración real en cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241",
+      "discovery_group": "navegacion",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-navigation-01",
+        "NAV",
+        "M1",
+        "chapter-rail"
+      ]
     },
     {
       "id": "ATZ-NAV-003",
@@ -547,7 +722,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "Gradientes provisionales. Fotografías del ZIP original no acreditadas para publicación comercial.",
       "validation_notes": "Validación interna completada: prueba Node de resolución/exportación por ID y Playwright Chromium en 375/768/1024/1440 px. Probados menú Escape, teclado/foco, bloqueo de scroll, chapter rail, dock, fallback sin JavaScript y reducción de movimiento. Pendientes fotos autorizadas, revisión visual final, Safari/iOS e integración real en cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42805730241",
+      "discovery_group": "navegacion",
+      "discovery_trigger": "mixed",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-navigation-01",
+        "NAV",
+        "M2",
+        "context-dock",
+        "dock",
+        "flechas",
+        "clic"
+      ]
     },
     {
       "id": "ATZ-STK-001",
@@ -584,7 +772,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo1",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-002",
@@ -621,7 +822,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo2",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-003",
@@ -658,7 +872,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo3",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-004",
@@ -695,7 +922,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo4",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-005",
@@ -732,7 +972,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo5",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-006",
@@ -769,7 +1022,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M3",
+        "demo6",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-007",
@@ -806,7 +1072,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo7",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-008",
@@ -843,7 +1122,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo8",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-009",
@@ -880,7 +1172,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M3",
+        "demo9",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-010",
@@ -917,7 +1222,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo10",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-011",
@@ -954,7 +1272,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo11",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-012",
@@ -991,7 +1322,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M3",
+        "demo12",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-013",
@@ -1028,7 +1372,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M3",
+        "demo13",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-014",
@@ -1065,7 +1422,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M3",
+        "demo14",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-STK-015",
@@ -1102,7 +1472,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "PNG ilustrativos del ZIP atribuidos por Codrops a Annas Muslimin/Vecteezy: licencia comercial no verificada. SVG abstractos temporales en preview.",
       "validation_notes": "Aprobación estética de origen aportada por el usuario. Validación interna de adaptación completada: 15 módulos, 6 paneles cada uno y 116 combinaciones Chromium en total (29 IDs × 4 tamaños), ScrollTrigger scroll positivo/inverso y limpieza de triggers; no JS y reduced-motion incluidos. CSS claro corregido tras revisión de capturas. Pendiente revisión Safari/iOS y uso real con medios autorizados. El Lenis global del ZIP no se inyecta en proyectos clientes.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42812196669",
+      "discovery_group": "sticky",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "codrops-sticky-sections",
+        "STK",
+        "M2",
+        "demo15",
+        "sticky",
+        "apiladas",
+        "paneles"
+      ]
     },
     {
       "id": "ATZ-SEC-001",
@@ -1132,7 +1515,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-1",
+        "SEC",
+        "M1",
+        "expand",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-002",
@@ -1162,7 +1558,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-1",
+        "SEC",
+        "M1",
+        "split",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-003",
@@ -1192,7 +1601,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-1",
+        "SEC",
+        "M1",
+        "sequence",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-004",
@@ -1222,7 +1644,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-2",
+        "SEC",
+        "M1",
+        "handoff",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-005",
@@ -1252,7 +1687,22 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-2",
+        "SEC",
+        "M1",
+        "film",
+        "capitulos",
+        "editorial",
+        "narrativa",
+        "horizontal",
+        "filmstrip"
+      ]
     },
     {
       "id": "ATZ-SEC-006",
@@ -1282,7 +1732,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-2",
+        "SEC",
+        "M2",
+        "depth",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-007",
@@ -1312,7 +1775,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-3",
+        "SEC",
+        "M1",
+        "full",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-008",
@@ -1342,7 +1818,20 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-3",
+        "SEC",
+        "M2",
+        "panel",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
     },
     {
       "id": "ATZ-SEC-009",
@@ -1372,7 +1861,47 @@
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
       "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
-      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "catalog_qa_status": "passed_internal",
+      "catalog_qa_note": "Pruebas internas automatizadas Node y Chromium a 375/768/1024/1440 px. No equivale a validación de producción.",
+      "discovery_tags": [
+        "atrezzo-scroll-sections-3",
+        "SEC",
+        "M2",
+        "split",
+        "capitulos",
+        "editorial",
+        "narrativa"
+      ]
+    }
+  ],
+  "discovery_groups": [
+    {
+      "id": "galerias",
+      "label": "Galerías y mosaicos",
+      "description": "Imágenes, retículas y composiciones fotográficas"
+    },
+    {
+      "id": "sticky",
+      "label": "Paneles sticky",
+      "description": "Tarjetas y secciones apiladas que se transforman al desplazarte"
+    },
+    {
+      "id": "narrativa",
+      "label": "Narrativa por scroll",
+      "description": "Capítulos, imágenes y escenas editoriales"
+    },
+    {
+      "id": "navegacion",
+      "label": "Navegación",
+      "description": "Menús, índices y controles interactivos"
+    },
+    {
+      "id": "transiciones",
+      "label": "Transiciones",
+      "description": "Transiciones visuales entre escenas"
     }
   ]
 }

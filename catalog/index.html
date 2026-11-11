@@ -21,6 +21,7 @@
     </a>
     <div class="topbar-right">
       <span class="edition">DESIGN SYSTEM <span class="edition-dot"></span> 2026</span>
+      <a href="#favorites" class="header-favorites" aria-label="Ir a mis favoritos">♡ <span>Favoritos</span> <span id="header-favorite-count">0</span></a>
       <a href="../registry/components.json" class="header-link" target="_blank" rel="noopener">Registro técnico <span aria-hidden="true">↗</span></a>
       <a class="source-link" href="https://github.com/atrezzostudiosv-spec/atrezzo-repositorio" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
     </div>
@@ -30,9 +31,8 @@
       <div class="sidebar-inner">
         <div class="sidebar-kicker">EXPLORAR BIBLIOTECA</div>
         <nav id="category-nav" class="side-nav" aria-label="Categorías de componentes">
+          <a class="side-link favorites-link" href="#favorites">♡ Mis favoritos <span id="side-favorite-count">0</span></a>
           <a class="side-link current" href="#library">Todos los componentes <span>38</span></a>
-          <a class="side-link" href="#library">Scroll & motion</a>
-          <a class="side-link" href="#library">Transiciones</a>
         </nav>
         <div class="sidebar-divider"></div>
         <div class="sidebar-kicker">RECURSOS</div>
@@ -72,26 +72,31 @@
       <section class="metrics" aria-label="Estado de la biblioteca">
         <div class="metric"><span class="metric-number" id="count-total">38</span><span class="metric-label">VARIANTES CATALOGADAS</span></div>
         <div class="metric"><span class="metric-number" id="count-categories">03</span><span class="metric-label">CATEGORÍAS ACTIVAS</span></div>
-        <div class="metric"><span class="metric-number" id="count-ready">00</span><span class="metric-label">LISTAS PARA CLIENTES</span></div>
-        <div class="metric metric-caption"><span class="metric-kicker"><span class="cyan-dot"></span> FIRST COLLECTION</span><span>On-Scroll Layout Formations</span></div>
+        <div class="metric"><span class="metric-number" id="count-tested">38</span><span class="metric-label">DEMOS PROBADAS</span></div>
+        <div class="metric metric-caption"><span class="metric-kicker"><span class="cyan-dot"></span> ESTADO DEL CATÁLOGO</span><span>Las demos están probadas; cada web de cliente requiere sus propias pruebas.</span></div>
+      </section>
+<section class="favorites-section" id="favorites" aria-labelledby="favorites-title">
+        <div class="section-heading favorites-heading">
+          <div><span class="section-eyebrow">ACCESO RÁPIDO / TU SELECCIÓN</span><h2 id="favorites-title"><span class="fav-title-heart" aria-hidden="true">♡</span> Mis favoritos<span class="title-period">.</span></h2><p id="favorites-help">Guarda tus movimientos preferidos para encontrarlos aquí. Permanecen en este navegador, no se sincronizan entre dispositivos.</p></div>
+          <div class="favorites-tools"><span class="catalog-counter" id="favorites-count">0 GUARDADOS</span><button id="copy-favorites" type="button" class="copy-action" disabled>Copiar IDs favoritos</button></div>
+        </div>
+        <div id="favorites-grid" class="component-grid favorites-grid"></div>
+        <p class="favorites-empty" id="favorites-empty">Todavía no has guardado movimientos. Pulsa el corazón de cualquier tarjeta para reunir aquí tus favoritos.</p>
       </section>
       <section class="catalog" id="library" aria-labelledby="catalog-title">
         <div class="section-heading">
-          <div><span class="section-eyebrow">01 / THE COLLECTION</span><h2 id="catalog-title">Biblioteca de componentes<span class="title-period">.</span></h2><p>Una preview por variante. Nunca un ZIP entero como un único movimiento.</p></div>
+          <div><span class="section-eyebrow">01 / THE COLLECTION</span><h2 id="catalog-title">Biblioteca de componentes<span class="title-period">.</span></h2><p>Encuentra cada movimiento por su comportamiento, no solamente por el nombre de la colección.</p></div>
           <span class="catalog-counter" id="result-count">38 COMPONENTES</span>
         </div>
         <div class="toolbar">
-          <label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar componentes</span><input id="search" type="search" autocomplete="off" placeholder="Buscar por nombre, ID o comportamiento…"></label>
-          <div class="filters" id="filters" aria-label="Filtrar por categoría">
-            <button class="filter active" type="button" data-category="all" aria-pressed="true">Todos</button>
-            <button class="filter" type="button" data-category="scroll" aria-pressed="false">Scroll</button>
-            <button class="filter" type="button" data-category="transiciones" aria-pressed="false">Transiciones</button>
-          </div>
+          <label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar componentes</span><input id="search" type="search" autocomplete="off" placeholder="Buscar por nombre, ID, fotografía, 3D, tarjetas…"></label>
+          <div class="filters" id="filters" aria-label="Filtrar por tipo de movimiento"></div>
         </div>
+        <p class="qa-note"><strong>Demo probada</strong> = verificada en la biblioteca. <strong>Pendiente en cliente</strong> = aún necesita integración y pruebas antes de publicarse.</p>
         <div id="component-grid" class="component-grid" aria-live="polite">
-          <div class="loading-catalog">Cargando registro de componentes…</div><noscript><p class="loading-catalog">La búsqueda requiere JavaScript. Puedes consultar el <a href="../registry/components.json">registro de los 11 componentes</a> y acceder a sus archivos individuales.</p></noscript>
+          <div class="loading-catalog">Cargando registro de componentes…</div><noscript><p class="loading-catalog">La búsqueda requiere JavaScript. Puedes consultar el <a href="../registry/components.json">registro de los 38 componentes</a> y acceder a sus archivos individuales.</p></noscript>
         </div>
-        <p id="empty-state" class="empty-state" hidden>No hay resultados para esta búsqueda. Prueba con otro nombre o ID.</p>
+        <p id="empty-state" class="empty-state" hidden>No encontramos ese efecto. Prueba otra categoría, palabra o identificador.</p>
       </section>
       <section class="use-banner">
         <div class="banner-icon" aria-hidden="true">{ / }</div>
