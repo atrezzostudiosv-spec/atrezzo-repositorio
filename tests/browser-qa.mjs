@@ -547,9 +547,12 @@ try {
      },null,{timeout:8000});
      await page.waitForTimeout(960); // Wait for 700ms source reveal + max stagger.
      const presented=await page.evaluate(()=>[...document.querySelectorAll(".atz-svc__card")].filter(card=>{
-       const box=card.getBoundingClientRect();return box.bottom>0&&box.top<innerHeight;
-     }).map(card=>({opacity:Number(getComputedStyle(card).opacity),visible:card.getBoundingClientRect().width>0})));
-     assert(presented.length>0&&presented.every(c=>c.opacity>.95&&c.visible),"Visible Bento cards must be painted, not just in DOM");
+       const r=card.getBoundingClientRect();
+       const overlapH=Math.max(0,Math.min(r.bottom,innerHeight)-Math.max(r.top,0));
+       const overlapW=Math.max(0,Math.min(r.right,innerWidth)-Math.max(r.left,0));
+       return overlapH>=Math.min(40,r.height*.08)&&overlapW>=Math.min(32,r.width*.10);
+     }).map(card=>({opacity:Number(getComputedStyle(card).opacity),visible:card.getBoundingClientRect().width>0,className:card.className})));
+     assert(presented.length>0&&presented.every(c=>c.opacity>.95&&c.visible),"Meaningfully visible Bento cards must be painted: "+JSON.stringify({width,presented}));
      await page.screenshot({path:join(artifacts,"ATZ-SVC-001-"+width+".png"),fullPage:false});
    }
    await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
