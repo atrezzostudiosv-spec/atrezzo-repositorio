@@ -6,7 +6,7 @@ import { resolveComponent, createIntegrationPrompt } from "../scripts/resolve-co
 import { exportComponent } from "../scripts/export-component.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(registry.entries.length,48);
+assert.equal(registry.entries.length,49);
 for(const e of registry.entries){
   const contract=resolveComponent(e.id);
   assert.equal(contract.id,e.id);
@@ -14,7 +14,7 @@ for(const e of registry.entries){
   assert.equal(contract.client_ready,false);
   assert.equal(Object.keys(contract.files).length,e.id.startsWith("ATZ-PGT-")?5:4,"Exact ID file contract");
   const script=readFileSync(new URL("../"+contract.files.js,import.meta.url),"utf8");
-  assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
+  assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
   for(const other of registry.entries.filter(x=>x.id!==e.id)) {
     assert(!script.includes(other.id+".js"),e.id+" has unwanted dependency on "+other.id);
   }
@@ -79,7 +79,15 @@ try{
   assert(standalone.some(v=>v.endsWith("ATZ-PGT-003.js")));
   assert(!standalone.some(v=>v.endsWith("ATZ-PGT-001.js")));
   assert(!standalone.some(v=>v.endsWith("ATZ-PGT-002.js")));
+  const bento=exportComponent("ATZ-SVC-001",join(temp,"services"));
+  assert.equal(bento.files.length,9,"Bento must export 4 module files and 5 illustrated placeholders");
+  const bentoFiles=readdirSync(bento.target,{recursive:true});
+  assert.equal(bentoFiles.filter(v=>v.endsWith(".svg")).length,5,"Five SVG placeholders shipped with standalone component");
+  assert(bentoFiles.some(v=>v.endsWith("ATZ-SVC-001.html")));
+  assert(bentoFiles.some(v=>v.endsWith("ATZ-SVC-001.js")));
+  assert(!bentoFiles.some(v=>v.includes("ATZ-PGT-001.js")));
+
 
 
 }finally{rmSync(temp,{recursive:true,force:true});}
-console.log("PASS FASE 4+5: exact ID resolution for 48, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
+console.log("PASS FASE 4+5: exact ID resolution for 49, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
