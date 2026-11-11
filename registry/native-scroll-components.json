@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "count": 9,
+  "provenance": "User-approved originals; all nine per-ID variants preserve native scrolling and progress maths",
+  "variants": [
+    {
+      "id": "ATZ-SEC-001",
+      "family": "ats1",
+      "variant": "expand",
+      "title": "Expand",
+      "source_package": "Atrezzo_Scroll_Sections_01(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-001.html",
+      "js": "components/secciones/ATZ-SEC-001.js",
+      "css": "components/secciones/ats1.css",
+      "runtime": "components/secciones/ats1-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-002",
+      "family": "ats1",
+      "variant": "split",
+      "title": "Split",
+      "source_package": "Atrezzo_Scroll_Sections_01(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-002.html",
+      "js": "components/secciones/ATZ-SEC-002.js",
+      "css": "components/secciones/ats1.css",
+      "runtime": "components/secciones/ats1-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-003",
+      "family": "ats1",
+      "variant": "sequence",
+      "title": "Sequence",
+      "source_package": "Atrezzo_Scroll_Sections_01(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-003.html",
+      "js": "components/secciones/ATZ-SEC-003.js",
+      "css": "components/secciones/ats1.css",
+      "runtime": "components/secciones/ats1-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-004",
+      "family": "ats2",
+      "variant": "handoff",
+      "title": "Cinematic Handoff",
+      "source_package": "Atrezzo_Scroll_Sections_02(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-004.html",
+      "js": "components/secciones/ATZ-SEC-004.js",
+      "css": "components/secciones/ats2.css",
+      "runtime": "components/secciones/ats2-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-005",
+      "family": "ats2",
+      "variant": "film",
+      "title": "Horizontal Filmstrip",
+      "source_package": "Atrezzo_Scroll_Sections_02(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-005.html",
+      "js": "components/secciones/ATZ-SEC-005.js",
+      "css": "components/secciones/ats2.css",
+      "runtime": "components/secciones/ats2-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-006",
+      "family": "ats2",
+      "variant": "depth",
+      "title": "Depth Chapters",
+      "source_package": "Atrezzo_Scroll_Sections_02(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-006.html",
+      "js": "components/secciones/ATZ-SEC-006.js",
+      "css": "components/secciones/ats2.css",
+      "runtime": "components/secciones/ats2-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-007",
+      "family": "ats3",
+      "variant": "full",
+      "title": "Full-Bleed Chapters",
+      "source_package": "Atrezzo_Scroll_Sections_03_COMPLETO(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-007.html",
+      "js": "components/secciones/ATZ-SEC-007.js",
+      "css": "components/secciones/ats3.css",
+      "runtime": "components/secciones/ats3-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-008",
+      "family": "ats3",
+      "variant": "panel",
+      "title": "Editorial Layered Panels",
+      "source_package": "Atrezzo_Scroll_Sections_03_COMPLETO(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-008.html",
+      "js": "components/secciones/ATZ-SEC-008.js",
+      "css": "components/secciones/ats3.css",
+      "runtime": "components/secciones/ats3-engine.js"
+    },
+    {
+      "id": "ATZ-SEC-009",
+      "family": "ats3",
+      "variant": "split",
+      "title": "Split Narrative",
+      "source_package": "Atrezzo_Scroll_Sections_03_COMPLETO(1).zip",
+      "native": true,
+      "html": "components/secciones/ATZ-SEC-009.html",
+      "js": "components/secciones/ATZ-SEC-009.js",
+      "css": "components/secciones/ats3.css",
+      "runtime": "components/secciones/ats3-engine.js"
+    }
+  ]
+}
