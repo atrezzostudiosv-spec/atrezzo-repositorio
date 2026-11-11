@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>ATREZZO / Night — Page Transitions 01</title>
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="../../components/page-transitions/atrezzo-transitions.css">
+<script src="../../components/page-transitions/preflight.js"></script>
+</head>
+<body data-demo-page="night">
+<header class="demo-nav"><a class="demo-logo" href="../index.html">ATREZZO <span>/ NAVIGATION STUDY</span></a>
+<nav aria-label="Navegación multipágina real">
+ <a href="atelier.html" data-atz-link data-atz-effect="veil" >Atelier</a>
+ <a href="material.html" data-atz-link data-atz-effect="split" >Material</a>
+ <a href="night.html" data-atz-link data-atz-effect="iris" aria-current="page">Night</a>
+</nav></header>
+<main class="demo-hero">
+ <div class="demo-copy">
+ <span class="demo-kicker">WHEN LIGHT MEETS SPACE / HTML DOCUMENT</span>
+ <h1>Atmosphere is the final detail.</h1>
+ <p>Tercer documento. El efecto Iris anima una máscara circular antes de regresar a la escena inicial.</p>
+ <div class="demo-actions">
+ <a href="atelier.html" data-atz-link data-atz-effect="iris" id="go-next">IRIS — cerrar círculo</a>
+ <a class="secondary" href="../index.html">Volver al catálogo</a>
+ </div></div>
+ <div class="demo-art"><img src="../../components/page-transitions/assets/scene-night.svg" alt="Ilustración abstracta original ATREZZO de la escena Night" width="1200" height="1000"></div>
+</main>
+<footer class="demo-bottom">ATREZZO TRANSITIONS 01 / VERSIÓN ORIGINAL — Web Animations API • Documentos HTML diferentes • Sin GSAP, sin Lenis. No contiene contenido comercial real.</footer>
+<script src="../../components/page-transitions/runtime.js"></script>
+<script>
+  window.__atrezzoPageEngine = new window.AtrezzoTransitions({
+    defaultEffect:"iris",coverColor:"#151b22",coverMs:480,revealMs:560,
+    intercept:true,showLabel:false
+  });
+</script>
+</body></html>

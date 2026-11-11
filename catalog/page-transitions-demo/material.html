@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>ATREZZO / Material — Page Transitions 01</title>
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="../../components/page-transitions/atrezzo-transitions.css">
+<script src="../../components/page-transitions/preflight.js"></script>
+</head>
+<body data-demo-page="material">
+<header class="demo-nav"><a class="demo-logo" href="../index.html">ATREZZO <span>/ NAVIGATION STUDY</span></a>
+<nav aria-label="Navegación multipágina real">
+ <a href="atelier.html" data-atz-link data-atz-effect="veil" >Atelier</a>
+ <a href="material.html" data-atz-link data-atz-effect="split" aria-current="page">Material</a>
+ <a href="night.html" data-atz-link data-atz-effect="iris" >Night</a>
+</nav></header>
+<main class="demo-hero">
+ <div class="demo-copy">
+ <span class="demo-kicker">THE MATERIAL LANGUAGE / HTML DOCUMENT</span>
+ <h1>Form becomes an expression.</h1>
+ <p>Segundo documento real. El efecto Split anima los paneles laterales antes de cambiar a la escena final.</p>
+ <div class="demo-actions">
+ <a href="night.html" data-atz-link data-atz-effect="split" id="go-next">SPLIT — abrir paneles</a>
+ <a class="secondary" href="../index.html">Volver al catálogo</a>
+ </div></div>
+ <div class="demo-art"><img src="../../components/page-transitions/assets/scene-material.svg" alt="Ilustración abstracta original ATREZZO de la escena Material" width="1200" height="1000"></div>
+</main>
+<footer class="demo-bottom">ATREZZO TRANSITIONS 01 / VERSIÓN ORIGINAL — Web Animations API • Documentos HTML diferentes • Sin GSAP, sin Lenis. No contiene contenido comercial real.</footer>
+<script src="../../components/page-transitions/runtime.js"></script>
+<script>
+  window.__atrezzoPageEngine = new window.AtrezzoTransitions({
+    defaultEffect:"split",coverColor:"#151b22",coverMs:480,revealMs:560,
+    intercept:true,showLabel:false
+  });
+</script>
+</body></html>
