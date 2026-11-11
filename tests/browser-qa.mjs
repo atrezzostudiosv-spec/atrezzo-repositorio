@@ -11,6 +11,7 @@ const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
 const nativeEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SEC-"));
 const motionV1Entries=registry.entries.filter(e=>e.id.startsWith("ATZ-MOT-"));
 const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
+const pageTransitionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-PGT-"));
 const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
  "ATZ-SCR-008":13,"ATZ-SCR-009":36,"ATZ-SCR-010":5,"ATZ-TRN-001":0};
@@ -398,10 +399,89 @@ try {
  assert.equal(await reduced.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static");
  assert.equal(await reduced.evaluate(()=>window.ScrollTrigger.getAll().length),0);
  await reduced.close();
+ // ATREZZO TRANSITIONS 01: three genuine page-change effects via the approved WAAPI engine.
+ for(const width of [375,768,1024,1440]){
+   for(const entry of pageTransitionEntries){
+     const page=await browser.newPage({viewport:{width,height:900},reducedMotion:"no-preference"});
+     await setup(page);
+     const errors=[];page.on("pageerror",error=>errors.push(error.message));
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id,{waitUntil:"domcontentloaded"});
+     await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+     const result=await page.evaluate(()=>{
+       const scene=document.querySelector(".atz-pgt");
+       const engine=window.__atrezzoPreviewInstance;
+       return {id:scene?.dataset.atzId,variant:engine?.variant,mode:engine?.mode,
+         views:scene?.querySelectorAll("[data-pgt-scene]").length,controls:scene?.querySelectorAll("[data-pgt-show]").length,
+         overlays:document.querySelectorAll(".atz-transition-layer").length,
+         overflow:document.documentElement.scrollWidth>innerWidth+2};
+     });
+     assert.equal(result.id,entry.id,"Page-transition preview has wrong ID");
+     assert.equal(result.variant,entry.variant,"Wrapper must preserve original approved transition");
+     assert.equal(result.mode,"interactive","Page transition is click-driven, not scroll scrub");
+     assert.equal(result.views,3);assert.equal(result.controls,3);
+     assert.equal(result.overlays,1,"Exactly one engine overlay should be mounted");
+     assert.equal(result.overflow,false,"Page-transition demo overflow at "+width);
+     await page.locator('[data-pgt-show="1"]').click();
+     await page.waitForFunction(()=>window.__atrezzoPreviewInstance?.currentScene===1&&!window.__atrezzoPreviewInstance.engine.busy,{timeout:12000});
+     assert.equal(await page.locator('[data-pgt-scene="1"]').isVisible(),true);
+     assert.equal(await page.locator('[data-pgt-scene="0"]').isVisible(),false);
+     assert.equal(await page.locator(".atz-transition-layer--active").count(),0,"Cover should leave screen after scene swap");
+     await page.locator('[data-pgt-show="2"]').click();
+     await page.waitForFunction(()=>window.__atrezzoPreviewInstance?.currentScene===2&&!window.__atrezzoPreviewInstance.engine.busy,{timeout:12000});
+     assert.equal(await page.locator('[data-pgt-scene="2"]').isVisible(),true);
+     assert.equal(await page.locator('[data-pgt-show="2"]').getAttribute("aria-pressed"),"true");
+     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
+     assert.deepEqual(errors,[],entry.id+" JS exceptions");
+     if(width===1440)await page.screenshot({path:join(artifacts,entry.id+".png"),fullPage:false});
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
+     assert.equal(await page.locator(".atz-transition-layer").count(),0,"Engine overlay must be removed on destroy");
+     results.push({id:entry.id,width,test:"approved-page-transition-swap",variant:entry.variant,teardown:"ok"});
+     await page.close();
+   }
+ }
+ // First real multi-document Chromium validation of the exact original engine.
+ for(const width of [375,1440]){
+   const page=await browser.newPage({viewport:{width,height:900}});
+   const errors=[];page.on("pageerror",error=>errors.push(error.message));
+   await page.goto(origin+"/catalog/page-transitions-demo/atelier.html",{waitUntil:"domcontentloaded"});
+   await page.waitForFunction(()=>Boolean(window.__atrezzoPageEngine));
+   for(const [slug,expectedEffect] of [["material","veil"],["night","split"],["atelier","iris"]]){
+     const next=page.locator("#go-next");
+     assert.equal(await next.getAttribute("data-atz-effect"),expectedEffect);
+     await next.click();
+     await page.waitForURL("**/catalog/page-transitions-demo/"+slug+".html",{timeout:12000});
+     await page.waitForFunction(()=>Boolean(window.__atrezzoPageEngine)&&!window.__atrezzoPageEngine.busy,{timeout:12000});
+     assert.equal(await page.locator("body").getAttribute("data-demo-page"),slug);
+     assert.equal(await page.locator(".atz-transition-layer--active").count(),0,"Arrival cover must clear");
+     assert.equal(await page.evaluate(()=>document.documentElement.classList.contains("atz-arrival-pending")),false,"Arrival preflight must clear");
+     assert.equal(await page.evaluate(()=>sessionStorage.getItem("atrezzo.transitions.pending.v1")),null,"Arrival session data consumed once");
+     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Multipage overflow");
+   }
+   await page.goBack({waitUntil:"domcontentloaded"});
+   await page.waitForFunction(()=>Boolean(window.__atrezzoPageEngine)&&!window.__atrezzoPageEngine.busy,{timeout:12000});
+   assert.equal(await page.locator("body").getAttribute("data-demo-page"),"night","Browser back navigation must still work");
+   assert.deepEqual(errors,[],"Cross-document JS errors at "+width);
+   await page.close();
+ }
+ const reducedPageTransitions=await browser.newPage({viewport:{width:375,height:812},reducedMotion:"reduce"});
+ await reducedPageTransitions.goto(origin+"/catalog/preview.html?id=ATZ-PGT-003",{waitUntil:"domcontentloaded"});
+ await reducedPageTransitions.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
+ assert.equal(await reducedPageTransitions.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static");
+ await reducedPageTransitions.locator('[data-pgt-show="1"]').click();
+ assert.equal(await reducedPageTransitions.locator('[data-pgt-scene="1"]').isVisible(),true);
+ assert.equal(await reducedPageTransitions.locator(".atz-transition-layer--active").count(),0);
+ await reducedPageTransitions.close();
+ const noJsPageTransitions=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
+ await noJsPageTransitions.goto(origin+"/catalog/page-transitions-demo/atelier.html",{waitUntil:"domcontentloaded"});
+ await noJsPageTransitions.locator("#go-next").click();
+ await noJsPageTransitions.waitForURL("**/catalog/page-transitions-demo/material.html",{timeout:12000});
+ assert.equal(await noJsPageTransitions.locator("body").getAttribute("data-demo-page"),"material","Native HTML navigation must work without JavaScript");
+ await noJsPageTransitions.close();
+
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===45);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===48);
  // Every registered ID must link to its own preview (including new prefixes such as MOT).
  const routes=await index.locator("#component-grid .component-card").evaluateAll(cards=>cards.map(card=>({
    id:card.dataset.id,
@@ -430,7 +510,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===45);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===48);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -439,9 +519,9 @@ try {
    const page=await browser.newPage({viewport:{width,height:900}});
    await setup(page);
    await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
-   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===45,{timeout:12000});
-   assert.equal(await page.locator("[data-category]").count(),8,"All plus seven discovery groups");
-   assert.equal(await page.locator(".collection-heading").count(),7);
+   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===48,{timeout:12000});
+   assert.equal(await page.locator("[data-category]").count(),9,"All plus eight discovery groups");
+   assert.equal(await page.locator(".collection-heading").count(),8);
    assert.equal(await page.locator("#count-tested").textContent(),"45");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Demo probada");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Demo probada");
@@ -461,7 +541,7 @@ try {
    assert.equal(await page.locator("#component-grid .component-card").first().getAttribute("data-id"),"ATZ-SEC-005");
    await page.locator("#search").fill("");
    await page.locator('[data-category="all"]').click();
-   assert.equal(await page.locator("#component-grid .component-card").count(),45);
+   assert.equal(await page.locator("#component-grid .component-card").count(),48);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Catalog overflow at "+width);
    if(width===375||width===1440)await page.screenshot({path:join(artifacts,"favorites-"+width+".png"),fullPage:false});
    await page.goto(origin+"/catalog/preview.html?id=ATZ-SCR-003",{waitUntil:"domcontentloaded"});
@@ -523,8 +603,8 @@ try {
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
- const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,motionV1Variants:motionV1Entries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",favoritesAcrossReload:"passed",discoveryGrouping:"passed",favoritesPreview:"passed",results};
+ const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,motionV1Variants:motionV1Entries.length,pageTransitions:pageTransitionEntries.length,widths:[375,768,1024,1440],
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",favoritesAcrossReload:"passed",discoveryGrouping:"passed",favoritesPreview:"passed",pageTransitionsSwap:"passed",crossDocumentTransitions:"passed",pageTransitionsNoJs:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
