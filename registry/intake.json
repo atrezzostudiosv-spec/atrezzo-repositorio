@@ -17,20 +17,20 @@
     {
       "package_name": "Atrezzo_Scroll_Sections_01.zip",
       "category": "scroll",
-      "status": "ingested_validation",
-      "note": "Tres movimientos nativos originales de Scroll Sections 01 importados bajo ATZ-SEC-001–003; fuentes, CSS, JS y previews presentes. QA automatizada e integración cliente pendientes."
+      "status": "ingested_internal_validated",
+      "note": "Tres patrones Scroll Sections 01 originales integrados (nueve totales). Contrato JS y navegador Chromium aprobados: 152 combinaciones globales de viewport. Falta QA de cliente, cross-browser y fotografía definitiva."
     },
     {
       "package_name": "Atrezzo_Scroll_Sections_02.zip",
       "category": "scroll",
-      "status": "ingested_validation",
-      "note": "Tres movimientos nativos originales de Scroll Sections 02 importados bajo ATZ-SEC-004–006; fuentes, CSS, JS y previews presentes. QA automatizada e integración cliente pendientes."
+      "status": "ingested_internal_validated",
+      "note": "Tres patrones Scroll Sections 02 originales integrados (nueve totales). Contrato JS y navegador Chromium aprobados: 152 combinaciones globales de viewport. Falta QA de cliente, cross-browser y fotografía definitiva."
     },
     {
       "package_name": "Atrezzo_Scroll_Sections_03_COMPLETO.zip",
       "category": "scroll",
-      "status": "ingested_validation",
-      "note": "Tres movimientos nativos originales de Scroll Sections 03 importados bajo ATZ-SEC-007–009; fuentes, CSS, JS y previews presentes. QA automatizada e integración cliente pendientes."
+      "status": "ingested_internal_validated",
+      "note": "Tres patrones Scroll Sections 03 originales integrados (nueve totales). Contrato JS y navegador Chromium aprobados: 152 combinaciones globales de viewport. Falta QA de cliente, cross-browser y fotografía definitiva."
     },
     {
       "package_name": "Atrezzo_Editorial_Gallery_01_COMPLETO.zip",

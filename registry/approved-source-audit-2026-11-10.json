@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "batch": "User-approved source uploads",
   "files": 7,
-  "current_catalog_entries": 29,
+  "current_catalog_entries": 38,
   "new_candidate_patterns": 33,
   "already_registered_duplicate_patterns": 15,
-  "status": "audited_not_integrated",
+  "status": "partially_integrated",
   "packages": [
     {
       "name": "001- Scroll-Transition-main.zip",
@@ -25,7 +25,7 @@
       "name": "Atrezzo_Scroll_Sections_01(1).zip",
       "patterns": 3,
       "kind": "original ATREZZO scroll",
-      "integration": "pending",
+      "integration": "complete_internal_validated",
       "duplicate_upload": true,
       "identical_to": "Atrezzo_Scroll_Sections_01.zip",
       "variants": [
@@ -39,7 +39,7 @@
       "name": "Atrezzo_Scroll_Sections_02(1).zip",
       "patterns": 3,
       "kind": "original ATREZZO scroll",
-      "integration": "pending",
+      "integration": "complete_internal_validated",
       "duplicate_upload": true,
       "identical_to": "Atrezzo_Scroll_Sections_02.zip",
       "variants": [
@@ -53,7 +53,7 @@
       "name": "Atrezzo_Scroll_Sections_03_COMPLETO(1).zip",
       "patterns": 3,
       "kind": "original ATREZZO scroll",
-      "integration": "pending",
+      "integration": "complete_internal_validated",
       "duplicate_upload": true,
       "identical_to": "Atrezzo_Scroll_Sections_03_COMPLETO.zip",
       "variants": [
@@ -99,5 +99,7 @@
       "existing_ids": "ATZ-STK-001…ATZ-STK-015",
       "license": "MIT Codrops; image rights separate"
     }
-  ]
+  ],
+  "integrated_from_batch": 9,
+  "candidates_remaining": 24
 }

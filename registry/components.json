@@ -1131,7 +1131,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-002",
@@ -1160,7 +1161,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-003",
@@ -1189,7 +1191,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-004",
@@ -1218,7 +1221,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-005",
@@ -1247,7 +1251,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-006",
@@ -1276,7 +1281,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-007",
@@ -1305,7 +1311,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-008",
@@ -1334,7 +1341,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     },
     {
       "id": "ATZ-SEC-009",
@@ -1363,7 +1371,8 @@
       "dependencies": [],
       "requires_reduced_motion_fallback": true,
       "photo_usage": "El paquete aprobado usa ilustraciones SVG abstractas de referencia; sustituirlas por fotografías autorizadas antes de uso comercial.",
-      "validation_notes": "Fuentes exactas integradas en GitHub. Falta ejecutar QA completa del catálogo y revisar visualmente los efectos; el componente no está certificado para producción."
+      "validation_notes": "Aprobación del diseño fuente por el usuario; aislamiento por ID y QA interna ejecutada correctamente. 38×4=152 comprobaciones Chromium de biblioteca, incluidas nueve variantes nativas a 375/768/1024/1440, progreso de scroll, navegación inversa, fallback sin JS y control de reduced motion (familia 03). Falta QA Safari/Firefox, review detallada a mitad de scroll e integración con contenido real de cliente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367"
     }
   ]
 }

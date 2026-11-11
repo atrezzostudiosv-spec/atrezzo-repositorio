@@ -1,6 +1,6 @@
 # ATREZZO PROJECT STATUS — Component Library
 
-**Fecha:** 2026-11-10
+**Fecha:** 2026-11-11
 
 | Fase | Estado | Evidencia |
 |---|---|---|
@@ -9,7 +9,7 @@
 | Arquitectura de IDs y contrato de selección IA | VALIDADA INTERNAMENTE | 11 IDs resueltos por coincidencia exacta; exportación segura de una única variante, manifest y guías verificados en CI. Integración en web cliente real pendiente |
 | Dirección visual del catálogo | APROBADA / CERRADA | Usuario aprueba expresamente la estética de la biblioteca el 2026-11-10. Diseño protegido; no rediseñar durante validaciones técnicas |
 | FASE 2 — Catálogo y validación funcional | APROBADA POR EL USUARIO | El usuario aprueba expresamente la validación funcional el 2026-11-10. La aceptación no equivale a auditoría técnica independiente ni a certificación de las 11 variantes |
-| Ingesta de otros ZIP | PENDIENTE | 12 paquetes inventariados; no certificados |
+| Ingesta de otros ZIP | EN CURSO | 38 componentes registrados. Se completó internamente Scroll Sections 01–03 (9 nuevos) y Sticky 15; 24 candidatos pendientes de los siete ZIP auditados |
 | FASE 3 — Aislamiento y validación interna | CERRADA / VALIDADA | 11 HTML + 11 módulos JS únicos, lifecycle compartido, CSS encapsulado. Tests Node y Chromium de GitHub Actions APROBADOS: 44 combinaciones, 4 anchos, scroll inverso, reduced-motion, sin JS, doble instancia y desmontaje. Evidencia en ATREZZO-QA-REPORT.md |
 | Publicación GitHub Pages | DESPLEGADA (CI) | GitHub Actions pages build and deployment completado satisfactoriamente; comprobación pública directa desde este chat restringida; navegador de CI valida una copia local del repositorio |
 
@@ -50,4 +50,6 @@
 
 ## Integración de Scroll Sections aprobados — 2026-11-11
 
-**EN VALIDACIÓN TÉCNICA.** Los nueve componentes `ATZ-SEC-001…009` han sido extraídos de un paquete normalizado que conserva las fórmulas originales, subidos a GitHub y conectados al catálogo, con fichas técnicas y selección por ID exacto. El total registrado pasa de **29 a 38**. No se modificaron los 29 componentes anteriores. Pendientes pruebas completas de navegador y confirmación de fidelidad visual antes del cierre interno; para clientes conservar `client_ready:false`.
+**CERRADO A NIVEL INTERNO; NO CERTIFICADO PARA CLIENTES.** Los nueve componentes `ATZ-SEC-001…009` están en GitHub y en el catálogo; el total pasa de **29 a 38**. El HTML, los estilos de las tres familias y los motores nativos se mantienen; sin GSAP ni Lenis. La batería Node [APROBADA](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517272), Chromium [APROBADA: 152 combinaciones](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994517367), Pages [desplegado](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/42994514820). Nueve capturas desktop de las nuevas variantes inspeccionadas; progreso de scroll verificado automáticamente. Aún faltan fotos reales con licencia, revisión manual de fotogramas intermedios, Safari/Firefox y primera integración cliente. `client_ready:false` permanece.
+
+**Evidencia técnica adicional:** [ATREZZO-NATIVE-SCROLL-9-REPORT.md](ATREZZO-NATIVE-SCROLL-9-REPORT.md). Próximo paquete de siete ZIP ya auditados: 4 Scroll-Transition, 1 intro tipográfica y 19 galerías Flip (24 variantes pendientes). La colección aprobada de 15 Sticky Sections no se vuelve a importar.
