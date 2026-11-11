@@ -166,13 +166,14 @@
     {
       "package_name": "Tri-Lane Roofing — Home / Services Bento 1+4 (project extraction)",
       "category": "servicios",
-      "status": "ingested_pending_ci",
+      "status": "ingested_internal_validated",
       "source_repo": "atrezzostudiosv-spec/tri-lane-roofing",
       "source_path": "index.html",
       "ids": [
         "ATZ-SVC-001"
       ],
-      "note": "Extracción del Home de una demo comercial; reproducir composición aprobada internamente, sin imágenes de Tri-Lane. Cinco SVG de catálogo y 4 archivos funcionales; no importar estilos o JS globales del cliente."
+      "note": "Diseño de la demo Tri-Lane extraído como ATZ-SVC-001, sin imagen comercial ni códigos globales. QA final: 196 escenarios/viewport, render real inspeccionado a 375 y 1440, teclado/swipe, reduced motion, no-JS y exportación. Fuente sigue siendo demo no oficial; integración cliente pendiente.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43026373886"
     }
   ]
 }

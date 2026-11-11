@@ -2354,7 +2354,7 @@
       "level": "M1",
       "uses_pin": false,
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-SVC-001",
       "technical_guide": "components/servicios/ATZ-SVC-001.md",
@@ -2393,8 +2393,9 @@
         "Tri-Lane",
         "conversión"
       ],
-      "catalog_qa_note": "Nuevo extracto de proyecto: código isolado y geometría del Home conservada; pruebas específicas en la biblioteca pendientes.",
-      "validation_notes": "Estructura original de la demo Tri-Lane; no afirmar aprobación por cliente. Pendiente Node/Chromium 375/768/1024/1440, keyboard/mobile snap, sin JS, reduced-motion y revisión visual."
+      "catalog_qa_note": "Node y CI Chromium aprobados: 49 componentes × 4 tamaños = 196 pruebas. Geometría 1+4, swipe/teclado a 375 px, tres breakpoints adicionales, los cinco SVG cargados, destinos internos, reduced motion, no-JS y destroy sin fugas.",
+      "validation_notes": "Integración y QA de biblioteca CERRADAS: responsive 375/768/1024/1440, cards visibles tras reveal, SVG cargados, navegación por teclado del carrusel móvil, reduced motion, no-JS, enlaces y cleanup. Capturas 375 y 1440 revisadas. Pendiente QA en website cliente con datos e imágenes finales; client_ready:false.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43026373886"
     }
   ],
   "discovery_groups": [

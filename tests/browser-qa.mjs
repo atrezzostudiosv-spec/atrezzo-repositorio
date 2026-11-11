@@ -618,7 +618,7 @@ try {
    await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===49,{timeout:12000});
    assert.equal(await page.locator("[data-category]").count(),10,"All plus nine discovery groups");
    assert.equal(await page.locator(".collection-heading").count(),9);
-   assert.equal(await page.locator("#count-tested").textContent(),"48");
+   assert.equal(await page.locator("#count-tested").textContent(),"49");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Demo probada");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Demo probada");
    const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
