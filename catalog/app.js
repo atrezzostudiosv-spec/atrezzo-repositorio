@@ -12,7 +12,7 @@ const toast = document.querySelector("#toast");
 let entries = [], groups = [], filter = "all", favorites = new Set(), toastTimer = 0;
 const groupFallback = {
   galerias:"Galerías y mosaicos", sticky:"Paneles sticky", narrativa:"Narrativa por scroll",
-  navegacion:"Navegación", transiciones:"Transiciones"
+  navegacion:"Navegación", transiciones:"Transiciones por scroll","transiciones-paginas":"Transiciones entre páginas"
 };
 const idRegex = /^ATZ-[A-Z]{3}-\d{3}$/;
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({
@@ -63,7 +63,7 @@ function card(e,i) {
   const title=escapeHTML(e.title);
   const href=previewLink(e);
   const group=escapeHTML(label(e.discovery_group));
-  const trigger=({scroll:"Scroll",click:"Clic / teclado",mixed:"Mixto","scroll-entry":"Entrada en pantalla"})[e.discovery_trigger]||"Interacción";
+  const trigger=({scroll:"Scroll",click:"Clic / teclado",mixed:"Mixto",navigation:"Entre páginas","scroll-entry":"Entrada en pantalla"})[e.discovery_trigger]||"Interacción";
   const qa=e.catalog_qa_status==="passed_internal"?"Demo probada":e.client_ready?"Cliente verificado":"Por revisar";
   const qaTitle=e.catalog_qa_status==="passed_internal"?"Probada en la biblioteca. Pendiente de validación en cada website cliente.":"Estado de pruebas pendiente";
   const saved=favorites.has(e.id);

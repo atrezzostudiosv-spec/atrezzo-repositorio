@@ -69,3 +69,7 @@ Disponibles `ATZ-SEC-001…009`, extraídos del paquete aprobado `ATREZZO_SCROLL
 ## Motion Library V1: siete módulos visuales nativos
 
 Se han separado e incorporado `ATZ-MOT-001..007`: Text Reveal, Text Scrub, Image Parallax, Home Hero Collage, Cinematic Hero Reveal, Editorial Journey y Burned Image. No GSAP, Lenis ni motor global. Grupo de descubrimiento nuevo para **Tipografía** y **Heroes**. Código de autoría ATREZZO; imágenes de demo sustituidas por composiciones CSS abstractas. Mantener el catálogo en `noindex` y no confundir QA de librería con certificación de cliente.
+
+## ATREZZO TRANSITIONS 01: Veil · Split · Iris
+
+Tres transiciones originales **entre páginas HTML**, no scroll: `ATZ-PGT-001`, `ATZ-PGT-002` y `ATZ-PGT-003`. Motor Web Animations API **sin GSAP ni Lenis**, con CSS y preflight originales preservados, 3 SVG ilustrativos originales, escenas independientes y ejemplo de navegación real en `catalog/page-transitions-demo/`. Usar solo el ID seleccionado y el preflight requerido; ver `ATREZZO-TRANSITIONS-01-INGEST-REPORT.md`.

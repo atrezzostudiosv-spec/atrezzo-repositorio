@@ -147,6 +147,20 @@
       "category": "scroll",
       "status": "ingested_internal_validated",
       "note": "Siete patrones originales reutilizables incorporados individualmente como ATZ-MOT-001..007, con CSS aislado, imágenes abstractas, sin overlays globales. Resto de familias se preserva como fuente auditada pendiente de revisión. Validación interna Node y Chromium aprobada (180 combinaciones biblioteca, 28 nuevos casos). Otros patrones del paquete y media de cliente permanecen fuera del catálogo; producción pendiente."
+    },
+    {
+      "package_name": "ATREZZO_TRANSITIONS_01_COMPLETO(1).zip",
+      "original_identical_to": "ATREZZO_TRANSITIONS_01_COMPLETO.zip",
+      "sha256_zip": "986573ee0d0b49c8d1901fe8aebb656a897f99a0d2c14b4a7eee5282ef432bbe",
+      "category": "page-transitions",
+      "candidate_variants": 3,
+      "ids": [
+        "ATZ-PGT-001",
+        "ATZ-PGT-002",
+        "ATZ-PGT-003"
+      ],
+      "status": "ingested_pending_ci",
+      "note": "Un motor original de transición documental, tres variantes Veil/Split/Iris. Original runtime/CSS/preflight y los SVG de demo byte por byte coincidentes con el ZIP; no hay duplicación del ATZ-TRN-001 que es scroll. Requiere prueba real de navegación multipágina, de preview y QA cliente."
     }
   ]
 }
