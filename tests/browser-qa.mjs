@@ -12,6 +12,7 @@ const nativeEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SEC-"));
 const motionV1Entries=registry.entries.filter(e=>e.id.startsWith("ATZ-MOT-"));
 const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
 const pageTransitionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-PGT-"));
+const serviceBentoEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SVC-"));
 const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
  "ATZ-SCR-008":13,"ATZ-SCR-009":36,"ATZ-SCR-010":5,"ATZ-TRN-001":0};
@@ -44,6 +45,11 @@ const server=createServer(async(req,res)=>{
      res.writeHead(200,{"content-type":"text/html; charset=utf-8"});
      res.end('<!doctype html><html lang="es"><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="'+css+'"></head><body style="margin:0">'+html+'</body></html>');
      return;
+   }
+   if(requestPath==="/__service_nojs"){
+     const html=await fs.readFile(join(root,"components/servicios/ATZ-SVC-001.html"),"utf8");
+     res.writeHead(200,{"content-type":"text/html; charset=utf-8"});
+     res.end('<!doctype html><html lang="en"><head><meta name="viewport" content="width=device-width,initial-scale=1"><base href="/components/servicios/"><link rel="stylesheet" href="/components/servicios/ATZ-SVC-001.css"></head><body style="margin:0">'+html+'</body></html>');return;
    }
    if(requestPath==="/__multi"){
      const htmlA=await fs.readFile(join(root,"components/scroll/ATZ-SCR-001.html"),"utf8");
@@ -486,10 +492,80 @@ try {
  assert.equal(await noJsPageTransitions.locator("body").getAttribute("data-demo-page"),"material","Native HTML navigation must work without JavaScript");
  await noJsPageTransitions.close();
 
+ // Extracted Tri-Lane Service Bento: isolate 1+4 cards at four responsive widths.
+ for(const width of [375,768,1024,1440]){
+   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:"no-preference"});
+   await setup(page);
+   const errors=[];page.on("pageerror",err=>errors.push(err.message));
+   await page.goto(origin+"/catalog/preview.html?id=ATZ-SVC-001",{waitUntil:"domcontentloaded"});
+   await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+   const info=await page.evaluate(()=>{
+     const root=document.querySelector(".atz-svc");
+     const rail=root?.querySelector("[data-svc-rail]");
+     const feature=root?.querySelector(".atz-svc__feature");
+     const secondary=root?.querySelector(".atz-svc__secondary");
+     return {id:root?.dataset.atzId,mode:window.__atrezzoPreviewInstance?.mode,
+       cardCount:root?.querySelectorAll("[data-svc-card]").length,
+       secondaryCount:secondary?.querySelectorAll("[data-svc-card]").length,
+       cssGrid:getComputedStyle(rail).display,
+       secondaryDisplay:getComputedStyle(secondary).display,
+       railOverflow:rail?.scrollWidth>rail?.clientWidth+20,
+       docOverflow:document.documentElement.scrollWidth>innerWidth+2,
+       featureWidth:feature?.getBoundingClientRect().width,
+       cardWidth:secondary?.querySelector("[data-svc-card]")?.getBoundingClientRect().width,
+       links:[...root.querySelectorAll(".atz-svc__card a")].every(a=>Boolean(document.querySelector(a.hash))),
+       imgCount:root?.querySelectorAll(".atz-svc__card>img").length};
+   });
+   assert.equal(info.id,"ATZ-SVC-001","Unexpected Bento root");
+   assert.equal(info.mode,"revealed","Entry effects use IntersectionObserver, not scroll hijacking");
+   assert.equal(info.cardCount,5,"Feature + four secondary cards");
+   assert.equal(info.secondaryCount,4);
+   assert.equal(info.imgCount,5);
+   assert.equal(info.docOverflow,false,"Bento must not overflow document at "+width);
+   assert.equal(info.links,true,"Every CTA must have a working demo destination");
+   if(width<768){
+     assert.equal(info.cssGrid,"flex","Mobile must use scroll-snap rail");
+     assert.equal(info.secondaryDisplay,"contents","All five cards share one swipe track");
+     assert.equal(info.railOverflow,true,"Mobile rail must be horizontally scrollable");
+     await page.locator("[data-svc-rail]").focus();
+     await page.keyboard.press("ArrowRight");
+     await page.waitForFunction(()=>document.querySelector("[data-svc-rail]").scrollLeft>30,{timeout:6000});
+   } else {
+     assert.equal(info.cssGrid,"grid","Tablet/desktop should retain architectural grid");
+     assert.equal(info.secondaryDisplay,"grid");
+     if(width>=1024)assert(info.featureWidth>info.cardWidth*1.25,"Desktop featured card must dominate");
+   }
+   await page.waitForFunction(()=>[...document.querySelectorAll(".atz-svc__card>img")].every(img=>img.complete&&img.naturalWidth>0),{timeout:12000});
+   await page.locator(".atz-svc__feature a").click();
+   assert.equal(new URL(page.url()).hash,"#atz-svc-demo-roofing");
+   assert.deepEqual(errors,[],"Bento JS exceptions at "+width);
+   if(width===375||width===1440){
+     await page.locator(".atz-svc__heading").evaluate(el=>el.scrollIntoView({block:"start",behavior:"instant"}));
+     await page.screenshot({path:join(artifacts,"ATZ-SVC-001-"+width+".png"),fullPage:false});
+   }
+   await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
+   assert.equal(await page.locator(".atz-svc").getAttribute("data-svc-mounted"),null,"Bento must clean up state on destroy");
+   results.push({id:"ATZ-SVC-001",width,test:"service-bento-responsive",art:"loaded",interaction:width<768?"keyboard-and-swipe":"bento-grid",teardown:"ok"});
+   await page.close();
+ }
+ const reducedServices=await browser.newPage({viewport:{width:375,height:812},reducedMotion:"reduce"});
+ await setup(reducedServices);
+ await reducedServices.goto(origin+"/catalog/preview.html?id=ATZ-SVC-001",{waitUntil:"domcontentloaded"});
+ await reducedServices.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
+ assert.equal(await reducedServices.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static","Reduced motion disables the staged reveal");
+ assert.equal(await reducedServices.locator(".atz-svc--waiting").count(),0,"No hidden cards for reduced motion");
+ await reducedServices.close();
+ const noJsServices=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
+ await noJsServices.goto(origin+"/__service_nojs",{waitUntil:"domcontentloaded"});
+ assert.equal(await noJsServices.locator(".atz-svc__card").count(),5,"Five service cards visible without JS");
+ assert((await noJsServices.locator(".atz-svc__feature").boundingBox()).height>350,"Feature must be visible without JS");
+ await noJsServices.waitForFunction(()=>[...document.querySelectorAll(".atz-svc__card>img")].every(img=>img.complete&&img.naturalWidth>0),{timeout:12000});
+ await noJsServices.close();
+
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===48);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===49);
  // Every registered ID must link to its own preview (including new prefixes such as MOT).
  const routes=await index.locator("#component-grid .component-card").evaluateAll(cards=>cards.map(card=>({
    id:card.dataset.id,
@@ -518,7 +594,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===48);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===49);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -527,9 +603,9 @@ try {
    const page=await browser.newPage({viewport:{width,height:900}});
    await setup(page);
    await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
-   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===48,{timeout:12000});
-   assert.equal(await page.locator("[data-category]").count(),9,"All plus eight discovery groups");
-   assert.equal(await page.locator(".collection-heading").count(),8);
+   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===49,{timeout:12000});
+   assert.equal(await page.locator("[data-category]").count(),10,"All plus nine discovery groups");
+   assert.equal(await page.locator(".collection-heading").count(),9);
    assert.equal(await page.locator("#count-tested").textContent(),"48");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Demo probada");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Demo probada");
@@ -549,7 +625,7 @@ try {
    assert.equal(await page.locator("#component-grid .component-card").first().getAttribute("data-id"),"ATZ-SEC-005");
    await page.locator("#search").fill("");
    await page.locator('[data-category="all"]').click();
-   assert.equal(await page.locator("#component-grid .component-card").count(),48);
+   assert.equal(await page.locator("#component-grid .component-card").count(),49);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Catalog overflow at "+width);
    if(width===375||width===1440)await page.screenshot({path:join(artifacts,"favorites-"+width+".png"),fullPage:false});
    await page.goto(origin+"/catalog/preview.html?id=ATZ-SCR-003",{waitUntil:"domcontentloaded"});
@@ -611,8 +687,8 @@ try {
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
- const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,motionV1Variants:motionV1Entries.length,pageTransitions:pageTransitionEntries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",favoritesAcrossReload:"passed",discoveryGrouping:"passed",favoritesPreview:"passed",pageTransitionsSwap:"passed",crossDocumentTransitions:"passed",pageTransitionsNoJs:"passed",results};
+ const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,motionV1Variants:motionV1Entries.length,pageTransitions:pageTransitionEntries.length,serviceBento:serviceBentoEntries.length,widths:[375,768,1024,1440],
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",favoritesAcrossReload:"passed",discoveryGrouping:"passed",favoritesPreview:"passed",pageTransitionsSwap:"passed",crossDocumentTransitions:"passed",pageTransitionsNoJs:"passed",serviceBentoResponsive:"passed",serviceBentoReducedMotion:"passed",serviceBentoNoJs:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
