@@ -541,6 +541,15 @@ try {
    assert.deepEqual(errors,[],"Bento JS exceptions at "+width);
    if(width===375||width===1440){
      await page.locator(".atz-svc__heading").evaluate(el=>el.scrollIntoView({block:"start",behavior:"instant"}));
+     await page.waitForFunction(()=>{
+       const cards=[...document.querySelectorAll(".atz-svc__card")];
+       return cards.some(c=>{const r=c.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&getComputedStyle(c).opacity==="1";});
+     },null,{timeout:8000});
+     await page.waitForTimeout(960); // Wait for 700ms source reveal + max stagger.
+     const presented=await page.evaluate(()=>[...document.querySelectorAll(".atz-svc__card")].filter(card=>{
+       const box=card.getBoundingClientRect();return box.bottom>0&&box.top<innerHeight;
+     }).map(card=>({opacity:Number(getComputedStyle(card).opacity),visible:card.getBoundingClientRect().width>0})));
+     assert(presented.length>0&&presented.every(c=>c.opacity>.95&&c.visible),"Visible Bento cards must be painted, not just in DOM");
      await page.screenshot({path:join(artifacts,"ATZ-SVC-001-"+width+".png"),fullPage:false});
    }
    await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());

@@ -92,6 +92,11 @@ async function boot() {
         if(!/^illustration-0[1-5]\.svg$/.test(value))throw Error("Imagen de bento no autorizada: "+value);
         img.src=new URL(value,base).href;
       }
+      // Preview only: match the original Tri-Lane typography. Exported component
+      // intentionally has no external font dependency; client selects its brand font.
+      const font=document.createElement("link");font.rel="stylesheet";
+      font.href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Manrope:wght@400;600;700&display=swap";
+      document.head.appendChild(font);
       const style=document.createElement("link");style.rel="stylesheet";
       style.href=repoRoot+e.component_css;document.head.appendChild(style);
       await new Promise((ok,no)=>{style.addEventListener("load",ok,{once:true});style.addEventListener("error",()=>no(Error("CSS de servicios no disponible")),{once:true});});

@@ -2,7 +2,7 @@
  * Original geometry, mobile horizontal scroll-snap and selective reveal preserved.
  * Scoped component CSS: no global typography, menu, scroll lock or external fonts.
  */
-.atz-svc{--atz-svc-bg:#171b1e;--atz-svc-accent:#f58620;--atz-svc-ink:#fff;--atz-svc-dim:#d1d5db;--atz-svc-rule:#55616a;--atz-svc-title:"Barlow Condensed","Arial Narrow",Impact,sans-serif;background:var(--atz-svc-bg);color:var(--atz-svc-ink);padding:72px 0 84px;isolation:isolate;font-family:Inter,Arial,sans-serif;font-size:16px}
+.atz-svc{--atz-svc-bg:#171b1e;--atz-svc-accent:#f58620;--atz-svc-ink:#fff;--atz-svc-dim:#d1d5db;--atz-svc-rule:#55616a;--atz-svc-title:"Barlow Condensed","Liberation Sans Narrow","Arial Narrow",Impact,sans-serif;background:var(--atz-svc-bg);color:var(--atz-svc-ink);padding:72px 0 84px;isolation:isolate;font-family:Manrope,Inter,Arial,sans-serif;font-size:16px}
 .atz-svc,.atz-svc *, .atz-svc *::before,.atz-svc *::after{box-sizing:border-box}
 .atz-svc h2,.atz-svc h3,.atz-svc p,.atz-svc ul{margin:0}
 .atz-svc__wrap{max-width:1280px;padding:0 24px;margin:auto}

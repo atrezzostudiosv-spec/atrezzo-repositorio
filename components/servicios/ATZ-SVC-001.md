@@ -41,3 +41,5 @@ const instance=mount(document.querySelector("#services-container"));
 ## Pruebas necesarias
 
 Verificar 375 / 768 / 1024 / 1440 px y tamaños intermedios, navegación keyboard, swipe real, botones, enlaces de destino, sin JS, `prefers-reduced-motion`, scroll inverso, observadores, multiinstancia y desmontaje. `client_ready:false` hasta pruebas en cliente con medios definitivos.
+
+**Tipografía visual:** la preview puede cargar opcionalmente Barlow Condensed y Manrope (fuentes web usadas en la demo original) para mantener fidelidad fotográfica/editorial. Los cuatro archivos funcionales exportados **no dependen** de esa URL y usan fuentes de respaldo. En un proyecto cliente se ajusta `--atz-svc-title` a la tipografía aprobada de esa marca, sin importar fuentes ajenas por defecto.
