@@ -346,7 +346,7 @@ try {
      assert.equal(info.id,entry.id,"Wrong Motion V1 preview ID");
      assert.equal(info.mode,"animated",entry.id+" must use native scroll when reduced motion is off");
      assert.equal(info.overflow,false,entry.id+" overflows viewport "+width);
-     assert(info.scrollSize>innerHeight*1.5,"Motion V1 should have enough scroll distance");
+     assert(info.scrollSize>900*1.5,"Motion V1 should have enough scroll distance");
      assert.equal(info.sourcePhotos,0,"Customer source media must not appear in public demo");
      const root=page.locator(".atz-motion-v1");
      if(entry.id==="ATZ-MOT-001"||entry.id==="ATZ-MOT-002"){
