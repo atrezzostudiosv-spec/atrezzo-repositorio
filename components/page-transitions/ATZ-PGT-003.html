@@ -1,0 +1,31 @@
+<!-- ATZ-PGT-003: original ATREZZO Transitions 01 / IRIS. Demo illustrates same-source swap(), not forced scroll. -->
+<section class="atz-pgt" data-atz-id="ATZ-PGT-003" aria-label="ATREZZO Transition Iris">
+ <div class="atz-pgt__intro">
+  <span class="atz-pgt__eyebrow">ATREZZO / PAGE TRANSITIONS — IRIS</span>
+  <h2>Change the scene.<br>Keep the story.</h2>
+  <p>Máscara circular que se expande desde el centro y se contrae al revelar la nueva página. Pulsa los capítulos: la animación utiliza el motor real `swap()`, no un efecto de scroll.</p>
+  <div class="atz-pgt__controls" role="group" aria-label="Cambiar escena para probar la transición">
+   <button type="button" data-pgt-show="0" aria-pressed="true">01 / Atelier</button>
+   <button type="button" data-pgt-show="1" aria-pressed="false">02 / Material</button>
+   <button type="button" data-pgt-show="2" aria-pressed="false">03 / Night</button>
+  </div>
+ </div>
+ <div class="atz-pgt__stage">
+  <article class="atz-pgt__scene" data-pgt-scene="0" aria-label="Escena 1">
+   <div class="atz-pgt__content"><small>01 / Atelier</small><h3>The shape of a beginning.</h3><p>Un espacio abierto para observar los materiales, la arquitectura y la luz.</p></div>
+   <div class="atz-pgt__art"><img src="../components/page-transitions/assets/scene-atelier.svg" width="1200" height="1000" alt="Estudio abstracto de arquitectura de papel y luz, ilustración original" loading="eager"></div>
+  </article>
+  <article class="atz-pgt__scene" data-pgt-scene="1" hidden aria-label="Escena 2">
+   <div class="atz-pgt__content"><small>02 / Material</small><h3>Every surface tells a story.</h3><p>La segunda escena revela un lenguaje visual distinto sin alterar la transición.</p></div>
+   <div class="atz-pgt__art"><img src="../components/page-transitions/assets/scene-material.svg" width="1200" height="1000" alt="Composición abstracta de geometría y materiales, ilustración original" loading="lazy"></div>
+  </article>
+  <article class="atz-pgt__scene" data-pgt-scene="2" hidden aria-label="Escena 3">
+   <div class="atz-pgt__content"><small>03 / Night</small><h3>After light comes atmosphere.</h3><p>Un cierre nocturno con movimiento controlado entre pantallas y escenas.</p></div>
+   <div class="atz-pgt__art"><img src="../components/page-transitions/assets/scene-night.svg" width="1200" height="1000" alt="Ilustración arquitectónica de volúmenes nocturnos, creación original" loading="lazy"></div>
+  </article>
+ </div>
+ <div class="atz-pgt__footer">
+  <p>La preview de arriba cambia contenido dentro de una página. La demostración siguiente utiliza tres documentos HTML reales, con preflight de llegada y navegación normal.</p>
+  <a href="page-transitions-demo/atelier.html" target="_blank" rel="noopener">Probar navegación multipágina ↗</a>
+ </div>
+</section>

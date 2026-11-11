@@ -1,0 +1,35 @@
+/* ATREZZO Page Transitions 01 — catalog showcase ONLY. Do not include on client sites. */
+.atz-pgt{background:#ece9e1;color:#24312e;min-height:100svh;font-family:Inter,system-ui,sans-serif;isolation:isolate;position:relative}
+.atz-pgt *{box-sizing:border-box}
+.atz-pgt button{font:inherit;cursor:pointer}
+.atz-pgt__intro{padding:clamp(35px,6vw,95px) clamp(22px,7vw,110px) 35px}
+.atz-pgt__eyebrow{font-size:10px;font-weight:700;letter-spacing:.22em;color:#6a7770;text-transform:uppercase}
+.atz-pgt h2{font:400 clamp(46px,7vw,104px)/.99 Georgia,serif;letter-spacing:-.075em;max-width:850px;margin:23px 0}
+.atz-pgt__intro p{max-width:590px;font-size:14px;line-height:1.8;color:#566860}
+.atz-pgt__controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.atz-pgt__controls button{font:700 12px/1.3 Inter,system-ui,sans-serif;padding:13px 20px;border:1px solid #95a19b;background:transparent;color:#314844;transition:background .15s,color .15s,border-color .15s}
+.atz-pgt__controls button:hover,.atz-pgt__controls button:focus-visible{background:#183c3c;color:white;outline-offset:3px}
+.atz-pgt__controls button[aria-pressed="true"]{background:#193e40;color:#fff;border-color:#193e40}
+.atz-pgt__stage{min-height:70svh;background:#13272e}
+.atz-pgt__scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);min-height:70svh}
+.atz-pgt__scene[hidden]{display:none!important}
+.atz-pgt__content{display:flex;flex-direction:column;justify-content:center;gap:25px;padding:clamp(30px,6vw,95px);color:#efece3}
+.atz-pgt__content h3{font:400 clamp(34px,5vw,76px)/1 Georgia,serif;letter-spacing:-.06em;margin:0}
+.atz-pgt__content p{color:#c4d2cc;max-width:430px;font-size:13px;line-height:1.8}
+.atz-pgt__content small{color:#90b7ac;letter-spacing:.15em;text-transform:uppercase}
+.atz-pgt__art{position:relative;min-height:400px;overflow:hidden}
+.atz-pgt__art img{display:block;object-fit:cover;height:100%;width:100%;position:absolute;inset:0}
+.atz-pgt__scene:nth-child(2){background:#313b43}.atz-pgt__scene:nth-child(3){background:#242d3a}
+.atz-pgt__footer{padding:35px clamp(22px,7vw,110px) 65px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.atz-pgt__footer p{max-width:600px;color:#566860;font-size:12px;line-height:1.8}
+.atz-pgt__footer a{display:inline-block;padding:12px 19px;border:1px solid #345c5b;color:#234b49;font-size:12px;font-weight:700;text-decoration:none}
+.atz-pgt__footer a:hover{background:#204040;color:white}
+@media(max-width:760px){
+ .atz-pgt__scene{grid-template-columns:1fr}
+ .atz-pgt__content{min-height:40svh}
+ .atz-pgt__art{min-height:45svh}
+ .atz-pgt__intro{padding:45px 23px 30px}
+ .atz-pgt__footer{padding:26px 23px 55px}
+ .atz-pgt__controls button{flex:1 1 100px}
+}
+@media(prefers-reduced-motion:reduce){.atz-pgt__controls button{transition:none!important}}
