@@ -33,7 +33,7 @@ export function resolveComponent(id){
   };
   if(!selected.files.js.endsWith("/"+id+".js"))throw Error("El JS no coincide con el ID");
   if(!selected.files.html.endsWith("/"+id+".html"))throw Error("El HTML no coincide con el ID");
-  if(!selected.files.js.startsWith("components/"+(e.id.startsWith("ATZ-SEC-")?"secciones":selected.category)+"/"))throw Error("Categoría no coincide");
+  if(!selected.files.js.startsWith("components/"+(e.id.startsWith("ATZ-SEC-")?"secciones":e.id.startsWith("ATZ-MOT-")?"motion":selected.category)+"/"))throw Error("Categoría no coincide");
   return selected;
 }
 export function createIntegrationPrompt(id){

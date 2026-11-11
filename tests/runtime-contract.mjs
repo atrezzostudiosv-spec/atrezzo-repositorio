@@ -4,7 +4,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 const root=join(dirname(fileURLToPath(import.meta.url)),"..");
 const registry=JSON.parse(readFileSync(join(root,"registry/components.json"),"utf8"));
-assert.equal(registry.entries.length,38,"Existing and approved native collections must contain 38 IDs");
+assert.equal(registry.entries.length,45,"Seven Motion V1 modules extend library to 45 IDs");
 assert.equal(new Set(registry.entries.map(e=>e.id)).size,registry.entries.length,"IDs must be unique");
 const css=readFileSync(join(root,"components/runtime/atrezzo-motion.css"),"utf8");
 assert(css.includes(".atz-motion .grid"),"CSS must be isolated");

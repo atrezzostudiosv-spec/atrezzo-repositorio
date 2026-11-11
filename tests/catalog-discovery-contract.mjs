@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 const reg=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(reg.entries.length,38);
-assert.deepEqual(reg.discovery_groups.map(g=>g.id),["galerias","sticky","narrativa","navegacion","transiciones"]);
-assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[10,15,9,3,1]);
-assert(reg.entries.every(e=>e.catalog_qa_status==="passed_internal"&&!e.client_ready&&e.status==="validation"));
+assert.equal(reg.entries.length,45);
+assert.deepEqual(reg.discovery_groups.map(g=>g.id),["heroes","tipografia","galerias","sticky","narrativa","navegacion","transiciones"]);
+assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[2,2,12,15,10,3,1]);
+assert(reg.entries.every(e=>["passed_internal","pending"].includes(e.catalog_qa_status)&&!e.client_ready&&e.status==="validation"));
+assert.equal(reg.entries.filter(e=>e.catalog_qa_status==="pending").length,7,"New Motion V1 previews are pending CI");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-001").discovery_trigger,"click");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-003").discovery_trigger,"mixed");
 for(const path of ["catalog/app.js","catalog/preview.js","catalog/styles.css","catalog/index.html"]){

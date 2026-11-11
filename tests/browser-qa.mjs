@@ -9,6 +9,7 @@ const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"
 const motionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SCR-")||e.id.startsWith("ATZ-TRN-"));
 const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
 const nativeEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SEC-"));
+const motionV1Entries=registry.entries.filter(e=>e.id.startsWith("ATZ-MOT-"));
 const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
 const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
@@ -329,6 +330,67 @@ try {
  await nativeReduced.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
  assert.equal(await nativeReduced.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static");
  await nativeReduced.close();
+ // Original ATREZZO Motion V1: seven isolated native motion patterns at four viewports.
+ for(const width of [375,768,1024,1440]){
+   for(const entry of motionV1Entries){
+     const page=await browser.newPage({viewport:{width,height:900}});
+     await setup(page);
+     const errors=[];page.on("pageerror",err=>errors.push(err.message));
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id,{waitUntil:"domcontentloaded"});
+     await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+     const info=await page.evaluate(()=>{
+       const root=document.querySelector(".atz-motion-v1");
+       return {id:root?.dataset.atzId,mode:window.__atrezzoPreviewInstance?.mode,overflow:document.documentElement.scrollWidth>innerWidth+2,
+         scrollSize:document.documentElement.scrollHeight,sourcePhotos:[...root.querySelectorAll("img,video")].length};
+     });
+     assert.equal(info.id,entry.id,"Wrong Motion V1 preview ID");
+     assert.equal(info.mode,"animated",entry.id+" must use native scroll when reduced motion is off");
+     assert.equal(info.overflow,false,entry.id+" overflows viewport "+width);
+     assert(info.scrollSize>innerHeight*1.5,"Motion V1 should have enough scroll distance");
+     assert.equal(info.sourcePhotos,0,"Customer source media must not appear in public demo");
+     const root=page.locator(".atz-motion-v1");
+     if(entry.id==="ATZ-MOT-001"||entry.id==="ATZ-MOT-002"){
+       const words=root.locator(".am-char");assert((await words.count())>10,entry.id+" missing segmented characters");
+       await root.locator(".am-reveal-stage").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(160);
+       if(entry.id==="ATZ-MOT-002")assert.equal(await words.first().evaluate(el=>el.style.opacity!==""),true,"Scrub letters are not bound to scroll");
+     } else if(entry.id==="ATZ-MOT-003"){
+       await root.locator("[data-am-parallax]").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(130);
+       assert.equal(await root.locator("[data-am-parallax] > :first-child").evaluate(el=>el.style.getPropertyValue("--am-y")!==""),true);
+     } else if(entry.id==="ATZ-MOT-004"){
+       assert.equal(await root.locator("[data-am-media-index]").count(),6);
+       await root.locator("[data-am-home-hero]").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(130);
+       assert.equal(await root.locator("[data-am-home-hero]").evaluate(el=>el.style.getPropertyValue("--am-progress")!==""),true);
+     } else if(entry.id==="ATZ-MOT-005"){
+       await root.locator("[data-am-wedding-hero]").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(130);
+       assert.equal(await root.locator("[data-am-wedding-clip]").evaluate(el=>el.style.clipPath.startsWith("inset(")),true);
+     } else if(entry.id==="ATZ-MOT-006"){
+       assert.equal(await root.locator("[data-am-journey-step]").count(),3);
+       assert.equal(await root.locator("[data-am-journey-frame]").count(),3);
+       await root.locator("[data-am-journey-step]").last().evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(130);
+       assert.equal(await root.locator("[data-am-journey-frame].am-active").count(),1);
+     } else {
+       await root.locator("[data-am-burned]").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));
+       await page.waitForTimeout(130);
+       assert.equal(await root.locator("[data-am-burned]").evaluate(el=>el.style.getPropertyValue("--am-contrast")!==""),true);
+     }
+     assert.deepEqual(errors,[],entry.id+" browser errors");
+     if(width===1440)await page.screenshot({path:join(artifacts,entry.id+".png"),fullPage:false});
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
+     results.push({id:entry.id,width,mode:info.mode,test:"motion-v1-native-scroll",teardown:"ok"});
+     await page.close();
+   }
+ }
+ const reducedMotionV1=await browser.newPage({viewport:{width:375,height:812},reducedMotion:"reduce"});
+ await setup(reducedMotionV1);
+ await reducedMotionV1.goto(origin+"/catalog/preview.html?id=ATZ-MOT-004",{waitUntil:"domcontentloaded"});
+ await reducedMotionV1.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
+ assert.equal(await reducedMotionV1.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static");
+ await reducedMotionV1.close();
  const reduced=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
  await setup(reduced);
  await reduced.goto(origin+"/catalog/preview.html?id=ATZ-SCR-005",{waitUntil:"domcontentloaded"});
@@ -339,7 +401,7 @@ try {
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===38);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===45);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
@@ -350,7 +412,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===38);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===45);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -359,9 +421,9 @@ try {
    const page=await browser.newPage({viewport:{width,height:900}});
    await setup(page);
    await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
-   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===38,{timeout:12000});
-   assert.equal(await page.locator("[data-category]").count(),6,"All plus five discovery groups");
-   assert.equal(await page.locator(".collection-heading").count(),5);
+   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===45,{timeout:12000});
+   assert.equal(await page.locator("[data-category]").count(),8,"All plus seven discovery groups");
+   assert.equal(await page.locator(".collection-heading").count(),7);
    assert.equal(await page.locator("#count-tested").textContent(),"38");
    assert.equal(await page.locator("#component-grid .card-status").first().textContent(),"Demo probada");
    const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
@@ -374,13 +436,13 @@ try {
    await page.locator('[data-category="sticky"]').click();
    assert.equal(await page.locator("#component-grid .component-card").count(),15);
    await page.locator('[data-category="narrativa"]').click();
-   assert.equal(await page.locator("#component-grid .component-card").count(),9);
+   assert.equal(await page.locator("#component-grid .component-card").count(),10);
    await page.locator("#search").fill("horizontal");
    assert.equal(await page.locator("#component-grid .component-card").count(),1);
    assert.equal(await page.locator("#component-grid .component-card").first().getAttribute("data-id"),"ATZ-SEC-005");
    await page.locator("#search").fill("");
    await page.locator('[data-category="all"]').click();
-   assert.equal(await page.locator("#component-grid .component-card").count(),38);
+   assert.equal(await page.locator("#component-grid .component-card").count(),45);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Catalog overflow at "+width);
    if(width===375||width===1440)await page.screenshot({path:join(artifacts,"favorites-"+width+".png"),fullPage:false});
    await page.goto(origin+"/catalog/preview.html?id=ATZ-SCR-003",{waitUntil:"domcontentloaded"});
@@ -442,7 +504,7 @@ try {
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
- const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,widths:[375,768,1024,1440],
+ const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,motionV1Variants:motionV1Entries.length,widths:[375,768,1024,1440],
    reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",favoritesAcrossReload:"passed",discoveryGrouping:"passed",favoritesPreview:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
