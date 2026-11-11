@@ -402,12 +402,30 @@ try {
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
  await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===45);
+ // Every registered ID must link to its own preview (including new prefixes such as MOT).
+ const routes=await index.locator("#component-grid .component-card").evaluateAll(cards=>cards.map(card=>({
+   id:card.dataset.id,
+   visual:card.querySelector(".card-visual")?.getAttribute("href"),
+   action:card.querySelector(".card-action")?.getAttribute("href")
+ })));
+ assert.equal(routes.length,registry.entries.length,"Every component has a catalog card");
+ for(const route of routes){
+   const target="preview.html?id="+route.id;
+   assert.equal(route.visual,target,route.id+" visual link must open its own preview");
+   assert.equal(route.action,target,route.id+" action link must open its own preview");
+ }
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
  await index.locator("#search").fill("");
  await index.locator(".filter[data-category='transiciones']").click();
  assert.equal(await index.locator(".component-card").count(),1,"Transition filter");
+ await index.locator(".filter[data-category='all']").click();
+ await index.locator('#component-grid [data-id="ATZ-MOT-006"] .card-action').click();
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006",{timeout:12000});
+ await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+ assert.equal(await index.locator(".atz-motion-v1").getAttribute("data-atz-id"),"ATZ-MOT-006","Editorial Journey card must open the actual motion");
+
  await index.close();
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);

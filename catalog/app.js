@@ -14,7 +14,7 @@ const groupFallback = {
   galerias:"Galerías y mosaicos", sticky:"Paneles sticky", narrativa:"Narrativa por scroll",
   navegacion:"Navegación", transiciones:"Transiciones"
 };
-const idRegex = /^ATZ-(SCR|STK|SEC|NAV|TRN)-\d{3}$/;
+const idRegex = /^ATZ-[A-Z]{3}-\d{3}$/;
 const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({
   "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
 }[char]));

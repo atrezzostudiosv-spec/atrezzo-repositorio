@@ -12,6 +12,13 @@ for(const path of ["catalog/app.js","catalog/preview.js","catalog/styles.css","c
   const text=readFileSync(new URL("../"+path,import.meta.url),"utf8");
   assert(text.includes("favorite"),"Missing favorite in "+path);
 }
+// Registration-to-preview contract: new three-letter families must not silently return to #library.
+const app=readFileSync(new URL("../catalog/app.js",import.meta.url),"utf8");
+assert(app.includes("ATZ-[A-Z]{3}"),"Generic three-letter component prefixes must be supported");
+for(const e of reg.entries){
+ assert.match(e.id,/^ATZ-[A-Z]{3}-\d{3}$/,"Invalid component identifier");
+ assert.equal(e.preview,"catalog/preview.html?id="+e.id,"Every catalog ID must have an individual preview");
+}
 const html=readFileSync(new URL("../catalog/index.html",import.meta.url),"utf8");
 assert(html.includes('id="count-tested"')&&!html.includes("LISTAS PARA CLIENTES"));
 const values=new Map();
