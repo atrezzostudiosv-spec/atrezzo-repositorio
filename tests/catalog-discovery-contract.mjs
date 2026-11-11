@@ -1,13 +1,14 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 const reg=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(reg.entries.length,45);
-assert.deepEqual(reg.discovery_groups.map(g=>g.id),["heroes","tipografia","galerias","sticky","narrativa","navegacion","transiciones"]);
-assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[2,2,12,15,10,3,1]);
-assert(reg.entries.every(e=>e.catalog_qa_status==="passed_internal"&&!e.client_ready&&e.status==="validation"));
-assert.equal(reg.entries.filter(e=>e.catalog_qa_status==="passed_internal").length,45,"All registered previews must have passed internal QA");
+assert.equal(reg.entries.length,48);
+assert.deepEqual(reg.discovery_groups.map(g=>g.id),["heroes","tipografia","galerias","sticky","narrativa","navegacion","transiciones-paginas","transiciones"]);
+assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[2,2,12,15,10,3,3,1]);
+assert(reg.entries.every(e=>["passed_internal","pending"].includes(e.catalog_qa_status)&&!e.client_ready&&e.status==="validation"));
+assert.equal(reg.entries.filter(e=>e.catalog_qa_status==="passed_internal").length,45,"Previous 45 demos remain approved, three new transitions await CI");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-001").discovery_trigger,"click");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-003").discovery_trigger,"mixed");
+assert.equal(reg.entries.find(e=>e.id==="ATZ-PGT-003").discovery_trigger,"navigation");
 for(const path of ["catalog/app.js","catalog/preview.js","catalog/styles.css","catalog/index.html"]){
   const text=readFileSync(new URL("../"+path,import.meta.url),"utf8");
   assert(text.includes("favorite"),"Missing favorite in "+path);
@@ -35,4 +36,4 @@ assert.equal(loadFavorites(valid).size,0);
 globalThis.localStorage={getItem(){throw Error("private")},setItem(){throw Error("private")}};
 assert.equal(loadFavorites(valid).size,0);
 assert.equal(saveFavorites(new Set(["ATZ-STK-006"])),false);
-console.log("PASS discovery: 38 components, 5 groups, demo QA != client ready, local favorites persistence and blocked-storage fallback.");
+console.log("PASS discovery: 48 components, 8 groups, demo QA != client ready, local favorites persistence and blocked-storage fallback.");

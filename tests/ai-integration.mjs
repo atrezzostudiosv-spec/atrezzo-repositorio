@@ -6,15 +6,15 @@ import { resolveComponent, createIntegrationPrompt } from "../scripts/resolve-co
 import { exportComponent } from "../scripts/export-component.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(registry.entries.length,45);
+assert.equal(registry.entries.length,48);
 for(const e of registry.entries){
   const contract=resolveComponent(e.id);
   assert.equal(contract.id,e.id);
   assert.equal(contract.status,"validation");
   assert.equal(contract.client_ready,false);
-  assert.equal(Object.keys(contract.files).length,4,"Only four functional file references");
+  assert.equal(Object.keys(contract.files).length,e.id.startsWith("ATZ-PGT-")?5:4,"Exact ID file contract");
   const script=readFileSync(new URL("../"+contract.files.js,import.meta.url),"utf8");
-  assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
+  assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
   for(const other of registry.entries.filter(x=>x.id!==e.id)) {
     assert(!script.includes(other.id+".js"),e.id+" has unwanted dependency on "+other.id);
   }
@@ -71,6 +71,15 @@ try{
   assert.equal(onlyMotion.length,4,"Original Motion V1 export is isolated");
   assert(onlyMotion.some(v=>v.endsWith("ATZ-MOT-004.js")));
   assert(!onlyMotion.some(v=>v.endsWith("ATZ-MOT-005.js")));
+  const page=exportComponent("ATZ-PGT-003",join(temp,"page-transition"));
+  assert.equal(page.files.length,5,"Page transition export includes original preflight as fifth file");
+  assert(existsSync(join(page.target,"components/page-transitions/preflight.js")));
+  const standalone=readdirSync(page.target,{recursive:true}).filter(v=>/\.(html|css|js)$/.test(v));
+  assert.equal(standalone.length,5,"Exact 5-file export without unrelated variants or Codrops license");
+  assert(standalone.some(v=>v.endsWith("ATZ-PGT-003.js")));
+  assert(!standalone.some(v=>v.endsWith("ATZ-PGT-001.js")));
+  assert(!standalone.some(v=>v.endsWith("ATZ-PGT-002.js")));
+
 
 }finally{rmSync(temp,{recursive:true,force:true});}
-console.log("PASS FASE 4+5: exact ID resolution for 45, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
+console.log("PASS FASE 4+5: exact ID resolution for 48, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");

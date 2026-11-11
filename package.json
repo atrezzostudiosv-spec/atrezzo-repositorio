@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/runtime-contract.mjs && node tests/sticky-contract.mjs && node tests/native-scroll-contract.mjs && node tests/ai-integration.mjs && node tests/catalog-discovery-contract.mjs && node --check catalog/app.js && node --check catalog/preview.js && node --check catalog/favorites-store.js"
+    "test": "node tests/runtime-contract.mjs && node tests/sticky-contract.mjs && node tests/native-scroll-contract.mjs && node tests/ai-integration.mjs && node tests/catalog-discovery-contract.mjs && node --check catalog/app.js && node --check catalog/preview.js && node --check catalog/favorites-store.js && node tests/page-transitions-contract.mjs && node --check components/page-transitions/runtime.js && node --check components/page-transitions/preflight.js && node --check components/page-transitions/ATZ-PGT-001.js && node --check components/page-transitions/ATZ-PGT-002.js && node --check components/page-transitions/ATZ-PGT-003.js"
   }
 }
