@@ -1,3 +1,4 @@
+import {loadFavorites,saveFavorites,listenFavorites} from "./favorites-store.js";
 const id = new URLSearchParams(location.search).get("id");
 const demo = document.querySelector("#demo");
 const repoRoot = "../";
@@ -12,15 +13,32 @@ async function boot() {
     const registry = await registryR.json();
     const e=registry.entries.find(x=>x.id===id);
     if(!e) { text("#pre-title","Componente no encontrado"); throw Error("ID desconocido: "+id); }
-    text("#pre-id",e.id+" / "+e.category.toUpperCase());
+    text("#pre-id",e.id+" / "+(e.discovery_group||e.category).toUpperCase());
     text("#pre-title",e.title);
     text("#pre-desc",e.description+" · Uso recomendado: "+e.recommended_for+".");
-    text("#pre-use","Patrón de referencia en "+e.status+". "+e.avoid_when+". Antes de migrarlo a un cliente hay que revisar comportamiento, dependencias y contenido autorizado.");
+    text("#pre-use",(e.catalog_qa_status==="passed_internal"?"Demo probada dentro de la biblioteca. ":"Referencia técnica pendiente de pruebas. ")+"Pendiente de verificación dentro de un website cliente. "+e.avoid_when+". Revisar dependencias, medios autorizados, rendimiento y accesibilidad antes de publicar.");
     document.title=e.id+" — "+e.title+" | ATREZZO";
     if(e.id.startsWith("ATZ-STK-"))document.querySelector(".pre-footer").textContent="© Codrops / Sticky Sections · Código MIT · Imágenes originales de Vecteezy excluidas; composiciones abstractas de prueba."; 
     if(e.id.startsWith("ATZ-SEC-"))document.querySelector(".pre-footer").textContent="© ATREZZO Studios · Scroll Sections 01–03 · Código nativo sin dependencias externas · Fotografías de cliente no incluidas.";
     if(e.category==="navegacion")document.querySelector(".pre-footer").textContent="© ATREZZO STUDIOS · ATREZZO NAVIGATION 01 · Fotografías originales excluidas por licencia no acreditada.";
     document.querySelector("#pre-guide").href="../"+e.technical_guide;
+    const favButton=document.querySelector("#preview-favorite");
+    let saved=loadFavorites(new Set(registry.entries.map(item=>item.id)));
+    const drawFavorite=()=>{
+      const active=saved.has(e.id);
+      favButton.setAttribute("aria-pressed",String(active));
+      favButton.classList.toggle("is-saved",active);
+      favButton.textContent=active?"♥ Guardado en favoritos":"♡ Guardar favorito";
+      favButton.setAttribute("aria-label",active?"Quitar de favoritos: "+e.title:"Guardar en favoritos: "+e.title);
+    };
+    drawFavorite();
+    favButton.addEventListener("click",()=>{
+      saved.has(e.id)?saved.delete(e.id):saved.add(e.id);
+      const stored=saveFavorites(saved);
+      drawFavorite();
+      if(!stored)favButton.title="Guardado solo durante esta visita: el navegador bloquea el almacenamiento";
+    });
+    listenFavorites(()=>{saved=loadFavorites(new Set(registry.entries.map(item=>item.id)));drawFavorite();});
     const copyButton=document.querySelector("#copy-instruction");
     copyButton.addEventListener("click",async()=>{
       const value=instruction(e);
