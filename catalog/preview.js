@@ -76,6 +76,13 @@ async function boot() {
         await new Promise((resolve,reject)=>{stylesheet.addEventListener("load",resolve,{once:true});stylesheet.addEventListener("error",()=>reject(Error("CSS de transición no disponible: "+name)),{once:true});});
       }
     }
+    if(e.id.startsWith("ATZ-PGT-")){
+      for(const img of scene.querySelectorAll("img[src]")){
+        const asset=img.getAttribute("src")||"";
+        if(!/^\.\.\/components\/page-transitions\/assets\/scene-(atelier|material|night)\.svg$/.test(asset))throw Error("Imagen de preview no autorizada: "+asset);
+        img.src=new URL(asset,window.location.href).href;
+      }
+    }
     demo.replaceChildren(scene);
     if(document.readyState!=="complete")await new Promise(resolve=>window.addEventListener("load",resolve,{once:true}));
     // A single variant module is loaded; the other ten are not imported.

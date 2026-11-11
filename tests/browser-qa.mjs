@@ -16,7 +16,7 @@ const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
  "ATZ-SCR-008":13,"ATZ-SCR-009":36,"ATZ-SCR-010":5,"ATZ-TRN-001":0};
 const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=utf-8",
- ".css":"text/css; charset=utf-8",".json":"application/json; charset=utf-8"};
+ ".css":"text/css; charset=utf-8",".svg":"image/svg+xml",".json":"application/json; charset=utf-8"};
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
@@ -420,6 +420,9 @@ try {
      assert.equal(result.mode,"interactive","Page transition is click-driven, not scroll scrub");
      assert.equal(result.views,3);assert.equal(result.controls,3);
      assert.equal(result.overlays,1,"Exactly one engine overlay should be mounted");
+     await page.waitForFunction(()=>[...document.querySelectorAll(".atz-pgt__art img")].every(img=>img.complete&&img.naturalWidth>0),{timeout:12000});
+     assert.equal(await page.locator(".atz-pgt__art img").count(),3,"Approved SVGs must be present");
+
      assert.equal(result.overflow,false,"Page-transition demo overflow at "+width);
      await page.locator('[data-pgt-show="1"]').click();
      await page.waitForFunction(()=>window.__atrezzoPreviewInstance?.currentScene===1&&!window.__atrezzoPreviewInstance.engine.busy,{timeout:12000});
@@ -452,6 +455,9 @@ try {
      await page.waitForURL("**/catalog/page-transitions-demo/"+slug+".html",{timeout:12000});
      await page.waitForFunction(()=>Boolean(window.__atrezzoPageEngine)&&!window.__atrezzoPageEngine.busy,{timeout:12000});
      assert.equal(await page.locator("body").getAttribute("data-demo-page"),slug);
+     await page.locator(".demo-art img").evaluate(async img=>{if(!img.complete)await new Promise((resolve,reject)=>{img.addEventListener("load",resolve,{once:true});img.addEventListener("error",reject,{once:true});});});
+     assert.equal(await page.locator(".demo-art img").evaluate(img=>img.naturalWidth>0),true,"Approved SVG must load in cross-document demo");
+
      assert.equal(await page.locator(".atz-transition-layer--active").count(),0,"Arrival cover must clear");
      assert.equal(await page.evaluate(()=>document.documentElement.classList.contains("atz-arrival-pending")),false,"Arrival preflight must clear");
      assert.equal(await page.evaluate(()=>sessionStorage.getItem("atrezzo.transitions.pending.v1")),null,"Arrival session data consumed once");
