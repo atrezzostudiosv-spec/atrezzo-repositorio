@@ -139,14 +139,14 @@
     {
       "package_name": "ATREZZO_MOTION_COMPONENTES_PARA_WEB_V1.zip",
       "category": "scroll",
-      "status": "ingested_validation",
-      "note": "Mismo motor que el ZIP completo. Siete patrones visuales extraídos como ATZ-MOT-001..007; no se migraron los overlays ni medios del cliente original."
+      "status": "ingested_internal_validated",
+      "note": "Mismo motor que el ZIP completo. Siete patrones visuales extraídos como ATZ-MOT-001..007; no se migraron los overlays ni medios del cliente original. Validación interna Node y Chromium aprobada (180 combinaciones biblioteca, 28 nuevos casos). Otros patrones del paquete y media de cliente permanecen fuera del catálogo; producción pendiente."
     },
     {
       "package_name": "ATREZZO_MOTION_LIBRARY_V1_COMPLETA.zip",
       "category": "scroll",
-      "status": "ingested_validation",
-      "note": "Siete patrones originales reutilizables incorporados individualmente como ATZ-MOT-001..007, con CSS aislado, imágenes abstractas, sin overlays globales. Resto de familias se preserva como fuente auditada pendiente de revisión."
+      "status": "ingested_internal_validated",
+      "note": "Siete patrones originales reutilizables incorporados individualmente como ATZ-MOT-001..007, con CSS aislado, imágenes abstractas, sin overlays globales. Resto de familias se preserva como fuente auditada pendiente de revisión. Validación interna Node y Chromium aprobada (180 combinaciones biblioteca, 28 nuevos casos). Otros patrones del paquete y media de cliente permanecen fuera del catálogo; producción pendiente."
     }
   ]
 }
