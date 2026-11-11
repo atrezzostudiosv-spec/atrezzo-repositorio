@@ -2203,7 +2203,7 @@
       "uses_pin": false,
       "uses_sticky": false,
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-PGT-001",
       "technical_guide": "components/page-transitions/ATZ-PGT-001.md",
@@ -2230,8 +2230,9 @@
         "cambio de pagina"
       ],
       "photo_usage": "Tres SVG abstractos originales del paquete entregado por el usuario. No hay imágenes de clientes.",
-      "validation_notes": "Motor JS/CSS/preflight y SVG originales copiados byte por byte del ZIP. Previews swap y ejemplo multipágina preparados; pendiente pruebas Node/Chromium, mobile y bfcache antes de pasar a Demo probada.",
-      "catalog_qa_note": "No probado todavía como variante registrada. No corresponde a un efecto de scroll; demo se activa pulsando un botón."
+      "validation_notes": "QA interna aprobada: 48 IDs x 4 anchos = 192 comprobaciones; navegación multipágina real, historial Atrás, imágenes SVG verificadas, reduced-motion y sin JS. Prueba de cliente, Safari/Firefox y CSP siguen pendientes.",
+      "catalog_qa_note": "Node y Chromium aprobados: previews a 375/768/1024/1440, tres escenas reales mediante swap(), navegación entre documentos, historial, reduced motion, sin JS y comprobación de los tres SVG.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43011362031"
     },
     {
       "id": "ATZ-PGT-002",
@@ -2252,7 +2253,7 @@
       "uses_pin": false,
       "uses_sticky": false,
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-PGT-002",
       "technical_guide": "components/page-transitions/ATZ-PGT-002.md",
@@ -2279,8 +2280,9 @@
         "cambio de pagina"
       ],
       "photo_usage": "Tres SVG abstractos originales del paquete entregado por el usuario. No hay imágenes de clientes.",
-      "validation_notes": "Motor JS/CSS/preflight y SVG originales copiados byte por byte del ZIP. Previews swap y ejemplo multipágina preparados; pendiente pruebas Node/Chromium, mobile y bfcache antes de pasar a Demo probada.",
-      "catalog_qa_note": "No probado todavía como variante registrada. No corresponde a un efecto de scroll; demo se activa pulsando un botón."
+      "validation_notes": "QA interna aprobada: 48 IDs x 4 anchos = 192 comprobaciones; navegación multipágina real, historial Atrás, imágenes SVG verificadas, reduced-motion y sin JS. Prueba de cliente, Safari/Firefox y CSP siguen pendientes.",
+      "catalog_qa_note": "Node y Chromium aprobados: previews a 375/768/1024/1440, tres escenas reales mediante swap(), navegación entre documentos, historial, reduced motion, sin JS y comprobación de los tres SVG.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43011362031"
     },
     {
       "id": "ATZ-PGT-003",
@@ -2301,7 +2303,7 @@
       "uses_pin": false,
       "uses_sticky": false,
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-PGT-003",
       "technical_guide": "components/page-transitions/ATZ-PGT-003.md",
@@ -2328,8 +2330,9 @@
         "cambio de pagina"
       ],
       "photo_usage": "Tres SVG abstractos originales del paquete entregado por el usuario. No hay imágenes de clientes.",
-      "validation_notes": "Motor JS/CSS/preflight y SVG originales copiados byte por byte del ZIP. Previews swap y ejemplo multipágina preparados; pendiente pruebas Node/Chromium, mobile y bfcache antes de pasar a Demo probada.",
-      "catalog_qa_note": "No probado todavía como variante registrada. No corresponde a un efecto de scroll; demo se activa pulsando un botón."
+      "validation_notes": "QA interna aprobada: 48 IDs x 4 anchos = 192 comprobaciones; navegación multipágina real, historial Atrás, imágenes SVG verificadas, reduced-motion y sin JS. Prueba de cliente, Safari/Firefox y CSP siguen pendientes.",
+      "catalog_qa_note": "Node y Chromium aprobados: previews a 375/768/1024/1440, tres escenas reales mediante swap(), navegación entre documentos, historial, reduced motion, sin JS y comprobación de los tres SVG.",
+      "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43011362031"
     }
   ],
   "discovery_groups": [

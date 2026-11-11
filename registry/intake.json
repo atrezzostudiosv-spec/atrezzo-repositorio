@@ -159,8 +159,9 @@
         "ATZ-PGT-002",
         "ATZ-PGT-003"
       ],
-      "status": "ingested_pending_ci",
-      "note": "Un motor original de transición documental, tres variantes Veil/Split/Iris. Original runtime/CSS/preflight y los SVG de demo byte por byte coincidentes con el ZIP; no hay duplicación del ATZ-TRN-001 que es scroll. Requiere prueba real de navegación multipágina, de preview y QA cliente."
+      "status": "ingested_internal_validated",
+      "note": "Tres transiciones exactas Veil/Split/Iris con código original intacto y previews probadas. No se duplica paquete previo idéntico. 192 casos de movimiento/viewport y navegación real multipágina aprobada. Revisión Safari/cliente pendiente.",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43011362031"
     }
   ]
 }

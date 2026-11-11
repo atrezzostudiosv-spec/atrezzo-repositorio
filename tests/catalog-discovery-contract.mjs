@@ -4,8 +4,8 @@ const reg=JSON.parse(readFileSync(new URL("../registry/components.json",import.m
 assert.equal(reg.entries.length,48);
 assert.deepEqual(reg.discovery_groups.map(g=>g.id),["heroes","tipografia","galerias","sticky","narrativa","navegacion","transiciones-paginas","transiciones"]);
 assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[2,2,12,15,10,3,3,1]);
-assert(reg.entries.every(e=>["passed_internal","pending"].includes(e.catalog_qa_status)&&!e.client_ready&&e.status==="validation"));
-assert.equal(reg.entries.filter(e=>e.catalog_qa_status==="passed_internal").length,45,"Previous 45 demos remain approved, three new transitions await CI");
+assert(reg.entries.every(e=>e.catalog_qa_status==="passed_internal"&&!e.client_ready&&e.status==="validation"));
+assert.equal(reg.entries.filter(e=>e.catalog_qa_status==="passed_internal").length,48,"All 48 demos passed internal QA");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-001").discovery_trigger,"click");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-003").discovery_trigger,"mixed");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-PGT-003").discovery_trigger,"navigation");

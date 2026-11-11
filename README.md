@@ -73,3 +73,5 @@ Se han separado e incorporado `ATZ-MOT-001..007`: Text Reveal, Text Scrub, Image
 ## ATREZZO TRANSITIONS 01: Veil · Split · Iris
 
 Tres transiciones originales **entre páginas HTML**, no scroll: `ATZ-PGT-001`, `ATZ-PGT-002` y `ATZ-PGT-003`. Motor Web Animations API **sin GSAP ni Lenis**, con CSS y preflight originales preservados, 3 SVG ilustrativos originales, escenas independientes y ejemplo de navegación real en `catalog/page-transitions-demo/`. Usar solo el ID seleccionado y el preflight requerido; ver `ATREZZO-TRANSITIONS-01-INGEST-REPORT.md`.
+
+**ATREZZO Transitions 01 probado internamente:** biblioteca de 48 componentes, 8 categorías; páginas reales de demostración en catalog/page-transitions-demo/atelier.html. Informe específico: ATREZZO-TRANSITIONS-01-INGEST-REPORT.md.
