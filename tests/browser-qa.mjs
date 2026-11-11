@@ -425,7 +425,8 @@ try {
    assert.equal(await page.locator("[data-category]").count(),8,"All plus seven discovery groups");
    assert.equal(await page.locator(".collection-heading").count(),7);
    assert.equal(await page.locator("#count-tested").textContent(),"38");
-   assert.equal(await page.locator("#component-grid .card-status").first().textContent(),"Demo probada");
+   assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Por revisar");
+   assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Demo probada");
    const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
    await favorite.click();
    assert.equal(await page.locator("#favorites-grid .component-card").count(),1);
