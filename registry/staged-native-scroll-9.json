@@ -1,6 +1,6 @@
 {
   "date": "2026-11-10",
-  "state": "staged_offline_not_published_in_catalog",
+  "state": "source_integrated_in_registry_pending_browser_validation",
   "package": "ATREZZO_SCROLL_01_02_03_NUEVE_COMPONENTES_PARA_INTEGRACION.zip",
   "sha256": "cb2cfb625eea913647e64d9361daad484e4baa78de783323faf93a12490841a0",
   "component_total": 9,
@@ -61,10 +61,9 @@
     "Structural checks of nine HTML scopes and image placeholders passed"
   ],
   "pending": [
-    "Transfer normalized source files into GitHub",
-    "Update 29 component registry only after source files exist",
-    "Add CSS to preview loader and exercise all nine in browser QA",
-    "Confirm visual fidelity with source screenshots",
+    "Verify preview loading and scroll changes at 375/768/1024/1440",
+    "Verify no-JS and reduced motion",
+    "Review visuals manually",
     "Use authorized media in client projects"
   ],
   "notes": "The normalized ZIP exists as a conversation artifact. A sandbox link must not be treated as a durable GitHub URL. All nine IDs are RESERVED, not ACTIVE. Images in ZIP are abstract reference data URIs, not licensed commercial photographs."

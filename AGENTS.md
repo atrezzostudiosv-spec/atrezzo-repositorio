@@ -35,3 +35,7 @@ Los IDs ATZ-NAV-001, ATZ-NAV-002 y ATZ-NAV-003 proceden de código original Atre
 ## Sticky Sections 15: componentes aprobados por el usuario
 
 El ZIP `ATREZZO_03_StickySections_15_MAC_LISTO(1).zip` aporta quince **efectos controlados por scroll**, identificados `ATZ-STK-001`…`ATZ-STK-015`. Son distintos de `ATZ-NAV-003`, que cambia de imagen mediante clic. Para cualquier STK importar **únicamente** `components/scroll/ATZ-STK-XXX.html`, `.js`, `components/runtime/atrezzo-sticky.css`, `components/runtime/sticky-lifecycle.js`; GSAP y ScrollTrigger deben estar disponibles. Respetar seis paneles, transformaciones y sincronización originales. La demo de origen usa Lenis global; no imponerlo sobre otros websites. Las imágenes de Annas Muslimin/Vecteezy del ZIP no están autorizadas automáticamente y se sustituyen por SVG abstractos en catálogo. **El diseño y movimiento aprobados son fuente maestra; no reinterpretar el efecto.**
+
+## Scroll Sections 01–03 — nueve originales aprobados (2026-11-11)
+
+Los IDs `ATZ-SEC-001…009` pertenecen al material original aprobado. Usar **solo** el fragmento, CSS, módulo y motor indicados por `registry/components.json` (`components/secciones/`). No instalar GSAP, Lenis ni ScrollSmoother: los motores son JavaScript nativo y utilizan scroll natural. Preservar las fórmulas de progreso y el diseño editorial del archivo original. Los SVG del catálogo son ilustrativos, no trabajos de clientes. `client_ready:false` hasta QA específica dentro de la web del cliente.

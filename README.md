@@ -61,3 +61,7 @@ Tres nuevos módulos individuales de código original Atrezzo Studios: [Immersiv
 ## Sticky Sections 15 — Colección aprobada
 
 Quince variaciones adicionales de salida de secciones sticky mediante scroll, registradas como `ATZ-STK-001` a `ATZ-STK-015`. Fuente: Codrops *Animations for Sticky Sections* (código MIT), aportada en `ATREZZO_03_StickySections_15_MAC_LISTO(1).zip`. Cada efecto tiene HTML, JS, ficha y demo individual; CSS y ciclo de vida compartidos. Las ilustraciones originales de terceros se sustituyen por SVG abstractos de referencia. El Lenis global de la demo no se instala en los clientes. El total del catálogo pasa a **29 componentes**.
+
+## ATREZZO SCROLL SECTIONS 01–03 — nueve componentes originales
+
+Disponibles `ATZ-SEC-001…009`, extraídos del paquete aprobado `ATREZZO_SCROLL_01_02_03_NUEVE_COMPONENTES_PARA_INTEGRACION.zip`. Familias 01 (Expand, Split, Sequence), 02 (Cinematic Handoff, Horizontal Filmstrip, Depth Chapters) y 03 (Full-Bleed Chapters, Editorial Layered Panels, Split Narrative). HTML/JS por ID y CSS/motor compartidos por familia. **Sin GSAP**: navegación por scroll nativo, reduced motion y fallback. Estado de biblioteca: `validation`; 38 IDs registrados; ver fichas en `components/secciones/`.

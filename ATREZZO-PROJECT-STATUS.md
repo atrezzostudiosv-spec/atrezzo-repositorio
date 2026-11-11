@@ -47,3 +47,7 @@
 ## Nuevo lote aprobado · siete ZIP (2026-11-10)
 
 **AUDITORÍA CERRADA / IMPORTACIÓN PENDIENTE.** Se verificaron 33 candidatos nuevos y 15 patrones StickySections duplicados que **no** se registrarán de nuevo. Las colecciones propias 01/02/03 son versiones byte a byte idénticas a las ya entregadas. Reglas y detalles: `ATREZZO-APPROVED-UPLOADS-AUDIT-2026-11-10.md` y `registry/approved-source-audit-2026-11-10.json`. Se mantiene el catálogo en **29** componentes hasta cargar código individual y pasar QA. Próxima ingesta: 9 patrones originales ATREZZO SCROLL SECTIONS 01/02/03.
+
+## Integración de Scroll Sections aprobados — 2026-11-11
+
+**EN VALIDACIÓN TÉCNICA.** Los nueve componentes `ATZ-SEC-001…009` han sido extraídos de un paquete normalizado que conserva las fórmulas originales, subidos a GitHub y conectados al catálogo, con fichas técnicas y selección por ID exacto. El total registrado pasa de **29 a 38**. No se modificaron los 29 componentes anteriores. Pendientes pruebas completas de navegador y confirmación de fidelidad visual antes del cierre interno; para clientes conservar `client_ready:false`.

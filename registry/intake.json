@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "status": "in_progress",
   "packages": [
     {
@@ -17,20 +17,20 @@
     {
       "package_name": "Atrezzo_Scroll_Sections_01.zip",
       "category": "scroll",
-      "status": "source_approved_audited_pending_ingestion",
-      "note": "La versión (1) reenviada el 2026-11-10 es binariamente idéntica al ZIP disponible. Material fuente aprobado para migración. Aún no hay IDs, previews ni integración de estas variantes en la biblioteca."
+      "status": "ingested_validation",
+      "note": "Tres movimientos nativos originales de Scroll Sections 01 importados bajo ATZ-SEC-001–003; fuentes, CSS, JS y previews presentes. QA automatizada e integración cliente pendientes."
     },
     {
       "package_name": "Atrezzo_Scroll_Sections_02.zip",
       "category": "scroll",
-      "status": "source_approved_audited_pending_ingestion",
-      "note": "La versión (1) reenviada el 2026-11-10 es binariamente idéntica al ZIP disponible. Material fuente aprobado para migración. Aún no hay IDs, previews ni integración de estas variantes en la biblioteca."
+      "status": "ingested_validation",
+      "note": "Tres movimientos nativos originales de Scroll Sections 02 importados bajo ATZ-SEC-004–006; fuentes, CSS, JS y previews presentes. QA automatizada e integración cliente pendientes."
     },
     {
       "package_name": "Atrezzo_Scroll_Sections_03_COMPLETO.zip",
       "category": "scroll",
-      "status": "source_approved_audited_pending_ingestion",
-      "note": "La versión (1) reenviada el 2026-11-10 es binariamente idéntica al ZIP disponible. Material fuente aprobado para migración. Aún no hay IDs, previews ni integración de estas variantes en la biblioteca."
+      "status": "ingested_validation",
+      "note": "Tres movimientos nativos originales de Scroll Sections 03 importados bajo ATZ-SEC-007–009; fuentes, CSS, JS y previews presentes. QA automatizada e integración cliente pendientes."
     },
     {
       "package_name": "Atrezzo_Editorial_Gallery_01_COMPLETO.zip",
