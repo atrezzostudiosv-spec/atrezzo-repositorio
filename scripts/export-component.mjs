@@ -9,7 +9,7 @@ export function exportComponent(id,out){
   if(typeof out!=="string"||!out.trim())throw Error("Indica carpeta de salida --out.");
   const target=resolve(out,"atrezzo");
   if(existsSync(target))throw Error("La carpeta atrezzo ya existe: no sobrescribir.");
-  const needed=[...Object.values(selected.files),...((selected.category==="navegacion"||selected.id.startsWith("ATZ-SEC-")||selected.id.startsWith("ATZ-MOT-")||selected.id.startsWith("ATZ-PGT-"))?[]:[selected.id.startsWith("ATZ-STK-")?"sources/codrops-sticky-sections/LICENSE":"sources/codrops-layout-formations/LICENSE"])];
+  const needed=[...Object.values(selected.files),...(selected.assets||[]),...((selected.category==="navegacion"||selected.id.startsWith("ATZ-SEC-")||selected.id.startsWith("ATZ-MOT-")||selected.id.startsWith("ATZ-PGT-")||selected.id.startsWith("ATZ-SVC-"))?[]:[selected.id.startsWith("ATZ-STK-")?"sources/codrops-sticky-sections/LICENSE":"sources/codrops-layout-formations/LICENSE"])];
   for(const name of needed){
     if(!existsSync(join(root,name)))throw Error("Dependencia faltante: "+name);
   }

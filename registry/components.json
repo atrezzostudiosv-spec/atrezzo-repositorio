@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7.0",
+  "schema_version": "1.8.0",
   "updated_at": "2026-11-11",
   "instructions": "AGENTS.md",
   "entries": [
@@ -2333,9 +2333,76 @@
       "validation_notes": "QA interna aprobada: 48 IDs x 4 anchos = 192 comprobaciones; navegación multipágina real, historial Atrás, imágenes SVG verificadas, reduced-motion y sin JS. Prueba de cliente, Safari/Firefox y CSP siguen pendientes.",
       "catalog_qa_note": "Node y Chromium aprobados: previews a 375/768/1024/1440, tres escenas reales mediante swap(), navegación entre documentos, historial, reduced motion, sin JS y comprobación de los tres SVG.",
       "qa_workflow": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43011362031"
+    },
+    {
+      "id": "ATZ-SVC-001",
+      "title": "Service Bento 1+4 — Showcase de servicios",
+      "category": "servicios",
+      "sub_category": "asymmetric-bento-service-cards",
+      "family": "atrezzo-project-extraction",
+      "original_package": "Source project atrezzostudiosv-spec/tri-lane-roofing, Home section tl-wwd-section",
+      "source_repo": "atrezzostudiosv-spec/tri-lane-roofing",
+      "source_path": "index.html",
+      "source_referenced_status": "Verified in commercial design demo; not client-approved official production website",
+      "variant": "service-bento-featured-1x4",
+      "selector": ".atz-svc",
+      "animation_function": "mount",
+      "interaction": "viewport-reveal + horizontal-swipe + links",
+      "description": "Bento editorial de servicios con tarjeta principal y cuatro secundarias, fotografías de fondo, contenido jerarquizado y CTAs; en móvil se transforma en un carrusel horizontal con scroll-snap. Reveal progresivo 700 ms al entrar al viewport.",
+      "recommended_for": "Home y páginas de servicios con una especialidad protagonista y cuatro líneas secundarias verificadas; identidades visuales energéticas o técnicas que necesiten CTA inmediato.",
+      "avoid_when": "No inventar cinco servicios para completar la retícula; no copiar nombres, testimonios, imágenes ni estilos de Tri-Lane; no usarlo si la empresa necesita mostrar pocas áreas sin jerarquía comercial.",
+      "level": "M1",
+      "uses_pin": false,
+      "status": "validation",
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "preview": "catalog/preview.html?id=ATZ-SVC-001",
+      "technical_guide": "components/servicios/ATZ-SVC-001.md",
+      "component_html": "components/servicios/ATZ-SVC-001.html",
+      "component_css": "components/servicios/ATZ-SVC-001.css",
+      "component_js": "components/servicios/ATZ-SVC-001.js",
+      "component_runtime": "components/servicios/runtime.js",
+      "component_assets": [
+        "components/servicios/illustration-01.svg",
+        "components/servicios/illustration-02.svg",
+        "components/servicios/illustration-03.svg",
+        "components/servicios/illustration-04.svg",
+        "components/servicios/illustration-05.svg"
+      ],
+      "dependencies": [],
+      "requires_reduced_motion_fallback": true,
+      "photo_usage": "Cinco SVG arquitectónicos originales del catálogo; son ejemplos, NO fotografías de obras ni de clientes.",
+      "discovery_group": "servicios",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "servicios",
+        "composición",
+        "bento",
+        "grid",
+        "1+4",
+        "roofing",
+        "responsive",
+        "fotografía",
+        "swipe",
+        "touch",
+        "scroll-snap",
+        "reveal",
+        "cards",
+        "tarjeta principal",
+        "cinco servicios",
+        "Tri-Lane",
+        "conversión"
+      ],
+      "catalog_qa_note": "Nuevo extracto de proyecto: código isolado y geometría del Home conservada; pruebas específicas en la biblioteca pendientes.",
+      "validation_notes": "Estructura original de la demo Tri-Lane; no afirmar aprobación por cliente. Pendiente Node/Chromium 375/768/1024/1440, keyboard/mobile snap, sin JS, reduced-motion y revisión visual."
     }
   ],
   "discovery_groups": [
+    {
+      "id": "servicios",
+      "label": "Composiciones de servicios",
+      "description": "Presentación jerárquica de servicios, bento y recorridos hacia conversión"
+    },
     {
       "id": "heroes",
       "label": "Heroes cinematográficos",

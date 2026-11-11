@@ -11,6 +11,7 @@ const toast = document.querySelector("#toast");
 
 let entries = [], groups = [], filter = "all", favorites = new Set(), toastTimer = 0;
 const groupFallback = {
+  servicios:"Composiciones de servicios",
   galerias:"Galerías y mosaicos", sticky:"Paneles sticky", narrativa:"Narrativa por scroll",
   navegacion:"Navegación", transiciones:"Transiciones por scroll","transiciones-paginas":"Transiciones entre páginas"
 };
@@ -32,7 +33,7 @@ function label(group) {
   return groups.find(x=>x.id===group)?.label || groupFallback[group] || group;
 }
 function instruction(e) {
-  return "Integra únicamente " + e.id + " ("+e.title+") del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Lee registry/components.json y " + e.technical_guide + ". Preserva el efecto aprobado y no importes otros componentes. Audita el proyecto cliente, utiliza imágenes autorizadas, verifica móvil, teclado, scroll inverso, reduced-motion y licencias. Demo probada en biblioteca; client_ready=false hasta validación en cliente.";
+  return "Integra únicamente " + e.id + " ("+e.title+") del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Lee registry/components.json y " + e.technical_guide + ". Preserva el efecto aprobado y no importes otros componentes. Audita el proyecto cliente, utiliza imágenes autorizadas, verifica móvil, teclado, scroll inverso, reduced-motion y licencias. Comprueba la etiqueta de pruebas del registro: la demo puede estar pendiente. client_ready=false hasta validación en cliente.";
 }
 async function copy(value,description) {
   try {
@@ -63,7 +64,7 @@ function card(e,i) {
   const title=escapeHTML(e.title);
   const href=previewLink(e);
   const group=escapeHTML(label(e.discovery_group));
-  const trigger=({scroll:"Scroll",click:"Clic / teclado",mixed:"Mixto",navigation:"Entre páginas","scroll-entry":"Entrada en pantalla"})[e.discovery_trigger]||"Interacción";
+  const trigger=({scroll:"Scroll",click:"Clic / teclado",mixed:"Reveal + Swipe",navigation:"Entre páginas","scroll-entry":"Entrada en pantalla"})[e.discovery_trigger]||"Interacción";
   const qa=e.catalog_qa_status==="passed_internal"?"Demo probada":e.client_ready?"Cliente verificado":"Por revisar";
   const qaTitle=e.catalog_qa_status==="passed_internal"?"Probada en la biblioteca. Pendiente de validación en cada website cliente.":"Estado de pruebas pendiente";
   const saved=favorites.has(e.id);

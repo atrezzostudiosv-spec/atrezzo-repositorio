@@ -75,3 +75,7 @@ Se han separado e incorporado `ATZ-MOT-001..007`: Text Reveal, Text Scrub, Image
 Tres transiciones originales **entre páginas HTML**, no scroll: `ATZ-PGT-001`, `ATZ-PGT-002` y `ATZ-PGT-003`. Motor Web Animations API **sin GSAP ni Lenis**, con CSS y preflight originales preservados, 3 SVG ilustrativos originales, escenas independientes y ejemplo de navegación real en `catalog/page-transitions-demo/`. Usar solo el ID seleccionado y el preflight requerido; ver `ATREZZO-TRANSITIONS-01-INGEST-REPORT.md`.
 
 **ATREZZO Transitions 01 probado internamente:** biblioteca de 48 componentes, 8 categorías; páginas reales de demostración en catalog/page-transitions-demo/atelier.html. Informe específico: ATREZZO-TRANSITIONS-01-INGEST-REPORT.md.
+
+## Composiciones de servicios — código extraído de proyectos ATREZZO
+
+`ATZ-SVC-001`: Service Bento 1+4, procedente de la demo Home de Tri-Lane Roofing; tarjeta protagonista y cuatro secundarias en escritorio, carrusel táctil y snap en móvil, revelado ligero. Código individual y CSS aislado; los placeholders de catálogo NO son fotografías ni obras del cliente. Ver `ATZ-SVC-001.md`. No mezclar con `ATREZZO SERVICE SHOWCASE 01` (Atlas/Focus/Panels), que es otro conjunto aún pendiente de ingesta.

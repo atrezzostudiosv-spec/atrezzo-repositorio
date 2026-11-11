@@ -162,6 +162,17 @@
       "status": "ingested_internal_validated",
       "note": "Tres transiciones exactas Veil/Split/Iris con código original intacto y previews probadas. No se duplica paquete previo idéntico. 192 casos de movimiento/viewport y navegación real multipágina aprobada. Revisión Safari/cliente pendiente.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43011362031"
+    },
+    {
+      "package_name": "Tri-Lane Roofing — Home / Services Bento 1+4 (project extraction)",
+      "category": "servicios",
+      "status": "ingested_pending_ci",
+      "source_repo": "atrezzostudiosv-spec/tri-lane-roofing",
+      "source_path": "index.html",
+      "ids": [
+        "ATZ-SVC-001"
+      ],
+      "note": "Extracción del Home de una demo comercial; reproducir composición aprobada internamente, sin imágenes de Tri-Lane. Cinco SVG de catálogo y 4 archivos funcionales; no importar estilos o JS globales del cliente."
     }
   ]
 }
