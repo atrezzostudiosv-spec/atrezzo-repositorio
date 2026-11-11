@@ -8,6 +8,7 @@ const root=process.cwd();
 const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"),"utf8"));
 const motionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SCR-")||e.id.startsWith("ATZ-TRN-"));
 const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
+const nativeEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SEC-"));
 const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
 const expectedImages={"ATZ-SCR-001":17,"ATZ-SCR-002":5,"ATZ-SCR-003":5,
  "ATZ-SCR-004":36,"ATZ-SCR-005":36,"ATZ-SCR-006":20,"ATZ-SCR-007":9,
@@ -17,6 +18,14 @@ const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=u
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
+   if(requestPath==="/__native_nojs"){
+     const id=new URL(req.url,"http://127.0.0.1").searchParams.get("id");
+     if(!/^ATZ-SEC-00[1-9]$/.test(id||"")){res.writeHead(400);res.end("Invalid component ID");return;}
+     const n=Number(id.slice(-3)),fam=n<=3?1:n<=6?2:3;
+     const html=await fs.readFile(join(root,"components/secciones/"+id+".html"),"utf8");
+     res.writeHead(200,{"content-type":"text/html; charset=utf-8"});
+     res.end('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/components/secciones/ats'+fam+'.css"></head><body style="margin:0">'+html+'</body></html>');return;
+   }
    if(requestPath==="/__sticky_nojs"){
      const value=new URL(req.url,"http://127.0.0.1").searchParams.get("id");
      if(!/^ATZ-STK-0(0[1-9]|1[0-5])$/.test(value||"")){res.writeHead(400);res.end("Invalid ID");return;}
@@ -253,6 +262,73 @@ try {
  assert.equal(await staticMotion.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static","Sticky reduced motion mode");
  assert.equal(await staticMotion.evaluate(()=>window.ScrollTrigger.getAll().length),0,"Sticky reduced motion should not create triggers");
  await staticMotion.close();
+ // Original Atrezzo Scroll Sections 01–03: test real scroll, not only a loaded preview.
+ for(const width of [375,768,1024,1440]){
+   const page=await browser.newPage({viewport:{width,height:900},reducedMotion:"no-preference"});
+   await setup(page);
+   for(const e of nativeEntries){
+     const errors=[];
+     const onError=err=>errors.push(err.message);page.on("pageerror",onError);
+     await page.goto(origin+"/catalog/preview.html?id="+e.id,{waitUntil:"domcontentloaded"});
+     await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance)||document.querySelector("#demo")?.dataset.motion==="unavailable",{timeout:12000});
+     const initial=await page.evaluate(()=>{
+       const root=document.querySelector("#demo [data-atz-id]");
+       const scene=root?.querySelector(".ats-scene,.ats2-scene,.ss03__chapter");
+       return {id:root?.dataset.atzId,scene:!!scene,height:scene?.getBoundingClientRect().height,
+         family:root?.className,progress:scene?.dataset.atsProgress??scene?.dataset.ats2Progress??null,
+         overflow:document.documentElement.scrollWidth>innerWidth+2,
+         status:document.querySelector("#demo")?.dataset.motion};
+     });
+     assert.equal(initial.id,e.id,e.id+" identity missing at "+width);
+     assert.equal(initial.scene,true,e.id+" scroll scene missing");
+     assert(initial.height>100,e.id+" scene lacks dimensions");
+     assert.notEqual(initial.status,"unavailable",e.id+" preview failed");
+     assert.equal(initial.overflow,false,e.id+" horizontal overflow at "+width);
+     // Each family uses its original native scroll progress, not an automatic timer.
+     const n=Number(e.id.slice(-3));
+     const pos=await page.evaluate(()=>{
+       const root=document.querySelector("#demo [data-atz-id]");
+       const scene=root.querySelector(".ats-scene,.ats2-scene,.ss03__chapter");
+       const top=scene.getBoundingClientRect().top+scrollY;
+       const delta=Math.max(innerHeight*.6,scene.getBoundingClientRect().height-innerHeight);
+       return {top,offset:delta*.68};
+     });
+     await page.evaluate(p=>window.scrollTo(0,p.top+p.offset),pos);
+     await page.waitForTimeout(160);
+     if(n<=6){
+       const now=await page.evaluate(()=>{
+         const scene=document.querySelector(".ats-scene,.ats2-scene");
+         return Number(scene?.dataset.atsProgress??scene?.dataset.ats2Progress);
+       });
+       assert(Number.isFinite(now)&&now>.12,e.id+" progress must change from native scroll at "+width+": "+now);
+     }else if(width>820){
+       const now=await page.evaluate(()=>document.querySelector(".ss03__chapter")?.style.getPropertyValue("--enter"));
+       assert(now!==""&&Number.isFinite(Number(now)),e.id+" did not set native chapter progress at "+width);
+     }else{
+       assert.equal(await page.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static",e.id+" mobile fallback");
+     }
+     await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(120);
+     if(width===1440)await page.screenshot({path:join(artifacts,e.id+".png"),fullPage:false});
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());
+     assert.equal(errors.length,0,e.id+" JS errors: "+errors.join("; "));
+     results.push({id:e.id,width,mode:initial.status,test:"native-scroll",teardown:"ok"});
+     page.off("pageerror",onError);
+   }
+   await page.close();
+ }
+ for(const id of nativeEntries.map(e=>e.id)){
+   const p=await browser.newPage({javaScriptEnabled:false,viewport:{width:375,height:812}});
+   await p.goto(origin+"/__native_nojs?id="+id,{waitUntil:"load"});
+   assert.equal(await p.locator('[data-atz-id="'+id+'"]').count(),1,id+" has no no-JS root");
+   assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,id+" no-JS horizontal overflow");
+   await p.close();
+ }
+ const nativeReduced=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
+ await setup(nativeReduced);
+ await nativeReduced.goto(origin+"/catalog/preview.html?id=ATZ-SEC-009",{waitUntil:"domcontentloaded"});
+ await nativeReduced.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));
+ assert.equal(await nativeReduced.evaluate(()=>window.__atrezzoPreviewInstance.mode),"static");
+ await nativeReduced.close();
  const reduced=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:"reduce"});
  await setup(reduced);
  await reduced.goto(origin+"/catalog/preview.html?id=ATZ-SCR-005",{waitUntil:"domcontentloaded"});
@@ -263,7 +339,7 @@ try {
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===29);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===38);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
@@ -274,7 +350,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===29);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===38);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -326,8 +402,8 @@ try {
  assert.equal(await staticPage.locator(".atz-motion .grid__img").count(),17,"Static HTML needs visible tiles");
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
- const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",results};
+ const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,widths:[375,768,1024,1440],
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
