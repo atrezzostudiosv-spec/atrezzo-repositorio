@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/runtime-contract.mjs && node tests/sticky-contract.mjs && node tests/native-scroll-contract.mjs && node tests/ai-integration.mjs"
+    "test": "node tests/runtime-contract.mjs && node tests/sticky-contract.mjs && node tests/native-scroll-contract.mjs && node tests/ai-integration.mjs && node tests/catalog-discovery-contract.mjs && node --check catalog/app.js && node --check catalog/preview.js && node --check catalog/favorites-store.js"
   }
 }

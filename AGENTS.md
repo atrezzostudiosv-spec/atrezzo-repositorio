@@ -39,3 +39,7 @@ El ZIP `ATREZZO_03_StickySections_15_MAC_LISTO(1).zip` aporta quince **efectos c
 ## Scroll Sections 01–03 — nueve originales aprobados (2026-11-11)
 
 Los IDs `ATZ-SEC-001…009` pertenecen al material original aprobado. Usar **solo** el fragmento, CSS, módulo y motor indicados por `registry/components.json` (`components/secciones/`). No instalar GSAP, Lenis ni ScrollSmoother: los motores son JavaScript nativo y utilizan scroll natural. Preservar las fórmulas de progreso y el diseño editorial del archivo original. Los SVG del catálogo son ilustrativos, no trabajos de clientes. `client_ready:false` hasta QA específica dentro de la web del cliente.
+
+## Catalogación por comportamiento y favoritos (2026-11-11)
+
+`discovery_group` identifica la familia funcional (galerias, sticky, narrativa, navegacion, transiciones); `discovery_trigger` diferencia scroll, clic y mixto. Estas etiquetas no alteran el movimiento original. `catalog_qa_status:passed_internal` permite mostrar «Demo probada» por las pruebas internas aprobadas; **no** significa `client_ready:true` (todos permanecen false). Los favoritos de `catalog/favorites-store.js` viven en `localStorage` del navegador, no en la cuenta ni GitHub, y no se sincronizan entre dispositivos. Elegir por ID exacto y ficha técnica, no por orden de tarjetas.

@@ -354,6 +354,46 @@ try {
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
+ // Favorites and behavior filters checked at all four viewport sizes.
+ for(const width of [375,768,1024,1440]){
+   const page=await browser.newPage({viewport:{width,height:900}});
+   await setup(page);
+   await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===38,{timeout:12000});
+   assert.equal(await page.locator("[data-category]").count(),6,"All plus five discovery groups");
+   assert.equal(await page.locator(".collection-heading").count(),5);
+   assert.equal(await page.locator("#count-tested").textContent(),"38");
+   assert.equal(await page.locator("#component-grid .card-status").first().textContent(),"Demo probada");
+   const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
+   await favorite.click();
+   assert.equal(await page.locator("#favorites-grid .component-card").count(),1);
+   assert.equal(await favorite.getAttribute("aria-pressed"),"true");
+   await page.reload({waitUntil:"domcontentloaded"});
+   await page.waitForFunction(()=>document.querySelectorAll("#favorites-grid .component-card").length===1,{timeout:12000});
+   assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]').getAttribute("aria-pressed"),"true");
+   await page.locator('[data-category="sticky"]').click();
+   assert.equal(await page.locator("#component-grid .component-card").count(),15);
+   await page.locator('[data-category="narrativa"]').click();
+   assert.equal(await page.locator("#component-grid .component-card").count(),9);
+   await page.locator("#search").fill("horizontal");
+   assert.equal(await page.locator("#component-grid .component-card").count(),1);
+   assert.equal(await page.locator("#component-grid .component-card").first().getAttribute("data-id"),"ATZ-SEC-005");
+   await page.locator("#search").fill("");
+   await page.locator('[data-category="all"]').click();
+   assert.equal(await page.locator("#component-grid .component-card").count(),38);
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Catalog overflow at "+width);
+   if(width===375||width===1440)await page.screenshot({path:join(artifacts,"favorites-"+width+".png"),fullPage:false});
+   await page.goto(origin+"/catalog/preview.html?id=ATZ-SCR-003",{waitUntil:"domcontentloaded"});
+   await page.locator("#preview-favorite").waitFor({state:"visible",timeout:12000});
+   await page.locator("#preview-favorite").click();
+   assert.equal(await page.locator("#preview-favorite").getAttribute("aria-pressed"),"true");
+   await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+   await page.waitForFunction(()=>document.querySelectorAll("#favorites-grid .component-card").length===2,{timeout:12000});
+   await page.locator('#favorites-grid [data-id="ATZ-SEC-005"] [data-favorite-id]').click();
+   assert.equal(await page.locator("#favorites-grid .component-card").count(),1);
+   assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]').getAttribute("aria-pressed"),"false");
+   await page.close();
+ }
  const independent=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(independent);
  await independent.goto(origin+"/__multi",{waitUntil:"domcontentloaded"});
@@ -403,7 +443,7 @@ try {
  assert((await staticPage.locator(".atz-motion").boundingBox()).height>0,"No-JS section lacks height");
  await staticPage.close();
  const report={passed:true,checks:results.length,variants:registry.entries.length,stickySourceVariants:stickyEntries.length,nativeScrollVariants:nativeEntries.length,widths:[375,768,1024,1440],
-   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",results};
+   reducedMotion:"passed",noJavaScript:"passed",catalogSearch:"passed",filters:"passed",multiInstanceIsolation:"passed",phase4Integration:"passed",navigationNoJs:"passed",navigationKeyboard:"passed",stickyNoJs:"passed",stickyReducedMotion:"passed",nativeScrollNoJs:"passed",nativeScrollReducedMotion:"passed",favoritesAcrossReload:"passed",discoveryGrouping:"passed",favoritesPreview:"passed",results};
  await fs.writeFile(join(artifacts,"browser-report.json"),JSON.stringify(report,null,2));
  console.log("BROWSER QA PASSED: "+results.length+" individual viewport/variant checks + reduced motion, no-JS, search and filters");
 }catch(err){
