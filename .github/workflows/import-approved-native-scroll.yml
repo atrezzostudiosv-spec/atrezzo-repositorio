@@ -1,0 +1,67 @@
+name: Import approved native Scroll Sections 01–03
+on:
+  push:
+    paths:
+      - "sources/approved-imports/native-scroll-03.tar.xz"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  unpack-approved-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify checksum and safely unpack approved source
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import tarfile, hashlib, json
+          archive=Path("sources/approved-imports/native-scroll-03.tar.xz")
+          expect="a0206b596a5e1f8d8d5737c7a86274955c46910509c28e4134961e911a97f03b"
+          digest=hashlib.sha256(archive.read_bytes()).hexdigest()
+          assert digest==expect, f"Source checksum mismatch: {digest}"
+          expected={
+              *[f"components/secciones/ATZ-SEC-{i:03d}.{suffix}" for i in range(1,10) for suffix in ("html","js")],
+              *[f"components/secciones/ats{j}.{suffix}" for j in range(1,4) for suffix in ("css",)],
+              *[f"components/secciones/ats{j}-engine.js" for j in range(1,4)],
+              "registry/native-scroll-components.json"
+          }
+          with tarfile.open(archive,"r:xz") as pack:
+              regular=[m for m in pack.getmembers() if m.isfile()]
+              assert len(regular)==len(expected)==25, f"Expected exactly 25 files, found {len(regular)}"
+              assert set(m.name for m in regular)==expected, "Unexpected archive file paths"
+              for m in regular:
+                  name=PurePosixPath(m.name)
+                  assert ".." not in name.parts and not name.is_absolute(), "Unsafe path"
+                  target=Path(*name.parts)
+                  assert not target.exists(), "Will not overwrite existing source: "+str(target)
+                  target.parent.mkdir(parents=True,exist_ok=True)
+                  target.write_bytes(pack.extractfile(m).read())
+          manifest=json.loads(Path("registry/native-scroll-components.json").read_text(encoding="utf-8"))
+          assert manifest["count"]==9 and len(manifest["variants"])==9
+          assert set(e["id"] for e in manifest["variants"])=={f"ATZ-SEC-{i:03d}" for i in range(1,10)}
+          for entry in manifest["variants"]:
+              for field in ("html","js","css","runtime"):
+                  assert Path(entry[field]).is_file(), entry["id"]+" missing "+field
+          print("Verified original approved archive and extracted 25 files without overwrite.")
+          PY
+      - name: Validate JavaScript source
+        shell: bash
+        run: |
+          for file in components/secciones/*.js; do node --check "$file"; done
+      - name: Commit original source files only
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add components/secciones registry/native-scroll-components.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Add original approved native Scroll Sections 01–03 components"
+          git push origin HEAD:main
