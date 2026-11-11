@@ -420,18 +420,20 @@ try {
      assert.equal(result.mode,"interactive","Page transition is click-driven, not scroll scrub");
      assert.equal(result.views,3);assert.equal(result.controls,3);
      assert.equal(result.overlays,1,"Exactly one engine overlay should be mounted");
-     await page.waitForFunction(()=>[...document.querySelectorAll(".atz-pgt__art img")].every(img=>img.complete&&img.naturalWidth>0),{timeout:12000});
+     await page.waitForFunction(()=>{const imgs=[...document.querySelectorAll(".atz-pgt__art img")];return imgs.length===3&&imgs.every(img=>img.complete&&img.naturalWidth>0);},null,{timeout:12000});
      assert.equal(await page.locator(".atz-pgt__art img").count(),3,"Approved SVGs must be present");
 
      assert.equal(result.overflow,false,"Page-transition demo overflow at "+width);
      await page.locator('[data-pgt-show="1"]').click();
      await page.waitForFunction(()=>window.__atrezzoPreviewInstance?.currentScene===1&&!window.__atrezzoPreviewInstance.engine.busy,{timeout:12000});
      assert.equal(await page.locator('[data-pgt-scene="1"]').isVisible(),true);
+     assert.equal(await page.locator('[data-pgt-scene="1"] img').evaluate(img=>img.naturalWidth>0),true,"Second scene SVG should have decoded before swap");
      assert.equal(await page.locator('[data-pgt-scene="0"]').isVisible(),false);
      assert.equal(await page.locator(".atz-transition-layer--active").count(),0,"Cover should leave screen after scene swap");
      await page.locator('[data-pgt-show="2"]').click();
      await page.waitForFunction(()=>window.__atrezzoPreviewInstance?.currentScene===2&&!window.__atrezzoPreviewInstance.engine.busy,{timeout:12000});
      assert.equal(await page.locator('[data-pgt-scene="2"]').isVisible(),true);
+     assert.equal(await page.locator('[data-pgt-scene="2"] img').evaluate(img=>img.naturalWidth>0),true,"Third scene SVG should have decoded before swap");
      assert.equal(await page.locator('[data-pgt-show="2"]').getAttribute("aria-pressed"),"true");
      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
      assert.deepEqual(errors,[],entry.id+" JS exceptions");
