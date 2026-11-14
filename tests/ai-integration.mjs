@@ -6,7 +6,7 @@ import { resolveComponent, createIntegrationPrompt } from "../scripts/resolve-co
 import { exportComponent } from "../scripts/export-component.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(registry.entries.length,56);
+assert.equal(registry.entries.length,61);
 for(const e of registry.entries){
   const contract=resolveComponent(e.id);
   assert.equal(contract.id,e.id);
@@ -15,7 +15,7 @@ for(const e of registry.entries){
   assert.equal(contract.library_approved,true);
   assert.equal(Object.keys(contract.files).length,e.id.startsWith("ATZ-PGT-")?5:4,"Exact ID file contract");
   const script=readFileSync(new URL("../"+contract.files.js,import.meta.url),"utf8");
-  assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
+  assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")||e.id.startsWith("ATZ-MIC-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
   for(const other of registry.entries.filter(x=>x.id!==e.id)) {
     assert(!script.includes(other.id+".js"),e.id+" has unwanted dependency on "+other.id);
   }
@@ -84,6 +84,9 @@ try{
   for(const e of registry.entries.filter(e=>e.family==="atrezzo-typography-01")){
     const out=exportComponent(e.id,join(temp,e.id));assert.equal(out.files.length,4);assert(out.files.includes(e.component_js));assert(out.files.includes(e.component_runtime));assert(!out.files.some(x=>x.includes("atrezzo-motion-v1")));assert.equal((await import("../"+e.component_js)).id,e.id);
   }
+  for(const e of registry.entries.filter(e=>e.family==="atrezzo-microinteractions-01")){
+    const out=exportComponent(e.id,join(temp,e.id));assert.equal(out.files.length,4);assert(out.files.includes(e.component_js));assert(out.files.includes(e.component_runtime));assert.equal((await import("../"+e.component_js)).id,e.id);assert(createIntegrationPrompt(e.id).includes("Dependencias externas: ninguna."));
+  }
   const bento=exportComponent("ATZ-SVC-001",join(temp,"services"));
   assert.equal(bento.files.length,9,"Bento must export 4 module files and 5 illustrated placeholders");
   const bentoFiles=readdirSync(bento.target,{recursive:true});
@@ -95,4 +98,4 @@ try{
 
 
 }finally{rmSync(temp,{recursive:true,force:true});}
-console.log("PASS FASE 4+5: exact ID resolution for 56, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
+console.log("PASS FASE 4+5: exact ID resolution for 61, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");

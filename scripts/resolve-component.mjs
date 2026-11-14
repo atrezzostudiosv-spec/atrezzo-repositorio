@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const registryPath=join(root,"registry/components.json");
-const allowedId=/^ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC)-\d{3}$/;
-const allowedFiles=/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|runtime|typography)\/[A-Za-z0-9-]+\.(html|css|js)$/;
+const allowedId=/^ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC)-\d{3}$/;
+const allowedFiles=/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|runtime|typography|microinteractions)\/[A-Za-z0-9-]+\.(html|css|js)$/;
 
 const allowedAsset=/^components\/servicios\/illustration-0[1-5]\.svg$/;
 function requireAsset(path){if(!allowedAsset.test(path))throw Error("Asset de componentes no permitido: "+path);const full=resolve(root,path);if(!full.startsWith(root+sep)||!existsSync(full))throw Error("Asset ausente: "+path);return path;}
@@ -33,7 +33,7 @@ export function resolveComponent(id){
     },
     assets:(e.component_assets||[]).map(requireAsset),
     technical_guide:e.technical_guide,preview:e.preview,
-    licensing:(e.category==="navegacion"||(e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")))?"Código original Atrezzo. Fotografías no autorizadas automáticamente.":e.id.startsWith("ATZ-STK-")?"Codrops Sticky Sections: código MIT. Verificar por separado imágenes Vecteezy y librerías.":"Código Codrops MIT. Revisar GSAP, fotografías y fuentes por separado.",
+    licensing:(e.category==="navegacion"||(e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")||e.id.startsWith("ATZ-MIC-")))?"Código original Atrezzo. Fotografías no autorizadas automáticamente.":e.id.startsWith("ATZ-STK-")?"Codrops Sticky Sections: código MIT. Verificar por separado imágenes Vecteezy y librerías.":"Código Codrops MIT. Revisar GSAP, fotografías y fuentes por separado.",
     instruction:"Usar únicamente los archivos registrados para el ID; revisar tipo de navegación, auditar cliente y no publicar sin QA."
   };
   if(!selected.files.js.endsWith("/"+id+".js"))throw Error("El JS no coincide con el ID");
@@ -54,11 +54,11 @@ export function createIntegrationPrompt(id){
     "- "+e.files.html,"- "+e.files.css,"- "+e.files.js,"- "+e.files.runtime,
     ...(e.files.preflight?["- "+e.files.preflight+" (incluir en <head> de todas las páginas)"]:[]),
     ...(e.assets||[]).map(x=>"- "+x+" (imagen SVG de demo; sustituir por medios del cliente)"),
-    (e.category==="navegacion"||e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-"))?"Dependencias externas: ninguna.":"Dependencias externas: GSAP y ScrollTrigger; comprobar licencia.",
+    (e.category==="navegacion"||e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")||e.id.startsWith("ATZ-MIC-"))?"Dependencias externas: ninguna.":"Dependencias externas: GSAP y ScrollTrigger; comprobar licencia.",
     "Auditar primero el sitio del cliente, conservar su diseño y contenido aprobado.",
     "No importar otros IDs ni fotos del paquete original.",
     "Validar a 375/768/1024/1440 px, teclado, scroll inverso, reduced-motion y rendimiento.",
-    El ejecutor debe comprobar el resultado en el website de destino, sin rediseñar ni volver a someter a aprobación el componente."
+    "El ejecutor debe comprobar el resultado en el website de destino, sin rediseñar ni volver a someter a aprobación el componente."
   ].join("\n");
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){

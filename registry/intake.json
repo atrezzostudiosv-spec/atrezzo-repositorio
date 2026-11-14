@@ -191,6 +191,20 @@
       "status": "ingested_internal_validated",
       "note": "Aprobación visual del usuario 14/11/2026; 16 blobs originales exactos. Fusionado en main tras contratos y Chromium (224 comprobaciones de 56 IDs × 4 anchos, reduced-motion, no-JS, búsqueda y filtros). client_ready:false; Safari/cliente pendiente.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934"
+    },
+    {
+      "package_name": "ATREZZO_MICROINTERACTIONS_COLLECTION_01.zip",
+      "category": "microinteracciones",
+      "candidate_variants": 5,
+      "ids": [
+        "ATZ-MIC-001",
+        "ATZ-MIC-002",
+        "ATZ-MIC-003",
+        "ATZ-MIC-004",
+        "ATZ-MIC-005"
+      ],
+      "status": "ingested_pending_catalog_qa",
+      "note": "Usuario aprobó expresamente y autorizó integración. 12 blobs funcionales coinciden con ZIP aprobado. QA del paquete 36 casos Chromium + 5 contratos JS. Fusión condicionada a QA del catálogo completo."
     }
   ]
 }
