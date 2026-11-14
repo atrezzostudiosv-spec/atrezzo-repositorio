@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "classification_notice": "Clasificación editorial propuesta; no certificación de compatibilidad. El posicionamiento real y la tarea del visitante prevalecen. M0 no recomienda movimiento. Los IDs y su aprobación se resuelven en components.json.",
+  "classification_notice": "Clasificación editorial propuesta; no certificación de compatibilidad. El posicionamiento real y la tarea del visitante prevalecen. M0 no recomienda movimiento. Los IDs y su aprobación se resuelven en components.json. Recomendados es una selección editorial orientativa; compatible no equivale a recomendado. Las puntuaciones no son métricas de calidad.",
   "profiles": [
     {
       "id": "creativo",
@@ -13,6 +13,17 @@
         "Proyectos",
         "Galería",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-004",
+        "ATZ-MOT-012",
+        "ATZ-CTR-003",
+        "ATZ-SEC-008",
+        "ATZ-SCR-004",
+        "ATZ-CTR-004",
+        "ATZ-NAV-001",
+        "ATZ-MIC-003",
+        "ATZ-MOT-001"
       ]
     },
     {
@@ -26,6 +37,17 @@
         "Servicios",
         "Proceso",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-001",
+        "ATZ-SVC-001",
+        "ATZ-SEC-008",
+        "ATZ-SEC-002",
+        "ATZ-MOT-003",
+        "ATZ-SEC-009",
+        "ATZ-NAV-002",
+        "ATZ-MIC-003",
+        "ATZ-MOT-008"
       ]
     },
     {
@@ -38,6 +60,13 @@
         "Servicios",
         "Presentación",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-SVC-001",
+        "ATZ-MOT-001",
+        "ATZ-MOT-003",
+        "ATZ-MOT-008",
+        "ATZ-MIC-003"
       ]
     },
     {
@@ -51,6 +80,17 @@
         "Proyectos",
         "Galería",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-005",
+        "ATZ-SEC-007",
+        "ATZ-SEC-008",
+        "ATZ-MOT-003",
+        "ATZ-SCR-004",
+        "ATZ-SCR-003",
+        "ATZ-CTR-004",
+        "ATZ-MIC-003",
+        "ATZ-NAV-002"
       ]
     },
     {
@@ -64,6 +104,17 @@
         "Galería",
         "Servicios",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-005",
+        "ATZ-SEC-007",
+        "ATZ-SEC-008",
+        "ATZ-MOT-003",
+        "ATZ-SCR-007",
+        "ATZ-SCR-004",
+        "ATZ-CTR-004",
+        "ATZ-SVC-001",
+        "ATZ-MIC-003"
       ]
     },
     {
@@ -77,6 +128,15 @@
         "Proceso",
         "Proyectos",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-001",
+        "ATZ-SVC-001",
+        "ATZ-SEC-002",
+        "ATZ-SEC-009",
+        "ATZ-MOT-003",
+        "ATZ-NAV-002",
+        "ATZ-MIC-003"
       ]
     },
     {
@@ -90,6 +150,15 @@
         "Servicios",
         "Galería",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-003",
+        "ATZ-MOT-001",
+        "ATZ-MOT-008",
+        "ATZ-SEC-002",
+        "ATZ-SVC-001",
+        "ATZ-SEC-009",
+        "ATZ-MIC-003"
       ]
     },
     {
@@ -103,6 +172,15 @@
         "Servicios",
         "Galería",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-005",
+        "ATZ-SEC-007",
+        "ATZ-MOT-003",
+        "ATZ-SEC-008",
+        "ATZ-SVC-001",
+        "ATZ-SCR-007",
+        "ATZ-MIC-003"
       ]
     },
     {
@@ -114,6 +192,11 @@
         "Hero",
         "Servicios",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-SVC-001",
+        "ATZ-MIC-003",
+        "ATZ-MOT-001"
       ]
     },
     {
@@ -126,6 +209,13 @@
         "Producto",
         "Galería",
         "Contacto"
+      ],
+      "preferred": [
+        "ATZ-MOT-001",
+        "ATZ-SVC-001",
+        "ATZ-MOT-003",
+        "ATZ-MIC-003",
+        "ATZ-MIC-004"
       ]
     }
   ],
@@ -177,7 +267,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-001.webp",
         "video": "previews/ATZ-SCR-001.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-002",
@@ -205,7 +301,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-002.webp",
         "video": "previews/ATZ-SCR-002.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-003",
@@ -233,7 +335,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-003.webp",
         "video": "previews/ATZ-SCR-003.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-004",
@@ -261,7 +369,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-004.webp",
         "video": "previews/ATZ-SCR-004.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-005",
@@ -289,7 +403,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-005.webp",
         "video": "previews/ATZ-SCR-005.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-006",
@@ -317,7 +437,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-006.webp",
         "video": "previews/ATZ-SCR-006.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-007",
@@ -345,7 +471,17 @@
       "media": {
         "poster": "previews/ATZ-SCR-007.webp",
         "video": "previews/ATZ-SCR-007.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "fotografía",
+        "zoom",
+        "expandir",
+        "expansión",
+        "mosaico",
+        "foto",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-008",
@@ -373,7 +509,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-008.webp",
         "video": "previews/ATZ-SCR-008.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-009",
@@ -401,7 +543,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-009.webp",
         "video": "previews/ATZ-SCR-009.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SCR-010",
@@ -429,7 +577,13 @@
       "media": {
         "poster": "previews/ATZ-SCR-010.webp",
         "video": "previews/ATZ-SCR-010.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-TRN-001",
@@ -459,7 +613,13 @@
       "media": {
         "poster": "previews/ATZ-TRN-001.webp",
         "video": "previews/ATZ-TRN-001.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-NAV-001",
@@ -488,7 +648,8 @@
       "media": {
         "poster": "previews/ATZ-NAV-001.webp",
         "video": "previews/ATZ-NAV-001.webm"
-      }
+      },
+      "search_aliases": []
     },
     {
       "id": "ATZ-NAV-002",
@@ -520,7 +681,8 @@
       "media": {
         "poster": "previews/ATZ-NAV-002.webp",
         "video": "previews/ATZ-NAV-002.webm"
-      }
+      },
+      "search_aliases": []
     },
     {
       "id": "ATZ-NAV-003",
@@ -552,7 +714,13 @@
       "media": {
         "poster": "previews/ATZ-NAV-003.webp",
         "video": "previews/ATZ-NAV-003.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-001",
@@ -586,7 +754,13 @@
       "media": {
         "poster": "previews/ATZ-STK-001.webp",
         "video": "previews/ATZ-STK-001.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-002",
@@ -620,7 +794,16 @@
       "media": {
         "poster": "previews/ATZ-STK-002.webp",
         "video": "previews/ATZ-STK-002.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "encoger",
+        "contracción",
+        "esquinas redondeadas",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-003",
@@ -654,7 +837,13 @@
       "media": {
         "poster": "previews/ATZ-STK-003.webp",
         "video": "previews/ATZ-STK-003.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-004",
@@ -688,7 +877,13 @@
       "media": {
         "poster": "previews/ATZ-STK-004.webp",
         "video": "previews/ATZ-STK-004.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-005",
@@ -722,7 +917,13 @@
       "media": {
         "poster": "previews/ATZ-STK-005.webp",
         "video": "previews/ATZ-STK-005.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-006",
@@ -752,7 +953,13 @@
       "media": {
         "poster": "previews/ATZ-STK-006.webp",
         "video": "previews/ATZ-STK-006.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-007",
@@ -786,7 +993,13 @@
       "media": {
         "poster": "previews/ATZ-STK-007.webp",
         "video": "previews/ATZ-STK-007.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-008",
@@ -820,7 +1033,13 @@
       "media": {
         "poster": "previews/ATZ-STK-008.webp",
         "video": "previews/ATZ-STK-008.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-009",
@@ -850,7 +1069,13 @@
       "media": {
         "poster": "previews/ATZ-STK-009.webp",
         "video": "previews/ATZ-STK-009.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-010",
@@ -884,7 +1109,13 @@
       "media": {
         "poster": "previews/ATZ-STK-010.webp",
         "video": "previews/ATZ-STK-010.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-011",
@@ -918,7 +1149,13 @@
       "media": {
         "poster": "previews/ATZ-STK-011.webp",
         "video": "previews/ATZ-STK-011.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-012",
@@ -948,7 +1185,13 @@
       "media": {
         "poster": "previews/ATZ-STK-012.webp",
         "video": "previews/ATZ-STK-012.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-013",
@@ -978,7 +1221,13 @@
       "media": {
         "poster": "previews/ATZ-STK-013.webp",
         "video": "previews/ATZ-STK-013.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-014",
@@ -1008,7 +1257,16 @@
       "media": {
         "poster": "previews/ATZ-STK-014.webp",
         "video": "previews/ATZ-STK-014.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "expansión",
+        "expandir",
+        "compresión",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-STK-015",
@@ -1042,7 +1300,13 @@
       "media": {
         "poster": "previews/ATZ-STK-015.webp",
         "video": "previews/ATZ-STK-015.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-001",
@@ -1075,7 +1339,19 @@
       "media": {
         "poster": "previews/ATZ-SEC-001.webp",
         "video": "previews/ATZ-SEC-001.webm"
-      }
+      },
+      "search_aliases": [
+        "imágenes",
+        "fotografía",
+        "expandir",
+        "expansión",
+        "ampliar",
+        "zoom",
+        "imagen que crece",
+        "imagen",
+        "foto",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-002",
@@ -1108,7 +1384,16 @@
       "media": {
         "poster": "previews/ATZ-SEC-002.webp",
         "video": "previews/ATZ-SEC-002.webm"
-      }
+      },
+      "search_aliases": [
+        "fotografía",
+        "imagen",
+        "split",
+        "dividir",
+        "servicios",
+        "foto",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-003",
@@ -1141,7 +1426,13 @@
       "media": {
         "poster": "previews/ATZ-SEC-003.webp",
         "video": "previews/ATZ-SEC-003.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-004",
@@ -1174,7 +1465,13 @@
       "media": {
         "poster": "previews/ATZ-SEC-004.webp",
         "video": "previews/ATZ-SEC-004.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-005",
@@ -1207,7 +1504,13 @@
       "media": {
         "poster": "previews/ATZ-SEC-005.webp",
         "video": "previews/ATZ-SEC-005.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-006",
@@ -1240,7 +1543,13 @@
       "media": {
         "poster": "previews/ATZ-SEC-006.webp",
         "video": "previews/ATZ-SEC-006.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-007",
@@ -1274,7 +1583,16 @@
       "media": {
         "poster": "previews/ATZ-SEC-007.webp",
         "video": "previews/ATZ-SEC-007.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "fotografía",
+        "pantalla completa",
+        "capítulos",
+        "full bleed",
+        "foto",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-008",
@@ -1307,7 +1625,13 @@
       "media": {
         "poster": "previews/ATZ-SEC-008.webp",
         "video": "previews/ATZ-SEC-008.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-SEC-009",
@@ -1340,7 +1664,13 @@
       "media": {
         "poster": "previews/ATZ-SEC-009.webp",
         "video": "previews/ATZ-SEC-009.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-MOT-001",
@@ -1381,7 +1711,22 @@
       "media": {
         "poster": "previews/ATZ-MOT-001.webp",
         "video": "previews/ATZ-MOT-001.webm"
-      }
+      },
+      "search_aliases": [
+        "texto",
+        "titular",
+        "revelar",
+        "revelado",
+        "letras",
+        "entrada",
+        "reveal",
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-002",
@@ -1419,7 +1764,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-002.webp",
         "video": "previews/ATZ-MOT-002.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-003",
@@ -1450,7 +1803,6 @@
         "construccion",
         "bienestar",
         "hospitality",
-        "urgente",
         "comercio"
       ],
       "motion": 1,
@@ -1458,7 +1810,16 @@
       "media": {
         "poster": "previews/ATZ-MOT-003.webp",
         "video": "previews/ATZ-MOT-003.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "paralaje",
+        "parallax",
+        "profundidad",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-MOT-004",
@@ -1484,7 +1845,14 @@
       "media": {
         "poster": "previews/ATZ-MOT-004.webp",
         "video": "previews/ATZ-MOT-004.webm"
-      }
+      },
+      "search_aliases": [
+        "hero",
+        "portada",
+        "collage",
+        "foto",
+        "imagen"
+      ]
     },
     {
       "id": "ATZ-MOT-005",
@@ -1514,7 +1882,14 @@
       "media": {
         "poster": "previews/ATZ-MOT-005.webp",
         "video": "previews/ATZ-MOT-005.webm"
-      }
+      },
+      "search_aliases": [
+        "hero",
+        "portada",
+        "foto",
+        "imagen",
+        "cinematográfico"
+      ]
     },
     {
       "id": "ATZ-MOT-006",
@@ -1547,7 +1922,13 @@
       "media": {
         "poster": "previews/ATZ-MOT-006.webp",
         "video": "previews/ATZ-MOT-006.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-MOT-007",
@@ -1579,7 +1960,13 @@
       "media": {
         "poster": "previews/ATZ-MOT-007.webp",
         "video": "previews/ATZ-MOT-007.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-PGT-001",
@@ -1608,7 +1995,8 @@
       "media": {
         "poster": "previews/ATZ-PGT-001.webp",
         "video": "previews/ATZ-PGT-001.webm"
-      }
+      },
+      "search_aliases": []
     },
     {
       "id": "ATZ-PGT-002",
@@ -1637,7 +2025,8 @@
       "media": {
         "poster": "previews/ATZ-PGT-002.webp",
         "video": "previews/ATZ-PGT-002.webm"
-      }
+      },
+      "search_aliases": []
     },
     {
       "id": "ATZ-PGT-003",
@@ -1666,7 +2055,8 @@
       "media": {
         "poster": "previews/ATZ-PGT-003.webp",
         "video": "previews/ATZ-PGT-003.webm"
-      }
+      },
+      "search_aliases": []
     },
     {
       "id": "ATZ-SVC-001",
@@ -1700,7 +2090,14 @@
       "media": {
         "poster": "previews/ATZ-SVC-001.webp",
         "video": "previews/ATZ-SVC-001.webm"
-      }
+      },
+      "search_aliases": [
+        "servicios",
+        "bento",
+        "composición",
+        "tarjetas",
+        "producto"
+      ]
     },
     {
       "id": "ATZ-MOT-008",
@@ -1740,7 +2137,20 @@
       "media": {
         "poster": "previews/ATZ-MOT-008.webp",
         "video": "previews/ATZ-MOT-008.webm"
-      }
+      },
+      "search_aliases": [
+        "texto",
+        "desenfoque",
+        "blur",
+        "revelar",
+        "revelado",
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-010",
@@ -1778,7 +2188,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-010.webp",
         "video": "previews/ATZ-MOT-010.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-011",
@@ -1816,7 +2234,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-011.webp",
         "video": "previews/ATZ-MOT-011.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-012",
@@ -1854,7 +2280,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-012.webp",
         "video": "previews/ATZ-MOT-012.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-013",
@@ -1892,7 +2326,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-013.webp",
         "video": "previews/ATZ-MOT-013.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-014",
@@ -1930,7 +2372,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-014.webp",
         "video": "previews/ATZ-MOT-014.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MOT-015",
@@ -1968,7 +2418,15 @@
       "media": {
         "poster": "previews/ATZ-MOT-015.webp",
         "video": "previews/ATZ-MOT-015.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MIC-001",
@@ -1999,7 +2457,11 @@
       "media": {
         "poster": "previews/ATZ-MIC-001.webp",
         "video": "previews/ATZ-MIC-001.webm"
-      }
+      },
+      "search_aliases": [
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MIC-002",
@@ -2029,7 +2491,15 @@
       "media": {
         "poster": "previews/ATZ-MIC-002.webp",
         "video": "previews/ATZ-MIC-002.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MIC-003",
@@ -2064,7 +2534,16 @@
       "media": {
         "poster": "previews/ATZ-MIC-003.webp",
         "video": "previews/ATZ-MIC-003.webm"
-      }
+      },
+      "search_aliases": [
+        "botón",
+        "cta",
+        "flecha",
+        "relleno",
+        "contacto",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MIC-004",
@@ -2096,7 +2575,15 @@
       "media": {
         "poster": "previews/ATZ-MIC-004.webp",
         "video": "previews/ATZ-MIC-004.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-MIC-005",
@@ -2125,7 +2612,15 @@
       "media": {
         "poster": "previews/ATZ-MIC-005.webp",
         "video": "previews/ATZ-MIC-005.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll",
+        "animación",
+        "movimiento"
+      ]
     },
     {
       "id": "ATZ-CTR-001",
@@ -2157,7 +2652,13 @@
       "media": {
         "poster": "previews/ATZ-CTR-001.webp",
         "video": "previews/ATZ-CTR-001.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-CTR-002",
@@ -2189,7 +2690,13 @@
       "media": {
         "poster": "previews/ATZ-CTR-002.webp",
         "video": "previews/ATZ-CTR-002.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "fotografía",
+        "scroll"
+      ]
     },
     {
       "id": "ATZ-CTR-003",
@@ -2220,7 +2727,8 @@
       "media": {
         "poster": "previews/ATZ-CTR-003.webp",
         "video": "previews/ATZ-CTR-003.webm"
-      }
+      },
+      "search_aliases": []
     },
     {
       "id": "ATZ-CTR-004",
@@ -2252,7 +2760,17 @@
       "media": {
         "poster": "previews/ATZ-CTR-004.webp",
         "video": "previews/ATZ-CTR-004.webm"
-      }
+      },
+      "search_aliases": [
+        "imagen",
+        "foto",
+        "proyecto",
+        "elemento compartido",
+        "expandir",
+        "transición",
+        "fotografía",
+        "scroll"
+      ]
     }
   ],
   "references": [

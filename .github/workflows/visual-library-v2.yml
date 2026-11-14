@@ -4,6 +4,8 @@ on:
     branches: [feat/visual-library-v2]
     paths:
       - 'catalog/visual*'
+      - 'catalog/index.html'
+      - 'catalog/technical.html'
       - 'registry/visual-discovery.json'
       - 'tests/visual-browser.mjs'
       - '.github/workflows/visual-library-v2.yml'
@@ -26,7 +28,11 @@ jobs:
       - run: npm test
       - run: npm install --no-save playwright@1.65.0 gsap@3.12.5
       - run: npx playwright install --with-deps --only-shell chromium
-      - run: ffmpeg -version
+      - name: Install FFmpeg encoder
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version
       - name: Capture genuine demos and test V2 at four widths
         run: node tests/visual-browser.mjs --capture
       - name: Upload captured assets

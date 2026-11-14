@@ -1,111 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <title>ATREZZO | Biblioteca de Componentes</title>
-  <meta name="description" content="Biblioteca visual de componentes y movimientos web de ATREZZO Studios. Previews individuales e IDs reutilizables.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="app.js?v=20261114-catalog-r5"></script>
-</head>
-<body>
-  <a class="skip-link" href="#library">Saltar al catálogo</a>
-  <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Atrezzo — inicio de la biblioteca">
-      <span class="brand-symbol" aria-hidden="true"><span></span></span>
-      <span class="brand-text">ATREZZO <span class="brand-sub">/ COMPONENTS</span></span>
-    </a>
-    <div class="topbar-right">
-      <span class="edition">DESIGN SYSTEM <span class="edition-dot"></span> 2026</span>
-      <a href="visual.html" class="header-link">Biblioteca visual 2.0 ↗</a><a href="#favorites" class="header-favorites" aria-label="Ir a mis favoritos">♡ <span>Favoritos</span> <span id="header-favorite-count">0</span></a>
-      <a href="../registry/components.json" class="header-link" target="_blank" rel="noopener">Registro técnico <span aria-hidden="true">↗</span></a>
-      <a class="source-link" href="https://github.com/atrezzostudiosv-spec/atrezzo-repositorio" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
-    </div>
-  </header>
-  <div class="shell">
-    <aside class="sidebar" aria-label="Navegación del catálogo">
-      <div class="sidebar-inner">
-        <div class="sidebar-kicker">EXPLORAR BIBLIOTECA</div>
-        <nav id="category-nav" class="side-nav" aria-label="Categorías de componentes">
-          <a class="side-link favorites-link" href="#favorites">♡ Mis favoritos <span id="side-favorite-count">0</span></a>
-          <a class="side-link current" href="#library">Todos los componentes <span>65</span></a>
-        </nav>
-        <div class="sidebar-divider"></div>
-        <div class="sidebar-kicker">RECURSOS</div>
-        <nav class="side-nav" aria-label="Documentación">
-          <a class="side-link resource" href="../AGENTS.md" target="_blank" rel="noopener">Guía para ChatGPT <span aria-hidden="true">↗</span></a>
-          <a class="side-link resource" href="../registry/components.json" target="_blank" rel="noopener">Registro JSON <span aria-hidden="true">↗</span></a>
-          <a class="side-link resource" href="../ATREZZO-PROJECT-STATUS.md" target="_blank" rel="noopener">Estado del proyecto <span aria-hidden="true">↗</span></a>
-        </nav>
-        <div class="sidebar-note">
-          <span class="note-mark" aria-hidden="true"></span>
-          <strong>Un efecto. Un identificador.</strong>
-          <p>Selecciona una variante y comparte su ID para integrarla sin arrastrar toda la colección.</p>
-        </div>
-      </div>
-    </aside>
-    <main class="main">
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-glow hero-glow-violet"></div>
-        <div class="hero-glow hero-glow-cyan"></div>
-        <div class="hero-copy">
-          <span class="eyebrow"><span class="eyebrow-line"></span> ATREZZO DESIGN SYSTEM / 001</span>
-          <h1 id="page-title">Every interaction<br><span class="gradient-text">has its place.</span></h1>
-          <p class="hero-description">Nuestra colección de componentes, animaciones y experiencias web. Explora visualmente, identifica el movimiento exacto y llévalo a un nuevo proyecto.</p>
-          <a class="btn-primary" href="#library">Explorar biblioteca <span aria-hidden="true">↘</span></a>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="art-topline"><span class="live-point"></span> INTERACTION STUDY <span>001 / MOTION</span></div>
-          <div class="art-stage">
-            <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
-            <div class="art-tile art-tile-a"></div><div class="art-tile art-tile-b"></div><div class="art-tile art-tile-c"></div>
-            <div class="art-tile art-tile-d"></div><div class="art-tile art-tile-e"></div>
-            <div class="art-center"><span>ATZ</span><small>DESIGN SYSTEM</small></div>
-          </div>
-          <div class="art-bottomline"><span>01 — COMPOSITION ENGINE</span><span>SCROLL / INTERACTION / UI</span></div>
-        </div>
-      </section>
-      <section class="metrics" aria-label="Estado de la biblioteca">
-        <div class="metric"><span class="metric-number" id="count-total">65</span><span class="metric-label">VARIANTES CATALOGADAS</span></div>
-        <div class="metric"><span class="metric-number" id="count-categories">11</span><span class="metric-label">CATEGORÍAS ACTIVAS</span></div>
-        <div class="metric"><span class="metric-number" id="count-tested">65</span><span class="metric-label">COMPONENTES APROBADOS</span></div>
-        <div class="metric metric-caption"><span class="metric-kicker"><span class="cyan-dot"></span> ESTADO DEL CATÁLOGO</span><span>Biblioteca aprobada y disponible para integración por ID.</span></div>
-      </section>
-<section class="favorites-section" id="favorites" aria-labelledby="favorites-title">
-        <div class="section-heading favorites-heading">
-          <div><span class="section-eyebrow">ACCESO RÁPIDO / TU SELECCIÓN</span><h2 id="favorites-title"><span class="fav-title-heart" aria-hidden="true">♡</span> Mis favoritos<span class="title-period">.</span></h2><p id="favorites-help">Guarda tus movimientos preferidos para encontrarlos aquí. Permanecen en este navegador, no se sincronizan entre dispositivos.</p></div>
-          <div class="favorites-tools"><span class="catalog-counter" id="favorites-count">0 GUARDADOS</span><button id="copy-favorites" type="button" class="copy-action" disabled>Copiar IDs favoritos</button></div>
-        </div>
-        <div id="favorites-grid" class="component-grid favorites-grid"></div>
-        <p class="favorites-empty" id="favorites-empty">Todavía no has guardado movimientos. Pulsa el corazón de cualquier tarjeta para reunir aquí tus favoritos.</p>
-      </section>
-      <section class="catalog" id="library" aria-labelledby="catalog-title">
-        <div class="section-heading">
-          <div><span class="section-eyebrow">01 / THE COLLECTION</span><h2 id="catalog-title">Biblioteca de componentes<span class="title-period">.</span></h2><p>Encuentra cada movimiento por su comportamiento, no solamente por el nombre de la colección.</p></div>
-          <span class="catalog-counter" id="result-count">65 COMPONENTES</span>
-        </div>
-        <div class="toolbar">
-          <label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar componentes</span><input id="search" type="search" autocomplete="off" placeholder="Buscar por nombre, ID, fotografía, 3D, tarjetas…"></label>
-          <div class="filters" id="filters" aria-label="Filtrar por tipo de movimiento"></div>
-        </div>
-        <p class="qa-note"><strong>Aprobado</strong> = componente verificado y disponible para integrar por ID. Conserva su movimiento original.</p>
-        <div id="component-grid" class="component-grid" aria-live="polite">
-          <div class="loading-catalog">Cargando registro de componentes…</div><noscript><p class="loading-catalog">La búsqueda requiere JavaScript. Puedes consultar el <a href="../registry/components.json">registro de los 65 componentes</a> y acceder a sus archivos individuales.</p></noscript>
-        </div>
-        <p id="empty-state" class="empty-state" hidden>No encontramos ese efecto. Prueba otra categoría, palabra o identificador.</p>
-      </section>
-      <section class="use-banner">
-        <div class="banner-icon" aria-hidden="true">{ / }</div>
-        <div><span class="section-eyebrow">AI-READY WORKFLOW</span><h2>Diseñado para trabajar con ChatGPT.</h2><p>Cada ID apunta a una ficha técnica, a una función concreta y a una preview de referencia.</p></div>
-        <button class="btn-outline" id="copy-example" type="button">Copiar instrucción <span aria-hidden="true">↗</span></button>
-      </section>
-      <footer class="footer"><span>© 2026 ATREZZO STUDIOS</span><span>COMPONENT LIBRARY / VISUAL SYSTEM V1.0</span><a href="https://github.com/codrops/OnScrollLayoutFormations" target="_blank" rel="noopener">Referencias acreditadas ↗</a></footer>
-    </main>
-  </div>
-  <div role="status" class="toast" id="toast" aria-live="polite"></div>
-</body>
-</html>
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>ATREZZO — Visual Library 2.0</title><link rel="stylesheet" href="visual.css?v=2"><script type="module" src="visual.js?v=2"></script></head>
+<body><a class="skip" href="#results">Saltar a resultados</a><header class="bar"><a class="brand" href="index.html">ATREZZO <small>/ VISUAL LIBRARY</small></a><nav><a href="#director">Director creativo</a><a href="#board">Mi proyecto <span id="board-count">0</span></a><a href="technical.html">Catálogo técnico ↗</a></nav></header>
+<main class="shell"><section class="intro"><div><p class="kicker">ATREZZO DESIGN SYSTEM / 02</p><h1>Encuentra el movimiento.<br><em>Construye la experiencia.</em></h1><p>Explora por intención, sector o composición. Selecciona un componente por su demo real, no por su código.</p></div><div class="stat"><strong id="total">—</strong><span>IDs aprobados en el registro</span><a href="#results">Explorar biblioteca ↓</a></div></section>
+<section aria-labelledby="filter-title" class="filter-panel"><div class="section-title"><div><p class="kicker">01 / EXPLORAR</p><h2 id="filter-title">Biblioteca visual</h2></div><button id="clear" type="button" class="subtle">Limpiar filtros</button></div>
+<label class="search">Buscar por movimiento, nombre o intención<input id="query" type="search" placeholder="Ej. imágenes que se expanden, parallax, ATZ-SEC-007"></label><div id="views" class="chips" aria-label="Familias visuales"></div>
+<div class="filters"><label>Sector<select id="industry"></select></label><label>Sección<select id="role"></select></label><label>Estética<select id="style"></select></label><label>Movimiento<select id="motion"><option value="">Todos</option><option value="0">M0 · Inmediato</option><option value="1">M1 · Discreto</option><option value="2">M2 · Editorial</option><option value="3">M3 · Inmersivo</option></select></label><label>Activación<select id="trigger"></select></label><label>Selección<select id="saved"><option value="">Todos</option><option value="yes">Favoritos</option><option value="preferred">Recomendados del sector</option></select></label></div><p class="note">Los sectores y secciones son filtros transversales; la idoneidad final depende de la auditoría del negocio.</p></section>
+<section id="results" aria-labelledby="results-title"><div class="section-title"><h2 id="results-title">Movimientos</h2><span id="count" role="status">Cargando registro…</span></div><div id="grid" class="grid"></div><p id="empty" hidden>No hay coincidencias. Modifica los filtros. Para M0, diseña una sección estática sin movimiento obligatorio.</p></section>
+<section id="references"><div class="section-title"><div><p class="kicker">02 / ESTRUCTURAS</p><h2>Websites completos</h2></div></div><p class="note">Referencias aprobadas de dirección y estructura. No son componentes listos para importar.</p><div id="reference-grid" class="grid"></div></section>
+<details class="panel" id="archive"><summary>Archivo pendiente de incorporación</summary><p class="note">Paquetes auditados o recibidos que todavía no tienen ID disponible en el catálogo. No se importan ni se publican automáticamente.</p><div id="intake-list"></div></details><section id="director" class="panel"><div class="section-title"><div><p class="kicker">03 / DESIGN INTELLIGENCE</p><h2>Director creativo</h2></div><span class="pill">Motor de reglas · sin API</span></div><p>Elabora una partitura inicial; no sustituye la auditoría ni decide automáticamente el estilo por sector.</p><div class="filters"><label>Sector<select id="d-industry"></select></label><label>Personalidad<select id="d-style"></select></label><label>Objetivo<select id="d-goal"><option>Presentar servicios y proyectos</option><option>Generar solicitudes de contacto</option><option>Conseguir reservas</option><option>Vender productos</option><option>Explicar un producto tecnológico</option></select></label><label>Límite de movimiento<select id="d-motion"><option value="0">M0 · Inmediato</option><option value="1">M1 · Discreto</option><option value="2">M2 · Editorial</option><option value="3">M3 · Inmersivo</option></select></label></div><button id="recommend" class="primary" type="button">Generar selección</button><div id="recommendations" aria-live="polite"></div><button id="apply-recommendation" type="button" class="primary" hidden>Guardar esta partitura en mi proyecto</button></section>
+<section id="board" class="panel"><div class="section-title"><div><p class="kicker">04 / PROJECT COMPOSER</p><h2>Mi proyecto</h2></div><button id="new-board" class="subtle" type="button">Nuevo proyecto</button></div><div class="filters"><label>Proyecto<select id="projects"></select></label><label>Nombre<input id="project-name" maxlength="100" placeholder="Nombre del proyecto"></label></div><p id="board-context" class="note"></p><p class="note">Guardado en este navegador. Exporta el JSON para compartirlo o recuperarlo en otro dispositivo.</p><div id="board-items"></div><div class="actions"><button id="export-prompt" class="primary">Copiar plan para ChatGPT</button><button id="export-json">Exportar JSON</button><label class="file-label">Importar JSON<input id="import-json" type="file" accept="application/json,.json"></label></div></section>
+<footer>ATREZZO STUDIOS · 2026 · Visual Library 2.0 <a href="../registry/components.json">Registro original ↗</a> <a href="../docs/AI-INTEGRATION-WORKFLOW.md">Integración ↗</a></footer></main>
+<dialog id="demo-dialog"><div class="dialog-head"><strong id="dialog-title">Demostración</strong><a id="dialog-link" target="_blank" rel="noopener">Abrir completa ↗</a><button id="close-dialog" type="button">Cerrar ×</button></div><iframe id="demo-frame" title="Demo interactiva del componente"></iframe></dialog><div id="toast" role="status" aria-live="polite"></div><noscript>La biblioteca visual necesita JavaScript. <a href="technical.html">Consultar catálogo técnico</a>.</noscript></body></html>

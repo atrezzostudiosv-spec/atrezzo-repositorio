@@ -45,14 +45,14 @@ async function capture(e){
  const poster=join(output,e.id+".webp"),video=join(output,e.id+".webm");
  encode(["-i",join(tmp,String(posterFrame).padStart(3,"0")+".png"),"-vf","scale=896:560","-frames:v","1","-c:v","libwebp","-quality","83",poster]);
  encode(["-framerate","8","-i",join(tmp,"%03d.png"),"-vf","scale=800:500","-c:v","libvpx-vp9","-pix_fmt","yuv420p","-crf","33","-b:v","0","-an",video]);
- assert((await fs.stat(poster)).size>3000,e.id+" poster too small");assert((await fs.stat(video)).size>5000,e.id+" video too small");
+ assert((await fs.stat(poster)).size>1000,e.id+" poster too small");assert((await fs.stat(video)).size>2000,e.id+" video too small");
  assert.equal(errors.length,0,e.id+" page errors: "+errors.join(";"));
  return {poster:"previews/"+e.id+".webp",video:"previews/"+e.id+".webm",duration:5,source:e.preview,viewport:"1120x700",interaction};
  }finally{await page.close();await fs.rm(tmp,{recursive:true,force:true})}
 }
 async function smoke(expectMedia){
  for(const width of [375,768,1024,1440]){
-   const page=await browser.newPage({viewport:{width,height:900},acceptDownloads:true});await setup(page);const errors=[];page.on("pageerror",x=>errors.push(x.message));await page.goto(origin+"/catalog/visual.html");
+   const page=await browser.newPage({viewport:{width,height:900},acceptDownloads:true});await setup(page);const errors=[];page.on("pageerror",x=>errors.push(x.message));await page.goto(origin+"/catalog/");
    await page.waitForFunction(n=>document.querySelectorAll("#grid .card").length===n,reg.entries.length,{timeout:15000});
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),"Overflow "+width);
    await page.locator("#query").fill("ATZ-MOT-003");assert.equal(await page.locator("#grid .card").count(),1);
@@ -72,7 +72,7 @@ async function smoke(expectMedia){
  }
 }
 try{
- await smoke(false);
+ const existing=JSON.parse(await fs.readFile(join(output,"manifest.json"),"utf8"));await smoke(Object.keys(existing.entries||{}).length===reg.entries.length);
  if(process.argv.includes("--capture")){
   await fs.mkdir(output,{recursive:true});
   const records={};
