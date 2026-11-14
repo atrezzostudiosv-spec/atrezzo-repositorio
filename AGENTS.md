@@ -55,3 +55,8 @@ El usuario reentregó `ATREZZO_TRANSITIONS_01_COMPLETO(1).zip`, que coincide byt
 ## ATZ-SVC-001 — Extracción de proyecto Tri-Lane (2026-11-11)
 
 La biblioteca añade un grupo **Composiciones de servicios**, separado de Scroll & Motion. Fuente real: `atrezzostudiosv-spec/tri-lane-roofing/index.html`, sección `.tl-wwd-section`, origen de la captura del usuario. Era una **demo comercial de Atrezzo**, no sitio oficial contratado ni trabajo publicado por cliente. Preservar geometría 1.24fr/1fr y 2x2 secundario, swipe horizontal con scroll-snap en ≤767px y revelado IntersectionObserver 700ms. Extraído como `ATZ-SVC-001`: HTML/CSS/JS/runtime propios, 5 ilustraciones SVG generadas para catálogo, NINGUNA foto de Tri-Lane. No copiar textos/servicios/claims de ejemplo en websites de otros clientes sin acreditación. La ficha `components/servicios/ATZ-SVC-001.md` documenta límites y breakpoints. No es un patrón de scroll pesado ni un nuevo template universal.
+
+
+## Typography Collection 01 (2026-11-14)
+
+ATZ-MOT-008, 010–015 utilizan exclusivamente sus archivos registrados en `components/typography/` (HTML, JS, `atrezzo-typography.css`, `runtime.js`). No importar Motion V1 ni otros IDs. No copiar recursos o código de TRIONN. Las demos fueron aprobadas por el usuario; `client_ready:false` hasta pruebas en cliente. No modificar el movimiento aprobado ni confundir QA de catálogo con producción.
