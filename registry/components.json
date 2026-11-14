@@ -2721,8 +2721,8 @@
         "hover"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. No incluye material de TRIONN.",
-      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Referencia conceptual: logo magnético 3D de TRIONN; adaptación 2D propia, trayectoria no medida.",
-      "catalog_qa_note": "QA del paquete aprobado; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Referencia conceptual: logo magnético 3D de TRIONN; adaptación 2D propia, trayectoria no medida. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 244 casos globales, 20 nuevos, touch, teclado, reduced motion, sin JS, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012. client_ready:false."
     },
     {
       "id": "ATZ-MIC-002",
@@ -2761,8 +2761,8 @@
         "hover"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. No incluye material de TRIONN.",
-      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Captura Work escritorio 06:18–06:48; cursor contextual no aislado, propuesta propia.",
-      "catalog_qa_note": "QA del paquete aprobado; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Captura Work escritorio 06:18–06:48; cursor contextual no aislado, propuesta propia. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 244 casos globales, 20 nuevos, touch, teclado, reduced motion, sin JS, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012. client_ready:false."
     },
     {
       "id": "ATZ-MIC-003",
@@ -2801,8 +2801,8 @@
         "hover"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. No incluye material de TRIONN.",
-      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Muestras móvil de controles btn/button-text; transición de 300 ms de cabecera, coordinación propuesta.",
-      "catalog_qa_note": "QA del paquete aprobado; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Muestras móvil de controles btn/button-text; transición de 300 ms de cabecera, coordinación propuesta. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 244 casos globales, 20 nuevos, touch, teclado, reduced motion, sin JS, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012. client_ready:false."
     },
     {
       "id": "ATZ-MIC-004",
@@ -2841,8 +2841,8 @@
         "hover"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. No incluye material de TRIONN.",
-      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Captura Work 06:18–06:48; hover exacto no aislado. SVG abstractos originales.",
-      "catalog_qa_note": "QA del paquete aprobado; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Captura Work 06:18–06:48; hover exacto no aislado. SVG abstractos originales. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 244 casos globales, 20 nuevos, touch, teclado, reduced motion, sin JS, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012. client_ready:false."
     },
     {
       "id": "ATZ-MIC-005",
@@ -2881,8 +2881,8 @@
         "click"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. No incluye material de TRIONN.",
-      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Referencia conceptual hold-to-blast; gesto separado de WebGL, 1200 ms propuestos.",
-      "catalog_qa_note": "QA del paquete aprobado; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Aprobado por el usuario 14/11/2026. QA del paquete autónomo: 20 responsive + 15 fallbacks + 1 pulsación con teclado en Chromium; 5 contratos JS. Referencia conceptual hold-to-blast; gesto separado de WebGL, 1200 ms propuestos. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 244 casos globales, 20 nuevos, touch, teclado, reduced motion, sin JS, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012. client_ready:false."
     }
   ],
   "discovery_groups": [

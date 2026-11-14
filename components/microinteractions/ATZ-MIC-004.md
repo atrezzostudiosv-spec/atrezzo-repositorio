@@ -1,6 +1,6 @@
 # ATZ-MIC-004 — Image Hover Reveal
 
-**Aprobado por ATREZZO — disponible para integrar por ID tras QA del catálogo.**
+**Aprobado por ATREZZO — disponible para integrar por ID. QA de catálogo aprobada: [244 comprobaciones Chromium](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012).**
 
 **Función:** Vista visual de un índice editorial con cambio de imagen y seguimiento leve.
 

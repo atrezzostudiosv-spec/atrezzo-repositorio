@@ -1,6 +1,6 @@
 # ATZ-MIC-003 — CTA Arrow & Fill
 
-**Aprobado por ATREZZO — disponible para integrar por ID tras QA del catálogo.**
+**Aprobado por ATREZZO — disponible para integrar por ID. QA de catálogo aprobada: [244 comprobaciones Chromium](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012).**
 
 **Función:** Fondo ascendente y flecha diagonal de doble capa; texto permanece legible.
 
