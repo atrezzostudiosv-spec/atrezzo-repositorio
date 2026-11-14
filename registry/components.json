@@ -2415,7 +2415,7 @@
       "uses_pin": false,
       "interaction": "scroll-entry",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-008",
       "technical_guide": "components/typography/ATZ-MOT-008.md",
@@ -2435,8 +2435,8 @@
         "M1"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Home 02:42 escritorio; artículo técnico: blur 12 px, 800 ms, stagger 80 ms, capa 500 ms. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Home 02:42 escritorio; artículo técnico: blur 12 px, 800 ms, stagger 80 ms, capa 500 ms. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     },
     {
       "id": "ATZ-MOT-010",
@@ -2456,7 +2456,7 @@
       "uses_pin": false,
       "interaction": "visibility / time",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-010",
       "technical_guide": "components/typography/ATZ-MOT-010.md",
@@ -2476,8 +2476,8 @@
         "M1"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Home 02:00–02:33 escritorio; móvil 8.65–32.97 s; cadencia propuesta. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Home 02:00–02:33 escritorio; móvil 8.65–32.97 s; cadencia propuesta. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     },
     {
       "id": "ATZ-MOT-011",
@@ -2497,7 +2497,7 @@
       "uses_pin": false,
       "interaction": "scroll-entry",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-011",
       "technical_guide": "components/typography/ATZ-MOT-011.md",
@@ -2517,8 +2517,8 @@
         "M1"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Móvil Home 104.119 s y About; Y alterna ±10 px, blur aproximado 5 px. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Móvil Home 104.119 s y About; Y alterna ±10 px, blur aproximado 5 px. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     },
     {
       "id": "ATZ-MOT-012",
@@ -2538,7 +2538,7 @@
       "uses_pin": false,
       "interaction": "scroll",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-012",
       "technical_guide": "components/typography/ATZ-MOT-012.md",
@@ -2558,8 +2558,8 @@
         "M2"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Móvil Home 80.955–82.135 s y 103.102–103.502 s; desplazamiento X opuesto. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Móvil Home 80.955–82.135 s y 103.102–103.502 s; desplazamiento X opuesto. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     },
     {
       "id": "ATZ-MOT-013",
@@ -2579,7 +2579,7 @@
       "uses_pin": false,
       "interaction": "scroll-entry",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-013",
       "technical_guide": "components/typography/ATZ-MOT-013.md",
@@ -2599,8 +2599,8 @@
         "M1"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Móvil Home 109.631 s, Y20 px; About ~30 px; timing propuesto. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Móvil Home 109.631 s, Y20 px; About ~30 px; timing propuesto. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     },
     {
       "id": "ATZ-MOT-014",
@@ -2620,7 +2620,7 @@
       "uses_pin": false,
       "interaction": "visibility / time",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-014",
       "technical_guide": "components/typography/ATZ-MOT-014.md",
@@ -2640,8 +2640,8 @@
         "M2"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Escritorio 03:00; candidato visual, dirección y velocidad propuestas. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Escritorio 03:00; candidato visual, dirección y velocidad propuestas. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     },
     {
       "id": "ATZ-MOT-015",
@@ -2661,7 +2661,7 @@
       "uses_pin": false,
       "interaction": "hover / focus",
       "status": "validation",
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "preview": "catalog/preview.html?id=ATZ-MOT-015",
       "technical_guide": "components/typography/ATZ-MOT-015.md",
@@ -2681,8 +2681,8 @@
         "M1"
       ],
       "photo_usage": "Texto y CSS originales de ATREZZO; no contiene recursos de TRIONN.",
-      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo pendiente. Móvil text-layer clone y desplazamientos X; hover original no aislado, implementación propuesta. No certificado como coincidencia exacta.",
-      "catalog_qa_note": "Pendiente de pruebas de integración en catálogo; client_ready:false."
+      "validation_notes": "Aprobado visualmente por el usuario el 14/11/2026. 28 casos locales de navegador, 7 reduced motion y 7 no-JS en el paquete; QA del catálogo aprobada el 14/11/2026 (Chromium, 224 casos globales). Móvil text-layer clone y desplazamientos X; hover original no aislado, implementación propuesta. No certificado como coincidencia exacta.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 224 combinaciones globales, 28 nuevas, reduced-motion y no-JS. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934. client_ready:false."
     }
   ],
   "discovery_groups": [

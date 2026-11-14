@@ -2,7 +2,7 @@
 
 **Origen:** paquete ATREZZO Typography Collection 01 aprobado el 14/11/2026; implementación original, referencia de comportamiento TRIONN (grabaciones públicas y artículo técnico). No contiene código ni recursos de TRIONN.
 
-**Estado:** validation; client_ready:false. QA del catálogo pendiente.
+**Estado:** validation; client_ready:false. QA interna del catálogo aprobada (Chromium, 224 comprobaciones globales). [Evidencia](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934).
 
 **Activación:** visibility / time. **Movimiento:** Cinta tipográfica continua, sin salto al repetir; control de pausa.
 

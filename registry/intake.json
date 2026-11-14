@@ -188,8 +188,9 @@
         "ATZ-MOT-014",
         "ATZ-MOT-015"
       ],
-      "status": "ingested_pending_catalog_qa",
-      "note": "Aprobación visual del usuario 14/11/2026. 16 blobs funcionales exactos del ZIP. QA local 28 casos y 7/7 reduced-motion/no-JS; validación del catálogo pendiente."
+      "status": "ingested_internal_validated",
+      "note": "Aprobación visual del usuario 14/11/2026; 16 blobs originales exactos. Fusionado en main tras contratos y Chromium (224 comprobaciones de 56 IDs × 4 anchos, reduced-motion, no-JS, búsqueda y filtros). client_ready:false; Safari/cliente pendiente.",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43605004934"
     }
   ]
 }
