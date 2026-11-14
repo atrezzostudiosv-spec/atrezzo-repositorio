@@ -81,3 +81,8 @@ Tres transiciones originales **entre páginas HTML**, no scroll: `ATZ-PGT-001`, 
 `ATZ-SVC-001`: Service Bento 1+4, procedente de la demo Home de Tri-Lane Roofing; tarjeta protagonista y cuatro secundarias en escritorio, carrusel táctil y snap en móvil, revelado ligero. Código individual y CSS aislado; los placeholders de catálogo NO son fotografías ni obras del cliente. Ver `ATZ-SVC-001.md`. No mezclar con `ATREZZO SERVICE SHOWCASE 01` (Atlas/Focus/Panels), que es otro conjunto aún pendiente de ingesta.
 
 **Service Bento 1+4 cerrado y probado internamente:** `ATZ-SVC-001` (49 entradas, 9 familias). [Informe de extracción](ATREZZO-SVC-001-EXTRACTION-REPORT.md). Proveniencia y regla de reutilización: [protocolo](ATREZZO-PROTOCOLO-EXTRACCION-DESDE-PROYECTOS.md).
+
+
+## Typography Collection 01 — Creative Technology
+
+Siete efectos aprobados por el usuario (ATZ-MOT-008, 010–015). Motor y CSS separados en `components/typography/`; los 49 componentes existentes permanecen intactos. Integración de catálogo pendiente de CI; client_ready:false. Inspiración de movimiento TRIONN, código original ATREZZO, sin sus recursos.

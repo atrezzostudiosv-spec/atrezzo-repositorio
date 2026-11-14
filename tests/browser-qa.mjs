@@ -9,7 +9,8 @@ const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"
 const motionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SCR-")||e.id.startsWith("ATZ-TRN-"));
 const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
 const nativeEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SEC-"));
-const motionV1Entries=registry.entries.filter(e=>e.id.startsWith("ATZ-MOT-"));
+const typographyEntries=registry.entries.filter(e=>e.family==="atrezzo-typography-01");
+const motionV1Entries=registry.entries.filter(e=>e.id.startsWith("ATZ-MOT-")&&e.family!=="atrezzo-typography-01");
 const navigationEntries=registry.entries.filter(e=>e.category==="navegacion");
 const pageTransitionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-PGT-"));
 const serviceBentoEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SVC-"));
@@ -21,6 +22,10 @@ const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=u
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
+   if(requestPath==="/__typography_nojs"){
+     const id=new URL(req.url,"http://127.0.0.1").searchParams.get("id");const entry=typographyEntries.find(e=>e.id===id);if(!entry){res.writeHead(400);res.end("Invalid ID");return;}
+     const html=await fs.readFile(join(root,entry.component_html),"utf8");res.writeHead(200,{"content-type":"text/html; charset=utf-8"});res.end('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/'+entry.component_css+'"></head><body style="margin:0">'+html+'</body></html>');return;
+   }
    if(requestPath==="/__native_nojs"){
      const id=new URL(req.url,"http://127.0.0.1").searchParams.get("id");
      if(!/^ATZ-SEC-00[1-9]$/.test(id||"")){res.writeHead(400);res.end("Invalid component ID");return;}
@@ -392,6 +397,26 @@ try {
      await page.close();
    }
  }
+ // Typography 01: approved exact source, catalog mounting and teardown.
+ for(const width of [375,768,1024,1440]){
+   for(const entry of typographyEntries){
+     const page=await browser.newPage({viewport:{width,height:900}});await setup(page);const errors=[];page.on("pageerror",e=>errors.push(e.message));
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id,{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+     const scene=page.locator(".atz-ty");assert.equal(await scene.getAttribute("data-atz-id"),entry.id);assert.equal(await scene.getAttribute("data-ty-ready"),"true");
+     await page.getByRole("button",{name:"Repetir efecto"}).click();await scene.evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));await page.waitForTimeout(250);
+     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,entry.id+" overflow");
+     if(entry.id==="ATZ-MOT-008"||entry.id==="ATZ-MOT-011")assert((await scene.locator(".ty-unit").count())>10);
+     if(entry.id==="ATZ-MOT-012"){const line=scene.locator("[data-line]").first();await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(150);const before=await line.evaluate(el=>el.style.transform);await scene.evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));await page.waitForTimeout(150);assert.notEqual(await line.evaluate(el=>el.style.transform),before);await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(150);assert.equal(await line.evaluate(el=>el.style.transform),before);}
+     if(entry.id==="ATZ-MOT-014"||entry.id==="ATZ-MOT-010"){const pause=scene.getByRole("button",{name:/Pausar/});await pause.click();const resume=scene.getByRole("button",{name:/Reanudar/});assert.equal(await resume.getAttribute("aria-pressed"),"true");await resume.click();assert.equal(await pause.getAttribute("aria-pressed"),"false");}
+     if(entry.id==="ATZ-MOT-015"){await scene.locator("[data-swap]").first().focus();assert((await scene.locator(".ty-unit").count())>10);}
+     assert.deepEqual(errors,[]);if(width===1440)await page.screenshot({path:join(artifacts,entry.id+".png"),fullPage:false});
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());assert.equal(await scene.getAttribute("data-ty-ready"),null);assert.equal(await scene.locator(".ty-unit").count(),0);results.push({id:entry.id,width,mode:"animated",test:"typography-01",teardown:"ok"});await page.close();
+   }
+ }
+ for(const entry of typographyEntries){
+   const page=await browser.newPage({viewport:{width:375,height:812},reducedMotion:"reduce"});await setup(page);await page.goto(origin+"/catalog/preview.html?id="+entry.id,{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});assert.equal(await page.locator(".atz-ty").getAttribute("data-ty-ready"),null);assert.equal(await page.locator(".atz-ty .ty-unit").count(),0);await page.close();
+   const nojs=await browser.newPage({viewport:{width:375,height:812},javaScriptEnabled:false});await nojs.goto(origin+"/__typography_nojs?id="+entry.id);assert.equal(await nojs.locator(".atz-ty").getAttribute("data-atz-id"),entry.id);assert((await nojs.locator(".atz-ty").innerText()).trim().length>5);await nojs.close();
+ }
  const reducedMotionV1=await browser.newPage({viewport:{width:375,height:812},reducedMotion:"reduce"});
  await setup(reducedMotionV1);
  await reducedMotionV1.goto(origin+"/catalog/preview.html?id=ATZ-MOT-004",{waitUntil:"domcontentloaded"});
@@ -577,7 +602,7 @@ try {
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===49);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===56);
  // Every registered ID must link to its own preview (including new prefixes such as MOT).
  const routes=await index.locator("#component-grid .component-card").evaluateAll(cards=>cards.map(card=>({
    id:card.dataset.id,
@@ -606,7 +631,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===49);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===56);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -615,10 +640,10 @@ try {
    const page=await browser.newPage({viewport:{width,height:900}});
    await setup(page);
    await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
-   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===49,{timeout:12000});
+   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===56,{timeout:12000});
    assert.equal(await page.locator("[data-category]").count(),10,"All plus nine discovery groups");
    assert.equal(await page.locator(".collection-heading").count(),9);
-   assert.equal(await page.locator("#count-tested").textContent(),"49");
+   assert.equal(await page.locator("#count-tested").textContent(),String(registry.entries.filter(e=>e.catalog_qa_status==="passed_internal").length));
    assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Demo probada");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Demo probada");
    const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
@@ -637,7 +662,7 @@ try {
    assert.equal(await page.locator("#component-grid .component-card").first().getAttribute("data-id"),"ATZ-SEC-005");
    await page.locator("#search").fill("");
    await page.locator('[data-category="all"]').click();
-   assert.equal(await page.locator("#component-grid .component-card").count(),49);
+   assert.equal(await page.locator("#component-grid .component-card").count(),56);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Catalog overflow at "+width);
    if(width===375||width===1440)await page.screenshot({path:join(artifacts,"favorites-"+width+".png"),fullPage:false});
    await page.goto(origin+"/catalog/preview.html?id=ATZ-SCR-003",{waitUntil:"domcontentloaded"});

@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const registryPath=join(root,"registry/components.json");
 const allowedId=/^ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC)-\d{3}$/;
-const allowedFiles=/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|runtime)\/[A-Za-z0-9-]+\.(html|css|js)$/;
+const allowedFiles=/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|runtime|typography)\/[A-Za-z0-9-]+\.(html|css|js)$/;
 
 const allowedAsset=/^components\/servicios\/illustration-0[1-5]\.svg$/;
 function requireAsset(path){if(!allowedAsset.test(path))throw Error("Asset de componentes no permitido: "+path);const full=resolve(root,path);if(!full.startsWith(root+sep)||!existsSync(full))throw Error("Asset ausente: "+path);return path;}
@@ -37,7 +37,7 @@ export function resolveComponent(id){
   };
   if(!selected.files.js.endsWith("/"+id+".js"))throw Error("El JS no coincide con el ID");
   if(!selected.files.html.endsWith("/"+id+".html"))throw Error("El HTML no coincide con el ID");
-  if(!selected.files.js.startsWith("components/"+(e.id.startsWith("ATZ-SEC-")?"secciones":e.id.startsWith("ATZ-MOT-")?"motion":selected.category)+"/"))throw Error("Categoría no coincide");
+  if(!selected.files.js.startsWith("components/"+(e.id.startsWith("ATZ-SEC-")?"secciones":e.family==="atrezzo-typography-01"?"typography":e.id.startsWith("ATZ-MOT-")?"motion":selected.category)+"/"))throw Error("Categoría no coincide");
   return selected;
 }
 export function createIntegrationPrompt(id){

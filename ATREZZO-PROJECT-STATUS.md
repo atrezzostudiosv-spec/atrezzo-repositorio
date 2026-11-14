@@ -85,3 +85,6 @@
 **Única fase activa: INTEGRACIÓN TYPOGRAPHY 01 — EN VALIDACIÓN (pendiente de ejecución).** El registro principal sigue con 49 IDs; el paquete de siete efectos todavía no está incorporado ni publicado. Commit de referencia de auditoría: 5b7ea1883c73a57e04725a6146c45c550be5f46b; blob de registry/components.json: 618464df04ac043652ac303a8a5f51492ac73c85. Antes de fusionar, importar los archivos aprobados sin alterar su movimiento, aislar runtime y CSS respecto de Motion V1, ampliar el selector y la allowlist de preview sin modificar estética, registrar IDs y fichas, adaptar contratos de conteos y QA de navegador (49 existentes + 7 nuevos = 56), probar exportación individual y regresión. Crear rama/PR; no certificar catálogo ni producción sin evidencia. No modificar otros sitios.
 
 **Siguiente acción única:** integración de los siete módulos aprobados y pruebas en el catálogo. No iniciar Microinteractions hasta cerrar esta ingesta.
+
+
+**Avance de integración:** rama feat/typography-01. Importados 16 archivos funcionales; los 16 hashes de blobs coinciden byte por byte con el ZIP aprobado. Registro propuesto de 56 IDs, nuevo CSS/runtime aislado y adaptación de preview/exportador/QA sin cambiar diseño ni los 49 módulos previos. Pendiente CI en rama; no fusionar hasta validación. IDs 008, 010–015; 009 queda reservado, no se asigna sin necesidad comprobada.

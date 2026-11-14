@@ -6,7 +6,7 @@ import { resolveComponent, createIntegrationPrompt } from "../scripts/resolve-co
 import { exportComponent } from "../scripts/export-component.mjs";
 
 const registry=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(registry.entries.length,49);
+assert.equal(registry.entries.length,56);
 for(const e of registry.entries){
   const contract=resolveComponent(e.id);
   assert.equal(contract.id,e.id);
@@ -79,6 +79,9 @@ try{
   assert(standalone.some(v=>v.endsWith("ATZ-PGT-003.js")));
   assert(!standalone.some(v=>v.endsWith("ATZ-PGT-001.js")));
   assert(!standalone.some(v=>v.endsWith("ATZ-PGT-002.js")));
+  for(const e of registry.entries.filter(e=>e.family==="atrezzo-typography-01")){
+    const out=exportComponent(e.id,join(temp,e.id));assert.equal(out.files.length,4);assert(out.files.includes(e.component_js));assert(out.files.includes(e.component_runtime));assert(!out.files.some(x=>x.includes("atrezzo-motion-v1")));assert.equal((await import("../"+e.component_js)).id,e.id);
+  }
   const bento=exportComponent("ATZ-SVC-001",join(temp,"services"));
   assert.equal(bento.files.length,9,"Bento must export 4 module files and 5 illustrated placeholders");
   const bentoFiles=readdirSync(bento.target,{recursive:true});
@@ -90,4 +93,4 @@ try{
 
 
 }finally{rmSync(temp,{recursive:true,force:true});}
-console.log("PASS FASE 4+5: exact ID resolution for 49, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");
+console.log("PASS FASE 4+5: exact ID resolution for 56, no cross-imports, safe isolated export, overwrite refusal, preserved client website.");

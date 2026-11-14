@@ -20,7 +20,7 @@ export function exportComponent(id,out){
     "Este paquete contiene UN componente. No modifica HTML, CSS ni JS del cliente.",
     "1. Audita el repositorio y el diseño aprobado del cliente.",
     "2. Inserta el fragmento HTML en la sección elegida.",
-    "3. Incluye el CSS del paquete, GSAP y ScrollTrigger con sus licencias.",
+    selected.id.startsWith("ATZ-MOT-")?"3. Incluye el CSS del paquete. No requiere dependencias externas.":"3. Incluye el CSS del paquete y las dependencias indicadas en su ficha.",
     "4. Importa mount desde el JS de la variante y pasa su contenedor.",
     "5. Sustituye gradientes por fotos autorizadas; verifica responsive, scroll y teclado.",
     "6. Estado actual: "+selected.status+"; client_ready="+selected.client_ready+".",
