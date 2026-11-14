@@ -1,0 +1,5 @@
+import {mountPattern,clamp,smooth} from './runtime.js';
+export const id='ATZ-CTR-002';
+const colors=[[16,21,35],[234,238,246],[39,34,76]];
+function luminance(rgb){const [r,g,b]=rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;});return .2126*r+.7152*g+.0722*b;}
+export function mount(host){return mountPattern(host,id,({root,reduced,add,scroll})=>{if(reduced)return;const panels=[...root.querySelectorAll('.ct-chroma-panel')];function render(){const center=innerHeight*.5;const centers=panels.map(el=>{const r=el.getBoundingClientRect();return r.top+r.height*.5;});let i=center<=centers[1]?0:1;const q=smooth((center-centers[i])/Math.max(1,centers[i+1]-centers[i]));const rgb=colors[i].map((v,j)=>Math.round(v+(colors[i+1][j]-v)*q));const l=luminance(rgb);root.style.setProperty('--ct-bg',`rgb(${rgb.join(',')})`);root.style.setProperty('--ct-fg',l>.179?'#000000':'#ffffff');root.dataset.ctProgress=(i+q).toFixed(3);}scroll(render);add(()=>{root.style.removeProperty('--ct-bg');root.style.removeProperty('--ct-fg');delete root.dataset.ctProgress;});});}
