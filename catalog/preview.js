@@ -2,13 +2,14 @@ import {loadFavorites,saveFavorites,listenFavorites} from "./favorites-store.js"
 const id = new URLSearchParams(location.search).get("id");
 const demo = document.querySelector("#demo");
 const repoRoot = "../";
+const catalogRevision="20261114-typography01-r2";
 function text(selector,value){document.querySelector(selector).textContent=value}
 function instruction(e) {
   return `Integra únicamente ${e.id} (${e.title}) del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Usa exclusivamente ${e.component_html}, ${e.component_css}, ${e.component_js} y su dependencia compartida ${e.component_runtime}. No importes los demás efectos ni fotografías no autorizadas. Respeta la identidad de cliente y verifica móvil, teclado, scroll inverso, reducción de movimiento y las dependencias que correspondan a este ID. Estado ${e.status}; no certificado automáticamente para producción.`;
 }
 async function boot() {
   try {
-    const registryR = await fetch("../registry/components.json");
+    const registryR = await fetch("../registry/components.json?v="+catalogRevision,{cache:"no-cache"});
     if(!registryR.ok) throw Error("Registro no disponible");
     const registry = await registryR.json();
     const e=registry.entries.find(x=>x.id===id);
@@ -53,7 +54,8 @@ async function boot() {
     });
     if(!/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|typography)\/ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC)-\d{3}\.html$/.test(e.component_html))throw Error("Ruta HTML inválida");
     if(!/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|typography)\/ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC)-\d{3}\.js$/.test(e.component_js))throw Error("Ruta JS inválida");
-    const htmlR=await fetch(repoRoot+e.component_html);
+    const revision=typography?"?v="+catalogRevision:"";
+    const htmlR=await fetch(repoRoot+e.component_html+revision,typography?{cache:"no-cache"}:undefined);
     if(!htmlR.ok) throw Error("Fragmento HTML no disponible para "+id);
     const parsed=new DOMParser().parseFromString(await htmlR.text(),"text/html");
     const scene=parsed.body.querySelector(e.id.startsWith("ATZ-SVC-")?".atz-svc":e.id.startsWith("ATZ-PGT-")?".atz-pgt":typography?".atz-ty":e.id.startsWith("ATZ-MOT-")?".atz-motion-v1":e.id.startsWith("ATZ-SEC-")?".ats-scope,.ats2-scope,.ss03":e.id.startsWith("ATZ-STK-")?".atz-sticky":e.category==="navegacion"?".atz-nav":".atz-motion");
@@ -66,7 +68,7 @@ async function boot() {
     }
     if(typography){
       if(e.component_css!=="components/typography/atrezzo-typography.css")throw Error("CSS de tipografía no permitido");
-      const style=document.createElement("link");style.rel="stylesheet";style.href=repoRoot+e.component_css;
+      const style=document.createElement("link");style.rel="stylesheet";style.href=repoRoot+e.component_css+revision;
       const loaded=new Promise((ok,no)=>{style.addEventListener("load",ok,{once:true});style.addEventListener("error",()=>no(Error("CSS tipográfico no disponible")),{once:true});});
       document.head.appendChild(style);await loaded;
     } else if(e.id.startsWith("ATZ-MOT-")){
@@ -111,7 +113,7 @@ async function boot() {
     demo.replaceChildren(scene);
     if(document.readyState!=="complete")await new Promise(resolve=>window.addEventListener("load",resolve,{once:true}));
     // A single variant module is loaded; the other ten are not imported.
-    const {mount}=await import(repoRoot+e.component_js);
+    const {mount}=await import(repoRoot+e.component_js+revision);
     let instance=e.category==="navegacion"||e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")?mount(demo):mount(demo,{gsap:window.gsap,ScrollTrigger:window.ScrollTrigger});
     if(typography){
       document.querySelector(".pre-outro").id="next";

@@ -56,8 +56,10 @@ function tiles(e,i) {
     return '<span class="visual-tile" style="--tile-a:'+colors[0]+';--tile-b:'+colors[1]+';--drift:'+(((j*7+i*11)%39)-20)+'px;--rot:'+(((j*3+i*7)%19)-9)+'deg"></span>';
   }).join("");
 }
+const catalogRevision="20261114-typography01-r2";
 function previewLink(e) {
-  return idRegex.test(e.id)?"preview.html?id="+encodeURIComponent(e.id):"index.html#library";
+  if(!idRegex.test(e.id))return "index.html#library";
+  return "preview.html?id="+encodeURIComponent(e.id)+(e.family==="atrezzo-typography-01"?"&v="+catalogRevision:"");
 }
 function card(e,i) {
   const id=escapeHTML(e.id);
@@ -147,7 +149,7 @@ function setupFilters() {
 }
 async function init() {
   try {
-    const response=await fetch("../registry/components.json");
+    const response=await fetch("../registry/components.json?v="+catalogRevision,{cache:"no-cache"});
     if(!response.ok)throw Error("No disponible");
     const registry=await response.json();
     entries=registry.entries||[];

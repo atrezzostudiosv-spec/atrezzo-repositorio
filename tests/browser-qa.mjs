@@ -611,10 +611,18 @@ try {
  })));
  assert.equal(routes.length,registry.entries.length,"Every component has a catalog card");
  for(const route of routes){
-   const target="preview.html?id="+route.id;
+   const target="preview.html?id="+route.id+(typographyEntries.some(e=>e.id===route.id)?"&v=20261114-typography01-r2":"");
    assert.equal(route.visual,target,route.id+" visual link must open its own preview");
    assert.equal(route.action,target,route.id+" action link must open its own preview");
  }
+ // Verify the actual versioned Typography link, not only direct unversioned routes.
+ await index.locator('#component-grid [data-id="ATZ-MOT-013"] .card-action').click();
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v=20261114-typography01-r2",{timeout:12000});
+ await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+ assert.equal(await index.locator(".atz-ty").getAttribute("data-atz-id"),"ATZ-MOT-013");
+ assert.equal(await index.getByRole("button",{name:"Repetir efecto"}).count(),1);
+ await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+ await index.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===56);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
