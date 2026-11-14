@@ -70,3 +70,8 @@ El usuario confirma que los 56 componentes dentro del catálogo están aprobados
 ## Microinteractions Collection 01 — 14/11/2026
 
 El usuario aprobó ATZ-MIC-001…005. Usar únicamente los cuatro archivos registrados en `components/microinteractions/` del ID exacto, sin GSAP ni Lenis, sin modificar movimiento o diseño. Mantener cursor nativo, navegación táctil y teclado; `ATZ-MIC-005` es un gesto decorativo, no autoriza acciones críticas. Conservar alternativa de activación directa. Integración por ID aprobada sin repetir aprobación. No copiar código ni medios de TRIONN.
+
+
+## Creative Transitions Collection 01 — 14/11/2026
+
+El usuario aprobó ATZ-CTR-001…004. Usar los cuatro archivos registrados en `components/creative-transitions/` del ID exacto, sin GSAP ni Lenis. Mantener scroll nativo, contraste, opción de omitir la entrada de marca y retorno al índice con foco. Shared Element es FLIP dentro del documento, no un router. Expanding Mask queda descartado por cobertura de ATZ-MOT-005 y ATZ-PGT-003. No modificar efectos aprobados ni solicitar nueva aprobación. Sin recursos de TRIONN.

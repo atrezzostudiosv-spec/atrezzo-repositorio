@@ -9,6 +9,7 @@ const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"
 const motionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SCR-")||e.id.startsWith("ATZ-TRN-"));
 const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
 const nativeEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SEC-"));
+const creativeEntries=registry.entries.filter(e=>e.family==="atrezzo-creative-transitions-01");
 const microEntries=registry.entries.filter(e=>e.family==="atrezzo-microinteractions-01");
 const typographyEntries=registry.entries.filter(e=>e.family==="atrezzo-typography-01");
 const motionV1Entries=registry.entries.filter(e=>e.id.startsWith("ATZ-MOT-")&&e.family!=="atrezzo-typography-01");
@@ -23,6 +24,10 @@ const mime={".html":"text/html; charset=utf-8",".js":"text/javascript; charset=u
 const server=createServer(async(req,res)=>{
  try {
    const requestPath=decodeURIComponent(new URL(req.url,"http://127.0.0.1").pathname);
+   if(requestPath==="/__creative_nojs"){
+     const id=new URL(req.url,"http://127.0.0.1").searchParams.get("id");const entry=creativeEntries.find(e=>e.id===id);if(!entry){res.writeHead(400);res.end("Invalid ID");return;}
+     const html=await fs.readFile(join(root,entry.component_html),"utf8");res.writeHead(200,{"content-type":"text/html; charset=utf-8"});res.end('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/'+entry.component_css+'"></head><body style="margin:0">'+html+'<div id="ct-result">Destino</div></body></html>');return;
+   }
    if(requestPath==="/__micro_nojs"){
      const id=new URL(req.url,"http://127.0.0.1").searchParams.get("id");const entry=microEntries.find(e=>e.id===id);if(!entry){res.writeHead(400);res.end("Invalid ID");return;}
      const html=await fs.readFile(join(root,entry.component_html),"utf8");res.writeHead(200,{"content-type":"text/html; charset=utf-8"});res.end('<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/'+entry.component_css+'"></head><body style="margin:0">'+html+'<div id="mi-result">Destino</div></body></html>');return;
@@ -426,7 +431,7 @@ try {
  for(const width of [375,768,1024,1440]){
    for(const entry of microEntries){
      const page=await browser.newPage({viewport:{width,height:900}});await setup(page);const errors=[];page.on("pageerror",e=>errors.push(e.message));
-     await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r4",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
      const scene=page.locator(".atz-mi");assert.equal(await scene.getAttribute("data-atz-id"),entry.id);assert.equal(await scene.getAttribute("data-mi-ready"),"true");
      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
      assert.equal(await page.locator("#pre-approval").textContent(),"Aprobado por ATREZZO · Disponible para integrar por ID.");
@@ -440,7 +445,7 @@ try {
  }
  for(const entry of microEntries){
    for(const opts of [{reducedMotion:"reduce"},{hasTouch:true,isMobile:true}]){
-     const page=await browser.newPage({viewport:{width:375,height:812},...opts});await setup(page);await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r4",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});const scene=page.locator(".atz-mi");assert.equal(await scene.isVisible(),true);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
+     const page=await browser.newPage({viewport:{width:375,height:812},...opts});await setup(page);await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});const scene=page.locator(".atz-mi");assert.equal(await scene.isVisible(),true);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
      if(opts.reducedMotion)assert.equal(await scene.getAttribute("data-mi-motion"),"off");
      if(entry.id==="ATZ-MIC-002")assert.equal(await scene.locator(".mi-cursor-bubble").count(),0);
      if(entry.id==="ATZ-MIC-004"){assert.equal(await scene.locator(".mi-hover-preview").count(),0);assert.equal(await scene.locator(".mi-art").first().isVisible(),true);}
@@ -449,7 +454,47 @@ try {
    }
    const nojs=await browser.newPage({viewport:{width:375,height:812},javaScriptEnabled:false});await nojs.goto(origin+"/__micro_nojs?id="+entry.id);const scene=nojs.locator(".atz-mi");assert.equal(await scene.isVisible(),true);if(entry.id==="ATZ-MIC-005"){assert.equal(await scene.locator("[data-hold]").isVisible(),false);await scene.locator("[data-hold-direct]").click();assert.equal(await nojs.evaluate(()=>location.hash),"#mi-result");}await nojs.close();
  }
- const holdKeyboard=await browser.newPage({viewport:{width:1440,height:900}});await setup(holdKeyboard);await holdKeyboard.goto(origin+"/catalog/preview.html?id=ATZ-MIC-005&v=20261114-catalog-r4",{waitUntil:"domcontentloaded"});await holdKeyboard.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));await holdKeyboard.locator("[data-hold]").focus();await holdKeyboard.keyboard.down("Space");await holdKeyboard.waitForTimeout(1400);await holdKeyboard.keyboard.up("Space");assert.equal(await holdKeyboard.locator("[data-hold]").getAttribute("data-mi-done"),"true");await holdKeyboard.close();
+ const holdKeyboard=await browser.newPage({viewport:{width:1440,height:900}});await setup(holdKeyboard);await holdKeyboard.goto(origin+"/catalog/preview.html?id=ATZ-MIC-005&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await holdKeyboard.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));await holdKeyboard.locator("[data-hold]").focus();await holdKeyboard.keyboard.down("Space");await holdKeyboard.waitForTimeout(1400);await holdKeyboard.keyboard.up("Space");assert.equal(await holdKeyboard.locator("[data-hold]").getAttribute("data-mi-done"),"true");await holdKeyboard.close();
+ // Creative Transitions: exact isolated modules loaded through real catalog previews.
+ const ctRatio=page=>page.locator(".atz-ct").evaluate(el=>{const rgb=s=>s.match(/[\d.]+/g).slice(0,3).map(Number),lum=rgb=>rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);const s=getComputedStyle(el),a=lum(rgb(s.backgroundColor)),b=lum(rgb(s.color));return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);});
+ const ctScroll=async(page,sel,offset=0)=>{await page.locator(sel).evaluate((el,o)=>scrollTo(0,scrollY+el.getBoundingClientRect().top+o),offset);await page.waitForTimeout(90);};
+ const ctLayout=async(page)=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
+ const ctOpen=async(entry,width,height=900,opts={})=>{const page=await browser.newPage({viewport:{width,height},...opts});await setup(page);const errors=[];page.on("pageerror",e=>errors.push(e.message));await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});return {page,errors};};
+ for(const width of [375,768,1024,1440]){
+   for(const entry of creativeEntries){
+     const {page,errors}=await ctOpen(entry,width);const scene=page.locator(".atz-ct");assert.equal(await scene.getAttribute("data-atz-id"),entry.id);assert.equal(await scene.getAttribute("data-ct-ready"),"true");await ctLayout(page);
+     assert.equal(await page.locator("#pre-approval").textContent(),"Aprobado por ATREZZO · Disponible para integrar por ID.");
+     if(entry.id==="ATZ-CTR-001"){
+       await ctScroll(page,".ct-stripe-run");const start=Number(await scene.getAttribute("data-ct-progress"));const first=scene.locator(".ct-stripe-row").first(),initial=await first.evaluate(el=>el.style.clipPath);
+       await scene.locator(".ct-stripe-run").evaluate(el=>scrollTo(0,scrollY+el.getBoundingClientRect().top+(el.offsetHeight-el.firstElementChild.offsetHeight)*.6));await page.waitForTimeout(100);assert(Number(await scene.getAttribute("data-ct-progress"))>start+.3);assert.notEqual(await first.evaluate(el=>el.style.clipPath),initial);
+       await ctScroll(page,".ct-stripe-run",await scene.locator(".ct-stripe-run").evaluate(el=>el.offsetHeight));assert(Number(await scene.getAttribute("data-ct-progress"))>.95);await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(90);assert(Number(await scene.getAttribute("data-ct-progress"))<.01);
+     }
+     if(entry.id==="ATZ-CTR-002"){
+       for(let i=0;i<3;i++){await scene.locator(".ct-chroma-panel").nth(i).evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));await page.waitForTimeout(90);assert(await ctRatio(page)>=4.5);}
+       assert(Number(await scene.getAttribute("data-ct-progress"))>1.8);
+       for(let i=0;i<=10;i++){await scene.locator(".ct-chroma-panel").first().evaluate((el,t)=>scrollTo(0,el.getBoundingClientRect().top+scrollY+el.offsetHeight/2-innerHeight/2+el.offsetHeight*2*t),i/10);await page.waitForTimeout(60);assert(await ctRatio(page)>=4.5);}
+       await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(90);assert(Number(await scene.getAttribute("data-ct-progress"))<.1);
+     }
+     if(entry.id==="ATZ-CTR-003"){
+       await ctScroll(page,".ct-entry");await page.waitForTimeout(1450);assert(await scene.locator(".ct-entry-overlay").isHidden());await scene.locator("[data-entry-replay]").click();assert(await scene.locator(".ct-entry-overlay").isVisible());await scene.locator("[data-entry-skip]").click();assert(await scene.locator(".ct-entry-overlay").isHidden());await scene.locator("[data-entry-replay]").click();await page.keyboard.press("Escape");assert(await scene.locator(".ct-entry-overlay").isHidden());
+     }
+     if(entry.id==="ATZ-CTR-004"){
+       for(const i of ["1","2"]){const art=scene.locator('[data-project-art="'+i+'"]');await art.evaluate(el=>el.dataset.testIdentity="original");await scene.locator('[data-project-open="'+i+'"]').click();assert(await scene.locator('[data-project-detail="'+i+'"]').isVisible());assert.equal(await art.evaluate(el=>el.closest("[data-project-detail]")?.dataset.projectDetail),i);assert.equal(await art.getAttribute("data-test-identity"),"original");assert(await scene.locator("[data-project-list]").isHidden());assert.equal(await page.evaluate(()=>document.activeElement.tagName),"H2");await page.waitForTimeout(710);await page.keyboard.press("Escape");assert(await scene.locator("[data-project-list]").isVisible());assert.equal(await art.evaluate(el=>el.closest("[data-card]")?.dataset.card),i);assert.equal(await page.evaluate(()=>document.activeElement.dataset.projectOpen),i);await page.waitForTimeout(710);}
+     }
+     await ctLayout(page);assert.deepEqual(errors,[]);if(width===1440){await scene.evaluate(el=>el.scrollIntoView({block:"start",behavior:"instant"}));await page.screenshot({path:join(artifacts,entry.id+".png"),fullPage:false});}
+     await page.evaluate(()=>window.__atrezzoPreviewInstance.destroy());assert.equal(await scene.getAttribute("data-ct-ready"),null);if(entry.id==="ATZ-CTR-001")assert(await scene.locator(".ct-stripe-next").isVisible());if(entry.id==="ATZ-CTR-003")assert(await scene.locator(".ct-entry-overlay").isHidden());if(entry.id==="ATZ-CTR-004")assert(await scene.locator("[data-project-detail]").first().isVisible());results.push({id:entry.id,width,mode:"animated",test:"creative-transitions-01",teardown:"ok"});await page.close();
+   }
+ }
+ for(const entry of creativeEntries){
+   for(const opts of [{reducedMotion:"reduce"},{hasTouch:true,isMobile:true}]){
+     const {page,errors}=await ctOpen(entry,375,812,opts);const scene=page.locator(".atz-ct");await ctLayout(page);assert(await scene.isVisible());
+     if(opts.reducedMotion){assert.equal(await scene.getAttribute("data-ct-motion"),"off");if(entry.id==="ATZ-CTR-001")assert(await scene.locator(".ct-stripe-next").isVisible());if(entry.id==="ATZ-CTR-003")assert(await scene.locator(".ct-entry-overlay").isHidden());}
+     if(entry.id==="ATZ-CTR-004"){const btn=scene.locator("[data-project-open]").first();if(opts.hasTouch)await btn.tap();else{await btn.focus();await page.keyboard.press("Enter");}assert(await scene.locator("[data-project-detail]").first().isVisible());await scene.locator("[data-project-back]").first().click();assert(await scene.locator("[data-project-list]").isVisible());}
+     assert.deepEqual(errors,[]);await page.close();
+   }
+   const nojs=await browser.newPage({viewport:{width:375,height:812},javaScriptEnabled:false});await nojs.goto(origin+"/__creative_nojs?id="+entry.id);const scene=nojs.locator(".atz-ct");await ctLayout(nojs);assert(await scene.isVisible());assert.equal(await scene.getAttribute("data-ct-ready"),null);if(entry.id==="ATZ-CTR-001")assert(await scene.locator(".ct-stripe-next").isVisible());if(entry.id==="ATZ-CTR-003")assert(await scene.locator(".ct-entry-overlay").isHidden());if(entry.id==="ATZ-CTR-004")assert(await scene.locator("[data-project-detail]").first().isVisible());await nojs.close();
+   const short=await ctOpen(entry,1024,540);await ctLayout(short.page);assert.deepEqual(short.errors,[]);await short.page.close();
+ }
  const reducedMotionV1=await browser.newPage({viewport:{width:375,height:812},reducedMotion:"reduce"});
  await setup(reducedMotionV1);
  await reducedMotionV1.goto(origin+"/catalog/preview.html?id=ATZ-MOT-004",{waitUntil:"domcontentloaded"});
@@ -635,7 +680,7 @@ try {
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===61);
+ await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===65);
  // Every registered ID must link to its own preview (including new prefixes such as MOT).
  const routes=await index.locator("#component-grid .component-card").evaluateAll(cards=>cards.map(card=>({
    id:card.dataset.id,
@@ -644,19 +689,19 @@ try {
  })));
  assert.equal(routes.length,registry.entries.length,"Every component has a catalog card");
  for(const route of routes){
-   const target="preview.html?id="+route.id+"&v=20261114-catalog-r4";
+   const target="preview.html?id="+route.id+"&v=20261114-catalog-r5";
    assert.equal(route.visual,target,route.id+" visual link must open its own preview");
    assert.equal(route.action,target,route.id+" action link must open its own preview");
  }
  // Verify the actual versioned Typography link, not only direct unversioned routes.
  await index.locator('#component-grid [data-id="ATZ-MOT-013"] .card-action').click();
- await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v=20261114-catalog-r4",{timeout:12000});
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v=20261114-catalog-r5",{timeout:12000});
  await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
  assert.equal(await index.locator(".atz-ty").getAttribute("data-atz-id"),"ATZ-MOT-013");
  assert.equal(await index.getByRole("button",{name:"Repetir efecto"}).count(),1);
  assert.equal(await index.locator("#pre-approval").textContent(),"Aprobado por ATREZZO · Disponible para integrar por ID.");
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await index.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===61);
+ await index.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===65);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
  assert.equal(await index.locator(".component-card").count(),1,"Catalog ID search");
@@ -665,7 +710,7 @@ try {
  assert.equal(await index.locator(".component-card").count(),1,"Transition filter");
  await index.locator(".filter[data-category='all']").click();
  await index.locator('#component-grid [data-id="ATZ-MOT-006"] .card-action').click();
- await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006&v=20261114-catalog-r4",{timeout:12000});
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006&v=20261114-catalog-r5",{timeout:12000});
  await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
  assert.equal(await index.locator(".atz-motion-v1").getAttribute("data-atz-id"),"ATZ-MOT-006","Editorial Journey card must open the actual motion");
 
@@ -673,7 +718,7 @@ try {
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
  await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
- await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===61);
+ await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===65);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
  await mobile.close();
@@ -682,11 +727,11 @@ try {
    const page=await browser.newPage({viewport:{width,height:900}});
    await setup(page);
    await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
-   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===61,{timeout:12000});
-   assert.equal(await page.locator("[data-category]").count(),11,"All plus ten discovery groups");
-   assert.equal(await page.locator(".collection-heading").count(),10);
+   await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===65,{timeout:12000});
+   assert.equal(await page.locator("[data-category]").count(),12,"All plus eleven discovery groups");
+   assert.equal(await page.locator(".collection-heading").count(),11);
    assert.equal(await page.locator("#count-tested").textContent(),String(registry.entries.filter(e=>e.catalog_qa_status==="passed_internal").length));
-   assert.equal(await page.locator("#component-grid .card-status").filter({hasText:/^Aprobado$/}).count(),61);
+   assert.equal(await page.locator("#component-grid .card-status").filter({hasText:/^Aprobado$/}).count(),65);
    assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Aprobado");
    assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Aprobado");
    const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
@@ -696,6 +741,8 @@ try {
    await page.reload({waitUntil:"domcontentloaded"});
    await page.waitForFunction(()=>document.querySelectorAll("#favorites-grid .component-card").length===1,{timeout:12000});
    assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]').getAttribute("aria-pressed"),"true");
+   await page.locator('[data-category="transiciones-creativas"]').click();
+   assert.equal(await page.locator("#component-grid .component-card").count(),4);
    await page.locator('[data-category="microinteracciones"]').click();
    assert.equal(await page.locator("#component-grid .component-card").count(),5);
    await page.locator('[data-category="sticky"]').click();
@@ -707,7 +754,7 @@ try {
    assert.equal(await page.locator("#component-grid .component-card").first().getAttribute("data-id"),"ATZ-SEC-005");
    await page.locator("#search").fill("");
    await page.locator('[data-category="all"]').click();
-   assert.equal(await page.locator("#component-grid .component-card").count(),61);
+   assert.equal(await page.locator("#component-grid .component-card").count(),65);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"Catalog overflow at "+width);
    if(width===375||width===1440)await page.screenshot({path:join(artifacts,"favorites-"+width+".png"),fullPage:false});
    await page.goto(origin+"/catalog/preview.html?id=ATZ-SCR-003",{waitUntil:"domcontentloaded"});

@@ -9,7 +9,7 @@ export function exportComponent(id,out){
   if(typeof out!=="string"||!out.trim())throw Error("Indica carpeta de salida --out.");
   const target=resolve(out,"atrezzo");
   if(existsSync(target))throw Error("La carpeta atrezzo ya existe: no sobrescribir.");
-  const needed=[...Object.values(selected.files),...(selected.assets||[]),...((selected.category==="navegacion"||selected.id.startsWith("ATZ-SEC-")||selected.id.startsWith("ATZ-MOT-")||selected.id.startsWith("ATZ-PGT-")||selected.id.startsWith("ATZ-SVC-")||selected.id.startsWith("ATZ-MIC-"))?[]:[selected.id.startsWith("ATZ-STK-")?"sources/codrops-sticky-sections/LICENSE":"sources/codrops-layout-formations/LICENSE"])];
+  const needed=[...Object.values(selected.files),...(selected.assets||[]),...((selected.category==="navegacion"||selected.id.startsWith("ATZ-SEC-")||selected.id.startsWith("ATZ-MOT-")||selected.id.startsWith("ATZ-PGT-")||selected.id.startsWith("ATZ-SVC-")||selected.id.startsWith("ATZ-MIC-")||selected.id.startsWith("ATZ-CTR-"))?[]:[selected.id.startsWith("ATZ-STK-")?"sources/codrops-sticky-sections/LICENSE":"sources/codrops-layout-formations/LICENSE"])];
   for(const name of needed){
     if(!existsSync(join(root,name)))throw Error("Dependencia faltante: "+name);
   }
@@ -20,7 +20,7 @@ export function exportComponent(id,out){
     "Este paquete contiene UN componente. No modifica HTML, CSS ni JS del cliente.",
     "1. Audita el repositorio y el diseño aprobado del cliente.",
     "2. Inserta el fragmento HTML en la sección elegida.",
-    (selected.id.startsWith("ATZ-MOT-")||selected.id.startsWith("ATZ-MIC-"))?"3. Incluye el CSS del paquete. No requiere dependencias externas.":"3. Incluye el CSS del paquete y las dependencias indicadas en su ficha.",
+    (selected.id.startsWith("ATZ-MOT-")||selected.id.startsWith("ATZ-MIC-")||selected.id.startsWith("ATZ-CTR-"))?"3. Incluye el CSS del paquete. No requiere dependencias externas.":"3. Incluye el CSS del paquete y las dependencias indicadas en su ficha.",
     "4. Importa mount desde el JS de la variante y pasa su contenedor.",
     "5. Sustituye gradientes por fotos autorizadas; verifica responsive, scroll y teclado.",
     selected.library_approved?"6. Componente aprobado para integrar. El ejecutor verifica su funcionamiento en el destino sin modificar el movimiento.":"6. Consultar el estado de aprobación antes de integrar.",

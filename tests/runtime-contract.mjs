@@ -4,7 +4,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 const root=join(dirname(fileURLToPath(import.meta.url)),"..");
 const registry=JSON.parse(readFileSync(join(root,"registry/components.json"),"utf8"));
-assert.equal(registry.entries.length,61,"Microinteractions 01 extends library to 61");
+assert.equal(registry.entries.length,65,"Creative Transitions 01 extends library to 65");
 assert.equal(new Set(registry.entries.map(e=>e.id)).size,registry.entries.length,"IDs must be unique");
 const css=readFileSync(join(root,"components/runtime/atrezzo-motion.css"),"utf8");
 assert(css.includes(".atz-motion .grid"),"CSS must be isolated");

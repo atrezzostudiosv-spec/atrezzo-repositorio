@@ -91,3 +91,8 @@ Siete efectos aprobados por el usuario (ATZ-MOT-008, 010–015). Motor y CSS sep
 ## Microinteractions Collection 01
 
 Cinco módulos aprobados `ATZ-MIC-001…005`: Magnetic Button, Contextual Cursor, CTA Arrow & Fill, Image Hover Reveal y Press & Hold. HTML/JS exactos y CSS/runtime de familia, sin dependencias externas. Nueva categoría al final del catálogo, 61 IDs. QA del catálogo aprobada y fusionada en main (244 comprobaciones Chromium); client_ready:false.
+
+
+## Creative Transitions Collection 01
+
+Cuatro componentes aprobados ATZ-CTR-001…004. HTML/JS exactos y CSS/runtime de familia. Stripe Wipe, Chromatic Transition, Cinematic Brand Entry y Shared Element Transition. Nueva categoría al final; 65 IDs. QA de integración en rama, client_ready:false.

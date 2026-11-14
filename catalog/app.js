@@ -56,7 +56,7 @@ function tiles(e,i) {
     return '<span class="visual-tile" style="--tile-a:'+colors[0]+';--tile-b:'+colors[1]+';--drift:'+(((j*7+i*11)%39)-20)+'px;--rot:'+(((j*3+i*7)%19)-9)+'deg"></span>';
   }).join("");
 }
-const catalogRevision="20261114-catalog-r4";
+const catalogRevision="20261114-catalog-r5";
 function previewLink(e) {
   if(!idRegex.test(e.id))return "index.html#library";
   return "preview.html?id="+encodeURIComponent(e.id)+"&v="+catalogRevision;

@@ -2,7 +2,7 @@ import {loadFavorites,saveFavorites,listenFavorites} from "./favorites-store.js"
 const id = new URLSearchParams(location.search).get("id");
 const demo = document.querySelector("#demo");
 const repoRoot = "../";
-const catalogRevision="20261114-catalog-r4";
+const catalogRevision="20261114-catalog-r5";
 function text(selector,value){document.querySelector(selector).textContent=value}
 function instruction(e) {
   return `Integra únicamente ${e.id} (${e.title}) del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Usa exclusivamente ${e.component_html}, ${e.component_css}, ${e.component_js} y su dependencia compartida ${e.component_runtime}. No importes los demás efectos ni fotografías no autorizadas. Respeta la identidad de cliente y verifica móvil, teclado, scroll inverso, reducción de movimiento y las dependencias que correspondan a este ID. Si el registro confirma su aprobación en biblioteca, intégralo sin pedir otra aprobación. Conserva el efecto original y verifica su funcionamiento en el proyecto de destino.`;
@@ -16,6 +16,7 @@ async function boot() {
     if(!e) { text("#pre-title","Componente no encontrado"); throw Error("ID desconocido: "+id); }
     const typography=e.family==="atrezzo-typography-01";
     const micro=e.family==="atrezzo-microinteractions-01";
+    const creative=e.family==="atrezzo-creative-transitions-01";
     text("#pre-id",e.id+" / "+(e.discovery_group||e.category).toUpperCase());
     text("#pre-title",e.title);
     text("#pre-desc",e.description+" · Uso recomendado: "+e.recommended_for+".");
@@ -56,19 +57,27 @@ async function boot() {
       try { await navigator.clipboard.writeText(value);copyButton.textContent="Instrucción copiada ✓"; }
       catch {copyButton.textContent="Copia manualmente el ID "+e.id;}
     });
-    if(!/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|typography|microinteractions)\/ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC)-\d{3}\.html$/.test(e.component_html))throw Error("Ruta HTML inválida");
-    if(!/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|typography|microinteractions)\/ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC)-\d{3}\.js$/.test(e.component_js))throw Error("Ruta JS inválida");
-    const revision=typography||micro?"?v="+catalogRevision:"";
-    const htmlR=await fetch(repoRoot+e.component_html+revision,typography||micro?{cache:"no-cache"}:undefined);
+    if(!/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|typography|microinteractions|creative-transitions)\/ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC|CTR)-\d{3}\.html$/.test(e.component_html))throw Error("Ruta HTML inválida");
+    if(!/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|typography|microinteractions|creative-transitions)\/ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC|CTR)-\d{3}\.js$/.test(e.component_js))throw Error("Ruta JS inválida");
+    const revision=typography||micro||creative?"?v="+catalogRevision:"";
+    const htmlR=await fetch(repoRoot+e.component_html+revision,typography||micro||creative?{cache:"no-cache"}:undefined);
     if(!htmlR.ok) throw Error("Fragmento HTML no disponible para "+id);
     const parsed=new DOMParser().parseFromString(await htmlR.text(),"text/html");
-    const scene=parsed.body.querySelector(e.id.startsWith("ATZ-SVC-")?".atz-svc":e.id.startsWith("ATZ-PGT-")?".atz-pgt":micro?".atz-mi":typography?".atz-ty":e.id.startsWith("ATZ-MOT-")?".atz-motion-v1":e.id.startsWith("ATZ-SEC-")?".ats-scope,.ats2-scope,.ss03":e.id.startsWith("ATZ-STK-")?".atz-sticky":e.category==="navegacion"?".atz-nav":".atz-motion");
+    const scene=parsed.body.querySelector(e.id.startsWith("ATZ-SVC-")?".atz-svc":e.id.startsWith("ATZ-PGT-")?".atz-pgt":creative?".atz-ct":micro?".atz-mi":typography?".atz-ty":e.id.startsWith("ATZ-MOT-")?".atz-motion-v1":e.id.startsWith("ATZ-SEC-")?".ats-scope,.ats2-scope,.ss03":e.id.startsWith("ATZ-STK-")?".atz-sticky":e.category==="navegacion"?".atz-nav":".atz-motion");
     if(!scene)throw Error("Escena aislada sin clase .atz-motion");
     if(e.id.startsWith("ATZ-SEC-")){
       if(!/^components\/secciones\/ats[123]\.css$/.test(e.component_css))throw Error("CSS nativo no permitido");
       const style=document.createElement("link");style.rel="stylesheet";style.href=repoRoot+e.component_css;
       document.head.appendChild(style);
       await new Promise((resolve,reject)=>{style.addEventListener("load",resolve,{once:true});style.addEventListener("error",()=>reject(Error("CSS no disponible")),{once:true});});
+    }
+    if(creative){
+      if(e.component_css!=="components/creative-transitions/atrezzo-creative-transitions.css")throw Error("CSS de transición creativa no permitido");
+      const style=document.createElement("link");style.rel="stylesheet";style.href=repoRoot+e.component_css+revision;
+      const loaded=new Promise((ok,no)=>{style.addEventListener("load",ok,{once:true});style.addEventListener("error",()=>no(Error("CSS de transición no disponible")),{once:true});});document.head.appendChild(style);await loaded;
+      document.querySelector(".pre-footer").textContent="© ATREZZO Studios · Creative Transitions 01 · Código y SVG originales.";
+      document.querySelector(".pre-outro").id="ct-result";
+      document.querySelector(".pre-cta").textContent=e.id==="ATZ-CTR-004"?"ABRE UN ESTUDIO Y REGRESA AL ÍNDICE ↓":e.id==="ATZ-CTR-003"?"DESPLÁZATE PARA VER LA ENTRADA DE MARCA ↓":"DESPLÁZATE PARA VER LA TRANSICIÓN ↓";
     }
     if(micro){
       if(e.component_css!=="components/microinteractions/atrezzo-microinteractions.css")throw Error("CSS de microinteracción no permitido");
@@ -126,7 +135,7 @@ async function boot() {
     if(document.readyState!=="complete")await new Promise(resolve=>window.addEventListener("load",resolve,{once:true}));
     // A single variant module is loaded; the other ten are not imported.
     const {mount}=await import(repoRoot+e.component_js+revision);
-    let instance=micro||e.category==="navegacion"||e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")?mount(demo):mount(demo,{gsap:window.gsap,ScrollTrigger:window.ScrollTrigger});
+    let instance=creative||micro||e.category==="navegacion"||e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")?mount(demo):mount(demo,{gsap:window.gsap,ScrollTrigger:window.ScrollTrigger});
     if(typography){
       document.querySelector(".pre-outro").id="next";
       const controls=document.createElement("div");controls.className="pre-bottom";
@@ -142,12 +151,16 @@ async function boot() {
       const controls=document.createElement("div");controls.className="pre-bottom";const replay=document.createElement("button");replay.type="button";replay.className="pre-button";replay.textContent="Reiniciar demo";controls.append(replay);document.querySelector(".pre-intro").append(controls);
       replay.addEventListener("click",()=>{instance.destroy();instance=mount(demo);window.__atrezzoPreviewInstance=instance;demo.dataset.motion=instance.mode;scene.scrollIntoView({block:"start",behavior:"instant"});});
     }
+    if(creative){
+      const controls=document.createElement("div");controls.className="pre-bottom";const replay=document.createElement("button");replay.type="button";replay.className="pre-button";replay.textContent="Reiniciar demo";controls.append(replay);document.querySelector(".pre-intro").append(controls);
+      replay.addEventListener("click",()=>{instance.destroy();instance=mount(demo);window.__atrezzoPreviewInstance=instance;demo.dataset.motion=instance.mode;scene.scrollIntoView({block:"start",behavior:"instant"});});
+    }
     demo.dataset.motion=instance.mode??(e.id.startsWith("ATZ-SEC-")?(window.matchMedia("(prefers-reduced-motion: reduce)").matches?"static":"animated"):"interactive");
     window.__atrezzoPreviewInstance=instance;
     window.addEventListener("pagehide",()=>instance.destroy(),{once:true});
   } catch(err) {
     console.error("ATREZZO preview:",err);
-    if(!demo.querySelector(".atz-motion")&&!demo.querySelector(".atz-nav")&&!demo.querySelector(".atz-sticky")&&!demo.querySelector(".ats-scope")&&!demo.querySelector(".ats2-scope")&&!demo.querySelector(".ss03")&&!demo.querySelector(".atz-motion-v1")&&!demo.querySelector(".atz-pgt")&&!demo.querySelector(".atz-svc")&&!demo.querySelector(".atz-ty")&&!demo.querySelector(".atz-mi"))demo.innerHTML='<div class="error">Esta preview no está disponible. Consulta su ficha técnica desde el catálogo.</div>';
+    if(!demo.querySelector(".atz-motion")&&!demo.querySelector(".atz-nav")&&!demo.querySelector(".atz-sticky")&&!demo.querySelector(".ats-scope")&&!demo.querySelector(".ats2-scope")&&!demo.querySelector(".ss03")&&!demo.querySelector(".atz-motion-v1")&&!demo.querySelector(".atz-pgt")&&!demo.querySelector(".atz-svc")&&!demo.querySelector(".atz-ty")&&!demo.querySelector(".atz-mi")&&!demo.querySelector(".atz-ct"))demo.innerHTML='<div class="error">Esta preview no está disponible. Consulta su ficha técnica desde el catálogo.</div>';
     demo.dataset.motion="unavailable";
   }
 }

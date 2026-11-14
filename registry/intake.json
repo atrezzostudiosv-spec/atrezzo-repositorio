@@ -206,6 +206,19 @@
       "status": "ingested_internal_validated",
       "note": "Aprobación expresa del usuario; 12 blobs funcionales exactos. Fusión en main tras 244 comprobaciones Chromium, touch, teclado, reduced motion, sin JS y contratos de exportación. 56 anteriores intactos. client_ready:false.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43609752012"
+    },
+    {
+      "package_name": "ATREZZO_CREATIVE_TRANSITIONS_COLLECTION_01.zip",
+      "category": "transiciones-creativas",
+      "candidate_variants": 4,
+      "ids": [
+        "ATZ-CTR-001",
+        "ATZ-CTR-002",
+        "ATZ-CTR-003",
+        "ATZ-CTR-004"
+      ],
+      "status": "ingested_pending_catalog_qa",
+      "note": "Usuario aprobó expresamente y autorizó incorporar. 14 blobs exactos del ZIP, incluidos 4 fichas. QA autónoma 32 casos Chromium + 4 contratos JS. Fusión condicionada a QA global."
     }
   ]
 }
