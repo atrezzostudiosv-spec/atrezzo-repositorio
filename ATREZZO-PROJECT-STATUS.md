@@ -118,3 +118,9 @@ El usuario confirma que TODOS los componentes admitidos en biblioteca están apr
 
 ## Visual Library 2.0 — 14/11/2026
 **EN VALIDACIÓN / rama feat/visual-library-v2.** Aprobada la intervención del catálogo. Registro original e IDs intactos. Nueva capa visual, clasificación transversal, reglas creativas y compositor local; sin API de pago. Capturas y vídeos pendientes de generación y revisión; no confundir demo interna con publicación ni certificar cliente. Ver docs/VISUAL-LIBRARY-V2.md.
+
+
+**CIERRE TÉCNICO DE GENERACIÓN VISUAL / 14/11/2026.** 65 WebP + 65 WebM auténticos registrados, commit `7bd85b61c21f502381060443ee4a4d8b3124c390`. [Capturas y QA V2 PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43627677478); [regresión PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43627681718). La inspección editorial visual individual y el despliegue permanecen pendientes. No repetir la generación global sin defecto identificado.
+
+## Fase activa — Identidad oficial de la biblioteca
+**EN VALIDACIÓN.** Wordmark SVG oficial conservado byte por byte, favicon PNG 32×32 derivado del ICO entregado. Encabezados del catálogo visual, técnico y preview, favicon también en alias y raíz. CSS de marca independiente, sin cambios en `components/`, registro original ni medios generados. Verificar CI de marca y capturas responsive antes de cerrar; no fusionar aún. Siguiente fase: revisión visual editorial y recomendaciones. Migración Cloudflare y API IA quedan después del cierre de V2.

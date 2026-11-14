@@ -54,6 +54,24 @@ async function smoke(expectMedia){
  for(const width of [375,768,1024,1440]){
    const page=await browser.newPage({viewport:{width,height:900},acceptDownloads:true});await setup(page);const errors=[];page.on("pageerror",x=>errors.push(x.message));await page.goto(origin+"/catalog/");
    await page.waitForFunction(n=>document.querySelectorAll("#grid .card").length===n,reg.entries.length,{timeout:15000});
+   const logo=page.locator(".atz-brand img");
+   await logo.evaluate(img=>img.decode());
+   assert(await logo.evaluate(img=>img.naturalWidth>0&&img.getBoundingClientRect().width>=100),"Official logo not visible "+width);
+   assert.equal(await page.locator('link[rel="icon"]').getAttribute("href"),"brand/favicon-32.png?v=1");
+   const icon=await page.request.get(origin+"/catalog/brand/favicon-32.png");
+   assert(icon.ok(),"Favicon not available");
+   assert(await page.locator(".atz-brand").getAttribute("href")==="index.html");
+   if(expectMedia){await page.locator("#grid img").first().evaluate(img=>img.decode());}
+   await fs.mkdir(join(root,"tests/artifacts/visual-v2"),{recursive:true});
+   await page.screenshot({path:join(root,"tests/artifacts/visual-v2","catalog-"+width+".png"),fullPage:false});
+   const brandPage=await browser.newPage({viewport:{width,height:900}});await setup(brandPage);
+   for(const route of ["technical.html","preview.html?id=ATZ-MOT-003"]){
+     await brandPage.goto(origin+"/catalog/"+route,{waitUntil:"domcontentloaded"});
+     await brandPage.locator(".atz-brand img").evaluate(img=>img.decode());
+     assert(await brandPage.locator(".atz-brand img").evaluate(img=>img.naturalWidth>0));
+     assert(await brandPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),"Branded page overflow "+route+" "+width);
+     assert.equal(await brandPage.locator('link[rel="icon"]').getAttribute("href"),"brand/favicon-32.png?v=1");
+   }await brandPage.close();
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),"Overflow "+width);
    await page.locator("#query").fill("ATZ-MOT-003");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("#industry").selectOption("salud");assert.equal(await page.locator("#grid .card").count(),1);

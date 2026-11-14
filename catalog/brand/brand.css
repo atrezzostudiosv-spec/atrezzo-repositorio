@@ -1,0 +1,8 @@
+/* ATREZZO STUDIOS — original vector identity. Only library chrome; never component scenes. */
+.atz-brand{display:inline-flex;align-items:center;gap:14px;flex:0 0 auto;text-decoration:none;min-width:0}
+.atz-brand img{display:block;width:clamp(125px,14vw,186px);height:auto;max-width:100%;object-fit:contain}
+.atz-brand .atz-brand-label{display:block;white-space:nowrap;font:600 10px/1.3 Inter,system-ui,sans-serif;letter-spacing:.13em;color:#cac1e6;border-left:1px solid #65588a;padding-left:12px}
+.pre-header .atz-brand .atz-brand-label{color:#cac1e6}
+.atz-brand:focus-visible{outline:2px solid #ad95ff;outline-offset:6px;border-radius:3px}
+@media(max-width:900px){.atz-brand .atz-brand-label{display:none}}
+@media(max-width:620px){.atz-brand img{width:142px}.bar .atz-brand{margin-bottom:4px}.pre-header .atz-brand img{width:125px}}

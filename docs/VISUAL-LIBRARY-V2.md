@@ -7,7 +7,13 @@ Estado: EN VALIDACIÓN. La nueva interfaz es una capa adicional, no una reimplem
 - Director creativo: reglas deterministas, no IA generativa ni certificación de compatibilidad. Filtra por sector, función, nivel máximo y objetivo; limita M3 a una secuencia. Contacto urgente y salud sin efecto obligatorio. Las combinaciones requieren auditoría del cliente.
 - Websites completos: referencias aprobadas y separadas de componentes importables. No copiar código o medios sin derechos.
 - No activar una API hasta disponer de catálogo y reglas validados.
-- Pendiente: captura y revisión visual de 65 demos, vídeos, QA de navegación, teclado, dispositivos y responsive, verificación de Pages. No fusionar hasta pruebas.
+- Generación de 65 WebP y 65 WebM y QA automatizada de V2 y regresión cerradas: runs 43627677478 y 43627681718. Pendiente revisión visual editorial de las grabaciones y Pages.
 
 - Sector: recomendaciones curadas y compatibilidad amplia, ordenadas sin excluir otros usos. Archivo pendiente se muestra por separado, sin ID ficticio.
 - Las grabaciones se activan explícitamente, no en reproducción masiva; respeta preferencias de movimiento y carga diferida.
+
+## Identidad oficial — fase activa
+- SVG exacto recibido del usuario (hash Git 13470f929e099fda97ebc1676ce8aef8f11872ee); favicon PNG de 32×32 extraído directamente del ICO oficial, sin redibujar (hash 8e4fee3dfeb7251479bb03663339bd76754bd24f).
+- Wordmark en los encabezados del catálogo, catálogo técnico y preview; favicon en esas tres rutas y redirecciones de la biblioteca. No usar el logo maestro de presentación como cabecera.
+- Estilo limitado a la interfaz; sin cambios en componentes ni previews grabados. Prueba de hashes, carga y responsive; no regenerar medios ya capturados.
+- La fase sigue en validación hasta recibir el resultado de CI. Cloudflare y ATREZZO AI no se activan en esta fase.
