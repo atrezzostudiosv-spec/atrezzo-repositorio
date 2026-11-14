@@ -1,6 +1,6 @@
 # ATZ-CTR-003 — Cinematic Brand Entry
 
-**Estado:** candidato en revisión visual, fuera del catálogo.
+**Estado:** aprobado por ATREZZO y disponible para integrar por ID. QA del catálogo aprobada: [260 comprobaciones Chromium](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105).
 
 **Activación:** Entrada automática, repetir y omitir.
 

@@ -95,4 +95,4 @@ Cinco módulos aprobados `ATZ-MIC-001…005`: Magnetic Button, Contextual Cursor
 
 ## Creative Transitions Collection 01
 
-Cuatro componentes aprobados ATZ-CTR-001…004. HTML/JS exactos y CSS/runtime de familia. Stripe Wipe, Chromatic Transition, Cinematic Brand Entry y Shared Element Transition. Nueva categoría al final; 65 IDs. QA de integración en rama, client_ready:false.
+Cuatro componentes aprobados ATZ-CTR-001…004. HTML/JS exactos y CSS/runtime de familia. Stripe Wipe, Chromatic Transition, Cinematic Brand Entry y Shared Element Transition. Nueva categoría al final; 65 IDs. QA de integración aprobada y fusionada en main (260 comprobaciones Chromium); client_ready:false.

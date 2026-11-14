@@ -217,8 +217,9 @@
         "ATZ-CTR-003",
         "ATZ-CTR-004"
       ],
-      "status": "ingested_pending_catalog_qa",
-      "note": "Usuario aprobó expresamente y autorizó incorporar. 14 blobs exactos del ZIP, incluidos 4 fichas. QA autónoma 32 casos Chromium + 4 contratos JS. Fusión condicionada a QA global."
+      "status": "ingested_internal_validated",
+      "note": "Usuario aprobó expresamente; 10 blobs funcionales y cuatro fichas exactas en importación inicial. Fusionado en main tras 260 comprobaciones de navegador, reduced-motion, no-JS, touch, contraste, scroll reversible, FLIP y contratos de exportación. 61 anteriores intactos. Fichas actualizadas solo en estado. client_ready:false.",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # ATZ-CTR-002 — Chromatic Transition
 
-**Estado:** candidato en revisión visual, fuera del catálogo.
+**Estado:** aprobado por ATREZZO y disponible para integrar por ID. QA del catálogo aprobada: [260 comprobaciones Chromium](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105).
 
 **Activación:** Scroll nativo reversible.
 

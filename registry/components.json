@@ -2921,8 +2921,8 @@
         "scroll"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. Sin medios de TRIONN.",
-      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Escritorio 03:03 y 03:54; franjas visibles, trayectoria y duración propuestas.",
-      "catalog_qa_note": "QA del paquete aprobada; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Escritorio 03:03 y 03:54; franjas visibles, trayectoria y duración propuestas. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 260 casos globales, 16 nuevos, 12 fallbacks y 4 alturas bajas de la colección; scroll reversible, contraste, continuidad FLIP, teclado, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105. client_ready:false."
     },
     {
       "id": "ATZ-CTR-002",
@@ -2961,8 +2961,8 @@
         "scroll"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. Sin medios de TRIONN.",
-      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Escritorio 03:00–03:09, 03:27–03:36; contraste oscuro/claro observado, interpolación propuesta.",
-      "catalog_qa_note": "QA del paquete aprobada; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Escritorio 03:00–03:09, 03:27–03:36; contraste oscuro/claro observado, interpolación propuesta. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 260 casos globales, 16 nuevos, 12 fallbacks y 4 alturas bajas de la colección; scroll reversible, contraste, continuidad FLIP, teclado, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105. client_ready:false."
     },
     {
       "id": "ATZ-CTR-003",
@@ -3001,8 +3001,8 @@
         "scroll-entry"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. Sin medios de TRIONN.",
-      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Escritorio 00:00–00:09 y 02:36–02:42; entrada observada, diseño y tiempos originales.",
-      "catalog_qa_note": "QA del paquete aprobada; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Escritorio 00:00–00:09 y 02:36–02:42; entrada observada, diseño y tiempos originales. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 260 casos globales, 16 nuevos, 12 fallbacks y 4 alturas bajas de la colección; scroll reversible, contraste, continuidad FLIP, teclado, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105. client_ready:false."
     },
     {
       "id": "ATZ-CTR-004",
@@ -3041,8 +3041,8 @@
         "click"
       ],
       "photo_usage": "Texto, CSS y SVG originales de ATREZZO. Sin medios de TRIONN.",
-      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Work/proyecto 06:18–06:54, continuidad conceptual; captura no confirma trayectoria exacta.",
-      "catalog_qa_note": "QA del paquete aprobada; fusión condicionada a QA de catálogo en PR. client_ready:false."
+      "validation_notes": "Usuario aprobó expresamente el ZIP el 14/11/2026. QA autónoma: 16 responsive + 12 fallbacks + 4 alturas bajas, 4 contratos JS. Work/proyecto 06:18–06:54, continuidad conceptual; captura no confirma trayectoria exacta. QA del catálogo aprobada 14/11/2026.",
+      "catalog_qa_note": "QA Chromium del catálogo aprobada: 260 casos globales, 16 nuevos, 12 fallbacks y 4 alturas bajas de la colección; scroll reversible, contraste, continuidad FLIP, teclado, búsqueda y filtros. https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105. client_ready:false."
     }
   ],
   "discovery_groups": [
