@@ -16,4 +16,9 @@ Estado: EN VALIDACIÓN. La nueva interfaz es una capa adicional, no una reimplem
 - SVG exacto recibido del usuario (hash Git 13470f929e099fda97ebc1676ce8aef8f11872ee); favicon PNG de 32×32 extraído directamente del ICO oficial, sin redibujar (hash 8e4fee3dfeb7251479bb03663339bd76754bd24f).
 - Wordmark en los encabezados del catálogo, catálogo técnico y preview; favicon en esas tres rutas y redirecciones de la biblioteca. No usar el logo maestro de presentación como cabecera.
 - Estilo limitado a la interfaz; sin cambios en componentes ni previews grabados. Prueba de hashes, carga y responsive; no regenerar medios ya capturados.
-- La fase sigue en validación hasta recibir el resultado de CI. Cloudflare y ATREZZO AI no se activan en esta fase.
+- Identidad oficial cerrada a nivel interno: [QA de marca PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43630217270), 4 anchos y capturas inspeccionadas; registro y 364 blobs protegidos intactos. La V2 completa sigue en validación. Cloudflare y ATREZZO AI no se activan en esta fase.
+
+## Siguiente fase: revisión editorial del catálogo
+- Reducir distancia hasta las primeras previews: el hero y los filtros consumen la primera pantalla en los cuatro tamaños inspeccionados. La misión es localizar componentes visualmente, no leer una portada extensa.
+- Revisar las 65 capturas y grabaciones; corregir solo las que no representan bien su movimiento. No reabrir identidad ni módulos aprobados.
+- Validar recomendaciones y navegación antes de publicar V2; Safari y Pages pendientes.
