@@ -1,0 +1,45 @@
+name: Visual Library V2 — authentic media and QA
+on:
+  push:
+    branches: [feat/visual-library-v2]
+    paths:
+      - 'catalog/visual*'
+      - 'registry/visual-discovery.json'
+      - 'tests/visual-browser.mjs'
+      - '.github/workflows/visual-library-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: visual-library-v2-media
+  cancel-in-progress: true
+jobs:
+  visual-library:
+    if: github.ref == 'refs/heads/feat/visual-library-v2'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm test
+      - run: npm install --no-save playwright@1.65.0 gsap@3.12.5
+      - run: npx playwright install --with-deps --only-shell chromium
+      - run: ffmpeg -version
+      - name: Capture genuine demos and test V2 at four widths
+        run: node tests/visual-browser.mjs --capture
+      - name: Upload captured assets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-library-v2-media
+          path: catalog/previews/
+      - name: Commit only generated assets to the review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/previews/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: capture authentic component posters and motion previews"
+          git push origin HEAD:feat/visual-library-v2
