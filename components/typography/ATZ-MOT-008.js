@@ -1,0 +1,3 @@
+import {mountPattern,split,enter,shuffled,clamp,ease,graphemes} from './runtime.js';
+export const id='ATZ-MOT-008';
+export function mount(host){return mountPattern(host,id,ctx=>{const {node,add}=ctx;for(const el of node.querySelectorAll('[data-blur]')){const parts=split(el,el.dataset.blur);add(parts.restore);if(!parts.units.length)continue;const base=[{opacity:0,filter:'blur(12px)'},{opacity:1,filter:'blur(0px)'}];const layer=ctx.animate(el,base,{duration:500,fill:'backwards'});layer.pause();ctx.visible(el,()=>layer.play());enter(ctx,el,parts.units,()=>base,80,800,shuffled(parts.units.length));}});}

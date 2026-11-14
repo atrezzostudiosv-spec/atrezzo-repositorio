@@ -1,0 +1,28 @@
+/* ATREZZO Typography 01 — CSS encapsulado. */
+.atz-ty {--ty-fg:#edf0ff;--ty-accent:#a6a2ff;--ty-bg:#101424;color:var(--ty-fg);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-sizing:border-box;overflow:clip;}
+.atz-ty *, .atz-ty *::before,.atz-ty *::after{box-sizing:border-box;}
+.atz-ty .ty-scene{min-height:85svh;display:grid;align-content:center;padding:clamp(1.4rem,7vw,7rem);background:var(--ty-bg);position:relative;isolation:isolate;}
+.atz-ty .ty-scene::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 85% 15%,#37306670,transparent 55%);pointer-events:none;}
+.atz-ty h2,.atz-ty h3{font-size:clamp(2.5rem,7.4vw,8rem);letter-spacing:-.065em;line-height:1.05;font-weight:500;margin:0;overflow-wrap:anywhere;}
+.atz-ty h3{font-size:clamp(1.8rem,4.2vw,4rem);}
+.atz-ty p,.atz-ty a{font-size:clamp(1rem,1.6vw,1.35rem);line-height:1.55;color:inherit;}
+.atz-ty p{margin:0;max-width:46ch;}
+.atz-ty .ty-stack{display:grid;gap:clamp(1.1rem,3vw,2.5rem);}
+.atz-ty [data-blur=lines]>span{display:block;}
+.atz-ty .ty-word{display:inline-block;white-space:nowrap;max-width:100%;}
+.atz-ty .ty-unit{display:inline-block;}
+.atz-ty .ty-rotate{display:inline-grid;max-width:100%;vertical-align:baseline;color:var(--ty-accent);}
+.atz-ty .ty-rotate>[data-current],.atz-ty .ty-rotate>.ty-sizing{grid-area:1/1;}
+.atz-ty .ty-sizing{visibility:hidden;pointer-events:none;}
+.atz-ty .ty-opposed{display:grid;gap:.2em;overflow:clip;}
+.atz-ty .ty-opposed h2:last-child{text-align:right;}
+.atz-ty .ty-marquee{overflow:hidden;max-width:100%;}
+.atz-ty .ty-marquee-track{display:flex;width:max-content;white-space:nowrap;font-size:clamp(3rem,9vw,10rem);line-height:1.1;letter-spacing:-.06em;}
+.atz-ty .ty-marquee-track span{flex:none;}
+.atz-ty .ty-links{display:grid;gap:1.2rem;justify-items:start;}
+.atz-ty .ty-links a{font-size:clamp(1.5rem,4vw,3rem);text-decoration:none;border-bottom:1px solid currentColor;padding:.2em 0;}
+.atz-ty .ty-swap-wrap{display:inline-grid;overflow:hidden;vertical-align:bottom;}
+.atz-ty .ty-swap-wrap>span{grid-area:1/1;white-space:pre-wrap;}
+.atz-ty .ty-swap-alt{color:var(--ty-accent);}
+.atz-ty :focus-visible{outline:2px solid var(--ty-accent);outline-offset:5px;}
+@media(prefers-reduced-motion:reduce){.atz-ty *, .atz-ty *::before,.atz-ty *::after{animation:none!important;transition:none!important;}}
