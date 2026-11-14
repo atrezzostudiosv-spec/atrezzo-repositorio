@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="app.js?v=20261114-typography01-r2"></script>
+  <script type="module" src="app.js?v=20261114-catalog-r3"></script>
 </head>
 <body>
   <a class="skip-link" href="#library">Saltar al catálogo</a>
@@ -72,8 +72,8 @@
       <section class="metrics" aria-label="Estado de la biblioteca">
         <div class="metric"><span class="metric-number" id="count-total">56</span><span class="metric-label">VARIANTES CATALOGADAS</span></div>
         <div class="metric"><span class="metric-number" id="count-categories">09</span><span class="metric-label">CATEGORÍAS ACTIVAS</span></div>
-        <div class="metric"><span class="metric-number" id="count-tested">56</span><span class="metric-label">DEMOS PROBADAS</span></div>
-        <div class="metric metric-caption"><span class="metric-kicker"><span class="cyan-dot"></span> ESTADO DEL CATÁLOGO</span><span>Las demos están probadas; cada web de cliente requiere sus propias pruebas.</span></div>
+        <div class="metric"><span class="metric-number" id="count-tested">56</span><span class="metric-label">COMPONENTES APROBADOS</span></div>
+        <div class="metric metric-caption"><span class="metric-kicker"><span class="cyan-dot"></span> ESTADO DEL CATÁLOGO</span><span>Biblioteca aprobada y disponible para integración por ID.</span></div>
       </section>
 <section class="favorites-section" id="favorites" aria-labelledby="favorites-title">
         <div class="section-heading favorites-heading">
@@ -92,7 +92,7 @@
           <label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Buscar componentes</span><input id="search" type="search" autocomplete="off" placeholder="Buscar por nombre, ID, fotografía, 3D, tarjetas…"></label>
           <div class="filters" id="filters" aria-label="Filtrar por tipo de movimiento"></div>
         </div>
-        <p class="qa-note"><strong>Demo probada</strong> = verificada en la biblioteca. <strong>Pendiente en cliente</strong> = aún necesita integración y pruebas antes de publicarse.</p>
+        <p class="qa-note"><strong>Aprobado</strong> = componente verificado y disponible para integrar por ID. Conserva su movimiento original.</p>
         <div id="component-grid" class="component-grid" aria-live="polite">
           <div class="loading-catalog">Cargando registro de componentes…</div><noscript><p class="loading-catalog">La búsqueda requiere JavaScript. Puedes consultar el <a href="../registry/components.json">registro de los 56 componentes</a> y acceder a sus archivos individuales.</p></noscript>
         </div>

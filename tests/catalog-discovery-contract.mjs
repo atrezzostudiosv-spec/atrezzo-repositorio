@@ -39,8 +39,12 @@ assert.equal(saveFavorites(new Set(["ATZ-STK-006"])),false);
 console.log("PASS discovery: 56 components, 9 groups, demo QA != client ready, local favorites persistence and blocked-storage fallback.");
 
 // Keep release URLs coordinated: a fresh registry must not be paired with an old preview loader.
-const release="20261114-typography01-r2";
+const release="20261114-catalog-r3";
 assert(readFileSync(new URL("../catalog/index.html",import.meta.url),"utf8").includes("app.js?v="+release));
 assert(readFileSync(new URL("../catalog/preview.html",import.meta.url),"utf8").includes("preview.js?v="+release));
 assert(app.includes('const catalogRevision="'+release+'"'));
 assert(readFileSync(new URL("../catalog/preview.js",import.meta.url),"utf8").includes('const catalogRevision="'+release+'"'));
+
+assert.deepEqual(reg.library_approval.approved_ids,reg.entries.map(e=>e.id));
+assert(reg.entries.every(e=>e.catalog_qa_status==="passed_internal"));
+assert(app.includes('approved?"Aprobado"'));

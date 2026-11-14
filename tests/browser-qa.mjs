@@ -611,16 +611,17 @@ try {
  })));
  assert.equal(routes.length,registry.entries.length,"Every component has a catalog card");
  for(const route of routes){
-   const target="preview.html?id="+route.id+(typographyEntries.some(e=>e.id===route.id)?"&v=20261114-typography01-r2":"");
+   const target="preview.html?id="+route.id+"&v=20261114-catalog-r3";
    assert.equal(route.visual,target,route.id+" visual link must open its own preview");
    assert.equal(route.action,target,route.id+" action link must open its own preview");
  }
  // Verify the actual versioned Typography link, not only direct unversioned routes.
  await index.locator('#component-grid [data-id="ATZ-MOT-013"] .card-action').click();
- await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v=20261114-typography01-r2",{timeout:12000});
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v=20261114-catalog-r3",{timeout:12000});
  await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
  assert.equal(await index.locator(".atz-ty").getAttribute("data-atz-id"),"ATZ-MOT-013");
  assert.equal(await index.getByRole("button",{name:"Repetir efecto"}).count(),1);
+ assert.equal(await index.locator("#pre-approval").textContent(),"Aprobado por ATREZZO · Disponible para integrar por ID.");
  await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
  await index.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===56);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
@@ -631,7 +632,7 @@ try {
  assert.equal(await index.locator(".component-card").count(),1,"Transition filter");
  await index.locator(".filter[data-category='all']").click();
  await index.locator('#component-grid [data-id="ATZ-MOT-006"] .card-action').click();
- await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006",{timeout:12000});
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006&v=20261114-catalog-r3",{timeout:12000});
  await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
  assert.equal(await index.locator(".atz-motion-v1").getAttribute("data-atz-id"),"ATZ-MOT-006","Editorial Journey card must open the actual motion");
 
@@ -652,8 +653,9 @@ try {
    assert.equal(await page.locator("[data-category]").count(),10,"All plus nine discovery groups");
    assert.equal(await page.locator(".collection-heading").count(),9);
    assert.equal(await page.locator("#count-tested").textContent(),String(registry.entries.filter(e=>e.catalog_qa_status==="passed_internal").length));
-   assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Demo probada");
-   assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Demo probada");
+   assert.equal(await page.locator("#component-grid .card-status").filter({hasText:/^Aprobado$/}).count(),56);
+   assert.equal(await page.locator('#component-grid [data-id="ATZ-MOT-001"] .card-status').textContent(),"Aprobado");
+   assert.equal(await page.locator('#component-grid [data-id="ATZ-SEC-005"] .card-status').textContent(),"Aprobado");
    const favorite=page.locator('#component-grid [data-id="ATZ-SEC-005"] [data-favorite-id]');
    await favorite.click();
    assert.equal(await page.locator("#favorites-grid .component-card").count(),1);

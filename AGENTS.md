@@ -60,3 +60,8 @@ La biblioteca añade un grupo **Composiciones de servicios**, separado de Scroll
 ## Typography Collection 01 (2026-11-14)
 
 ATZ-MOT-008, 010–015 utilizan exclusivamente sus archivos registrados en `components/typography/` (HTML, JS, `atrezzo-typography.css`, `runtime.js`). No importar Motion V1 ni otros IDs. No copiar recursos o código de TRIONN. Las demos fueron aprobadas por el usuario; `client_ready:false` hasta pruebas en cliente. No modificar el movimiento aprobado ni confundir QA de catálogo con producción.
+
+
+## Regla de admisión y reutilización — 14/11/2026
+
+El usuario confirma que los 56 componentes dentro del catálogo están aprobados. `registry/components.json` registra expresamente `library_approval.approved_ids`. Solo incorporar al catálogo público nuevos IDs con aprobación del usuario y QA interna verificadas; el laboratorio puede contener candidatos fuera del catálogo. Todo ID aprobado se utiliza directamente, por su código exacto y ficha, sin pedir otra aprobación ni reconstruirlo. `status` y `client_ready` son metadatos técnicos de validación en un sitio concreto, no una revocación de aprobación. El ejecutor (ChatGPT/Codex) se encarga de integrar y probar en destino sin cambiar diseño, movimiento, orden, IDs, favoritos ni otras decisiones aprobadas. La ficha y el prompt deben resolver archivos y dependencias exactos. La interfaz muestra «Aprobado» en lugar de advertencias ambiguas. No prometer QA de cliente sin evidencia.

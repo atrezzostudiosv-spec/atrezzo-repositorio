@@ -9,7 +9,7 @@ const nav = document.querySelector("#category-nav");
 const count = document.querySelector("#result-count");
 const toast = document.querySelector("#toast");
 
-let entries = [], groups = [], filter = "all", favorites = new Set(), toastTimer = 0;
+let entries = [], groups = [], approvedIds = new Set(), filter = "all", favorites = new Set(), toastTimer = 0;
 const groupFallback = {
   servicios:"Composiciones de servicios",
   galerias:"Galerías y mosaicos", sticky:"Paneles sticky", narrativa:"Narrativa por scroll",
@@ -33,7 +33,7 @@ function label(group) {
   return groups.find(x=>x.id===group)?.label || groupFallback[group] || group;
 }
 function instruction(e) {
-  return "Integra únicamente " + e.id + " ("+e.title+") del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Lee registry/components.json y " + e.technical_guide + ". Preserva el efecto aprobado y no importes otros componentes. Audita el proyecto cliente, utiliza imágenes autorizadas, verifica móvil, teclado, scroll inverso, reduced-motion y licencias. Comprueba la etiqueta de pruebas del registro: la demo puede estar pendiente. client_ready=false hasta validación en cliente.";
+  return "Integra únicamente " + e.id + " ("+e.title+") del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Lee registry/components.json y " + e.technical_guide + ". Preserva el efecto aprobado y no importes otros componentes. Audita el proyecto cliente, utiliza imágenes autorizadas, verifica móvil, teclado, scroll inverso, reduced-motion y licencias. Usa el código original y la ficha del ID exacto. Si el ID consta en library_approval y tiene catalog_qa_status=passed_internal, está aprobado para integrar sin otra aprobación. El ejecutor verifica el resultado en la web de destino; no cambia el efecto aprobado.";
 }
 async function copy(value,description) {
   try {
@@ -56,10 +56,10 @@ function tiles(e,i) {
     return '<span class="visual-tile" style="--tile-a:'+colors[0]+';--tile-b:'+colors[1]+';--drift:'+(((j*7+i*11)%39)-20)+'px;--rot:'+(((j*3+i*7)%19)-9)+'deg"></span>';
   }).join("");
 }
-const catalogRevision="20261114-typography01-r2";
+const catalogRevision="20261114-catalog-r3";
 function previewLink(e) {
   if(!idRegex.test(e.id))return "index.html#library";
-  return "preview.html?id="+encodeURIComponent(e.id)+(e.family==="atrezzo-typography-01"?"&v="+catalogRevision:"");
+  return "preview.html?id="+encodeURIComponent(e.id)+"&v="+catalogRevision;
 }
 function card(e,i) {
   const id=escapeHTML(e.id);
@@ -67,8 +67,9 @@ function card(e,i) {
   const href=previewLink(e);
   const group=escapeHTML(label(e.discovery_group));
   const trigger=({scroll:"Scroll",click:"Clic / teclado",mixed:"Reveal + Swipe",navigation:"Entre páginas","scroll-entry":"Entrada en pantalla",time:"Tiempo / visibilidad",hover:"Hover / foco"})[e.discovery_trigger]||"Interacción";
-  const qa=e.catalog_qa_status==="passed_internal"?"Demo probada":e.client_ready?"Cliente verificado":"Por revisar";
-  const qaTitle=e.catalog_qa_status==="passed_internal"?"Probada en la biblioteca. Pendiente de validación en cada website cliente.":"Estado de pruebas pendiente";
+  const approved=approvedIds.has(e.id)&&e.catalog_qa_status==="passed_internal";
+  const qa=approved?"Aprobado":e.catalog_qa_status==="passed_internal"?"Demo probada":e.client_ready?"Cliente verificado":"Por revisar";
+  const qaTitle=approved?"Aprobado en ATREZZO para integrar por ID.":e.catalog_qa_status==="passed_internal"?"Probado en la biblioteca.":"Estado de pruebas pendiente";
   const saved=favorites.has(e.id);
   const favLabel=(saved?"Quitar de favoritos: ":"Guardar en favoritos: ")+e.title;
   return '<article class="component-card" data-id="'+id+'">'+
@@ -153,12 +154,13 @@ async function init() {
     if(!response.ok)throw Error("No disponible");
     const registry=await response.json();
     entries=registry.entries||[];
+    approvedIds=new Set(registry.library_approval?.approved_ids||[]);
     groups=registry.discovery_groups||[];
     if(!entries.length||!groups.length)throw Error("Falta la clasificación de componentes");
     favorites=loadFavorites(new Set(entries.map(e=>e.id)));
     document.querySelector("#count-total").textContent=pad(entries.length);
     document.querySelector("#count-categories").textContent=pad(groups.length);
-    document.querySelector("#count-tested").textContent=pad(entries.filter(e=>e.catalog_qa_status==="passed_internal").length);
+    document.querySelector("#count-tested").textContent=pad(entries.filter(e=>approvedIds.has(e.id)&&e.catalog_qa_status==="passed_internal").length);
     setupFilters();renderCatalog();renderFavorites();
     search.addEventListener("input",renderCatalog);
     filters.addEventListener("click",event=>{

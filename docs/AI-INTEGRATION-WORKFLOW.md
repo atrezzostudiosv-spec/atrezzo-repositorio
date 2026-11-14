@@ -14,7 +14,7 @@
 4. Adaptar el componente a la identidad y contenido confirmados; no copiar demos, fotografías o claims de terceros. Preservar los selectores y nodos necesarios para el efecto.
 5. Revisar `dependencies` por ID: GSAP y ScrollTrigger se instalan **solo** si el componente lo exige; `ATZ-NAV-001/002/003` no requieren librerías externas. Mantener scroll nativo, fallback sin JavaScript y compatibilidad `prefers-reduced-motion`.
 6. Probar 375, 768, 1024 y 1440 px, teclado, scroll rápido y reverso, montaje/desmontaje, ausencia de errores JS y rendimiento.
-7. Documentar los archivos modificados, pruebas realizadas, estado y evidencias. `client_ready:false` significa que no está certificado para clientes, incluso si su demo funciona.
+7. Documentar los archivos modificados, pruebas realizadas, estado y evidencias. Un ID aprobado en `library_approval` y con `catalog_qa_status:passed_internal` está disponible para integrar sin pedir otra aprobación. `client_ready:false` es un dato técnico de verificación en un proyecto concreto; no invalida la aprobación. El ejecutor asume las pruebas de integración y conserva el efecto exacto.
 8. No modificar sitios de clientes sin tener acceso a su repositorio y una solicitud concreta de integración.
 
 ## Selección determinista y exportación segura

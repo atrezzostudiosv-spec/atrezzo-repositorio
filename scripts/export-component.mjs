@@ -23,7 +23,7 @@ export function exportComponent(id,out){
     selected.id.startsWith("ATZ-MOT-")?"3. Incluye el CSS del paquete. No requiere dependencias externas.":"3. Incluye el CSS del paquete y las dependencias indicadas en su ficha.",
     "4. Importa mount desde el JS de la variante y pasa su contenedor.",
     "5. Sustituye gradientes por fotos autorizadas; verifica responsive, scroll y teclado.",
-    "6. Estado actual: "+selected.status+"; client_ready="+selected.client_ready+".",
+    selected.library_approved?"6. Componente aprobado para integrar. El ejecutor verifica su funcionamiento en el destino sin modificar el movimiento.":"6. Consultar el estado de aprobación antes de integrar.",
     "",
     "INSTRUCCIÓN PARA CHATGPT:",
     createIntegrationPrompt(id),""

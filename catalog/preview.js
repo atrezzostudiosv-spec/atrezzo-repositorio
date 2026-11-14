@@ -2,10 +2,10 @@ import {loadFavorites,saveFavorites,listenFavorites} from "./favorites-store.js"
 const id = new URLSearchParams(location.search).get("id");
 const demo = document.querySelector("#demo");
 const repoRoot = "../";
-const catalogRevision="20261114-typography01-r2";
+const catalogRevision="20261114-catalog-r3";
 function text(selector,value){document.querySelector(selector).textContent=value}
 function instruction(e) {
-  return `Integra únicamente ${e.id} (${e.title}) del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Usa exclusivamente ${e.component_html}, ${e.component_css}, ${e.component_js} y su dependencia compartida ${e.component_runtime}. No importes los demás efectos ni fotografías no autorizadas. Respeta la identidad de cliente y verifica móvil, teclado, scroll inverso, reducción de movimiento y las dependencias que correspondan a este ID. Estado ${e.status}; no certificado automáticamente para producción.`;
+  return `Integra únicamente ${e.id} (${e.title}) del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Usa exclusivamente ${e.component_html}, ${e.component_css}, ${e.component_js} y su dependencia compartida ${e.component_runtime}. No importes los demás efectos ni fotografías no autorizadas. Respeta la identidad de cliente y verifica móvil, teclado, scroll inverso, reducción de movimiento y las dependencias que correspondan a este ID. Si el registro confirma su aprobación en biblioteca, intégralo sin pedir otra aprobación. Conserva el efecto original y verifica su funcionamiento en el proyecto de destino.`;
 }
 async function boot() {
   try {
@@ -18,7 +18,10 @@ async function boot() {
     text("#pre-id",e.id+" / "+(e.discovery_group||e.category).toUpperCase());
     text("#pre-title",e.title);
     text("#pre-desc",e.description+" · Uso recomendado: "+e.recommended_for+".");
-    text("#pre-use",(e.catalog_qa_status==="passed_internal"?"Demo probada dentro de la biblioteca. ":"Referencia técnica pendiente de pruebas. ")+"Pendiente de verificación dentro de un website cliente. "+e.avoid_when+". Revisar dependencias, medios autorizados, rendimiento y accesibilidad antes de publicar.");
+    const approved=registry.library_approval?.approved_ids?.includes(e.id)&&e.catalog_qa_status==="passed_internal";
+    const approval=document.querySelector("#pre-approval");
+    if(approval){approval.textContent=approved?"Aprobado por ATREZZO · Disponible para integrar por ID.":e.catalog_qa_status==="passed_internal"?"Demo verificada en la biblioteca.":"Referencia pendiente de aprobación.";approval.hidden=false;}
+    text("#pre-use",(approved?"Componente aprobado. Copia la instrucción para incorporar este ID exacto sin modificar el movimiento. ":"Consulta la ficha técnica antes de integrar. ")+e.avoid_when.replace(/\.$/,"")+".");
     document.title=e.id+" — "+e.title+" | ATREZZO";
     if(e.id.startsWith("ATZ-STK-"))document.querySelector(".pre-footer").textContent="© Codrops / Sticky Sections · Código MIT · Imágenes originales de Vecteezy excluidas; composiciones abstractas de prueba."; 
     if(e.id.startsWith("ATZ-SEC-"))document.querySelector(".pre-footer").textContent="© ATREZZO Studios · Scroll Sections 01–03 · Código nativo sin dependencias externas · Fotografías de cliente no incluidas.";

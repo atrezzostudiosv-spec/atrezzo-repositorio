@@ -12,6 +12,7 @@ for(const e of registry.entries){
   assert.equal(contract.id,e.id);
   assert.equal(contract.status,"validation");
   assert.equal(contract.client_ready,false);
+  assert.equal(contract.library_approved,true);
   assert.equal(Object.keys(contract.files).length,e.id.startsWith("ATZ-PGT-")?5:4,"Exact ID file contract");
   const script=readFileSync(new URL("../"+contract.files.js,import.meta.url),"utf8");
   assert(script.includes((e.category==="navegacion"||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-"))?"./runtime.js":e.id.startsWith("ATZ-SEC-")?"./ats"+(e.id.slice(-3)<="003"?"1":e.id.slice(-3)<="006"?"2":"3")+"-engine.js":e.id.startsWith("ATZ-STK-")?"../runtime/sticky-lifecycle.js":"../runtime/lifecycle.js"),e.id+" must import correct shared runtime");
@@ -20,7 +21,8 @@ for(const e of registry.entries){
   }
   const prompt=createIntegrationPrompt(e.id);
   assert(prompt.includes("ID: "+e.id),e.id+" prompt missing exact ID");
-  assert(prompt.includes("client_ready=false"),e.id+" prompt missing production warning");
+  assert(prompt.includes("client_ready=false"),e.id+" prompt missing technical integration state");
+  assert(prompt.includes("Biblioteca: APROBADO"),e.id+" prompt missing library approval");
   assert(prompt.includes(contract.files.js),e.id+" prompt missing own JS");
 }
 assert.throws(()=>resolveComponent("ATZ-SCR-000"),/desconocido/);

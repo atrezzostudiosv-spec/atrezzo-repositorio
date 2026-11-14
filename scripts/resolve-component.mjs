@@ -24,6 +24,7 @@ export function resolveComponent(id){
   const selected={
     id:e.id,title:e.title,category:e.category,variant:e.variant,
     selector:e.selector,status:e.status,client_ready:e.client_ready===true,
+    library_approved:registry.library_approval?.approved_ids?.includes(e.id)===true&&e.catalog_qa_status==="passed_internal",
     use_for:e.recommended_for,avoid_when:e.avoid_when,
     files:{
       html:requireFile(e.component_html),css:requireFile(e.component_css),
@@ -46,7 +47,8 @@ export function createIntegrationPrompt(id){
     "ATREZZO — INTEGRACIÓN POR ID EXACTO",
     "Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio",
     "ID: "+e.id+" — "+e.title,
-    "Estado: "+e.status+"; client_ready="+e.client_ready,
+    e.library_approved?"Biblioteca: APROBADO. Integrar este ID exacto sin pedir una nueva aprobación.":"Biblioteca: pendiente de aprobación.",
+    "Estado técnico de integración en cliente: client_ready="+e.client_ready+" (no invalida la aprobación de biblioteca).",
     "Antes de modificar: AGENTS.md y "+e.technical_guide,
     "Archivos que se deben incorporar exclusivamente:",
     "- "+e.files.html,"- "+e.files.css,"- "+e.files.js,"- "+e.files.runtime,
@@ -56,7 +58,7 @@ export function createIntegrationPrompt(id){
     "Auditar primero el sitio del cliente, conservar su diseño y contenido aprobado.",
     "No importar otros IDs ni fotos del paquete original.",
     "Validar a 375/768/1024/1440 px, teclado, scroll inverso, reduced-motion y rendimiento.",
-    "No declarar listo para producción sin verificarlo en la web del cliente."
+    El ejecutor debe comprobar el resultado en el website de destino, sin rediseñar ni volver a someter a aprobación el componente."
   ].join("\n");
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
