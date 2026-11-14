@@ -2,6 +2,8 @@ name: Browser QA for component library
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,7 +20,7 @@ jobs:
         run: npm install --no-save playwright@1.65.0 gsap@3.12.5
       - name: Install Chromium headless shell and OS dependencies
         run: npx playwright install --with-deps --only-shell chromium
-      - name: Run 11 variants at 4 widths and accessibility fallbacks
+      - name: Run all variants at 4 widths and accessibility fallbacks
         run: node tests/browser-qa.mjs
       - name: Upload QA screenshots and report
         if: always()
