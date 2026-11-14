@@ -1,9 +1,9 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 const reg=JSON.parse(readFileSync(new URL("../registry/components.json",import.meta.url),"utf8"));
-assert.equal(reg.entries.length,56);
-assert.deepEqual(reg.discovery_groups.map(g=>g.id),["servicios","heroes","tipografia","galerias","sticky","narrativa","navegacion","transiciones-paginas","transiciones"]);
-assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[1,2,9,12,15,10,3,3,1]);
+assert.equal(reg.entries.length,61);
+assert.deepEqual(reg.discovery_groups.map(g=>g.id),["servicios","heroes","tipografia","galerias","sticky","narrativa","navegacion","transiciones-paginas","transiciones","microinteracciones"]);
+assert.deepEqual(reg.discovery_groups.map(g=>reg.entries.filter(e=>e.discovery_group===g.id).length),[1,2,9,12,15,10,3,3,1,5]);
 assert(reg.entries.every(e=>!e.client_ready&&e.status==="validation"&&(e.catalog_qa_status==="passed_internal"||(e.family==="atrezzo-typography-01"&&e.catalog_qa_status==="pending"))));
 assert.equal(reg.entries.filter(e=>e.family==="atrezzo-typography-01").length,7);assert(reg.entries.filter(e=>e.family!=="atrezzo-typography-01").every(e=>e.catalog_qa_status==="passed_internal"));
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-001").discovery_trigger,"click");
@@ -36,10 +36,10 @@ assert.equal(loadFavorites(valid).size,0);
 globalThis.localStorage={getItem(){throw Error("private")},setItem(){throw Error("private")}};
 assert.equal(loadFavorites(valid).size,0);
 assert.equal(saveFavorites(new Set(["ATZ-STK-006"])),false);
-console.log("PASS discovery: 56 components, 9 groups, demo QA != client ready, local favorites persistence and blocked-storage fallback.");
+console.log("PASS discovery: 61 components, 10 groups, demo QA != client ready, local favorites persistence and blocked-storage fallback.");
 
 // Keep release URLs coordinated: a fresh registry must not be paired with an old preview loader.
-const release="20261114-catalog-r3";
+const release="20261114-catalog-r4";
 assert(readFileSync(new URL("../catalog/index.html",import.meta.url),"utf8").includes("app.js?v="+release));
 assert(readFileSync(new URL("../catalog/preview.html",import.meta.url),"utf8").includes("preview.js?v="+release));
 assert(app.includes('const catalogRevision="'+release+'"'));

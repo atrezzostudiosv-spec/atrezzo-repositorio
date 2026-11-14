@@ -100,3 +100,8 @@
 ## Clarificación de aprobación y uso — 14/11/2026
 
 El usuario confirma que TODOS los componentes admitidos en biblioteca están aprobados y que el ejecutor debe garantizar la integración sin alterar lo aprobado. Se añade aprobación explícita de los 56 IDs y se conserva íntegramente cada entrada previa, orden y código funcional. La interfaz muestra «Aprobado» / «Disponible para integrar por ID»; se retira la advertencia genérica de certificación de la preview. Se mantienen metadatos técnicos client_ready y status, como verificación de destino y no como impedimento de uso. Instrucción por ID y exportador aclarados. Nueva revisión de recursos `20261114-catalog-r3` para asegurar consistencia de catálogo/previews; los enlaces canónicos anteriores siguen válidos. Usuario ha mostrado captura de Glyph Layer Swap con controles nuevos visibles (revisión r2); no se infiere de ella la prueba de los otros seis IDs en Pages. Pendiente verificar despliegue de r3. No se reabre diseño ni se modifican efectos.
+
+
+## Microinteractions Collection 01 — 14/11/2026
+
+**APROBACIÓN VISUAL CERRADA / INGESTA EN VALIDACIÓN.** Usuario aprueba las cinco demos y autoriza incorporación. Rama feat/microinteractions-01; commit fuente `4344122e5445d840ed4e00043c018c509cfca918`: los 12 blobs funcionales coinciden con el ZIP aprobado. QA autónoma: 20 responsive + 15 fallbacks + 1 teclado, 5 contratos JS. Registro propuesto 56→61 IDs, nueva categoría Microinteracciones al final, entradas anteriores y orden intactos. Corregida errata sintáctica preexistente del generador de instrucciones por ID. No fusionar hasta pruebas de contrato y navegador. Revisión coordinada 20261114-catalog-r4. No modificar componentes existentes. Siguiente: comprobar publicación real antes de Transitions.

@@ -86,3 +86,8 @@ Tres transiciones originales **entre páginas HTML**, no scroll: `ATZ-PGT-001`, 
 ## Typography Collection 01 — Creative Technology
 
 Siete efectos aprobados por el usuario (ATZ-MOT-008, 010–015). Motor y CSS separados en `components/typography/`; los 49 componentes existentes permanecen intactos. Integrado en main con QA interna aprobada (56 IDs × 4 anchos = 224 comprobaciones); client_ready:false. Inspiración de movimiento TRIONN, código original ATREZZO, sin sus recursos.
+
+
+## Microinteractions Collection 01
+
+Cinco módulos aprobados `ATZ-MIC-001…005`: Magnetic Button, Contextual Cursor, CTA Arrow & Fill, Image Hover Reveal y Press & Hold. HTML/JS exactos y CSS/runtime de familia, sin dependencias externas. Nueva categoría al final del catálogo, 61 IDs. QA del catálogo en rama de integración; client_ready:false.
