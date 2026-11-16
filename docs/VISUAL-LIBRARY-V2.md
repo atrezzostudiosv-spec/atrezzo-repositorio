@@ -32,3 +32,9 @@ Estado: EN VALIDACIÓN. La nueva interfaz es una capa adicional, no una reimplem
 - QA de la fase 04: [Visual Library y reparaciones PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43821514123); [regresión de catálogo previo PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43821520520), [contratos PASS](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43821520574).
 - Los seis vídeos corregidos fueron generados y aprobados técnicamente. Revisión visual final detectó dos portadas de transición excesivamente planas y una con composición cortada. Se ajustan SOLO 3 WebP usando fotogramas reales de sus WebM ya aprobados, sin modificar los vídeos ni los componentes: PGT-001 2.30 s, PGT-002 1.08 s, PGT-003 2.08 s. El movimiento completo permanece en cada vídeo y demo interactiva.
 - Verificar CI final, media y 4 anchos antes de fusionar. Si Pages no permite publicar, documentar el bloqueo; no confundir GitHub fusionado con hosting publicado.
+
+## Resultado de publicación — 16/11/2026
+- GitHub PR #4 fusionada: `cb773b189a8d5ab2b8a738ad2eb99c52d50f074e`.
+- Capturas y vídeos finales: 65+65. Poster transiciones 001/002/003: fotogramas 2.30/1.00/2.08 s, respectivamente, derivados de sus vídeos existentes.
+- QA V2 último: [run 43840724463](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43840724463) PASS. Deploy GitHub Pages: [run 43840913278](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43840913278) PASS; HTTP externo no comprobado desde este entorno. Mantener noindex.
+- Sin instalación de IA generativa, backend, Cloudflare ni usuarios. El Director Creativo es un motor de reglas. Próximo hito: Cloudflare, bajo acción explícita del propietario para conectar la cuenta.
