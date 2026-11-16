@@ -1,0 +1,36 @@
+{
+  "id": "ATZ-SEC-011",
+  "title": "WebGL Image Wave",
+  "version": "1.0.0",
+  "source_collection": "trionn",
+  "candidate": 2,
+  "source_visual_approved": true,
+  "approved_at": "2026-11-16",
+  "source_module": 64741,
+  "source_blob": "c6b3689b8035c7b1261bfff7aa09b848a6b91b81",
+  "source_file": "workspace/_next/static/chunks/0m27tzr3c8bpa.js",
+  "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
+  "catalog_qa_status": "pending",
+  "client_ready": false,
+  "files": [
+    "index.html",
+    "component.css",
+    "component.js",
+    "engine.original.js",
+    "vendor/three-r128.original.js",
+    "projects.json",
+    "assets/form.svg",
+    "assets/volume.svg",
+    "assets/signal.svg",
+    "LICENSE-three.txt",
+    "DEPENDENCIES.md",
+    "README.md",
+    "manifest.json"
+  ],
+  "preview": "components/originales/trionn/ATZ-SEC-011/index.html",
+  "dependencies": [
+    "Three.js r128 MIT (included)",
+    "GSAP 3.15.0 and ScrollTrigger 3.15.0 (official CDN)"
+  ],
+  "notes": "Exact original engine. Neutral illustrations; external GSAP dependency replaces captured distribution only. Public package QA separately required."
+}

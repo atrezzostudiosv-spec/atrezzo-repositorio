@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Form / 01",
+    "description": "Editorial identity · illustrative study",
+    "position": "left",
+    "size": "large",
+    "image": "./assets/form.svg"
+  },
+  {
+    "title": "Volume / 02",
+    "description": "Architectural study · illustrative study",
+    "position": "right",
+    "size": "medium",
+    "image": "./assets/volume.svg"
+  },
+  {
+    "title": "Signal / 03",
+    "description": "Digital design · illustrative study",
+    "position": "left",
+    "size": "large",
+    "image": "./assets/signal.svg"
+  }
+]

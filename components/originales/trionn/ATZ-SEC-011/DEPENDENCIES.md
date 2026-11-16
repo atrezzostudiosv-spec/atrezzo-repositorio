@@ -1,0 +1,1 @@
+GSAP and ScrollTrigger 3.15.0 are loaded from the official npm distribution via jsDelivr; not bundled or relicensed. GreenSock/Webflow standard license: https://gsap.com/standard-license. Original captured GSAP bundle remains private. Three.js r128 is included under MIT; see LICENSE-three.txt. Demo SVGs are newly authored illustrations, not TRIONN assets.

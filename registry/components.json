@@ -3244,6 +3244,82 @@
       "licensing": "Original autorizado; Three.js r128 MIT. Sin medios del cliente.",
       "integration": "Usar index.html como página autónoma; configurar projects.json; una instancia por documento. Conservar el motor original y las licencias. Verificar WebGL2, scroll inverso, responsive, reduced-motion y errores antes de publicar.",
       "package_directory": "components/originales/trionn/ATZ-SEC-010/"
+    },
+    {
+      "id": "ATZ-SEC-011",
+      "title": "WebGL Image Wave",
+      "category": "scroll",
+      "family": "trionn-original-webgl-image-wave",
+      "variant": "flagwave",
+      "selector": ".project-card",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "description": "Ondulación tridimensional original de imágenes al entrar en pantalla y al pasar el cursor. Malla WebGL 32 × 24, entrada de tres segundos y retorno progresivo.",
+      "recommended_for": "Portfolios, galerías editoriales y presentación de proyectos creativos.",
+      "avoid_when": "Evitar múltiples instancias por documento; mantener fallback de imágenes y movimiento reducido.",
+      "level": "M3",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "WebGL",
+        "flagwave",
+        "onda",
+        "imagen",
+        "hover",
+        "scroll",
+        "TRIONN"
+      ],
+      "preview": "components/originales/trionn/ATZ-SEC-011/index.html",
+      "technical_guide": "components/originales/trionn/ATZ-SEC-011/README.md",
+      "component_html": "components/originales/trionn/ATZ-SEC-011/index.html",
+      "component_css": "components/originales/trionn/ATZ-SEC-011/component.css",
+      "component_js": "components/originales/trionn/ATZ-SEC-011/component.js",
+      "component_runtime": "components/originales/trionn/ATZ-SEC-011/engine.original.js",
+      "package_manifest": "components/originales/trionn/ATZ-SEC-011/manifest.json",
+      "package_directory": "components/originales/trionn/ATZ-SEC-011/",
+      "source_collection": "trionn",
+      "dependencies": [
+        "Three.js r128 MIT incluido",
+        "GSAP y ScrollTrigger 3.15.0 oficiales por CDN"
+      ],
+      "licensing": "Motor original autorizado; Three.js MIT incluido; GSAP sujeto a licencia oficial y no redistribuido en el paquete. SVG ilustrativos propios.",
+      "integration": "Importar el paquete completo según manifest, servir index.html por HTTP y configurar projects.json. Conservar el módulo 64741 intacto, malla, shader y tiempos. Usar GSAP/ScrollTrigger 3.15.0, imágenes autorizadas del mismo origen y una instancia por documento. Verificar WebGL2, hover, scroll, responsive, reduced-motion y fallback antes de publicar.",
+      "visual": {
+        "views": [
+          "Experiencias de scroll",
+          "Galerías y proyectos",
+          "Motion e interacciones"
+        ],
+        "roles": [
+          "Proyectos",
+          "Galería",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "cinematográfico"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality"
+        ],
+        "motion": 3,
+        "search_aliases": [
+          "wave",
+          "onda",
+          "ondulación",
+          "deformación",
+          "flagwave",
+          "hover",
+          "imagen",
+          "webgl"
+        ]
+      },
+      "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922"
     }
   ]
 }

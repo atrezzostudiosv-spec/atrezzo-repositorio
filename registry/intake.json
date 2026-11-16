@@ -234,6 +234,19 @@
       "public_export": "manual_package_present_pending_qa",
       "note": "Actual standalone package in main: original engine and Three.js r128 MIT, HTML, CSS, JS, data, manifest and guide. User approved original private demo. Public adaptation uses neutral placeholders and native-scroll fallback. Browser QA pending. Exact package exporter integrated. Registrado para búsqueda, favoritos, composición, prompt IA y exportación de paquete exacto; QA autónoma aún pendiente.",
       "private_approved_preview": "https://reimagined-yodel-jr99vx7vgjwq2pppg-8766.app.github.dev/lab/connected-portfolio/"
+    },
+    {
+      "package_name": "WebGL Image Wave — original extraction",
+      "category": "scroll",
+      "ids": [
+        "ATZ-SEC-011"
+      ],
+      "status": "ingested_portable_pending_browser_qa",
+      "approved_at": "2026-11-16",
+      "preview": "components/originales/trionn/ATZ-SEC-011/index.html",
+      "source": "components/originales/trionn/ATZ-SEC-011/",
+      "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
+      "note": "Aprobado por el usuario; QA privada correcta. Motor 64741 exacto; demo pública con SVG propios y GSAP oficial externo. Exportación por ID."
     }
   ]
 }
