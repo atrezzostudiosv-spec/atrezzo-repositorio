@@ -1,0 +1,58 @@
+{
+  "title": "Connected Portfolio",
+  "subtitle": "Scroll to connect the projects. Move your pointer near the lines.",
+  "projects": [
+    {
+      "title": "Project 01",
+      "description": "Editorial design",
+      "position": "left",
+      "size": "large",
+      "palette": [
+        "#223947",
+        "#7893a0"
+      ]
+    },
+    {
+      "title": "Project 02",
+      "description": "Architecture",
+      "position": "right",
+      "size": "medium",
+      "palette": [
+        "#382f44",
+        "#a38cac"
+      ]
+    },
+    {
+      "title": "Project 03",
+      "description": "Digital experience",
+      "position": "center",
+      "size": "xlarge",
+      "palette": [
+        "#253c36",
+        "#9cb9a4"
+      ]
+    },
+    {
+      "title": "Project 04",
+      "description": "Product design",
+      "position": "right",
+      "size": "large",
+      "palette": [
+        "#4b372c",
+        "#baa48a"
+      ]
+    },
+    {
+      "title": "Project 05",
+      "description": "Creative direction",
+      "position": "left",
+      "size": "medium",
+      "palette": [
+        "#30374b",
+        "#9aa8c1"
+      ]
+    }
+  ],
+  "endLabel": "Explore more",
+  "audioUrl": null
+}

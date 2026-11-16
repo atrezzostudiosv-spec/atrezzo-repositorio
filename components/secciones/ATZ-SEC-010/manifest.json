@@ -1,0 +1,30 @@
+{
+  "id": "ATZ-SEC-010",
+  "title": "Connected Portfolio",
+  "version": "0.1.0",
+  "status": "portable_pending_browser_qa",
+  "visual_source_approved": true,
+  "approved_at": "2026-11-16",
+  "source_engine_blob": "9a59b4566533dd10c8b115f1bb5df99c658bde02",
+  "source_three_blob": "5f7964b3cbb00190550e373bc90b918656bfa90b",
+  "original_module": 88943,
+  "three_module": 32009,
+  "three_revision": 128,
+  "files": [
+    "index.html",
+    "component.css",
+    "component.js",
+    "engine.original.js",
+    "three-r128.original.js",
+    "three-adapter.js",
+    "projects.json",
+    "LICENSE-three.txt",
+    "README.md"
+  ],
+  "preview": "components/secciones/ATZ-SEC-010/index.html",
+  "dependencies": [
+    "Three.js r128 (bundled, MIT)"
+  ],
+  "client_ready": false,
+  "notes": "Native-scroll original fallback; no client imagery or audio; private approved reference retained."
+}
