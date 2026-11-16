@@ -58,7 +58,7 @@ function tiles(e,i) {
 }
 const catalogRevision="20261114-catalog-r5";
 function previewLink(e) {
-  if(!idRegex.test(e.id))return "index.html#library";
+  if(!idRegex.test(e.id))return "technical.html#library";
   return "preview.html?id="+encodeURIComponent(e.id)+"&v="+catalogRevision;
 }
 function card(e,i) {

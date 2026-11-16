@@ -1,0 +1,546 @@
+{
+  "status": "captured",
+  "sourceCommit": "766661bf88961ec3b4abe06fdf7acfc4c3fbd69e",
+  "entries": {
+    "ATZ-SCR-001": {
+      "poster": "previews/ATZ-SCR-001.webp",
+      "video": "previews/ATZ-SCR-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-001",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-002": {
+      "poster": "previews/ATZ-SCR-002.webp",
+      "video": "previews/ATZ-SCR-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-002",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-003": {
+      "poster": "previews/ATZ-SCR-003.webp",
+      "video": "previews/ATZ-SCR-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-003",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-004": {
+      "poster": "previews/ATZ-SCR-004.webp",
+      "video": "previews/ATZ-SCR-004.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-004",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-005": {
+      "poster": "previews/ATZ-SCR-005.webp",
+      "video": "previews/ATZ-SCR-005.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-005",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-006": {
+      "poster": "previews/ATZ-SCR-006.webp",
+      "video": "previews/ATZ-SCR-006.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-006",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-007": {
+      "poster": "previews/ATZ-SCR-007.webp",
+      "video": "previews/ATZ-SCR-007.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-007",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-008": {
+      "poster": "previews/ATZ-SCR-008.webp",
+      "video": "previews/ATZ-SCR-008.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-008",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-009": {
+      "poster": "previews/ATZ-SCR-009.webp",
+      "video": "previews/ATZ-SCR-009.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-009",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SCR-010": {
+      "poster": "previews/ATZ-SCR-010.webp",
+      "video": "previews/ATZ-SCR-010.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SCR-010",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-TRN-001": {
+      "poster": "previews/ATZ-TRN-001.webp",
+      "video": "previews/ATZ-TRN-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-TRN-001",
+      "viewport": "1120x700",
+      "interaction": "scroll",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 0
+    },
+    "ATZ-NAV-001": {
+      "poster": "previews/ATZ-NAV-001.webp",
+      "video": "previews/ATZ-NAV-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-NAV-001",
+      "viewport": "1120x700",
+      "interaction": "click"
+    },
+    "ATZ-NAV-002": {
+      "poster": "previews/ATZ-NAV-002.webp",
+      "video": "previews/ATZ-NAV-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-NAV-002",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-NAV-003": {
+      "poster": "previews/ATZ-NAV-003.webp",
+      "video": "previews/ATZ-NAV-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-NAV-003",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 0
+    },
+    "ATZ-STK-001": {
+      "poster": "previews/ATZ-STK-001.webp",
+      "video": "previews/ATZ-STK-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-001",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-002": {
+      "poster": "previews/ATZ-STK-002.webp",
+      "video": "previews/ATZ-STK-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-002",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-003": {
+      "poster": "previews/ATZ-STK-003.webp",
+      "video": "previews/ATZ-STK-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-003",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-004": {
+      "poster": "previews/ATZ-STK-004.webp",
+      "video": "previews/ATZ-STK-004.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-004",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-005": {
+      "poster": "previews/ATZ-STK-005.webp",
+      "video": "previews/ATZ-STK-005.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-005",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-006": {
+      "poster": "previews/ATZ-STK-006.webp",
+      "video": "previews/ATZ-STK-006.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-006",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-007": {
+      "poster": "previews/ATZ-STK-007.webp",
+      "video": "previews/ATZ-STK-007.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-007",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-008": {
+      "poster": "previews/ATZ-STK-008.webp",
+      "video": "previews/ATZ-STK-008.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-008",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-009": {
+      "poster": "previews/ATZ-STK-009.webp",
+      "video": "previews/ATZ-STK-009.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-009",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-010": {
+      "poster": "previews/ATZ-STK-010.webp",
+      "video": "previews/ATZ-STK-010.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-010",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-011": {
+      "poster": "previews/ATZ-STK-011.webp",
+      "video": "previews/ATZ-STK-011.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-011",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-012": {
+      "poster": "previews/ATZ-STK-012.webp",
+      "video": "previews/ATZ-STK-012.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-012",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-013": {
+      "poster": "previews/ATZ-STK-013.webp",
+      "video": "previews/ATZ-STK-013.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-013",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-014": {
+      "poster": "previews/ATZ-STK-014.webp",
+      "video": "previews/ATZ-STK-014.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-014",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-STK-015": {
+      "poster": "previews/ATZ-STK-015.webp",
+      "video": "previews/ATZ-STK-015.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-STK-015",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-001": {
+      "poster": "previews/ATZ-SEC-001.webp",
+      "video": "previews/ATZ-SEC-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-001",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-002": {
+      "poster": "previews/ATZ-SEC-002.webp",
+      "video": "previews/ATZ-SEC-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-002",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-003": {
+      "poster": "previews/ATZ-SEC-003.webp",
+      "video": "previews/ATZ-SEC-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-003",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-004": {
+      "poster": "previews/ATZ-SEC-004.webp",
+      "video": "previews/ATZ-SEC-004.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-004",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-005": {
+      "poster": "previews/ATZ-SEC-005.webp",
+      "video": "previews/ATZ-SEC-005.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-005",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-006": {
+      "poster": "previews/ATZ-SEC-006.webp",
+      "video": "previews/ATZ-SEC-006.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-006",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-007": {
+      "poster": "previews/ATZ-SEC-007.webp",
+      "video": "previews/ATZ-SEC-007.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-007",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-008": {
+      "poster": "previews/ATZ-SEC-008.webp",
+      "video": "previews/ATZ-SEC-008.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-008",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-SEC-009": {
+      "poster": "previews/ATZ-SEC-009.webp",
+      "video": "previews/ATZ-SEC-009.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SEC-009",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-001": {
+      "poster": "previews/ATZ-MOT-001.webp",
+      "video": "previews/ATZ-MOT-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-001",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-002": {
+      "poster": "previews/ATZ-MOT-002.webp",
+      "video": "previews/ATZ-MOT-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-002",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-003": {
+      "poster": "previews/ATZ-MOT-003.webp",
+      "video": "previews/ATZ-MOT-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-003",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-004": {
+      "poster": "previews/ATZ-MOT-004.webp",
+      "video": "previews/ATZ-MOT-004.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-004",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-005": {
+      "poster": "previews/ATZ-MOT-005.webp",
+      "video": "previews/ATZ-MOT-005.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-005",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-006": {
+      "poster": "previews/ATZ-MOT-006.webp",
+      "video": "previews/ATZ-MOT-006.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-006",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-007": {
+      "poster": "previews/ATZ-MOT-007.webp",
+      "video": "previews/ATZ-MOT-007.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-007",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-PGT-001": {
+      "poster": "previews/ATZ-PGT-001.webp",
+      "video": "previews/ATZ-PGT-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-PGT-001",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 19,
+      "posterFrameSecond": 2.3,
+      "posterSource": "existing-approved-video"
+    },
+    "ATZ-PGT-002": {
+      "poster": "previews/ATZ-PGT-002.webp",
+      "video": "previews/ATZ-PGT-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-PGT-002",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 19,
+      "posterFrameSecond": 1,
+      "posterSource": "existing-approved-video"
+    },
+    "ATZ-PGT-003": {
+      "poster": "previews/ATZ-PGT-003.webp",
+      "video": "previews/ATZ-PGT-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-PGT-003",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 15,
+      "posterFrameSecond": 2.08,
+      "posterSource": "existing-approved-video"
+    },
+    "ATZ-SVC-001": {
+      "poster": "previews/ATZ-SVC-001.webp",
+      "video": "previews/ATZ-SVC-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-SVC-001",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-008": {
+      "poster": "previews/ATZ-MOT-008.webp",
+      "video": "previews/ATZ-MOT-008.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-008",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-010": {
+      "poster": "previews/ATZ-MOT-010.webp",
+      "video": "previews/ATZ-MOT-010.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-010",
+      "viewport": "1120x700",
+      "interaction": "time"
+    },
+    "ATZ-MOT-011": {
+      "poster": "previews/ATZ-MOT-011.webp",
+      "video": "previews/ATZ-MOT-011.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-011",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-012": {
+      "poster": "previews/ATZ-MOT-012.webp",
+      "video": "previews/ATZ-MOT-012.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-012",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-013": {
+      "poster": "previews/ATZ-MOT-013.webp",
+      "video": "previews/ATZ-MOT-013.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-013",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-MOT-014": {
+      "poster": "previews/ATZ-MOT-014.webp",
+      "video": "previews/ATZ-MOT-014.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-014",
+      "viewport": "1120x700",
+      "interaction": "time"
+    },
+    "ATZ-MOT-015": {
+      "poster": "previews/ATZ-MOT-015.webp",
+      "video": "previews/ATZ-MOT-015.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MOT-015",
+      "viewport": "1120x700",
+      "interaction": "hover"
+    },
+    "ATZ-MIC-001": {
+      "poster": "previews/ATZ-MIC-001.webp",
+      "video": "previews/ATZ-MIC-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MIC-001",
+      "viewport": "1120x700",
+      "interaction": "hover"
+    },
+    "ATZ-MIC-002": {
+      "poster": "previews/ATZ-MIC-002.webp",
+      "video": "previews/ATZ-MIC-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MIC-002",
+      "viewport": "1120x700",
+      "interaction": "hover"
+    },
+    "ATZ-MIC-003": {
+      "poster": "previews/ATZ-MIC-003.webp",
+      "video": "previews/ATZ-MIC-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MIC-003",
+      "viewport": "1120x700",
+      "interaction": "hover"
+    },
+    "ATZ-MIC-004": {
+      "poster": "previews/ATZ-MIC-004.webp",
+      "video": "previews/ATZ-MIC-004.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MIC-004",
+      "viewport": "1120x700",
+      "interaction": "hover"
+    },
+    "ATZ-MIC-005": {
+      "poster": "previews/ATZ-MIC-005.webp",
+      "video": "previews/ATZ-MIC-005.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-MIC-005",
+      "viewport": "1120x700",
+      "interaction": "hold"
+    },
+    "ATZ-CTR-001": {
+      "poster": "previews/ATZ-CTR-001.webp",
+      "video": "previews/ATZ-CTR-001.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-CTR-001",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-CTR-002": {
+      "poster": "previews/ATZ-CTR-002.webp",
+      "video": "previews/ATZ-CTR-002.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-CTR-002",
+      "viewport": "1120x700",
+      "interaction": "scroll"
+    },
+    "ATZ-CTR-003": {
+      "poster": "previews/ATZ-CTR-003.webp",
+      "video": "previews/ATZ-CTR-003.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-CTR-003",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 20
+    },
+    "ATZ-CTR-004": {
+      "poster": "previews/ATZ-CTR-004.webp",
+      "video": "previews/ATZ-CTR-004.webm",
+      "duration": 5,
+      "source": "catalog/preview.html?id=ATZ-CTR-004",
+      "viewport": "1120x700",
+      "interaction": "click"
+    }
+  },
+  "editorialRepair": "phase04-v1",
+  "posterReview": "phase05-accepted"
+}

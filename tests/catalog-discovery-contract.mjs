@@ -9,7 +9,7 @@ assert.equal(reg.entries.filter(e=>e.family==="atrezzo-typography-01").length,7)
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-001").discovery_trigger,"click");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-NAV-003").discovery_trigger,"mixed");
 assert.equal(reg.entries.find(e=>e.id==="ATZ-PGT-003").discovery_trigger,"navigation");
-for(const path of ["catalog/app.js","catalog/preview.js","catalog/styles.css","catalog/index.html"]){
+for(const path of ["catalog/app.js","catalog/preview.js","catalog/styles.css","catalog/technical.html"]){
   const text=readFileSync(new URL("../"+path,import.meta.url),"utf8");
   assert(text.includes("favorite"),"Missing favorite in "+path);
 }
@@ -20,7 +20,7 @@ for(const e of reg.entries){
  assert.match(e.id,/^ATZ-[A-Z]{3}-\d{3}$/,"Invalid component identifier");
  assert.equal(e.preview,"catalog/preview.html?id="+e.id,"Every catalog ID must have an individual preview");
 }
-const html=readFileSync(new URL("../catalog/index.html",import.meta.url),"utf8");
+const html=readFileSync(new URL("../catalog/technical.html",import.meta.url),"utf8");
 assert(html.includes('id="count-tested"')&&!html.includes("LISTAS PARA CLIENTES"));
 const values=new Map();
 globalThis.localStorage={getItem:key=>values.get(key)||null,setItem:(key,value)=>values.set(key,value)};
@@ -40,7 +40,7 @@ console.log("PASS discovery: 65 components, 11 groups, demo QA != client ready, 
 
 // Keep release URLs coordinated: a fresh registry must not be paired with an old preview loader.
 const release="20261114-catalog-r5";
-assert(readFileSync(new URL("../catalog/index.html",import.meta.url),"utf8").includes("app.js?v="+release));
+assert(readFileSync(new URL("../catalog/technical.html",import.meta.url),"utf8").includes("app.js?v="+release));
 assert(readFileSync(new URL("../catalog/preview.html",import.meta.url),"utf8").includes("preview.js?v="+release));
 assert(app.includes('const catalogRevision="'+release+'"'));
 assert(readFileSync(new URL("../catalog/preview.js",import.meta.url),"utf8").includes('const catalogRevision="'+release+'"'));

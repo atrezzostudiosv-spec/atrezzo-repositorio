@@ -679,7 +679,7 @@ try {
 
  const index=await browser.newPage({viewport:{width:1440,height:900}});
  await setup(index);
- await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+ await index.goto(origin+"/catalog/technical.html",{waitUntil:"domcontentloaded"});
  await index.waitForFunction(()=>document.querySelectorAll(".component-card").length===65);
  // Every registered ID must link to its own preview (including new prefixes such as MOT).
  const routes=await index.locator("#component-grid .component-card").evaluateAll(cards=>cards.map(card=>({
@@ -700,7 +700,7 @@ try {
  assert.equal(await index.locator(".atz-ty").getAttribute("data-atz-id"),"ATZ-MOT-013");
  assert.equal(await index.getByRole("button",{name:"Repetir efecto"}).count(),1);
  assert.equal(await index.locator("#pre-approval").textContent(),"Aprobado por ATREZZO · Disponible para integrar por ID.");
- await index.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+ await index.goto(origin+"/catalog/technical.html",{waitUntil:"domcontentloaded"});
  await index.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===65);
  await index.screenshot({path:join(artifacts,"index-desktop.png"),fullPage:false});
  await index.locator("#search").fill("ATZ-SCR-005");
@@ -717,7 +717,7 @@ try {
  await index.close();
  const mobile=await browser.newPage({viewport:{width:375,height:812}});
  await setup(mobile);
- await mobile.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+ await mobile.goto(origin+"/catalog/technical.html",{waitUntil:"domcontentloaded"});
  await mobile.waitForFunction(()=>document.querySelectorAll(".component-card").length===65);
  await mobile.screenshot({path:join(artifacts,"index-mobile.png"),fullPage:false});
  assert.equal(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true,"mobile catalog overflow");
@@ -726,7 +726,7 @@ try {
  for(const width of [375,768,1024,1440]){
    const page=await browser.newPage({viewport:{width,height:900}});
    await setup(page);
-   await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+   await page.goto(origin+"/catalog/technical.html",{waitUntil:"domcontentloaded"});
    await page.waitForFunction(()=>document.querySelectorAll("#component-grid .component-card").length===65,{timeout:12000});
    assert.equal(await page.locator("[data-category]").count(),12,"All plus eleven discovery groups");
    assert.equal(await page.locator(".collection-heading").count(),11);
@@ -761,7 +761,7 @@ try {
    await page.locator("#preview-favorite").waitFor({state:"visible",timeout:12000});
    await page.locator("#preview-favorite").click();
    assert.equal(await page.locator("#preview-favorite").getAttribute("aria-pressed"),"true");
-   await page.goto(origin+"/catalog/",{waitUntil:"domcontentloaded"});
+   await page.goto(origin+"/catalog/technical.html",{waitUntil:"domcontentloaded"});
    await page.waitForFunction(()=>document.querySelectorAll("#favorites-grid .component-card").length===2,{timeout:12000});
    await page.locator('#favorites-grid [data-id="ATZ-SEC-005"] [data-favorite-id]').click();
    assert.equal(await page.locator("#favorites-grid .component-card").count(),1);
