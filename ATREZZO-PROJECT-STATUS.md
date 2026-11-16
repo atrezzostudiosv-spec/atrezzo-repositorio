@@ -131,3 +131,7 @@ El usuario confirma que TODOS los componentes admitidos en biblioteca están apr
 
 ## Fase 04 — Visual Quality Control (16/11/2026)
 **EN VALIDACIÓN.** Revisión de 65 capturas y 325 fotogramas de vídeos originales. Seis registros requieren corregir sus medios: CTR-003, NAV-003, PGT-001/002/003 y TRN-001. Se conservan los otros 59. UI visual-first con introducción compacta, búsqueda prioritaria, categorías horizontales, filtros avanzados plegables, favoritos rápidos y selección inicial transversal. Director con previews y restricciones; test de 40 combinaciones industria/dosis. QA de marca previa y regresión completadas. Identidad, componentes y registro maestro intactos. CI y revisión de reparaciones pendientes. Mantener PR #4 en borrador; no iniciar migración ni IA aún.
+
+
+## Fase 05 — Publicación V2 (16/11/2026)
+**EN PREPARACIÓN.** QA de Fase 04 cerrada en [run 43821514123](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43821514123); regresión previa [run 43821520520](https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43821520520). Verificación manual de seis posters reparados detectó tres encuadres de transición mejorables; se sustituyen solo los WebP de PGT-001/002/003 por fotogramas de sus vídeos verificados, sin volver a generar 65 componentes. Preparar cierre de PR #4 tras QA y publicación de Pages. No iniciar Cloudflare ni ATREZZO AI todavía.

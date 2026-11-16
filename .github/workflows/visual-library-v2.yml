@@ -11,6 +11,7 @@ on:
       - 'tests/brand-contract.mjs'
       - 'registry/visual-discovery.json'
       - 'tests/visual-browser.mjs'
+      - 'scripts/finish-transition-posters.mjs'
       - '.github/workflows/visual-library-v2.yml'
   workflow_dispatch:
 permissions:
@@ -34,9 +35,9 @@ jobs:
       - name: Check whether approved media already exist
         id: media
         run: |
-          node --input-type=module -e 'import fs from "node:fs"; const r=JSON.parse(fs.readFileSync("registry/components.json"));const m=JSON.parse(fs.readFileSync("catalog/previews/manifest.json"));const ok=r.entries.every(e=>m.entries?.[e.id]&&fs.existsSync("catalog/"+m.entries[e.id].poster)&&fs.existsSync("catalog/"+m.entries[e.id].video));fs.appendFileSync(process.env.GITHUB_OUTPUT,"complete="+ok+"\nrepair="+(ok&&m.editorialRepair!=="phase04-v1")+"\n");'
+          node --input-type=module -e 'import fs from "node:fs"; const r=JSON.parse(fs.readFileSync("registry/components.json"));const m=JSON.parse(fs.readFileSync("catalog/previews/manifest.json"));const ok=r.entries.every(e=>m.entries?.[e.id]&&fs.existsSync("catalog/"+m.entries[e.id].poster)&&fs.existsSync("catalog/"+m.entries[e.id].video));fs.appendFileSync(process.env.GITHUB_OUTPUT,"complete="+ok+"\nrepair="+(ok&&m.editorialRepair!=="phase04-v1")+"\nposter="+(m.posterReview==="phase05-accepted")+"\n");'
       - name: Install FFmpeg encoder
-        if: steps.media.outputs.complete != 'true' || steps.media.outputs.repair == 'true'
+        if: steps.media.outputs.complete != 'true' || steps.media.outputs.repair == 'true' || steps.media.outputs.poster != 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
@@ -47,6 +48,9 @@ jobs:
       - name: Repair six editorial previews and verify new visual-first workspace
         if: steps.media.outputs.repair == 'true'
         run: node tests/visual-browser.mjs --repair
+      - name: Finish representative still images of approved transition videos
+        if: steps.media.outputs.complete == 'true' && steps.media.outputs.repair != 'true' && steps.media.outputs.poster != 'true'
+        run: node scripts/finish-transition-posters.mjs
       - name: Verify existing visual catalog and official brand at four widths
         if: steps.media.outputs.complete == 'true' && steps.media.outputs.repair != 'true'
         run: node tests/visual-browser.mjs
@@ -59,7 +63,7 @@ jobs:
             catalog/previews/
             tests/artifacts/visual-v2/
       - name: Commit only generated assets to the review branch
-        if: steps.media.outputs.complete != 'true' || steps.media.outputs.repair == 'true'
+        if: steps.media.outputs.complete != 'true' || steps.media.outputs.repair == 'true' || steps.media.outputs.poster != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
