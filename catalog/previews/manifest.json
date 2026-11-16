@@ -374,7 +374,9 @@
       "viewport": "1120x700",
       "interaction": "click",
       "editorialRepair": "phase04-v1",
-      "observedFrames": 19
+      "observedFrames": 19,
+      "posterFrameSecond": 2.3,
+      "posterSource": "existing-approved-video"
     },
     "ATZ-PGT-002": {
       "poster": "previews/ATZ-PGT-002.webp",
@@ -384,7 +386,9 @@
       "viewport": "1120x700",
       "interaction": "click",
       "editorialRepair": "phase04-v1",
-      "observedFrames": 19
+      "observedFrames": 19,
+      "posterFrameSecond": 1,
+      "posterSource": "existing-approved-video"
     },
     "ATZ-PGT-003": {
       "poster": "previews/ATZ-PGT-003.webp",
@@ -394,7 +398,9 @@
       "viewport": "1120x700",
       "interaction": "click",
       "editorialRepair": "phase04-v1",
-      "observedFrames": 15
+      "observedFrames": 15,
+      "posterFrameSecond": 2.08,
+      "posterSource": "existing-approved-video"
     },
     "ATZ-SVC-001": {
       "poster": "previews/ATZ-SVC-001.webp",
@@ -535,5 +541,6 @@
       "interaction": "click"
     }
   },
-  "editorialRepair": "phase04-v1"
+  "editorialRepair": "phase04-v1",
+  "posterReview": "phase05-accepted"
 }
