@@ -281,11 +281,12 @@
       "ids": [
         "ATZ-SEC-014"
       ],
-      "status": "ingested_portable_pending_browser_qa",
+      "status": "ingested_internal_validated",
       "approved_at": "2026-11-16",
       "preview": "components/originales/trionn/ATZ-SEC-014/index.html",
       "source": "components/originales/trionn/ATZ-SEC-014/",
-      "note": "Usuario aprobó la preview privada. Módulos originales 36526, 53477 y 62749; sólo seis literales de identidad parametrizados. CSS exacto. Runtime oficial MIT. Comparación privada en cuatro anchos, nueve fases. QA pública pendiente."
+      "note": "Usuario aprobó la preview privada. Módulos originales 36526, 53477 y 62749; sólo seis literales de identidad parametrizados. CSS exacto. Runtime oficial MIT. Comparación privada en cuatro anchos, nueve fases. QA pública pendiente.",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43898186856"
     }
   ]
 }

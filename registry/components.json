@@ -3480,7 +3480,7 @@
       "selector": "#preloader-root",
       "status": "validation",
       "source_visual_approved": true,
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "description": "Secuencia original de entrada: contador de carga, líneas que construyen tres formas SVG, cuatro cruces y expansión final. La demo pública utiliza marca neutra.",
       "recommended_for": "Webs creativas y estudios premium donde la introducción de marca aporta una primera impresión deliberada.",
@@ -3540,7 +3540,8 @@
           "contador",
           "svg"
         ]
-      }
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43898186856"
     }
   ],
   "originals_integration_contract": {

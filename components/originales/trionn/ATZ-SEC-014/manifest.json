@@ -8,7 +8,7 @@
   "source_visual_approved": true,
   "approved_at": "2026-11-16",
   "status": "approved_public_qa_pending",
-  "catalog_qa_status": "pending",
+  "catalog_qa_status": "passed_internal",
   "client_ready": false,
   "source_file": "workspace/_next/static/chunks/02m2onmcd.l.g.js",
   "source_blob": "4509b2999fc0aa3dac40a1c3aa2fa79b3a30052e",
@@ -135,5 +135,6 @@
     ]
   },
   "public_adaptation": "Only three original mark path literals and three tagline literals are parameterized, original CSS file preserved. Official npm React runtime replaces captured runtime. System font replaces captured client font. Neutral sample; not an assertion of pixel identity to private mark.",
-  "preview": "components/originales/trionn/ATZ-SEC-014/index.html"
+  "preview": "components/originales/trionn/ATZ-SEC-014/index.html",
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43898186856"
 }
