@@ -3331,7 +3331,7 @@
       "selector": "#page-header-pin",
       "status": "validation",
       "source_visual_approved": true,
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "description": "21 miniaturas flotantes con deriva, reacción tridimensional al cursor y convergencia hacia el centro mediante scroll reversible.",
       "recommended_for": "Heroes inmersivos de estudios creativos, portfolios y presentación editorial de proyectos.",
@@ -3394,7 +3394,8 @@
           "hero",
           "scroll"
         ]
-      }
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43872025907"
     }
   ]
 }

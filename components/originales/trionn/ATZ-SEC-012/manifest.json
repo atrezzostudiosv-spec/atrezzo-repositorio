@@ -41,7 +41,8 @@
   "source_collection": "trionn",
   "source_visual_approved": true,
   "approved_at": "2026-11-16",
-  "catalog_qa_status": "pending",
+  "catalog_qa_status": "passed_internal",
   "client_ready": false,
-  "preview": "components/originales/trionn/ATZ-SEC-012/index.html"
+  "preview": "components/originales/trionn/ATZ-SEC-012/index.html",
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43872025907"
 }

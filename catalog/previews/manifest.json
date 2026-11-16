@@ -547,6 +547,14 @@
       "viewport": "1120x700",
       "interaction": "scroll and hover",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
+    },
+    "ATZ-SEC-012": {
+      "poster": "previews/ATZ-SEC-012.webp",
+      "video": "previews/ATZ-SEC-012.webm",
+      "source": "components/originales/trionn/ATZ-SEC-012/index.html",
+      "viewport": "1120x700",
+      "interaction": "float and reversible scroll",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43872025907"
     }
   },
   "editorialRepair": "phase04-v1",
