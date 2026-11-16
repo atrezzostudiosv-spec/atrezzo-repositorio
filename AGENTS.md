@@ -79,3 +79,7 @@ El usuario aprobó ATZ-CTR-001…004. Usar los cuatro archivos registrados en `c
 
 ## Visual Library 2.0
 La clasificación de `registry/visual-discovery.json` es transversal y editorial, nunca sustituye el registro maestro ni la auditoría de marca. El compositor exporta IDs y secciones, no autorización para alterar su comportamiento. El director por reglas propone, no genera hechos ni sustituye verificación. M0 puede no requerir ningún componente.
+
+## Connected Portfolio — ATZ-SEC-010
+
+Consultar `registry/components.json`, campo `source_approved_entries`. Original visual aprobado; QA autónoma pendiente. Resolver y exportar mediante los mismos scripts de la biblioteca. Paquete completo en `components/secciones/ATZ-SEC-010/`; leer su README y manifest, usar `index.html` como página autónoma y `projects.json` para contenido. Conservar `engine.original.js`, Three.js r128 y licencia. Una instancia por documento; no rediseñar ni usar contenido del cliente original. No marcar como `client_ready` o `passed_internal` sin pruebas.

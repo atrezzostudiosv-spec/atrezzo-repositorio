@@ -18,6 +18,15 @@ function requireFile(path){
 export function resolveComponent(id){
   if(typeof id!=="string"||!allowedId.test(id))throw Error("ID inválido: "+String(id));
   const registry=JSON.parse(readFileSync(registryPath,"utf8"));
+  const pending=(registry.source_approved_entries||[]).find(e=>e.id===id);
+  if(pending&&id==="ATZ-SEC-010"){
+    const base="components/secciones/ATZ-SEC-010/";
+    const manifest=JSON.parse(readFileSync(join(root,base,"manifest.json"),"utf8"));
+    if(manifest.id!==id)throw Error("Manifest ID mismatch");
+    const files=["index.html","component.css","component.js","engine.original.js","three-r128.original.js","three-adapter.js","projects.json","LICENSE-three.txt","README.md","manifest.json"].map(name=>base+name);
+    for(const file of files){if(!existsSync(join(root,file)))throw Error("Archivo ausente: "+file);}
+    return {id,title:pending.title,category:pending.category,variant:pending.variant,selector:pending.selector,status:pending.status,client_ready:false,library_approved:false,source_visual_approved:true,files:{html:base+"index.html",css:base+"component.css",js:base+"component.js",runtime:base+"engine.original.js"},package_files:files,technical_guide:pending.technical_guide,preview:pending.preview,licensing:"Original autorizado; Three.js r128 MIT. Sin medios de cliente.",use_for:pending.recommended_for,avoid_when:pending.avoid_when,instruction:"Integrar como página autónoma, una instancia por documento, conservar motor original. QA autónoma pendiente."};
+  }
   const matches=registry.entries.filter(e=>e.id===id);
   if(matches.length!==1)throw Error("ID no único o desconocido: "+id);
   const e=matches[0];
@@ -43,6 +52,7 @@ export function resolveComponent(id){
 }
 export function createIntegrationPrompt(id){
   const e=resolveComponent(id);
+  if(e.package_files)return ["ATREZZO — INTEGRACIÓN POR ID EXACTO","Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio","ID: "+e.id+" — "+e.title,"Original aprobado visualmente. QA autónoma pendiente; client_ready=false.","Leer AGENTS.md, registry/components.json (source_approved_entries) y "+e.technical_guide,"Exportar: node scripts/export-component.mjs "+e.id+" --out ./salida","Archivos exactos:",...e.package_files.map(x=>"- "+x),"Usar index.html como página autónoma; editar projects.json. Three.js r128 incluido; conservar LICENSE-three.txt. Una instancia por documento; no recrear motor ni copiar medios de TRIONN.","Verificar WebGL2, scroll inverso, responsive 375/768/1024/1440, reduced-motion y errores antes de publicar."].join("\n");
   return [
     "ATREZZO — INTEGRACIÓN POR ID EXACTO",
     "Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio",

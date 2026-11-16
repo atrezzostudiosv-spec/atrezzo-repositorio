@@ -12,6 +12,7 @@ async function boot() {
     const registryR = await fetch("../registry/components.json?v="+catalogRevision,{cache:"no-cache"});
     if(!registryR.ok) throw Error("Registro no disponible");
     const registry = await registryR.json();
+    const portable=(registry.source_approved_entries||[]).find(x=>x.id===id);if(portable?.id==="ATZ-SEC-010"){location.replace("../"+portable.preview);return;}
     const e=registry.entries.find(x=>x.id===id);
     if(!e) { text("#pre-title","Componente no encontrado"); throw Error("ID desconocido: "+id); }
     const typography=e.family==="atrezzo-typography-01";

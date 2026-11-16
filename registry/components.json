@@ -1,6 +1,6 @@
 {
   "schema_version": "1.8.0",
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-16",
   "instructions": "AGENTS.md",
   "entries": [
     {
@@ -3172,5 +3172,74 @@
       "ATZ-CTR-004"
     ],
     "rule": "El usuario confirma que los componentes admitidos en el catálogo están aprobados para su reutilización por ID. Los nuevos componentes requieren aprobación y QA antes de publicarse. client_ready conserva su significado de verificación en un proyecto cliente concreto."
-  }
+  },
+  "source_approved_entries": [
+    {
+      "id": "ATZ-SEC-010",
+      "title": "Connected Portfolio",
+      "category": "scroll",
+      "family": "trionn-original-connected-portfolio",
+      "variant": "connected-scroll",
+      "selector": "#projects-grid",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "description": "Tres hilos animados conectan las tarjetas de proyectos durante el scroll, revelándolas con destellos WebGL y reacción al cursor.",
+      "recommended_for": "Portfolios creativos, arquitectura, estudios de diseño y presentación de proyectos.",
+      "avoid_when": "No utilizar varias instancias por documento. Requiere WebGL2 y fallback de movimiento reducido.",
+      "level": "M3",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "discovery_tags": [
+        "portfolio",
+        "hilos",
+        "conexiones",
+        "webgl",
+        "proyectos",
+        "trionn"
+      ],
+      "preview": "components/secciones/ATZ-SEC-010/index.html",
+      "technical_guide": "components/secciones/ATZ-SEC-010/README.md",
+      "component_html": "components/secciones/ATZ-SEC-010/index.html",
+      "component_css": "components/secciones/ATZ-SEC-010/component.css",
+      "component_js": "components/secciones/ATZ-SEC-010/component.js",
+      "component_runtime": "components/secciones/ATZ-SEC-010/engine.original.js",
+      "package_manifest": "components/secciones/ATZ-SEC-010/manifest.json",
+      "dependencies": [
+        "Three.js r128 MIT, incluido"
+      ],
+      "visual": {
+        "views": [
+          "Experiencias de scroll",
+          "Secciones",
+          "Galerías y proyectos"
+        ],
+        "roles": [
+          "Proyectos",
+          "Galería",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "cinematográfico"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality"
+        ],
+        "motion": 3,
+        "search_aliases": [
+          "hilos",
+          "líneas",
+          "portfolio",
+          "imagen",
+          "proyectos",
+          "chispas"
+        ]
+      }
+    }
+  ]
 }

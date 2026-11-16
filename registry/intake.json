@@ -232,7 +232,7 @@
       "preview": "components/secciones/ATZ-SEC-010/index.html",
       "source": "components/secciones/ATZ-SEC-010/",
       "public_export": "manual_package_present_pending_qa",
-      "note": "Actual standalone package in main: original engine and Three.js r128 MIT, HTML, CSS, JS, data, manifest and guide. User approved original private demo. Public adaptation uses neutral placeholders and native-scroll fallback. Browser QA and standard automated export integration pending.",
+      "note": "Actual standalone package in main: original engine and Three.js r128 MIT, HTML, CSS, JS, data, manifest and guide. User approved original private demo. Public adaptation uses neutral placeholders and native-scroll fallback. Browser QA and standard automated export integration pending. Registrado para búsqueda, favoritos, composición, prompt IA y exportación de paquete exacto; QA autónoma aún pendiente.",
       "private_approved_preview": "https://reimagined-yodel-jr99vx7vgjwq2pppg-8766.app.github.dev/lab/connected-portfolio/"
     }
   ]
