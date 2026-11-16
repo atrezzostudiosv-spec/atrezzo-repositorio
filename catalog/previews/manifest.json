@@ -88,7 +88,9 @@
       "duration": 5,
       "source": "catalog/preview.html?id=ATZ-TRN-001",
       "viewport": "1120x700",
-      "interaction": "scroll"
+      "interaction": "scroll",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 0
     },
     "ATZ-NAV-001": {
       "poster": "previews/ATZ-NAV-001.webp",
@@ -112,7 +114,9 @@
       "duration": 5,
       "source": "catalog/preview.html?id=ATZ-NAV-003",
       "viewport": "1120x700",
-      "interaction": "click"
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 0
     },
     "ATZ-STK-001": {
       "poster": "previews/ATZ-STK-001.webp",
@@ -368,7 +372,9 @@
       "duration": 5,
       "source": "catalog/preview.html?id=ATZ-PGT-001",
       "viewport": "1120x700",
-      "interaction": "click"
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 19
     },
     "ATZ-PGT-002": {
       "poster": "previews/ATZ-PGT-002.webp",
@@ -376,7 +382,9 @@
       "duration": 5,
       "source": "catalog/preview.html?id=ATZ-PGT-002",
       "viewport": "1120x700",
-      "interaction": "click"
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 19
     },
     "ATZ-PGT-003": {
       "poster": "previews/ATZ-PGT-003.webp",
@@ -384,7 +392,9 @@
       "duration": 5,
       "source": "catalog/preview.html?id=ATZ-PGT-003",
       "viewport": "1120x700",
-      "interaction": "click"
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 15
     },
     "ATZ-SVC-001": {
       "poster": "previews/ATZ-SVC-001.webp",
@@ -512,7 +522,9 @@
       "duration": 5,
       "source": "catalog/preview.html?id=ATZ-CTR-003",
       "viewport": "1120x700",
-      "interaction": "click"
+      "interaction": "click",
+      "editorialRepair": "phase04-v1",
+      "observedFrames": 20
     },
     "ATZ-CTR-004": {
       "poster": "previews/ATZ-CTR-004.webp",
@@ -522,5 +534,6 @@
       "viewport": "1120x700",
       "interaction": "click"
     }
-  }
+  },
+  "editorialRepair": "phase04-v1"
 }
