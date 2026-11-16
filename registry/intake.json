@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14",
+  "updated_at": "2026-11-16",
   "status": "in_progress",
   "packages": [
     {
@@ -220,6 +220,19 @@
       "status": "ingested_internal_validated",
       "note": "Usuario aprobó expresamente; 10 blobs funcionales y cuatro fichas exactas en importación inicial. Fusionado en main tras 260 comprobaciones de navegador, reduced-motion, no-JS, touch, contraste, scroll reversible, FLIP y contratos de exportación. 61 anteriores intactos. Fichas actualizadas solo en estado. client_ready:false.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43615886105"
+    },
+    {
+      "package_name": "Connected Portfolio — original extraction",
+      "category": "scroll",
+      "ids": [
+        "ATZ-SEC-010"
+      ],
+      "status": "private_preview_visual_approved",
+      "approved_at": "2026-11-16",
+      "preview": "https://reimagined-yodel-jr99vx7vgjwq2pppg-8766.app.github.dev/lab/connected-portfolio/",
+      "source": "https://github.com/atrezzostudiosv-spec/trionn/tree/lab/connected-portfolio/workspace/lab/connected-portfolio",
+      "public_export": false,
+      "note": "Vista original aprobada por el usuario. Motor preservado en repositorio privado. No incluido en el registro de los 65 componentes exportables: pendientes QA de variante portable y autorización de redistribución de dependencias de terceros."
     }
   ]
 }
