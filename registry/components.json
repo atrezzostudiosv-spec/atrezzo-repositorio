@@ -3321,6 +3321,80 @@
       },
       "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
       "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
+    },
+    {
+      "id": "ATZ-SEC-012",
+      "title": "Floating Portfolio",
+      "category": "scroll",
+      "family": "trionn-original-floating-portfolio",
+      "variant": "floating-convergence",
+      "selector": "#page-header-pin",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "description": "21 miniaturas flotantes con deriva, reacción tridimensional al cursor y convergencia hacia el centro mediante scroll reversible.",
+      "recommended_for": "Heroes inmersivos de estudios creativos, portfolios y presentación editorial de proyectos.",
+      "avoid_when": "Evitar combinar con otro pin o sistema de scroll sin pruebas; mantener alternativa estática.",
+      "level": "M3",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "floating",
+        "miniaturas",
+        "convergencia",
+        "portfolio",
+        "hero",
+        "scroll",
+        "puntero",
+        "TRIONN"
+      ],
+      "preview": "components/originales/trionn/ATZ-SEC-012/index.html",
+      "technical_guide": "components/originales/trionn/ATZ-SEC-012/README.md",
+      "component_html": "components/originales/trionn/ATZ-SEC-012/index.html",
+      "component_css": "components/originales/trionn/ATZ-SEC-012/component.css",
+      "component_js": "components/originales/trionn/ATZ-SEC-012/component.js",
+      "component_runtime": "components/originales/trionn/ATZ-SEC-012/engine.original.js",
+      "package_manifest": "components/originales/trionn/ATZ-SEC-012/manifest.json",
+      "package_directory": "components/originales/trionn/ATZ-SEC-012/",
+      "source_collection": "trionn",
+      "dependencies": [
+        "GSAP y ScrollTrigger 3.15.0 oficiales por CDN"
+      ],
+      "licensing": "Motor original autorizado; GSAP oficial externo sujeto a su licencia. Ilustraciones y símbolo neutros propios.",
+      "integration": "Exportar todos los archivos, servir index.html por HTTP y configurar images.json con 21 imágenes autorizadas. Conservar motor, pin, tres máscaras SVG, IDs del DOM y convergencia reversible. Usar GSAP/ScrollTrigger 3.15.0. Una instancia por documento; verificar scroll, puntero, móvil y reduced-motion.",
+      "visual": {
+        "views": [
+          "Heroes",
+          "Experiencias de scroll",
+          "Galerías y proyectos"
+        ],
+        "roles": [
+          "Hero",
+          "Proyectos",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "cinematográfico"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality"
+        ],
+        "motion": 3,
+        "search_aliases": [
+          "floating",
+          "flotante",
+          "miniaturas",
+          "convergencia",
+          "portfolio",
+          "hero",
+          "scroll"
+        ]
+      }
     }
   ]
 }

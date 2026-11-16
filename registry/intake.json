@@ -248,6 +248,18 @@
       "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
       "note": "Aprobado por el usuario; QA privada correcta. Motor 64741 exacto; demo pública con SVG propios y GSAP oficial externo. Exportación por ID.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
+    },
+    {
+      "package_name": "Floating Portfolio — original extraction",
+      "category": "scroll",
+      "ids": [
+        "ATZ-SEC-012"
+      ],
+      "status": "ingested_portable_pending_browser_qa",
+      "approved_at": "2026-11-16",
+      "preview": "components/originales/trionn/ATZ-SEC-012/index.html",
+      "source": "components/originales/trionn/ATZ-SEC-012/",
+      "note": "Original aprobado por usuario; preview privada validada. Núcleo original de 11446 caracteres, 21 imágenes ilustrativas y símbolo neutro. QA de paquete público independiente."
     }
   ]
 }

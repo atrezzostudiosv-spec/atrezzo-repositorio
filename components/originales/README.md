@@ -12,3 +12,5 @@ Cada paquete contiene su demo HTML, estilos, código, dependencias, documentaci�
 Flujo: extraer → empaquetar → validar → aprobar → integrar → cerrar. No confundir aprobación visual del original con QA autónoma ni con certificación de cliente.
 
 - `trionn/ATZ-SEC-011/` — WebGL Image Wave, extracción 02. Original aprobado, QA privada correcta; QA pública independiente.
+
+- `trionn/ATZ-SEC-012/` — Floating Portfolio, extracción 03. Original aprobado; validación pública independiente.

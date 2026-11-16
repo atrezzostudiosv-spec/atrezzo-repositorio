@@ -1,0 +1,47 @@
+{
+  "candidate": 3,
+  "title": "Floating Portfolio",
+  "status": "approved_public_qa_pending",
+  "source_module": 88943,
+  "source_blob": "db3a5fd95a3f6f38b2231aacc3751dd01c18523c",
+  "source_offsets": [
+    4529,
+    15975
+  ],
+  "core_sha256": "01dff3c3ccbc869cc444ab4d6d72f1209b2cead0cdefb4789ed9f1b0b91659fd",
+  "core_length": 11446,
+  "dependencies": [
+    "GSAP and ScrollTrigger 3.15.0 official CDN"
+  ],
+  "files": [
+    "index.html",
+    "component.css",
+    "component.js",
+    "engine.original.js",
+    "images.json",
+    "README.md",
+    "DEPENDENCIES.md",
+    "manifest.json"
+  ],
+  "local_preview_qa": {
+    "widths": [
+      1440,
+      1024,
+      768,
+      375
+    ],
+    "float": true,
+    "scroll_convergence": true,
+    "reverse": true,
+    "reduced_motion": true
+  },
+  "notes": "Original 11446-character core exact. Neutral SVG mark and 21 original illustrated sample images replace private client media. Public QA independent.",
+  "id": "ATZ-SEC-012",
+  "version": "1.0.0",
+  "source_collection": "trionn",
+  "source_visual_approved": true,
+  "approved_at": "2026-11-16",
+  "catalog_qa_status": "pending",
+  "client_ready": false,
+  "preview": "components/originales/trionn/ATZ-SEC-012/index.html"
+}
