@@ -32,9 +32,10 @@ function notify(message) {
 function label(group) {
   return groups.find(x=>x.id===group)?.label || groupFallback[group] || group;
 }
-function instruction(e) {
-  return "Integra únicamente " + e.id + " ("+e.title+") del repositorio https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Lee registry/components.json y " + e.technical_guide + ". Preserva el efecto aprobado y no importes otros componentes. Audita el proyecto cliente, utiliza imágenes autorizadas, verifica móvil, teclado, scroll inverso, reduced-motion y licencias. Usa el código original y la ficha del ID exacto. Si el ID consta en library_approval y tiene catalog_qa_status=passed_internal, está aprobado para integrar sin otra aprobación. El ejecutor verifica el resultado en la web de destino; no cambia el efecto aprobado.";
-}
+const fallbackIntegrationContract="Antes de integrar, abrir y ejecutar la demo registrada como referencia visual. Copiar el paquete completo y verificar el motor contra su fuente; no reconstruirlo. Mantener estructura DOM, geometría, capas, opacidad, tiempos, disparadores, composición espacial y comportamiento de ida y vuelta aprobados. Solo adaptar contenido, imágenes autorizadas y tokens de marca que no alteren el efecto. No añadir velos, máscaras, filtros, ocultaciones, escalados ni cambios de jerarquía que reduzcan o transformen el movimiento. Comparar la demo y la implementación en los mismos estados de scroll, viewport e interacción; registrar diferencias con capturas reales y corregirlas. Una prueba técnica o un hash idéntico no certifica fidelidad visual. No declarar integración completa si no se puede abrir la demo o verificar el destino. Si una adaptación cambia la composición o el efecto, presentarla aparte y obtener aprobación antes de aplicarla. No cambiar la ubicación solicitada: un laboratorio aislado no equivale a integrar en la página de destino. Para todos los IDs, respetar la ficha técnica y las adaptaciones expresamente permitidas. Aislar CSS y preservar el movimiento; no alterar la composición para resolver conflictos. Si hay varios componentes, verificar orden, pinning, capas, dependencias y limpieza en el website completo. Una variación visual no aprobada no hereda la aprobación del ID. Para animaciones aleatorias comparar invariantes y comportamiento, no igualdad exacta de píxeles.";
+let integrationContract=fallbackIntegrationContract;
+function libraryInstruction(e,contract){const files=[e.component_html,e.component_css,e.component_js,e.component_runtime,e.component_preflight,...(e.component_assets||[])].filter(Boolean);return "ATREZZO — Integración exacta "+e.id+" ("+e.title+"). Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio. Lee AGENTS.md, registry/components.json y "+e.technical_guide+". Exporta con node scripts/export-component.mjs "+e.id+" --out ./salida. Archivos registrados: "+files.join(", ")+". Referencia visual obligatoria: https://atrezzostudiosv-spec.github.io/atrezzo-repositorio/"+e.preview+". "+contract+" "+(e.visual_contract||"")+" Uso: "+e.recommended_for+". Evitar: "+e.avoid_when+". Valida a 375/768/1024/1440, teclado, reduced-motion, licencias y rendimiento. La aprobación interna no certifica el proyecto de destino.";}
+function instruction(e) {return libraryInstruction(e,integrationContract);}
 async function copy(value,description) {
   try {
     await navigator.clipboard.writeText(value);
@@ -56,7 +57,7 @@ function tiles(e,i) {
     return '<span class="visual-tile" style="--tile-a:'+colors[0]+';--tile-b:'+colors[1]+';--drift:'+(((j*7+i*11)%39)-20)+'px;--rot:'+(((j*3+i*7)%19)-9)+'deg"></span>';
   }).join("");
 }
-const catalogRevision="20261114-catalog-r5";
+const catalogRevision="20261116-contract-r6";
 function previewLink(e) {
   if(!idRegex.test(e.id))return "technical.html#library";
   return "preview.html?id="+encodeURIComponent(e.id)+"&v="+catalogRevision;
@@ -153,6 +154,7 @@ async function init() {
     const response=await fetch("../registry/components.json?v="+catalogRevision,{cache:"no-cache"});
     if(!response.ok)throw Error("No disponible");
     const registry=await response.json();
+    integrationContract=registry.integration_contract?.visual_fidelity||fallbackIntegrationContract;
     entries=registry.entries||[];
     approvedIds=new Set(registry.library_approval?.approved_ids||[]);
     groups=registry.discovery_groups||[];

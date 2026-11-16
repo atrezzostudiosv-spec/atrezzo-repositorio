@@ -114,6 +114,7 @@ async function smoke(expectMedia){
    await page.locator("#industry").selectOption("salud");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("#role").selectOption("Hero");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("[data-fav='ATZ-MOT-003']").click();await page.locator("#saved").selectOption("yes");assert.equal(await page.locator("#grid .card").count(),1);
+   if(width===1440){await page.evaluate(()=>Object.defineProperty(navigator,"clipboard",{configurable:true,value:{writeText:async v=>{window.__copied=v}}}));await page.locator("[data-copy='ATZ-MOT-003']").click();await page.waitForFunction(()=>window.__copied?.includes("Referencia visual obligatoria"));assert.match(await page.evaluate(()=>window.__copied),/no certifica fidelidad visual/);}
    await page.locator("[data-add='ATZ-MOT-003']").click();assert.equal(await page.locator("#board-count").textContent(),"1");
    await page.locator("[data-row-role='0']").selectOption("Hero");
    await page.locator("#project-name").fill("Prueba ATREZZO");await page.locator("#project-name").press("Tab");

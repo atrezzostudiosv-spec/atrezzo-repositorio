@@ -36,7 +36,7 @@ export function resolveComponent(id){
     });
     const core={html:pending.component_html,css:pending.component_css,js:pending.component_js,runtime:pending.component_runtime};
     for(const file of [...Object.values(core),pending.technical_guide,pending.preview,manifestPath])if(!files.includes(file))throw Error("Archivo no registrado en el manifest: "+file);
-    return {id,title:pending.title,category:pending.category,variant:pending.variant,selector:pending.selector,status:pending.status,client_ready:pending.client_ready===true,library_approved:pending.source_visual_approved===true&&pending.catalog_qa_status==="passed_internal",source_visual_approved:pending.source_visual_approved===true,source_collection:pending.source_collection,catalog_qa_status:pending.catalog_qa_status,files:core,package_files:files,technical_guide:pending.technical_guide,preview:pending.preview,licensing:pending.licensing,use_for:pending.recommended_for,avoid_when:pending.avoid_when,instruction:pending.integration,visual_contract:pending.visual_contract||"",originals_integration_contract:registry.originals_integration_contract?.visual_fidelity||""};
+    return {id,title:pending.title,category:pending.category,variant:pending.variant,selector:pending.selector,status:pending.status,client_ready:pending.client_ready===true,library_approved:pending.source_visual_approved===true&&pending.catalog_qa_status==="passed_internal",source_visual_approved:pending.source_visual_approved===true,source_collection:pending.source_collection,catalog_qa_status:pending.catalog_qa_status,files:core,package_files:files,technical_guide:pending.technical_guide,preview:pending.preview,licensing:pending.licensing,use_for:pending.recommended_for,avoid_when:pending.avoid_when,instruction:pending.integration,visual_contract:pending.visual_contract||"",originals_integration_contract:registry.integration_contract?.visual_fidelity||registry.originals_integration_contract?.visual_fidelity||""};
   }
   const matches=registry.entries.filter(e=>e.id===id);
   if(matches.length!==1)throw Error("ID no único o desconocido: "+id);
@@ -54,7 +54,7 @@ export function resolveComponent(id){
     assets:(e.component_assets||[]).map(requireAsset),
     technical_guide:e.technical_guide,preview:e.preview,
     licensing:(e.category==="navegacion"||(e.id.startsWith("ATZ-SEC-")||e.id.startsWith("ATZ-MOT-")||e.id.startsWith("ATZ-PGT-")||e.id.startsWith("ATZ-SVC-")||e.id.startsWith("ATZ-MIC-")||e.id.startsWith("ATZ-CTR-")))?"Código original Atrezzo. Fotografías no autorizadas automáticamente.":e.id.startsWith("ATZ-STK-")?"Codrops Sticky Sections: código MIT. Verificar por separado imágenes Vecteezy y librerías.":"Código Codrops MIT. Revisar GSAP, fotografías y fuentes por separado.",
-    instruction:"Usar únicamente los archivos registrados para el ID; revisar tipo de navegación, auditar cliente y no publicar sin QA."
+    instruction:"Usar únicamente los archivos registrados para el ID; revisar tipo de navegación, auditar cliente y no publicar sin QA.",visual_contract:e.visual_contract||"",integration_contract:registry.integration_contract?.visual_fidelity||""
   };
   if(!selected.files.js.endsWith("/"+id+".js"))throw Error("El JS no coincide con el ID");
   if(!selected.files.html.endsWith("/"+id+".html"))throw Error("El HTML no coincide con el ID");
@@ -71,6 +71,8 @@ export function createIntegrationPrompt(id){
     e.library_approved?"Biblioteca: APROBADO. Integrar este ID exacto sin pedir una nueva aprobación.":"Biblioteca: pendiente de aprobación.",
     "Estado técnico de integración en cliente: client_ready="+e.client_ready+" (no invalida la aprobación de biblioteca).",
     "Antes de modificar: AGENTS.md y "+e.technical_guide,
+    "Referencia visual obligatoria: https://atrezzostudiosv-spec.github.io/atrezzo-repositorio/"+e.preview,
+    e.integration_contract,e.visual_contract,
     "Archivos que se deben incorporar exclusivamente:",
     "- "+e.files.html,"- "+e.files.css,"- "+e.files.js,"- "+e.files.runtime,
     ...(e.files.preflight?["- "+e.files.preflight+" (incluir en <head> de todas las páginas)"]:[]),
@@ -79,7 +81,7 @@ export function createIntegrationPrompt(id){
     "Auditar primero el sitio del cliente, conservar su diseño y contenido aprobado.",
     "No importar otros IDs ni fotos del paquete original.",
     "Validar a 375/768/1024/1440 px, teclado, scroll inverso, reduced-motion y rendimiento.",
-    "El ejecutor debe comprobar el resultado en el website de destino, sin rediseñar ni volver a someter a aprobación el componente."
+    "El ejecutor debe comprobar el resultado en el website de destino, sin rediseñar ni volver a someter a aprobación el componente intacto; cualquier variación visual exige aprobación independiente."
   ].join("\n");
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){

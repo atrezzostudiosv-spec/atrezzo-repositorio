@@ -24,6 +24,10 @@ for(const e of registry.entries){
   assert(prompt.includes("client_ready=false"),e.id+" prompt missing technical integration state");
   assert(prompt.includes("Biblioteca: APROBADO"),e.id+" prompt missing library approval");
   assert(prompt.includes(contract.files.js),e.id+" prompt missing own JS");
+  assert(prompt.includes("Referencia visual obligatoria: https://atrezzostudiosv-spec.github.io/atrezzo-repositorio/"+e.preview));
+  assert(prompt.includes(registry.integration_contract.visual_fidelity));
+  assert(prompt.includes("no certifica fidelidad visual"));
+  assert(prompt.includes("website completo"));
 }
 assert.throws(()=>resolveComponent("ATZ-SCR-000"),/desconocido/);
 assert.throws(()=>resolveComponent("ATZ-SCR-008_extra"),/inválido/);
