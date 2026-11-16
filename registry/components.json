@@ -3254,7 +3254,7 @@
       "selector": ".project-card",
       "status": "validation",
       "source_visual_approved": true,
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "description": "Ondulación tridimensional original de imágenes al entrar en pantalla y al pasar el cursor. Malla WebGL 32 × 24, entrada de tres segundos y retorno progresivo.",
       "recommended_for": "Portfolios, galerías editoriales y presentación de proyectos creativos.",
@@ -3319,7 +3319,8 @@
           "webgl"
         ]
       },
-      "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922"
+      "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
     }
   ]
 }

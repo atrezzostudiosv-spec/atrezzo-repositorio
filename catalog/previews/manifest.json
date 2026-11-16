@@ -539,6 +539,14 @@
       "source": "catalog/preview.html?id=ATZ-CTR-004",
       "viewport": "1120x700",
       "interaction": "click"
+    },
+    "ATZ-SEC-011": {
+      "poster": "previews/ATZ-SEC-011.webp",
+      "video": "previews/ATZ-SEC-011.webm",
+      "source": "components/originales/trionn/ATZ-SEC-011/index.html",
+      "viewport": "1120x700",
+      "interaction": "scroll and hover",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
     }
   },
   "editorialRepair": "phase04-v1",

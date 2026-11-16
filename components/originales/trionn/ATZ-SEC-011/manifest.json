@@ -10,7 +10,7 @@
   "source_blob": "c6b3689b8035c7b1261bfff7aa09b848a6b91b81",
   "source_file": "workspace/_next/static/chunks/0m27tzr3c8bpa.js",
   "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
-  "catalog_qa_status": "pending",
+  "catalog_qa_status": "passed_internal",
   "client_ready": false,
   "files": [
     "index.html",
@@ -32,5 +32,6 @@
     "Three.js r128 MIT (included)",
     "GSAP 3.15.0 and ScrollTrigger 3.15.0 (official CDN)"
   ],
-  "notes": "Exact original engine. Neutral illustrations; external GSAP dependency replaces captured distribution only. Public package QA separately required."
+  "notes": "Exact original engine. Neutral illustrations; external GSAP dependency replaces captured distribution only. Public package QA separately required.",
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
 }

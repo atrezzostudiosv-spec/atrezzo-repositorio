@@ -241,12 +241,13 @@
       "ids": [
         "ATZ-SEC-011"
       ],
-      "status": "ingested_portable_pending_browser_qa",
+      "status": "ingested_internal_validated",
       "approved_at": "2026-11-16",
       "preview": "components/originales/trionn/ATZ-SEC-011/index.html",
       "source": "components/originales/trionn/ATZ-SEC-011/",
       "source_qa": "https://github.com/atrezzostudiosv-spec/trionn/actions/runs/43867635922",
-      "note": "Aprobado por el usuario; QA privada correcta. Motor 64741 exacto; demo pública con SVG propios y GSAP oficial externo. Exportación por ID."
+      "note": "Aprobado por el usuario; QA privada correcta. Motor 64741 exacto; demo pública con SVG propios y GSAP oficial externo. Exportación por ID.",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43869187746"
     }
   ]
 }
