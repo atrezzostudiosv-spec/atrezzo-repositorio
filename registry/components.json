@@ -3406,7 +3406,7 @@
       "selector": "#sequence-pin",
       "status": "validation",
       "source_visual_approved": true,
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "description": "Secuencia de 371 fotogramas controlada por scroll, con precarga original por lotes, interpolación de índice y reproducción reversible.",
       "recommended_for": "Narrativas de producto, secuencias cinematográficas y presentaciones de servicios con medios autorizados.",
@@ -3467,7 +3467,8 @@
           "video",
           "imagen"
         ]
-      }
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43878019786"
     }
   ]
 }
