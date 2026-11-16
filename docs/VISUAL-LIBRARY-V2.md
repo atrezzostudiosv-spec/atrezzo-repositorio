@@ -22,3 +22,8 @@ Estado: EN VALIDACIÓN. La nueva interfaz es una capa adicional, no una reimplem
 - Reducir distancia hasta las primeras previews: el hero y los filtros consumen la primera pantalla en los cuatro tamaños inspeccionados. La misión es localizar componentes visualmente, no leer una portada extensa.
 - Revisar las 65 capturas y grabaciones; corregir solo las que no representan bien su movimiento. No reabrir identidad ni módulos aprobados.
 - Validar recomendaciones y navegación antes de publicar V2; Safari y Pages pendientes.
+
+## Fase 04 — visual-first workspace (16/11/2026)
+- Revisión editorial de 65 posters y cinco fotogramas por cada uno de 65 WebM (325 fotogramas). Defectos de encuadre o momento representativo: ATZ-CTR-003, ATZ-NAV-003, ATZ-PGT-001/002/003, ATZ-TRN-001. Reparación de capturas únicamente; preservar los otros 59 pares. Las demostraciones usan medios de muestra autorizados o abstractos, no fotografías de clientes.
+- Biblioteca primero: cabecera compacta, búsqueda, categorías horizontales, sector y sección visibles, filtros avanzados plegables, favoritos rápidos. Selección inicial transversal de 12 movimientos sin eliminar los demás. Director con miniaturas auténticas y restricciones de uso; invalida propuestas obsoletas. Tests de 40 combinaciones de sector y dosis, 4 anchos y umbral de acceso visual.
+- Pendiente de resultados de CI y revisión de seis medios reparados. No publicar antes del cierre. No se modifica el registro maestro, identidad ni componentes.

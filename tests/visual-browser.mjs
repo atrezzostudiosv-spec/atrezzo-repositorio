@@ -50,6 +50,39 @@ async function capture(e){
  return {poster:"previews/"+e.id+".webp",video:"previews/"+e.id+".webm",duration:5,source:e.preview,viewport:"1120x700",interaction};
  }finally{await page.close();await fs.rm(tmp,{recursive:true,force:true})}
 }
+
+const repairs=["ATZ-CTR-003","ATZ-NAV-003","ATZ-PGT-001","ATZ-PGT-002","ATZ-PGT-003","ATZ-TRN-001"];
+async function repairCapture(e){
+ const {page,errors}=await open(e);const tmp=await fs.mkdtemp(join(tmpdir(),"atz-repair-"));
+ const isPgt=e.id.startsWith("ATZ-PGT"),isCtr=e.id==="ATZ-CTR-003",isNav=e.id==="ATZ-NAV-003";
+ let poster=18,interaction=isNav||isPgt||isCtr?"click":"scroll",observed=0,quality=0;
+ try{
+  if(isNav){await page.locator("[data-azn1-projects]").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));await page.locator(".atz-dock-control.is-visible").waitFor();await page.waitForTimeout(650);}
+  else if(isCtr){await page.locator(".ct-entry").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));await page.waitForTimeout(1500);}
+  else if(isPgt){await page.locator(".atz-pgt__controls").evaluate(el=>el.scrollIntoView({block:"center",behavior:"instant"}));await page.waitForTimeout(200);}
+  let from=0,to=0;if(!isNav&&!isCtr&&!isPgt){const b=await page.locator(".frame").evaluate(el=>({top:el.getBoundingClientRect().top+scrollY,height:el.offsetHeight}));from=b.top;to=b.top+b.height*.55;await scroll(page,from);}
+  for(let i=0;i<40;i++){
+   if(i===4){if(isNav)await page.locator("[data-azn1-dock-next]").evaluate(el=>el.click());if(isCtr)await page.locator("[data-entry-replay]").evaluate(el=>el.click());if(isPgt)await page.locator("[data-pgt-show='1']").evaluate(el=>el.click());}
+   if(i===26&&isNav)await page.locator("[data-azn1-dock-next]").evaluate(el=>el.click());
+   if(!isNav&&!isCtr&&!isPgt){await scroll(page,from+(to-from)*i/39);}
+   await page.waitForTimeout(isPgt||isCtr?30:85);
+   if(isCtr&&await page.locator(".ct-entry-overlay").isVisible()){observed++;const opacity=await page.locator(".ct-entry-mark").evaluate(el=>Number(getComputedStyle(el).opacity));if(opacity>quality){quality=opacity;poster=i}}
+   if(isPgt){const fraction=await page.evaluate(()=>{const a=document.querySelector(".atz-transition-layer--active .atz-transition-panel--primary");if(!a)return -1;const s=getComputedStyle(a);if(s.clipPath.startsWith("circle(")){const r=Number(s.clipPath.match(/circle\(([\d.]+)%/)?.[1]||0);return r/150;}const t=s.transform;if(t==="none")return 1;const m=new DOMMatrix(t);return 1-Math.min(1,Math.max(Math.abs(m.m41)/innerWidth,Math.abs(m.m42)/innerHeight));});if(fraction>=0){observed++;const q=1-Math.abs(.5-fraction)*2;if(q>quality){quality=q;poster=i}}}
+   if(isNav&&i===20){assert.equal(await page.locator("[data-azn1-dock-title]").textContent(),"Reflected Forms");poster=i;}
+   if(interaction==="scroll"&&i===10)poster=i;
+   await page.screenshot({path:join(tmp,String(i).padStart(3,"0")+".png"),fullPage:false});
+  }
+  if(isCtr||isPgt){assert(observed>1,e.id+" overlay was not observed");assert(quality>.15,e.id+" no representative animation frame");}
+  if(isNav)assert.equal(await page.locator("[data-azn1-dock-title]").textContent(),"Soft Light");
+  if(isPgt)assert.equal(await page.locator("[data-pgt-show='1']").getAttribute("aria-pressed"),"true");
+  if(interaction==="scroll"){assert((await page.evaluate(()=>scrollY))>from+100);assert(await page.locator(".frame__title").evaluate(el=>getComputedStyle(el).transform!=="none"));}
+  encode(["-i",join(tmp,String(poster).padStart(3,"0")+".png"),"-vf","scale=896:560","-frames:v","1","-c:v","libwebp","-quality","83",join(output,e.id+".webp")]);
+  encode(["-framerate","8","-i",join(tmp,"%03d.png"),"-vf","scale=800:500","-c:v","libvpx-vp9","-pix_fmt","yuv420p","-crf","33","-b:v","0","-an",join(output,e.id+".webm")]);
+  assert.equal(errors.length,0,e.id+" "+errors.join(";"));
+  return {poster:"previews/"+e.id+".webp",video:"previews/"+e.id+".webm",duration:5,source:e.preview,viewport:"1120x700",interaction,editorialRepair:"phase04-v1",observedFrames:observed};
+ }finally{await page.close();await fs.rm(tmp,{recursive:true,force:true})}
+}
+
 async function smoke(expectMedia){
  for(const width of [375,768,1024,1440]){
    const page=await browser.newPage({viewport:{width,height:900},acceptDownloads:true});await setup(page);const errors=[];page.on("pageerror",x=>errors.push(x.message));await page.goto(origin+"/catalog/");
@@ -73,6 +106,9 @@ async function smoke(expectMedia){
      assert.equal(await brandPage.locator('link[rel="icon"]').getAttribute("href"),"brand/favicon-32.png?v=1");
    }await brandPage.close();
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),"Overflow "+width);
+   const firstTop=await page.locator("#grid .media").first().evaluate(el=>el.getBoundingClientRect().top);assert(firstTop<650,"Visual previews too far below fold "+width+" "+firstTop);
+   assert.equal(await page.locator("#advanced").getAttribute("open"),null);
+   await page.locator("#advanced summary").click();
    await page.locator("#query").fill("ATZ-MOT-003");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("#industry").selectOption("salud");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("#role").selectOption("Hero");assert.equal(await page.locator("#grid .card").count(),1);
@@ -83,6 +119,7 @@ async function smoke(expectMedia){
    await page.reload();await page.waitForFunction(()=>document.querySelector("#board-count").textContent==="1");assert.equal(await page.locator("#project-name").inputValue(),"Prueba ATREZZO");
    await page.locator("#d-industry").selectOption("salud");await page.locator("#d-motion").selectOption("3");await page.locator("#recommend").click();assert.match(await page.locator("#recommendations").textContent(),/M1/);assert.match(await page.locator("#recommendations").textContent(),/Sección estática prioritaria/);
    await page.locator("#d-motion").selectOption("0");await page.locator("#recommend").click();assert.equal(await page.locator("#recommendations [data-add]").count(),0);
+   if(width===1440){const profileData=JSON.parse(await fs.readFile("registry/visual-discovery.json","utf8"));for(const p of profileData.profiles){await page.locator("#d-industry").selectOption(p.id);for(const max of [0,1,2,3]){await page.locator("#d-motion").selectOption(String(max));await page.locator("#recommend").click();const ids=await page.locator("#recommendations [data-add]").evaluateAll(es=>es.map(e=>({id:e.dataset.add,role:e.dataset.role})));assert.equal(new Set(ids.map(x=>x.id)).size,ids.length);const selected=ids.map(x=>profileData.entries.find(e=>e.id===x.id));assert(selected.every((e,i)=>e.industries.includes(p.id)&&e.motion<=Math.min(max,p.maxMotion)&&e.roles.includes(ids[i].role)));assert(selected.filter(e=>e.motion===3).length<=1);if(max===0)assert.equal(ids.length,0);}}console.log("PASS 40 director industry/motion combinations");}
    await page.locator("#query").fill("ATZ-MOT-003");await page.locator("[data-play='ATZ-MOT-003']").click();
    if(expectMedia){await page.waitForFunction(()=>document.querySelector(".media video")?.readyState>=2);assert.equal(await page.locator(".media video").count(),1)}else{await page.waitForFunction(()=>document.querySelector("#demo-dialog").open);await page.locator("#close-dialog").click()}
    const downloadPromise=page.waitForEvent("download");await page.locator("#export-json").click();const download=await downloadPromise;assert.equal(download.suggestedFilename(),"ATREZZO-project.json");
@@ -91,6 +128,10 @@ async function smoke(expectMedia){
 }
 try{
  const existing=JSON.parse(await fs.readFile(join(output,"manifest.json"),"utf8"));await smoke(Object.keys(existing.entries||{}).length===reg.entries.length);
+ if(process.argv.includes("--repair")){
+  for(const id of repairs){existing.entries[id]=await repairCapture(reg.entries.find(e=>e.id===id));console.log("Editorial repair "+id)}
+  existing.editorialRepair="phase04-v1";await fs.writeFile(join(output,"manifest.json"),JSON.stringify(existing,null,2)+"\n");await smoke(true);
+ }
  if(process.argv.includes("--capture")){
   await fs.mkdir(output,{recursive:true});
   const records={};
