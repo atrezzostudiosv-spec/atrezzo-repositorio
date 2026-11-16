@@ -1,0 +1,8 @@
+// ATREZZO neutral sample artwork. Not TRIONN imagery. One distinct frame per original index.
+function createDemoFrames(){return Array.from({length:371},(_,i)=>{
+ const t=i/370,a=360*t,r=t*Math.PI*2,scale=.85+.15*Math.sin(Math.PI*t),angle=a-38;
+ const pts=Array.from({length:9},(_,j)=>{const q=j*Math.PI*2/9;const d=200+32*Math.sin(3*q+r)+22*Math.cos(2*q-r);return [960+d*Math.cos(q),540+d*Math.sin(q)].map(v=>v.toFixed(2)).join(",")}).join(" ");
+ const rings=Array.from({length:7},(_,j)=>`<ellipse cx="960" cy="540" rx="${(280+j*23).toFixed(1)}" ry="${(92+j*23).toFixed(1)}" transform="rotate(${angle+j*8} 960 540)" fill="none" stroke="#9aabbb" stroke-width="2" opacity="${.16+j*.04}"/>`).join("");
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><defs><radialGradient id="bg"><stop stop-color="#25303d"/><stop offset="1" stop-color="#040508"/></radialGradient><linearGradient id="m" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e0ded4"/><stop offset=".42" stop-color="#9caab6"/><stop offset="1" stop-color="#334454"/></linearGradient><clipPath id="clip"><polygon points="${pts}"/></clipPath></defs><rect width="1920" height="1080" fill="url(#bg)"/><g transform="translate(960 540) scale(${scale}) translate(-960 -540)">${rings}<g transform="rotate(${a} 960 540)"><polygon points="${pts}" fill="url(#m)" stroke="#e6e5de" stroke-width="2"/><g clip-path="url(#clip)" fill="none" stroke="#253c50" opacity=".6">${Array.from({length:15},(_,j)=>`<path d="M 680 ${300+j*34} Q 950 ${460+j*15} 1240 ${290+j*36}" stroke-width="3"/>`).join("")}</g></g><circle cx="${960+330*Math.cos(r)}" cy="${540+190*Math.sin(r)}" r="8" fill="#e9ecf1"/></g></svg>`;
+ return "data:image/svg+xml,"+encodeURIComponent(svg);
+});}

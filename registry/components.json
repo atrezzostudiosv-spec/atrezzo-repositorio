@@ -3396,6 +3396,78 @@
         ]
       },
       "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43872025907"
+    },
+    {
+      "id": "ATZ-SEC-013",
+      "title": "Scroll Frame Sequence",
+      "category": "scroll",
+      "family": "trionn-original-scroll-frame-sequence",
+      "variant": "image-sequence",
+      "selector": "#sequence-pin",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "description": "Secuencia de 371 fotogramas controlada por scroll, con precarga original por lotes, interpolación de índice y reproducción reversible.",
+      "recommended_for": "Narrativas de producto, secuencias cinematográficas y presentaciones de servicios con medios autorizados.",
+      "avoid_when": "Evitar secuencias pesadas sin optimizar o combinar con otro pin; ofrecer imagen estática para movimiento reducido.",
+      "level": "M3",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "scroll",
+      "discovery_tags": [
+        "frame",
+        "sequence",
+        "fotogramas",
+        "scroll",
+        "cinematic",
+        "TRIONN"
+      ],
+      "preview": "components/originales/trionn/ATZ-SEC-013/index.html",
+      "technical_guide": "components/originales/trionn/ATZ-SEC-013/README.md",
+      "component_html": "components/originales/trionn/ATZ-SEC-013/index.html",
+      "component_css": "components/originales/trionn/ATZ-SEC-013/component.css",
+      "component_js": "components/originales/trionn/ATZ-SEC-013/component.js",
+      "component_runtime": "components/originales/trionn/ATZ-SEC-013/engine.original.js",
+      "package_manifest": "components/originales/trionn/ATZ-SEC-013/manifest.json",
+      "package_directory": "components/originales/trionn/ATZ-SEC-013/",
+      "source_collection": "trionn",
+      "dependencies": [
+        "GSAP y ScrollTrigger 3.15.0 oficiales por CDN"
+      ],
+      "licensing": "Motor original autorizado; GSAP oficial externo sujeto a licencia. 371 SVG ilustrativos propios; no se distribuyen fotogramas de TRIONN.",
+      "integration": "Exportar paquete completo y servir por HTTP. Configurar frames.json con mode custom y 371 URLs autorizadas, ordenadas, preferiblemente WebP. Conservar precarga, interpolación, tamaño y duración de pin originales; GSAP/ScrollTrigger 3.15.0. Una instancia por documento. Verificar carga, responsive, scroll inverso y reduced-motion.",
+      "visual": {
+        "views": [
+          "Experiencias de scroll",
+          "Galerías y proyectos",
+          "Motion e interacciones"
+        ],
+        "roles": [
+          "Presentación",
+          "Producto",
+          "Servicios"
+        ],
+        "styles": [
+          "editorial",
+          "cinematográfico"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality"
+        ],
+        "motion": 3,
+        "search_aliases": [
+          "frames",
+          "fotogramas",
+          "secuencia",
+          "scroll",
+          "cinemática",
+          "video",
+          "imagen"
+        ]
+      }
     }
   ]
 }

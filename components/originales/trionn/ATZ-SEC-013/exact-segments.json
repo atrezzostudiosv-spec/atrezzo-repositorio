@@ -1,0 +1,8 @@
+{
+  "lengths": "function l(e){return e?600:800}function n(e){return e?60:150}function a(){return window.innerWidth<768}function i(e){return 200+n(e)+l(e)+200}",
+  "display_and_size": "L=(0,E.useCallback)(e=>{let t=u.current;if(!t)return;let r=C.current,l=Math.round(e),n=r.imgs[l];n&&n.complete&&t.src!==n.src&&(t.src=n.src)},[]),D=(0,E.useCallback)(()=>{let e,t,r=u.current;if(!r)return;let l=window.matchMedia(\"(max-width: 677px)\").matches,n=window.matchMedia(\"(max-width: 767px)\").matches,a=window.matchMedia(\"(min-width: 768px) and (max-width: 1023px)\").matches;l||n?(e=999,t=594):e=a?Math.round(16/9*(t=Math.round(.75*Math.round(window.visualViewport?.height??window.innerHeight)))):Math.round(16/9*(t=Math.round(window.visualViewport?.height??window.innerHeight))),r.style.width=e+\"px\",r.style.height=t+\"px\",C.current.cardsTL=null,L(C.current.videoIdx)},[L]),",
+  "preload": "B=(0,E.useCallback)(()=>{let e=C.current;if(e.preloading||e.loaded>0)return;e.preloading=!0;let t=\"u\">typeof requestIdleCallback?requestIdleCallback:e=>setTimeout(e,0),r=l=>{let n=Math.min(l+20,371),a=0,i=n-l,s=()=>{a++,e.loaded++,371===e.loaded&&L(0),a===i&&n<371&&t(()=>r(n))};for(let t=l;t<n;t++){let r=new Image;r.decoding=\"async\",r.src=`/images/stone/frame_${String(t+1).padStart(4,\"0\")}.webp`,r.decode().then(s,s),e.imgs[t]=r}};r(0)},[L,371])",
+  "phase": "r=n(C),p=(200+r)/(c=i(C)),x=(200+r+l(C))/c,t.scrollT=R<p?0:R>x?1:(R-p)/(x-p)",
+  "interpolation": "let c=370*t.scrollT;t.videoIdx+=(c-t.videoIdx)*.12;",
+  "opacity": "u.current&&(u.current.style.opacity=String(y.default.utils.clamp(0,1,_/.08)))"
+}

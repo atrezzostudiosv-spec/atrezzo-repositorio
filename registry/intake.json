@@ -261,6 +261,18 @@
       "source": "components/originales/trionn/ATZ-SEC-012/",
       "note": "Original aprobado por usuario; preview privada validada. Núcleo original de 11446 caracteres, 21 imágenes ilustrativas y símbolo neutro. QA de paquete público independiente.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43872025907"
+    },
+    {
+      "package_name": "Scroll Frame Sequence — original extraction",
+      "category": "scroll",
+      "ids": [
+        "ATZ-SEC-013"
+      ],
+      "status": "ingested_portable_pending_browser_qa",
+      "approved_at": "2026-11-16",
+      "preview": "components/originales/trionn/ATZ-SEC-013/index.html",
+      "source": "components/originales/trionn/ATZ-SEC-013/",
+      "note": "Preview privada ligera aprobada. Seis bloques originales exactos, 371 fotogramas privados preservados; 371 SVG propios para demo pública."
     }
   ]
 }

@@ -14,3 +14,5 @@ Flujo: extraer → empaquetar → validar → aprobar → integrar → cerrar. N
 - `trionn/ATZ-SEC-011/` — WebGL Image Wave, extracción 02. Original aprobado, QA privada correcta; QA pública independiente.
 
 - `trionn/ATZ-SEC-012/` — Floating Portfolio, extracción 03. Original aprobado; validación pública independiente.
+
+- `trionn/ATZ-SEC-013/` — Scroll Frame Sequence, extracción 04. Motor original, secuencia demostrativa propia; QA pública independiente.

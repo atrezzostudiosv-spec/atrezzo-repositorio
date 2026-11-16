@@ -1,0 +1,57 @@
+{
+  "candidate": 4,
+  "title": "Scroll Frame Sequence",
+  "status": "approved_public_qa_pending",
+  "source_module": 28236,
+  "source_blob": "43378a2e58a1365289ea95b3ac6b7caf257434c6",
+  "source_file": "workspace/_next/static/chunks/0sue_k2sp00no.js",
+  "frame_count": 371,
+  "frame_dimensions": [
+    1920,
+    1080
+  ],
+  "frame_source": "371 original ATREZZO sample SVG frames generated locally; private TRIONN WebP frames excluded",
+  "dependencies": [
+    "GSAP and ScrollTrigger 3.15.0 official CDN"
+  ],
+  "files": [
+    "index.html",
+    "component.css",
+    "component.js",
+    "engine.original.js",
+    "frames.json",
+    "sample-frames.js",
+    "exact-segments.json",
+    "manifest.json",
+    "README.md",
+    "DEPENDENCIES.md"
+  ],
+  "private_preview_qa": {
+    "widths": [
+      1440,
+      1024,
+      768,
+      375
+    ],
+    "loaded": 371,
+    "mid": 185,
+    "end": 370,
+    "reverse": [
+      75,
+      74,
+      74,
+      74
+    ],
+    "reduced_motion": "static",
+    "errors": []
+  },
+  "notes": "Six exact source blocks; original motor unchanged. Original captured sequence remains in private repository; public demo uses illustrative samples. No client artwork.",
+  "id": "ATZ-SEC-013",
+  "version": "1.0.0",
+  "source_collection": "trionn",
+  "source_visual_approved": true,
+  "approved_at": "2026-11-16",
+  "catalog_qa_status": "pending",
+  "client_ready": false,
+  "preview": "components/originales/trionn/ATZ-SEC-013/index.html"
+}
