@@ -5,7 +5,7 @@ const root="catalog/previews/";
 const manifest=JSON.parse(readFileSync(root+"manifest.json","utf8"));
 assert.equal(Object.keys(manifest.entries).length,65);
 assert.equal(manifest.editorialRepair,"phase04-v1");
-const times={"ATZ-PGT-001":"2.30","ATZ-PGT-002":"1.08","ATZ-PGT-003":"2.08"};
+const times={"ATZ-PGT-001":"2.30","ATZ-PGT-002":"1.00","ATZ-PGT-003":"2.08"};
 for(const [id,t] of Object.entries(times)){
   assert(manifest.entries[id]?.video.endsWith(id+".webm"));
   const src=root+id+".webm",out=root+id+".webp";
