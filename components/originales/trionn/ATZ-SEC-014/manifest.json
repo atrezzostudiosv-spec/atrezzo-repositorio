@@ -1,0 +1,139 @@
+{
+  "id": "ATZ-SEC-014",
+  "version": "1.0.0",
+  "candidate": 5,
+  "plan_version": 3,
+  "title": "Preloader original",
+  "source_collection": "trionn",
+  "source_visual_approved": true,
+  "approved_at": "2026-11-16",
+  "status": "approved_public_qa_pending",
+  "catalog_qa_status": "pending",
+  "client_ready": false,
+  "source_file": "workspace/_next/static/chunks/02m2onmcd.l.g.js",
+  "source_blob": "4509b2999fc0aa3dac40a1c3aa2fa79b3a30052e",
+  "source_modules": [
+    36526,
+    53477,
+    62749
+  ],
+  "source_module_sha256": "9e77df897a74cedcd4c59081285fe184fd06f26d7a6269949d823009e64bb0cd",
+  "private_engine_sha256": "a55f9b0023cd15169c52adce61796ea204ef88b6b8ce9961a27a706b292d6fb2",
+  "source_css_blob": "526240ea770e8b51f9cf08e4a0d39baf7a2dc59b",
+  "files": [
+    "index.html",
+    "component.css",
+    "host.css",
+    "component.js",
+    "engine.original.js",
+    "brand.json",
+    "runtime.entry.js",
+    "runtime.react.js",
+    "LICENSE-react.txt",
+    "LICENSE-react-dom.txt",
+    "LICENSE-scheduler.txt",
+    "manifest.json",
+    "README.md",
+    "DEPENDENCIES.md"
+  ],
+  "dependencies": [
+    "Official React and React DOM 19.3.0-canary-3f0b9e61-20260317; npm-built local bundle, MIT"
+  ],
+  "private_preview_qa": {
+    "reference": "Full original captured chunk, executed with its original React/ReactDOM/TransitionProvider in same neutral host. No live/full-page reference navigation: browser policy blocks it.",
+    "method": "Chromium set_content; original captured CSS with original fonts loaded internally only; deterministic clock; nine timestamps; exact equality of inline state and counts, screenshot RGB mean absolute difference 0 to 0.1022 on 0–255 scale.",
+    "phase_ms": [
+      450,
+      1200,
+      1800,
+      2550,
+      3350,
+      4050,
+      4650,
+      5200,
+      6200
+    ],
+    "results": [
+      {
+        "width": 1440,
+        "height": 900,
+        "mean_abs_pixel_error": [
+          0,
+          0,
+          0.0227,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "states_identical": true,
+        "completion": true,
+        "errors": []
+      },
+      {
+        "width": 1024,
+        "height": 768,
+        "mean_abs_pixel_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "states_identical": true,
+        "completion": true,
+        "errors": []
+      },
+      {
+        "width": 768,
+        "height": 900,
+        "mean_abs_pixel_error": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "states_identical": true,
+        "completion": true,
+        "errors": []
+      },
+      {
+        "width": 375,
+        "height": 812,
+        "mean_abs_pixel_error": [
+          0,
+          0,
+          0.1022,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "states_identical": true,
+        "completion": true,
+        "errors": []
+      }
+    ],
+    "limitations": [
+      "HTTP shell not separately tested",
+      "No full-site hydration or production integration test",
+      "Reduced motion not certified; original source unchanged",
+      "Original client logo and fonts are private; no public redistribution"
+    ]
+  },
+  "public_adaptation": "Only three original mark path literals and three tagline literals are parameterized, original CSS file preserved. Official npm React runtime replaces captured runtime. System font replaces captured client font. Neutral sample; not an assertion of pixel identity to private mark.",
+  "preview": "components/originales/trionn/ATZ-SEC-014/index.html"
+}

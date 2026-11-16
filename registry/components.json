@@ -3470,6 +3470,77 @@
         ]
       },
       "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43878019786"
+    },
+    {
+      "id": "ATZ-SEC-014",
+      "title": "Preloader original",
+      "category": "transiciones-paginas",
+      "family": "trionn-original-preloader",
+      "variant": "svg-brand-loader",
+      "selector": "#preloader-root",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "description": "Secuencia original de entrada: contador de carga, líneas que construyen tres formas SVG, cuatro cruces y expansión final. La demo pública utiliza marca neutra.",
+      "recommended_for": "Webs creativas y estudios premium donde la introducción de marca aporta una primera impresión deliberada.",
+      "avoid_when": "Sitios de acceso urgente o conversión inmediata, múltiples preloaders, o cuando la introducción retrasaría contenido prioritario. Respetar movimiento reducido y omisión.",
+      "level": "M2",
+      "discovery_group": "transiciones-paginas",
+      "discovery_trigger": "time",
+      "discovery_tags": [
+        "preloader",
+        "loader",
+        "intro",
+        "marca",
+        "svg",
+        "TRIONN"
+      ],
+      "preview": "components/originales/trionn/ATZ-SEC-014/index.html",
+      "technical_guide": "components/originales/trionn/ATZ-SEC-014/README.md",
+      "component_html": "components/originales/trionn/ATZ-SEC-014/index.html",
+      "component_css": "components/originales/trionn/ATZ-SEC-014/component.css",
+      "component_js": "components/originales/trionn/ATZ-SEC-014/component.js",
+      "component_runtime": "components/originales/trionn/ATZ-SEC-014/engine.original.js",
+      "package_manifest": "components/originales/trionn/ATZ-SEC-014/manifest.json",
+      "package_directory": "components/originales/trionn/ATZ-SEC-014/",
+      "source_collection": "trionn",
+      "dependencies": [
+        "React y React DOM oficiales 19.3.0-canary-3f0b9e61-20260317, bundle local MIT"
+      ],
+      "licensing": "Motor autorizado. Demo pública con tres formas y texto neutros; no incluye logo, tipografías ni runtime capturado de TRIONN.",
+      "integration": "Exportar todo el paquete. Conservar motor, estilos estructurales, viewBox, tres máscaras, contador, cruces, expansión y tiempos. Configurar brand.json con tres trazados SVG autorizados y tres palabras. Usar mountPreloader una sola vez en la raíz del documento, conservar handoff original y bypass accesible. No combinar con otro preloader; probar la ruta /about si se usa.",
+      "visual_contract": "Comparar los estados originales de contador, trazos, relleno, rotación, expansión y salida. La forma de marca y tipografía públicas son muestras autorizadas, no equivalencia de identidad privada. No redibujar ni simplificar el renderer.",
+      "visual": {
+        "views": [
+          "Motion e interacciones",
+          "Navegación y transiciones"
+        ],
+        "roles": [
+          "Transición",
+          "Hero"
+        ],
+        "styles": [
+          "editorial",
+          "cinematográfico"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "arquitectura",
+          "realestate"
+        ],
+        "motion": 2,
+        "search_aliases": [
+          "preloader",
+          "loader",
+          "carga",
+          "intro",
+          "símbolo",
+          "contador",
+          "svg"
+        ]
+      }
     }
   ],
   "originals_integration_contract": {

@@ -1,0 +1,13 @@
+{
+  "paths": [
+    "M270 92 H467 V205 H352 V393 H270 Z",
+    "M107 387 H398 V493 H107 Z",
+    "M36 84 H251 V322 H165 V186 H36 Z"
+  ],
+  "words": [
+    "DESIGN",
+    "BUILD",
+    "CONNECT"
+  ],
+  "note": "Neutral ATREZZO demo geometry, not TRIONN logo. Three paths fit original viewBox and are intentionally distinct."
+}

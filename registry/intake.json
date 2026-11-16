@@ -274,6 +274,18 @@
       "source": "components/originales/trionn/ATZ-SEC-013/",
       "note": "Preview privada ligera aprobada. Seis bloques originales exactos, 371 fotogramas privados preservados; 371 SVG propios para demo pública.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43878019786"
+    },
+    {
+      "package_name": "Preloader — original extraction (Master List V3 / 05)",
+      "category": "transiciones-paginas",
+      "ids": [
+        "ATZ-SEC-014"
+      ],
+      "status": "ingested_portable_pending_browser_qa",
+      "approved_at": "2026-11-16",
+      "preview": "components/originales/trionn/ATZ-SEC-014/index.html",
+      "source": "components/originales/trionn/ATZ-SEC-014/",
+      "note": "Usuario aprobó la preview privada. Módulos originales 36526, 53477 y 62749; sólo seis literales de identidad parametrizados. CSS exacto. Runtime oficial MIT. Comparación privada en cuatro anchos, nueve fases. QA pública pendiente."
     }
   ]
 }

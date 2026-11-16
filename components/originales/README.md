@@ -31,3 +31,5 @@ Regla de admisión obligatoria, anterior al contrato de integración 1.2. Fuente
 8. No publicar una extracción hasta superar la comparación con la referencia original, la aprobación visual del usuario y la validación autónoma del paquete público. Los componentes ya aprobados mantienen sus IDs y sus estados de QA reales.
 
 Caso 05 — Scroll Audio: rechazado como componente visual independiente; extensión de ATZ-SEC-010 pendiente. Prohibido reutilizar sus líneas diagnósticas como reemplazo del renderer original.
+
+- `trionn/ATZ-SEC-014/` — Preloader, V3 / 05. Aprobación privada; marca neutra configurable y CSS original, QA pública independiente.
