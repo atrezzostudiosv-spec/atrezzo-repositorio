@@ -4,8 +4,8 @@ try{
  for(let i=0;i<40;i++){try{if((await fetch(url)).ok)break}catch{}await sleep(250)}
  browser=await chromium.launch({headless:true});await mkdir("qa-preloader",{recursive:true});
  for(const width of [1440,1024,768,375]){
- const page=await browser.newPage({viewport:{width,height:width===375?812:900}}),errors=[];page.on("pageerror",e=>errors.push(e.message));
- await page.goto(url,{waitUntil:"domcontentloaded"});await page.waitForSelector(".pl-overlay.active",{state:"attached"});
+ const page=await browser.newPage({viewport:{width,height:width===375?812:900}}),errors=[];page.on("pageerror",e=>{errors.push(e.message);console.error("PRELOADER PAGE ERROR",e.message)});page.on("console",m=>{if(m.type()==="error"||m.type()==="warning")console.log("BROWSER",m.text())});
+ await page.goto(url,{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>document.querySelector(".pl-overlay.active")||document.documentElement.dataset.lab==="fallback",null,{timeout:10000});assert.equal(await page.locator("html").getAttribute("data-lab"),"loading",JSON.stringify(errors));
  assert.equal(await page.locator(".pl-t-path").count(),3);assert.equal(await page.locator(".pl-belt").count(),10);assert.equal(await page.locator(".pl-logo-corner-plus").count(),4);
  assert(await page.locator("main").evaluate(x=>x.inert));
  const states=[];let last=0;
