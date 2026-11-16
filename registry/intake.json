@@ -227,12 +227,13 @@
       "ids": [
         "ATZ-SEC-010"
       ],
-      "status": "private_preview_visual_approved",
+      "status": "ingested_portable_pending_browser_qa",
       "approved_at": "2026-11-16",
-      "preview": "https://reimagined-yodel-jr99vx7vgjwq2pppg-8766.app.github.dev/lab/connected-portfolio/",
-      "source": "https://github.com/atrezzostudiosv-spec/trionn/tree/lab/connected-portfolio/workspace/lab/connected-portfolio",
-      "public_export": false,
-      "note": "Vista original aprobada por el usuario. Motor preservado en repositorio privado. No incluido en el registro de los 65 componentes exportables: pendientes QA de variante portable y autorización de redistribución de dependencias de terceros."
+      "preview": "components/secciones/ATZ-SEC-010/index.html",
+      "source": "components/secciones/ATZ-SEC-010/",
+      "public_export": "manual_package_present_pending_qa",
+      "note": "Actual standalone package in main: original engine and Three.js r128 MIT, HTML, CSS, JS, data, manifest and guide. User approved original private demo. Public adaptation uses neutral placeholders and native-scroll fallback. Browser QA and standard automated export integration pending.",
+      "private_approved_preview": "https://reimagined-yodel-jr99vx7vgjwq2pppg-8766.app.github.dev/lab/connected-portfolio/"
     }
   ]
 }
