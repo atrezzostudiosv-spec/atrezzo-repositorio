@@ -19,13 +19,24 @@ export function resolveComponent(id){
   if(typeof id!=="string"||!allowedId.test(id))throw Error("ID inválido: "+String(id));
   const registry=JSON.parse(readFileSync(registryPath,"utf8"));
   const pending=(registry.source_approved_entries||[]).find(e=>e.id===id);
-  if(pending&&id==="ATZ-SEC-010"){
-    const base="components/secciones/ATZ-SEC-010/";
-    const manifest=JSON.parse(readFileSync(join(root,base,"manifest.json"),"utf8"));
-    if(manifest.id!==id)throw Error("Manifest ID mismatch");
-    const files=["index.html","component.css","component.js","engine.original.js","three-r128.original.js","three-adapter.js","projects.json","LICENSE-three.txt","README.md","manifest.json"].map(name=>base+name);
-    for(const file of files){if(!existsSync(join(root,file)))throw Error("Archivo ausente: "+file);}
-    return {id,title:pending.title,category:pending.category,variant:pending.variant,selector:pending.selector,status:pending.status,client_ready:false,library_approved:false,source_visual_approved:true,files:{html:base+"index.html",css:base+"component.css",js:base+"component.js",runtime:base+"engine.original.js"},package_files:files,technical_guide:pending.technical_guide,preview:pending.preview,licensing:"Original autorizado; Three.js r128 MIT. Sin medios de cliente.",use_for:pending.recommended_for,avoid_when:pending.avoid_when,instruction:"Integrar como página autónoma, una instancia por documento, conservar motor original. QA autónoma pendiente."};
+  if(pending){
+    const manifestPath=pending.package_manifest;
+    if(!/^components\/originales\/[a-z0-9-]+\/ATZ-[A-Z]{3}-\d{3}\/manifest\.json$/.test(manifestPath))throw Error("Ruta de paquete original inválida");
+    const base=manifestPath.slice(0,-"manifest.json".length);
+    if(!base.endsWith("/"+id+"/")||base!==pending.package_directory)throw Error("ID y carpeta original no coinciden");
+    const manifest=JSON.parse(readFileSync(join(root,manifestPath),"utf8"));
+    if(manifest.id!==id||!Array.isArray(manifest.files)||!manifest.files.includes("manifest.json"))throw Error("Manifest original inválido");
+    const names=manifest.files;
+    if(new Set(names).size!==names.length)throw Error("Archivos duplicados en manifest");
+    const files=names.map(name=>{
+      if(typeof name!=="string"||!name.split("/").every(part=>/^[A-Za-z0-9_.-]+$/.test(part)&&part!=="."&&part!==".."))throw Error("Archivo de paquete inválido: "+name);
+      const file=base+name,full=resolve(root,file);
+      if(!full.startsWith(root+sep)||!existsSync(full))throw Error("Archivo ausente: "+file);
+      return file;
+    });
+    const core={html:pending.component_html,css:pending.component_css,js:pending.component_js,runtime:pending.component_runtime};
+    for(const file of [...Object.values(core),pending.technical_guide,pending.preview,manifestPath])if(!files.includes(file))throw Error("Archivo no registrado en el manifest: "+file);
+    return {id,title:pending.title,category:pending.category,variant:pending.variant,selector:pending.selector,status:pending.status,client_ready:pending.client_ready===true,library_approved:pending.source_visual_approved===true&&pending.catalog_qa_status==="passed_internal",source_visual_approved:pending.source_visual_approved===true,source_collection:pending.source_collection,catalog_qa_status:pending.catalog_qa_status,files:core,package_files:files,technical_guide:pending.technical_guide,preview:pending.preview,licensing:pending.licensing,use_for:pending.recommended_for,avoid_when:pending.avoid_when,instruction:pending.integration};
   }
   const matches=registry.entries.filter(e=>e.id===id);
   if(matches.length!==1)throw Error("ID no único o desconocido: "+id);
@@ -52,7 +63,7 @@ export function resolveComponent(id){
 }
 export function createIntegrationPrompt(id){
   const e=resolveComponent(id);
-  if(e.package_files)return ["ATREZZO — INTEGRACIÓN POR ID EXACTO","Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio","ID: "+e.id+" — "+e.title,"Original aprobado visualmente. QA autónoma pendiente; client_ready=false.","Leer AGENTS.md, registry/components.json (source_approved_entries) y "+e.technical_guide,"Exportar: node scripts/export-component.mjs "+e.id+" --out ./salida","Archivos exactos:",...e.package_files.map(x=>"- "+x),"Usar index.html como página autónoma; editar projects.json. Three.js r128 incluido; conservar LICENSE-three.txt. Una instancia por documento; no recrear motor ni copiar medios de TRIONN.","Verificar WebGL2, scroll inverso, responsive 375/768/1024/1440, reduced-motion y errores antes de publicar."].join("\n");
+  if(e.package_files)return ["ATREZZO — INTEGRACIÓN POR ID EXACTO","Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio","ID: "+e.id+" — "+e.title,"Colección Originales / "+e.source_collection,(e.library_approved?"Original aprobado y QA interna verificada.":"Original aprobado visualmente. QA autónoma pendiente.")+" client_ready="+e.client_ready+".","Leer AGENTS.md, registry/components.json (source_approved_entries) y "+e.technical_guide,"Exportar: node scripts/export-component.mjs "+e.id+" --out ./salida","Archivos exactos:",...e.package_files.map(x=>"- "+x),e.licensing,e.instruction,"Conservar código original y movimiento aprobado; utilizar únicamente medios autorizados."].join("\n");
   return [
     "ATREZZO — INTEGRACIÓN POR ID EXACTO",
     "Repositorio: https://github.com/atrezzostudiosv-spec/atrezzo-repositorio",

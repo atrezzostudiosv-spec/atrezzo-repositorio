@@ -3199,13 +3199,13 @@
         "proyectos",
         "trionn"
       ],
-      "preview": "components/secciones/ATZ-SEC-010/index.html",
-      "technical_guide": "components/secciones/ATZ-SEC-010/README.md",
-      "component_html": "components/secciones/ATZ-SEC-010/index.html",
-      "component_css": "components/secciones/ATZ-SEC-010/component.css",
-      "component_js": "components/secciones/ATZ-SEC-010/component.js",
-      "component_runtime": "components/secciones/ATZ-SEC-010/engine.original.js",
-      "package_manifest": "components/secciones/ATZ-SEC-010/manifest.json",
+      "preview": "components/originales/trionn/ATZ-SEC-010/index.html",
+      "technical_guide": "components/originales/trionn/ATZ-SEC-010/README.md",
+      "component_html": "components/originales/trionn/ATZ-SEC-010/index.html",
+      "component_css": "components/originales/trionn/ATZ-SEC-010/component.css",
+      "component_js": "components/originales/trionn/ATZ-SEC-010/component.js",
+      "component_runtime": "components/originales/trionn/ATZ-SEC-010/engine.original.js",
+      "package_manifest": "components/originales/trionn/ATZ-SEC-010/manifest.json",
       "dependencies": [
         "Three.js r128 MIT, incluido"
       ],
@@ -3239,7 +3239,11 @@
           "proyectos",
           "chispas"
         ]
-      }
+      },
+      "source_collection": "trionn",
+      "licensing": "Original autorizado; Three.js r128 MIT. Sin medios del cliente.",
+      "integration": "Usar index.html como página autónoma; configurar projects.json; una instancia por documento. Conservar el motor original y las licencias. Verificar WebGL2, scroll inverso, responsive, reduced-motion y errores antes de publicar.",
+      "package_directory": "components/originales/trionn/ATZ-SEC-010/"
     }
   ]
 }

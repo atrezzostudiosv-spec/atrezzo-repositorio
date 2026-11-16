@@ -19,12 +19,14 @@
     "three-adapter.js",
     "projects.json",
     "LICENSE-three.txt",
-    "README.md"
+    "README.md",
+    "manifest.json"
   ],
-  "preview": "components/secciones/ATZ-SEC-010/index.html",
+  "preview": "components/originales/trionn/ATZ-SEC-010/index.html",
   "dependencies": [
     "Three.js r128 (bundled, MIT)"
   ],
   "client_ready": false,
-  "notes": "Native-scroll original fallback; no client imagery or audio; private approved reference retained."
+  "notes": "Native-scroll original fallback; no client imagery or audio; private approved reference retained.",
+  "source_collection": "trionn"
 }

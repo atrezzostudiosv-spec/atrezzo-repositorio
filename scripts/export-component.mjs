@@ -13,7 +13,7 @@ export function exportComponent(id,out){
   for(const name of needed){
     if(!existsSync(join(root,name)))throw Error("Dependencia faltante: "+name);
   }
-  const instructions=selected.package_files?["# ATREZZO: "+selected.id,"","Paquete autónomo exacto, no modifica el sitio del cliente. Abrir index.html por HTTP; configurar projects.json, conservar el motor y licencias. Una instancia por documento. QA autónoma pendiente.","",createIntegrationPrompt(id)].join("\n"):[
+  const instructions=selected.package_files?["# ATREZZO: "+selected.id,"","Paquete autónomo exacto, no modifica el sitio del cliente. "+selected.instruction,"",createIntegrationPrompt(id)].join("\n"):[
     "# ATREZZO: "+selected.id,"",
     "Archivos del paquete:",
     ...needed.map(name=>"- "+name),"",

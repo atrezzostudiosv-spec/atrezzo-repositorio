@@ -86,7 +86,8 @@ async function repairCapture(e){
 async function smoke(expectMedia){
  for(const width of [375,768,1024,1440]){
    const page=await browser.newPage({viewport:{width,height:900},acceptDownloads:true});await setup(page);const errors=[];page.on("pageerror",x=>errors.push(x.message));await page.goto(origin+"/catalog/");
-   await page.waitForFunction(n=>document.querySelectorAll("#grid .card").length===n,reg.entries.length+(reg.source_approved_entries||[]).length,{timeout:15000});
+   await page.waitForFunction(n=>document.querySelectorAll("#grid .card").length===n,reg.entries.length,{timeout:15000});
+   assert.equal(await page.locator("#original-grid .card").count(),(reg.source_approved_entries||[]).length);
    const logo=page.locator(".atz-brand img");
    await logo.evaluate(img=>img.decode());
    assert(await logo.evaluate(img=>img.naturalWidth>0&&img.getBoundingClientRect().width>=100),"Official logo not visible "+width);
@@ -109,7 +110,7 @@ async function smoke(expectMedia){
    const firstTop=await page.locator("#grid .media").first().evaluate(el=>el.getBoundingClientRect().top);assert(firstTop<650,"Visual previews too far below fold "+width+" "+firstTop);
    assert.equal(await page.locator("#advanced").getAttribute("open"),null);
    await page.locator("#advanced summary").click();
-   await page.locator("#query").fill("ATZ-SEC-010");assert.equal(await page.locator("#grid .card").count(),1);assert.equal(await page.locator("#grid .card [data-copy]").getAttribute("data-copy"),"ATZ-SEC-010");assert.match(await page.locator("#grid .card .actions a").getAttribute("href"),/ATZ-SEC-010\/index\.html$/);await page.locator("#query").fill("ATZ-MOT-003");assert.equal(await page.locator("#grid .card").count(),1);
+   await page.locator("#query").fill("ATZ-SEC-010");assert.equal(await page.locator("#grid .card").count(),0);assert.equal(await page.locator("#original-grid .card").count(),1);assert.equal(await page.locator("#original-grid .card [data-copy]").getAttribute("data-copy"),"ATZ-SEC-010");assert.match(await page.locator("#original-grid .card .actions a").getAttribute("href"),/ATZ-SEC-010\/index\.html$/);await page.locator("#query").fill("ATZ-MOT-003");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("#industry").selectOption("salud");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("#role").selectOption("Hero");assert.equal(await page.locator("#grid .card").count(),1);
    await page.locator("[data-fav='ATZ-MOT-003']").click();await page.locator("#saved").selectOption("yes");assert.equal(await page.locator("#grid .card").count(),1);
