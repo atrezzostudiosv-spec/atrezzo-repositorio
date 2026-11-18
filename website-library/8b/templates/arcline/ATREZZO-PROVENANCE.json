@@ -1,0 +1,43 @@
+{
+  "slug": "arcline",
+  "name": "Arcline",
+  "categories": [
+    "Sport and fitness"
+  ],
+  "upstream": "https://github.com/8bsite/fitness-website-template",
+  "demo": "https://8b.com/templates/arcline/demo.html",
+  "design_md_url": "https://8b.com/templates/arcline/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "398d92e23e7541060179c402cd39078ac283d052",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "0237a6482718ddbb4b90966cdaea85e4dae41c86",
+    "README.md": "728e3367fc897af22a621a21af68cde85a329f51",
+    "AGENTS.md": "2dc2cb5cb753c36695ef1066df0faa91e2e428be",
+    "index.html": "f9d8326ba59cccc967fde677efe2953035ce7f9b",
+    "index.gsap.html": "5a947e7af4f44be0e133da9a77f6a5a435e8f420"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "ddbf93dccb58bd9092dd20dede78309f7318af22041b298f94819d5cf6686b10",
+    "README.md": "830b30fbe1f3b0cd0ac2ee016649c388a37751dc6a27caea9b09f24b99c07421",
+    "AGENTS.md": "732eb9c4ad28e78dbb2c96d4769d43ff3632940980e7a78fe44578af25fa84fe",
+    "index.html": "d1b98e04da70d7870a84981bbf623ca8c827c9fa9fa9f5fb2f98249cfd7835a3",
+    "index.gsap.html": "7c8e789ef9b079e4fd6d0d05c8566f6f354cca64e2ac7c0bbae85a27a0ab7add"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "ferrule",
+  "name": "Ferrule",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/plumber-website-template",
+  "demo": "https://8b.com/templates/ferrule/demo.html",
+  "design_md_url": "https://8b.com/templates/ferrule/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b385e98e3fd62f84284d2cda9892b73524987d87",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "4acaa39509be9b84d6df09077047ca55659587a0",
+    "README.md": "853c7ae4f0d388e89695b8beae5b965044854bd8",
+    "AGENTS.md": "e44a4518b94dba327271ff64f6711bc9c161e91d",
+    "index.html": "6fe6c670b808928b97f26cea9a9aab84bddc22a0",
+    "index.gsap.html": "2ee598c9a0b3b528bc79093e1eef5f60e58f87b1"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "6bc862dc5b86137898a21199103be843a770285ff514839b53a8724fc7aadee2",
+    "README.md": "226eea9ee3566a0cb3a20499bd6723d9e16786d7108e88fcd7181e516af4450c",
+    "AGENTS.md": "19e42f0af0e145f9b1d4c13e3dd40550cf20deb8b0e0d1d3fff69b2c082c0211",
+    "index.html": "eefd6170b34e2bd28cdccb5eeac19096588056c9f78cd7ba091b4bf0e45a3269",
+    "index.gsap.html": "50347715a2a31ce180b5c2237aa6ec36fdf63963c66ec1e6b8f4832a07ea8ff1"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "quiet-systems",
+  "name": "Quiet Systems",
+  "categories": [
+    "Professional services",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/it-support-website-template",
+  "demo": "https://8b.com/templates/quiet-systems/demo.html",
+  "design_md_url": "https://8b.com/templates/quiet-systems/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "73ee479078cf267a92d067bd504143f1ac607751",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "d432d4d5c6d2cf9175708aea5fc5fcbc7e603d3c",
+    "README.md": "8e32e4ddd3967482d418551e8c996cd75628c79c",
+    "AGENTS.md": "5d8295b69a8520c457f1166f4b2ba630242c87c5",
+    "index.html": "2f89ccbde6d4c9827302a97e7da7061df12a21a6",
+    "index.gsap.html": "ede1f66ca138d9b7211f7781289c3c3f5af46dac"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "415422d98c75b17614aea3dd33f5d285e15f2747beaa1d9e6e2e1c34bbe497db",
+    "README.md": "92d214ee0807829dfad20c1d79f51932d9508fe541dd0923dbab5aa625c84a24",
+    "AGENTS.md": "6e575dbd4b50cec638d86c5f0f09eb7e7a8f97caf851206d34396747d2231fe8",
+    "index.html": "13dccc5af21952deb90665cf6ee60b1ee5d1688bf8413258a964e59a6477d8be",
+    "index.gsap.html": "89f49db4b6738c15d2cbf992112cd467d8a35dc13ee9f277a144394e6c3776d1"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

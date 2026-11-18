@@ -1,0 +1,43 @@
+{
+  "slug": "binario-tre",
+  "name": "Binario Tre",
+  "categories": [
+    "Travel"
+  ],
+  "upstream": "https://github.com/8bsite/travel-agency-website-template",
+  "demo": "https://8b.com/templates/binario-tre/demo.html",
+  "design_md_url": "https://8b.com/templates/binario-tre/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "619b26a39628cfefb63c4b9cfa77d4e1faa18925",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "9dbbf057b99f47f7ae32ab00b1295e3d6f80228f",
+    "README.md": "d786c224b32a9b74726590bb796a191f363b2094",
+    "AGENTS.md": "30a1c286b19fcfcebc953905f8a2cee103704573",
+    "index.html": "58113e2a0675f99ff16bd092257c87a7e1456c5f",
+    "index.gsap.html": "7811e14a9ef9ff6cc4ac6e4cf56daeaa526b25df"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "9216b0007bcecbd276112dce2eb369cd90ae7ff217f281cbd0f87fd1255906ac",
+    "README.md": "75cb9cd63164a2617012c151e3eafca6d8d7fd545415237d33544f0c4d851abe",
+    "AGENTS.md": "f205d1533be88548c8553d65cc12f7f094df442f3ad4124b8290cf7bd6a75878",
+    "index.html": "d74f258a4a9d1f31573fd2630a87471c4868c9181ccf8c7cc76fb197f6b188a3",
+    "index.gsap.html": "9d028816f84564f1c446667e7894f7500a7c99f521c56f09907d1590dbaf3c50"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

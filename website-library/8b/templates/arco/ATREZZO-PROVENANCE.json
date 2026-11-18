@@ -1,0 +1,44 @@
+{
+  "slug": "arco",
+  "name": "Arco",
+  "categories": [
+    "Product and app",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/electric-moped-website-template",
+  "demo": "https://8b.com/templates/arco/demo.html",
+  "design_md_url": "https://8b.com/templates/arco/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "3e4ce0c92931b40d5943e13a02f76b0c32ecd038",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "fd306158fe60ed775875493be26f16a818ec316d",
+    "README.md": "529a82560f717631a5d59b395999824696e60d8a",
+    "AGENTS.md": "e5b0fef353609817666e57dcbcac61b0b2c3925f",
+    "index.html": "5d5ae677ee2a2bc7a383709f291b0d4120928671",
+    "index.gsap.html": "f94f6619ead9923ba034e9a8bc5414e3be41ddb7"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "62fd2f3e9bc1c1b9fcf353591da47255a375ba10baf0b12afce8774b5d651a7f",
+    "README.md": "7624c7602c21db9e9d002bc9a93fccfe27b63cb0f320f7aa91825d999888c82e",
+    "AGENTS.md": "e944f3f6feb22969b0efd7824108800f11f858a82cc97ca202dc5bc7fdc33ec1",
+    "index.html": "c03b204111e739a280518800605e203815489e2b8c88854d7c5ccfeb5f725afa",
+    "index.gsap.html": "bbeb3cddf5160ae81e0d4aa3f24a8d1ea1d06b66c033627ee8fffa190e96bf1b"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

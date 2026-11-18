@@ -1,0 +1,44 @@
+{
+  "slug": "hale",
+  "name": "Hale",
+  "categories": [
+    "Health",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/pharmacy-website-template",
+  "demo": "https://8b.com/templates/hale/demo.html",
+  "design_md_url": "https://8b.com/templates/hale/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "0054876c80262dceb62e6a42fdba110cb4c3ef12",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "c35d5044494a6142b997ff1999a49317b0094d97",
+    "README.md": "9d1cb1d962c723a82dc0e14c5cf22f869b037ea5",
+    "AGENTS.md": "fa238b1a8673dd179c5d8801d140a5bca0be3870",
+    "index.html": "dcb8f5625e5b14a49d039dbd156b108c7f5fbfb2",
+    "index.gsap.html": "1a316271cfd168dca9b4de2254019102c7a7764a"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "51ab09e757a725c7c14eda4b0b284ac3c72a5477ef354623ef3aafbcdd2d972e",
+    "README.md": "411760317d0aa215dc269c48b9a59abd7b32cc1947cb7c43f1eb0c8fcd0c9488",
+    "AGENTS.md": "0198a1eec35a040ad2bfab9a37ba1621b66884c96903fe417bd0e77d5ccfc298",
+    "index.html": "0fbcdfb09e380257a73e5a63c9fca050999166ae4cabcbf22f98020d7d03fbd4",
+    "index.gsap.html": "12f4fd9fe85da6c3e6c1bfa82f1216ce1acb18f057ed54263826430976cd6cc3"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

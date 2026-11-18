@@ -1,0 +1,43 @@
+{
+  "slug": "fellgate",
+  "name": "Fellgate",
+  "categories": [
+    "Professional services"
+  ],
+  "upstream": "https://github.com/8bsite/law-firm-website-template",
+  "demo": "https://8b.com/templates/fellgate/demo.html",
+  "design_md_url": "https://8b.com/templates/fellgate/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "162370f80ec32cadfc7303b1f3a00b3e0149464d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "8079fda573b4fa1a5f12d72f081b5d445073a411",
+    "README.md": "08c57a1b5a263741518bcf0ea8643b69315f7e59",
+    "AGENTS.md": "e1648303fb1743cbf6f6fd0c9bfc0f28fd835e69",
+    "index.html": "eaaf4a28a2dbc6956e76e7688926bdf2b4dbb1f6",
+    "index.gsap.html": "8f0499099db5f155108b28531c21c174aebbd034"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "3e088d6dd2db3ad58c1045560145244dd10304e872f59ed78ebbfbfcb217204c",
+    "README.md": "6043c6ace528ee0f31ecd7089388c5937222c27ca3d09c0f7d681c61c2ee6e52",
+    "AGENTS.md": "b978e75aea84d0d05d7712c6492b92421be32b79c9620f914e215b014b792403",
+    "index.html": "05e9b9fc5d73cbb098143ece42a25a4b47b998cea9dc22b8df1fec3bd2f706a0",
+    "index.gsap.html": "107c9b36018b3adc4268469f7b2b8f08d53bd6ec99b5ad2dc18d01844d310533"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

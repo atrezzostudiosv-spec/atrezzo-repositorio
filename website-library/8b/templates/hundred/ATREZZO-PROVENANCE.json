@@ -1,0 +1,44 @@
+{
+  "slug": "hundred",
+  "name": "Hundred",
+  "categories": [
+    "Sport and fitness",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/pilates-studio-website-template",
+  "demo": "https://8b.com/templates/hundred/demo.html",
+  "design_md_url": "https://8b.com/templates/hundred/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "d19b3af9aeff1aabc6389625c031096dc9d683c5",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "5aeb659c6a585e0e5a0b4ae2d12bcbe79c314bcc",
+    "README.md": "dcd86abfb7b0500e17f83e5cb86082893655b25a",
+    "AGENTS.md": "3d8fa6507922409dfecb554d85f028cf978b4662",
+    "index.html": "cdb4a016bed3cfd5a9c751e740ffaf015afba481",
+    "index.gsap.html": "2307ff51ee3436f848820806cfa4de8b4697728d"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c16006451472fa97e20a364af1620e4bbef4cc4e0db4f0801d2ca88cbba0e5e5",
+    "README.md": "c9f855118fbe65b985abdb062e04debb7b195214339b743c702957430d989014",
+    "AGENTS.md": "3ad3b70ff2f8315db688740a1032d30c79ea7a1c4ebda71c8cf3641ac18a669e",
+    "index.html": "4b133f8fb946d5500fdd98b09453fa77de802cd85ee7d89803f4c282fec733ea",
+    "index.gsap.html": "79eee7782a57fcc6ce965e330c4f2d45ac2018d7be592079a40f2d0b05187b82"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

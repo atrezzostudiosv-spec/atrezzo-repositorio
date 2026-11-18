@@ -1,0 +1,1211 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/fellgate/
+  Source: https://github.com/8bsite/law-firm-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fellgate — commercial lawyers in Edinburgh, London and Dublin</title>
+<meta name="description" content="Fellgate LLP is a commercial law firm of seventy lawyers in Edinburgh, London and Dublin, acting for growing companies, their founders and boards. Fees agreed before the work starts.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fellgate — commercial lawyers in Edinburgh, London and Dublin">
+<meta property="og:description" content="Fellgate LLP is a commercial law firm of seventy lawyers in Edinburgh, London and Dublin, acting for growing companies, their founders and boards. Fees agreed before the work starts.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23d3271d'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3EF%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUDf2OAVIJmeUDygwjiklqnhZdDtwG.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUDf2OAVIJmeUDygwjiklqnh9dDtwG.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUDf2OAVIJmeUDygwjiklqnhhdDtwG.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUDf2OAVIJmeUDygwjiklqnhRdDtwG.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUDf2OAVIJmeUDygwjiklqnhVdDtwG.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUDf2OAVIJmeUDygwjiklqnhtdDg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #262626;
+  --color-3: #d5d5d5;
+  --color-4: #d3271d;
+  --color-5: #5c5c5c;
+  --color-6: #dcdcdc;
+  --color-7: #f1f1f1;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --font-2: "Source Serif 4", Georgia, serif;
+  --space-1: clamp(20px, 4.4vw, 64px);
+  --space-2: clamp(96px, 12vw, 176px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.8%; ascent-override: 99.2%; descent-override: 31.1%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 17px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  section[id], footer[id] { scroll-margin-top: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 11vw, 160px); font-weight: 500; line-height: .86; letter-spacing: -.045em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(30px, 3.9vw, 56px); font-weight: 500; line-height: 1.06; letter-spacing: -.032em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: .07em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(30px, 3.2vw, 46px); font-weight: 300; line-height: 1.02; letter-spacing: -.02em; text-transform: none; font-style: normal; color: var(--color-4); font-variation-settings: "opsz" 60; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(19px, 1.6vw, 22px); font-weight: 400; line-height: 1.3; letter-spacing: -.01em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-5); }
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 56px; padding: 0 30px; border: 0; background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1; letter-spacing: 0; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-4); clip-path: inset(100% 0 0 0); transition: clip-path .55s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover::before { clip-path: inset(0 0 0 0); } }
+.m-link { display: inline-block; padding-bottom: 3px; color: inherit; font-family: var(--font-1); font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; }
+@media (hover: hover) { .m-link:hover { animation: m-link-redraw .7s cubic-bezier(.7, 0, .2, 1); } }
+.m-link-2 { display: inline-block; padding-bottom: 3px; color: inherit; font-family: var(--font-1); font-size: 14px; font-weight: 400; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .45s cubic-bezier(.7, 0, .2, 1); }
+.m-link-2[aria-current="true"], .m-link-2.is-current { background-size: 100% 1px; }
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 1px; } }
+@keyframes m-link-redraw { 0% { background-size: 100% 1px; background-position: 100% 100%; } 45% { background-size: 0 1px; background-position: 100% 100%; } 46% { background-size: 0 1px; background-position: 0 100%; } 100% { background-size: 100% 1px; background-position: 0 100%; } }
+.m-icon { position: relative; display: inline-grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 1px solid var(--color-6); background: transparent; color: var(--color-2); cursor: pointer; isolation: isolate; text-decoration: none; }
+.m-icon::before { content: ""; position: absolute; inset: -1px; z-index: -1; background: var(--color-4); scale: 0; transition: scale .45s cubic-bezier(.7, 0, .2, 1); }
+.m-icon__glyph { display: block; width: 18px; height: 18px; color: inherit; transition: color .3s; }
+@media (hover: hover) { .m-icon:hover { color: var(--color-1); border-color: var(--color-4); } .m-icon:hover::before { scale: 1; } }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: .07em; text-transform: uppercase; color: var(--color-5); }
+.m-field__input { width: 100%; min-height: 48px; padding: 10px 0; border: 0; border-bottom: 1px solid var(--color-5); border-radius: 0; background: transparent; font-family: var(--font-1); font-size: 17px; line-height: 1.4; color: var(--color-2); }
+textarea.m-field__input { min-height: 120px; resize: vertical; }
+select.m-field__input { appearance: none; background: linear-gradient(45deg, transparent 50%, currentColor 50%) calc(100% - 10px) 52% / 6px 6px no-repeat, linear-gradient(-45deg, transparent 50%, currentColor 50%) calc(100% - 4px) 52% / 6px 6px no-repeat; padding-right: 24px; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; border-bottom-color: var(--color-2); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+  #nav { position: fixed; inset: 0 0 auto; z-index: 50; }
+  #nav .nav__bar { display: flex; align-items: stretch; height: 64px; background: color-mix(in srgb, var(--color-1) 88%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-6); transition: translate .5s cubic-bezier(.6, 0, .2, 1); }
+  #nav.is-hidden .nav__bar { translate: 0 -101%; }
+  #nav .nav__logo { display: flex; align-items: center; gap: 12px; padding: 0 var(--space-1); color: var(--color-2); text-decoration: none; font-family: var(--font-1); font-size: 15px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
+  #nav .nav__mark { width: 11px; height: 11px; background: var(--color-4); }
+  #nav .nav__links { display: flex; align-items: center; gap: clamp(18px, 2.2vw, 32px); margin: 0 auto; }
+  #nav .nav__cta { min-height: 100%; padding: 0 clamp(24px, 3vw, 44px); }
+  #nav .nav__toggle { display: none; align-self: center; margin-right: var(--space-1); }
+  #nav .nav__toggle .m-icon__glyph, #nav .nav__close .m-icon__glyph { width: 20px; height: 9px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; }
+  #nav .nav__close .m-icon__glyph { height: 1.5px; border: 0; background: currentColor; rotate: 45deg; box-shadow: none; }
+  #nav .nav__close .m-icon__glyph::after { content: ""; display: block; height: 1.5px; background: currentColor; rotate: 90deg; }
+  #nav .nav__menu { position: fixed; inset: 0; z-index: 2; display: flex; flex-direction: column; gap: 32px; padding: 88px var(--space-1) 40px; background: var(--color-1); overflow-y: auto; }
+  #nav .nav__menu[hidden] { display: none; }
+  #nav .nav__close { position: absolute; top: 8px; right: var(--space-1); }
+  #nav .nav__menu-links { display: grid; gap: 6px; }
+  #nav .nav__menu-links a { font-family: var(--font-1); font-size: clamp(34px, 9vw, 52px); font-weight: 500; line-height: 1.1; letter-spacing: -.035em; padding-bottom: 2px; }
+  #nav .nav__menu .m-btn { align-self: flex-start; }
+  @media (max-width: 1000px) {
+    #nav .nav__links, #nav .nav__cta { display: none; }
+    #nav .nav__logo { margin-right: auto; }
+    #nav .nav__toggle { display: inline-grid; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; overflow-x: clip; }
+  #opening .opening__stage { position: sticky; top: 0; height: 100svh; overflow: hidden; background: var(--color-1); }
+  #opening .opening__photo { position: absolute; inset: 0; }
+  #opening .opening__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; filter: grayscale(1) contrast(.72) brightness(1.22) blur(0px); }
+  #opening .opening__fog { position: absolute; pointer-events: none; background: radial-gradient(closest-side, color-mix(in srgb, var(--color-1) 94%, transparent), color-mix(in srgb, var(--color-1) 55%, transparent) 55%, transparent); }
+  #opening .opening__fog--1 { left: -22%; bottom: -10%; width: 92%; height: 52%; }
+  #opening .opening__fog--2 { right: -26%; bottom: 8%; width: 84%; height: 40%; opacity: .85; }
+  #opening .opening__first { position: relative; z-index: 1; height: 100svh; margin-top: -100svh; }
+  #opening .opening__title { position: absolute; left: calc(var(--space-1) + 5vw); top: 21svh; font-size: clamp(56px, 11.6vw, 168px); }
+  #opening .opening__line { display: block; overflow: clip; padding: .2em .12em .24em 0; margin: -.2em 0 -.24em; }
+  #opening .opening__line:nth-child(2) { margin-left: .6em; }
+  #opening .opening__line:nth-child(3) { margin-left: 1.2em; }
+  #opening .opening__word { display: inline-block; }
+  #opening .opening__lead { position: absolute; right: 8vw; bottom: 11svh; width: min(330px, 80vw); }
+  #opening .opening__lead-in { display: grid; justify-items: start; gap: 22px; }
+  #opening .opening__second { position: relative; z-index: 2; display: grid; justify-items: center; align-content: start; gap: 44px; min-height: 100svh; padding: 34svh var(--space-1) 16svh; text-align: center; background: linear-gradient(to bottom, transparent, var(--color-1) 30svh); }
+  #opening .opening__mist { position: absolute; inset: -24svh 0 auto; height: 64svh; pointer-events: none; }
+  #opening .opening__band { position: absolute; width: 96%; height: 70%; background: radial-gradient(closest-side, var(--color-1), color-mix(in srgb, var(--color-1) 60%, transparent) 50%, transparent); }
+  #opening .opening__band:nth-child(1) { left: -15%; top: 30%; }
+  #opening .opening__band:nth-child(2) { right: -15%; top: 10%; width: 70%; }
+  #opening .opening__statement { position: relative; max-width: 1000px; font-size: clamp(30px, 4.1vw, 58px); }
+  #opening .opening__about { position: relative; display: grid; justify-items: center; gap: 20px; max-width: 520px; }
+  @media (max-width: 760px) {
+    #opening .opening__title { left: var(--space-1); top: 18svh; font-size: 17vw; }
+    #opening .opening__line:nth-child(2) { margin-left: .45em; }
+    #opening .opening__line:nth-child(3) { margin-left: .9em; }
+    #opening .opening__lead { left: var(--space-1); right: auto; bottom: 9svh; }
+    #opening .opening__img { object-position: 58% 42%; }
+    #opening .opening__second { padding-top: 30svh; gap: 36px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .opening__photo { animation: opening-settle 1.2s cubic-bezier(.2, .65, .25, 1) backwards; }
+    #opening .opening__word { animation: opening-rise .85s cubic-bezier(.2, .7, .2, 1) backwards; }
+    #opening .opening__line:nth-child(2) .opening__word { animation-delay: .1s; }
+    #opening .opening__line:nth-child(3) .opening__word { animation-delay: .2s; }
+    #opening .opening__lead-in { animation: opening-lift .8s .35s cubic-bezier(.2, .7, .2, 1) backwards; }
+    #opening .opening__fog--1 { animation: opening-drift 7s ease-in-out infinite alternate; }
+    #opening .opening__fog--2 { animation: opening-drift 9s ease-in-out infinite alternate-reverse; }
+    #opening.is-offscreen .opening__fog { animation-play-state: paused; }
+  }
+  @keyframes opening-settle { from { scale: 1.07; } }
+  @keyframes opening-rise { from { translate: 0 108%; } }
+  @keyframes opening-lift { from { translate: 0 22px; opacity: 0; } }
+  @keyframes opening-drift { from { translate: -7vw 0; } to { translate: 7vw 0; } }
+}
+</style>
+<style data-8b-part="section:practice">
+@layer sections {
+  #practice { position: relative; background: var(--color-3); }
+  #practice .practice__intro { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 28px 7vw; align-items: end; padding: var(--space-2) var(--space-1) clamp(64px, 8vw, 120px); }
+  #practice .practice__intro .m-text { max-width: 420px; }
+  #practice .practice__index { position: relative; top: 88px; z-index: 8; height: 0; padding-left: var(--space-1); }
+  #practice .practice__index ol { display: grid; gap: 4px; width: max-content; }
+  #practice .practice__index a { font-size: 13px; }
+  #practice .area { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) min(32vw, 460px) minmax(0, 1fr); grid-template-rows: 1fr auto 1fr; column-gap: 32px; min-height: 100svh; padding: 88px var(--space-1) max(44px, 12svh); background: var(--color-3); overflow: hidden; }
+  #practice .area__shade { position: absolute; inset: 0; z-index: 6; background: var(--color-2); opacity: 0; pointer-events: none; }
+  #practice .area__media { position: relative; grid-column: 2; grid-row: 1 / 4; align-self: center; height: min(76svh, 680px); }
+  #practice .area__figure { --area-u: min(12vw, 19svh); position: absolute; left: 50%; top: 50%; width: var(--area-u); height: var(--area-u); margin: calc(var(--area-u) / -2) 0 0 calc(var(--area-u) / -2); }
+  #practice .area__piece { position: absolute; display: block; background: var(--color-4); }
+  #practice [data-figure="split"] .area__piece:nth-child(1) { left: calc(var(--area-u) * -1.7); top: calc(var(--area-u) * -1.6); width: calc(var(--area-u) * 2.4); height: calc(var(--area-u) * .8); }
+  #practice [data-figure="split"] .area__piece:nth-child(2) { left: calc(var(--area-u) * -.1); top: calc(var(--area-u) * 1.5); width: calc(var(--area-u) * 2.1); height: calc(var(--area-u) * .8); }
+  #practice [data-figure="skew"] .area__piece { width: calc(var(--area-u) * .9); height: calc(var(--area-u) * .9); }
+  #practice [data-figure="skew"] .area__piece:nth-child(1) { left: calc(var(--area-u) * -1.05); top: calc(var(--area-u) * -1.5); }
+  #practice [data-figure="skew"] .area__piece:nth-child(2) { left: calc(var(--area-u) * 1.15); top: calc(var(--area-u) * -1.5); }
+  #practice [data-figure="skew"] .area__piece:nth-child(3) { left: calc(var(--area-u) * -1.05); top: calc(var(--area-u) * 1.5); }
+  #practice [data-figure="skew"] .area__piece:nth-child(4) { left: calc(var(--area-u) * 1.15); top: calc(var(--area-u) * 1.5); }
+  #practice [data-figure="halves"] .area__piece { width: calc(var(--area-u) * 2.2); height: calc(var(--area-u) * 1.1); }
+  #practice [data-figure="halves"] .area__piece:nth-child(1) { left: calc(var(--area-u) * .2); top: calc(var(--area-u) * -1.7); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }
+  #practice [data-figure="halves"] .area__piece:nth-child(2) { left: calc(var(--area-u) * -1.1); top: calc(var(--area-u) * 1.35); border-radius: 0 0 50% 50% / 0 0 100% 100%; }
+  #practice [data-figure="plots"] .area__piece:nth-child(1) { left: calc(var(--area-u) * -1.9); top: calc(var(--area-u) * -1.5); width: calc(var(--area-u) * .7); height: calc(var(--area-u) * .7); }
+  #practice [data-figure="plots"] .area__piece:nth-child(2) { left: calc(var(--area-u) * 1.7); top: calc(var(--area-u) * -1.7); width: var(--area-u); height: var(--area-u); }
+  #practice [data-figure="plots"] .area__piece:nth-child(3) { left: calc(var(--area-u) * -1); top: calc(var(--area-u) * 1.35); width: calc(var(--area-u) * 1.2); height: calc(var(--area-u) * 1.2); }
+  #practice .area__photo { position: relative; height: 100%; overflow: hidden; }
+  #practice .area__img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; mix-blend-mode: multiply; filter: grayscale(1) contrast(1.2) brightness(1.08); }
+  #practice #area-disputes .area__img { filter: grayscale(1) contrast(1.6) brightness(1.34); object-position: 50% 58%; scale: 1.3; translate: 0 16%; }
+  #practice #area-property .area__img { filter: grayscale(1) contrast(1.9) brightness(1.08); object-position: 62% 30%; scale: 1.25; }
+  #practice #area-employment .area__img { filter: grayscale(1) contrast(1.35) brightness(1.12); }
+  #practice .area__title { position: relative; z-index: 3; grid-column: 1 / 4; grid-row: 2; justify-self: center; font-size: clamp(42px, 8.4vw, 122px); }
+  #practice .area__title span { display: block; }
+  #practice .area__title span + span { padding-left: 1.05em; }
+  #practice .area__text { position: relative; z-index: 3; grid-column: 1; grid-row: 3; align-self: end; display: grid; justify-items: start; gap: 18px; max-width: 300px; }
+  #practice .area__terms { position: relative; z-index: 3; grid-column: 3; grid-row: 3; align-self: end; justify-self: end; display: grid; gap: 14px; max-width: 250px; text-align: right; }
+  #practice .area__terms dd { margin-top: 3px; font-size: 15px; line-height: 1.35; }
+  @media (max-width: 760px) {
+    #practice .practice__intro { grid-template-columns: 1fr; }
+    #practice .practice__index { top: 76px; }
+    #practice .practice__index ol { display: flex; gap: 14px; }
+    #practice .practice__index a { font-size: 12.5px; }
+    #practice .area { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; align-content: start; row-gap: 16px; padding: 140px var(--space-1) 12svh; }
+    #practice .area__media { grid-column: 1; grid-row: auto; justify-self: center; width: 62%; height: 28svh; }
+    #practice .area__figure { --area-u: min(13vw, 6svh); }
+    #practice .area__title { grid-column: 1; grid-row: auto; justify-self: start; font-size: clamp(36px, 10.6vw, 56px); }
+    #practice .area__text { grid-column: 1; grid-row: auto; max-width: none; gap: 12px; }
+    #practice .area__text .m-text { font-size: 15px; }
+    #practice .area__terms { grid-column: 1; grid-row: auto; justify-self: stretch; grid-template-columns: 1fr 1fr; gap: 10px 20px; max-width: none; text-align: left; }
+    #practice .area__terms dd { font-size: 14px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:practice">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #practice.is-stacked .practice__index { position: sticky; }
+    #practice.is-stacked .area { position: sticky; top: var(--area-stick, 0px); }
+    #practice.is-stacked .area:not(:last-child) { margin-bottom: 45svh; }
+  }
+}
+</style>
+<style data-8b-part="section:principles">
+@layer sections {
+  #principles { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 56px 6vw; padding: var(--space-2) var(--space-1); }
+  #principles .principles__intro { position: sticky; top: 120px; align-self: start; display: grid; justify-items: start; gap: 24px; max-width: 470px; }
+  #principles .principles__stair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: minmax(clamp(112px, 10vw, 140px), auto); max-width: 640px; }
+  #principles .principles__stair::before { content: ""; grid-column: 2; grid-row: 1; }
+  #principles .promise { grid-row-end: span 2; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; margin-bottom: -1px; padding: 22px 22px 24px; border: 1px solid var(--color-6); background: var(--color-1); }
+  #principles .promise:nth-child(odd) { grid-column: 1; }
+  #principles .promise:nth-child(even) { grid-column: 2; margin-left: -1px; }
+  @media (max-width: 860px) {
+    #principles { grid-template-columns: minmax(0, 1fr); }
+    #principles .principles__intro { position: static; }
+    #principles .principles__stair { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; max-width: none; }
+    #principles .principles__stair::before { display: none; }
+    #principles .promise, #principles .promise:nth-child(odd), #principles .promise:nth-child(even) { grid-column: 1; grid-row-end: auto; width: 84%; min-height: 200px; margin-left: 0; }
+    #principles .promise:nth-child(even) { justify-self: end; }
+    #principles .promise .m-text-5 { font-size: 30px; }
+  }
+}
+</style>
+<style data-8b-part="section:matters">
+@layer sections {
+  #matters { padding: var(--space-2) var(--space-1); }
+  #matters .matters__head { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px 7vw; align-items: end; margin-bottom: clamp(44px, 6vw, 88px); }
+  #matters .matters__table { width: 100%; border-collapse: collapse; border-bottom: 1px solid var(--color-6); }
+  #matters th { padding: 0 16px 14px 0; color: var(--color-5); text-align: left; }
+  #matters tbody tr { background: linear-gradient(var(--color-6), var(--color-6)) 0 0 / 100% 1px no-repeat; }
+  #matters td { padding: 22px 20px 26px 0; vertical-align: top; }
+  #matters td:nth-child(1) { width: 9%; color: var(--color-5); }
+  #matters td:nth-child(2) { width: 25%; font-weight: 500; }
+  #matters td:nth-child(3) { width: 40%; }
+  #matters td:nth-child(4) { width: 26%; font-weight: 500; }
+  @media (max-width: 760px) {
+    #matters .matters__head { grid-template-columns: minmax(0, 1fr); }
+    #matters thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    #matters tbody tr { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 6px 14px; padding: 20px 0 22px; }
+    #matters td, #matters td:nth-child(n) { width: auto; padding: 0; }
+    #matters td:nth-child(1) { grid-row: 1 / 4; }
+    #matters td:nth-child(n + 2) { grid-column: 2; }
+  }
+}
+</style>
+<style data-8b-part="section:offices">
+@layer sections {
+  #offices { padding: var(--space-2) var(--space-1) clamp(72px, 9vw, 128px); overflow-x: clip; }
+  #offices .offices__title { max-width: 860px; margin: 0 auto; text-align: center; }
+  #offices .offices__stage { --offices-r: clamp(300px, 40vw, 540px); --offices-size: clamp(92px, 11vw, 150px); position: relative; height: calc(var(--offices-r) * .84 + 92px); margin: clamp(24px, 3vw, 48px) calc(var(--space-1) * -1) 0; overflow: clip; -webkit-mask-image: linear-gradient(to bottom, var(--color-2) 82%, transparent); mask-image: linear-gradient(to bottom, var(--color-2) 82%, transparent); }
+  #offices .offices__ring { position: absolute; left: 50%; top: calc(var(--offices-r) + 92px); width: 0; height: 0; }
+  #offices .city { position: absolute; left: calc(var(--offices-size) / -2); top: calc(var(--offices-size) / -2); width: var(--offices-size); height: var(--offices-size); overflow: hidden; transform: rotate(calc(var(--city-i) * 19deg)) translateY(calc(var(--offices-r) * -1)); }
+  #offices .city img { width: 100%; height: 100%; object-fit: cover; }
+  #offices .offices__note { position: absolute; left: 50%; top: calc(var(--offices-r) * .47); width: min(440px, 76vw); translate: -50% 0; text-align: center; }
+  #offices .offices__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px var(--space-1); margin-top: clamp(40px, 5vw, 72px); }
+  #offices .offices__list li { display: grid; justify-items: start; align-content: start; gap: 10px; padding-top: 22px; background: linear-gradient(var(--color-6), var(--color-6)) 0 0 / 100% 1px no-repeat; }
+  #offices .offices__city { font-family: var(--font-1); font-size: 24px; font-weight: 500; line-height: 1.1; letter-spacing: -.02em; }
+  @media (max-width: 760px) {
+    #offices .offices__stage { --offices-r: 330px; --offices-size: 92px; height: 520px; }
+    #offices .offices__note { top: 196px; width: min(290px, 78vw); }
+    #offices .offices__list { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:people">
+@layer sections {
+  #people { background: var(--color-7); }
+  #people .people__hold { padding: var(--space-2) var(--space-1); }
+  #people .people__head { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px 7vw; align-items: end; margin-bottom: clamp(40px, 5vw, 64px); }
+  #people .people__track { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 16px; }
+  #people .person { display: grid; align-content: start; gap: 14px; }
+  #people .person__photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-6); }
+  #people .person__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; filter: grayscale(1) contrast(1.05); }
+  #people .person__text { display: grid; justify-items: start; gap: 6px; }
+  #people .person__name { font-family: var(--font-1); font-size: clamp(22px, 1.9vw, 26px); font-weight: 500; line-height: 1.1; letter-spacing: -.02em; }
+  @media (max-width: 760px) {
+    #people .people__head { grid-template-columns: minmax(0, 1fr); }
+    #people .people__track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 12px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:people">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #people.is-track { height: calc(100svh + var(--people-travel, 0px)); }
+    #people.is-track .people__hold { position: sticky; top: 0; display: flex; flex-direction: column; justify-content: center; height: 100svh; padding-top: 80px; padding-bottom: 40px; overflow: clip; }
+    #people.is-track .people__track { display: flex; gap: 16px; width: max-content; }
+    #people.is-track .person { flex: none; width: clamp(210px, 22vw, 310px); }
+    #people.is-track .person__photo { aspect-ratio: auto; height: min(44svh, 430px); }
+    #people.is-track .person__img { position: absolute; left: -9%; top: 0; width: 118%; max-width: none; }
+  }
+}
+</style>
+<style data-8b-part="section:probono">
+@layer sections {
+  #probono { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 48px 6vw; align-items: center; padding: var(--space-2) var(--space-1); }
+  #probono .probono__photo { aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-6); }
+  #probono .probono__img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; scale: 1.16; filter: grayscale(1); }
+  #probono .probono__text { display: grid; gap: clamp(36px, 4vw, 56px); }
+  #probono .probono__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  #probono .probono__list li { display: grid; align-content: start; gap: 10px; padding-top: 18px; border-top: 1px solid var(--color-6); }
+  @media (max-width: 860px) {
+    #probono { grid-template-columns: minmax(0, 1fr); }
+    #probono .probono__photo { aspect-ratio: 4 / 3; }
+    #probono .probono__list { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:fees">
+@layer sections {
+  #fees { padding: var(--space-2) var(--space-1); }
+  #fees .fees__head { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px 7vw; align-items: end; margin-bottom: clamp(48px, 6vw, 88px); }
+  #fees .fees__axis, #fees .mode { display: grid; grid-template-columns: minmax(150px, .7fr) minmax(0, 1.6fr) minmax(0, 1.1fr); gap: 20px clamp(24px, 3.5vw, 56px); }
+  #fees .fees__axis { padding-bottom: 14px; color: var(--color-5); }
+  #fees .fees__axis-line { grid-column: 2; display: flex; justify-content: space-between; gap: 16px; }
+  #fees .mode { align-items: center; padding: 30px 0 34px; border-top: 1px solid var(--color-6); }
+  #fees .mode:last-child { border-bottom: 1px solid var(--color-6); }
+  #fees .mode__track { position: relative; height: 40px; background: linear-gradient(var(--color-6), var(--color-6)) 0 50% / 100% 1px no-repeat; }
+  #fees .mode__bar { position: absolute; top: 0; bottom: 0; left: 0; display: block; background: var(--color-4); transform-origin: 0 50%; }
+  #fees [data-reach="exact"] .mode__bar { width: 9%; }
+  #fees [data-reach="cap"] .mode__bar { width: 52%; }
+  #fees [data-reach="cap"] .mode__stop { position: absolute; top: -10px; bottom: -10px; left: 52%; width: 2px; margin-left: -1px; background: var(--color-2); transform-origin: 50% 100%; }
+  #fees [data-reach="estimate"] .mode__bar { width: 94%; background: linear-gradient(to right, var(--color-4) 58%, transparent); }
+  #fees .mode__text { display: grid; gap: 8px; }
+  @media (max-width: 760px) {
+    #fees .fees__head { grid-template-columns: minmax(0, 1fr); }
+    #fees .fees__axis, #fees .mode { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    #fees .fees__axis-line { grid-column: 1; }
+    #fees .mode { padding: 26px 0 28px; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 48px 6vw; padding: var(--space-2) var(--space-1); background: var(--color-7); }
+  #faq .faq__side { position: sticky; top: 120px; align-self: start; display: grid; justify-items: start; gap: 24px; max-width: 460px; }
+  #faq .faq__list { border-bottom: 1px solid var(--color-6); }
+  #faq .qa { background: linear-gradient(var(--color-5), var(--color-5)) 0 0 / 100% 1px no-repeat; }
+  #faq .qa__q { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; list-style: none; cursor: pointer; font-family: var(--font-1); font-size: clamp(19px, 1.7vw, 23px); font-weight: 500; line-height: 1.25; letter-spacing: -.015em; }
+  #faq .qa__q::-webkit-details-marker { display: none; }
+  #faq .qa__mark { position: relative; flex: none; width: 16px; height: 16px; }
+  #faq .qa__mark::before, #faq .qa__mark::after { content: ""; position: absolute; left: 0; top: 50%; width: 100%; height: 1.5px; margin-top: -.75px; background: currentColor; transition: rotate .4s cubic-bezier(.7, 0, .2, 1); }
+  #faq .qa__mark::after { rotate: 90deg; }
+  #faq .qa[open] .qa__mark::after { rotate: 0deg; }
+  #faq .qa[open] .qa__mark::before { background: var(--color-4); }
+  #faq .qa__a { max-width: 640px; padding: 0 40px 28px 0; }
+  @media (max-width: 860px) {
+    #faq { grid-template-columns: minmax(0, 1fr); }
+    #faq .faq__side { position: static; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding: var(--space-2) var(--space-1) clamp(80px, 9vw, 128px); }
+  #contact .contact__statement { max-width: 1000px; margin: 0 auto; text-align: center; }
+  #contact .contact__fan { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: clamp(56px, 7vw, 104px) auto; max-width: 1000px; }
+  #contact .contact__photo { aspect-ratio: 1; overflow: hidden; background: var(--color-6); }
+  #contact .contact__photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); }
+  #contact .contact__grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 56px 7vw; padding-top: clamp(40px, 5vw, 64px); border-top: 1px solid var(--color-6); }
+  #contact .contact__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
+  #contact .contact__wide, #contact .contact__send { grid-column: 1 / -1; }
+  #contact .contact__send { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+  #contact .contact__details { display: grid; align-content: start; gap: 32px; }
+  #contact .contact__details > div { display: grid; justify-items: start; gap: 10px; }
+  #contact .contact__big { font-size: clamp(22px, 2vw, 28px); letter-spacing: -.02em; }
+  #contact .contact__details > .contact__icons { display: flex; gap: 12px; }
+  #contact .contact__icons svg { display: block; width: 100%; height: 100%; }
+  @media (max-width: 760px) {
+    #contact .contact__fan { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    #contact .contact__grid, #contact .contact__form { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { display: grid; gap: 28px; padding: 44px var(--space-1) 40px; background: var(--color-7); border-top: 1px solid var(--color-6); }
+  #footer .footer__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; }
+  #footer .footer__logo { display: flex; align-items: center; gap: 12px; color: var(--color-2); text-decoration: none; font-family: var(--font-1); font-size: 15px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
+  #footer .footer__mark { width: 11px; height: 11px; background: var(--color-4); }
+  #footer .footer__links { display: flex; flex-wrap: wrap; gap: 10px 28px; }
+  #footer .footer__legal { max-width: 860px; }
+}
+</style>
+</head>
+<body>
+<!-- navigation: fixed bar: logo, seven section links and a Book a first call button; hides on scroll down; full-screen menu below 1000 px -->
+<header id="nav" class="nav" data-8b-section="navigation">
+  <div class="nav__bar">
+    <a class="nav__logo" href="#opening" aria-label="Fellgate, back to the top"><span class="nav__mark" aria-hidden="true"></span><span>Fellgate</span></a>
+    <nav class="nav__links" aria-label="Main">
+      <a class="m-link-2" href="#practice">Practice</a>
+      <a class="m-link-2" href="#principles">Principles</a>
+      <a class="m-link-2" href="#matters">Matters</a>
+      <a class="m-link-2" href="#offices">Offices</a>
+      <a class="m-link-2" href="#people">Partners</a>
+      <a class="m-link-2" href="#fees">Fees</a>
+      <a class="m-link-2" href="#contact">Contact</a>
+    </nav>
+    <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Book a first call</span></a>
+    <button class="m-icon nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span class="sr-only">Open the menu</span><span class="m-icon__glyph" aria-hidden="true"></span></button>
+  </div>
+  <div class="nav__menu" id="nav-menu" data-lenis-prevent hidden>
+    <button class="m-icon nav__close" type="button"><span class="sr-only">Close the menu</span><span class="m-icon__glyph" aria-hidden="true"></span></button>
+    <nav class="nav__menu-links" aria-label="Menu">
+      <a class="m-link-2" href="#practice">Practice</a>
+      <a class="m-link-2" href="#principles">Principles</a>
+      <a class="m-link-2" href="#matters">Matters</a>
+      <a class="m-link-2" href="#offices">Offices</a>
+      <a class="m-link-2" href="#people">Partners</a>
+      <a class="m-link-2" href="#fees">Fees</a>
+      <a class="m-link-2" href="#contact">Contact</a>
+    </nav>
+    <a class="m-btn" href="#contact"><span class="m-btn__label">Book a first call</span></a>
+  </div>
+</header>
+<main>
+<!-- opening: two screens: a monochrome mountain photo in fog with the stepped h1 and a lead, then a statement and a paragraph about the firm inked out of the white (animation: scene:opening) -->
+<section id="opening" class="opening" data-8b-section="opening">
+  <div class="opening__stage">
+    <div class="opening__photo"><img style="background:#d9d9d9" class="opening__img" src="https://images.unsplash.com/photo-1701483807207-674bfac9f33e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bW91bnRhaW4lMjByaWRnZSUyMGZvZyUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MXwwfHx8MTc5MTQwMTE3Nnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="A mountain ridge rising out of low cloud" width="1600" height="1067" fetchpriority="high"></div>
+    <div class="opening__fog opening__fog--1" aria-hidden="true"></div>
+    <div class="opening__fog opening__fog--2" aria-hidden="true"></div>
+  </div>
+  <div class="opening__first">
+    <h1 class="m-text-2 opening__title"><span class="opening__line"><span class="opening__word">Hold</span></span> <span class="opening__line"><span class="opening__word">your</span></span> <span class="opening__line"><span class="opening__word">ground.</span></span></h1>
+    <div class="opening__lead"><div class="opening__lead-in">
+      <p class="m-text-6">Commercial lawyers for growing companies, their founders and the boards that steer them.</p>
+      <a class="m-link" href="#practice">Our practice areas</a>
+    </div></div>
+  </div>
+  <div class="opening__second">
+    <div class="opening__mist" aria-hidden="true"><span class="opening__band"></span><span class="opening__band"></span></div>
+    <p class="m-text-3 opening__statement">Fellgate is a commercial law firm of seventy lawyers in Edinburgh, London and Dublin, built to keep growing companies on firm ground when the stakes rise.</p>
+    <div class="opening__about">
+      <p class="m-text">Three litigators founded the firm in 2009, tired of advice nobody could act on. We still answer in plain English, in writing, within one working day.</p>
+      <a class="m-link" href="#principles">How we practise</a>
+    </div>
+  </div>
+</section>
+<!-- practice areas: intro and four full-screen practice panels that stack, each with a photo over red shapes, a two-line title, text and key terms (animation: scene:practice) -->
+<section id="practice" class="practice" data-8b-section="practice areas">
+  <div class="practice__intro">
+    <h2 class="m-text-3">Four practices, one standard: advice you can act on the same day.</h2>
+    <p class="m-text">Each practice is led by partners who still draft, argue and negotiate themselves. Most of our clients use two of them within their first year.</p>
+  </div>
+  <nav class="practice__index" aria-label="Practice areas">
+    <ol>
+      <li><a class="m-link-2" href="#area-corporate">Corporate</a></li>
+      <li><a class="m-link-2" href="#area-disputes">Disputes</a></li>
+      <li><a class="m-link-2" href="#area-employment">Employment</a></li>
+      <li><a class="m-link-2" href="#area-property">Real Estate</a></li>
+    </ol>
+  </nav>
+  <div class="practice__panels">
+    <article class="area" id="area-corporate" data-figure="split">
+      <div class="area__media">
+        <div class="area__figure" aria-hidden="true"><span class="area__piece"></span><span class="area__piece"></span></div>
+        <figure class="area__photo"><img style="background:#f3f3f3" class="area__img" src="https://images.unsplash.com/photo-1706601607561-f0b5b26a60e8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8YmFyZSUyMGJyYW5jaCUyMGFnYWluc3QlMjB3aGl0ZSUyMHNreXxlbnwxfDF8fHwxNzkxNDAxMjM1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=460&amp;q=60" alt="A bare branch against a white sky" width="1067" height="1600" loading="lazy"></figure>
+      </div>
+      <h3 class="m-text-2 area__title"><span>Corporate &amp;</span> <span>Transactions</span></h3>
+      <div class="area__text">
+        <p class="m-text">Funding rounds, acquisitions, buy-outs and the shareholder agreements that hold a growing company together. We draft for the deal you want and for the dispute you hope never comes.</p>
+        <a class="m-link" href="#contact">Talk to the corporate team</a>
+      </div>
+      <dl class="area__terms">
+        <div><dt class="m-text-4">Typical matters</dt><dd>Series A–C rounds, bolt-on acquisitions, buy-outs</dd></div>
+        <div><dt class="m-text-4">Deal range</dt><dd>£2m ⟷ £150m</dd></div>
+        <div><dt class="m-text-4">Team</dt><dd>22 lawyers</dd></div>
+        <div><dt class="m-text-4">Lead partner</dt><dd>Callum Rennie</dd></div>
+      </dl>
+      <div class="area__shade" aria-hidden="true"></div>
+    </article>
+    <article class="area" id="area-disputes" data-figure="skew">
+      <div class="area__media">
+        <div class="area__figure" aria-hidden="true"><span class="area__piece"></span><span class="area__piece"></span><span class="area__piece"></span><span class="area__piece"></span></div>
+        <figure class="area__photo"><img style="background:#d9d9d9" class="area__img" src="https://images.unsplash.com/photo-1729907919631-02f92b37b0e4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2luZ2xlJTIwZmVhdGhlciUyMHdoaXRlJTIwYmFja2dyb3VuZCUyMG1vbm9jaHJvbWV8ZW58MXwxfHx8MTc5MTQwMTI0Mnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=590&amp;q=60" alt="A dark feather resting in pale fog" width="1067" height="1600" loading="lazy"></figure>
+      </div>
+      <h3 class="m-text-2 area__title"><span>Disputes &amp;</span> <span>Litigation</span></h3>
+      <div class="area__text">
+        <p class="m-text">Commercial disputes settled early where we can and fought to judgment where we must, in the courts of three jurisdictions or in arbitration.</p>
+        <a class="m-link" href="#contact">Talk to the disputes team</a>
+      </div>
+      <dl class="area__terms">
+        <div><dt class="m-text-4">Typical matters</dt><dd>Contract, shareholder and supply disputes</dd></div>
+        <div><dt class="m-text-4">Forums</dt><dd>Court of Session, High Court, Irish courts, arbitration</dd></div>
+        <div><dt class="m-text-4">Team</dt><dd>18 lawyers</dd></div>
+        <div><dt class="m-text-4">Lead partner</dt><dd>Samuel Adeyemi</dd></div>
+      </dl>
+      <div class="area__shade" aria-hidden="true"></div>
+    </article>
+    <article class="area" id="area-employment" data-figure="halves">
+      <div class="area__media">
+        <div class="area__figure" aria-hidden="true"><span class="area__piece"></span><span class="area__piece"></span></div>
+        <figure class="area__photo"><img style="background:#d9d9d9" class="area__img" src="https://images.unsplash.com/photo-1643781410334-17360bb7bf2f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z3Jhc3MlMjBzZWVkJTIwaGVhZCUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwxfDF8fHwxNzkxNDAxMjQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=520&amp;q=60" alt="Dry grass heads standing against a pale sky" width="1200" height="1600" loading="lazy"></figure>
+      </div>
+      <h3 class="m-text-2 area__title"><span>People &amp;</span> <span>Employment</span></h3>
+      <div class="area__text">
+        <p class="m-text">Contracts, restructures, senior exits and tribunal claims, for employers who would rather keep their people and their reputation.</p>
+        <a class="m-link" href="#contact">Talk to the employment team</a>
+      </div>
+      <dl class="area__terms">
+        <div><dt class="m-text-4">Typical matters</dt><dd>Restructures, executive exits, policies</dd></div>
+        <div><dt class="m-text-4">Clients</dt><dd>Employers of 20 to 2,000 people</dd></div>
+        <div><dt class="m-text-4">Team</dt><dd>14 lawyers</dd></div>
+        <div><dt class="m-text-4">Lead partner</dt><dd>Grace Nwosu</dd></div>
+      </dl>
+      <div class="area__shade" aria-hidden="true"></div>
+    </article>
+    <article class="area" id="area-property" data-figure="plots">
+      <div class="area__media">
+        <div class="area__figure" aria-hidden="true"><span class="area__piece"></span><span class="area__piece"></span><span class="area__piece"></span></div>
+        <figure class="area__photo"><img style="background:#f3f3f3" class="area__img" src="https://images.unsplash.com/photo-1642105152226-1ab362672b18?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8Z3Jhc3MlMjBzZWVkJTIwaGVhZCUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwxfDF8fHwxNzkxNDAxMjQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A dried seed head on a thin stem against white" width="1068" height="1600" loading="lazy"></figure>
+      </div>
+      <h3 class="m-text-2 area__title"><span>Real Estate</span> <span>&amp; Planning</span></h3>
+      <div class="area__text">
+        <p class="m-text">Leases, acquisitions and planning consents for the offices, warehouses and sites that companies grow into.</p>
+        <a class="m-link" href="#contact">Talk to the property team</a>
+      </div>
+      <dl class="area__terms">
+        <div><dt class="m-text-4">Typical matters</dt><dd>Leases, site purchases, planning appeals</dd></div>
+        <div><dt class="m-text-4">Deal range</dt><dd>£500k ⟷ £60m</dd></div>
+        <div><dt class="m-text-4">Team</dt><dd>16 lawyers</dd></div>
+        <div><dt class="m-text-4">Lead partner</dt><dd>Inés Carvalho</dd></div>
+      </dl>
+      <div class="area__shade" aria-hidden="true"></div>
+    </article>
+  </div>
+</section>
+<!-- principles: five promises in red serif in a two-column staircase of hairline cells, beside an intro and a link to fees (animation: scene:principles) -->
+<section id="principles" class="principles" data-8b-section="principles">
+  <div class="principles__intro">
+    <h2 class="m-text-3">Five promises, written into every engagement letter.</h2>
+    <p class="m-text">We set them down in 2009 and have not needed to change a word. If we break one, the next month of work on your matter is on us.</p>
+    <a class="m-link" href="#fees">How our fees work</a>
+  </div>
+  <ol class="principles__stair">
+    <li class="promise"><h3 class="m-text-5">A partner answers.</h3><p class="m-text-7">Every matter is led by a named partner whose direct line is printed on your letter, from the first call to the last invoice.</p></li>
+    <li class="promise"><h3 class="m-text-5">Fees before work.</h3><p class="m-text-7">You approve a fixed or capped fee before we start. Any change reaches you in writing, with its reason, before it is spent.</p></li>
+    <li class="promise"><h3 class="m-text-5">Advice you can act on.</h3><p class="m-text-7">A recommendation and the reasons for it, in plain English, never a memo of options to decode.</p></li>
+    <li class="promise"><h3 class="m-text-5">One working day.</h3><p class="m-text-7">Every message gets a real answer within one working day, even when the answer is when we will know more.</p></li>
+    <li class="promise"><h3 class="m-text-5">The exit before the courtroom.</h3><p class="m-text-7">We look for the settlement first. Most disputes we take on end with a letter, not a hearing.</p></li>
+  </ol>
+</section>
+<!-- selected matters: table of six recent matters: year, client, matter, outcome -->
+<section id="matters" class="matters" data-8b-section="selected matters">
+  <div class="matters__head">
+    <h2 class="m-text-3">Recent matters, told plainly.</h2>
+    <p class="m-text-7">Clients described with their permission; outcomes as they stand in 2026.</p>
+  </div>
+  <table class="matters__table">
+    <thead><tr><th class="m-text-4" scope="col">Year</th><th class="m-text-4" scope="col">Client</th><th class="m-text-4" scope="col">Matter</th><th class="m-text-4" scope="col">Outcome</th></tr></thead>
+    <tbody>
+      <tr data-8b-motion="rule"><td>2026</td><td>Robotics manufacturer, Leeds</td><td>£48m Series C led by a US growth fund, with a secondary sale for early staff</td><td>Closed in nine weeks</td></tr>
+      <tr data-8b-motion="rule"><td>2025</td><td>Family hotel group, Highlands</td><td>Shareholder dispute between three generations of owners</td><td>Settled by mediation, no hearing</td></tr>
+      <tr data-8b-motion="rule"><td>2025</td><td>Software company, Dublin</td><td>Restructure of a 140-person team across four countries</td><td>No tribunal claims</td></tr>
+      <tr data-8b-motion="rule"><td>2024</td><td>Logistics operator, Midlands</td><td>Acquisition of six warehouse sites and their leases</td><td>Completed on the agreed day</td></tr>
+      <tr data-8b-motion="rule"><td>2024</td><td>Fintech founder, London</td><td>Exit of a co-founder and a buy-back of her shares</td><td>Agreed in one meeting</td></tr>
+      <tr data-8b-motion="rule"><td>2023</td><td>Food producer, Fife</td><td>£2.1m supply contract claim against a national retailer</td><td>Recovered in full before trial</td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- offices: an arc of ten city photos turning around a paragraph, then three office addresses and phones (animation: scene:offices) -->
+<section id="offices" class="offices" data-8b-section="offices">
+  <h2 class="m-text-3 offices__title">Three offices, and partner firms in twelve more countries.</h2>
+  <div class="offices__stage">
+    <ul class="offices__ring">
+      <li class="city" style="--city-i: -4.5"><img style="background:#c0c0c0" src="https://images.unsplash.com/photo-1758441395607-28172cc8d663?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8TGlzYm9uJTIwdHJhbSUyMHN0cmVldHxlbnwxfDJ8fHwxNzkxNDAxMjgxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;q=60" alt="A red and yellow tram in a Lisbon street" width="1600" height="1600" loading="lazy"></li>
+      <li class="city" style="--city-i: -3.5"><img style="background:#597373" src="https://images.unsplash.com/photo-1739890806725-e9b82aeeb9ca?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8TWFkcmlkJTIwc3RyZWV0JTIwYnVpbGRpbmd8ZW58MXwyfHx8MTc5MTQwMTMwNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=60" alt="A domed corner building in Madrid" width="1600" height="1600" loading="lazy"></li>
+      <li class="city" style="--city-i: -2.5"><img style="background:#c0c0d9" src="https://images.unsplash.com/photo-1754138343152-c9be9eb2b30f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8UGFyaXMlMjByb29mdG9wc3xlbnwxfDJ8fHwxNzkxNDAxMzAyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=240&amp;q=60" alt="Paris rooftops below Sacré-Cœur" width="1600" height="1460" loading="lazy"></li>
+      <li class="city" style="--city-i: -1.5"><img style="background:#d9f3f3" src="https://images.unsplash.com/photo-1644518877761-cfcc7b9f05fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8TG9uZG9uJTIwc3RyZWV0JTIwYXJjaGl0ZWN0dXJlfGVufDF8Mnx8fDE3OTE0MDEyNzh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=210&amp;q=60" alt="The Millennium Bridge leading to St Paul's in London" width="1600" height="1760" loading="lazy"></li>
+      <li class="city" style="--city-i: -.5"><img style="background:#c0d9d9" src="https://images.unsplash.com/photo-1634565055864-06ac02738f15?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8RWRpbmJ1cmdoJTIwb2xkJTIwdG93bnxlbnwxfDJ8fHwxNzkxNDAxMjc3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=180&amp;q=60" alt="Edinburgh Castle on its rock" width="1600" height="1740" loading="lazy"></li>
+      <li class="city" style="--city-i: .5"><img style="background:#737373" src="https://images.unsplash.com/photo-1699791912534-007c6ea82878?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8RHVibGluJTIwR2VvcmdpYW4lMjBkb29yc3xlbnwxfDJ8fHwxNzkxNDAxMjc5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=180&amp;q=60" alt="An ivy-covered Georgian building in Dublin" width="1600" height="1600" loading="lazy"></li>
+      <li class="city" style="--city-i: 1.5"><img style="background:#404040" src="https://images.unsplash.com/photo-1703870604716-70fa10dd2b3e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8QW1zdGVyZGFtJTIwY2FuYWwlMjBob3VzZXN8ZW58MXwyfHx8MTc5MTQwMTI3OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=210&amp;q=60" alt="Canal houses and a bicycle by the water in Amsterdam" width="1600" height="1600" loading="lazy"></li>
+      <li class="city" style="--city-i: 2.5"><img style="background:#d9d9d9" src="https://images.unsplash.com/photo-1736247150811-689481e7a778?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Q29wZW5oYWdlbiUyMGhhcmJvdXJ8ZW58MXwyfHx8MTc5MTQwMTI4MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=220&amp;q=60" alt="Coloured harbour houses and a red boat in Copenhagen" width="1600" height="1600" loading="lazy"></li>
+      <li class="city" style="--city-i: 3.5"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1595036969386-a68369442612?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8U3RvY2tob2xtJTIwb2xkJTIwdG93bnxlbnwxfDJ8fHwxNzkxNDAxMzAyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=60" alt="A narrow lane of ochre houses in Stockholm's old town" width="1600" height="1600" loading="lazy"></li>
+      <li class="city" style="--city-i: 4.5"><img style="background:#40260c" src="https://images.unsplash.com/photo-1722089239079-562e29bac049?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8TWlsYW4lMjBhcmNoaXRlY3R1cmV8ZW58MXwyfHx8MTc5MTQwMTMwNXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;q=60" alt="Milan Cathedral against a blue sky" width="1600" height="1600" loading="lazy"></li>
+    </ul>
+    <p class="m-text-6 offices__note">From Edinburgh, London and Dublin we act across Europe, with partner firms in Lisbon, Madrid, Paris, Amsterdam, Copenhagen, Stockholm, Milan and five more countries, briefed in one call and billed through us.</p>
+  </div>
+  <ul class="offices__list">
+    <li data-8b-motion="rule"><h3 class="offices__city" data-rule-part>Edinburgh</h3><p class="m-text-7" data-rule-part>1 Example Street, Edinburgh EH1 0ZZ</p><a data-8b-placeholder="phone" class="m-link" href="tel:+441310000000" data-rule-part>+44 131 000 0000</a></li>
+    <li data-8b-motion="rule"><h3 class="offices__city" data-rule-part>London</h3><p class="m-text-7" data-rule-part>1 Example Street, London WC1R 0ZZ</p><a data-8b-placeholder="phone" class="m-link" href="tel:+442000000000" data-rule-part>+44 20 0000 0000</a></li>
+    <li data-8b-motion="rule"><h3 class="offices__city" data-rule-part>Dublin</h3><p class="m-text-7" data-rule-part>1 Example Street, Dublin 2</p><a data-8b-placeholder="phone" class="m-link" href="tel:+35310000000" data-rule-part>+353 1 000 0000</a></li>
+  </ul>
+</section>
+<!-- partners: six partner portraits with practice, city and direct line, carried sideways by the scroll (animation: scene:people) -->
+<section id="people" class="people" data-8b-section="partners">
+  <div class="people__hold">
+    <div class="people__head">
+      <h2 class="m-text-3">Seventy lawyers. Six partners sign the letters.</h2>
+      <p class="m-text-7">Every client has one of these direct lines from the first call. Their teams do the drafting; they do the deciding.</p>
+    </div>
+    <ul class="people__track">
+      <li class="person">
+        <figure class="person__photo"><img style="background:#8c8c8c" class="person__img" src="https://images.unsplash.com/photo-1713190477173-2368e1291193?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWF0dXJlJTIwbWFuJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGJhY2tncm91bmQlMjBzdWl0fGVufDF8MXx8fDE3OTE0MDEzMzl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=380&amp;q=60" alt="Anders Holm, founding partner" width="1067" height="1600" loading="lazy"></figure>
+        <div class="person__text"><p class="m-text-4">Disputes · Edinburgh</p><h3 class="person__name">Anders Holm</h3><a data-8b-placeholder="phone" class="m-link" href="tel:+441310000000">+44 131 000 0000</a></div>
+      </li>
+      <li class="person">
+        <figure class="person__photo"><img style="background:#404040" class="person__img" src="https://images.unsplash.com/photo-1655249481446-25d575f1c054?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29tYW4lMjBleGVjdXRpdmUlMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxNDAxMzU3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=380&amp;q=60" alt="Fiona Strachan, founding partner" width="1067" height="1600" loading="lazy"></figure>
+        <div class="person__text"><p class="m-text-4">Corporate · Edinburgh</p><h3 class="person__name">Fiona Strachan</h3><a data-8b-placeholder="phone" class="m-link" href="tel:+441310000000">+44 131 000 0000</a></div>
+      </li>
+      <li class="person">
+        <figure class="person__photo"><img style="background:#f3f3f3" class="person__img" src="https://images.unsplash.com/photo-1612813560949-e1d3f2774c31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bWF0dXJlJTIwbWFuJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGJhY2tncm91bmQlMjBzdWl0fGVufDF8MXx8fDE3OTE0MDEzMzl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=380&amp;q=60" alt="Samuel Adeyemi, managing partner" width="1067" height="1600" loading="lazy"></figure>
+        <div class="person__text"><p class="m-text-4">Disputes · London</p><h3 class="person__name">Samuel Adeyemi</h3><a data-8b-placeholder="phone" class="m-link" href="tel:+442000000000">+44 20 0000 0000</a></div>
+      </li>
+      <li class="person">
+        <figure class="person__photo"><img style="background:#737373" class="person__img" src="https://images.unsplash.com/photo-1648757766966-43d24bf7a264?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWF0dXJlJTIwbWFuJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGJhY2tncm91bmQlMjBzdWl0fGVufDF8MXx8fDE3OTE0MDEzMzl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=380&amp;q=60" alt="Callum Rennie, partner" width="1067" height="1600" loading="lazy"></figure>
+        <div class="person__text"><p class="m-text-4">Corporate · Edinburgh</p><h3 class="person__name">Callum Rennie</h3><a data-8b-placeholder="phone" class="m-link" href="tel:+441310000000">+44 131 000 0000</a></div>
+      </li>
+      <li class="person">
+        <figure class="person__photo"><img style="background:#a6a6a6" class="person__img" src="https://images.unsplash.com/photo-1760543998147-117ae5649c5c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8d29tYW4lMjBleGVjdXRpdmUlMjBwb3J0cmFpdCUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxNDAxMzU3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=380&amp;q=60" alt="Inés Carvalho, partner" width="1067" height="1600" loading="lazy"></figure>
+        <div class="person__text"><p class="m-text-4">Real Estate · London</p><h3 class="person__name">Inés Carvalho</h3><a data-8b-placeholder="phone" class="m-link" href="tel:+442000000000">+44 20 0000 0000</a></div>
+      </li>
+      <li class="person">
+        <figure class="person__photo"><img style="background:#a6f3f3" class="person__img" src="https://images.unsplash.com/photo-1784652952109-3004215f6303?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmlkZW50JTIwYnVzaW5lc3N3b21hbiUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTE0MDEzNTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=380&amp;q=60" alt="Grace Nwosu, partner" width="1067" height="1600" loading="lazy"></figure>
+        <div class="person__text"><p class="m-text-4">Employment · Dublin</p><h3 class="person__name">Grace Nwosu</h3><a data-8b-placeholder="phone" class="m-link" href="tel:+35310000000">+353 1 000 0000</a></div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- pro bono: a photo beside a large statement and three items of pro bono work -->
+<section id="probono" class="probono" data-8b-section="pro bono">
+  <figure class="probono__photo"><img style="background:#262626" class="probono__img" data-8b-motion="drift" src="https://images.unsplash.com/photo-1764075832652-c05d571af505?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bW91bnRhaW4lMjByaWRnZSUyMGZvZyUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MXwwfHx8MTc5MTQwMTE3Nnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=940&amp;q=60" alt="Layered mountain ridges under a pale sky" width="1600" height="1087" loading="lazy"></figure>
+  <div class="probono__text">
+    <h2 class="m-text-3" data-8b-motion="ink">One working day in ten belongs to people who could never pay for it.</h2>
+    <ul class="probono__list">
+      <li><p class="m-text-4">Tenants</p><p class="m-text-7">Defending families against unlawful evictions, with the law centres of Glasgow and Dublin.</p></li>
+      <li><p class="m-text-4">Charities</p><p class="m-text-7">Governance and contracts for forty small trusts that could never retain a firm.</p></li>
+      <li><p class="m-text-4">Founders</p><p class="m-text-7">A free first-contract clinic every second Thursday, for founders who have not yet raised money.</p></li>
+    </ul>
+  </div>
+</section>
+<!-- fees: three fee types on one scale: red bars for fixed, capped and hourly, with their terms (animation: scene:fees) -->
+<section id="fees" class="fees" data-8b-section="fees">
+  <div class="fees__head">
+    <h2 class="m-text-3">Fees agreed before the work, in writing.</h2>
+    <p class="m-text">Most matters run on a fixed or capped fee. Hourly work comes with an estimate we hold ourselves to. Each bar shows how far the bill can move from what you agreed.</p>
+  </div>
+  <div class="fees__axis" aria-hidden="true"><div class="fees__axis-line"><span class="m-text-4">What you agreed</span><span class="m-text-4">How far it can move</span></div></div>
+  <ol class="fees__modes">
+    <li class="mode" data-reach="exact">
+      <h3 class="m-text-5">Fixed</h3>
+      <div class="mode__track" aria-hidden="true"><span class="mode__bar"></span></div>
+      <div class="mode__text"><p class="m-text">One price for a defined piece of work: a shareholder agreement, a lease, a funding round.</p><p class="m-text-7">It changes only if the scope does, and only with your signature.</p></div>
+    </li>
+    <li class="mode" data-reach="cap">
+      <h3 class="m-text-5">Capped</h3>
+      <div class="mode__track" aria-hidden="true"><span class="mode__bar"></span><span class="mode__stop"></span></div>
+      <div class="mode__text"><p class="m-text">An estimate with a ceiling, for work that cannot be mapped in advance: a negotiation, an early dispute.</p><p class="m-text-7">Below the cap you pay for the time used; above it, we carry it.</p></div>
+    </li>
+    <li class="mode" data-reach="estimate">
+      <h3 class="m-text-5">Hourly</h3>
+      <div class="mode__track" aria-hidden="true"><span class="mode__bar"></span></div>
+      <div class="mode__text"><p class="m-text">Partner and associate rates for litigation and open-ended work, with a written estimate for every stage.</p><p class="m-text-7">We tell you before an estimate is reached, not after.</p></div>
+    </li>
+  </ol>
+</section>
+<!-- questions: six questions and answers (native <details>) beside a heading and a Book a first call button -->
+<section id="faq" class="faq" data-8b-section="questions">
+  <div class="faq__side">
+    <h2 class="m-text-3">Questions clients ask before the first call.</h2>
+    <p class="m-text">Anything else, ask the partner on the call. It takes thirty minutes and costs nothing.</p>
+    <a class="m-btn" href="#contact"><span class="m-btn__label">Book a first call</span></a>
+  </div>
+  <div class="faq__list">
+    <details class="qa" data-8b-motion="rule"><summary class="qa__q"><span>Is the first call charged?</span><span class="qa__mark" aria-hidden="true"></span></summary><div class="qa__a"><p class="m-text">No. The first thirty minutes with a partner are free. On that call we tell you whether we are the right firm and what a fixed or capped fee would be.</p></div></details>
+    <details class="qa" data-8b-motion="rule"><summary class="qa__q"><span>Do you act for individuals?</span><span class="qa__mark" aria-hidden="true"></span></summary><div class="qa__a"><p class="m-text">For founders, directors and senior executives, in matters connected to their companies: exits, disputes with co-founders and employment terms. We do not handle family or criminal matters.</p></div></details>
+    <details class="qa" data-8b-motion="rule"><summary class="qa__q"><span>How quickly can you start?</span><span class="qa__mark" aria-hidden="true"></span></summary><div class="qa__a"><p class="m-text">Usually within the same week. For an urgent injunction or a deal with a deadline, the same day: say so when you call.</p></div></details>
+    <details class="qa" data-8b-motion="rule"><summary class="qa__q"><span>Can you act across borders?</span><span class="qa__mark" aria-hidden="true"></span></summary><div class="qa__a"><p class="m-text">Yes. Our teams cover Scots, English and Irish law, and our partner firms cover twelve more countries under the same engagement letter and one invoice.</p></div></details>
+    <details class="qa" data-8b-motion="rule"><summary class="qa__q"><span>What if the estimate turns out wrong?</span><span class="qa__mark" aria-hidden="true"></span></summary><div class="qa__a"><p class="m-text">Then it is our problem first. Capped fees stay capped. On hourly work we tell you before an estimate is reached, and you decide whether we go on.</p></div></details>
+    <details class="qa" data-8b-motion="rule"><summary class="qa__q"><span>Who will do the work?</span><span class="qa__mark" aria-hidden="true"></span></summary><div class="qa__a"><p class="m-text">The partner you meet leads it and signs off every piece of advice. Associates draft where that saves you money, and you will know their names from the first day.</p></div></details>
+  </div>
+</section>
+<!-- contact: closing statement, four office photos dealt into a row, a contact form (no back end yet) and phone, email and out-of-hours line (animation: scene:contact) -->
+<section id="contact" class="contact" data-8b-section="contact">
+  <h2 class="m-text-3 contact__statement" data-8b-motion="ink">Tell us where you need to stand. A partner will call you back within one working day.</h2>
+  <div class="contact__fan">
+    <figure class="contact__photo"><img style="background:#c0c0a6" src="https://images.unsplash.com/photo-1719220231909-e79c5c9d4871?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8b2ZmaWNlJTIwaW50ZXJpb3IlMjBtaW5pbWFsJTIwd2hpdGV8ZW58MXwxfHx8MTc5MTQwMTM1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" alt="A quiet meeting corner in the Edinburgh office" width="1200" height="1600" loading="lazy"></figure>
+    <figure class="contact__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1765371512707-9e0e96fd9e5b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8b2ZmaWNlJTIwaW50ZXJpb3IlMjBtaW5pbWFsJTIwd2hpdGV8ZW58MXwxfHx8MTc5MTQwMTM1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" alt="A client room with wood panelling in the London office" width="1115" height="1600" loading="lazy"></figure>
+    <figure class="contact__photo"><img style="background:#a6a6a6" src="https://images.unsplash.com/photo-1771270759486-1f7703945072?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fG1lZXRpbmclMjByb29tJTIwbWluaW1hbHxlbnwxfDF8fHwxNzkxNDAxMzU5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" alt="The boardroom of the Dublin office" width="1067" height="1600" loading="lazy"></figure>
+    <figure class="contact__photo"><img style="background:#c0c0c0" src="https://images.unsplash.com/photo-1662261896193-b4f8a02a9773?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bWVldGluZyUyMHJvb20lMjBtaW5pbWFsfGVufDF8MXx8fDE3OTE0MDEzNTl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" alt="The open floor where the Edinburgh teams work" width="1200" height="1600" loading="lazy"></figure>
+  </div>
+  <div class="contact__grid">
+    <form data-8b-placeholder="form" class="contact__form" action="#contact" method="post">
+      <label class="m-field"><span class="m-field__label">Name</span><input class="m-field__input" name="name" type="text" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__input" name="email" type="email" autocomplete="email" required></label>
+      <label class="m-field"><span class="m-field__label">Company</span><input class="m-field__input" name="company" type="text" autocomplete="organization"></label>
+      <label class="m-field"><span class="m-field__label">Matter</span><select class="m-field__input" name="matter"><option>Corporate or a transaction</option><option>A dispute</option><option>Employment</option><option>Real estate or planning</option><option>Not sure yet</option></select></label>
+      <label class="m-field contact__wide"><span class="m-field__label">What is happening</span><textarea class="m-field__input" name="message" rows="4"></textarea></label>
+      <div class="contact__send">
+        <button class="m-btn" type="submit"><span class="m-btn__label">Send to a partner</span></button>
+        <p class="m-text-7 contact__status" role="status" data-sent="Thank you. A partner will call you within one working day."></p>
+      </div>
+    </form>
+    <div class="contact__details">
+      <div><p class="m-text-4">New matters</p><a data-8b-placeholder="phone" class="m-link contact__big" href="tel:+442000000000">+44 20 0000 0000</a><a data-8b-placeholder="email" class="m-link" href="mailto:newmatters@fellgate.example">newmatters@fellgate.example</a></div>
+      <div><p class="m-text-4">Urgent, out of hours</p><a data-8b-placeholder="phone" class="m-link" href="tel:+447700000000">+44 7700 000000</a></div>
+      <div class="contact__icons">
+        <a data-8b-placeholder="social" class="m-icon" href="https://www.linkedin.com/"><span class="sr-only">Fellgate on LinkedIn</span><span class="m-icon__glyph" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M2.5 6.5v9M2.5 2.2v1.6M7 15.5v-9M7 10.5c0-2.4 1.4-4 3.4-4 2 0 3.1 1.3 3.1 3.6v5.4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>
+        <a data-8b-placeholder="email" class="m-icon" href="mailto:newmatters@fellgate.example"><span class="sr-only">Email Fellgate</span><span class="m-icon__glyph" aria-hidden="true"><svg viewBox="0 0 18 18"><path d="M1.5 3.5h15v11h-15zM1.5 3.5 9 10l7.5-6.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- footer: logo, five policy links, the regulation line and the copyright with the Design: 8B credit -->
+<footer id="footer" class="footer" data-8b-section="footer">
+  <div class="footer__top">
+    <a class="footer__logo" href="#opening" aria-label="Fellgate, back to the top"><span class="footer__mark" aria-hidden="true"></span><span>Fellgate</span></a>
+    <nav class="footer__links" aria-label="Policies">
+      <a class="m-link-2" href="#footer">Privacy notice</a>
+      <a class="m-link-2" href="#footer">Cookies</a>
+      <a class="m-link-2" href="#footer">Complaints</a>
+      <a class="m-link-2" href="#footer">Terms of engagement</a>
+      <a class="m-link-2" href="#footer">Modern slavery statement</a>
+    </nav>
+  </div>
+  <p class="m-text-7 footer__legal">Fellgate LLP is a limited liability partnership registered in Scotland, with offices in Edinburgh, London and Dublin, regulated by the Law Society of Scotland, the Solicitors Regulation Authority and the Law Society of Ireland. © 2026 Fellgate LLP. · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+</footer>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav__toggle');
+  const close = nav.querySelector('.nav__close');
+  const menu = nav.querySelector('.nav__menu');
+  let last = window.scrollY, travel = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, step = y - last;
+    last = y;
+    if (!menu.hidden || !step) return;
+    travel = Math.sign(step) === Math.sign(travel) ? travel + step : step;
+    if (y < 120 || travel < -10) nav.classList.remove('is-hidden');
+    else if (travel > 10) nav.classList.add('is-hidden');
+  }, { passive: true });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+  const setMenu = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); }
+  };
+  toggle.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => { setMenu(false); toggle.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) { setMenu(false); toggle.focus(); } });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => section.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(section);
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.textContent = status.dataset.sent;
+    form.reset();
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() {
+  const bar = document.querySelector('#nav .nav__bar');
+  return bar ? bar.offsetHeight : 0;
+}
+function refreshScroll() {
+  if (window.lenis) window.lenis.options.anchors = { offset: -navHeight() };
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .085, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let resizeTimer;
+window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(refreshScroll, 200); });
+</script>
+<script data-8b-part="motion">
+const effects = {
+  ink(element, vars = {}) {
+    const split = SplitText.create(element, { type: 'words', wordsClass: 'ink-word' });
+    const pale = getComputedStyle(document.documentElement).getPropertyValue('--color-6').trim();
+    const timeline = gsap.timeline(vars);
+    split.words.forEach((word, index) => timeline.from(word, { color: pale, duration: .3, ease: 'none' }, index * .07));
+    timeline.data = split;
+    return timeline;
+  },
+  rule(element, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    timeline.fromTo(element, { backgroundSize: '0% 1px' }, { backgroundSize: '100% 1px', duration: 1, ease: 'power3.inOut' }, 0);
+    element.querySelectorAll(':scope > td, :scope > summary, :scope > [data-rule-part]').forEach((part, index) => {
+      timeline.from(part, { y: 18, opacity: 0, duration: .8, ease: 'power3.out' }, .15 + index * .06);
+    });
+    return timeline;
+  },
+  drift(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { yPercent: -6 }, { yPercent: 6, ease: 'none', duration: 1 });
+  }
+};
+const effectRanges = {
+  ink: { start: 'top 88%', end: 'center 58%', scrub: .5 },
+  rule: { start: 'top 90%', once: true },
+  drift: { start: 'top bottom', end: 'bottom top', scrub: true }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      const created = [];
+      elements.forEach((element, index) => {
+        const animation = effects[name](element);
+        created.push(animation);
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, ...effectRanges[name], animation });
+      });
+      return () => created.forEach(animation => animation.data?.revert?.());
+    }), { first: section.getBoundingClientRect().top < window.innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const img = section.querySelector('.opening__img');
+    const lines = section.querySelectorAll('.opening__line');
+    const lead = section.querySelector('.opening__lead');
+    const bands = section.querySelectorAll('.opening__band');
+    const statement = section.querySelector('.opening__statement');
+    const about = section.querySelector('.opening__about');
+    const reach = () => (window.innerWidth > 760 ? .16 : .07);
+    const blur = window.matchMedia('(min-width: 1024px) and (hover: hover)').matches ? 7 : 0;
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'opening', trigger: section, start: 'top top', end: 'bottom bottom', scrub: .6, invalidateOnRefresh: true
+    }});
+    timeline.to(img, { scale: 1.28, yPercent: 11, filter: `grayscale(1) contrast(.5) brightness(1.55) blur(${blur}px)`, duration: 1 }, 0);
+    timeline.to(lines[0], { x: () => -window.innerWidth * reach(), y: () => -window.innerHeight * .1, opacity: .08, duration: .55 }, 0);
+    timeline.to(lines[1], { y: () => -window.innerHeight * .26, opacity: .08, duration: .55 }, .03);
+    timeline.to(lines[2], { x: () => window.innerWidth * reach(), y: () => -window.innerHeight * .06, opacity: .08, duration: .55 }, .06);
+    timeline.fromTo(lead, { y: 0, opacity: 1 }, { y: () => -window.innerHeight * .12, opacity: 0, duration: .35 }, 0);
+    bands.forEach((band, index) => timeline.fromTo(band, { yPercent: 90 + index * 50 }, { yPercent: 0, duration: .8 }, 0));
+    const ink = effects.ink(statement);
+    timeline.add(ink.duration(.5), .32);
+    timeline.from(about, { y: 50, duration: .35 }, .55);
+    return () => ink.data?.revert?.();
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:practice">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('practice');
+    const stack = section.querySelector('.practice__panels');
+    const panels = [...stack.querySelectorAll(':scope > .area')];
+    const links = [...section.querySelectorAll('.practice__index a')];
+    const starts = {
+      split: [[0, 0, 1, .5], [0, .5, 1, .5]],
+      skew: [[0, 0, .48, .48, -20], [.52, 0, .48, .48, -20], [0, .52, .48, .48, -20], [.52, .52, .48, .48, -20]],
+      halves: [[0, 0, 1, .5], [0, .5, 1, .5]],
+      plots: [[.2, .2, .6, .6, 0, 45], [.2, .2, .6, .6, 0, 45], [.2, .2, .6, .6, 0, 45]]
+    };
+    const place = () => panels.forEach(panel => panel.style.setProperty('--area-stick', `${Math.min(0, window.innerHeight - panel.offsetHeight)}px`));
+    const offset = count => panels.slice(0, count).reduce((sum, panel) => sum + panel.offsetHeight + parseFloat(getComputedStyle(panel).marginBottom || 0), 0);
+    const from = (figure, piece, rect) => {
+      const unit = figure.offsetWidth;
+      const [left, top, width, height] = rect;
+      return {
+        x: (left + width / 2) * unit - (piece.offsetLeft + piece.offsetWidth / 2),
+        y: (top + height / 2) * unit - (piece.offsetTop + piece.offsetHeight / 2),
+        scaleX: width * unit / piece.offsetWidth,
+        scaleY: height * unit / piece.offsetHeight
+      };
+    };
+    section.classList.add('is-stacked');
+    place();
+    ScrollTrigger.addEventListener('refreshInit', place);
+    panels.forEach((panel, index) => {
+      const figure = panel.querySelector('.area__figure');
+      const rects = starts[panel.dataset.figure] || [];
+      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+        id: `practice:panel-${index + 1}`, trigger: stack, start: () => `top+=${offset(index)} bottom`, end: () => `top+=${offset(index)} top`, scrub: .6, invalidateOnRefresh: true
+      }});
+      panel.querySelectorAll('.area__piece').forEach((piece, number) => {
+        const rect = rects[number];
+        if (!rect) return;
+        timeline.from(piece, {
+          x: () => from(figure, piece, rect).x,
+          y: () => from(figure, piece, rect).y,
+          scaleX: () => from(figure, piece, rect).scaleX,
+          scaleY: () => from(figure, piece, rect).scaleY,
+          skewX: rect[4] || 0,
+          rotation: rect[5] || 0,
+          duration: 1,
+          ease: 'power2.inOut'
+        }, 0);
+      });
+      timeline.from(panel.querySelector('.area__title'), { xPercent: -14, duration: 1, ease: 'power2.out' }, 0);
+      timeline.from(panel.querySelector('.area__img'), { yPercent: 9, duration: 1 }, 0);
+      if (index) timeline.to(panels[index - 1].querySelector('.area__shade'), { opacity: .5, duration: 1 }, 0);
+      ScrollTrigger.create({
+        id: `practice:index-${index + 1}`, trigger: stack,
+        start: () => `top+=${offset(index)} 55%`,
+        end: () => `top+=${offset(index + 1)} 55%`,
+        onToggle: self => links[index]?.classList.toggle('is-current', self.isActive)
+      });
+    });
+    gsap.to(section.querySelector('.practice__index'), { opacity: 0, ease: 'none', scrollTrigger: {
+      id: 'practice:index-out', trigger: stack, start: 'bottom 98%', end: 'bottom 72%', scrub: true
+    }});
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', place);
+      section.classList.remove('is-stacked');
+      panels.forEach(panel => panel.style.removeProperty('--area-stick'));
+      links.forEach(link => link.classList.remove('is-current'));
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:principles">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 861px)',
+    narrow: '(prefers-reduced-motion: no-preference) and (max-width: 860px)'
+  }, context => {
+    const section = document.getElementById('principles');
+    const stair = section.querySelector('.principles__stair');
+    const cells = [...stair.querySelectorAll(':scope > .promise')];
+    const timeline = context.conditions.wide ? gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'principles', trigger: stair, start: 'top 88%', end: 'bottom 70%', scrub: .6, invalidateOnRefresh: true
+    }}) : null;
+    cells.forEach((cell, index) => {
+      const even = index % 2 === 1;
+      if (context.conditions.wide) {
+        timeline.from(cell, even ? { y: () => -cell.offsetHeight / 2, duration: 1 } : { y: 60, duration: 1 }, index * .1);
+      } else if (even) {
+        gsap.from(cell, { x: () => -(stair.offsetWidth - cell.offsetWidth), ease: 'none', scrollTrigger: {
+          id: `principles:step-${index + 1}`, trigger: cell, start: 'top 96%', end: 'top 58%', scrub: .6, invalidateOnRefresh: true
+        }});
+      }
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:offices">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('offices');
+    const stage = section.querySelector('.offices__stage');
+    const ring = stage.querySelector('.offices__ring');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'offices', trigger: stage, start: 'top bottom', end: 'center 55%', scrub: .8
+    }});
+    timeline.from(ring, { rotation: 40, duration: 1, ease: 'power1.out' }, 0);
+    ring.querySelectorAll('.city img').forEach(img => timeline.from(img, { scale: 1.35, duration: 1 }, 0));
+  });
+});
+</script>
+<script data-8b-part="scene:people">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('people');
+    const hold = section.querySelector('.people__hold');
+    const track = section.querySelector('.people__track');
+    const cards = [...track.querySelectorAll(':scope > .person')];
+    const travel = () => {
+      const style = getComputedStyle(hold);
+      return Math.max(0, track.scrollWidth - (hold.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight)));
+    };
+    const measure = () => section.style.setProperty('--people-travel', `${travel()}px`);
+    section.classList.add('is-track');
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'people', trigger: section, start: 'top top', end: () => `+=${travel()}`, scrub: .6, invalidateOnRefresh: true
+    }});
+    timeline.to(track, { x: () => -travel(), duration: 1 }, 0);
+    cards.forEach(card => timeline.fromTo(card.querySelector('.person__img'), { xPercent: 6 }, { xPercent: -6, duration: 1 }, 0));
+    const reveal = event => {
+      const card = event.target.closest('.person');
+      if (!card || !timeline.scrollTrigger) return;
+      const share = travel() ? Math.min(1, Math.max(0, (card.offsetLeft + card.offsetWidth - hold.clientWidth / 2) / travel())) : 0;
+      const trigger = timeline.scrollTrigger;
+      const y = trigger.start + (trigger.end - trigger.start) * share;
+      if (window.lenis) window.lenis.scrollTo(y, { immediate: true }); else window.scrollTo(0, y);
+    };
+    track.addEventListener('focusin', reveal);
+    return () => {
+      track.removeEventListener('focusin', reveal);
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.classList.remove('is-track');
+      section.style.removeProperty('--people-travel');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:fees">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fees');
+    const list = section.querySelector('.fees__modes');
+    const rows = [...list.querySelectorAll(':scope > .mode')];
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'fees', trigger: list, start: 'top 82%', end: 'bottom 62%', scrub: .6, invalidateOnRefresh: true
+    }});
+    rows.forEach((row, index) => {
+      const bar = row.querySelector('.mode__bar');
+      const at = index * .8;
+      timeline.from(bar, { scaleX: () => bar.offsetHeight / Math.max(bar.offsetWidth, 1), duration: 1, ease: 'power2.inOut' }, at);
+      const stop = row.querySelector('.mode__stop');
+      if (stop) timeline.from(stop, { scaleY: 0, duration: .3 }, at + .75);
+      timeline.from(row.querySelector('.m-text-5'), { opacity: .25, duration: .5 }, at);
+      timeline.from(row.querySelector('.mode__text'), { opacity: .25, duration: .5 }, at + .3);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const fan = section.querySelector('.contact__fan');
+    const photos = [...fan.querySelectorAll(':scope > .contact__photo')];
+    const tilts = [-9, 6, -4, 8];
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'contact', trigger: fan, start: 'top 92%', end: 'center 52%', scrub: .6, invalidateOnRefresh: true
+    }});
+    photos.forEach((photo, index) => {
+      timeline.from(photo, {
+        x: () => fan.offsetWidth / 2 - (photo.offsetLeft + photo.offsetWidth / 2),
+        y: () => fan.offsetHeight / 2 - (photo.offsetTop + photo.offsetHeight / 2),
+        rotation: tilts[index % tilts.length],
+        scale: .86,
+        duration: 1,
+        ease: 'power2.out'
+      }, index * .06);
+    });
+  });
+});
+</script>
+</body>
+</html>

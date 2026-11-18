@@ -1,0 +1,41 @@
+{
+  "slug": "sillage",
+  "name": "Sillage",
+  "categories": [
+    "Agency and studio"
+  ],
+  "upstream": "https://github.com/8bsite/creative-agency-website-template",
+  "demo": "https://8b.com/templates/sillage/demo.html",
+  "design_md_url": "https://8b.com/templates/sillage/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "1be4dd602126d26cd7dfb5a87aef9d7e75a85729",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "d422b0bd5b0dcac94cf1cf807281ad0edcf1161a",
+    "README.md": "d92999b2557951ede639444f4eaa0edc48745222",
+    "AGENTS.md": "10661e7d7b9078270af6aa0aa4065f8a6e7a1965",
+    "index.html": "fcb0304478907516063332c5bfd577fc1dc04391"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "d9c876981bfff02547fcbaecb3593a0101c5b8840e4da192e462b0354e4ba5dc",
+    "README.md": "70433266f5a19855533c8cac26622ad50f1aa2e1ca800d06fa214b669d6084cd",
+    "AGENTS.md": "70b73ca6fd120189d0f841f832405fe62aa76c94675d16812a06750e2afe16e2",
+    "index.html": "b942b8a202998a5956c6b7cd4edd2a0674bfa35c383015464b0b985ed64d7cc4"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)",
+    "index.gsap.html: embedded binary media; manual rights review"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

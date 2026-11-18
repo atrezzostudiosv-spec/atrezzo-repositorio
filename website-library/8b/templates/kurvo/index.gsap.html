@@ -1,0 +1,1125 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/kurvo/
+  Source: https://github.com/8bsite/fitness-app-landing-page-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurvo — the training plan that bends to your week</title>
+<meta name="description" content="Kurvo is a fitness app that reads your sleep, soreness and calendar every morning and reshapes your plan: running, strength, cycling, HIIT and yoga with 200 coaches.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kurvo — the training plan that bends to your week">
+<meta property="og:description" content="Kurvo is a fitness app that reads your sleep, soreness and calendar every morning and reshapes your plan: running, strength, cycling, HIIT and yoga with 200 coaches.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23232323'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23d8f45f'%3EK%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500 600;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsvDddtC.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500 600;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsLDddtC.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500 600;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsXDddtC.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500 600;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsnDddtC.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500 600;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsjDddtC.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500 600;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #232323;
+  --color-2: #c5d8d8;
+  --color-3: #f2f4f5;
+  --color-4: #8d91e6;
+  --color-5: #d8f45f;
+  --color-6: #444444;
+  --color-7: #a4c3bd;
+  --color-8: #c2c2c2;
+  --color-9: #4f5552;
+  --font-1: "TikTok Sans", "TikTok Sans Fallback", "Arial", sans-serif;
+  --font-2: "Geist", "Geist Fallback", "Arial", sans-serif;
+  --radius-1: 26px;
+  --radius-2: 999px;
+  --radius-3: 18px;
+  --space-1: 12px;
+  --space-2: clamp(20px, 2.6vw, 36px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  /* font fallbacks */
+  @font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 129%; ascent-override: 77.5%; descent-override: 23.3%; line-gap-override: 0%; }
+  @font-face { font-family: "TikTok Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 121.6%; ascent-override: 82.3%; descent-override: 24.7%; line-gap-override: 0%; }
+  @font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 98.9%; ascent-override: 102.1%; descent-override: 30.3%; line-gap-override: 0%; }
+  @font-face { font-family: "Geist Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 97%; ascent-override: 104.1%; descent-override: 30.9%; line-gap-override: 0%; }
+  /* end font fallbacks */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--color-1); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+  .lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body { margin: 0; background: var(--color-1); color: var(--color-3); -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  img, svg { display: block; max-width: 100%; }
+  img { height: auto; }
+  a { color: inherit; }
+  h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  main { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-1); padding: var(--space-1); }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: normal; text-transform: none; font-style: normal; }
+.m-text-2 { --m-wd: 150; font-family: var(--font-1); font-size: clamp(28px, 4.6vw, 72px); font-weight: 600; font-stretch: calc(var(--m-wd) * 1%); line-height: .92; letter-spacing: -.01em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(20px, 1.7vw, 26px); font-weight: 500; font-stretch: 125%; line-height: 1.1; letter-spacing: -.01em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.35; letter-spacing: .06em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(18px, 1.5vw, 22px); font-weight: 400; line-height: 1.4; letter-spacing: -.005em; text-transform: none; font-style: normal; }
+
+.m-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-3); text-decoration: none; white-space: nowrap; }
+.m-btn__label { font-family: var(--font-1); font-size: 13px; font-weight: 600; font-stretch: 110%; line-height: 1; letter-spacing: .04em; text-transform: uppercase; transition: font-stretch .35s cubic-bezier(.3, .7, .2, 1); }
+.m-btn-2 { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: var(--radius-2); background: var(--color-5); color: var(--color-1); text-decoration: none; white-space: nowrap; }
+.m-btn-3 { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 26px 0 calc(var(--m-notch-run, 35px) + 22px); color: var(--color-1); text-decoration: none; white-space: nowrap; }
+.m-btn-3::before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; bottom: 0; right: -2px; border-radius: 8px 0 0 var(--radius-3); background: var(--color-5); transform-origin: 0 100%; transform: skewX(calc(-1 * var(--m-notch-skew, 0deg))); }
+.m-btn-3 .m-btn__label { font-size: clamp(14px, 1.15vw, 17px); }
+.m-btn-3__icon { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 2; transition: rotate .4s cubic-bezier(.3, .7, .2, 1); }
+.m-btn:focus-visible, .m-btn-2:focus-visible, .m-btn-3:focus-visible, .m-icon-btn:focus-visible { outline-offset: -6px; }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__label, .m-btn-2:hover .m-btn__label, .m-btn-3:hover .m-btn__label { font-stretch: 150%; }
+  .m-btn-3:hover .m-btn-3__icon { rotate: 45deg; }
+}
+.m-link { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: normal; text-transform: none; text-decoration: none; }
+.m-link__label { background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1.5px no-repeat; padding-bottom: 3px; transition: background-size .45s cubic-bezier(.3, .7, .2, 1), background-position 0s .45s; }
+@media (hover: hover) {
+  .m-link:hover .m-link__label { background-size: 0 1.5px; background-position: 100% 100%; transition: background-size .45s cubic-bezier(.3, .7, .2, 1); }
+}
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid currentColor; color: inherit; text-decoration: none; overflow: hidden; isolation: isolate; }
+.m-icon-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50%; background: var(--color-5); scale: 0; transition: scale .4s cubic-bezier(.3, .7, .2, 1); }
+.m-icon-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: rotate .4s cubic-bezier(.3, .7, .2, 1), color .3s; }
+@media (hover: hover) {
+  .m-icon-btn:hover { color: var(--color-1); border-color: var(--color-1); }
+  .m-icon-btn:hover::before { scale: 1; }
+  .m-icon-btn:hover svg { rotate: 90deg; }
+}
+.m-badge { display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border: 1.5px solid currentColor; border-radius: var(--radius-2); font-family: var(--font-1); font-size: 14px; font-weight: 500; font-stretch: 120%; line-height: 1; letter-spacing: .04em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-badge-2 { display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border: 1.5px solid var(--color-1); border-radius: var(--radius-2); background: var(--color-1); color: var(--color-3); font-family: var(--font-1); font-size: 14px; font-weight: 500; font-stretch: 120%; line-height: 1; letter-spacing: .04em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-badge-3 { display: inline-flex; align-items: center; min-height: 30px; padding: 0 12px; border-radius: var(--radius-2); background: var(--color-5); color: var(--color-1); font-family: var(--font-1); font-size: 13px; font-weight: 600; font-stretch: 115%; line-height: 1; letter-spacing: .02em; text-transform: none; font-style: normal; white-space: nowrap; }
+
+.m-surface { position: relative; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); }
+.m-surface-2 { position: relative; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-1); }
+.m-surface-3 { position: relative; border-radius: var(--radius-1); background: var(--color-4); color: var(--color-1); }
+.m-surface-4 { position: relative; border-radius: var(--radius-1); background: var(--color-6); color: var(--color-3); }
+.m-surface-5 { position: relative; border-radius: var(--radius-1); background: var(--color-5); color: var(--color-1); }
+.m-notch { --m-notch-run: 35px; position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 64px; padding: 14px 18px 16px var(--space-2); color: var(--color-3); }
+.m-notch::before { content: ""; position: absolute; z-index: -1; top: -2px; left: -2px; bottom: 0; right: calc(-1 * var(--m-notch-run)); background: var(--color-1); clip-path: polygon(0 0, 100% 0, calc(100% - var(--m-notch-run)) 100%, 0 100%); }
+.m-notch .m-text-2 { background-color: var(--color-1); }
+.m-notch::after { content: ""; position: absolute; z-index: -1; top: calc(100% - 2px); left: -2px; width: calc(var(--radius-1) + 2px); height: calc(var(--radius-1) + 2px); background: var(--color-1); -webkit-mask: radial-gradient(circle at 100% 100%, transparent var(--radius-1), var(--color-1) calc(var(--radius-1) + .5px)); mask: radial-gradient(circle at 100% 100%, transparent var(--radius-1), var(--color-1) calc(var(--radius-1) + .5px)); }
+.m-notch-2 { --m-notch-h: 76px; --m-notch-run: 35px; --m-notch-skew: atan2(var(--m-notch-run), var(--m-notch-h)); position: absolute; right: 0; bottom: 0; isolation: isolate; display: flex; height: var(--m-notch-h); padding: 10px 0 0 10px; }
+.m-notch-2::before { content: ""; position: absolute; z-index: -1; top: 0; left: calc(-1 * var(--m-notch-run)); right: -2px; bottom: -2px; border-top-left-radius: var(--radius-3); background: var(--color-1); transform-origin: 0 calc(100% - 2px); transform: skewX(calc(-1 * var(--m-notch-skew))); }
+.m-notch-2::after { content: ""; position: absolute; z-index: -1; right: -2px; bottom: calc(100% - 2px); width: calc(var(--radius-1) + 2px); height: calc(var(--radius-1) + 2px); background: var(--color-1); -webkit-mask: radial-gradient(circle at 0 0, transparent var(--radius-1), var(--color-1) calc(var(--radius-1) + .5px)); mask: radial-gradient(circle at 0 0, transparent var(--radius-1), var(--color-1) calc(var(--radius-1) + .5px)); }
+.m-notch-2 > .m-btn-3 { flex: 1; margin-left: calc(-1 * var(--m-notch-run)); }
+.m-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 3px solid currentColor; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+  #nav { position: fixed; z-index: 50; top: var(--space-1); left: var(--space-1); right: var(--space-1); display: flex; align-items: flex-start; justify-content: space-between; pointer-events: none; transition: translate .5s cubic-bezier(.3, .7, .2, 1); }
+  #nav > * { pointer-events: auto; }
+  #nav.is-hidden { translate: 0 calc(-100% - 2 * var(--space-1)); }
+  #nav .nav-logo { gap: 10px; text-decoration: none; min-height: 70px; padding-right: 26px; }
+  #nav .nav-logo::before { border-top-left-radius: calc(var(--radius-1) + 2px); }
+  #nav .nav-dot { width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, var(--color-4) 58%, var(--color-5) 58%);  }
+  #nav .nav-word { font-family: var(--font-1); font-size: 22px; font-weight: 600; font-stretch: 130%; letter-spacing: .01em; text-transform: uppercase; line-height: 1; }
+  #nav .nav-links { position: absolute; left: 50%; top: 11px; translate: -50% 0; display: flex; gap: 4px; padding: 4px; border-radius: var(--radius-2); color: var(--color-1); background: transparent; transition: background-color .35s, color .35s; }
+  #nav.is-solid .nav-links { background: var(--color-1); color: var(--color-3); }
+  #nav .nav-links a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: var(--radius-2); text-decoration: none; }
+  #nav .nav-links a:focus-visible { outline-offset: -4px; background-color: var(--color-5); color: var(--color-1); }
+  #nav .nav-links a::after { content: ""; display: block; width: 6px; height: 6px; margin-left: 8px; border-radius: 50%; background: currentColor; scale: 0; transition: scale .3s; }
+  #nav .nav-cta { margin-top: 11px; margin-right: 11px; }
+  #nav.is-solid .nav-cta { background: var(--color-5); color: var(--color-1); }
+  #nav .nav-menu { display: none; margin-top: 11px; margin-right: 11px; background: var(--color-1); color: var(--color-3); border-color: var(--color-1); }
+  @media (hover: hover) { #nav .nav-links a:hover::after { scale: 1; } }
+  @media (max-width: 900px) {
+    #nav .nav-links, #nav .nav-cta { display: none; }
+    #nav .nav-menu { display: inline-grid; }
+    #nav .nav-logo { min-height: 62px; }
+  }
+  #nav .menu { pointer-events: auto; position: fixed; inset: 0; z-index: 60; display: grid; align-content: space-between; gap: 32px; padding: calc(var(--space-1) + 20px); background: var(--color-1); color: var(--color-3); }
+  #nav .menu[hidden] { display: none; }
+  #nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+  #nav .menu__brand { font-family: var(--font-1); font-size: 22px; font-weight: 600; font-stretch: 130%; text-transform: uppercase; }
+  #nav .menu__links { display: grid; gap: 6px; }
+  #nav .menu__links a { font-size: clamp(34px, 11vw, 64px); text-decoration: none; }
+}
+</style>
+
+<style data-8b-part="layout">
+@layer layout {
+  .l-panel { padding: 0 var(--space-2) var(--space-2); }
+  .l-panel:has(> .m-notch) { border-top-left-radius: 0; }
+  .l-panel > .m-notch { margin-left: calc(-1 * var(--space-2)); max-width: calc(100% + var(--space-2) - 40px); }
+  .l-panel__body { margin-top: clamp(28px, 5vw, 64px); }
+}
+</style>
+<style data-8b-part="section:curve">
+@layer sections {
+  #curve .cv-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 80px); align-items: end; }
+  #curve .cv-copy { display: grid; gap: 28px; align-content: start; justify-items: start; }
+  #curve .cv-cues { display: grid; gap: 14px; width: 100%; }
+  #curve .cv-cues li { display: grid; grid-template-columns: 128px 1fr; gap: 16px; align-items: center; padding-top: 14px; border-top: 1.5px solid var(--color-1); }
+  #curve .cv-cues .m-badge { justify-self: start; }
+  #curve .cv-chart { position: relative; }
+  #curve .cv-days { position: relative; display: grid; grid-template-columns: repeat(7, 1fr); gap: clamp(8px, 1.2vw, 16px); }
+  #curve .cv-days li { display: grid; grid-template-rows: clamp(300px, 46svh, 440px) auto auto; gap: 8px; }
+  #curve .cv-track { position: relative; border-radius: var(--radius-2); background: linear-gradient(to top, var(--color-2), transparent 70%); }
+  #curve .cv-bar { position: absolute; left: 0; right: 0; bottom: 0; height: calc(var(--cv-h) * 100%); min-height: 14px; border-radius: var(--radius-2); background: var(--color-4); transform-origin: 50% 100%; }
+  #curve .is-easy .cv-bar { background: var(--color-7); }
+  #curve .is-rest .cv-bar { background: transparent; border: 1.5px dashed var(--color-9); }
+  #curve .is-today .cv-bar { background: var(--color-5); }
+  #curve .cv-day { color: var(--color-9); }
+  #curve .is-today .cv-day { color: var(--color-1); }
+  #curve .cv-name { font-size: 13px; line-height: 1.3; }
+  #curve .cv-name b { display: block; font-weight: 500; }
+  #curve .cv-line { position: absolute; left: 0; right: 0; top: 0; height: clamp(300px, 46svh, 440px); width: 100%; overflow: visible; pointer-events: none; }
+  #curve .cv-line polyline { fill: none; stroke: var(--color-1); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+  #curve .cv-caption { margin-top: 18px; color: var(--color-9); }
+  @media (max-width: 900px) {
+    #curve .cv-grid { grid-template-columns: 1fr; }
+    #curve .cv-chart { order: -1; }
+  }
+  @media (max-width: 767.98px) {
+    #curve .cv-days { grid-template-columns: 1fr; gap: 10px; }
+    #curve .cv-days li { grid-template-rows: auto auto; grid-template-columns: 44px 1fr; column-gap: 12px; row-gap: 4px; }
+    #curve .cv-track { grid-column: 2; grid-row: 2; height: 18px; background: linear-gradient(to right, var(--color-2), transparent 80%); }
+    #curve .cv-bar { top: 0; height: auto; width: calc(var(--cv-h) * 100%); min-width: 18px; right: auto; transform-origin: 0 50%; }
+    #curve .cv-day { grid-column: 1; grid-row: 1 / span 2; align-self: center; }
+    #curve .cv-name { grid-column: 2; grid-row: 1; }
+    #curve .cv-name b { display: inline; margin-right: 6px; }
+    #curve .cv-line { display: none; }
+    #curve .cv-cues li { grid-template-columns: 1fr; gap: 8px; }
+  }
+}
+</style>
+<style data-8b-part="section:coaches">
+@layer sections {
+  #coaches .co-lead { max-width: 46ch; color: var(--color-8); }
+  #coaches .co-list { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); margin-top: clamp(32px, 5vw, 64px); }
+  #coaches .co-item { position: relative; display: grid; gap: 14px; align-content: start; }
+  #coaches .co-photo { position: relative; width: calc(100% + 42px); aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 6px solid var(--color-6); }
+  #coaches .co-item:nth-child(2) .co-photo { margin-left: -14px; }
+  #coaches .co-item:nth-child(3) .co-photo { margin-left: -28px; }
+  #coaches .co-item:nth-child(4) .co-photo { margin-left: -42px; }
+  #coaches .co-item:nth-child(1) .co-photo { z-index: 4; }
+  #coaches .co-item:nth-child(2) .co-photo { z-index: 3; }
+  #coaches .co-item:nth-child(3) .co-photo { z-index: 2; }
+  #coaches .co-photo img { width: 100%; height: 100%; object-fit: cover; }
+  #coaches .co-item .m-badge { justify-self: start; }
+  #coaches .co-item p { color: var(--color-8); max-width: 28ch; }
+  #coaches .co-foot { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; margin-top: clamp(32px, 4vw, 52px); }
+  @media (max-width: 900px) {
+    #coaches .co-list { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
+    #coaches .co-photo { width: calc(100% + 21px); }
+    #coaches .co-item:nth-child(odd) .co-photo { margin-left: 0; }
+    #coaches .co-item:nth-child(even) .co-photo { margin-left: -21px; }
+  }
+}
+</style>
+<style data-8b-part="section:disciplines">
+@layer sections {
+  #disciplines { overflow: clip; }
+  #disciplines .ds-lead { max-width: 44ch; }
+  #disciplines .ds-rows { display: grid; gap: var(--space-1); margin-top: clamp(28px, 4vw, 56px); }
+  #disciplines .ds-row { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) clamp(160px, 22vw, 320px); align-items: center; gap: clamp(16px, 2.4vw, 40px); min-height: clamp(130px, 13vw, 176px); padding: 14px 14px 14px clamp(24px, 3vw, 48px); border-radius: var(--radius-2); clip-path: inset(0% 0% 0% 0% round 999px); }
+  #disciplines .ds-name { font-size: max(28px, min(68px, calc((78vw - 220px) * .555 / (var(--len) * .95)))); }
+  #disciplines .ds-info { display: grid; gap: 10px; justify-items: start; }
+  #disciplines .ds-row.m-surface-4 .ds-info p { color: var(--color-8); }
+  #disciplines .ds-photo { position: relative; align-self: stretch; border-radius: var(--radius-2); overflow: hidden; }
+  #disciplines .ds-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (min-width: 768px) { #disciplines .ds-photo img { object-position: 50% var(--ds-y, 50%); } }
+  @media (max-width: 767.98px) {
+    #disciplines .ds-row { grid-template-columns: minmax(0, 1fr) 84px; grid-template-areas: "name name" "info photo"; gap: 14px 12px; padding: 22px 18px 20px 24px; border-radius: 44px; clip-path: inset(0% 0% 0% 0% round 44px); }
+    #disciplines .ds-name { grid-area: name; font-size: min(44px, calc((100vw - 110px) / (var(--len) * .95))); }
+    #disciplines .ds-info { grid-area: info; }
+    #disciplines .ds-photo { grid-area: photo; align-self: center; width: 84px; height: 84px; border-radius: 50%; }
+  }
+}
+</style>
+<style data-8b-part="section:app">
+@layer sections {
+  #app .ap-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 80px); }
+  #app .ap-stage { align-self: start; display: grid; justify-items: center; }
+  #app .ap-phone { position: relative; width: min(300px, 76vw); padding: 12px; border-radius: 46px; background: var(--color-1); }
+  #app .ap-screen { position: relative; border-radius: 35px; overflow: hidden; background: var(--color-3); }
+  #app .ap-view { display: flex; flex-direction: column; gap: 12px; aspect-ratio: 276 / 596; padding: 44px 18px 20px; background: var(--color-3); clip-path: inset(0% 0% 0% 0%); }
+  #app .ap-view + .ap-view { border-top: 12px solid var(--color-1); }
+  #app .ap-view header { display: flex; justify-content: space-between; align-items: center; }
+  #app .ap-view .m-text-3 { font-size: 20px; }
+  #app .ap-card { display: grid; gap: 6px; padding: 16px; border-radius: var(--radius-3); background: var(--color-4); }
+  #app .ap-card--dark { background: var(--color-1); color: var(--color-3); }
+  #app .ap-steps { display: grid; gap: 8px; }
+  #app .ap-steps li { display: flex; justify-content: space-between; padding: 10px 12px; border-radius: 12px; background: var(--color-2); font-size: 14px; }
+  #app .ap-start { margin-top: auto; }
+  #app .ap-ring { position: relative; font-stretch: 100%; width: 170px; aspect-ratio: 1; margin: 6px auto 0; }
+  #app .ap-ring svg { width: 100%; height: 100%; rotate: -90deg; }
+  #app .ap-ring circle { fill: none; stroke-width: 14; }
+  #app .ap-ring .ap-ring__track { stroke: var(--color-2); }
+  #app .ap-ring .ap-ring__value { stroke: var(--color-4); stroke-linecap: round; }
+  #app .ap-ring strong { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; font-family: var(--font-1); font-size: 40px; font-weight: 600; font-stretch: 120%; line-height: 1; }
+  #app .ap-ring strong small { font-stretch: 100%; font-family: var(--font-2); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+  #app .ap-facts { display: grid; gap: 8px; }
+  #app .ap-facts li { display: flex; justify-content: space-between; padding: 10px 12px; border-radius: 12px; background: var(--color-2); font-size: 14px; }
+  #app .ap-bubble { max-width: 86%; padding: 12px 14px; border-radius: 18px 18px 18px 4px; background: var(--color-2); font-size: 14px; line-height: 1.4; }
+  #app .ap-bubble--me { align-self: flex-end; border-radius: 18px 18px 4px 18px; background: var(--color-4); }
+  #app .ap-who { display: flex; align-items: center; gap: 10px; }
+  #app .ap-who .m-avatar { width: 36px; height: 36px; border-width: 0; }
+  #app .ap-notes { display: grid; gap: 0; }
+  #app .ap-note { display: grid; gap: 14px; align-content: center; min-height: 64svh; padding-left: 28px; border-left: 1.5px solid var(--color-1); position: relative; }
+  #app .ap-note::before { content: ""; position: absolute; left: -9px; top: calc(50% - 9px); width: 16px; height: 16px; border-radius: 50%; background: var(--color-2); border: 1.5px solid var(--color-1); transition: background-color .3s, scale .3s; }
+  #app .ap-note.is-on::before { background: var(--color-5); scale: 1.35; }
+  #app .ap-note p { max-width: 38ch; }
+  #app .ap-note > * { background-color: var(--color-2); }
+  #app .ap-lead { max-width: 44ch; }
+  @media (max-width: 767.98px) {
+    #app .ap-grid { grid-template-columns: 1fr; }
+    #app .ap-phone { width: min(270px, 74vw); }
+    #app .ap-note { min-height: 0; padding: 18px 0 18px 24px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:app">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #app[data-app-run] .ap-phone { aspect-ratio: 300 / 620; }
+    #app[data-app-run] .ap-screen { height: 100%; }
+    #app[data-app-run] .ap-strip { position: relative; height: 100%; }
+    #app[data-app-run] .ap-view { position: absolute; inset: 0; aspect-ratio: auto; }
+    #app[data-app-run] .ap-view + .ap-view { border-top: 0; }
+  }
+  @media (prefers-reduced-motion: no-preference) and (min-width: 768px) {
+    #app[data-app-run] .ap-stage { position: sticky; top: calc(50svh - 330px); }
+  }
+  @media (prefers-reduced-motion: no-preference) and (max-width: 767.98px) {
+    #app[data-app-run] .ap-stage { display: block; height: 190svh; }
+    #app[data-app-run] .ap-phone { position: sticky; top: max(72px, calc(50svh - 280px)); margin: 0 auto; }
+  }
+}
+</style>
+<style data-8b-part="section:stories">
+@layer sections {
+  #stories .st-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); margin-top: clamp(28px, 4vw, 56px); }
+  #stories .st-card { display: grid; grid-template-rows: auto 1fr auto; gap: 22px; padding: clamp(20px, 2.2vw, 32px); border-radius: var(--radius-1); background: var(--color-2); }
+  #stories .st-spark { position: relative; }
+  #stories .st-spark svg { width: 100%; height: 110px; overflow: visible; }
+  #stories .st-spark path { fill: none; stroke: var(--color-4); stroke-width: 3; stroke-linecap: round; }
+  #stories .st-spark circle { fill: var(--color-5); stroke: var(--color-1); stroke-width: 3; }
+  #stories .st-spark .m-badge-3 { position: absolute; right: 0; top: -6px; }
+  #stories blockquote { font-family: var(--font-2); font-size: clamp(18px, 1.45vw, 21px); line-height: 1.4; }
+  #stories .st-who { display: flex; align-items: center; gap: 12px; color: var(--color-2); }
+  #stories .st-who span { display: grid; color: var(--color-1); }
+  #stories .st-who b { font-weight: 500; }
+  #stories .st-who small { color: var(--color-9); font-size: 14px; }
+  @media (max-width: 900px) { #stories .st-list { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:challenge">
+@layer sections {
+  #challenge .ch-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, .8fr); gap: clamp(24px, 4vw, 64px); align-items: stretch; }
+  #challenge .ch-lead { max-width: 52ch; color: var(--color-8); }
+  #challenge .ch-map { position: relative; margin-top: clamp(24px, 4vw, 48px); aspect-ratio: 700 / 360; }
+  #challenge .ch-map svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  #challenge .ch-route { fill: none; stroke: var(--color-4); stroke-width: 4; stroke-linecap: round; }
+  #challenge .ch-ghost { fill: none; stroke: var(--color-8); stroke-opacity: .3; stroke-width: 2; stroke-dasharray: 2 8; stroke-linecap: round; }
+  #challenge .ch-dot { position: absolute; left: 97.14%; top: 19.44%; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--color-5); border: 4px solid var(--color-6); }
+  #challenge .ch-points li { display: grid; gap: 4px; }
+  #challenge .ch-points b { color: var(--color-3); transition: color .3s; }
+  #challenge .ch-points li.is-dim b { color: var(--color-8); }
+  #challenge .ch-points b { font-family: var(--font-1); font-weight: 600; font-stretch: 125%; font-size: 18px; line-height: 1; }
+  #challenge .ch-points span { color: var(--color-8); font-size: 14px; line-height: 1.3; }
+  #challenge .ch-side { display: grid; grid-template-rows: 1fr auto; gap: 20px; }
+  #challenge .ch-photo { border-radius: 200px 200px var(--radius-1) var(--radius-1); overflow: hidden; min-height: 320px; }
+  #challenge .ch-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 45% 50%; }
+  #challenge .ch-side .m-btn-2 { justify-self: start; }
+  @media (max-width: 767.98px) {
+    #challenge .ch-grid { grid-template-columns: 1fr; }
+    #challenge .ch-map { aspect-ratio: auto; display: grid; grid-template-columns: 64px 1fr; }
+    #challenge .ch-map svg.ch-svg--wide { display: none; }
+    #challenge .ch-map svg.ch-svg--tall { position: relative; inset: auto; grid-column: 1; grid-row: 1; height: 100%; }
+    #challenge .ch-points { grid-column: 2; grid-row: 1; display: grid; gap: 22px; padding: 6px 0; }
+    #challenge .ch-dot { left: 32px; top: 98.333%; }
+    #challenge .ch-photo { min-height: 0; aspect-ratio: 4 / 3; border-radius: 160px 160px var(--radius-1) var(--radius-1); }
+  }
+  @media (min-width: 768px) {
+    #challenge .ch-svg--tall { display: none; }
+    #challenge .ch-points li { position: absolute; left: var(--ch-x); top: var(--ch-y); width: max-content; max-width: 180px; padding: 6px 10px; border-radius: 12px; background: var(--color-6); translate: -50% 18px; text-align: center; }
+    #challenge .ch-points li > * { background-color: var(--color-6); }
+    #challenge .ch-points li.is-up { translate: -50% calc(-100% - 18px); }
+    #challenge .ch-points li.is-end { max-width: 150px; translate: calc(-100% + 14px) calc(-100% - 18px); text-align: right; }
+    #challenge .ch-points li::before { content: ""; position: absolute; left: 50%; top: -25px; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--color-5); border: 2.5px solid var(--color-6); transition: background-color .3s; }
+    #challenge .ch-points li.is-up::before { top: auto; bottom: -25px; }
+    #challenge .ch-points li.is-end::before { display: none; }
+    #challenge .ch-points li.is-dim::before { background: var(--color-6); border-color: var(--color-8); }
+  }
+}
+</style>
+<style data-8b-part="section:clubs">
+@layer sections {
+  #clubs .cl-grid { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: clamp(24px, 4vw, 64px); }
+  #clubs .cl-photo { border-radius: var(--radius-1); overflow: hidden; min-height: 360px; }
+  #clubs .cl-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+  #clubs .cl-lead { max-width: 44ch; }
+  #clubs .cl-list { margin-top: 24px; }
+  #clubs .cl-list li { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr) auto; gap: 16px; align-items: center; padding: 16px 0; border-top: 1.5px solid var(--color-1); }
+  #clubs .cl-list li:last-child { border-bottom: 1.5px solid var(--color-1); }
+  #clubs .cl-list p { color: var(--color-9); }
+  @media (max-width: 900px) { #clubs .cl-grid { grid-template-columns: 1fr; } #clubs .cl-photo { min-height: 0; aspect-ratio: 16 / 10; } }
+  @media (max-width: 767.98px) {
+    #clubs .cl-list li { grid-template-columns: 1fr auto; row-gap: 4px; }
+    #clubs .cl-list p { grid-column: 1; grid-row: 2; }
+    #clubs .cl-list .m-badge { grid-column: 2; grid-row: 1 / span 2; }
+  }
+}
+</style>
+<style data-8b-part="section:pricing">
+@layer sections {
+  #pricing { overflow: clip; }
+  #pricing .pr-lead { max-width: 46ch; }
+  #pricing .pr-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-1); margin-top: clamp(28px, 4vw, 56px); }
+  #pricing .pr-plan { position: relative; display: flex; flex-direction: column; gap: 18px; padding: clamp(22px, 2.4vw, 34px); border-radius: var(--radius-1); background: var(--color-2); transform-origin: 50% 120%; }
+  #pricing .pr-plan--pick { z-index: 1; background: var(--color-5); }
+  #pricing .pr-plan--dark { background: var(--color-6); color: var(--color-3); }
+  #pricing .pr-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 40px; }
+  #pricing .pr-price { display: flex; align-items: baseline; gap: 8px; }
+  #pricing .pr-price strong { font-family: var(--font-1); font-size: clamp(44px, 4.4vw, 64px); font-weight: 600; font-stretch: 140%; line-height: 1; letter-spacing: -.02em; }
+  #pricing .pr-feats { display: grid; gap: 10px; }
+  #pricing .pr-feats li { display: flex; gap: 10px; align-items: baseline; padding-top: 10px; border-top: 1.5px solid currentColor; }
+  #pricing .pr-feats li.is-off { opacity: .55; text-decoration: line-through; }
+  #pricing .pr-plan .m-btn, #pricing .pr-plan .m-btn-2 { margin-top: auto; align-self: flex-start; }
+  #pricing .pr-note { margin-top: 18px; color: var(--color-9); }
+  @media (max-width: 900px) { #pricing .pr-plans { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq .fq-grid { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); gap: clamp(24px, 4vw, 64px); }
+  #faq .fq-side p { color: var(--color-8); max-width: 34ch; }
+  #faq .fq-side .m-link { margin-top: 20px; }
+  #faq details { border-top: 1.5px solid var(--color-8); }
+  #faq details:last-child { border-bottom: 1.5px solid var(--color-8); }
+  #faq summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; }
+  #faq summary::-webkit-details-marker { display: none; }
+  #faq summary::after { content: ""; flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid currentColor; background: linear-gradient(currentColor, currentColor) center / 12px 1.5px no-repeat, linear-gradient(currentColor, currentColor) center / 1.5px 12px no-repeat; transition: rotate .35s, background-color .3s; }
+  #faq details[open] summary::after { rotate: 45deg; }
+  #faq details p { padding: 0 48px 24px 0; color: var(--color-8); max-width: 62ch; }
+  @media (hover: hover) { #faq summary:hover::after { background-color: var(--color-5); color: var(--color-1); border-color: var(--color-5); } }
+  @media (max-width: 767.98px) { #faq .fq-grid { grid-template-columns: 1fr; } #faq details p { padding-right: 0; } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { overflow: hidden; }
+  #contact .ct-shade { position: absolute; inset: -2px; background: var(--color-6); clip-path: inset(0% 100% 100% 0% round 26px); }
+  #contact > .m-notch, #contact .ct-body { position: relative; z-index: 1; }
+  #contact .ct-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 64px); padding-bottom: clamp(70px, 10vw, 110px); }
+  #contact .ct-lead { max-width: 30ch; }
+  #contact .ct-lines { display: grid; gap: 4px; align-content: start; }
+  #contact .ct-lines a, #contact .ct-lines address { font-family: var(--font-1); font-size: clamp(20px, 2.1vw, 30px); font-weight: 500; font-stretch: 125%; font-style: normal; line-height: 1.25; text-decoration: none; }
+  #contact .ct-social { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; }
+  #contact .ct-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  #contact .ct-tab { z-index: 1; --m-notch-h: 76px; width: clamp(240px, 24vw, 320px); }
+  @media (max-width: 767.98px) {
+    #contact .ct-body { grid-template-columns: 1fr; padding-bottom: 100px; }
+    #contact .ct-tab { --m-notch-h: 70px; width: 70%; }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { padding: clamp(32px, 4vw, 56px) calc(var(--space-1) + var(--space-2)) 28px; color: var(--color-3); }
+  #footer .ft-word { font-size: min(24vw, calc((100vw - 2 * (var(--space-1) + var(--space-2))) / (var(--len) * 1))); line-height: .8; }
+  #footer .ft-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin-top: 32px; padding-top: 20px; border-top: 1.5px solid var(--color-6); color: var(--color-8); }
+  #footer nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  #footer nav a { text-decoration: none; padding-bottom: 2px; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; transition: background-size .45s cubic-bezier(.3, .7, .2, 1), background-position 0s .45s; }
+  @media (hover: hover) { #footer nav a:hover { background-size: 0 1px; background-position: 100% 100%; transition: background-size .45s cubic-bezier(.3, .7, .2, 1); } }
+}
+</style>
+<style data-8b-part="rework-first-screen">
+#curve { padding-top: calc(70px + var(--space-2)); }
+#curve .cv-title { font-size: clamp(34px, 5.6vw, 88px); }
+@media (max-width: 900px) {
+  #curve { padding-top: calc(62px + var(--space-2)); }
+  #curve .cv-chart { order: 0; }
+}</style>
+</head>
+<body class="m-text">
+<!-- navigation: fixed top bar: logo in a dark corner tab, four section links, Get the app button; hides on scroll down; full-screen menu on phones -->
+<header id="nav" class="nav" data-8b-section="navigation">
+  <a class="nav-logo m-notch" href="#main" aria-label="Kurvo, back to top"><span class="nav-dot" aria-hidden="true"></span><span class="nav-word">Kurvo</span></a>
+  <nav class="nav-links" aria-label="Main">
+    <a class="m-text-4" href="#curve">Plans</a>
+    <a class="m-text-4" href="#coaches">Coaches</a>
+    <a class="m-text-4" href="#app">The app</a>
+    <a class="m-text-4" href="#pricing">Pricing</a>
+  </nav>
+  <a class="m-btn nav-cta" href="#get-app"><span class="m-btn__label">Get the app</span></a>
+  <button class="m-icon-btn nav-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+  <div id="menu" class="menu" data-lenis-prevent hidden>
+    <div class="menu__top"><span class="menu__brand">Kurvo</span><button class="m-icon-btn menu__close" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <nav class="menu__links" aria-label="Menu">
+      <a class="m-text-2" href="#curve">Plans</a>
+      <a class="m-text-2" href="#coaches">Coaches</a>
+      <a class="m-text-2" href="#app">The app</a>
+      <a class="m-text-2" href="#pricing">Pricing</a>
+      <a class="m-text-2" href="#contact">Contact</a>
+    </nav>
+    <a class="m-btn-2" href="#get-app"><span class="m-btn__label">Get the app</span></a>
+  </div>
+</header>
+<main id="main">
+
+<!-- adaptive-plan: first screen: the h1, a lead, three cues as pills with a line each, a button, and a seven-day bar chart with a line over the bar tops (animation: scene:curve) -->
+<section id="curve" class="l-panel m-surface-2" data-8b-section="adaptive-plan">
+  <h1 class="m-text-2 cv-title" data-8b-motion="stretch">Plans that<br>bend</h1>
+  <div class="cv-grid l-panel__body">
+    <div class="cv-copy">
+      <p class="m-text-5">A week is never a straight line. Every morning Kurvo reads how you slept, how sore you are and how full your day looks, then bends the plan to fit.</p>
+      <ul class="cv-cues">
+        <li><span class="m-badge">Sleep</span><p class="m-text">A short night moves the intervals to tomorrow.</p></li>
+        <li><span class="m-badge">Soreness</span><p class="m-text">Heavy legs turn a tempo run into mobility.</p></li>
+        <li><span class="m-badge">Calendar</span><p class="m-text">A 30-minute gap still gets a complete session.</p></li>
+      </ul>
+      <a class="m-btn" href="#pricing"><span class="m-btn__label">Bend my week</span></a>
+    </div>
+    <figure class="cv-chart">
+      <ol class="cv-days">
+        <li style="--cv-h:.53"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Mon</span><span class="cv-name"><b>Strength</b>40 min</span></li>
+        <li class="is-easy" style="--cv-h:.4"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Tue</span><span class="cv-name"><b>Easy run</b>30 min</span></li>
+        <li class="is-today" style="--cv-h:.67"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Wed · today</span><span class="cv-name"><b>Intervals</b>50 min</span></li>
+        <li class="is-easy" style="--cv-h:.33"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Thu</span><span class="cv-name"><b>Yoga</b>25 min</span></li>
+        <li class="is-rest" style="--cv-h:.06"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Fri</span><span class="cv-name"><b>Rest</b>0 min</span></li>
+        <li style="--cv-h:.8"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Sat</span><span class="cv-name"><b>Ride</b>60 min</span></li>
+        <li style="--cv-h:1"><span class="cv-track"><span class="cv-bar"></span></span><span class="cv-day m-text-4">Sun</span><span class="cv-name"><b>Long run</b>75 min</span></li>
+      </ol>
+      <svg class="cv-line" viewBox="0 0 700 400" preserveAspectRatio="none" aria-hidden="true"><polyline pathLength="100" points="50,188 150,240 250,132 350,268 450,376 550,80 650,0"/></svg>
+      <figcaption class="cv-caption m-text-4">This week, bent around a late Tuesday and a long Sunday run. Bar height is minutes.</figcaption>
+    </figure>
+  </div>
+</section>
+<!-- coaches: four coaches as large overlapping round portraits with name, discipline pill and one line; lime Find my coach button -->
+<section id="coaches" class="l-panel m-surface-4" data-8b-section="coaches">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Coaches who<br>know you</h2></div>
+  <div class="l-panel__body">
+    <p class="co-lead m-text-5">Two hundred certified coaches write the sessions, check your form videos and answer in the chat. You pick one; the app keeps them in the loop.</p>
+    <ul class="co-list">
+      <li class="co-item">
+        <figure class="co-photo"><img style="background:#0c2626" src="https://images.unsplash.com/photo-1577744168855-0391d2ed2b3a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c21pbGluZyUyMG1hbiUyMHNwb3J0c3dlYXIlMjBwb3J0cmFpdHxlbnwxfDJ8fHwxNzkxMjMyMjA3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60" alt="Coach Marcus Hale, arms crossed, in a black training shirt" width="3786" height="3786" loading="lazy"></figure>
+        <h3 class="m-text-3">Marcus Hale</h3>
+        <span class="m-badge" data-8b-motion="drop">Strength</span>
+        <p class="m-text">Twelve years under the barbell, zero ego lifting.</p>
+      </li>
+      <li class="co-item">
+        <figure class="co-photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1635862649934-4d7f4e46742b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZmVtYWxlJTIwcnVubmVyJTIwcG9ydHJhaXQlMjBzdHVkaW8lMjBsaWdodCUyMGJhY2tncm91bmR8ZW58MXwxfHx8MTc5MTIzMjE1Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=550&q=60" alt="Coach Ama Boateng smiling in an orange sports top" width="3827" height="4949" loading="lazy"></figure>
+        <h3 class="m-text-3">Ama Boateng</h3>
+        <span class="m-badge" data-8b-motion="drop">HIIT</span>
+        <p class="m-text">Short, loud and brutally efficient twenty-minute sessions.</p>
+      </li>
+      <li class="co-item">
+        <figure class="co-photo"><img style="background:#0ca6c0" src="https://images.unsplash.com/photo-1683848644087-c3cb69b77d4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBhdGhsZXRlJTIwcG9ydHJhaXQlMjBzdHVkaW98ZW58MXwxfHx8MTc5MTIzMjEzNnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60" alt="Coach Lena Ortiz with a long braid, arms crossed" width="2624" height="3936" loading="lazy"></figure>
+        <h3 class="m-text-3">Lena Ortiz</h3>
+        <span class="m-badge" data-8b-motion="drop">Pilates</span>
+        <p class="m-text">Core, posture and the mobility everyone skips.</p>
+      </li>
+      <li class="co-item">
+        <figure class="co-photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c21pbGluZyUyMG1hbiUyMHNwb3J0c3dlYXIlMjBwb3J0cmFpdHxlbnwxfDJ8fHwxNzkxMjMyMjA3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60" alt="Coach Dev Malik smiling in a gym" width="3456" height="3378" loading="lazy"></figure>
+        <h3 class="m-text-3">Dev Malik</h3>
+        <span class="m-badge" data-8b-motion="drop">Cycling</span>
+        <p class="m-text">Builds your engine one cadence drill at a time.</p>
+      </li>
+    </ul>
+    <div class="co-foot"><a class="m-btn-2" href="#get-app"><span class="m-btn__label">Find my coach</span></a><a class="m-link" href="#pricing"><span class="m-link__label">Coaching is in every paid plan</span></a></div>
+  </div>
+</section>
+<!-- disciplines: four disciplines as full-width pill rows: big name, weekly class count, one line and a photo (animation: scene:disciplines) -->
+<section id="disciplines" class="l-panel m-surface-3" data-8b-section="disciplines">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Train<br>anything</h2></div>
+  <div class="l-panel__body">
+    <p class="ds-lead m-text-5">Five disciplines, one plan. Mix them freely: Kurvo balances the load so Tuesday's legs survive Wednesday's ride.</p>
+    <ul class="ds-rows">
+      <li class="ds-row m-surface-4">
+        <h3 class="ds-name m-text-2" style="--len:8">Strength</h3>
+        <div class="ds-info"><span class="m-badge-3">36 classes a week</span><p class="m-text">Barbell, kettlebell and bodyweight blocks, progressed every week.</p></div>
+        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1635863800416-01eaf5b6be2d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2V0dGxlYmVsbCUyMHRyYWluaW5nJTIwd29tYW58ZW58MXwxfHx8MTc5MTIzMjE4OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Athlete in orange holding a yellow kettlebell in a deep lunge" width="3840" height="5760" loading="lazy" style="background:#f3f3f3;--ds-y:23%"></figure>
+      </li>
+      <li class="ds-row m-surface-2">
+        <h3 class="ds-name m-text-2" style="--len:7">Cycling</h3>
+        <div class="ds-info"><span class="m-badge-3">28 classes a week</span><p class="m-text">Indoor rides synced to your bike, from recovery spins to climbs.</p></div>
+        <figure class="ds-photo"><img style="background:#264040" src="https://images.unsplash.com/photo-1784819482818-36e4b287d6dd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8aW5kb29yJTIwY3ljbGluZyUyMGNsYXNzfGVufDF8MXx8fDE3OTEyMzIxODd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Athlete riding a stationary bike in a dark gym" width="4128" height="6192" loading="lazy"></figure>
+      </li>
+      <li class="ds-row m-surface">
+        <h3 class="ds-name m-text-2" style="--len:4">HIIT</h3>
+        <div class="ds-info"><span class="m-badge-3">40 classes a week</span><p class="m-text">Twenty minutes, no equipment, heart rate in the right zone.</p></div>
+        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1575898311530-2af21854a893?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGZ1bmN0aW9uYWwlMjB0cmFpbmluZyUyMG1hbiUyMGd5bXxlbnwxfDF8fHwxNzkxMjMyMTg4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Athlete doing pull-ups on a rig in a bright gym" width="4480" height="6720" loading="lazy" style="background:#d9d9d9;--ds-y:8%"></figure>
+      </li>
+      <li class="ds-row m-surface-4">
+        <h3 class="ds-name m-text-2" style="--len:4">Yoga</h3>
+        <div class="ds-info"><span class="m-badge-3">22 classes a week</span><p class="m-text">Flows that undo the week, timed for the evenings you need them.</p></div>
+        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1667890786022-83bca6c4f4c2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjB5b2dhJTIwcG9zZSUyMHN0dWRpbyUyMGxpZ2h0fGVufDF8MXx8fDE3OTEyMzIxODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Woman in white holding a seated yoga twist on a dark background" width="4672" height="7008" loading="lazy" style="background:#262626;--ds-y:32%"></figure>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- app: a phone drawn in CSS with three app views (today's session, recovery score, coach chat) beside three notes on a timeline (animation: scene:app) -->
+<section id="app" class="l-panel m-surface" data-8b-section="app">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">One screen,<br>whole week</h2></div>
+  <div class="ap-grid l-panel__body">
+    <div class="ap-stage">
+      <div class="ap-phone">
+        <div class="ap-screen">
+          <div class="ap-strip">
+            <div class="ap-view">
+              <header><span class="m-text-4">Wednesday</span><span class="m-badge-3">Today</span></header>
+              <div class="ap-card"><span class="m-text-4">Intervals</span><strong class="m-text-3">6 × 800 m</strong><span class="m-text">50 min · moderate</span></div>
+              <ol class="ap-steps"><li><span>Warm-up jog</span><span>10 min</span></li><li><span>800 m fast, 400 m easy</span><span>×6</span></li><li><span>Cool-down</span><span>10 min</span></li></ol>
+              <span class="m-btn ap-start"><span class="m-btn__label">Start session</span></span>
+            </div>
+            <div class="ap-view">
+              <header><span class="m-text-4">This morning</span><span class="m-badge-3">Ready</span></header>
+              <div class="ap-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ap-ring__track" cx="60" cy="60" r="50"/><circle class="ap-ring__value" cx="60" cy="60" r="50" pathLength="100" stroke-dasharray="82 100"/></svg><strong>82<small>Recovery</small></strong></div>
+              <ul class="ap-facts"><li><span>Sleep</span><span>7 h 40</span></li><li><span>Resting heart rate</span><span>52 bpm</span></li><li><span>Legs</span><span>Fresh</span></li></ul>
+            </div>
+            <div class="ap-view">
+              <header><span class="ap-who"><img style="background:#f3f3f3" class="m-avatar" src="https://images.unsplash.com/photo-1635862649934-4d7f4e46742b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZmVtYWxlJTIwcnVubmVyJTIwcG9ydHJhaXQlMjBzdHVkaW8lMjBsaWdodCUyMGJhY2tncm91bmR8ZW58MXwxfHx8MTc5MTIzMjE1Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=550&q=60" alt="" width="3827" height="4949" loading="lazy"><span class="m-text-4">Coach Ama</span></span></header>
+              <p class="ap-bubble">Rain all Saturday, so I moved your long run to Sunday morning.</p>
+              <p class="ap-bubble ap-bubble--me">Perfect. Can Friday be yoga instead of rest?</p>
+              <p class="ap-bubble">Done: 25 minutes, slow flow. Sleep well!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ap-notes">
+      <p class="ap-lead m-text-5">Everything Kurvo knows about your week fits on one screen, and it changes when you do.</p>
+      <div class="ap-note is-on"><h3 class="m-text-3">Today's session</h3><p class="m-text">Open the app and the session is already there, sized to the time you have, with every block explained.</p></div>
+      <div class="ap-note"><h3 class="m-text-3">Recovery score</h3><p class="m-text">Sleep, resting heart rate and how your legs feel become one number that decides how hard today can be.</p></div>
+      <div class="ap-note"><h3 class="m-text-3">A coach in the chat</h3><p class="m-text">A real coach reads your week and answers within hours, not a bot reciting tips.</p></div>
+    </div>
+  </div>
+</section>
+<!-- member-stories: three member stories: a small result curve with a lime result tag, a quote, an avatar, a name and how long they have been members -->
+<section id="stories" class="l-panel m-surface-2" data-8b-section="member-stories">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Real people,<br>real curves</h2></div>
+  <ul class="st-list l-panel__body">
+    <li class="st-card">
+      <div class="st-spark"><svg viewBox="0 0 310 110" aria-hidden="true"><path pathLength="100" data-8b-motion="draw" d="M10,90 C18.3,86.7 43.3,71.7 60,70 C76.7,68.3 93.3,83.3 110,80 C126.7,76.7 143.3,53.7 160,50 C176.7,46.3 193.3,62.3 210,58 C226.7,53.7 245,31.7 260,24 C275,16.3 293.3,14 300,12"/><circle cx="300" cy="12" r="7"/></svg><span class="m-badge-3" data-8b-motion="drop">10 km in 52:40</span></div>
+      <blockquote><p>I stopped skipping Mondays once the plan stopped pretending Mondays were easy.</p></blockquote>
+      <div class="st-who"><img style="background:#c0c0a6" class="m-avatar" src="https://images.unsplash.com/photo-1734830268394-6c4a1f165af1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXRobGV0ZSUyMGhlYWRzaG90JTIwcGxhaW4lMjBiYWNrZ3JvdW5kfGVufDF8Mnx8fDE3OTEyMzIyMDZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=80&q=60" alt="Tomás Reyes" width="3903" height="3903" loading="lazy"><span><b>Tomás Reyes</b><small>Member for 8 months</small></span></div>
+    </li>
+    <li class="st-card">
+      <div class="st-spark"><svg viewBox="0 0 310 110" aria-hidden="true"><path pathLength="100" data-8b-motion="draw" d="M10,80 C18.3,78.7 43.3,71.3 60,72 C76.7,72.7 93.3,86 110,84 C126.7,82 143.3,67.3 160,60 C176.7,52.7 193.3,45 210,40 C226.7,35 245,34.3 260,30 C275,25.7 293.3,16.7 300,14"/><circle cx="300" cy="14" r="7"/></svg><span class="m-badge-3" data-8b-motion="drop">Deadlift +20 kg</span></div>
+      <blockquote><p>Three kids, two jobs, and finally a plan that moves when my week does.</p></blockquote>
+      <div class="st-who"><img style="background:#c0c0c0" class="m-avatar" src="https://images.unsplash.com/photo-1770908714581-be644af7044f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8YXRobGV0ZSUyMGhlYWRzaG90JTIwcGxhaW4lMjBiYWNrZ3JvdW5kfGVufDF8Mnx8fDE3OTEyMzIyMDZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=80&q=60" alt="Nadia Karim" width="2778" height="2832" loading="lazy"><span><b>Nadia Karim</b><small>Member for 1 year</small></span></div>
+    </li>
+    <li class="st-card">
+      <div class="st-spark"><svg viewBox="0 0 310 110" aria-hidden="true"><path pathLength="100" data-8b-motion="draw" d="M10,96 C18.3,94.7 43.3,88.7 60,88 C76.7,87.3 93.3,95.7 110,92 C126.7,88.3 143.3,69.3 160,66 C176.7,62.7 193.3,77.3 210,72 C226.7,66.7 245,43.3 260,34 C275,24.7 293.3,19 300,16"/><circle cx="300" cy="16" r="7"/></svg><span class="m-badge-3" data-8b-motion="drop">First marathon, 4:48</span></div>
+      <blockquote><p>At 61 I ran my first marathon. The app held me back in month two, and that is why I finished.</p></blockquote>
+      <div class="st-who"><img style="background:#a6a6a6" class="m-avatar" src="https://images.unsplash.com/photo-1776860976478-729261a586ae?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Z3JvdXAlMjBydW4lMjBjbHViJTIwY2l0eXxlbnwxfDB8fHwxNzkxMjMyMzc0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=120&q=60" alt="Ruth Miller" width="5434" height="3623" loading="lazy"><span><b>Ruth Miller</b><small>Member for 2 years</small></span></div>
+    </li>
+  </ul>
+</section>
+<!-- monthly-challenge: a monthly 100 km challenge: a route with five checkpoints and rewards, a photo with an arched top and a lime join button (animation: scene:challenge) -->
+<section id="challenge" class="l-panel m-surface-4" data-8b-section="monthly-challenge">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">The October<br>hundred</h2></div>
+  <div class="ch-grid l-panel__body">
+    <div class="ch-main">
+      <p class="ch-lead m-text-5">Run, ride or walk 100 km this month with 18,000 members. Every checkpoint unlocks something you can actually use.</p>
+      <div class="ch-map">
+        <svg class="ch-svg--wide" viewBox="0 0 700 360" aria-hidden="true"><path class="ch-ghost" d="M30,300 C51.7,271.7 115,138.3 160,130 C205,121.7 253.3,255 300,250 C346.7,245 395,103.3 440,100 C485,96.7 530,235 570,230 C610,225 661.7,96.7 680,70"/><path class="ch-route" pathLength="100" d="M30,300 C51.7,271.7 115,138.3 160,130 C205,121.7 253.3,255 300,250 C346.7,245 395,103.3 440,100 C485,96.7 530,235 570,230 C610,225 661.7,96.7 680,70"/></svg>
+        <svg class="ch-svg--tall" viewBox="0 0 64 600" preserveAspectRatio="none" aria-hidden="true"><path class="ch-ghost" d="M32,10 C35.3,30 55.3,90 52,130 C48.7,170 12,210 12,250 C12,290 52,330 52,370 C52,410 15.3,453.3 12,490 C8.7,526.7 28.7,573.3 32,590"/><path class="ch-route" pathLength="100" d="M32,10 C35.3,30 55.3,90 52,130 C48.7,170 12,210 12,250 C12,290 52,330 52,370 C52,410 15.3,453.3 12,490 C8.7,526.7 28.7,573.3 32,590"/></svg>
+        <ol class="ch-points">
+          <li class="is-up" style="--ch-x:22.86%;--ch-y:36.11%"><b>20 km</b><span>Finisher badge on your profile</span></li>
+          <li style="--ch-x:42.86%;--ch-y:69.44%"><b>40 km</b><span>A free live class pass</span></li>
+          <li class="is-up" style="--ch-x:62.86%;--ch-y:27.78%"><b>60 km</b><span>Form review from a coach</span></li>
+          <li style="--ch-x:81.43%;--ch-y:63.89%"><b>80 km</b><span>20% off running shoes</span></li>
+          <li class="is-end" style="--ch-x:97.14%;--ch-y:19.44%"><b>100 km</b><span>The October tee, posted free</span></li>
+        </ol>
+        <span class="ch-dot" aria-hidden="true"></span>
+      </div>
+    </div>
+    <div class="ch-side">
+      <figure class="ch-photo"><img style="background:#a65926" src="https://images.unsplash.com/photo-1726195221456-7e104a23bbff?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHJ1bm5pbmclMjB0cmFjayUyMGF0aGxldGV8ZW58MXwwfHx8MTc5MTIzMjM3M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60" alt="Runner in mid-stride on a track at night" width="6000" height="4000" loading="lazy"></figure>
+      <a class="m-btn-2" href="#get-app"><span class="m-btn__label">Join the hundred</span></a>
+    </div>
+  </div>
+</section>
+<!-- run-clubs: weekly free group runs: a photo and a list of six cities, each with a meeting point and a start time -->
+<section id="clubs" class="l-panel m-surface" data-8b-section="run-clubs">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Sunday<br>clubs</h2></div>
+  <div class="cl-grid l-panel__body">
+    <figure class="cl-photo"><img style="background:#d9d9f3" src="https://images.unsplash.com/photo-1750089440313-5c6d8b5248e0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjBqb2dnaW5nJTIwcGFyayUyMG1vcm5pbmd8ZW58MXwwfHx8MTc5MTIzMjM3M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=780&q=60" alt="Runner on a waterfront path with city towers behind" width="6000" height="4000" loading="lazy"></figure>
+    <div>
+      <p class="cl-lead m-text-5">Once a week the app goes outside. Free group runs at an easy pace, a coach at the front and coffee at the end.</p>
+      <ul class="cl-list">
+        <li><h3 class="m-text-3">London</h3><p class="m-text">Southbank, by the riverside steps</p><span class="m-badge" data-8b-motion="drop">08:30</span></li>
+        <li><h3 class="m-text-3">Berlin</h3><p class="m-text">Tempelhofer Feld, north gate</p><span class="m-badge" data-8b-motion="drop">09:00</span></li>
+        <li><h3 class="m-text-3">Lisbon</h3><p class="m-text">Belém, the lawn by the tower</p><span class="m-badge" data-8b-motion="drop">08:00</span></li>
+        <li><h3 class="m-text-3">Toronto</h3><p class="m-text">Trillium Park, lake entrance</p><span class="m-badge" data-8b-motion="drop">09:30</span></li>
+        <li><h3 class="m-text-3">Melbourne</h3><p class="m-text">The Tan, Anderson Street gate</p><span class="m-badge" data-8b-motion="drop">07:30</span></li>
+        <li><h3 class="m-text-3">Austin</h3><p class="m-text">Lady Bird Lake, Zilker side</p><span class="m-badge" data-8b-motion="drop">07:00</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- pricing: three plans side by side with the same five rows: a free one, the recommended one in lime, and one for two people (animation: scene:pricing) -->
+<section id="pricing" class="l-panel m-surface-2" data-8b-section="pricing">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Pick your<br>plan</h2></div>
+  <div class="l-panel__body">
+    <p class="pr-lead m-text-5">Start free for 30 days on any plan. Switch or cancel from the app whenever you like.</p>
+    <ul class="pr-plans" id="get-app">
+      <li class="pr-plan">
+        <div class="pr-head"><h3 class="m-text-3">Starter</h3></div>
+        <p class="pr-price"><strong>$0</strong><span class="m-text">forever</span></p>
+        <ul class="pr-feats m-text"><li>Adaptive weekly plan</li><li>Six classes a week</li><li>Sunday clubs</li><li class="is-off">Coach chat</li><li class="is-off">Wearable sync</li></ul>
+        <a class="m-btn" href="#get-app"><span class="m-btn__label">Start free</span></a>
+      </li>
+      <li class="pr-plan pr-plan--pick">
+        <div class="pr-head"><h3 class="m-text-3">Pro</h3><span class="m-badge-2">Most chosen</span></div>
+        <p class="pr-price"><strong>$12</strong><span class="m-text">per month</span></p>
+        <ul class="pr-feats m-text"><li>Adaptive weekly plan</li><li>Every class, all five disciplines</li><li>Sunday clubs and challenges</li><li>Coach chat</li><li>Wearable sync</li></ul>
+        <a class="m-btn" href="#get-app"><span class="m-btn__label">Try Pro free</span></a>
+      </li>
+      <li class="pr-plan pr-plan--dark">
+        <div class="pr-head"><h3 class="m-text-3">Duo</h3></div>
+        <p class="pr-price"><strong>$19</strong><span class="m-text">per month, two people</span></p>
+        <ul class="pr-feats m-text"><li>Everything in Pro, twice</li><li>Shared weekly plan</li><li>Couple and partner workouts</li><li>One coach for both</li><li>Wearable sync</li></ul>
+        <a class="m-btn-2" href="#get-app"><span class="m-btn__label">Try Duo free</span></a>
+      </li>
+    </ul>
+    <p class="pr-note m-text-4">Prices in US dollars, taxes included where required.</p>
+  </div>
+</section>
+<!-- faq: questions and answers (native <details>) beside a short intro with a link to contact -->
+<section id="faq" class="l-panel m-surface-4" data-8b-section="faq">
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Questions,<br>answered</h2></div>
+  <div class="fq-grid l-panel__body">
+    <div class="fq-side"><p class="m-text-5">Still unsure? The answers below cover most of what people ask before they start.</p><a class="m-link" href="#contact"><span class="m-link__label">Ask us something else</span></a></div>
+    <div class="fq-list">
+      <details><summary class="m-text-3">Do I need a smartwatch?</summary><p class="m-text">No. A watch or ring makes the recovery score sharper, but three taps each morning about sleep and soreness are enough to bend the plan.</p></details>
+      <details><summary class="m-text-3">How does the plan adapt?</summary><p class="m-text">Every morning Kurvo compares your recovery, your calendar and the week's goal, then moves, shortens or swaps sessions. You see every change and can undo it.</p></details>
+      <details><summary class="m-text-3">Can I train at home?</summary><p class="m-text">Yes. Tell the app what equipment you have, even if it is nothing, and every session is written for it.</p></details>
+      <details><summary class="m-text-3">What if I miss a session?</summary><p class="m-text">Nothing breaks. The week re-balances so the important work still happens, without stacking two hard days together.</p></details>
+      <details><summary class="m-text-3">Can I cancel anytime?</summary><p class="m-text">Yes, in two taps from the app's account page. You keep access until the end of the paid month.</p></details>
+    </div>
+  </div>
+</section>
+<!-- contact: lime contact panel: lead, Get the app button, email, phone, address, three social links and a Write to us corner tab (contacts are placeholders) (animation: scene:contact) -->
+<section id="contact" class="l-panel m-surface-5" data-8b-section="contact">
+  <div class="ct-shade" aria-hidden="true"></div>
+  <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Let's<br>move</h2></div>
+  <div class="ct-body l-panel__body">
+    <div>
+      <p class="ct-lead m-text-5">Questions about plans, coaching or your account? A real person answers within one working day.</p>
+      <div class="ct-actions"><a class="m-btn" href="#get-app"><span class="m-btn__label">Get the app</span></a></div>
+    </div>
+    <div>
+      <div class="ct-lines">
+        <a data-8b-placeholder="email" href="mailto:hello@kurvo.example">hello@kurvo.example</a>
+        <a data-8b-placeholder="phone" href="tel:+442000000000">+44 20 0000 0000</a>
+        <address>1 Example Street, London EC2A 0ZZ</address>
+      </div>
+      <div class="ct-social"><a data-8b-placeholder="social" class="m-link" href="https://www.instagram.com/"><span class="m-link__label">Instagram</span></a><a data-8b-placeholder="social" class="m-link" href="https://www.strava.com/"><span class="m-link__label">Strava club</span></a><a data-8b-placeholder="social" class="m-link" href="https://www.youtube.com/"><span class="m-link__label">YouTube</span></a></div>
+    </div>
+  </div>
+  <div class="ct-tab m-notch-2"><a data-8b-placeholder="email" class="m-btn-3" href="mailto:hello@kurvo.example"><span class="m-btn__label">Write to us</span><svg class="m-btn-3__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+</section>
+</main>
+<!-- footer: the wordmark across the full width, copyright with the Design: 8B credit, six links and a tagline -->
+<footer id="footer" data-8b-section="footer">
+  <p class="ft-word m-text-2" style="--len:5" data-8b-motion="stretch" aria-hidden="true">Kurvo</p>
+  <div class="ft-row m-text-4">
+    <span>© 2026 Kurvo Labs Ltd. · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></span>
+    <nav aria-label="Footer"><a href="#curve">Plans</a><a href="#coaches">Coaches</a><a href="#app">The app</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+    <span>Made for people who train between everything else</span>
+  </div>
+</footer>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const menu = document.getElementById('menu');
+  const openBtn = nav.querySelector('.nav-menu');
+  const closeBtn = menu.querySelector('.menu__close');
+  let last = scrollY, travel = 0;
+  const hero = document.querySelector('#opening .op-hero');
+  const onScroll = () => {
+    const y = scrollY, dy = y - last;
+    last = y;
+    if (dy === 0) return;
+    travel = Math.sign(dy) === Math.sign(travel) ? travel + dy : dy;
+    if (y < 80) nav.classList.remove('is-hidden');
+    else if (travel > 24) nav.classList.add('is-hidden');
+    else if (travel < -24) nav.classList.remove('is-hidden');
+    nav.classList.toggle('is-solid', y > (hero ? hero.offsetHeight - 90 : 400));
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setMenu = open => {
+    menu.hidden = !open;
+    openBtn.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeBtn.focus(); } else { window.lenis?.start(); openBtn.focus(); }
+  };
+  openBtn.addEventListener('click', () => setMenu(true));
+  closeBtn.addEventListener('click', () => setMenu(false));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.hidden = true; openBtn.setAttribute('aria-expanded', 'false'); window.lenis?.start(); }));
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navOffset() {
+  const nav = document.getElementById('nav');
+  return nav ? nav.offsetHeight + 12 : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .11, anchors: { offset: -navOffset() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  stretch(element, vars = {}) {
+    return gsap.timeline(vars).from(element, { '--m-wd': 75, duration: 1.1, ease: 'power3.out' });
+  },
+  drop(element, vars = {}, index = 0) {
+    return gsap.timeline(vars).from(element, { y: -70, rotation: (index % 2 ? -1 : 1) * 28, opacity: 0, duration: .9, ease: 'bounce.out' });
+  },
+  draw(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { strokeDasharray: 100, strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 1.3, ease: 'power2.inOut' });
+  }
+};
+['stretch', 'drop', 'draw'].forEach(name => {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, i) => ScrollTrigger.create({
+        id: elements.length > 1 ? `${id}:${i}` : id, trigger: element, start: 'top 88%', once: true,
+        animation: effects[name](element, { paused: true }, i)
+      }));
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+
+<script data-8b-part="scene:curve">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 768px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 767.98px) and (prefers-reduced-motion: no-preference)' }, ctx => {
+    const desk = ctx.conditions.desk;
+    const section = document.getElementById('curve');
+    const chart = section.querySelector('.cv-chart');
+    const items = section.querySelectorAll('.cv-days li');
+    const grey = getComputedStyle(document.documentElement).getPropertyValue('--color-8').trim();
+    const prop = desk ? 'scaleY' : 'scaleX';
+    const tl = gsap.timeline({ defaults: { ease: 'none' }, delay: .3 });
+    items.forEach((item, i) => {
+      const bar = item.querySelector('.cv-bar');
+      const h = parseFloat(getComputedStyle(item).getPropertyValue('--cv-h')) || .5;
+      tl.fromTo(bar, { [prop]: Math.min(4, .5 / Math.max(h, .06)), backgroundColor: grey },
+        { [prop]: 1, backgroundColor: getComputedStyle(bar).backgroundColor, duration: .55, ease: 'power2.inOut' }, .05 + i * .05);
+    });
+    tl.timeScale(.6);
+    if (desk) tl.fromTo(section.querySelector('.cv-line polyline'), { strokeDasharray: 100, strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: .45 }, .5);
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:disciplines">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 768px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 767.98px) and (prefers-reduced-motion: no-preference)' }, ctx => {
+    const desk = ctx.conditions.desk;
+    const section = document.getElementById('disciplines');
+    const list = section.querySelector('.ds-rows');
+    const rows = list.querySelectorAll('.ds-row');
+    const tilt = desk ? [-9, 7, -5, 10] : [-5, 4, -3, 5];
+    const shift = desk ? [22, -8, 34, 6] : [5, -3, 7, 2];
+    const r = desk ? '999px' : '44px';
+    const tl = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: {
+      id: 'disciplines', trigger: list, start: 'top 95%', end: 'top 22%', scrub: .5
+    } });
+    rows.forEach((row, i) => {
+      tl.fromTo(row, { rotation: tilt[i % 4], xPercent: shift[i % 4], y: (desk ? 50 : 24) * (i + 1), clipPath: `inset(0% ${desk ? 60 : 34}% 0% 0% round ${r})` },
+        { rotation: 0, xPercent: 0, y: 0, clipPath: `inset(0% 0% 0% 0% round ${r})`, duration: .55 }, i * .1);
+    });
+  });
+}, { near: document.getElementById('disciplines') });
+</script>
+<script data-8b-part="scene:app">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 768px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 767.98px) and (prefers-reduced-motion: no-preference)' }, ctx => {
+    const desk = ctx.conditions.desk;
+    const section = document.getElementById('app');
+    const strip = section.querySelector('.ap-strip');
+    section.setAttribute('data-app-run', '');
+    const notes = section.querySelectorAll('.ap-note');
+    const mark = i => notes.forEach((note, j) => note.classList.toggle('is-on', j === i));
+    const trigger = desk
+      ? { trigger: notes[0], start: 'center center', endTrigger: notes[notes.length - 1], end: 'center center' }
+      : { trigger: section.querySelector('.ap-stage'), start: 'top 16%', end: 'bottom 85%' };
+    const tl = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: {
+      id: 'app', ...trigger, scrub: .5, onUpdate: self => mark(Math.min(notes.length - 1, Math.floor(self.progress * notes.length * .999)))
+    } });
+    const views = strip.querySelectorAll('.ap-view');
+    views.forEach((view, i) => {
+      if (!i) return;
+      tl.fromTo(view, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .2 }, .1 + (i - 1) * .5)
+        .from(view.children, { y: 40, duration: .2, stagger: .02 }, .1 + (i - 1) * .5);
+    });
+    tl.to({}, { duration: .1 }, .9);
+    return () => { mark(0); section.removeAttribute('data-app-run'); };
+  });
+});
+</script>
+<script data-8b-part="scene:challenge">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 768px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 767.98px) and (prefers-reduced-motion: no-preference)' }, ctx => {
+    const desk = ctx.conditions.desk;
+    const section = document.getElementById('challenge');
+    const map = section.querySelector('.ch-map');
+    const svg = section.querySelector(desk ? '.ch-svg--wide' : '.ch-svg--tall');
+    const route = svg.querySelector('.ch-route');
+    const dot = section.querySelector('.ch-dot');
+    const points = section.querySelectorAll('.ch-points li');
+    const box = desk ? [700, 360] : [64, 600];
+    const len = route.getTotalLength();
+    const pts = Array.from({ length: 201 }, (_, i) => route.getPointAtLength(len * i / 200));
+    const end = pts[200];
+    const at = desk ? [[160, 130], [300, 250], [440, 100], [570, 230], [680, 70]].map(([x, y]) => {
+      let best = 0, bd = Infinity;
+      pts.forEach((p, i) => { const d = (p.x - x) ** 2 + (p.y - y) ** 2; if (d < bd) { bd = d; best = i; } });
+      return best / 200;
+    }) : Array.from(points, (_, i) => (i + 1) / points.length);
+    let sx = 1, sy = 1;
+    const measure = () => { sx = svg.clientWidth / box[0]; sy = svg.clientHeight / box[1]; };
+    const setX = gsap.quickSetter(dot, 'x', 'px'), setY = gsap.quickSetter(dot, 'y', 'px');
+    const state = { t: 1 };
+    const place = () => {
+      const p = pts[Math.round(state.t * 200)];
+      setX((p.x - end.x) * sx); setY((p.y - end.y) * sy);
+      points.forEach((li, i) => li.classList.toggle('is-dim', state.t < at[i] - .004));
+    };
+    measure();
+    const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'challenge', trigger: map, start: 'top 78%', end: desk ? 'bottom 48%' : 'bottom 58%', scrub: .6,
+      invalidateOnRefresh: true, onRefresh: () => { measure(); place(); }
+    } });
+    tl.fromTo(route, { strokeDasharray: 100, strokeDashoffset: 100 }, { strokeDashoffset: 0, duration: 1 }, 0)
+      .fromTo(state, { t: 0 }, { t: 1, duration: 1, onUpdate: place }, 0);
+    place();
+    return () => points.forEach(li => li.classList.remove('is-dim'));
+  });
+}, { near: document.getElementById('challenge') });
+</script>
+<script data-8b-part="scene:pricing">
+queueMotion(() => {
+  gsap.matchMedia().add({ desk: '(min-width: 901px) and (prefers-reduced-motion: no-preference)', phone: '(max-width: 900.98px) and (prefers-reduced-motion: no-preference)' }, ctx => {
+    const desk = ctx.conditions.desk;
+    const section = document.getElementById('pricing');
+    const list = section.querySelector('.pr-plans');
+    const plans = list.querySelectorAll('.pr-plan');
+    const mid = (plans.length - 1) / 2;
+    const tl = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: {
+      id: 'pricing', trigger: list, start: 'top 92%', end: desk ? 'top 32%' : 'bottom 85%', scrub: .6, invalidateOnRefresh: true
+    } });
+    plans.forEach((plan, i) => {
+      tl.from(plan, desk
+        ? { x: () => (mid - i) * (plan.offsetWidth + 12), y: Math.abs(i - mid) * 40, rotation: (i - mid) * 9, duration: 1 }
+        : { y: () => -i * (plan.offsetHeight + 12) * .85, rotation: i ? (i % 2 ? 4 : -4) : 0, duration: 1 }, 0);
+    });
+  });
+}, { near: document.getElementById('pricing') });
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    gsap.timeline({ scrollTrigger: { id: 'contact', trigger: section, start: 'top 96%', end: 'top 58%', scrub: .5 } })
+      .fromTo(section.querySelector('.ct-shade'), { clipPath: 'inset(0% 28% 18% 0% round 26px)' }, { clipPath: 'inset(0% 100% 100% 0% round 26px)', ease: 'power2.inOut' });
+  });
+}, { near: document.getElementById('contact') });
+</script>
+</body>
+</html>

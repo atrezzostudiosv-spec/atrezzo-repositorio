@@ -1,0 +1,44 @@
+{
+  "slug": "pervenche",
+  "name": "Pervenche",
+  "categories": [
+    "Architecture and building",
+    "Agency and studio"
+  ],
+  "upstream": "https://github.com/8bsite/interior-design-website-template",
+  "demo": "https://8b.com/templates/pervenche/demo.html",
+  "design_md_url": "https://8b.com/templates/pervenche/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "78949b1a4c6101c3a777a2e0298e9db0a5ca81f9",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "4637644b1bf2bf76a1840fbc878e363c39788eff",
+    "README.md": "dc62473e46637f460757b99695d28eb620e38867",
+    "AGENTS.md": "7ccc81939c7926cc97df9726831b0cec08a028c2",
+    "index.html": "2fa198bfb9c4d7f93af0bd422a07f0a48ed5baad",
+    "index.gsap.html": "4c71538ff36cd6c59605787fc4e8cef091a03550"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "024dfcfe295f62c043c40d77cbee57e8948f542c9b7d302c79277b1b6349dd0b",
+    "README.md": "a9bcceb69256d364540b3efece4996afa0f06f82c0b684082126b4e0b2827066",
+    "AGENTS.md": "2d2fe1ed005de14ab90b76846af6bc4b9c72a0dd4ce7661b0f5d228752d830c4",
+    "index.html": "9cc9cdd4f29f37bfa97be03d25ac063d6e60b690484cfb98aff273e73cf0ecdb",
+    "index.gsap.html": "d09f32e2cf52a4ecc419af291c4dc60d0c60ac3da768a82e2acdee983cfebab2"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

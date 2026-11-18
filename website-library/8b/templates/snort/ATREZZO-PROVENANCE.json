@@ -1,0 +1,44 @@
+{
+  "slug": "snort",
+  "name": "Snort",
+  "categories": [
+    "Event",
+    "Culture"
+  ],
+  "upstream": "https://github.com/8bsite/comedy-club-website-template",
+  "demo": "https://8b.com/templates/snort/demo.html",
+  "design_md_url": "https://8b.com/templates/snort/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "9f7498e6d4ad72757011b5365a028c25c67115fb",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "bc01e8f34d3dedb6c6f8c9b2bc14e9cd18c713c5",
+    "README.md": "7ec8c9e37130f2d1d83d923b8eb66e9185a455c7",
+    "AGENTS.md": "4d26412aacdec6eab473774e9465831551803eb6",
+    "index.html": "f19b31d2da04c46af4c9306709a981f297d87f63",
+    "index.gsap.html": "b18f6a5b289b24a286f7acfb0bf9e9528108724d"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7678bdf29b065de86101b71286e17df81b0ea343fe28f28f1bf11f601ca18349",
+    "README.md": "3d36a770993f8feffb438a766436c8935ae970a370540093f915c9c6f7934c99",
+    "AGENTS.md": "56d954179eecbd0cadd2dbf002093e1a8897b3467da3ab04d07ddf6e9f234e1a",
+    "index.html": "06c8a0f6d651f0472698e4a5e85e95adff78b3f7a726d502106677180cceaf58",
+    "index.gsap.html": "e00a12dca3fd281721437483fc01afd6dcadb4f12b68018f3750c7e8fc00c5da"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

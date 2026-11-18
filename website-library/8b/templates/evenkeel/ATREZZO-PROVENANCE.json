@@ -1,0 +1,43 @@
+{
+  "slug": "evenkeel",
+  "name": "Evenkeel",
+  "categories": [
+    "Finance"
+  ],
+  "upstream": "https://github.com/8bsite/accounting-firm-website-template",
+  "demo": "https://8b.com/templates/evenkeel/demo.html",
+  "design_md_url": "https://8b.com/templates/evenkeel/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "34b44d3a53a87414704210b3b46c2a96dfe37507",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "80a4ec87e8e42745b5f738678a1905696d08d54d",
+    "README.md": "3263e7c82db39a4e776a45572feefeb6fbdcfab3",
+    "AGENTS.md": "9f15feac28f4853cd927a7d8b832b16c5c7cb0f3",
+    "index.html": "24d45d7b1476a94e33d50d93a104f8a40ddb87a3",
+    "index.gsap.html": "f1aa9bd64493f8484c899bb0f78f067e47bb2b17"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8ae830e0db3bfe8815bf8e70681454f0d41ed0f47a388f1cc1f9e650be9706ed",
+    "README.md": "8b4f30190b0c42237d8d956f2d59fd39c864d02ccbf37f3a6794be7db21cf595",
+    "AGENTS.md": "359ab6c56d3a9b742b705405fde198bf39f107f10256f6274729b6a54453655f",
+    "index.html": "9351a458a4d765c07df1565e4c83f28f1138dcf546a79c54e551234eed43cd3b",
+    "index.gsap.html": "1efd26a3919225dc5a22b7a0c43157883f34be2dc7acbf6882f9cfc2f8ba3ab1"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,1414 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/dotdrum/
+  Source: https://github.com/8bsite/print-studio-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dotdrum — two-drum risograph studio and small press</title>
+<meta name="description" content="Dotdrum prints zines, posters and books on a two-drum risograph: Medium Blue first, Fluorescent Pink second. Runs from 30 copies, workshops every month.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dotdrum — two-drum risograph studio and small press">
+<meta property="og:description" content="Dotdrum prints zines, posters and books on a two-drum risograph: Medium Blue first, Fluorescent Pink second. Runs from 30 copies, workshops every month.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%2311138d'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ed008e'%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEVFi3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEWli389k.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEVFi3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #11138d;
+  --color-2: #ed008e;
+  --color-3: #f3f3fa;
+  --color-4: #07061f;
+  --font-1: "Gabarito", "Gabarito Fallback", Arial, sans-serif;
+  --font-2: "Rethink Sans", "Rethink Sans Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(16px, 3.2vw, 40px);
+  --space-2: clamp(88px, 11vw, 160px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Gabarito Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 80.7%; ascent-override: 116.5%; descent-override: 32.2%; line-gap-override: 0%; }
+  @font-face { font-family: "Rethink Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 93.6%; ascent-override: 105.8%; descent-override: 33.1%; line-gap-override: 0%; }
+  @font-face { font-family: "Rethink Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.3%; ascent-override: 96.8%; descent-override: 30.3%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-3); }
+  img { display: block; max-width: 100%; height: auto; }
+  h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--color-2); outline-offset: 3px; }
+  [data-8b-motion~="register"] {
+    text-shadow: var(--register-x, 0em) var(--register-y, 0em) 0 color-mix(in srgb, var(--register-ink, var(--color-2)) calc(var(--register-a, 0) * 100%), transparent);
+  }
+  [data-8b-motion~="screen"].is-screening {
+    mask: radial-gradient(circle closest-side, currentColor var(--screen-dot, 0%), transparent calc(var(--screen-dot, 0%) + 10%)) 0 0 / 14px 14px;
+  }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+  @property --link-dot { syntax: "<percentage>"; inherits: false; initial-value: 45%; }
+
+  .m-text { font-family: var(--font-2); font-size: clamp(16px, 0.35vw + 14px, 18px); font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+  .m-text-2 { font-family: var(--font-1); font-size: clamp(40px, 5.6vw, 84px); font-weight: 800; line-height: 0.95; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+
+  .m-text-3 { font-family: var(--font-1); font-size: 120px; font-weight: 900; line-height: 0.86; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+
+  .m-text-4 { font-family: var(--font-2); font-size: 13px; font-weight: 600; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; }
+
+  .m-text-5 { font-family: var(--font-2); font-size: clamp(19px, 0.8vw + 13px, 24px); font-weight: 500; line-height: 1.35; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+
+  .m-text-6 { font-family: var(--font-1); font-size: clamp(22px, 0.9vw + 15px, 28px); font-weight: 700; line-height: 1.05; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+  .m-btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-4); font-family: var(--font-2); font-size: 16px; font-weight: 700; line-height: 1; letter-spacing: 0.01em; text-decoration: none; cursor: pointer; }
+  .m-btn::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 112%; aspect-ratio: 1; border-radius: var(--radius-1); background: var(--color-3); transform: translate(-50%, 30%) scale(0.1); transition: transform 0.55s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  .m-btn__label { position: relative; transition: color 0.3s; }
+  @media (hover: hover) {
+    .m-btn:hover::before { transform: translate(-50%, -50%) scale(1); }
+    .m-btn:hover .m-btn__label { color: var(--color-1); }
+  }
+
+  .m-btn-2 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 0; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-3); font-family: var(--font-2); font-size: 16px; font-weight: 700; line-height: 1; letter-spacing: 0.01em; text-decoration: none; cursor: pointer; }
+  .m-btn-2::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 112%; aspect-ratio: 1; border-radius: var(--radius-1); background: var(--color-4); transform: translate(-50%, 30%) scale(0.1); transition: transform 0.55s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  .m-btn-2__label { position: relative; }
+  @media (hover: hover) {
+    .m-btn-2:hover::before { transform: translate(-50%, -50%) scale(1); }
+  }
+
+  .m-link { --link-dot: 45%; display: inline-block; padding-bottom: 7px; color: inherit; font-weight: 600; text-decoration: none; background: radial-gradient(circle closest-side, currentColor var(--link-dot), transparent calc(var(--link-dot) + 14%)) 0 100% / 6px 4px repeat-x; transition: --link-dot 0.4s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  @media (hover: hover) {
+    .m-link:hover { --link-dot: 170%; }
+  }
+
+  .m-icon-btn { position: relative; display: inline-grid; place-items: center; flex: none; width: 48px; height: 48px; padding: 0; border: 2px solid currentColor; border-radius: var(--radius-1); background: transparent; color: inherit; cursor: pointer; }
+  .m-icon-btn::before { content: ""; position: absolute; left: 50%; top: 50%; width: 20px; height: 2px; background: currentColor; translate: -50% -50%; }
+  .m-icon-btn__dot { position: absolute; left: 50%; top: 11px; width: 8px; height: 8px; margin-left: -4px; border-radius: var(--radius-1); background: currentColor; transition: transform 0.45s cubic-bezier(0.3, 0.7, 0.2, 1); }
+  .m-icon-btn__name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (hover: hover) {
+    .m-icon-btn:hover .m-icon-btn__dot, :hover > .m-icon-btn .m-icon-btn__dot { transform: translateY(16px); }
+  }
+  [open] > summary .m-icon-btn__dot { transform: translateY(16px); }
+
+  .m-field { display: block; width: 100%; min-height: 52px; padding: 12px 16px; border: 2px solid currentColor; border-radius: 0; background: transparent; color: inherit; font-family: var(--font-2); font-size: 18px; font-weight: 500; line-height: 1.3; letter-spacing: 0; }
+  textarea.m-field { min-height: 128px; resize: vertical; }
+
+  .m-surface { padding: clamp(26px, 3vw, 40px); background: var(--color-3); color: var(--color-1); mask: radial-gradient(circle 6px at 50% 0, transparent 95%, currentColor 100%) 0 0 / 20px 100% repeat-x; }
+
+  .m-disc { display: block; aspect-ratio: 1; border-radius: var(--radius-1); background: var(--color-2); }
+
+  .m-trail { --trail-cols: 12; display: block; color: var(--color-2); background: currentColor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 480'%3E%3Ccircle cx='6' cy='477' r='3.2'/%3E%3Ccircle cx='6' cy='471' r='3.15'/%3E%3Ccircle cx='6' cy='465' r='3.09'/%3E%3Ccircle cx='6' cy='459' r='3.04'/%3E%3Ccircle cx='6' cy='453' r='2.99'/%3E%3Ccircle cx='6' cy='447' r='2.94'/%3E%3Ccircle cx='6' cy='441' r='2.89'/%3E%3Ccircle cx='6' cy='435' r='2.83'/%3E%3Ccircle cx='6' cy='429' r='2.78'/%3E%3Ccircle cx='6' cy='423' r='2.73'/%3E%3Ccircle cx='6' cy='417' r='2.68'/%3E%3Ccircle cx='6' cy='411' r='2.63'/%3E%3Ccircle cx='6' cy='405' r='2.58'/%3E%3Ccircle cx='6' cy='399' r='2.53'/%3E%3Ccircle cx='6' cy='393' r='2.49'/%3E%3Ccircle cx='6' cy='387' r='2.44'/%3E%3Ccircle cx='6' cy='381' r='2.39'/%3E%3Ccircle cx='6' cy='375' r='2.34'/%3E%3Ccircle cx='6' cy='369' r='2.29'/%3E%3Ccircle cx='6' cy='363' r='2.25'/%3E%3Ccircle cx='6' cy='357' r='2.2'/%3E%3Ccircle cx='6' cy='351' r='2.16'/%3E%3Ccircle cx='6' cy='345' r='2.11'/%3E%3Ccircle cx='6' cy='339' r='2.06'/%3E%3Ccircle cx='6' cy='333' r='2.02'/%3E%3Ccircle cx='6' cy='327' r='1.98'/%3E%3Ccircle cx='6' cy='321' r='1.93'/%3E%3Ccircle cx='6' cy='315' r='1.89'/%3E%3Ccircle cx='6' cy='309' r='1.84'/%3E%3Ccircle cx='6' cy='303' r='1.8'/%3E%3Ccircle cx='6' cy='297' r='1.76'/%3E%3Ccircle cx='6' cy='291' r='1.72'/%3E%3Ccircle cx='6' cy='285' r='1.68'/%3E%3Ccircle cx='6' cy='279' r='1.64'/%3E%3Ccircle cx='6' cy='273' r='1.59'/%3E%3Ccircle cx='6' cy='267' r='1.55'/%3E%3Ccircle cx='6' cy='261' r='1.51'/%3E%3Ccircle cx='6' cy='255' r='1.48'/%3E%3Ccircle cx='6' cy='249' r='1.44'/%3E%3Ccircle cx='6' cy='243' r='1.4'/%3E%3Ccircle cx='6' cy='237' r='1.36'/%3E%3Ccircle cx='6' cy='231' r='1.32'/%3E%3Ccircle cx='6' cy='225' r='1.29'/%3E%3Ccircle cx='6' cy='219' r='1.25'/%3E%3Ccircle cx='6' cy='213' r='1.21'/%3E%3Ccircle cx='6' cy='207' r='1.18'/%3E%3Ccircle cx='6' cy='201' r='1.14'/%3E%3Ccircle cx='6' cy='195' r='1.11'/%3E%3Ccircle cx='6' cy='189' r='1.08'/%3E%3Ccircle cx='6' cy='183' r='1.04'/%3E%3Ccircle cx='6' cy='177' r='1.01'/%3E%3Ccircle cx='6' cy='171' r='0.98'/%3E%3Ccircle cx='6' cy='165' r='0.95'/%3E%3Ccircle cx='6' cy='159' r='0.92'/%3E%3Ccircle cx='6' cy='153' r='0.89'/%3E%3Ccircle cx='6' cy='147' r='0.86'/%3E%3Ccircle cx='6' cy='141' r='0.83'/%3E%3Ccircle cx='6' cy='135' r='0.8'/%3E%3Ccircle cx='6' cy='129' r='0.77'/%3E%3Ccircle cx='6' cy='123' r='0.74'/%3E%3Ccircle cx='6' cy='117' r='0.72'/%3E%3Ccircle cx='6' cy='111' r='0.69'/%3E%3Ccircle cx='6' cy='105' r='0.67'/%3E%3Ccircle cx='6' cy='99' r='0.64'/%3E%3Ccircle cx='6' cy='93' r='0.62'/%3E%3Ccircle cx='6' cy='87' r='0.59'/%3E%3Ccircle cx='6' cy='81' r='0.57'/%3E%3Ccircle cx='6' cy='75' r='0.55'/%3E%3Ccircle cx='6' cy='69' r='0.53'/%3E%3Ccircle cx='6' cy='63' r='0.51'/%3E%3Ccircle cx='6' cy='57' r='0.49'/%3E%3Ccircle cx='6' cy='51' r='0.47'/%3E%3Ccircle cx='6' cy='45' r='0.46'/%3E%3Ccircle cx='6' cy='39' r='0.44'/%3E%3Ccircle cx='6' cy='33' r='0.43'/%3E%3Ccircle cx='6' cy='27' r='0.42'/%3E%3Ccircle cx='6' cy='21' r='0.4'/%3E%3Ccircle cx='6' cy='15' r='0.4'/%3E%3Ccircle cx='6' cy='9' r='0.39'/%3E%3Ccircle cx='6' cy='3' r='0.38'/%3E%3C/svg%3E") 0 100% / calc(100% / var(--trail-cols)) auto repeat-x; }
+
+  .m-photo { position: relative; isolation: isolate; overflow: hidden; background: var(--color-1); }
+  .m-photo img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.15); mix-blend-mode: lighten; }
+  .m-photo::after { content: ""; position: absolute; inset: 0; background: var(--color-2); mix-blend-mode: darken; pointer-events: none; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .wrap { width: min(100% - 2 * var(--space-1), 1200px); margin-inline: auto; }
+  .grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; }
+  .lanes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .lane { position: relative; container-type: inline-size; min-height: 100%; }
+  .lane__print { position: absolute; inset: 0 0 50cqw; }
+  .lane--up .lane__print { inset: 50cqw 0 0; }
+  .lane__print .m-trail { position: absolute; inset: 0; }
+  .lane--up .lane__print .m-trail { scale: 1 -1; }
+  .lane .drum { position: absolute; left: 0; bottom: 0; width: 100%; aspect-ratio: 1; }
+  .lane--up .drum { top: 0; bottom: auto; }
+  .drum__intro, .drum__bob, .drum__disc { width: 100%; height: 100%; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (max-width: 899px) {
+    .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 16px; }
+  }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+  #nav { position: fixed; inset: 0 0 auto; z-index: 20; }
+  #nav .nav__skip { position: absolute; left: var(--space-1); top: 8px; z-index: 2; padding: 10px 16px; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-1); font-weight: 700; text-decoration: none; translate: 0 -160%; }
+  #nav .nav__skip:focus-visible { translate: none; }
+  #nav .nav__shell { background: transparent; transition: translate 0.4s cubic-bezier(0.3, 0.7, 0.2, 1), background-color 0.3s; }
+  #nav[data-scrolled] .nav__shell { background: var(--color-1); }
+  #nav[data-hidden] .nav__shell { translate: 0 -100%; }
+  #nav:focus-within .nav__shell { translate: none; }
+  #nav .nav__bar { display: flex; align-items: center; gap: 28px; height: 76px; }
+  #nav .nav__brand { display: inline-flex; align-items: center; gap: 10px; margin-right: auto; color: var(--color-3); font-family: var(--font-1); font-size: 27px; font-weight: 900; letter-spacing: -0.03em; text-decoration: none; }
+  #nav .nav__mark { display: inline-flex; gap: 2px; align-items: flex-start; height: 24px; }
+  #nav .nav__mark .m-disc { width: 12px; }
+  #nav .nav__mark .m-disc:last-child { margin-top: 12px; }
+  #nav .nav__links { display: flex; gap: 26px; }
+  #nav .nav__toggle { display: none; }
+  #nav .nav__menu { position: fixed; inset: 0; z-index: 30; display: flex; flex-direction: column; padding: 18px var(--space-1) 40px; background: var(--color-2); color: var(--color-4); overflow-y: auto; }
+  #nav .nav__menu[hidden] { display: none; }
+  #nav .nav__menu-top { display: flex; align-items: center; justify-content: space-between; min-height: 48px; margin-bottom: 40px; }
+  #nav .nav__menu-links { display: grid; gap: 10px; }
+  #nav .nav__menu-links a { color: var(--color-1); text-decoration: none; }
+  #nav .nav__menu :focus-visible { outline-color: var(--color-4); }
+  @media (max-width: 899px) {
+    #nav .nav__bar { height: 64px; gap: 12px; }
+    #nav .nav__links, #nav .nav__cta { display: none; }
+    #nav .nav__toggle { display: inline-grid; color: var(--color-3); }
+    #nav .nav__brand { font-size: 24px; }
+  }
+}
+</style>
+<style data-8b-part="section:press">
+@layer sections {
+  #press { position: relative; overflow: clip; background: var(--color-1); }
+  #press .press__s1 { min-height: max(100svh, 640px); padding-block: 100px 36px; grid-template-rows: auto minmax(300px, 1fr); row-gap: 28px; }
+  #press .press__title { grid-column: 1 / -1; color: var(--color-3); }
+  #press .press__line { display: block; width: fit-content; white-space: nowrap; font-size: min(210px, min(100vw - 2 * var(--space-1), 1200px) / (var(--len) * 0.45)); }
+  #press .press__line--big { color: var(--color-2); }
+  #press .press__line + .press__line { margin-top: 0.06em; }
+  #press .press__copy { grid-column: 1 / 6; align-self: end; display: grid; gap: 28px; padding-bottom: 6px; }
+  #press .press__copy .m-text-5 { max-width: 30ch; }
+  #press .press__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+  #press .press__art { grid-column: 7 / 13; }
+  #press .press__s2 { position: relative; z-index: 1; min-height: 100svh; padding-block: 64px 96px; align-items: start; }
+  #press .press__panel { grid-column: 7 / 13; grid-row: 1; position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: min(80svh, 660px); padding: 44px 36px 40px; color: var(--color-1); }
+  #press .press__bands { position: absolute; inset: 0; z-index: -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #press .press__band { margin-right: -1px; background: var(--color-2); }
+  #press .press__band:last-child { margin-right: 0; }
+  #press .press__statement { font-size: clamp(36px, 4.3vw, 60px); }
+  #press .press__note { max-width: 36ch; color: var(--color-4); font-weight: 500; }
+  #press .press__more { grid-column: 1 / 6; grid-row: 1; display: grid; gap: 26px; padding-top: 4px; }
+  #press .press__photo { aspect-ratio: 3 / 2; }
+  #press .press__facts { display: grid; gap: 0; border-top: 1px solid color-mix(in srgb, var(--color-3) 35%, transparent); }
+  #press .press__facts li { padding: 12px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-3) 35%, transparent); }
+  #press .press__more .m-link { justify-self: start; }
+  #press[data-offscreen] .drum__bob { animation-play-state: paused; }
+  @media (prefers-reduced-motion: no-preference) {
+    #press .press__line { animation: press-rise 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+    #press .press__line + .press__line { animation-delay: 0.08s; }
+    #press .lane__print { animation: press-print 0.95s 0.12s cubic-bezier(0.35, 0.6, 0.2, 1) backwards; }
+    #press .lane--up .lane__print { animation-name: press-print-up; }
+    #press .drum__intro { animation: press-drop 0.7s cubic-bezier(0.3, 1.35, 0.5, 1) backwards; }
+    #press .lane:nth-child(2) .drum__intro { animation-delay: 0.06s; }
+    #press .lane:nth-child(3) .drum__intro { animation-delay: 0.12s; }
+    #press .lane:nth-child(4) .drum__intro { animation-delay: 0.18s; }
+    #press .drum__bob { animation: press-bob 2.6s ease-in-out infinite alternate; }
+    #press .lane:nth-child(even) .drum__bob { animation-delay: -2.6s; }
+  }
+  @keyframes press-rise { from { transform: translateY(0.3em); clip-path: inset(-10% -2% 100% -2%); } to { transform: none; clip-path: inset(-10% -2% -12% -2%); } }
+  @keyframes press-print { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0); } }
+  @keyframes press-print-up { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0); } }
+  @keyframes press-drop { from { transform: translateY(-44px) scale(0.82); } to { transform: none; } }
+  @keyframes press-bob { from { transform: translateY(-17px); } to { transform: translateY(17px); } }
+  @media (max-width: 899px) {
+    #press .press__s1 { display: flex; flex-direction: column; padding-block: 84px 28px; row-gap: 24px; }
+    #press .press__copy { gap: 22px; }
+    #press .press__art { flex: 1 0 auto; height: clamp(240px, 40svh, 360px); }
+    #press .m-trail { --trail-cols: 8; }
+    #press .press__s2 { display: flex; flex-direction: column; gap: 36px; padding-block: 40px 72px; }
+    #press .press__panel { min-height: 0; padding: 32px 22px 26px; gap: 28px; }
+    #press .press__statement { font-size: clamp(32px, 9vw, 44px); }
+  }
+}
+</style>
+<style data-8b-part="section:inks">
+@layer sections {
+  #inks { position: relative; overflow: clip; padding-block: var(--space-2); background: var(--color-3); color: var(--color-1); }
+  #inks .inks__grid { align-items: center; row-gap: 56px; }
+  #inks .inks__copy { grid-column: 1 / 6; display: grid; gap: 28px; }
+  #inks .inks__list { border-top: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+  #inks .inks__list > div { display: grid; gap: 6px; padding: 18px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+  #inks .inks__chart { grid-column: 7 / 13; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 14px; }
+  #inks .inks__axis--x { grid-column: 2; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 6px; }
+  #inks .inks__axis--y { grid-column: 1; grid-row: 2; display: grid; grid-template-rows: repeat(4, minmax(0, 1fr)); row-gap: 6px; align-items: center; }
+  #inks .inks__stage { grid-column: 2; grid-row: 2; position: relative; aspect-ratio: 1; }
+  #inks .inks__caption { grid-column: 1 / -1; margin-top: 8px; }
+  #inks .inks__plate { position: absolute; inset: 0; display: grid; gap: 6px; mix-blend-mode: multiply; }
+  #inks .inks__plate--blue { grid-template-columns: repeat(4, minmax(0, 1fr)); color: var(--color-1); }
+  #inks .inks__plate--pink { grid-template-rows: repeat(4, minmax(0, 1fr)); color: var(--color-2); }
+  #inks .inks__tint--30 { background: radial-gradient(circle closest-side, currentColor 62%, transparent 72%) 0 0 / 9px 9px; }
+  #inks .inks__tint--60 { background: radial-gradient(circle closest-side, currentColor 88%, transparent 98%) 0 0 / 9px 9px; }
+  #inks .inks__plate--pink .inks__tint--30, #inks .inks__plate--pink .inks__tint--60 { background-size: 11px 11px; background-position: 4px 3px; }
+  #inks .inks__tint--100 { background: currentColor; }
+  #inks .inks__mark { position: absolute; left: -48px; top: -46px; width: 26px; height: 26px; border: 2px solid currentColor; border-radius: var(--radius-1); }
+  #inks .inks__mark::before, #inks .inks__mark::after { content: ""; position: absolute; left: 50%; top: 50%; width: 38px; height: 2px; background: currentColor; translate: -50% -50%; }
+  #inks .inks__mark::after { rotate: 90deg; }
+  @media (max-width: 899px) {
+    #inks .inks__copy, #inks .inks__chart { grid-column: 1 / -1; }
+    #inks .inks__chart { column-gap: 10px; }
+    #inks .inks__mark { left: -40px; top: -38px; width: 22px; height: 22px; }
+    #inks .inks__mark::before, #inks .inks__mark::after { width: 30px; }
+  }
+}
+</style>
+<style data-8b-part="section:process">
+@layer sections {
+  #process { position: relative; background: var(--color-1); color: var(--color-3); }
+  #process .process__stage { padding-block: var(--space-2); }
+  #process .process__head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 20px 48px; align-items: end; }
+  #process .process__body { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 40px 64px; align-items: start; margin-top: 56px; }
+  #process .process__sheet { position: relative; max-width: 360px; }
+  #process .sheet { position: relative; aspect-ratio: 1 / 1.414; overflow: hidden; isolation: isolate; background: var(--color-3); }
+  #process .sheet__under { position: absolute; inset: 0; background: var(--color-3); opacity: 0.5; }
+  #process .sheet__under:nth-child(1) { transform: translate(26px, 22px) rotate(-2deg); opacity: 0.35; }
+  #process .sheet__under:nth-child(2) { transform: translate(13px, 11px) rotate(1.5deg); }
+  #process .sheet__plate { position: absolute; inset: 0; mix-blend-mode: multiply; }
+  #process .sheet__plate--blue { color: var(--color-1); }
+  #process .sheet__plate--pink { color: var(--color-2); }
+  #process .sheet__disc { position: absolute; left: -22%; bottom: -14%; width: 84%; aspect-ratio: 1; border-radius: var(--radius-1); background: currentColor; }
+  #process .sheet__bar { position: absolute; left: 10%; top: 8%; width: 64%; height: 8%; background: currentColor; }
+  #process .sheet__bar--thin { top: 19%; width: 38%; height: 2.5%; }
+  #process .sheet__dot { position: absolute; top: 34%; width: 17%; aspect-ratio: 1; border-radius: var(--radius-1); background: currentColor; }
+  #process .sheet__dot:nth-child(1) { left: 12%; top: 46%; }
+  #process .sheet__dot:nth-child(2) { left: 31%; }
+  #process .sheet__dot:nth-child(3) { left: 50%; top: 46%; }
+  #process .sheet__dot:nth-child(4) { left: 69%; }
+  #process .process__track { display: grid; border-top: 1px solid color-mix(in srgb, var(--color-3) 30%, transparent); }
+  #process .station { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 6px 20px; padding: 22px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-3) 30%, transparent); }
+  #process .station > :not(.station__no) { grid-column: 2; }
+  #process .station__no { grid-row: 1 / 4; display: grid; place-items: center; width: 44px; height: 44px; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-4); font-family: var(--font-1); font-size: 20px; font-weight: 800; }
+  #process .station__time { margin-top: 6px; }
+  @media (max-width: 899px) {
+    #process .process__head, #process .process__body { grid-template-columns: minmax(0, 1fr); }
+    #process .process__body { margin-top: 40px; }
+    #process .process__sheet { width: 56%; }
+  }
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+  #studio { padding-block: var(--space-2); background: var(--color-2); color: var(--color-4); }
+  #studio [data-8b-motion~="register"] { --register-ink: var(--color-1); }
+  #studio .studio__grid { row-gap: 56px; }
+  #studio .studio__copy { grid-column: 1 / 6; display: grid; gap: 28px; align-content: start; }
+  #studio .studio__kit { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 28px; margin-top: 8px; }
+  #studio .studio__kit > div { display: grid; gap: 6px; padding-top: 14px; border-top: 2px solid var(--color-4); }
+  #studio .studio__photos { grid-column: 7 / 13; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+  #studio .studio__photo { aspect-ratio: 3 / 4; }
+  #studio .studio__photo--wide { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+  #studio .studio__photo--low { margin-top: 96px; }
+  @media (max-width: 899px) {
+    #studio .studio__copy, #studio .studio__photos { grid-column: 1 / -1; }
+    #studio .studio__kit { grid-template-columns: minmax(0, 1fr); }
+    #studio .studio__photos { gap: 14px; }
+    #studio .studio__photo--low { margin-top: 56px; }
+  }
+}
+</style>
+<style data-8b-part="section:editions">
+@layer sections {
+  #editions { position: relative; overflow: clip; padding-block: var(--space-2); background: var(--color-1); color: var(--color-3); }
+  #editions .editions__head { align-items: end; row-gap: 20px; }
+  #editions .editions__head .m-text-2 { grid-column: 1 / 8; }
+  #editions .editions__head .m-text-5 { grid-column: 8 / 13; }
+  #editions .editions__rack { --rack-offset: 150px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 24px; align-items: start; margin-top: 64px; }
+  #editions .editions__lane { display: grid; gap: 44px; }
+  #editions .editions__trail { --trail-cols: 28; height: var(--rack-offset); margin-bottom: -44px; }
+  #editions .editions__lane--high .editions__trail { margin: -44px 0 0; scale: 1 -1; }
+  #editions .edition { display: grid; gap: 10px; }
+  #editions .edition__photo { aspect-ratio: 3 / 4; margin-bottom: 6px; }
+  #editions .edition__buy { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+  #editions .edition__price { font-family: var(--font-1); font-size: 24px; font-weight: 800; }
+  @media (max-width: 899px) {
+    #editions .editions__head .m-text-2, #editions .editions__head .m-text-5 { grid-column: 1 / -1; }
+    #editions .editions__rack { --rack-offset: 96px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; margin-top: 44px; }
+    #editions .editions__lane { gap: 32px; }
+    #editions .editions__trail { margin-bottom: -32px; --trail-cols: 24; }
+    #editions .editions__lane--high .editions__trail { margin-top: -32px; }
+    #editions .editions__lane:nth-child(n + 3) { margin-top: 32px; }
+    #editions .edition__buy { flex-wrap: wrap; }
+  }
+}
+</style>
+<style data-8b-part="section:workshops">
+@layer sections {
+  #workshops { padding-block: var(--space-2); background: var(--color-3); color: var(--color-1); }
+  #workshops .workshops__grid { row-gap: 56px; }
+  #workshops .workshops__head { grid-column: 1 / 6; display: grid; gap: 28px; align-content: start; }
+  #workshops .workshops__photo { aspect-ratio: 4 / 3; margin-top: 12px; }
+  #workshops .workshops__sheet { grid-column: 7 / 13; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 0 28px; }
+  #workshops .workshops__lane { position: relative; overflow: clip; }
+  #workshops .workshops__carriage { position: absolute; inset: auto 0 0; }
+  #workshops .workshops__trail { --trail-cols: 4; position: absolute; inset: auto 0 50%; height: 440px; }
+  #workshops .workshops__drum { position: relative; width: 100%; }
+  #workshops .workshops__list { border-top: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+  #workshops .session { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 8px 20px; padding: 24px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 30%, transparent); }
+  #workshops .session > :not(.session__date) { grid-column: 2; }
+  #workshops .session__date { grid-row: 1 / 5; align-self: start; justify-self: start; padding: 9px 14px; border: 2px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-4); font-size: 14px; font-weight: 700; line-height: 1; white-space: nowrap; transition: background-color 0.35s, color 0.35s, border-color 0.35s; }
+  #workshops .session__text { color: var(--color-4); }
+  #workshops .session__book { justify-self: start; margin-top: 4px; }
+  @media (max-width: 899px) {
+    #workshops .workshops__head, #workshops .workshops__sheet { grid-column: 1 / -1; }
+    #workshops .workshops__sheet { grid-template-columns: 26px minmax(0, 1fr); gap: 0 16px; }
+    #workshops .workshops__trail { --trail-cols: 3; height: 340px; }
+    #workshops .session { grid-template-columns: minmax(0, 1fr); }
+    #workshops .session > :not(.session__date) { grid-column: 1; }
+    #workshops .session__date { grid-row: auto; margin-bottom: 4px; }
+  }
+}
+</style>
+<style data-8b-part="section:quote">
+@layer sections {
+  #quote { padding-block: var(--space-2); background: var(--color-1); color: var(--color-3); }
+  #quote .quote__grid { row-gap: 48px; align-items: start; }
+  #quote .quote__head { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 20px 48px; align-items: end; }
+  #quote .quote__form { grid-column: 1 / 7; display: grid; gap: 30px; }
+  #quote .quote__set { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; border: 0; min-inline-size: 0; }
+  #quote .quote__set legend { margin-bottom: 12px; padding: 0; }
+  #quote .quote__choice { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 20px 0 16px; border: 2px solid color-mix(in srgb, var(--color-3) 45%, transparent); border-radius: var(--radius-1); font-weight: 600; cursor: pointer; transition: background-color 0.3s, border-color 0.3s, color 0.3s; }
+  #quote .quote__choice:has(input:checked) { border-color: var(--color-2); background: var(--color-2); color: var(--color-4); }
+  #quote .quote__choice input { width: 18px; height: 18px; margin: 0; accent-color: var(--color-4); }
+  #quote .quote__choice:has(input:focus-visible) { outline: 3px solid var(--color-3); outline-offset: 3px; }
+  #quote .quote__choice input:checked:focus-visible { outline: 2px solid var(--color-4); outline-offset: 2px; }
+  #quote .quote__field { display: grid; gap: 10px; max-width: 360px; }
+  #quote .quote__field option { background: var(--color-3); color: var(--color-1); }
+  #quote .quote__ticket { grid-column: 8 / 13; }
+  #quote .quote__lines { display: grid; margin-top: 18px; border-top: 2px dotted var(--color-1); }
+  #quote .quote__lines > div { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 25%, transparent); }
+  #quote .quote__lines dd { font-weight: 700; text-align: right; }
+  #quote .quote__total { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-top: 22px; }
+  #quote .quote__sum { font-size: clamp(44px, 4.4vw, 64px); }
+  #quote .quote__unit { margin: 6px 0 24px; }
+  #quote .quote__note { margin-top: 18px; color: var(--color-4); }
+  @media (max-width: 899px) {
+    #quote .quote__head { grid-template-columns: minmax(0, 1fr); }
+    #quote .quote__form, #quote .quote__ticket { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:runs">
+@layer sections {
+  #runs { position: relative; overflow: clip; padding-block: var(--space-2); background: var(--color-3); color: var(--color-1); }
+  #runs .runs__head { align-items: end; row-gap: 20px; }
+  #runs .runs__head .m-text-2 { grid-column: 1 / 8; }
+  #runs .runs__head .m-text-5 { grid-column: 8 / 13; }
+  #runs .runs__log { margin-top: 56px; border-top: 2px solid var(--color-1); }
+  #runs .run { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 6px 32px; padding: 22px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-1) 25%, transparent); }
+  #runs .run__client { font-size: clamp(30px, 4.4vw, 64px); }
+  #runs .run__job { color: var(--color-4); text-align: right; }
+  @media (max-width: 899px) {
+    #runs .runs__head .m-text-2, #runs .runs__head .m-text-5 { grid-column: 1 / -1; }
+    #runs .run { grid-template-columns: minmax(0, 1fr); }
+    #runs .run__job { text-align: left; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding-block: var(--space-2); background: var(--color-2); color: var(--color-4); }
+  #faq [data-8b-motion~="register"] { --register-ink: var(--color-1); }
+  #faq :focus-visible { outline-color: var(--color-4); }
+  #faq .faq__grid { row-gap: 40px; align-items: start; }
+  #faq .faq__grid > .m-text-2 { grid-column: 1 / 6; }
+  #faq .faq__list { grid-column: 7 / 13; border-top: 2px solid var(--color-4); }
+  #faq .faq__item { border-bottom: 1px solid color-mix(in srgb, var(--color-4) 40%, transparent); }
+  #faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; cursor: pointer; list-style: none; }
+  #faq summary::-webkit-details-marker { display: none; }
+  #faq .faq__answer { max-width: 56ch; padding: 0 64px 24px 0; }
+  @media (max-width: 899px) {
+    #faq .faq__grid > .m-text-2, #faq .faq__list { grid-column: 1 / -1; }
+    #faq .faq__answer { padding-right: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { position: relative; overflow: clip; padding-block: var(--space-2) 0; background: var(--color-1); color: var(--color-3); }
+  #contact .contact__grid { row-gap: 56px; align-items: start; }
+  #contact .contact__copy { grid-column: 1 / 6; display: grid; gap: 40px; }
+  #contact .contact__details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px; }
+  #contact .contact__details > div { display: grid; gap: 8px; align-content: start; }
+  #contact .contact__form { grid-column: 7 / 13; grid-row: 1 / 3; display: grid; gap: 22px; }
+  #contact .contact__field { display: grid; gap: 10px; }
+  #contact .contact__send { justify-self: start; }
+  #contact .contact__lanes { grid-column: 1 / 6; height: clamp(240px, 28vw, 340px); }
+  #contact .contact__lanes .m-trail { --trail-cols: 9; }
+  @media (max-width: 899px) {
+    #contact .contact__copy, #contact .contact__form, #contact .contact__lanes { grid-column: 1 / -1; grid-row: auto; }
+    #contact .contact__details { grid-template-columns: minmax(0, 1fr); }
+    #contact .contact__lanes { height: 230px; }
+    #contact .contact__lanes .m-trail { --trail-cols: 7; }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { overflow: clip; padding-block: 72px 32px; background: var(--color-3); color: var(--color-1); }
+  #footer .footer__word { width: fit-content; white-space: nowrap; font-size: min(380px, min(100vw - 2 * var(--space-1), 1200px) / (var(--len) * 0.52)); }
+  #footer .footer__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 44px; padding-top: 28px; border-top: 2px solid var(--color-1); }
+  #footer .footer__nav ul, #footer .footer__social { display: grid; gap: 10px; justify-items: start; align-content: start; }
+  #footer .footer__base { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px; margin-top: 56px; color: var(--color-4); }
+  @media (max-width: 899px) {
+    #footer .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #footer .footer__address { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+  @property --motion-register-x { syntax: "<length>"; inherits: false; initial-value: 0px; }
+  @property --motion-register-y { syntax: "<length>"; inherits: false; initial-value: 0px; }
+  @property --motion-register-a { syntax: "<number>"; inherits: false; initial-value: 0; }
+  @property --motion-screen-dot { syntax: "<percentage>"; inherits: false; initial-value: 0%; }
+  @keyframes motion-register { from { --motion-register-x: 0.11em; --motion-register-y: 0.06em; --motion-register-a: 1; } to { --motion-register-x: 0em; --motion-register-y: 0em; --motion-register-a: 0; } }
+  @keyframes motion-screen { from { --motion-screen-dot: 0%; --motion-screen-on: repeat; } to { --motion-screen-dot: 150%; --motion-screen-on: repeat; } }
+  [data-8b-live] [data-8b-motion~="register"] {
+    --register-x: var(--motion-register-x); --register-y: var(--motion-register-y); --register-a: var(--motion-register-a);
+    animation: motion-register linear both;
+    animation-timeline: view(); animation-range: cover 5vh cover 45vh; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1);
+  }
+  /* The dot mask exists while --motion-screen-on is defined: before the entry and while the dots grow; then it reverts to the element's own mask. */
+  [data-8b-live] [data-8b-motion~="screen"] {
+    --motion-screen-mask: radial-gradient(circle closest-side, currentColor var(--motion-screen-dot), transparent calc(var(--motion-screen-dot) + 10%)) 0 0 / 14px 14px var(--motion-screen-on);
+    mask: var(--motion-screen-mask, revert-layer);
+  }
+  [data-8b-live] [data-8b-motion~="screen"]:not(.is-in) { --motion-screen-on: repeat; }
+  [data-8b-live] [data-8b-motion~="screen"].is-in { animation: motion-screen 1.2s cubic-bezier(0.3333, 0, 0.6667, 0.3333); }
+}
+</style>
+<style data-8b-part="scene:press-pass">
+@layer scenes {
+  @property --press-t { syntax: "<number>"; inherits: true; initial-value: 0; }
+  @keyframes press-pass { from { --press-t: 0; } to { --press-t: 1; } }
+  [data-8b-live] #press {
+    animation: press-pass linear both;
+    animation-timeline: view(); animation-range: cover 100vh cover calc(100vh + var(--press-run, 1px)); animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+  }
+  [data-8b-live] #press .press__art .drum { translate: calc(var(--press-t) * var(--press-dx, 0px)) calc(var(--press-t) * var(--press-dy, 0px)); }
+  [data-8b-live] #press .press__art .drum__disc { scale: calc(1 - clamp(0, (var(--press-t) - 0.84) / 0.16, 1)); }
+  [data-8b-live] #press .press__band { clip-path: inset(0 0 clamp(0px, (1 - var(--press-t)) * var(--press-d, 0px), var(--press-h, 0px)) 0); }
+}
+</style>
+<style data-8b-part="scene:inks-register">
+@layer scenes {
+[data-8b-live] #inks .inks__stage { view-timeline: --inks-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #inks .inks__plate--blue, [data-8b-live] #inks .inks__plate--pink { animation-timeline: --inks-t1; animation-range: cover 5vh cover calc(50% - 2vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+@keyframes inks-div-inks-plate-translate-d { 0% { translate: 70% -10%; } 100% { translate: 0px 0px; } }
+@keyframes inks-div-inks-plate-translate-m { 0% { translate: 52% -10%; } 100% { translate: 0px 0px; } }
+@keyframes inks-div-inks-plate-rotate { 0% { rotate: 7deg; } 100% { rotate: 0deg; } }
+@keyframes inks-div-inks-plate-translate-2-d { 0% { translate: -70% 10%; } 100% { translate: 0px 0px; } }
+@keyframes inks-div-inks-plate-translate-2-m { 0% { translate: -52% 10%; } 100% { translate: 0px 0px; } }
+@keyframes inks-div-inks-plate-rotate-2 { 0% { rotate: -6deg; } 100% { rotate: 0deg; } }
+@media (min-width: 900px) {
+  [data-8b-live] #inks .inks__plate--blue { animation-name: inks-div-inks-plate-translate-d, inks-div-inks-plate-rotate; }
+  [data-8b-live] #inks .inks__plate--pink { animation-name: inks-div-inks-plate-translate-2-d, inks-div-inks-plate-rotate-2; }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #inks .inks__plate--blue { animation-name: inks-div-inks-plate-translate-m, inks-div-inks-plate-rotate; }
+  [data-8b-live] #inks .inks__plate--pink { animation-name: inks-div-inks-plate-translate-2-m, inks-div-inks-plate-rotate-2; }
+}
+}
+</style>
+<style data-8b-part="scene:process-run">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #process { height: var(--process-height, auto); }
+    [data-8b-live] #process .process__stage { position: sticky; top: 0; height: 100svh; overflow: clip; display: flex; flex-direction: column; padding-block: 104px 48px; }
+    [data-8b-live] #process .process__body { flex: 1 1 auto; min-height: 0; align-items: center; }
+    [data-8b-live] #process .process__sheet { width: min(340px, (100svh - 390px) / 1.414); }
+    [data-8b-live] #process .process__window { overflow: hidden; margin-right: calc(-1 * var(--space-1)); }
+    [data-8b-live] #process .process__track { display: flex; gap: 18px; width: max-content; border-top: 0; }
+    [data-8b-live] #process .station { width: min(340px, 74vw); align-content: start; padding: 26px 24px; border: 1px solid color-mix(in srgb, var(--color-3) 30%, transparent); }
+    @media (max-width: 899px) {
+      [data-8b-live] #process .process__stage { padding-block: 84px 28px; }
+      [data-8b-live] #process .process__head { gap: 12px; }
+      [data-8b-live] #process .process__body { margin-top: 20px; gap: 22px; align-items: start; align-content: start; }
+      [data-8b-live] #process .process__sheet { width: min(48%, (100svh - 590px) / 1.414); }
+      [data-8b-live] #process .station { padding: 20px 18px; }
+    }
+  }
+}
+@layer scenes {
+[data-8b-live] #process { view-timeline: --process-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #process .process__track, [data-8b-live] #process .sheet__plate--blue, [data-8b-live] #process .sheet__plate--pink, [data-8b-live] #process .process__sheet > span:nth-of-type(-n+2) { animation-timeline: --process-t1; animation-fill-mode: both; }
+[data-8b-live] #process .process__track { animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: linear; transform: none; }
+[data-8b-live] #process .sheet__plate--blue { animation-name: process-div-sheet-plate-clippath; animation-range: cover calc(30% + 40vh) cover calc(48% + 4vh); animation-timing-function: linear; }
+[data-8b-live] #process .sheet__plate--pink { animation-name: process-div-sheet-plate-clippath-2, process-div-sheet-plate-translate; animation-range: cover calc(52% - 4vh) cover calc(68% - 36vh), cover calc(62% - 24vh) cover calc(82% - 64vh); animation-timing-function: linear, cubic-bezier(0.65, 0, 0.35, 1); transform: none; }
+[data-8b-live] #process .process__sheet > span:nth-of-type(-n+2) { animation-range: cover calc(84% - 68vh) cover calc(100% - 100vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #process .process__sheet > span:nth-of-type(1) { animation-name: process-span-sheet-under-translate, process-span-sheet-under-rotate; transform: none; }
+[data-8b-live] #process .process__sheet > span:nth-of-type(2) { animation-name: process-span-sheet-under-translate-2, process-span-sheet-under-rotate-2; transform: none; }
+@keyframes process-ol-process-track-translate { 0% { translate: 0px 0px; } 100% { translate: calc(-1 * var(--process-travel, 0px)) 0px; } }
+@keyframes process-div-sheet-plate-clippath { 0% { clip-path: inset(0% 0% 100%); } 99.998% { clip-path: inset(0% 0% 0.0556%); } 100% { clip-path: inset(0%); } }
+@keyframes process-div-sheet-plate-clippath-2 { 0% { clip-path: inset(0% 0% 100%); } 99.998% { clip-path: inset(0% 0% 0.0625%); } 100% { clip-path: inset(0%); } }
+@keyframes process-div-sheet-plate-translate { 0% { translate: 16px -10px; } 100% { translate: 0px 0px; } }
+@keyframes process-span-sheet-under-translate { 0% { translate: 0px 0px; } 100% { translate: 26px 22px; } }
+@keyframes process-span-sheet-under-rotate { 0% { rotate: 0deg; } 100% { rotate: -2deg; } }
+@keyframes process-span-sheet-under-translate-2 { 0% { translate: 0px 0px; } 100% { translate: 13px 11px; } }
+@keyframes process-span-sheet-under-rotate-2 { 0% { rotate: 0deg; } 100% { rotate: 1.5deg; } }
+[data-8b-live] #process .process__track { animation-name: process-ol-process-track-translate; }
+}
+</style>
+<style data-8b-part="scene:editions-pistons">
+@layer scenes {
+[data-8b-live] { --ease-power1-inout: linear(0, 0.0013, 0.005, 0.0112, 0.02, 0.0313, 0.045, 0.0612, 0.08, 0.1013, 0.125, 0.1512, 0.18, 0.2112, 0.245, 0.2813, 0.32, 0.3613, 0.405, 0.4512, 0.5, 0.5487, 0.595, 0.6388, 0.68, 0.7188, 0.755, 0.7887, 0.82, 0.8488, 0.875, 0.8988, 0.92, 0.9387, 0.955, 0.9688, 0.98, 0.9888, 0.995, 0.9988, 1); }
+[data-8b-live] #editions .editions__rack { view-timeline: --editions-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #editions .editions__rack > div:nth-of-type(-n+4) { animation-timeline: --editions-t1; animation-range: cover 5vh cover 60vh; animation-fill-mode: both; transform: none; }
+[data-8b-live] #editions .editions__rack > div:is(:nth-of-type(1), :nth-of-type(3)) > .editions__trail { animation-name: editions-div-editions-trail-clippath; animation-timeline: --editions-t1; animation-range: cover 5vh cover 60vh; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); animation-fill-mode: both; }
+[data-8b-live] #editions .editions__rack > div:is(:nth-of-type(2), :nth-of-type(4)) > .editions__trail { animation-name: editions-div-editions-trail-clippath-3; animation-timeline: --editions-t1; animation-range: cover 5vh cover 60vh; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); animation-fill-mode: both; }
+@keyframes editions-div-editions-lane-translate-d { 0% { translate: 0px -150px; } 100% { translate: 0px 0px; } }
+@keyframes editions-div-editions-lane-translate-m { 0% { translate: 0px -96px; } 100% { translate: 0px 0px; } }
+@keyframes editions-div-editions-lane-translate-3-d { 0% { translate: 0px 150px; } 100% { translate: 0px 0px; } }
+@keyframes editions-div-editions-lane-translate-3-m { 0% { translate: 0px 96px; } 100% { translate: 0px 0px; } }
+@keyframes editions-div-editions-trail-clippath { 0% { clip-path: inset(100% 0% 0%); } 100% { clip-path: inset(0%); } }
+@keyframes editions-div-editions-trail-clippath-3 { 0% { clip-path: inset(0% 0% 100%); } 100% { clip-path: inset(0%); } }
+@media (min-width: 900px) {
+  [data-8b-live] #editions .editions__rack > div:is(:nth-of-type(1), :nth-of-type(3)) { animation-name: editions-div-editions-lane-translate-d; animation-timing-function: var(--ease-power1-inout); }
+  [data-8b-live] #editions .editions__rack > div:is(:nth-of-type(2), :nth-of-type(4)) { animation-name: editions-div-editions-lane-translate-3-d; animation-timing-function: var(--ease-power1-inout); }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #editions .editions__rack > div:is(:nth-of-type(1), :nth-of-type(3)) { animation-name: editions-div-editions-lane-translate-m; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
+  [data-8b-live] #editions .editions__rack > div:is(:nth-of-type(2), :nth-of-type(4)) { animation-name: editions-div-editions-lane-translate-3-m; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
+}
+}
+</style>
+<style data-8b-part="scene:workshops-index">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #workshops .session[data-waiting] .session__date { border-color: var(--color-1); background: transparent; color: var(--color-1); }
+  }
+}
+@layer scenes {
+[data-8b-live] #workshops .workshops__lane { view-timeline: --workshops-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #workshops .workshops__carriage { animation-timeline: --workshops-t1; animation-range: cover 38vh cover calc(100% - 62vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+@keyframes workshops-div-workshops-carriage-translate { 0% { translate: 0px calc(-1 * var(--workshops-travel, 0px)); } 100% { translate: 0px 0px; } }
+[data-8b-live] #workshops .workshops__carriage { animation-name: workshops-div-workshops-carriage-translate; }
+}
+</style>
+<style data-8b-part="scene:runs-lens">
+@layer scenes {
+  @property --runs-lens-x { syntax: "<length>"; inherits: false; initial-value: 0px; }
+  @property --runs-lens-y { syntax: "<length>"; inherits: false; initial-value: 0px; }
+  @property --runs-lens-a { syntax: "<number>"; inherits: false; initial-value: 0; }
+  @keyframes runs-lens-push {
+    0% { translate: calc(var(--runs-reach) * var(--runs-side)) 0px; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); }
+    50% { translate: 0px 0px; animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0.3333); }
+    100% { translate: calc(-1 * var(--runs-reach) * var(--runs-side)) 0px; }
+  }
+  @keyframes runs-lens-plate {
+    0%, 100% { --runs-lens-x: calc(var(--runs-plate) * var(--runs-side)); --runs-lens-y: calc(var(--runs-plate) / 2); --runs-lens-a: 1; }
+    22.2222%, 77.7778% { --runs-lens-a: 1; }
+    50% { --runs-lens-x: 0px; --runs-lens-y: 0px; --runs-lens-a: 0; }
+  }
+  [data-8b-live] #runs .run__client {
+    --runs-reach: 72px; --runs-plate: 12px; --runs-side: calc(1 - 2 * mod(var(--i, 0), 2));
+    text-shadow: var(--runs-lens-x) var(--runs-lens-y) 0 color-mix(in srgb, var(--color-2) calc(var(--runs-lens-a) * 100%), transparent);
+    animation: runs-lens-push linear both, runs-lens-plate linear both;
+    animation-timeline: view(); animation-range: entry 50% exit 50%;
+  }
+  @media (max-width: 899px) {
+    [data-8b-live] #runs .run__client { --runs-reach: 22px; --runs-plate: 6px; }
+  }
+}
+</style>
+<style data-8b-part="scene:contact-landing">
+@layer scenes {
+[data-8b-live] #contact .contact__lanes { view-timeline: --contact-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(-n+4) > .drum, [data-8b-live] #contact .contact__lanes > div:nth-of-type(-n+4) > .lane__print { animation-timeline: --contact-t1; animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0); animation-fill-mode: both; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(1) > .drum { animation-range: cover 4vh cover calc(70% - 56.2vh); transform: none; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(1) > .lane__print { animation-range: cover 4vh cover calc(70% - 56.2vh); }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(3) > .drum { animation-range: cover calc(8% - 2.88vh) cover calc(78% - 63.08vh); transform: none; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(3) > .lane__print { animation-range: cover calc(8% - 2.88vh) cover calc(78% - 63.08vh); }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(2) > .drum { animation-range: cover calc(20% - 13.2vh) cover calc(90% - 73.4vh); transform: none; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(2) > .lane__print { animation-range: cover calc(20% - 13.2vh) cover calc(90% - 73.4vh); }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(4) > .drum { animation-range: cover calc(28% - 20.08vh) cover calc(98% - 80.28vh); transform: none; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(4) > .lane__print { animation-range: cover calc(28% - 20.08vh) cover calc(98% - 80.28vh); }
+@keyframes contact-div-drum-translate { 0% { translate: 0px calc(-1 * var(--contact-travel, 0px)); } 100% { translate: 0px 0px; } }
+@keyframes contact-div-lane-print-clippath { 0% { clip-path: inset(0px 0px var(--contact-travel, 0px)); } 100% { clip-path: inset(0px); } }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(-n+4) > .drum { animation-name: contact-div-drum-translate; }
+[data-8b-live] #contact .contact__lanes > div:nth-of-type(-n+4) > .lane__print { animation-name: contact-div-lane-print-clippath; }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body class="m-text">
+<!-- navigation: top bar: wordmark, section links, Price a run button; phone menu overlay -->
+<header id="nav" class="nav" data-8b-section="navigation">
+  <a class="nav__skip" href="#main">Skip to content</a>
+  <div class="nav__shell">
+    <div class="nav__bar wrap">
+      <a class="nav__brand" href="#press" aria-label="Dotdrum, back to the top"><span class="nav__mark" aria-hidden="true"><span class="m-disc"></span><span class="m-disc"></span></span><span class="nav__word">dotdrum</span></a>
+      <nav class="nav__links" aria-label="Main">
+        <a class="m-link" href="#inks">Inks</a>
+        <a class="m-link" href="#process">Process</a>
+        <a class="m-link" href="#editions">Editions</a>
+        <a class="m-link" href="#workshops">Workshops</a>
+        <a class="m-link" href="#contact">Contact</a>
+      </nav>
+      <a class="m-btn nav__cta" href="#quote"><span class="m-btn__label">Price a run</span></a>
+      <button class="m-icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="m-icon-btn__dot" aria-hidden="true"></span><span class="m-icon-btn__name">Open menu</span></button>
+    </div>
+  </div>
+  <div id="menu" class="nav__menu" hidden>
+    <div class="nav__menu-top">
+      <span class="m-text-6">dotdrum</span>
+      <button class="m-icon-btn nav__close" type="button"><span class="m-icon-btn__dot" aria-hidden="true"></span><span class="m-icon-btn__name">Close menu</span></button>
+    </div>
+    <nav class="nav__menu-links" aria-label="Menu">
+      <a class="m-text-2" href="#inks">Inks</a>
+      <a class="m-text-2" href="#process">Process</a>
+      <a class="m-text-2" href="#editions">Editions</a>
+      <a class="m-text-2" href="#workshops">Workshops</a>
+      <a class="m-text-2" href="#quote">Price a run</a>
+      <a class="m-text-2" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<!-- opening: two-screen opening: big two-line headline and four drums with halftone trails, then a pink panel with the studio statement, a photo and three facts (animation: scene:press-pass) -->
+<section id="press" class="press" data-8b-section="opening" aria-labelledby="press-title">
+  <div class="press__s1 wrap grid">
+    <h1 id="press-title" class="press__title m-text-3">
+      <span class="press__line press__line--big" style="--len:9">Two inks,</span>
+      <span class="press__line press__line--small" style="--len:18">ten thousand dots.</span>
+    </h1>
+    <div class="press__copy">
+      <p class="m-text-5">Dotdrum is a risograph studio and small press. We print zines, posters and books on a two-drum duplicator: Medium Blue first, Fluorescent Pink second.</p>
+      <div class="press__actions">
+        <a class="m-btn" href="#quote"><span class="m-btn__label">Price a run</span></a>
+        <a class="m-link" href="#editions">See the editions</a>
+      </div>
+    </div>
+    <div class="press__art lanes" aria-hidden="true">
+      <div class="lane lane--down"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__intro"><div class="drum__bob"><div class="drum__disc m-disc"></div></div></div></div></div>
+      <div class="lane lane--up"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__intro"><div class="drum__bob"><div class="drum__disc m-disc"></div></div></div></div></div>
+      <div class="lane lane--down"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__intro"><div class="drum__bob"><div class="drum__disc m-disc"></div></div></div></div></div>
+      <div class="lane lane--up"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__intro"><div class="drum__bob"><div class="drum__disc m-disc"></div></div></div></div></div>
+    </div>
+  </div>
+  <div class="press__s2 wrap grid">
+    <div class="press__panel">
+      <div class="press__bands" aria-hidden="true"><span class="press__band"></span><span class="press__band"></span><span class="press__band"></span><span class="press__band"></span></div>
+      <h2 class="press__statement m-text-2">The paper moves. The drums stay. Every colour is a second pass.</h2>
+      <p class="press__note">Medium Blue goes down first and dries for a minute; Fluorescent Pink follows on the same sheet. The order never changes, and neither do the drums.</p>
+    </div>
+    <div class="press__more">
+      <figure class="press__photo m-photo" data-8b-motion="screen"><img src="https://images.unsplash.com/photo-1778690133450-ddb08af48d76?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aW5rJTIwcm9sbGVyfGVufDF8MHx8fDE3OTEyOTU0NTF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A hand rolling black ink across a slab with a rubber brayer" width="1600" height="1067" loading="lazy"></figure>
+      <p>We started with one secondhand duplicator and a box of misprinted flyers. Six years on we run short editions for artists, bands, galleries and anyone with a PDF and a deadline.</p>
+      <ul class="press__facts">
+        <li>Runs from 30 to 3,000 copies</li>
+        <li>Soy-based inks, recycled stock as standard</li>
+        <li>Collect in Sheffield or post anywhere in the UK</li>
+      </ul>
+      <a class="m-link" href="#process">How a run works</a>
+    </div>
+  </div>
+</section>
+<!-- inks: colour chart: two ink plates overprint into a 4×4 grid of tints (demo: blue and pink) (animation: scene:inks-register) -->
+<section id="inks" class="inks" data-8b-section="inks" aria-labelledby="inks-title">
+  <div class="wrap grid inks__grid">
+    <div class="inks__copy">
+      <h2 id="inks-title" class="m-text-2" data-8b-motion="register">Two inks. Sixteen colours.</h2>
+      <p class="m-text-5">Blue under pink makes a violet neither drum holds. Screen each ink at 30 or 60 percent and the overlaps hand you a whole palette.</p>
+      <dl class="inks__list" data-8b-items=":scope > div">
+        <div><dt class="m-text-6">Medium Blue</dt><dd>The first pass. Dense and cool; it carries type, line and shadow.</dd></div>
+        <div><dt class="m-text-6">Fluorescent Pink</dt><dd>The second pass. It glows under shop lights and is brightest on uncoated paper.</dd></div>
+        <div><dt class="m-text-6">Overprint</dt><dd>Where the two meet. We proof every overlap on your paper before the run.</dd></div>
+      </dl>
+    </div>
+    <figure class="inks__chart">
+      <div class="inks__axis inks__axis--x m-text-4"><span>0%</span><span>30%</span><span>60%</span><span>100%</span></div>
+      <div class="inks__axis inks__axis--y m-text-4"><span>0%</span><span>30%</span><span>60%</span><span>100%</span></div>
+      <div class="inks__stage" aria-hidden="true">
+        <div class="inks__plate inks__plate--blue"><span class="inks__tint"></span><span class="inks__tint inks__tint--30"></span><span class="inks__tint inks__tint--60"></span><span class="inks__tint inks__tint--100"></span><span class="inks__mark"></span></div>
+        <div class="inks__plate inks__plate--pink"><span class="inks__tint"></span><span class="inks__tint inks__tint--30"></span><span class="inks__tint inks__tint--60"></span><span class="inks__tint inks__tint--100"></span><span class="inks__mark"></span></div>
+      </div>
+      <figcaption class="inks__caption m-text-4">Blue tint across, pink tint down: sixteen overprints from two drums</figcaption>
+    </figure>
+  </div>
+</section>
+<!-- process: how it works: five numbered steps on a horizontal track beside a sheet that gets printed step by step (animation: scene:process-run) -->
+<section id="process" class="process" data-8b-section="process" aria-labelledby="process-title">
+  <div class="process__stage">
+    <div class="wrap process__head">
+      <h2 id="process-title" class="m-text-2" data-8b-motion="register">One sheet, two passes.</h2>
+      <p class="m-text-5">From your file to a dry stack in five stations. Two hundred A3 posters take about forty minutes of drum time.</p>
+    </div>
+    <div class="wrap process__body">
+      <div class="process__sheet" aria-hidden="true">
+        <span class="sheet__under"></span>
+        <span class="sheet__under"></span>
+        <div class="sheet">
+          <div class="sheet__plate sheet__plate--blue"><span class="sheet__disc"></span><span class="sheet__bar"></span><span class="sheet__bar sheet__bar--thin"></span></div>
+          <div class="sheet__plate sheet__plate--pink"><span class="sheet__dot"></span><span class="sheet__dot"></span><span class="sheet__dot"></span><span class="sheet__dot"></span></div>
+        </div>
+      </div>
+      <div class="process__window">
+        <ol class="process__track" data-8b-items=":scope > li">
+          <li class="station">
+            <span class="station__no">1</span>
+            <h3 class="m-text-6">Artwork</h3>
+            <p>One page per colour, everything in black. Mark which page is blue and which is pink; we set the screens.</p>
+            <p class="station__time m-text-4">You · whenever it is ready</p>
+          </li>
+          <li class="station">
+            <span class="station__no">2</span>
+            <h3 class="m-text-6">Masters</h3>
+            <p>The duplicator burns each page into a stencil: a thin film with thousands of pinholes, one master per ink.</p>
+            <p class="station__time m-text-4">Machine · 30 seconds each</p>
+          </li>
+          <li class="station">
+            <span class="station__no">3</span>
+            <h3 class="m-text-6">Blue pass</h3>
+            <p>The blue drum turns at up to 130 sheets a minute, pressing ink through its master onto every sheet.</p>
+            <p class="station__time m-text-4">First pass · ten minutes to dry</p>
+          </li>
+          <li class="station">
+            <span class="station__no">4</span>
+            <h3 class="m-text-6">Pink pass</h3>
+            <p>The same stack goes through again under the pink drum. We nudge the registration by hand until the marks meet.</p>
+            <p class="station__time m-text-4">Second pass · the colours appear</p>
+          </li>
+          <li class="station">
+            <span class="station__no">5</span>
+            <h3 class="m-text-6">Dry, trim, fold</h3>
+            <p>A night on the rack, then the guillotine, the folder and the long-arm stapler. Packed flat in recycled card.</p>
+            <p class="station__time m-text-4">Ready the next working day</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- studio: about the studio: paragraph, list of four machines, three photos at alternating heights -->
+<section id="studio" class="studio" data-8b-section="studio" aria-labelledby="studio-title">
+  <div class="wrap grid studio__grid">
+    <div class="studio__copy">
+      <h2 id="studio-title" class="m-text-2" data-8b-motion="register">A small room with a loud machine.</h2>
+      <p class="m-text-5">Ines and Tom run the studio from a former bicycle workshop off Inkwell Yard. Most days one of them feeds paper while the other talks someone out of a fifth colour.</p>
+      <dl class="studio__kit" data-8b-items=":scope > div">
+        <div><dt class="m-text-6">Two-drum duplicator</dt><dd>Prints both inks in one feed, up to 130 sheets a minute, A3 at most.</dd></div>
+        <div><dt class="m-text-6">Guillotine</dt><dd>Cuts a 500-sheet stack square to within half a millimetre.</dd></div>
+        <div><dt class="m-text-6">Long-arm stapler</dt><dd>Saddle-stitches zines up to 64 pages, one by one.</dd></div>
+        <div><dt class="m-text-6">Drying rack</dt><dd>Eighty shelves, always full on a Friday.</dd></div>
+      </dl>
+    </div>
+    <div class="studio__photos">
+      <figure class="m-photo studio__photo studio__photo--wide" data-8b-motion="screen"><img src="https://images.unsplash.com/photo-1778690142874-af0794fc5470?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aW5rJTIwcm9sbGVyfGVufDF8MHx8fDE3OTEyOTU0NTF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=590&amp;q=60" alt="A freshly inked print being peeled away from the block" width="1600" height="1067" loading="lazy"></figure>
+      <figure class="m-photo studio__photo" data-8b-motion="screen"><img src="https://images.unsplash.com/photo-1764025851210-9ad5ed83e01f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c3RhcGxlciUyMHBhcGVyfGVufDF8MHx8fDE3OTEyOTU0NzB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A heavy stapler resting on a stack of printed sheets" width="1600" height="1068" loading="lazy"></figure>
+      <figure class="m-photo studio__photo studio__photo--low" data-8b-motion="screen"><img src="https://images.unsplash.com/photo-1771440047775-5a20019f0091?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c3RhcGxlciUyMHBhcGVyfGVufDF8MHx8fDE3OTEyOTU0NzB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="Hands trimming a printed sheet on a cutting mat among tape and tools" width="1600" height="1067" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+<!-- editions: shop: eight products in four staggered lanes, each with photo, title, format, price and Order link (demo: zines, prints and books) (animation: scene:editions-pistons) -->
+<section id="editions" class="editions" data-8b-section="editions" aria-labelledby="editions-title">
+  <div class="wrap grid editions__head">
+    <h2 id="editions-title" class="m-text-2" data-8b-motion="register">From our own drum.</h2>
+    <p class="m-text-5">Small editions we publish ourselves, in the same two inks. When a run sells out, it stays sold out.</p>
+  </div>
+  <div class="wrap editions__rack">
+    <div class="editions__lane editions__lane--low" data-8b-items=":scope > .edition">
+      <div class="editions__trail m-trail" aria-hidden="true"></div>
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1721709384897-5afd4684eb93?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8emluZXxlbnwxfDF8fHwxNzkxMjk1NDQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="An open zine with a gradient cover lying on a desk among notebooks" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="m-text-6">Soft Machines</h3>
+        <p class="edition__meta m-text-4">Zine · 32 pp · A5</p>
+        <p class="edition__buy"><span class="edition__price">£9</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Soft%20Machines">Order</a></p>
+      </article>
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1723588131343-ad089b18cf80?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGFydCUyMHByaW50fGVufDF8MXx8fDE3OTEyOTU0NjZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="A scatter of bright printed cards with blotted textures" width="1600" height="2133" loading="lazy"></figure>
+        <h3 class="m-text-6">Pink Weather</h3>
+        <p class="edition__meta m-text-4">Postcards · set of 12</p>
+        <p class="edition__buy"><span class="edition__price">£14</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Pink%20Weather">Order</a></p>
+      </article>
+    </div>
+    <div class="editions__lane editions__lane--high" data-8b-items=":scope > .edition">
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1669690972278-2680553fe7bd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Ym9va2xldHxlbnwxfDF8fHwxNzkxMjk1NDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="Two slim booklets casting long shadows on a pale surface" width="1600" height="2133" loading="lazy"></figure>
+        <h3 class="m-text-6">Quiet Pages</h3>
+        <p class="edition__meta m-text-4">Booklet · 24 pp · A6</p>
+        <p class="edition__buy"><span class="edition__price">£6</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Quiet%20Pages">Order</a></p>
+      </article>
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1707989515901-e31084a89a37?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bWFnYXppbmUlMjBzdGFja3xlbnwxfDF8fHwxNzkxMjk1NDY2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="A loose pile of printed pamphlets on a wooden table" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="m-text-6">Overprint Almanac</h3>
+        <p class="edition__meta m-text-4">Book · 96 pp · A5</p>
+        <p class="edition__buy"><span class="edition__price">£22</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Overprint%20Almanac">Order</a></p>
+      </article>
+      <div class="editions__trail m-trail" aria-hidden="true"></div>
+    </div>
+    <div class="editions__lane editions__lane--low" data-8b-items=":scope > .edition">
+      <div class="editions__trail m-trail" aria-hidden="true"></div>
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1712640365578-fbdf50b55ddc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Ym9va2xldHxlbnwxfDF8fHwxNzkxMjk1NDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="The pages of a thin publication fanned open in a curl" width="1600" height="2408" loading="lazy"></figure>
+        <h3 class="m-text-6">Fold Here</h3>
+        <p class="edition__meta m-text-4">Zine · 16 pp · A6</p>
+        <p class="edition__buy"><span class="edition__price">£5</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Fold%20Here">Order</a></p>
+      </article>
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1767652723573-161f1c223d63?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjN8fHBvc3RlciUyMGRlc2lnbnxlbnwxfDF8fHwxNzkxMjk1NDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="Four bold posters pasted side by side on a brick wall" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="m-text-6">Night Buses</h3>
+        <p class="edition__meta m-text-4">Posters · 3 × A3</p>
+        <p class="edition__buy"><span class="edition__price">£30</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Night%20Buses">Order</a></p>
+      </article>
+    </div>
+    <div class="editions__lane editions__lane--high" data-8b-items=":scope > .edition">
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1789811870656-7eba4d7a9acb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fG1hZ2F6aW5lJTIwc3RhY2t8ZW58MXwxfHx8MTc5MTI5NTQ2Nnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="Stacks of independent magazines laid out on a table" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="m-text-6">Back Issues</h3>
+        <p class="edition__meta m-text-4">Magazine · 64 pp · A4</p>
+        <p class="edition__buy"><span class="edition__price">£12</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Back%20Issues">Order</a></p>
+      </article>
+      <article class="edition">
+        <figure class="m-photo edition__photo"><img src="https://images.unsplash.com/photo-1790715077259-3be59b05110e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fG1hZ2F6aW5lJTIwc3RhY2t8ZW58MXwxfHx8MTc5MTI5NTQ2Nnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="A tall stack of weathered magazines seen from the spines" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="m-text-6">Spine Index</h3>
+        <p class="edition__meta m-text-4">Box of ten zines</p>
+        <p class="edition__buy"><span class="edition__price">£45</span><a data-8b-placeholder="email" class="m-link" href="mailto:shop@dotdrum.example?subject=Order%3A%20Spine%20Index">Order</a></p>
+      </article>
+      <div class="editions__trail m-trail" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+<!-- workshops: event list: five dated sessions with price, places left and a Book link, beside a lane where a drum inks each date (animation: scene:workshops-index) -->
+<section id="workshops" class="workshops" data-8b-section="workshops" aria-labelledby="workshops-title">
+  <div class="wrap grid workshops__grid">
+    <div class="workshops__head">
+      <h2 id="workshops-title" class="m-text-2" data-8b-motion="register">Learn the drum.</h2>
+      <p class="m-text-5">Evening sessions for six people at a time. You leave with an edition of your own and ink under your nails.</p>
+      <figure class="m-photo workshops__photo" data-8b-motion="screen"><img src="https://images.unsplash.com/photo-1766932901295-d4185660341b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjB0YWJsZSUyMGhhbmRzfGVufDF8MHx8fDE3OTEyOTU0Njd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=60" alt="People of all ages working side by side at long craft tables" width="1600" height="1067" loading="lazy"></figure>
+    </div>
+    <div class="workshops__sheet">
+      <div class="workshops__lane" aria-hidden="true"><div class="workshops__carriage"><div class="workshops__trail m-trail"></div><span class="workshops__drum m-disc"></span></div></div>
+      <ol class="workshops__list" data-8b-items=":scope > li">
+        <li class="session">
+          <p class="session__date"><time datetime="2026-10-15">Thu 15 Oct</time></p>
+          <h3 class="m-text-6">First pass</h3>
+          <p class="session__text">Two inks, one A4 print. For anyone who has never touched a duplicator.</p>
+          <p class="session__meta m-text-4">3 hours · £65 · 2 places left</p>
+          <a data-8b-placeholder="email" class="m-link session__book" href="mailto:hello@dotdrum.example?subject=Workshop%3A%20First%20pass">Book a place</a>
+        </li>
+        <li class="session">
+          <p class="session__date"><time datetime="2026-10-24">Sat 24 Oct</time></p>
+          <h3 class="m-text-6">A zine in a day</h3>
+          <p class="session__text">Write, lay out, print and saddle-stitch sixteen pages before the light goes.</p>
+          <p class="session__meta m-text-4">6 hours · £120 · 4 places left</p>
+          <a data-8b-placeholder="email" class="m-link session__book" href="mailto:hello@dotdrum.example?subject=Workshop%3A%20A%20zine%20in%20a%20day">Book a place</a>
+        </li>
+        <li class="session">
+          <p class="session__date"><time datetime="2026-11-04">Wed 4 Nov</time></p>
+          <h3 class="m-text-6">Halftone photographs</h3>
+          <p class="session__text">Turn your own photos into dots, choose a screen and print them in two inks.</p>
+          <p class="session__meta m-text-4">3 hours · £70 · 6 places left</p>
+          <a data-8b-placeholder="email" class="m-link session__book" href="mailto:hello@dotdrum.example?subject=Workshop%3A%20Halftone%20photographs">Book a place</a>
+        </li>
+        <li class="session">
+          <p class="session__date"><time datetime="2026-11-14">Sat 14 Nov</time></p>
+          <h3 class="m-text-6">Overprint lab</h3>
+          <p class="session__text">Tints, knockouts and deliberate misregistration, with a proof of every overlap.</p>
+          <p class="session__meta m-text-4">4 hours · £85 · 3 places left</p>
+          <a data-8b-placeholder="email" class="m-link session__book" href="mailto:hello@dotdrum.example?subject=Workshop%3A%20Overprint%20lab">Book a place</a>
+        </li>
+        <li class="session">
+          <p class="session__date"><time datetime="2026-11-26">Thu 26 Nov</time></p>
+          <h3 class="m-text-6">Posters for the season</h3>
+          <p class="session__text">Design and print a run of twenty A3 posters for your own winter event.</p>
+          <p class="session__meta m-text-4">3 hours · £70 · 5 places left</p>
+          <a data-8b-placeholder="email" class="m-link session__book" href="mailto:hello@dotdrum.example?subject=Workshop%3A%20Posters%20for%20the%20season">Book a place</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<!-- quote: price calculator: job options on the left, a live job ticket with total, unit price and turnaround, and a Send this ticket email button -->
+<section id="quote" class="quote" data-8b-section="quote" aria-labelledby="quote-title">
+  <div class="wrap grid quote__grid">
+    <div class="quote__head">
+      <h2 id="quote-title" class="m-text-2" data-8b-motion="register">Price a run.</h2>
+      <p class="m-text-5">Set the job and the ticket prices it as you go. These are our real rates; the quote we send back will match.</p>
+    </div>
+    <form data-8b-placeholder="form" class="quote__form" data-setup="18" data-days-small="2" data-days-mid="3" data-days-large="5" aria-label="Job details">
+      <fieldset class="quote__set">
+        <legend class="m-text-4">Format</legend>
+        <label class="quote__choice"><input type="radio" name="format" value="a6" data-rate="0.09" data-label="A6 cards"><span>A6 cards</span></label>
+        <label class="quote__choice"><input type="radio" name="format" value="a5" data-rate="0.15" data-label="A5 zine"><span>A5 zine</span></label>
+        <label class="quote__choice"><input type="radio" name="format" value="a4" data-rate="0.24" data-label="A4 sheet" checked><span>A4 sheet</span></label>
+        <label class="quote__choice"><input type="radio" name="format" value="a3" data-rate="0.4" data-label="A3 poster"><span>A3 poster</span></label>
+      </fieldset>
+      <div class="quote__field">
+        <label class="m-text-4" for="quote-copies">Copies, 30 to 3,000</label>
+        <input id="quote-copies" class="m-field" type="number" name="copies" min="30" max="3000" step="10" value="200" inputmode="numeric">
+      </div>
+      <fieldset class="quote__set">
+        <legend class="m-text-4">Inks</legend>
+        <label class="quote__choice"><input type="radio" name="inks" value="one" data-factor="1" data-passes="1" data-label="One ink"><span>One ink</span></label>
+        <label class="quote__choice"><input type="radio" name="inks" value="both" data-factor="1.7" data-passes="2" data-label="Blue and pink" checked><span>Blue and pink</span></label>
+      </fieldset>
+      <div class="quote__field">
+        <label class="m-text-4" for="quote-paper">Paper</label>
+        <select id="quote-paper" class="m-field" name="paper">
+          <option value="recycled" data-factor="1" selected>Recycled, 90 g</option>
+          <option value="uncoated" data-factor="1.15">Uncoated, 120 g</option>
+          <option value="card" data-factor="1.6">Card, 300 g</option>
+        </select>
+      </div>
+      <fieldset class="quote__set">
+        <legend class="m-text-4">Sides</legend>
+        <label class="quote__choice"><input type="radio" name="sides" value="single" data-factor="1" data-label="Single-sided" checked><span>Single-sided</span></label>
+        <label class="quote__choice"><input type="radio" name="sides" value="double" data-factor="1.85" data-label="Double-sided"><span>Double-sided</span></label>
+      </fieldset>
+    </form>
+    <aside class="quote__ticket m-surface" data-8b-motion="screen" aria-labelledby="quote-ticket-title">
+      <p id="quote-ticket-title" class="quote__ticket-title m-text-4">Job ticket</p>
+      <dl class="quote__lines">
+        <div><dt>Format</dt><dd data-out="format">A4 sheet</dd></div>
+        <div><dt>Copies</dt><dd data-out="copies">200</dd></div>
+        <div><dt>Inks</dt><dd data-out="inks">Blue and pink</dd></div>
+        <div><dt>Paper</dt><dd data-out="paper">Recycled, 90 g</dd></div>
+        <div><dt>Sides</dt><dd data-out="sides">Single-sided</dd></div>
+      </dl>
+      <p class="quote__total" aria-live="polite"><span class="m-text-4" data-out-label>Total</span><strong class="quote__sum m-text-6" data-out="total">£118</strong></p>
+      <p class="quote__unit"><span data-out="unit">£0.59</span> a copy, ready in <span data-out="days">2</span> working days</p>
+      <a data-8b-placeholder="email" class="m-btn-2" data-quote-mail data-subject="Quote request from the website" href="mailto:hello@dotdrum.example?subject=Quote%20request%20from%20the%20website"><span class="m-btn-2__label">Send this ticket</span></a>
+      <p class="quote__note m-text-4">Setup of £18 per ink included</p>
+    </aside>
+  </div>
+</section>
+<!-- runs: list of recent clients and jobs set in large type (demo: a press log) (animation: scene:runs-lens) -->
+<section id="runs" class="runs" data-8b-section="runs" aria-labelledby="runs-title">
+  <div class="wrap">
+    <div class="runs__head grid">
+      <h2 id="runs-title" class="m-text-2" data-8b-motion="register">Lately on the drum.</h2>
+      <p class="m-text-5">A page from the press log: who came in, what went through, and in which ink.</p>
+    </div>
+    <ol class="runs__log" data-8b-items=":scope > li">
+      <li class="run"><p class="run__client m-text-6">Low Tide Records</p><p class="run__job">Sleeve inserts · 500 copies · blue and pink</p></li>
+      <li class="run"><p class="run__client m-text-6">Hollow Oak Poetry Night</p><p class="run__job">Programmes · 120 copies · blue</p></li>
+      <li class="run"><p class="run__client m-text-6">Gallery Seven</p><p class="run__job">Exhibition posters · 80 × A3 · blue and pink</p></li>
+      <li class="run"><p class="run__client m-text-6">Northern Soup</p><p class="run__job">Zine, issue 12 · 300 copies · pink</p></li>
+      <li class="run"><p class="run__client m-text-6">The Cycling Kitchen</p><p class="run__job">Menus · 200 copies · blue and pink</p></li>
+      <li class="run"><p class="run__client m-text-6">Small Hours Collective</p><p class="run__job">Notebook covers · 1,000 copies · blue</p></li>
+    </ol>
+  </div>
+</section>
+<!-- faq: questions and answers (native <details>) -->
+<section id="faq" class="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <div class="wrap grid faq__grid">
+    <h2 id="faq-title" class="m-text-2" data-8b-motion="register">Before you send a file.</h2>
+    <div class="faq__list" data-8b-items=":scope > details">
+      <details class="faq__item">
+        <summary><span class="m-text-6">What file should I send?</span><span class="m-icon-btn" aria-hidden="true"><span class="m-icon-btn__dot"></span></span></summary>
+        <div class="faq__answer"><p>A PDF with one page per ink, everything in black. Make page one the blue and page two the pink; we turn greys into halftone on the machine.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary><span class="m-text-6">Can you match a brand colour?</span><span class="m-icon-btn" aria-hidden="true"><span class="m-icon-btn__dot"></span></span></summary>
+        <div class="faq__answer"><p>No, and that is the point: riso inks are fixed. We keep Medium Blue and Fluorescent Pink on the drums; tints and overprints give you sixteen more.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary><span class="m-text-6">What are the smallest and largest runs?</span><span class="m-icon-btn" aria-hidden="true"><span class="m-icon-btn__dot"></span></span></summary>
+        <div class="faq__answer"><p>Thirty copies is the smallest run worth a master; the largest we have printed is 3,000 flyers. Beyond that we will send you to an offset printer we trust.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary><span class="m-text-6">Why does every copy look a little different?</span><span class="m-icon-btn" aria-hidden="true"><span class="m-icon-btn__dot"></span></span></summary>
+        <div class="faq__answer"><p>The drum lays wet ink and the paper shifts by a hair between passes. A little misregistration is part of the look; if your design needs it tight, we run slower.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary><span class="m-text-6">Which papers work?</span><span class="m-icon-btn" aria-hidden="true"><span class="m-icon-btn__dot"></span></span></summary>
+        <div class="faq__answer"><p>Uncoated stock from 70 to 300 g, up to A3. Coated and glossy papers will not take the ink, so we keep a shelf of good uncoated ones for you to choose from.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary><span class="m-text-6">How long does a job take?</span><span class="m-icon-btn" aria-hidden="true"><span class="m-icon-btn__dot"></span></span></summary>
+        <div class="faq__answer"><p>Most runs are ready two working days after you approve the proof. Large runs and bound zines take up to five.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+<!-- contact: address, opening hours, email, phone and a contact form (placeholders), four drums across the foot (animation: scene:contact-landing) -->
+<section id="contact" class="contact" data-8b-section="contact" aria-labelledby="contact-title">
+  <div class="wrap grid contact__grid">
+    <div class="contact__copy">
+      <h2 id="contact-title" class="m-text-2" data-8b-motion="register">Bring a file. Leave with a stack.</h2>
+      <dl class="contact__details" data-8b-items=":scope > div">
+        <div><dt class="m-text-4">Studio</dt><dd>Unit 4, Inkwell Yard Works<br>Sheffield S0 0AA</dd></div>
+        <div><dt class="m-text-4">Open</dt><dd>Tuesday to Friday 10–6<br>Saturday 11–4</dd></div>
+        <div><dt class="m-text-4">Email</dt><dd><a data-8b-placeholder="email" class="m-link" href="mailto:hello@dotdrum.example">hello@dotdrum.example</a></dd></div>
+        <div><dt class="m-text-4">Phone</dt><dd><a data-8b-placeholder="phone" class="m-link" href="tel:+441140000000">0114 000 0000</a></dd></div>
+      </dl>
+    </div>
+    <form data-8b-placeholder="form" class="contact__form" action="#" aria-label="Write to the studio">
+      <div class="contact__field"><label class="m-text-4" for="contact-name">Name</label><input id="contact-name" class="m-field" name="name" autocomplete="name" required></div>
+      <div class="contact__field"><label class="m-text-4" for="contact-email">Email</label><input id="contact-email" class="m-field" type="email" name="email" autocomplete="email" required></div>
+      <div class="contact__field"><label class="m-text-4" for="contact-message">What are you printing?</label><textarea id="contact-message" class="m-field" name="message" rows="4"></textarea></div>
+      <button class="m-btn contact__send" type="submit"><span class="m-btn__label">Send</span></button>
+      <p class="contact__status" role="status" data-sent hidden>Thank you. We answer within a working day.</p>
+    </form>
+    <div class="contact__lanes lanes" aria-hidden="true">
+      <div class="lane lane--down"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__disc m-disc"></div></div></div>
+      <div class="lane lane--down"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__disc m-disc"></div></div></div>
+      <div class="lane lane--down"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__disc m-disc"></div></div></div>
+      <div class="lane lane--down"><div class="lane__print"><div class="m-trail"></div></div><div class="drum"><div class="drum__disc m-disc"></div></div></div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- footer: width-filling dotdrum wordmark, links, address, socials, copyright and the Design: 8B credit -->
+<footer id="footer" class="footer" data-8b-section="footer">
+  <div class="wrap">
+    <p class="footer__word m-text-3" style="--len:7" data-8b-motion="register">dotdrum</p>
+    <div class="footer__cols">
+      <nav class="footer__nav" aria-label="Footer">
+        <ul data-8b-items=":scope > li">
+          <li><a class="m-link" href="#inks">Inks</a></li>
+          <li><a class="m-link" href="#process">Process</a></li>
+          <li><a class="m-link" href="#editions">Editions</a></li>
+          <li><a class="m-link" href="#workshops">Workshops</a></li>
+          <li><a class="m-link" href="#quote">Price a run</a></li>
+          <li><a class="m-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer__address">Unit 4, Inkwell Yard Works<br>Sheffield S0 0AA<br><a data-8b-placeholder="email" class="m-link" href="mailto:hello@dotdrum.example">hello@dotdrum.example</a></p>
+      <ul class="footer__social" data-8b-items=":scope > li">
+        <li><a data-8b-placeholder="social" class="m-link" href="https://www.instagram.com/">Instagram</a></li>
+        <li><a data-8b-placeholder="social" class="m-link" href="https://www.are.na/">Are.na</a></li>
+        <li><a data-8b-placeholder="social" class="m-link" href="https://www.youtube.com/">YouTube</a></li>
+      </ul>
+    </div>
+    <div class="footer__base">
+      <p class="m-text-4">© 2026 Dotdrum Press · Printed in two inks in Sheffield · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+      <a class="m-link" href="#press">Back to the top</a>
+    </div>
+  </div>
+</footer>
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nav__toggle');
+  const close = nav.querySelector('.nav__close');
+  const menu = document.getElementById('menu');
+  let last = window.scrollY;
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (Math.abs(y - last) > 2) {
+      nav.toggleAttribute('data-hidden', y > last && y > 160 && menu.hidden);
+      last = y;
+    }
+    nav.toggleAttribute('data-scrolled', y > 24);
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.motionKit?.wheel?.stop(); close.focus(); } else { window.motionKit?.wheel?.start(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => { setOpen(false); toggle.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) { setOpen(false); toggle.focus(); } });
+})();
+</script>
+<script data-8b-part="section-script:press">
+(() => {
+  const section = document.getElementById('press');
+  if (!section || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => section.toggleAttribute('data-offscreen', !entry.isIntersecting)).observe(section);
+})();
+</script>
+<script data-8b-part="section-script:quote">
+(() => {
+  const form = document.querySelector('#quote .quote__form');
+  const ticket = document.querySelector('#quote .quote__ticket');
+  if (!form || !ticket) return;
+  const money = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' });
+  const whole = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', maximumFractionDigits: 0 });
+  const out = name => ticket.querySelector(`[data-out="${name}"]`);
+  const mail = ticket.querySelector('[data-quote-mail]');
+  const address = mail.getAttribute('href').split('?')[0];
+  const copiesInput = form.querySelector('input[name="copies"]');
+  const update = () => {
+    const format = form.querySelector('input[name="format"]:checked');
+    const inks = form.querySelector('input[name="inks"]:checked');
+    const sides = form.querySelector('input[name="sides"]:checked');
+    const paper = form.querySelector('select[name="paper"]').selectedOptions[0];
+    if (!format || !inks || !sides || !paper) return;
+    const min = Number(copiesInput.min), max = Number(copiesInput.max);
+    const copies = Math.min(max, Math.max(min, Math.round(Number(copiesInput.value) || min)));
+    const total = Number(form.dataset.setup) * Number(inks.dataset.passes)
+      + copies * Number(format.dataset.rate) * Number(inks.dataset.factor) * Number(paper.dataset.factor) * Number(sides.dataset.factor);
+    out('format').textContent = format.dataset.label;
+    out('copies').textContent = copies.toLocaleString('en-GB');
+    out('inks').textContent = inks.dataset.label;
+    out('paper').textContent = paper.textContent.trim();
+    out('sides').textContent = sides.dataset.label;
+    out('total').textContent = whole.format(Math.round(total));
+    out('unit').textContent = money.format(total / copies);
+    out('days').textContent = copies <= 500 ? form.dataset.daysSmall : copies <= 1500 ? form.dataset.daysMid : form.dataset.daysLarge;
+    const lines = [...ticket.querySelectorAll('.quote__lines > div')].map(row => `${row.querySelector('dt').textContent}: ${row.querySelector('dd').textContent}`);
+    lines.push(`${ticket.querySelector('[data-out-label]').textContent}: ${out('total').textContent}`);
+    mail.href = `${address}?subject=${encodeURIComponent(mail.dataset.subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+  };
+  form.addEventListener('input', update);
+  form.addEventListener('change', update);
+  form.addEventListener('submit', event => event.preventDefault());
+  update();
+})();
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  if (!form) return;
+  const status = form.querySelector('[data-sent]');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    form.reset();
+    status.hidden = false;
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+(() => {
+const kit = window.motionKit;
+kit.track = () => {};
+if (!kit.live) return;
+const named = { top: 0, center: 0.5, bottom: 1 };
+const point = text => text.trim().split(/\s+/).map(word => named[word] ?? parseFloat(word) / 100);
+kit.track = (element, start, end, fn) => {
+const [s0, v0] = point(start), [s1, v1] = point(end);
+let queued = false;
+const run = () => {
+queued = false;
+const box = element.getBoundingClientRect(), vh = innerHeight;
+const d0 = box.top + box.height * s0 - vh * v0, d1 = box.top + box.height * s1 - vh * v1;
+fn(d1 === d0 ? (d0 <= 0 ? 1 : 0) : Math.min(1, Math.max(0, -d0 / (d1 - d0))));
+};
+addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(run); } }, { passive: true });
+kit.measure(run);
+};
+})();
+</script>
+<script data-8b-part="scene-script:press-pass">
+motionKit.scene('press-pass', () => {
+  const section = document.getElementById('press');
+  const lanes = [...section.querySelectorAll('.press__art .lane')];
+  const bands = [...section.querySelectorAll('.press__band')];
+  const panel = section.querySelector('.press__panel');
+  const drums = lanes.map(lane => lane.querySelector('.drum'));
+  if (!panel || !lanes.length || lanes.length !== bands.length || drums.includes(null)) throw new Error('press-pass: lanes and bands must match');
+  motionKit.measure(() => {
+    const top = section.getBoundingClientRect().top;
+    const box = panel.getBoundingClientRect();
+    const panelBottom = box.bottom - top;
+    const distance = Math.max(1, section.offsetHeight - innerHeight);
+    const end = Math.min(1, Math.max(0.55, (panelBottom - innerHeight * 0.85) / distance));
+    motionKit.set(section, { '--press-run': `${(end * distance).toFixed(1)}px` });
+    drums.forEach((drum, index) => {
+      const rect = motionKit.box(drum);
+      const band = bands[index].getBoundingClientRect();
+      const centre = rect.y + rect.h / 2 - top - scrollY;
+      motionKit.set(drum, {
+        '--press-dx': `${(band.left + scrollX + band.width / 2 - rect.x - rect.w / 2).toFixed(2)}px`,
+        '--press-dy': `${(panelBottom - centre).toFixed(2)}px`
+      });
+      motionKit.set(bands[index], { '--press-d': `${(panelBottom - centre).toFixed(2)}px`, '--press-h': `${band.height.toFixed(2)}px` });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:process-run">
+motionKit.scene('process-run', () => {
+  const section = document.getElementById('process');
+  const windowBox = section.querySelector('.process__window');
+  const track = section.querySelector('.process__track');
+  if (!windowBox || !track) throw new Error('process-run: stage parts missing');
+  motionKit.measure(() => {
+    const travel = Math.max(0, track.scrollWidth - windowBox.clientWidth);
+    motionKit.set(section, { '--process-travel': `${travel}px`, '--process-height': `${Math.round(innerHeight + Math.max(travel * 1.2, innerHeight * 0.9))}px` });
+  });
+});
+</script>
+<script data-8b-part="scene-script:workshops-index">
+motionKit.scene('workshops-index', () => {
+  const section = document.getElementById('workshops');
+  const lane = section.querySelector('.workshops__lane');
+  const carriage = section.querySelector('.workshops__carriage');
+  if (!lane || !carriage || !section.querySelector('.session')) throw new Error('workshops-index: lane parts missing');
+  let geometry = null, last = 0;
+  const render = progress => {
+    last = progress;
+    if (!geometry) return;
+    const centre = geometry.size / 2 + geometry.travel * progress;
+    geometry.rows.forEach(({ row, at }) => row.toggleAttribute('data-waiting', centre < at));
+  };
+  motionKit.measure(() => {
+    const top = motionKit.box(lane).y;
+    const size = carriage.offsetHeight;
+    const travel = Math.max(0, lane.offsetHeight - size);
+    geometry = { size, travel, rows: [...section.querySelectorAll('.session')].map(row => { const box = motionKit.box(row); return { row, at: box.y - top + Math.min(44, box.h / 2) }; }) };
+    motionKit.set(section, { '--workshops-travel': `${travel}px` });
+    render(last);
+  });
+  motionKit.track(lane, 'top 62%', 'bottom 62%', render);
+});
+</script>
+<script data-8b-part="scene-script:contact-landing">
+motionKit.scene('contact-landing', () => {
+  const box = document.querySelector('#contact .contact__lanes');
+  const lanes = box ? [...box.querySelectorAll('.lane')] : [];
+  if (!lanes.length || lanes.some(lane => !lane.querySelector('.drum'))) throw new Error('contact-landing: lanes missing');
+  motionKit.measure(() => lanes.forEach(lane => motionKit.set(lane, { '--contact-travel': `${Math.max(0, lane.offsetHeight - lane.querySelector('.drum').offsetHeight)}px` })));
+});
+</script>
+</body>
+</html>

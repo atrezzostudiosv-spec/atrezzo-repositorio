@@ -1,0 +1,44 @@
+{
+  "slug": "wrenfield",
+  "name": "Wrenfield Museum of Natural History",
+  "categories": [
+    "Culture",
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/museum-website-template",
+  "demo": "https://8b.com/templates/wrenfield/demo.html",
+  "design_md_url": "https://8b.com/templates/wrenfield/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "8a523f432db98a8ce3a09d0345d04c8006b032db",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "c06729c10d85df9063f3f40702d7c6b6c338f0ac",
+    "README.md": "9ec90c476f95066eb6de8feb05b69004f592a835",
+    "AGENTS.md": "e6242093d88a242cb2aa9ed710fe299a3c188424",
+    "index.html": "c301380eaa093fa56a2873f4fb4316dfc6a40512",
+    "index.gsap.html": "bd233a47fd308e8e2620c7fde45541c6cf6f9ad8"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "11fe346be10de89c39566315dccce740e1ab9e5d11eb562d8deb3388793dcfb7",
+    "README.md": "cc555cd07b4c2fd5d33e596e48a49784323e7c987eebdada9f3e32dc7a7155f2",
+    "AGENTS.md": "f55e1661f10416d1e346a9ca47300de8ef651765c04b231abf64d5cc2e5584f8",
+    "index.html": "4efd1e32ed46f816a124e57f5ee460c0af3975e47626885b9455838618b7dec0",
+    "index.gsap.html": "8f6cbba9ab753120e9bf70e3258782be6d71c0b288694bd2ab52fc4246b92dd3"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

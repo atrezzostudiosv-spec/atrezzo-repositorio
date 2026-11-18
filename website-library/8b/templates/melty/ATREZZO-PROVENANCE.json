@@ -1,0 +1,44 @@
+{
+  "slug": "melty",
+  "name": "Melty",
+  "categories": [
+    "Food and drink",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/ice-cream-shop-website-template",
+  "demo": "https://8b.com/templates/melty/demo.html",
+  "design_md_url": "https://8b.com/templates/melty/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "20bbc2650d95547761758863f8c7a0e34fcbc0f1",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "ea272d6db87fa7ab5d0042cf1a0943d4ba40dd12",
+    "README.md": "9b63cf9da56e63b35c13f8ecad4b1251b64108a6",
+    "AGENTS.md": "3759db423bdec74ac055dff24c96c8fa077b5815",
+    "index.html": "14a0d0441c06fa40c703558dfb550fca217e93c7",
+    "index.gsap.html": "c44756d4ecbf645559af80479fd85e88fcf1fb2c"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8571c41ba8a20733ef0a290de819eb25042f924ae1671d195f6b901f4958d530",
+    "README.md": "8260744072c1877f11c9927fd91cc73acd23c82cf0dce5b84613ebb47e948942",
+    "AGENTS.md": "afce39c31e8724a16d72211d7465e62e5dc8880b443784e153820507782e21a6",
+    "index.html": "3a790b32ef79720aac50cfe2ff3f35bc5f61dbba85548b902076a7e2d0bf29e4",
+    "index.gsap.html": "a8df864f33be480023c2242dad57eff80e0e29fb8d4384b6197240183946d947"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

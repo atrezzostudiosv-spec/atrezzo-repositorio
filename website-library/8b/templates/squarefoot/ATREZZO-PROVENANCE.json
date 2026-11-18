@@ -1,0 +1,44 @@
+{
+  "slug": "squarefoot",
+  "name": "Squarefoot",
+  "categories": [
+    "Architecture and building",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/home-renovation-website-template",
+  "demo": "https://8b.com/templates/squarefoot/demo.html",
+  "design_md_url": "https://8b.com/templates/squarefoot/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "15faa2b2c6ca61192155337b04c8c60869145320",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "185756e024a3664f05653132df839f637a5669c1",
+    "README.md": "31238e08045bf63d466d0034929448df15c9e62f",
+    "AGENTS.md": "548540a10609e7b9175b0cdb27e514f2686a7f1f",
+    "index.html": "46243a01e9b2aceaef5f16bb3e6f19ca99adddda",
+    "index.gsap.html": "e36f0c7f5c2b9ed37f364d58d41cfa6c8925c0c0"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "77f1943f019f8bed5a8a792a5bd3bae10db9884d6b9028376475daa52c43d833",
+    "README.md": "a2bf1d941c69181e0a2e7b12347068c81f9c26706cb04d879f776f009158f4a4",
+    "AGENTS.md": "e5864c17769a3e80607f60e9daf4bbe3cdbcf12096d5eaa999e5bfb475b8692c",
+    "index.html": "aab8f4726aeb68af70a0f64d0f90bc2b045f728af57b48a22f68d9ae7ab1a02f",
+    "index.gsap.html": "e861092ee50f0fdd5b525aa4d012d877eaa1c77a1e6c61fc5bbed614b6bdfdcf"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

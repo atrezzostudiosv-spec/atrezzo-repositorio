@@ -1,0 +1,43 @@
+{
+  "slug": "shortrun",
+  "name": "Shortrun",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/print-shop-website-template",
+  "demo": "https://8b.com/templates/shortrun/demo.html",
+  "design_md_url": "https://8b.com/templates/shortrun/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6f34831d92fa657e4d120b12441b237cc295fd51",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "68934e58aa07e8b37cb29020423e4a1fa3b6d36a",
+    "README.md": "dbf0fa0512d8a01c00cbc1f8503246c2de045c1e",
+    "AGENTS.md": "04ef91b034776e6bdc5f58650e4da7f719098496",
+    "index.html": "35a3fc269668b527237dcdf903e88302faef8c93",
+    "index.gsap.html": "c4d63344d108d2b8d4bf3e2f6cd40652dfdba149"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "923e58372c46987ff59b92ef7745303e2de2d46dc6acb832f4798c5b8c06a24a",
+    "README.md": "e4623ff4faf0e7672d669b13a5fdb7a3a4cf5fd1ec6877c6cf8cbcb02fdd09c9",
+    "AGENTS.md": "4fc9d9654dc4c826917844b9b1226b89b213a2572f0f31400a1b33a86b342158",
+    "index.html": "fd14e6267c5f283c82aeb6ce5963ddd65caf40275d146695de86386aca614f42",
+    "index.gsap.html": "84774584294ac8611a93d309882fe07e22739590f87e1bd58312986643de10c0"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

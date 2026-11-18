@@ -1,0 +1,1476 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/reflow/
+  Source: https://github.com/8bsite/repair-shop-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflow — phone and laptop repair at the window, Manchester</title>
+<meta name="description" content="Reflow repairs phones and laptops at a bench in the shop window on Tib Street, Manchester: a free fifteen-minute diagnosis, a fixed price before work starts and a 12-month warranty.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reflow — phone and laptop repair at the window, Manchester">
+<meta property="og:description" content="Reflow repairs phones and laptops at a bench in the shop window on Tib Street, Manchester: a free fifteen-minute diagnosis, a fixed price before work starts and a 12-month warranty.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%230000ff'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23f5f5f5'%3ER%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFo1Dp.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1YmV.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFrlDpITI.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFp1DpITI.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFoFDpITI.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFrFDpITI.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFrVDpITI.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7OuHFo1Dp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #0e0e0e;
+  --color-2: #f5f5f5;
+  --color-3: #d0d0d0;
+  --color-4: #8e8e8e;
+  --color-5: #575757;
+  --color-6: #0000ff;
+  --color-7: #1b1b1b;
+  --color-8: #e2e2e2;
+  --font-1: "Instrument Sans", "Instrument Sans Fallback", Arial, sans-serif;
+  --font-2: "TikTok Sans", "TikTok Sans Fallback", "Arial Narrow", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 2px;
+  --space-1: clamp(16px, 1.6vw, 24px);
+  --space-2: clamp(88px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Instrument Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.1%; ascent-override: 95%; descent-override: 24.5%; line-gap-override: 0%; }
+  @font-face { font-family: "TikTok Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 80.9%; ascent-override: 123.5%; descent-override: 37.1%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis-stopped { overflow: clip; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body { margin: 0; background: var(--color-1); color: var(--color-3); font-family: var(--font-1); font-size: 17px; line-height: 1.5; overflow-x: clip; }
+  h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  .skip { position: fixed; left: var(--space-1); top: -80px; z-index: 50; padding: 10px 14px; background: var(--color-2); color: var(--color-1); }
+  .skip:focus { top: 8px; }
+  .skip:focus-visible { outline-color: var(--color-2); }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 10.4vw, 152px); font-weight: 400; line-height: .94; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-2); font-size: 13px; font-weight: 500; font-stretch: 75%; line-height: 1.25; letter-spacing: .03em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(26px, 2.9vw, 40px); font-weight: 400; line-height: 1.08; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: 17px; font-weight: 500; font-stretch: 75%; line-height: 1.2; letter-spacing: .02em; text-transform: uppercase; font-style: normal; }
+.m-spread { font-family: var(--font-2); font-size: 12px; font-weight: 500; font-stretch: 75%; line-height: 1.3; letter-spacing: .04em; text-transform: uppercase; font-style: normal; text-align: justify; text-align-last: justify; }
+.m-select { background: linear-gradient(var(--color-6), var(--color-6)) no-repeat 0 0 / 100% 100%; color: var(--color-2); padding-inline: .06em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.m-dash { display: inline-block; height: .5em; min-width: .9em; border-radius: var(--radius-1); background: currentColor; vertical-align: middle; }
+.m-surface { background-color: var(--color-1); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); color: var(--color-3); }
+.m-surface-2 { background: var(--color-2); color: var(--color-1); }
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; padding: 14px 18px 13px; border: 0; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-1); font-family: var(--font-2); font-size: 14px; font-weight: 500; font-stretch: 75%; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer; overflow: hidden; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-6); transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn::after { content: ""; width: 1.4em; height: .5em; border-radius: var(--radius-1); background: currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label { transition: color .3s; }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; padding: 14px 18px 13px; border: 0; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 14px; font-weight: 500; font-stretch: 75%; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer; overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-6); transform: scaleX(0); transform-origin: 0 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-2::after { content: ""; width: 1.4em; height: .5em; border-radius: var(--radius-1); background: currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before { transform: scaleX(1); }
+  .m-btn:hover, .m-btn-2:hover { color: var(--color-2); }
+  .m-btn:hover::after, .m-btn-2:hover::after { transform: translateX(.35em) scaleX(1.5); }
+}
+.m-btn:focus-visible::before, .m-btn-2:focus-visible::before { transform: scaleX(1); }
+.m-btn:focus-visible, .m-btn-2:focus-visible { color: var(--color-2); outline: 2px solid var(--color-6); outline-offset: 3px; }
+.m-btn:focus-visible { outline-color: var(--color-3); }
+.m-link { color: inherit; text-decoration: none; background: repeating-linear-gradient(90deg, currentColor 0 .7em, transparent .7em 1em) 0 100% / 100% 1px no-repeat; padding-bottom: 2px; }
+@media (hover: hover) {
+  .m-link:hover { animation: m-link-flow .7s linear infinite; }
+}
+@keyframes m-link-flow { to { background-position: 2em 100%; } }
+.m-icon-btn { display: inline-grid; place-content: center; gap: 5px; width: 44px; height: 44px; padding: 0; border: 1px solid currentColor; border-radius: var(--radius-2); background: transparent; color: inherit; cursor: pointer; }
+.m-icon-btn__bar { display: block; width: 20px; height: 5px; border-radius: var(--radius-1); background: currentColor; transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-icon-btn:hover .m-icon-btn__bar:first-child { transform: translateX(4px); }
+  .m-icon-btn:hover .m-icon-btn__bar:last-child { transform: translateX(-4px); }
+}
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-family: var(--font-2); font-size: 13px; font-weight: 500; font-stretch: 75%; line-height: 1.25; letter-spacing: .03em; text-transform: uppercase; }
+.m-field__control { width: 100%; min-height: 48px; padding: 12px 0 10px; border: 0; border-bottom: 1px solid currentColor; border-radius: 0; background: transparent; font-family: var(--font-1); font-size: 17px; line-height: 1.3; }
+.m-field__control:focus-visible { outline: 2px solid var(--color-6); outline-offset: 4px; }
+textarea.m-field__control { min-height: 96px; resize: vertical; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .l-wrap { padding-inline: var(--space-1); }
+  .l-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); }
+  @media (max-width: 47.99em) { .l-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation .nav__bar { position: fixed; inset: 0 0 auto; z-index: 20; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); align-items: center; height: 56px; padding: 0 var(--space-1); background: var(--color-1); color: var(--color-3); transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+  #navigation .nav__bar.is-hidden { transform: translateY(-100%); }
+  #navigation .nav__brand { display: inline-flex; align-items: center; gap: 10px; justify-self: start; font-family: var(--font-2); font-size: 15px; font-weight: 500; font-stretch: 75%; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+  #navigation .nav__mark { display: inline-flex; gap: 3px; align-items: center; }
+  #navigation .nav__mark .m-dash { height: 6px; min-width: 0; width: 7px; }
+  #navigation .nav__mark .m-dash:nth-child(2) { width: 16px; }
+  #navigation .nav__hours { color: var(--color-4); }
+  #navigation .nav__links { display: flex; gap: clamp(14px, 1.8vw, 28px); justify-content: flex-end; }
+  #navigation .nav__links .m-link { font-family: var(--font-2); font-size: 14px; font-weight: 500; font-stretch: 75%; letter-spacing: .04em; text-transform: uppercase; background-size: 0 1px; }
+  @media (hover: hover) { #navigation .nav__links .m-link:hover { background-size: 100% 1px; } }
+  #navigation .nav__links .m-link:focus-visible { background-size: 100% 1px; }
+  #navigation .nav__end { display: flex; gap: 12px; align-items: center; justify-content: flex-end; }
+  #navigation .nav__links-wrap { grid-column: 3; }
+  #navigation .nav__toggle { display: none; }
+  #navigation .nav__menu { position: fixed; inset: 0; z-index: 30; display: grid; align-content: space-between; gap: 32px; padding: 76px var(--space-1) 28px; overflow-y: auto; }
+  #navigation .nav__menu[hidden] { display: none; }
+  #navigation .nav__menu-links { display: grid; gap: 4px; }
+  #navigation .nav__menu-links a { font-size: clamp(40px, 12vw, 64px); text-decoration: none; }
+  #navigation .nav__menu-close { position: absolute; top: 4px; right: var(--space-1); }
+  #navigation .nav__menu-meta { display: grid; gap: 8px; color: var(--color-4); }
+  @media (max-width: 63.99em) {
+    #navigation .nav__bar { grid-template-columns: 1fr auto; }
+    #navigation .nav__hours, #navigation .nav__links-wrap { display: none; }
+    #navigation .nav__toggle { display: inline-grid; }
+  }
+  @media (max-width: 26em) { #navigation .nav__end .m-btn { display: none; } }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; }
+  #opening .op-stage { position: sticky; top: 0; z-index: 1; display: flex; flex-direction: column; height: 100vh; height: 100svh; padding: calc(var(--nav-h, 56px) + clamp(20px, 5vh, 56px)) var(--space-1) 0; overflow: hidden; container-type: inline-size; }
+  #opening .op-wm { --u: min(100cqw / 35, (100svh - 430px) / 9); --pitch: 1.25; display: flex; gap: var(--u); margin-block: auto; }
+  #opening .op-wm__half { display: flex; gap: var(--u); }
+  #opening .op-wm__letter { display: grid; grid-template-rows: repeat(7, calc(var(--u) * var(--pitch))); width: calc(var(--u) * 5); }
+  #opening .op-wm__row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: center; }
+  #opening .op-wm__row i { height: calc(var(--u) * .56); margin-inline: calc(var(--u) * .09); border-radius: var(--radius-1); background: var(--color-3); }
+  #opening .op-copy { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); row-gap: 20px; align-items: end; align-content: end; min-height: clamp(190px, 27vh, 240px); padding-bottom: clamp(24px, 5vh, 56px); }
+  #opening .op-title { grid-column: 1 / span 2; max-width: 17em; color: var(--color-2); }
+  #opening .op-lead { grid-column: 3; max-width: 30ch; color: var(--color-4); }
+  #opening .op-actions { grid-column: 4; display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; justify-self: end; }
+  #opening .op-actions .m-link { font-family: var(--font-2); font-size: 14px; font-weight: 500; font-stretch: 75%; letter-spacing: .05em; text-transform: uppercase; color: var(--color-3); }
+  #opening .op-bar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); padding: 14px 0 16px; border-top: 1px solid var(--color-7); color: var(--color-3); }
+  #opening .op-bar li:last-child { text-align: right; }
+  #opening .op-bar a { text-decoration: none; }
+  #opening .op-flood { position: absolute; inset: 0; z-index: 2; background: var(--color-2); opacity: 0; visibility: hidden; pointer-events: none; }
+  #opening .op-second { position: relative; z-index: 3; min-height: 100vh; min-height: 100svh; margin-top: 40vh; padding: calc(var(--nav-h, 56px) + 18px) var(--space-1) clamp(56px, 9vh, 96px); }
+  #opening .op-second .m-spread { color: var(--color-5); }
+  #opening .op-stair { --fs: min(10.2vw, 150px); --row: calc(var(--fs) * .96); display: grid; margin-top: clamp(28px, 6vh, 64px); }
+  #opening .op-stair__title, #opening .op-tiles { grid-area: 1 / 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(6, var(--row)); column-gap: var(--space-1); }
+  #opening .op-stair__title { position: relative; z-index: 1; font-size: var(--fs); line-height: .96; pointer-events: none; }
+  #opening .op-stair__word { display: block; align-self: end; white-space: nowrap; }
+  #opening .w1 { grid-area: 1 / 1; }
+  #opening .w2 { grid-area: 2 / 2 / span 1 / span 2; }
+  #opening .w3 { grid-area: 3 / 3 / span 1 / span 2; }
+  #opening .w4 { grid-area: 4 / 4; }
+  #opening .w5 { grid-area: 5 / 2 / span 1 / span 3; justify-self: start; }
+  #opening .op-tile { position: relative; overflow: hidden; border-radius: var(--radius-2); background: var(--color-8); }
+  #opening .op-tile img { width: 100%; height: 100%; object-fit: cover; }
+  #opening .t1 { grid-area: 1 / 4 / span 2 / span 1; margin-top: calc(var(--row) * .12); }
+  #opening .t2 { grid-area: 3 / 1 / span 2 / span 1; margin-top: calc(var(--row) * .2); }
+  #opening .t3 { grid-area: 5 / 4 / span 2 / span 1; margin-top: calc(var(--row) * .25); }
+  #opening .op-note { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); margin-top: clamp(-120px, -9vh, -40px); }
+  #opening .op-note__text { grid-column: 2 / span 2; max-width: 46ch; color: var(--color-5); }
+  #opening .op-note__text .m-link { color: var(--color-1); }
+  @media (max-width: 63.99em) {
+    #opening .op-copy { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #opening .op-title { grid-column: 1 / -1; }
+    #opening .op-lead { grid-column: 1; }
+    #opening .op-actions { grid-column: 2; }
+  }
+  @media (max-width: 47.99em) {
+    #opening .op-stage { padding-top: calc(var(--nav-h, 56px) + 18px); }
+    #opening .op-wm { --u: min(100cqw / 17, (100svh - 500px) / 15.4); --pitch: 1; flex-direction: column; gap: calc(var(--u) * 1.3); margin-block: 0 clamp(20px, 4vh, 36px); }
+    #opening .op-copy { grid-template-columns: 1fr; row-gap: 16px; min-height: 0; margin-bottom: auto; padding-bottom: 20px; }
+    #opening .op-title { font-size: clamp(24px, 7vw, 30px); }
+    #opening .op-lead, #opening .op-actions { grid-column: 1; justify-self: start; }
+    #opening .op-lead { font-size: 15px; }
+    #opening .op-bar { grid-template-columns: 1fr 1fr; padding: 10px 0 12px; }
+    #opening .op-bar li:nth-child(n + 3) { display: none; }
+    #opening .op-bar li:nth-child(2) { text-align: right; }
+    #opening .op-stair { --fs: 15.4vw; }
+    #opening .op-stair__title, #opening .op-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(8, var(--row)); }
+    #opening .w1 { grid-area: 1 / 1; }
+    #opening .w2 { grid-area: 3 / 1 / span 1 / span 2; justify-self: end; }
+    #opening .w3 { grid-area: 4 / 1 / span 1 / span 2; justify-self: start; }
+    #opening .w4 { grid-area: 5 / 2; }
+    #opening .w5 { grid-area: 7 / 1 / span 1 / span 2; justify-self: end; }
+    #opening .t1 { grid-area: 1 / 2 / span 2 / span 1; margin-top: 0; }
+    #opening .t2 { grid-area: 5 / 1 / span 2 / span 1; margin-top: calc(var(--row) * .15); }
+    #opening .t3 { display: none; }
+    #opening .op-note { grid-template-columns: 1fr; margin-top: 12px; }
+    #opening .op-note__text { grid-column: 1; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .op-wm__letter { animation: op-in .9s cubic-bezier(.16, .8, .2, 1) backwards; animation-delay: calc(var(--l) * 55ms); }
+    #opening .op-copy { animation: op-rise .8s cubic-bezier(.16, .8, .2, 1) .2s backwards; }
+    #opening .op-wm__row { animation: op-pulse 3.6s cubic-bezier(.65, 0, .25, 1) calc(1.1s + var(--r) * .13s) infinite; }
+    #opening[data-loop="off"] .op-wm__row { animation-play-state: paused; }
+  }
+  @keyframes op-in { from { transform: translateX(calc(var(--u) * -1.6)); } }
+  @keyframes op-rise { from { transform: translateY(24px); } }
+  @keyframes op-pulse { 0%, 24%, 100% { transform: translateX(0); } 10% { transform: translateX(max(calc(var(--u) * .9), 24px)); } }
+}
+</style>
+<style data-8b-part="section:diagnosis">
+@layer sections {
+  #diagnosis { padding: var(--space-2) var(--space-1); }
+  #diagnosis .m-spread { color: var(--color-4); }
+  #diagnosis .dg-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); row-gap: 48px; margin-top: clamp(32px, 5vh, 56px); align-items: start; }
+  #diagnosis .dg-head { grid-column: 1 / span 2; }
+  #diagnosis .dg-title { font-size: min(7.2vw, 108px); color: var(--color-2); }
+  #diagnosis .dg-w { display: block; white-space: nowrap; }
+  #diagnosis .dg-w:nth-child(2) { padding-left: 16%; }
+  #diagnosis .dg-w:nth-child(3) { padding-left: 34%; }
+  #diagnosis .dg-w:nth-child(4) { padding-left: 8%; }
+  #diagnosis .dg-lead { max-width: 38ch; margin-top: 32px; color: var(--color-4); }
+  #diagnosis .dg-board { grid-column: 3 / span 2; }
+  #diagnosis .dg-board__head { display: flex; justify-content: space-between; padding: 0 10px 10px; border-bottom: 1px solid var(--color-7); color: var(--color-4); }
+  #diagnosis .dg-listwrap { position: relative; }
+  #diagnosis .dg-band { position: absolute; inset: 0 0 auto; height: 44px; border-radius: var(--radius-2); background: var(--color-6); opacity: 0; pointer-events: none; }
+  #diagnosis .dg-list { position: relative; }
+  #diagnosis .dg-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 44px; padding: 8px 10px; border-bottom: 1px solid var(--color-7); color: var(--color-3); }
+  #diagnosis .dg-state { display: grid; justify-items: end; text-align: right; }
+  #diagnosis .dg-pending, #diagnosis .dg-result { grid-area: 1 / 1; }
+  #diagnosis .dg-pending { opacity: 0; color: var(--color-4); }
+  #diagnosis .dg-result { display: inline-flex; align-items: center; gap: 10px; }
+  #diagnosis .dg-result .m-dash { width: 1.1em; color: var(--color-4); }
+  #diagnosis .dg-result.is-fault { color: var(--color-2); }
+  #diagnosis .dg-result.is-fault .m-dash { width: 2.4em; color: var(--color-2); }
+  #diagnosis .dg-sum { max-width: 46ch; margin-top: 24px; padding-inline: 10px; color: var(--color-3); }
+  #diagnosis .dg-sum strong { font-weight: 500; color: var(--color-2); }
+  @media (max-width: 63.99em) {
+    #diagnosis .dg-head, #diagnosis .dg-board { grid-column: 1 / -1; }
+    #diagnosis .dg-title { font-size: min(13vw, 108px); }
+  }
+  @media (max-width: 47.99em) {
+    #diagnosis .dg-row { padding-inline: 6px; font-size: 15px; }
+    #diagnosis .dg-board__head { padding-inline: 6px; }
+    #diagnosis .dg-sum { padding-inline: 6px; }
+  }
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+  #prices { padding: var(--space-2) var(--space-1); }
+  #prices .m-spread { color: var(--color-5); }
+  #prices .pr-head { margin-top: clamp(32px, 5vh, 56px); row-gap: 24px; align-items: end; }
+  #prices .pr-title { grid-column: 1 / span 3; }
+  #prices .pr-note { grid-column: 4; max-width: 34ch; color: var(--color-5); }
+  #prices .pr-table { width: 100%; margin-top: clamp(40px, 6vw, 80px); border-collapse: collapse; }
+  #prices .pr-table th, #prices .pr-table td { padding: 14px 0; text-align: left; vertical-align: top; }
+  #prices .pr-table th:not([class]) { font-weight: inherit; }
+  #prices .pr-table thead th { padding: 0 0 12px; border-bottom: 1px solid var(--color-1); color: var(--color-5); }
+  #prices .pr-table thead th:nth-child(1) { width: 50%; }
+  #prices .pr-table thead th:nth-child(2) { width: 34%; }
+  #prices .pr-table thead th:last-child, #prices .pr-table .pr-price { text-align: right; }
+  #prices .pr-scale { margin-left: 8px; }
+  #prices .pr-group th { padding: 40px 0 10px; color: var(--color-5); }
+  #prices tbody tr:not(.pr-group) { border-bottom: 1px solid var(--color-8); }
+  #prices tbody tr:not(.pr-group) th { padding-right: var(--space-1); }
+  #prices .pr-name { display: block; }
+  #prices .pr-models { display: block; margin-top: 5px; color: var(--color-5); }
+  #prices .pr-time { display: flex; align-items: center; gap: 12px; padding-top: 3px; padding-right: var(--space-1); }
+  #prices .pr-bar { flex: none; width: calc(var(--m) / 180 * (100% - 84px)); height: 10px; min-width: 10px; color: var(--color-1); }
+  #prices .pr-time .m-text-3 { white-space: nowrap; color: var(--color-5); }
+  #prices .pr-price { font-size: 20px; }
+  #prices .pr-foot { margin-top: 28px; color: var(--color-5); }
+  @media (max-width: 63.99em) {
+    #prices .pr-title { grid-column: 1 / -1; }
+    #prices .pr-note { grid-column: 1 / -1; }
+  }
+  @media (max-width: 47.99em) {
+    #prices .pr-table thead th:nth-child(1) { width: 50%; }
+    #prices .pr-table thead th:nth-child(2) { width: 32%; }
+    #prices .pr-scale { display: none; }
+    #prices .pr-time { flex-direction: column; align-items: flex-start; gap: 6px; padding-right: 8px; }
+    #prices .pr-bar { width: calc(var(--m) / 180 * 100%); }
+    #prices .pr-name { font-size: 15px; }
+    #prices .pr-price { font-size: 17px; }
+  }
+}
+</style>
+<style data-8b-part="section:bench">
+@layer sections {
+  #bench { padding: var(--space-2) var(--space-1); overflow: clip; }
+  #bench .m-spread { color: var(--color-4); }
+  #bench .bn-title { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); margin-top: clamp(28px, 5vh, 56px); color: var(--color-2); }
+  #bench .bn-w { justify-self: start; white-space: nowrap; }
+  #bench .bn-w1 { grid-column: 1 / span 2; }
+  #bench .bn-w2 { grid-column: 2 / span 2; }
+  #bench .bn-w3 { grid-column: 3 / span 2; }
+  #bench .bn-photo { margin-top: clamp(32px, 5vw, 64px); }
+  #bench .bn-strips { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 3px; aspect-ratio: 16 / 7.4; }
+  #bench .bn-strip { position: relative; overflow: hidden; background: var(--color-7); }
+  #bench .bn-strip img { position: absolute; top: 0; width: calc(400% + 9px); max-width: none; height: 100%; object-fit: cover; }
+  #bench .bn-strip:nth-child(1) img { left: 0; }
+  #bench .bn-strip:nth-child(2) img { left: calc(-100% - 3px); }
+  #bench .bn-strip:nth-child(3) img { left: calc(-200% - 6px); }
+  #bench .bn-strip:nth-child(4) img { left: calc(-300% - 9px); }
+  #bench figcaption { margin-top: 12px; color: var(--color-4); }
+  #bench .bn-cols { margin-top: clamp(40px, 6vw, 72px); row-gap: 24px; }
+  #bench .bn-cols p { max-width: 34ch; color: var(--color-3); }
+  #bench .bn-cols p:nth-child(1) { grid-column: 2; }
+  #bench .bn-cols p:nth-child(2) { grid-column: 3; }
+  #bench .bn-cols p:nth-child(3) { grid-column: 4; }
+  @media (max-width: 47.99em) {
+    #bench .bn-title { grid-template-columns: 1fr; font-size: 17vw; }
+    #bench .bn-w1, #bench .bn-w2, #bench .bn-w3 { grid-column: 1; }
+    #bench .bn-w2 { margin-left: 18%; }
+    #bench .bn-w3 { margin-left: 6%; }
+    #bench .bn-strips { aspect-ratio: 4 / 3.4; }
+    #bench .bn-cols p:nth-child(n) { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:parts">
+@layer sections {
+  #parts { padding: var(--space-2) var(--space-1); }
+  #parts .m-spread { color: var(--color-5); }
+  #parts .pt-head { margin-top: clamp(32px, 5vh, 56px); row-gap: 32px; align-items: end; }
+  #parts .pt-title { grid-column: 1 / span 2; max-width: 19ch; }
+  #parts .pt-photo { grid-column: 4; aspect-ratio: 1; overflow: hidden; border-radius: var(--radius-2); background: var(--color-8); }
+  #parts .pt-photo img { width: 100%; height: 100%; object-fit: cover; }
+  #parts .pt-sheet { width: 100%; margin-top: clamp(40px, 6vw, 80px); border-collapse: collapse; table-layout: fixed; }
+  #parts .pt-sheet thead th, #parts .pt-sheet thead td { padding: 0 12px 16px 0; border-bottom: 1px solid var(--color-1); text-align: left; font-weight: 400; vertical-align: bottom; }
+  #parts .pt-sheet thead td { width: 25%; }
+  #parts .pt-sheet tbody tr { border-bottom: 1px solid var(--color-8); }
+  #parts .pt-sheet tbody th { padding: 16px 12px 16px 0; text-align: left; font-weight: inherit; vertical-align: top; color: var(--color-5); }
+  #parts .pt-sheet tbody th .m-dash { width: 1.8em; margin-right: 10px; color: var(--color-1); }
+  #parts .pt-sheet td { padding: 16px 12px 16px 0; vertical-align: top; }
+  #parts .pt-sheet tbody tr:last-child td { font-size: 22px; }
+  @media (max-width: 47.99em) {
+    #parts .pt-title, #parts .pt-photo { grid-column: 1 / -1; }
+    #parts .pt-photo { aspect-ratio: 16 / 10; }
+    #parts .pt-sheet thead td { width: 28%; }
+    #parts .pt-sheet thead th { font-size: 18px; }
+    #parts .pt-sheet tbody { font-size: 14px; }
+    #parts .pt-sheet tbody th { font-size: 11px; }
+    #parts .pt-sheet tbody th .m-dash { display: none; }
+    #parts .pt-sheet tbody tr:last-child td { font-size: 17px; }
+  }
+}
+</style>
+<style data-8b-part="section:refurb">
+@layer sections {
+  #refurb { padding: var(--space-2) 0; overflow: clip; }
+  #refurb .rf-pin { padding: 0 var(--space-1); }
+  #refurb .m-spread { color: var(--color-4); }
+  #refurb .rf-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px var(--space-1); margin-top: clamp(32px, 5vh, 56px); }
+  #refurb .rf-intro { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); row-gap: 24px; align-items: end; }
+  #refurb .rf-title { grid-column: 1 / span 3; color: var(--color-2); }
+  #refurb .rf-intro .m-text { grid-column: 4; color: var(--color-4); }
+  #refurb .rf-item { display: grid; gap: 10px; align-content: start; }
+  #refurb .rf-num { color: var(--color-4); }
+  #refurb .rf-photo { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-2); background: var(--color-7); }
+  #refurb .rf-photo img { width: 100%; height: 100%; object-fit: cover; }
+  #refurb .rf-name { margin-top: 6px; font-size: clamp(22px, 2vw, 28px); color: var(--color-2); }
+  #refurb .rf-spec { color: var(--color-4); }
+  #refurb .rf-buy { display: flex; justify-content: space-between; align-items: baseline; margin-top: 4px; padding-top: 10px; border-top: 1px solid var(--color-7); }
+  #refurb .rf-price { font-size: 22px; color: var(--color-2); }
+  #refurb .rf-end { grid-column: 1 / -1; display: grid; gap: 12px; align-content: center; max-width: 40ch; }
+  #refurb .rf-end .m-text-4 { color: var(--color-2); }
+  @media (max-width: 63.99em) {
+    #refurb .rf-track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #refurb .rf-title, #refurb .rf-intro .m-text { grid-column: 1 / -1; }
+  }
+  @media (max-width: 47.99em) {
+    #refurb .rf-track { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="section:fleet">
+@layer sections {
+  #fleet { padding: var(--space-2) var(--space-1); }
+  #fleet .m-spread { color: var(--color-5); }
+  #fleet .fl-head { margin-top: clamp(32px, 5vh, 56px); row-gap: 28px; align-items: end; }
+  #fleet .fl-title { grid-column: 1 / span 3; max-width: 26ch; }
+  #fleet .fl-side { grid-column: 4; display: grid; gap: 20px; justify-items: start; }
+  #fleet .fl-side .m-text { color: var(--color-5); }
+  #fleet .fl-board { --label: 24%; position: relative; margin-top: clamp(48px, 7vw, 96px); }
+  #fleet .fl-axis { display: flex; justify-content: space-between; margin-left: calc(var(--label) + var(--space-1)); padding-bottom: 10px; border-bottom: 1px solid var(--color-1); color: var(--color-5); }
+  #fleet .fl-day { display: grid; grid-template-columns: var(--label) minmax(0, 1fr); column-gap: var(--space-1); align-items: end; padding: 18px 0; border-bottom: 1px solid var(--color-8); }
+  #fleet .fl-label { display: grid; gap: 4px; }
+  #fleet .fl-label .m-text-3 { color: var(--color-5); }
+  #fleet .fl-track { position: relative; height: 44px; }
+  #fleet .fl-win { position: absolute; inset: 0 auto 0 calc((var(--a) - 8) / 10 * 100%); width: calc((var(--b) - var(--a)) / 10 * 100%); }
+  #fleet .fl-bar { position: absolute; inset: auto 0 4px; height: 12px; border-radius: var(--radius-1); background: var(--color-1); }
+  #fleet .fl-time { position: absolute; left: 0; bottom: 18px; white-space: nowrap; color: var(--color-1); }
+  #fleet .fl-cursor { position: absolute; top: 0; bottom: 0; left: 0; width: 3px; border-radius: var(--radius-1); background: var(--color-6); opacity: 0; pointer-events: none; }
+  @media (max-width: 63.99em) {
+    #fleet .fl-title, #fleet .fl-side { grid-column: 1 / -1; }
+  }
+  @media (max-width: 47.99em) {
+    #fleet .fl-board { --label: 0px; }
+    #fleet .fl-axis { margin-left: 0; }
+    #fleet .fl-day { grid-template-columns: minmax(0, 1fr); row-gap: 6px; }
+    #fleet .fl-label { grid-template-columns: auto 1fr; align-items: baseline; gap: 10px; }
+    #fleet .fl-time { font-size: 11px; letter-spacing: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:mailin">
+@layer sections {
+  #mailin { padding: var(--space-2) var(--space-1); }
+  #mailin .m-spread { color: var(--color-4); }
+  #mailin .ml-grid { margin-top: clamp(32px, 5vh, 56px); row-gap: 48px; }
+  #mailin .ml-title { grid-column: 1 / -1; color: var(--color-2); }
+  #mailin .ml-steps { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); row-gap: 40px; }
+  #mailin .ml-step { display: grid; gap: 14px; align-content: start; }
+  #mailin .ml-step .m-dash { width: 100%; height: 10px; color: var(--color-3); }
+  #mailin .ml-step h3 { color: var(--color-2); }
+  #mailin .ml-step .m-text { max-width: 30ch; color: var(--color-4); }
+  #mailin .ml-cta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+  #mailin .ml-cta .m-text-3 { color: var(--color-4); }
+  @media (max-width: 63.99em) { #mailin .ml-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 47.99em) { #mailin .ml-steps { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+  #reviews { padding: var(--space-2) var(--space-1); }
+  #reviews .m-spread { color: var(--color-5); }
+  #reviews .rv-list { display: grid; gap: clamp(64px, 9vw, 128px); margin-top: clamp(40px, 6vw, 80px); }
+  #reviews .rv-item { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); row-gap: 20px; }
+  #reviews .rv-quote { position: relative; grid-column: 1 / span 3; font-size: clamp(28px, 4.1vw, 58px); line-height: 1.06; }
+  #reviews .rv-quote p { position: relative; z-index: 1; }
+  #reviews .rv-by { grid-column: 1 / span 3; color: var(--color-5); }
+  #reviews .rv-item:nth-child(2) .rv-quote, #reviews .rv-item:nth-child(2) .rv-by { grid-column: 2 / span 3; }
+  #reviews .rv-sel { position: absolute; top: 0; left: 0; z-index: 0; width: 100px; height: 100px; background: var(--color-6); transform-origin: 0 0; opacity: 0; pointer-events: none; }
+  @media (max-width: 47.99em) {
+    #reviews .rv-item { grid-template-columns: 1fr; }
+    #reviews .rv-quote, #reviews .rv-by, #reviews .rv-item:nth-child(2) .rv-quote, #reviews .rv-item:nth-child(2) .rv-by { grid-column: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding: var(--space-2) var(--space-1); }
+  #faq .m-spread { color: var(--color-4); }
+  #faq .fq-grid { margin-top: clamp(32px, 5vh, 56px); row-gap: 40px; align-items: start; }
+  #faq .fq-title { grid-column: 1 / span 2; font-size: min(8.6vw, 128px); color: var(--color-2); }
+  #faq .fq-title span { display: block; white-space: nowrap; }
+  #faq .fq-title span:nth-child(2) { padding-left: 26%; }
+  #faq .fq-title span:nth-child(3) { padding-left: 12%; }
+  #faq .fq-list { grid-column: 3 / span 2; border-top: 1px solid var(--color-7); }
+  #faq .fq-item { border-bottom: 1px solid var(--color-7); }
+  #faq .fq-item summary { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; font-size: clamp(20px, 1.8vw, 26px); color: var(--color-2); cursor: pointer; list-style: none; }
+  #faq .fq-item summary::-webkit-details-marker { display: none; }
+  #faq .fq-item summary::after { content: ""; flex: none; width: 24px; height: 7px; margin-top: .5em; border-radius: var(--radius-1); background: currentColor; transition: transform .35s cubic-bezier(.7, 0, .2, 1); }
+  #faq .fq-item[open] summary::after { transform: translateX(10px) scaleX(.4); }
+  #faq .fq-item summary:focus-visible { outline: 2px solid var(--color-3); outline-offset: 4px; }
+  #faq .fq-item p { max-width: 52ch; padding: 0 0 24px; color: var(--color-4); }
+  @media (max-width: 63.99em) {
+    #faq .fq-title, #faq .fq-list { grid-column: 1 / -1; }
+    #faq .fq-title { font-size: min(15vw, 128px); }
+  }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+  #visit { padding: var(--space-2) var(--space-1); }
+  #visit .vs-title { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--space-1); }
+  #visit .vs-w { justify-self: start; white-space: nowrap; transform-origin: 0 0; }
+  #visit .vs-w1 { grid-column: 1 / span 2; }
+  #visit .vs-w2 { grid-column: 2 / span 2; }
+  #visit .vs-w3 { grid-column: 3 / span 2; }
+  #visit .vs-grid { margin-top: clamp(48px, 7vw, 96px); row-gap: 48px; align-items: start; }
+  #visit .vs-info { grid-column: 1 / span 2; display: grid; gap: 36px; }
+  #visit .vs-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px var(--space-1); }
+  #visit .vs-facts dt { margin-bottom: 6px; color: var(--color-5); }
+  #visit .vs-photo { aspect-ratio: 3 / 2; overflow: hidden; border-radius: var(--radius-2); background: var(--color-8); }
+  #visit .vs-photo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.07); }
+  #visit .vs-form { grid-column: 3 / span 2; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px var(--space-1); padding: clamp(20px, 2.4vw, 32px); border-radius: var(--radius-2); background: var(--color-8); }
+  #visit .vs-form__title, #visit .vs-wide, #visit .vs-submit { grid-column: 1 / -1; }
+  #visit .m-field__control::placeholder { color: var(--color-5); opacity: 1; }
+  #visit .vs-submit { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; }
+  #visit .vs-status { color: var(--color-1); }
+  #visit .vs-status.is-error { color: var(--color-6); }
+  @media (max-width: 63.99em) {
+    #visit .vs-info, #visit .vs-form { grid-column: 1 / -1; }
+  }
+  @media (max-width: 47.99em) {
+    #visit .vs-title { grid-template-columns: 1fr; font-size: 18vw; }
+    #visit .vs-w1, #visit .vs-w2, #visit .vs-w3 { grid-column: 1; }
+    #visit .vs-w2 { margin-left: 20%; }
+    #visit .vs-w3 { margin-left: 8%; }
+    #visit .vs-facts, #visit .vs-form { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:diagnosis-scan">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #diagnosis[data-scan] .dg-row:not(.is-done) .dg-pending { opacity: 1; }
+    #diagnosis[data-scan] .dg-row:not(.is-done) .dg-result { opacity: 0; }
+    #diagnosis[data-scan] .dg-row.is-scan, #diagnosis[data-scan] .dg-row.is-scan .dg-pending { color: var(--color-2); }
+    #diagnosis[data-scan] .dg-band { transition: opacity .2s; }
+    #diagnosis[data-scan] .dg-band.is-on { opacity: 1; }
+    #diagnosis[data-scan] .dg-sum { transition: opacity .4s, transform .4s; }
+    #diagnosis[data-scan]:not(.is-summed) .dg-sum { opacity: 0; transform: translateY(12px); }
+  }
+}
+</style>
+<style data-8b-part="scene-style:refurb-shelf">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #refurb[data-shelf] { padding-block: 0; }
+    #refurb[data-shelf] .rf-pin { display: flex; flex-direction: column; justify-content: center; height: 100vh; height: 100svh; padding-top: calc(var(--nav-h, 56px) + 8px); padding-bottom: 16px; }
+    #refurb[data-shelf] .rf-track { display: flex; gap: var(--space-1); width: max-content; align-items: stretch; }
+    #refurb[data-shelf] .rf-intro { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; width: min(46vw, 600px); padding-right: 4vw; }
+    #refurb[data-shelf] .rf-item { width: clamp(240px, 23vw, 340px); }
+    #refurb[data-shelf] .rf-end { width: min(30vw, 380px); padding-left: 3vw; }
+    @media (max-width: 47.99em) {
+      #refurb[data-shelf] .rf-intro { width: 84vw; padding-right: 0; }
+      #refurb[data-shelf] .rf-item { width: 70vw; }
+      #refurb[data-shelf] .rf-photo { aspect-ratio: 1; }
+      #refurb[data-shelf] .rf-end { width: 76vw; }
+    }
+  }
+}
+</style>
+<style data-8b-part="scene-style:fleet-cursor">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #fleet[data-run] .fl-bar { transition: background-color .25s; }
+    #fleet[data-run] .fl-bar:not(.is-past) { background: var(--color-8); }
+    #fleet[data-run] .fl-bar.is-now { background: var(--color-6); }
+    #fleet[data-run] .fl-cursor.is-on { opacity: 1; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:reviews-read">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #reviews .rv-quote .rv-w.is-sel { color: var(--color-2); }
+    #reviews .rv-sel.is-on { opacity: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { padding: clamp(64px, 9vw, 120px) var(--space-1) 20px; }
+  #footer .ft-rule { display: flex; gap: 10px; margin-bottom: clamp(40px, 6vw, 72px); color: var(--color-4); }
+  #footer .ft-rule .m-dash { height: 8px; flex: 1 1 0; }
+  #footer .ft-rule .m-dash:nth-child(3n + 2) { flex-grow: 2.6; }
+  #footer .ft-rule .m-dash:nth-child(4n) { flex-grow: .5; }
+  #footer .ft-grid { row-gap: 36px; }
+  #footer .ft-brand { grid-column: 1 / span 2; max-width: 22ch; color: var(--color-2); }
+  #footer .ft-col { display: grid; align-content: start; gap: 8px; }
+  #footer .ft-col h2 { color: var(--color-4); margin-bottom: 4px; }
+  #footer .ft-col a { width: fit-content; }
+  #footer .ft-legal { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-top: clamp(48px, 7vw, 96px); padding-top: 16px; border-top: 1px solid var(--color-7); color: var(--color-4); }
+  @media (max-width: 47.99em) { #footer .ft-brand { grid-column: 1 / -1; } }
+}
+</style>
+</head>
+<body>
+<a class="skip m-text-3" href="#main">Skip to content</a>
+<!-- navigation: top bar: dash mark and name, opening hours, section links, Book a repair button; phone menu overlay -->
+<header id="navigation" data-8b-section="navigation">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#opening"><span class="nav__mark" aria-hidden="true"><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span></span>Reflow</a>
+    <p class="nav__hours m-text-3">Mon–Sat 09:00–19:00 · Walk-ins welcome</p>
+    <nav class="nav__links-wrap" aria-label="Main">
+      <ul class="nav__links">
+        <li><a class="m-link" href="#diagnosis">Diagnosis</a></li>
+        <li><a class="m-link" href="#prices">Prices</a></li>
+        <li><a class="m-link" href="#refurb">Refurbished</a></li>
+        <li><a class="m-link" href="#fleet">Business</a></li>
+      </ul>
+    </nav>
+    <div class="nav__end">
+      <a class="m-btn" href="#visit"><span class="m-btn__label">Book a repair</span></a>
+      <button class="nav__toggle m-icon-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu"><span class="m-icon-btn__bar"></span><span class="m-icon-btn__bar"></span></button>
+    </div>
+  </div>
+  <div class="nav__menu m-surface" id="nav-menu" data-lenis-prevent hidden>
+    <button class="nav__menu-close m-icon-btn" type="button" aria-label="Close menu"><span class="m-icon-btn__bar"></span><span class="m-icon-btn__bar"></span></button>
+    <nav aria-label="Menu">
+      <ul class="nav__menu-links m-text-4">
+        <li><a href="#diagnosis">Diagnosis</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#refurb">Refurbished</a></li>
+        <li><a href="#fleet">Business</a></li>
+        <li><a href="#visit">Visit &amp; book</a></li>
+      </ul>
+    </nav>
+    <div class="nav__menu-meta m-text-3">
+      <p>23 Tib Street, Manchester M4 1LX</p>
+      <p><a data-8b-placeholder="phone" class="m-link" href="tel:+441610000000">0161 000 0000</a></p>
+      <p>Mon–Sat 09:00–19:00 · Walk-ins welcome</p>
+    </div>
+  </div>
+</header>
+<main id="main">
+<!-- opening: two screens: a dash-built wordmark with headline and contact bar, then a staircase statement with three photos (demo: REFLOW, "Most broken things are fixable.") (animation: scene:opening) -->
+<section id="opening" data-8b-section="opening">
+  <div class="op-stage m-surface">
+    <div class="op-wm" aria-hidden="true"><span class="op-wm__half"><span class="op-wm__letter" style="--l:0"><span class="op-wm__row" data-r="0" style="--r:0"><i style="grid-column:1/span 4"></i></span><span class="op-wm__row" data-r="1" style="--r:1"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="2" style="--r:2"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="3" style="--r:3"><i style="grid-column:1/span 4"></i></span><span class="op-wm__row" data-r="4" style="--r:4"><i style="grid-column:1/span 1"></i><i style="grid-column:3/span 1"></i></span><span class="op-wm__row" data-r="5" style="--r:5"><i style="grid-column:1/span 1"></i><i style="grid-column:4/span 1"></i></span><span class="op-wm__row" data-r="6" style="--r:6"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span></span><span class="op-wm__letter" style="--l:1"><span class="op-wm__row" data-r="0" style="--r:0"><i style="grid-column:1/span 5"></i></span><span class="op-wm__row" data-r="1" style="--r:1"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="2" style="--r:2"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="3" style="--r:3"><i style="grid-column:1/span 4"></i></span><span class="op-wm__row" data-r="4" style="--r:4"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="5" style="--r:5"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="6" style="--r:6"><i style="grid-column:1/span 5"></i></span></span><span class="op-wm__letter" style="--l:2"><span class="op-wm__row" data-r="0" style="--r:0"><i style="grid-column:1/span 5"></i></span><span class="op-wm__row" data-r="1" style="--r:1"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="2" style="--r:2"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="3" style="--r:3"><i style="grid-column:1/span 4"></i></span><span class="op-wm__row" data-r="4" style="--r:4"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="5" style="--r:5"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="6" style="--r:6"><i style="grid-column:1/span 1"></i></span></span></span><span class="op-wm__half"><span class="op-wm__letter" style="--l:3"><span class="op-wm__row" data-r="0" style="--r:0"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="1" style="--r:1"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="2" style="--r:2"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="3" style="--r:3"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="4" style="--r:4"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="5" style="--r:5"><i style="grid-column:1/span 1"></i></span><span class="op-wm__row" data-r="6" style="--r:6"><i style="grid-column:1/span 5"></i></span></span><span class="op-wm__letter" style="--l:4"><span class="op-wm__row" data-r="0" style="--r:0"><i style="grid-column:2/span 3"></i></span><span class="op-wm__row" data-r="1" style="--r:1"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="2" style="--r:2"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="3" style="--r:3"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="4" style="--r:4"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="5" style="--r:5"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="6" style="--r:6"><i style="grid-column:2/span 3"></i></span></span><span class="op-wm__letter" style="--l:5"><span class="op-wm__row" data-r="0" style="--r:0"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="1" style="--r:1"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="2" style="--r:2"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="3" style="--r:3"><i style="grid-column:1/span 1"></i><i style="grid-column:3/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="4" style="--r:4"><i style="grid-column:1/span 1"></i><i style="grid-column:3/span 1"></i><i style="grid-column:5/span 1"></i></span><span class="op-wm__row" data-r="5" style="--r:5"><i style="grid-column:1/span 2"></i><i style="grid-column:4/span 2"></i></span><span class="op-wm__row" data-r="6" style="--r:6"><i style="grid-column:1/span 1"></i><i style="grid-column:5/span 1"></i></span></span></span></div>
+    <div class="op-copy">
+      <h1 class="op-title m-text-4"><span class="sr-only">Reflow: </span>Phone and laptop repair, done at the window while you watch.</h1>
+      <p class="op-lead m-text">A free fifteen-minute diagnosis and a fixed price before we pick up a screwdriver. Most screens and batteries are back in your hand within the hour.</p>
+      <div class="op-actions">
+        <a class="m-btn" href="#visit"><span class="m-btn__label">Book a repair</span></a>
+        <a class="m-link" href="#prices">See the price wall</a>
+      </div>
+    </div>
+    <ul class="op-bar m-text-3">
+      <li>23 Tib Street, Manchester</li>
+      <li><a data-8b-placeholder="phone" href="tel:+441610000000">0161 000 0000</a></li>
+      <li>Walk-ins until 18:00</li>
+      <li>Mon–Sat 09:00–19:00</li>
+    </ul>
+    <div class="op-flood" aria-hidden="true"></div>
+  </div>
+  <div class="op-second m-surface-2">
+    <p class="m-spread" data-8b-motion="spread">Cracked, drowned, drained, dead or just slow</p>
+    <div class="op-stair">
+      <h2 class="op-stair__title m-text-2"><span class="op-stair__word w1">Most</span> <span class="op-stair__word w2">broken</span> <span class="op-stair__word w3">things</span> <span class="op-stair__word w4">are</span> <span class="op-stair__word w5"><span class="m-select">fixable.</span></span></h2>
+      <div class="op-tiles">
+        <figure class="op-tile t1"><img loading="lazy" style="background:#262626" src="https://images.unsplash.com/photo-1756408547337-34e12d0e6242?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JhY2tlZCUyMHBob25lJTIwc2NyZWVufGVufDF8Mnx8fDE3OTEzODIzNDZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=300&amp;q=60" alt="Splinters of shattered screen glass on a dark surface" width="1600" height="1600"></figure>
+        <figure class="op-tile t2"><img loading="lazy" style="background:#262640" src="https://images.unsplash.com/photo-1624465991603-ea7793b4fc7d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGhvbmUlMjByZXBhaXJ8ZW58MXwyfHx8MTc5MTM4MjMyNnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=300&amp;q=60" alt="An opened phone with its battery and logic board exposed" width="1600" height="1600"></figure>
+        <figure class="op-tile t3"><img loading="lazy" style="background:#0c2626" src="https://images.unsplash.com/photo-1592919671972-0e8d55457cb1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c21hcnRwaG9uZSUyMGRpc2Fzc2VtYmxlZHxlbnwxfDJ8fHwxNzkxMzgyMzQxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=300&amp;q=60" alt="A processor cleaned of old thermal paste, ready for a fresh layer" width="1600" height="1600"></figure>
+      </div>
+    </div>
+    <div class="op-note">
+      <p class="op-note__text m-text">Since 2014 we have opened phones and laptops on Tib Street: cracked glass, tired batteries, drowned boards, ports packed with pocket lint. We tell you what is wrong, what it costs and whether it is worth it — sometimes the honest answer is a brush, a minute and no bill. <a class="m-link" href="#diagnosis">How the free diagnosis works</a></p>
+    </div>
+  </div>
+</section>
+<!-- diagnosis: service explainer: staircase heading, paragraph and a twelve-row checklist with results and a quote (demo: the free diagnosis) (animation: scene:diagnosis-scan) -->
+<section id="diagnosis" class="m-surface" data-8b-section="diagnosis">
+  <div class="dg-inner">
+    <p class="m-spread" data-8b-motion="spread">We say what is wrong before we say what it costs</p>
+    <div class="dg-grid">
+      <div class="dg-head">
+        <h2 class="dg-title m-text-2"><span class="dg-w">Fifteen</span> <span class="dg-w">minutes,</span> <span class="dg-w">free,</span> <span class="dg-w">out loud.</span></h2>
+        <p class="dg-lead m-text">Before any quote, your phone or laptop goes on the test bench in front of you. Twelve checks, each one said out loud and written on your ticket. You leave with the list whether you book the repair or not.</p>
+      </div>
+      <div class="dg-board">
+        <p class="dg-board__head m-text-3"><span>Check</span><span>Result</span></p>
+        <div class="dg-listwrap">
+          <div class="dg-band" aria-hidden="true"></div>
+          <ol class="dg-list">
+            <li class="dg-row m-text-5"><span class="dg-name">Display and touch</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result is-fault"><span class="m-dash" aria-hidden="true"></span>Replace glass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Battery health</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result is-fault"><span class="m-dash" aria-hidden="true"></span>71%, replace</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Charging port</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Lint, cleaned free</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Speakers and microphones</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Cameras and flash</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Face ID and sensors</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Water indicators</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Dry</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Board power draw</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Normal</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Wi-Fi, Bluetooth, signal</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Buttons and switches</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Storage health</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Pass</span></span></li>
+            <li class="dg-row m-text-5"><span class="dg-name">Frame and housing</span><span class="dg-state"><span class="dg-pending" aria-hidden="true">Queued</span><span class="dg-result"><span class="m-dash" aria-hidden="true"></span>Small dent, leave</span></span></li>
+          </ol>
+        </div>
+        <p class="dg-sum m-text">Two repairs found: the glass and the battery. <strong>Quote £129, ready in 50 minutes.</strong> Approve it, or take the list and walk away.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- prices: price list table grouped by device, each row with models, a time bar and a price (demo: Price wall) -->
+<section id="prices" class="m-surface-2" data-8b-section="prices">
+  <p class="m-spread" data-8b-motion="spread">The same board hangs behind the counter</p>
+  <div class="pr-head l-grid">
+    <h2 class="pr-title m-text-2">Price wall</h2>
+    <p class="pr-note m-text">Every price includes the part, the labour, a 12-month warranty and VAT. If the diagnosis finds a cheaper fix, <span class="m-select" data-8b-motion="select">you pay the cheaper price</span>.</p>
+  </div>
+  <table class="pr-table">
+    <caption class="sr-only">Repair prices and typical bench times</caption>
+    <thead class="m-text-3">
+      <tr><th scope="col">Repair</th><th scope="col">Time at the bench <span class="pr-scale" aria-hidden="true">0–3 h</span></th><th scope="col">From</th></tr>
+    </thead>
+    <tbody data-8b-motion="dash">
+      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Phones</th></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Screen, glass and display</span><span class="pr-models m-text-3">iPhone 11–16, Pixel 6–9, Galaxy S21–S24</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:45"></span><span class="m-text-3">45 min</span></span></td><td class="pr-price m-text-5">£89</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Battery</span><span class="pr-models m-text-3">Most phones made since 2018</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:30"></span><span class="m-text-3">30 min</span></span></td><td class="pr-price m-text-5">£49</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Charging port</span><span class="pr-models m-text-3">USB-C and Lightning</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:40"></span><span class="m-text-3">40 min</span></span></td><td class="pr-price m-text-5">£45</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Rear glass</span><span class="pr-models m-text-3">iPhone 12–16</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:120"></span><span class="m-text-3">2 h</span></span></td><td class="pr-price m-text-5">£69</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Camera lens</span><span class="pr-models m-text-3">All models</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:20"></span><span class="m-text-3">20 min</span></span></td><td class="pr-price m-text-5">£35</td></tr>
+    </tbody>
+    <tbody data-8b-motion="dash">
+      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Laptops</th></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Screen</span><span class="pr-models m-text-3">MacBook Air and Pro since 2018, ThinkPad, XPS</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:180"></span><span class="m-text-3">3 h</span></span></td><td class="pr-price m-text-5">£179</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Battery</span><span class="pr-models m-text-3">Most laptops made since 2016</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:60"></span><span class="m-text-3">1 h</span></span></td><td class="pr-price m-text-5">£99</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Keyboard</span><span class="pr-models m-text-3">MacBook, ThinkPad, Surface</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:150"></span><span class="m-text-3">2 h 30</span></span></td><td class="pr-price m-text-5">£119</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Fan clean and thermal paste</span><span class="pr-models m-text-3">All laptops</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:60"></span><span class="m-text-3">1 h</span></span></td><td class="pr-price m-text-5">£59</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Charging port or power jack</span><span class="pr-models m-text-3">All laptops</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:120"></span><span class="m-text-3">2 h</span></span></td><td class="pr-price m-text-5">£79</td></tr>
+    </tbody>
+    <tbody data-8b-motion="dash">
+      <tr class="pr-group"><th colspan="3" scope="colgroup" class="m-text-3">Tablets and consoles</th></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">iPad glass</span><span class="pr-models m-text-3">iPad 7–10, Air, mini</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:120"></span><span class="m-text-3">2 h</span></span></td><td class="pr-price m-text-5">£79</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">Joystick drift</span><span class="pr-models m-text-3">Switch, Switch OLED, Switch Lite</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:30"></span><span class="m-text-3">30 min</span></span></td><td class="pr-price m-text-5">£35</td></tr>
+      <tr><th scope="row"><span class="pr-name m-text-5">HDMI port</span><span class="pr-models m-text-3">PlayStation 5, Xbox Series</span></th><td><span class="pr-time"><span class="pr-bar m-dash" style="--m:120"></span><span class="m-text-3">2 h</span></span></td><td class="pr-price m-text-5">£85</td></tr>
+    </tbody>
+  </table>
+  <p class="pr-foot m-text-3">Water damage and data recovery are priced after the diagnosis: usually a day at the bench, from £59.</p>
+</section>
+<!-- bench: how-we-work block: staircase heading over a wide photo cut into four strips, three columns of text (demo: "Fixed at the window.") (animation: scene:bench-strips) -->
+<section id="bench" class="m-surface" data-8b-section="bench">
+  <p class="m-spread" data-8b-motion="spread">Nothing goes to a back room</p>
+  <h2 class="bn-title m-text-2"><span class="bn-w bn-w1">Fixed</span> <span class="bn-w bn-w2">at the</span> <span class="bn-w bn-w3">window.</span></h2>
+  <figure class="bn-photo">
+    <div class="bn-strips">
+      <div class="bn-strip"><img style="background:#264059" src="https://images.unsplash.com/photo-1735875530804-d661ca2001da?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZWxlY3Ryb25pY3MlMjB3b3JrYmVuY2h8ZW58MXwwfHx8MTc5MTM4MjM0M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1240&amp;q=60" alt="A technician working on a phone under a magnifier at a lit repair bench" width="1600" height="1067" loading="lazy"></div>
+      <div class="bn-strip" aria-hidden="true"><img style="background:#264059" src="https://images.unsplash.com/photo-1735875530804-d661ca2001da?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZWxlY3Ryb25pY3MlMjB3b3JrYmVuY2h8ZW58MXwwfHx8MTc5MTM4MjM0M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1240&amp;q=60" alt="" width="1600" height="1067" loading="lazy"></div>
+      <div class="bn-strip" aria-hidden="true"><img style="background:#264059" src="https://images.unsplash.com/photo-1735875530804-d661ca2001da?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZWxlY3Ryb25pY3MlMjB3b3JrYmVuY2h8ZW58MXwwfHx8MTc5MTM4MjM0M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1240&amp;q=60" alt="" width="1600" height="1067" loading="lazy"></div>
+      <div class="bn-strip" aria-hidden="true"><img style="background:#264059" src="https://images.unsplash.com/photo-1735875530804-d661ca2001da?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZWxlY3Ryb25pY3MlMjB3b3JrYmVuY2h8ZW58MXwwfHx8MTc5MTM4MjM0M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1240&amp;q=60" alt="" width="1600" height="1067" loading="lazy"></div>
+    </div>
+    <figcaption class="m-text-3">The window bench on Tib Street: magnifier camera on, picture on the screen at the counter.</figcaption>
+  </figure>
+  <div class="bn-cols l-grid">
+    <p class="m-text">The bench sits in the shop window under a magnifier camera that mirrors to a screen at the counter. Sit and watch, or get a coffee across the road and follow it on your phone.</p>
+    <p class="m-text">Nothing goes to a back room. If the board has to come out, you see it come out; if a screw strips, you hear about it before we try again.</p>
+    <p class="m-text">When it is done, the same twelve checks run again in front of you, and you sign the ticket only once everything works.</p>
+  </div>
+</section>
+<!-- parts: comparison table of three options with four rows and an example price (demo: Original, Certified, Value parts) -->
+<section id="parts" class="m-surface-2" data-8b-section="parts">
+  <p class="m-spread" data-8b-motion="spread">We always say which part we fitted</p>
+  <div class="pt-head l-grid">
+    <h2 class="pt-title m-text-4">Three grades of part. You choose, and the receipt names the one we fitted.</h2>
+    <figure class="pt-photo"><img style="background:#26a6d9" src="https://images.unsplash.com/photo-1723299256651-814d70520c01?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGhvbmUlMjByZXBhaXJ8ZW58MXwyfHx8MTc5MTM4MjMyNnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A phone's internal parts laid out under blue light" width="1600" height="1600" loading="lazy"></figure>
+  </div>
+  <table class="pt-sheet">
+    <caption class="sr-only">The three grades of replacement part compared</caption>
+    <thead>
+      <tr><td></td><th scope="col" class="m-text-4">Original</th><th scope="col" class="m-text-4">Certified</th><th scope="col" class="m-text-4">Value</th></tr>
+    </thead>
+    <tbody class="m-text-5" data-8b-motion="dash">
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Made by</th><td>The phone's maker</td><td>The same panel factories</td><td>A good copy</td></tr>
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Colour and brightness</th><td>Identical</td><td>Within a shade</td><td>Slightly cooler</td></tr>
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Face ID, True Tone, sensors</th><td>All kept</td><td>All kept</td><td>True Tone moved over by us</td></tr>
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>Warranty</th><td>12 months</td><td>12 months</td><td>6 months</td></tr>
+      <tr><th scope="row" class="m-text-3"><span class="m-dash" aria-hidden="true"></span>iPhone 13 screen, fitted</th><td>£189</td><td>£129</td><td>£89</td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- refurb: horizontal shelf of numbered products with photo, specs, price and a Reserve link (demo: five refurbished devices) (animation: scene:refurb-shelf) -->
+<section id="refurb" class="m-surface" data-8b-section="refurb">
+  <div class="rf-pin">
+    <p class="m-spread" data-8b-motion="spread">They came in for parts and left whole</p>
+    <div class="rf-track">
+      <div class="rf-intro">
+        <h2 class="rf-title m-text-2">Second life</h2>
+        <p class="m-text">Devices traded in or left behind, rebuilt at the same bench with a new battery, run through the twelve checks and sold with the same 12-month warranty. Grade A shows no wear; grade B has light marks on the case and a perfect screen.</p>
+      </div>
+      <article class="rf-item">
+        <p class="rf-num m-text-3">(01)</p>
+        <figure class="rf-photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1589492477829-5e65395b66cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cmVmdXJiaXNoZWQlMjBzbWFydHBob25lfGVufDF8MXx8fDE3OTEzODIzNDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A space grey iPhone 11 Pro standing on a white surface" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="rf-name m-text-4">iPhone 11 Pro</h3>
+        <p class="rf-spec m-text-3">256 GB · Space grey · Grade A · new battery</p>
+        <p class="rf-buy"><span class="rf-price m-text-5">£329</span><a class="m-link m-text-3" href="#visit">Reserve</a></p>
+      </article>
+      <article class="rf-item">
+        <p class="rf-num m-text-3">(02)</p>
+        <figure class="rf-photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1660945742817-217842d82b55?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHVzZWQlMjBsYXB0b3B8ZW58MXwxfHx8MTc5MTM4MjM0NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A dark MacBook Air open on a pale grey surface" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="rf-name m-text-4">MacBook Air 13" M2</h3>
+        <p class="rf-spec m-text-3">8 GB · 256 GB · Midnight · Grade A</p>
+        <p class="rf-buy"><span class="rf-price m-text-5">£749</span><a class="m-link m-text-3" href="#visit">Reserve</a></p>
+      </article>
+      <article class="rf-item">
+        <p class="rf-num m-text-3">(03)</p>
+        <figure class="rf-photo"><img style="background:#d9d9d9" src="https://images.unsplash.com/photo-1650265424401-9d34eecae180?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dXNlZCUyMGxhcHRvcHxlbnwxfDF8fHwxNzkxMzgyMzQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A space grey MacBook Pro half open, lit from the side" width="1600" height="2070" loading="lazy"></figure>
+        <h3 class="rf-name m-text-4">MacBook Pro 16" M1 Pro</h3>
+        <p class="rf-spec m-text-3">16 GB · 512 GB · Space grey · Grade B</p>
+        <p class="rf-buy"><span class="rf-price m-text-5">£1,190</span><a class="m-link m-text-3" href="#visit">Reserve</a></p>
+      </article>
+      <article class="rf-item">
+        <p class="rf-num m-text-3">(04)</p>
+        <figure class="rf-photo"><img style="background:#595959" src="https://images.unsplash.com/photo-1779011008933-0ee9d2ab7abc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHBob25lJTIwYmF0dGVyeSUyMHJlcGxhY2VtZW50fGVufDF8Mnx8fDE3OTEzODIzNDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=710&amp;q=60" alt="A hand holding a thin white iPhone Air edge-on" width="1600" height="1600" loading="lazy"></figure>
+        <h3 class="rf-name m-text-4">iPhone Air</h3>
+        <p class="rf-spec m-text-3">256 GB · Cloud white · Grade A</p>
+        <p class="rf-buy"><span class="rf-price m-text-5">£699</span><a class="m-link m-text-3" href="#visit">Reserve</a></p>
+      </article>
+      <article class="rf-item">
+        <p class="rf-num m-text-3">(05)</p>
+        <figure class="rf-photo"><img style="background:#d9d9d9" src="https://images.unsplash.com/photo-1651241680016-cc9e407e7dc3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dXNlZCUyMGxhcHRvcHxlbnwxfDF8fHwxNzkxMzgyMzQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A silver MacBook Pro seen from behind, lid open" width="1600" height="2400" loading="lazy"></figure>
+        <h3 class="rf-name m-text-4">MacBook Pro 14" M2 Pro</h3>
+        <p class="rf-spec m-text-3">16 GB · 1 TB · Silver · Grade A</p>
+        <p class="rf-buy"><span class="rf-price m-text-5">£1,050</span><a class="m-link m-text-3" href="#visit">Reserve</a></p>
+      </article>
+      <div class="rf-end">
+        <p class="m-text-4">New stock lands every Thursday.</p>
+        <p class="m-text">Ask at the counter or call <a data-8b-placeholder="phone" class="m-link" href="tel:+441610000000">0161 000 0000</a> and we will hold a device for two days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fleet: business offer with a weekly schedule drawn as bars on an hour grid (demo: office and school pickups, Monday to Friday) (animation: scene:fleet-cursor) -->
+<section id="fleet" class="m-surface-2" data-8b-section="fleet">
+  <p class="m-spread" data-8b-motion="spread">One van, five routes, one invoice</p>
+  <div class="fl-head l-grid">
+    <h2 class="fl-title m-text-4">For offices and schools: we collect on a weekly route, leave a loan device for every one we take and invoice once a month.</h2>
+    <div class="fl-side">
+      <p class="m-text">Accounts start at five devices. Your staff hand broken kit to reception; it comes back on the next run with the ticket and the twelve checks attached.</p>
+      <a data-8b-placeholder="email" class="m-btn-2" href="mailto:fleet@reflow.example"><span class="m-btn__label">Open an account</span></a>
+    </div>
+  </div>
+  <div class="fl-board">
+    <div class="fl-axis m-text-3" aria-hidden="true"><span>08</span><span>10</span><span>12</span><span>14</span><span>16</span><span>18</span></div>
+    <ol class="fl-days">
+      <li class="fl-day">
+        <p class="fl-label"><span class="m-text-5">Monday</span><span class="m-text-3">Northern Quarter, Ancoats</span></p>
+        <p class="fl-track"><span class="fl-win" style="--a:8.5;--b:10"><span class="fl-time m-text-3">08:30–10:00</span><span class="fl-bar"></span></span><span class="fl-win" style="--a:15;--b:16.5"><span class="fl-time m-text-3">15:00–16:30</span><span class="fl-bar"></span></span></p>
+      </li>
+      <li class="fl-day">
+        <p class="fl-label"><span class="m-text-5">Tuesday</span><span class="m-text-3">Salford Quays, MediaCity</span></p>
+        <p class="fl-track"><span class="fl-win" style="--a:9;--b:11"><span class="fl-time m-text-3">09:00–11:00</span><span class="fl-bar"></span></span><span class="fl-win" style="--a:14;--b:15"><span class="fl-time m-text-3">14:00–15:00</span><span class="fl-bar"></span></span></p>
+      </li>
+      <li class="fl-day">
+        <p class="fl-label"><span class="m-text-5">Wednesday</span><span class="m-text-3">Spinningfields, Deansgate</span></p>
+        <p class="fl-track"><span class="fl-win" style="--a:8;--b:9.5"><span class="fl-time m-text-3">08:00–09:30</span><span class="fl-bar"></span></span><span class="fl-win" style="--a:13;--b:15"><span class="fl-time m-text-3">13:00–15:00</span><span class="fl-bar"></span></span></p>
+      </li>
+      <li class="fl-day">
+        <p class="fl-label"><span class="m-text-5">Thursday</span><span class="m-text-3">Oxford Road universities</span></p>
+        <p class="fl-track"><span class="fl-win" style="--a:10;--b:12.5"><span class="fl-time m-text-3">10:00–12:30</span><span class="fl-bar"></span></span><span class="fl-win" style="--a:16;--b:17.5"><span class="fl-time m-text-3">16:00–17:30</span><span class="fl-bar"></span></span></p>
+      </li>
+      <li class="fl-day">
+        <p class="fl-label"><span class="m-text-5">Friday</span><span class="m-text-3">Didsbury, Stockport</span></p>
+        <p class="fl-track"><span class="fl-win" style="--a:9;--b:10.5"><span class="fl-time m-text-3">09:00–10:30</span><span class="fl-bar"></span></span><span class="fl-win" style="--a:14.5;--b:16"><span class="fl-time m-text-3">14:30–16:00</span><span class="fl-bar"></span></span></p>
+      </li>
+    </ol>
+    <div class="fl-cursor" aria-hidden="true"></div>
+  </div>
+</section>
+<!-- mailin: how it works: four steps under one dashed line and a button (demo: repair by post) -->
+<section id="mailin" class="m-surface" data-8b-section="mailin">
+  <p class="m-spread" data-8b-motion="spread">Not in Manchester? Post it to the bench</p>
+  <div class="ml-grid l-grid">
+    <h2 class="ml-title m-text-2">Post it.</h2>
+    <ol class="ml-steps" data-8b-motion="dash">
+      <li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Book online</h3><p class="m-text">Tell us the model and the fault. We reply with a price range the same day.</p></li>
+      <li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Box it</h3><p class="m-text">We send a padded box and a prepaid label. Drop it at any post office.</p></li>
+      <li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Watch the diagnosis</h3><p class="m-text">A video call from the bench camera. You approve the final price before work starts.</p></li>
+      <li class="ml-step"><span class="m-dash" aria-hidden="true"></span><h3 class="m-text-5">Back by courier</h3><p class="m-text">Fixed, tested and tracked home, usually within three working days.</p></li>
+    </ol>
+    <div class="ml-cta">
+      <a class="m-btn" href="#visit"><span class="m-btn__label">Request a box</span></a>
+      <p class="m-text-3">Return postage is free on repairs over £60.</p>
+    </div>
+  </div>
+</section>
+<!-- reviews: three customer quotes in large type, each with name and device (animation: scene:reviews-read) -->
+<section id="reviews" class="m-surface-2" data-8b-section="reviews">
+  <p class="m-spread" data-8b-motion="spread">Said at the counter</p>
+  <ul class="rv-list">
+    <li class="rv-item">
+      <blockquote class="rv-quote m-text-4"><span class="rv-sel" aria-hidden="true"></span><p>They showed me the water damage under the magnifier before I paid anything. Fixed in a day, and cheaper than the quote.</p></blockquote>
+      <p class="rv-by m-text-3">Priya · Pixel 7 · water damage</p>
+    </li>
+    <li class="rv-item">
+      <blockquote class="rv-quote m-text-4"><span class="rv-sel" aria-hidden="true"></span><p>I watched them swap my MacBook keyboard from the café across the road. It felt like a cooking show with screwdrivers.</p></blockquote>
+      <p class="rv-by m-text-3">Tom · MacBook Pro 13" · keyboard</p>
+    </li>
+    <li class="rv-item">
+      <blockquote class="rv-quote m-text-4"><span class="rv-sel" aria-hidden="true"></span><p>They told me my old iPad was not worth fixing and sold me a rebuilt one with a year's warranty. That honesty is why I keep coming back.</p></blockquote>
+      <p class="rv-by m-text-3">Aisha · iPad Air · refurbished</p>
+    </li>
+  </ul>
+</section>
+<!-- faq: questions and answers (native <details>) -->
+<section id="faq" class="m-surface" data-8b-section="faq">
+  <p class="m-spread" data-8b-motion="spread">Asked at the counter</p>
+  <div class="fq-grid l-grid">
+    <h2 class="fq-title m-text-2"><span>Before</span> <span>you</span> <span>ask.</span></h2>
+    <div class="fq-list">
+      <details class="fq-item"><summary class="m-text-4">Do I need to give you my passcode?</summary><p class="m-text">For screens, batteries, ports and cameras, no: we test those with the phone locked. For board and data work we ask for it on the ticket and delete it from our notes when the job is closed.</p></details>
+      <details class="fq-item"><summary class="m-text-4">Will I lose my photos and messages?</summary><p class="m-text">A screen, battery or port repair never touches your storage. Back up anyway if you can; for water and board repairs we tell you the risk before we start.</p></details>
+      <details class="fq-item"><summary class="m-text-4">What if you cannot fix it?</summary><p class="m-text">You pay nothing beyond the free diagnosis. If a part has to be ordered just for you, we say so before ordering it.</p></details>
+      <details class="fq-item"><summary class="m-text-4">Do you fix water damage?</summary><p class="m-text">Yes. Bring it in switched off, and skip the bag of rice. We clean the board in an ultrasonic bath and tell you within a day what survived.</p></details>
+      <details class="fq-item"><summary class="m-text-4">What does the warranty cover?</summary><p class="m-text">The part we fitted and our work on it, for twelve months from the ticket date. Drops and new water damage are not covered, but we will still look at it for free.</p></details>
+      <details class="fq-item"><summary class="m-text-4">Do you buy broken devices?</summary><p class="m-text">We do, for parts or to rebuild for the refurbished shelf. Bring it in and we make an offer after the diagnosis.</p></details>
+    </div>
+  </div>
+</section>
+<!-- visit: contact and booking: staircase heading, address, hours, phone and email, a photo and a booking form (placeholders) (animation: scene:visit-grow) -->
+<section id="visit" class="m-surface-2" data-8b-section="visit">
+  <h2 class="vs-title m-text-2"><span class="vs-w vs-w1">Come</span> <span class="vs-w vs-w2">to the</span> <span class="vs-w vs-w3">bench.</span></h2>
+  <div class="vs-grid l-grid">
+    <div class="vs-info">
+      <dl class="vs-facts">
+        <div><dt class="m-text-3">Address</dt><dd class="m-text">23 Tib Street, Northern Quarter<br>Manchester M4 1LX</dd></div>
+        <div><dt class="m-text-3">Hours</dt><dd class="m-text">Monday to Saturday, 09:00–19:00<br>Walk-ins until 18:00 · Sunday closed</dd></div>
+        <div><dt class="m-text-3">Call or write</dt><dd class="m-text"><a data-8b-placeholder="phone" class="m-link" href="tel:+441610000000">0161 000 0000</a><br><a data-8b-placeholder="email" class="m-link" href="mailto:bench@reflow.example">bench@reflow.example</a></dd></div>
+        <div><dt class="m-text-3">Getting here</dt><dd class="m-text">Four minutes from the Market Street tram stop. Bike rack outside the window.</dd></div>
+      </dl>
+      <figure class="vs-photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1777153184385-cff867582a1c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZWxlY3Ryb25pY3MlMjB3b3JrYmVuY2h8ZW58MXwwfHx8MTc5MTM4MjM0M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=660&amp;q=60" alt="A technician at a crowded workbench soldering a small board, in black and white" width="1600" height="1084" loading="lazy"></figure>
+    </div>
+    <form data-8b-placeholder="form" class="vs-form" action="#" novalidate>
+      <p class="vs-form__title m-text-4">Book a slot at the bench</p>
+      <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__control" name="name" type="text" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">Phone or email</span><input class="m-field__control" name="contact" type="text" autocomplete="email" required></label>
+      <label class="m-field"><span class="m-field__label">Device</span><select class="m-field__control" name="device"><option>Phone</option><option>Laptop</option><option>Tablet</option><option>Console</option><option>Something else</option></select></label>
+      <label class="m-field"><span class="m-field__label">Model</span><input class="m-field__control" name="model" type="text" placeholder="e.g. iPhone 13, ThinkPad T14"></label>
+      <label class="m-field vs-wide"><span class="m-field__label">What is wrong?</span><textarea class="m-field__control" name="fault" rows="3"></textarea></label>
+      <label class="m-field"><span class="m-field__label">When</span><select class="m-field__control" name="when"><option>Today, walk-in</option><option>Tomorrow</option><option>Later this week</option></select></label>
+      <div class="vs-submit">
+        <button class="m-btn-2" type="submit"><span class="m-btn__label">Book a slot</span></button>
+        <p class="vs-status m-text-3" role="status" data-ok="Thanks. We will confirm your slot by text or email within the hour." data-error="Please add your name and a phone number or email so we can confirm."></p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<!-- footer: dashed rule, one-line description, address, contact and page links, copyright and the Design: 8B credit -->
+<footer id="footer" class="m-surface" data-8b-section="footer">
+  <div class="ft-rule" aria-hidden="true" data-8b-motion="dash"><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span><span class="m-dash"></span></div>
+  <div class="ft-grid l-grid">
+    <p class="ft-brand m-text-4">Reflow. Phones and laptops, opened in the window and handed back working.</p>
+    <div class="ft-col m-text-3">
+      <h2 class="m-text-3">Visit</h2>
+      <p>23 Tib Street<br>Manchester M4 1LX</p>
+      <p>Mon–Sat 09:00–19:00</p>
+    </div>
+    <div class="ft-col m-text-3">
+      <h2 class="m-text-3">Contact</h2>
+      <a data-8b-placeholder="phone" class="m-link" href="tel:+441610000000">0161 000 0000</a>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:bench@reflow.example">bench@reflow.example</a>
+      <a class="m-link" href="#visit">Book a repair</a>
+    </div>
+    <div class="ft-col m-text-3">
+      <h2 class="m-text-3">On this page</h2>
+      <a class="m-link" href="#diagnosis">Diagnosis</a>
+      <a class="m-link" href="#prices">Price wall</a>
+      <a class="m-link" href="#refurb">Refurbished</a>
+      <a class="m-link" href="#fleet">Business accounts</a>
+      <a class="m-link" href="#faq">Questions</a>
+    </div>
+  </div>
+  <div class="ft-legal m-text-3">
+    <p>© 2026 Reflow Repair Ltd · Registered in England · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    <a class="m-link" href="#opening">Back to top</a>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() {
+  const bar = document.querySelector('#navigation .nav__bar');
+  const h = bar ? bar.offsetHeight : 0;
+  document.documentElement.style.setProperty('--nav-h', h + 'px');
+  return h;
+}
+function refreshScroll() {
+  navHeight();
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+navHeight();
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .09, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  spread(line, vars = {}) {
+    const words = [...line.querySelectorAll('.w')];
+    const first = words[0];
+    const space = parseFloat(getComputedStyle(line).fontSize) * .4;
+    let natural = first.offsetLeft;
+    const shifts = words.map(word => {
+      if (word.offsetTop !== first.offsetTop) return 0;
+      const shift = natural - word.offsetLeft;
+      natural += word.offsetWidth + space;
+      return shift;
+    });
+    return gsap.timeline(vars).from(words, { x: i => shifts[i], duration: 1.3, ease: 'expo.inOut', stagger: .012 });
+  },
+  dash(row, vars = {}) {
+    const dashes = row.matches('.m-dash') ? [row] : row.querySelectorAll('.m-dash');
+    return gsap.timeline(vars).from(dashes, { scaleX: 0, transformOrigin: '0% 50%', duration: .8, ease: 'power3.out', stagger: .05 });
+  },
+  select(element, vars = {}) {
+    const from = getComputedStyle(element.parentElement).color;
+    return gsap.timeline(vars).from(element, { backgroundSize: '0% 100%', color: from, duration: .7, ease: 'power3.inOut' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  ['spread', 'dash', 'select'].forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      const splits = name === 'spread' ? elements.map(line => SplitText.create(line, { type: 'words', wordsClass: 'w' })) : [];
+      elements.forEach((element, i) => ScrollTrigger.create({
+        id: `${id}:${i}`, trigger: element, start: 'top 88%',
+        animation: effects[name](element, { paused: true }), toggleActions: 'play none none none'
+      }));
+      return () => splits.forEach(split => split.revert());
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const stage = section.querySelector('.op-stage');
+    const wm = section.querySelector('.op-wm');
+    const flood = section.querySelector('.op-flood');
+    const second = section.querySelector('.op-second');
+    const copy = [...section.querySelectorAll('.op-copy > *'), section.querySelector('.op-bar')];
+    const rows = [0, 1, 2, 3, 4, 5, 6].map(r => [...wm.querySelectorAll(`.op-wm__row[data-r="${r}"] i`)]);
+    const words = [...section.querySelectorAll('.op-stair__word')];
+    const tiles = [...section.querySelectorAll('.op-tile')];
+    const pick = section.querySelector('.op-stair__word .m-select');
+    const unit = () => parseFloat(getComputedStyle(wm).getPropertyValue('--u')) || wm.offsetHeight / 7;
+    const inset = () => {
+      const s = stage.getBoundingClientRect(), w = wm.getBoundingClientRect();
+      return `inset(${w.top - s.top}px 0px ${s.bottom - w.bottom}px 0px)`;
+    };
+    const stageTl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'opening', trigger: section, start: 'top top', endTrigger: second, end: 'top top', scrub: .6, invalidateOnRefresh: true
+    }});
+    stageTl.to(copy, { y: () => -innerHeight * .12, opacity: 0, duration: .28, stagger: .02, ease: 'power1.in' }, 0);
+    rows.forEach((pills, r) => {
+      const side = r % 2 ? 1 : -1;
+      stageTl.to(pills, { x: () => side * unit() * (1.2 + r * .45), scaleX: 2.3, duration: .36, ease: 'power2.inOut' }, .02 + r * .012)
+        .to(pills, { scaleY: 2.05, duration: .16, ease: 'power1.in' }, .3);
+    });
+    stageTl.fromTo(flood, { autoAlpha: 0, clipPath: inset }, { autoAlpha: 1, clipPath: inset, duration: .1 }, .36)
+      .to(flood, { clipPath: 'inset(0px 0px 0px 0px)', duration: .3, ease: 'power3.inOut' }, .46)
+      .set(rows.flat(), { x: 0, scaleX: 1, scaleY: 1 }, .995)
+      .set(copy, { y: 0, opacity: 1 }, .995)
+      .set(flood, { autoAlpha: 0 }, .995)
+      .set({}, {}, 1);
+    const secondTl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'opening:second', trigger: second, start: 'top bottom', end: 'top top', scrub: .6, invalidateOnRefresh: true
+    }});
+    words.forEach((word, i) => {
+      secondTl.from(word, { x: () => word.parentElement.getBoundingClientRect().left - word.getBoundingClientRect().left, duration: .5, ease: 'power3.out' }, .3 + i * .07);
+    });
+    tiles.forEach((tile, i) => {
+      secondTl.from(tile, { yPercent: [70, 140, 45][i] ?? 80, duration: .75, ease: 'power2.out' }, .2);
+    });
+    if (pick) secondTl.add(effects.select(pick), .82);
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:diagnosis-scan">
+queueMotion(() => {
+  const pinQuery = '(prefers-reduced-motion: no-preference) and (min-width: 64em) and (min-height: 760px)';
+  const flowQuery = '(prefers-reduced-motion: no-preference) and (max-width: 63.99em), (prefers-reduced-motion: no-preference) and (max-height: 759.98px)';
+  gsap.matchMedia().add({ pinned: pinQuery, flow: flowQuery }, context => {
+    const pinned = context.conditions.pinned;
+    const section = document.getElementById('diagnosis');
+    const inner = section.querySelector('.dg-inner');
+    const list = section.querySelector('.dg-list');
+    const band = section.querySelector('.dg-band');
+    const rows = [...list.children];
+    const n = rows.length;
+    let tops = [], heights = [];
+    const measure = () => {
+      tops = rows.map(row => row.offsetTop);
+      heights = rows.map(row => row.offsetHeight);
+      band.style.height = heights[0] + 'px';
+    };
+    const toY = gsap.quickTo(band, 'y', { duration: .22, ease: 'power3.out' });
+    let shown = -1;
+    const update = p => {
+      const pos = Math.min(Math.max(p, 0), 1) * n;
+      const i = Math.min(Math.floor(pos), n - 1);
+      const active = p > 0 && pos < n ? i : -1;
+      if (active >= 0 && active !== shown) (shown < 0 ? toY(tops[active], tops[active]) : toY(tops[active]));
+      shown = active;
+      rows.forEach((row, k) => {
+        row.classList.toggle('is-done', k < Math.floor(pos));
+        row.classList.toggle('is-scan', k === active);
+      });
+      band.classList.toggle('is-on', active >= 0);
+      section.classList.toggle('is-summed', pos >= n);
+    };
+    section.setAttribute('data-scan', '');
+    measure();
+    const trigger = ScrollTrigger.create({
+      id: 'diagnosis-scan',
+      trigger: pinned ? inner : list,
+      start: pinned ? () => `top ${navHeight()}px` : 'top 70%',
+      end: pinned ? '+=110%' : 'bottom 40%',
+      pin: pinned ? inner : false,
+      scrub: true,
+      invalidateOnRefresh: true,
+      onRefresh: self => { measure(); update(self.progress); },
+      onUpdate: self => update(self.progress)
+    });
+    update(trigger.progress);
+    return () => {
+      section.removeAttribute('data-scan');
+      section.classList.remove('is-summed');
+      rows.forEach(row => row.classList.remove('is-done', 'is-scan'));
+      band.classList.remove('is-on');
+      band.style.removeProperty('height');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:bench-strips">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('bench');
+    const photo = section.querySelector('.bn-photo');
+    const strips = [...section.querySelectorAll('.bn-strip')];
+    const words = [...section.querySelectorAll('.bn-w')];
+    const small = () => innerWidth < 768;
+    const offsets = [-26, 18, -12, 32];
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'bench-strips', trigger: photo, start: 'top bottom', end: 'center center', scrub: .5, invalidateOnRefresh: true
+    }});
+    strips.forEach((strip, i) => {
+      timeline.from(strip, { yPercent: () => offsets[i % offsets.length] * (small() ? .6 : 1), duration: 1, ease: 'power2.out' }, 0);
+    });
+    words.forEach((word, i) => {
+      timeline.from(word, { x: () => (i % 2 ? 1 : -1) * innerWidth * (small() ? .06 : .09), duration: .42, ease: 'power2.out' }, 0);
+    });
+  });
+}, { near: document.querySelector('#bench .bn-photo') });
+</script>
+<script data-8b-part="scene:refurb-shelf">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('refurb');
+    const pin = section.querySelector('.rf-pin');
+    const track = section.querySelector('.rf-track');
+    section.setAttribute('data-shelf', '');
+    const distance = () => {
+      const style = getComputedStyle(pin);
+      const inner = pin.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+      return Math.max(0, track.scrollWidth - inner);
+    };
+    gsap.to(track, { x: () => -distance(), ease: 'none', scrollTrigger: {
+      id: 'refurb-shelf', trigger: pin, start: 'top top', end: () => '+=' + distance(), pin: true, scrub: true, invalidateOnRefresh: true
+    }});
+    return () => section.removeAttribute('data-shelf');
+  });
+});
+</script>
+<script data-8b-part="scene:fleet-cursor">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fleet');
+    const board = section.querySelector('.fl-board');
+    const cursor = section.querySelector('.fl-cursor');
+    const track = section.querySelector('.fl-track');
+    const bars = [...section.querySelectorAll('.fl-win')].map(win => ({
+      bar: win.querySelector('.fl-bar'), a: parseFloat(win.style.getPropertyValue('--a')), b: parseFloat(win.style.getPropertyValue('--b'))
+    }));
+    let left = 0, width = 0;
+    const measure = () => {
+      const outer = board.getBoundingClientRect(), inner = track.getBoundingClientRect();
+      left = inner.left - outer.left;
+      width = inner.width;
+    };
+    const setX = gsap.quickSetter(cursor, 'x', 'px');
+    const update = p => {
+      const hour = 8 + p * 10;
+      setX(left + p * width - 1);
+      cursor.classList.toggle('is-on', p > 0 && p < 1);
+      bars.forEach(({ bar, a, b }) => {
+        bar.classList.toggle('is-past', p >= 1 || hour >= b);
+        bar.classList.toggle('is-now', p > 0 && p < 1 && hour >= a && hour < b);
+      });
+    };
+    section.setAttribute('data-run', '');
+    measure();
+    const trigger = ScrollTrigger.create({
+      id: 'fleet-cursor', trigger: board, start: 'top 72%', end: 'bottom 38%', scrub: true,
+      onRefresh: self => { measure(); update(self.progress); },
+      onUpdate: self => update(self.progress)
+    });
+    update(trigger.progress);
+    return () => {
+      section.removeAttribute('data-run');
+      cursor.classList.remove('is-on');
+      bars.forEach(({ bar }) => bar.classList.remove('is-past', 'is-now'));
+    };
+  });
+}, { near: document.querySelector('#fleet .fl-board') });
+</script>
+<script data-8b-part="scene:reviews-read">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const splits = [];
+    [...section.querySelectorAll('.rv-quote')].forEach((quote, index) => {
+      const text = quote.querySelector('p');
+      const box = quote.querySelector('.rv-sel');
+      const split = SplitText.create(text, { type: 'words', wordsClass: 'rv-w' });
+      splits.push(split);
+      const words = split.words;
+      let boxes = [], current = -1;
+      const measure = () => {
+        const origin = quote.getBoundingClientRect();
+        boxes = words.map(word => {
+          const r = word.getBoundingClientRect();
+          return { x: r.left - origin.left, y: r.top - origin.top, w: r.width, h: r.height };
+        });
+      };
+      const to = {
+        x: gsap.quickTo(box, 'x', { duration: .2, ease: 'power3.out' }),
+        y: gsap.quickTo(box, 'y', { duration: .2, ease: 'power3.out' }),
+        scaleX: gsap.quickTo(box, 'scaleX', { duration: .2, ease: 'power3.out' }),
+        scaleY: gsap.quickTo(box, 'scaleY', { duration: .2, ease: 'power3.out' })
+      };
+      const select = i => {
+        if (i === current) return;
+        if (current >= 0) words[current].classList.remove('is-sel');
+        const first = current < 0;
+        current = i;
+        box.classList.toggle('is-on', i >= 0);
+        if (i < 0) return;
+        words[i].classList.add('is-sel');
+        const b = boxes[i], pad = b.h * .08;
+        const goal = { x: b.x - pad, y: b.y, scaleX: (b.w + pad * 2) / 100, scaleY: b.h / 100 };
+        Object.keys(goal).forEach(key => (first ? to[key](goal[key], goal[key]) : to[key](goal[key])));
+      };
+      const progressToWord = p => (p > 0 && p < 1 ? Math.min(words.length - 1, Math.floor(p * words.length)) : -1);
+      measure();
+      ScrollTrigger.create({
+        id: `reviews-read:quote-${index + 1}`, trigger: quote, start: 'top 72%', end: 'bottom 36%', scrub: true,
+        onRefresh: self => { measure(); if (current >= 0) words[current].classList.remove('is-sel'); box.classList.remove('is-on'); current = -1; select(progressToWord(self.progress)); },
+        onUpdate: self => select(progressToWord(self.progress))
+      });
+    });
+    return () => splits.forEach(split => split.revert());
+  });
+}, { near: document.getElementById('reviews') });
+</script>
+<script data-8b-part="scene:visit-grow">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('visit');
+    const title = section.querySelector('.vs-title');
+    const words = [...title.querySelectorAll('.vs-w')];
+    const start = i => {
+      const scale = 14 / parseFloat(getComputedStyle(title).fontSize);
+      const widths = words.map(word => word.offsetWidth * scale);
+      const gap = (title.clientWidth - widths.reduce((sum, w) => sum + w, 0)) / Math.max(1, words.length - 1);
+      let x = 0;
+      for (let k = 0; k < i; k++) x += widths[k] + gap;
+      return { x: x - words[i].offsetLeft, y: -words[i].offsetTop, scale };
+    };
+    const timeline = gsap.timeline({ scrollTrigger: {
+      id: 'visit-grow', trigger: title, start: 'top 85%', end: 'top 25%', scrub: .5, invalidateOnRefresh: true
+    }});
+    words.forEach((word, i) => {
+      timeline.from(word, { x: () => start(i).x, y: () => start(i).y, scale: () => start(i).scale, duration: 1, ease: 'power2.inOut' }, i * .08);
+    });
+  });
+}, { near: document.querySelector('#visit .vs-title') });
+</script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  const bar = root.querySelector('.nav__bar');
+  const menu = root.querySelector('.nav__menu');
+  const toggle = root.querySelector('.nav__toggle');
+  const close = root.querySelector('.nav__menu-close');
+  const setMenu = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) { menu.hidden = true; toggle.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+  let last = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - last;
+    last = y;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 80 || travel < -24) bar.classList.remove('is-hidden');
+    else if (travel > 24 && !bar.contains(document.activeElement)) bar.classList.add('is-hidden');
+  }, { passive: true });
+  bar.addEventListener('focusin', () => bar.classList.remove('is-hidden'));
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  const stage = section.querySelector('.op-stage');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => { section.dataset.loop = entry.isIntersecting ? 'on' : 'off'; }).observe(stage);
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .vs-form');
+  const status = form.querySelector('.vs-status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const name = form.elements.namedItem('name').value.trim();
+    const contact = form.elements.namedItem('contact').value.trim();
+    const ok = Boolean(name && contact);
+    status.textContent = ok ? status.dataset.ok : status.dataset.error;
+    status.classList.toggle('is-error', !ok);
+    if (ok) form.reset();
+  });
+})();
+</script>
+</body>
+</html>

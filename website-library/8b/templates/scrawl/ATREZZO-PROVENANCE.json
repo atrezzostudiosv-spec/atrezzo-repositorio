@@ -1,0 +1,43 @@
+{
+  "slug": "scrawl",
+  "name": "SCRAWL",
+  "categories": [
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/streetwear-brand-website-template",
+  "demo": "https://8b.com/templates/scrawl/demo.html",
+  "design_md_url": "https://8b.com/templates/scrawl/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "dbb01abf4795144393525be493d2f95fac0dbac3",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "b9f474342dd2ff73823f325660f023874243486e",
+    "README.md": "c867cf868aeb365c06f0f841b5f4efeb1e8514b5",
+    "AGENTS.md": "bc476e85b57eee820575cceb25224418de43ac8c",
+    "index.html": "33c2e23db9fe5afff8e1364c4706a09c3ccee3db",
+    "index.gsap.html": "689e0d36582c3b54e2c3cd48563f1313af12d89a"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "9c70c2f632702faf4b2d3c24999f864aab9c284f92f8ad28419551475aae3f2d",
+    "README.md": "fe58e2091fd26cb4ba5c608cdc95c259d1168fd0233f8a5442bf4bdbeb74cb96",
+    "AGENTS.md": "dcbed5db8ded92fd72d20f2e0684c22fa05e1f96de5a2b4896b101d9c5279c05",
+    "index.html": "48a0d53def1110a4f030e34f5f34120c536d5aae9e7637f18d83f7d13b9a1e07",
+    "index.gsap.html": "f1e965b5d4f6ca9de1da813ab128513a88daca2b20047cd6e1d2912bd9c04268"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

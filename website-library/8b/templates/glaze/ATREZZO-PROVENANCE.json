@@ -1,0 +1,43 @@
+{
+  "slug": "glaze",
+  "name": "Glaze",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/nail-salon-website-template",
+  "demo": "https://8b.com/templates/glaze/demo.html",
+  "design_md_url": "https://8b.com/templates/glaze/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "4126b3ece53b4cba27702e12ebb77acebc2be4db",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "fd45f480c668fa0ca041c4b72b6e6ade6dd0caa8",
+    "README.md": "cf26f559500d5a5e04d96e50ca2b7742b66db900",
+    "AGENTS.md": "59de1c9dd238b7fd7416a73131620b53c969d08f",
+    "index.html": "f187d90f87c06aba0fb674244fe1129b8d7fa74e",
+    "index.gsap.html": "b70e37de23868e01330e1cef5912a24a1bccbd51"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "733b315641f9d3e56c42868ea75291173ee931098920ded55cf59106f02b934d",
+    "README.md": "0a42c3088c92329e706f0807ddbfa8461673a7b32c9f27520d80eef2a9c46bd7",
+    "AGENTS.md": "a1ad5a93685eceb2e43b345a9c921bea5822d296ae3ebb6f151b244392955d4a",
+    "index.html": "c14d8b12f4fed7d147be5fde5dccdebb6ed1b4b8d5fef7a9622f61633a6b7038",
+    "index.gsap.html": "f0506dd36646b085f8bc2653da7b5a84f142693a043533156b7ad78dfa17c931"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "senti",
+  "name": "SENTI",
+  "categories": [
+    "Sport and fitness",
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/wellness-studio-website-template",
+  "demo": "https://8b.com/templates/senti/demo.html",
+  "design_md_url": "https://8b.com/templates/senti/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "e0525e7a55ccf3d2b9945dc6d35183c42d4f5d26",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "555b2cb1d6bf0edde4b7c60fc643e06664d66b9e",
+    "README.md": "67d633abc404910925820ae0d005d26d08f3cd20",
+    "AGENTS.md": "4479336d48df37b9481704b96655633b86b74af4",
+    "index.html": "04afb02c22447dbc5a9776c9c50548075345ea82",
+    "index.gsap.html": "c7cb54fe20af2be0485e578d7f6229f997b569fa"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "917f363e76bcab39ef69e918926dd09dd7119aaf66edc93afc927252cb431784",
+    "README.md": "ba4180b6bed2fcc00e82f493069030fe25a03cb65b13467086c86c0462934cab",
+    "AGENTS.md": "d65e1890520886a585aa049b19e0aa0843b16aaefd0c144e2ab6b587acab6a1f",
+    "index.html": "1b562ac01e541dded7614425083880c9f8f9912e477f9322670129a8059945c0",
+    "index.gsap.html": "7a4e2b924bfae0ed708956d3f4b13727b9051dfd99235dedf6806250f39a792d"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "solsta",
+  "name": "SOLSTA",
+  "categories": [
+    "Event",
+    "Sport and fitness"
+  ],
+  "upstream": "https://github.com/8bsite/running-race-website-template",
+  "demo": "https://8b.com/templates/solsta/demo.html",
+  "design_md_url": "https://8b.com/templates/solsta/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "215b5a48c3b567d341946ca83ea10459b13110c8",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "4c32f64a81ac2c66d05c35539e58828f4fe119ba",
+    "README.md": "852d19b0c9acc86b955ad664430dc055f9ab968c",
+    "AGENTS.md": "1107a681329ab0974ce93be94f90de629c3162c2",
+    "index.html": "04fd46033466106a906b475ce16617788cc24d30",
+    "index.gsap.html": "fd1ac5695cfc4c0e97fa4fa73d0f1b7dddc3037c"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "86c8d4fbb1205eba9a27bc99a84a082a50a01be751940fb6273cbcdff6a5a070",
+    "README.md": "3bd6ef5581707ee4571d21244839507333b74eb9a34c4ed87fbac6bfe04f71a7",
+    "AGENTS.md": "3b8f5c8019ee20ed4ffd4e461e2119cb4d9ef35f659e31c2f2b31dd78e940d6a",
+    "index.html": "065822be680429446d6ea1e1ff9a8ca3c59695a16aaca9f5331f1eacec23c36a",
+    "index.gsap.html": "84e2441d54de279b82ee831c24beddb180358cecc3121c30ffce2bccc165c172"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

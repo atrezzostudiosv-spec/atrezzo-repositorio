@@ -1,0 +1,1242 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/kickstand/
+  Source: https://github.com/8bsite/bike-rental-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kickstand — e-bike hire in Sheffield</title>
+<meta name="description" content="Kickstand hires e-bikes by the hour, day or week from five stands across Sheffield. Helmet, lock and a charged battery in every hire; seven hills ridden as if the city were flat.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kickstand — e-bike hire in Sheffield">
+<meta property="og:description" content="Kickstand hires e-bikes by the hour, day or week from five stands across Sheffield. Helmet, lock and a charged battery in every hire; seven hills ridden as if the city were flat.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%230d0f0f'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23d4ff1e'%3EK%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5tIjFAoAQ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5tIjFOoAQw3Q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1PtFg9jZXvmMnkLnuURbaukKZJTyrDV326uH6mSinjBIwc5tIjFAoAQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #e1e3e2;
+  --color-2: #0d0f0f;
+  --color-3: #d4ff1e;
+  --color-4: #ffffff;
+  --color-5: #555c5e;
+  --color-6: #27333a;
+  --color-7: #a9b1b3;
+  --font-1: "Stack Sans Headline", "Stack Sans Headline Fallback", Arial, sans-serif;
+  --font-2: "Stack Sans Text", "Stack Sans Text Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(16px, 2.2vw, 32px);
+  --space-2: clamp(88px, 11vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Stack Sans Headline Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.9%; ascent-override: 96.2%; descent-override: 28.9%; line-gap-override: 0%; }
+@font-face { font-family: "Stack Sans Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 99%; ascent-override: 101.1%; descent-override: 30.3%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+h1, h2, h3, strong, dt, summary { font-weight: inherit; font-size: inherit; }
+ul, ol { padding: 0; list-style: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+.on-dark :focus-visible { outline-color: var(--color-3); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+[data-8b-section] { scroll-margin-top: 0; }
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(60px, 13vw, 212px); font-weight: 400; line-height: .86; letter-spacing: -.045em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(40px, 6.2vw, 96px); font-weight: 400; line-height: .96; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: .02em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(19px, 1.6vw, 23px); font-weight: 400; line-height: 1.38; letter-spacing: -.01em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(30px, 3.6vw, 54px); font-weight: 400; line-height: 1; letter-spacing: -.03em; text-transform: none; font-style: normal; }
+.m-rule { display: block; height: 9px; border-top: 4px solid currentColor; border-bottom: 1px solid currentColor; }
+.m-mark { position: relative; display: inline-block; width: 1em; height: 1em; background: var(--color-2); vertical-align: baseline; flex: none; }
+.m-mark__plus { position: absolute; left: 84%; top: 50%; width: .62em; height: .62em; translate: -50% -50%; }
+.m-mark__plus::before, .m-mark__plus::after { content: ""; position: absolute; background: var(--color-3); }
+.m-mark__plus::before { left: 0; right: 0; top: 50%; height: .09em; translate: 0 -50%; }
+.m-mark__plus::after { top: 0; bottom: 0; left: 50%; width: .09em; translate: -50% 0; }
+.m-mark-2 { position: relative; display: inline-block; width: 1em; height: 1em; background: var(--color-1); vertical-align: baseline; flex: none; }
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-4); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; transition: color .35s .1s; }
+.m-btn::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; background: var(--color-3); clip-path: inset(0 calc(100% - 48px) 0 0 round 999px); translate: -110% 0; transition: translate .35s cubic-bezier(.3,.7,.2,1), clip-path .45s .2s cubic-bezier(.5,0,.2,1); }
+.m-btn__label { position: relative; }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 26px; border: 1px solid currentColor; border-radius: var(--radius-1); background: transparent; color: var(--color-4); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer; isolation: isolate; overflow: hidden; transition: color .35s .1s; }
+.m-btn-2::before { content: ""; position: absolute; inset: -1px; z-index: -1; border-radius: inherit; background: var(--color-3); clip-path: inset(0 calc(100% - 48px) 0 0 round 999px); translate: -110% 0; transition: translate .35s cubic-bezier(.3,.7,.2,1), clip-path .45s .2s cubic-bezier(.5,0,.2,1); }
+@media (hover: hover) {
+  .m-btn:hover, .m-btn-2:hover { color: var(--color-2); }
+  .m-btn:hover::before, .m-btn-2:hover::before { translate: 0 0; clip-path: inset(0 0 0 0 round 999px); }
+}
+.m-link { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; padding-bottom: 8px; background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 0% 3px, 100% 1px; background-position: 0 calc(100% - 4px), 0 100%; transition: background-size .45s cubic-bezier(.5,0,.2,1); }
+.m-link-2 { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.25; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; padding-bottom: 6px; background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 0% 2px, 0% 1px; background-position: 0 calc(100% - 3px), 0 100%; transition: background-size .45s cubic-bezier(.5,0,.2,1); }
+@media (hover: hover) {
+  .m-link:hover { background-size: 100% 3px, 100% 1px; }
+  .m-link-2:hover { background-size: 100% 2px, 100% 1px; }
+}
+.m-disc { display: inline-grid; place-items: center; width: var(--m-disc-size, 64px); aspect-ratio: 1; border: 0; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); text-decoration: none; cursor: pointer; padding: 0; }
+.m-disc__face { display: grid; place-items: center; width: 100%; height: 100%; transition: transform .7s cubic-bezier(.3,.7,.2,1); }
+.m-disc__arrow { width: 40%; height: 40%; fill: none; stroke: currentColor; stroke-width: 1.4; }
+@media (hover: hover) { .m-disc:hover .m-disc__face { transform: rotate(-405deg); } }
+.m-badge { display: inline-flex; align-items: center; min-height: 24px; padding: 4px 11px 3px; border: 1px solid currentColor; border-radius: var(--radius-1); font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.1; letter-spacing: .02em; text-transform: uppercase; font-style: normal; }
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-2); font-size: 12px; font-weight: 500; line-height: 1.3; letter-spacing: .02em; text-transform: uppercase; color: var(--color-5); }
+.m-field__input { width: 100%; min-height: 48px; padding: 10px 0 8px; border: 0; border-bottom: 1px solid var(--color-2); border-radius: 0; background: transparent; font-family: var(--font-2); font-size: 18px; font-weight: 400; line-height: 1.3; color: var(--color-2); appearance: none; }
+select.m-field__input { background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(-45deg, transparent 50%, currentColor 50%); background-size: 6px 6px; background-position: calc(100% - 10px) 55%, calc(100% - 4px) 55%; background-repeat: no-repeat; padding-right: 28px; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 4px; border-bottom-width: 3px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-wrap { padding-inline: var(--space-1); }
+.l-head { display: grid; gap: clamp(18px, 2.4vw, 32px); }
+.l-head__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 22rem); gap: 24px 40px; align-items: end; }
+.l-head__title .m-mark, .l-head__title .m-mark-2 { width: .7em; height: .7em; margin-right: .3em; }
+.l-head__note { justify-self: end; max-width: 22rem; }
+@media (max-width: 760px) {
+  .l-head__row { grid-template-columns: 1fr; }
+  .l-head__note { justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav .nav__bar { position: fixed; z-index: 50; top: 0; left: 0; right: 0; display: grid; grid-template-columns: 1fr 1fr 1fr auto; align-items: start; gap: 24px; padding: 16px var(--space-1) 14px; background: var(--color-1); color: var(--color-2); transition: translate .5s cubic-bezier(.3,.7,.2,1); }
+#nav .nav__bar.is-hidden { translate: 0 -100%; }
+#nav .nav__logo { display: inline-flex; width: 36px; height: 36px; color: var(--color-2); }
+#nav .nav__logo svg { width: 100%; height: 100%; fill: currentColor; transition: rotate .8s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) { #nav .nav__logo:hover svg { rotate: 90deg; } }
+#nav .nav__links { display: contents; }
+#nav .nav__col { display: grid; align-content: start; }
+#nav .nav__col li { line-height: 0; }
+#nav .nav__menu { display: grid; place-items: center; width: 44px; height: 36px; margin-right: -6px; padding: 0; border: 0; background: none; color: var(--color-2); cursor: pointer; }
+#nav .nav__lines { display: block; width: 32px; height: 7px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transition: width .4s cubic-bezier(.3,.7,.2,1); }
+@media (hover: hover) { #nav .nav__menu:hover .nav__lines { width: 22px; } }
+#nav .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; padding: 18px var(--space-1) 28px; background: var(--color-2); color: var(--color-1); overflow-y: auto; }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu__list { align-self: center; display: grid; gap: 6px; }
+#nav .menu__list a { display: inline-block; text-decoration: none; padding: 2px 0; }
+#nav .menu__list .m-text-3 { font-size: clamp(38px, 7vw, 88px); }
+@media (hover: hover) { #nav .menu__list a:hover { color: var(--color-3); } }
+#nav .menu__close { --m-disc-size: 56px; }
+#nav .menu__close .m-disc__arrow { rotate: -90deg; }
+@media (max-width: 760px) {
+  #nav .nav__bar { grid-template-columns: 1fr auto; padding-block: 14px 12px; }
+  #nav .nav__col { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:start">
+@layer sections {
+#start { position: relative; background: var(--color-2); }
+#start .start__one { position: relative; height: 100svh; min-height: 560px; background: var(--color-1); overflow: clip; }
+#start .start__field { position: absolute; left: 0; right: 0; top: 0; bottom: 44%; display: flex; align-items: flex-end; padding: 0 var(--space-1) clamp(20px, 3.4svh, 40px); }
+#start .start__word { display: inline-block; white-space: nowrap; }
+#start .start__mark { width: .72em; height: .72em; margin-right: .2em; }
+#start .start__band { position: absolute; left: 0; right: 0; bottom: 0; top: calc(56% - 26svh); clip-path: polygon(0 calc(26svh - var(--start-rise, 0px)), 100% 26svh, 100% 100%, 0 100%); }
+#start .start__pan { position: absolute; inset: 0; overflow: hidden; }
+#start .start__pan img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+#start .start__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .8; }
+#start .start__horizon { position: absolute; left: 0; right: 0; top: calc(56% - 12px); color: var(--color-2); transform-origin: 100% 50%; }
+#start .start__rule { height: 12px; border-top-width: 5px; }
+#start .start__marks { position: absolute; left: var(--space-1); right: var(--space-1); top: calc(56% + 26px); display: flex; justify-content: space-between; align-items: center; color: var(--color-3); }
+#start .start__m { display: block; font-size: clamp(20px, 2vw, 28px); }
+#start .start__m--dash { width: 22px; height: 6px; background: var(--color-3); }
+#start .start__m--bar { width: 7px; height: 26px; background: var(--color-3); }
+#start .start__m--dot { width: 11px; height: 11px; border-radius: 50%; background: var(--color-3); }
+#start .start__disc { position: absolute; right: 9%; top: calc(56% - var(--m-disc-size) * .32); --m-disc-size: clamp(112px, 15.5vw, 212px); }
+#start .start__disc .m-disc__arrow { stroke-width: 1.1; }
+#start .start__foot { position: absolute; left: var(--space-1); right: var(--space-1); bottom: clamp(18px, 3.4svh, 34px); display: flex; justify-content: space-between; align-items: flex-end; gap: 24px 48px; color: var(--color-4); }
+#start .start__tags { display: flex; gap: 8px; margin-bottom: 12px; }
+#start .start__lede { max-width: 46ch; color: var(--color-3); }
+#start .start__note { max-width: 42ch; text-align: right; }
+#start .start__two { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto auto 1fr auto; column-gap: clamp(16px, 2vw, 32px); min-height: 100svh; padding: clamp(110px, 15svh, 160px) var(--space-1) clamp(40px, 7svh, 72px); color: var(--color-1); overflow: clip; }
+#start .start__stairs { grid-column: 1 / 9; grid-row: 1; }
+#start .start__line { display: block; }
+#start .start__line:last-child { color: var(--color-3); }
+#start .start__lead { grid-column: 1 / 7; grid-row: 2; margin-top: clamp(28px, 4svh, 48px); max-width: 36ch; }
+#start .start__facts { grid-column: 1 / 7; grid-row: 3; align-self: end; display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-top: 36px; color: var(--color-7); }
+#start .start__facts li { padding: 10px 0 12px; border-top: 1px solid var(--color-7); }
+#start .start__actions { grid-column: 1 / 7; grid-row: 4; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 32px; }
+#start .start__street { grid-column: 9 / 13; grid-row: 1 / 5; align-self: end; position: relative; aspect-ratio: 4 / 5; clip-path: polygon(0 var(--start-cut, 0%), 100% 0, 100% 100%, 0 100%); }
+#start .start__street img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+#start .start__street figcaption { position: absolute; left: 14px; bottom: 12px; color: var(--color-4); }
+#start .start__street::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, color-mix(in oklab, var(--color-2) 70%, transparent)); }
+#start .start__street figcaption { z-index: 1; }
+@media (max-width: 760px) {
+  #start .start__field { bottom: 48%; }
+  #start .start__word { font-size: clamp(56px, 17.5vw, 96px); white-space: normal; }
+  #start .start__mark { display: block; margin: 0 0 .14em; }
+  #start .start__band { top: calc(52% - 22svh); clip-path: polygon(0 calc(22svh - var(--start-rise, 0px)), 100% 22svh, 100% 100%, 0 100%); }
+  #start .start__horizon { top: calc(52% - 12px); }
+  #start .start__marks { top: calc(52% + 22px); }
+  #start .start__m { font-size: 20px; }
+  #start .start__m--bar { height: 20px; }
+  #start .start__disc { right: 6%; top: calc(52% - var(--m-disc-size) * .3); }
+  #start .start__foot { flex-direction: column; align-items: flex-start; gap: 14px; }
+  #start .start__note { text-align: left; }
+  #start .start__two { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; padding-top: 96px; }
+  #start .start__stairs, #start .start__lead, #start .start__facts, #start .start__actions, #start .start__street { grid-column: 1; grid-row: auto; }
+  #start .start__street { aspect-ratio: 4 / 5; margin-top: 28px; }
+  #start .start__lead { margin-top: 24px; }
+  #start .start__facts { grid-template-columns: 1fr; margin-top: 24px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #start .start__rule { transform-origin: 0 50%; animation: start-draw 1s cubic-bezier(.6,0,.2,1) backwards; }
+  #start .start__word { animation: start-rise .9s .05s cubic-bezier(.2,.7,.2,1) backwards; }
+  #start .start__marks { animation: start-slide 1s .15s cubic-bezier(.2,.7,.2,1) backwards; }
+  #start .start__disc-in { animation: start-pop .85s .25s cubic-bezier(.3,1.3,.5,1) backwards; }
+  #start .start__foot > * { animation: start-up .8s .3s cubic-bezier(.2,.7,.2,1) backwards; }
+  #start .start__pan img { animation: start-pan 7s ease-in-out infinite alternate; }
+  #start .start__mark .m-mark__plus { animation: start-plus 2.6s ease-in-out infinite alternate; }
+  #start .start__one.is-paused :is(.start__pan img, .m-mark__plus) { animation-play-state: paused; }
+  @keyframes start-draw { from { transform: scaleX(0); } }
+  @keyframes start-rise { from { transform: translateY(.3em); } }
+  @keyframes start-slide { from { transform: translateX(-14vw); opacity: 0; } }
+  @keyframes start-pop { from { transform: scale(.2) rotate(-160deg); } }
+  @keyframes start-up { from { transform: translateY(26px); opacity: 0; } }
+  @keyframes start-pan { from { transform: translate3d(-44px, 0, 0) scale(1.14); } to { transform: translate3d(44px, 0, 0) scale(1.14); } }
+  @keyframes start-plus { from { translate: -50% -50%; } to { translate: -95% -50%; } }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: 0 var(--space-1) 28px; background: var(--color-2); color: var(--color-1); }
+#footer .m-rule { color: var(--color-1); }
+#footer .footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; padding-top: clamp(40px, 6vw, 72px); }
+#footer .footer__brand { display: inline-flex; align-items: baseline; gap: .18em; text-decoration: none; color: var(--color-1); }
+#footer .footer__brand .m-mark-2 { width: .72em; height: .72em; margin-right: .2em; }
+#footer .footer__col { display: grid; align-content: start; gap: 4px; }
+#footer .footer__col li { line-height: 0; }
+#footer .footer__head { color: var(--color-7); margin-bottom: 10px; }
+#footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; margin-top: clamp(48px, 8vw, 110px); padding-top: 14px; border-top: 1px solid var(--color-7); color: var(--color-7); }
+@media (max-width: 760px) {
+  #footer .footer__grid { grid-template-columns: 1fr 1fr; }
+  #footer .footer__brand { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:fleet">
+@layer sections {
+#fleet { padding: var(--space-2) 0 calc(var(--space-2) * .5); }
+#fleet .fleet__track { margin-top: clamp(40px, 6vw, 80px); }
+#fleet .fleet__list { display: grid; padding-inline: var(--space-1); }
+#fleet .fleet__bike { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 24px clamp(24px, 4vw, 64px); padding: 24px 0 56px; border-top: 1px solid var(--color-2); }
+#fleet .fleet__photo { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: var(--color-6); clip-path: inset(0 0 0 var(--fleet-cut, 0%)); }
+#fleet .fleet__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#fleet .fleet__text { display: grid; align-content: start; gap: 14px; }
+#fleet .fleet__kind { color: var(--color-5); }
+#fleet .fleet__text .m-text { max-width: 40ch; }
+#fleet .fleet__specs { display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--color-2); }
+#fleet .fleet__specs dt { color: var(--color-5); }
+#fleet .fleet__tabs { position: relative; display: flex; justify-content: space-between; gap: 12px; padding-bottom: 14px; margin-bottom: clamp(16px, 3svh, 28px); border-bottom: 1px solid var(--color-2); }
+#fleet .fleet__marker { position: absolute; left: 0; bottom: -4px; width: 56px; height: 7px; background: var(--color-2); }
+#fleet .fleet__marker::after { content: ""; position: absolute; right: -6px; top: 50%; width: 18px; height: 18px; translate: 0 -50%; border-radius: var(--radius-1); background: var(--color-3); }
+@media (max-width: 760px) {
+  #fleet .fleet__bike { grid-template-columns: minmax(0, 1fr); padding-bottom: 40px; }
+}
+}
+</style>
+<style data-8b-part="section:stands">
+@layer sections {
+#stands { padding: var(--space-2) 0; background: var(--color-2); color: var(--color-1); }
+#stands .stands__strip { position: relative; height: clamp(220px, 34svh, 360px); margin-top: clamp(40px, 6vw, 72px); overflow: hidden; }
+#stands .stands__strip img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+#stands .stands__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .7; }
+#stands .stands__line { position: absolute; left: 0; right: 0; bottom: clamp(18px, 3svh, 32px); display: flex; justify-content: space-between; align-items: center; color: var(--color-3); }
+#stands .stands__dash { width: clamp(28px, 4vw, 56px); height: 8px; background: var(--color-3); }
+#stands .stands__dot { width: 14px; height: 14px; border-radius: var(--radius-1); background: var(--color-3); }
+#stands .stands__list { display: grid; }
+#stands .stands__row { display: grid; grid-template-columns: 4rem minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr); gap: 12px clamp(20px, 3vw, 48px); align-items: baseline; padding: 22px 0 26px; border-bottom: 1px solid var(--color-7); }
+#stands .stands__code { color: var(--color-3); }
+#stands .stands__row .m-text { color: var(--color-7); max-width: 46ch; }
+#stands .stands__meta { color: var(--color-1); text-align: right; }
+@media (max-width: 900px) {
+  #stands .stands__row { grid-template-columns: 3rem minmax(0, 1fr); }
+  #stands .stands__row .m-text, #stands .stands__meta { grid-column: 2; text-align: left; }
+}
+}
+</style>
+<style data-8b-part="section:routes">
+@layer sections {
+#routes { padding: var(--space-2) 0 calc(var(--space-2) * .6); }
+#routes .routes__stage { padding-top: clamp(40px, 6vw, 72px); }
+#routes .routes__rail { position: relative; margin-bottom: 28px; }
+#routes .routes__fill { position: absolute; left: var(--space-1); right: var(--space-1); top: 0; height: 4px; background: var(--color-3); transform-origin: 0 50%; }
+#routes .routes__wheel { position: absolute; left: var(--space-1); top: -14px; width: 32px; height: 32px; border-radius: var(--radius-1); background: var(--color-3); border: 2px solid var(--color-2); }
+#routes .routes__wheel::before { content: ""; position: absolute; left: 50%; top: 4px; bottom: 4px; width: 2px; translate: -50% 0; background: var(--color-2); }
+#routes .routes__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px clamp(20px, 3vw, 40px); padding-inline: var(--space-1); }
+#routes .routes__panel { display: grid; grid-template-rows: auto auto; gap: 18px; }
+#routes .routes__photo { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--color-6); }
+#routes .routes__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#routes .routes__text { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 10px 32px; align-items: start; }
+#routes .routes__facts { color: var(--color-5); grid-column: 1; }
+#routes .routes__text .m-text { grid-column: 2; grid-row: 1 / 3; max-width: 40ch; }
+@media (max-width: 760px) {
+  #routes .routes__row { grid-template-columns: minmax(0, 1fr); }
+  #routes .routes__text { grid-template-columns: minmax(0, 1fr); }
+  #routes .routes__text .m-text { grid-column: 1; grid-row: auto; }
+}
+}
+</style>
+<style data-8b-part="section:hire">
+@layer sections {
+#hire { padding: var(--space-2) 0; background: var(--color-6); color: var(--color-4); }
+#hire .hire__body { position: relative; margin-top: clamp(48px, 7vw, 96px); }
+#hire .hire__line { position: relative; height: 9px; }
+#hire .hire__track { position: absolute; inset: 0; border-top: 4px solid var(--color-7); border-bottom: 1px solid var(--color-7); }
+#hire .hire__fill { position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--color-3); transform-origin: 0 50%; }
+#hire .hire__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px clamp(24px, 3vw, 48px); padding-top: 28px; }
+#hire .hire__step { display: grid; align-content: start; gap: 16px; }
+#hire .hire__num { color: var(--color-3); }
+#hire .hire__step .m-text { color: var(--color-7); max-width: 34ch; }
+@media (max-width: 760px) {
+  #hire .hire__body { padding-left: calc(var(--space-1) + 26px); }
+  #hire .hire__line { position: absolute; left: var(--space-1); top: 0; bottom: 0; width: 9px; height: auto; }
+  #hire .hire__track { border-top: 0; border-bottom: 0; border-left: 4px solid var(--color-7); border-right: 1px solid var(--color-7); }
+  #hire .hire__fill { right: auto; bottom: 0; width: 4px; height: auto; transform-origin: 50% 0; }
+  #hire .hire__steps { grid-template-columns: minmax(0, 1fr); padding-top: 0; gap: 48px; }
+}
+}
+</style>
+<style data-8b-part="section:kit">
+@layer sections {
+#kit { padding: var(--space-2) 0; }
+#kit .kit__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px clamp(32px, 5vw, 80px); margin-top: clamp(40px, 6vw, 80px); }
+#kit .kit__photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-6); }
+#kit .kit__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 50%; }
+#kit .kit__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(24px, 3vw, 48px); align-content: start; }
+#kit .kit__item { display: grid; gap: 10px; padding: 18px 0 28px; border-top: 1px solid var(--color-2); }
+#kit .kit__item .m-text { color: var(--color-5); max-width: 30ch; }
+@media (max-width: 760px) {
+  #kit .kit__body { grid-template-columns: minmax(0, 1fr); }
+  #kit .kit__photo { aspect-ratio: 4 / 3; }
+  #kit .kit__list { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:rides">
+@layer sections {
+#rides { padding: calc(var(--space-2) * .6) 0 var(--space-2); background: var(--color-2); color: var(--color-4); overflow: clip; }
+#rides .rides__stage { position: relative; display: grid; place-items: center; height: clamp(460px, 88svh, 860px); }
+#rides .rides__band { position: absolute; inset: 0; overflow: hidden; clip-path: inset(0 var(--rides-cut, 0%) 0 var(--rides-cut, 0%)); }
+#rides .rides__band img { width: 100%; height: 100%; object-fit: cover; }
+#rides .rides__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .78; }
+#rides .rides__title { position: relative; display: flex; justify-content: space-between; align-items: baseline; width: 100%; padding-inline: var(--space-1); font-size: clamp(54px, 11vw, 176px); }
+#rides .rides__half { display: block; }
+#rides .rides__half:last-child { color: var(--color-3); }
+#rides .rides__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px clamp(32px, 5vw, 80px); margin-top: clamp(48px, 7vw, 96px); }
+#rides .rides__lead { max-width: 30ch; }
+#rides .rides__dates { display: grid; }
+#rides .rides__date { display: grid; grid-template-columns: 7rem minmax(0, 1fr) auto; gap: 8px 24px; align-items: baseline; padding: 18px 0 20px; border-top: 1px solid var(--color-7); }
+#rides .rides__date .m-text-6 { font-size: clamp(24px, 2.4vw, 34px); }
+#rides .rides__date .m-text-4 { color: var(--color-7); }
+#rides .rides__join { grid-column: 2; justify-self: start; }
+@media (max-width: 760px) {
+  #rides .rides__stage { height: 72svh; }
+  #rides .rides__title { flex-direction: column; align-items: flex-start; gap: .1em; }
+  #rides .rides__half:last-child { align-self: flex-end; }
+  #rides .rides__body { grid-template-columns: minmax(0, 1fr); }
+  #rides .rides__date { grid-template-columns: minmax(0, 1fr); }
+  #rides .rides__join { grid-column: 1; }
+}
+}
+</style>
+<style data-8b-part="section:prices">
+@layer sections {
+#prices { padding: var(--space-2) 0; }
+#prices .prices__body { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 40px clamp(32px, 5vw, 80px); margin-top: clamp(40px, 6vw, 80px); align-items: start; }
+#prices .prices__table { width: 100%; border-collapse: collapse; }
+#prices .prices__table th, #prices .prices__table td { padding: 16px 12px 16px 0; text-align: left; vertical-align: baseline; border-bottom: 1px solid var(--color-2); }
+#prices .prices__table thead th { color: var(--color-5); border-bottom: 5px double var(--color-2); padding-top: 0; }
+#prices .prices__table td { white-space: nowrap; }
+#prices .prices__pass { display: grid; gap: 16px; justify-items: start; padding: 24px; background: var(--color-3); }
+@media (max-width: 760px) {
+  #prices .prices__body { grid-template-columns: minmax(0, 1fr); }
+  #prices .prices__table th, #prices .prices__table td { padding-right: 6px; }
+  #prices .prices__table .m-text-6 { font-size: 22px; }
+  #prices .prices__table .m-text-5 { font-size: 17px; }
+}
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews { padding: var(--space-2) 0; background: var(--color-3); color: var(--color-2); overflow: clip; }
+#reviews .reviews__lanes { display: grid; margin-top: clamp(40px, 6vw, 80px); padding-inline: var(--space-1); }
+#reviews .reviews__lane { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; gap: 12px 40px; align-items: end; padding: 26px 0 30px; border-bottom: 1px solid var(--color-2); }
+#reviews .reviews__lane:nth-child(even) { grid-template-columns: 16rem minmax(0, 1fr); }
+#reviews .reviews__lane:nth-child(even) blockquote { grid-column: 2; grid-row: 1; text-align: right; }
+#reviews .reviews__lane blockquote { font-size: clamp(26px, 3.2vw, 46px); line-height: 1.08; max-width: 26ch; }
+#reviews .reviews__lane:nth-child(even) blockquote { justify-self: end; }
+@media (max-width: 760px) {
+  #reviews .reviews__lane, #reviews .reviews__lane:nth-child(even) { grid-template-columns: minmax(0, 1fr); }
+  #reviews .reviews__lane:nth-child(even) blockquote { grid-column: 1; grid-row: auto; text-align: left; justify-self: start; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding: var(--space-2) 0; }
+#faq .faq__list { margin-top: clamp(40px, 6vw, 80px); border-top: 1px solid var(--color-2); }
+#faq .faq__item { border-bottom: 1px solid var(--color-2); }
+#faq .faq__item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq .faq__item summary::-webkit-details-marker { display: none; }
+#faq .faq__item summary .m-text-6 { font-size: clamp(24px, 2.6vw, 38px); }
+#faq .faq__sign { position: relative; flex: none; width: 36px; height: 36px; border-radius: var(--radius-1); background: var(--color-2); transition: background-color .3s, rotate .5s cubic-bezier(.3,.7,.2,1); }
+#faq .faq__sign::before, #faq .faq__sign::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 2px; translate: -50% -50%; background: var(--color-3); }
+#faq .faq__sign::after { rotate: 90deg; }
+#faq .faq__item[open] .faq__sign { rotate: 45deg; }
+#faq .faq__item p { max-width: 62ch; padding: 0 0 26px; color: var(--color-5); }
+@media (hover: hover) { #faq .faq__item summary:hover .faq__sign { rotate: 90deg; } }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding-top: var(--space-2); }
+#contact .contact__body { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px clamp(32px, 5vw, 80px); margin-top: clamp(40px, 6vw, 80px); }
+#contact .contact__details { display: grid; align-content: start; gap: 6px; font-style: normal; }
+#contact .contact__label { color: var(--color-5); margin-top: 18px; }
+#contact .contact__label:first-child { margin-top: 0; }
+#contact .contact__big { font-size: inherit; letter-spacing: 0; text-transform: none; font-weight: 400; font-family: inherit; }
+#contact .contact__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; align-content: start; }
+#contact .contact__send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+#contact .contact__band { position: relative; height: clamp(320px, 56svh, 560px); margin-top: var(--space-2); overflow: clip; background: var(--color-6); }
+#contact .contact__band img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; }
+#contact .contact__tint { position: absolute; inset: 0; background: var(--color-6); mix-blend-mode: multiply; opacity: .55; }
+#contact .contact__marks { position: absolute; left: var(--space-1); right: var(--space-1); top: 28px; display: flex; justify-content: space-between; align-items: center; color: var(--color-3); }
+#contact .contact__m { display: block; font-size: clamp(20px, 2vw, 28px); }
+#contact .contact__m--dash { width: 22px; height: 6px; background: var(--color-3); }
+#contact .contact__m--bar { width: 7px; height: 26px; background: var(--color-3); }
+#contact .contact__m--dot { width: 11px; height: 11px; border-radius: 50%; background: var(--color-3); }
+#contact .contact__top { position: absolute; right: var(--space-1); bottom: var(--space-1); --m-disc-size: clamp(88px, 10vw, 140px); }
+#contact .contact__top .m-disc__arrow { rotate: 180deg; }
+@media (max-width: 760px) {
+  #contact .contact__body { grid-template-columns: minmax(0, 1fr); }
+  #contact .contact__form { grid-template-columns: minmax(0, 1fr); }
+  #contact .contact__m { font-size: 20px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:fleet">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #fleet.is-staged .fleet__track { height: calc(100svh + (var(--fleet-n, 4) - 1) * 78svh); }
+  #fleet.is-staged .fleet__stage { position: sticky; top: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); height: 100svh; padding: clamp(88px, 12svh, 112px) var(--space-1) clamp(24px, 4svh, 40px); }
+  #fleet.is-staged .fleet__list { position: relative; padding: 0; }
+  #fleet.is-staged .fleet__bike { position: absolute; inset: 0; padding: 0; border: 0; align-items: stretch; }
+  #fleet.is-staged .fleet__photo { aspect-ratio: auto; height: 100%; }
+  #fleet.is-staged .fleet__text { align-content: end; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #fleet.is-staged .fleet__stage { padding-top: 80px; }
+  #fleet.is-staged .fleet__bike { grid-template-rows: minmax(0, 1fr) auto; gap: 16px; }
+  #fleet.is-staged .fleet__photo { height: auto; min-height: 0; }
+  #fleet.is-staged .fleet__text { gap: 10px; min-height: 236px; align-content: start; }
+  #fleet.is-staged .fleet__text .m-text { font-size: 15px; line-height: 1.4; }
+  #fleet.is-staged .fleet__specs { display: none; }
+}
+}
+</style>
+<style data-8b-part="scene-style:routes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #routes.is-tracked .routes__track { height: calc(100svh + var(--routes-run, 0px)); }
+  #routes.is-tracked .routes__stage { position: sticky; top: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); height: 100svh; padding-top: clamp(96px, 13svh, 120px); padding-bottom: clamp(24px, 5svh, 48px); overflow: hidden; }
+  #routes.is-tracked .routes__row { display: flex; gap: clamp(20px, 3vw, 40px); width: max-content; }
+  #routes.is-tracked .routes__panel { width: min(62vw, 1000px); grid-template-rows: minmax(0, 1fr) auto; }
+  #routes.is-tracked .routes__photo { aspect-ratio: auto; height: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #routes.is-tracked .routes__stage { padding-top: 84px; }
+  #routes.is-tracked .routes__panel { width: 84vw; }
+  #routes.is-tracked .routes__text .m-text { font-size: 15px; line-height: 1.4; }
+}
+}
+</style>
+<style data-8b-part="rework-first-screen">
+@media (prefers-reduced-motion: no-preference) {
+  #start .start__line { --rw-step: 7.5vw; animation: rw-stair 1s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #start .start__line:nth-child(1) { --rw-n: 2; }
+  #start .start__line:nth-child(2) { --rw-n: 1; animation-delay: .07s; }
+  #start .start__line:nth-child(3) { --rw-n: 0; animation-delay: .14s; }
+  #start .start__street { animation: rw-level 1.1s .15s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #start .start__lead, #start .start__facts, #start .start__actions { animation: start-up .8s .25s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #start .start__facts { animation-delay: .35s; }
+  #start .start__actions { animation-delay: .45s; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #start .start__line { --rw-step: 6vw; }
+}
+@keyframes rw-stair { from { translate: calc(var(--rw-n) * var(--rw-step)) 0; opacity: 0; } 40% { opacity: 1; } }
+@keyframes rw-level { from { clip-path: polygon(0 34%, 100% 0, 100% 100%, 0 100%); } }</style>
+</head>
+<body class="m-text">
+<!-- navigation: round starburst logo, eight links in two columns and a menu button that opens a full-screen overlay -->
+<div id="nav" data-8b-section="navigation">
+  <header class="nav__bar">
+    <a class="nav__logo" href="#start" aria-label="Kickstand, back to the top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 1 22.6 14.4 33.4 6.6 25.6 17.4 39 20 25.6 22.6 33.4 33.4 22.6 25.6 20 39 17.4 25.6 6.6 33.4 14.4 22.6 1 20 14.4 17.4 6.6 6.6 17.4 14.4Z"/></svg></a>
+    <nav class="nav__links" aria-label="Main">
+      <ul class="nav__col">
+        <li><a class="m-link-2" href="#fleet">The bikes</a></li>
+        <li><a class="m-link-2" href="#stands">Five stands</a></li>
+        <li><a class="m-link-2" href="#routes">Routes</a></li>
+        <li><a class="m-link-2" href="#rides">Saturday rides</a></li>
+      </ul>
+      <ul class="nav__col">
+        <li><a class="m-link-2" href="#hire">How hire works</a></li>
+        <li><a class="m-link-2" href="#prices">Prices</a></li>
+        <li><a class="m-link-2" href="#faq">Questions</a></li>
+        <li><a class="m-link-2" href="#contact">Book &amp; contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Open the menu</span><span class="nav__lines" aria-hidden="true"></span></button>
+  </header>
+  <div class="menu on-dark" id="menu" data-lenis-prevent hidden>
+    <div class="menu__top">
+      <span class="m-text-4">Menu</span>
+      <button class="m-disc menu__close" type="button" aria-label="Close the menu"><span class="m-disc__face"><svg class="m-disc__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18M18 8.5V18H8.5"/></svg></span></button>
+    </div>
+    <nav class="menu__list" aria-label="Menu">
+      <a href="#fleet"><span class="m-text-3">The bikes</span></a>
+      <a href="#stands"><span class="m-text-3">Five stands</span></a>
+      <a href="#routes"><span class="m-text-3">Routes</span></a>
+      <a href="#hire"><span class="m-text-3">How hire works</span></a>
+      <a href="#rides"><span class="m-text-3">Saturday rides</span></a>
+      <a href="#prices"><span class="m-text-3">Prices</span></a>
+      <a href="#contact"><span class="m-text-3">Book a bike</span></a>
+    </nav>
+    <p class="m-text-4">Open every day · 8:00–20:00</p>
+  </div>
+</div>
+<main>
+<!-- opening: dark first screen: a three-line h1 stepping in like stairs, a lead, four facts, a booking button and a street photo -->
+<section id="start" data-8b-section="opening">
+  
+  <div class="start__two on-dark">
+    <h1 class="m-text-3 start__stairs"><span class="start__line">Sheffield climbs</span><span class="start__line">seven hills.</span><span class="start__line">You just pedal.</span></h1>
+    <p class="m-text-5 start__lead">Every Kickstand bike adds up to 250 watts the moment your foot turns the crank. Walkley, Crookes, the long drag up Ecclesall Road: they all ride like the riverside.</p>
+    <ul class="start__facts m-text-4">
+      <li>Assist to 15.5 mph, then it is all you</li>
+      <li>About 80 km on one battery</li>
+      <li>Batteries swapped free at any stand</li>
+      <li>Helmet, lock and lights in every hire</li>
+    </ul>
+    <div class="start__actions">
+      <a class="m-btn-2" href="#contact"><span class="m-btn__label">Book a bike</span></a>
+      <a class="m-link" href="#fleet">See the four bikes</a>
+    </div>
+    <figure class="start__street">
+      <img style="background:#594026" src="https://images.unsplash.com/photo-1576154048140-9d508976d5b2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHN0ZWVwJTIwdGVycmFjZWQlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTU2NzYwMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1060&amp;q=60" width="1600" height="1071" alt="A steep cobbled back street climbing between terraced houses" loading="lazy">
+      <figcaption class="m-text-4">A one-in-six back street, ridden seated</figcaption>
+    </figure>
+  </div>
+</section>
+<!-- fleet: held stage that steps through four bikes: the next photo wipes in from the right while the name tabs and text change (animation: scene:fleet) -->
+<section id="fleet" data-8b-section="fleet">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Four bikes, one push</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Every bike has the same motor rules: assist while you pedal, up to 15.5 mph. What changes is the frame, the load and the range.</p>
+    </div>
+  </header>
+  <div class="fleet__track">
+    <div class="fleet__stage">
+      <div class="fleet__list">
+        <article class="fleet__bike">
+          <figure class="fleet__photo"><img style="background:#40260c" src="https://images.unsplash.com/photo-1665731734325-2849f05a619e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eXxlbnwxfDB8fHwxNzkxNTY3NTgxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;q=60" width="1600" height="1067" alt="A rider on a teal step-through e-bike with a front basket outside a café" loading="lazy"></figure>
+          <div class="fleet__text">
+            <p class="m-text-4 fleet__kind">Step-through · 21 kg · riders 150–195 cm</p>
+            <h3 class="m-text-6">Town</h3>
+            <p class="m-text">The everyday one: a low frame you step through, an upright seat and a front basket that takes a full shopping bag. Most hires go out on a Town.</p>
+            <dl class="fleet__specs m-text-4"><dt>Range</dt><dd>About 80 km</dd><dt>Gears</dt><dd>Seven, plus three assist levels</dd><dt>From</dt><dd>£9 an hour</dd></dl>
+          </div>
+        </article>
+        <article class="fleet__bike">
+          <figure class="fleet__photo"><img style="background:#404040" src="https://images.unsplash.com/photo-1618987688327-dc0b28888fe4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZWxlY3RyaWMlMjBiaWtlJTIwY2l0eXxlbnwxfDB8fHwxNzkxNTY3NTgxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=710&amp;q=60" width="1600" height="1028" alt="A black fat-tyre e-bike standing under white concrete arches" loading="lazy"></figure>
+          <div class="fleet__text">
+            <p class="m-text-4 fleet__kind">Fat tyres · 85 Nm motor · two batteries</p>
+            <h3 class="m-text-6">Climber</h3>
+            <p class="m-text">More torque and a second battery for the edges of the Peak: Stanage, Ladybower and back without stopping for a swap. Wide tyres keep it calm on gravel and wet setts.</p>
+            <dl class="fleet__specs m-text-4"><dt>Range</dt><dd>About 140 km</dd><dt>Gears</dt><dd>Nine, plus three assist levels</dd><dt>From</dt><dd>£14 an hour</dd></dl>
+          </div>
+        </article>
+        <article class="fleet__bike">
+          <figure class="fleet__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/flagged/photo-1576934848835-f72df622a04b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2FyZ28lMjBiaWtlfGVufDF8MHx8fDE3OTE1Njc1ODR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;q=60" width="1600" height="1200" alt="A parent riding a longtail cargo bike with a child on the back and another on a tag-along" loading="lazy"></figure>
+          <div class="fleet__text">
+            <p class="m-text-4 fleet__kind">Longtail cargo · two child seats · 60 kg on the deck</p>
+            <h3 class="m-text-6">Hauler</h3>
+            <p class="m-text">A long rear deck with two seats and footboards, or two big panniers for a market run. A low first gear and the strongest assist for loaded hills.</p>
+            <dl class="fleet__specs m-text-4"><dt>Range</dt><dd>About 70 km loaded</dd><dt>Seats</dt><dd>Two, ages one to seven</dd><dt>From</dt><dd>£16 an hour</dd></dl>
+          </div>
+        </article>
+        <article class="fleet__bike">
+          <figure class="fleet__photo"><img style="background:#8c8c8c" src="https://images.unsplash.com/photo-1719885959196-03139e36d22c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Zm9sZGluZyUyMGJpa2V8ZW58MXwwfHx8MTc5MTU2NzU4NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;q=60" width="1600" height="1067" alt="A compact folding e-bike against a pale wall and a blue sky" loading="lazy"></figure>
+          <div class="fleet__text">
+            <p class="m-text-4 fleet__kind">Folding · 17 kg · folds to 80 × 40 cm</p>
+            <h3 class="m-text-6">Pocket</h3>
+            <p class="m-text">Folds in ten seconds into a car boot or a train's luggage rack. Take it to Hope on the Hope Valley line and ride back over the tops.</p>
+            <dl class="fleet__specs m-text-4"><dt>Range</dt><dd>About 50 km</dd><dt>Gears</dt><dd>Three, plus three assist levels</dd><dt>From</dt><dd>£11 an hour</dd></dl>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- stands: dark band with a night photo and a line of letters A to E over it, then five stand rows -->
+<section id="stands" data-8b-section="stands" class="on-dark">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark-2" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Five stands, one line</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Collect at one stand and leave the bike at any other. Every stand swaps batteries and keeps helmets in three sizes.</p>
+    </div>
+  </header>
+  <figure class="stands__strip">
+    <img style="background:#260c0c" src="https://images.unsplash.com/photo-1595510305533-184dbe886f11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmlrZSUyMHJhY2slMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTU2NzYwNXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=60" width="1600" height="1067" alt="Bicycle racks under a lit timber canopy at night" loading="lazy">
+    <span class="stands__tint" aria-hidden="true"></span>
+    <div class="stands__line l-wrap" aria-hidden="true"><span class="stands__dash"></span><span class="m-text-3">A</span><span class="m-text-3">B</span><span class="m-text-3">C</span><span class="m-text-3">D</span><span class="m-text-3">E</span><span class="stands__dot"></span></div>
+  </figure>
+  <ol class="stands__list l-wrap">
+    <li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">A</span><h3 class="m-text-6">Station Arches</h3><p class="m-text">1 Example Street, S1 0ZZ. Opposite the station's front steps; our office and workshop.</p><p class="m-text-4 stands__meta">Every day 8:00–20:00 · all four bikes</p></li>
+    <li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">B</span><h3 class="m-text-6">Kelham Island</h3><p class="m-text">Alma Street, by the weir footbridge. The start of the Five Weirs ride.</p><p class="m-text-4 stands__meta">Every day 8:00–20:00 · Town, Pocket, Hauler</p></li>
+    <li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">C</span><h3 class="m-text-6">Division Street</h3><p class="m-text">In the yard behind the old fire station, a minute from West Street tram stop.</p><p class="m-text-4 stands__meta">Every day 9:00–19:00 · Town, Pocket</p></li>
+    <li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">D</span><h3 class="m-text-6">Endcliffe Park</h3><p class="m-text">At the park gates on Rustlings Road, where the Porter valley climb begins.</p><p class="m-text-4 stands__meta">Every day 8:00–19:00 · Town, Climber, Hauler</p></li>
+    <li class="stands__row" data-8b-motion="rise"><span class="m-text-6 stands__code">E</span><h3 class="m-text-6">Hillsborough</h3><p class="m-text">Beside the Middlewood Road tram stop, the nearest stand to the reservoirs.</p><p class="m-text-4 stands__meta">Every day 9:00–18:00 · Town, Climber</p></li>
+  </ol>
+</section>
+<!-- routes: four ride panels that slide sideways past a held stage while a lime line fills and a disc rolls along it (animation: scene:routes) -->
+<section id="routes" data-8b-section="routes">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Four rides from the stands</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">All four are loaded on the bike's screen. Distance, climb and time are at an easy pace on the middle assist level.</p>
+    </div>
+  </header>
+  <div class="routes__track">
+    <div class="routes__stage">
+      <div class="routes__rail l-wrap" aria-hidden="true"><span class="m-rule routes__rule"></span><span class="routes__fill"></span><span class="routes__wheel"></span></div>
+      <div class="routes__row">
+        <article class="routes__panel">
+          <figure class="routes__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1755005616177-90761b770659?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8Y2FuYWwlMjB0b3dwYXRoJTIwYmljeWNsZXxlbnwxfDB8fHwxNzkxNTY3NjAyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" width="1600" height="1067" alt="A river running between trees and brick buildings in the city" loading="lazy"></figure>
+          <div class="routes__text">
+            <h3 class="m-text-6">Five Weirs</h3>
+            <p class="m-text-4 routes__facts">From stand B · 11 km · 40 m of climb · about an hour</p>
+            <p class="m-text">Down the River Don past the old steelworks and five weirs to Meadowhall, back on the other bank. Flat enough for a first ride.</p>
+          </div>
+        </article>
+        <article class="routes__panel">
+          <figure class="routes__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1779447326844-9f8cb91c81d0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Y2FuYWwlMjB0b3dwYXRoJTIwYmljeWNsZXxlbnwxfDB8fHwxNzkxNTY3NjAyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=660&amp;q=60" width="1600" height="900" alt="Narrowboats moored along a canal towpath beside new flats" loading="lazy"></figure>
+          <div class="routes__text">
+            <h3 class="m-text-6">Canal basin</h3>
+            <p class="m-text-4 routes__facts">From stand A · 9 km · 20 m of climb · 50 minutes</p>
+            <p class="m-text">From the station to Victoria Quays, then the towpath east to the Tinsley locks. Narrowboats, herons and one café barge.</p>
+          </div>
+        </article>
+        <article class="routes__panel">
+          <figure class="routes__photo"><img style="background:#a6a6a6" src="https://images.unsplash.com/photo-1789952309869-4b1da44b82a9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9vcmxhbmQlMjByb2FkJTIwY3ljbGluZ3xlbnwxfDB8fHwxNzkxNTY3NjAxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" width="1600" height="1065" alt="A cyclist with an orange backpack riding across misty moorland" loading="lazy"></figure>
+          <div class="routes__text">
+            <h3 class="m-text-6">The Edge</h3>
+            <p class="m-text-4 routes__facts">From stand D · 32 km · 480 m of climb · three hours</p>
+            <p class="m-text">Up the Porter valley and out of the city onto the moor below Stanage Edge. The one climb people come back to brag about.</p>
+          </div>
+        </article>
+        <article class="routes__panel">
+          <figure class="routes__photo"><img style="background:#8ca6a6" src="https://images.unsplash.com/photo-1762199339651-32bb7c984903?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cmVzZXJ2b2lyJTIwaGlsbHMlMjByb2FkfGVufDF8MHx8fDE3OTE1Njc2MDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=60" width="1600" height="929" alt="An autumn reservoir between wooded hills under a wide sky" loading="lazy"></figure>
+          <div class="routes__text">
+            <h3 class="m-text-6">Ladybower</h3>
+            <p class="m-text-4 routes__facts">From stand E · 46 km · 620 m of climb · four hours</p>
+            <p class="m-text">Out along the Loxley valley, round the reservoirs and back. Take a Climber: two batteries cover it with room to spare.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- hire: dark band with three numbered booking steps joined by a filling lime line (animation: scene:hire) -->
+<section id="hire" data-8b-section="hire" class="on-dark">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark-2" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Three steps to a ride</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Book online or walk up to any stand: we keep a few bikes back every morning for walk-ups.</p>
+    </div>
+  </header>
+  <div class="hire__body l-wrap">
+    <div class="hire__line" aria-hidden="true"><span class="hire__track"></span><span class="hire__fill"></span></div>
+    <ol class="hire__steps">
+      <li class="hire__step"><span class="m-text-3 hire__num">1</span><h3 class="m-text-6">Book a slot</h3><p class="m-text">Choose a bike, a stand and a start time. You pay when you collect, and you can cancel free up to an hour before.</p></li>
+      <li class="hire__step"><span class="m-text-3 hire__num">2</span><h3 class="m-text-6">Collect and set up</h3><p class="m-text">Show your booking and a photo ID. We fit the helmet, set the saddle and walk you through the three assist levels in five minutes.</p></li>
+      <li class="hire__step"><span class="m-text-3 hire__num">3</span><h3 class="m-text-6">Ride, return anywhere</h3><p class="m-text">Leave the bike at any of the five stands before it closes. Battery getting low on the way? Swap it at whichever stand you pass.</p></li>
+    </ol>
+  </div>
+</section>
+<!-- kit: photo and a list of six things included with every hire -->
+<section id="kit" data-8b-section="kit">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>In every basket</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Nothing to add at the counter: every hire leaves the stand with the same six things.</p>
+    </div>
+  </header>
+  <div class="kit__body l-wrap">
+    <figure class="kit__photo" data-8b-motion="rise"><img style="background:#a6a68c" src="https://images.unsplash.com/photo-1611485100985-cb332cd79671?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YmljeWNsZSUyMGhlbG1ldCUyMGxvY2t8ZW58MXwwfHx8MTc5MTU2NzYwN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=910&amp;q=60" width="1600" height="1067" alt="A red cycle helmet hung on the handlebars of a silver bike" loading="lazy"></figure>
+    <ul class="kit__list">
+      <li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">Helmet</h3><p class="m-text">Three sizes at every stand, fitted before you ride off.</p></li>
+      <li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">D-lock</h3><p class="m-text">A gold-rated lock with its key on the bike's own ring.</p></li>
+      <li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">Lights</h3><p class="m-text">Front and back, wired to the battery and on after dusk.</p></li>
+      <li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">Phone mount</h3><p class="m-text">With the four rides and every stand already loaded.</p></li>
+      <li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">Pannier</h3><p class="m-text">Twenty waterproof litres for a coat, a picnic or the shopping.</p></li>
+      <li class="kit__item" data-8b-motion="rise"><h3 class="m-text-6">Puncture cover</h3><p class="m-text">Inside the ring road we bring a fresh bike to you within the hour.</p></li>
+    </ul>
+  </div>
+</section>
+<!-- rides: dark band: a group-ride photo opens from a slit while the two words of the heading part, then a date list and a join button (animation: scene:rides) -->
+<section id="rides" data-8b-section="rides" class="on-dark">
+  <div class="rides__stage">
+    <figure class="rides__band"><img style="background:#c0c0a6" src="https://images.unsplash.com/photo-1787058835509-e3bb95bd4854?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z3JvdXAlMjBjeWNsaW5nJTIwY2l0eXxlbnwxfDB8fHwxNzkxNTY3NjA2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1430&amp;q=60" width="1600" height="1083" alt="Seen from above, a group of cyclists riding across sunlit tarmac with long shadows" loading="lazy"><span class="rides__tint" aria-hidden="true"></span></figure>
+    <h2 class="m-text-3 rides__title"><span class="rides__half">Saturday</span> <span class="rides__half">rides</span></h2>
+  </div>
+  <div class="rides__body l-wrap">
+    <p class="m-text-5 rides__lead" data-8b-motion="rise">Every Saturday at 9:30 from stand A. Free with any day hire: a leader at the front, a sweeper at the back and a café stop halfway.</p>
+    <ul class="rides__dates">
+      <li class="rides__date" data-8b-motion="rise"><span class="m-text-4">Sat 10 Oct</span><span class="m-text-6">Five Weirs and the Wicker</span><span class="m-text-4">18 km · easy</span></li>
+      <li class="rides__date" data-8b-motion="rise"><span class="m-text-4">Sat 17 Oct</span><span class="m-text-6">Porter valley to Ringinglow</span><span class="m-text-4">26 km · steady</span></li>
+      <li class="rides__date" data-8b-motion="rise"><span class="m-text-4">Sat 24 Oct</span><span class="m-text-6">The Bradfield loop</span><span class="m-text-4">38 km · hills</span></li>
+      <li class="rides__date" data-8b-motion="rise"><span class="m-text-4">Sat 31 Oct</span><span class="m-text-6">Tinsley canal at dusk</span><span class="m-text-4">15 km · lights on</span></li>
+    </ul>
+    <a class="m-btn-2 rides__join" href="#contact"><span class="m-btn__label">Join a ride</span></a>
+  </div>
+</section>
+<!-- prices: price table of four bikes by hour, half day, day and week, and a monthly pass card -->
+<section id="prices" data-8b-section="prices">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Prices</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Helmet, lock, lights and pannier are always included. Damage cover comes with every hire, with a £50 excess.</p>
+    </div>
+  </header>
+  <div class="prices__body l-wrap">
+    <table class="prices__table" data-8b-motion="rise">
+      <caption class="sr">Hire prices by bike and length of hire</caption>
+      <thead><tr><th class="m-text-4" scope="col">Bike</th><th class="m-text-4" scope="col">1 hour</th><th class="m-text-4" scope="col">Half day</th><th class="m-text-4" scope="col">Day</th><th class="m-text-4" scope="col">Week</th></tr></thead>
+      <tbody>
+        <tr><th class="m-text-6" scope="row">Town</th><td class="m-text-5">£9</td><td class="m-text-5">£22</td><td class="m-text-5">£32</td><td class="m-text-5">£120</td></tr>
+        <tr><th class="m-text-6" scope="row">Pocket</th><td class="m-text-5">£11</td><td class="m-text-5">£26</td><td class="m-text-5">£38</td><td class="m-text-5">£140</td></tr>
+        <tr><th class="m-text-6" scope="row">Climber</th><td class="m-text-5">£14</td><td class="m-text-5">£34</td><td class="m-text-5">£48</td><td class="m-text-5">£180</td></tr>
+        <tr><th class="m-text-6" scope="row">Hauler</th><td class="m-text-5">£16</td><td class="m-text-5">£38</td><td class="m-text-5">£54</td><td class="m-text-5">£195</td></tr>
+      </tbody>
+    </table>
+    <div class="prices__pass" data-8b-motion="rise">
+      <p class="m-text-6">Monthly pass</p>
+      <p class="m-text">A Town bike whenever you want it, collected and returned at any stand, battery swaps included: £79 a month, cancel any time.</p>
+      <a class="m-btn" href="#contact"><span class="m-btn__label">Ask about a pass</span></a>
+    </div>
+  </div>
+</section>
+<!-- reviews: three rider quotes that ride in from alternate sides into one ruled column (animation: scene:reviews) -->
+<section id="reviews" data-8b-section="reviews">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Riders</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">From the comment cards at the stands this summer.</p>
+    </div>
+  </header>
+  <ul class="reviews__lanes">
+    <li class="reviews__lane"><blockquote class="m-text-6">“I had given up riding to work because of the hill up to Crookes. Now I get there before the bus does.”</blockquote><p class="m-text-4">Priya, Walkley · monthly pass</p></li>
+    <li class="reviews__lane"><blockquote class="m-text-6">“Two kids on the back of the Hauler and a picnic in the panniers, park to Botanical Gardens without one grumble.”</blockquote><p class="m-text-4">Tom, Nether Edge · day hire</p></li>
+    <li class="reviews__lane"><blockquote class="m-text-6">“Ladybower on two Climbers with a swap at Hillsborough. Sixty kilometres and we could still walk to the pub.”</blockquote><p class="m-text-4">Ana and Jules, visiting from Leeds</p></li>
+  </ul>
+</section>
+<!-- faq: five questions and answers (native details) -->
+<section id="faq" data-8b-section="faq">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Questions</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Anything else: ring the Station Arches stand, someone is in the workshop all day.</p>
+    </div>
+  </header>
+  <div class="faq__list l-wrap">
+    <details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">Do I need to be fit to ride one?</span><span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">No. The motor helps as soon as you pedal, so you choose how much effort to put in. On the highest assist level most riders climb our steepest streets seated.</p></details>
+    <details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">How old do riders have to be?</span><span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">Sixteen or over to ride on your own. Children from one to seven can ride on the Hauler's seats with a parent pedalling.</p></details>
+    <details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">What if the battery runs low?</span><span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">The screen shows the range left. Ride to any stand and we swap the battery in a minute, free. A flat battery still leaves you a normal bike with light gears.</p></details>
+    <details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">Can I take a bike on the train?</span><span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">The Pocket folds and travels as luggage on every train. The other bikes go on Northern services outside the rush hours, space permitting.</p></details>
+    <details class="faq__item" data-8b-motion="rise"><summary><span class="m-text-6">Do you take a deposit?</span><span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">We hold £200 on a card while the bike is out and release it when you return it. Nothing is taken unless there is damage beyond the £50 excess.</p></details>
+  </div>
+</section>
+<!-- contact: address, phone, e-mail and hours beside a booking form, over a night photo with a scattered stand line (animation: scene:contact) -->
+<section id="contact" data-8b-section="contact">
+  <header class="l-head l-wrap">
+    <span class="m-rule" data-8b-motion="rule"></span>
+    <div class="l-head__row">
+      <h2 class="m-text-3 l-head__title"><span class="m-mark" aria-hidden="true" data-8b-motion="roll"><span class="m-mark__plus"></span></span>Book a bike</h2>
+      <p class="m-text-4 l-head__note" data-8b-motion="rise">Send a request and we confirm by e-mail within the hour, 8:00–20:00. Same-day bookings are fine.</p>
+    </div>
+  </header>
+  <div class="contact__body l-wrap">
+    <address class="contact__details">
+      <p class="m-text-4 contact__label">Stand A and office</p>
+      <p class="m-text-5">1 Example Street<br>Sheffield S1 0ZZ</p>
+      <p class="m-text-4 contact__label">Phone</p>
+      <p class="m-text-5"><a data-8b-placeholder="phone" class="m-link contact__big" href="tel:+441140000000">0114 000 0000</a></p>
+      <p class="m-text-4 contact__label">E-mail</p>
+      <p class="m-text-5"><a data-8b-placeholder="email" class="m-link contact__big" href="mailto:ride@kickstand.example">ride@kickstand.example</a></p>
+      <p class="m-text-4 contact__label">Hours</p>
+      <p class="m-text">Every day 8:00–20:00, March to October; 8:00–18:00 in winter.</p>
+    </address>
+    <form data-8b-placeholder="form" class="contact__form" action="#" method="post">
+      <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__input" type="text" name="name" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">E-mail</span><input class="m-field__input" type="email" name="email" autocomplete="email" required></label>
+      <label class="m-field"><span class="m-field__label">Date</span><input class="m-field__input" type="date" name="date" required></label>
+      <label class="m-field"><span class="m-field__label">Bike</span><select class="m-field__input" name="bike"><option>Town</option><option>Climber</option><option>Hauler</option><option>Pocket</option></select></label>
+      <label class="m-field"><span class="m-field__label">Collect from</span><select class="m-field__input" name="stand"><option>A · Station Arches</option><option>B · Kelham Island</option><option>C · Division Street</option><option>D · Endcliffe Park</option><option>E · Hillsborough</option></select></label>
+      <div class="contact__send"><button class="m-btn" type="submit"><span class="m-btn__label">Request the booking</span></button><p class="m-text-4 contact__status" role="status" hidden>Thank you, your request is in. We will confirm by e-mail within the hour.</p></div>
+    </form>
+  </div>
+  <div class="contact__band on-dark">
+    <img style="background:#0c2626" src="https://images.unsplash.com/photo-1729767616557-3b29c5e08a1e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGJpY3ljbGUlMjBvdmVycGFzcyUyMGNpdHl8ZW58MXwwfHx8MTc5MTU2NzY3OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=60" width="1600" height="1067" alt="A cyclist passing a lit station at night, blurred by the long exposure" loading="lazy">
+    <span class="contact__tint" aria-hidden="true"></span>
+    <div class="contact__marks" aria-hidden="true">
+      <span class="contact__m contact__m--dash"></span>
+      <span class="contact__m contact__m--bar"></span>
+      <span class="contact__m m-text-6">A</span>
+      <span class="contact__m m-text-6">B</span>
+      <span class="contact__m contact__m--dot"></span>
+      <span class="contact__m m-text-6">C</span>
+      <span class="contact__m m-text-6">D</span>
+      <span class="contact__m m-text-6">E</span>
+    </div>
+    <a class="m-disc contact__top" href="#start" aria-label="Back to the top"><span class="m-disc__face"><svg class="m-disc__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 18 18M18 8.5V18H8.5"/></svg></span></a>
+  </div>
+</section>
+</main>
+<!-- footer: dark footer with brand, three link columns and two legal lines -->
+<footer id="footer" data-8b-section="footer" class="on-dark">
+  <span class="m-rule"></span>
+  <div class="footer__grid">
+    <a class="footer__brand" href="#start" aria-label="Kickstand, back to the top"><span class="m-text-6"><span class="m-mark-2" aria-hidden="true"><span class="m-mark__plus"></span></span>Kickstand</span></a>
+    <ul class="footer__col">
+      <li class="m-text-4 footer__head">Ride</li>
+      <li><a class="m-link-2" href="#fleet">The bikes</a></li>
+      <li><a class="m-link-2" href="#routes">Routes</a></li>
+      <li><a class="m-link-2" href="#rides">Saturday rides</a></li>
+    </ul>
+    <ul class="footer__col">
+      <li class="m-text-4 footer__head">Hire</li>
+      <li><a class="m-link-2" href="#hire">How hire works</a></li>
+      <li><a class="m-link-2" href="#prices">Prices</a></li>
+      <li><a class="m-link-2" href="#faq">Questions</a></li>
+    </ul>
+    <ul class="footer__col">
+      <li class="m-text-4 footer__head">Follow</li>
+      <li><a data-8b-placeholder="social" class="m-link-2" href="https://www.instagram.com/">Instagram</a></li>
+      <li><a data-8b-placeholder="social" class="m-link-2" href="https://www.strava.com/">Strava club</a></li>
+      <li><a class="m-link-2" href="#contact">Newsletter</a></li>
+    </ul>
+  </div>
+  <div class="footer__legal m-text-4">
+    <p>© 2026 Kickstand Cycle Hire Ltd · registered in England · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    <p>Riders must be 16 or over · assist limited to 15.5 mph by law</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function navHeight() {
+  const bar = document.querySelector('#nav .nav__bar');
+  return bar ? bar.offsetHeight : 0;
+}
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: .09, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rule(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scaleX: 0, transformOrigin: '0% 50%' }, { scaleX: 1, duration: 1.1, ease: 'power3.inOut' });
+  },
+  rise(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { y: 28, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .8, ease: 'power3.out' });
+  },
+  roll(element, vars = {}) {
+    const size = element.offsetWidth || 40;
+    const distance = size * 2.5;
+    return gsap.timeline(vars).fromTo(element, { x: -distance, rotation: -distance / (size / 2) * 57.2958 }, { x: 0, rotation: 0, duration: 1.1, ease: 'power3.out' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        const group = element.parentElement ? [...element.parentElement.children].filter(child => child.matches(`[data-8b-motion~="${name}"]`)) : [element];
+        const order = Math.max(0, group.indexOf(element));
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 90%', once: true, animation: effects[name](element, { paused: true, delay: Math.min(order, 6) * .08 }) });
+      });
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+
+<script data-8b-part="scene:fleet">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('fleet');
+    const track = section.querySelector('.fleet__track');
+    const stage = section.querySelector('.fleet__stage');
+    const bikes = [...section.querySelectorAll('.fleet__bike')];
+    if (bikes.length < 2) return;
+    const tabs = document.createElement('div');
+    tabs.className = 'fleet__tabs';
+    tabs.setAttribute('aria-hidden', 'true');
+    const tabEls = bikes.map(bike => {
+      const tab = document.createElement('span');
+      tab.className = 'm-text-4 fleet__tab';
+      tab.textContent = bike.querySelector('h3').textContent;
+      tabs.append(tab);
+      return tab;
+    });
+    const marker = document.createElement('span');
+    marker.className = 'fleet__marker';
+    tabs.append(marker);
+    stage.prepend(tabs);
+    section.classList.add('is-staged');
+    section.style.setProperty('--fleet-n', bikes.length);
+    gsap.set(tabEls, { opacity: index => index === 0 ? 1 : .4 });
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'fleet', trigger: track, start: 'top top', end: 'bottom bottom', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline.to({}, { duration: .3 });
+    bikes.forEach((bike, index) => {
+      if (!index) return;
+      const at = .3 + (index - 1) * 1.5;
+      const before = bikes[index - 1];
+      timeline
+        .fromTo(bike.querySelector('.fleet__photo'), { '--fleet-cut': '100%' }, { '--fleet-cut': '0%', duration: 1, ease: 'power2.inOut' }, at)
+        .fromTo(before.querySelector('.fleet__text'), { autoAlpha: 1, y: 0 }, { autoAlpha: 0, y: -36, duration: .45, ease: 'power2.in', immediateRender: false }, at)
+        .fromTo(bike.querySelector('.fleet__text'), { autoAlpha: 0, y: 36 }, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, at + .5)
+        .fromTo(marker, { x: () => tabEls[index - 1].offsetLeft }, { x: () => tabEls[index].offsetLeft, duration: 1, ease: 'power2.inOut', immediateRender: false }, at)
+        .fromTo(tabEls[index - 1], { opacity: 1 }, { opacity: .4, duration: .5, immediateRender: false }, at)
+        .fromTo(tabEls[index], { opacity: .4 }, { opacity: 1, duration: .5, immediateRender: false }, at + .5);
+    });
+    timeline.to({}, { duration: .5 });
+    return () => {
+      tabs.remove();
+      section.classList.remove('is-staged');
+      section.style.removeProperty('--fleet-n');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:routes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('routes');
+    const track = section.querySelector('.routes__track');
+    const stage = section.querySelector('.routes__stage');
+    const row = section.querySelector('.routes__row');
+    const rail = section.querySelector('.routes__rail');
+    const fill = section.querySelector('.routes__fill');
+    const wheel = section.querySelector('.routes__wheel');
+    section.classList.add('is-tracked');
+    const run = () => Math.max(0, row.scrollWidth - stage.clientWidth);
+    const measure = () => section.style.setProperty('--routes-run', run() + 'px');
+    measure();
+    ScrollTrigger.addEventListener('refreshInit', measure);
+    const roll = () => Math.max(0, rail.clientWidth - wheel.offsetWidth - wheel.offsetLeft * 2);
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'routes', trigger: track, start: 'top top', end: 'bottom bottom', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(row, { x: 0 }, { x: () => -run(), duration: 1 }, 0)
+      .fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0)
+      .fromTo(wheel, { x: 0, rotation: 0 }, { x: () => roll(), rotation: () => roll() / (wheel.offsetWidth / 2) * 57.2958, duration: 1 }, 0);
+    return () => {
+      ScrollTrigger.removeEventListener('refreshInit', measure);
+      section.classList.remove('is-tracked');
+      section.style.removeProperty('--routes-run');
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:hire">
+queueMotion(() => {
+  const section = document.getElementById('hire');
+  const fill = section.querySelector('.hire__fill');
+  const steps = [...section.querySelectorAll('.hire__step')];
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 761px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 760px)' }, context => {
+    if (context.conditions.wide) {
+      const timeline = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: 'hire', trigger: section.querySelector('.hire__body'), start: 'top 88%', end: 'top 42%', scrub: .5 }
+      });
+      timeline.fromTo(fill, { scaleX: 0 }, { scaleX: 1, duration: 1 }, 0);
+      steps.forEach((step, index) => {
+        timeline
+          .fromTo(step, { opacity: .25 }, { opacity: 1, duration: .25 }, index * .33)
+          .fromTo(step.querySelector('.hire__num'), { x: -40 }, { x: 0, duration: .3, ease: 'power2.out' }, index * .33);
+      });
+    } else {
+      gsap.fromTo(fill, { scaleY: 0 }, { scaleY: 1, ease: 'none', scrollTrigger: { id: 'hire:line', trigger: section.querySelector('.hire__steps'), start: 'top 75%', end: 'bottom 60%', scrub: .5 } });
+      steps.forEach((step, index) => {
+        gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `hire:step-${index}`, trigger: step, start: 'top 85%', end: 'top 58%', scrub: .5 } })
+          .fromTo(step, { opacity: .25 }, { opacity: 1, duration: 1 }, 0)
+          .fromTo(step.querySelector('.hire__num'), { x: -32 }, { x: 0, duration: 1, ease: 'power2.out' }, 0);
+      });
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:rides">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(prefers-reduced-motion: no-preference) and (min-width: 761px)', narrow: '(prefers-reduced-motion: no-preference) and (max-width: 760px)' }, context => {
+    const section = document.getElementById('rides');
+    const stage = section.querySelector('.rides__stage');
+    const band = section.querySelector('.rides__band');
+    const halves = [...section.querySelectorAll('.rides__half')];
+    const toward = (half, side) => {
+      const middle = stage.clientWidth / 2;
+      const gap = stage.clientWidth * .05;
+      const left = half.offsetLeft, right = left + half.offsetWidth;
+      return side < 0 ? Math.max(0, middle - gap - right) : Math.min(0, middle + gap - left);
+    };
+    const narrow = context.conditions.narrow;
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'rides', trigger: stage, start: 'top 92%', end: 'center 52%', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(band, { '--rides-cut': narrow ? '36%' : '45%' }, { '--rides-cut': '0%', duration: 1, ease: 'power2.inOut' }, 0);
+    if (!narrow) {
+      timeline
+        .fromTo(halves[0], { x: () => toward(halves[0], -1) }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo(halves[1], { x: () => toward(halves[1], 1) }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0);
+    } else {
+      timeline
+        .fromTo(halves[0], { x: () => stage.clientWidth * .18 }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0)
+        .fromTo(halves[1], { x: () => -stage.clientWidth * .18 }, { x: 0, duration: 1, ease: 'power2.inOut' }, 0);
+    }
+  });
+});
+</script>
+<script data-8b-part="scene:reviews">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('reviews');
+    const list = section.querySelector('.reviews__lanes');
+    const lanes = [...section.querySelectorAll('.reviews__lane')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'reviews', trigger: list, start: 'top 95%', end: 'center 58%', scrub: .5, invalidateOnRefresh: true }
+    });
+    lanes.forEach((lane, index) => {
+      timeline.fromTo(lane, { x: () => (index % 2 ? -1 : 1) * innerWidth * (innerWidth < 761 ? .35 : .45) }, { x: 0, duration: 1, ease: 'power3.out' }, index * .12);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:contact">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('contact');
+    const band = section.querySelector('.contact__band');
+    const photo = band.querySelector('img');
+    const marks = [...band.querySelectorAll('.contact__m')];
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'contact', trigger: band, start: 'top bottom', end: 'center 55%', scrub: .5, invalidateOnRefresh: true }
+    });
+    timeline.fromTo(photo, { yPercent: -14, scale: 1.2 }, { yPercent: 0, scale: 1, duration: 1, ease: 'power2.out' }, 0);
+    marks.forEach((mark, index) => {
+      const side = index - (marks.length - 1) / 2;
+      timeline.fromTo(mark, {
+        x: () => -side * band.clientWidth * .045,
+        y: () => (index % 2 ? 1 : -1) * band.clientHeight * (.12 + (index % 3) * .06) + band.clientHeight * .18,
+        rotation: (index % 2 ? 1 : -1) * (40 + index * 12)
+      }, { x: 0, y: 0, rotation: 0, duration: .8, ease: 'power3.out' }, .2 * Math.abs(side) / marks.length);
+    });
+  });
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  const date = form.querySelector('input[type="date"]');
+  date.min = new Date().toISOString().slice(0, 10);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.querySelector('button[type="submit"]').disabled = true;
+  });
+})();
+</script>
+<script data-8b-part="section-script:nav">
+(() => {
+  const root = document.getElementById('nav');
+  const bar = root.querySelector('.nav__bar');
+  const open = root.querySelector('.nav__menu');
+  const menu = root.querySelector('.menu');
+  const close = menu.querySelector('.menu__close');
+  let last = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - last;
+    last = y;
+    if (!menu.hidden) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 120 || travel < -24) bar.classList.remove('is-hidden');
+    else if (travel > 48) bar.classList.add('is-hidden');
+  }, { passive: true });
+  const setMenu = state => {
+    menu.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { bar.classList.remove('is-hidden'); window.lenis?.stop(); close.focus(); }
+    else { window.lenis?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setMenu(true));
+  close.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('.menu__list a')) { menu.hidden = true; open.setAttribute('aria-expanded', 'false'); window.lenis?.start(); } });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+
+</body>
+</html>

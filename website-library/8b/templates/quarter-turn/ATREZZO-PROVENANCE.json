@@ -1,0 +1,44 @@
+{
+  "slug": "quarter-turn",
+  "name": "Quarter Turn",
+  "categories": [
+    "Food and drink",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/board-game-cafe-website-template",
+  "demo": "https://8b.com/templates/quarter-turn/demo.html",
+  "design_md_url": "https://8b.com/templates/quarter-turn/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "3ca0504b2bb8671c9a8671a4b44573de2d78ea21",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "5d69c281a4c1d512332f3961068a2b3980964950",
+    "README.md": "02d02785f43bf3ad7ed57b44f83ab32c72264bed",
+    "AGENTS.md": "4c76053cab6f1c62840186740153963c70eb80e7",
+    "index.html": "728096670cefce620586c4ce7dd1cf4436a391ee",
+    "index.gsap.html": "b11c40a677d4385688ebd48e191816312a86ad88"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "f4c071f11409844ae6dc02aaa76a2eb1b972d047ce5e969d25208d5ec7f9c672",
+    "README.md": "5796fce2ea60ebcf00d79bc5878e7a2431bc010e1d7a251278c92a3b8d1c9984",
+    "AGENTS.md": "527da12020371b5df022e8738be406ea6c706de66a082f123c654d98307d150f",
+    "index.html": "36ec42103a87c7c7cfde59e56c6a2c3417fd195f8930e45ce31b8a91d1afa211",
+    "index.gsap.html": "8839522b24855c8e5f107956f091e5652f1f570016f8ffc82669afaeabc064f4"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

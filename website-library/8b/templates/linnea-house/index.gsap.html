@@ -1,0 +1,1493 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/linnea-house/
+  Source: https://github.com/8bsite/birth-center-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linnea Birth House — midwife-led birth centre in Leith, Edinburgh</title>
+<meta name="description" content="A midwife-led birth centre in Leith: six birth rooms with pools, one small team of midwives from your booking visit to six weeks after your baby arrives.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Linnea Birth House — midwife-led birth centre in Leith, Edinburgh">
+<meta property="og:description" content="A midwife-led birth centre in Leith: six birth rooms with pools, one small team of midwives from your booking visit to six weeks after your baby arrives.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23141016'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23f3cbd5'%3EL%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gb8tc.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewti_Wo7H.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewtG_Wo7H.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewta_Wo7H.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewtq_Wo7H.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewtu_Wo7H.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1gewtW_Wg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gW8tenXg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gf8tenXg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gY8tenXg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gU8tenXg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gV8tenXg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gb8tc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #141016;
+  --color-2: #2c2431;
+  --color-3: #fbf4dc;
+  --color-4: #f3cbd5;
+  --color-5: #ec8667;
+  --color-6: #c73a22;
+  --color-7: #8ea8dd;
+  --color-8: #f5eeb8;
+  --font-1: "Source Serif 4", "Source Serif 4 Fallback", Georgia, serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: clamp(16px, 1.7vw, 24px);
+  --radius-2: 999px;
+  --space-1: clamp(8px, .9vw, 12px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* font fallbacks */
+@font-face { font-family: "Source Serif 4 Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 96.3%; ascent-override: 108%; descent-override: 35.3%; line-gap-override: 0%; }
+@font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.9%; ascent-override: 99.1%; descent-override: 31.1%; line-gap-override: 0%; }
+/* end font fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-3);
+  font-family: var(--font-2);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0;
+  overflow-x: clip;
+}
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+em { font-style: italic; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.u-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 760px) { body { font-size: 16px; } }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; max-width: 62ch; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(52px, 6vw, 96px); font-weight: 340; line-height: .96; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(34px, 3.6vw, 56px); font-weight: 360; line-height: 1.02; letter-spacing: -.025em; text-transform: none; font-style: normal; text-wrap: balance; }
+.m-text-4 { font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1.35; letter-spacing: .01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(22px, 2vw, 30px); font-weight: 380; line-height: 1.24; letter-spacing: -.012em; text-transform: none; font-style: normal; text-wrap: pretty; }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 26px; border: 0; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-1); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-4); transform: translateY(101%); transition: transform .45s cubic-bezier(.6, 0, .2, 1); }
+.m-btn:focus-visible { outline-color: var(--color-3); }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 26px; border: 0; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-3); font-family: var(--font-2); font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-6); transform: translateY(101%); transition: transform .45s cubic-bezier(.6, 0, .2, 1); }
+.m-btn-2:focus-visible { outline-color: var(--color-2); }
+.m-btn__label { position: relative; }
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before { transform: translateY(0); }
+}
+
+.m-link { color: inherit; font-family: var(--font-2); font-size: inherit; font-weight: 500; line-height: inherit; letter-spacing: 0; text-decoration: none; background: linear-gradient(currentColor, currentColor) left bottom / 100% 1px no-repeat; padding-bottom: 2px; transition: background-size .35s cubic-bezier(.6, 0, .2, 1); }
+@media (hover: hover) { .m-link:hover { background-size: 100% 4px; } }
+
+.m-icon { position: relative; display: inline-grid; place-items: center; min-width: 50px; height: 50px; padding: 0 18px; border: 1px solid var(--color-3); border-radius: var(--radius-2); background: transparent; color: var(--color-3); font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1; cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-icon::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: var(--color-3); transform: scale(0); transition: transform .4s cubic-bezier(.6, 0, .2, 1); }
+.m-icon__label { position: relative; }
+@media (hover: hover) { .m-icon:hover { color: var(--color-1); } .m-icon:hover::before { transform: scale(1); } }
+
+.m-pill { display: inline-flex; align-items: center; min-height: 1.9em; padding: .12em .62em .16em; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-1); font-family: var(--font-1); font-size: clamp(20px, 2.2vw, 34px); font-weight: 380; line-height: 1.1; letter-spacing: -.02em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-pill-2 { display: inline-flex; align-items: center; min-height: 1.9em; padding: .12em .62em .16em; border-radius: var(--radius-2); background: var(--color-4); color: color-mix(in oklab, var(--color-6) 74%, var(--color-1)); font-family: var(--font-1); font-size: clamp(20px, 2.2vw, 34px); font-weight: 380; line-height: 1.1; letter-spacing: -.02em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-pill-3 { display: inline-flex; align-items: center; min-height: 1.9em; padding: .12em .62em .16em; border-radius: var(--radius-2); background: var(--color-8); color: var(--color-1); font-family: var(--font-1); font-size: clamp(20px, 2.2vw, 34px); font-weight: 380; line-height: 1.1; letter-spacing: -.02em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-pill-4 { display: inline-flex; align-items: center; gap: .45em; min-height: 30px; padding: 0 12px; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-3); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: .01em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-pill-5 { display: inline-flex; align-items: center; gap: .45em; min-height: 30px; padding: 0 12px; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: .01em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-pill-6 { display: inline-flex; align-items: center; min-height: 1.9em; padding: .12em .62em .16em; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-3); font-family: var(--font-1); font-size: clamp(20px, 2.2vw, 34px); font-weight: 380; line-height: 1.1; letter-spacing: -.02em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-pill-7 { display: inline-flex; align-items: center; min-height: 1.9em; padding: .12em .62em .16em; border-radius: var(--radius-2); background: var(--color-7); color: var(--color-1); font-family: var(--font-1); font-size: clamp(20px, 2.2vw, 34px); font-weight: 380; line-height: 1.1; letter-spacing: -.02em; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-chip { display: inline-grid; place-items: center; width: 1.9em; height: 1.9em; border-radius: 50%; background: var(--color-4); color: var(--color-6); font-size: clamp(20px, 2.2vw, 34px); }
+.m-chip svg { width: 52%; height: 52%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.m-arc { --m-arc-fill: 1; position: relative; width: 100%; aspect-ratio: 1; color: var(--color-2); }
+.m-arc::before, .m-arc__fill { content: ""; position: absolute; inset: 0; border-radius: 50%;
+  -webkit-mask-image: repeating-conic-gradient(from 225deg, var(--color-1) 0deg 1.6deg, transparent 1.6deg 6deg), radial-gradient(closest-side, transparent 80%, var(--color-1) 80.5% 99%, transparent 100%), conic-gradient(from 225deg, var(--color-1) 0deg 270deg, transparent 270deg);
+  -webkit-mask-composite: source-in, source-in;
+  mask-image: repeating-conic-gradient(from 225deg, var(--color-1) 0deg 1.6deg, transparent 1.6deg 6deg), radial-gradient(closest-side, transparent 80%, var(--color-1) 80.5% 99%, transparent 100%), conic-gradient(from 225deg, var(--color-1) 0deg 270deg, transparent 270deg);
+  mask-composite: intersect; }
+.m-arc::before { background: color-mix(in oklab, currentColor 18%, transparent); }
+.m-arc__fill { background: conic-gradient(from 225deg, var(--color-7), var(--color-4) 100deg, var(--color-5) 180deg, var(--color-6) 270deg, var(--color-6));
+  -webkit-mask-image: repeating-conic-gradient(from 225deg, var(--color-1) 0deg 1.6deg, transparent 1.6deg 6deg), radial-gradient(closest-side, transparent 80%, var(--color-1) 80.5% 99%, transparent 100%), conic-gradient(from 225deg, var(--color-1) 0deg calc(var(--m-arc-fill) * 270deg), transparent calc(var(--m-arc-fill) * 270deg + .1deg));
+  mask-image: repeating-conic-gradient(from 225deg, var(--color-1) 0deg 1.6deg, transparent 1.6deg 6deg), radial-gradient(closest-side, transparent 80%, var(--color-1) 80.5% 99%, transparent 100%), conic-gradient(from 225deg, var(--color-1) 0deg calc(var(--m-arc-fill) * 270deg), transparent calc(var(--m-arc-fill) * 270deg + .1deg)); }
+
+.m-surface { position: relative; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-3); overflow: hidden; }
+.m-surface-2 { position: relative; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-1); overflow: hidden; }
+.m-surface-3 { position: relative; border-radius: var(--radius-1); background: var(--color-4); color: var(--color-1); overflow: hidden; }
+
+.m-field { display: grid; gap: 6px; font-family: var(--font-2); font-size: 14px; font-weight: 500; line-height: 1.3; }
+.m-field__control { width: 100%; min-height: 50px; padding: 12px 16px; border: 1px solid color-mix(in oklab, var(--color-1) 45%, transparent); border-radius: calc(var(--radius-1) * .6); background: transparent; color: var(--color-1); font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.4; }
+textarea.m-field__control { min-height: 110px; resize: vertical; }
+.m-field__control:focus-visible { outline: 2px solid var(--color-1); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-board { display: grid; gap: var(--space-1); padding: 0 var(--space-1); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; z-index: 50; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 28px; padding: 14px calc(var(--space-1) + 18px); transition: transform .5s cubic-bezier(.6, 0, .2, 1); }
+#nav::before { content: ""; position: absolute; inset: var(--space-1) var(--space-1) 0; border-radius: var(--radius-2); background: var(--color-2); opacity: 0; transition: opacity .35s; z-index: -1; }
+#nav.is-scrolled::before { opacity: 1; }
+#nav.is-hidden { transform: translateY(-115%); }
+#nav .nav__brand { display: inline-flex; align-items: center; gap: 10px; color: var(--color-3); text-decoration: none; font-family: var(--font-1); font-size: 30px; font-weight: 380; letter-spacing: -.03em; line-height: 1; }
+#nav .nav__mark { position: relative; width: 26px; height: 18px; }
+#nav .nav__mark i { position: absolute; top: 0; width: 18px; height: 18px; border-radius: 50%; border: 2px solid currentColor; }
+#nav .nav__mark i:first-child { left: 0; }
+#nav .nav__mark i:last-child { left: 8px; background: var(--color-4); border-color: var(--color-4); mix-blend-mode: normal; }
+#nav .nav__links { display: flex; gap: 26px; margin-left: auto; font-size: 15px; }
+#nav .nav__menu { display: none; }
+#nav .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; padding: calc(var(--space-1) + 14px) calc(var(--space-1) + 18px) 32px; background: var(--color-2); color: var(--color-3); }
+#nav .menu[hidden] { display: none; }
+#nav .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#nav .menu__word { font-family: var(--font-1); font-size: 30px; font-weight: 380; letter-spacing: -.03em; }
+#nav .menu__links { display: grid; align-content: center; gap: 6px; }
+#nav .menu__links a { font-family: var(--font-1); font-size: 44px; font-weight: 340; letter-spacing: -.03em; line-height: 1.15; text-decoration: none; }
+@media (max-width: 960px) {
+  #nav .nav__links, #nav .nav__cta { display: none; }
+  #nav .nav__menu { display: inline-grid; margin-left: auto; }
+}
+@media (max-width: 760px) {
+  #nav { padding: 10px calc(var(--space-1) + 12px); }
+  #nav .nav__brand { font-size: 26px; }
+  #nav .m-icon { height: 44px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; }
+#opening .opening__screen--1 { display: grid; min-height: 100svh; overflow-x: clip; padding: var(--nav-h, 78px) var(--space-1) var(--space-1); }
+#opening .opening__board { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: var(--space-1); min-height: 560px; }
+#opening .opening__tile { position: relative; min-height: 0; }
+#opening .opening__in { position: relative; height: 100%; border-radius: var(--radius-1); overflow: hidden; background: var(--color-2); }
+#opening .opening__face img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; }
+#opening .opening__drift { position: absolute; inset: -14%; }
+#opening .opening__petals { width: 25%; height: 25%; max-width: none; object-fit: cover; filter: blur(5px) saturate(1.2); transform: scale(4.4); transform-origin: 0 0; }
+#opening .opening__veil { position: absolute; inset: 0; background:
+  linear-gradient(180deg, color-mix(in oklab, var(--color-2) 52%, transparent) 0%, color-mix(in oklab, var(--color-2) 38%, transparent) 46%, color-mix(in oklab, var(--color-6) 30%, transparent) 100%); }
+#opening .opening__fieldtext { position: relative; display: grid; grid-template-rows: auto 1fr auto; justify-items: center; height: 100%; padding: clamp(22px, 2.4vw, 34px); text-align: center; color: var(--color-3); }
+#opening .opening__word { font-family: var(--font-1); font-size: 30px; font-weight: 380; letter-spacing: -.03em; line-height: 1; }
+#opening .opening__head { align-self: center; display: grid; justify-items: center; gap: clamp(22px, 2.6vw, 34px); }
+#opening .opening__head h1 { font-size: clamp(54px, 6.1vw, 98px); }
+#opening .opening__head h1 em { font-weight: 320; letter-spacing: -.03em; }
+#opening .opening__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+#opening .opening__note { align-self: end; }
+#opening .opening__values .opening__in { display: grid; grid-template-rows: 1fr auto; padding: clamp(22px, 2.4vw, 34px); }
+#opening .opening__pills { display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; }
+#opening .opening__pills .m-pill, #opening .opening__pills .m-pill-2, #opening .opening__pills .m-pill-3, #opening .opening__pills .m-chip { font-size: clamp(22px, 2.6vw, 40px); }
+#opening .opening__promise { display: grid; gap: 10px; }
+#opening .opening__promise .m-text-5 { font-size: clamp(24px, 2.3vw, 34px); }
+#opening .opening__promise .m-text { max-width: 24ch; font-size: 14px; line-height: 1.4; color: color-mix(in oklab, var(--color-3) 82%, var(--color-2)); }
+
+#opening .opening__screen--2 { position: relative; display: grid; min-height: 100svh; padding: var(--space-1); }
+#opening .opening__ground { position: absolute; inset: 0; overflow: hidden; background: var(--color-7); }
+#opening .opening__ground-zoom { position: absolute; inset: -8%; transform: scale(1.12); }
+#opening .opening__ground-img { width: 25%; height: 25%; max-width: none; object-fit: cover; filter: blur(6.5px) saturate(1.35); transform: scale(4); transform-origin: 0 0; }
+#opening .opening__ground::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in oklab, var(--color-2) 58%, transparent) 0%, color-mix(in oklab, var(--color-2) 44%, transparent) 52%, color-mix(in oklab, var(--color-6) 26%, transparent) 100%); }
+#opening .opening__grid { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: minmax(0, 1.05fr) minmax(0, 1fr); gap: var(--space-1); min-height: calc(100svh - 2 * var(--space-1)); }
+#opening .opening__swatches { grid-column: 1 / 3; grid-row: 1 / 3; display: flex; flex-direction: column; border-radius: var(--radius-1); overflow: hidden; }
+#opening .opening__swatches a { flex: 1; display: flex; align-items: flex-end; padding: 10px 16px; font-family: var(--font-1); font-size: 20px; font-weight: 380; letter-spacing: -.01em; text-decoration: none; color: var(--color-1); }
+#opening .opening__swatches a:nth-child(1) { background: var(--color-3); }
+#opening .opening__swatches a:nth-child(2) { background: var(--color-4); }
+#opening .opening__swatches a:nth-child(3) { background: var(--color-5); }
+#opening .opening__swatches a:nth-child(4) { background: var(--color-6); color: var(--color-3); }
+#opening .opening__swatches a:nth-child(5) { background: var(--color-7); }
+#opening .opening__swatches a:nth-child(6) { background: var(--color-2); color: var(--color-3); }
+#opening .opening__swatches a:focus-visible { outline-offset: -6px; }
+@media (hover: hover) { #opening .opening__swatches a { transition: padding-left .3s; } #opening .opening__swatches a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; } }
+#opening .opening__statement { grid-column: 3 / 9; grid-row: 1; display: grid; align-content: space-between; gap: 22px; padding: clamp(12px, 1.6vw, 24px) clamp(8px, 1.4vw, 20px) clamp(16px, 2vw, 28px); color: var(--color-3); }
+#opening .opening__statement .m-text-3 { font-size: clamp(42px, 4.7vw, 72px); max-width: 12ch; }
+#opening .opening__statement .m-text { font-size: 18px; max-width: 44ch; }
+#opening .opening__card { grid-column: 3 / 6; grid-row: 2; display: grid; grid-template-rows: auto 1fr; padding: clamp(20px, 2vw, 28px); }
+#opening .opening__card-head .m-text-5 { font-size: clamp(22px, 1.9vw, 28px); }
+#opening .opening__card-head .m-text-4 { color: color-mix(in oklab, var(--color-1) 72%, var(--color-3)); }
+#opening .opening__dial { position: relative; align-self: end; justify-self: center; width: min(100%, 260px); aspect-ratio: 1; display: grid; place-items: center; }
+#opening .opening__dial .m-arc { position: absolute; inset: 0; }
+#opening .opening__dial-value { position: relative; display: grid; justify-items: center; gap: 10px; }
+#opening .opening__dial-value p:first-child { font-family: var(--font-1); font-size: clamp(26px, 2.3vw, 34px); font-weight: 360; letter-spacing: -.03em; line-height: 1; text-align: center; }
+#opening .opening__photo { position: relative; border-radius: var(--radius-1); overflow: hidden; }
+#opening .opening__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#opening .opening__photo--feet { grid-column: 6 / 9; grid-row: 2; }
+#opening .opening__photo--dress { grid-column: 9 / 13; grid-row: 1 / 3; }
+
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__in { animation: opening-tile .95s cubic-bezier(.2, .75, .2, 1) backwards; }
+  #opening .opening__field .opening__in { animation-delay: .08s; }
+  #opening .opening__values .opening__in { animation-delay: .16s; }
+  #opening .opening__head { animation: opening-head .9s .1s cubic-bezier(.2, .75, .2, 1) backwards; }
+  #opening .opening__drift { animation: opening-drift 6.5s ease-in-out infinite alternate; }
+  #opening .opening__pills > li { animation: opening-bob 3.6s ease-in-out infinite alternate; }
+  #opening .opening__pills > li:nth-child(2n) { animation-delay: -1.2s; animation-duration: 4.2s; }
+  #opening .opening__pills > li:nth-child(3n) { animation-delay: -2.1s; }
+  #opening [data-loop].is-paused, #opening [data-loop].is-paused > li { animation-play-state: paused; }
+}
+@keyframes opening-tile { from { clip-path: inset(5% 5% 5% 5% round var(--radius-1)); transform: translateY(26px); } }
+@keyframes opening-head { from { transform: translateY(20px); } }
+@keyframes opening-drift {
+  0% { transform: translate3d(-8%, -5%, 0) rotate(-6deg) scale(1.05); }
+  100% { transform: translate3d(8%, 5%, 0) rotate(6deg) scale(1.18); }
+}
+@keyframes opening-bob { from { transform: translateY(-5px); } to { transform: translateY(5px); } }
+
+@media (max-width: 960px) {
+  #opening .opening__board { grid-template-columns: 1fr 1fr; grid-template-rows: minmax(440px, 1fr) minmax(250px, .5fr); }
+  #opening .opening__field { grid-column: 1 / 3; grid-row: 1; }
+  #opening .opening__face { grid-column: 1; grid-row: 2; }
+  #opening .opening__values { grid-column: 2; grid-row: 2; }
+  #opening .opening__grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto minmax(300px, auto) minmax(280px, auto); }
+  #opening .opening__statement { grid-column: 1 / 3; grid-row: 1; }
+  #opening .opening__swatches { grid-column: 1; grid-row: 2; }
+  #opening .opening__card { grid-column: 2; grid-row: 2; }
+  #opening .opening__photo--feet { grid-column: 1; grid-row: 3; }
+  #opening .opening__photo--dress { grid-column: 2; grid-row: 3; }
+}
+@media (max-width: 760px) {
+  #opening .opening__screen--1 { padding-top: var(--nav-h, 64px); }
+  #opening .opening__board { grid-template-rows: minmax(400px, 1fr) minmax(220px, .48fr); min-height: 0; }
+  #opening .opening__head h1 { font-size: clamp(46px, 14.2vw, 64px); }
+  #opening .opening__statement { padding: 18px 8px 8px; }
+  #opening .opening__statement .m-text-3 { font-size: clamp(38px, 10.6vw, 48px); }
+  #opening .opening__statement .m-text { font-size: 17px; }
+  #opening .opening__dial { width: min(100%, 180px); }
+  #opening .opening__values .opening__in { padding: 16px; }
+  #opening .opening__pills { gap: 6px; }
+  #opening .opening__pills .m-pill, #opening .opening__pills .m-pill-2, #opening .opening__pills .m-pill-3, #opening .opening__pills .m-chip { font-size: 17px; }
+  #opening .opening__promise { display: block; }
+  #opening .opening__promise .m-text { display: none; }
+  #opening .opening__promise .m-text-5 { font-size: 21px; }
+  #opening .opening__swatches a { font-size: 17px; padding: 8px 12px; }
+  #opening .opening__card { padding: 16px; }
+  #opening .opening__dial-value p:first-child { font-size: 28px; }
+}
+}
+</style>
+<style data-8b-part="section:rooms">
+@layer sections {
+#rooms { display: grid; gap: var(--space-1); padding: var(--space-1); }
+#rooms .rooms__intro { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(24px, 4vw, 64px); align-items: end; padding: clamp(28px, 3.4vw, 52px); }
+#rooms .rooms__intro .m-text { color: color-mix(in oklab, var(--color-3) 84%, var(--color-2)); }
+#rooms .rooms__bands { display: grid; gap: var(--space-1); }
+#rooms .rooms__band { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); grid-template-rows: 56px minmax(0, 1fr); min-height: max(470px, 64svh); border-radius: var(--radius-1); overflow: hidden; background: var(--color-3); color: var(--color-1); }
+#rooms .rooms__band--blush { background: var(--color-4); }
+#rooms .rooms__band--coral { background: var(--color-5); }
+#rooms .rooms__band--ember { background: var(--color-6); color: var(--color-3); }
+#rooms .rooms__band--cornflower { background: var(--color-7); }
+#rooms .rooms__band--plum { background: var(--color-2); color: var(--color-3); }
+#rooms .rooms__strip { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 clamp(18px, 2vw, 28px); }
+#rooms .rooms__name { font-size: 30px; }
+#rooms .rooms__body { display: grid; align-content: end; gap: 22px; padding: 16px clamp(18px, 2.2vw, 32px) clamp(22px, 2.6vw, 36px); }
+#rooms .rooms__facts { display: flex; flex-wrap: wrap; gap: 8px; }
+#rooms .rooms__facts > li > span { font-size: clamp(19px, 1.7vw, 25px); }
+#rooms .rooms__body .m-text-5 { max-width: 30ch; }
+#rooms .rooms__photo { position: relative; margin: 0 var(--space-1) var(--space-1) 0; border-radius: calc(var(--radius-1) * .7); overflow: hidden; }
+#rooms .rooms__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#rooms .rooms__every { display: grid; grid-template-columns: 1fr 1.5fr; gap: clamp(24px, 4vw, 64px); min-height: 380px; padding: clamp(28px, 3.4vw, 52px); }
+#rooms .rooms__every-head { display: grid; align-content: space-between; gap: 24px; justify-items: start; }
+#rooms .rooms__list { display: grid; align-content: start; }
+#rooms .rooms__list li { padding: 16px 0; border-top: 1px solid color-mix(in oklab, var(--color-1) 16%, transparent); }
+@media (max-width: 760px) {
+  #rooms .rooms__intro, #rooms .rooms__every { grid-template-columns: 1fr; }
+  #rooms .rooms__band { grid-template-columns: 1fr; grid-template-rows: 48px 220px auto; min-height: max(520px, 66svh); }
+  #rooms .rooms__name { font-size: 25px; }
+  #rooms .rooms__strip .m-text-4 { font-size: 13px; }
+  #rooms .rooms__photo { grid-row: 2; margin: 0 var(--space-1); }
+  #rooms .rooms__body { grid-row: 3; align-content: start; padding-top: 18px; }
+  #rooms .rooms__every { min-height: 300px; }
+}
+}
+</style>
+<style data-8b-part="section:team">
+@layer sections {
+#team { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-1); padding: var(--space-1); }
+#team .team__copy { grid-column: 1 / 6; grid-row: 1; display: grid; align-content: space-between; gap: 28px; justify-items: start; padding: clamp(28px, 3.4vw, 52px); }
+#team .team__copy .m-text { color: color-mix(in oklab, var(--color-1) 84%, var(--color-4)); }
+#team .team__portrait { grid-column: 1 / 6; grid-row: 2; position: relative; min-height: 440px; border-radius: var(--radius-1); overflow: hidden; display: grid; align-content: end; }
+#team .team__portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+#team .team__quote { position: relative; margin: var(--space-1); padding: 20px 22px; display: grid; gap: 10px; }
+#team .team__quote .m-text-5 { font-size: clamp(20px, 1.7vw, 25px); }
+#team .team__field { grid-column: 6 / 13; grid-row: 1 / 3; display: grid; align-content: center; gap: clamp(18px, 2.4vw, 34px); padding: clamp(28px, 3.4vw, 52px); }
+#team .team__row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+#team .team__pill { font-size: clamp(20px, 1.95vw, 34px); }
+#team .team__caption { color: color-mix(in oklab, var(--color-3) 78%, var(--color-2)); }
+@media (max-width: 760px) {
+  #team .team__copy, #team .team__portrait, #team .team__field { grid-column: 1 / -1; grid-row: auto; }
+  #team .team__field { min-height: 480px; }
+  #team .team__row { gap: 6px; }
+  #team .team__pill { font-size: 21px; }
+  #team .team__portrait { min-height: 460px; }
+}
+}
+</style>
+<style data-8b-part="section:pregnancy">
+@layer sections {
+#pregnancy { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-1); padding: var(--space-1); }
+#pregnancy .pregnancy__intro { grid-column: 1 / 5; display: grid; align-content: space-between; justify-items: start; gap: 28px; padding: clamp(28px, 3.4vw, 52px); }
+#pregnancy .pregnancy__intro .m-text { color: color-mix(in oklab, var(--color-3) 84%, var(--color-2)); }
+#pregnancy .pregnancy__list { grid-column: 5 / 13; padding: clamp(18px, 2.4vw, 36px) clamp(28px, 3.4vw, 52px); }
+#pregnancy .pregnancy__row { display: grid; grid-template-columns: 150px minmax(0, 1fr) minmax(0, 1.25fr); gap: 24px; align-items: baseline; padding: 24px 0; }
+#pregnancy .pregnancy__row + .pregnancy__row { border-top: 1px solid color-mix(in oklab, var(--color-1) 14%, transparent); }
+#pregnancy .pregnancy__row .m-text-5 { font-size: clamp(22px, 2vw, 30px); }
+#pregnancy .pregnancy__row .m-pill-4 { justify-self: start; }
+#pregnancy .pregnancy__row .m-text { color: color-mix(in oklab, var(--color-1) 80%, var(--color-3)); }
+@media (max-width: 960px) { #pregnancy .pregnancy__intro, #pregnancy .pregnancy__list { grid-column: 1 / -1; } }
+@media (max-width: 760px) { #pregnancy .pregnancy__row { grid-template-columns: 1fr; gap: 10px; } }
+}
+</style>
+<style data-8b-part="section:rhythm">
+@layer sections {
+#rhythm { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-1); align-items: start; padding: var(--space-1); }
+#rhythm .rhythm__stage { position: sticky; top: var(--nav-h, 78px); height: calc(100svh - var(--nav-h, 78px) - var(--space-1)); min-height: 520px; border-radius: var(--radius-1); overflow: hidden; display: grid; place-items: center; background: var(--color-7); }
+#rhythm .rhythm__field { position: absolute; top: -10%; left: -10%; width: 30%; height: 30%; max-width: none; object-fit: cover; filter: blur(6px) saturate(1.3); transform: scale(4); transform-origin: 0 0; }
+#rhythm .rhythm__stage::after { content: ""; position: absolute; inset: 0; background: linear-gradient(200deg, color-mix(in oklab, var(--color-2) 22%, transparent), transparent 50%, color-mix(in oklab, var(--color-6) 24%, transparent)); }
+#rhythm .rhythm__card { position: relative; z-index: 1; width: min(80%, 400px); padding: clamp(20px, 2.2vw, 30px); display: grid; gap: 18px; }
+#rhythm .rhythm__card-head { display: grid; gap: 4px; }
+#rhythm .rhythm__card-head .m-text-4 { color: color-mix(in oklab, var(--color-1) 72%, var(--color-3)); }
+#rhythm .rhythm__dial { position: relative; width: 100%; aspect-ratio: 1; display: grid; place-items: center; }
+#rhythm .rhythm__dial .m-arc { position: absolute; inset: 0; }
+#rhythm .rhythm__labels { position: relative; display: grid; justify-items: center; text-align: center; }
+#rhythm .rhythm__label, #rhythm .rhythm__default { grid-area: 1 / 1; display: grid; justify-items: center; gap: 12px; }
+#rhythm .rhythm__label { display: none; }
+#rhythm .rhythm__labels .m-text-5 { font-size: clamp(28px, 2.6vw, 40px); max-width: 8ch; line-height: 1.02; }
+#rhythm .rhythm__phases { padding: clamp(28px, 3.4vw, 52px); }
+#rhythm .rhythm__intro { display: grid; gap: 20px; padding-bottom: 28px; }
+#rhythm .rhythm__intro .m-text { color: color-mix(in oklab, var(--color-3) 84%, var(--color-2)); }
+#rhythm .rhythm__phase { display: grid; align-content: center; justify-items: start; gap: 16px; min-height: 60svh; padding: 36px 0; border-top: 1px solid color-mix(in oklab, var(--color-3) 16%, transparent); }
+#rhythm .rhythm__phase .m-text-4 { color: color-mix(in oklab, var(--color-3) 76%, var(--color-2)); }
+#rhythm .rhythm__phase .m-text { color: color-mix(in oklab, var(--color-3) 88%, var(--color-2)); }
+@media (max-width: 760px) {
+  #rhythm { grid-template-columns: 1fr; }
+  #rhythm .rhythm__stage { z-index: 2; height: 46svh; min-height: 340px; }
+  #rhythm .rhythm__card { width: min(86%, 300px); padding: 16px; gap: 10px; grid-template-columns: 1fr; }
+  #rhythm .rhythm__dial { width: 62%; justify-self: center; }
+  #rhythm .rhythm__labels .m-text-5 { font-size: 22px; }
+  #rhythm .rhythm__phase { min-height: 0; padding: 30px 0; }
+}
+}
+</style>
+<style data-8b-part="section:after">
+@layer sections {
+#after { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-1); padding: var(--space-1); }
+#after .after__photo { grid-column: 1 / 6; position: sticky; top: var(--nav-h, 78px); align-self: start; height: calc(100svh - var(--nav-h, 78px) - var(--space-1)); min-height: 480px; border-radius: var(--radius-1); overflow: hidden; }
+#after .after__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 66% 50%; }
+#after .after__letter { grid-column: 6 / 13; display: grid; gap: var(--space-1); perspective: 1400px; }
+#after .after__head { display: grid; gap: 22px; padding: clamp(28px, 3.4vw, 52px); }
+#after .after__days { display: flex; flex-wrap: wrap; gap: 8px; }
+#after .after__panel { padding: clamp(26px, 3vw, 44px); transform-origin: 50% 0; }
+#after .after__panel .m-text-5 { font-size: clamp(24px, 2.3vw, 34px); max-width: 32ch; }
+@media (max-width: 760px) {
+  #after .after__photo, #after .after__letter { grid-column: 1 / -1; }
+  #after .after__photo { position: relative; top: auto; height: auto; min-height: 380px; }
+}
+}
+</style>
+<style data-8b-part="section:house">
+@layer sections {
+#house { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-1); padding: var(--space-1); }
+#house .house__title { grid-column: 1 / 6; grid-row: 1; display: grid; align-content: space-between; gap: 24px; padding: clamp(28px, 3.4vw, 52px); }
+#house .house__title .m-text { color: color-mix(in oklab, var(--color-3) 84%, var(--color-2)); }
+#house .house__photo { position: relative; min-height: 300px; border-radius: var(--radius-1); overflow: hidden; display: grid; align-content: end; justify-items: start; }
+#house .house__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#house .house__photo figcaption { position: relative; margin: var(--space-1); }
+#house .house__photo--door { grid-column: 6 / 9; grid-row: 1 / 3; min-height: 640px; }
+#house .house__photo--kitchen { grid-column: 9 / 13; grid-row: 1; }
+#house .house__photo--garden { grid-column: 1 / 6; grid-row: 2; }
+#house .house__facts { grid-column: 9 / 13; grid-row: 2; display: flex; flex-wrap: wrap; align-content: center; gap: 8px; padding: clamp(22px, 2.6vw, 36px); }
+#house .house__facts .m-pill-6 { font-size: clamp(19px, 1.7vw, 25px); }
+@media (max-width: 760px) {
+  #house .house__title, #house .house__photo--door, #house .house__photo--kitchen, #house .house__photo--garden, #house .house__facts { grid-column: 1 / -1; grid-row: auto; }
+  #house .house__photo--door { min-height: 440px; }
+  #house .house__photo { min-height: 260px; }
+}
+}
+</style>
+<style data-8b-part="section:classes">
+@layer sections {
+#classes { padding: var(--space-1); }
+#classes .classes__stage { display: grid; gap: var(--space-1); }
+#classes .classes__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px 40px; padding: clamp(24px, 3vw, 44px); }
+#classes .classes__head .m-text { color: color-mix(in oklab, var(--color-3) 84%, var(--color-2)); max-width: 40ch; }
+#classes .classes__track { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-1); }
+#classes .classes__track > li { grid-column: span 2; }
+#classes .classes__track > li:nth-child(n + 4) { grid-column: span 3; }
+#classes .classes__tile { position: relative; min-height: 460px; border-radius: var(--radius-1); overflow: hidden; display: grid; align-content: end; background: var(--color-2); }
+#classes .classes__tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#classes .classes__tile .classes__blur { z-index: 1; top: -6%; left: -6%; width: 25%; height: 25%; filter: blur(4.5px) saturate(1.2); transform: scale(4.96); transform-origin: 0 0; opacity: 0; }
+#classes .classes__veil { position: absolute; z-index: 1; inset: 0; background: var(--color-4); mix-blend-mode: multiply; opacity: 0; }
+#classes .classes__tile:nth-child(2) .classes__veil { background: var(--color-8); }
+#classes .classes__tile:nth-child(3) .classes__veil { background: var(--color-7); }
+#classes .classes__tile:nth-child(4) .classes__veil { background: var(--color-5); }
+#classes .classes__tile:nth-child(5) .classes__veil { background: var(--color-6); }
+#classes .classes__card { position: relative; z-index: 2; margin: var(--space-1); padding: 18px 20px; display: grid; gap: 8px; }
+#classes .classes__card .m-text-5 { font-size: clamp(22px, 2vw, 30px); }
+#classes .classes__meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; color: color-mix(in oklab, var(--color-1) 76%, var(--color-3)); }
+@media (max-width: 960px) { #classes .classes__track { grid-template-columns: 1fr 1fr; } #classes .classes__track > li, #classes .classes__track > li:nth-child(n + 4) { grid-column: auto; } }
+@media (max-width: 760px) { #classes .classes__track { grid-template-columns: 1fr; } #classes .classes__tile { min-height: 420px; } }
+}
+</style>
+<style data-8b-part="section:stories">
+@layer sections {
+#stories { display: grid; gap: var(--space-1); padding: var(--space-1); }
+#stories .stories__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px 40px; padding: clamp(24px, 3vw, 44px); }
+#stories .stories__head .m-text { color: color-mix(in oklab, var(--color-3) 84%, var(--color-2)); max-width: 40ch; }
+#stories .stories__in { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: var(--space-1); min-height: min(72svh, 640px); padding: var(--space-1); transform-origin: 50% 0; }
+#stories .stories__card:nth-child(3) .stories__in { background: var(--color-8); }
+#stories .stories__photo { position: relative; min-height: 320px; border-radius: calc(var(--radius-1) * .7); overflow: hidden; }
+#stories .stories__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#stories .stories__quote { display: grid; align-content: space-between; gap: 28px; padding: clamp(18px, 2.6vw, 40px); }
+#stories .stories__quote blockquote { font-size: clamp(25px, 2.5vw, 38px); line-height: 1.2; }
+#stories .stories__quote .m-text-4 { color: color-mix(in oklab, var(--color-1) 74%, var(--color-3)); }
+#stories .stories__dim { position: absolute; inset: 0; border-radius: inherit; background: var(--color-1); opacity: 0; pointer-events: none; }
+@media (max-width: 760px) {
+  #stories .stories__in { grid-template-columns: 1fr; min-height: 0; }
+  #stories .stories__photo { min-height: 240px; }
+  #stories .stories__quote blockquote { font-size: 23px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-1); align-items: start; padding: var(--space-1); }
+#faq .faq__head { grid-column: 1 / 5; display: grid; gap: 22px; justify-items: start; padding: clamp(28px, 3.4vw, 52px); }
+#faq .faq__head .m-text { color: color-mix(in oklab, var(--color-1) 84%, var(--color-4)); }
+#faq .faq__list { grid-column: 5 / 13; padding: clamp(12px, 2vw, 28px) clamp(24px, 3.4vw, 52px); }
+#faq details + details { border-top: 1px solid color-mix(in oklab, var(--color-3) 16%, transparent); }
+#faq summary { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 28px); font-weight: 380; line-height: 1.2; letter-spacing: -.012em; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary::after { content: ""; flex: none; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(var(--color-1), var(--color-1)) center / 12px 2px no-repeat, linear-gradient(var(--color-1), var(--color-1)) center / 2px 12px no-repeat, var(--color-4); transition: transform .35s; }
+#faq details[open] summary::after { transform: rotate(45deg); }
+#faq details .m-text { padding: 0 54px 24px 0; color: color-mix(in oklab, var(--color-3) 86%, var(--color-2)); }
+#faq summary:focus-visible { outline-offset: 4px; }
+@media (max-width: 960px) { #faq .faq__head, #faq .faq__list { grid-column: 1 / -1; } }
+@media (max-width: 760px) { #faq details .m-text { padding-right: 0; } }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--space-1); padding: var(--space-1); }
+#visit .visit__form { grid-column: 1 / 8; display: grid; gap: 26px; padding: clamp(28px, 3.4vw, 52px); }
+#visit .visit__form > .m-text { color: color-mix(in oklab, var(--color-1) 80%, var(--color-3)); }
+#visit .visit__fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+#visit .visit__fields .visit__wide { grid-column: 1 / -1; }
+#visit .visit__send { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+#visit .visit__status { font-weight: 500; }
+#visit .visit__contact { grid-column: 8 / 13; display: grid; align-content: space-between; gap: 30px; padding: clamp(28px, 3.4vw, 52px); }
+#visit .visit__line { display: grid; gap: 6px; }
+#visit .visit__line .m-text-4 { color: color-mix(in oklab, var(--color-3) 74%, var(--color-2)); }
+#visit .visit__phone { font-family: var(--font-1); font-size: clamp(30px, 3vw, 46px); font-weight: 360; letter-spacing: -.02em; line-height: 1.05; }
+#visit .visit__mark { grid-column: 1 / -1; position: relative; min-height: max(360px, 52svh); border-radius: var(--radius-1); overflow: hidden; display: grid; place-items: center; background: var(--color-7); }
+#visit .visit__drift { position: absolute; inset: -12%; transform: scale(1.1); }
+#visit .visit__field { width: 25%; height: 25%; max-width: none; object-fit: cover; filter: blur(6.5px) saturate(1.3); transform: scale(4); transform-origin: 0 0; }
+#visit .visit__mark::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in oklab, var(--color-2) 40%, transparent), color-mix(in oklab, var(--color-2) 30%, transparent)); }
+#visit .visit__word { position: relative; z-index: 1; font-size: min(30vw, calc((100vw - 6 * var(--space-1)) / (var(--len) * .5))); font-weight: 560; line-height: .9; color: var(--color-3); }
+#visit .visit__tag { position: absolute; z-index: 1; left: clamp(16px, 2.2vw, 30px); right: clamp(16px, 2.2vw, 30px); bottom: clamp(16px, 2vw, 28px); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
+@media (max-width: 960px) { #visit .visit__form, #visit .visit__contact { grid-column: 1 / -1; } }
+@media (max-width: 760px) { #visit .visit__fields { grid-template-columns: 1fr; } #visit .visit__mark { min-height: 300px; } #visit .visit__tag { justify-content: flex-start; } }
+}
+</style>
+<style data-8b-part="scene-style:rooms">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #rooms[data-rooms-staged] .rooms__band, #rooms[data-rooms-staged] .rooms__every { will-change: transform; }
+}
+}
+</style>
+<style data-8b-part="scene-style:rhythm">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #rhythm[data-rhythm-staged] .rhythm__default { display: none; }
+  #rhythm[data-rhythm-staged] .rhythm__label { display: grid; opacity: 0; transform: translateY(14px); transition: opacity .45s, transform .45s cubic-bezier(.2, .7, .2, 1); }
+  #rhythm[data-rhythm-staged] .rhythm__label.is-active { opacity: 1; transform: none; }
+  #rhythm[data-rhythm-staged] .rhythm__phase { opacity: .3; transition: opacity .5s; }
+  #rhythm[data-rhythm-staged] .rhythm__phase.is-active { opacity: 1; }
+}
+}
+</style>
+<style data-8b-part="scene-style:classes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #classes[data-classes-staged] { --classes-tile: min(34vw, 470px); }
+  #classes[data-classes-staged] .classes__stage { height: 100svh; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); padding: var(--space-1) 0; overflow: clip; }
+  #classes[data-classes-staged] .classes__track { display: flex; width: max-content; padding: 0 calc(50vw - var(--classes-tile) / 2 - var(--space-1)); }
+  #classes[data-classes-staged] .classes__tile { width: var(--classes-tile); min-height: 0; }
+  #classes[data-classes-staged] .classes__tile .classes__blur { opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #classes[data-classes-staged] { --classes-tile: 78vw; }
+}
+}
+</style>
+<style data-8b-part="scene-style:stories">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #stories[data-stories-staged] .stories__card { position: sticky; top: calc(var(--nav-h, 78px) + var(--stories-i, 0) * 16px); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { padding: var(--space-1); }
+#footer .footer__in { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 28px; padding: clamp(28px, 3vw, 48px); }
+#footer .footer__brand { display: grid; align-content: start; gap: 14px; }
+#footer .footer__word { font-family: var(--font-1); font-size: 40px; font-weight: 360; letter-spacing: -.03em; line-height: 1; }
+#footer .footer__col { display: grid; align-content: start; gap: 8px; font-size: 15px; }
+#footer .footer__col .m-text-4 { color: color-mix(in oklab, var(--color-3) 70%, var(--color-2)); margin-bottom: 4px; }
+#footer .footer__small { grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 22px; border-top: 1px solid color-mix(in oklab, var(--color-3) 18%, transparent); color: color-mix(in oklab, var(--color-3) 72%, var(--color-2)); }
+@media (max-width: 760px) { #footer .footer__in { grid-template-columns: 1fr 1fr; } #footer .footer__brand { grid-column: 1 / -1; } }
+}
+</style>
+</head>
+<body>
+<!-- navigation: brand mark and name, five section links, a Book a visit button and a Menu button with a full-screen menu -->
+<header id="nav" class="nav" data-8b-section="navigation">
+  <a class="nav__brand" href="#opening" aria-label="Linnea Birth House, back to the top"><span class="nav__mark" aria-hidden="true"><i></i><i></i></span><span>Linnea</span></a>
+  <nav class="nav__links" aria-label="Main">
+    <a class="m-link" href="#rooms">Rooms</a>
+    <a class="m-link" href="#team">Midwives</a>
+    <a class="m-link" href="#pregnancy">Your care</a>
+    <a class="m-link" href="#classes">Classes</a>
+    <a class="m-link" href="#faq">Questions</a>
+  </nav>
+  <a class="m-btn nav__cta" href="#visit"><span class="m-btn__label">Book a visit</span></a>
+  <button class="m-icon nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-icon__label">Menu</span></button>
+  <div id="menu" class="menu" data-lenis-prevent hidden>
+    <div class="menu__top"><span class="menu__word">Linnea</span><button class="m-icon menu__close" type="button"><span class="m-icon__label">Close</span></button></div>
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#rooms">Rooms</a>
+      <a href="#team">Midwives</a>
+      <a href="#pregnancy">Your care</a>
+      <a href="#classes">Classes</a>
+      <a href="#faq">Questions</a>
+      <a href="#visit">Book a visit</a>
+    </nav>
+    <p class="m-text-4">Labour line, any hour: <a data-8b-placeholder="phone" class="m-link" href="tel:+441310000001">0131 000 0001</a></p>
+  </div>
+</header>
+
+<main>
+<!-- opening: three tiles with a portrait, the h1 over a drifting flower photo and a values tile, then a second screen with six room swatches, a statement, a visits dial and two photos (animation: scene:opening) -->
+<section id="opening" class="opening" data-8b-section="opening" aria-labelledby="opening-title">
+  <div class="opening__screen opening__screen--1">
+    <div class="opening__board">
+      <figure class="opening__tile opening__face">
+        <div class="opening__in"><img srcset="https://images.unsplash.com/photo-1786874228053-886559a4bc25?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHdvbWFuJTIwc21pbGluZyUyMHJlZCUyMGRyZXNzJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTQ1NDMxNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60 270w, https://images.unsplash.com/photo-1786874228053-886559a4bc25?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHdvbWFuJTIwc21pbGluZyUyMHJlZCUyMGRyZXNzJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTQ1NDMxNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=480&amp;q=60 480w" sizes="(max-width: 767px) 90px, 38vw" style="background:#c0a6a6" src="https://images.unsplash.com/photo-1786874228053-886559a4bc25?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHdvbWFuJTIwc21pbGluZyUyMHJlZCUyMGRyZXNzJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTQ1NDMxNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=480&amp;q=60" width="800" height="1200" alt="A woman in a red dress smiling up into warm light"></div>
+      </figure>
+      <div class="opening__tile opening__field">
+        <div class="opening__in">
+          <div class="opening__drift" data-loop><img fetchpriority="high" style="background:#5973a6" class="opening__petals" src="https://images.unsplash.com/photo-1733208660872-29fdbe49c70f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGluayUyMGZsb3dlciUyMGJsdWUlMjBza3l8ZW58MXwwfHx8MTc5MTQ1NDM1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1200" height="800" alt=""></div>
+          <div class="opening__veil"></div>
+          <div class="opening__fieldtext">
+            <p class="opening__word">Linnea Birth House</p>
+            <div class="opening__head">
+              <h1 id="opening-title" class="m-text-2">Birth that keeps <em>your</em> rhythm</h1>
+              <div class="opening__actions">
+                <a class="m-btn" href="#visit"><span class="m-btn__label">Book a visit</span></a>
+                <a class="m-btn-2" href="#rooms"><span class="m-btn__label">See the rooms</span></a>
+              </div>
+            </div>
+            <p class="m-pill-4 opening__note">Midwife-led birth centre · Leith</p>
+          </div>
+        </div>
+      </div>
+      <div class="opening__tile opening__values">
+        <div class="opening__in">
+          <ul class="opening__pills" data-loop>
+            <li><span class="m-pill">Midwife-led</span></li>
+            <li><span class="m-chip" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3.5c3.2 4 5.5 7 5.5 10a5.5 5.5 0 0 1-11 0c0-3 2.3-6 5.5-10z"/></svg></span></li>
+            <li><span class="m-chip" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/></svg></span></li>
+            <li><span class="m-pill-2">Your own room</span></li>
+            <li><span class="m-pill-3">Water birth</span></li>
+            <li><span class="m-pill-3">One team, start to finish</span></li>
+          </ul>
+          <div class="opening__promise">
+            <p class="m-text-5">Six rooms, one team</p>
+            <p class="m-text">For anyone with a straightforward pregnancy, booked from eight weeks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="opening__screen opening__screen--2">
+    <div class="opening__ground"><div class="opening__ground-zoom"><img style="background:#5973a6" class="opening__ground-img" src="https://images.unsplash.com/photo-1733208660872-29fdbe49c70f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGluayUyMGZsb3dlciUyMGJsdWUlMjBza3l8ZW58MXwwfHx8MTc5MTQ1NDM1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1200" height="800" alt=""></div></div>
+    <div class="opening__grid">
+      <nav class="opening__swatches" aria-label="The six rooms">
+        <a href="#room-milk">Milk</a>
+        <a href="#room-blush">Blush</a>
+        <a href="#room-coral">Coral</a>
+        <a href="#room-ember">Ember</a>
+        <a href="#room-cornflower">Cornflower</a>
+        <a href="#room-plum">Plum</a>
+      </nav>
+      <div class="opening__statement">
+        <h2 class="m-text-3">No wards. No strangers at the door.</h2>
+        <p class="m-text">Linnea is run by midwives, not a hospital rota. You meet your team of four at booking, you labour in a room that is yours alone, and one of those four faces is there when your baby arrives.</p>
+      </div>
+      <div class="opening__card m-surface-2">
+        <div class="opening__card-head">
+          <p class="m-text-5">Your visits</p>
+          <p class="m-text-4">From booking to the six-week goodbye</p>
+        </div>
+        <div class="opening__dial">
+          <div class="m-arc" aria-hidden="true"><span class="m-arc__fill"></span></div>
+          <div class="opening__dial-value">
+            <p>12 visits</p>
+            <p class="m-pill-4">All with your team</p>
+          </div>
+        </div>
+      </div>
+      <figure class="opening__photo opening__photo--feet"><img style="background:#f3d9c0" src="https://images.unsplash.com/photo-1578533765854-b6c2c74c64e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fG5ld2Jvcm4lMjBiYWJ5JTIwbW90aGVyJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTQ1NDMxN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=60" width="1200" height="800" alt="A newborn's feet resting in a parent's hands" loading="lazy"></figure>
+      <figure class="opening__photo opening__photo--dress"><img style="background:#a60c26" src="https://images.unsplash.com/photo-1783701330795-321061840b6a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHByZWduYW50JTIwd29tYW4lMjByZWQlMjBkcmVzc3xlbnwxfDB8fHwxNzkxNDU0MzU3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=60" width="1200" height="800" alt="A hand with a wedding ring resting on a red ruffled dress over a pregnant belly" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+<!-- rooms: six coloured bands, one per birth room, that unfold from their title strips as you scroll, then an "In every room" tile (animation: scene:rooms) -->
+<section id="rooms" class="rooms" data-8b-section="rooms" aria-labelledby="rooms-title">
+  <div class="rooms__intro m-surface">
+    <h2 id="rooms-title" class="m-text-3" data-8b-motion="rise">Six rooms, each named for the light it keeps</h2>
+    <p class="m-text">Every room has a door that closes, a pool or a deep bath, a low double bed for afterwards and a light you can dim to almost nothing. Choose one at your 34-week visit; we keep it ready for you when labour starts.</p>
+  </div>
+  <ol class="rooms__bands">
+    <li class="rooms__band rooms__band--milk" id="room-milk">
+      <div class="rooms__strip"><h3 class="m-text-3 rooms__name">Milk</h3><p class="m-text-4">Room 1 · the deepest pool</p></div>
+      <div class="rooms__body">
+        <ul class="rooms__facts"><li><span class="m-pill-6">Birth pool</span></li><li><span class="m-pill-6">North light</span></li><li><span class="m-pill-6">Garden door</span></li></ul>
+        <p class="m-text-5">The palest room, with the pool under a tall north window. Most first births here begin in Milk.</p>
+      </div>
+      <figure class="rooms__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1778936317499-2f21de6baab6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8YmF0aHR1YiUyMHNvZnQlMjBsaWdodCUyMHdpbmRvd3xlbnwxfDB8fHwxNzkxNDU0MzYwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="1200" height="800" alt="A white freestanding bath under a tall window with sheer curtains" loading="lazy"></figure>
+    </li>
+    <li class="rooms__band rooms__band--blush" id="room-blush">
+      <div class="rooms__strip"><h3 class="m-text-3 rooms__name">Blush</h3><p class="m-text-4">Room 2 · low bed, warm walls</p></div>
+      <div class="rooms__body">
+        <ul class="rooms__facts"><li><span class="m-pill-6">Birth pool</span></li><li><span class="m-pill-6">Double bed</span></li><li><span class="m-pill-6">Birth stool</span></li></ul>
+        <p class="m-text-5">Late sun comes through the west window. The bed stays low, so you can kneel and lean against it.</p>
+      </div>
+      <figure class="rooms__photo"><img style="background:#f3c08c" src="https://images.unsplash.com/photo-1697120176674-46b83405ec63?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJlZHJvb20lMjBzb2Z0JTIwbW9ybmluZyUyMGxpZ2h0JTIwbGluZW58ZW58MXwwfHx8MTc5MTQ1NDM2Mnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="1200" height="800" alt="Warm evening light across white pillows on a low bed" loading="lazy"></figure>
+    </li>
+    <li class="rooms__band rooms__band--coral" id="room-coral">
+      <div class="rooms__strip"><h3 class="m-text-3 rooms__name">Coral</h3><p class="m-text-4">Room 3 · the quiet one</p></div>
+      <div class="rooms__body">
+        <ul class="rooms__facts"><li><span class="m-pill-6">Deep bath</span></li><li><span class="m-pill-6">Sling and rope</span></li><li><span class="m-pill-6">Linen blinds</span></li></ul>
+        <p class="m-text-5">At the back of the house, away from the street. Linen blinds soften the morning to a glow.</p>
+      </div>
+      <figure class="rooms__photo"><img style="background:#735959" src="https://images.unsplash.com/photo-1623658423238-8307df454e11?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fGN1cnRhaW4lMjBzdW5saWdodCUyMHdpbmRvd3xlbnwxfDB8fHwxNzkxNDU0MzY0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="1200" height="800" alt="Linen curtains with soft sunlight falling across a floor" loading="lazy"></figure>
+    </li>
+    <li class="rooms__band rooms__band--ember" id="room-ember">
+      <div class="rooms__strip"><h3 class="m-text-3 rooms__name">Ember</h3><p class="m-text-4">Room 4 · for long nights</p></div>
+      <div class="rooms__body">
+        <ul class="rooms__facts"><li><span class="m-pill">Birth pool</span></li><li><span class="m-pill">Lamps only</span></li><li><span class="m-pill">Partner’s bed</span></li></ul>
+        <p class="m-text-5">Lit only by lamps. A fold-out bed lets your partner sleep beside you through a long labour.</p>
+      </div>
+      <figure class="rooms__photo"><img style="background:#8c7373" src="https://images.unsplash.com/photo-1789930153790-6ccf207aed1d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8d2FybSUyMGxhbXAlMjBiZWRyb29tJTIwZXZlbmluZ3xlbnwxfDB8fHwxNzkxNDU0MzYzfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="1200" height="800" alt="A table lamp with a yellow shade glowing beside a bed" loading="lazy"></figure>
+    </li>
+    <li class="rooms__band rooms__band--cornflower" id="room-cornflower">
+      <div class="rooms__strip"><h3 class="m-text-3 rooms__name">Cornflower</h3><p class="m-text-4">Room 5 · opens to the garden</p></div>
+      <div class="rooms__body">
+        <ul class="rooms__facts"><li><span class="m-pill-6">Birth pool</span></li><li><span class="m-pill-6">Garden doors</span></li><li><span class="m-pill-6">Own shower</span></li></ul>
+        <p class="m-text-5">Glass doors open onto the walled garden, for walking through early labour in the fresh air.</p>
+      </div>
+      <figure class="rooms__photo"><img style="background:#404026" src="https://images.unsplash.com/photo-1764422097784-0eaa2340d0e1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2FyZGVuJTIwZG9vciUyMG9wZW4lMjBwbGFudHN8ZW58MXwwfHx8MTc5MTQ1NDM2NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="1200" height="800" alt="Open glass doors leading from a quiet room into a green courtyard" loading="lazy"></figure>
+    </li>
+    <li class="rooms__band rooms__band--plum" id="room-plum">
+      <div class="rooms__strip"><h3 class="m-text-3 rooms__name">Plum</h3><p class="m-text-4">Room 6 · the darkest room</p></div>
+      <div class="rooms__body">
+        <ul class="rooms__facts"><li><span class="m-pill">Deep bath</span></li><li><span class="m-pill">Blackout blinds</span></li><li><span class="m-pill">Red night lamp</span></li></ul>
+        <p class="m-text-5">Kept dark for anyone who labours best with no light at all. Your midwife works by a small red lamp.</p>
+      </div>
+      <figure class="rooms__photo"><img style="background:#0c2640" src="https://images.unsplash.com/photo-1540853072004-c9f9e2cdc503?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8ZGltJTIwYmVkcm9vbSUyMG5pZ2h0fGVufDF8MHx8fDE3OTE0NTQ0MjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="1200" height="800" alt="A dark room at night with deep blue curtains and a chair" loading="lazy"></figure>
+    </li>
+  </ol>
+  <div class="rooms__every m-surface-2">
+    <div class="rooms__every-head">
+      <h3 class="m-text-3">In every room</h3>
+      <a class="m-btn-2" href="#visit"><span class="m-btn__label">Choose yours at a tour</span></a>
+    </div>
+    <ul class="rooms__list m-text">
+      <li>A door that closes, and only your people inside</li>
+      <li>Warm water, massage, TENS, and gas and air</li>
+      <li>A midwife you have met, and a second one for the birth</li>
+      <li>Tea, toast, and a double bed for your first night together</li>
+    </ul>
+  </div>
+</section>
+
+<!-- team: a tile with twelve midwives in three teams of four, scattered pills that settle into rows, and a portrait with a quote (animation: scene:team) -->
+<section id="team" class="team" data-8b-section="team" aria-labelledby="team-title">
+  <div class="team__copy m-surface-3">
+    <h2 id="team-title" class="m-text-3" data-8b-motion="rise">Twelve midwives. You get four of them.</h2>
+    <p class="m-text">Linnea’s midwives work in three small teams. At booking you are given one, and those four do every visit, answer the labour line and come to your birth. One of them is always on call for you.</p>
+    <a class="m-btn-2" href="#visit"><span class="m-btn__label">Meet them at a tour</span></a>
+  </div>
+  <div class="team__field m-surface" aria-label="The three teams">
+    <ul class="team__row">
+      <li><span class="m-pill-2 team__pill team__pill--team">Team Rowan</span></li>
+      <li><span class="m-pill team__pill">Ama</span></li>
+      <li><span class="m-pill team__pill">Isla</span></li>
+      <li><span class="m-pill team__pill">Morven</span></li>
+      <li><span class="m-pill team__pill">Priya</span></li>
+    </ul>
+    <ul class="team__row">
+      <li><span class="m-pill-3 team__pill team__pill--team">Team Alder</span></li>
+      <li><span class="m-pill team__pill">Rafael</span></li>
+      <li><span class="m-pill team__pill">Kirsty</span></li>
+      <li><span class="m-pill team__pill">Joanna</span></li>
+      <li><span class="m-pill team__pill">Leah</span></li>
+    </ul>
+    <ul class="team__row">
+      <li><span class="m-pill-7 team__pill team__pill--team">Team Hazel</span></li>
+      <li><span class="m-pill team__pill">Sinead</span></li>
+      <li><span class="m-pill team__pill">Ewa</span></li>
+      <li><span class="m-pill team__pill">Catriona</span></li>
+      <li><span class="m-pill team__pill">Thandi</span></li>
+    </ul>
+    <p class="m-text-4 team__caption">Your team is chosen by the area you live in, so the midwife who visits you at home lives nearby too.</p>
+  </div>
+  <figure class="team__portrait">
+    <img style="background:#0c260c" src="https://images.unsplash.com/photo-1760124146290-a896872ae49a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fHdvbWFuJTIwcG9ydHJhaXQlMjBzbWlsaW5nJTIwd2FybSUyMGxpZ2h0fGVufDF8MXx8fDE3OTE0NTQ0MTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" width="800" height="1200" alt="Ama, a midwife of Team Rowan, smiling among olive branches" loading="lazy">
+    <figcaption class="team__quote m-surface-2">
+      <p class="m-text-5">“I met Sorcha at ten weeks, and I was there when her daughter arrived. That is the whole idea.”</p>
+      <p class="m-text-4">Ama, Team Rowan</p>
+    </figcaption>
+  </figure>
+</section>
+
+<!-- pregnancy: a list of five stages from the first call to 37 weeks, each row rising in with a week pill -->
+<section id="pregnancy" class="pregnancy" data-8b-section="pregnancy" aria-labelledby="pregnancy-title">
+  <div class="pregnancy__intro m-surface">
+    <h2 id="pregnancy-title" class="m-text-3" data-8b-motion="rise">Your pregnancy with us</h2>
+    <p class="m-text" data-8b-motion="rise">From the first phone call to the day labour starts, the same four midwives look after you: at home, or here with the kettle on.</p>
+    <a class="m-btn" href="#visit"><span class="m-btn__label">Refer yourself</span></a>
+  </div>
+  <ol class="pregnancy__list m-surface-2">
+    <li class="pregnancy__row" data-8b-motion="rise"><p class="m-pill-4" data-8b-motion="pop">From 8 weeks</p><h3 class="m-text-5">Call us, or fill in the form</h3><p class="m-text">No doctor’s letter needed. We ask about your health and any earlier births, and tell you which team will be yours.</p></li>
+    <li class="pregnancy__row" data-8b-motion="rise"><p class="m-pill-4" data-8b-motion="pop">10 weeks</p><h3 class="m-text-5">Booking visit, at home</h3><p class="m-text">Two unhurried hours with one of your four midwives, on your own sofa.</p></li>
+    <li class="pregnancy__row" data-8b-motion="rise"><p class="m-pill-4" data-8b-motion="pop">16 to 31 weeks</p><h3 class="m-text-5">Four checks at the house</h3><p class="m-text">Blood pressure, growth, your baby’s heartbeat and whatever is on your mind, in the front lounge rather than a clinic.</p></li>
+    <li class="pregnancy__row" data-8b-motion="rise"><p class="m-pill-4" data-8b-motion="pop">34 weeks</p><h3 class="m-text-5">A birth-plan evening</h3><p class="m-text">You, your birth partner and your midwife, in the room you would like, talking through what you want and what you don’t.</p></li>
+    <li class="pregnancy__row" data-8b-motion="rise"><p class="m-pill-4" data-8b-motion="pop">37 weeks on</p><h3 class="m-text-5">Ready when you are</h3><p class="m-text">Call the labour line at any hour, and a midwife who knows you answers.</p></li>
+  </ol>
+</section>
+
+<!-- rhythm: a pinned card with a dial that names the phase on screen, beside five phases of labour (animation: scene:rhythm) -->
+<section id="rhythm" class="rhythm" data-8b-section="rhythm" aria-labelledby="rhythm-title">
+  <div class="rhythm__stage">
+    <img style="background:#408cd9" class="rhythm__field" src="https://images.unsplash.com/photo-1644278621671-b5a5d2cf51bd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cGluayUyMGZsb3dlciUyMGJsdWUlMjBza3l8ZW58MXwwfHx8MTc5MTQ1NDM1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1140&amp;q=60" width="1200" height="900" alt="" loading="lazy">
+    <div class="rhythm__card m-surface-2">
+      <div class="rhythm__card-head">
+        <p class="m-text-5">On the day</p>
+        <p class="m-text-4">A gentle view of where you are</p>
+      </div>
+      <div class="rhythm__dial">
+        <div class="m-arc" aria-hidden="true"><span class="m-arc__fill"></span></div>
+        <div class="rhythm__labels" aria-hidden="true">
+          <div class="rhythm__default"><p class="m-text-5">Five phases</p><p class="m-pill-4">One team beside you</p></div>
+          <div class="rhythm__label"><p class="m-text-5">Early labour</p><p class="m-pill-4">Phase 1 of 5</p></div>
+          <div class="rhythm__label"><p class="m-text-5">Active labour</p><p class="m-pill-4">Phase 2 of 5</p></div>
+          <div class="rhythm__label"><p class="m-text-5">Transition</p><p class="m-pill-4">Phase 3 of 5</p></div>
+          <div class="rhythm__label"><p class="m-text-5">Birth</p><p class="m-pill-4">Phase 4 of 5</p></div>
+          <div class="rhythm__label"><p class="m-text-5">The first hour</p><p class="m-pill-4">Phase 5 of 5</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rhythm__phases m-surface">
+    <div class="rhythm__intro">
+      <h2 id="rhythm-title" class="m-text-3">On the day, one rhythm</h2>
+      <p class="m-text">Labour moves in phases. This is what happens in each one, where you are, and who is beside you.</p>
+    </div>
+    <ol>
+      <li class="rhythm__phase"><p class="m-text-4">Phase 1 of 5</p><h3 class="m-text-3">Early labour</h3><p class="m-text">Stay at home while it feels right. Call the labour line: your midwife listens to a few contractions with you and helps you judge when to come in.</p><p class="m-pill-5">At home, on the phone</p></li>
+      <li class="rhythm__phase"><p class="m-text-4">Phase 2 of 5</p><h3 class="m-text-3">Active labour</h3><p class="m-text">Your room is warm and the pool is filling as you arrive. From now on your midwife stays in the room, quietly checking on you and your baby.</p><p class="m-pill-5">Your room, the pool filled</p></li>
+      <li class="rhythm__phase"><p class="m-text-4">Phase 3 of 5</p><h3 class="m-text-3">Transition</h3><p class="m-text">The hardest stretch, and usually the shortest. Expect doubts, and expect your midwife to tell you that you are nearly there, because you are.</p><p class="m-pill-5">Low light, steady voices</p></li>
+      <li class="rhythm__phase"><p class="m-text-4">Phase 4 of 5</p><h3 class="m-text-3">Birth</h3><p class="m-text">In the water, on the stool, kneeling at the bed: wherever your body chooses. A second midwife joins quietly for the birth.</p><p class="m-pill-5">Your position, your pace</p></li>
+      <li class="rhythm__phase"><p class="m-text-4">Phase 5 of 5</p><h3 class="m-text-3">The first hour</h3><p class="m-text">Skin to skin, and nobody rushes. Your baby finds a first feed, the cord is cut when it is ready, and someone brings tea and toast.</p><p class="m-pill-5">Skin to skin, tea and toast</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- after: a pinned photo beside a letter of three panels about the first six weeks at home (animation: scene:after) -->
+<section id="after" class="after" data-8b-section="after" aria-labelledby="after-title">
+  <figure class="after__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1773243086594-43577199874f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZmF0aGVyJTIwaG9sZGluZyUyMG5ld2Jvcm58ZW58MXwwfHx8MTc5MTQ1NDQxNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1070&amp;q=60" width="1200" height="800" alt="A father holding his sleeping newborn up against the window light" loading="lazy"></figure>
+  <div class="after__letter">
+    <div class="after__head m-surface">
+      <h2 id="after-title" class="m-text-3">The first six weeks, at home</h2>
+      <ul class="after__days">
+        <li class="m-pill-5">Day 1</li><li class="m-pill-5">Day 3</li><li class="m-pill-5">Day 5</li><li class="m-pill-5">Day 10</li><li class="m-pill-5">Feeding café, Thursdays</li><li class="m-pill-5">Week 6 goodbye</li>
+      </ul>
+    </div>
+    <div class="after__panel m-surface-2"><p class="m-text-5">We come to you. On the first day, the third and the fifth, a midwife from your team knocks on your door, weighs your baby, watches a feed and asks how you are, and really asks.</p></div>
+    <div class="after__panel m-surface-3"><p class="m-text-5">On day ten we check the weight again and do the heel-prick test. Then the visits thin out and phone calls take over, with the feeding café on Thursdays if you want company.</p></div>
+    <div class="after__panel m-surface-2"><p class="m-text-5">At six weeks we say goodbye, hand you to your health visitor with everything written down, and hope to see you at the café anyway.</p></div>
+  </div>
+</section>
+
+<!-- house: title tile, three captioned photos that open from a veil, and a row of five facts -->
+<section id="house" class="house" data-8b-section="house" aria-labelledby="house-title">
+  <div class="house__title m-surface">
+    <h2 id="house-title" class="m-text-3" data-8b-motion="rise">A house, not a ward</h2>
+    <p class="m-text" data-8b-motion="rise">A stone house on the Water of Leith, with a family kitchen where partners can cook, a walled garden, and a room where older brothers and sisters can wait with their own toys.</p>
+  </div>
+  <figure class="house__photo house__photo--door" data-8b-motion="veil"><img style="background:#26260c" src="https://images.unsplash.com/photo-1758284423080-6f8a3a015543?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Z2FyZGVuJTIwZG9vciUyMG9wZW4lMjBwbGFudHN8ZW58MXwwfHx8MTc5MTQ1NDM2NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=60" width="1200" height="800" alt="A white front door in a stone wall framed by green leaves and red flowers" loading="lazy"><figcaption class="m-pill-5">The front door, Example Walk</figcaption></figure>
+  <figure class="house__photo house__photo--kitchen" data-8b-motion="veil"><img style="background:#26260c" src="https://images.unsplash.com/photo-1787755144917-cbcf31e44f26?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29zeSUyMGtpdGNoZW4lMjB0YWJsZSUyMG1vcm5pbmd8ZW58MXwwfHx8MTc5MTQ1NTA0OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=650&amp;q=60" width="1200" height="800" alt="A wooden table in a calm kitchen with a glass door to the garden" loading="lazy"><figcaption class="m-pill-5">The family kitchen</figcaption></figure>
+  <figure class="house__photo house__photo--garden" data-8b-motion="veil"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1721400413054-b1477bf2ba1c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z2FyZGVuJTIwYmVuY2glMjBmbG93ZXJzfGVufDF8MHx8fDE3OTE0NTUwNTB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=650&amp;q=60" width="1200" height="800" alt="A gravel path between flowering beds in a walled garden" loading="lazy"><figcaption class="m-pill-5">The walled garden</figcaption></figure>
+  <ul class="house__facts m-surface-3">
+    <li class="m-pill-6" data-8b-motion="pop">Family kitchen</li>
+    <li class="m-pill-6" data-8b-motion="pop">Walled garden</li>
+    <li class="m-pill-6" data-8b-motion="pop">Siblings’ room</li>
+    <li class="m-pill-6" data-8b-motion="pop">Step-free from the street</li>
+    <li class="m-pill-6" data-8b-motion="pop">Two parking spaces</li>
+  </ul>
+</section>
+
+<!-- classes: a held horizontal track of five class photos that come into focus as they reach the middle (animation: scene:classes) -->
+<section id="classes" class="classes" data-8b-section="classes" aria-labelledby="classes-title">
+  <div class="classes__stage">
+    <div class="classes__head m-surface">
+      <h2 id="classes-title" class="m-text-3">Classes and groups</h2>
+      <p class="m-text">Free for families booked with us, apart from baby massage. Partners are always welcome.</p>
+    </div>
+    <ul class="classes__track">
+      <li class="classes__tile"><img style="background:#c0d9f3" class="classes__blur" src="https://images.unsplash.com/photo-1733875313868-a2745ae74629?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJlbmF0YWwlMjB5b2dhfGVufDF8MHx8fDE3OTE0NTQ0MTF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="" aria-hidden="true" loading="lazy"><img style="background:#c0d9f3" class="classes__sharp" src="https://images.unsplash.com/photo-1733875313868-a2745ae74629?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJlbmF0YWwlMjB5b2dhfGVufDF8MHx8fDE3OTE0NTQ0MTF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="A pregnant woman sitting cross-legged on the grass with tiny shoes in her lap" loading="lazy"><span class="classes__veil"></span><div class="classes__card m-surface-2"><h3 class="m-text-5">Active birth yoga</h3><p class="classes__meta m-text-4"><span>Mondays, 6.30pm, from 20 weeks</span><span>Free</span></p></div></li>
+      <li class="classes__tile"><img style="background:#8c8c8c" class="classes__blur" src="https://images.unsplash.com/photo-1692851142527-e0730228f11f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fGNvdXBsZSUyMHByZWduYW5jeSUyMGNsYXNzfGVufDF8MHx8fDE3OTE0NTQ0MTV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="" aria-hidden="true" loading="lazy"><img style="background:#8c8c8c" class="classes__sharp" src="https://images.unsplash.com/photo-1692851142527-e0730228f11f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fGNvdXBsZSUyMHByZWduYW5jeSUyMGNsYXNzfGVufDF8MHx8fDE3OTE0NTQ0MTV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="A couple sitting together on a blanket, his hands on her bump" loading="lazy"><span class="classes__veil"></span><div class="classes__card m-surface-2"><h3 class="m-text-5">Partners’ evening</h3><p class="classes__meta m-text-4"><span>First Wednesday of the month, 7pm</span><span>Free</span></p></div></li>
+      <li class="classes__tile"><img style="background:#8ca6a6" class="classes__blur" src="https://images.unsplash.com/photo-1587276548285-81f6152dc428?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHdhdGVyJTIwcmlwcGxlcyUyMGxpZ2h0fGVufDF8MHx8fDE3OTE0NTQ0MTl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="" aria-hidden="true" loading="lazy"><img style="background:#8ca6a6" class="classes__sharp" src="https://images.unsplash.com/photo-1587276548285-81f6152dc428?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHdhdGVyJTIwcmlwcGxlcyUyMGxpZ2h0fGVufDF8MHx8fDE3OTE0NTQ0MTl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="Light rippling across clear blue water" loading="lazy"><span class="classes__veil"></span><div class="classes__card m-surface-2"><h3 class="m-text-5">Pool evening</h3><p class="classes__meta m-text-4"><span>Fridays, 7pm, try the pool first</span><span>Free, by booking</span></p></div></li>
+      <li class="classes__tile"><img style="background:#f3f3f3" class="classes__blur" src="https://images.unsplash.com/photo-1729648348319-66f6a45564c8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJyZWFzdGZlZWRpbmclMjBtb3RoZXJ8ZW58MXwwfHx8MTc5MTQ1NDQxMnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="" aria-hidden="true" loading="lazy"><img style="background:#f3f3f3" class="classes__sharp" src="https://images.unsplash.com/photo-1729648348319-66f6a45564c8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJyZWFzdGZlZWRpbmclMjBtb3RoZXJ8ZW58MXwwfHx8MTc5MTQ1NDQxMnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="A mother smiling down at her baby as it feeds, outdoors in the sun" loading="lazy"><span class="classes__veil"></span><div class="classes__card m-surface-2"><h3 class="m-text-5">Feeding café</h3><p class="classes__meta m-text-4"><span>Thursdays, 10am, drop in</span><span>Free, cake included</span></p></div></li>
+      <li class="classes__tile"><img style="background:#8c738c" class="classes__blur" src="https://images.unsplash.com/photo-1664918761103-c67ef48310f4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fGJhYnklMjBtYXNzYWdlfGVufDF8MHx8fDE3OTE0NTQ0MTN8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="" aria-hidden="true" loading="lazy"><img style="background:#8c738c" class="classes__sharp" src="https://images.unsplash.com/photo-1664918761103-c67ef48310f4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fGJhYnklMjBtYXNzYWdlfGVufDF8MHx8fDE3OTE0NTQ0MTN8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1290&amp;q=60" width="1200" height="800" alt="A baby’s feet held gently in an adult’s hands" loading="lazy"><span class="classes__veil"></span><div class="classes__card m-surface-2"><h3 class="m-text-5">Baby massage</h3><p class="classes__meta m-text-4"><span>Four Tuesday mornings</span><span>£25 for the course</span></p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- stories: three family stories on tiles that stack like pages, each shrinking under the next (animation: scene:stories) -->
+<section id="stories" class="stories" data-8b-section="stories" aria-labelledby="stories-title">
+  <div class="stories__head m-surface">
+    <h2 id="stories-title" class="m-text-3" data-8b-motion="rise">Families who began here</h2>
+    <p class="m-text">Shared with their permission, in their own words.</p>
+  </div>
+  <div class="stories__list">
+    <article class="stories__card" style="--stories-i:0">
+      <div class="stories__in m-surface-2">
+        <figure class="stories__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1765700985450-8b65072c761a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmFtaWx5JTIwbmV3Ym9ybiUyMGhvbWV8ZW58MXwwfHx8MTc5MTQ1NDQxOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=830&amp;q=60" width="1200" height="800" alt="Two parents by a window holding their newborn son" loading="lazy"></figure>
+        <div class="stories__quote"><blockquote class="m-text-5">“We came in at two in the morning and Morven had the pool filled before we had parked. Nobody ever made us feel we were in the way.”</blockquote><p class="m-text-4">Hannah and Ross, parents of Fraser · Room Cornflower</p></div>
+        <span class="stories__dim"></span>
+      </div>
+    </article>
+    <article class="stories__card" style="--stories-i:1">
+      <div class="stories__in m-surface-3">
+        <figure class="stories__photo"><img style="background:#a6a6a6" src="https://images.unsplash.com/photo-1615473986468-e3ebf02e9e3d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGJyZWFzdGZlZWRpbmclMjBtb3RoZXJ8ZW58MXwwfHx8MTc5MTQ1NDQxMnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=830&amp;q=60" width="1200" height="800" alt="A mother in a bright red and orange sari cradling her baby" loading="lazy"></figure>
+        <div class="stories__quote"><blockquote class="m-text-5">“My first was born on a busy ward. My second was born here, in the dark, with a midwife I had known for seven months. I didn’t know birth could feel like that.”</blockquote><p class="m-text-4">Anjali, mother of Mira · Room Plum</p></div>
+        <span class="stories__dim"></span>
+      </div>
+    </article>
+    <article class="stories__card" style="--stories-i:2">
+      <div class="stories__in m-surface-2">
+        <figure class="stories__photo"><img style="background:#26260c" src="https://images.unsplash.com/photo-1762538676770-b4215eff3d74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHByZWduYW50JTIwd29tYW4lMjBzbWlsaW5nfGVufDF8MXx8fDE3OTE0NTQyODN8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=590&amp;q=60" width="800" height="1200" alt="A pregnant woman in a pale green dress laughing in a garden" loading="lazy"></figure>
+        <div class="stories__quote"><blockquote class="m-text-5">“When my labour stalled they took me across to the hospital, and Isla came in the car with me. She held my hand until the very end.”</blockquote><p class="m-text-4">Grace, mother of Theo · moved to hospital, then home</p></div>
+        <span class="stories__dim"></span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- faq: seven questions and answers in native details elements -->
+<section id="faq" class="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <div class="faq__head m-surface-3">
+    <h2 id="faq-title" class="m-text-3" data-8b-motion="rise">Questions we hear at every tour</h2>
+    <p class="m-text">Ask yours on a tour, or call us on 0131 000 0000 during office hours.</p>
+  </div>
+  <div class="faq__list m-surface">
+    <details><summary>Who can give birth at Linnea?</summary><p class="m-text">Anyone expecting one baby, head down, between 37 and 42 weeks, with a straightforward pregnancy. If something changes, we plan the next steps together and you keep your team.</p></details>
+    <details><summary>Does it cost anything?</summary><p class="m-text">No. Care at Linnea is free for families in north Edinburgh, funded like any other maternity service. Only baby massage has a fee.</p></details>
+    <details><summary>What pain relief can I have?</summary><p class="m-text">Warm water, massage, movement, TENS, and gas and air. If you want an epidural, we take you across to the obstetric unit, and your midwife comes with you.</p></details>
+    <details><summary>What happens if I need a hospital?</summary><p class="m-text">The obstetric unit is ten minutes away. About one in five first labours here move across, mostly for a long labour or an epidural. Your midwife travels with you and stays.</p></details>
+    <details><summary>Can my partner stay overnight?</summary><p class="m-text">Yes. Every room has a double bed, and Ember has a fold-out bed for long labours.</p></details>
+    <details><summary>Can I bring my older children?</summary><p class="m-text">Yes, with another adult to look after them. The siblings’ room has toys, books and its own door to the garden.</p></details>
+    <details><summary>How soon do we go home?</summary><p class="m-text">Usually four to six hours after the birth, once you have fed, showered and rested. You are welcome to stay the night.</p></details>
+  </div>
+</section>
+
+<!-- visit: a tour form, phone and address tile, and a closing wordmark over a turning flower photo (animation: scene:visit) -->
+<section id="visit" class="visit" data-8b-section="visit" aria-labelledby="visit-title">
+  <form data-8b-placeholder="form" class="visit__form m-surface-2" action="#visit" method="post">
+    <h2 id="visit-title" class="m-text-3" data-8b-motion="rise">Come and see the rooms</h2>
+    <p class="m-text">Tours run on Tuesday evenings and Saturday mornings and take about forty minutes. Partners and children are welcome. You can refer yourself on the same form.</p>
+    <div class="visit__fields">
+      <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__control" name="name" type="text" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__control" name="email" type="email" autocomplete="email" required></label>
+      <label class="m-field"><span class="m-field__label">Due date, if you know it</span><input class="m-field__control" name="due" type="date"></label>
+      <label class="m-field"><span class="m-field__label">Which tour</span><select class="m-field__control" name="tour"><option>Tuesday, 6pm</option><option>Saturday, 10am</option><option>Refer me, no tour yet</option></select></label>
+      <label class="m-field visit__wide"><span class="m-field__label">Anything we should know</span><textarea class="m-field__control" name="message" rows="3"></textarea></label>
+    </div>
+    <div class="visit__send">
+      <button class="m-btn-2" type="submit"><span class="m-btn__label">Request a place</span></button>
+      <p class="visit__status m-text-4" role="status" hidden>Thank you. We will call you within a day to confirm your place.</p>
+    </div>
+  </form>
+  <div class="visit__contact m-surface">
+    <div class="visit__line"><p class="m-text-4">Labour line, any hour</p><a data-8b-placeholder="phone" class="visit__phone m-link" href="tel:+441310000001">0131 000 0001</a></div>
+    <div class="visit__line"><p class="m-text-4">Everything else, weekdays 9 to 5</p><a data-8b-placeholder="phone" class="visit__phone m-link" href="tel:+441310000000">0131 000 0000</a><a data-8b-placeholder="email" class="m-link" href="mailto:hello@linnea-house.example">hello@linnea-house.example</a></div>
+    <div class="visit__line"><p class="m-text-4">Find us</p><p class="m-text">1 Example Walk, Leith, Edinburgh EH6 0ZZ. Buses 16 and 22 stop at the end of the lane.</p></div>
+  </div>
+  <div class="visit__mark">
+    <div class="visit__drift"><img style="background:#5973a6" class="visit__field" src="https://images.unsplash.com/photo-1733208660872-29fdbe49c70f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGluayUyMGZsb3dlciUyMGJsdWUlMjBza3l8ZW58MXwwfHx8MTc5MTQ1NDM1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1200" height="800" alt=""></div>
+    <p class="m-text-2 visit__word" style="--len:6">Linnea</p>
+    <p class="visit__tag"><span class="m-pill-4">Birth House · Leith, Edinburgh</span><span class="m-pill-4">From the first call to six weeks after</span></p>
+  </div>
+</section>
+</main>
+
+<!-- footer: brand line, three link columns with the address and phone, and the copyright with the labour line -->
+<footer id="footer" class="footer" data-8b-section="footer">
+  <div class="footer__in m-surface">
+    <div class="footer__brand">
+      <p class="footer__word">Linnea Birth House</p>
+      <p class="m-text">A midwife-led birth centre in Leith, Edinburgh.</p>
+    </div>
+    <div class="footer__col">
+      <p class="m-text-4">The house</p>
+      <a class="m-link" href="#rooms">Rooms</a>
+      <a class="m-link" href="#team">Midwives</a>
+      <a class="m-link" href="#classes">Classes</a>
+    </div>
+    <div class="footer__col">
+      <p class="m-text-4">Your care</p>
+      <a class="m-link" href="#pregnancy">Pregnancy</a>
+      <a class="m-link" href="#faq">Questions</a>
+      <a class="m-link" href="#visit">Book a visit</a>
+    </div>
+    <div class="footer__col">
+      <p class="m-text-4">Find us</p>
+      <p>1 Example Walk, Leith<br>Edinburgh EH6 0ZZ</p>
+      <a data-8b-placeholder="phone" class="m-link" href="tel:+441310000000">0131 000 0000</a>
+    </div>
+    <p class="footer__small m-text-4"><span>© 2026 Linnea Birth House · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></span><span>Labour line, any hour: <a data-8b-placeholder="phone" class="m-link" href="tel:+441310000001">0131 000 0001</a></span></p>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const root = document.documentElement;
+  const measure = () => {
+    const value = Math.round(nav.offsetHeight) + 'px';
+    if (root.style.getPropertyValue('--nav-h') !== value) root.style.setProperty('--nav-h', value);
+  };
+  measure();
+  addEventListener('resize', measure);
+  let lastY = scrollY;
+  addEventListener('scroll', () => {
+    const y = scrollY;
+    nav.classList.toggle('is-scrolled', y > 40);
+    if (y > lastY + 2 && y > innerHeight * .4) nav.classList.add('is-hidden');
+    else if (y < lastY - 2) nav.classList.remove('is-hidden');
+    lastY = y;
+  }, { passive: true });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+  const menu = document.getElementById('menu');
+  const open = nav.querySelector('.nav__menu');
+  const close = menu.querySelector('.menu__close');
+  const setOpen = state => {
+    menu.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { window.lenis?.stop(); close.focus(); } else { window.lenis?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
+  menu.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', () => { menu.hidden = true; open.setAttribute('aria-expanded', 'false'); window.lenis?.start(); }));
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const loops = document.querySelectorAll('#opening [data-loop]');
+  if (!('IntersectionObserver' in window)) return;
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => entry.target.classList.toggle('is-paused', !entry.isIntersecting)));
+  loops.forEach(loop => observer.observe(loop));
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .visit__form');
+  const status = form.querySelector('.visit__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.hidden = false;
+    form.querySelector('button[type="submit"]').disabled = true;
+  });
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger);
+function refreshScroll() {
+  const nav = document.getElementById('nav');
+  const value = Math.round(nav.offsetHeight) + 'px';
+  if (document.documentElement.style.getPropertyValue('--nav-h') !== value) document.documentElement.style.setProperty('--nav-h', value);
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const nav = document.getElementById('nav');
+  const lenis = window.lenis = new Lenis({ lerp: .085, wheelMultiplier: .95, anchors: { offset: -Math.round(nav.offsetHeight) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { y: 40, clipPath: 'inset(0% 0% 100% 0%)' }, { y: 0, clipPath: 'inset(0% 0% 0% 0%)', duration: .95, ease: 'power3.out', clearProps: 'transform,clipPath' });
+  },
+  pop(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scale: .6, rotation: -8 }, { scale: 1, rotation: 0, duration: .75, ease: 'back.out(2)', clearProps: 'transform' });
+  },
+  veil(element, vars = {}) {
+    const image = element.matches('img') ? element : element.querySelector('img');
+    return gsap.timeline(vars).fromTo(image, { scale: 1.14, filter: 'saturate(0.25) brightness(1.18)' }, { scale: 1, filter: 'saturate(1) brightness(1)', duration: 1.3, ease: 'power2.out', clearProps: 'transform,filter' });
+  }
+};
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  ['rise', 'pop', 'veil'].forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: 'top 90%', once: true, animation: effects[name](element, { paused: true }) }));
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 961px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 960px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const narrow = context.conditions.narrow;
+    const section = document.getElementById('opening');
+    const field = section.querySelector('.opening__field');
+    const ground = section.querySelector('.opening__ground');
+    const groundImage = section.querySelector('.opening__ground-zoom');
+    const face = section.querySelector('.opening__face');
+    const values = section.querySelector('.opening__values');
+    const radius = () => parseFloat(getComputedStyle(field.querySelector('.opening__in')).borderTopLeftRadius) || 20;
+    const insets = () => {
+      const width = section.clientWidth;
+      if (narrow) return [width * .16, width * .16];
+      const box = field.getBoundingClientRect();
+      const left = box.left - section.getBoundingClientRect().left;
+      return [left, width - left - box.width];
+    };
+    const startClip = () => { const [left, right] = insets(); const r = radius(); return `inset(0px ${right}px 0px ${left}px round ${r}px ${r}px ${r}px ${r}px)`; };
+    let view = null;
+    const size = () => view || (view = { width: innerWidth, height: innerHeight });
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: 'bottom bottom', scrub: .5, invalidateOnRefresh: true, onRefreshInit: () => { view = null; } } });
+    timeline.fromTo(ground, { clipPath: startClip }, { clipPath: 'inset(0px 0px 0px 0px round 0px 0px 0px 0px)', duration: .78, ease: 'power1.inOut' }, 0);
+    timeline.set(ground, { clipPath: 'none' }, .995);
+    timeline.fromTo(groundImage, { scale: 1.4 }, { scale: 1.12, duration: 1 }, 0);
+    const spread = narrow ? .05 : .075;
+    timeline.fromTo(face, { x: 0, rotation: 0, scale: 1 }, { x: () => -size().width * spread, rotation: narrow ? -4 : -7, scale: .9, duration: .62, ease: 'power1.in' }, 0);
+    timeline.fromTo(values, { x: 0, rotation: 0, scale: 1 }, { x: () => size().width * spread, rotation: narrow ? 4 : 7, scale: .9, duration: .62, ease: 'power1.in' }, 0);
+    const lifts = [['.opening__statement', .34, .12], ['.opening__swatches', .5, .08], ['.opening__card', .62, .16], ['.opening__photo--feet', .78, .2], ['.opening__photo--dress', .44, .1]];
+    lifts.forEach(([selector, depth, at]) => {
+      const tile = section.querySelector(selector);
+      if (tile) timeline.fromTo(tile, { y: () => size().height * depth }, { y: 0, duration: .8 - at, ease: 'power2.out' }, at);
+    });
+    section.querySelectorAll('.opening__swatches a').forEach((band, index) => {
+      timeline.fromTo(band, { xPercent: -104 }, { xPercent: 0, duration: .3, ease: 'power2.out' }, .3 + index * .07);
+    });
+    const arc = section.querySelector('.opening__card .m-arc');
+    if (arc) timeline.fromTo(arc, { '--m-arc-fill': 0 }, { '--m-arc-fill': 1, duration: .45 }, .5);
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:rooms">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('rooms');
+    const bands = [...section.querySelectorAll('.rooms__bands > .rooms__band')];
+    const tail = section.querySelector('.rooms__every');
+    const photos = bands.map(band => band.querySelector('.rooms__photo img'));
+    const nav = document.getElementById('nav');
+    let tops = [], heights = [], strip = 56, gap = 12, anchor = 80, radius = 20;
+    const offsetTop = element => { let y = 0; for (let node = element; node; node = node.offsetParent) y += node.offsetTop; return y; };
+    const measure = () => {
+      tops = bands.map(offsetTop);
+      heights = bands.map(band => band.offsetHeight);
+      strip = bands[0].querySelector('.rooms__strip').offsetHeight;
+      gap = bands.length > 1 ? tops[1] - tops[0] - heights[0] : 0;
+      anchor = (nav ? nav.offsetHeight : 0) + gap;
+      radius = parseFloat(getComputedStyle(bands[0]).borderTopLeftRadius) || 0;
+    };
+    const render = () => {
+      const y = window.scrollY;
+      let shift = 0;
+      bands.forEach((band, index) => {
+        let open = 1;
+        if (index > 0) {
+          const span = heights[index - 1] + gap;
+          open = gsap.utils.clamp(0, 1, (anchor + span - (tops[index] - y)) / span);
+        }
+        const visible = strip + open * (heights[index] - strip);
+        band.style.transform = shift ? `translate3d(0, ${shift.toFixed(1)}px, 0)` : '';
+        band.style.clipPath = open < 1 ? `inset(0px 0px ${(heights[index] - visible).toFixed(1)}px 0px round ${radius}px)` : '';
+        if (photos[index]) photos[index].style.transform = open < 1 ? `scale(${(1.16 - .16 * open).toFixed(3)})` : '';
+        shift += visible - heights[index];
+      });
+      if (tail) tail.style.transform = shift ? `translate3d(0, ${shift.toFixed(1)}px, 0)` : '';
+    };
+    section.setAttribute('data-rooms-staged', '');
+    measure();
+    ScrollTrigger.create({ id: 'rooms', trigger: section, start: 'top bottom', end: 'bottom top', onRefresh: () => { measure(); render(); }, onUpdate: render });
+    render();
+    return () => {
+      section.removeAttribute('data-rooms-staged');
+      bands.forEach(band => { band.style.transform = ''; band.style.clipPath = ''; });
+      photos.forEach(photo => { if (photo) photo.style.transform = ''; });
+      if (tail) tail.style.transform = '';
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:team">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('team');
+    const field = section.querySelector('.team__field');
+    const pills = [...field.querySelectorAll('.team__pill')];
+    let seed = 7;
+    const random = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+    const columns = 4, rows = Math.ceil(pills.length / columns);
+    const cells = pills.map((pill, index) => index).sort(() => random() - .5);
+    const scatter = pills.map((pill, index) => {
+      const cell = cells[index];
+      return [((cell % columns) + .15 + random() * .7) / columns, (Math.floor(cell / columns) + .15 + random() * .7) / rows, random()];
+    });
+    let boxes = null;
+    const measure = () => boxes || (boxes = pills.map(pill => {
+      let x = 0, y = 0;
+      for (let node = pill; node && node !== field; node = node.offsetParent) { x += node.offsetLeft; y += node.offsetTop; }
+      return { x, y, width: pill.offsetWidth, height: pill.offsetHeight, fieldWidth: field.clientWidth, fieldHeight: field.clientHeight };
+    }));
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'team', trigger: field, start: 'top 88%', end: 'center 48%', scrub: .6, invalidateOnRefresh: true, onRefreshInit: () => { boxes = null; } } });
+    pills.forEach((pill, index) => {
+      const [a, b, turn] = scatter[index];
+      timeline.fromTo(pill, {
+        x: () => { const box = measure()[index]; return gsap.utils.clamp(0, Math.max(0, box.fieldWidth - box.width), a * box.fieldWidth - box.width / 2) - box.x; },
+        y: () => { const box = measure()[index]; return gsap.utils.clamp(0, Math.max(0, box.fieldHeight - box.height), b * box.fieldHeight - box.height / 2) - box.y; },
+        rotation: (turn - .5) * 56
+      }, { x: 0, y: 0, rotation: 0, duration: 1, ease: 'power2.inOut' }, (index % 5) * .05);
+    });
+    const light = getComputedStyle(field.querySelector('.team__pill:not(.team__pill--team)'));
+    field.querySelectorAll('.team__pill--team').forEach(pill => {
+      const rest = getComputedStyle(pill);
+      timeline.fromTo(pill, { backgroundColor: light.backgroundColor }, { backgroundColor: rest.backgroundColor, duration: .3, ease: 'none' }, .7);
+    });
+  });
+}, { near: document.querySelector('#team .team__field') });
+</script>
+<script data-8b-part="scene:rhythm">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 761px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 760px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const share = context.conditions.narrow ? .84 : .62;
+    const line = `${share * 100}%`;
+    const section = document.getElementById('rhythm');
+    const list = section.querySelector('.rhythm__phases ol');
+    const phases = [...list.querySelectorAll(':scope > .rhythm__phase')];
+    const labels = [...section.querySelectorAll('.rhythm__label')];
+    const arc = section.querySelector('.rhythm__dial .m-arc');
+    let current = -1;
+    const show = index => {
+      if (index === current) return;
+      current = index;
+      phases.forEach((phase, k) => phase.classList.toggle('is-active', k === index));
+      labels.forEach((label, k) => label.classList.toggle('is-active', k === index));
+    };
+    const pick = () => {
+      const y = innerHeight * share;
+      let index = 0;
+      phases.forEach((phase, k) => { if (phase.getBoundingClientRect().top <= y) index = k; });
+      show(index);
+    };
+    section.setAttribute('data-rhythm-staged', '');
+    gsap.fromTo(arc, { '--m-arc-fill': 0 }, { '--m-arc-fill': 1, ease: 'none', scrollTrigger: { id: 'rhythm', trigger: list, start: `top ${line}`, end: `bottom ${line}`, scrub: .5, onUpdate: pick, onRefresh: pick } });
+    pick();
+    return () => {
+      section.removeAttribute('data-rhythm-staged');
+      phases.forEach(phase => phase.classList.remove('is-active'));
+      labels.forEach(label => label.classList.remove('is-active'));
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:after">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('after');
+    section.querySelectorAll('.after__panel').forEach((panel, index) => {
+      gsap.fromTo(panel, { rotationX: -78, y: 30 }, { rotationX: 0, y: 0, ease: 'power2.out', scrollTrigger: { id: `after:panel-${index + 1}`, trigger: panel, start: 'top 96%', end: 'top 52%', scrub: .6 } });
+    });
+    const image = section.querySelector('.after__photo img');
+    gsap.fromTo(image, { scale: 1.22 }, { scale: 1, ease: 'none', scrollTrigger: { id: 'after', trigger: section, start: 'top bottom', end: 'center 40%', scrub: .6 } });
+  });
+}, { near: document.getElementById('after') });
+</script>
+<script data-8b-part="scene:classes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('classes');
+    const stage = section.querySelector('.classes__stage');
+    const track = section.querySelector('.classes__track');
+    const tiles = [...track.querySelectorAll(':scope > .classes__tile')];
+    const blurs = tiles.map(tile => tile.querySelector('.classes__blur'));
+    const veils = tiles.map(tile => tile.querySelector('.classes__veil'));
+    section.setAttribute('data-classes-staged', '');
+    const travel = () => Math.max(0, track.scrollWidth - stage.clientWidth);
+    const focus = () => {
+      const middle = innerWidth / 2;
+      const x = gsap.getProperty(track, 'x');
+      const origin = track.getBoundingClientRect().left - x;
+      tiles.forEach((tile, index) => {
+        const centre = origin + x + tile.offsetLeft + tile.offsetWidth / 2;
+        const distance = gsap.utils.clamp(0, 1, (Math.abs(centre - middle) - tile.offsetWidth * .08) / (tile.offsetWidth * .9));
+        blurs[index].style.opacity = distance.toFixed(3);
+        veils[index].style.opacity = (distance * .55).toFixed(3);
+      });
+    };
+    gsap.to(track, { x: () => -travel(), ease: 'none', onUpdate: focus, scrollTrigger: { id: 'classes', trigger: stage, start: 'top top', end: () => '+=' + travel(), pin: true, scrub: .6, invalidateOnRefresh: true, onUpdate: focus, onRefresh: () => requestAnimationFrame(focus) } });
+    focus();
+    return () => {
+      section.removeAttribute('data-classes-staged');
+      blurs.forEach(blur => { blur.style.opacity = ''; });
+      veils.forEach(veil => { veil.style.opacity = ''; });
+    };
+  });
+});
+</script>
+<script data-8b-part="scene:stories">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('stories');
+    const cards = [...section.querySelectorAll('.stories__list > .stories__card')];
+    section.setAttribute('data-stories-staged', '');
+    cards.forEach((card, index) => {
+      const next = cards[index + 1];
+      if (!next) return;
+      const timeline = gsap.timeline({ scrollTrigger: { id: `stories:card-${index + 1}`, trigger: next, start: 'top bottom', end: 'top 30%', scrub: .5 } });
+      timeline.fromTo(card.querySelector('.stories__in'), { scale: 1 }, { scale: .92, ease: 'none' }, 0)
+        .fromTo(card.querySelector('.stories__dim'), { opacity: 0 }, { opacity: .5, ease: 'none' }, 0);
+    });
+    return () => section.removeAttribute('data-stories-staged');
+  });
+});
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('visit');
+    const mark = section.querySelector('.visit__mark');
+    const timeline = gsap.timeline({ scrollTrigger: { id: 'visit', trigger: mark, start: 'top bottom', end: 'bottom bottom', scrub: .6 } });
+    timeline.fromTo(section.querySelector('.visit__word'), { fontWeight: 300 }, { fontWeight: 560, ease: 'none' }, 0)
+      .fromTo(section.querySelector('.visit__drift'), { rotation: -14, scale: 1.45 }, { rotation: 0, scale: 1.1, ease: 'none' }, 0);
+  });
+}, { near: document.querySelector('#visit .visit__mark') });
+</script>
+</body>
+</html>

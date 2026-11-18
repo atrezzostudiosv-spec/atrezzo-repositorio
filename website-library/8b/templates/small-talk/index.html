@@ -1,0 +1,1415 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/small-talk/
+  Source: https://github.com/8bsite/language-course-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small Talk — language school for curious grown-ups, Chicago</title>
+<meta name="description" content="Small Talk is an evening language school in Chicago: Spanish, French, Italian, Portuguese, German and Japanese in groups of eight, taught through the everyday conversations you actually have.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Small Talk — language school for curious grown-ups, Chicago">
+<meta property="og:description" content="Small Talk is an evening language school in Chicago: Spanish, French, Italian, Portuguese, German and Japanese in groups of eight, taught through the everyday conversations you actually have.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23ff9bb4'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%231d2440'%3ES%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Iayoxdg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #1d2440;
+  --color-2: #f9fcf4;
+  --color-3: #ff9bb4;
+  --color-4: #2b2b2b;
+  --color-5: #a7b0d6;
+  --color-6: #6f7ba9;
+  --color-7: #151b33;
+  --font-1: "Schibsted Grotesk", "Schibsted Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 14px;
+  --shadow-1: 0 24px 50px -18px color-mix(in srgb, var(--color-7) 80%, transparent);
+  --space-1: clamp(16px, 4vw, 56px);
+  --space-2: clamp(96px, 12vw, 180px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 89.8%; ascent-override: 109.2%; descent-override: 29%; line-gap-override: 0%; }
+@font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 100.4%; ascent-override: 97.6%; descent-override: 25.9%; line-gap-override: 0%; }
+@font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 105.6%; ascent-override: 92.8%; descent-override: 24.6%; line-gap-override: 0%; }
+@layer base {
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-3); outline-offset: 3px; }
+.u-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.u-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.u-skip { position: fixed; left: 12px; top: -80px; z-index: 100; padding: 10px 16px; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); }
+.u-skip:focus-visible { top: 12px; outline-color: var(--color-2); }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; margin: 0; }
+.m-text-2 { font-family: var(--font-1); font-size: 14px; font-weight: 500; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-5); margin: 0; }
+.m-lead { font-family: var(--font-1); font-size: clamp(19px, 1.7vw, 23px); font-weight: 500; line-height: 1.32; letter-spacing: -0.01em; text-transform: none; font-style: normal; margin: 0; }
+.m-display { font-family: var(--font-1); font-size: 120px; font-weight: 800; line-height: 0.8; letter-spacing: -0.06em; text-transform: none; font-style: normal; margin: 0; }
+.m-heading { font-family: var(--font-1); font-size: clamp(42px, 6.2vw, 92px); font-weight: 800; line-height: 0.96; letter-spacing: -0.045em; text-transform: none; font-style: normal; margin: 0; }
+.m-heading__line { display: block; padding-bottom: 0.06em; }
+.m-heading__accent { color: var(--color-3); }
+.m-statement { font-family: var(--font-1); font-size: clamp(30px, 4.4vw, 62px); font-weight: 700; line-height: 1.04; letter-spacing: -0.035em; text-transform: none; font-style: normal; margin: 0; }
+.m-statement__accent { color: var(--color-3); }
+.m-title { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 27px); font-weight: 700; line-height: 1.12; letter-spacing: -0.02em; text-transform: none; font-style: normal; margin: 0; }
+.m-badge { display: inline-flex; align-items: center; padding: 6px 13px 7px; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-1); font-family: var(--font-1); font-size: 13px; font-weight: 700; line-height: 1.1; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-bubble { position: relative; display: inline-block; max-width: 22ch; padding: 11px 18px 12px; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-1); font-family: var(--font-1); font-size: 16px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; text-transform: none; font-style: normal; margin: 0; }
+.m-bubble::after { content: ""; position: absolute; left: 18%; bottom: -9px; width: 20px; height: 14px; background: inherit; clip-path: polygon(0 0, 100% 0, 10% 100%); }
+.m-bubble__text { display: block; }
+.m-bubble-2 { position: relative; display: inline-block; max-width: 24ch; padding: 11px 18px 12px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 16px; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; text-transform: none; font-style: normal; text-align: left; margin: 0; }
+.m-bubble-2::after { content: ""; position: absolute; right: 16%; bottom: -9px; width: 20px; height: 14px; background: inherit; clip-path: polygon(0 0, 100% 0, 90% 100%); }
+.m-bubble-2__text { display: block; }
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 14px 28px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); font-family: var(--font-1); font-size: 17px; font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-btn::before { content: ""; position: absolute; inset: -2px -12px; z-index: -1; background: var(--color-3); clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 4% 82%, 1% 66%, 5% 48%, 2% 31%, 7% 14%); transform: translateX(-104%); transition: transform .45s cubic-bezier(.3, .7, .2, 1); }
+.m-btn__label { position: relative; }
+@media (hover: hover) { .m-btn:hover::before { transform: translateX(0); } }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 14px 26px; border: 2px solid currentColor; border-radius: var(--radius-1); background: transparent; color: inherit; font-family: var(--font-1); font-size: 17px; font-weight: 700; line-height: 1.1; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; isolation: isolate; transition: color .3s; }
+.m-btn-2::before { content: ""; position: absolute; inset: -2px -12px; z-index: -1; background: var(--color-3); clip-path: polygon(6% 0, 100% 0, 100% 100%, 0 100%, 4% 82%, 1% 66%, 5% 48%, 2% 31%, 7% 14%); transform: translateX(-104%); transition: transform .45s cubic-bezier(.3, .7, .2, 1); }
+.m-btn-2__label { position: relative; }
+@media (hover: hover) { .m-btn-2:hover { color: var(--color-1); } .m-btn-2:hover::before { transform: translateX(0); } }
+.m-link { color: inherit; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.22em; text-decoration-color: currentColor; transition: text-decoration-color .25s, text-underline-offset .25s; }
+@media (hover: hover) { .m-link:hover { text-decoration-color: var(--color-3); text-decoration-style: wavy; text-underline-offset: 0.3em; } }
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 52px; height: 52px; padding: 0; border: 0; border-radius: 50%; background: var(--color-2); color: var(--color-1); cursor: pointer; overflow: hidden; isolation: isolate; }
+.m-icon-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: circle(0% at 100% 100%); transition: clip-path .45s cubic-bezier(.3, .7, .2, 1); }
+.m-icon-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+@media (hover: hover) { .m-icon-btn:hover::before { clip-path: circle(150% at 100% 100%); } }
+.m-sticker { position: relative; margin: 0; }
+.m-sticker__rim { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: var(--color-2); stroke: var(--color-2); stroke-width: 14px; stroke-linejoin: round; }
+.m-sticker__img { position: relative; width: 100%; height: 100%; object-fit: cover; clip-path: var(--sticker-tear); }
+.m-card { --card-peel: 0.14; position: relative; margin: 0; container-type: inline-size; }
+.m-card__img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-2); clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--card-peel) * 100cqi), calc(100% - var(--card-peel) * 100cqi) 100%, 0 100%); }
+.m-card__peel { position: absolute; right: 0; bottom: 0; width: 40cqi; aspect-ratio: 1; border-radius: 0 0 var(--radius-2) 0; background: linear-gradient(135deg, var(--color-2) 35%, var(--color-6) 100%); clip-path: polygon(0 0, 100% 0, 0 100%); transform-origin: 100% 100%; transform: scale(calc(var(--card-peel) / 0.4)); }
+.m-field { width: 100%; min-height: 54px; padding: 14px 20px; border: 2px solid var(--color-6); border-radius: 26px; background: var(--color-7); color: var(--color-2); font-family: var(--font-1); font-size: 17px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; transition: border-color .25s; }
+.m-field:focus-visible { border-color: var(--color-3); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.l-wrap { width: 100%; max-width: 1360px; margin-inline: auto; padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation .nav__bar { position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px var(--space-1); pointer-events: none; transition: transform .5s cubic-bezier(.3, .7, .2, 1); }
+#navigation .nav__bar > * { pointer-events: auto; }
+#navigation .nav__bar.is-hidden { transform: translateY(-120%); }
+#navigation .nav__logo { display: inline-flex; align-items: center; min-height: 44px; padding: 6px 16px 8px; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-3); font-size: 21px; font-weight: 800; letter-spacing: -0.05em; line-height: 1; text-decoration: none; }
+#navigation .nav__actions { display: flex; gap: 10px; align-items: center; }
+#navigation .nav__actions .m-btn { min-height: 52px; padding-inline: 24px; font-size: 16px; }
+#navigation .menu { position: fixed; inset: 0; z-index: 60; overflow-y: auto; background: var(--color-7); color: var(--color-2); }
+#navigation .menu[hidden] { display: none; }
+#navigation .menu__in { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: 32px; padding: 12px var(--space-1) 32px; }
+#navigation .menu__top { display: flex; justify-content: space-between; align-items: center; }
+#navigation .menu__list { list-style: none; margin: 0; padding: 0; align-self: center; }
+#navigation .menu__list li { border-top: 1px solid var(--color-6); }
+#navigation .menu__list li:last-child { border-bottom: 1px solid var(--color-6); }
+#navigation .menu__link { display: block; padding: 8px 0 12px; font-size: clamp(36px, 6vw, 72px); font-weight: 800; letter-spacing: -0.045em; line-height: 1; text-decoration: none; }
+@media (hover: hover) { #navigation .menu__link:hover { text-decoration: underline wavy var(--color-3); text-decoration-thickness: 3px; text-underline-offset: 0.12em; } }
+@media (max-width: 420px) { #navigation .nav__logo { font-size: 18px; padding-inline: 12px; } #navigation .nav__actions .m-btn { padding-inline: 18px; } }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; background: var(--color-1); }
+#opening .op__first { position: relative; min-height: 100svh; display: flex; flex-direction: column; padding: 84px var(--space-1) 32px; container-type: inline-size; }
+#opening .op__mark { color: var(--color-3); font-size: calc(100cqi / (var(--len) * 0.468)); white-space: nowrap; }
+#opening .op__mark-in { display: block; }
+#opening .op__grid { flex: 1; display: grid; grid-template-columns: 1fr minmax(260px, 29vw) 1fr; gap: clamp(20px, 3vw, 48px); align-items: end; margin-top: clamp(16px, 2.4vw, 36px); }
+#opening .op__side { align-self: center; display: grid; gap: 34px; justify-items: start; }
+#opening .op__tape { display: flex; align-items: center; gap: 12px; max-width: 430px; padding: 9px 20px 10px 9px; background: var(--color-2); color: var(--color-1); box-shadow: var(--shadow-1); transform: rotate(-6deg); transform-origin: 0 50%; }
+#opening .op__tape-text { margin: 0; font-size: 14px; font-weight: 600; line-height: 1.3; }
+#opening .op__card { width: min(15vw, 210px); aspect-ratio: 5 / 4; transform: rotate(-9deg); margin-left: 12%; }
+#opening .op__head { position: relative; align-self: end; }
+#opening .op__head-in { position: relative; aspect-ratio: 4 / 5; }
+#opening .op__base, #opening .op__lid-wrap, #opening .op__lid { position: absolute; inset: 0; }
+#opening .op__base .m-sticker__img, #opening .op__lid .m-sticker__img { object-position: 42% 30%; }
+#opening .op__lid-wrap { transform-origin: 8% 30%; }
+#opening .op__lid { transform-origin: 6% 30%; }
+#opening .op__ask { position: absolute; right: -30%; top: 7%; }
+#opening .op__intro { display: grid; gap: 24px; padding-bottom: 6px; max-width: 430px; justify-self: end; }
+#opening .op__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+#opening .op__second { position: relative; min-height: 100svh; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-content: center; align-items: center; gap: clamp(28px, 4vw, 56px) 20px; padding: 96px var(--space-1); }
+#opening .op__bubbles { display: contents; list-style: none; }
+#opening .op__bubble { order: -1; justify-self: center; }
+#opening .op__bubble:nth-child(n+5) { order: 1; }
+#opening .op__bubble:nth-child(odd) .m-bubble, #opening .op__bubble:nth-child(odd) .m-bubble-2 { rotate: -5deg; }
+#opening .op__bubble:nth-child(even) .m-bubble, #opening .op__bubble:nth-child(even) .m-bubble-2 { rotate: 4deg; }
+#opening .op__bubble:nth-child(2), #opening .op__bubble:nth-child(7) { justify-self: start; translate: 0 22px; }
+#opening .op__bubble:nth-child(3), #opening .op__bubble:nth-child(6) { justify-self: end; translate: 0 -14px; }
+#opening .op__statement { order: 0; grid-column: 1 / -1; max-width: 21em; justify-self: center; text-align: center; text-wrap: balance; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op__mark-in { animation: op-rise 0.9s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #opening .op__head-in { animation: op-stick 0.85s cubic-bezier(.3, 1.5, .5, 1) 0.1s backwards; }
+  #opening .op__tape { animation: op-tape 0.8s cubic-bezier(.2, .8, .2, 1) 0.2s backwards; }
+  #opening .op__intro { animation: op-up 0.8s cubic-bezier(.2, .8, .2, 1) 0.25s backwards; }
+  #opening .op__lid { animation: op-jiggle 2.4s ease-in-out 1.2s infinite; }
+  #opening .op__ask { animation: op-bob 2.8s ease-in-out infinite; }
+  #opening [data-loop].is-paused .op__lid, #opening [data-loop].is-paused .op__ask { animation-play-state: paused; }
+}
+@keyframes op-rise { from { transform: translateY(26%); clip-path: inset(0 0 100% 0); } to { clip-path: inset(-20% 0 -20% 0); } }
+@keyframes op-stick { from { transform: scale(1.12) rotate(-6deg); } }
+@keyframes op-tape { from { transform: translateX(-60px) rotate(-14deg); opacity: 0; } }
+@keyframes op-up { from { transform: translateY(24px); opacity: 0; } }
+@keyframes op-jiggle { 0%, 100% { transform: rotate(0deg) translateY(0); } 30% { transform: rotate(-5deg) translateY(-14px); } 45% { transform: rotate(-2deg) translateY(-6px); } 60% { transform: rotate(-6deg) translateY(-18px); } 80% { transform: rotate(0deg) translateY(0); } }
+@keyframes op-bob { 0%, 100% { transform: translate(0, 0) rotate(-4deg); } 50% { transform: translate(8px, -26px) rotate(3deg); } }
+@media (max-width: 759px) {
+  #opening .op__first { padding-top: 78px; padding-bottom: 24px; }
+  #opening .op__grid { grid-template-columns: 1fr; grid-template-rows: auto auto auto; align-items: start; gap: 18px; margin-top: 18px; }
+  #opening .op__side { align-self: start; gap: 0; }
+  #opening .op__tape { max-width: 100%; height: 54px; transform: rotate(-3deg); }
+  #opening .op__tape-text { font-size: 13px; }
+  #opening .op__card { display: none; }
+  #opening .op__head { width: min(58vw, 300px); justify-self: center; margin-top: 8px; }
+  #opening .op__ask { right: -14%; top: -5%; font-size: 14px; }
+  #opening .op__intro { justify-self: stretch; gap: 18px; }
+  #opening .op__second { grid-template-columns: repeat(2, minmax(0, 1fr)); padding-block: 72px; gap: 22px 12px; }
+  #opening .op__bubble .m-bubble, #opening .op__bubble .m-bubble-2 { font-size: 14px; padding: 9px 14px 10px; }
+}
+}
+</style>
+<style data-8b-part="section:syllabus">
+@layer sections {
+#syllabus { position: relative; overflow-x: clip; padding-block: var(--space-2); background: var(--color-1); }
+#syllabus .sy__head { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: end; margin-bottom: clamp(48px, 6vw, 88px); }
+#syllabus .sy__lead { max-width: 30em; color: var(--color-5); }
+#syllabus .sy__plan { list-style: none; margin-block: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(40px, 4.5vw, 64px) clamp(20px, 2.4vw, 36px); }
+#syllabus .sy__week { display: grid; gap: 10px; align-content: start; justify-items: start; }
+#syllabus .sy__card { width: 100%; aspect-ratio: 4 / 3; margin-bottom: 8px; }
+#syllabus .sy__week:nth-child(3n+1) .sy__card { rotate: -1.5deg; }
+#syllabus .sy__week:nth-child(3n+3) .sy__card { rotate: 1.5deg; }
+#syllabus .sy__phrase { color: var(--color-3); font-weight: 600; font-size: 16px; }
+#syllabus .sy__more { margin-top: clamp(48px, 6vw, 80px); max-width: 44em; color: var(--color-5); }
+#syllabus .sy__more .m-link { color: var(--color-2); }
+@media (max-width: 759px) {
+  #syllabus .sy__head { grid-template-columns: 1fr; gap: 20px; }
+  #syllabus .sy__plan { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 14px; }
+  #syllabus .sy__week .m-title { font-size: 18px; }
+  #syllabus .sy__phrase { font-size: 14px; }
+}
+}
+</style>
+<style data-8b-part="section:languages">
+@layer sections {
+#languages { position: relative; overflow-x: clip; padding-block: 0 var(--space-2); background: var(--color-1); }
+#languages .la__head { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: end; margin-bottom: clamp(40px, 5vw, 72px); }
+#languages .la__head .m-lead { color: var(--color-5); max-width: 28em; }
+#languages .la__list { list-style: none; margin: 0; padding: 0; }
+#languages .la__row { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(220px, 0.42fr); align-items: center; gap: 12px 32px; padding: clamp(14px, 1.6vw, 22px) 0; }
+#languages .la__row:last-child { border-bottom: 1px solid var(--color-6); }
+#languages .la__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-6); }
+#languages .la__name { margin: 0; font-size: clamp(46px, 7.6vw, 112px); font-weight: 800; line-height: 0.92; letter-spacing: -0.05em; }
+#languages .la__hello { justify-self: start; }
+#languages .la__row:nth-child(odd) .la__hello { rotate: -6deg; }
+#languages .la__row:nth-child(even) .la__hello { rotate: 5deg; }
+#languages .la__meta { font-size: 15px; }
+@media (max-width: 759px) {
+  #languages .la__head { grid-template-columns: 1fr; gap: 20px; }
+  #languages .la__row { grid-template-columns: auto 1fr; gap: 6px 14px; padding: 16px 0 18px; }
+  #languages .la__meta { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:teachers">
+@layer sections {
+#teachers { position: relative; padding-block: var(--space-2); background: var(--color-4); }
+#teachers .te__head { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: end; margin-bottom: clamp(56px, 7vw, 110px); }
+#teachers .te__head .m-lead { color: var(--color-5); max-width: 28em; }
+#teachers .te__counter { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 48px clamp(16px, 2vw, 28px); }
+#teachers .te__person { display: grid; align-content: start; gap: 16px; }
+#teachers .te__stage { position: relative; display: grid; clip-path: inset(-60% -40% 0 -40%); }
+#teachers .te__pop { position: relative; width: 82%; justify-self: center; margin-bottom: -18%; transform-origin: 50% 100%; }
+#teachers .te__person:nth-child(odd) .te__pop { rotate: -4deg; }
+#teachers .te__person:nth-child(even) .te__pop { rotate: 4deg; }
+#teachers .te__photo { aspect-ratio: 4 / 5; }
+#teachers .te__photo .m-sticker__img { object-position: 50% 22%; }
+#teachers .te__hello { position: absolute; top: -6%; right: -14%; }
+#teachers .te__bar { position: relative; padding: 16px 18px 18px; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-1); }
+#teachers .te__lang { margin: 4px 0 0; font-size: 15px; font-weight: 600; }
+#teachers .te__bio { color: var(--color-5); font-size: 16px; }
+#teachers .te__more { margin-top: clamp(40px, 5vw, 64px); color: var(--color-5); }
+@media (max-width: 959px) {
+  #teachers .te__head { grid-template-columns: 1fr; gap: 20px; }
+  #teachers .te__counter { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 14px; }
+  #teachers .te__bar { padding: 12px 12px 14px; }
+  #teachers .te__bar .m-title { font-size: 18px; }
+  #teachers .te__lang { font-size: 13px; }
+  #teachers .te__bio { font-size: 15px; }
+  #teachers .te__hello { right: -8%; top: -10%; font-size: 13px; padding: 8px 12px 9px; }
+}
+}
+</style>
+<style data-8b-part="section:clubs">
+@layer sections {
+#clubs { position: relative; padding-block: 0 var(--space-2); background: var(--color-4); }
+#clubs .cl__head { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: end; margin-bottom: clamp(40px, 5vw, 72px); }
+#clubs .cl__head .m-lead { color: var(--color-5); max-width: 26em; }
+#clubs .cl__list { list-style: none; margin: 0; padding: 0; }
+#clubs .cl__row { position: relative; display: grid; grid-template-columns: 0.55fr 1fr 1.35fr; gap: 10px 32px; padding: clamp(26px, 3vw, 40px) clamp(0px, 1.5vw, 24px); }
+#clubs .cl__row:last-child { border-bottom: 1px solid var(--color-6); }
+#clubs .cl__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-6); }
+#clubs .cl__date { color: var(--color-3); font-size: clamp(19px, 1.7vw, 23px); font-weight: 700; letter-spacing: -0.02em; }
+#clubs .cl__text { color: var(--color-5); }
+@media (max-width: 759px) {
+  #clubs .cl__head { grid-template-columns: 1fr; gap: 20px; }
+  #clubs .cl__row { grid-template-columns: 1fr; gap: 6px; padding: 22px 0; }
+}
+}
+</style>
+
+<style data-8b-part="section:voices">
+@layer sections {
+#voices { position: relative; background: var(--color-1); }
+#voices .vo__stage { display: grid; gap: clamp(40px, 5vw, 64px); padding-block: var(--space-2); }
+#voices .vo__head { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: end; }
+#voices .vo__head .m-lead { color: var(--color-5); max-width: 24em; }
+#voices .vo__board { position: relative; list-style: none; margin-block: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 2vw, 28px); align-items: stretch; }
+#voices .vo__slot { display: grid; }
+#voices .vo__slot:nth-child(1) { rotate: -3deg; }
+#voices .vo__slot:nth-child(2) { rotate: 2deg; translate: 0 22px; }
+#voices .vo__slot:nth-child(3) { rotate: -1.5deg; }
+#voices .vo__slot:nth-child(4) { rotate: 3deg; translate: 0 16px; }
+#voices .vo__note { margin: 0; display: grid; align-content: space-between; gap: 22px; padding: 38px 24px 24px; background: var(--color-2); color: var(--color-1); clip-path: url(#tear-note-clip); }
+#voices .vo__quote { margin: 0; font-size: clamp(17px, 1.5vw, 20px); font-weight: 600; line-height: 1.32; letter-spacing: -0.01em; }
+#voices .vo__who { font-size: 14px; font-weight: 600; }
+#voices .vo__who span { display: block; font-weight: 500; }
+#voices .vo__pad { display: none; position: absolute; inset: 0; margin: auto; width: min(300px, 25%); height: 104%; border-radius: 6px; background: var(--color-3); }
+#voices .vo__pad::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 22px; border-radius: 6px 6px 0 0; background: var(--color-7); }
+@media (max-width: 759px) {
+  #voices .vo__head { grid-template-columns: 1fr; gap: 16px; }
+  #voices .vo__board { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  #voices .vo__note { padding: 26px 14px 14px; gap: 12px; }
+  #voices .vo__quote { font-size: 15px; line-height: 1.3; }
+  #voices .vo__who { font-size: 12px; }
+  #voices .vo__slot:nth-child(2), #voices .vo__slot:nth-child(4) { translate: 0 10px; }
+  #voices .vo__pad { width: 48%; height: 52%; }
+}
+}
+</style>
+<style data-8b-part="section:trips">
+@layer sections {
+#trips { position: relative; overflow: clip; background: var(--color-3); color: var(--color-1); }
+#trips :focus-visible { outline-color: var(--color-1); }
+#trips .tr__stage { display: grid; gap: clamp(36px, 4vw, 56px); padding-block: var(--space-2); }
+#trips .tr__viewport { min-width: 0; }
+#trips .tr__head { display: grid; grid-template-columns: 1.5fr 0.7fr; gap: 32px; align-items: end; }
+#trips .m-heading { font-size: clamp(42px, 5.2vw, 76px); }
+#trips .m-heading__accent { color: var(--color-1); }
+#trips .tr__head .m-lead { max-width: 26em; }
+#trips .tr__track { list-style: none; margin: 0; padding-inline: var(--space-1); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 32px); }
+#trips .tr__trip { position: relative; display: grid; align-content: start; gap: 8px; padding: 14px 14px 22px; border-radius: var(--radius-2); background: var(--color-2); box-shadow: var(--shadow-1); }
+#trips .tr__photo { aspect-ratio: 3 / 2; margin-bottom: 10px; }
+#trips .tr__photo .m-card__img { border-radius: 8px; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 46px), calc(100% - 46px) 100%, 0 100%); }
+#trips .tr__photo .m-card__peel { width: 131px; }
+#trips .tr__stamp { position: absolute; top: 2px; right: 2px; display: grid; place-items: center; width: 96px; height: 96px; border-radius: 50%; background: var(--color-1); color: var(--color-3); outline: 2px dashed var(--color-1); outline-offset: 4px; text-align: center; font-size: 15px; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; rotate: 12deg; }
+#trips .tr__stamp small { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0; color: var(--color-2); }
+#trips .tr__facts { font-weight: 600; }
+@media (max-width: 759px) {
+  #trips .tr__head { grid-template-columns: 1fr; gap: 16px; }
+  #trips .tr__track { grid-template-columns: 1fr; }
+  #trips .tr__stamp { width: 78px; height: 78px; font-size: 13px; }
+}
+}
+</style>
+<style data-8b-part="section:level">
+@layer sections {
+#level { position: relative; overflow-x: clip; padding-block: var(--space-2); background: var(--color-1); }
+#level .le__grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(40px, 5vw, 80px); align-items: start; }
+#level .le__head { display: grid; gap: 24px; }
+#level .le__head .m-lead { color: var(--color-5); }
+#level .le__chat { display: grid; gap: 40px; }
+#level .le__q { margin: 0; padding: 0; border: 0; min-width: 0; display: grid; gap: 18px; }
+#level .le__ask { float: left; max-width: 34ch; font-size: 18px; padding: 14px 22px 16px; border-radius: 28px; }
+#level .le__replies { clear: both; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+#level .le__reply { min-height: 46px; padding: 10px 20px; font-size: 15px; font-weight: 600; white-space: normal; text-align: left; }
+#level .le__reply[aria-pressed="true"] { background: var(--color-3); border-color: var(--color-3); color: var(--color-1); }
+#level .le__result { display: grid; justify-items: end; gap: 12px; min-height: 64px; }
+#level .le__answer { font-size: 18px; padding: 14px 22px 16px; border-radius: 28px; }
+#level .le__answer[hidden] { display: none; }
+@media (max-width: 759px) {
+  #level .le__grid { grid-template-columns: 1fr; }
+  #level .le__ask { font-size: 16px; }
+  #level .le__reply { font-size: 14px; min-height: 44px; padding: 9px 16px; }
+}
+}
+</style>
+
+<style data-8b-part="section:fees">
+@layer sections {
+#fees { position: relative; overflow: clip; padding-block: var(--space-2); background: var(--color-2); color: var(--color-1); }
+#fees :focus-visible { outline-color: var(--color-1); }
+#fees .fe__head { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: end; margin-bottom: clamp(48px, 6vw, 88px); }
+#fees .m-heading__accent { color: var(--color-1); }
+#fees .fe__plans { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px clamp(20px, 3vw, 44px); }
+#fees .fe__plan { display: grid; align-content: start; gap: 12px; padding-top: 22px; border-top: 3px solid var(--color-1); }
+#fees .fe__price { margin: 6px 0 4px; font-size: clamp(58px, 6.4vw, 92px); font-weight: 800; line-height: 0.9; letter-spacing: -0.055em; justify-self: start; }
+#fees .fe__price small { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+#fees .fe__print-wrap { display: grid; justify-items: center; margin-top: clamp(72px, 9vw, 140px); rotate: -1.5deg; }
+#fees .fe__print { display: grid; gap: 14px; max-width: 660px; padding: 44px clamp(24px, 3vw, 40px) 34px; background: var(--color-3); color: var(--color-1); clip-path: url(#tear-note-clip); }
+#fees .fe__cta { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 48px; }
+@media (max-width: 759px) {
+  #fees .fe__head { grid-template-columns: 1fr; gap: 16px; }
+  #fees .fe__plans { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; overflow-x: clip; padding-block: var(--space-2); background: var(--color-1); }
+#contact .co__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+#contact .co__info { display: grid; gap: 28px; align-content: start; }
+#contact .co__info .m-lead { color: var(--color-5); }
+#contact .co__facts { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 22px 28px; }
+#contact .co__facts dd { margin: 4px 0 0; }
+#contact .co__room { width: min(400px, 86%); aspect-ratio: 4 / 3; margin-top: 16px; rotate: -3deg; }
+#contact .co__form { display: grid; gap: 18px; align-content: start; padding: clamp(22px, 3vw, 40px); border-radius: 28px; background: var(--color-7); }
+#contact .co__form-title { margin-bottom: 4px; }
+#contact .co__field { display: grid; gap: 8px; }
+#contact .co__label { font-size: 15px; font-weight: 600; }
+#contact .co__pair { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 14px; }
+#contact textarea.m-field { min-height: 120px; resize: vertical; }
+#contact .co__send { justify-self: start; }
+#contact .co__thanks[hidden] { display: none; }
+@media (max-width: 859px) {
+  #contact .co__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  #contact .co__facts, #contact .co__pair { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; overflow: clip; padding-top: clamp(80px, 10vw, 140px); background: var(--color-7); color: var(--color-2); }
+#footer .fo__in { display: grid; grid-template-columns: 0.9fr 1.1fr; grid-template-rows: 1fr auto; column-gap: 48px; min-height: 620px; }
+#footer .fo__peek { position: relative; grid-row: 1 / 3; align-self: end; width: min(420px, 100%); margin-bottom: -18%; }
+#footer .fo__head { aspect-ratio: 4 / 5; rotate: 9deg; }
+#footer .fo__head .m-sticker__img { object-position: 50% 15%; }
+#footer .fo__say { position: absolute; top: 2%; right: -12%; }
+#footer .fo__links { list-style: none; margin: 0; padding: 0; }
+#footer .fo__links li { border-top: 1px solid var(--color-6); }
+#footer .fo__links li:last-child { border-bottom: 1px solid var(--color-6); }
+#footer .fo__link { display: block; padding: 6px 0 12px; font-size: clamp(34px, 4.4vw, 62px); font-weight: 800; line-height: 1; letter-spacing: -0.045em; text-decoration: none; text-decoration-thickness: 3px; text-underline-offset: 0.12em; }
+@media (hover: hover) { #footer .fo__link:hover { text-decoration: underline wavy var(--color-3); text-decoration-thickness: 3px; } }
+#footer .fo__legal { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; padding: 32px 0 40px; }
+@media (max-width: 759px) {
+  #footer .fo__in { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }
+  #footer .fo__peek { grid-row: auto; order: 3; width: 68%; margin: 24px 0 -22% 4%; }
+  #footer .fo__say { right: -30%; font-size: 14px; }
+  #footer .fo__legal { order: 2; padding-bottom: 8px; }
+}
+}
+</style>
+
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-power3-inout: linear(0, 0, 0.0001, 0.0003, 0.0008, 0.0019, 0.004, 0.0075, 0.0128, 0.0205, 0.0313, 0.0457, 0.0648, 0.0892, 0.1201, 0.1582, 0.2048, 0.261, 0.3281, 0.4073, 0.5, 0.5927, 0.672, 0.739, 0.7952, 0.8418, 0.88, 0.9107, 0.9352, 0.9543, 0.9688, 0.9795, 0.9872, 0.9925, 0.996, 0.998, 0.9992, 0.9998, 1, 1, 1); }
+[data-8b-live] { --ease-power3-out: linear(0, 0.0963, 0.1855, 0.2679, 0.3439, 0.4138, 0.478, 0.5367, 0.5904, 0.6392, 0.6836, 0.7237, 0.7599, 0.7924, 0.8215, 0.8474, 0.8704, 0.8907, 0.9085, 0.924, 0.9375, 0.9491, 0.959, 0.9674, 0.9744, 0.9802, 0.985, 0.9888, 0.9919, 0.9943, 0.9961, 0.9974, 0.9984, 0.9991, 0.9995, 0.9998, 0.9999, 1, 1, 1, 1); --ease-back-out: linear(0, 0.0878, 0.1715, 0.2509, 0.3263, 0.3978, 0.4654, 0.5292, 0.5894, 0.646, 0.6991, 0.7488, 0.7952, 0.8384, 0.8785, 0.9156, 0.9498, 0.9812, 1.0098, 1.0358, 1.0593, 1.0803, 1.0989, 1.1154, 1.1296, 1.1418, 1.152, 1.1603, 1.1669, 1.1717, 1.175, 1.1768, 1.1771, 1.1762, 1.174, 1.1707, 1.1664, 1.1611, 1.1551, 1.1482, 1.1407, 1.1327, 1.1242, 1.1153, 1.1062, 1.0969, 1.0875, 1.0781, 1.0688, 1.0597, 1.0509, 1.0425, 1.0346, 1.0273, 1.0206, 1.0147, 1.0097, 1.0056, 1.0025, 1.0007, 1); }
+[data-8b-live] [data-8b-motion~="lines"] .m-heading__line { animation-name: motion-lines; animation-duration: 0.9s; animation-timing-function: var(--ease-power3-out); animation-fill-mode: backwards; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="lines"] .m-heading__line + .m-heading__line { animation-delay: 0.14s; }
+[data-8b-live] [data-8b-motion~="lines"].is-in .m-heading__line { animation-play-state: running; }
+@keyframes motion-lines { from { translate: 0 70%; clip-path: inset(0% 0% 100% 0%); } to { translate: 0 0; clip-path: inset(0% 0% -20% 0%); } }
+[data-8b-live] [data-8b-motion~="stick"] { animation-name: motion-stick; animation-duration: 0.6s; animation-timing-function: var(--ease-back-out); animation-fill-mode: backwards; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="stick"].is-in { animation-play-state: running; }
+@keyframes motion-stick { from { scale: 1.45; rotate: var(--motion-stick-turn, 10deg); opacity: 0; visibility: hidden; } }
+[data-8b-live] [data-8b-motion~="rule"] { animation-name: motion-rule-scale; animation-duration: 1.1s; animation-delay: 0s; animation-timing-function: var(--ease-power3-inout); animation-fill-mode: both; animation-play-state: paused; transform: none; transform-origin: 0% 50%; }
+[data-8b-live] [data-8b-motion~="rule"].is-in { animation-play-state: running; }
+@keyframes motion-rule-scale { 0% { scale: 0 1; } 100% { scale: 1; } }
+}
+</style>
+<style data-8b-part="scene:opening">
+@layer scenes {
+[data-8b-live] #opening { view-timeline: --opening-scroll block; view-timeline-inset: 0; --opening-head-y: 16vh; --opening-head-scale: 0.86; }
+[data-8b-live] #opening .op__lid-wrap { animation-name: opening-lid; animation-timeline: --opening-scroll; animation-range: contain calc(100% * (0) / var(--opening-length, 1.032)) contain calc(100% * (0.36) / var(--opening-length, 1.032)); animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0); animation-fill-mode: both; }
+@keyframes opening-lid { to { translate: -18vw -50vh; rotate: -32deg; } }
+[data-8b-live] #opening .op__head { animation-name: opening-head; animation-timeline: --opening-scroll; animation-range: contain calc(100% * (0) / var(--opening-length, 1.032)) contain calc(100% * (0.55) / var(--opening-length, 1.032)); animation-timing-function: linear(0, 0.0013, 0.005, 0.0112, 0.02, 0.0313, 0.045, 0.0612, 0.08, 0.1013, 0.125, 0.1513, 0.18, 0.2113, 0.245, 0.2813, 0.32, 0.3612, 0.405, 0.4512, 0.5, 0.5488, 0.595, 0.6387, 0.68, 0.7188, 0.755, 0.7888, 0.82, 0.8488, 0.875, 0.8988, 0.92, 0.9387, 0.955, 0.9688, 0.98, 0.9888, 0.995, 0.9988, 1); animation-fill-mode: both; }
+@keyframes opening-head { to { translate: 0 var(--opening-head-y); rotate: 6deg; scale: var(--opening-head-scale); } }
+[data-8b-live] #opening .op__bubble { --opening-turn: -1; animation-name: opening-bubble; animation-timeline: --opening-scroll; animation-range: contain calc(100% * (0.06 + 0.05 * var(--i)) / var(--opening-length, 1.032)) contain calc(100% * (0.48 + 0.05 * var(--i)) / var(--opening-length, 1.032)); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; }
+[data-8b-live] #opening .op__bubble:nth-child(even) { --opening-turn: 1; }
+@keyframes opening-bubble { from { translate: var(--opening-x, 0px) var(--opening-y, 0px); scale: 0.15; rotate: calc(var(--opening-turn) * (18deg + 5deg * var(--i))); } }
+[data-8b-live] #opening .op__statement .w { animation-name: opening-word; animation-timeline: --opening-scroll; animation-range: contain calc(100% * (0.42 + 0.012 * var(--i)) / var(--opening-length, 1.032)) contain calc(100% * (0.72 + 0.012 * var(--i)) / var(--opening-length, 1.032)); animation-timing-function: linear; animation-fill-mode: both; }
+@keyframes opening-word { from { color: var(--color-6); } }
+@media (max-width: 759px) {
+  [data-8b-live] #opening { --opening-head-y: -4vh; --opening-head-scale: 0.8; }
+}
+}
+</style>
+<style data-8b-part="scene:syllabus">
+@property --syllabus-card-peel { syntax: '<number>'; inherits: true; initial-value: 0.14; }
+@layer scenes {
+[data-8b-live] #syllabus .sy__plan { view-timeline: --syllabus-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #syllabus .sy__plan > li > .m-card { animation-timeline: --syllabus-t1; animation-range: cover calc(4.56vh * var(--i)) cover calc(53.2vh + 4.56vh * var(--i)); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; --card-peel: var(--syllabus-card-peel); }
+@keyframes syllabus-figure-m-card-translate-d { 0% { translate: var(--syllabus-figure-m-card-translate-from, -8vw) var(--syllabus-figure-m-card-translate-from-2, -30vh); } 100% { translate: 0px 0px; } }
+@keyframes syllabus-figure-m-card-translate-m { 0% { translate: var(--syllabus-figure-m-card-translate-from-m, -18.237%) var(--syllabus-figure-m-card-translate-from-2, -30vh); } 100% { translate: 0px 0px; } }
+@keyframes syllabus-figure-m-card-rotate { 0% { rotate: var(--syllabus-figure-m-card-rotate-from, -16deg); } 100% { rotate: var(--syllabus-figure-m-card-rotate-to, -1.5deg); } }
+@keyframes syllabus-figure-m-card-scale { 0% { scale: var(--syllabus-figure-m-card-scale-from, 0.62); } 100% { scale: 1; } }
+@keyframes syllabus-figure-m-card---card-peel { 0% { --syllabus-card-peel: 0.34; } 100% { --syllabus-card-peel: 0.14; } }
+@media (min-width: 760px) {
+  [data-8b-live] #syllabus .sy__plan > li > .m-card { animation-name: syllabus-figure-m-card-translate-d, syllabus-figure-m-card-rotate, syllabus-figure-m-card-scale, syllabus-figure-m-card---card-peel; }
+}
+@media (max-width: 759px) {
+  [data-8b-live] #syllabus .sy__plan > li > .m-card { animation-name: syllabus-figure-m-card-translate-m, syllabus-figure-m-card-rotate, syllabus-figure-m-card-scale, syllabus-figure-m-card---card-peel; }
+}
+}
+</style>
+<style data-8b-part="scene:teachers">
+@layer scenes {
+[data-8b-live] { --ease-4efb33: linear(0, 0.1112, 0.2148, 0.3112, 0.4006, 0.4832, 0.5593, 0.6291, 0.6928, 0.7507, 0.8031, 0.8502, 0.8922, 0.9294, 0.962, 0.9902, 1.0144, 1.0347, 1.0514, 1.0648, 1.075, 1.0824, 1.0871, 1.0894, 1.0896, 1.0879, 1.0845, 1.0797, 1.0738, 1.0669, 1.0594, 1.0514, 1.0432, 1.0351, 1.0272, 1.0199, 1.0134, 1.0079, 1.0037, 1.001, 1); --ease-3815d2: linear(0, 0.1326, 0.2554, 0.369, 0.4735, 0.5693, 0.6568, 0.7363, 0.808, 0.8724, 0.9297, 0.9803, 1.0245, 1.0626, 1.0951, 1.1221, 1.144, 1.1612, 1.1739, 1.1826, 1.1875, 1.189, 1.1873, 1.1829, 1.176, 1.167, 1.1562, 1.1439, 1.1305, 1.1163, 1.1016, 1.0867, 1.072, 1.0578, 1.0444, 1.0322, 1.0215, 1.0126, 1.0058, 1.0015, 1); }
+[data-8b-live] #teachers .te__counter { view-timeline: --teachers-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #teachers .te__counter > li > .te__stage > .te__pop { animation-timeline: --teachers-t1; animation-range: cover calc(15vh - 15.2033vh * var(--i) + 17.8862% * var(--i)) cover calc(40.6504% + 17.8862% * var(--i) - 19.5528vh - 15.2033vh * var(--i)); animation-timing-function: var(--ease-4efb33); animation-fill-mode: both; transform: none; }
+[data-8b-live] #teachers .te__counter > li:nth-of-type(2n+1) > .te__stage > .te__pop { animation-name: teachers-div-te-pop-translate, teachers-div-te-pop-rotate; }
+[data-8b-live] #teachers .te__counter > li:nth-of-type(2n+2) > .te__stage > .te__pop { animation-name: teachers-div-te-pop-translate, teachers-div-te-pop-rotate-2; }
+[data-8b-live] #teachers .te__counter > li > .te__stage > .te__pop > .m-bubble { animation-timeline: --teachers-t1; animation-range: cover calc(26.0163% + 17.8861% * var(--i) - 7.1138vh - 15.2033vh * var(--i)) cover calc(46.3415% + 17.8861% * var(--i) - 24.3902vh - 15.2033vh * var(--i)); animation-timing-function: var(--ease-3815d2), var(--ease-3815d2), var(--ease-3815d2), linear; animation-fill-mode: both; transform: none; transform-origin: 20% 100%; }
+[data-8b-live] #teachers .te__counter > li:nth-of-type(2n+1) > .te__stage > .te__pop > .m-bubble { animation-name: teachers-p-m-bubble-scale, teachers-p-m-bubble-rotate, teachers-p-m-bubble-opacity, teachers-p-m-bubble-visibility; }
+[data-8b-live] #teachers .te__counter > li:nth-of-type(2n+2) > .te__stage > .te__pop > .m-bubble { animation-name: teachers-p-m-bubble-scale, teachers-p-m-bubble-rotate-2, teachers-p-m-bubble-opacity, teachers-p-m-bubble-visibility; }
+@keyframes teachers-div-te-pop-translate { 0% { translate: 0px 92%; } 100% { translate: 0px 0px; } }
+@keyframes teachers-div-te-pop-rotate { 0% { rotate: 14deg; } 100% { rotate: -4deg; } }
+@keyframes teachers-div-te-pop-rotate-2 { 0% { rotate: -14deg; } 100% { rotate: 4deg; } }
+@keyframes teachers-p-m-bubble-scale { 0% { scale: 0; } 0.002% { scale: 0.0022; } 100% { scale: 1; } }
+@keyframes teachers-p-m-bubble-rotate { 0% { rotate: -20deg; } 100% { rotate: 0deg; } }
+@keyframes teachers-p-m-bubble-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes teachers-p-m-bubble-visibility { 0% { visibility: hidden; } 0.002% { visibility: visible; animation-timing-function: linear(0, 0.1326, 0.2554, 0.369, 0.4735, 0.5693, 0.6568, 0.7363, 0.808, 0.8724, 0.9297, 0.9803, 1.0245, 1.0626, 1.0951, 1.1221, 1.144, 1.1612, 1.1739, 1.1826, 1.1875, 1.189, 1.1873, 1.1829, 1.176, 1.167, 1.1562, 1.1439, 1.1305, 1.1163, 1.1016, 1.0867, 1.072, 1.0578, 1.0444, 1.0322, 1.0215, 1.0126, 1.0058, 1.0015, 1); } 100% { visibility: visible; } }
+@keyframes teachers-p-m-bubble-rotate-2 { 0% { rotate: 20deg; } 100% { rotate: 0deg; } }
+}
+</style>
+<style data-8b-part="scene:voices">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #voices { height: 340svh; }
+  [data-8b-live] #voices .vo__stage { position: sticky; top: 0; min-height: 100svh; align-content: center; padding-block: 76px 48px; }
+  [data-8b-live] #voices .vo__pad { display: block; }
+  [data-8b-live] #voices .vo__head .m-lead { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 759px) {
+  [data-8b-live] #voices .vo__stage { padding-block: 64px 24px; gap: 24px; }
+}
+}
+@layer scenes {
+[data-8b-live] #voices .vo__board > .vo__slot { z-index: calc(var(--n) - var(--i) + 1); }
+[data-8b-live] #voices { view-timeline: --voices-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #voices .vo__board > .vo__slot > .vo__note { animation-timeline: --voices-t1; animation-range: cover calc(100vh - 48.1928vh * var(--i) + 24.0964% * var(--i)) cover calc(21.6867% + 24.0964% * var(--i) + 56.6265vh - 48.1928vh * var(--i)); animation-timing-function: linear; animation-fill-mode: both; transform: none; transform-origin: 12% 0%; }
+@keyframes voices-figure-vo-note-translate { 0% { translate: var(--voices-x, 0px) calc(var(--voices-y, 0px) + 10px); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 33.3333% { translate: calc(var(--voices-x, 0px) - 30px) calc(var(--voices-y, 0px) - 70px); animation-timing-function: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); } 100% { translate: 0px 0px; } }
+@keyframes voices-figure-vo-note-rotate { 0% { rotate: var(--voices-figure-vo-note-rotate-from, -3deg); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 33.3333% { rotate: -16deg; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); } 100% { rotate: 0deg; } }
+[data-8b-live] #voices .vo__board > .vo__slot > .vo__note { animation-name: voices-figure-vo-note-translate, voices-figure-vo-note-rotate; }
+}
+</style>
+<style data-8b-part="scene:trips">
+@layer scenes {
+[data-8b-live] #trips { view-timeline: --trips-scroll block; view-timeline-inset: 0; }
+[data-8b-live] #trips::after { content: ""; display: block; height: var(--trips-travel, 0px); }
+[data-8b-live] #trips .tr__stage { position: sticky; top: 0; min-height: 100svh; align-content: center; padding-block: 64px 48px; }
+[data-8b-live] #trips .tr__track { display: flex; width: max-content; animation-name: trips-track; animation-timeline: --trips-scroll; animation-range: cover 100vh cover calc(100vh + var(--trips-travel, 0px)); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #trips .tr__trip { width: min(32vw, 430px); }
+[data-8b-live] #trips .tr__photo { aspect-ratio: 16 / 10; }
+[data-8b-live] #trips .tr__stamp { --trips-landed: pow(clamp(0, var(--trips-moved) * var(--trips-per, 0) - var(--trips-from, 0), 1), 4); scale: calc(2.4 - 1.4 * var(--trips-landed)); rotate: calc(-50deg + 62deg * var(--trips-landed)); opacity: var(--trips-landed); }
+@property --trips-moved { syntax: '<number>'; inherits: true; initial-value: 0; }
+@keyframes trips-track { to { translate: calc(var(--trips-travel, 0px) * -1) 0; --trips-moved: 1; } }
+@media (max-width: 759px) {
+  [data-8b-live] #trips .tr__trip { width: 78vw; }
+  [data-8b-live] #trips .tr__stage { gap: 28px; padding-block: 56px 32px; }
+}
+}
+</style>
+<style data-8b-part="scene:fees">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #fees .fe__print-wrap { view-timeline: --fees-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #fees .fe__print { animation-name: fees-div-fe-print-scale, fees-div-fe-print-rotate; animation-timeline: --fees-t1; animation-range: cover 5vh cover 66vh; animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); animation-fill-mode: both; transform: none; }
+@keyframes fees-div-fe-print-scale { 0% { scale: 0.12; } 100% { scale: 1; } }
+@keyframes fees-div-fe-print-rotate { 0% { rotate: -16deg; } 100% { rotate: 0deg; } }
+}
+</style>
+<style data-8b-part="scene:footer">
+@layer scenes {
+[data-8b-live] { --ease-a21692: linear(0, 0.1302, 0.2509, 0.3626, 0.4654, 0.5598, 0.646, 0.7243, 0.7952, 0.8589, 0.9156, 0.9658, 1.0098, 1.0478, 1.0803, 1.1074, 1.1296, 1.1471, 1.1603, 1.1695, 1.175, 1.1771, 1.1762, 1.1725, 1.1664, 1.1582, 1.1482, 1.1368, 1.1242, 1.1108, 1.0969, 1.0828, 1.0688, 1.0553, 1.0425, 1.0309, 1.0206, 1.0121, 1.0056, 1.0014, 1); }
+[data-8b-live] #footer { view-timeline: --footer-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #footer .fo__peek, [data-8b-live] #footer .m-bubble { animation-timeline: --footer-t1; animation-fill-mode: both; transform: none; }
+[data-8b-live] #footer .fo__peek { animation-name: footer-div-fo-peek-translate, footer-div-fo-peek-rotate; animation-range: cover 15vh cover calc(75% - 71.25vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-bubble { animation-name: footer-p-m-bubble-scale, footer-p-m-bubble-rotate, footer-p-m-bubble-opacity, footer-p-m-bubble-visibility; animation-range: cover calc(75% - 71.25vh) cover calc(100% - 100vh); animation-timing-function: var(--ease-a21692), var(--ease-a21692), var(--ease-a21692), linear; transform-origin: 10% 100%; }
+@keyframes footer-div-fo-peek-translate { 0% { translate: -12% 75%; } 100% { translate: 0px 0px; } }
+@keyframes footer-div-fo-peek-rotate { 0% { rotate: -22deg; } 100% { rotate: 0deg; } }
+@keyframes footer-p-m-bubble-scale { 0% { scale: 0; } 0.002% { scale: 0.0022; } 100% { scale: 1; } }
+@keyframes footer-p-m-bubble-rotate { 0% { rotate: 24deg; } 100% { rotate: 0deg; } }
+@keyframes footer-p-m-bubble-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes footer-p-m-bubble-visibility { 0% { visibility: hidden; } 0.002% { visibility: visible; animation-timing-function: linear(0, 0.1302, 0.2509, 0.3626, 0.4654, 0.5598, 0.646, 0.7243, 0.7952, 0.8589, 0.9156, 0.9658, 1.0098, 1.0478, 1.0803, 1.1074, 1.1296, 1.1471, 1.1603, 1.1695, 1.175, 1.1771, 1.1762, 1.1725, 1.1664, 1.1582, 1.1482, 1.1368, 1.1242, 1.1108, 1.0969, 1.0828, 1.0688, 1.0553, 1.0425, 1.0309, 1.0206, 1.0121, 1.0056, 1.0014, 1); } 100% { visibility: visible; } }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<a class="u-skip" href="#main">Skip to content</a>
+<svg class="u-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <path id="tear-1" d="M0.02 0.028L0.065 0.023L0.111 0.021L0.156 0.033L0.202 0.019L0.247 0.024L0.293 0.029L0.338 0.034L0.383 0.023L0.429 0.016L0.474 0.018L0.52 0.03L0.565 0.027L0.61 0.025L0.656 0.023L0.701 0.017L0.747 0.018L0.792 0.03L0.837 0.01L0.883 0.014L0.928 0.023L0.969 0.021L0.985 0.066L0.976 0.111L0.963 0.157L0.971 0.202L0.981 0.247L0.968 0.293L0.959 0.338L0.974 0.383L0.959 0.428L0.98 0.474L0.963 0.519L0.96 0.564L0.956 0.609L0.972 0.655L0.974 0.7L0.958 0.745L0.954 0.791L0.959 0.836L0.952 0.881L0.956 0.926L0.963 0.973L0.918 0.978L0.874 0.969L0.83 0.983L0.785 0.961L0.741 0.964L0.696 0.975L0.652 0.962L0.608 0.983L0.563 0.967L0.519 0.96L0.474 0.97L0.43 0.967L0.386 0.971L0.341 0.963L0.297 0.973L0.252 0.961L0.208 0.959L0.164 0.973L0.119 0.963L0.075 0.971L0.024 0.971L0.019 0.926L0.019 0.881L0.037 0.836L0.019 0.791L0.024 0.746L0.029 0.702L0.024 0.657L0.026 0.612L0.016 0.567L0.023 0.522L0.017 0.477L0.026 0.433L0.025 0.388L0.034 0.343L0.013 0.298L0.034 0.253L0.034 0.208L0.028 0.163L0.023 0.119L0.017 0.074Z" vector-effect="non-scaling-stroke"/>
+    <path id="tear-2" d="M0.037 0.043L0.082 0.024L0.126 0.024L0.171 0.043L0.215 0.036L0.259 0.026L0.304 0.039L0.348 0.027L0.393 0.039L0.437 0.03L0.481 0.03L0.526 0.023L0.57 0.019L0.615 0.036L0.659 0.037L0.703 0.022L0.748 0.034L0.792 0.024L0.837 0.036L0.881 0.025L0.925 0.014L0.981 0.026L0.981 0.071L0.969 0.116L0.975 0.162L0.962 0.207L0.974 0.252L0.966 0.297L0.958 0.342L0.97 0.388L0.964 0.433L0.978 0.478L0.966 0.523L0.97 0.568L0.976 0.613L0.975 0.659L0.97 0.704L0.967 0.749L0.97 0.794L0.974 0.839L0.97 0.885L0.969 0.93L0.969 0.984L0.925 0.971L0.881 0.967L0.836 0.974L0.792 0.972L0.748 0.98L0.704 0.967L0.659 0.976L0.615 0.982L0.571 0.97L0.526 0.975L0.482 0.979L0.438 0.971L0.394 0.961L0.349 0.973L0.305 0.978L0.261 0.962L0.216 0.962L0.172 0.964L0.128 0.975L0.084 0.974L0.033 0.969L0.035 0.924L0.049 0.879L0.044 0.835L0.04 0.79L0.037 0.746L0.039 0.701L0.037 0.657L0.044 0.612L0.027 0.568L0.045 0.523L0.045 0.478L0.027 0.434L0.045 0.389L0.038 0.345L0.041 0.3L0.026 0.256L0.046 0.211L0.049 0.167L0.047 0.122L0.031 0.077Z" vector-effect="non-scaling-stroke"/>
+    <path id="tear-3" d="M0.023 0.03L0.068 0.04L0.114 0.024L0.159 0.019L0.204 0.029L0.249 0.041L0.294 0.039L0.339 0.021L0.384 0.034L0.429 0.038L0.474 0.042L0.519 0.034L0.565 0.031L0.61 0.028L0.655 0.046L0.7 0.04L0.745 0.028L0.79 0.039L0.835 0.034L0.88 0.042L0.925 0.048L0.982 0.04L0.969 0.084L0.961 0.129L0.962 0.173L0.963 0.217L0.977 0.262L0.976 0.306L0.963 0.35L0.962 0.394L0.978 0.439L0.963 0.483L0.959 0.527L0.97 0.572L0.971 0.616L0.967 0.66L0.974 0.705L0.976 0.749L0.965 0.793L0.959 0.838L0.954 0.882L0.964 0.926L0.965 0.96L0.92 0.961L0.875 0.974L0.831 0.961L0.786 0.971L0.741 0.966L0.696 0.965L0.651 0.962L0.606 0.978L0.562 0.961L0.517 0.981L0.472 0.974L0.427 0.958L0.382 0.965L0.337 0.959L0.293 0.963L0.248 0.981L0.203 0.981L0.158 0.969L0.113 0.981L0.069 0.969L0.026 0.969L0.024 0.924L0.023 0.879L0.018 0.834L0.016 0.789L0.031 0.745L0.014 0.7L0.013 0.655L0.033 0.61L0.021 0.565L0.034 0.52L0.02 0.476L0.02 0.431L0.033 0.386L0.018 0.341L0.023 0.296L0.022 0.251L0.018 0.207L0.034 0.162L0.026 0.117L0.014 0.072Z" vector-effect="non-scaling-stroke"/>
+    <path id="tear-4" d="M0.031 0.037L0.075 0.02L0.12 0.031L0.165 0.028L0.209 0.033L0.254 0.041L0.298 0.02L0.343 0.035L0.388 0.037L0.432 0.036L0.477 0.029L0.521 0.018L0.566 0.024L0.611 0.038L0.655 0.029L0.7 0.031L0.744 0.028L0.789 0.019L0.833 0.02L0.878 0.034L0.923 0.025L0.965 0.022L0.968 0.068L0.968 0.113L0.964 0.159L0.974 0.204L0.972 0.25L0.963 0.295L0.98 0.34L0.972 0.386L0.968 0.432L0.966 0.477L0.971 0.523L0.966 0.568L0.977 0.613L0.975 0.659L0.964 0.705L0.984 0.75L0.984 0.795L0.976 0.841L0.977 0.887L0.969 0.932L0.977 0.979L0.932 0.978L0.886 0.971L0.841 0.97L0.796 0.967L0.75 0.984L0.704 0.978L0.659 0.963L0.613 0.979L0.568 0.977L0.522 0.981L0.477 0.962L0.431 0.98L0.386 0.962L0.341 0.971L0.295 0.969L0.25 0.963L0.204 0.978L0.159 0.955L0.113 0.968L0.068 0.975L0.018 0.964L0.024 0.919L0.013 0.875L0.028 0.831L0.018 0.786L0.022 0.742L0.029 0.698L0.034 0.653L0.029 0.609L0.023 0.565L0.033 0.52L0.038 0.476L0.033 0.432L0.019 0.387L0.02 0.343L0.017 0.298L0.019 0.254L0.017 0.21L0.02 0.165L0.04 0.121L0.035 0.077Z" vector-effect="non-scaling-stroke"/>
+    <path id="tear-lid" d="M0.02 0.025L0.066 0.021L0.111 0.019L0.157 0.022L0.203 0.026L0.249 0.025L0.294 0.029L0.34 0.015L0.386 0.021L0.431 0.015L0.477 0.011L0.523 0.024L0.569 0.028L0.614 0.023L0.66 0.013L0.706 0.013L0.751 0.023L0.797 0.017L0.843 0.02L0.889 0.023L0.934 0.023L0.973 0.02L0.971 0.068L0.99 0.115L0.982 0.163L0.984 0.211L0.987 0.259L0.98 0.306L0.934 0.334L0.883 0.303L0.839 0.369L0.813 0.3L0.772 0.356L0.715 0.328L0.687 0.363L0.636 0.32L0.577 0.373L0.536 0.322L0.511 0.381L0.466 0.324L0.401 0.378L0.364 0.321L0.329 0.365L0.276 0.318L0.246 0.372L0.201 0.319L0.144 0.379L0.095 0.308L0.058 0.37L0.02 0.311L0.018 0.311L0.017 0.262L0.013 0.214L0.019 0.165L0.028 0.117L0.018 0.068Z" vector-effect="non-scaling-stroke"/>
+    <path id="tear-base" d="M0.02 0.311L0.058 0.37L0.095 0.308L0.144 0.379L0.201 0.319L0.246 0.372L0.276 0.318L0.329 0.365L0.364 0.321L0.401 0.378L0.466 0.324L0.511 0.381L0.536 0.322L0.577 0.373L0.636 0.32L0.687 0.363L0.715 0.328L0.772 0.356L0.813 0.3L0.839 0.369L0.883 0.303L0.934 0.334L0.98 0.306L0.984 0.306L0.975 0.351L0.99 0.396L0.971 0.441L0.974 0.486L0.976 0.531L0.983 0.576L0.99 0.621L0.98 0.666L0.97 0.711L0.987 0.755L0.975 0.8L0.972 0.845L0.974 0.89L0.976 0.935L0.98 0.969L0.934 0.971L0.889 0.975L0.843 0.983L0.797 0.977L0.751 0.969L0.706 0.97L0.66 0.984L0.614 0.985L0.569 0.985L0.523 0.986L0.477 0.992L0.431 0.99L0.386 0.97L0.34 0.978L0.294 0.974L0.249 0.97L0.203 0.979L0.157 0.989L0.111 0.987L0.066 0.983L0.025 0.98L0.016 0.935L0.029 0.891L0.018 0.846L0.019 0.801L0.015 0.757L0.026 0.712L0.031 0.668L0.019 0.623L0.02 0.578L0.014 0.534L0.017 0.489L0.02 0.444L0.016 0.4L0.018 0.355Z" vector-effect="non-scaling-stroke"/>
+    <path id="tear-note" d="M0 0.013L0.042 0.044L0.083 0.017L0.125 0.039L0.167 0.01L0.208 0.037L0.25 0.013L0.292 0.046L0.333 0.017L0.375 0.052L0.417 0.017L0.458 0.05L0.5 0.013L0.542 0.041L0.583 0.015L0.625 0.044L0.667 0.015L0.708 0.052L0.75 0.018L0.792 0.039L0.833 0.013L0.875 0.054L0.917 0.013L0.958 0.047L1 0.009L1 1L0 1Z" vector-effect="non-scaling-stroke"/>
+    <clipPath id="tear-1-clip" clipPathUnits="objectBoundingBox"><use href="#tear-1"/></clipPath>
+    <clipPath id="tear-2-clip" clipPathUnits="objectBoundingBox"><use href="#tear-2"/></clipPath>
+    <clipPath id="tear-3-clip" clipPathUnits="objectBoundingBox"><use href="#tear-3"/></clipPath>
+    <clipPath id="tear-4-clip" clipPathUnits="objectBoundingBox"><use href="#tear-4"/></clipPath>
+    <clipPath id="tear-lid-clip" clipPathUnits="objectBoundingBox"><use href="#tear-lid"/></clipPath>
+    <clipPath id="tear-base-clip" clipPathUnits="objectBoundingBox"><use href="#tear-base"/></clipPath>
+    <clipPath id="tear-note-clip" clipPathUnits="objectBoundingBox"><use href="#tear-note"/></clipPath>
+  </defs>
+</svg>
+<!-- navigation: fixed bar: pink wordmark, Free trial button and a menu button; full-screen menu with seven links, address and phone; hides on scroll down -->
+<header id="navigation" data-8b-section="navigation">
+  <div class="nav__bar">
+    <a class="nav__logo" href="#opening" aria-label="Small Talk, back to the top">Small Talk</a>
+    <div class="nav__actions">
+      <a class="m-btn" href="#contact"><span class="m-btn__label">Free trial</span></a>
+      <button class="m-icon-btn nav__menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="u-sr">Open the menu</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9h14M5 15h14"/></svg></button>
+    </div>
+  </div>
+  <div class="menu" id="menu" hidden>
+    <div class="menu__in">
+      <div class="menu__top">
+        <a class="nav__logo" href="#opening">Small Talk</a>
+        <button class="m-icon-btn menu__close" type="button"><span class="u-sr">Close the menu</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <nav aria-label="Main">
+        <ul class="menu__list" data-8b-items=":scope > li">
+          <li><a class="menu__link" href="#syllabus">The syllabus</a></li>
+          <li><a class="menu__link" href="#languages">Languages</a></li>
+          <li><a class="menu__link" href="#teachers">Teachers</a></li>
+          <li><a class="menu__link" href="#clubs">After class</a></li>
+          <li><a class="menu__link" href="#trips">Trips</a></li>
+          <li><a class="menu__link" href="#fees">Fees</a></li>
+          <li><a class="menu__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="m-text-2">1 Example Street, Chicago · <a data-8b-placeholder="phone" class="m-link" href="tel:+13120000000">(312) 000-0000</a></p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- opening: two screens: giant wordmark, a torn portrait sticker with a bubble, a term tape and intro with two buttons; then a statement surrounded by eight greeting bubbles (animation: scene:opening) -->
+<section id="opening" data-8b-section="opening">
+  <div class="op__first">
+    <h1 class="op__mark m-display" style="--len:10"><span class="op__mark-in">Small Talk</span></h1>
+    <div class="op__grid">
+      <div class="op__side">
+        <div class="op__tape">
+          <span class="m-badge">Spring term</span>
+          <p class="op__tape-text">Starts March 9 · evenings and Saturdays</p>
+        </div>
+        <figure class="m-card op__card"><img loading="lazy" class="m-card__img" src="https://images.unsplash.com/photo-1713942590288-1468a2d88ee4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c21hbGwlMjBncm91cCUyMGNvbnZlcnNhdGlvbiUyMGFyb3VuZCUyMHRhYmxlfGVufDF8MHx8fDE3OTEzNjU1ODN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60" alt="Two people talking over coffee at a white table" width="1600" height="1067"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      </div>
+      <div class="op__head">
+        <div class="op__head-in" data-loop>
+          <figure class="m-sticker op__base" style="--sticker-tear:url(#tear-base-clip)">
+            <svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-base"/></svg>
+            <img class="m-sticker__img" src="https://images.unsplash.com/photo-1644587590591-aa9ed5f83782?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29tYW4lMjB0YWxraW5nJTIwZ2VzdHVyaW5nJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTM2NTUwOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60" alt="A student with curly hair and glasses, mouth open in surprise, hand raised mid-sentence" width="1600" height="2400" fetchpriority="high">
+          </figure>
+          <div class="op__lid-wrap">
+            <div class="op__lid m-sticker" style="--sticker-tear:url(#tear-lid-clip)">
+              <svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-lid"/></svg>
+              <img class="m-sticker__img" src="https://images.unsplash.com/photo-1644587590591-aa9ed5f83782?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29tYW4lMjB0YWxraW5nJTIwZ2VzdHVyaW5nJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTM2NTUwOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60" alt="" width="1600" height="2400">
+            </div>
+          </div>
+          <p class="m-bubble op__ask"><span class="m-bubble__text">Wait, how do you say that?</span></p>
+        </div>
+      </div>
+      <div class="op__intro">
+        <p class="m-lead">A language school for curious grown-ups. Six languages, evening groups of eight, and lessons built from the conversations you actually have.</p>
+        <div class="op__actions">
+          <a class="m-btn" href="#contact"><span class="m-btn__label">Book a free trial</span></a>
+          <a class="m-btn-2" href="#languages"><span class="m-btn-2__label">See the courses</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="op__second">
+    <p class="op__statement m-statement" data-8b-split="words">Every big conversation starts with <span class="m-statement__accent">small talk</span>. The weather, the train, the coffee, the barber. We teach the ordinary, so the <span class="m-statement__accent">extraordinary</span> has somewhere to go.</p>
+    <ul class="op__bubbles" data-8b-items=":scope > li">
+      <li class="op__bubble"><span class="m-bubble"><span class="m-bubble__text" lang="es">¿Qué tal?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble-2"><span class="m-bubble-2__text">Lovely weather, huh?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble"><span class="m-bubble__text" lang="fr">Ça va&nbsp;?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble-2"><span class="m-bubble-2__text" lang="it">Come va?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble-2"><span class="m-bubble-2__text" lang="pt">Tudo bem?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble"><span class="m-bubble__text" lang="de">Wie geht's?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble-2"><span class="m-bubble-2__text">Is this seat taken?</span></span></li>
+      <li class="op__bubble"><span class="m-bubble"><span class="m-bubble__text" lang="ja-Latn">O-genki desu ka?</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- syllabus: six week cards with a photo, week badge, situation and a phrase in the language, on a 3 by 2 plan (animation: scene:syllabus) -->
+<section id="syllabus" data-8b-section="syllabus">
+  <div class="l-wrap sy__head">
+    <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">The syllabus</span> <span class="m-heading__line m-heading__accent">is your Tuesday</span></h2>
+    <p class="m-lead sy__lead">Twelve weeks, twelve ordinary situations. You learn what to say at the barber long before anyone mentions the subjunctive.</p>
+  </div>
+  <ol class="l-wrap sy__plan" data-8b-items=":scope > li">
+    <li class="sy__week" style="--syllabus-figure-m-card-translate-from: -8vw; --syllabus-figure-m-card-translate-from-2: -30vh; --syllabus-figure-m-card-rotate-from: -16deg; --syllabus-figure-m-card-rotate-to: -1.5deg; --syllabus-figure-m-card-scale-from: 0.62; --syllabus-figure-m-card-translate-from-m: -18.237%">
+      <figure class="m-card sy__card"><img class="m-card__img" src="https://images.unsplash.com/photo-1734989251994-de774eed808f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTl8fGJhcmlzdGElMjBvcmRlcmluZyUyMGNvZmZlZSUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTM2NTQ5Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=350&q=60" alt="A smiling barista hands a red cup across the counter" width="1600" height="1067" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      <span class="m-badge">Week 1</span>
+      <h3 class="m-title">Ordering coffee</h3>
+      <p class="sy__phrase" lang="es">“Un cortado, por favor.”</p>
+    </li>
+    <li class="sy__week" style="--syllabus-figure-m-card-translate-from: 14vw; --syllabus-figure-m-card-translate-from-2: -46vh; --syllabus-figure-m-card-rotate-from: 11deg; --syllabus-figure-m-card-rotate-to: 0deg; --syllabus-figure-m-card-scale-from: 1.2; --syllabus-figure-m-card-translate-from-m: 14vw">
+      <figure class="m-card sy__card"><img class="m-card__img" src="https://images.unsplash.com/photo-1709130877146-369a6833b8da?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dHJhaW4lMjBwbGF0Zm9ybSUyMHdhaXRpbmclMjBwZW9wbGV8ZW58MXwwfHx8MTc5MTM2NTQ5Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60" alt="A traveller waits on a platform as a red and yellow train pulls in" width="1600" height="900" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      <span class="m-badge">Week 2</span>
+      <h3 class="m-title">The train is late</h3>
+      <p class="sy__phrase" lang="fr">“C’est bien le quai pour Lyon&nbsp;?”</p>
+    </li>
+    <li class="sy__week" style="--syllabus-figure-m-card-translate-from: 18vw; --syllabus-figure-m-card-translate-from-2: -12vh; --syllabus-figure-m-card-rotate-from: -8deg; --syllabus-figure-m-card-rotate-to: 1.5deg; --syllabus-figure-m-card-scale-from: 0.55; --syllabus-figure-m-card-translate-from-m: 18vw">
+      <figure class="m-card sy__card"><img class="m-card__img" src="https://images.unsplash.com/photo-1777828631116-7f9d03707ad0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bWFya2V0JTIwc3RhbGwlMjB2ZW5kb3IlMjB0YWxraW5nfGVufDF8MHx8fDE3OTEzNjU0OTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60" alt="A couple browsing a stall at an outdoor market" width="1600" height="1067" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      <span class="m-badge">Week 3</span>
+      <h3 class="m-title">Haggling at the market</h3>
+      <p class="sy__phrase" lang="it">“Quanto costa questo?”</p>
+    </li>
+    <li class="sy__week" style="--syllabus-figure-m-card-translate-from: -20vw; --syllabus-figure-m-card-translate-from-2: -62vh; --syllabus-figure-m-card-rotate-from: 14deg; --syllabus-figure-m-card-rotate-to: -1.5deg; --syllabus-figure-m-card-scale-from: 1.12; --syllabus-figure-m-card-translate-from-m: -20vw">
+      <figure class="m-card sy__card"><img class="m-card__img" src="https://images.unsplash.com/photo-1590540178859-647e3b7a70bd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8YmFyYmVyc2hvcCUyMGNvbnZlcnNhdGlvbnxlbnwxfDB8fHwxNzkxMzY1NTExfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60" alt="A barber trims a customer's hair in a dim shop" width="1600" height="1067" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      <span class="m-badge">Week 4</span>
+      <h3 class="m-title">Small talk at the barber</h3>
+      <p class="sy__phrase" lang="pt">“Só um pouco nas pontas.”</p>
+    </li>
+    <li class="sy__week" style="--syllabus-figure-m-card-translate-from: 4vw; --syllabus-figure-m-card-translate-from-2: -40vh; --syllabus-figure-m-card-rotate-from: -19deg; --syllabus-figure-m-card-rotate-to: 0deg; --syllabus-figure-m-card-scale-from: 0.78; --syllabus-figure-m-card-translate-from-m: 9.119%">
+      <figure class="m-card sy__card"><img class="m-card__img" src="https://images.unsplash.com/photo-1789758385775-98ab6db59e00?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fGRpbm5lciUyMHBhcnR5JTIwZnJpZW5kcyUyMHRhYmxlJTIwdGFsa2luZ3xlbnwxfDB8fHwxNzkxMzY1NTEyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=450&q=60" alt="Three friends laughing over dinner and wine" width="1600" height="1067" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      <span class="m-badge">Week 5</span>
+      <h3 class="m-title">Dinner with strangers</h3>
+      <p class="sy__phrase" lang="de">“Was empfehlen Sie?”</p>
+    </li>
+    <li class="sy__week" style="--syllabus-figure-m-card-translate-from: 22vw; --syllabus-figure-m-card-translate-from-2: -72vh; --syllabus-figure-m-card-rotate-from: 9deg; --syllabus-figure-m-card-rotate-to: 1.5deg; --syllabus-figure-m-card-scale-from: 0.64; --syllabus-figure-m-card-translate-from-m: 22vw">
+      <figure class="m-card sy__card"><img class="m-card__img" src="https://images.unsplash.com/photo-1752650143291-a049c42b15f2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dG91cmlzdCUyMGFza2luZyUyMGRpcmVjdGlvbnMlMjBzdHJlZXR8ZW58MXwwfHx8MTc5MTM2NTUxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60" alt="Two friends with backpacks study a paper map on a city street" width="1600" height="900" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+      <span class="m-badge">Week 6</span>
+      <h3 class="m-title">Asking the way</h3>
+      <p class="sy__phrase" lang="ja-Latn">“Sumimasen, eki wa doko desu ka?”</p>
+    </li>
+  </ol>
+  <p class="l-wrap m-lead sy__more">Then the doctor, the landlord, a first date, a job interview, a polite complaint and a wedding toast. <a class="m-link" href="#languages">Pick your language</a></p>
+</section>
+
+<!-- languages: six large language names, each with a greeting bubble, levels and lesson times -->
+<section id="languages" data-8b-section="languages">
+  <div class="l-wrap">
+    <div class="la__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Six languages</span> <span class="m-heading__line m-heading__accent">around one table</span></h2>
+      <p class="m-lead">Every course runs ten weeks, two hours a week, with eight people at most. From your very first hello to arguing about films.</p>
+    </div>
+    <ul class="la__list" data-8b-items=":scope > li">
+      <li class="la__row">
+        <span class="la__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <h3 class="la__name">Spanish</h3>
+        <span class="m-bubble la__hello" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-14deg"><span class="m-bubble__text" lang="es">¿Qué tal?</span></span>
+        <p class="m-text-2 la__meta">A1 to C1 · Tuesdays and Thursdays, 6:30 pm</p>
+      </li>
+      <li class="la__row">
+        <span class="la__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <h3 class="la__name">French</h3>
+        <span class="m-bubble-2 la__hello" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:12deg"><span class="m-bubble-2__text" lang="fr">Ça va&nbsp;?</span></span>
+        <p class="m-text-2 la__meta">A1 to C1 · Mondays and Wednesdays, 6:30 pm</p>
+      </li>
+      <li class="la__row">
+        <span class="la__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <h3 class="la__name">Italian</h3>
+        <span class="m-bubble la__hello" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-10deg"><span class="m-bubble__text" lang="it">Come va?</span></span>
+        <p class="m-text-2 la__meta">A1 to B2 · Tuesdays, 7 pm · Saturdays, 10 am</p>
+      </li>
+      <li class="la__row">
+        <span class="la__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <h3 class="la__name">Portuguese</h3>
+        <span class="m-bubble-2 la__hello" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:14deg"><span class="m-bubble-2__text" lang="pt">Tudo bem?</span></span>
+        <p class="m-text-2 la__meta">A1 to B2 · Thursdays, 7 pm</p>
+      </li>
+      <li class="la__row">
+        <span class="la__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <h3 class="la__name">German</h3>
+        <span class="m-bubble la__hello" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-12deg"><span class="m-bubble__text" lang="de">Wie geht's?</span></span>
+        <p class="m-text-2 la__meta">A1 to B2 · Saturdays, 10 am</p>
+      </li>
+      <li class="la__row">
+        <span class="la__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <h3 class="la__name">Japanese</h3>
+        <span class="m-bubble-2 la__hello" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:10deg"><span class="m-bubble-2__text" lang="ja-Latn">O-genki?</span></span>
+        <p class="m-text-2 la__meta">A1 to B1 · Saturdays, 1 pm</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- teachers: four teacher stickers behind name bars, each with a hello bubble and a short bio (animation: scene:teachers) -->
+<section id="teachers" data-8b-section="teachers">
+  <div class="l-wrap">
+    <div class="te__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Who’s talking?</span> <span class="m-heading__line m-heading__accent">Our teachers</span></h2>
+      <p class="m-lead">Native speakers who never run out of things to say, and who still remember ordering the wrong thing in somebody else’s language.</p>
+    </div>
+    <ul class="te__counter" data-8b-items=":scope > li">
+      <li class="te__person">
+        <div class="te__stage">
+          <div class="te__pop">
+            <figure class="m-sticker te__photo" style="--sticker-tear:url(#tear-1-clip)"><svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-1"/></svg><img class="m-sticker__img" src="https://images.unsplash.com/photo-1759709867160-6f837fcacc27?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8eW91bmclMjBtYW4lMjBsYXVnaGluZyUyMGhlYWRzaG90fGVufDF8MXx8fDE3OTEzNjU1MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Mateo, laughing, in a black T-shirt" width="1600" height="2000" loading="lazy"></figure>
+            <p class="m-bubble te__hello"><span class="m-bubble__text" lang="es">¡Hola!</span></p>
+          </div>
+          <div class="te__bar"><h3 class="m-title">Mateo Ruiz</h3><p class="te__lang">Spanish · from Valencia</p></div>
+        </div>
+        <p class="m-text te__bio">A former radio host. Teaches you to interrupt politely, which in Spain is a real skill.</p>
+      </li>
+      <li class="te__person">
+        <div class="te__stage">
+          <div class="te__pop">
+            <figure class="m-sticker te__photo" style="--sticker-tear:url(#tear-2-clip)"><svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-2"/></svg><img class="m-sticker__img" src="https://images.unsplash.com/photo-1754653099182-d1ff7b4ded48?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjB0YWxraW5nJTIwZ2VzdHVyaW5nJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTM2NTUwOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Amara in round glasses and a dark blazer, hand on her chest" width="1600" height="2400" loading="lazy"></figure>
+            <p class="m-bubble te__hello"><span class="m-bubble__text" lang="fr">Salut&nbsp;!</span></p>
+          </div>
+          <div class="te__bar"><h3 class="m-title">Amara Diallo</h3><p class="te__lang">French · from Lyon</p></div>
+        </div>
+        <p class="m-text te__bio">Runs the Thursday film night and believes every grammar rule has a better story behind it.</p>
+      </li>
+      <li class="te__person">
+        <div class="te__stage">
+          <div class="te__pop">
+            <figure class="m-sticker te__photo" style="--sticker-tear:url(#tear-3-clip)"><svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-3"/></svg><img class="m-sticker__img" src="https://images.unsplash.com/photo-1665062173657-3912ae7991e0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8b2xkZXIlMjB3b21hbiUyMHNtaWxpbmclMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxMzY1NTEwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Rosa, smiling, in a green blouse" width="1600" height="1988" loading="lazy"></figure>
+            <p class="m-bubble te__hello"><span class="m-bubble__text" lang="it">Ciao!</span></p>
+          </div>
+          <div class="te__bar"><h3 class="m-title">Rosa Bellini</h3><p class="te__lang">Italian · from Bologna</p></div>
+        </div>
+        <p class="m-text te__bio">Thirty years of teaching and a market walk every Saturday. Gestures are part of the syllabus.</p>
+      </li>
+      <li class="te__person">
+        <div class="te__stage">
+          <div class="te__pop">
+            <figure class="m-sticker te__photo" style="--sticker-tear:url(#tear-4-clip)"><svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-4"/></svg><img class="m-sticker__img" src="https://images.unsplash.com/photo-1698510047345-ff32de8a3b74?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjJ8fHBlcnNvbiUyMHBvcnRyYWl0JTIwcGxhaW4lMjBiYWNrZ3JvdW5kfGVufDF8MXx8fDE3OTEzNjU0OTF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Rafael, smiling, in front of a white backdrop" width="1600" height="1889" loading="lazy"></figure>
+            <p class="m-bubble te__hello"><span class="m-bubble__text" lang="pt">Olá!</span></p>
+          </div>
+          <div class="te__bar"><h3 class="m-title">Rafael Costa</h3><p class="te__lang">Portuguese · from Porto</p></div>
+        </div>
+        <p class="m-text te__bio">Grew up behind his family’s café counter, which is where he learned that every regular has a story.</p>
+      </li>
+    </ul>
+    <p class="m-lead te__more">Jonas teaches German and Emi teaches Japanese, both on Saturdays.</p>
+  </div>
+</section>
+
+<!-- clubs: four dated event rows: supper club, film night, market walk, pub quiz -->
+<section id="clubs" data-8b-section="clubs">
+  <div class="l-wrap">
+    <div class="cl__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">After class</span> <span class="m-heading__line m-heading__accent">Where’s everyone?</span></h2>
+      <p class="m-lead">Clubs are free for students and five dollars for friends who just want to listen.</p>
+    </div>
+    <ol class="cl__list" data-8b-items=":scope > li">
+      <li class="cl__row">
+        <span class="cl__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <time class="cl__date" datetime="2026-10-13">Tue 13 Oct</time>
+        <h3 class="m-title">Spanish supper club</h3>
+        <p class="m-text cl__text">Casa Nuno, 2 Example Avenue. Three courses and one rule: no English after the starter.</p>
+      </li>
+      <li class="cl__row">
+        <span class="cl__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <time class="cl__date" datetime="2026-10-15">Thu 15 Oct</time>
+        <h3 class="m-title">French film night</h3>
+        <p class="m-text cl__text">At the school. We watch it twice: once with subtitles, once arguing about what happened.</p>
+      </li>
+      <li class="cl__row">
+        <span class="cl__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <time class="cl__date" datetime="2026-10-17">Sat 17 Oct</time>
+        <h3 class="m-title">Italian market walk</h3>
+        <p class="m-text cl__text">The Saturday market, 9 am. Buy lunch for the group, ordering only in Italian. Rosa pays for the coffee.</p>
+      </li>
+      <li class="cl__row">
+        <span class="cl__rule" data-8b-motion="rule" aria-hidden="true" data-8b-enter="90%"></span>
+        <time class="cl__date" datetime="2026-10-21">Wed 21 Oct</time>
+        <h3 class="m-title">Pub quiz in German</h3>
+        <p class="m-text cl__text">Linden Tavern, 7 pm. Six rounds, one team per table, and points for the best wrong answer.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- voices: four student quotes on torn notes, ripped off a pad one after another (pinned screen) (animation: scene:voices) -->
+<section id="voices" data-8b-section="voices">
+  <div class="vo__stage">
+    <div class="l-wrap vo__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Overheard</span> <span class="m-heading__line m-heading__accent">in class</span></h2>
+      <p class="m-lead">Things our students said out loud, written down before they could take them back.</p>
+    </div>
+    <ul class="l-wrap vo__board" data-8b-items=":scope > .vo__slot" data-8b-fixed="4">
+      <li class="vo__pad" aria-hidden="true"></li>
+      <li class="vo__slot" style="--voices-figure-vo-note-rotate-from: -3deg">
+        <figure class="vo__note">
+          <blockquote class="vo__quote">Week four was the barber. I moved to Lisbon and got the best haircut of my life.</blockquote>
+          <figcaption class="vo__who">Dana K.<span>Portuguese, B1</span></figcaption>
+        </figure>
+      </li>
+      <li class="vo__slot" style="--voices-figure-vo-note-rotate-from: 2deg">
+        <figure class="vo__note">
+          <blockquote class="vo__quote">I came for the grammar and stayed for the Thursday arguments about films.</blockquote>
+          <figcaption class="vo__who">Marcus T.<span>French, A2</span></figcaption>
+        </figure>
+      </li>
+      <li class="vo__slot" style="--voices-figure-vo-note-rotate-from: -2deg">
+        <figure class="vo__note">
+          <blockquote class="vo__quote">My nonna finally laughed at one of my jokes. In Italian. It took two terms.</blockquote>
+          <figcaption class="vo__who">Priya S.<span>Italian, A2</span></figcaption>
+        </figure>
+      </li>
+      <li class="vo__slot" style="--voices-figure-vo-note-rotate-from: 3deg">
+        <figure class="vo__note">
+          <blockquote class="vo__quote">Eight people, one table, no slides. I forgot it was a class until I ordered dinner in Spanish.</blockquote>
+          <figcaption class="vo__who">Ben O.<span>Spanish, B2</span></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- trips: four postcards (Lisbon, Lyon, Osaka, Oaxaca) that travel sideways on a pinned pink screen, each stamped with a greeting (animation: scene:trips) -->
+<section id="trips" data-8b-section="trips">
+  <div class="tr__stage">
+    <div class="l-wrap tr__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Weekends abroad</span> <span class="m-heading__line m-heading__accent">Say it where they say it</span></h2>
+      <p class="m-lead">Twice a year a teacher takes a small group to practise on the locals. No tour buses, no English menus.</p>
+    </div>
+    <div class="tr__viewport">
+      <ul class="tr__track" data-8b-items=":scope > li">
+        <li class="tr__trip">
+          <figure class="m-card tr__photo"><img class="m-card__img" src="https://images.unsplash.com/photo-1701556500694-c8932537eef4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bGlzYm9uJTIwc3RyZWV0JTIwdHJhbXxlbnwxfDF8fHwxNzkxMzY1NTE0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60" alt="A yellow tram climbs a Lisbon street with the river behind it" width="1600" height="2133" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+          <span class="tr__stamp" aria-hidden="true"><span lang="pt">Olá</span><small>Lisboa</small></span>
+          <h3 class="m-title">Lisbon</h3>
+          <p class="m-text tr__facts">Portuguese · 4 days in May · from $1,180</p>
+          <p class="m-text">Tram 28, a tasca lunch and a fado night where you order without pointing.</p>
+        </li>
+        <li class="tr__trip">
+          <figure class="m-card tr__photo"><img class="m-card__img" src="https://images.unsplash.com/photo-1710528088223-ffab40a20056?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bHlvbiUyMG9sZCUyMHRvd24lMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTM2NTUxNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60" alt="People walk through a stone archway towards a hilltop basilica in Lyon" width="1600" height="2522" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+          <span class="tr__stamp" aria-hidden="true"><span lang="fr">Salut</span><small>Lyon</small></span>
+          <h3 class="m-title">Lyon</h3>
+          <p class="m-text tr__facts">French · 3 days in June · from $1,240</p>
+          <p class="m-text">Market mornings, long bouchon lunches and a bookseller who corrects your accent.</p>
+        </li>
+        <li class="tr__trip">
+          <figure class="m-card tr__photo"><img class="m-card__img" src="https://images.unsplash.com/photo-1558446007-3a966405afd9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b3Nha2ElMjBzdHJlZXQlMjBuaWdodHxlbnwxfDF8fHwxNzkxMzY1NTE1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60" alt="Neon signs and a lit tower over a busy Osaka street at night" width="1600" height="2400" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+          <span class="tr__stamp" aria-hidden="true"><span lang="ja-Latn">Konnichiwa</span><small>Osaka</small></span>
+          <h3 class="m-title">Osaka</h3>
+          <p class="m-text tr__facts">Japanese · 6 days in April · from $2,650</p>
+          <p class="m-text">Street food, a night in a ryokan and the nerve to say sumimasen to a stranger.</p>
+        </li>
+        <li class="tr__trip">
+          <figure class="m-card tr__photo"><img class="m-card__img" src="https://images.unsplash.com/photo-1780094188585-cea7ea53c821?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8b2F4YWNhJTIwY29sb3JmdWwlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTM2NTUxNnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=440&q=60" alt="Pink and blue houses along a sunny street in Oaxaca" width="1600" height="2134" loading="lazy"><span class="m-card__peel" aria-hidden="true"></span></figure>
+          <span class="tr__stamp" aria-hidden="true"><span lang="es">Hola</span><small>Oaxaca</small></span>
+          <h3 class="m-title">Oaxaca</h3>
+          <p class="m-text tr__facts">Spanish · 5 days in November · from $1,390</p>
+          <p class="m-text">A mole class, a mezcal tasting and long evenings of conversation in the zócalo.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- level: a three-question chat with reply buttons that suggests a group -->
+<section id="level" data-8b-section="level">
+  <div class="l-wrap le__grid">
+    <div class="le__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Not sure</span> <span class="m-heading__line m-heading__accent">where to start?</span></h2>
+      <p class="m-lead">Three small questions. Answer honestly; nobody is listening. Or skip them and come to a free trial: we place everyone in ten minutes.</p>
+    </div>
+    <form data-8b-placeholder="form" class="le__chat" aria-label="Find your level">
+      <fieldset class="le__q">
+        <legend class="m-bubble le__ask" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-8deg"><span class="m-bubble__text">A stranger at the bus stop says hello in the language you want to learn. You…</span></legend>
+        <div class="le__replies">
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="0"><span class="m-btn-2__label">Smile and hope the bus comes</span></button>
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="1"><span class="m-btn-2__label">Say hello and ask how they are</span></button>
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="2"><span class="m-btn-2__label">Complain about the bus together</span></button>
+        </div>
+      </fieldset>
+      <fieldset class="le__q">
+        <legend class="m-bubble le__ask" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:8deg"><span class="m-bubble__text">A waiter rattles off today’s specials. You…</span></legend>
+        <div class="le__replies">
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="0"><span class="m-btn-2__label">Point at the menu</span></button>
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="1"><span class="m-btn-2__label">Catch one dish and order it</span></button>
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="2"><span class="m-btn-2__label">Ask what they would order</span></button>
+        </div>
+      </fieldset>
+      <fieldset class="le__q">
+        <legend class="m-bubble le__ask" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-8deg"><span class="m-bubble__text">Someone tells a joke in that language. You…</span></legend>
+        <div class="le__replies">
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="0"><span class="m-btn-2__label">Laugh a second after everyone else</span></button>
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="1"><span class="m-btn-2__label">Get it, but can’t tell one back</span></button>
+          <button class="m-btn-2 le__reply" type="button" aria-pressed="false" data-score="2"><span class="m-btn-2__label">Tell a better one</span></button>
+        </div>
+      </fieldset>
+      <div class="le__result" aria-live="polite">
+        <p class="m-text-2 le__wait">Answer all three and we will suggest a group.</p>
+        <p class="m-bubble-2 le__answer" data-from="0" data-to="2" hidden><span class="m-bubble-2__text">Start at A1, the beginners’ group: Tuesdays at 6:30 pm.</span></p>
+        <p class="m-bubble-2 le__answer" data-from="3" data-to="4" hidden><span class="m-bubble-2__text">Start at A2, the improvers: Thursdays at 6:30 pm.</span></p>
+        <p class="m-bubble-2 le__answer" data-from="5" data-to="6" hidden><span class="m-bubble-2__text">Start at B2, the conversation group: Saturdays at 10 am.</span></p>
+        <a class="m-btn le__book" href="#contact"><span class="m-btn__label">Book that trial</span></a>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!-- fees: three plans and a note called The small print, at full size (animation: scene:fees) -->
+<section id="fees" data-8b-section="fees">
+  <div class="l-wrap">
+    <div class="fe__head">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Fees</span> <span class="m-heading__line m-heading__accent">with no small print</span></h2>
+      <p class="m-lead">One price per term, books included. Your first lesson is free, whichever way you choose to learn.</p>
+    </div>
+    <ul class="fe__plans" data-8b-items=":scope > li">
+      <li class="fe__plan">
+        <h3 class="m-title">Group term</h3>
+        <p class="fe__price" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-6deg">$420 <small>a term</small></p>
+        <p class="m-text">Ten weeks, two hours a week, eight people at most. Weekday evenings or Saturday mornings.</p>
+      </li>
+      <li class="fe__plan">
+        <h3 class="m-title">Duo</h3>
+        <p class="fe__price" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:6deg">$690 <small>a term</small></p>
+        <p class="m-text">You and one other person, ten weeks of ninety minutes, at the pace the two of you set.</p>
+      </li>
+      <li class="fe__plan">
+        <h3 class="m-title">One-to-one</h3>
+        <p class="fe__price" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-6deg">$68 <small>an hour</small></p>
+        <p class="m-text">Your schedule and your situations: the wedding speech, the transfer to Lyon, the in-laws.</p>
+      </li>
+    </ul>
+    <div class="fe__print-wrap">
+      <div class="fe__print">
+        <h3 class="m-title">The small print, at full size</h3>
+        <p class="m-text">Books and audio are included. Miss a class and join another group that week. Pay in three instalments at no extra cost. Cancel before week two for a full refund. That is all of it.</p>
+      </div>
+    </div>
+    <div class="fe__cta"><a class="m-btn-2" href="#contact"><span class="m-btn-2__label">Book a free trial</span></a></div>
+  </div>
+</section>
+
+<!-- contact: address, hours, phone, email, a room photo and a free-trial booking form -->
+<section id="contact" data-8b-section="contact">
+  <div class="l-wrap co__grid">
+    <div class="co__info">
+      <h2 class="m-heading" data-8b-motion="lines" data-8b-enter="90%"><span class="m-heading__line">Say hello</span> <span class="m-heading__line m-heading__accent">in any language</span></h2>
+      <p class="m-lead">Book a free trial lesson. Tell us the language and when you can come, and we will find you a seat at the table.</p>
+      <dl class="co__facts">
+        <div><dt class="m-text-2">Where</dt><dd class="m-text">1 Example Street, second floor, Chicago, IL 60000</dd></div>
+        <div><dt class="m-text-2">Office hours</dt><dd class="m-text">Mon–Thu 4–9 pm<br>Sat 9 am–2 pm</dd></div>
+        <div><dt class="m-text-2">Call</dt><dd class="m-text"><a data-8b-placeholder="phone" class="m-link" href="tel:+13120000000">(312) 000-0000</a></dd></div>
+        <div><dt class="m-text-2">Write</dt><dd class="m-text"><a data-8b-placeholder="email" class="m-link" href="mailto:hello@small-talk.example">hello@small-talk.example</a></dd></div>
+      </dl>
+      <figure class="m-sticker co__room" data-8b-motion="stick" data-8b-enter="90%" style="--motion-stick-turn:-10deg;--sticker-tear:url(#tear-2-clip)"><svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-2"/></svg><img class="m-sticker__img" src="https://images.unsplash.com/photo-1764174861943-a7914825311f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c21hbGwlMjBncm91cCUyMGNvbnZlcnNhdGlvbiUyMGFyb3VuZCUyMHRhYmxlfGVufDF8MHx8fDE3OTEzNjU1ODN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=860&q=60" alt="A small group talking around a table in a bright room with tall windows" width="1600" height="1200" loading="lazy"></figure>
+    </div>
+    <form data-8b-placeholder="form" class="co__form" action="#contact" method="post">
+      <p class="m-title co__form-title">Book a free trial lesson</p>
+      <div class="co__field"><label class="co__label" for="co-name">Your name</label><input class="m-field" id="co-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="co__field"><label class="co__label" for="co-email">Email</label><input class="m-field" id="co-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="co__pair">
+        <div class="co__field"><label class="co__label" for="co-language">Language</label>
+          <select class="m-field" id="co-language" name="language">
+            <option>Spanish</option><option>French</option><option>Italian</option><option>Portuguese</option><option>German</option><option>Japanese</option>
+          </select>
+        </div>
+        <div class="co__field"><label class="co__label" for="co-when">Best time</label>
+          <select class="m-field" id="co-when" name="when">
+            <option>Weekday evening</option><option>Saturday morning</option><option>Saturday afternoon</option>
+          </select>
+        </div>
+      </div>
+      <div class="co__field"><label class="co__label" for="co-note">Anything we should know?</label><textarea class="m-field" id="co-note" name="note" rows="4"></textarea></div>
+      <button class="m-btn co__send" type="submit"><span class="m-btn__label">Book my free lesson</span></button>
+      <p class="m-bubble-2 co__thanks" role="status" hidden><span class="m-bubble-2__text">Thanks! We will call you within a day, probably in English.</span></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+
+<!-- footer: a grinning face peeking in with a bubble, six links, copyright with the Design: 8B credit, phone, email, Privacy (animation: scene:footer) -->
+<footer id="footer" data-8b-section="footer">
+  <div class="l-wrap fo__in">
+    <div class="fo__peek">
+      <figure class="m-sticker fo__head" style="--sticker-tear:url(#tear-3-clip)"><svg class="m-sticker__rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><use href="#tear-3"/></svg><img class="m-sticker__img" src="https://images.unsplash.com/photo-1611691187789-a1da7cab070c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8eW91bmclMjBtYW4lMjBsYXVnaGluZyUyMGhlYWRzaG90fGVufDF8MXx8fDE3OTEzNjU1MTB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60" alt="A student in a knit cap, grinning with his eyes squeezed shut" width="1600" height="2399" loading="lazy"></figure>
+      <p class="m-bubble fo__say"><span class="m-bubble__text">Still scrolling? Say something!</span></p>
+    </div>
+    <nav class="fo__nav" aria-label="Footer">
+      <ul class="fo__links" data-8b-items=":scope > li">
+        <li><a class="fo__link" href="#syllabus">The syllabus</a></li>
+        <li><a class="fo__link" href="#languages">Languages</a></li>
+        <li><a class="fo__link" href="#teachers">Teachers</a></li>
+        <li><a class="fo__link" href="#trips">Trips</a></li>
+        <li><a class="fo__link" href="#fees">Fees</a></li>
+        <li><a class="fo__link" href="#contact">Book a trial</a></li>
+      </ul>
+    </nav>
+    <div class="m-text-2 fo__legal">
+      <p class="m-text-2">© 2026 Small Talk Language School, Chicago · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+      <a data-8b-placeholder="phone" class="m-link" href="tel:+13120000000">(312) 000-0000</a>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:hello@small-talk.example">hello@small-talk.example</a>
+      <a class="m-link" href="#contact">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  const bar = root.querySelector('.nav__bar');
+  const menu = root.querySelector('#menu');
+  const openButton = root.querySelector('.nav__menu-btn');
+  const closeButton = menu.querySelector('.menu__close');
+  let last = scrollY, travel = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - last;
+    last = y;
+    if (delta === 0) return;
+    if (Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 160 || travel < -8) bar.classList.remove('is-hidden');
+    else if (travel > 8 && menu.hidden) bar.classList.add('is-hidden');
+  }, { passive: true });
+  const open = () => {
+    menu.hidden = false;
+    openButton.setAttribute('aria-expanded', 'true');
+    window.motionKit?.wheel?.stop();
+    menu.querySelector('.menu__link')?.focus();
+  };
+  const close = (returnFocus = true) => {
+    menu.hidden = true;
+    openButton.setAttribute('aria-expanded', 'false');
+    window.motionKit?.wheel?.start();
+    if (returnFocus) openButton.focus();
+  };
+  openButton.addEventListener('click', open);
+  closeButton.addEventListener('click', () => close());
+  menu.addEventListener('click', event => { if (event.target.closest('a')) close(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) close(); });
+})();
+</script>
+
+<script data-8b-part="section-script:level">
+(() => {
+  const section = document.getElementById('level');
+  const questions = [...section.querySelectorAll('.le__q')];
+  const answers = [...section.querySelectorAll('.le__answer')];
+  const wait = section.querySelector('.le__wait');
+  const update = () => {
+    const picked = questions.map(q => q.querySelector('[aria-pressed="true"]'));
+    if (picked.some(button => !button)) return;
+    const score = picked.reduce((sum, button) => sum + Number(button.dataset.score), 0);
+    answers.forEach(answer => { answer.hidden = !(score >= Number(answer.dataset.from) && score <= Number(answer.dataset.to)); });
+    wait.hidden = true;
+  };
+  questions.forEach(question => question.addEventListener('click', event => {
+    const button = event.target.closest('.le__reply');
+    if (!button) return;
+    question.querySelectorAll('.le__reply').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+    update();
+  }));
+})();
+</script>
+
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .co__form');
+  const thanks = form.querySelector('.co__thanks');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    thanks.hidden = false;
+    form.reset();
+  });
+})();
+</script>
+
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('.line{display:block;overflow:clip;padding-block:.12em;margin-block:-.12em}.line:not(:last-child){margin-bottom:0}.line+.line{margin-top:-.24em}.line+.line>.line__in{text-indent:0}:where(h1,h2,h3,h4,h5,h6,p,div,blockquote,figcaption,dd,dt):where([data-8b-split="lines"]:has(>.line)){display:flow-root}.line__in{display:block}.kit-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const sources = new WeakMap(), widths = new WeakMap();
+const graphemes = typeof Intl.Segmenter === 'function'
+? text => [...new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(text)].map(part => part.segment)
+: text => [...text];
+const span = (className, text) => { const element = document.createElement('span'); element.className = className; if (text != null) element.textContent = text; return element; };
+const split = element => {
+const mode = element.getAttribute('data-8b-split');
+if (sources.has(element)) element.innerHTML = sources.get(element); else sources.set(element, element.innerHTML);
+const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT), texts = [];
+while (walker.nextNode()) texts.push(walker.currentNode);
+let index = 0;
+for (const node of texts) {
+const fragment = document.createDocumentFragment();
+for (const piece of node.data.split(/(\s+)/)) {
+if (!piece) continue;
+if (/^\s+$/.test(piece)) { fragment.append(piece); continue; }
+const word = span('w');
+if (mode === 'chars') {
+word.setAttribute('aria-hidden', 'true');
+for (const character of graphemes(piece)) { const c = span('c', character); c.style.setProperty('--i', index++); word.append(c); }
+} else {
+word.textContent = piece;
+if (mode === 'words') word.style.setProperty('--i', index++);
+}
+fragment.append(word);
+}
+node.replaceWith(fragment);
+}
+if (mode === 'chars') element.append(span('kit-sr', element.textContent.replace(/\s+/g, ' ').trim()));
+if (mode === 'lines') {
+const lines = [];
+let top = null;
+for (const child of [...element.childNodes]) {
+const probe = child.nodeType === 1 ? child : null;
+const at = probe ? probe.getBoundingClientRect().top : top;
+if (probe && (top === null || Math.abs(at - top) > 2)) { lines.push([]); top = at; }
+if (!lines.length) lines.push([]);
+lines.at(-1).push(child);
+}
+lines.forEach((nodes, i) => {
+const line = span('line'), inner = span('line__in');
+line.style.setProperty('--i', i);
+nodes[0].before(line);
+inner.append(...nodes);
+line.append(inner);
+});
+index = lines.length;
+widths.set(element, element.clientWidth);
+}
+element.style.setProperty('--n', index);
+};
+const pending = [];
+let busy = false;
+const drain = () => {
+if (busy) return;
+const element = pending.shift();
+if (!element) return;
+busy = true;
+setTimeout(() => { try { split(element); } catch (error) { console.error('[motion-kit] split failed', error); } busy = false; drain(); }, 0);
+};
+const near = new IntersectionObserver(entries => entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+near.unobserve(entry.target);
+pending.push(entry.target);
+drain();
+}), { rootMargin: '100% 0px 100% 0px' });
+(document.fonts?.ready ?? Promise.resolve()).then(() => document.querySelectorAll('[data-8b-split]').forEach(element => near.observe(element)));
+kit.measure(() => document.querySelectorAll('[data-8b-split="lines"]').forEach(element => {
+if (sources.has(element) && widths.get(element) !== element.clientWidth) { pending.push(element); drain(); }
+}));
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+</script>
+<script data-8b-part="scene-script:opening">
+motionKit.scene('opening', () => {
+  const section = document.getElementById('opening');
+  const head = section.querySelector('.op__head');
+  const bubbles = [...section.querySelectorAll('.op__bubble')];
+  const statement = section.querySelector('.op__statement');
+  const centre = node => {
+    let x = node.offsetWidth / 2, y = node.offsetHeight / 2;
+    for (let n = node; n && n !== section; n = n.offsetParent) { x += n.offsetLeft; y += n.offsetTop; }
+    return { x, y };
+  };
+  motionKit.measure(() => {
+    const walker = document.createTreeWalker(statement, NodeFilter.SHOW_TEXT);
+    let words = 0;
+    while (walker.nextNode()) words += walker.currentNode.data.split(/\s+/).filter(Boolean).length;
+    const opened = centre(head);
+    motionKit.set(section, { '--opening-length': Math.max(0.72 + 0.012 * (words - 1), 0.48 + 0.05 * (bubbles.length - 1)) });
+    bubbles.forEach(bubble => {
+      const at = centre(bubble);
+      motionKit.set(bubble, { '--opening-x': `${opened.x - at.x}px`, '--opening-y': `${opened.y - head.offsetHeight * 0.22 - at.y}px` });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:voices">
+motionKit.scene('voices', () => {
+  const section = document.getElementById('voices');
+  const board = section.querySelector('.vo__board');
+  const pad = section.querySelector('.vo__pad');
+  const notes = [...section.querySelectorAll('.vo__note')];
+  const centre = node => {
+    let x = node.offsetWidth / 2, y = node.offsetHeight / 2;
+    for (let n = node; n && n !== board; n = n.offsetParent) { x += n.offsetLeft; y += n.offsetTop; }
+    return { x, y };
+  };
+  motionKit.measure(() => {
+    const to = centre(pad);
+    notes.forEach(note => {
+      const at = centre(note);
+      motionKit.set(note, { '--voices-x': `${to.x - at.x}px`, '--voices-y': `${to.y - at.y}px` });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:trips">
+motionKit.scene('trips', () => {
+  const section = document.getElementById('trips');
+  const stage = section.querySelector('.tr__stage');
+  const track = section.querySelector('.tr__track');
+  const trips = [...section.querySelectorAll('.tr__trip')];
+  const turned = Math.cos(50 * Math.PI / 180) + Math.sin(50 * Math.PI / 180);
+  motionKit.measure(() => {
+    let end = 0;
+    trips.forEach(trip => {
+      const stamp = trip.querySelector('.tr__stamp');
+      const right = trip.offsetLeft + trip.offsetWidth;
+      end = Math.max(end, right + parseFloat(getComputedStyle(track).paddingRight), trip.offsetLeft + stamp.offsetLeft + stamp.offsetWidth * (1 + 2.4 * turned) / 2);
+      motionKit.set(trip, { '--trips-from': (motionKit.box(trip).x - 0.96 * innerWidth) / (0.34 * innerWidth) });
+    });
+    const travel = Math.max(0, Math.round(end - track.offsetLeft) - stage.clientWidth);
+    motionKit.set(section, { '--trips-travel': `${travel}px`, '--trips-per': travel / (0.34 * innerWidth) });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "slug": "chewsday",
+  "name": "Chewsday",
+  "categories": [
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/bubble-tea-shop-website-template",
+  "demo": "https://8b.com/templates/chewsday/demo.html",
+  "design_md_url": "https://8b.com/templates/chewsday/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "0d17c2cd44b5675f219ebe535772e0a4178a9d16",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "fd55b3033ac32d5c7ac4df5bbff37bfa3f071b10",
+    "README.md": "661448b2c0a3e92bd467f10c6200a1695d3a9cc8",
+    "AGENTS.md": "c60bebc2aa326304f686aaf08d825b41acf2e31a",
+    "index.html": "a09b71b75d0f2c3fe0d898f400deb5b1d7e962b9",
+    "index.gsap.html": "a66715457138b9e10cef07bbac7b3dcc151f8757"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "caad28947164df471c68378255c3389f7c64d3e1a41751a1922f1e31f22445e8",
+    "README.md": "16fed19b22a04140a93d18a3f57702fa5e20b05bfea4340283c6301e703c6f5f",
+    "AGENTS.md": "e362e67fe2d247368f12fcde48beb4d17ca39e522554833a40bebda80042ef8e",
+    "index.html": "94fcc2868547d6bea6aa9bc92b25e94ee172cfb6127377eb2c208b727dfa37a2",
+    "index.gsap.html": "956a8367577b12f9f6a024beed3e351ea8577cb554a8d315fb6c783d51ff083f"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

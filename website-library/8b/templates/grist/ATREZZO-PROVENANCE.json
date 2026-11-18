@@ -1,0 +1,44 @@
+{
+  "slug": "grist",
+  "name": "Grist",
+  "categories": [
+    "Education",
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/cooking-school-website-template",
+  "demo": "https://8b.com/templates/grist/demo.html",
+  "design_md_url": "https://8b.com/templates/grist/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "cd488f99cf32cff02a428ea68ffa17cfdc44c2df",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "00fbc2fe9500d6efa0d4a37e9c5f40886a2b2f4a",
+    "README.md": "43b663c62112e771d2e9b3d94520179fcf0fab50",
+    "AGENTS.md": "ea83b66fd0b98fce038db5d6ede9984f430b214f",
+    "index.html": "c7badd33ca5e0b82b29ea2cfb9e133918f49e518",
+    "index.gsap.html": "3a0164d212b42d3b6d71244f296ae57bf03f4a44"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "0605c436e50ed7ccb727e19aa31d7a31bca744029d9df7e55a9c2b62cb189b2b",
+    "README.md": "f8a402f59178542861d0a676f4c33e55cbf274b58dbd189ed701bb879dca8bfc",
+    "AGENTS.md": "ab76f6433b9b3857969b4763fd1bfb7f78170a955487da0a3df1a77eb99e3e14",
+    "index.html": "081c2da2007a84dc88b7d77851cbdc2ec0fa46c3fd115411941fb7b66b24a8d0",
+    "index.gsap.html": "cd3c7ef5004041d3edc95734a58d44f000b9e12c36143798e77e215348077ce3"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

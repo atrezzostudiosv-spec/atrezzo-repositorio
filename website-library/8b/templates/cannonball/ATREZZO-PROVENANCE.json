@@ -1,0 +1,44 @@
+{
+  "slug": "cannonball",
+  "name": "Cannonball",
+  "categories": [
+    "Sport and fitness",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/water-park-website-template",
+  "demo": "https://8b.com/templates/cannonball/demo.html",
+  "design_md_url": "https://8b.com/templates/cannonball/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "ac9756a63ea276618706fb4478e57386ef51c8df",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a2e29310d17ea8f3046b0f7df54c24de87fe50d4",
+    "README.md": "3986c871c54445b8ba75d0647d52289ec44029b3",
+    "AGENTS.md": "c6338cee199c7d46e25400df5292935cf3b8b4c0",
+    "index.html": "db89c5433fa3ec00198dee309853ffc7b078d386",
+    "index.gsap.html": "2149e3f6a20a96d98d77c87737f66774c56c5297"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "42b69013711f8b8b5cf2a09832e64720dd40eb40a7415a717cde7611a7ef1aa0",
+    "README.md": "8aa459daed642e1187403171d6412d929f9d9e22f6f9d83e02ccd0e3c4a38e77",
+    "AGENTS.md": "802ab4514d128d3fc6587e88ea44f4597cbd00c61d551b44e305b0e74c3f25a2",
+    "index.html": "8b359ce072f230b8178f45ef85f15d40c1a41b0793459bf12342c021603a3bab",
+    "index.gsap.html": "0ba4796727df979ac189092b5ab5d280ba0daefa0a36342368b6ae91cfbc4d8c"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

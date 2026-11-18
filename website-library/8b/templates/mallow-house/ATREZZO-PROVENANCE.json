@@ -1,0 +1,44 @@
+{
+  "slug": "mallow-house",
+  "name": "Mallow House",
+  "categories": [
+    "Education",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/daycare-website-template",
+  "demo": "https://8b.com/templates/mallow-house/demo.html",
+  "design_md_url": "https://8b.com/templates/mallow-house/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "d2693f25ea64cc5821913ad54b77c0878623c0d6",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "0eb5486a5cccd5ef08397c391c52f12613f67761",
+    "README.md": "1e30c1558d3d0617010bdaf2af0b0120ff55c3bd",
+    "AGENTS.md": "2ed6bb7b41e41aa4f01ea3410d1b7002a7c28803",
+    "index.html": "c1bc34fa4eb2e669247a9e2c42c389f61d12c032",
+    "index.gsap.html": "2bdc79fe11a4f664acf021167d8aee211abaee82"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c11f694ed85944c1cdc71784ed555f1c41e5b14ca32b8c7e1b3e0baa6e779d02",
+    "README.md": "2fd2616828308ac76940c07bcdfbe0ef31caa74132e15ccfc97dd29e2585aa8f",
+    "AGENTS.md": "aedd48805500a3f7861bbb957a5810a6a4bb8926ac069d54265c71bf21b16c24",
+    "index.html": "d59c7b60f3af683e6c6ad0b002bbeb1cd9ffa10067f68efce0d3457e86a1ac2a",
+    "index.gsap.html": "92fc2d0e3186f762e6d1164fb6bf8e6ae85f343ddd26b0392d1ccdc51297f52a"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

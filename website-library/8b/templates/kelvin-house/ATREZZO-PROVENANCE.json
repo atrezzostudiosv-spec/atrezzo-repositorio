@@ -1,0 +1,43 @@
+{
+  "slug": "kelvin-house",
+  "name": "Kelvin House",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/smart-home-website-template",
+  "demo": "https://8b.com/templates/kelvin-house/demo.html",
+  "design_md_url": "https://8b.com/templates/kelvin-house/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b57108164302ed8d6937f8c6de6921be56b508dc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "c6c0fc44b1a32b7dbb99c7e5fede608cde6172ca",
+    "README.md": "1156f7161c0733f711e38153e5850550ccb06d17",
+    "AGENTS.md": "489ce37e39f48e18dc59c2e15a3062ffb30df479",
+    "index.html": "567a161ca84bef9cc5ad16e151d1d7e7fdcb9656",
+    "index.gsap.html": "b493f9b4a1b53efccec8d5c3f0569a5c82547585"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "2ab531ac2628bc52080feafbac2aa571d98d70c72afbd15a7c4e79dd7e98674f",
+    "README.md": "21e6b1c43d52d6e990042b34c1071bd5e3b0ed4fc38a28d5774d443f7f41a642",
+    "AGENTS.md": "ab0425c7b2b61d9cfffbe69de3c873d807cbe71227f4667e3a7a92903d9afbfb",
+    "index.html": "9805a394280e6edc30b0306427d276f2ff19529a57d875189c97055efb641fd0",
+    "index.gsap.html": "e7d78cbfb24eb24b734a51270aadefa15ace5de39cbcc8d00a2a391c8419d31c"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

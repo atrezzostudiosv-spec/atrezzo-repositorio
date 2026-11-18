@@ -1,0 +1,44 @@
+{
+  "slug": "splosh",
+  "name": "Splosh",
+  "categories": [
+    "Sport and fitness",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/swimming-pool-website-template",
+  "demo": "https://8b.com/templates/splosh/demo.html",
+  "design_md_url": "https://8b.com/templates/splosh/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "5803e40bf1985f5f9e74da5c1de412cfdce367e2",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "bef379d44ed9bd3e5ab8a732a97b84cc37c34e16",
+    "README.md": "502ef28b58a2b7e9c15c5441eb091b5123112b2b",
+    "AGENTS.md": "2b4067c60d2f00b469aca0703c2d499f9663ff1e",
+    "index.html": "529eafac2b1a5d8c4e9a747f0fecdcf67deab750",
+    "index.gsap.html": "f87ea0f57f7b4323c99914d1e32cef28a6b56138"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "985804c6e8aa937335f93b53334009ae693719e18c221450249ca18793f5e941",
+    "README.md": "1dd07935a7ae4c318721728f93f12b7df660a8a9ec2aeaad8ca78790843f3ef9",
+    "AGENTS.md": "6b9fe5c659cc13b9950757a655b0bca49a02c33228ede086277d6a8747fb6be2",
+    "index.html": "d59a62337dcab35558da0e20675ea65dba538ea4d9690a56526de951ba2968b9",
+    "index.gsap.html": "ee345c5f08fc30ea1c65c241073ae7ce3812dbb2d218ab6b9a20fafaffaf3900"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

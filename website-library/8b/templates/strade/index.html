@@ -1,0 +1,879 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/strade/
+  Source: https://github.com/8bsite/sneaker-store-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STRADE — street clothing, sneakers and repairs in Rotterdam</title>
+<meta name="description" content="STRADE racks small runs from independent street labels, wear-tests every piece on the city first and mends what you buy for life. Two stores in Rotterdam and a Saturday run club.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="STRADE — street clothing, sneakers and repairs in Rotterdam">
+<meta property="og:description" content="STRADE racks small runs from independent street labels, wear-tests every piece on the city first and mends what you buy for life. Two stores in Rotterdam and a Saturday run club.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23c6ef4e'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23121411'%3ES%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Iayoxdg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/schibstedgrotesk/v7/Jqz55SSPQuCQF3t8uOwiUL-taUTtap9Gayo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f4f7ec;
+  --color-2: #121411;
+  --color-3: #c6ef4e;
+  --color-4: #e5eadb;
+  --color-5: #cfd6c3;
+  --color-6: #ffffff;
+  --color-8: #a9ae9f;
+  --color-9: #1f231d;
+  --color-10: #5d6254;
+  --font-1: "Schibsted Grotesk", "Schibsted Grotesk Fallback", Arial, sans-serif;
+  --font-2: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 24px;
+  --radius-2: 999px;
+  --radius-3: 14px;
+  --space-1: clamp(16px, 3.4vw, 48px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  /* font fallbacks */
+  @font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 102.4%; ascent-override: 95.7%; descent-override: 25.4%; line-gap-override: 0%; }
+  @font-face { font-family: "Schibsted Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 97.1%; ascent-override: 100.9%; descent-override: 26.8%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.9%; ascent-override: 98.2%; descent-override: 30.8%; line-gap-override: 0%; }
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 95.1%; ascent-override: 107.2%; descent-override: 33.6%; line-gap-override: 0%; }
+  /* end font fallbacks */
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; line-height: 1.5; overflow-x: clip; }
+  h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button, input, textarea, select { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-stretch: 100%; font-size: 16px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-2); font-stretch: 100%; font-size: 14px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(40px, 6.4vw, 88px); font-weight: 600; font-stretch: 100%; line-height: .92; letter-spacing: 0; text-transform: uppercase; font-style: normal; text-wrap: balance; }
+.m-text-4 { font-family: var(--font-2); font-stretch: 100%; font-size: 12px; font-weight: 600; line-height: 1.2; letter-spacing: .04em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-weight: 700; font-stretch: 100%; line-height: .82; letter-spacing: 0; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 22px; border: 0; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 14px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: color .35s; }
+.m-btn::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--color-2); clip-path: inset(0 50%); transition: clip-path .45s cubic-bezier(.65,0,.35,1); }
+.m-btn:has(.m-btn__icon) { padding-right: 5px; }
+.m-btn__icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: var(--radius-2); background: var(--color-6); color: var(--color-2); font-size: 15px; }
+.m-btn:focus-visible { outline-color: var(--color-2); }
+@media (hover: hover) { .m-btn:hover { color: var(--color-3); } .m-btn:hover::before { clip-path: inset(0 0); } }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; border: 1px solid currentColor; border-radius: var(--radius-2); background: transparent; color: inherit; font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: color .35s, border-color .35s; }
+.m-btn-2::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: inset(0 50%); transition: clip-path .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-btn-2:hover { color: var(--color-2); border-color: var(--color-3); } .m-btn-2:hover::before { clip-path: inset(0 0); } }
+.m-btn-3 { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; border: 1px solid var(--color-6); border-radius: var(--radius-2); background: var(--color-6); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: border-color .35s; }
+.m-btn-3::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--color-3); clip-path: inset(0 50%); transition: clip-path .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-btn-3:hover { border-color: var(--color-3); } .m-btn-3:hover::before { clip-path: inset(0 0); } }
+.m-link { display: inline-flex; align-items: center; gap: 8px; color: inherit; font-family: var(--font-2); font-stretch: 100%; font-size: 14px; font-weight: 600; line-height: 1.2; letter-spacing: .02em; text-transform: uppercase; text-decoration: none; }
+.m-link__label { background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 3px; }
+.m-link__arrow { font-size: 16px; }
+@media (hover: hover) { .m-link:hover .m-link__label { animation: m-link-draw .6s cubic-bezier(.65,0,.35,1); } .m-link:hover .m-link__arrow { transform: translate(2px, -2px); } }
+.m-link__arrow { transition: transform .35s; }
+.m-link-2 { color: inherit; font-family: var(--font-2); font-stretch: 100%; font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; padding-bottom: 2px; transition: background-size .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-link-2:hover { background-size: 100% 1px; } }
+.m-link-3 { color: inherit; font-family: var(--font-1); font-size: clamp(26px, 2.6vw, 36px); font-weight: 600; font-stretch: 100%; line-height: 1.05; letter-spacing: 0; text-transform: uppercase; font-style: normal; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 2px no-repeat; padding-bottom: 3px; overflow-wrap: anywhere; transition: background-size .45s cubic-bezier(.65,0,.35,1); }
+@media (hover: hover) { .m-link-3:hover { background-size: 100% 2px; } }
+@keyframes m-link-draw { from { background-size: 0 1px; } }
+.m-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--radius-2); background: var(--color-4); color: var(--color-2); transition: background-color .3s, color .3s; }
+.m-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; transition: transform .35s cubic-bezier(.3,1.6,.5,1); }
+@media (hover: hover) { .m-icon:hover { background: var(--color-2); color: var(--color-3); } .m-icon:hover svg { transform: translateY(-3px); } }
+.m-badge { display: inline-grid; place-items: center; min-width: 28px; height: 28px; padding: 0 7px; border-radius: var(--radius-2); background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 11px; font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: none; font-style: normal; vertical-align: top; }
+.m-surface { background: var(--color-6); color: var(--color-2); border-radius: var(--radius-3); }
+.m-frame { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-4); }
+.m-frame > img { width: 100%; height: 100%; object-fit: cover; }
+.m-field { display: block; width: 100%; min-height: 48px; padding: 12px 16px; border: 1px solid var(--color-5); border-radius: var(--radius-3); background: var(--color-6); color: var(--color-2); font-family: var(--font-2); font-stretch: 100%; font-size: 16px; font-weight: 400; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; transition: border-color .3s; }
+.m-field:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; border-color: var(--color-2); }
+textarea.m-field { resize: vertical; }
+}
+</style>
+<style data-8b-part="section:top-nav">
+@layer sections {
+  #top-nav { position: fixed; inset: 0 0 auto; z-index: 50; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding: 14px var(--space-1); background: var(--color-1); transition: transform .45s cubic-bezier(.65,0,.35,1); }
+  #top-nav[data-hidden] { transform: translateY(-100%); }
+  #top-nav .nav__logo { justify-self: start; font-family: var(--font-1); font-size: 30px; font-weight: 700; font-stretch: 100%; letter-spacing: .01em; line-height: 1; text-decoration: none; }
+  #top-nav .nav__links { display: flex; gap: clamp(18px, 3vw, 40px); }
+  #top-nav .nav__icons { justify-self: end; display: flex; gap: 8px; }
+  @media (max-width: 640px) {
+    #top-nav { grid-template-columns: auto 1fr auto; padding-block: 10px; gap: 12px; }
+    #top-nav .nav__logo { font-size: 24px; }
+    #top-nav .nav__links { justify-content: center; gap: 14px; }
+    #top-nav .nav__links .m-link-2 { font-size: 14px; }
+    #top-nav .nav__icons { gap: 6px; }
+    #top-nav .nav__icons .m-icon:not(:last-child) { display: none; }
+  }
+  @media (max-width: 389px) {
+    #top-nav { gap: 8px; padding-inline: 12px; }
+    #top-nav .nav__logo { font-size: 20px; }
+    #top-nav .nav__links { gap: 10px; }
+    #top-nav .nav__links .m-link-2 { font-size: 13px; }
+  }
+}
+</style>
+
+
+
+<style data-8b-part="section:drop">
+@layer sections {
+  #drop { position: relative; overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); }
+  #drop .drop__head { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: end; margin-bottom: clamp(28px, 5vh, 56px); }
+  #drop .drop__head h2 { grid-column: 1 / span 7; }
+  #drop .drop__head h2 .ln { display: block; }
+  #drop .drop__head p { grid-column: 9 / span 4; }
+  #drop .drop__body { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: start; }
+  #drop .drop__photo { grid-column: 1 / span 7; aspect-ratio: 4 / 3; }
+  #drop .drop__photo > img { object-position: 50% 60%; }
+  #drop .drop__side { grid-column: 8 / span 5; display: grid; gap: 24px; }
+  #drop .drop__specs { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px dashed var(--color-5); border-left: 1px dashed var(--color-5); }
+  #drop .drop__specs > div { padding: 16px 18px 22px; border-right: 1px dashed var(--color-5); border-bottom: 1px dashed var(--color-5); }
+  #drop .drop__specs > div:first-child { grid-column: 1 / -1; }
+  #drop .drop__specs dt { margin-bottom: 8px; color: var(--color-10); }
+  #drop .drop__specs dd.drop__price { font-family: var(--font-1); font-size: 44px; font-weight: 600; font-stretch: 100%; line-height: 1; }
+  #drop .drop__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  @media (max-width: 899.98px) {
+    #drop .drop__head, #drop .drop__body { grid-template-columns: 1fr; row-gap: 18px; }
+    #drop .drop__head h2, #drop .drop__head p, #drop .drop__photo, #drop .drop__side { grid-column: 1; }
+    #drop .drop__side { margin-top: 10px; }
+  }
+  #drop .drop__head, #drop .drop__side { position: relative; z-index: 1; }
+  #drop .drop__head h1 { grid-column: 1 / span 7; }
+  #drop .drop__head h1 .ln { display: block; }
+  @media (max-width: 899.98px) {
+    #drop .drop__head h1 { grid-column: 1; }
+    #drop .drop__side { display: contents; }
+    #drop .drop__cta { order: -1; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #drop .drop__head p { animation: drop-rise .9s cubic-bezier(.2, .75, .2, 1) .2s backwards; }
+  }
+  @keyframes drop-rise { from { transform: translateY(24px); opacity: 0; } }
+}
+</style>
+<style data-8b-part="section:lookbook">
+@layer sections {
+  #lookbook { position: relative; overflow-x: clip; padding: clamp(60px, 10vh, 120px) 0; }
+  #lookbook .look__track { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 2.4vw, 32px); padding: 0 var(--space-1); }
+  #lookbook .look__intro { display: grid; align-content: start; gap: 20px; }
+  #lookbook .look__intro h2 { font-size: clamp(40px, 4.5vw, 66px); }
+  #lookbook .look__intro h2 .ln { display: block; }
+  #lookbook .look__intro p { max-width: 30ch; }
+  #lookbook .look__card { display: grid; gap: 14px; align-content: start; }
+  #lookbook .look__photo { aspect-ratio: 3 / 4; }
+  #lookbook .look__name { font-family: var(--font-1); font-size: clamp(24px, 2.6vw, 36px); font-weight: 600; font-stretch: 100%; line-height: .95; text-transform: uppercase; }
+  #lookbook .look__items li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px dashed var(--color-5); }
+  @media (max-width: 899.98px) {
+    #lookbook .look__track { grid-template-columns: 1fr 1fr; }
+    #lookbook .look__intro { grid-column: 1 / -1; }
+  }
+  @media (max-width: 560px) {
+    #lookbook .look__track { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="section:wear-test">
+@layer sections {
+  #wear-test { overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 40px; align-items: start; }
+  #wear-test .wt__head { grid-column: 1 / span 7; display: grid; gap: 22px; }
+  #wear-test .wt__head h2 { font-size: clamp(40px, 5vw, 80px); }
+  #wear-test .wt__head h2 .ln { display: block; }
+  #wear-test .wt__head p { max-width: 52ch; }
+  #wear-test .wt__photo { grid-column: 9 / span 4; grid-row: 1 / span 2; aspect-ratio: 4 / 5; }
+  #wear-test .wt__photo img { object-position: 40% 50%; }
+  #wear-test .wt__log { grid-column: 1 / span 7; width: 100%; border-collapse: collapse; }
+  #wear-test .wt__log th { padding: 10px 12px 10px 0; text-align: left; color: var(--color-10); border-bottom: 1px solid var(--color-2); }
+  #wear-test .wt__log td { padding: 14px 12px 14px 0; vertical-align: top; border-bottom: 1px dashed var(--color-5); }
+  #wear-test .wt__log td:first-child { font-weight: 600; }
+  #wear-test .wt__log td:first-child span { display: block; font-weight: 400; color: var(--color-10); }
+  @media (max-width: 899.98px) {
+    #wear-test { grid-template-columns: 1fr; }
+    #wear-test .wt__head, #wear-test .wt__log { grid-column: 1; }
+    #wear-test .wt__photo { grid-column: 1; grid-row: 2; width: 82%; }
+    #wear-test .wt__head h2 { font-size: clamp(28px, 8.6vw, 60px); }
+    #wear-test .wt__log th:nth-child(3), #wear-test .wt__log td:nth-child(3) { display: none; }
+  }
+}
+</style>
+<style data-8b-part="section:repair">
+@layer sections {
+  #repair { position: relative; overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); }
+  #repair .rep__head { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: end; margin-bottom: clamp(36px, 7vh, 80px); }
+  #repair .rep__head h2 { grid-column: 1 / span 6; }
+  #repair .rep__head h2 .ln { display: block; }
+  #repair .rep__head div { grid-column: 8 / span 5; display: grid; gap: 20px; justify-items: start; }
+  #repair .rep__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 28px); }
+  #repair .rep__card { display: grid; gap: 14px; align-content: start; padding: 12px 12px 22px; }
+  #repair .rep__card .m-frame { aspect-ratio: 4 / 3; border-radius: var(--radius-3); }
+  #repair .rep__step { padding: 0 8px; font-family: var(--font-1); font-size: clamp(26px, 2.4vw, 34px); font-weight: 600; font-stretch: 100%; line-height: 1; text-transform: uppercase; }
+  #repair .rep__card p { padding: 0 8px; }
+  @media (max-width: 899.98px) {
+    #repair .rep__head { grid-template-columns: 1fr; row-gap: 20px; }
+    #repair .rep__head h2, #repair .rep__head div { grid-column: 1; }
+    #repair .rep__cards { grid-template-columns: 1fr; max-width: 460px; margin-inline: auto; }
+  }
+}
+</style>
+<style data-8b-part="section:stores">
+@layer sections {
+  #stores { overflow-x: clip; padding: clamp(60px, 10vh, 120px) var(--space-1) clamp(80px, 14vh, 150px); }
+  #stores > h2 { margin-bottom: clamp(36px, 6vh, 70px); }
+  #stores > h2 .ln { display: block; }
+  #stores .st__list { display: grid; gap: clamp(40px, 8vh, 90px); }
+  #stores .st__store { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; align-items: center; padding-top: clamp(24px, 4vh, 40px); border-top: 1px dashed var(--color-5); }
+  #stores .st__photo { grid-column: 1 / span 6; aspect-ratio: 3 / 2; }
+  #stores .st__info { grid-column: 8 / span 5; display: grid; gap: 16px; justify-items: start; }
+  #stores .st__store:nth-child(even) .st__photo { grid-column: 7 / span 6; grid-row: 1; }
+  #stores .st__store:nth-child(even) .st__info { grid-column: 1 / span 5; grid-row: 1; }
+  #stores .st__name { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; font-family: var(--font-1); font-size: clamp(38px, 4.4vw, 64px); font-weight: 600; font-stretch: 100%; line-height: .9; text-transform: uppercase; }
+  #stores .st__hours { border-collapse: collapse; }
+  #stores .st__hours th { padding: 4px 24px 4px 0; text-align: left; font-weight: 500; color: var(--color-10); }
+  #stores .st__hours td { padding: 4px 0; font-weight: 600; }
+  @media (max-width: 899.98px) {
+    #stores .st__store { grid-template-columns: 1fr; row-gap: 20px; }
+    #stores .st__photo, #stores .st__info, #stores .st__store:nth-child(even) .st__photo, #stores .st__store:nth-child(even) .st__info { grid-column: 1; grid-row: auto; }
+  }
+}
+</style>
+<style data-8b-part="section:club">
+@layer sections {
+  #club { padding: 0 var(--space-1); }
+  #club .club__panel { position: relative; overflow: hidden; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: clamp(28px, 5vh, 56px); padding: clamp(28px, 4vw, 56px); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-6); }
+  #club .club__head { grid-column: 1 / span 6; display: grid; gap: 20px; justify-items: start; align-content: start; }
+  #club .club__head h2 .ln { display: block; }
+  #club .club__head p { max-width: 44ch; color: var(--color-8); }
+  #club .club__photo { grid-column: 8 / span 5; aspect-ratio: 16 / 10; }
+  #club .club__lanes { grid-column: 1 / -1; }
+  #club .club__lane { overflow: hidden; border-top: 1px dashed var(--color-9); padding: clamp(10px, 2vh, 18px) 0; }
+  #club .club__lane:last-child { border-bottom: 1px dashed var(--color-9); }
+  #club .club__run { display: flex; align-items: baseline; gap: clamp(16px, 3vw, 40px); width: max-content; max-width: 100%; font-family: var(--font-1); font-size: clamp(34px, 4.3vw, 80px); font-weight: 600; font-stretch: 100%; line-height: 1; text-transform: uppercase; }
+  #club .club__pace { color: var(--color-3); }
+  #club :focus-visible { outline-color: var(--color-3); }
+  #club .club__group { font-family: var(--font-2); font-size: 14px; font-weight: 600; font-stretch: 100%; letter-spacing: .04em; color: var(--color-8); }
+  @media (max-width: 899.98px) {
+    #club .club__panel { grid-template-columns: 1fr; }
+    #club .club__head, #club .club__photo, #club .club__lanes { grid-column: 1; }
+    #club .club__run { display: grid; gap: 4px; width: auto; font-size: clamp(30px, 9vw, 56px); }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { overflow-x: clip; padding: clamp(80px, 14vh, 150px) var(--space-1); display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 32px; }
+  #faq > h2 { grid-column: 1 / span 4; align-self: start; }
+  #faq > h2 .ln { display: block; }
+  #faq .faq__list { grid-column: 6 / span 7; border-top: 1px solid var(--color-2); }
+  #faq details { border-bottom: 1px dashed var(--color-5); }
+  #faq summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; cursor: pointer; list-style: none; font-family: var(--font-1); font-size: clamp(22px, 2.2vw, 30px); font-weight: 600; font-stretch: 100%; line-height: 1.05; text-transform: uppercase; }
+  #faq summary::-webkit-details-marker { display: none; }
+  #faq summary::after { content: '+'; flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: var(--radius-2); background: var(--color-4); font-family: var(--font-2); font-size: 22px; font-weight: 400; transition: transform .35s, background-color .35s; }
+  #faq details[open] summary::after { transform: rotate(45deg); background: var(--color-3); }
+  #faq details p { max-width: 60ch; padding: 0 0 22px; }
+  @media (max-width: 899.98px) {
+    #faq { grid-template-columns: 1fr; }
+    #faq > h2, #faq .faq__list { grid-column: 1; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { position: relative; overflow-x: clip; padding: clamp(60px, 10vh, 120px) var(--space-1) clamp(60px, 10vh, 110px); border-top: 1px dashed var(--color-5); }
+  #contact .contact__mark { font-size: min(340px, calc((100vw - 2 * var(--space-1)) / (var(--len) * .61))); text-align: center; }
+  #contact .contact__mark .cm__word { display: inline-block; }
+  #contact .contact__body { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 32px; margin-top: clamp(28px, 6vh, 64px); }
+  #contact .contact__details { grid-column: 1 / span 5; display: grid; gap: 24px; align-content: start; }
+  #contact .contact__lines { display: grid; gap: 14px; }
+  #contact .contact__lines dt { color: var(--color-10); }
+  #contact .contact__form { grid-column: 7 / span 6; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  #contact .contact__form label { display: grid; gap: 6px; }
+  #contact .contact__form .is-wide { grid-column: 1 / -1; }
+  #contact .contact__status { grid-column: 1 / -1; font-weight: 600; }
+  @media (max-width: 899.98px) {
+    #contact .contact__body { grid-template-columns: 1fr; }
+    #contact .contact__details, #contact .contact__form { grid-column: 1; }
+  }
+  @media (max-width: 520px) { #contact .contact__form { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { position: relative; overflow: hidden; margin: 0 var(--space-1) var(--space-1); padding: clamp(32px, 5vw, 64px); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-6); }
+  #footer .foot__top { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 12px; row-gap: 28px; align-items: start; }
+  #footer .foot__logo { grid-column: 1 / span 4; font-family: var(--font-1); font-size: clamp(56px, 6.4vw, 120px); font-weight: 700; font-stretch: 100%; line-height: .82; text-decoration: none; }
+  #footer nav { grid-column: 6 / span 3; }
+  #footer nav ul { display: grid; gap: 10px; }
+  #footer .foot__visit { grid-column: 10 / span 3; display: grid; gap: 14px; color: var(--color-8); }
+  #footer .foot__visit strong { display: block; font-weight: 600; color: var(--color-6); }
+  #footer .foot__small { margin-top: clamp(36px, 6vh, 64px); padding-top: 18px; border-top: 1px dashed var(--color-9); color: var(--color-8); }
+  #footer :focus-visible { outline-color: var(--color-3); }
+  @media (max-width: 899.98px) {
+    #footer .foot__top { grid-template-columns: 1fr 1fr; }
+    #footer .foot__logo { grid-column: 1 / -1; }
+    #footer nav { grid-column: 1; }
+    #footer .foot__visit { grid-column: 2; }
+  }
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-6a9d03: linear(0, 0.1254, 0.2419, 0.3497, 0.4492, 0.5406, 0.6243, 0.7005, 0.7696, 0.8318, 0.8875, 0.9369, 0.9804, 1.0182, 1.0507, 1.0781, 1.1008, 1.119, 1.1331, 1.1433, 1.15, 1.1534, 1.1539, 1.1517, 1.1472, 1.1406, 1.1323, 1.1225, 1.1116, 1.0998, 1.0875, 1.0749, 1.0624, 1.0502, 1.0387, 1.0281, 1.0188, 1.011, 1.0051, 1.0013, 1); }
+[data-8b-live] [data-8b-motion~="pop"] { animation-name: motion-pop-scale, motion-pop-rotate; animation-duration: 0.6s; animation-delay: 0s; animation-timing-function: var(--ease-6a9d03); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="pop"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="open"] { animation-name: motion-open-clippath; animation-duration: 1.1s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="open"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="open"] img { animation-name: motion-open-img-scale; animation-duration: 1.3s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="open"].is-in img { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="slab"] .ln, [data-8b-live] [data-8b-motion~="slab"]:not(:has(.ln)) { animation-name: motion-slab; animation-duration: 0.9s; animation-delay: calc(var(--i, 0) * 0.09s); animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: both; animation-play-state: paused; --motion-slab-x: -22%; --motion-slab-clip: inset(-15% 100% -15% 0%); }
+[data-8b-live] [data-8b-motion~="slab"] .ln:nth-child(even) { --motion-slab-x: 22%; --motion-slab-clip: inset(-15% 0% -15% 100%); }
+[data-8b-live] [data-8b-motion~="slab"].is-in .ln, [data-8b-live] [data-8b-motion~="slab"].is-in:not(:has(.ln)) { animation-play-state: running; }
+@keyframes motion-slab { 0% { translate: var(--motion-slab-x) 0px; clip-path: var(--motion-slab-clip); } 99.998% { translate: 0px 0px; clip-path: inset(-15% 0% -15% 0%); } 100% { translate: 0px 0px; clip-path: none; } }
+@keyframes motion-pop-scale { 0% { scale: 0; } 100% { scale: 1; } }
+@keyframes motion-pop-rotate { 0% { rotate: 0deg; } 0.002% { rotate: -34.97deg; } 100% { rotate: 0deg; } }
+@keyframes motion-open-clippath { 0% { clip-path: inset(0% 44% round 24px); } 99.998% { clip-path: inset(0% round 24px); } 100% { clip-path: none; } }
+@keyframes motion-open-img-scale { 0% { scale: 1.25; } 100% { scale: 1; } }
+}
+</style>
+<style data-8b-part="scene:drop">
+@layer scenes {
+[data-8b-live] #drop .drop__photo:not([data-set]) > img { visibility: hidden; }
+[data-8b-live] #drop .drop__photo[data-tiled] { overflow: visible; background: transparent; }
+[data-8b-live] #drop .drop__photo[data-tiled][data-set] { overflow: hidden; }
+[data-8b-live] #drop .drop__photo[data-set] .drop__tiles { visibility: hidden; }
+[data-8b-live] #drop .drop__tiles { position: absolute; inset: 0; pointer-events: none; }
+[data-8b-live] #drop .drop__tile { position: absolute; overflow: hidden; will-change: translate, rotate; animation-name: drop-tile; animation-duration: 1s; animation-delay: calc(0.2s + var(--drop-delay)); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; }
+[data-8b-live] #drop .drop__tile img { position: absolute; max-width: none; object-fit: cover; object-position: 50% 60%; }
+@keyframes drop-tile { 0% { translate: var(--drop-x) var(--drop-y); rotate: var(--drop-turn); } 100% { translate: 0% 0%; rotate: 0deg; } }
+}
+</style>
+<style data-8b-part="scene:lookbook">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #lookbook { padding: 0; }
+    [data-8b-live] #lookbook .look__pin { height: 100svh; display: flex; align-items: center; overflow: hidden; }
+    [data-8b-live] #lookbook .look__track { display: flex; flex-wrap: nowrap; align-items: center; width: max-content; padding-top: 48px; }
+    [data-8b-live] #lookbook .look__intro { flex: none; width: clamp(260px, 26vw, 380px); }
+    [data-8b-live] #lookbook .look__card { flex: none; width: clamp(240px, min(28vw, 50svh), 400px); }
+    [data-8b-live] #lookbook .look__photo img { width: 116%; max-width: none; margin-left: -8%; }
+    @media (max-width: 899.98px) {
+      [data-8b-live] #lookbook .look__intro { width: 78vw; }
+      [data-8b-live] #lookbook .look__card { width: min(72vw, 46svh); }
+    }
+  }
+}
+@layer scenes {
+[data-8b-live] #lookbook .look-pin-room { view-timeline: --lookbook-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #lookbook .look__pin { position: sticky; top: 0%; }
+[data-8b-live] #lookbook .look-pin-room > .look-pin-room-space { height: var(--lookbook-d, 0px); }
+[data-8b-live] #lookbook .look__track { animation-name: lookbook-div-look-track-translate; animation-timeline: --lookbook-t1; animation-range: contain 0% contain 100%; animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] #lookbook .look__track > .look__card > .look__photo > img { animation-name: lookbook-figure-look-photo-img-translate; animation-timeline: --lookbook-t1; animation-range: contain 0% contain 100%; animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+@keyframes lookbook-div-look-track-translate { 0% { translate: 0px 0px; } 100% { translate: calc(-1 * var(--lookbook-d, 0px)) 0px; } }
+@keyframes lookbook-figure-look-photo-img-translate { 0% { translate: 6% 0px; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:repair">
+@layer scenes {
+[data-8b-live] #repair .rep__cards { view-timeline: --repair-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #repair .rep__cards > li { --repair-from: calc(var(--i) * 0.05 / (1 + (var(--n) - 1) * 0.05)); --repair-to: calc((1 + var(--i) * 0.05) / (1 + (var(--n) - 1) * 0.05)); animation-name: repair-card; animation-timeline: --repair-t1; animation-timing-function: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); animation-fill-mode: both; transform: none; }
+@keyframes repair-card { 0% { translate: var(--repair-x, 0px) var(--repair-y, 0px); rotate: var(--repair-li-rep-card-rotate-from, -8deg); } 100% { translate: 0px 0px; rotate: 0deg; } }
+@media (min-width: 900px) {
+  [data-8b-live] #repair .rep__cards > li { animation-range: cover calc(10vh + (50% - 12vh) * var(--repair-from)) cover calc(10vh + (50% - 12vh) * var(--repair-to)); }
+}
+@media (max-width: 899.98px) {
+  [data-8b-live] #repair .rep__cards > li { animation-range: cover calc(15vh + 63vh * var(--repair-from)) cover calc(15vh + 63vh * var(--repair-to)); }
+}
+}
+</style>
+<style data-8b-part="scene:club">
+@layer scenes {
+[data-8b-live] #club .club__lanes { view-timeline: --club-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #club .club__panel { overflow-x: clip; overflow-y: clip; }
+[data-8b-live] #club .club__lanes > li > .club__run { animation-name: club-run; animation-timeline: --club-t1; animation-range: cover 4vh cover calc(100% - 72vh); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); animation-fill-mode: both; transform: none; }
+@keyframes club-run { 0% { translate: calc(var(--club-lane, 0px) * var(--club-share, 0.3)) 0px; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:contact">
+@layer scenes {
+[data-8b-live] #contact .contact__mark { view-timeline: --contact-mark block; view-timeline-inset: 0; }
+[data-8b-live] #contact .cm__letter { display: inline-block; animation-name: contact-letter; animation-timeline: --contact-mark; animation-range: cover 2vh cover 70vh; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; }
+@keyframes contact-letter { 0% { translate: calc((var(--i) - (var(--n) - 1) / 2) * 4vw) calc((mod(var(--i) * 37, 7) - 3) * 3vh); rotate: calc((mod(var(--i) * 5, 7) - 3) * 4deg); } 100% { translate: 0px 0px; rotate: 0deg; } }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<!-- navigation: fixed top bar: wordmark, three links (Shop, Repairs, Stores) and three icon links -->
+<header id="top-nav" data-8b-section="navigation">
+  <a class="nav__logo" href="#drop">STRADE</a>
+  <nav aria-label="Main">
+    <ul class="nav__links">
+      <li><a class="m-link-2" href="#drop">Shop</a></li>
+      <li><a class="m-link-2" href="#repair">Repairs</a></li>
+      <li><a class="m-link-2" href="#stores">Stores</a></li>
+    </ul>
+  </nav>
+  <div class="nav__icons">
+    <a class="m-icon" href="#lookbook" aria-label="Saved looks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></a>
+    <a class="m-icon" href="#drop" aria-label="Your bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></a>
+    <a class="m-icon" href="#club" aria-label="Members"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg></a>
+  </div>
+</header>
+<main>
+
+
+<!-- drop: first screen: headline of the product drop, a paragraph, a photo, a spec list and a reminder button (animation: scene:drop) -->
+<section id="drop" data-8b-section="drop">
+  <div class="drop__head">
+    <h1 class="m-text-3" id="drop-title" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Drop 07:</span> <span class="ln">Concrete Low</span></h1>
+    <p class="m-text">A low-top in recycled suede and ripstop on a stitched gum sole, made by a two-person workshop in Porto. Three hundred pairs, no restock.</p>
+  </div>
+  <div class="drop__body">
+    <figure class="drop__photo m-frame"><img fetchpriority="high" src="https://images.unsplash.com/photo-1788029011405-b7e732ed6b44?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3VlZGUlMjBzbmVha2VyJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkxMzIzMTM1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=780&q=60" alt="Brown suede sneakers with gum soles and mismatched laces on a brick pavement" width="1200" height="800"></figure>
+    <div class="drop__side">
+      <dl class="drop__specs" data-8b-items=":scope > div">
+        <div><dt class="m-text-4">Release</dt><dd class="m-text-2">Saturday 18 October, 10:00, in both stores and online</dd></div>
+        <div><dt class="m-text-4">Price</dt><dd class="drop__price">€145</dd></div>
+        <div><dt class="m-text-4">Sizes</dt><dd class="m-text-2">EU 38 to 47, true to size</dd></div>
+        <div><dt class="m-text-4">Upper</dt><dd class="m-text-2">Recycled suede with ripstop panels</dd></div>
+        <div><dt class="m-text-4">Sole</dt><dd class="m-text-2">Gum rubber, stitched, resoled free at our bench</dd></div>
+      </dl>
+      <div class="drop__cta"><a class="m-btn" href="#contact"><span class="m-btn__label">Get a reminder</span></a><span class="m-badge" data-8b-motion="pop" data-8b-enter="90%">300 pairs</span></div>
+    </div>
+  </div>
+</section>
+<!-- lookbook: five outfits with photo, name and three priced pieces, shown as a sideways rail (animation: scene:lookbook) -->
+<section id="lookbook" data-8b-section="lookbook">
+  <div class="look__pin">
+    <div class="look__track" data-8b-items=":scope > .look__card">
+      <div class="look__intro">
+        <h2 class="m-text-3" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Five ways</span> <span class="ln">to wear</span> <span class="ln">October</span></h2>
+        <p class="m-text">Shot on the morning commute, the night bus and a wet market Saturday. Every piece is on the rails now.</p>
+      </div>
+      <article class="look__card">
+        <figure class="look__photo m-frame"><img src="https://images.unsplash.com/photo-1586231912972-d0970f9ce787?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c3RyZWV0d2VhciUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEzMjE4MDB8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60" alt="A man in a black zip jacket and sunglasses leaning on a graffiti wall" width="700" height="1050" loading="lazy"></figure>
+        <h3 class="look__name">Commute</h3>
+        <ul class="look__items m-text-2"><li><span>Twill zip jacket</span><span>€149</span></li><li><span>Wide black chinos</span><span>€95</span></li><li><span>Concrete Low</span><span>€145</span></li></ul>
+      </article>
+      <article class="look__card">
+        <figure class="look__photo m-frame"><img src="https://images.unsplash.com/photo-1731589802956-b4693dae884b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8c3RyZWV0JTIwc3R5bGUlMjBmYXNoaW9uJTIwY2l0eXxlbnwxfDF8fHwxNzkxMzIxODAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60" alt="A man in a long dark green coat under station lights at night" width="700" height="1244" loading="lazy"></figure>
+        <h3 class="look__name">Night bus</h3>
+        <ul class="look__items m-text-2"><li><span>Wool car coat</span><span>€239</span></li><li><span>Red heavy tee</span><span>€39</span></li><li><span>Pleated trousers</span><span>€110</span></li></ul>
+      </article>
+      <article class="look__card">
+        <figure class="look__photo m-frame"><img src="https://images.unsplash.com/photo-1597621784730-4ad9816d71bc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHN0cmVldHdlYXIlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxMzIxODAwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60" alt="A woman in a black blazer and jeans sitting on a bollard in the street" width="700" height="1050" loading="lazy"></figure>
+        <h3 class="look__name">Market Saturday</h3>
+        <ul class="look__items m-text-2"><li><span>Boxy blazer</span><span>€169</span></li><li><span>Straight jeans</span><span>€99</span></li><li><span>Leather loafers</span><span>€135</span></li></ul>
+      </article>
+      <article class="look__card">
+        <figure class="look__photo m-frame"><img src="https://images.unsplash.com/photo-1788200587577-bdf2a13fa521?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHN0cmVldCUyMHN0eWxlJTIwZmFzaGlvbiUyMGNpdHl8ZW58MXwxfHx8MTc5MTMyMTgwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60" alt="A woman in a cropped tee and wide jeans on a concrete block by the river" width="700" height="1048" loading="lazy"></figure>
+        <h3 class="look__name">Waterfront</h3>
+        <ul class="look__items m-text-2"><li><span>Cropped heavy tee</span><span>€35</span></li><li><span>Baggy light jeans</span><span>€105</span></li><li><span>Round sunglasses</span><span>€65</span></li></ul>
+      </article>
+      <article class="look__card">
+        <figure class="look__photo m-frame"><img src="https://images.unsplash.com/photo-1634921276069-c24ba5d6b35c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c3RyZWV0JTIwc3R5bGUlMjBmYXNoaW9uJTIwY2l0eXxlbnwxfDF8fHwxNzkxMzIxODAxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=610&q=60" alt="Two friends dressed head to toe in white walking past a stone facade" width="700" height="875" loading="lazy"></figure>
+        <h3 class="look__name">Sunday white</h3>
+        <ul class="look__items m-text-2"><li><span>Ribbed knit set</span><span>€129</span></li><li><span>Wide white trousers</span><span>€115</span></li><li><span>Chunky boots</span><span>€189</span></li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- wear-test: heading, paragraph, a tall photo and a wear-test table of five pieces -->
+<section id="wear-test" data-8b-section="wear-test">
+  <div class="wt__head">
+    <h2 class="m-text-3" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Worn on the city</span> <span class="ln">before it is sold</span></h2>
+    <p class="m-text">Every new label sends us samples first. Our staff wear them to work, in the rain and on the bike for a month. What survives goes on the rail; what does not goes back to the maker with our notes.</p>
+  </div>
+  <figure class="wt__photo m-frame" data-8b-motion="open" data-8b-enter="90%"><img src="https://images.unsplash.com/photo-1521802307647-0093e93e2c46?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWFuJTIwc2l0dGluZyUyMHN0YWlycyUyMGNpdHklMjBqYWNrZXR8ZW58MXwwfHx8MTc5MTMyMTg0M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=900&q=60" alt="Looking up at a person in a denim jacket leaning on a railing between glass towers" width="900" height="600" loading="lazy"></figure>
+  <table class="wt__log m-text-2">
+    <caption class="sr-only">Wear-test log for September 2026</caption>
+    <thead><tr><th class="m-text-4" scope="col">Piece</th><th class="m-text-4" scope="col">Worn for</th><th class="m-text-4" scope="col">Through</th><th class="m-text-4" scope="col">Verdict</th></tr></thead>
+    <tbody>
+      <tr><td>Cord overshirt<span>Grauwerk</span></td><td>31 days</td><td>Rain, two washes, the bike commute</td><td><span class="m-badge">Racked</span></td></tr>
+      <tr><td>Ripstop cargo trousers<span>Odd Mile</span></td><td>28 days</td><td>Knees and seams checked every week</td><td><span class="m-badge">Racked</span></td></tr>
+      <tr><td>Merino crew<span>Kanto</span></td><td>30 days</td><td>Pilled at the cuffs by week three</td><td>Back to maker</td></tr>
+      <tr><td>Waxed field jacket<span>Halde</span></td><td>35 days</td><td>Two storms, one torn pocket mended</td><td><span class="m-badge">Racked</span></td></tr>
+      <tr><td>Concrete Low<span>Sola Lab</span></td><td>40 days</td><td>212 km on foot, one resole</td><td><span class="m-badge">Racked</span></td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- repair: heading, paragraph and button, then three step cards with photos (animation: scene:repair) -->
+<section id="repair" data-8b-section="repair">
+  <div class="rep__head">
+    <h2 class="m-text-3" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Repairs</span> <span class="ln">for life</span></h2>
+    <div>
+      <p class="m-text">Anything bought at STRADE is mended free at our bench for as long as you wear it. When you are done with it, we take it back, resell it and give you store credit.</p>
+      <a class="m-btn" href="#contact"><span class="m-btn__label">Book a repair</span></a>
+    </div>
+  </div>
+  <ol class="rep__cards" data-8b-items=":scope > li" data-8b-fixed="3">
+    <li class="rep__card m-surface" style="--repair-li-rep-card-rotate-from: -8deg"><figure class="m-frame"><img src="https://images.unsplash.com/photo-1592115654397-9117a2d021c4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bWVuZGluZyUyMGRlbmltJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTMyMTg4MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60" alt="The selvedge edge of raw denim folded over a pale lining" width="800" height="533" loading="lazy"></figure><h3 class="rep__step">1. Bring it in</h3><p class="m-text-2">Drop the piece at either store. We look at the damage together and give you a date.</p></li>
+    <li class="rep__card m-surface" style="--repair-li-rep-card-rotate-from: 4deg"><figure class="m-frame"><img src="https://images.unsplash.com/photo-1634626857321-deb416dcdb00?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bWVuZGluZyUyMGRlbmltJTIwaGFuZHN8ZW58MXwwfHx8MTc5MTMyMTg4MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60" alt="Hands guiding a pair of jeans through a sewing machine" width="800" height="533" loading="lazy"></figure><h3 class="rep__step">2. We mend it</h3><p class="m-text-2">Seams, zips, holes and soles. Most repairs are ready within a week.</p></li>
+    <li class="rep__card m-surface" style="--repair-li-rep-card-rotate-from: 9deg"><figure class="m-frame"><img src="https://images.unsplash.com/photo-1550967155-97a1ebf16bd2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHN0cmVldCUyMHN0eWxlJTIwZmFzaGlvbiUyMGNpdHl8ZW58MXwxfHx8MTc5MTMyMTgwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=590&q=60" alt="A man in a denim jacket and red hoodie standing by palm trees" width="800" height="1200" loading="lazy"></figure><h3 class="rep__step">3. Wear or trade</h3><p class="m-text-2">Collect it mended, or trade it in for credit; we clean it and put it back on the rail.</p></li>
+  </ol>
+</section>
+<!-- stores: two store cards with photo, address, opening hours table and a directions link -->
+<section id="stores" data-8b-section="stores">
+  <h2 class="m-text-3" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Two stores,</span> <span class="ln">one repair bench</span></h2>
+  <div class="st__list" data-8b-items=":scope > article">
+    <article class="st__store">
+      <figure class="st__photo m-frame" data-8b-motion="open" data-8b-enter="90%"><img src="https://images.unsplash.com/photo-1766934587163-186d20bf3d40?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2xvdGhpbmclMjBzdG9yZSUyMGludGVyaW9yJTIwcmFja3xlbnwxfDB8fHwxNzkxMzIxODgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60" alt="Racks of clothes in a dim store with tall windows onto the street" width="1000" height="667" loading="lazy"></figure>
+      <div class="st__info">
+        <h3 class="st__name">Kade <span class="m-badge" data-8b-motion="pop" data-8b-enter="90%">Repair bench</span></h3>
+        <p class="m-text">Example Street 1, 3000 AA Rotterdam. The flagship by the harbour, with the repair bench and the run club's bag drop.</p>
+        <table class="st__hours m-text-2"><caption class="sr-only">Opening hours of Kade</caption><tbody><tr><th scope="row">Monday to Wednesday</th><td>10:00–19:00</td></tr><tr><th scope="row">Thursday</th><td>10:00–21:00</td></tr><tr><th scope="row">Friday and Saturday</th><td>10:00–19:00</td></tr><tr><th scope="row">Sunday</th><td>12:00–17:00</td></tr></tbody></table>
+        <a data-8b-placeholder="map" class="m-link" href="https://maps.google.com/?q=Rotterdam"><span class="m-link__label">Directions</span><span class="m-link__arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+    <article class="st__store">
+      <figure class="st__photo m-frame" data-8b-motion="open" data-8b-enter="90%"><img src="https://images.unsplash.com/photo-1761682719763-a35758bbe4a7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2xvdGhpbmclMjBzdG9yZSUyMGludGVyaW9yJTIwcmFja3xlbnwxfDB8fHwxNzkxMzIxODgxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=740&q=60" alt="Clothes hanging on rails above a blue floor in a bright store" width="1000" height="667" loading="lazy"></figure>
+      <div class="st__info">
+        <h3 class="st__name">Binnenweg <span class="m-badge" data-8b-motion="pop" data-8b-enter="90%">Late Thursdays</span></h3>
+        <p class="m-text">Example Street 2, 3000 AA Rotterdam. The smaller shop for sneakers, caps and the newest drop.</p>
+        <table class="st__hours m-text-2"><caption class="sr-only">Opening hours of Binnenweg</caption><tbody><tr><th scope="row">Monday to Wednesday</th><td>11:00–19:00</td></tr><tr><th scope="row">Thursday</th><td>11:00–22:00</td></tr><tr><th scope="row">Friday and Saturday</th><td>10:00–19:00</td></tr><tr><th scope="row">Sunday</th><td>Closed</td></tr></tbody></table>
+        <a data-8b-placeholder="map" class="m-link" href="https://maps.google.com/?q=Rotterdam"><span class="m-link__label">Directions</span><span class="m-link__arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- club: run club panel: heading, paragraph, button, a night photo and three pace lanes (animation: scene:club) -->
+<section id="club" data-8b-section="club">
+  <div class="club__panel">
+    <div class="club__head">
+      <h2 class="m-text-3" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Saturday</span> <span class="ln">run club</span></h2>
+      <p class="m-text">Every Saturday at 07:30 from the Kade store. Three pace groups, a bag drop and coffee at the bench after. Free, no sign-up, any shoes.</p>
+      <a class="m-btn" href="#contact"><span class="m-btn__label">Join a run</span></a>
+    </div>
+    <figure class="club__photo m-frame"><img src="https://images.unsplash.com/photo-1720799533866-1aa6a60fb031?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bmlnaHQlMjBydW4lMjBjaXR5JTIwZ3JvdXB8ZW58MXwwfHx8MTc5MTMyMTg4Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=530&q=60" alt="A group of runners on a city street at night under orange lights" width="1000" height="563" loading="lazy"></figure>
+    <ol class="club__lanes" data-8b-items=":scope > li">
+      <li class="club__lane" style="--club-share: 0.9"><p class="club__run"><span class="club__pace">4:45/km</span><span>Harbour loop, 10 km</span><span class="club__group">Fast group</span></p></li>
+      <li class="club__lane" style="--club-share: 0.6"><p class="club__run"><span class="club__pace">5:45/km</span><span>Bridges, 8 km</span><span class="club__group">Steady group</span></p></li>
+      <li class="club__lane" style="--club-share: 0.32"><p class="club__run"><span class="club__pace">Walk</span><span>Market and back, 4 km</span><span class="club__group">Easy group</span></p></li>
+    </ol>
+  </div>
+</section>
+<!-- faq: five questions and answers in native <details> elements -->
+<section id="faq" data-8b-section="faq">
+  <h2 class="m-text-3" data-8b-motion="slab" data-8b-enter="90%" data-8b-items=":scope > .ln"><span class="ln">Before</span> <span class="ln">you ask</span></h2>
+  <div class="faq__list" data-8b-items=":scope > details">
+    <details><summary>How fast do you ship?</summary><p class="m-text">Orders placed before 15:00 leave the Kade store the same day. Delivery in the Netherlands takes one to two working days, the rest of the EU three to five.</p></details>
+    <details><summary>Can I return something?</summary><p class="m-text">Within 30 days, unworn and with tags. Returns are free in either store; by post we send you a prepaid label.</p></details>
+    <details><summary>How do your sizes run?</summary><p class="m-text">Every piece lists the maker's measurements next to ours. In store we can measure something you already own and match it.</p></details>
+    <details><summary>What does the free repair cover?</summary><p class="m-text">Seams, zips, buttons, holes and resoles on anything bought at STRADE, for as long as you own it. Cuts and burns are quoted first.</p></details>
+    <details><summary>How do I get the Concrete Low?</summary><p class="m-text">Half the pairs are held for the stores and half go online at 10:00 on release day. Set a reminder and we email you ten minutes before.</p></details>
+  </div>
+</section>
+<!-- contact: large "Say hello" wordmark, a paragraph with email and phone, and a message form (animation: scene:contact) -->
+<section id="contact" data-8b-section="contact">
+  <h2 class="contact__mark m-text-5" style="--len:9"><span class="cm__word">Say</span> <span class="cm__word">hello</span></h2>
+  <div class="contact__body">
+    <div class="contact__details">
+      <p class="m-text">A question about a size, a repair or the next drop? Write or call; someone from the store answers within a day.</p>
+      <dl class="contact__lines">
+        <div><dt class="m-text-4">Email</dt><dd><a data-8b-placeholder="email" class="m-link-3" href="mailto:hello@strade.example">hello@strade.example</a></dd></div>
+        <div><dt class="m-text-4">Phone</dt><dd><a data-8b-placeholder="phone" class="m-link-3" href="tel:+31100000000">+31 10 000 0000</a></dd></div>
+      </dl>
+    </div>
+    <form data-8b-placeholder="form" class="contact__form" action="#contact" method="post">
+      <label><span class="m-text-4">Name</span><input class="m-field" name="name" autocomplete="name" required></label>
+      <label><span class="m-text-4">Email</span><input class="m-field" type="email" name="email" autocomplete="email" required></label>
+      <label class="is-wide"><span class="m-text-4">Message</span><textarea class="m-field" name="message" rows="5" required></textarea></label>
+      <div class="is-wide"><button class="m-btn" type="submit"><span class="m-btn__label">Send message</span></button></div>
+      <p class="contact__status m-text-2" role="status" hidden>Thanks, your message is on its way. We reply within a day.</p>
+    </form>
+  </div>
+</section>
+</main>
+<!-- footer: logo, six links, the two store addresses and a small print line -->
+<footer id="footer" data-8b-section="footer">
+  <div class="foot__top">
+    <a class="foot__logo" href="#drop">STRADE</a>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a class="m-link-2" href="#drop">The drop</a></li>
+        <li><a class="m-link-2" href="#lookbook">Lookbook</a></li>
+        <li><a class="m-link-2" href="#repair">Repairs</a></li>
+        <li><a class="m-link-2" href="#club">Run club</a></li>
+        <li><a class="m-link-2" href="#faq">Questions</a></li>
+        <li><a class="m-link-2" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="foot__visit m-text-2">
+      <p><strong>Kade</strong>Example Street 1, Rotterdam</p>
+      <p><strong>Binnenweg</strong>Example Street 2, Rotterdam</p>
+    </div>
+  </div>
+  <p class="foot__small m-text-2">© 2026 STRADE, Rotterdam · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a>. Prices include VAT.</p>
+</footer>
+<script data-8b-part="section-script:top-nav">
+(() => {
+  const nav = document.getElementById('top-nav');
+  if (!nav) return;
+  let last = window.scrollY, ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY, delta = y - last;
+    if (Math.abs(delta) < 4) return;
+    if (delta > 0 && y > nav.offsetHeight * 2) nav.setAttribute('data-hidden', '');
+    else if (delta < 0) nav.removeAttribute('data-hidden');
+    last = y;
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
+})();
+</script>
+
+
+
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  if (!form) return;
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    form.reset();
+    if (status) status.hidden = false;
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+</script>
+<script data-8b-part="scene-script:drop">
+motionKit.scene("drop", () => {
+  const desk = matchMedia("(min-width: 900px)").matches;
+  const frame = document.querySelector("#drop .drop__photo"), source = frame.querySelector("img");
+  const cols = desk ? 4 : 3, rows = 3, spread = desk ? 1 : .55, count = cols * rows;
+  const radius = getComputedStyle(frame).borderTopLeftRadius;
+  const layer = document.createElement("div");
+  layer.className = "drop__tiles";
+  layer.setAttribute("aria-hidden", "true");
+  const middle = (count - 1) / 2, nearest = count % 2 ? 0 : .5, furthest = middle;
+  const tiles = [];
+  for (let r = 0; r < rows; r++) {
+    for (let c = 0; c < cols; c++) {
+      const tile = document.createElement("div"), i = tiles.length;
+      tile.className = "drop__tile";
+      motionKit.set(tile, {
+        left: c * 100 / cols + "%", top: r * 100 / rows + "%", width: 100 / cols + "%", height: 100 / rows + "%",
+        "--drop-x": (((c * 7 + r * 3) % 5 - 2) * 55 + (c - (cols - 1) / 2) * 45) * spread + "%",
+        "--drop-y": (((c * 3 + r * 5) % 5 - 2) * 50 + (r - 1) * 60) * spread + "%",
+        "--drop-turn": ((c + r * 2) % 5 - 2) * 5 + "deg",
+        "--drop-delay": (Math.abs(i - middle) - nearest) / (furthest - nearest) * .025 * (count - 1) + "s"
+      });
+      if (r === 0 && c === 0) tile.style.borderTopLeftRadius = radius;
+      if (r === 0 && c === cols - 1) tile.style.borderTopRightRadius = radius;
+      if (r === rows - 1 && c === 0) tile.style.borderBottomLeftRadius = radius;
+      if (r === rows - 1 && c === cols - 1) tile.style.borderBottomRightRadius = radius;
+      const copy = document.createElement("img");
+      copy.alt = "";
+      copy.decoding = "async";
+      copy.src = source.currentSrc || source.src;
+      motionKit.set(copy, { width: cols * 100 + "%", height: rows * 100 + "%", left: -c * 100 + "%", top: -r * 100 + "%" });
+      tile.append(copy);
+      layer.append(tile);
+      tiles.push(tile);
+    }
+  }
+  frame.append(layer);
+  frame.setAttribute("data-tiled", "");
+  tiles.at(-1).addEventListener("animationend", () => frame.setAttribute("data-set", ""));
+});
+</script>
+<script data-8b-part="scene-script:lookbook">
+motionKit.scene("lookbook", () => {
+  { const stage = document.querySelector("#lookbook .look__pin"), room = document.createElement('div'), space = document.createElement('div'); room.className = "look-pin-room"; space.className = "look-pin-room-space"; space.setAttribute('aria-hidden', 'true'); stage.before(room); room.append(stage, space); }
+  const section = document.getElementById("lookbook"), pin = section.querySelector(".look__pin"), track = section.querySelector(".look__track");
+  motionKit.measure(() => motionKit.set(section, { "--lookbook-d": Math.max(0, track.scrollWidth - pin.clientWidth) + "px" }));
+});
+</script>
+<script data-8b-part="scene-script:repair">
+motionKit.scene("repair", () => {
+  const cards = [...document.querySelector("#repair .rep__cards").children];
+  motionKit.measure(() => {
+    const desk = matchMedia("(min-width: 900px)").matches;
+    const anchor = desk ? cards[Math.floor(cards.length / 2)] : cards[0];
+    cards.forEach((card, i) => motionKit.set(card, {
+      "--repair-x": (desk ? (anchor.offsetLeft - card.offsetLeft) * .9 : i % 2 ? 12 : -12) + "px",
+      "--repair-y": (desk ? Math.abs(i - 1) * 16 : (anchor.offsetTop - card.offsetTop) * .9) + "px"
+    }));
+  });
+});
+</script>
+<script data-8b-part="scene-script:club">
+motionKit.scene("club", () => {
+  const lanes = [...document.querySelectorAll("#club .club__lane")];
+  motionKit.measure(() => lanes.forEach(lane => motionKit.set(lane, { "--club-lane": lane.clientWidth + "px" })));
+});
+</script>
+<script data-8b-part="scene-script:contact">
+motionKit.scene("contact", () => {
+  const heading = document.querySelector("#contact .contact__mark");
+  const words = [...heading.querySelectorAll(".cm__word")];
+  heading.setAttribute("aria-label", heading.textContent.replace(/\s+/g, " ").trim());
+  const letters = [];
+  words.forEach(word => {
+    const text = word.textContent;
+    word.textContent = "";
+    [...text].forEach(character => {
+      const letter = document.createElement("span");
+      letter.className = "cm__letter";
+      letter.setAttribute("aria-hidden", "true");
+      letter.textContent = character;
+      word.append(letter);
+      letters.push(letter);
+    });
+  });
+  letters.forEach((letter, i) => motionKit.set(letter, { "--i": i, "--n": letters.length }));
+});
+</script>
+</body>
+</html>

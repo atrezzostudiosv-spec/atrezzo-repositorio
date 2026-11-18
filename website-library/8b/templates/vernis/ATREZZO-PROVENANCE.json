@@ -1,0 +1,43 @@
+{
+  "slug": "vernis",
+  "name": "Vernis",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/car-detailing-website-template",
+  "demo": "https://8b.com/templates/vernis/demo.html",
+  "design_md_url": "https://8b.com/templates/vernis/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "a7f269080485e4c62736de0c417bb4955eea9a68",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "324be2b8247d240b1946e61d95dbabfc732ede88",
+    "README.md": "50ba5bdcc5cae4854c2b99133f3470f5a4113560",
+    "AGENTS.md": "94643d52b5d6a9998c1bdccbddad3be39180ee03",
+    "index.html": "3336c2664c23ab6c36a2c16365f2f184a64b0d78",
+    "index.gsap.html": "7b9a495b3b36040c9a491901e8a4314d8ea6a647"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7c15bd38a595ee4004d4327d327956aec821963583e4c18edced303c677bd08a",
+    "README.md": "cbad6266f4ef165e6291c3a54c42dd22d0462e4c06b4a2988960e8367db97920",
+    "AGENTS.md": "3f34619cbdd9c0dcef0648f00cdebb11086810522f839343b20a059cc374aa1c",
+    "index.html": "d156ba8d430af91d5e180595dc5ca9b69d947ad094f76ba60eccd54e1f5ce0f5",
+    "index.gsap.html": "3dc4a7d9dd32743a04aa6ec9d0bc0a993bb994756e5c42d9a918e5b70dc3b26a"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

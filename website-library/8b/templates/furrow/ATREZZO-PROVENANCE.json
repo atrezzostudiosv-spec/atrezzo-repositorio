@@ -1,0 +1,44 @@
+{
+  "slug": "furrow",
+  "name": "Furrow",
+  "categories": [
+    "Food and drink",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/farm-delivery-website-template",
+  "demo": "https://8b.com/templates/furrow/demo.html",
+  "design_md_url": "https://8b.com/templates/furrow/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "564408b3acce57d8f4ab6ca824e4147de9cbae07",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "20771ca79e9d6c9a978b5a6e999efbb9ce700e6c",
+    "README.md": "620796c42e6dab4a2d323ce949fa3c90c41da5e1",
+    "AGENTS.md": "63b08ee9e2a03584346fd3007b6003ab06eba89e",
+    "index.html": "99ea5edb6a6f4ccab4fb0658075e41f853083eaa",
+    "index.gsap.html": "0648a13859d793097cd499f344085029d8c2c664"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "86581de7ab3b13c95ea46a4c1ae2f599f3136343509735fe13a63311c049c2ea",
+    "README.md": "76916c660aa0be0fcfbacb51aa8f4a4fb8bee2f2f5f01a1b2aa1643b046d40cc",
+    "AGENTS.md": "877ca562d0a5d90225ace54f4fcdd450c86a2d7fe7a5f8c5a5b4a17bd30ed805",
+    "index.html": "9fa39c4827dbb6fdcaf8d46ea99890d2b43b3cfff613d01097d78b622a81aee2",
+    "index.gsap.html": "e0aad6627535feb1b16c9ddc894d865b2ce66ba3570d0e60bdc97b39dc885cb9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

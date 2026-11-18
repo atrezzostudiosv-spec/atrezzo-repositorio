@@ -1,0 +1,44 @@
+{
+  "slug": "inset",
+  "name": "Inset",
+  "categories": [
+    "Shop",
+    "Architecture and building"
+  ],
+  "upstream": "https://github.com/8bsite/ceramic-tile-website-template",
+  "demo": "https://8b.com/templates/inset/demo.html",
+  "design_md_url": "https://8b.com/templates/inset/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "34fd653bc68c5cd19caaeec872f464507adcd44c",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "9c57e9da6de677595e9b575638eb6b94cbbdedc0",
+    "README.md": "34d89a05b18fe5925d412b095a7a47af4566611f",
+    "AGENTS.md": "c0f385782d938d8cf01e0a249d6e17d3a6f48ad3",
+    "index.html": "febf6669dd300bca66358c950ea1605d8d3e8fc5",
+    "index.gsap.html": "4e0a16f3a4540e83797ce329102da8f2f81aa113"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c51ae32454f01f132078a53e5d98c65460e742a2ae1e0f5df9d24cd4a14571b2",
+    "README.md": "71fcb49f7f847f60dbeb957ba8eb64e757f7f670a30df05431f1d297866672b1",
+    "AGENTS.md": "52f311f1af1887ce405d1ab1663069e66af973d807a2a256b4f65a89206fbe67",
+    "index.html": "bcff682088de868f5142561b3a99c26b7021104bf627f63309ea4b76a737cbc1",
+    "index.gsap.html": "df053faf2aec9463cccefe265ad89487d71ed2f05f6638c7811cf038bc1788ab"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "squiggle",
+  "name": "Squiggle",
+  "categories": [
+    "Shop",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/toy-store-website-template",
+  "demo": "https://8b.com/templates/squiggle/demo.html",
+  "design_md_url": "https://8b.com/templates/squiggle/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "103b380662c67ee2bbece80b2adceaf6372a4c50",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "2ac96c0d28d8e09daf7f88dc02c4d8dc5a145f69",
+    "README.md": "bcf7ce407dbdff905a56988e3cf2e42546276f62",
+    "AGENTS.md": "bfd1145394d7ebced73b9d3f9c13b8286bcc2ca9",
+    "index.html": "9faf8a94d4621e870b9d01cd896c4f622ef5f84f",
+    "index.gsap.html": "75835d0740a36755fa99dd9a844388c189338b3f"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "df63c8ced6f71d040b675c8e534bfdd6aed58f27b32919c1ebf92ae31da7becd",
+    "README.md": "d3142ff4bb311641dc00d57bd532cf50330d956ec80a3857dbf23255ac790b37",
+    "AGENTS.md": "a95a124f75573a61630a5ca983194ace5f175fd15fda2a6af1a15b9520e7650b",
+    "index.html": "e67bee60a9eb76ff924277aa38f1b2201a59eee2568770661b85bed34ad0c19b",
+    "index.gsap.html": "0437ee0366930b0eb0c2785677b885893580b8fe516fbada984351e2e8f2ce8e"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

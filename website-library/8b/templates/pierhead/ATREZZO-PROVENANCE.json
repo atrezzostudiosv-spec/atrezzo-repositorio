@@ -1,0 +1,44 @@
+{
+  "slug": "pierhead",
+  "name": "Pierhead",
+  "categories": [
+    "Travel",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/boat-tour-website-template",
+  "demo": "https://8b.com/templates/pierhead/demo.html",
+  "design_md_url": "https://8b.com/templates/pierhead/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "e83a5e4eeba939aff54a813790ed31b532af3d2b",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "643bc85d6f770bcdfe3dcb6db75a836371070bcb",
+    "README.md": "d75219a32aef759399edd6a6cf68156957c02bd5",
+    "AGENTS.md": "71a27216578d21bcfcdecd974bb50bc5244033c9",
+    "index.html": "8a40dc155c2a89b5d63b03c3ded04834fd10afe5",
+    "index.gsap.html": "09e99d14b1c4da5185d607344dbe6841f9b04e29"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "58eeda5e95abac9a5d220cd6ec7b736cbc453f40979632f533c2bc3ce33b6dd1",
+    "README.md": "eaf3c1ecf5010c1a745a627c340e5d5de42d79fe656a407f2547bfca99d84623",
+    "AGENTS.md": "b93b5720df66fee6db6ce97b0abd06623863566630e4b925729767f28fd984a6",
+    "index.html": "fadff0f48dd0dc5bf903ba01da7d7e0caa5770a108a28fe2f8930c55438e8877",
+    "index.gsap.html": "5562a2a04146871cdffe016515a0f160e146aa9aa641f5016637f5a9bc2aeb02"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

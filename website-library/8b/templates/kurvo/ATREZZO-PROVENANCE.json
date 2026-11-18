@@ -1,0 +1,44 @@
+{
+  "slug": "kurvo",
+  "name": "Kurvo",
+  "categories": [
+    "Product and app",
+    "Sport and fitness"
+  ],
+  "upstream": "https://github.com/8bsite/fitness-app-landing-page-template",
+  "demo": "https://8b.com/templates/kurvo/demo.html",
+  "design_md_url": "https://8b.com/templates/kurvo/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "d12a9797d67fc67bb24229a25464cb28f521e651",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "82e7cbc0174d32974bb0ab32f218d47284f9ee7e",
+    "README.md": "46fda5fd8aa7dc6915d699b75b9fded77341414c",
+    "AGENTS.md": "6deb75a50a9f5cbe295f0a24fd930da52947bc44",
+    "index.html": "839b4073c1cd62ed69404dccb5c3c77641c9f141",
+    "index.gsap.html": "ac8ae35ce6a7c706682de2d7517c305048c9cc0b"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "43d73244a0cc19fc3efee77fc4450dde33f21f6abac8a661e29e2da83191862c",
+    "README.md": "cf83c6e921bce3e703ef0b9c7f620cb6358a64b40e704f161987f9da7e15d8b0",
+    "AGENTS.md": "bb56e45a95785047a1f11aacd83bef7c0c02f629ed7e401337cb0c2731ddcd44",
+    "index.html": "41f1703a2af83c25c80f891e97eb813d65d8a7e6dfb8e85dd8fbb3fc01b38ab5",
+    "index.gsap.html": "d277b183c8dedfe256a206ac9524c52399e2fd4c6133f82912e8a64bac6fca2b"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

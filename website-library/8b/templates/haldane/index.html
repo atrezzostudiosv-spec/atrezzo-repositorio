@@ -1,0 +1,1476 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/haldane/
+  Source: https://github.com/8bsite/tailor-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haldane — Bespoke Tailors, Edinburgh</title>
+<meta name="description" content="Haldane cuts bespoke suits, coats and trousers by hand in Edinburgh: a paper pattern drawn for one body, three fittings over twelve weeks, and trunk shows in London, Manchester, Copenhagen and New York.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Haldane — Bespoke Tailors, Edinburgh">
+<meta property="og:description" content="Haldane cuts bespoke suits, coats and trousers by hand in Edinburgh: a paper pattern drawn for one body, three fittings over twelve weeks, and trunk shows in London, Manchester, Copenhagen and New York.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23121413'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23e2a73c'%3EH%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/funneldisplay/v3/B50bF7FGv37QNVWgE0ga--4PbZSRJXrOHcLHLoAYmmPnX89x.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBNB5M.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/funneldisplay/v3/B50bF7FGv37QNVWgE0ga--4PbZSRJXrOHcLHLoAYmmPnUc9xEZA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/funneldisplay/v3/B50bF7FGv37QNVWgE0ga--4PbZSRJXrOHcLHLoAYmmPnX89x.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBAB5OR2g.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBJB5OR2g.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBOB5OR2g.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBCB5OR2g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBDB5OR2g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 75% 150%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70luu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrhDPeNAHtMV4x4tBNB5M.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #121413;
+  --color-2: #f3f2ee;
+  --color-3: #1d5a49;
+  --color-4: #e2a73c;
+  --color-5: #c2c8c4;
+  --color-6: #3b403d;
+  --color-7: #1c201e;
+  --font-1: "TikTok Sans", "TikTok Sans Fallback", "Arial Black", Arial, sans-serif;
+  --font-2: "Funnel Display", "Funnel Display Fallback", Arial, sans-serif;
+  --font-3: "Geist", "Geist Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 20px;
+  --shadow-1: 0 28px 90px -8px color-mix(in srgb, var(--color-3) 80%, transparent);
+  --shadow-2: 0 0 0 1px var(--color-4), 0 28px 90px -8px color-mix(in srgb, var(--color-3) 80%, transparent);
+  --space-1: clamp(16px, 2.6vw, 40px);
+  --space-2: clamp(88px, 13vh, 150px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+/* metric fallbacks */
+@font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 119.2%; ascent-override: 83.9%; descent-override: 25.2%; line-gap-override: 0%; }
+@font-face { font-family: "Funnel Display Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 105.5%; ascent-override: 94.8%; descent-override: 23.7%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 101.9%; ascent-override: 99.1%; descent-override: 29.4%; line-gap-override: 0%; }
+@font-face { font-family: "Geist Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 94.2%; ascent-override: 107.3%; descent-override: 31.9%; line-gap-override: 0%; }
+/* end metric fallbacks */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-3); font-size: 16px; line-height: 1.55; overflow-x: clip; -webkit-font-smoothing: antialiased; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+h1, h2, h3, p, ul, ol, figure, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-4); outline-offset: 4px; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-3); font-size: 16px; font-weight: 400; line-height: 1.6; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-3); font-size: 14px; font-weight: 500; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-2); font-size: clamp(34px, 4.3vw, 64px); font-weight: 400; line-height: 1.04; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-text-4 { font-family: var(--font-1); font-size: 96px; font-weight: 800; font-stretch: 150%; line-height: 0.8; letter-spacing: -0.01em; text-transform: uppercase; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-2); font-size: clamp(32px, 3.5vw, 52px); font-weight: 400; line-height: 1.06; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+
+.m-text-6 { font-family: var(--font-3); font-size: 12.5px; font-weight: 500; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; font-style: normal; }
+
+.m-text-7 { font-family: var(--font-3); font-size: 14px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-5); }
+
+.m-spark { display: inline-block; width: 1em; height: 1em; flex: none; color: inherit; }
+.m-spark svg { width: 100%; height: 100%; fill: currentColor; }
+
+.m-rule { position: relative; height: 1px; color: var(--color-2); }
+.m-rule__line { position: absolute; inset: 0; background: var(--color-6); }
+.m-rule .m-spark { position: absolute; top: 50%; font-size: 15px; translate: -50% -50%; }
+
+.m-pill { display: block; position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-7); }
+.m-pill > img { width: 100%; height: 100%; object-fit: cover; }
+
+.m-btn { --m-btn-fill: var(--color-3); position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 0.6em; min-height: 48px; padding: 0.95em 1.7em; border: 1px solid color-mix(in srgb, var(--color-2) 60%, transparent); border-radius: var(--radius-1); background: none; color: var(--color-2); font-family: var(--font-3); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; overflow: hidden; cursor: pointer; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--m-btn-fill); clip-path: circle(0% at 0% 50%); transition: clip-path 0.6s cubic-bezier(0.6, 0, 0.2, 1); }
+.m-btn:focus-visible::before { clip-path: circle(160% at 0% 50%); }
+
+.m-btn-2 { --m-btn-fill: var(--color-3); position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 44px; padding: 0.7em 1.1em; border-radius: var(--radius-1); color: var(--color-2); font-family: var(--font-3); font-size: 13.5px; font-weight: 500; line-height: 1.2; letter-spacing: 0.02em; text-transform: uppercase; white-space: nowrap; overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--m-btn-fill); clip-path: circle(0% at 0% 50%); transition: clip-path 0.6s cubic-bezier(0.6, 0, 0.2, 1); }
+.m-btn-2:focus-visible::before { clip-path: circle(160% at 0% 50%); }
+
+.m-btn-3 { --m-btn-fill: var(--color-3); position: relative; isolation: isolate; display: flex; align-items: center; justify-content: center; gap: 0.8em; min-height: 64px; padding: 0.9em 1.6em; border: 1px solid color-mix(in srgb, var(--color-2) 60%, transparent); border-radius: var(--radius-1); color: var(--color-2); font-family: var(--font-2); font-size: clamp(19px, 1.75vw, 26px); font-weight: 400; line-height: 1.1; letter-spacing: 0; text-transform: none; text-align: center; overflow: hidden; }
+.m-btn-3::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--m-btn-fill); clip-path: circle(0% at 0% 50%); transition: clip-path 0.7s cubic-bezier(0.6, 0, 0.2, 1); }
+.m-btn-3:focus-visible::before { clip-path: circle(160% at 0% 50%); }
+.m-btn-3__icon { width: 1.1em; height: 1.1em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; }
+
+.m-badge { --m-btn-fill: var(--color-4); position: relative; isolation: isolate; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.6em; width: 10.5em; aspect-ratio: 1.5; padding: 0 0.9em; border-radius: 50%; background: var(--color-3); color: var(--color-2); font-family: var(--font-3); font-size: 12.5px; font-weight: 500; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase; text-align: center; rotate: -24deg; overflow: hidden; transition: color 0.4s ease; }
+.m-badge::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--m-btn-fill); clip-path: circle(0% at 0% 50%); transition: clip-path 0.6s cubic-bezier(0.6, 0, 0.2, 1); }
+.m-badge:focus-visible { color: var(--color-1); }
+.m-badge:focus-visible::before { clip-path: circle(160% at 0% 50%); }
+.m-badge__dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+
+.m-link { position: relative; display: inline-block; padding-bottom: 4px; color: inherit; font-family: var(--font-3); font-size: 15px; font-weight: 500; line-height: 1.3; letter-spacing: 0; text-transform: none; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform-origin: 0% 50%; }
+
+.m-link-2 { position: relative; display: inline-block; padding: 6px 0; color: inherit; font-family: var(--font-3); font-size: 13.5px; font-weight: 400; line-height: 1.3; letter-spacing: 0; text-transform: none; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 3px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 0% 50%; }
+.m-link-2:focus-visible::after { transform: scaleX(1); }
+
+.m-iconbtn { display: inline-grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid color-mix(in srgb, var(--color-2) 50%, transparent); border-radius: 50%; background: none; color: var(--color-2); cursor: pointer; }
+.m-iconbtn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; transition: transform 0.5s cubic-bezier(0.6, 0, 0.2, 1); }
+.m-iconbtn:focus-visible svg { transform: rotate(90deg); }
+
+.m-sticker { display: grid; gap: 0.9em; width: 150px; rotate: var(--m-sticker-tilt, -8deg); color: var(--color-2); }
+.m-sticker__img { display: block; aspect-ratio: 1; border-radius: var(--radius-2); overflow: hidden; background: var(--color-7); box-shadow: var(--shadow-1); transition: box-shadow 0.5s ease; }
+.m-sticker__img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); }
+.m-sticker__cap { font-family: var(--font-3); font-size: 12.5px; font-weight: 500; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; max-width: 9em; }
+
+.m-stamp { position: relative; display: block; width: 120px; aspect-ratio: 1; color: var(--color-1); }
+.m-stamp__face { position: absolute; inset: 0; background: var(--color-4); clip-path: polygon(29.3% 0, 70.7% 0, 100% 29.3%, 100% 70.7%, 70.7% 100%, 29.3% 100%, 0 70.7%, 0 29.3%); }
+.m-stamp__ring { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.m-stamp__ring text { font-family: var(--font-3); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; fill: currentColor; }
+.m-stamp__mark { position: absolute; left: 50%; top: 50%; font-size: 22px; translate: -50% -50%; }
+
+.m-field { display: grid; gap: 0.45em; color-scheme: dark; }
+.m-field__label { font-family: var(--font-3); font-size: 12.5px; font-weight: 500; line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-5); }
+.m-field__input { width: 100%; min-height: 48px; padding: 0.6em 0; border: 0; border-bottom: 1px solid var(--color-6); border-radius: 0; background: none; color: var(--color-2); font-family: var(--font-3); font-size: 17px; font-weight: 400; line-height: 1.4; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-4); outline-offset: 4px; border-bottom-color: var(--color-2); }
+textarea.m-field__input { resize: vertical; min-height: 110px; }
+select.m-field__input { cursor: pointer; }
+select.m-field__input option { background: var(--color-7); color: var(--color-2); }
+
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before, .m-btn-3:hover::before, .m-badge:hover::before { clip-path: circle(160% at 0% 50%); }
+  .m-badge:hover { color: var(--color-1); }
+  .m-link:hover::after { animation: m-link-redraw 0.7s cubic-bezier(0.6, 0, 0.2, 1); }
+  .m-link-2:hover::after { transform: scaleX(1); transition: transform 0.45s cubic-bezier(0.6, 0, 0.2, 1); }
+  .m-iconbtn:hover svg { transform: rotate(90deg); }
+  .m-sticker:hover .m-sticker__img { box-shadow: var(--shadow-2); }
+}
+@keyframes m-link-redraw {
+  0% { transform: scaleX(1); transform-origin: 100% 50%; }
+  45% { transform: scaleX(0); transform-origin: 100% 50%; }
+  46% { transform: scaleX(0); transform-origin: 0% 50%; }
+  100% { transform: scaleX(1); transform-origin: 0% 50%; }
+}
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.u-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px clamp(24px, 5vw, 88px); align-items: end; }
+.u-head > :first-child { max-width: 13em; }
+.u-head > :last-child { display: grid; gap: 24px; justify-items: start; justify-self: end; max-width: 480px; }
+@media (max-width: 760px) { .u-head { grid-template-columns: minmax(0, 1fr); } .u-head > :last-child { justify-self: start; } }
+.u-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav { position: fixed; inset: 0 0 auto 0; z-index: 50; pointer-events: none; }
+#nav .nv-bar { position: relative; display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; height: 72px; margin: 0 var(--space-1); pointer-events: auto; transition: transform 0.55s cubic-bezier(0.6, 0, 0.2, 1); }
+#nav .nv-bar::before { content: ""; position: absolute; inset: 0 calc(-1 * var(--space-1)); z-index: -1; background: var(--color-1); opacity: 0; transition: opacity 0.4s ease; }
+#nav.is-scrolled .nv-bar::before { opacity: 0.96; }
+#nav.is-hidden .nv-bar { transform: translateY(calc(-100% - 14px)); }
+#nav .nv-line { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: color-mix(in srgb, var(--color-2) 55%, transparent); }
+#nav .nv-mark { font-family: var(--font-1); font-size: 19px; font-weight: 800; font-stretch: 100%; letter-spacing: 0.01em; text-transform: uppercase; line-height: 1; padding: 10px 0; }
+#nav .nv-links { display: flex; justify-content: flex-end; gap: clamp(24px, 4vw, 62px); padding-right: clamp(24px, 4vw, 56px); }
+#nav .nv-cta { position: relative; align-self: stretch; display: flex; align-items: center; padding-left: clamp(18px, 2.4vw, 34px); }
+#nav .nv-cta::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: color-mix(in srgb, var(--color-2) 55%, transparent); }
+#nav .nv-spark { position: absolute; left: 0; bottom: 0; font-size: 17px; translate: -50% 50%; }
+#nav .nv-menu { display: none; }
+#nav .nv-overlay { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; padding: 0 var(--space-1) 32px; background: var(--color-1); pointer-events: auto; overflow-y: auto; }
+#nav .nv-overlay[hidden] { display: none; }
+#nav .nv-overlay__top { display: flex; justify-content: space-between; align-items: center; height: 64px; border-bottom: 1px solid var(--color-6); }
+#nav .nv-overlay__links { display: grid; align-content: center; gap: 6px; }
+#nav .nv-overlay__links a { font-family: var(--font-2); font-size: clamp(36px, 10vw, 56px); line-height: 1.15; }
+#nav .nv-overlay__foot { display: grid; gap: 18px; justify-items: start; }
+@media (max-width: 860px) {
+  #nav .nv-bar { grid-template-columns: 1fr auto; height: 64px; }
+  #nav .nv-links, #nav .nv-cta { display: none; }
+  #nav .nv-menu { display: inline-grid; }
+  #nav .nv-spark { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { --op-top: 72px; position: relative; overflow-x: clip; }
+#opening .op-spread { display: none; }
+#opening .op-first { position: relative; z-index: 1; display: grid; grid-template-rows: auto 1fr auto; gap: clamp(14px, 2.6vh, 30px); min-height: 100svh; padding: calc(var(--op-top) + clamp(14px, 3vh, 34px)) var(--space-1) clamp(18px, 4vh, 40px); }
+#opening .op-title-row { container-type: inline-size; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; column-gap: clamp(14px, 2.2vw, 34px); }
+#opening .op-title { grid-column: 1 / -1; grid-row: 1; display: grid; grid-template-columns: subgrid; align-items: center; font-size: min(210px, calc(94cqi / (var(--len) * 1.03))); }
+#opening .op-word { display: block; white-space: nowrap; }
+#opening .op-word__in { position: relative; display: block; }
+#opening .op-word--a { grid-column: 1; }
+#opening .op-word--b { grid-column: 3; }
+#opening .op-o { position: absolute; left: 50%; top: 50%; font-size: 0.17em; translate: -50% -50%; }
+#opening .op-dash { grid-column: 2; display: block; align-self: center; margin-top: 0.12em; height: 0.055em; min-height: 4px; }
+#opening .op-dash__bar { display: block; height: 100%; background: var(--color-2); }
+#opening .op-caption { grid-column: 2; grid-row: 1; align-self: start; max-width: 17em; padding-top: 0.1em; font-size: clamp(12px, 1vw, 14px); }
+
+#opening .op-mid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: 1fr auto; column-gap: 20px; row-gap: 24px; }
+#opening .op-badge { grid-column: 2 / 4; grid-row: 1; align-self: start; justify-self: start; margin-top: clamp(4px, 2vh, 28px); }
+#opening .op-lead { grid-column: 6 / 10; grid-row: 1; align-self: center; max-width: 8ch; font-size: clamp(34px, 4.1vw, 60px); }
+#opening .op-card { grid-column: 10 / 13; grid-row: 1; align-self: center; justify-self: center; }
+#opening .op-card .m-sticker { width: clamp(104px, 9vw, 140px); }
+#opening .op-cloth { grid-column: 1 / 6; grid-row: 2; display: grid; grid-template-columns: auto 1fr; column-gap: clamp(18px, 3.4vw, 52px); align-items: start; align-self: end; }
+#opening .op-cloth .m-spark { font-size: 15px; margin-top: 2px; }
+#opening .op-cloth__title { display: block; }
+#opening .op-cloth__note { display: block; margin-top: 4px; }
+#opening .op-more { grid-column: 6 / 10; grid-row: 2; align-self: end; justify-self: start; }
+
+#opening .op-bottom { position: relative; display: grid; grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); height: clamp(118px, 21vh, 210px); }
+#opening .op-photo { grid-column: 1; min-height: 0; }
+#opening .op-photo .m-pill { height: 100%; }
+#opening .op-photo img { width: 112%; max-width: none; margin-left: -6%; object-position: 50% 45%; }
+#opening .op-book { grid-column: 2; min-height: 0; }
+#opening .op-book .m-btn-3 { height: 100%; }
+#opening .op-stamp { position: absolute; right: clamp(8px, 3vw, 48px); top: 0; translate: 0 -46%; z-index: 2; }
+#opening .op-stamp .m-stamp { width: clamp(88px, 8.6vw, 124px); }
+
+#opening .op-second { position: relative; z-index: 1; display: grid; align-content: center; gap: clamp(28px, 5vh, 56px); min-height: 100svh; padding: calc(var(--op-top) + 40px) var(--space-1) clamp(48px, 9vh, 96px); background: var(--color-3); }
+#opening .op-statement { max-width: 20em; font-size: clamp(32px, 4.5vw, 68px); }
+#opening .op-inline { display: inline-block; width: 2.3em; height: 0.8em; vertical-align: -0.06em; margin: 0 0.06em; clip-path: inset(0% 0% 0% 0% round 999px); }
+#opening .op-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px clamp(20px, 3vw, 48px); max-width: 1000px; padding-top: 22px; border-top: 1px solid color-mix(in srgb, var(--color-2) 35%, transparent); }
+#opening .op-facts li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+#opening .op-facts .m-spark { font-size: 13px; margin-top: 3px; }
+#opening .op-second-link { justify-self: start; }
+#opening .op-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+#opening .op-cta .m-btn { --m-btn-fill: var(--color-1); }
+
+@media (max-width: 860px) {
+  #opening { --op-top: 64px; }
+  #opening .op-first { gap: 18px; padding-top: calc(var(--op-top) + 16px); }
+  #opening .op-title-row { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto; row-gap: 10px; }
+  #opening .op-title { grid-column: 1; grid-row: 1 / 4; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid; font-size: min(26cqi, calc(108cqi / (var(--len) * 1.03 * 0.62))); }
+  #opening .op-word--a { grid-column: 1; grid-row: 1; justify-self: start; }
+  #opening .op-dash { grid-column: 1; grid-row: 2; width: 34%; margin-top: 0; align-self: center; }
+  #opening .op-word--b { grid-column: 1; grid-row: 3; justify-self: end; }
+  #opening .op-caption { grid-column: 1; grid-row: 2; justify-self: end; max-width: 58%; padding-top: 0; font-size: 12.5px; }
+  #opening .op-mid { grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: auto auto auto; column-gap: 12px; row-gap: 16px; }
+  #opening .op-lead { grid-column: 1 / 5; grid-row: 1; font-size: clamp(32px, 9.4vw, 42px); }
+  #opening .op-card { grid-column: 5 / 7; grid-row: 1; align-self: start; justify-self: end; margin-top: 6px; }
+  #opening .op-card .m-sticker { width: 88px; gap: 0.6em; }
+  #opening .op-card .m-sticker__cap { font-size: 11px; }
+  #opening .op-more { grid-column: 1 / 4; grid-row: 2; align-self: center; }
+  #opening .op-badge { grid-column: 4 / 7; grid-row: 2 / 4; justify-self: end; align-self: center; margin: 0; }
+  #opening .op-badge .m-badge { font-size: 11px; }
+  #opening .op-cloth { grid-column: 1 / 5; grid-row: 3; column-gap: 12px; }
+  #opening .op-bottom { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; height: auto; gap: 10px; }
+  #opening .op-photo { height: auto; aspect-ratio: 2.7; }
+  #opening .op-book { grid-column: 1; height: 62px; }
+  #opening .op-book .m-btn-3 { min-height: 0; justify-content: flex-start; padding-left: 24px; }
+  #opening .op-stamp { top: auto; bottom: 31px; right: 12px; translate: 0 50%; }
+  #opening .op-stamp .m-stamp { width: 82px; }
+  #opening .op-facts { grid-template-columns: minmax(0, 1fr); }
+  #opening .op-inline { width: 1.9em; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-word--a { animation: op-in-left 1s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; }
+  #opening .op-word--b { animation: op-in-right 1s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; }
+  #opening .op-dash { transform-origin: 0% 50%; animation: op-draw 0.8s 0.25s cubic-bezier(0.6, 0, 0.2, 1) backwards; }
+  #opening .op-badge, #opening .op-card, #opening .op-stamp { animation: op-drop 0.8s 0.3s cubic-bezier(0.3, 1.4, 0.5, 1) backwards; }
+  #opening .op-card { animation-delay: 0.42s; }
+  #opening .op-stamp { animation-delay: 0.5s; }
+  #opening .op-photo { animation: op-open 1s 0.1s cubic-bezier(0.6, 0, 0.2, 1) backwards; }
+  #opening .op-photo img { animation: op-pan 9s ease-in-out infinite alternate; }
+  #opening .op-stamp .m-stamp__ring { animation: op-turn 16s linear infinite; }
+  #opening .op-o svg { animation: op-turn 7s linear infinite; }
+  #opening.is-offscreen .op-photo img, #opening.is-offscreen .m-stamp__ring, #opening.is-offscreen .op-o svg { animation-play-state: paused; }
+}
+@keyframes op-in-left { from { transform: translateX(-24%); } }
+@keyframes op-in-right { from { transform: translateX(28%); } }
+@keyframes op-draw { from { transform: scaleX(0); } }
+@keyframes op-drop { from { opacity: 0; transform: translateY(-34px) rotate(14deg) scale(0.86); } }
+@keyframes op-open { from { clip-path: inset(0% 46% 0% 46% round 999px); } to { clip-path: inset(0% 0% 0% 0% round 999px); } }
+@keyframes op-pan { from { transform: translateX(-4.5%); } to { transform: translateX(4.5%); } }
+@keyframes op-turn { to { transform: rotate(360deg); } }
+}
+</style>
+
+<style data-8b-part="section:cloth">
+@layer sections {
+#cloth { position: relative; padding: var(--space-2) var(--space-1) 0; overflow-x: clip; }
+#cloth .cl-head { position: relative; z-index: 1; }
+#cloth .cl-board { padding: clamp(48px, 9vh, 96px) 0 var(--space-2); }
+#cloth .cl-row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: clamp(12px, 1.8vw, 26px); align-items: start; }
+#cloth .cl-sticker { display: grid; gap: 4px; }
+#cloth .cl-bolt { aspect-ratio: 0.44; margin-bottom: 12px; clip-path: inset(0% 0% 0% 0% round 999px); }
+@media (max-width: 760px) {
+  #cloth .cl-row { grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 26px; }
+  #cloth .cl-bolt { aspect-ratio: 0.5; }
+}
+}
+</style>
+<style data-8b-part="section:fittings">
+@layer sections {
+#fittings { position: relative; padding: var(--space-2) 0 0; overflow-x: clip; }
+#fittings .ft-head { padding: 0 var(--space-1); }
+#fittings .ft-view { padding: clamp(48px, 8vh, 88px) var(--space-1) var(--space-2); }
+#fittings .ft-track { display: grid; gap: clamp(36px, 6vh, 64px); }
+#fittings .ft-step { display: grid; grid-template-columns: minmax(0, auto) minmax(160px, 1fr) minmax(0, 0.9fr); align-items: center; column-gap: clamp(16px, 2.4vw, 36px); }
+#fittings .ft-word { font-size: clamp(44px, 7.2vw, 112px); white-space: nowrap; }
+#fittings .ft-joint { display: grid; gap: 14px; }
+#fittings .ft-num { display: block; margin-bottom: 6px; color: var(--color-4); }
+#fittings .ft-dash { display: block; height: 5px; background: var(--color-2); }
+#fittings .ft-photo { aspect-ratio: 2.1; clip-path: inset(0% 0% 0% 0% round 999px); }
+#fittings .ft-progress { display: none; }
+@media (max-width: 760px) {
+  #fittings .ft-step { grid-template-columns: minmax(0, 1fr); row-gap: 16px; }
+  #fittings .ft-word { font-size: clamp(34px, 11vw, 64px); }
+}
+}
+</style>
+<style data-8b-part="section:cutters">
+@layer sections {
+#cutters { padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#cutters .cu-rule { margin-bottom: clamp(40px, 7vh, 72px); }
+#cutters .cu-rule .m-spark { left: 50%; }
+#cutters .cu-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 4vw, 64px); margin-top: clamp(56px, 10vh, 110px); }
+#cutters .cu-person { display: grid; justify-items: center; align-content: start; gap: 22px; }
+#cutters .cu-person:nth-child(3n + 2) { --m-sticker-tilt: 6deg; margin-top: clamp(40px, 11vh, 130px); }
+#cutters .cu-person:nth-child(3n) { --m-sticker-tilt: -3deg; margin-top: clamp(12px, 4vh, 40px); }
+#cutters .m-sticker { width: min(100%, 250px); }
+#cutters .m-sticker__cap { max-width: 14em; }
+#cutters .cu-note { max-width: 26ch; text-align: center; }
+@media (max-width: 760px) {
+  #cutters .cu-list { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  #cutters .cu-person, #cutters .cu-person:nth-child(n) { margin-top: 0; justify-items: start; }
+  #cutters .cu-person:nth-child(even) { justify-items: end; }
+  #cutters .cu-person:nth-child(even) .cu-note { text-align: right; }
+  #cutters .m-sticker { width: 62vw; }
+  #cutters .cu-note { text-align: left; }
+}
+}
+</style>
+<style data-8b-part="section:cut">
+@layer sections {
+#cut { padding: var(--space-2) var(--space-1); }
+#cut .ct-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.4fr); gap: clamp(24px, 4vw, 64px); margin-top: clamp(48px, 8vh, 88px); align-items: start; }
+#cut .ct-list { container-type: inline-size; }
+#cut .ct-trait { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px 18px; padding: clamp(20px, 3.4vh, 34px) 0; border-top: 1px solid var(--color-6); }
+#cut .ct-trait:last-child { border-bottom: 1px solid var(--color-6); }
+#cut .ct-trait .m-spark { margin-top: 0.15em; font-size: 16px; }
+#cut .ct-word { font-size: min(112px, calc(92cqi / (var(--len) * 0.9))); white-space: nowrap; }
+#cut .ct-note { grid-column: 2; max-width: 44ch; color: var(--color-5); }
+#cut .ct-photo { position: sticky; top: 110px; aspect-ratio: 0.52; }
+#cut .ct-photo img { height: 112%; }
+@media (max-width: 760px) {
+  #cut .ct-body { grid-template-columns: minmax(0, 1fr); }
+  #cut .ct-photo { position: relative; top: 0; order: -1; width: 64%; justify-self: end; aspect-ratio: 0.62; }
+  #cut .ct-word { width: min-content; white-space: normal; font-size: min(15vw, calc(84cqi / (var(--len) * 0.66))); }
+}
+}
+</style>
+<style data-8b-part="section:commissions">
+@layer sections {
+#commissions { padding: var(--space-2) var(--space-1); }
+#commissions .cm-rows { margin-top: clamp(48px, 8vh, 88px); border-bottom: 1px solid var(--color-6); }
+#commissions .cm-row { --cm-price: clamp(150px, 19vw, 240px); position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) var(--cm-price); align-items: baseline; padding: clamp(22px, 3.6vh, 32px) 0; }
+#commissions .cm-row::after { content: ""; position: absolute; top: 0; bottom: 0; right: var(--cm-price); width: 1px; background: var(--color-6); }
+#commissions .cm-row .m-rule { position: absolute; left: 0; right: 0; top: 0; }
+#commissions .cm-row .m-rule .m-spark { left: calc(100% - var(--cm-price)); }
+#commissions .cm-name { font-size: clamp(24px, 2.5vw, 36px); padding-right: 24px; }
+#commissions .cm-price { justify-self: end; font-family: var(--font-2); font-size: clamp(20px, 1.8vw, 26px); font-weight: 400; }
+#commissions .cm-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; margin-top: 32px; }
+@media (max-width: 760px) {
+  #commissions .cm-row { --cm-price: 0px; grid-template-columns: minmax(0, 1fr) auto; row-gap: 8px; }
+  #commissions .cm-row::after { display: none; }
+  #commissions .cm-row .m-rule .m-spark { left: 0; }
+  #commissions .cm-name { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="section:visits">
+@layer sections {
+#visits { padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#visits .vs-body { position: relative; max-width: 1080px; margin: clamp(48px, 8vh, 88px) 0 0 auto; }
+#visits .vs-list { display: grid; gap: 14px; }
+#visits .vs-item { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1.1fr) auto; align-items: center; gap: 12px clamp(14px, 2.4vw, 32px); min-height: 96px; padding: 16px clamp(96px, 11vw, 150px) 16px clamp(22px, 3vw, 40px); border: 1px solid var(--color-4); border-radius: var(--radius-1); transition: border-color 0.35s ease; }
+#visits .vs-spark { color: var(--color-4); font-size: 17px; transition: color 0.35s ease, rotate 0.35s ease; }
+#visits .vs-city { font-size: clamp(26px, 2.6vw, 38px); }
+#visits .vs-roller { position: absolute; right: clamp(10px, 2vw, 28px); bottom: 0; width: 104px; margin-bottom: -4px; z-index: 1; }
+#visits .vs-roller .m-stamp { width: 104px; }
+@media (max-width: 760px) {
+  #visits .vs-item { grid-template-columns: auto minmax(0, 1fr); padding: 18px 64px 18px 22px; border-radius: 40px; }
+  #visits .vs-when, #visits .vs-book { grid-column: 2; }
+  #visits .vs-roller { right: 0; width: 72px; margin-bottom: 12px; }
+  #visits .vs-roller .m-stamp { width: 72px; }
+}
+}
+</style>
+<style data-8b-part="section:archive">
+@layer sections {
+#archive { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 88px); align-items: center; padding: var(--space-2) var(--space-1); }
+#archive .ar-photo { aspect-ratio: 1.55; }
+#archive .ar-text { display: grid; gap: 24px; max-width: 520px; }
+#archive .ar-terms { display: grid; gap: 14px; padding-top: 22px; border-top: 1px solid var(--color-6); }
+#archive .ar-terms li { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; }
+#archive .ar-terms .m-spark { font-size: 13px; margin-top: 3px; }
+@media (max-width: 760px) {
+  #archive { grid-template-columns: minmax(0, 1fr); }
+  #archive .ar-photo { aspect-ratio: 1.3; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 96px); padding: var(--space-2) var(--space-1); }
+#faq .fq-head { display: grid; gap: 22px; align-content: start; align-self: start; position: sticky; top: 110px; }
+#faq .fq-list { display: grid; }
+#faq .fq-rule .m-spark { left: 0; }
+#faq .fq-item { border-bottom: 1px solid var(--color-6); }
+#faq .fq-q { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 18px; padding: 24px 0; cursor: pointer; list-style: none; }
+#faq .fq-q::-webkit-details-marker { display: none; }
+#faq .fq-q .m-spark { font-size: 13px; transition: rotate 0.45s cubic-bezier(0.6, 0, 0.2, 1); }
+#faq .fq-qtext { font-family: var(--font-2); font-size: clamp(20px, 1.8vw, 26px); font-weight: 400; }
+#faq .fq-sign { position: relative; width: 16px; height: 16px; }
+#faq .fq-sign::before, #faq .fq-sign::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; margin-top: -0.75px; background: currentColor; transition: rotate 0.45s cubic-bezier(0.6, 0, 0.2, 1); }
+#faq .fq-sign::after { rotate: 90deg; }
+#faq .fq-item[open] .fq-sign::after { rotate: 0deg; }
+#faq .fq-item[open] .fq-q .m-spark { rotate: 90deg; color: var(--color-4); }
+#faq .fq-a { max-width: 60ch; padding: 0 34px 28px 31px; color: var(--color-5); }
+@media (max-width: 860px) {
+  #faq { grid-template-columns: minmax(0, 1fr); }
+  #faq .fq-head { position: static; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#contact .co-title-row { container-type: inline-size; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; column-gap: clamp(14px, 2.2vw, 34px); }
+#contact .co-title { grid-column: 1 / -1; grid-row: 1; display: grid; grid-template-columns: subgrid; align-items: center; font-size: min(210px, calc(84cqi / (var(--len) * 1.03))); }
+#contact .co-word { display: block; white-space: nowrap; }
+#contact .co-word__in { display: block; }
+#contact .co-word--a { grid-column: 1; }
+#contact .co-word--b { grid-column: 3; }
+#contact .co-dash { grid-column: 2; display: block; align-self: center; margin-top: 0.12em; height: 0.055em; min-height: 4px; }
+#contact .co-dash__bar { display: block; height: 100%; background: var(--color-2); }
+#contact .co-caption { grid-column: 2; grid-row: 1; align-self: start; max-width: 18em; padding-top: 0.1em; }
+#contact .co-body { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 96px); margin-top: clamp(56px, 10vh, 110px); }
+#contact .co-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; align-content: start; }
+#contact .co-block { display: grid; gap: 10px; justify-items: start; align-content: start; }
+#contact .co-photo { grid-column: 1 / -1; aspect-ratio: 2.4; margin-top: 8px; }
+#contact .co-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 28px; align-content: start; }
+#contact .co-wide { grid-column: 1 / -1; }
+#contact .co-send { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+@media (max-width: 860px) {
+  #contact .co-title-row { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto; row-gap: 10px; }
+  #contact .co-title { grid-column: 1; grid-row: 1 / 4; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid; font-size: min(28cqi, calc(96cqi / (var(--len) * 1.03 * 0.66))); }
+  #contact .co-word--a { grid-column: 1; grid-row: 1; justify-self: start; }
+  #contact .co-dash { grid-column: 1; grid-row: 2; width: 34%; margin-top: 0; }
+  #contact .co-word--b { grid-column: 1; grid-row: 3; justify-self: end; }
+  #contact .co-caption { grid-column: 1; grid-row: 2; justify-self: end; max-width: 58%; padding-top: 0; }
+  #contact .co-body { grid-template-columns: minmax(0, 1fr); }
+  #contact .co-form { grid-template-columns: minmax(0, 1fr); }
+  #contact .co-details { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; padding: clamp(64px, 10vh, 110px) var(--space-1) 28px; overflow: hidden; }
+#footer .ff-rule .m-spark:nth-of-type(1) { left: 33.33%; }
+#footer .ff-rule .m-spark:nth-of-type(2) { left: 66.66%; }
+#footer .ff-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+#footer .ff-col { display: grid; align-content: start; gap: 14px; padding: 28px clamp(16px, 2vw, 32px) 40px 0; }
+#footer .ff-col + .ff-col { padding-left: clamp(16px, 2vw, 32px); border-left: 1px solid var(--color-6); }
+#footer .ff-links { display: grid; gap: 2px; justify-items: start; }
+#footer .ff-mark { display: block; margin-top: clamp(16px, 4vh, 40px); font-size: min(30vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.97))); line-height: 0.78; white-space: nowrap; }
+#footer .ff-legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--color-6); }
+#footer .ff-legal__links { display: flex; gap: 22px; }
+@media (max-width: 760px) {
+  #footer .ff-grid { grid-template-columns: minmax(0, 1fr); }
+  #footer .ff-col + .ff-col { padding-left: 0; border-left: 0; border-top: 1px solid var(--color-6); }
+  #footer .ff-col { padding: 22px 0 26px; }
+  #footer .ff-rule .m-spark { display: none; }
+}
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-expo-out: linear(0, 0.1587, 0.2915, 0.403, 0.4969, 0.576, 0.6429, 0.6996, 0.7476, 0.7883, 0.8229, 0.8523, 0.8772, 0.8983, 0.9162, 0.9312, 0.9438, 0.9544, 0.9632, 0.9705, 0.9766, 0.9815, 0.9855, 0.9887, 0.9913, 0.9933, 0.9949, 0.9962, 0.9971, 0.9979, 0.9984, 0.9989, 0.9992, 0.9994, 0.9996, 0.9997, 0.9998, 0.9999, 0.9999, 1, 1); --ease-cb0991: linear(0, 0.1207, 0.2329, 0.3369, 0.433, 0.5215, 0.6026, 0.6767, 0.744, 0.8048, 0.8594, 0.908, 0.951, 0.9886, 1.0211, 1.0488, 1.072, 1.0909, 1.1059, 1.1171, 1.125, 1.1297, 1.1316, 1.131, 1.128, 1.123, 1.1164, 1.1083, 1.099, 1.0889, 1.0781, 1.0671, 1.056, 1.0452, 1.0349, 1.0254, 1.017, 1.01, 1.0046, 1.0012, 1); --ease-8387a2: linear(0, 0.1088, 0.2103, 0.3048, 0.3925, 0.4736, 0.5484, 0.6171, 0.68, 0.7372, 0.7891, 0.8357, 0.8775, 0.9146, 0.9472, 0.9756, 1, 1.0207, 1.0378, 1.0517, 1.0625, 1.0705, 1.0759, 1.079, 1.08, 1.0791, 1.0766, 1.0726, 1.0675, 1.0614, 1.0547, 1.0475, 1.04, 1.0325, 1.0253, 1.0186, 1.0125, 1.0074, 1.0034, 1.0009, 1); }
+[data-8b-live] [data-8b-motion~="rise"] .line__in { animation-name: motion-rise-line-in-translate; animation-duration: 1.05s; animation-delay: calc(0s + 0.09s * var(--i)); animation-timing-function: var(--ease-expo-out); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="rise"].is-in .line__in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rule"]:not([data-8b-items=".m-spark"]) .m-rule__line { animation-name: motion-rule-single-m-rule-line-scale; animation-duration: 1.3s; animation-delay: 0s; animation-timing-function: linear; animation-fill-mode: both; animation-play-state: paused; transform: none; transform-origin: 0% 50%; }
+[data-8b-live] [data-8b-motion~="rule"]:not([data-8b-items=".m-spark"]).is-in .m-rule__line { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rule"]:not([data-8b-items=".m-spark"]) .m-spark { animation-name: motion-rule-single-m-spark-rotate, motion-rule-single-m-spark-scale; animation-duration: 0.9s; animation-delay: 0.35s; animation-timing-function: var(--ease-cb0991); animation-fill-mode: both; animation-play-state: paused; transform: none; translate: -50% -50%; }
+[data-8b-live] [data-8b-motion~="rule"]:not([data-8b-items=".m-spark"]).is-in .m-spark { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rule"][data-8b-items=".m-spark"] .m-rule__line { animation-name: motion-rule-m-spark-m-rule-line-scale; animation-duration: 1.3s; animation-delay: 0s; animation-timing-function: linear; animation-fill-mode: both; animation-play-state: paused; transform: none; transform-origin: 0% 50%; }
+[data-8b-live] [data-8b-motion~="rule"][data-8b-items=".m-spark"].is-in .m-rule__line { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rule"][data-8b-items=".m-spark"] .m-spark { animation-name: motion-rule-single-m-spark-rotate, motion-rule-single-m-spark-scale; animation-duration: 0.9s; animation-delay: calc(0.35s + 0.18s * var(--i)); animation-timing-function: var(--ease-cb0991); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="rule"][data-8b-items=".m-spark"].is-in .m-spark { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="pin"] { animation-name: motion-pin-translate, motion-pin-rotate, motion-pin-scale, motion-pin-opacity; animation-duration: 1.05s; animation-delay: 0s; animation-timing-function: var(--ease-8387a2); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="pin"].is-in { animation-play-state: running; }
+@keyframes motion-rise-line-in-translate { 0% { translate: 0px 108%; } 100% { translate: 0px 0px; } }
+@keyframes motion-rule-single-m-rule-line-scale { 0% { scale: 0 1; } 0.0077% { scale: 0 1; } 1.6667% { scale: 0 1; } 3.3333% { scale: 0.0001 1; } 5% { scale: 0.0001 1; } 6.6667% { scale: 0.0002 1; } 8.3333% { scale: 0.0003 1; } 10% { scale: 0.0004 1; } 11.6667% { scale: 0.0006 1; } 13.3333% { scale: 0.001 1; } 15% { scale: 0.0014 1; } 16.6667% { scale: 0.0021 1; } 18.3333% { scale: 0.003 1; } 20% { scale: 0.0044 1; } 21.6667% { scale: 0.0061 1; } 23.3333% { scale: 0.0085 1; } 25% { scale: 0.0117 1; } 26.6667% { scale: 0.0159 1; } 26.9154% { scale: 0.0166 1; } 26.9231% { scale: 0.0166 1; } 26.9308% { scale: 0.0166 1; } 28.3333% { scale: 0.0212 1; } 30% { scale: 0.0281 1; } 31.6667% { scale: 0.0368 1; } 33.3333% { scale: 0.0477 1; } 35% { scale: 0.0614 1; } 36.6667% { scale: 0.0785 1; } 38.3333% { scale: 0.0998 1; } 40% { scale: 0.1262 1; } 41.6667% { scale: 0.1592 1; } 43.3333% { scale: 0.2002 1; } 45% { scale: 0.2516 1; } 46.6667% { scale: 0.316 1; } 48.3333% { scale: 0.3972 1; } 50% { scale: 0.5 1; } 51.6667% { scale: 0.6028 1; } 53.3333% { scale: 0.684 1; } 55% { scale: 0.7484 1; } 56.6667% { scale: 0.7998 1; } 58.3333% { scale: 0.8408 1; } 60% { scale: 0.8738 1; } 61.6667% { scale: 0.9002 1; } 63.3333% { scale: 0.9215 1; } 65% { scale: 0.9386 1; } 66.6667% { scale: 0.9523 1; } 68.3333% { scale: 0.9632 1; } 70% { scale: 0.9719 1; } 71.6667% { scale: 0.9788 1; } 73.3333% { scale: 0.9841 1; } 75% { scale: 0.9883 1; } 76.6667% { scale: 0.9915 1; } 78.3333% { scale: 0.9939 1; } 80% { scale: 0.9956 1; } 81.6667% { scale: 0.997 1; } 83.3333% { scale: 0.9979 1; } 85% { scale: 0.9986 1; } 86.6667% { scale: 0.999 1; } 88.3333% { scale: 0.9994 1; } 90% { scale: 0.9996 1; } 91.6667% { scale: 0.9997 1; } 93.3333% { scale: 0.9998 1; } 95% { scale: 0.9999 1; } 96.1462% { scale: 0.9999 1; } 96.1538% { scale: 0.9999 1; } 96.1615% { scale: 0.9999 1; } 96.6667% { scale: 0.9999 1; } 98.3333% { scale: 1; } 99.9923% { scale: 1; } 100% { scale: 1; } }
+@keyframes motion-rule-single-m-spark-rotate { 0% { rotate: -135deg; } 100% { rotate: 0deg; } }
+@keyframes motion-rule-single-m-spark-scale { 0% { scale: 0; } 100% { scale: 1; } }
+@keyframes motion-rule-m-spark-m-rule-line-scale { 0% { scale: 0 1; } 0.0077% { scale: 0 1; } 1.8333% { scale: 0 1; } 3.6667% { scale: 0.0001 1; } 5.5% { scale: 0.0001 1; } 7.3333% { scale: 0.0002 1; } 9.1667% { scale: 0.0003 1; } 11% { scale: 0.0005 1; } 12.8333% { scale: 0.0008 1; } 14.6667% { scale: 0.0013 1; } 16.5% { scale: 0.002 1; } 18.3333% { scale: 0.003 1; } 20.1667% { scale: 0.0045 1; } 22% { scale: 0.0066 1; } 23.8333% { scale: 0.0094 1; } 25.6667% { scale: 0.0132 1; } 26.9154% { scale: 0.0166 1; } 26.9231% { scale: 0.0166 1; } 26.9308% { scale: 0.0166 1; } 27.5% { scale: 0.0184 1; } 29.3333% { scale: 0.0251 1; } 31.1667% { scale: 0.0339 1; } 33% { scale: 0.0453 1; } 34.8333% { scale: 0.0599 1; } 36.6667% { scale: 0.0785 1; } 38.5% { scale: 0.1021 1; } 40.3333% { scale: 0.1322 1; } 40.7615% { scale: 0.1404 1; } 40.7692% { scale: 0.1405 1; } 40.7769% { scale: 0.1407 1; } 42.1667% { scale: 0.1705 1; } 44% { scale: 0.2194 1; } 45.8333% { scale: 0.282 1; } 47.6667% { scale: 0.3625 1; } 49.5% { scale: 0.4666 1; } 51.3333% { scale: 0.5841 1; } 53.1667% { scale: 0.6767 1; } 55% { scale: 0.7484 1; } 56.8333% { scale: 0.8043 1; } 58.6667% { scale: 0.848 1; } 60.5% { scale: 0.8823 1; } 62.3333% { scale: 0.9093 1; } 64.1667% { scale: 0.9305 1; } 66% { scale: 0.9472 1; } 67.8333% { scale: 0.9602 1; } 69.6667% { scale: 0.9703 1; } 71.5% { scale: 0.9782 1; } 73.3333% { scale: 0.9841 1; } 75.1667% { scale: 0.9886 1; } 77% { scale: 0.992 1; } 78.8333% { scale: 0.9945 1; } 80.6667% { scale: 0.9962 1; } 82.5% { scale: 0.9975 1; } 84.3333% { scale: 0.9983 1; } 86.1667% { scale: 0.9989 1; } 88% { scale: 0.9993 1; } 89.8333% { scale: 0.9996 1; } 91.6667% { scale: 0.9997 1; } 93.5% { scale: 0.9998 1; } 95.3333% { scale: 0.9999 1; } 96.1462% { scale: 0.9999 1; } 96.1538% { scale: 0.9999 1; } 96.1615% { scale: 0.9999 1; } 97.1667% { scale: 1; } 99% { scale: 1; } 99.9923% { scale: 1; } 100% { scale: 1; } }
+@keyframes motion-pin-translate { 0% { translate: 0px 80px; } 100% { translate: 0px 0px; } }
+@keyframes motion-pin-rotate { 0% { rotate: 18deg; } 100% { rotate: var(--pin-rotate-to, -8deg); } }
+@keyframes motion-pin-scale { 0% { scale: 0.88; } 100% { scale: 1; } }
+@keyframes motion-pin-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@media (min-width: 761px) {
+  [data-8b-live] [data-8b-motion~="rule"][data-8b-items=".m-spark"] .m-spark { translate: -50% -50%; }
+}
+@media (max-width: 760px) {
+  [data-8b-live] [data-8b-motion~="rule"][data-8b-items=".m-spark"] .m-spark { translate: -7.5px -7.5px; }
+}
+}
+</style>
+<style data-8b-part="scene:opening">
+@layer scenes {
+[data-8b-live] #opening .op-inline { animation: opening-pill-open .9s .25s cubic-bezier(0.6, 0, 0.2, 1) backwards; }
+[data-8b-live] #opening .op-inline:nth-of-type(2) { animation-delay: .4s; }
+@keyframes opening-pill-open { from { clip-path: inset(0% 46% 0% 46% round 999px); } to { clip-path: inset(0% 0% 0% 0% round 999px); } }
+}
+</style>
+<style data-8b-part="scene:cloth-board">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #cloth .cl-stage { height: 210vh; }
+  [data-8b-live] #cloth .cl-board { position: sticky; top: 0; display: grid; align-content: center; height: 100vh; padding: 0; }
+}
+}
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #cloth .cl-stage { view-timeline: --cloth-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #cloth .cl-row > .cl-item > .cl-sticker { animation-timeline: --cloth-t1; animation-range: cover 45vh cover calc(80.4469% + 3.9106% * var(--i) - 71.648vh - 5.6704vh * var(--i)); animation-fill-mode: both; transform: none; }
+[data-8b-live] #cloth .cl-row > li:nth-of-type(-n+2) > .cl-sticker { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1), cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #cloth .cl-row > li:nth-of-type(3) > .cl-sticker { animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #cloth .cl-row > li:is(:nth-of-type(4), :nth-of-type(6)) > .cl-sticker { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1), cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #cloth .cl-row > .cl-item > .cl-sticker > .m-pill { animation-name: cloth-figure-m-pill-clippath; animation-timeline: --cloth-t1; animation-range: cover calc(40.1914% + 3.3493% * var(--i) - 13.2775vh - 4.8565vh * var(--i)) cover calc(83.2536% + 3.3493% * var(--i) - 75.7177vh - 4.8565vh * var(--i)); animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; }
+@keyframes cloth-div-cl-sticker-translate-d { 0% { translate: var(--cloth-div-cl-sticker-translate-from, 7.736vw) var(--cloth-div-cl-sticker-translate-from-2, -16.044vh); } 100% { translate: 0px 0px; } }
+@keyframes cloth-div-cl-sticker-translate-m { 0% { translate: var(--cloth-div-cl-sticker-translate-from-m, 26.332%) var(--cloth-div-cl-sticker-translate-from-2, -16.044vh); } 100% { translate: 0px 0px; } }
+@keyframes cloth-div-cl-sticker-rotate { 0% { rotate: var(--cloth-div-cl-sticker-rotate-from, -4.486deg); } 100% { rotate: 0deg; } }
+@keyframes cloth-div-cl-sticker-scale { 0% { scale: var(--cloth-div-cl-sticker-scale-from, 1.0276); } 100% { scale: 1; } }
+@keyframes cloth-figure-m-pill-clippath { 0% { clip-path: inset(28% 0% round 22px); } 100% { clip-path: inset(0% round 999px); } }
+@media (min-width: 761px) {
+  [data-8b-live] #cloth .cl-row > .cl-item > .cl-sticker { animation-name: cloth-div-cl-sticker-translate-d, cloth-div-cl-sticker-rotate, cloth-div-cl-sticker-scale; }
+  [data-8b-live] #cloth .cl-row > li:nth-of-type(5) > .cl-sticker { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1), cubic-bezier(0.65, 0, 0.35, 1); }
+}
+@media (max-width: 760px) {
+  [data-8b-live] #cloth .cl-row > .cl-item > .cl-sticker { animation-name: cloth-div-cl-sticker-translate-m, cloth-div-cl-sticker-rotate, cloth-div-cl-sticker-scale; }
+  [data-8b-live] #cloth .cl-row > li:nth-of-type(5) > .cl-sticker { animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+}
+}
+</style>
+<style data-8b-part="scene:fittings-track">
+@layer scenes {
+[data-8b-live] #fittings .ft-stage { height: calc(var(--fittings-travel, 1px) * 0.72 + 100vh); view-timeline: --fittings-stage block; view-timeline-inset: 0; }
+[data-8b-live] #fittings .ft-view { position: sticky; top: 0; display: flex; align-items: center; height: 100vh; padding: 0; overflow: hidden; }
+[data-8b-live] #fittings .ft-track { display: flex; align-items: center; width: max-content; gap: 0; padding: 0 var(--space-1); }
+[data-8b-live] #fittings .ft-step { display: flex; align-items: center; gap: clamp(20px, 2.6vw, 40px); padding-right: clamp(20px, 2.6vw, 40px); }
+[data-8b-live] #fittings .ft-word { font-size: clamp(64px, 16vh, 150px); }
+[data-8b-live] #fittings .ft-joint { width: clamp(190px, 18vw, 270px); }
+[data-8b-live] #fittings .ft-photo { width: clamp(240px, 30vw, 460px); aspect-ratio: 1.55; }
+[data-8b-live] #fittings .ft-progress { display: block; position: absolute; left: var(--space-1); right: var(--space-1); bottom: clamp(44px, 11vh, 104px); background: var(--color-6); }
+[data-8b-live] #fittings .ft-progress .m-rule__line { background: var(--color-2); }
+[data-8b-live] #fittings .ft-progress .m-spark { font-size: 18px; color: var(--color-6); transition: color 0.35s ease, rotate 0.45s cubic-bezier(0.6, 0, 0.2, 1); }
+[data-8b-live] #fittings .ft-progress .m-spark.is-lit { color: var(--color-4); rotate: 90deg; }
+@media (max-width: 760px) {
+  [data-8b-live] #fittings .ft-word { font-size: clamp(56px, 10vh, 92px); }
+  [data-8b-live] #fittings .ft-joint { width: 62vw; }
+  [data-8b-live] #fittings .ft-photo { width: 66vw; }
+}
+[data-8b-live] #fittings .ft-track, [data-8b-live] #fittings .ft-progress .m-rule__line { animation-timeline: --fittings-stage; animation-range: contain 0% contain 100%; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #fittings .ft-track { animation-name: fittings-travel; }
+[data-8b-live] #fittings .ft-progress .m-rule__line { animation-name: fittings-fill; transform-origin: 0% 50%; }
+[data-8b-live] #fittings .ft-dash, [data-8b-live] #fittings .ft-photo { --fittings-x: clamp(0, (var(--fittings-p) - var(--fittings-from, 0)) / (var(--fittings-to, 1) - var(--fittings-from, 0)), 1); }
+[data-8b-live] #fittings .ft-dash { scale: var(--fittings-x) 1; transform-origin: calc(50% - 50% * clamp(0, var(--fittings-x) * 100000, 1)) 50%; }
+[data-8b-live] #fittings .ft-photo { clip-path: inset(0% calc(50% * pow(1 - var(--fittings-x), 3)) round 999px); }
+@keyframes fittings-travel { 0% { --fittings-p: 0; translate: 0px 0px; } 100% { --fittings-p: 1; translate: calc(-1 * var(--fittings-travel, 1px)) 0px; } }
+@keyframes fittings-fill { 0% { scale: 0 1; } 100% { scale: 1 1; } }
+}
+@property --fittings-p { syntax: "<number>"; inherits: true; initial-value: 0; }
+</style>
+<style data-8b-part="scene:cut-ease">
+@layer scenes {
+[data-8b-live] #cut .ct-list > .ct-trait { view-timeline: --cut-item block; view-timeline-inset: 0; }
+[data-8b-live] #cut .ct-body { view-timeline: --cut-t2 block; view-timeline-inset: 0; }
+[data-8b-live] #cut .ct-list > .ct-trait > .m-text-4 { animation-name: cut-h3-m-text-4-scale; transform-origin: 0% 50%; animation-timeline: --cut-item; animation-range: cover 4vh cover 52vh; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); animation-fill-mode: both; }
+[data-8b-live] #cut .ct-list > .ct-trait > .m-spark { animation-name: cut-span-m-spark-rotate, cut-span-m-spark-scale; animation-timeline: --cut-item; animation-range: cover 4vh cover 52vh; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #cut .m-pill > img { animation-name: cut-figure-m-pill-img-translate; animation-timeline: --cut-t2; animation-range: cover 0% cover 75vh; animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+@keyframes cut-h3-m-text-4-scale { 0% { scale: var(--cut-tight, 0.6) 1; animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0); } 50% { scale: var(--cut-mid, 0.8) 1; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 100% { scale: 1 1; } }
+@keyframes cut-span-m-spark-rotate { 0% { rotate: -180deg; } 100% { rotate: 0deg; } }
+@keyframes cut-span-m-spark-scale { 0% { scale: 0.4; } 100% { scale: 1; } }
+@keyframes cut-figure-m-pill-img-translate { 0% { translate: 0px -10%; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:visits-stamp">
+@layer scenes {
+[data-8b-live] #visits .vs-body { timeline-scope: --visits-list; }
+[data-8b-live] #visits .vs-list { view-timeline: --visits-list block; view-timeline-inset: 0; }
+[data-8b-live] #visits .vs-roller { animation-name: visits-roll; animation-timeline: --visits-list; animation-range: cover 38vh cover calc(100% - 62vh); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #visits .vs-item.is-pending { border-color: color-mix(in srgb, var(--color-2) 38%, transparent); }
+[data-8b-live] #visits .vs-item.is-pending .vs-spark { color: var(--color-2); rotate: 45deg; }
+@keyframes visits-roll { 0% { translate: 0px calc(-1 * var(--visits-span, 0px)); rotate: var(--visits-turn, 0deg); } 100% { translate: 0px 0px; rotate: 0deg; } }
+}
+</style>
+<style data-8b-part="scene:archive-bands">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #archive .ar-band { position: absolute; inset: 0; pointer-events: none; }
+  [data-8b-live] #archive .ar-band img { width: 100%; height: 100%; object-fit: cover; }
+}
+}
+@layer scenes {
+[data-8b-live] #archive { timeline-scope: --archive-t1; }
+[data-8b-live] #archive .m-pill { view-timeline: --archive-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #archive .m-pill > img:nth-of-type(1), [data-8b-live] #archive .m-pill > span:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6)) { animation-timeline: --archive-t1; animation-fill-mode: both; }
+[data-8b-live] #archive .m-pill > img:nth-of-type(1) { animation-name: archive-figure-m-pill-img-opacity; animation-range: cover 12vh cover calc(50% - 2vh); animation-timing-function: linear; }
+[data-8b-live] #archive .m-pill > span:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(5), :nth-child(6)) { animation-range: cover 12vh cover calc(50% - 2vh), cover calc(50% - 2vh - 1px) cover calc(50% - 2vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1), linear; transform: none; }
+[data-8b-live] #archive .m-pill > span:nth-child(2) { animation-name: archive-figure-m-pill-span-ar-band-translate, archive-figure-m-pill-span-ar-band-opacity; }
+[data-8b-live] #archive .m-pill > span:nth-child(3) { animation-name: archive-figure-m-pill-span-ar-band-translate-2, archive-figure-m-pill-span-ar-band-opacity; }
+[data-8b-live] #archive .m-pill > span:nth-child(4) { animation-name: archive-figure-m-pill-span-ar-band-translate-3, archive-figure-m-pill-span-ar-band-opacity; }
+[data-8b-live] #archive .m-pill > span:nth-child(5) { animation-name: archive-figure-m-pill-span-ar-band-translate-4, archive-figure-m-pill-span-ar-band-opacity; }
+[data-8b-live] #archive .m-pill > span:nth-child(6) { animation-name: archive-figure-m-pill-span-ar-band-translate-5, archive-figure-m-pill-span-ar-band-opacity; }
+@keyframes archive-figure-m-pill-img-opacity { 0% { opacity: 0; } 99.998% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes archive-figure-m-pill-span-ar-band-translate { 0% { translate: -16% 0px; } 100% { translate: 0px 0px; } }
+@keyframes archive-figure-m-pill-span-ar-band-opacity { 0% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes archive-figure-m-pill-span-ar-band-translate-2 { 0% { translate: 22% 0px; } 100% { translate: 0px 0px; } }
+@keyframes archive-figure-m-pill-span-ar-band-translate-3 { 0% { translate: -28% 0px; } 100% { translate: 0px 0px; } }
+@keyframes archive-figure-m-pill-span-ar-band-translate-4 { 0% { translate: 34% 0px; } 100% { translate: 0px 0px; } }
+@keyframes archive-figure-m-pill-span-ar-band-translate-5 { 0% { translate: -40% 0px; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:contact-close">
+@layer scenes {
+[data-8b-live] #contact .co-title-row { view-timeline: --contact-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #contact .co-word--a > .co-word__in, [data-8b-live] #contact .co-word--b > .co-word__in, [data-8b-live] #contact .co-dash__bar { animation-timeline: --contact-t1; animation-range: cover 2vh cover 60vh; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #contact .co-word--a > .co-word__in { animation-name: contact-span-co-word-in-translate; }
+[data-8b-live] #contact .co-word--b > .co-word__in { animation-name: contact-span-co-word-in-translate-2; }
+[data-8b-live] #contact .co-dash__bar { animation-name: contact-span-co-dash-bar-scale; transform-origin: 50% 50%; }
+@keyframes contact-span-co-word-in-translate { 0% { translate: -120% 0px; } 100% { translate: 0px 0px; } }
+@keyframes contact-span-co-word-in-translate-2 { 0% { translate: 260% 0px; } 100% { translate: 0px 0px; } }
+@keyframes contact-span-co-dash-bar-scale { 0% { scale: 2.8 1; } 100% { scale: 1; } }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<!-- navigation: wordmark, three links and a booking button; a Menu button opens a full-screen overlay with six links, the booking button, address and phone -->
+<header id="nav" class="nv" data-8b-section="navigation">
+  <div class="nv-bar">
+    <a class="nv-mark" href="#opening">Haldane</a>
+    <nav class="nv-links" aria-label="Main" data-8b-items=":scope > a">
+      <a class="m-link-2" href="#cloth">The cloth</a>
+      <a class="m-link-2" href="#fittings">Fittings</a>
+      <a class="m-link-2" href="#visits">Trunk shows</a>
+    </nav>
+    <div class="nv-cta">
+      <a class="m-btn-2" href="#contact"><span class="m-btn-2__label">Book a fitting online</span></a>
+      <span class="m-spark nv-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span>
+    </div>
+    <button class="m-iconbtn nv-menu" type="button" aria-expanded="false" aria-controls="menu"><span class="u-sr">Open menu</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button>
+    <span class="nv-line" aria-hidden="true"></span>
+  </div>
+  <div class="nv-overlay" id="menu" hidden>
+    <div class="nv-overlay__top">
+      <a class="nv-mark" href="#opening">Haldane</a>
+      <button class="m-iconbtn nv-close" type="button"><span class="u-sr">Close menu</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+    </div>
+    <nav class="nv-overlay__links" aria-label="Menu" data-8b-items=":scope > a">
+      <a href="#cloth">The cloth</a>
+      <a href="#fittings">Fittings</a>
+      <a href="#cutters">Cutters</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#visits">Trunk shows</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <div class="nv-overlay__foot">
+      <a class="m-btn" href="#contact"><span class="m-btn__label">Book a fitting online</span></a>
+      <p class="m-text-7">1 Example Street, Edinburgh · <a data-8b-placeholder="phone" href="tel:+441310000000">+44 131 000 0000</a></p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- opening: one large statement as the h1 with two small photo pills inside it, three facts and two links (animation: scene:opening) -->
+<section id="opening" class="op" data-8b-section="opening">
+  
+  
+
+  <div class="op-second">
+    <h1 id="opening-title" class="m-text-3 op-statement">Every Haldane suit begins as a brown-paper pattern <span class="m-pill op-inline"><img fetchpriority="high" srcset="https://images.unsplash.com/photo-1738747597354-15b75122e121?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dHdlZWQlMjBmYWJyaWMlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MDUwNjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=110&amp;q=60 110w, https://images.unsplash.com/photo-1738747597354-15b75122e121?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dHdlZWQlMjBmYWJyaWMlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MDUwNjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=140&amp;q=60 140w" sizes="(max-width: 767px) 36px, 11vw" src="https://images.unsplash.com/photo-1738747597354-15b75122e121?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dHdlZWQlMjBmYWJyaWMlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MDUwNjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=140&amp;q=60" alt="" width="3872" height="2592"></span> drawn for one body, then is basted, fitted three times <span class="m-pill op-inline"><img srcset="https://images.unsplash.com/photo-1770910195240-ddec777b77f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dGFpbG9yJTIwY3V0dGluZyUyMGNsb3RofGVufDF8MHx8fDE3OTE0MDUwNDl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=110&amp;q=60 110w, https://images.unsplash.com/photo-1770910195240-ddec777b77f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dGFpbG9yJTIwY3V0dGluZyUyMGNsb3RofGVufDF8MHx8fDE3OTE0MDUwNDl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=140&amp;q=60 140w" sizes="(max-width: 767px) 36px, 11vw" src="https://images.unsplash.com/photo-1770910195240-ddec777b77f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dGFpbG9yJTIwY3V0dGluZyUyMGNsb3RofGVufDF8MHx8fDE3OTE0MDUwNDl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=140&amp;q=60" alt="" width="9158" height="6095"></span> and finished by hand.</h1>
+    <ul class="op-facts" data-8b-items=":scope > li">
+      <li><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-text-2">Twelve weeks from the first measure to collection</span></li>
+      <li><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-text-2">Around eighty hours of hand work in every coat</span></li>
+      <li><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-text-2">Your pattern kept on file for as long as you wear us</span></li>
+    </ul>
+    <div class="op-cta"><a class="m-btn" href="#contact"><span class="m-btn__label">Book your first fitting</span></a><a class="m-link" href="#commissions">How a commission works</a></div>
+  </div>
+</section>
+<!-- cloth: six cloth swatches arrive scattered like stickers, straighten into a row and open into tall pill bolts (animation: scene:cloth-board) -->
+<section id="cloth" class="cl" data-8b-section="cloth">
+  <div class="u-head cl-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">Four hundred cloths. One of them is yours.</h2>
+    <div>
+      <p class="m-text">The library holds bunches from mills in the Scottish Borders, Huddersfield and Biella: flannels, worsteds, tweeds and the odd bolt bought because it was beautiful. Handle them in the workroom, or have cuttings posted before your first fitting.</p>
+      <a class="m-btn" href="#contact"><span class="m-btn__label">Order cuttings by post</span></a>
+    </div>
+  </div>
+  <div class="cl-stage">
+    <div class="cl-board">
+      <ul class="cl-row" data-8b-items=":scope > .cl-item" data-8b-fixed="6">
+        <li class="cl-item" style="--cloth-div-cl-sticker-translate-from: 7.736vw; --cloth-div-cl-sticker-translate-from-2: -16.044vh; --cloth-div-cl-sticker-rotate-from: -4.486deg; --cloth-div-cl-sticker-scale-from: 1.0276; --cloth-div-cl-sticker-translate-from-m: 26.332%"><div class="cl-sticker">
+          <figure class="m-pill cl-bolt"><img src="https://images.unsplash.com/photo-1699245111017-658557db0abb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29vbCUyMHN1aXRpbmclMjBmYWJyaWN8ZW58MXwwfHx8MTc5MTQwNTA3MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" alt="Close weave of mid-grey flannel" width="6720" height="4480" loading="lazy"></figure>
+          <p class="m-text-2 cl-name">Grey flannel</p>
+          <p class="m-text-7 cl-mill">Yorkshire · 13 oz</p>
+        </div></li>
+        <li class="cl-item" style="--cloth-div-cl-sticker-translate-from: 14.509%; --cloth-div-cl-sticker-translate-from-2: 9.569vh; --cloth-div-cl-sticker-rotate-from: -11.398deg; --cloth-div-cl-sticker-scale-from: 0.9416; --cloth-div-cl-sticker-translate-from-m: 7.063%"><div class="cl-sticker">
+          <figure class="m-pill cl-bolt"><img src="https://images.unsplash.com/photo-1611331347660-9a4e98549588?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8d29vbCUyMHN1aXRpbmclMjBmYWJyaWN8ZW58MXwwfHx8MTc5MTQwNTA3MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=630&amp;q=60" alt="Folds of navy worsted with a pinked edge" width="6000" height="4000" loading="lazy"></figure>
+          <p class="m-text-2 cl-name">Navy worsted</p>
+          <p class="m-text-7 cl-mill">Huddersfield · 9 oz</p>
+        </div></li>
+        <li class="cl-item" style="--cloth-div-cl-sticker-translate-from: -10.195%; --cloth-div-cl-sticker-translate-from-2: -5.592vh; --cloth-div-cl-sticker-rotate-from: 22.584deg; --cloth-div-cl-sticker-scale-from: 0.7903; --cloth-div-cl-sticker-translate-from-m: -4.962%"><div class="cl-sticker">
+          <figure class="m-pill cl-bolt"><img src="https://images.unsplash.com/photo-1601307511525-b6c29f24c2e3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGdyZWVuJTIwd29vbCUyMGZhYnJpY3xlbnwxfDB8fHwxNzkxNDA1MDcyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=540&amp;q=60" alt="Soft folds of bottle-green twill" width="6000" height="4000" loading="lazy"></figure>
+          <p class="m-text-2 cl-name">Bottle-green twill</p>
+          <p class="m-text-7 cl-mill">Scottish Borders · 11 oz</p>
+        </div></li>
+        <li class="cl-item" style="--cloth-div-cl-sticker-translate-from: -7.333vw; --cloth-div-cl-sticker-translate-from-2: 32.631vh; --cloth-div-cl-sticker-rotate-from: 6.594deg; --cloth-div-cl-sticker-scale-from: 0.8121; --cloth-div-cl-sticker-translate-from-m: -24.963%"><div class="cl-sticker">
+          <figure class="m-pill cl-bolt"><img src="https://images.unsplash.com/photo-1673173042717-085e70ce2c34?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dHdlZWQlMjBmYWJyaWMlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MDUwNjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=470&amp;q=60" alt="Black and white houndstooth check" width="4032" height="3024" loading="lazy"></figure>
+          <p class="m-text-2 cl-name">Houndstooth</p>
+          <p class="m-text-7 cl-mill">Scottish Borders · 12 oz</p>
+        </div></li>
+        <li class="cl-item" style="--cloth-div-cl-sticker-translate-from: 10.422vw; --cloth-div-cl-sticker-translate-from-2: 2.514vh; --cloth-div-cl-sticker-rotate-from: 22.762deg; --cloth-div-cl-sticker-scale-from: 0.8602; --cloth-div-cl-sticker-translate-from-m: 35.476%"><div class="cl-sticker">
+          <figure class="m-pill cl-bolt"><img src="https://images.unsplash.com/photo-1748792311943-7b654e3a9c8e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dHdlZWQlMjBmYWJyaWMlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MDUwNjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=590&amp;q=60" alt="Coarse brown tweed weave" width="6000" height="4000" loading="lazy"></figure>
+          <p class="m-text-2 cl-name">Brown island tweed</p>
+          <p class="m-text-7 cl-mill">Outer Hebrides · 15 oz</p>
+        </div></li>
+        <li class="cl-item" style="--cloth-div-cl-sticker-translate-from: 8.147vw; --cloth-div-cl-sticker-translate-from-2: 17.75vh; --cloth-div-cl-sticker-rotate-from: 10.533deg; --cloth-div-cl-sticker-scale-from: 1.0722; --cloth-div-cl-sticker-translate-from-m: 27.728%"><div class="cl-sticker">
+          <figure class="m-pill cl-bolt"><img src="https://images.unsplash.com/photo-1627051895303-eceeb8b3f80f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8d29vbCUyMHN1aXRpbmclMjBmYWJyaWN8ZW58MXwwfHx8MTc5MTQwNTA3MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=720&amp;q=60" alt="Charcoal cloth with a pale windowpane check" width="6000" height="4000" loading="lazy"></figure>
+          <p class="m-text-2 cl-name">Windowpane check</p>
+          <p class="m-text-7 cl-mill">Biella · 10 oz</p>
+        </div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- fittings: four steps as extra-wide words joined by dashes; the track travels sideways while the section is held, photos open as they arrive (animation: scene:fittings-track) -->
+<section id="fittings" class="ft" data-8b-section="fittings">
+  <div class="u-head ft-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">Three fittings, twelve weeks</h2>
+    <div>
+      <p class="m-text">No coat leaves the workroom on a first try. Each fitting moves it closer to the way you stand, sit and reach, and each is booked around your diary.</p>
+    </div>
+  </div>
+  <div class="ft-stage">
+    <div class="ft-view">
+      <ol class="ft-track" data-8b-items=":scope > .ft-step">
+        <li class="ft-step">
+          <h3 class="m-text-4 ft-word">Measure</h3>
+          <div class="ft-joint">
+            <p class="m-text-2 ft-note"><span class="m-text-6 ft-num">Step 1</span>Twenty-six measures and notes on how you stand; your pattern is drafted by hand that week.</p>
+            <span class="ft-dash" aria-hidden="true"></span>
+          </div>
+          <figure class="m-pill ft-photo"><img src="https://images.unsplash.com/photo-1637666418115-305af1338928?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8dGFwZSUyMG1lYXN1cmUlMjBzaG91bGRlcnMlMjBqYWNrZXR8ZW58MXwwfHx8MTc5MTQwNTIxMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;q=60" alt="Loops of tailor’s tape measure lit gold" width="3071" height="2047" loading="lazy"></figure>
+        </li>
+        <li class="ft-step">
+          <h3 class="m-text-4 ft-word">Baste</h3>
+          <div class="ft-joint">
+            <p class="m-text-2 ft-note"><span class="m-text-6 ft-num">Step 2</span>A coat held together with loose white stitches, opened and chalked again on you.</p>
+            <span class="ft-dash" aria-hidden="true"></span>
+          </div>
+          <figure class="m-pill ft-photo"><img src="https://images.unsplash.com/photo-1633655442168-c6ef0ed2f984?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3VpdCUyMG1hbm5lcXVpbiUyMHdvcmtzaG9wfGVufDF8MHx8fDE3OTE0MDUxMzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;q=60" alt="A brown jacket on a dress form with a paper pattern piece pinned at the shoulder" width="3091" height="2048" loading="lazy"></figure>
+        </li>
+        <li class="ft-step">
+          <h3 class="m-text-4 ft-word">Forward</h3>
+          <div class="ft-joint">
+            <p class="m-text-2 ft-note"><span class="m-text-6 ft-num">Step 3</span>Pockets, lapels and sleeves in place; the balance and the collar are set.</p>
+            <span class="ft-dash" aria-hidden="true"></span>
+          </div>
+          <figure class="m-pill ft-photo"><img src="https://images.unsplash.com/photo-1621533463397-f292bd0745f9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dGFpbG9yJTIwZml0dGluZyUyMGphY2tldCUyMGNsaWVudHxlbnwxfDB8fHwxNzkxNDA1MjEyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=470&amp;q=60" alt="A tailor adjusting the front of a client’s navy jacket" width="4240" height="2384" loading="lazy"></figure>
+        </li>
+        <li class="ft-step">
+          <h3 class="m-text-4 ft-word">Finish</h3>
+          <div class="ft-joint">
+            <p class="m-text-2 ft-note"><span class="m-text-6 ft-num">Step 4</span>Hand-sewn buttonholes, a last press, and the suit goes home with you.</p>
+            <span class="ft-dash" aria-hidden="true"></span>
+          </div>
+          <figure class="m-pill ft-photo"><img src="https://images.unsplash.com/photo-1644375857048-f6dc7b47f002?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGJlc3Bva2UlMjBzdWl0JTIwdGFpbG9yfGVufDF8MHx8fDE3OTE0MDUwNTB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;q=60" alt="A man buttoning a finished charcoal suit" width="5228" height="3485" loading="lazy"></figure>
+        </li>
+      </ol>
+      <div class="m-rule ft-progress" aria-hidden="true"><span class="m-rule__line"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- cutters: three portrait stickers with name, role and one line each -->
+<section id="cutters" class="cu" data-8b-section="cutters">
+  <div class="m-rule cu-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div>
+  <div class="u-head cu-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">Three pairs of hands in every coat</h2>
+    <div>
+      <p class="m-text">You meet your cutter at every fitting. The coatmaker and the finisher never see you, but they sign the inside pocket.</p>
+    </div>
+  </div>
+  <ul class="cu-list" data-8b-items=":scope > .cu-person">
+    <li class="cu-person">
+      <figure class="m-sticker cu-card" data-8b-motion="pin" style="--pin-rotate-to: -8deg" data-8b-enter="81.5%"><span class="m-sticker__img"><img src="https://images.unsplash.com/photo-1764298493231-59ae059cdc7e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHRhaWxvciUyMGF0JTIwd29ya3xlbnwxfDF8fHwxNzkxNDA1MTA5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=430&amp;q=60" alt="Isla Rennie leaning over the cutting table with shears" width="4160" height="6240" loading="lazy"></span><figcaption class="m-sticker__cap">Isla Rennie, head cutter</figcaption></figure>
+      <p class="m-text-7 cu-note">Drafts every pattern by hand and runs all three fittings; twenty-two years at the board.</p>
+    </li>
+    <li class="cu-person">
+      <figure class="m-sticker cu-card" data-8b-motion="pin" style="--pin-rotate-to: 6deg" data-8b-enter="81.5%"><span class="m-sticker__img"><img src="https://images.unsplash.com/photo-1772333388975-6c5b969d7a2b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8dGFpbG9yJTIwYXQlMjB3b3JrfGVufDF8MXx8fDE3OTE0MDUxMDl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=430&amp;q=60" alt="Morag Duthie at her sewing machine by the workroom window" width="2557" height="3836" loading="lazy"></span><figcaption class="m-sticker__cap">Morag Duthie, coatmaker</figcaption></figure>
+      <p class="m-text-7 cu-note">Builds the canvas and shapes the chest of each coat, mostly by hand.</p>
+    </li>
+    <li class="cu-person">
+      <figure class="m-sticker cu-card" data-8b-motion="pin" style="--pin-rotate-to: -3deg" data-8b-enter="81.5%"><span class="m-sticker__img"><img src="https://images.unsplash.com/photo-1788033955883-e7e938162658?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c2VhbXN0cmVzcyUyMHBvcnRyYWl0JTIwd29ya3Nob3B8ZW58MXwxfHx8MTc5MTQwNTEzNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=430&amp;q=60" alt="Anh Tran hand-sewing at her bench" width="2268" height="4032" loading="lazy"></span><figcaption class="m-sticker__cap">Anh Tran, finisher</figcaption></figure>
+      <p class="m-text-7 cu-note">Sews the buttonholes, the pick stitching and the linings, one coat at a time.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- cut: four traits of the house cut in extra-wide type that stretches as it rises, beside one portrait (animation: scene:cut-ease) -->
+<section id="cut" class="ct" data-8b-section="cut">
+  <div class="u-head ct-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">The Haldane cut</h2>
+    <div>
+      <p class="m-text">Our house style is close and soft: room where you move, none where you don’t. Four things you will feel before anyone sees them.</p>
+    </div>
+  </div>
+  <div class="ct-body">
+    <ol class="ct-list" data-8b-items=":scope > .ct-trait">
+      <li class="ct-trait"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-4 ct-word" style="--len:13">Soft shoulder</h3><p class="m-text ct-note">A natural line with light padding, so the coat follows your shoulder instead of building a new one.</p></li>
+      <li class="ct-trait"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-4 ct-word" style="--len:12">High armhole</h3><p class="m-text ct-note">Cut close under the arm, so you can reach for a glass without the collar leaving your neck.</p></li>
+      <li class="ct-trait"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-4 ct-word" style="--len:9">Long roll</h3><p class="m-text ct-note">A lapel that rolls down to the button rather than being pressed flat.</p></li>
+      <li class="ct-trait"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-4 ct-word" style="--len:10">Clean back</h3><p class="m-text ct-note">No drag and no ripple across the shoulders: the balance is set at the second fitting.</p></li>
+    </ol>
+    <figure class="m-pill ct-photo"><img src="https://images.unsplash.com/photo-1594760136382-0c07cc163715?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTh8fG1hbiUyMGluJTIwdGFpbG9yZWQlMjBzdWl0JTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTQwNTExMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;q=60" alt="A man in a pale three-piece suit leaning on a chair" width="3563" height="5062" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- commissions: price list of five garments in hairline rows, with weeks and fittings -->
+<section id="commissions" class="cm" data-8b-section="commissions">
+  <div class="u-head cm-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">Commissions</h2>
+    <div>
+      <p class="m-text">Prices include cloth from the house bunches, every fitting and a year of free alterations. Rarer cloths are quoted at the first fitting.</p>
+    </div>
+  </div>
+  <ul class="cm-rows" data-8b-items=":scope > .cm-row">
+    <li class="cm-row"><div class="m-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div><h3 class="m-text-5 cm-name">Two-piece suit</h3><p class="m-text-7 cm-terms">Twelve weeks · three fittings</p><p class="cm-price">from £3,400</p></li>
+    <li class="cm-row"><div class="m-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div><h3 class="m-text-5 cm-name">Three-piece suit</h3><p class="m-text-7 cm-terms">Twelve weeks · three fittings</p><p class="cm-price">from £3,950</p></li>
+    <li class="cm-row"><div class="m-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div><h3 class="m-text-5 cm-name">Sports coat</h3><p class="m-text-7 cm-terms">Ten weeks · two or three fittings</p><p class="cm-price">from £2,450</p></li>
+    <li class="cm-row"><div class="m-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div><h3 class="m-text-5 cm-name">Overcoat</h3><p class="m-text-7 cm-terms">Fourteen weeks · three fittings</p><p class="cm-price">from £3,800</p></li>
+    <li class="cm-row"><div class="m-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div><h3 class="m-text-5 cm-name">Trousers</h3><p class="m-text-7 cm-terms">Six weeks · two fittings</p><p class="cm-price">from £980</p></li>
+  </ul>
+  <div class="cm-foot">
+    <p class="m-text-7">A deposit of half secures your place in the cutting book.</p>
+    <a class="m-link" href="#contact">Ask about rarer cloths</a>
+  </div>
+</section>
+
+<!-- visits: five trunk-show cities with dates; a gold stamp rolls down beside the list and stamps each city (animation: scene:visits-stamp) -->
+<section id="visits" class="vs" data-8b-section="visits">
+  <div class="u-head vs-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">We travel with the cloth</h2>
+    <div>
+      <p class="m-text">Twice a year we pack the bunches and bring the fittings to you. Book an hour: the first measure happens on the spot, and later fittings follow on our next visit or in Edinburgh.</p>
+    </div>
+  </div>
+  <div class="vs-body">
+    <ol class="vs-list" data-8b-items=":scope > .vs-item">
+      <li class="vs-item"><span class="m-spark vs-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-5 vs-city">London</h3><p class="m-text-7 vs-when">Mayfair · 4–6 November</p><a class="m-link vs-book" href="#contact">Book a slot<span class="u-sr"> in London</span></a></li>
+      <li class="vs-item"><span class="m-spark vs-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-5 vs-city">Manchester</h3><p class="m-text-7 vs-when">Spinningfields · 13–14 November</p><a class="m-link vs-book" href="#contact">Book a slot<span class="u-sr"> in Manchester</span></a></li>
+      <li class="vs-item"><span class="m-spark vs-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-5 vs-city">Copenhagen</h3><p class="m-text-7 vs-when">Indre By · 21–22 November</p><a class="m-link vs-book" href="#contact">Book a slot<span class="u-sr"> in Copenhagen</span></a></li>
+      <li class="vs-item"><span class="m-spark vs-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-5 vs-city">New York</h3><p class="m-text-7 vs-when">Upper East Side · 2–5 December</p><a class="m-link vs-book" href="#contact">Book a slot<span class="u-sr"> in New York</span></a></li>
+      <li class="vs-item"><span class="m-spark vs-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><h3 class="m-text-5 vs-city">Glasgow</h3><p class="m-text-7 vs-when">Merchant City · 15–16 January</p><a class="m-link vs-book" href="#contact">Book a slot<span class="u-sr"> in Glasgow</span></a></li>
+    </ol>
+    <div class="vs-roller"><div class="m-stamp" aria-hidden="true"><span class="m-stamp__face"></span><svg class="m-stamp__ring" viewBox="0 0 120 120"><path id="stamp-ring-2" d="M60 60m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0" fill="none"/><text><textPath href="#stamp-ring-2" textLength="268" lengthAdjust="spacing">Haldane · On tour · Haldane ·</textPath></text></svg><span class="m-spark m-stamp__mark"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div></div>
+  </div>
+</section>
+
+<!-- archive: a photo cut into five bands that slide into register, with a paragraph and three terms (animation: scene:archive-bands) -->
+<section id="archive" class="ar" data-8b-section="archive">
+  <figure class="m-pill ar-photo"><img src="https://images.unsplash.com/photo-1721664195489-7448042bf305?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cGFwZXIlMjBzZXdpbmclMjBwYXR0ZXJufGVufDF8MHx8fDE3OTE0MDUwOTN8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=660&amp;q=60" alt="A cutter tracing the curve of a pattern on dotted paper, shears beside it" width="3936" height="2624" loading="lazy"></figure>
+  <div class="ar-text">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">Your pattern stays with us</h2>
+    <p class="m-text">The brown-paper pattern cut for your first suit hangs in our archive for as long as you wear Haldane. Reorder by letter, have it adjusted after a change of shape, or hand it down.</p>
+    <ul class="ar-terms" data-8b-items=":scope > li">
+      <li><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-text-2">Reorders with a single fitting</span></li>
+      <li><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-text-2">Free alterations for the first year</span></li>
+      <li><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-text-2">Repairs and repressing at cost, for life</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- faq: five questions and answers (native <details>) with an email link -->
+<section id="faq" class="fq" data-8b-section="faq">
+  <div class="fq-head">
+    <h2 class="m-text-5" data-8b-motion="rise" data-8b-enter="90%" data-8b-split="lines">Questions before a first fitting</h2>
+    <p class="m-text">Anything else, ask us at the workroom or by email; a cutter answers.</p>
+    <a data-8b-placeholder="email" class="m-link" href="mailto:fittings@haldane.example">fittings@haldane.example</a>
+  </div>
+  <div class="fq-list">
+    <div class="m-rule fq-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%"><span class="m-rule__line"></span><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div>
+    <div class="fq-items" data-8b-items=":scope > details">
+      <details class="fq-item">
+        <summary class="fq-q"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="fq-qtext">How long does a suit take?</span><span class="fq-sign" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p class="m-text">About twelve weeks from the first measure, with three fittings three to four weeks apart. A second suit from the same pattern takes around eight.</p></div>
+      </details>
+      <details class="fq-item">
+        <summary class="fq-q"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="fq-qtext">Do I need to come to Edinburgh?</span><span class="fq-sign" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p class="m-text">No. Our trunk shows bring the cloth and the fittings to London, Manchester, Copenhagen, New York and Glasgow twice a year.</p></div>
+      </details>
+      <details class="fq-item">
+        <summary class="fq-q"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="fq-qtext">What makes it bespoke rather than made to measure?</span><span class="fq-sign" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p class="m-text">Your pattern is drawn from nothing for you, not adjusted from a standard block, and the coat is basted and refitted on you before it is finished.</p></div>
+      </details>
+      <details class="fq-item">
+        <summary class="fq-q"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="fq-qtext">Can you copy a suit I already own?</span><span class="fq-sign" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p class="m-text">We can take its details as a starting point, but we always cut a new pattern for you rather than tracing the old one.</p></div>
+      </details>
+      <details class="fq-item">
+        <summary class="fq-q"><span class="m-spark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="fq-qtext">Do you make for women?</span><span class="fq-sign" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p class="m-text">Yes. About a third of the cutting book is suits, coats and trousers for women, cut from the same house style.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- contact: "Come in" headline closing onto a dash, workroom address, hours, phone, email, a photo and a fitting request form (animation: scene:contact-close) -->
+<section id="contact" class="co" data-8b-section="contact">
+  <div class="co-title-row">
+    <h2 class="m-text-4 co-title" style="--len:7"><span class="co-word co-word--a"><span class="co-word__in">Come</span></span> <span class="co-dash" aria-hidden="true"><span class="co-dash__bar"></span></span> <span class="co-word co-word--b"><span class="co-word__in">in</span></span></h2>
+    <p class="m-text-2 co-caption">A first fitting takes an hour, and the kettle is always on</p>
+  </div>
+  <div class="co-body">
+    <div class="co-details">
+      <div class="co-block"><p class="m-text-6">Workroom</p><p class="m-text-2">1 Example Street<br>Edinburgh EH1 0ZZ</p></div>
+      <div class="co-block"><p class="m-text-6">Hours</p><p class="m-text-2">Tuesday to Saturday, 10:00–18:00<br>Evenings by appointment</p></div>
+      <div class="co-block"><p class="m-text-6">Call</p><a data-8b-placeholder="phone" class="m-link" href="tel:+441310000000">+44 131 000 0000</a></div>
+      <div class="co-block"><p class="m-text-6">Write</p><a data-8b-placeholder="email" class="m-link" href="mailto:fittings@haldane.example">fittings@haldane.example</a></div>
+      <figure class="m-pill co-photo"><img src="https://images.unsplash.com/photo-1768645116245-2dd044c7cdba?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dGFpbG9yJTIwY3V0dGluZyUyMGNsb3RofGVufDF8MHx8fDE3OTE0MDUwNDl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="The workroom: a long cutting table under a window and shelves of cloth" width="6603" height="4393" loading="lazy"></figure>
+    </div>
+    <form data-8b-placeholder="form" class="co-form" action="#contact" method="post">
+      <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__input" name="name" type="text" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__input" name="email" type="email" autocomplete="email" required></label>
+      <label class="m-field"><span class="m-field__label">Where</span><select class="m-field__input" name="where"><option>The Edinburgh workroom</option><option>A trunk show</option><option>Cuttings by post first</option></select></label>
+      <label class="m-field"><span class="m-field__label">Phone (optional)</span><input class="m-field__input" name="phone" type="tel" autocomplete="tel"></label>
+      <label class="m-field co-wide"><span class="m-field__label">What would you like made?</span><textarea class="m-field__input" name="message" rows="3"></textarea></label>
+      <div class="co-send">
+        <button class="m-btn" type="submit"><span class="m-btn__label">Request a fitting</span></button>
+        <p class="m-text-7 co-status" role="status"></p>
+        <template class="co-done">Thank you. A cutter will reply within one working day with fitting times.</template>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- footer: hairline with sparkles, workroom, page links, contact links, the wordmark across the width, copyright and the Design: 8B credit -->
+<footer id="footer" class="ff" data-8b-section="footer">
+  <div class="m-rule ff-rule" aria-hidden="true" data-8b-motion="rule" data-8b-enter="92%" data-8b-items=".m-spark"><span class="m-rule__line"></span><span class="m-spark"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span><span class="m-spark"><svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg></span></div>
+  <div class="ff-grid">
+    <div class="ff-col">
+      <p class="m-text-6">Workroom</p>
+      <p class="m-text-2">1 Example Street<br>Edinburgh EH1 0ZZ</p>
+      <p class="m-text-7">Tuesday to Saturday, 10:00–18:00</p>
+    </div>
+    <div class="ff-col">
+      <p class="m-text-6">Pages</p>
+      <nav class="ff-links" aria-label="Footer" data-8b-items=":scope > a">
+        <a class="m-link-2" href="#cloth">The cloth</a>
+        <a class="m-link-2" href="#fittings">Fittings</a>
+        <a class="m-link-2" href="#commissions">Commissions</a>
+        <a class="m-link-2" href="#faq">Questions</a>
+      </nav>
+    </div>
+    <div class="ff-col">
+      <p class="m-text-6">Contact</p>
+      <div class="ff-links" data-8b-items=":scope > a">
+        <a data-8b-placeholder="phone" class="m-link-2" href="tel:+441310000000">+44 131 000 0000</a>
+        <a data-8b-placeholder="email" class="m-link-2" href="mailto:fittings@haldane.example">fittings@haldane.example</a>
+        <a data-8b-placeholder="social" class="m-link-2" href="https://www.instagram.com/">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <p class="m-text-4 ff-mark" aria-hidden="true" style="--len:7">Haldane</p>
+  <div class="ff-legal">
+    <p class="m-text-7">© 2026 Haldane Bespoke Tailors Ltd · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    <div class="ff-legal__links" data-8b-items=":scope > a"><a class="m-link-2" href="#privacy">Privacy</a><a class="m-link-2" href="#terms">Terms</a></div>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const toggle = nav.querySelector('.nv-menu');
+  const overlay = nav.querySelector('.nv-overlay');
+  const close = nav.querySelector('.nv-close');
+  const openMenu = () => {
+    overlay.hidden = false;
+    toggle.setAttribute('aria-expanded', 'true');
+    window.motionKit?.wheel?.stop();
+    close.focus();
+  };
+  const closeMenu = (restore = true) => {
+    overlay.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    window.motionKit?.wheel?.start();
+    if (restore) toggle.focus();
+  };
+  toggle.addEventListener('click', openMenu);
+  close.addEventListener('click', () => closeMenu());
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) closeMenu(); });
+
+  let last = window.scrollY, travel = 0, direction = 0;
+  const update = () => {
+    const y = window.scrollY;
+    const delta = y - last;
+    last = y;
+    nav.classList.toggle('is-scrolled', y > 8);
+    if (!delta) return;
+    const now = Math.sign(delta);
+    if (now !== direction) { direction = now; travel = 0; }
+    travel += Math.abs(delta);
+    if (direction > 0 && y > 160 && travel > 12) nav.classList.add('is-hidden');
+    if (direction < 0 && travel > 12) nav.classList.remove('is-hidden');
+    if (y <= 8) nav.classList.remove('is-hidden');
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  nav.addEventListener('focusin', () => nav.classList.remove('is-hidden'));
+  update();
+})();
+</script>
+
+
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .co-form');
+  const status = form.querySelector('.co-status');
+  const done = form.querySelector('.co-done');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    status.textContent = done.content.textContent.trim();
+    form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); });
+};
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = document.fonts.ready.then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = parseFloat(element.getAttribute('data-8b-enter'));
+return own >= 0 && own <= 100 ? own / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-split=lines]>.line{display:block;overflow:clip;padding-block:.12em;margin-block:-.12em}[data-8b-split=lines]>.line:not(:last-child){margin-bottom:0}[data-8b-split=lines]>.line+.line{margin-top:-.24em}.line+.line>.line__in{text-indent:0}:where(h1,h2,h3,h4,h5,h6,p,div,blockquote,figcaption,dd,dt):where([data-8b-split="lines"]:has(>.line)){display:flow-root}.line__in{display:block}.kit-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const sources = new WeakMap(), widths = new WeakMap();
+const graphemes = text => [...new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(text)].map(part => part.segment);
+const span = (className, text) => { const element = document.createElement('span'); element.className = className; if (text != null) element.textContent = text; return element; };
+const split = element => {
+const mode = element.getAttribute('data-8b-split'), again = sources.has(element);
+if (again) element.innerHTML = sources.get(element); else sources.set(element, element.innerHTML);
+const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT), texts = [];
+while (walker.nextNode()) texts.push(walker.currentNode);
+let index = 0;
+for (const node of texts) {
+const fragment = document.createDocumentFragment();
+for (const piece of node.data.split(/(\s+)/)) {
+if (!piece) continue;
+if (/^\s+$/.test(piece)) { fragment.append(piece); continue; }
+const word = span('w');
+if (mode === 'chars') {
+word.setAttribute('aria-hidden', 'true');
+for (const character of graphemes(piece)) { const c = span('c', character); c.style.setProperty('--i', index++); word.append(c); }
+} else {
+word.textContent = piece;
+if (mode === 'words') word.style.setProperty('--i', index++);
+}
+fragment.append(word);
+}
+node.replaceWith(fragment);
+}
+if (mode === 'chars') element.append(span('kit-sr', element.textContent.replace(/\s+/g, ' ').trim()));
+if (mode === 'lines') {
+const lines = [];
+let top = null;
+for (const child of [...element.childNodes]) {
+const probe = child.nodeType === 1 ? child : null;
+const at = probe ? probe.getBoundingClientRect().top : top;
+if (probe && (top === null || Math.abs(at - top) > 2)) { lines.push([]); top = at; }
+if (!lines.length) lines.push([]);
+lines.at(-1).push(child);
+}
+lines.forEach((nodes, i) => {
+const line = span('line'), inner = span('line__in');
+line.style.setProperty('--i', i);
+nodes[0].before(line);
+inner.append(...nodes);
+line.append(inner);
+});
+index = lines.length;
+widths.set(element, element.clientWidth);
+}
+element.style.setProperty('--n', index);
+if (again) element.getAnimations({ subtree: true }).forEach(animation => { if (animation.timeline === document.timeline) try { animation.finish(); } catch {} });
+};
+const pending = [];
+let busy = false;
+const drain = () => {
+if (busy) return;
+const element = pending.shift();
+if (!element) return;
+busy = true;
+setTimeout(() => { try { split(element); } catch (error) { console.error('[motion-kit] split failed', error); } busy = false; drain(); }, 0);
+};
+const near = new IntersectionObserver(entries => entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+near.unobserve(entry.target);
+pending.push(entry.target);
+drain();
+}), { rootMargin: '100% 0px' });
+document.fonts.ready.then(() => document.querySelectorAll('[data-8b-split]').forEach(element => near.observe(element)));
+kit.measure(() => document.querySelectorAll('[data-8b-split="lines"]').forEach(element => {
+if (sources.has(element) && widths.get(element) !== element.clientWidth) { pending.push(element); drain(); }
+}));
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const seen = new Set(), loops = new Map();
+const watch = new IntersectionObserver(entries => {
+entries.forEach(entry => entry.isIntersecting ? seen.add(entry.target) : seen.delete(entry.target));
+loops.forEach((section, element) => element.toggleAttribute('data-8b-off', !seen.has(element) && !seen.has(section)));
+});
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || loops.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+const section = element.closest('section,header,footer') || element;
+loops.set(element, section);
+watch.observe(element);
+watch.observe(section);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+(() => {
+const kit = window.motionKit;
+kit.track = () => {};
+if (!kit.live) return;
+const named = { top: 0, center: 0.5, bottom: 1 };
+const point = text => text.trim().split(/\s+/).map(word => named[word] ?? parseFloat(word) / 100);
+kit.track = (element, start, end, fn) => {
+const [s0, v0] = point(start), [s1, v1] = point(end);
+let queued = false;
+const run = () => {
+queued = false;
+const box = element.getBoundingClientRect(), vh = innerHeight;
+const d0 = box.top + box.height * s0 - vh * v0, d1 = box.top + box.height * s1 - vh * v1;
+fn(d1 === d0 ? (d0 <= 0 ? 1 : 0) : Math.min(1, Math.max(0, -d0 / (d1 - d0))));
+};
+addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(run); } }, { passive: true });
+kit.measure(run);
+};
+})();
+</script>
+<script data-8b-part="scene-script:fittings-track">
+motionKit.scene("fittings-track", () => {
+  const section = document.getElementById('fittings');
+  const stage = section.querySelector('.ft-stage');
+  const view = section.querySelector('.ft-view');
+  const track = section.querySelector('.ft-track');
+  const progress = section.querySelector('.ft-progress');
+  const steps = [...section.querySelectorAll('.ft-step')];
+  const marks = steps.map((step, index) => {
+    const mark = document.createElement('span');
+    mark.className = 'm-spark';
+    mark.innerHTML = '<svg viewBox="0 0 24 24"><path d="M12 0C12.7 7.3 16.7 11.3 24 12 16.7 12.7 12.7 16.7 12 24 11.3 16.7 7.3 12.7 0 12 7.3 11.3 11.3 7.3 12 0Z"/></svg>';
+    mark.style.left = `${steps.length > 1 ? (index / (steps.length - 1)) * 100 : 0}%`;
+    progress.append(mark);
+    return mark;
+  });
+  motionKit.measure(() => {
+    const width = view.clientWidth, left = motionKit.box(view).x;
+    const distance = Math.max(1, track.scrollWidth - width);
+    motionKit.set(section, { '--fittings-travel': `${distance}px` });
+    const shares = (element, from, to) => motionKit.set(element, { '--fittings-from': from / distance, '--fittings-to': to / distance });
+    section.querySelectorAll('.ft-photo').forEach(photo => {
+      const box = motionKit.box(photo), x = box.x - left;
+      shares(photo, x - width, x + box.w - width * 0.96);
+    });
+    section.querySelectorAll('.ft-dash').forEach(dash => {
+      const box = motionKit.box(dash), x = box.x - left, centre = x + box.w / 2;
+      if (centre >= width) return shares(dash, centre - width, centre - width * 0.75);
+      const quarter = width / 4, drawn = Math.min(1, (Math.sqrt(quarter * quarter + 4 * box.w * (width - x)) - quarter) / (2 * box.w));
+      shares(dash, x - width, x + box.w * drawn - width * 0.75);
+    });
+  });
+  let moved = false;
+  motionKit.track(stage, 'top top', 'bottom bottom', value => {
+    moved ||= value > 0;
+    if (moved) marks.forEach((mark, index) => mark.classList.toggle('is-lit', value >= index / Math.max(1, marks.length - 1) - 0.002));
+  });
+});
+</script>
+<script data-8b-part="scene-script:cut-ease">
+motionKit.scene("cut-ease", () => {
+  const words = [...document.querySelectorAll('#cut .ct-word')];
+  const width = word => { const range = document.createRange(); range.selectNodeContents(word); return range.getBoundingClientRect().width; };
+  motionKit.measure(() => words.forEach(word => {
+    word.style.animation = 'none';
+    const full = width(word);
+    const at = face => { word.style.fontStretch = face; return (width(word) / full).toFixed(4); };
+    if (full) motionKit.set(word, { '--cut-tight': at('75%'), '--cut-mid': at('112.5%') });
+    word.style.fontStretch = word.style.animation = '';
+  }));
+});
+</script>
+<script data-8b-part="scene-script:visits-stamp">
+motionKit.scene("visits-stamp", () => {
+  const section = document.getElementById('visits');
+  const list = section.querySelector('.vs-list');
+  const roller = section.querySelector('.vs-roller');
+  const items = [...section.querySelectorAll('.vs-item')];
+  if (items.length < 2 || !roller) return;
+  let centres = [], at = 0;
+  const mark = () => {
+    const reached = centres[0] + at * (centres[centres.length - 1] - centres[0]) + 2;
+    items.forEach((item, index) => item.classList.toggle('is-pending', centres[index] > reached));
+  };
+  motionKit.measure(() => {
+    centres = items.map(item => item.offsetTop + item.offsetHeight / 2);
+    const span = centres[centres.length - 1] - centres[0];
+    motionKit.set(roller, { '--visits-span': `${span}px`, '--visits-turn': `${-(span / (roller.offsetWidth / 2)) * (180 / Math.PI)}deg` });
+    mark();
+  });
+  motionKit.track(list, 'top 62%', 'bottom 62%', value => { at = value; mark(); });
+});
+</script>
+<script data-8b-part="scene-script:archive-bands">
+motionKit.scene("archive-bands", () => {
+  const make = (tag, attrs, ...children) => { const el = tag.startsWith('svg:') ? document.createElementNS('http://www.w3.org/2000/svg', tag.slice(4)) : document.createElement(tag); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); el.append(...children); return el; };
+  const copy = (element, deep, attrs = {}) => { const el = element.cloneNode(deep); for (const [k, v] of Object.entries(attrs)) v == null ? el.removeAttribute(k) : el.setAttribute(k, v); return el; };
+  { const parent = document.querySelector("#archive .m-pill"); parent.append(...Array.from({ length: 5 }, (_, i) => make("span", { class: "ar-band", "aria-hidden": "true", style: `clip-path: inset(${["0% 0% 8","20% 0% 6","40% ","60% 0% 2","80% 0% "][i]}0%)` }, copy(parent.querySelector(":scope > img:nth-of-type(1)"), false, { "alt": "" })))); }
+});
+</script>
+</body>
+</html>

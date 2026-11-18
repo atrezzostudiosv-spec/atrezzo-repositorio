@@ -1,0 +1,44 @@
+{
+  "slug": "ashlar",
+  "name": "Ashlar Build",
+  "categories": [
+    "Architecture and building",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/construction-company-website-template",
+  "demo": "https://8b.com/templates/ashlar/demo.html",
+  "design_md_url": "https://8b.com/templates/ashlar/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "fcb1984e5400e91db6d471d9f9e748393bb3eebc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "74f270f3971b0b9074c33067bb8865c532140517",
+    "README.md": "1698d1bb3e371f6a774249a072e3f4742f53fc4c",
+    "AGENTS.md": "978301080edb0319268ecdfd546fe49af664d537",
+    "index.html": "e47a16b7b5f76a5dc422bed568874048242e4872",
+    "index.gsap.html": "48c49fc6c3b2dde0f1e99659ed04e5eb5a078e52"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7d6c050d1d0ba469829f715cf9dc8cfebab446959e708afb6df01f0d93c89b5b",
+    "README.md": "cff94eee7a02b00652ee9e048d8ab5fca2f74a4d8aeabdff918172ed376e4875",
+    "AGENTS.md": "0446c72d6c83ad8c98f0c8611c16625db0c9f1e98422c62b5698f0a46b154699",
+    "index.html": "c96b8750a981c11d2008ffccb727ec124d9b7ab215e4b85c28c3e98b77fa4570",
+    "index.gsap.html": "ace733b8ae9a2f5d212c38cce6f350a4c46fdd0fe378e864b1513a7e6d57d5bc"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

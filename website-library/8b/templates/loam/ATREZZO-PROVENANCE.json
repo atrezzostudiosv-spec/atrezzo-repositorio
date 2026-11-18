@@ -1,0 +1,43 @@
+{
+  "slug": "loam",
+  "name": "loam",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/landscaping-website-template",
+  "demo": "https://8b.com/templates/loam/demo.html",
+  "design_md_url": "https://8b.com/templates/loam/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "876268b075fdb4849a867c901180e99445b95491",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "f7b485d8a48792c605bc9e77a25e50ddc620798a",
+    "README.md": "9bcb52332218d142d434dd7baefc321834043e2f",
+    "AGENTS.md": "20ee090c9bbfa0b4c505da0d7ffd94f817d59fb2",
+    "index.html": "1718b51389b796770d28bfe4101c11914cf7265c",
+    "index.gsap.html": "ddc10b5d21c0f941ecba18394ca3d22c5a8f8f00"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "6be6d5e34084a3a888ae1598960bcc5b73261e3c988c03082d6e6251f6cd8437",
+    "README.md": "5392f3e7207b2c1d2172832db6329449fb932358e23c2d0f03a4e27e8abda4ce",
+    "AGENTS.md": "35e9d41bba07eda91245e1bc7f97fce28ca06aa1fd94d37a7593a4ad45827e57",
+    "index.html": "6c05e531fc5fa975c8cde1ef530b15afd079bc835eb5ea4a369b4ae6c1447e2b",
+    "index.gsap.html": "78d6e628210c5ae7d445133466a75230e3c1816048a6a4b8f78fa7616c118929"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

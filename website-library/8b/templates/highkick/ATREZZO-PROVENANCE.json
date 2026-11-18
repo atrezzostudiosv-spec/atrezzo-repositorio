@@ -1,0 +1,44 @@
+{
+  "slug": "highkick",
+  "name": "Highkick",
+  "categories": [
+    "Sport and fitness",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/group-fitness-website-template",
+  "demo": "https://8b.com/templates/highkick/demo.html",
+  "design_md_url": "https://8b.com/templates/highkick/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "1206d434cd3f41476e533f13046606adce10f94d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "75f6f09acda6c236cb985b638e29ae79a3dcf8cc",
+    "README.md": "7229032a14496adb4ab298e8bdcc7868c963a802",
+    "AGENTS.md": "f8fc4c87fc752d96f903ccd81579b4f66922b2fc",
+    "index.html": "7cb3708169badb9f2ff3db87bbfed3fd590401f0",
+    "index.gsap.html": "0f9065dca2e079ba4a9f1850e242a63f53e7926b"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "34ba57bbb3b3e6d2dc15597b4a508c5d154dfcc9e3616f42f61c5d267ef976ff",
+    "README.md": "e6c9271873a1ed8ee298635055973d7a03c15a8656fe2fafab12b551997b181e",
+    "AGENTS.md": "ecb2dd936e34df503beba01c482ce537b10c89f169e3846bd12c0fa7c583b34e",
+    "index.html": "75f65f0c161deb82286c350b7ea0f1c5f2b5e40ff3836c3d7842284b20e24f6f",
+    "index.gsap.html": "0abda83c275799d6a2dcb252e59d039f0971f38ca3bcf3d4773527f827406251"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}
