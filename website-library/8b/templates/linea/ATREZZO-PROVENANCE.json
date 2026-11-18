@@ -1,0 +1,41 @@
+{
+  "slug": "linea",
+  "name": "Linea",
+  "categories": [
+    "Product and app"
+  ],
+  "upstream": "https://github.com/8bsite/app-landing-page-template",
+  "demo": "https://8b.com/templates/linea/demo.html",
+  "design_md_url": "https://8b.com/templates/linea/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6ca6a7f30887305d3330a27af7ab6e3b73f57e61",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "2b9f072f59c9eb4457282c191b9cb0f0074653c6",
+    "README.md": "bd13fa64b9bd90c1c97bfb4d91550c50ca08d86d",
+    "AGENTS.md": "8d46ec826549c003f790943fcd6a5ba680b92b3c",
+    "index.html": "fd4051ace513f00ce7a234fac258f5281f7ec716"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "39766945f30ab66a0d560361d966d9b6ace83dbd70071080b6157b18c9a318d3",
+    "README.md": "2fdc6c375071a536cb4161bd9c2070029f82844d1d98f424ea64e286a031cc64",
+    "AGENTS.md": "5e4ce6421552aad710833a8d5a7664d1499daaf1fa4ae58b98ce175ce04acfa7",
+    "index.html": "716b662533db55cda7e63a78b569f53ff84b4ae60fb09699e557cca4910ed926"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)",
+    "index.gsap.html: embedded binary media; manual rights review"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "farlight",
+  "name": "Farlight",
+  "categories": [
+    "Travel"
+  ],
+  "upstream": "https://github.com/8bsite/glamping-website-template",
+  "demo": "https://8b.com/templates/farlight/demo.html",
+  "design_md_url": "https://8b.com/templates/farlight/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b349e91ac1a3e19347e81d4c978336646baee7c4",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "96a8a4368daefc3c3ff142b39ebc5bb6d0ac9fca",
+    "README.md": "b9e52bd12846bf037c64b58376465ca059b40e4a",
+    "AGENTS.md": "61f990d04aa16745ae470bdbf4697257f57e509e",
+    "index.html": "46810a34b3de60b5e05ea3c9bba6c5b676bd9e31",
+    "index.gsap.html": "e4e27e0deb6ed253635e343470c519626dc9c61c"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "0c2cf57ef0634f1ec7c7894b2827beee3e1c23722d77ba9e6c6711f96dd1c76c",
+    "README.md": "63aee2658708e0d1691e6d0ad93e529e3c6ed9c88f89618d344d0b24706f2636",
+    "AGENTS.md": "564a1809efe0b2dc6be1b52bc4baa57d48ee51de261873e62693d7796cbc0780",
+    "index.html": "7f50170d9d2fe1f15be5eeb48709d0121a85904d2a15b9b7852db1d9fcb85bb2",
+    "index.gsap.html": "943360c60a57dc0e5203487f61898c72d1823afb3adc3d1968c6c9821cad02b6"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

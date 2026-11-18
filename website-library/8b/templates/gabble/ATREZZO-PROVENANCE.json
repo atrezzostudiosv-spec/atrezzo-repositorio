@@ -1,0 +1,44 @@
+{
+  "slug": "gabble",
+  "name": "Gabble",
+  "categories": [
+    "Culture",
+    "Community"
+  ],
+  "upstream": "https://github.com/8bsite/podcast-website-template",
+  "demo": "https://8b.com/templates/gabble/demo.html",
+  "design_md_url": "https://8b.com/templates/gabble/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "55a591f770dd3f39d62ced804ed344aa4c406e1d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "32b1d6f9f4dc9d328fbf6a113537f70f4f3ef475",
+    "README.md": "2b4e741229d38177dd05168cf815dbc5da11e682",
+    "AGENTS.md": "5dc8de9bb024cb7233360ccd2d27e5cf5d08695d",
+    "index.html": "b5b174d09f10e1a6c926e88671b3f5c17ecd4ec8",
+    "index.gsap.html": "49e9ef545f8ce8595f0eefe415ab21e0a0286ad1"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "569a682739cd067245af97327f9dec6c9d51b6fa374c4ae5e383045b87faf6c5",
+    "README.md": "09b7d458b094593b763031b6e5108431c67d4ca9afdada683bbe393549de4182",
+    "AGENTS.md": "c4088abace5645a1ba1dc964bf9ffd03b52853d5779a06b9b3dedeb36ce97e35",
+    "index.html": "018415c3167a87a5db31dac229ab53eccef841011b9194fb16b9c42fd8fe6fa1",
+    "index.gsap.html": "b23eeadeaac2dfc228ff37bdbe90342182bda8bd7df5c1149c40395fbeced5c1"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

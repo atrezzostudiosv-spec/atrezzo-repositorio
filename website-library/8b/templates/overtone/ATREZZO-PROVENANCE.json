@@ -1,0 +1,43 @@
+{
+  "slug": "overtone",
+  "name": "Overtone",
+  "categories": [
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/music-school-website-template",
+  "demo": "https://8b.com/templates/overtone/demo.html",
+  "design_md_url": "https://8b.com/templates/overtone/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "536a693a3f652f1d8c36a92cc4105e0ede88afc8",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "4c7a89ccc8ed9f01e7322e83937d339b00dbdcc2",
+    "README.md": "b5bda429b7a5b29495ebe59c123d5805d8fdc32c",
+    "AGENTS.md": "1cd5290c3c93721244a35a9d81b2013bedd36490",
+    "index.html": "bd2de850c789d1e763295774f7f0c289d32df0d7",
+    "index.gsap.html": "a745965fe25036a8722d2cb7061e88f0d8cb79ef"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "996bcbf17ebc6af9eab1bdbc15bb48cb3fe13ad955a867cac2aec56017f6af90",
+    "README.md": "4340861725eeaac9f0dabe58d93f4724dc749a41ab1cb9ce54a121ab14cee73d",
+    "AGENTS.md": "5f8d7617cc3348c29f9ee0fd5b887f5202871df8c6634728ba2cd77cf8d48c62",
+    "index.html": "c92f96e357d0942eee461fc92cc3a60ddab34db6844abd7e581c3aeff1ba7446",
+    "index.gsap.html": "bc5b7e7133056d39d0cada6d6dd1d3bc45a75ee7e188feec64f41c0e40f5de09"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

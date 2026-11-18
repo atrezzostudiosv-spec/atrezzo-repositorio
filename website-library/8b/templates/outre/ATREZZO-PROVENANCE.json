@@ -1,0 +1,43 @@
+{
+  "slug": "outre",
+  "name": "OUTRE",
+  "categories": [
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/fashion-brand-website-template",
+  "demo": "https://8b.com/templates/outre/demo.html",
+  "design_md_url": "https://8b.com/templates/outre/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "111cf729d9ff42c5535f22675c1a3626373ce69d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "44e45760423d8ed04bea47babfe2bebf6944c5fc",
+    "README.md": "89895b0888d1ee4eac9b3c1fabc6ab41dfeef51d",
+    "AGENTS.md": "9e31e652610a825c5e6e45a977bbefcbdbebbf39",
+    "index.html": "8b025eaa3fa36ab96ab3a6f092cadd8175554f60",
+    "index.gsap.html": "05fc6c53cca4bdbbbbae446bb58208d997de97b0"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "fff05f41b41d58e2fd1f46d72a027be43ae5e5018d9cc1f4006e0c51201081a5",
+    "README.md": "2e9b3949e1119290a45cae38edbb6ed57f5a5b8fc0a9ab8016cc5dadae19f6f6",
+    "AGENTS.md": "2fb0e89f7a8ef6ece60ff31d3982f920504cca338c91804b91f152dc9e54d8ef",
+    "index.html": "c966c018ca5cf2542c0044b30408d64dd0afd8096b8a3bdd77f9ce184c8c78dd",
+    "index.gsap.html": "b2ccc29e2ec6e9b5c23f506058e77ba5b71968aa387196ca4def92dc1674ca6e"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

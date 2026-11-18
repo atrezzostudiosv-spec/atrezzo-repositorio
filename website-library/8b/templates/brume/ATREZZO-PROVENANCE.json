@@ -1,0 +1,44 @@
+{
+  "slug": "brume",
+  "name": "Brume",
+  "categories": [
+    "Health",
+    "Travel"
+  ],
+  "upstream": "https://github.com/8bsite/sauna-website-template",
+  "demo": "https://8b.com/templates/brume/demo.html",
+  "design_md_url": "https://8b.com/templates/brume/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "685487d27822215df07018a161809e0ebcec1968",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "b14d6fcffcf4881bec57fac5b8b6f07d17d58e63",
+    "README.md": "399bae11ec0bf510786db003696ad79e406ef206",
+    "AGENTS.md": "f962fe5082e91e1763cf0e6c27cb158a2077e899",
+    "index.html": "d85ee17270868976d7f84fc6a8ce97559a495897",
+    "index.gsap.html": "9a59f4d1353c663866434b197ae157004c4abad4"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "0401bcdd073e76f820c2e71d91a9929b86c39e613c8e22a71eb21b3f57ae41be",
+    "README.md": "8ffe64ae71c3e6eaf3060b5391fca2573da510ac888e2c2af1f2d8af85cd059b",
+    "AGENTS.md": "8b36df7849456631a0bf81d7654b3d6d1748737ab863675cf1dffe2851efbe90",
+    "index.html": "96aa7953755d37566d1b73cc8115808e509f358a92188ba573ad8fe851acba11",
+    "index.gsap.html": "97117de935cc5d1daecbde2ac2f5dbd62a9e98d15e8faf58f40a4f1e272f8c05"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

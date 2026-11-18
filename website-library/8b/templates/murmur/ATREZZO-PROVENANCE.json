@@ -1,0 +1,43 @@
+{
+  "slug": "murmur",
+  "name": "murmur",
+  "categories": [
+    "Product and app"
+  ],
+  "upstream": "https://github.com/8bsite/saas-landing-page-template",
+  "demo": "https://8b.com/templates/murmur/demo.html",
+  "design_md_url": "https://8b.com/templates/murmur/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "c64c91adfa4bccfd8f7836e2c5dd0260e31d1a6c",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "c5e341ba6707972b33fb6157cc88ac6bf6808c98",
+    "README.md": "858653f8472bede5fae68cfd0450ba53a1255b93",
+    "AGENTS.md": "c5042b919c8405a7a3f784f421206e3417ef6bf4",
+    "index.html": "03523a0b03be757776f7b144da07f3b27e925368",
+    "index.gsap.html": "cfe467c58ba5660200adaaa11f053d28d7d3dd60"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "add88e801a663458b2246b11e29bd841251135bacbbdc1d2776540c94f76d366",
+    "README.md": "41eba47407da087e367fc2263d857b647496c8bb60dc202d9b486a41b5e03244",
+    "AGENTS.md": "362316ce34bbe75ca3a69f4821531873b0efdc7432bfc700295dcfe8b9bc627d",
+    "index.html": "e03cba3d597261f38d5f8c7136d01b0bdd81b21dac33b40676c1738446f3e12e",
+    "index.gsap.html": "2c2e518e6e9a47c82ddc2900a651279d89a07854c2b2deb7ccd8ae703afc4aa9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

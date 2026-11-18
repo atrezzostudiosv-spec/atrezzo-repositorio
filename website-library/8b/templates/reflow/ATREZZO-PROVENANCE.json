@@ -1,0 +1,43 @@
+{
+  "slug": "reflow",
+  "name": "Reflow",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/repair-shop-website-template",
+  "demo": "https://8b.com/templates/reflow/demo.html",
+  "design_md_url": "https://8b.com/templates/reflow/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b688e274e3a236048a2bab502255dcf8f144bafe",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "e17d13ebafc524c19fd39f93bcaffda35f14726c",
+    "README.md": "ca1709569b85ff03cd6508133be74b0f32cbc1f9",
+    "AGENTS.md": "14c6ce51e94aa932984b6b2efb7fca851f72ec3f",
+    "index.html": "d80847e46980013363971f8b2da791fa9587e833",
+    "index.gsap.html": "e118c776f31e4c587733abcfae3e37c0d86287e2"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "59980b184a97e3dcf4670f28c851b10f92630e9c5322b2954e621eedba21f790",
+    "README.md": "1baa11d9140fa9850d67779d0c15d72eb26e36f4527f7e4360fd235d015de430",
+    "AGENTS.md": "596b7f7cbe263c4d9ab1c8ad6e38bb5a5cc8550605b14216025bcf8088b81182",
+    "index.html": "7247b0dadf2fc24de65d47446d0ff47fb8c6d37aa844e8e319fbd336638a8941",
+    "index.gsap.html": "266841dc0f18abc5bae9fb4c0f1ff6a3834bfaea74b40130fdb3ee99ed518fbc"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

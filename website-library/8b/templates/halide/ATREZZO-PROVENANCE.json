@@ -1,0 +1,44 @@
+{
+  "slug": "halide",
+  "name": "Halide",
+  "categories": [
+    "Culture",
+    "Event"
+  ],
+  "upstream": "https://github.com/8bsite/movie-theater-website-template",
+  "demo": "https://8b.com/templates/halide/demo.html",
+  "design_md_url": "https://8b.com/templates/halide/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "adf974c8c1536a99fb733f033bdbd5432b2f328d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a21204b31403b88fa7d9ac7e916d9ff99123bc29",
+    "README.md": "d18f8d0bf548144d0f7f23ae6320f60fc281ea4a",
+    "AGENTS.md": "195b885851d7868af7f5bbecbf398b72c0ec0f1e",
+    "index.html": "b97563016ee7c3d050c047e9ed34abb71c4a4bc1",
+    "index.gsap.html": "ed05778151fabd66955b8b5d7ff5c197a7e6d42b"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "868457e44566db71678c82e248ee8cf4fa526595b0c3db845c02ec3fb29d4454",
+    "README.md": "497d63442eab7b3edeb12ba08849918d3432c190d3c1ba71e726fe5ac476f5f0",
+    "AGENTS.md": "b56ed2124cd277ccc2cd1ecd35401e181ff073b42c0b10496c8cfc4fa9903ecd",
+    "index.html": "9cc80c4f5eb5fbfb3d13ec147bc2478c0ef327bf2277f57159f97e084f618792",
+    "index.gsap.html": "604e9be0b3a82778485416840a39f218deb875cacf7132ae2d93344afe370797"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

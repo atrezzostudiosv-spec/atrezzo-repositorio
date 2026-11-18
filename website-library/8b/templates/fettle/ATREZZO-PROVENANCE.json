@@ -1,0 +1,44 @@
+{
+  "slug": "fettle",
+  "name": "Fettle",
+  "categories": [
+    "Shop",
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/pottery-studio-website-template",
+  "demo": "https://8b.com/templates/fettle/demo.html",
+  "design_md_url": "https://8b.com/templates/fettle/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "640b6c73524f90963ec2e19f3a92a3e10bc94bca",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "eb16a79a6c0ff19b8c89eae7c74ab14e73d8b9a6",
+    "README.md": "be6cd8b29102531ca141a96fd3fa380bc3b197f4",
+    "AGENTS.md": "fff473ac7d20719490e367d78d55219c88b27ec7",
+    "index.html": "b05d2004b60312ff9afaf8c00a68b1fc22454aef",
+    "index.gsap.html": "2e0333a1e8d30705dbc56bd84eeabfeba65f65e1"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "4f91de67e2cf5fd1cc2f9ad0c5bcd366236ea35c42b74dad067eff3d709fe753",
+    "README.md": "23c76d177f9810e8ac60c6c999f6bb3415fcb5fc8b00bfd991dc20759d5d7096",
+    "AGENTS.md": "e284fa06f537007a15648becc17647443e18fe35ed54364600b9a5da70ebe390",
+    "index.html": "c75f57ed920c9fe70b4d082fb84347761dd7da6236405abbf3c1f627a8472777",
+    "index.gsap.html": "be0f8475d85173916a9b7521fa25825b46fcd4df8f460f90038a080d6772d2d9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "quire",
+  "name": "Quire",
+  "categories": [
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/stationery-shop-website-template",
+  "demo": "https://8b.com/templates/quire/demo.html",
+  "design_md_url": "https://8b.com/templates/quire/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "2da0479dc2d35947642388a2656b72e7759ad67f",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "9721cae9e836f228f67a61d4d0e7e2d3f04cd6c6",
+    "README.md": "eb219982c24fc432b97b761dd2aa818f73a96f7d",
+    "AGENTS.md": "c754479b4a1a87429b4f9768cbe937bb4968ae99",
+    "index.html": "a2f8a692ddd0b5c6b41d1ef950282e2fed2aeb20",
+    "index.gsap.html": "f7019f74d4131f00e3dc7ef8b2f949fa9083c103"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "ca8da19f40aa097067732a654b05bf8f53222f75ce895ec197939d733febdc92",
+    "README.md": "2bcb2b13ff5c38beeebbde4af5873b783d1ef06967f360aee5203ee813b01fe9",
+    "AGENTS.md": "66daa228af641b4b09671751cc891f2c61db077ae04ad671a35362ed54b36871",
+    "index.html": "7d337cdfcc33d7abb6dc7a246041695348ae312d7cc4956d409496bea7f3535e",
+    "index.gsap.html": "4b74a4a348f8c0ed9e380d98be0706b4430440d369a9d47c841ceb006c2a8ff2"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

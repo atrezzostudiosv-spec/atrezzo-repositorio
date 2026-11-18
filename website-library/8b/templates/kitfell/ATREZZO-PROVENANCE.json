@@ -1,0 +1,44 @@
+{
+  "slug": "kitfell",
+  "name": "Kitfell",
+  "categories": [
+    "Travel",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/outdoor-gear-rental-website-template",
+  "demo": "https://8b.com/templates/kitfell/demo.html",
+  "design_md_url": "https://8b.com/templates/kitfell/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b626fb81c2a88bedd1483c9a16152c81e7e0aef5",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "699ef83c05fdeeec67dc029cbff525e1ead13c7e",
+    "README.md": "c4a61cfb27e91c94fcb5293f88094577e1190388",
+    "AGENTS.md": "7b22d8f9e61682ba86bfb5e262d8814bfbc0ebe9",
+    "index.html": "6b94e172e0cc93aa5d91358004a459520ec45ee2",
+    "index.gsap.html": "49fa090144e954b6afb12ccb88b326102c9f61f2"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "21015efba5f313f98d5e8c41e70afb5266a15525c0b22b72475da9988f9d7d77",
+    "README.md": "fc4deb85e069a9bc1f442859892f8c321e1a09f573a41d3c5381e57cb95a3f1d",
+    "AGENTS.md": "41aa4a51f7cfc2c1ae3648cb02eb5ae0ea24c480f9a277d89843aca6b4d9053d",
+    "index.html": "29f91973561c925cff21517506b1c6c46d843bc964286073d442e7b177922f15",
+    "index.gsap.html": "37386e817c575ef3b9e602b1fc32e3768479200aecc6407ca9e81b496ad35ec9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

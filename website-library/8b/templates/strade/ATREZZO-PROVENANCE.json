@@ -1,0 +1,43 @@
+{
+  "slug": "strade",
+  "name": "STRADE",
+  "categories": [
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/sneaker-store-website-template",
+  "demo": "https://8b.com/templates/strade/demo.html",
+  "design_md_url": "https://8b.com/templates/strade/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6c1bd2e746993f558daf502205cfdc7cd32cb6fb",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "5daf289dac3c7895600b22e4b31a0f2bbbadcf5a",
+    "README.md": "391e61cea592da47be6aef5c4d8ab61ced9ee7c0",
+    "AGENTS.md": "b0f15c3551d6eb94357206c64dfa3c93471e84aa",
+    "index.html": "3ed831e12a8797e995d7c10da9b8952b7b6e9b49",
+    "index.gsap.html": "eb3b96f92e947a931592f8cf48ca7900a3f962e1"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c38207cf5b3d3c7e9767c8489b504a1553159ef1d5b64259786110dea5ee2366",
+    "README.md": "cf82fef16b7a7a9f862d84858576a921542ad83e33c409bedcdd43a806096d1a",
+    "AGENTS.md": "5df71cfeee5d88423c1a12eb8ee79e1da5abb85b980d5bb4ce40b12c47793350",
+    "index.html": "4dca3e22cbf244fb971269386035a2c70b95784c4dd82b9bd435874d140d662f",
+    "index.gsap.html": "ef2b2a1833df1e687fd81c335d6c0cc1abdda16709cfb3d4c66bdfa5ae553bd2"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

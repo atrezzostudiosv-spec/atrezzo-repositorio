@@ -1,0 +1,44 @@
+{
+  "slug": "affina",
+  "name": "Affina",
+  "categories": [
+    "Food and drink",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/cheese-shop-website-template",
+  "demo": "https://8b.com/templates/affina/demo.html",
+  "design_md_url": "https://8b.com/templates/affina/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "5fa8f171cc18824e8a0f70f576336d53af2978b8",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "d7349c40c840694834dbbdea35065854fedfe722",
+    "README.md": "08c40d456dd0af3b4d091b7afe1a2efcd8147676",
+    "AGENTS.md": "a78465f133d3d67d71561de414c6b8928cb67fa9",
+    "index.html": "b7d3de6e2bf746ff8bde95ab85e16967eb6c4e4d",
+    "index.gsap.html": "57b694bdeabd8bae3d6873675b5099fdfdfbcc48"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8e2455ab30fef9a385ef5788e58c354652cf2bed95ee86754a7c68b5b4f55514",
+    "README.md": "f97760d1da366473acefe2bf87f9c0b74a3aae56033b425a908b6a2200d34c84",
+    "AGENTS.md": "fc8dbda1dc83a8aea9b5bfa95660b5b000780cb512277aa24bf5e54f1111b317",
+    "index.html": "3bfc7da0b716ca4d7bfb2393b873a0fc436538e3b813c7610bd69c8d3554aa60",
+    "index.gsap.html": "9d1c5d32d42983aeb968564ca6c960a95926089e6d4e9ead62f08829b2625975"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

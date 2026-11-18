@@ -1,0 +1,43 @@
+{
+  "slug": "ostro",
+  "name": "Hotel Ostro",
+  "categories": [
+    "Travel"
+  ],
+  "upstream": "https://github.com/8bsite/boutique-hotel-website-template",
+  "demo": "https://8b.com/templates/ostro/demo.html",
+  "design_md_url": "https://8b.com/templates/ostro/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "5c9020a1550f36eb831831f31edfedbb89be66d3",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a49fb5b794bedab7af99d8cdf444709c1c48c1ec",
+    "README.md": "932a0a87119d280a5b50adbb9897f3dbcc1e09f5",
+    "AGENTS.md": "e723801804a21fe15a02de9e42b9cacdec68a80f",
+    "index.html": "5767351e4386a15302e9646dc6dd2fb1d3606a3a",
+    "index.gsap.html": "2433faed37fca6086d80c64878defb2d2690e34a"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "2a2fb4264387ff15fa90f46ce886d4281579e834bb0ed44b430d86273cf5e66c",
+    "README.md": "66078941ffc742817c19ef4fbce23789ae603bc9c5318be35da44ea3e4165ef7",
+    "AGENTS.md": "78cc560e97b1fcce122c57d695a4def50337c3fc453c0abf0a27328aca63dc35",
+    "index.html": "9aca178c877e23146275d8172de35074274629161263e331cc6746b6b8402125",
+    "index.gsap.html": "c10391771b8660eecc3f34f0a6d942ca59cd36667534a4731ccc4986a36ea0b9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

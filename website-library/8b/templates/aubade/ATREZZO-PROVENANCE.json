@@ -1,0 +1,43 @@
+{
+  "slug": "aubade",
+  "name": "Aubade",
+  "categories": [
+    "Event"
+  ],
+  "upstream": "https://github.com/8bsite/wedding-planner-website-template",
+  "demo": "https://8b.com/templates/aubade/demo.html",
+  "design_md_url": "https://8b.com/templates/aubade/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "869b6fb1bdd97ef4fa5e5e0da953de226294b63d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "dfd54a7b7217b7aae0ca0487582c1daacfcc1bbc",
+    "README.md": "8f454c18939963255c9d03ccde6532cd0ec50a26",
+    "AGENTS.md": "72f42bc08ca5cb36f98075b3e73ae82c2542f062",
+    "index.html": "dda427e41182aa9365157375c12f2dbf0006e873",
+    "index.gsap.html": "ed8c0f9a69497f78613c7e17a57b1069d14e9bf5"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "f8564d97f776305c177e5a917e8a8609d9a755e6f961d9fc16576a746c57636c",
+    "README.md": "5fbd00763634d39ad2d1f728d0a98bfb80c989a0cd8ee15b0b96d5247244ce01",
+    "AGENTS.md": "bfeebda4dbf943b2dbbb08d7503859cbfebc93e051a7d66d5b23ab90ff609dad",
+    "index.html": "e1ba9e6a616e680f9d42b9d14c85f707543436c293bf60da8d552dfec6ff87f6",
+    "index.gsap.html": "78c28ebf99cf6d8f5ee5a8d5931479c1f14aef243c05ff7d25c61e10dc0d71f5"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

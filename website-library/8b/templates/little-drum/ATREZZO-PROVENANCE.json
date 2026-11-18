@@ -1,0 +1,44 @@
+{
+  "slug": "little-drum",
+  "name": "Little Drum Coffee Roasters",
+  "categories": [
+    "Food and drink",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/coffee-roaster-website-template",
+  "demo": "https://8b.com/templates/little-drum/demo.html",
+  "design_md_url": "https://8b.com/templates/little-drum/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "7d681a5b2327dfec89d8e83611281945e897bfb4",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a0f314dc2d31459d3f8292cad861ff4fff91b45b",
+    "README.md": "a114ceb3b212234bd56b453b59fd7e19a05c1a1a",
+    "AGENTS.md": "2dbd40992da13e61dc3e64b1591121278cd19aca",
+    "index.html": "8c2550eee345f11994c4984e64fe83a9ba996f3c",
+    "index.gsap.html": "8e507a23fd8e4371552d539934b490bd51abd9a5"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "4e20a44ec738279769fb97ab4ac64f5517764b6c0f39d596b979f4e6b27ed864",
+    "README.md": "9976f3f8068ab98ce9d82c0b9d3d301601edf566e480e2ac8e6205f016a8549e",
+    "AGENTS.md": "7ba22de99a560f889e826e23c0566b06666db208f8a0ba1c18de90e4fc008a80",
+    "index.html": "5919299cc1cc2582eb39022291b67148b8771ef454ea5ae513110c2dd0cc9822",
+    "index.gsap.html": "da61865cdc1cd91465a5bd66faed4713c3c02810cd9e7f908f9a4e52954475c6"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

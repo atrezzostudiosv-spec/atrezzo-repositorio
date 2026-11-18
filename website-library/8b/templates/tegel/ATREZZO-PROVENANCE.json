@@ -1,0 +1,44 @@
+{
+  "slug": "tegel",
+  "name": "TEGEL",
+  "categories": [
+    "Shop",
+    "Architecture and building"
+  ],
+  "upstream": "https://github.com/8bsite/tile-store-website-template",
+  "demo": "https://8b.com/templates/tegel/demo.html",
+  "design_md_url": "https://8b.com/templates/tegel/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6eb40a534cf0aa3098335836cd06de1dbd57dfe0",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "9ec0fa3033ac7050403e9ce5cb3034397e63dd7b",
+    "README.md": "96ca6ba8188c5dc8370db43585260e3605aa1a7b",
+    "AGENTS.md": "64bb6b3d25fb4446549ab9d70b1c002794541e8b",
+    "index.html": "f66fcdb144d3cd6f30adb4f0d482f64b4ed7a766",
+    "index.gsap.html": "5cb1688bfb5739c4194a3eb4fbf7a1b4bec235b7"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "b20d17d1756e5756db901b04d53c6764df132111a4544b761fe728a7331ce8b7",
+    "README.md": "2266af7c882d950dbe81e1344817b540e72927bff9a7ca0f0bfe2d771f6b2bd3",
+    "AGENTS.md": "d670d2371015ccbf2238d19fff07c38ca4e253a41905eafbf2dbdb53f6bc0b14",
+    "index.html": "656a322d1508b8af5e45975ce4da796415db7fe545d40b9786223eaa77a90560",
+    "index.gsap.html": "8906d29aa23db3b4385b727e83e49b1a065ae96619f6586e74340bc96fe4b25d"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

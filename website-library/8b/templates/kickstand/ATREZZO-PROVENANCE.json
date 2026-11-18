@@ -1,0 +1,44 @@
+{
+  "slug": "kickstand",
+  "name": "Kickstand",
+  "categories": [
+    "Travel",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/bike-rental-website-template",
+  "demo": "https://8b.com/templates/kickstand/demo.html",
+  "design_md_url": "https://8b.com/templates/kickstand/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6e5d899366944311221e780e3c45a839d493f8be",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "1c5db21470d634716126aaac451bd2eaecc354e6",
+    "README.md": "090090504a4f0f8346476f7528d6d9aad986896f",
+    "AGENTS.md": "69abd3fb6249e5279b71e6b287a72bb09415b247",
+    "index.html": "f6ba22d153b572e005a587a9633c76f7251b40e8",
+    "index.gsap.html": "0acbc8dfd26538f0e48ec2fae37f0258d1e28f52"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "6afbb3b40fc4320ddf4d61b6a249420dfe044234d648f4249c75a7c0a4546571",
+    "README.md": "9ffa395246e20e8e520684fcedec1b1d0d18433f9b274fd239eebd6dea5aa02b",
+    "AGENTS.md": "34a4aeaf7a6fcb77fe41bde2b24c4e233b010ea36e0e5f0e1fca8a7a523ae105",
+    "index.html": "f41e8ace078b6e9112c03b50e2d2d2722b51a3960445fbda1a44b19c6456f7f3",
+    "index.gsap.html": "55219d33889575309c4894b96e2632c9474edb4a5b871b395fd8eeaec9d0cd93"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

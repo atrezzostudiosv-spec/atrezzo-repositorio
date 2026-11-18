@@ -1,0 +1,43 @@
+{
+  "slug": "saylo",
+  "name": "Saylo",
+  "categories": [
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/language-school-website-template",
+  "demo": "https://8b.com/templates/saylo/demo.html",
+  "design_md_url": "https://8b.com/templates/saylo/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "1f37f6c8c7664a45395e0fbe968ff0a35b133bdc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "f93d5c1e4cf9d597045f230da63dbe0c2568837f",
+    "README.md": "b3502a06d24b6d9a8d7c83658c7cd26cfe2183e2",
+    "AGENTS.md": "27f523bc457d6b9e5d03b6f19e36aa4dbd76d461",
+    "index.html": "ee1090d2a7d989011d1dd356f99e41c608357a3c",
+    "index.gsap.html": "b37e0667b89f8848558348bc1b64a97fade8ef90"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "9bdf5aafedb25676d923b5075a9bc70ab36c150b293091f82d6258831116d108",
+    "README.md": "7e59d5beaf3275b18c3b0e1ecbbb14757638100116a427e896b1512e21d22fc4",
+    "AGENTS.md": "3f905d64b0900a8cfcba4330fe344a8b05edc8528efd08d7413327949a6005b1",
+    "index.html": "4a58e0a919b10da58f4f076981b41804c221ca366a328a735dbc9193aa38e036",
+    "index.gsap.html": "bbf2e9625b220e881607168b0da833e6f36be469cefd154247f7c305eee7d58f"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

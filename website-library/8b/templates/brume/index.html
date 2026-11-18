@@ -1,0 +1,1711 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/brume/
+  Source: https://github.com/8bsite/sauna-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brume — sauna and bathing house on Ellery Water</title>
+<meta name="description" content="Brume is a day spa with four saunas and a cold lake on the north shore of Ellery Water. Heat, cold and the quiet after — book a morning, a full day or an evening.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brume — sauna and bathing house on Ellery Water">
+<meta property="og:description" content="Brume is a day spa with four saunas and a cold lake on the north shore of Ellery Water. Heat, cold and the quiet after — book a morning, a full day or an evening.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%230b0906'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23d0703f'%3EB%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gW8tenXg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gf8tenXg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gY8tenXg.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gU8tenXg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gV8tenXg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW1gb8tc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #0b0906;
+  --color-2: #dcd8d1;
+  --color-3: #9a948a;
+  --color-4: #2b2620;
+  --color-5: #d0703f;
+  --color-6: #8fb2b8;
+  --color-7: #15120e;
+  --color-8: #091114;
+  --color-9: #1b0d07;
+  --font-1: "Source Serif 4", "Source Serif 4 Fallback", Georgia, serif;
+  --space-1: clamp(20px, 4.4vw, 64px);
+  --space-2: clamp(104px, 14vw, 200px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Source Serif 4 Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 98.1%; ascent-override: 106%; descent-override: 34.7%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--color-1);
+    color: var(--color-2);
+    font-family: var(--font-1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3, p, ul, ol, dl, dd, figure, blockquote { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 4px; }
+  ::selection { background: var(--color-2); color: var(--color-1); }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text {
+  font-family: var(--font-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0;
+  text-transform: none;
+  font-style: normal;
+}
+.m-text-2 {
+  font-family: var(--font-1);
+  font-size: clamp(44px, 6.4vw, 96px);
+  font-weight: 300;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  font-style: normal;
+}
+.m-text-3 {
+  font-family: var(--font-1);
+  font-size: clamp(34px, 4.4vw, 66px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  text-transform: none;
+  font-style: normal;
+}
+.m-text-4 {
+  font-family: var(--font-1);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.m-text-5 {
+  font-family: var(--font-1);
+  font-size: clamp(18px, 1.45vw, 21px);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+  font-style: normal;
+}
+.m-text-6 {
+  font-family: var(--font-1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
+  text-transform: none;
+  font-style: normal;
+  color: var(--color-3);
+}
+.m-text-7 {
+  font-family: var(--font-1);
+  font-size: clamp(26px, 2.5vw, 36px);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  font-style: normal;
+}
+.m-rail {
+  font-family: var(--font-1);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-style: normal;
+  writing-mode: vertical-rl;
+  color: var(--color-3);
+  white-space: nowrap;
+}
+.m-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 14px 26px;
+  border: 1px solid var(--color-2);
+  background: transparent;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .5s ease;
+}
+.m-btn::before {
+  content: "";
+  position: absolute;
+  inset: -40% 0 0;
+  z-index: -1;
+  background: linear-gradient(to top, var(--color-2) 62%, transparent);
+  transform: translateY(100%);
+  transition: transform .7s cubic-bezier(.2, .7, .1, 1);
+}
+.m-btn__label { position: relative; }
+@media (hover: hover) {
+  .m-btn:hover { color: var(--color-1); }
+  .m-btn:hover::before { transform: translateY(0); }
+}
+.m-btn:focus-visible { color: var(--color-1); }
+.m-btn:focus-visible::before { transform: translateY(0); }
+.m-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 44px;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.m-link::before {
+  content: "";
+  width: 48px;
+  height: 1px;
+  background: currentColor;
+  transform-origin: 0 50%;
+  transition: transform .6s cubic-bezier(.2, .7, .1, 1);
+}
+.m-link__label { transition: transform .6s cubic-bezier(.2, .7, .1, 1); }
+@media (hover: hover) {
+  .m-link:hover::before { transform: scaleX(1.5); }
+  .m-link:hover .m-link__label { transform: translateX(24px); }
+}
+.m-link-2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.m-link-2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0.2em;
+  bottom: 4px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform .6s cubic-bezier(.2, .7, .1, 1);
+}
+@media (hover: hover) {
+  .m-link-2:hover::after { transform: scaleX(1); }
+}
+.m-link-2[aria-current="true"]::after { transform: scaleX(1); }
+.m-icon {
+  position: relative;
+  isolation: isolate;
+  display: inline-grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid var(--color-4);
+  background: transparent;
+  color: var(--color-2);
+  cursor: pointer;
+}
+.m-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(closest-side, color-mix(in oklab, var(--color-2) 30%, transparent), transparent);
+  opacity: 0;
+  transform: scale(.4);
+  transition: opacity .5s ease, transform .7s cubic-bezier(.2, .7, .1, 1);
+}
+@media (hover: hover) {
+  .m-icon:hover::before { opacity: 1; transform: scale(1.2); }
+}
+.m-icon__glyph { position: relative; width: 20px; height: 9px; border-block: 1px solid currentColor; }
+.m-icon__glyph--close { width: 20px; height: 20px; border: 0; }
+.m-icon__glyph--close::before, .m-icon__glyph--close::after { content: ""; position: absolute; left: 0; top: 50%; width: 20px; height: 1px; background: currentColor; transform: rotate(45deg); }
+.m-icon__glyph--close::after { transform: rotate(-45deg); }
+.m-surface {
+  background: var(--color-7);
+  color: var(--color-2);
+  border: 1px solid var(--color-4);
+}
+.m-field { display: grid; gap: 8px; }
+.m-field__label {
+  font-family: var(--font-1);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--color-3);
+}
+.m-field__input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--color-3);
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  font-style: normal;
+  color-scheme: dark;
+}
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 4px; border-bottom-color: var(--color-2); }
+select.m-field__input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--color-2) 50%), linear-gradient(-45deg, transparent 50%, var(--color-2) 50%); background-position: calc(100% - 12px) 55%, calc(100% - 6px) 55%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 28px; }
+select.m-field__input option { background: var(--color-7); color: var(--color-2); }
+.m-photo {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-7);
+}
+.m-photo > img { width: 100%; height: 100%; object-fit: cover; }
+.m-photo[data-8b-motion~="depth"] > img { height: 114%; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .l-sec {
+    position: relative;
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: clamp(16px, 6vw, 112px);
+    padding: var(--space-2) var(--space-1);
+  }
+  .l-sec > .m-rail { grid-column: 1; grid-row: 1 / span 12; position: sticky; top: 120px; align-self: start; }
+  .l-sec > :not(.m-rail) { grid-column: 2; }
+  @media (max-width: 700px) {
+    .l-sec { grid-template-columns: 14px minmax(0, 1fr); column-gap: 14px; }
+    .l-sec > .m-rail { top: 96px; font-size: 10px; letter-spacing: .22em; }
+  }
+}
+</style>
+<style data-8b-part="section:header">
+@layer sections {
+  #header {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 18px var(--space-1);
+    transition: transform .55s cubic-bezier(.2, .7, .1, 1), background-color .5s ease;
+  }
+  #header[data-solid] { background: color-mix(in oklab, var(--color-1) 88%, transparent); }
+  #header[data-hidden] { transform: translateY(-110%); }
+  #header .hd-logo { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; margin-right: auto; }
+  #header .hd-mark { display: grid; gap: 4px; width: 22px; }
+  #header .hd-mark i { display: block; height: 1px; background: currentColor; }
+  #header .hd-mark i:nth-child(2) { width: 70%; margin-left: 30%; }
+  #header .hd-mark i:nth-child(3) { width: 45%; }
+  #header .hd-word { font-size: 15px; letter-spacing: .42em; text-transform: uppercase; font-weight: 500; line-height: 1; }
+  #header .hd-nav ul { display: flex; gap: clamp(18px, 2.4vw, 36px); }
+  #header .hd-menu { display: none; }
+  @media (max-width: 1023px) {
+    #header .hd-nav { display: none; }
+    #header .hd-menu { display: inline-grid; }
+  }
+  @media (max-width: 480px) {
+    #header { gap: 10px; padding-block: 14px; }
+    #header .hd-book { padding-inline: 16px; letter-spacing: .16em; }
+    #header .hd-word { letter-spacing: .34em; }
+  }
+  @media (prefers-reduced-motion: reduce) { #header { transition: none; } }
+  #header #menu {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 32px;
+    padding: 18px var(--space-1) 40px;
+    background: var(--color-1);
+    overflow-y: auto;
+  }
+  #header #menu[hidden] { display: none; }
+  #header #menu .mn-top { display: flex; justify-content: flex-end; }
+  #header #menu .mn-list { display: grid; align-content: center; gap: 6px; }
+  #header #menu .mn-list a { position: relative; display: inline-block; font-size: clamp(32px, 9vw, 48px); font-weight: 300; line-height: 1.25; letter-spacing: -0.01em; }
+  #header #menu .mn-list a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .6s cubic-bezier(.2, .7, .1, 1); }
+  @media (hover: hover) { #header #menu .mn-list a:hover::after { transform: scaleX(1); } }
+  #header #menu .mn-foot { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+}
+</style>
+<style data-8b-part="section:arrival">
+@layer sections {
+  #arrival { position: relative; background: var(--color-1); }
+  #arrival .op-stage-wrap { position: absolute; inset: 0; z-index: 0; }
+  #arrival .op-stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+  #arrival .op-room { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 58%; }
+  #arrival .op-room-shade {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, color-mix(in oklab, var(--color-1) 86%, transparent) 0%, color-mix(in oklab, var(--color-1) 62%, transparent) 46%, color-mix(in oklab, var(--color-1) 18%, transparent) 100%),
+      linear-gradient(0deg, color-mix(in oklab, var(--color-1) 70%, transparent), transparent 40%);
+  }
+  #arrival .op-room-dark { position: absolute; inset: 0; background: var(--color-1); opacity: 0; }
+  #arrival .op-first {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    min-height: 560px;
+    display: grid;
+    align-content: end;
+    padding: 120px var(--space-1) 28px;
+  }
+  #arrival .op-hold { position: absolute; inset: 0; overflow: hidden; }
+  #arrival .op-lake-wrap { position: absolute; inset: 0; }
+  #arrival .op-lake { width: 100%; height: 100%; object-fit: cover; object-position: 50% 52%; }
+  #arrival .op-lake-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, color-mix(in oklab, var(--color-1) 55%, transparent), transparent 62%),
+      linear-gradient(180deg, color-mix(in oklab, var(--color-1) 50%, transparent), transparent 22%);
+  }
+  #arrival .op-veil {
+    position: absolute;
+    left: -15%;
+    right: -15%;
+    top: 60%;
+    height: 300%;
+    background: linear-gradient(180deg,
+      transparent 0%,
+      color-mix(in oklab, var(--color-2) 24%, transparent) 4%,
+      color-mix(in oklab, var(--color-2) 16%, transparent) 9%,
+      color-mix(in oklab, var(--color-1) 72%, transparent) 16%,
+      var(--color-1) 25%,
+      var(--color-1) 70%,
+      transparent 92%);
+  }
+  #arrival .op-fog {
+    position: absolute;
+    top: -3%;
+    height: 9%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, color-mix(in oklab, var(--color-2) 42%, transparent), color-mix(in oklab, var(--color-2) 14%, transparent) 55%, transparent);
+  }
+  #arrival .op-fog--1 { left: 30%; width: 72%; top: -4%; height: 11%; }
+  #arrival .op-fog--2 { left: 52%; width: 60%; top: -1.5%; height: 8%; }
+  #arrival .op-fog--3 { left: 18%; width: 64%; top: 1%; height: 6%; background: radial-gradient(closest-side, color-mix(in oklab, var(--color-6) 30%, transparent), transparent); }
+  #arrival .op-hero { position: relative; z-index: 2; display: grid; gap: 26px; max-width: 760px; margin-bottom: clamp(48px, 12vh, 132px); }
+  #arrival .op-hero h1 { max-width: 5.4em; }
+  #arrival .op-hero p { max-width: 21em; }
+  #arrival .op-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 32px; }
+  #arrival .op-readings {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 48px;
+    padding-top: 18px;
+    border-top: 1px solid color-mix(in oklab, var(--color-2) 22%, transparent);
+  }
+  #arrival .op-readings div { display: flex; align-items: baseline; gap: 12px; }
+  #arrival .op-readings dt { color: var(--color-3); }
+  #arrival .op-readings dd { font-size: 16px; line-height: 1.3; }
+  #arrival .op-readings .is-hot { color: var(--color-5); }
+  #arrival .op-readings .is-cold { color: var(--color-6); }
+  #arrival .op-second {
+    position: relative;
+    z-index: 2;
+    min-height: 130vh;
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: clamp(16px, 6vw, 112px);
+    align-content: start;
+    padding: 22vh var(--space-1) 18vh;
+  }
+  #arrival .op-second > .m-rail { grid-column: 1; grid-row: 1 / span 4; align-self: start; }
+  #arrival .op-copy { grid-column: 2; display: grid; gap: 30px; max-width: 620px; }
+  #arrival .op-title { display: grid; }
+  #arrival .op-line { display: block; }
+  #arrival .op-line:nth-child(2) { margin-left: 1.2em; }
+  #arrival .op-line:nth-child(3) { margin-left: 2.6em; }
+  #arrival .op-copy p { max-width: 44ch; }
+  #arrival .op-floats { grid-column: 2; }
+  #arrival .op-float { position: absolute; z-index: 1; }
+  #arrival .op-float--1 { right: 8%; top: 12%; width: clamp(150px, 19vw, 280px); aspect-ratio: 3 / 4; }
+  #arrival .op-float--2 { right: 30%; top: 50%; width: clamp(120px, 14vw, 210px); aspect-ratio: 9 / 13; }
+  #arrival .op-float--3 { right: 6%; top: 72%; width: clamp(130px, 15vw, 230px); aspect-ratio: 4 / 5; }
+  @media (max-width: 700px) {
+    #arrival .op-lake-wrap::after { background: linear-gradient(180deg, color-mix(in oklab, var(--color-1) 50%, transparent) 0%, color-mix(in oklab, var(--color-1) 30%, transparent) 26%, color-mix(in oklab, var(--color-1) 70%, transparent) 55%, color-mix(in oklab, var(--color-1) 78%, transparent) 100%); }
+    #arrival .op-room-shade { background: linear-gradient(180deg, color-mix(in oklab, var(--color-1) 60%, transparent), color-mix(in oklab, var(--color-1) 74%, transparent)); }
+  }
+  @media (max-width: 900px) {
+    #arrival .op-second { min-height: 0; padding: 18vh var(--space-1) 14vh; grid-template-columns: 14px minmax(0, 1fr); column-gap: 14px; }
+    #arrival .op-line:nth-child(2) { margin-left: .6em; }
+    #arrival .op-line:nth-child(3) { margin-left: 1.3em; }
+    #arrival .op-floats { grid-column: 2; display: grid; grid-template-columns: 1.1fr .8fr; gap: 14px; margin-top: 56px; align-items: start; }
+    #arrival .op-float { position: relative; inset: auto; width: auto; }
+    #arrival .op-float--2 { margin-top: 64px; }
+    #arrival .op-float--3 { grid-column: 1 / -1; width: 62%; margin-left: 30%; }
+  }
+  @media (max-width: 480px) {
+    #arrival .op-first { padding-bottom: 20px; }
+    #arrival .op-readings { gap: 8px 22px; }
+    #arrival .op-readings div { gap: 8px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #arrival .op-lake-wrap { animation: op-settle 1.1s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #arrival .op-hero > * { animation: op-rise .9s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #arrival .op-hero > h1, #arrival .op-hero > p { animation-name: op-shift; }
+    #arrival .op-hero > :nth-child(2) { animation-delay: .08s; }
+    #arrival .op-hero > :nth-child(3) { animation-delay: .16s; }
+    #arrival .op-readings { animation: op-fade .9s ease .25s backwards; }
+    #arrival .op-fog--1 { animation: op-drift 9s ease-in-out infinite alternate; }
+    #arrival .op-fog--2 { animation: op-drift-2 12s ease-in-out infinite alternate; }
+    #arrival .op-fog--3 { animation: op-drift 15s ease-in-out -4s infinite alternate-reverse; }
+    #arrival[data-off] .op-fog { animation-play-state: paused; }
+  }
+  @keyframes op-settle { from { transform: scale(1.07); } }
+  @keyframes op-rise { from { transform: translateY(22px); opacity: 0; } }
+  @keyframes op-shift { from { transform: translateY(26px); } }
+  @keyframes op-fade { from { opacity: 0; } }
+  @keyframes op-drift { from { transform: translateX(-9%); } to { transform: translateX(14%); } }
+  @keyframes op-drift-2 { from { transform: translateX(10%); } to { transform: translateX(-16%); } }
+}
+</style>
+<style data-8b-part="section:round">
+@layer sections {
+  #round .rd-head { display: grid; gap: 28px; max-width: 760px; }
+  #round .rd-title span { display: block; }
+  #round .rd-title span:nth-child(2) { margin-left: 1.4em; }
+  #round .rd-head p { max-width: 42ch; }
+  #round .rd-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: clamp(32px, 6vw, 104px); margin-top: clamp(40px, 6vw, 96px); }
+  #round .rd-step { min-height: 80vh; display: grid; align-content: center; gap: 16px; max-width: 470px; padding-block: 6vh; }
+  #round .rd-step + .rd-step { border-top: 1px solid var(--color-4); }
+  #round .rd-num { color: var(--color-3); }
+  #round .rd-step[data-tone="hot"] .rd-meta { color: var(--color-5); }
+  #round .rd-step[data-tone="cold"] .rd-meta { color: var(--color-6); }
+  #round .rd-step[data-tone="still"] .rd-meta { color: var(--color-3); }
+  #round .rd-aside { position: sticky; top: 12vh; align-self: start; display: grid; gap: 14px; }
+  #round .rd-frame { position: relative; height: 70vh; min-height: 420px; overflow: hidden; background: var(--color-1); }
+  #round .rd-shot { position: absolute; inset: 0; margin: 0; }
+  #round .rd-shot img { width: 100%; height: 100%; object-fit: cover; }
+  #round .rd-shot--heat { z-index: 3; clip-path: inset(0% 67.5% 0% 0%); }
+  #round .rd-shot--cold { z-index: 2; clip-path: inset(0% 34.2% 0% 34.2%); }
+  #round .rd-shot--rest { z-index: 1; clip-path: inset(0% 0% 0% 67.5%); }
+  #round .rd-tint { position: absolute; inset: 0; z-index: 4; mix-blend-mode: soft-light; opacity: 0; pointer-events: none; }
+  #round .rd-tint--hot { background: var(--color-5); }
+  #round .rd-tint--cold { background: var(--color-6); }
+  #round .rd-labels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); color: var(--color-3); }
+  #round .rd-labels li:nth-child(2) { text-align: center; }
+  #round .rd-labels li:nth-child(3) { text-align: right; }
+  @media (max-width: 900px) {
+    #round .rd-body { grid-template-columns: minmax(0, 1fr); gap: 0; }
+    #round .rd-aside { order: -1; top: 0; z-index: 2; padding-block: 12px; background: var(--color-1); }
+    #round .rd-frame { height: 40vh; min-height: 260px; }
+    #round .rd-step { min-height: 62vh; padding-block: 10vh; }
+  }
+}
+</style>
+<style data-8b-part="section:saunas">
+@layer sections {
+  #saunas { background: linear-gradient(180deg, var(--color-8), var(--color-9)); }
+  #saunas .sa-head { display: grid; gap: 28px; max-width: 760px; }
+  #saunas .sa-head h2 span { display: block; }
+  #saunas .sa-head h2 span:nth-child(2) { margin-left: 1.4em; }
+  #saunas .sa-head p { max-width: 44ch; }
+  #saunas .sa-list { margin-top: clamp(56px, 7vw, 104px); border-top: 1px solid color-mix(in oklab, var(--color-2) 16%, transparent); }
+  #saunas .sa-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) clamp(120px, 15vw, 210px);
+    gap: 20px clamp(24px, 4vw, 64px);
+    align-items: start;
+    padding-block: clamp(36px, 5vw, 64px);
+    border-bottom: 1px solid color-mix(in oklab, var(--color-2) 16%, transparent);
+  }
+  #saunas .sa-scale { display: grid; gap: 16px; padding-top: 10px; }
+  #saunas .sa-temp { color: var(--color-2); }
+  #saunas .sa-row[data-tone="cold"] .sa-temp { color: var(--color-6); }
+  #saunas .sa-row[data-tone="hot"] .sa-temp { color: var(--color-5); }
+  #saunas .sa-track { position: relative; height: 3px; background: color-mix(in oklab, var(--color-2) 12%, transparent); }
+  #saunas .sa-line { position: absolute; inset: 0; background: linear-gradient(90deg, var(--color-6), var(--color-5)); clip-path: inset(0 var(--cut, 100%) 0 0); }
+  #saunas .sa-ticks { display: flex; justify-content: space-between; color: var(--color-3); }
+  #saunas .sa-text { display: grid; gap: 14px; }
+  #saunas .sa-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 24px; margin-top: 6px; }
+  #saunas .sa-facts dt { color: var(--color-3); }
+  #saunas .sa-facts dd { color: var(--color-2); }
+  #saunas .sa-photo { aspect-ratio: 4 / 5; }
+  @media (max-width: 900px) {
+    #saunas .sa-row { grid-template-columns: minmax(0, 1fr) 112px; }
+    #saunas .sa-scale { grid-column: 1 / -1; }
+    #saunas .sa-photo { grid-column: 2; grid-row: 2; }
+  }
+}
+</style>
+<style data-8b-part="section:steam">
+@layer sections {
+  #steam { position: relative; overflow: clip; background: var(--color-1); }
+  #steam .st-bg { position: absolute; inset: 0; }
+  #steam .st-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 20% 50%; }
+  #steam .st-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in oklab, var(--color-1) 88%, transparent) 25%, color-mix(in oklab, var(--color-1) 55%, transparent)); }
+  #steam .st-inner { position: relative; padding-block: clamp(140px, 18vw, 260px); }
+  #steam .st-lines { position: relative; display: grid; }
+  #steam .st-glow { position: absolute; left: -30%; right: -30%; top: 0; height: 120%; background: radial-gradient(50% 50% at 50% 50%, color-mix(in oklab, var(--color-5) 30%, transparent), transparent 72%); opacity: 0; pointer-events: none; }
+  #steam .st-line {
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    font-size: min(clamp(44px, 6.6vw, 92px), calc((100vw - 2 * var(--space-1) - 220px) / (var(--len) * .53)));
+    line-height: 1.08;
+  }
+  #steam .st-note { max-width: 44ch; margin-top: clamp(48px, 6vw, 80px); }
+  @media (max-width: 700px) {
+    #steam .st-bg::after { background: color-mix(in oklab, var(--color-1) 86%, transparent); }
+    #steam .st-line { font-size: min(40px, calc((100vw - 2 * var(--space-1) - 28px) / (var(--len) * .53))); }
+  }
+}
+</style>
+<style data-8b-part="section:lake">
+@layer sections {
+  #lake .lk-photo { aspect-ratio: 16 / 7.5; }
+  #lake .lk-copy { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: 32px clamp(32px, 6vw, 104px); margin-top: clamp(48px, 6vw, 96px); }
+  #lake .lk-copy h2 { grid-row: span 2; }
+  #lake .lk-copy h2 span { display: block; }
+  #lake .lk-copy h2 span:nth-child(2) { margin-left: 1.4em; }
+  #lake .lk-copy p { max-width: 46ch; }
+  #lake .lk-facts { display: grid; max-width: 46ch; }
+  #lake .lk-facts li { padding: 12px 0; border-top: 1px solid var(--color-4); color: var(--color-2); }
+  @media (max-width: 900px) {
+    #lake .lk-photo { aspect-ratio: 4 / 5; }
+    #lake .lk-copy { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:day">
+@layer sections {
+  #day { position: relative; }
+  #day .dy-stage-wrap { position: absolute; inset: 0; z-index: 0; }
+  #day .dy-stage { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+  #day .dy-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #day .dy-morning { object-position: 70% 50%; }
+  #day .dy-night { object-position: 40% 50%; opacity: 0; }
+  #day .dy-tint { position: absolute; inset: 0; mix-blend-mode: soft-light; opacity: 0; }
+  #day .dy-tint--dawn { background: var(--color-6); }
+  #day .dy-tint--dusk { background: var(--color-5); }
+  #day .dy-shade { position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in oklab, var(--color-1) 92%, transparent) 0%, color-mix(in oklab, var(--color-1) 80%, transparent) 46%, color-mix(in oklab, var(--color-1) 10%, transparent) 100%); }
+  #day .dy-content { position: relative; z-index: 1; }
+  #day .dy-content h2 span { display: block; }
+  #day .dy-content h2 span:nth-child(2) { margin-left: 1.4em; }
+  #day .dy-hours { margin-top: 8vh; padding-bottom: 20vh; }
+  #day .dy-hour { min-height: 44vh; display: grid; grid-template-columns: 7.5ch minmax(0, 34ch); gap: 8px clamp(20px, 3vw, 40px); align-content: center; }
+  #day .dy-hour time { position: relative; transition: color .6s ease; }
+  #day .dy-hour time::after { content: ""; position: absolute; left: 0; bottom: -6px; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .8s cubic-bezier(.2, .7, .1, 1); }
+  #day .dy-hour.is-now time { color: var(--color-5); }
+  #day .dy-hour.is-now time::after { transform: scaleX(1); }
+  @media (max-width: 700px) {
+    #day .dy-shade { background: linear-gradient(180deg, color-mix(in oklab, var(--color-1) 84%, transparent), color-mix(in oklab, var(--color-1) 74%, transparent)); }
+    #day .dy-hour { grid-template-columns: minmax(0, 1fr); min-height: 40vh; }
+  }
+}
+</style>
+<style data-8b-part="section:table">
+@layer sections {
+  #table .tb-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); gap: clamp(40px, 7vw, 120px); }
+  #table .tb-copy { display: grid; gap: 28px; align-content: start; }
+  #table .tb-copy h2 span { display: block; }
+  #table .tb-copy h2 span:nth-child(2) { margin-left: 1.4em; }
+  #table .tb-copy > p { max-width: 44ch; }
+  #table .tb-menu { margin-top: 24px; }
+  #table .tb-dish { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 24px; padding: 22px 0; }
+  #table .tb-rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+  #table .tb-dish p:not(.tb-price) { grid-column: 1; }
+  #table .tb-price { grid-column: 2; grid-row: 1; align-self: baseline; }
+  #table .tb-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 28px); align-content: start; }
+  #table .tb-photo--bread { grid-column: 1 / -1; aspect-ratio: 3 / 2; }
+  #table .tb-photo--tea { aspect-ratio: 3 / 4; }
+  #table .tb-photo--soup { aspect-ratio: 3 / 4; margin-top: clamp(40px, 8vw, 120px); }
+  #table .tb-photo--soup img { object-position: 50% 50%; }
+  @media (max-width: 900px) { #table .tb-wrap { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="section:house">
+@layer sections {
+  #house { overflow: clip; }
+  #house .hs-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(40px, 6vw, 104px); align-items: center; }
+  #house .hs-photo { aspect-ratio: 5 / 4; }
+  #house .hs-photo img { object-position: 78% 50%; }
+  #house .hs-copy { display: grid; gap: 24px; }
+  #house .hs-copy h2 span { display: block; }
+  #house .hs-copy h2 span:nth-child(2) { margin-left: 1.4em; }
+  #house .hs-copy p { max-width: 42ch; }
+  @media (max-width: 900px) {
+    #house .hs-grid { grid-template-columns: minmax(0, 1fr); }
+    #house .hs-photo { aspect-ratio: 4 / 5; }
+  }
+}
+</style>
+<style data-8b-part="section:passes">
+@layer sections {
+  #passes .ps-head { display: grid; gap: 28px; max-width: 760px; }
+  #passes .ps-head h2 span { display: block; }
+  #passes .ps-head h2 span:nth-child(2) { margin-left: 1.4em; }
+  #passes .ps-head p { max-width: 44ch; }
+  #passes .ps-board { position: relative; margin-top: clamp(56px, 7vw, 104px); }
+  #passes .ps-axis { display: flex; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--color-4); color: var(--color-3); }
+  #passes .ps-axis li { width: 0; display: flex; justify-content: center; white-space: nowrap; }
+  #passes .ps-axis li:first-child { justify-content: flex-start; }
+  #passes .ps-axis li:last-child { justify-content: flex-end; }
+  #passes .ps-list { position: relative; z-index: 1; }
+  #passes .ps-marker { position: absolute; left: 0; top: 0; bottom: 0; z-index: 0; width: 1px; background: var(--color-5); pointer-events: none; }
+  #passes .ps-pass { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) auto auto; gap: 14px clamp(20px, 3vw, 48px); align-items: baseline; padding-block: 28px 32px; border-bottom: 1px solid var(--color-4); }
+  #passes .ps-track { grid-column: 1 / -1; position: relative; height: 12px; }
+  #passes .ps-band { position: absolute; top: 0; bottom: 0; left: calc(var(--from, 0) / 14 * 100%); width: calc((var(--to, 14) - var(--from, 0)) / 14 * 100%); background: color-mix(in oklab, var(--color-2) 16%, transparent); transition: background-color .5s ease; }
+  #passes .ps-pass.is-open .ps-band { background: var(--color-5); }
+  #passes .ps-pass h3 { transition: color .5s ease; }
+  #passes .ps-pass.is-open h3 { color: var(--color-5); }
+  #passes .ps-note { margin-top: 28px; max-width: 60ch; }
+  @media (max-width: 900px) {
+    #passes .ps-pass { grid-template-columns: minmax(0, 1fr) auto; }
+    #passes .ps-pass > p:not(.ps-price) { grid-column: 1 / -1; }
+    #passes .ps-pass .m-link { grid-column: 1 / -1; }
+    #passes .ps-axis li:nth-child(even) { visibility: hidden; }
+  }
+}
+</style>
+<style data-8b-part="section:questions">
+@layer sections {
+  #questions .qs-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 104px); align-items: start; }
+  #questions .qs-grid h2 span { display: block; }
+  #questions .qs-grid h2 span:nth-child(2) { margin-left: 1.4em; }
+  #questions .qs-list { border-top: 1px solid var(--color-4); }
+  #questions details { border-bottom: 1px solid var(--color-4); }
+  #questions summary { position: relative; display: block; padding: 24px 56px 24px 0; cursor: pointer; list-style: none; }
+  #questions summary::-webkit-details-marker { display: none; }
+  #questions summary::before, #questions summary::after { content: ""; position: absolute; right: 8px; top: 50%; width: 16px; height: 1px; background: currentColor; transition: transform .5s cubic-bezier(.2, .7, .1, 1); }
+  #questions summary::after { transform: rotate(90deg); }
+  #questions details[open] summary::after { transform: rotate(0deg); }
+  #questions details p { max-width: 56ch; padding-bottom: 26px; color: var(--color-2); }
+  @media (max-width: 900px) { #questions .qs-grid { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+  #visit { overflow: clip; padding-bottom: clamp(40px, 5vw, 72px); }
+  #visit .vs-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .95fr); gap: clamp(40px, 6vw, 104px); align-items: start; }
+  #visit .vs-info { display: grid; gap: 28px; }
+  #visit .vs-info h2 span { display: block; }
+  #visit .vs-info h2 span:nth-child(2) { margin-left: 1.4em; }
+  #visit .vs-info > p { max-width: 44ch; }
+  #visit .vs-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 32px; margin-top: 12px; }
+  #visit .vs-facts dt { margin-bottom: 6px; color: var(--color-3); }
+  #visit .vs-facts dd { font-style: normal; }
+  #visit .vs-facts a { text-decoration: underline; text-decoration-color: var(--color-3); text-underline-offset: 4px; }
+  #visit .vs-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 24px; padding: clamp(24px, 3.4vw, 48px); }
+  #visit .vs-form .is-wide { grid-column: 1 / -1; }
+  #visit .vs-form textarea { min-height: 96px; resize: vertical; }
+  #visit .vs-status { grid-column: 1 / -1; color: var(--color-2); }
+  #visit .vs-name { grid-column: 1 / -1; display: block; margin-top: clamp(96px, 12vw, 180px); text-align: center; white-space: nowrap; color: var(--color-2); font-size: min(34vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .57))); line-height: .82; }
+  #visit address { font-style: normal; }
+  @media (max-width: 900px) {
+    #visit .vs-grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 480px) {
+    #visit .vs-form { grid-template-columns: minmax(0, 1fr); }
+    #visit .vs-facts { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { position: relative; padding: clamp(80px, 10vw, 140px) var(--space-1) 28px; border-top: 1px solid var(--color-4); }
+  #footer .ft-next { display: flex; align-items: center; gap: clamp(18px, 3vw, 40px); }
+  #footer .ft-next .ft-rule { flex: 0 1 34%; height: 1px; background: var(--color-3); }
+  #footer .ft-next a { position: relative; font-size: clamp(36px, 5vw, 72px); font-weight: 300; line-height: 1.1; letter-spacing: -0.015em; }
+  #footer .ft-next a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 0 50%; transition: transform .7s cubic-bezier(.2, .7, .1, 1); }
+  @media (hover: hover) { #footer .ft-next a:hover::after { transform: scaleX(1); } }
+  #footer .ft-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 32px; margin-top: clamp(72px, 9vw, 128px); }
+  #footer .ft-grid h2 { margin-bottom: 14px; color: var(--color-3); }
+  #footer .ft-grid ul { display: grid; gap: 2px; }
+  #footer .ft-grid address { font-style: normal; }
+  #footer .ft-base { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 40px; margin-top: 72px; padding-top: 20px; border-top: 1px solid var(--color-4); }
+  #footer .ft-base .ft-top { margin-left: auto; }
+  #footer .is-hot { color: var(--color-5); }
+  #footer .is-cold { color: var(--color-6); }
+  @media (max-width: 900px) { #footer .ft-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 480px) { #footer .ft-grid { grid-template-columns: 1fr; } #footer .ft-next .ft-rule { flex-basis: 18%; } }
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-power3-inout: linear(0, 0, 0.0001, 0.0003, 0.0008, 0.0019, 0.004, 0.0075, 0.0128, 0.0205, 0.0313, 0.0457, 0.0648, 0.0892, 0.1201, 0.1582, 0.2048, 0.261, 0.3281, 0.4073, 0.5, 0.5927, 0.672, 0.739, 0.7952, 0.8418, 0.88, 0.9107, 0.9352, 0.9543, 0.9688, 0.9795, 0.9872, 0.9925, 0.996, 0.998, 0.9992, 0.9998, 1, 1, 1); }
+[data-8b-live] [data-8b-motion~="steam"]:not([data-8b-items=":scope > li"], [data-8b-items=":scope > details"]) { animation-duration: 1.1s; animation-delay: 0s; animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="steam"]:not([data-8b-items=":scope > li"], [data-8b-items=":scope > details"]).is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > li"] > li { animation-duration: 1.1s; animation-delay: calc(0s + 0.09s * var(--i)); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > li"].is-in > li { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > details"] > details { animation-duration: 1.1s; animation-delay: calc(0s + 0.09s * var(--i)); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > details"].is-in > details { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="depth"] { view-timeline: --motion-depth block; view-timeline-inset: 0; }
+[data-8b-live] [data-8b-motion~="depth"] img { animation-name: motion-depth-img-translate; animation-timeline: --motion-depth; animation-range: cover 0% cover 50%; animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] [data-8b-motion~="rule"] { animation-name: motion-rule-scale; animation-duration: 1.3s; animation-delay: 0s; animation-timing-function: var(--ease-power3-inout); animation-fill-mode: both; animation-play-state: paused; transform: none; transform-origin: 0% 50%; }
+[data-8b-live] [data-8b-motion~="rule"].is-in { animation-play-state: running; }
+@keyframes motion-steam-single-translate { 0% { translate: 0px 26px; } 100% { translate: 0px 0px; } }
+@keyframes motion-steam-single-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes motion-steam-single-filter-d { 0% { filter: blur(6px); } 99.998% { filter: blur(0px); } 100% { filter: none; } }
+@keyframes motion-steam-single-filter-m { 0% { filter: blur(0px); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 99.998% { filter: blur(0px); } 100% { filter: none; } }
+@keyframes motion-depth-img-translate { 0% { translate: 0px -10%; } 100% { translate: 0px 0px; } }
+@keyframes motion-rule-scale { 0% { scale: 0 1; } 100% { scale: 1; } }
+@media (min-width: 1024px) {
+  [data-8b-live] [data-8b-motion~="steam"]:not([data-8b-items=":scope > li"], [data-8b-items=":scope > details"]), [data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > li"] > li, [data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > details"] > details { animation-name: motion-steam-single-translate, motion-steam-single-opacity, motion-steam-single-filter-d; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+}
+@media (max-width: 1023px) {
+  [data-8b-live] [data-8b-motion~="steam"]:not([data-8b-items=":scope > li"], [data-8b-items=":scope > details"]), [data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > li"] > li, [data-8b-live] [data-8b-motion~="steam"][data-8b-items=":scope > details"] > details { animation-name: motion-steam-single-translate, motion-steam-single-opacity, motion-steam-single-filter-m; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1), cubic-bezier(0.3333, 1, 0.6667, 1), linear; }
+}
+}
+</style>
+<style data-8b-part="scene:arrival">
+@layer scenes {
+[data-8b-live] #arrival { timeline-scope: --arrival-t2; view-timeline: --arrival-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #arrival .m-text-3 > span:nth-of-type(-n+3), [data-8b-live] #arrival .op-float--1, [data-8b-live] #arrival .op-float--2, [data-8b-live] #arrival .op-float--3, [data-8b-live] #arrival .op-hold, [data-8b-live] #arrival .op-veil, [data-8b-live] #arrival .op-lake, [data-8b-live] #arrival .op-room-dark, [data-8b-live] #arrival .op-room { animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #arrival .m-text-3 > span:nth-of-type(1) { view-timeline: --arrival-t2 block; view-timeline-inset: 0; animation-name: arrival-span-op-line-translate; animation-timeline: --arrival-t2; animation-range: cover 2vh cover 41.1892vh; transform: none; }
+[data-8b-live] #arrival .op-float--1 { view-timeline: --arrival-t3 block; view-timeline-inset: 0; animation-timeline: --arrival-t3; animation-range: cover 0% cover calc(50% - 5vh); transform: none; }
+[data-8b-live] #arrival .op-float--2 { view-timeline: --arrival-t4 block; view-timeline-inset: 0; animation-timeline: --arrival-t4; animation-range: cover 0% cover calc(50% - 5vh); transform: none; }
+[data-8b-live] #arrival .op-float--3 { view-timeline: --arrival-t5 block; view-timeline-inset: 0; animation-timeline: --arrival-t5; animation-range: cover 0% cover calc(50% - 5vh); transform: none; }
+[data-8b-live] #arrival .op-hold { animation-name: arrival-div-op-hold-translate; animation-timeline: --arrival-t1; animation-range: cover 100vh cover calc(100vh + var(--arrival-first)); transform: none; }
+[data-8b-live] #arrival .op-veil { animation-name: arrival-div-op-veil-translate; animation-timeline: --arrival-t1; animation-range: cover 100vh cover calc(100vh + var(--arrival-first)); transform: none; }
+[data-8b-live] #arrival .op-lake { animation-name: arrival-img-op-lake-scale, arrival-img-op-lake-opacity; animation-timeline: --arrival-t1; animation-range: cover 100vh cover calc(100vh + var(--arrival-first) * .5), cover calc(100vh + var(--arrival-first) * .47) cover calc(100vh + var(--arrival-first) * .52); transform: none; }
+[data-8b-live] #arrival .op-room-dark { animation-name: arrival-div-op-room-dark-opacity; animation-timeline: --arrival-t1; animation-range: cover calc(100vh + var(--arrival-first) * .5) cover calc(45% + 10vh + var(--arrival-first) * .275); }
+[data-8b-live] #arrival .op-room { animation-name: arrival-img-op-room-scale; animation-timeline: --arrival-t1; animation-range: cover calc(100vh + var(--arrival-first) * .5) cover calc(100% - 100vh); transform: none; }
+[data-8b-live] #arrival .m-text-3 > span:nth-of-type(2) { animation-name: arrival-span-op-line-translate; animation-timeline: --arrival-t2; animation-range: cover 11.4054vh cover 50.5946vh; transform: none; }
+[data-8b-live] #arrival .m-text-3 > span:nth-of-type(3) { animation-name: arrival-span-op-line-translate; animation-timeline: --arrival-t2; animation-range: cover 20.8108vh cover 60vh; transform: none; }
+@keyframes arrival-div-op-hold-translate { 0% { translate: 0px 0px; } 0.002% { translate: 0px 0.02%; } 100% { translate: 0px 100%; } }
+@keyframes arrival-div-op-veil-translate { 0% { translate: 0px 0px; } 0.002% { translate: 0px -0.01%; } 50% { translate: 0px -50%; } 100% { translate: 0px -113.333%; } }
+@keyframes arrival-img-op-lake-scale { 0% { scale: 1; } 100% { scale: 1.18; } }
+@keyframes arrival-img-op-lake-opacity { 0% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes arrival-div-op-room-dark-opacity { 0% { opacity: 0.92; } 100% { opacity: 0; } }
+@keyframes arrival-img-op-room-scale { 0% { scale: 1.2; } 100% { scale: 1; } }
+@keyframes arrival-span-op-line-translate { 0% { translate: 0px 0px; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); } 100% { translate: 0px 0px; } }
+@keyframes arrival-figure-m-photo-translate-d { 0% { translate: 0px 160px; } 100% { translate: 0px 0px; } }
+@keyframes arrival-figure-m-photo-translate-m { 0% { translate: 0px 72px; } 100% { translate: 0px 0px; } }
+@keyframes arrival-figure-m-photo-translate-2-d { 0% { translate: 0px 300px; } 100% { translate: 0px 0px; } }
+@keyframes arrival-figure-m-photo-translate-2-m { 0% { translate: 0px 135px; } 100% { translate: 0px 0px; } }
+@keyframes arrival-figure-m-photo-translate-3-d { 0% { translate: 0px 220px; } 100% { translate: 0px 0px; } }
+@keyframes arrival-figure-m-photo-translate-3-m { 0% { translate: 0px 99px; } 100% { translate: 0px 0px; } }
+@media (min-width: 900px) {
+  [data-8b-live] #arrival .op-float--1 { animation-name: arrival-figure-m-photo-translate-d; }
+  [data-8b-live] #arrival .op-float--2 { animation-name: arrival-figure-m-photo-translate-2-d; }
+  [data-8b-live] #arrival .op-float--3 { animation-name: arrival-figure-m-photo-translate-3-d; }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #arrival .op-float--1 { animation-name: arrival-figure-m-photo-translate-m; }
+  [data-8b-live] #arrival .op-float--2 { animation-name: arrival-figure-m-photo-translate-2-m; }
+  [data-8b-live] #arrival .op-float--3 { animation-name: arrival-figure-m-photo-translate-3-m; }
+}
+}
+</style>
+<style data-8b-part="scene:round-frame">
+@layer scenes {
+[data-8b-live] #round { timeline-scope: --round-t1; }
+[data-8b-live] #round .rd-steps { view-timeline: --round-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #round .rd-shot--heat, [data-8b-live] #round .rd-tint--hot, [data-8b-live] #round .rd-shot--cold, [data-8b-live] #round .rd-shot--rest, [data-8b-live] #round .rd-tint--cold { animation-timeline: --round-t1; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); animation-fill-mode: both; }
+[data-8b-live] #round .rd-tint--hot, [data-8b-live] #round .rd-tint--cold { animation-timing-function: linear(0, 0.005, 0.02, 0.045, 0.08, 0.125, 0.18, 0.245, 0.32, 0.405, 0.5, 0.595, 0.68, 0.755, 0.82, 0.875, 0.92, 0.955, 0.98, 0.995, 1); }
+[data-8b-live] #round .rd-shot--heat { animation-name: round-figure-rd-shot-clippath; animation-range: cover 30vh cover calc(100% - 45vh); }
+[data-8b-live] #round .rd-tint--hot { animation-name: round-span-rd-tint-opacity; animation-range: cover 30vh cover 40%; }
+[data-8b-live] #round .rd-shot--cold { animation-name: round-figure-rd-shot-clippath-2; animation-range: cover calc(17.5% + 16.875vh) cover calc(100% - 45vh); }
+[data-8b-live] #round .rd-shot--rest { animation-name: round-figure-rd-shot-clippath-3; animation-range: cover calc(17.5% + 16.875vh) cover calc(100% - 45vh); }
+[data-8b-live] #round .rd-tint--cold { animation-name: round-span-rd-tint-opacity-2; animation-range: cover calc(30% + 7.5vh) cover calc(68.3333% - 21.25vh); }
+@keyframes round-figure-rd-shot-clippath { 0% { clip-path: inset(0% 67.5% 0% 0%); } 16.6667% { clip-path: inset(0%); } 26.6667% { clip-path: inset(0%); } 43.3333% { clip-path: inset(0% 100% 0% 0%); } 83.3333% { clip-path: inset(0% 100% 0% 0%); } 100% { clip-path: inset(0% 67.5% 0% 0%); } }
+@keyframes round-span-rd-tint-opacity { 0% { opacity: 0; } 41.6667% { opacity: 0.55; } 66.6667% { opacity: 0.55; } 100% { opacity: 0; } }
+@keyframes round-figure-rd-shot-clippath-2 { 0% { clip-path: inset(0% 34.2%); } 0.002% { clip-path: inset(0% 34.1997% 0% 0%); } 1.0101% { clip-path: inset(0% 0.0003% 0% 0%); } 1.0121% { clip-path: inset(0%); } 45.4545% { clip-path: inset(0%); } 65.6566% { clip-path: inset(0% 0% 100%); } 79.798% { clip-path: inset(0% 0% 100%); } 100% { clip-path: inset(0% 34.2%); } }
+@keyframes round-figure-rd-shot-clippath-3 { 0% { clip-path: inset(0% 0% 0% 67.5%); } 1.0101% { clip-path: inset(0% 0% 0% 0.0005%); } 1.0121% { clip-path: inset(0%); } 79.798% { clip-path: inset(0%); } 100% { clip-path: inset(0% 0% 0% 67.5%); } }
+@keyframes round-span-rd-tint-opacity-2 { 0% { opacity: 0; } 34.7826% { opacity: 0.6; } 65.2174% { opacity: 0.6; } 100% { opacity: 0; } }
+}
+</style>
+<style data-8b-part="scene:saunas-heat">
+@layer scenes {
+[data-8b-live] #saunas { background-image: none; }
+[data-8b-live] #saunas { view-timeline: --saunas-t1 block; view-timeline-inset: 0; animation-name: saunas-saunas-backgroundcolor; animation-timeline: --saunas-t1; animation-range: cover 50vh cover calc(100% - 70vh); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #saunas .sa-list > .sa-row { view-timeline: --saunas-item block; view-timeline-inset: 0; }
+[data-8b-live] #saunas .sa-list > .sa-row > .sa-scale > .sa-track > .sa-line { animation-name: saunas-span-sa-line-clippath; animation-timeline: --saunas-item; animation-range: cover 15vh cover 60vh; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; }
+@keyframes saunas-saunas-backgroundcolor { 0% { background-color: var(--color-8); } 100% { background-color: var(--color-9); } }
+@keyframes saunas-span-sa-line-clippath { 0% { clip-path: inset(0px 100% 0px 0px); } 100% { clip-path: inset(0px var(--saunas-span-sa-line-clippath-to-2, 84%) 0px 0px); } }
+}
+</style>
+<style data-8b-part="scene:steam-wave">
+@layer scenes {
+[data-8b-live] #steam-title { view-timeline: --steam-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #steam .st-glow, [data-8b-live] #steam-title > span:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6)) { animation-timeline: --steam-t1; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #steam .st-glow { animation-range: cover 20vh cover calc(90.9091% - 20.9091vh); transform: none; }
+[data-8b-live] #steam-title > span:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6)) { animation-name: steam-span-st-line-fontweight, steam-span-st-line-color; }
+[data-8b-live] #steam-title > span:nth-of-type(6) { animation-range: cover calc(9.0909% + 15.9091vh) cover calc(45.4545% - 0.4545vh); }
+[data-8b-live] #steam-title > span:nth-of-type(5) { animation-range: cover calc(22.7273% + 9.7727vh) cover calc(59.0909% - 6.5909vh); }
+[data-8b-live] #steam-title > span:nth-of-type(4) { animation-range: cover calc(36.3636% + 3.6364vh) cover calc(72.7273% - 12.7273vh); }
+[data-8b-live] #steam-title > span:nth-of-type(3) { animation-range: cover calc(50% - 2.5vh) cover calc(86.3636% - 18.8636vh); }
+[data-8b-live] #steam-title > span:nth-of-type(2) { animation-range: cover calc(63.6364% - 8.6364vh) cover calc(100% - 25vh); }
+@keyframes steam-span-st-glow-translate-d { 0% { translate: 0px 58.311%; } 100% { translate: 0px -74.972%; } }
+@keyframes steam-span-st-glow-translate-m { 0% { translate: 0px 58.482%; } 100% { translate: 0px -75.192%; } }
+@keyframes steam-span-st-glow-opacity { 0% { opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes steam-span-st-line-fontweight { 0% { font-weight: 300; animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); } 40% { font-weight: 560; animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1); } 100% { font-weight: 300; } }
+@keyframes steam-span-st-line-color { 0% { color: var(--color-2); animation-timing-function: cubic-bezier(0.61, 1, 0.88, 1); } 40% { color: var(--color-5); animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1); } 100% { color: var(--color-2); } }
+@media (min-width: 701px) {
+  [data-8b-live] #steam .st-glow { animation-name: steam-span-st-glow-translate-d, steam-span-st-glow-opacity; }
+}
+@media (max-width: 700px) {
+  [data-8b-live] #steam .st-glow { animation-name: steam-span-st-glow-translate-m, steam-span-st-glow-opacity; }
+}
+}
+</style>
+<style data-8b-part="scene:day-light">
+@layer scenes {
+[data-8b-live] #day { view-timeline: --day-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #day .dy-morning, [data-8b-live] #day .dy-tint--dawn, [data-8b-live] #day .dy-night, [data-8b-live] #day .dy-tint--dusk { animation-timeline: --day-t1; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #day .dy-morning { animation-name: day-img-dy-photo-scale; animation-range: cover 100vh cover calc(60% - 20vh); transform: none; }
+[data-8b-live] #day .dy-tint--dawn { animation-name: day-span-dy-tint-opacity; animation-range: cover 100vh cover calc(35% + 30vh); }
+[data-8b-live] #day .dy-night { animation-name: day-img-dy-photo-opacity, day-img-dy-photo-scale-2; animation-range: cover calc(56% - 12vh) cover calc(78% - 56vh), cover calc(56% - 12vh) cover calc(100% - 100vh); transform: none; }
+[data-8b-live] #day .dy-tint--dusk { animation-name: day-span-dy-tint-opacity-2; animation-range: cover calc(62% - 24vh) cover calc(100% - 100vh); }
+@keyframes day-img-dy-photo-scale { 0% { scale: 1.14; } 100% { scale: 1; } }
+@keyframes day-span-dy-tint-opacity { 0% { opacity: 0.7; } 100% { opacity: 0; } }
+@keyframes day-img-dy-photo-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes day-img-dy-photo-scale-2 { 0% { scale: 1.1; } 100% { scale: 1; } }
+@keyframes day-span-dy-tint-opacity-2 { 0% { opacity: 0; } 52.6316% { opacity: 0.45; } 100% { opacity: 0; } }
+}
+</style>
+<style data-8b-part="scene:house-slats">
+@layer scenes {
+@media (min-width: 700px) {
+[data-8b-live] #house .m-photo > img:nth-of-type(1) { mask-image: repeating-linear-gradient(90deg, currentcolor 0%, currentcolor 10%, transparent 10%, transparent 20%); }
+}
+@media (max-width: 699px) {
+[data-8b-live] #house .m-photo > img:nth-of-type(1) { mask-image: repeating-linear-gradient(90deg, currentcolor 0%, currentcolor 16.6667%, transparent 16.6667%, transparent 33.3333%); }
+}
+[data-8b-live] #house { timeline-scope: --house-t1; }
+[data-8b-live] #house .m-photo { view-timeline: --house-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #house .m-photo > img:nth-of-type(1), [data-8b-live] #house .m-photo .hs-clone { animation-timeline: --house-t1; animation-range: cover 8vh cover calc(50% - 2vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #house .m-photo > img:nth-of-type(1) { animation-name: house-figure-m-photo-img-translate; }
+[data-8b-live] #house .m-photo .hs-clone { animation-name: house-figure-m-photo-img-hs-clone-translate; }
+@keyframes house-figure-m-photo-img-translate { 0% { translate: 0px 16%; } 100% { translate: 0px 0px; } }
+@keyframes house-figure-m-photo-img-hs-clone-translate { 0% { translate: 0px -16%; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:passes-hours">
+@layer scenes {
+[data-8b-live] #passes .ps-board { view-timeline: --passes-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #passes .ps-marker { animation-name: passes-span-ps-marker-translate; animation-timeline: --passes-t1; animation-range: cover 30vh cover calc(100% - 50vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+@keyframes passes-span-ps-marker-translate { 0% { translate: 0px 0px; } 100% { translate: var(--passes-travel) 0px; } }
+}
+</style>
+<style data-8b-part="scene:visit-name">
+@layer scenes {
+[data-8b-live] #visit .vs-name { view-timeline: --visit-name block; view-timeline-inset: 0; --visit-name-blur: 0px; }
+[data-8b-live] #visit .vs-name .w, [data-8b-live] #visit .vs-name .c { display: inline-block; }
+[data-8b-live] #visit .vs-name .c { animation-name: visit-name-gather; animation-timeline: --visit-name; animation-range: entry 0% entry 100%; animation-timing-function: linear; animation-fill-mode: both; }
+@keyframes visit-name-gather { 0% { translate: calc((var(--i) - (var(--n) - 1) / 2) * .2624em) calc((2 * mod(var(--i), 2) - 1) * .1476em); opacity: .14; filter: blur(var(--visit-name-blur)); } 100% { translate: 0px 0px; opacity: 1; filter: blur(0px); } }
+@media (min-width: 1024px) and (hover: hover) {
+  [data-8b-live] #visit .vs-name { --visit-name-blur: 14px; }
+}
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<a class="visually-hidden" href="#main">Skip to content</a>
+<!-- navigation: fixed bar with a three-bar mark and wordmark, five section links, a Book a day button and a menu button with an overlay -->
+<header id="header" data-8b-section="navigation">
+  <a class="hd-logo" href="#arrival" aria-label="Brume, back to the top"><span class="hd-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="hd-word">Brume</span></a>
+  <nav class="hd-nav" aria-label="Main">
+    <ul>
+      <li><a class="m-link-2" href="#round">The round</a></li>
+      <li><a class="m-link-2" href="#saunas">Saunas</a></li>
+      <li><a class="m-link-2" href="#day">A day</a></li>
+      <li><a class="m-link-2" href="#passes">Passes</a></li>
+      <li><a class="m-link-2" href="#visit">Visit</a></li>
+    </ul>
+  </nav>
+  <a class="m-btn hd-book" href="#visit"><span class="m-btn__label">Book a day</span></a>
+  <button class="m-icon hd-menu" type="button" aria-expanded="false" aria-controls="menu"><span class="visually-hidden">Open menu</span><span class="m-icon__glyph" aria-hidden="true"></span></button>
+  <div id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="mn-top"><button class="m-icon mn-close" type="button"><span class="visually-hidden">Close menu</span><span class="m-icon__glyph m-icon__glyph--close" aria-hidden="true"></span></button></div>
+    <ul class="mn-list">
+      <li><a href="#round">The round</a></li>
+      <li><a href="#saunas">Saunas</a></li>
+      <li><a href="#day">A day at Brume</a></li>
+      <li><a href="#passes">Passes</a></li>
+      <li><a href="#questions">Questions</a></li>
+      <li><a href="#visit">Visit &amp; book</a></li>
+    </ul>
+    <p class="mn-foot m-text-6"><span>Example Lane 1, Holm</span><span>Open daily 08:00–22:00</span></p>
+  </div>
+</header>
+<main id="main">
+<!-- opening: two screens: a lake under fog with the headline, intro, two actions and live-looking readings; then a warm rest room, a three-line heading and three floating photos (animation: scene:arrival) -->
+<section id="arrival" data-8b-section="opening" aria-label="Brume, sauna and bathing house">
+  <div class="op-stage-wrap"><div class="op-stage">
+    <img class="op-room" src="https://images.unsplash.com/photo-1758861356142-546a3822ab1a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHNhdW5hJTIwaW50ZXJpb3IlMjB3aW5kb3d8ZW58MXwwfHx8MTc5MTM4NDEwMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="A wood stove burning in the rest room, with a glass wall onto the lake and the pines" width="1600" height="1200" fetchpriority="low">
+    <div class="op-room-shade"></div>
+    <div class="op-room-dark"></div>
+  </div></div>
+  <div class="op-first">
+    <div class="op-hold">
+      <div class="op-lake-wrap">
+        <img class="op-lake" src="https://images.unsplash.com/photo-1781883377971-0984fccbbaa7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGZvZ2d5JTIwcGluZSUyMGZvcmVzdCUyMGxha2V8ZW58MXwwfHx8MTc5MTM4NDEyN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="Mist lying on the dark water of Ellery Water below a pine forest" width="1600" height="857" fetchpriority="high">
+      </div>
+      <div class="op-veil" aria-hidden="true"><span class="op-fog op-fog--1"></span><span class="op-fog op-fog--2"></span><span class="op-fog op-fog--3"></span></div>
+    </div>
+    <div class="op-hero">
+      <h1 class="m-text-2">Heat, cold, and the quiet after.</h1>
+      <p class="m-text-5">A sauna and bathing house on the north shore of Ellery Water. Four saunas, a lake that stays cold all year, and nothing you need to bring.</p>
+      <div class="op-actions">
+        <a class="m-btn" href="#visit"><span class="m-btn__label">Book a day</span></a>
+        <a class="m-link" href="#round"><span class="m-link__label">Walk the round</span></a>
+      </div>
+    </div>
+    <dl class="op-readings">
+      <div><dt class="m-text-4">Sauna</dt><dd class="is-hot">86°</dd></div>
+      <div><dt class="m-text-4">Lake</dt><dd class="is-cold">7°</dd></div>
+      <div><dt class="m-text-4">Open today</dt><dd>08:00–22:00</dd></div>
+    </dl>
+  </div>
+  <div class="op-second">
+    <p class="m-rail">The house</p>
+    <div class="op-copy">
+      <h2 class="m-text-3 op-title"><span class="op-line">Leave the city</span><span class="op-line">at the shore,</span><span class="op-line">come back slower</span></h2>
+      <p class="m-text">Brume began with a smoke sauna, a jetty and one rule: no phones past the changing room. Ten years on the rule has not changed. You move between heat and cold water until your head goes quiet, then rest by the stove and watch the mist lift off the lake.</p>
+      <a class="m-link" href="#house"><span class="m-link__label">How the house was built</span></a>
+    </div>
+    <div class="op-floats">
+      <figure class="m-photo op-float op-float--1" data-depth="160"><img src="https://images.unsplash.com/photo-1749561532113-80b8e0f918bd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d2F0ZXIlMjBwb3VyZWQlMjBzYXVuYSUyMHN0b25lc3xlbnwxfDF8fHwxNzkxMzg0MTg5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="Steam rising from hot stones as water is poured from a ladle" width="1600" height="2400" loading="lazy"></figure>
+      <figure class="m-photo op-float op-float--2" data-depth="300"><img src="https://images.unsplash.com/photo-1625774725140-39e0ab1358f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHdhdGVyJTIwcmlwcGxlJTIwZGFya3xlbnwxfDF8fHwxNzkxMzg0MTkyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=210&q=60" alt="Rings spreading on still lake water at dusk" width="1600" height="2844" loading="lazy"></figure>
+      <figure class="m-photo op-float op-float--3" data-depth="220"><img src="https://images.unsplash.com/photo-1770625467797-e1945217b73a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3RlYW0lMjByb29tJTIwdGlsZXN8ZW58MXwxfHx8MTc5MTM4NDIxMXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60" alt="Low light along the benches of the window sauna" width="1600" height="2400" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+<!-- ritual: three steps of one round (heat, cold, rest) beside a held photo frame that opens into each in turn (animation: scene:round-frame) -->
+<section id="round" class="l-sec" data-8b-section="ritual" aria-labelledby="round-title">
+  <p class="m-rail">The round</p>
+  <div class="rd-head">
+    <h2 id="round-title" class="m-text-3 rd-title"><span>One round,</span><span>three temperatures</span></h2>
+    <p class="m-text-5" data-8b-motion="steam">Bathers here follow an old order. Repeat it three or four times; nobody keeps count but you.</p>
+  </div>
+  <div class="rd-body">
+    <ol class="rd-steps" data-8b-items=":scope > .rd-step" data-8b-fixed="3">
+      <li class="rd-step" data-tone="hot">
+        <p class="rd-num m-text-4">Step 1</p>
+        <h3 class="m-text-7">Heat</h3>
+        <p class="m-text-5">Twelve minutes on the upper bench.</p>
+        <p class="m-text">Sit high and breathe slowly. Pour water on the stones when the room asks for it, and let the heat climb until your shoulders drop.</p>
+        <p class="rd-meta m-text-4">8–15 min · 80–95 °C</p>
+      </li>
+      <li class="rd-step" data-tone="cold">
+        <p class="rd-num m-text-4">Step 2</p>
+        <h3 class="m-text-7">Cold</h3>
+        <p class="m-text-5">Twenty steps to the lake.</p>
+        <p class="m-text">Walk out along the jetty and go in to the shoulders. For one minute the cold shuts every thought out; that is the point of it.</p>
+        <p class="rd-meta m-text-4">1–2 min · 4–16 °C</p>
+      </li>
+      <li class="rd-step" data-tone="still">
+        <p class="rd-num m-text-4">Step 3</p>
+        <h3 class="m-text-7">Rest</h3>
+        <p class="m-text-5">As long as it takes.</p>
+        <p class="m-text">Wrap up by the stove, drink something warm and say nothing. The calm that arrives now is the reason you came.</p>
+        <p class="rd-meta m-text-4">15–20 min · by the window</p>
+      </li>
+    </ol>
+    <div class="rd-aside">
+      <div class="rd-frame">
+        <figure class="rd-shot rd-shot--heat"><img src="https://images.unsplash.com/photo-1741601273990-df3fca1d2bd9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d2F0ZXIlMjBwb3VyZWQlMjBzYXVuYSUyMHN0b25lc3xlbnwxfDF8fHwxNzkxMzg0MTg5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=510&q=60" alt="A bather pours a ladle of water onto the hot stones" width="1600" height="2400" loading="lazy"></figure>
+        <figure class="rd-shot rd-shot--cold"><img src="https://images.unsplash.com/photo-1677467836095-c153c1f7a35b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aWNlJTIwaG9sZSUyMGZyb3plbiUyMGxha2UlMjBzd2ltbWluZ3xlbnwxfDF8fHwxNzkxMzg0MTkwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=510&q=60" alt="A round hole cut through snow and ice into the dark lake" width="1600" height="2133" loading="lazy"></figure>
+        <figure class="rd-shot rd-shot--rest"><img src="https://images.unsplash.com/photo-1733324769520-4b26642779de?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cmVzdGluZyUyMGJsYW5rZXQlMjB0ZWElMjB3aW5kb3d8ZW58MXwxfHx8MTc5MTM4NDE5MXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=510&q=60" alt="A guest resting under a wool blanket with a warm drink by the window" width="1600" height="2240" loading="lazy"></figure>
+        <span class="rd-tint rd-tint--hot" aria-hidden="true"></span>
+        <span class="rd-tint rd-tint--cold" aria-hidden="true"></span>
+      </div>
+      <ul class="rd-labels m-text-4" aria-hidden="true"><li>Heat</li><li>Cold</li><li>Rest</li></ul>
+    </div>
+  </div>
+</section>
+<!-- rooms: four rooms coldest to hottest as rows, each with a temperature, a line that runs out to it, text, facts and a photo (animation: scene:saunas-heat) -->
+<section id="saunas" class="l-sec" data-8b-section="rooms" aria-labelledby="saunas-title">
+  <p class="m-rail">Saunas</p>
+  <div class="sa-head">
+    <h2 id="saunas-title" class="m-text-3"><span>Four rooms,</span><span>coldest to hottest</span></h2>
+    <p class="m-text-5" data-8b-motion="steam">Each room keeps its own heat and its own pace. Start low; the smoke sauna is for the third round.</p>
+  </div>
+  <ol class="sa-list" data-8b-items=":scope > .sa-row">
+    <li class="sa-row" data-tone="cold" style="--saunas-span-sa-line-clippath-to-2: 84%">
+      <div class="sa-scale">
+        <data class="sa-temp m-text-5" value="16">4–16 °C</data>
+        <div class="sa-track" aria-hidden="true"><span class="sa-line"></span></div>
+      </div>
+      <div class="sa-text">
+        <h3 class="m-text-7">The jetty</h3>
+        <p class="m-text">Open lake water off our own jetty, with a ladder and a rope line out to the buoys. In winter we keep a channel open through the ice.</p>
+        <dl class="sa-facts m-text-6"><div><dt>Stay</dt><dd>1–2 minutes</dd></div><div><dt>Depth</dt><dd>3.5 m at the ladder</dd></div></dl>
+      </div>
+      <figure class="m-photo sa-photo"><img src="https://images.unsplash.com/photo-1649178690667-e519628c015e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aWNlJTIwaG9sZSUyMGZyb3plbiUyMGxha2UlMjBzd2ltbWluZ3xlbnwxfDF8fHwxNzkxMzg0MTkwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=200&q=60" alt="Two swimmers in an ice channel on the lake at dusk" width="1600" height="2463" loading="lazy"></figure>
+    </li>
+    <li class="sa-row" data-tone="warm" style="--saunas-span-sa-line-clippath-to-2: 52%">
+      <div class="sa-scale">
+        <data class="sa-temp m-text-5" value="48">48 °C</data>
+        <div class="sa-track" aria-hidden="true"><span class="sa-line"></span></div>
+      </div>
+      <div class="sa-text">
+        <h3 class="m-text-7">Herb steam</h3>
+        <p class="m-text">A tiled steam room scented with birch and juniper from the shore. Soft and wet, gentle enough for a first round.</p>
+        <dl class="sa-facts m-text-6"><div><dt>Stay</dt><dd>10–15 minutes</dd></div><div><dt>Seats</dt><dd>10</dd></div></dl>
+      </div>
+      <figure class="m-photo sa-photo"><img src="https://images.unsplash.com/photo-1660735699345-acf9a94cb271?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c21va2UlMjBzYXVuYSUyMGRhcmt8ZW58MXwwfHx8MTc5MTM4NDIxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60" alt="A cloud of steam rolling off the stove in a pine-lined room" width="1600" height="1067" loading="lazy"></figure>
+    </li>
+    <li class="sa-row" data-tone="hot" style="--saunas-span-sa-line-clippath-to-2: 20%">
+      <div class="sa-scale">
+        <data class="sa-temp m-text-5" value="80">80 °C</data>
+        <div class="sa-track" aria-hidden="true"><span class="sa-line"></span></div>
+      </div>
+      <div class="sa-text">
+        <h3 class="m-text-7">Window sauna</h3>
+        <p class="m-text">A long glass wall faces the lake, so you watch the water you are about to walk into. Dry heat, three tiers, room for a conversation in whispers.</p>
+        <dl class="sa-facts m-text-6"><div><dt>Stay</dt><dd>8–12 minutes</dd></div><div><dt>Seats</dt><dd>14</dd></div></dl>
+      </div>
+      <figure class="m-photo sa-photo"><img src="https://images.unsplash.com/photo-1712659601630-df4ad47defc8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c21va2UlMjBzYXVuYSUyMGRhcmt8ZW58MXwwfHx8MTc5MTM4NDIxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60" alt="Pale wooden benches beside a tall window onto the frozen lake" width="1600" height="1067" loading="lazy"></figure>
+    </li>
+    <li class="sa-row" data-tone="hot" style="--saunas-span-sa-line-clippath-to-2: 5%">
+      <div class="sa-scale">
+        <data class="sa-temp m-text-5" value="95">95 °C</data>
+        <div class="sa-track" aria-hidden="true"><span class="sa-line"></span></div>
+      </div>
+      <div class="sa-text">
+        <h3 class="m-text-7">Smoke sauna</h3>
+        <p class="m-text">Heated for six hours with alder, aired, then sealed. A soft, deep heat and the smell of smoke on your skin all evening. Thursday to Sunday from three.</p>
+        <dl class="sa-facts m-text-6"><div><dt>Stay</dt><dd>As you can</dd></div><div><dt>Seats</dt><dd>8</dd></div></dl>
+      </div>
+      <figure class="m-photo sa-photo"><img src="https://images.unsplash.com/photo-1743286159555-ea765c1bc5e6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c21va2UlMjBzYXVuYSUyMGRhcmt8ZW58MXwwfHx8MTc5MTM4NDIxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60" alt="Dark log walls, hot stones and a water bucket in the smoke sauna" width="1600" height="1067" loading="lazy"></figure>
+    </li>
+  </ol>
+</section>
+<!-- statement: a five-line statement over a dark photo; a glow rises through it and the lines swell in weight (animation: scene:steam-wave) -->
+<section id="steam" data-8b-section="statement" aria-labelledby="steam-title">
+  <div class="st-bg"><img src="https://images.unsplash.com/photo-1660735697672-46b9bdbccc17?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c21va2UlMjBzYXVuYSUyMGRhcmt8ZW58MXwwfHx8MTc5MTM4NDIxMnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="" width="1600" height="1067" loading="lazy"></div>
+  <div class="st-inner l-sec">
+    <p class="m-rail">Löyly</p>
+    <div>
+      <h2 id="steam-title" class="m-text-2 st-lines">
+        <span class="st-glow" aria-hidden="true"></span>
+        <span class="st-line" style="--len:20">Water on the stones.</span>
+        <span class="st-line" style="--len:16">A breath of heat</span>
+        <span class="st-line" style="--len:21">rolls off the ceiling</span>
+        <span class="st-line" style="--len:12">and the room</span>
+        <span class="st-line" style="--len:11">goes quiet.</span>
+      </h2>
+      <p class="m-text st-note" data-8b-motion="steam">In Finnish this breath is called löyly. Our sauna masters pour every twenty minutes, with birch, mint or tar, and nobody speaks while it settles.</p>
+    </div>
+  </div>
+</section>
+<!-- lake: a wide photo of the boardwalk into fog beside a heading, a paragraph and four facts -->
+<section id="lake" class="l-sec" data-8b-section="lake" aria-labelledby="lake-title">
+  <p class="m-rail">The lake</p>
+  <figure class="m-photo lk-photo" data-8b-motion="depth"><img src="https://images.unsplash.com/photo-1468258189056-318bbd4b6085?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Zm9nZ3klMjBwaW5lJTIwZm9yZXN0JTIwbGFrZXxlbnwxfDB8fHwxNzkxMzg0MTI3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1090&q=60" alt="The boardwalk across the reeds disappearing into fog and pines" width="1600" height="1067" loading="lazy"></figure>
+  <div class="lk-copy">
+    <h2 id="lake-title" class="m-text-3"><span>The fifth room</span><span>has no walls</span></h2>
+    <p class="m-text" data-8b-motion="steam">Ellery Water is fed by springs and stays cold even in August. A boardwalk crosses the reeds to our jetty, the ladder goes down three and a half metres, and from December a stove burns at the end of the ice channel.</p>
+    <ul class="lk-facts m-text" data-8b-motion="steam" data-steam-items=":scope > li" data-8b-items=":scope > li">
+      <li>Boardwalk to the jetty, sixty-four metres</li>
+      <li>Ladder and rope line out to the buoys</li>
+      <li>Ice channel from December to March</li>
+      <li>A lifeguard on the jetty at weekends</li>
+    </ul>
+  </div>
+</section>
+<!-- schedule: six hours of the day over a held lake photo that goes from morning mist to night; the hour at the middle of the screen lights up (animation: scene:day-light) -->
+<section id="day" data-8b-section="schedule" aria-labelledby="day-title">
+  <div class="dy-stage-wrap"><div class="dy-stage">
+    <img class="dy-photo dy-morning" src="https://images.unsplash.com/photo-1761880702819-b2ba3973d00d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Zm9nZ3klMjBwaW5lJTIwZm9yZXN0JTIwbGFrZXxlbnwxfDB8fHwxNzkxMzg0MTI3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="Morning mist over the lake and the pines on the far shore" width="1600" height="1067" loading="lazy">
+    <img class="dy-photo dy-night" src="https://images.unsplash.com/photo-1782827928667-d99a358cb278?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8c2F1bmElMjBjYWJpbiUyMGxha2UlMjBuaWdodHxlbnwxfDB8fHwxNzkxMzg0MjEwfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="A lit cabin on the water at night below dark mountains" width="1600" height="1067" loading="lazy">
+    <span class="dy-tint dy-tint--dawn"></span>
+    <span class="dy-tint dy-tint--dusk"></span>
+    <span class="dy-shade"></span>
+  </div></div>
+  <div class="dy-content l-sec">
+    <p class="m-rail">A day</p>
+    <h2 id="day-title" class="m-text-3"><span>A day at Brume,</span><span>mist to lanterns</span></h2>
+    <ol class="dy-hours" data-8b-items=":scope > .dy-hour">
+      <li class="dy-hour"><time class="m-text-7" datetime="08:00">08:00</time><p class="m-text">Doors open with the mist still on the water. Coffee and rye bread by the stove.</p></li>
+      <li class="dy-hour"><time class="m-text-7" datetime="10:30">10:30</time><p class="m-text">First round. The window sauna is quiet and the lake lies flat as glass.</p></li>
+      <li class="dy-hour"><time class="m-text-7" datetime="13:00">13:00</time><p class="m-text">Lunch at the long table: soup of the day, smoked trout, pickles from the cellar.</p></li>
+      <li class="dy-hour"><time class="m-text-7" datetime="15:00">15:00</time><p class="m-text">The smoke sauna opens. Our sauna masters pour with birch, mint and tar.</p></li>
+      <li class="dy-hour"><time class="m-text-7" datetime="18:30">18:30</time><p class="m-text">Lanterns go out along the jetty and the evening swimmers arrive from town.</p></li>
+      <li class="dy-hour"><time class="m-text-7" datetime="22:00">22:00</time><p class="m-text">Last call at the stove. The house goes dark and the lake keeps the quiet.</p></li>
+    </ol>
+  </div>
+</section>
+<!-- kitchen: a menu of five dishes with prices drawn between hairlines, beside three photos -->
+<section id="table" class="l-sec" data-8b-section="kitchen" aria-labelledby="table-title">
+  <p class="m-rail">The table</p>
+  <div class="tb-wrap">
+    <div class="tb-copy">
+      <h2 id="table-title" class="m-text-3"><span>The long table</span><span>by the stove</span></h2>
+      <p class="m-text" data-8b-motion="steam">Food here is simple and warm: what grows around the lake, what our smokehouse makes, and what the baker in Holm sends over at seven.</p>
+      <ul class="tb-menu" data-8b-items=":scope > .tb-dish">
+        <li class="tb-dish"><span class="tb-rule" data-8b-motion="rule" data-8b-enter="94%"></span><h3 class="m-text-5">Soup of the day</h3><p class="m-text-6">Mushroom, nettle or roots, with rye and cultured butter</p><p class="tb-price m-text-5">£9</p></li>
+        <li class="tb-dish"><span class="tb-rule" data-8b-motion="rule" data-8b-enter="94%"></span><h3 class="m-text-5">Smoked trout</h3><p class="m-text-6">From our smokehouse, with new potatoes and dill</p><p class="tb-price m-text-5">£14</p></li>
+        <li class="tb-dish"><span class="tb-rule" data-8b-motion="rule" data-8b-enter="94%"></span><h3 class="m-text-5">Rye and butter</h3><p class="m-text-6">Dark rye baked in Holm, salted butter, pickled cucumber</p><p class="tb-price m-text-5">£5</p></li>
+        <li class="tb-dish"><span class="tb-rule" data-8b-motion="rule" data-8b-enter="94%"></span><h3 class="m-text-5">Birch-leaf tea</h3><p class="m-text-6">With nettle and honey, poured all day by the stove</p><p class="tb-price m-text-5">£3</p></li>
+        <li class="tb-dish"><span class="tb-rule" data-8b-motion="rule" data-8b-enter="94%"></span><h3 class="m-text-5">Sea-buckthorn tonic</h3><p class="m-text-6">Sharp, cold and orange, for after the lake</p><p class="tb-price m-text-5">£4</p></li>
+      </ul>
+    </div>
+    <div class="tb-photos">
+      <figure class="m-photo tb-photo--bread" data-8b-motion="depth"><img src="https://images.unsplash.com/photo-1789152952866-6104d8837566?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c291cCUyMGJvd2wlMjBkYXJrJTIwdGFibGV8ZW58MXwwfHx8MTc5MTM4NDIzM3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=580&q=60" alt="Slices of dark rye in a wooden bowl beside butter and seeds" width="1600" height="1067" loading="lazy"></figure>
+      <figure class="m-photo tb-photo--tea" data-8b-motion="depth"><img src="https://images.unsplash.com/photo-1674707429029-9de78da14b6b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8aGVyYmFsJTIwdGVhJTIwcG90JTIwd29vZGVuJTIwdGFibGV8ZW58MXwxfHx8MTc5MTM4NDIzNHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60" alt="A black iron teapot on a wooden table in low sun" width="1600" height="2400" loading="lazy"></figure>
+      <figure class="m-photo tb-photo--soup" data-8b-motion="depth"><img src="https://images.unsplash.com/photo-1625940947631-908aa92ef5e7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bXVzaHJvb20lMjBzb3VwJTIwYm93bHxlbnwxfDB8fHwxNzkxMzg0MjU1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=660&q=60" alt="A bowl of mushroom soup held in both hands" width="1600" height="900" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+<!-- house: a photo of the bathhouse cut into vertical boards that slide into line, beside two paragraphs and a link (animation: scene:house-slats) -->
+<section id="house" class="l-sec" data-8b-section="house" aria-labelledby="house-title">
+  <p class="m-rail">The house</p>
+  <div class="hs-grid">
+    <figure class="m-photo hs-photo"><img src="https://images.unsplash.com/photo-1558868630-ecfdd6306e51?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGFrZSUyMHNob3JlJTIwZHVzayUyMGNhYmluJTIwbGlnaHRzfGVufDF8MHx8fDE3OTEzODQyMTN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=950&q=60" alt="The bathhouse on stilts at the water's edge, its glass rest room lit at dusk" width="1600" height="1067" loading="lazy"></figure>
+    <div class="hs-copy">
+      <h2 id="house-title" class="m-text-3"><span>A house built</span><span>for the weather</span></h2>
+      <p class="m-text" data-8b-motion="steam">Charred larch outside, alder and aspen inside, glass wherever the lake is. The house sits low on its stilts so the mist rolls under it, and every bench in it faces the water.</p>
+      <p class="m-text" data-8b-motion="steam">We heat with wood from our own forest, and rain from the roof fills the cold tubs. In winter the snow on the roof tells you which room is hottest.</p>
+      <a class="m-link" href="#visit"><span class="m-link__label">Come and see it</span></a>
+    </div>
+  </div>
+</section>
+<!-- pricing: three timed passes on an 08-22 time axis with a marker that sweeps across and lights the pass it is inside (animation: scene:passes-hours) -->
+<section id="passes" class="l-sec" data-8b-section="pricing" aria-labelledby="passes-title">
+  <p class="m-rail">Passes</p>
+  <div class="ps-head">
+    <h2 id="passes-title" class="m-text-3"><span>Choose</span><span>your hours</span></h2>
+    <p class="m-text-5" data-8b-motion="steam">Every pass includes a robe, towels, all four saunas, the lake and tea by the stove.</p>
+  </div>
+  <div class="ps-board">
+    <ol class="ps-axis m-text-4" aria-hidden="true"><li>08</li><li>10</li><li>12</li><li>14</li><li>16</li><li>18</li><li>20</li><li>22</li></ol>
+    <ul class="ps-list" data-8b-items=":scope > .ps-pass" data-8b-fixed="3">
+      <li class="ps-pass" data-from="8" data-to="12">
+        <div class="ps-track" aria-hidden="true"><span class="ps-band"></span></div>
+        <h3 class="m-text-7">Morning</h3>
+        <p class="m-text-6"><time datetime="08:00">08:00</time>–<time datetime="12:00">12:00</time>, coffee and rye at the stove</p>
+        <p class="ps-price m-text-5">£38</p>
+        <a class="m-link" href="#visit"><span class="m-link__label">Book a morning</span></a>
+      </li>
+      <li class="ps-pass" data-from="8" data-to="22">
+        <div class="ps-track" aria-hidden="true"><span class="ps-band"></span></div>
+        <h3 class="m-text-7">Full day</h3>
+        <p class="m-text-6"><time datetime="08:00">08:00</time>–<time datetime="22:00">22:00</time>, lunch at the long table included</p>
+        <p class="ps-price m-text-5">£64</p>
+        <a class="m-link" href="#visit"><span class="m-link__label">Book a full day</span></a>
+      </li>
+      <li class="ps-pass" data-from="17" data-to="22">
+        <div class="ps-track" aria-hidden="true"><span class="ps-band"></span></div>
+        <h3 class="m-text-7">Evening</h3>
+        <p class="m-text-6"><time datetime="17:00">17:00</time>–<time datetime="22:00">22:00</time>, lanterns on the jetty and the smoke sauna</p>
+        <p class="ps-price m-text-5">£42</p>
+        <a class="m-link" href="#visit"><span class="m-link__label">Book an evening</span></a>
+      </li>
+    </ul>
+    <span class="ps-marker" aria-hidden="true"></span>
+  </div>
+  <p class="ps-note m-text-6">Under-16s bathe free with an adult on weekend mornings. Ten-visit cards and gift cards for any pass are sold at the desk and by email.</p>
+</section>
+<!-- faq: six questions in native details elements beside a heading -->
+<section id="questions" class="l-sec" data-8b-section="faq" aria-labelledby="questions-title">
+  <p class="m-rail">Questions</p>
+  <div class="qs-grid">
+    <h2 id="questions-title" class="m-text-3"><span>Before</span><span>your first round</span></h2>
+    <div class="qs-list" data-8b-items=":scope > details" data-8b-motion="steam" data-steam-items=":scope > details">
+      <details><summary class="m-text-5">Do I need to book?</summary><p class="m-text">Weekends and evenings fill up, so book ahead. On weekday mornings you can usually walk in; ask at the desk.</p></details>
+      <details><summary class="m-text-5">What should I bring?</summary><p class="m-text">Nothing at all. A robe, towels, slippers and a locker are included. Bring a swimsuit if you prefer one for the lake.</p></details>
+      <details><summary class="m-text-5">Is bathing mixed?</summary><p class="m-text">Yes, every day except Tuesday evenings, which are for women only. Swimwear or a towel in all shared rooms.</p></details>
+      <details><summary class="m-text-5">I am new to saunas. Where do I start?</summary><p class="m-text">Begin in the herb steam and keep the first rounds short. A host walks first-timers through the round at ten and at three.</p></details>
+      <details><summary class="m-text-5">Can I come if I am pregnant or have a heart condition?</summary><p class="m-text">Please ask your doctor first. The steam room and the rest room are gentle; the smoke sauna and the lake are not.</p></details>
+      <details><summary class="m-text-5">Do you sell gift cards?</summary><p class="m-text">Yes, for any pass, by email or at the desk. They are valid for a year from the day you buy them.</p></details>
+    </div>
+  </div>
+</section>
+<!-- contact: how to get there and contact details beside a day-request form, closed by a large name that condenses out of mist (animation: scene:visit-name) -->
+<section id="visit" class="l-sec" data-8b-section="contact" aria-labelledby="visit-title">
+  <p class="m-rail">Visit</p>
+  <div class="vs-grid">
+    <div class="vs-info">
+      <h2 id="visit-title" class="m-text-3"><span>Forty minutes</span><span>from the city</span></h2>
+      <p class="m-text" data-8b-motion="steam">Take the train to Holm, then our shuttle from the station (six minutes) or the shore path on foot (twenty-five). There is parking for twelve cars behind the woodshed.</p>
+      <dl class="vs-facts m-text">
+        <div><dt class="m-text-4">Address</dt><dd><address>Example Lane 1<br>Holm, on Ellery Water</address></dd></div>
+        <div><dt class="m-text-4">Hours</dt><dd>Daily 08:00–22:00<br>Smoke sauna Thu–Sun from 15:00</dd></div>
+        <div><dt class="m-text-4">Phone</dt><dd><a data-8b-placeholder="phone" href="tel:+442000000000">+44 20 0000 0000</a></dd></div>
+        <div><dt class="m-text-4">Email</dt><dd><a data-8b-placeholder="email" href="mailto:hello@brume.example">hello@brume.example</a></dd></div>
+      </dl>
+    </div>
+    <form data-8b-placeholder="form" class="vs-form m-surface" action="#" method="post" novalidate data-ok="Thank you. We will confirm your day by email within a few hours." data-error="Please add a date, your name and an email address.">
+      <h3 class="m-text-7 is-wide">Request a day</h3>
+      <label class="m-field"><span class="m-field__label">Date</span><input class="m-field__input" type="date" name="date" required></label>
+      <label class="m-field"><span class="m-field__label">Guests</span><select class="m-field__input" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+      <label class="m-field is-wide"><span class="m-field__label">Pass</span><select class="m-field__input" name="pass"><option>Morning, 08:00–12:00</option><option selected>Full day, 08:00–22:00</option><option>Evening, 17:00–22:00</option></select></label>
+      <label class="m-field"><span class="m-field__label">Name</span><input class="m-field__input" type="text" name="name" autocomplete="name" required></label>
+      <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__input" type="email" name="email" autocomplete="email" required></label>
+      <label class="m-field is-wide"><span class="m-field__label">Anything we should know</span><textarea class="m-field__input" name="note" rows="3"></textarea></label>
+      <div class="is-wide"><button class="m-btn" type="submit"><span class="m-btn__label">Send request</span></button></div>
+      <p class="vs-status m-text" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+  <p class="vs-name m-text-2" aria-hidden="true" data-8b-split="chars" style="--len:5">Brume</p>
+</section>
+</main>
+<!-- footer: a Book a day line, four columns (links, address, hours, contact), and a base line with readings, the copyright and a Top link -->
+<footer id="footer" data-8b-section="footer">
+  <div class="ft-next"><span class="ft-rule" data-8b-motion="rule" data-8b-enter="94%"></span><a href="#visit">Book a day</a></div>
+  <div class="ft-grid">
+    <div>
+      <h2 class="m-text-4">Brume</h2>
+      <ul>
+        <li><a class="m-link-2" href="#round">The round</a></li>
+        <li><a class="m-link-2" href="#saunas">Saunas</a></li>
+        <li><a class="m-link-2" href="#day">A day</a></li>
+        <li><a class="m-link-2" href="#passes">Passes</a></li>
+        <li><a class="m-link-2" href="#questions">Questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="m-text-4">Find us</h2>
+      <address class="m-text-6">Example Lane 1<br>Holm, on Ellery Water<br>40 min by train from the city</address>
+    </div>
+    <div>
+      <h2 class="m-text-4">Hours</h2>
+      <p class="m-text-6">Daily 08:00–22:00<br>Smoke sauna Thu–Sun from 15:00<br>Closed 24–25 December</p>
+    </div>
+    <div>
+      <h2 class="m-text-4">Keep in touch</h2>
+      <ul>
+        <li><a data-8b-placeholder="phone" class="m-link-2" href="tel:+442000000000">+44 20 0000 0000</a></li>
+        <li><a data-8b-placeholder="email" class="m-link-2" href="mailto:hello@brume.example">hello@brume.example</a></li>
+        <li><a data-8b-placeholder="social" class="m-link-2" href="https://instagram.com/">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-base m-text-6">
+    <span>© 2026 Brume Baths · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></span>
+    <span>Sauna <span class="is-hot">86°</span></span>
+    <span>Lake <span class="is-cold">7°</span></span>
+    <a class="m-link-2 ft-top" href="#arrival">Top</a>
+  </div>
+</footer>
+<script data-8b-part="section-script:header">
+(() => {
+  const header = document.getElementById('header');
+  const menu = document.getElementById('menu');
+  const open = header.querySelector('.hd-menu');
+  const close = menu.querySelector('.mn-close');
+  let last = window.scrollY, ticking = false;
+  const update = () => {
+    const y = window.scrollY;
+    if (y > 80) header.setAttribute('data-solid', ''); else header.removeAttribute('data-solid');
+    if (y > last + 1 && y > 160 && menu.hidden) header.setAttribute('data-hidden', '');
+    else if (y < last - 1 || y <= 160) header.removeAttribute('data-hidden');
+    last = y; ticking = false;
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+  header.addEventListener('focusin', () => header.removeAttribute('data-hidden'));
+  const setOpen = state => {
+    menu.hidden = !state;
+    open.setAttribute('aria-expanded', String(state));
+    if (state) { window.motionKit?.wheel?.stop(); close.focus(); } else { window.motionKit?.wheel?.start(); open.focus(); }
+  };
+  open.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.hidden = true; open.setAttribute('aria-expanded', 'false'); window.motionKit?.wheel?.start(); }));
+})();
+</script>
+<script data-8b-part="section-script:arrival">
+(() => {
+  const section = document.getElementById('arrival');
+  const fog = section.querySelector('.op-veil');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) section.removeAttribute('data-off'); else section.setAttribute('data-off', '');
+  })).observe(fog);
+})();
+</script>
+<script data-8b-part="section-script:saunas">
+document.querySelectorAll('#saunas .sa-row').forEach(row => {
+  const value = Number(row.querySelector('data').value);
+  row.style.setProperty('--cut', `${Math.max(0, 100 - value)}%`);
+});
+</script>
+<script data-8b-part="section-script:passes">
+document.querySelectorAll('#passes .ps-pass').forEach(pass => {
+  pass.style.setProperty('--from', String(Number(pass.dataset.from) - 8));
+  pass.style.setProperty('--to', String(Number(pass.dataset.to) - 8));
+});
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .vs-form');
+  const status = form.querySelector('.vs-status');
+  const date = form.querySelector('input[type="date"]');
+  date.min = new Date().toISOString().slice(0, 10);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const ok = form.checkValidity();
+    status.textContent = ok ? form.dataset.ok : form.dataset.error;
+    if (ok) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('.line{display:block;overflow:clip;padding-block:.12em;margin-block:-.12em}.line:not(:last-child){margin-bottom:0}.line+.line{margin-top:-.24em}.line+.line>.line__in{text-indent:0}:where(h1,h2,h3,h4,h5,h6,p,div,blockquote,figcaption,dd,dt):where([data-8b-split="lines"]:has(>.line)){display:flow-root}.line__in{display:block}.kit-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const sources = new WeakMap(), widths = new WeakMap();
+const graphemes = typeof Intl.Segmenter === 'function'
+? text => [...new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(text)].map(part => part.segment)
+: text => [...text];
+const span = (className, text) => { const element = document.createElement('span'); element.className = className; if (text != null) element.textContent = text; return element; };
+const split = element => {
+const mode = element.getAttribute('data-8b-split');
+if (sources.has(element)) element.innerHTML = sources.get(element); else sources.set(element, element.innerHTML);
+const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT), texts = [];
+while (walker.nextNode()) texts.push(walker.currentNode);
+let index = 0;
+for (const node of texts) {
+const fragment = document.createDocumentFragment();
+for (const piece of node.data.split(/(\s+)/)) {
+if (!piece) continue;
+if (/^\s+$/.test(piece)) { fragment.append(piece); continue; }
+const word = span('w');
+if (mode === 'chars') {
+word.setAttribute('aria-hidden', 'true');
+for (const character of graphemes(piece)) { const c = span('c', character); c.style.setProperty('--i', index++); word.append(c); }
+} else {
+word.textContent = piece;
+if (mode === 'words') word.style.setProperty('--i', index++);
+}
+fragment.append(word);
+}
+node.replaceWith(fragment);
+}
+if (mode === 'chars') element.append(span('kit-sr', element.textContent.replace(/\s+/g, ' ').trim()));
+if (mode === 'lines') {
+const lines = [];
+let top = null;
+for (const child of [...element.childNodes]) {
+const probe = child.nodeType === 1 ? child : null;
+const at = probe ? probe.getBoundingClientRect().top : top;
+if (probe && (top === null || Math.abs(at - top) > 2)) { lines.push([]); top = at; }
+if (!lines.length) lines.push([]);
+lines.at(-1).push(child);
+}
+lines.forEach((nodes, i) => {
+const line = span('line'), inner = span('line__in');
+line.style.setProperty('--i', i);
+nodes[0].before(line);
+inner.append(...nodes);
+line.append(inner);
+});
+index = lines.length;
+widths.set(element, element.clientWidth);
+}
+element.style.setProperty('--n', index);
+};
+const pending = [];
+let busy = false;
+const drain = () => {
+if (busy) return;
+const element = pending.shift();
+if (!element) return;
+busy = true;
+setTimeout(() => { try { split(element); } catch (error) { console.error('[motion-kit] split failed', error); } busy = false; drain(); }, 0);
+};
+const near = new IntersectionObserver(entries => entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+near.unobserve(entry.target);
+pending.push(entry.target);
+drain();
+}), { rootMargin: '100% 0px 100% 0px' });
+(document.fonts?.ready ?? Promise.resolve()).then(() => document.querySelectorAll('[data-8b-split]').forEach(element => near.observe(element)));
+kit.measure(() => document.querySelectorAll('[data-8b-split="lines"]').forEach(element => {
+if (sources.has(element) && widths.get(element) !== element.clientWidth) { pending.push(element); drain(); }
+}));
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+(() => {
+const kit = window.motionKit;
+kit.track = () => {};
+if (!kit.live) return;
+const named = { top: 0, center: 0.5, bottom: 1 };
+const point = text => text.trim().split(/\s+/).map(word => named[word] ?? parseFloat(word) / 100);
+kit.track = (element, start, end, fn) => {
+const [s0, v0] = point(start), [s1, v1] = point(end);
+let queued = false;
+const run = () => {
+queued = false;
+const box = element.getBoundingClientRect(), vh = innerHeight;
+const d0 = box.top + box.height * s0 - vh * v0, d1 = box.top + box.height * s1 - vh * v1;
+fn(d1 === d0 ? (d0 <= 0 ? 1 : 0) : Math.min(1, Math.max(0, -d0 / (d1 - d0))));
+};
+addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(run); } }, { passive: true });
+kit.measure(run);
+};
+})();
+</script>
+<script data-8b-part="scene-script:arrival">
+motionKit.scene('arrival', () => {
+  const section = document.getElementById('arrival');
+  const first = section.querySelector('.op-first');
+  motionKit.measure(() => motionKit.set(section, { '--arrival-first': `${first.offsetHeight}px` }));
+});
+</script>
+<script data-8b-part="scene-script:day-light">
+motionKit.scene("day-light", () => {
+  { const targets = ["#day .dy-hours > li:nth-of-type(1)"].map(s => document.querySelector(s)); motionKit.track(document.querySelector("#day .dy-hours > li:nth-of-type(1)"), "50% 62%", "50% 38%", p => targets.forEach(t => t.classList.toggle("is-now", p > 0 && p < 1))); }
+  { const targets = ["#day .dy-hours > li:nth-of-type(2)"].map(s => document.querySelector(s)); motionKit.track(document.querySelector("#day .dy-hours > li:nth-of-type(2)"), "50% 62%", "50% 38%", p => targets.forEach(t => t.classList.toggle("is-now", p > 0 && p < 1))); }
+  { const targets = ["#day .dy-hours > li:nth-of-type(3)"].map(s => document.querySelector(s)); motionKit.track(document.querySelector("#day .dy-hours > li:nth-of-type(3)"), "50% 62%", "50% 38%", p => targets.forEach(t => t.classList.toggle("is-now", p > 0 && p < 1))); }
+  { const targets = ["#day .dy-hours > li:nth-of-type(4)"].map(s => document.querySelector(s)); motionKit.track(document.querySelector("#day .dy-hours > li:nth-of-type(4)"), "50% 62%", "50% 38%", p => targets.forEach(t => t.classList.toggle("is-now", p > 0 && p < 1))); }
+  { const targets = ["#day .dy-hours > li:nth-of-type(5)"].map(s => document.querySelector(s)); motionKit.track(document.querySelector("#day .dy-hours > li:nth-of-type(5)"), "50% 62%", "50% 38%", p => targets.forEach(t => t.classList.toggle("is-now", p > 0 && p < 1))); }
+  { const targets = ["#day .dy-hours > li:nth-of-type(6)"].map(s => document.querySelector(s)); motionKit.track(document.querySelector("#day .dy-hours > li:nth-of-type(6)"), "50% 62%", "50% 38%", p => targets.forEach(t => t.classList.toggle("is-now", p > 0 && p < 1))); }
+});
+</script>
+<script data-8b-part="scene-script:house-slats">
+motionKit.scene("house-slats", () => {
+  const copy = (element, deep, attrs = {}) => { const el = element.cloneNode(deep); for (const [k, v] of Object.entries(attrs)) v == null ? el.removeAttribute(k) : el.setAttribute(k, v); return el; };
+  if (matchMedia("(min-width: 700px)").matches) {
+    { const parent = document.querySelector("#house .m-photo"); parent.append(copy(parent.querySelector(":scope > img:nth-of-type(1)"), false, { "alt": "", "aria-hidden": "true", "class": "hs-clone", "style": "mask-image: repeating-linear-gradient(90deg, transparent 0%, transparent 10%, currentcolor 10%, currentcolor 20%); inset: 0px; position: absolute" })); }
+  } else {
+    { const parent = document.querySelector("#house .m-photo"); parent.append(copy(parent.querySelector(":scope > img:nth-of-type(1)"), false, { "alt": "", "aria-hidden": "true", "class": "hs-clone", "style": "mask-image: repeating-linear-gradient(90deg, transparent 0%, transparent 16.6667%, currentcolor 16.6667%, currentcolor 33.3333%); inset: 0px; position: absolute" })); }
+  }
+});
+</script>
+<script data-8b-part="scene-script:passes-hours">
+motionKit.scene('passes-hours', () => {
+  const section = document.getElementById('passes');
+  const board = section.querySelector('.ps-board');
+  const axis = section.querySelector('.ps-axis');
+  const passes = [...section.querySelectorAll('.ps-pass')];
+  motionKit.measure(() => motionKit.set(board, { '--passes-travel': `${axis.offsetWidth - 1}px` }));
+  let started = false;
+  motionKit.track(board, 'top 70%', 'bottom 50%', progress => {
+    started ||= progress > 0;
+    if (!started) return;
+    const hour = 8 + 14 * progress;
+    passes.forEach(pass => pass.classList.toggle('is-open', hour >= Number(pass.dataset.from) && hour <= Number(pass.dataset.to)));
+  });
+});
+</script>
+</body>
+</html>

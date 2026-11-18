@@ -1,0 +1,44 @@
+{
+  "slug": "nocturna",
+  "name": "Nocturna",
+  "categories": [
+    "Event",
+    "Culture"
+  ],
+  "upstream": "https://github.com/8bsite/art-gallery-website-template",
+  "demo": "https://8b.com/templates/nocturna/demo.html",
+  "design_md_url": "https://8b.com/templates/nocturna/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6e42c9d4e91664c67779d6d6c22a8b7e0cdef555",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "99ec71f49748787c72e70b81c91f0dec9cbc2897",
+    "README.md": "57a90664272000882e53d753f2dfe62f6a57c5b7",
+    "AGENTS.md": "5def78891a694c38379bf90676b08a14ac35d3fe",
+    "index.html": "b42d29f79ac8934499c44d4a48e654f05706e9d7",
+    "index.gsap.html": "0f7b1bf2c9b94d0f2c64ced41f76cf9964a20264"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "5a32328aa06be7e6397f035d58ae7e52b505e9a649ca7a16f63aaae39d6f04fb",
+    "README.md": "09465ab39f2191971e9f629b7b710afea2a53cc3cfb20d6848be27fbc3968d1a",
+    "AGENTS.md": "c22464e111f1753afe962b8853168e37158ce207d611f3fb0b313c076c3a44bd",
+    "index.html": "e6804da057ecf8d247b85bae78de42b06ebc01e444ecdb1bc1cc723f247bbd99",
+    "index.gsap.html": "d24942a0ac263dfbcc25cefbb932d453d97c43f4cdf2655a719209b6aaa6186c"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

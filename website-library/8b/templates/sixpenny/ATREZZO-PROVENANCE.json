@@ -1,0 +1,44 @@
+{
+  "slug": "sixpenny",
+  "name": "Sixpenny Hardware",
+  "categories": [
+    "Shop",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/hardware-store-website-template",
+  "demo": "https://8b.com/templates/sixpenny/demo.html",
+  "design_md_url": "https://8b.com/templates/sixpenny/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "39e926c1bf46e3898f145df14e0d2bfb4a8a95dd",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "97d8252601adf683940c6ba798ab1545cf3d5312",
+    "README.md": "d65ae059ef7cddc81e3751094e4330a2ab536e99",
+    "AGENTS.md": "5ce80dd399876a06239d5b308ec7e4191e41ed20",
+    "index.html": "70cb8d60a54b93c5149075d79825e31069d41d1a",
+    "index.gsap.html": "141fe66366a125cf2adcbb7ced2e12c3d3a7f83d"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c683b15206e266ce69421854947f80105c0e3af81583f6c28271906ab3797826",
+    "README.md": "9e50541e3b869b3ca69d7860610fea431d3767e5246661d54c102c59b852918c",
+    "AGENTS.md": "7376abd8cbb6f935480ce4f6df3f8aa973ace3ff8fb972e9f028134f1ed0a12f",
+    "index.html": "a068aa493ee740c9f0dd89ce2e55933bb574fc84d07d677103361d4507d47db2",
+    "index.gsap.html": "a85898eb1ee1764173a9154708272411b2069a0bb9abdf58cd464af36adfba16"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,1215 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/sillage/
+  Source: https://github.com/8bsite/creative-agency-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sillage — Creative agency and production house</title>
+<meta name="description" content="Sillage is a creative agency and production house for luxury, beauty and fashion: narrative, production, post-production and a studio under one roof in Paris.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sillage — Creative agency and production house">
+<meta property="og:description" content="Sillage is a creative agency and production house for luxury, beauty and fashion: narrative, production, post-production and a studio under one roof in Paris.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%230b0b0b'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3ES%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/mozillaheadline/v1/QGYLz-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6cnYRvBSDSOuerB_FOBvoYlYhZu.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1YmV.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Mozilla Headline';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillaheadline/v1/QGYLz-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6cnYRvBSDSOuerB_FOBvoYlbBZuhco.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mozilla Headline';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 125%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillaheadline/v1/QGYLz-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6cnYRvBSDSOuerB_FOBvoYlYhZu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #0b0b0b;
+  --color-3: #676767;
+  --color-4: #9b9b9b;
+  --color-5: #cfcfcf;
+  --color-6: #2f2f2f;
+  --font-1: "Mozilla Headline", "Mozilla Headline Fallback", "Arial", sans-serif;
+  --font-2: "Instrument Sans", "Instrument Sans Fallback", "Arial", sans-serif;
+  --space-1: clamp(16px, 2.5vw, 32px);
+  --space-2: clamp(88px, 12vw, 176px);
+}
+}
+</style>
+<style data-8b-part="base">
+@font-face { font-family: "Mozilla Headline Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 115.8%; ascent-override: 82%; descent-override: 22.4%; line-gap-override: 0%; }
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 97.8%; ascent-override: 99.2%; descent-override: 25.6%; line-gap-override: 0%; }
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 101%; ascent-override: 96.1%; descent-override: 24.8%; line-gap-override: 0%; }
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+  h1, h2, h3, h4, p, figure, blockquote, dl, dd { margin: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  button { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  [data-8b-motion~="trail"] {
+    text-shadow:
+      calc(var(--motion-trail, 0) * -.07em) calc(var(--motion-trail, 0) * .05em) 0 color-mix(in srgb, currentColor 42%, transparent),
+      calc(var(--motion-trail, 0) * -.14em) calc(var(--motion-trail, 0) * .1em) 0 color-mix(in srgb, currentColor 22%, transparent),
+      calc(var(--motion-trail, 0) * -.21em) calc(var(--motion-trail, 0) * .15em) 0 color-mix(in srgb, currentColor 10%, transparent);
+  }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-2); font-size: clamp(32px, 4vw, 58px); font-weight: 700; line-height: .96; letter-spacing: -.02em; text-transform: uppercase; font-style: normal; }
+.m-text-3 { font-family: var(--font-2); font-size: 12px; font-weight: 600; line-height: 1.35; letter-spacing: .035em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 96px; font-weight: 300; font-stretch: 125%; line-height: .88; letter-spacing: -.02em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(19px, 1.65vw, 23px); font-weight: 600; line-height: 1.08; letter-spacing: -.005em; text-transform: uppercase; font-style: normal; }
+.m-text-6 { font-family: var(--font-2); font-size: clamp(21px, 2.1vw, 30px); font-weight: 500; line-height: 1.14; letter-spacing: -.01em; text-transform: uppercase; font-style: normal; }
+.m-text-7 { font-family: var(--font-2); font-size: 15px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-3); }
+.m-text-8 { font-family: var(--font-2); font-size: 15px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-4); }
+.m-mark { display: flex; justify-content: space-between; color: var(--color-2); font-family: var(--font-1); font-weight: 300; font-stretch: 125%; line-height: .8; letter-spacing: 0; text-transform: uppercase; font-style: normal; }
+.m-mark__glyph { position: relative; display: block; --mark-streak: 0; --mark-cut: 47%; }
+.m-mark__glyph:nth-child(4n+1) { --mark-cut: 38%; }
+.m-mark__glyph:nth-child(4n+2) { --mark-cut: 58%; }
+.m-mark__glyph:nth-child(4n+3) { --mark-cut: 44%; }
+.m-mark__ink { position: relative; display: block; -webkit-text-stroke: .02em var(--color-1); paint-order: stroke fill; }
+.m-mark__ink::before {
+  content: attr(data-glyph); position: absolute; left: 0; top: 0; z-index: -1;
+  color: var(--color-2); -webkit-text-stroke: 0; translate: -.05em .045em;
+  text-shadow:
+    0 calc(var(--mark-streak) * .16em) 0 color-mix(in srgb, var(--color-2) 60%, transparent),
+    0 calc(var(--mark-streak) * .32em) 0 color-mix(in srgb, var(--color-2) 38%, transparent),
+    0 calc(var(--mark-streak) * .48em) 0 color-mix(in srgb, var(--color-2) 22%, transparent),
+    0 calc(var(--mark-streak) * .64em) 0 color-mix(in srgb, var(--color-2) 10%, transparent);
+}
+.m-mark__ink::after { content: ""; position: absolute; left: -.12em; right: -.04em; top: var(--mark-cut); height: .045em; background: var(--color-1); }
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 26px; color: var(--color-2); font-family: var(--font-2); font-size: 12px; font-weight: 600; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; }
+.m-btn::before, .m-btn::after { content: ""; position: absolute; inset: 0; }
+.m-btn::before { z-index: -2; background: var(--color-2); transition: translate .5s cubic-bezier(.2, .8, .2, 1); }
+.m-btn::after { z-index: -1; background: var(--color-1); border: 1px solid var(--color-2); }
+.m-btn:focus-visible::before { translate: -6px 6px; }
+@media (hover: hover) { .m-btn:hover::before { translate: -6px 6px; } }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 16px 26px; color: var(--color-1); font-family: var(--font-2); font-size: 12px; font-weight: 600; line-height: 1; letter-spacing: .05em; text-transform: uppercase; text-decoration: none; }
+.m-btn-2::before, .m-btn-2::after { content: ""; position: absolute; inset: 0; }
+.m-btn-2::before { z-index: -2; background: var(--color-1); transition: translate .5s cubic-bezier(.2, .8, .2, 1); }
+.m-btn-2::after { z-index: -1; background: var(--color-2); border: 1px solid var(--color-1); }
+.m-btn-2:focus-visible::before { translate: -6px 6px; }
+@media (hover: hover) { .m-btn-2:hover::before { translate: -6px 6px; } }
+.m-btn-3 { position: relative; isolation: isolate; display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; font-family: var(--font-2); font-size: clamp(14px, 1.2vw, 17px); font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: uppercase; text-decoration: none; }
+.m-btn-3::before { content: ""; position: absolute; inset: 0; z-index: -1; background: currentColor; opacity: 0; translate: 0 0; transition: translate .5s cubic-bezier(.2, .8, .2, 1), opacity .2s; }
+.m-btn-3[aria-pressed="true"] { background: var(--color-2); color: var(--color-1); }
+.m-btn-3:focus-visible { outline-offset: -5px; }
+.m-btn-3:focus-visible::before { opacity: .14; translate: -5px 5px; }
+@media (hover: hover) { .m-btn-3:hover::before { opacity: .14; translate: -5px 5px; } }
+.m-link { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .22em; transition: text-shadow .35s ease; }
+.m-link:focus-visible { text-shadow: -.06em .06em 0 color-mix(in srgb, currentColor 30%, transparent); }
+@media (hover: hover) { .m-link:hover { text-shadow: -.06em .06em 0 color-mix(in srgb, currentColor 30%, transparent); } }
+.m-link-2 { color: inherit; font-family: var(--font-2); font-size: clamp(14px, 1.25vw, 18px); font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: uppercase; font-style: normal; text-decoration: none; transition: text-shadow .35s ease; }
+.m-link-2:focus-visible { text-shadow: -.07em .07em 0 color-mix(in srgb, currentColor 32%, transparent); }
+@media (hover: hover) { .m-link-2:hover { text-shadow: -.07em .07em 0 color-mix(in srgb, currentColor 32%, transparent); } }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .u-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; inset: 0 0 auto 0; z-index: 50; color: var(--color-2); transition: background-color .35s ease, color .35s ease; }
+  #navigation[data-solid] { background: var(--color-2); color: var(--color-1); }
+  #navigation .nav__bar { display: flex; align-items: center; gap: clamp(16px, 2.2vw, 30px); height: 52px; padding-inline: var(--space-1); }
+  #navigation .nav__list { display: flex; gap: clamp(16px, 2.2vw, 30px); }
+  #navigation .nav__list--end { margin-left: auto; }
+  #navigation .nav__toggle { display: none; margin-left: auto; margin-right: -14px; }
+  #navigation .nav__menu { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; gap: 28px; padding: 0 var(--space-1) 32px; overflow-y: auto; background: var(--color-2); color: var(--color-1); }
+  #navigation .nav__menu[hidden] { display: none; }
+  #navigation .nav__menu-head { display: flex; align-items: center; justify-content: space-between; height: 52px; margin-right: -14px; }
+  #navigation .nav__menu-list { display: grid; gap: 10px; }
+  #navigation .nav__menu-list .m-link-2 { font-size: clamp(34px, 10vw, 56px); }
+  #navigation .nav__menu-foot { margin-top: auto; display: grid; gap: 6px; }
+  @media (max-width: 860px) {
+    #navigation .nav__list { display: none; }
+    #navigation .nav__toggle { display: inline-flex; }
+  }
+}
+</style>
+<style data-8b-part="section:hero">
+@layer sections {
+  #hero { position: relative; z-index: 2; display: grid; grid-template-rows: auto auto minmax(0, 1fr); height: 100svh; min-height: 560px; padding-top: 52px; overflow-x: clip; background: var(--color-1); }
+  #hero .hero__title { position: relative; z-index: 3; container-type: inline-size; padding: clamp(10px, 1.6vw, 22px) var(--space-1) clamp(12px, 1.6vw, 22px); }
+  #hero .m-mark { font-size: calc(100cqi / (var(--len) * .74)); }
+  #hero .hero__info { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px 24px; padding: 12px var(--space-1); border-top: 1px solid var(--color-5); }
+  #hero .hero__tagline { text-align: center; }
+  #hero .hero__go { justify-self: end; }
+  #hero .hero__media { position: relative; overflow: hidden; min-height: 0; }
+  #hero .hero__media-in { position: absolute; inset: 0; overflow: hidden; }
+  #hero .hero__push { position: absolute; inset: 0; }
+  #hero .hero__drift { position: absolute; inset: -40px; }
+  #hero .hero__drift img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; }
+  #hero .hero__caption { position: absolute; left: var(--space-1); bottom: var(--space-1); padding: 8px 10px; background: var(--color-1); color: var(--color-2); }
+  @media (max-width: 700px) {
+    #hero .hero__info { grid-template-columns: 1fr auto; }
+    #hero .hero__tagline { grid-column: 1 / -1; grid-row: 2; text-align: left; }
+    #hero .hero__drift img { object-position: 46% 20%; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #hero .m-mark__ink { animation: hero-rise .8s cubic-bezier(.2, .75, .15, 1) backwards; animation-delay: calc(var(--hero-i, 0) * 50ms); }
+    #hero .hero__media-in { animation: hero-settle 1.1s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #hero .hero__info { animation: hero-info .7s .25s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #hero .hero__drift { animation: hero-drift 6s ease-in-out infinite alternate; }
+    #hero .m-mark__ink::before { animation: hero-sway 4.6s ease-in-out infinite alternate; }
+    #hero[data-paused] .hero__drift, #hero[data-paused] .m-mark__ink::before { animation-play-state: paused; }
+  }
+  @keyframes hero-rise { from { transform: translateY(.42em); clip-path: inset(0 -30% 100% -30%); } to { transform: none; clip-path: inset(-20% -30% -60% -30%); } }
+  @keyframes hero-settle { from { transform: scale(1.07); } }
+  @keyframes hero-info { from { transform: translateY(10px); opacity: 0; } }
+  @keyframes hero-drift { from { transform: translate3d(-30px, -14px, 0); } to { transform: translate3d(30px, 14px, 0); } }
+  @keyframes hero-sway { from { translate: -.065em .035em; } to { translate: -.02em .06em; } }
+}
+</style>
+<style data-8b-part="section:manifesto">
+@layer sections {
+  #manifesto { position: relative; overflow-x: clip; padding: clamp(56px, 8vw, 120px) var(--space-1) var(--space-2); }
+  #manifesto .manifesto__stack { container-type: inline-size; display: flex; flex-direction: column; }
+  #manifesto .manifesto__line { display: block; white-space: nowrap; font-size: min(17vw, calc(100cqi / (var(--len) * .7))); line-height: .9; }
+  #manifesto .manifesto__body { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; margin-top: clamp(48px, 7vw, 104px); }
+  #manifesto .manifesto__lead { grid-column: 1 / span 6; }
+  #manifesto .manifesto__copy { grid-column: 8 / span 5; display: grid; gap: 1em; }
+  #manifesto .manifesto__verbs { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; margin-top: clamp(48px, 6vw, 88px); padding-top: 14px; border-top: 1px solid var(--color-2); }
+  @media (max-width: 860px) {
+    #manifesto .manifesto__lead, #manifesto .manifesto__copy { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:works">
+@layer sections {
+  #works { position: relative; overflow-x: clip; padding: 0 0 var(--space-2); }
+  #works .works__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: end; padding: 0 var(--space-1) clamp(28px, 4vw, 52px); }
+  #works .works__head h2 { grid-column: 1 / span 7; }
+  #works .works__head p { grid-column: 9 / span 4; }
+  #works .works__bar { position: sticky; top: 52px; z-index: 5; display: grid; grid-template-columns: auto auto 1.4fr 1fr 1fr 1.2fr; background: var(--color-1); border-block: 1px solid var(--color-2); }
+  #works .works__cell { justify-content: flex-start; min-height: 46px; padding-inline: var(--space-1); border-right: 1px solid var(--color-2); }
+  #works .works__cell:last-child { border-right: 0; }
+  #works .works__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(56px, 6vw, 88px) clamp(16px, 2.5vw, 32px); padding: clamp(32px, 4vw, 56px) var(--space-1) 0; }
+  #works .works__card { grid-column: span 4; display: grid; align-content: start; gap: 10px; }
+  #works .works__card:nth-child(8n+4) { grid-column: span 8; }
+  #works .works__card:nth-child(8n+7) { padding-top: clamp(40px, 8vw, 120px); }
+  #works .works__plate { position: relative; isolation: isolate; margin-bottom: 8px; }
+  #works .works__frame { position: relative; overflow: hidden; aspect-ratio: 4 / 5; background: var(--color-5); transition: opacity .5s ease, filter .5s ease; }
+  #works .works__card:nth-child(8n+4) .works__frame { aspect-ratio: 16 / 10.4; }
+  #works .works__frame img { width: 100%; height: 100%; object-fit: cover; }
+  #works .works__card[data-muted] .works__frame { opacity: .18; filter: grayscale(1); }
+  #works .works__more { display: flex; justify-content: flex-start; padding: clamp(56px, 6vw, 88px) var(--space-1) 0; }
+  @media (max-width: 899px) {
+    #works .works__head h2, #works .works__head p { grid-column: 1 / -1; }
+    #works .works__bar { position: static; grid-template-columns: 1fr 1fr; border-bottom: 0; }
+    #works .works__cell { border-bottom: 1px solid var(--color-2); }
+    #works .works__cell:nth-child(2n) { border-right: 0; }
+    #works .works__card, #works .works__card:nth-child(8n+4) { grid-column: 1 / -1; }
+    #works .works__card:nth-child(8n+7) { padding-top: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:feature">
+@layer sections {
+  #feature { position: relative; background: var(--color-1); color: var(--color-1); }
+  #feature .feature__stage { position: sticky; top: 0; height: 100svh; min-height: 560px; overflow: hidden; }
+  #feature .feature__frame { position: absolute; inset: 0; overflow: hidden; background: var(--color-2); }
+  #feature .feature__frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, color-mix(in srgb, var(--color-2) 90%, transparent) 0%, color-mix(in srgb, var(--color-2) 66%, transparent) 36%, color-mix(in srgb, var(--color-2) 22%, transparent) 58%, transparent 72%); }
+  #feature .feature__img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 42%; }
+  #feature .feature__copy { position: absolute; inset: auto 0 0 0; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 18px 24px; align-items: end; padding: 0 var(--space-1) clamp(24px, 3.5vw, 44px); }
+  #feature .feature__tags { grid-column: 1 / -1; }
+  #feature .feature__titlebox { grid-column: 1 / -1; container-type: inline-size; }
+  #feature .feature__title { display: block; white-space: nowrap; font-size: calc(100cqi / (var(--len) * .71)); }
+  #feature .feature__client { grid-column: 1 / span 5; }
+  #feature .feature__credits { grid-column: 7 / span 4; display: grid; }
+  #feature .feature__credits li { padding: 9px 0; border-top: 1px solid color-mix(in srgb, var(--color-1) 40%, transparent); }
+  #feature .feature__cta { grid-column: 11 / span 2; justify-self: end; }
+  @media (max-width: 899px) {
+    #feature .feature__title { white-space: normal; font-size: clamp(46px, 14vw, 72px); }
+    #feature .feature__client, #feature .feature__credits, #feature .feature__cta { grid-column: 1 / -1; justify-self: start; }
+    #feature .feature__img { object-position: 64% 50%; }
+    #feature .feature__frame::after { background: linear-gradient(to top, color-mix(in srgb, var(--color-2) 92%, transparent) 0%, color-mix(in srgb, var(--color-2) 78%, transparent) 52%, color-mix(in srgb, var(--color-2) 30%, transparent) 72%, transparent 86%); }
+  }
+}
+</style>
+<style data-8b-part="section:clients">
+@layer sections {
+  #clients { position: relative; overflow-x: clip; padding: var(--space-2) 0; }
+  #clients .clients__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: end; padding: 0 var(--space-1) clamp(36px, 5vw, 64px); }
+  #clients .clients__head h2 { grid-column: 1 / span 7; }
+  #clients .clients__head p { grid-column: 9 / span 4; }
+  #clients .clients__row { border-block: 1px solid var(--color-2); padding-block: clamp(18px, 2.4vw, 30px); }
+  #clients .clients__track { display: flex; flex-wrap: wrap; gap: 6px 0; padding-inline: var(--space-1); }
+  #clients .clients__name { padding-right: clamp(36px, 5vw, 72px); font-size: clamp(30px, 5vw, 68px); line-height: 1; white-space: nowrap; text-shadow: -.045em .04em 0 var(--color-5); }
+  @media (max-width: 860px) {
+    #clients .clients__head h2, #clients .clients__head p { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:expertise">
+@layer sections {
+  #expertise { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); color: var(--color-1); }
+  #expertise .expertise__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: end; }
+  #expertise .expertise__head h2 { grid-column: 1 / span 5; }
+  #expertise .expertise__head p { grid-column: 7 / span 6; }
+  #expertise .expertise__body { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; margin-top: clamp(48px, 7vw, 104px); }
+  #expertise .expertise__portrait { grid-column: 1 / span 4; position: sticky; top: 92px; align-self: start; height: min(72vh, 640px); overflow: hidden; background: var(--color-6); }
+  #expertise .expertise__portrait-in { position: absolute; inset: 0; }
+  #expertise .expertise__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 40%; }
+  #expertise .expertise__rows { grid-column: 6 / span 7; border-bottom: 1px solid var(--color-6); }
+  #expertise .expertise__row { display: grid; gap: 16px; padding: clamp(26px, 3vw, 40px) 0; border-top: 1px solid var(--color-6); }
+  #expertise .expertise__row h3 { font-size: clamp(26px, 3vw, 42px); }
+  #expertise .expertise__tags { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  #expertise .expertise__more { margin-top: clamp(48px, 6vw, 80px); }
+  @media (max-width: 860px) {
+    #expertise .expertise__head h2, #expertise .expertise__head p { grid-column: 1 / -1; }
+    #expertise .expertise__portrait { grid-column: 1 / -1; position: relative; top: 0; height: auto; aspect-ratio: 4 / 3; }
+    #expertise .expertise__rows { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:method">
+@layer sections {
+  #method { position: relative; overflow-x: clip; padding: var(--space-2) var(--space-1); }
+  #method .method__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: end; padding-bottom: clamp(28px, 3.5vw, 48px); border-bottom: 1px solid var(--color-2); }
+  #method .method__head h2 { grid-column: 1 / span 7; }
+  #method .method__head p { grid-column: 9 / span 4; }
+  #method .method__track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(40px, 5vw, 72px) clamp(16px, 2.5vw, 32px); margin-top: clamp(28px, 3.5vw, 48px); }
+  #method .method__frame { display: grid; gap: 18px; align-content: start; }
+  #method .method__photo { position: relative; overflow: hidden; aspect-ratio: 3 / 2; background: var(--color-5); }
+  #method .method__photo img { position: absolute; top: 0; left: -8%; width: 116%; max-width: none; height: 100%; object-fit: cover; }
+  #method .method__text { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 22px; align-items: start; }
+  #method .method__step { grid-row: span 2; font-size: clamp(44px, 5vw, 76px); line-height: .8; }
+  #method .method__text h3 { padding-top: 2px; }
+  @media (max-width: 860px) {
+    #method .method__head h2, #method .method__head p { grid-column: 1 / -1; }
+    #method .method__track { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:studio">
+@layer sections {
+  #studio { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: start; padding: var(--space-2) var(--space-1); }
+  #studio .studio__photo { grid-column: 1 / span 7; position: relative; overflow: hidden; aspect-ratio: 4 / 3.1; background: var(--color-5); }
+  #studio .studio__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+  #studio .studio__text { grid-column: 9 / span 4; display: grid; gap: clamp(20px, 2.4vw, 30px); }
+  #studio .studio__specs { border-bottom: 1px solid var(--color-5); }
+  #studio .studio__spec { display: grid; grid-template-columns: minmax(96px, 30%) minmax(0, 1fr); gap: 16px; padding: 13px 0; border-top: 1px solid var(--color-5); }
+  #studio .studio__spec dd { margin: 0; }
+  @media (max-width: 860px) {
+    #studio .studio__photo, #studio .studio__text { grid-column: 1 / -1; }
+  }
+}
+</style>
+<style data-8b-part="section:crew">
+@layer sections {
+  #crew { position: relative; overflow-x: clip; padding: var(--space-2) var(--space-1); }
+  #crew .crew__head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; align-items: end; padding-bottom: clamp(36px, 5vw, 64px); }
+  #crew .crew__head h2 { grid-column: 1 / span 7; }
+  #crew .crew__head p { grid-column: 9 / span 4; }
+  #crew .crew__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(40px, 5vw, 64px) clamp(16px, 2.5vw, 32px); }
+  #crew .crew__card { display: grid; gap: 6px; align-content: start; background: var(--color-1); }
+  #crew .crew__photo { overflow: hidden; aspect-ratio: 4 / 5; margin-bottom: 10px; background: var(--color-5); }
+  #crew .crew__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+  #crew .crew__more { margin-top: clamp(40px, 5vw, 64px); padding-top: 14px; border-top: 1px solid var(--color-2); }
+  @media (max-width: 860px) {
+    #crew .crew__head h2, #crew .crew__head p { grid-column: 1 / -1; }
+    #crew .crew__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding: var(--space-2) var(--space-1) 0; }
+  #contact .contact__mailbox { container-type: inline-size; margin-top: clamp(28px, 4vw, 56px); }
+  #contact .contact__mail { display: block; width: fit-content; white-space: nowrap; font-size: calc(100cqi / (var(--len) * .74)); line-height: 1.05; text-decoration-thickness: 2px; text-underline-offset: .16em; }
+  #contact .contact__desks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: clamp(48px, 6vw, 88px); }
+  #contact .contact__desk { display: grid; gap: 8px; align-content: start; padding-top: 14px; border-top: 1px solid var(--color-2); }
+  #contact .contact__desk h3 { margin-bottom: 6px; }
+  #contact .contact__desk a { width: fit-content; }
+  @media (max-width: 860px) {
+    #contact .contact__desks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 20px; }
+  }
+  @media (max-width: 520px) {
+    #contact .contact__desks { grid-template-columns: minmax(0, 1fr); }
+  }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { position: relative; overflow-x: clip; padding: var(--space-2) var(--space-1) 20px; }
+  #footer .footer__mark { container-type: inline-size; }
+  #footer .m-mark { font-size: calc(100cqi / (var(--len) * .74)); }
+  #footer .footer__row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; margin-top: clamp(28px, 4vw, 56px); padding-top: 14px; border-top: 1px solid var(--color-2); }
+  #footer .footer__links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-power3-out: linear(0, 0.0963, 0.1855, 0.2679, 0.3439, 0.4138, 0.478, 0.5367, 0.5904, 0.6392, 0.6836, 0.7237, 0.7599, 0.7924, 0.8215, 0.8474, 0.8704, 0.8907, 0.9085, 0.924, 0.9375, 0.9491, 0.959, 0.9674, 0.9744, 0.9802, 0.985, 0.9888, 0.9919, 0.9943, 0.9961, 0.9974, 0.9984, 0.9991, 0.9995, 0.9998, 0.9999, 1, 1, 1, 1); }
+[data-8b-live] [data-8b-motion~="rise"] > *, [data-8b-live] [data-8b-motion~="rise"]:not(:has(> *)) { animation-name: motion-rise; animation-duration: .95s; animation-delay: 0s; animation-timing-function: var(--ease-power3-out); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="rise"] > * { animation-delay: calc(.1s * (sibling-index() - 1)); }
+[data-8b-live] [data-8b-motion~="rise"].is-in > *, [data-8b-live] [data-8b-motion~="rise"].is-in:not(:has(> *)) { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="trail"] { animation-name: motion-trail-translate, motion-trail---motion-trail; animation-duration: 1.25s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1), var(--ease-power3-out); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="trail"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="cut"] { animation-name: motion-cut-clippath; animation-duration: 1.35s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="cut"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="cut"] img { animation-name: motion-cut-img-scale; animation-duration: 1.7s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="cut"].is-in img { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rule"] { animation-name: motion-rule-clippath; animation-duration: 1.1s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="rule"].is-in { animation-play-state: running; }
+@keyframes motion-rise { 0% { translate: 0px 45%; clip-path: inset(0% 0% 100% 0%); } 99.998% { translate: 0px 0px; clip-path: inset(0% 0% -25% 0%); } 100% { translate: 0px 0px; clip-path: none; } }
+@keyframes motion-trail-translate { 0% { translate: -56px 0px; } 100% { translate: 0px 0px; } }
+@keyframes motion-trail---motion-trail { 0% { --motion-trail: 1; } 100% { --motion-trail: 0; } }
+@keyframes motion-cut-clippath { 0% { clip-path: inset(47% 0%); } 99.998% { clip-path: inset(0%); } 100% { clip-path: none; } }
+@keyframes motion-cut-img-scale { 0% { scale: 1.18; } 100% { scale: 1; } }
+@keyframes motion-rule-clippath { 0% { clip-path: inset(0% 100% 0% 0%); } 99.998% { clip-path: inset(0%); } 100% { clip-path: none; } }
+}
+</style>
+<style data-8b-part="scene:hero">
+@property --hero-mark-streak { syntax: '<number>'; inherits: true; initial-value: 2; }
+@layer scenes {
+[data-8b-live] #hero { view-timeline: --hero-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #hero .m-mark > span:nth-of-type(-n+7), [data-8b-live] #hero .hero__push { animation-timeline: --hero-t1; animation-range: cover calc(100% - 100vh) cover calc(100% - 10vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] #hero .m-mark > span:nth-of-type(-n+7) { transform-origin: 50% 0%; --mark-streak: var(--hero-mark-streak); }
+[data-8b-live] #hero .hero__push { animation-name: hero-div-hero-push-scale; transform-origin: 50% 30%; }
+@keyframes hero-span-m-mark-glyph-translate { 0% { translate: 0px 0px; } 20% { translate: -0.448vw 16.8vh; } 23.3334% { translate: -0.711vw 19.6vh; } 26.6666% { translate: -1.062vw 22.4vh; } 30% { translate: -1.512vw 25.2vh; } 33.3334% { translate: -2.074vw 28vh; } 36.6666% { translate: -2.761vw 30.8vh; } 40% { translate: -3.584vw 33.6vh; } 43.3334% { translate: -4.557vw 36.4vh; } 45% { translate: -5.103vw 37.8vh; } 46.6666% { translate: -5.691vw 39.2vh; } 48.3334% { translate: -6.323vw 40.6vh; } 50% { translate: -7vw 42vh; } 51.6666% { translate: -7.724vw 43.4vh; } 53.3334% { translate: -8.495vw 44.8vh; } 55% { translate: -9.317vw 46.2vh; } 56.6666% { translate: -10.19vw 47.6vh; } 58.3334% { translate: -11.116vw 49vh; } 60% { translate: -12.096vw 50.4vh; } 61.6666% { translate: -13.132vw 51.8vh; } 63.3334% { translate: -14.226vw 53.2vh; } 65% { translate: -15.379vw 54.6vh; } 66.6666% { translate: -16.593vw 56vh; } 68.3334% { translate: -17.868vw 57.4vh; } 70% { translate: -19.208vw 58.8vh; } 71.6666% { translate: -20.613vw 60.2vh; } 73.3334% { translate: -22.085vw 61.6vh; } 75% { translate: -23.625vw 63vh; } 76.6666% { translate: -25.235vw 64.4vh; } 78.3334% { translate: -26.917vw 65.8vh; } 80% { translate: -28.672vw 67.2vh; } 81.6666% { translate: -30.502vw 68.6vh; } 83.3334% { translate: -32.407vw 70vh; } 85% { translate: -34.391vw 71.4vh; } 86.6666% { translate: -36.454vw 72.8vh; } 88.3334% { translate: -38.598vw 74.2vh; } 90% { translate: -40.824vw 75.6vh; } 91.6666% { translate: -43.134vw 77vh; } 93.3334% { translate: -45.53vw 78.4vh; } 95% { translate: -48.013vw 79.8vh; } 96.6666% { translate: -50.584vw 81.2vh; } 98.3334% { translate: -53.247vw 82.6vh; } 100% { translate: -56vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-scale-d { 0% { scale: 1; } 100% { scale: 1.12; } }
+@keyframes hero-span-m-mark-glyph-scale-m { 0% { scale: 1; } 100% { scale: 1.8; } }
+@keyframes hero-span-m-mark-glyph---mark-streak { 0% { --hero-mark-streak: 0; } 0.002% { --hero-mark-streak: 0.0004; } 100% { --hero-mark-streak: 2; } }
+@keyframes hero-span-m-mark-glyph-translate-2 { 0% { translate: 0px 0px; } 20% { translate: -0.517vw 16.8vh; } 23.3334% { translate: -0.822vw 19.6vh; } 26.6666% { translate: -1.226vw 22.4vh; } 30% { translate: -1.746vw 25.2vh; } 33.3334% { translate: -2.395vw 28vh; } 36.6666% { translate: -3.188vw 30.8vh; } 38.3334% { translate: -3.643vw 32.2vh; } 40% { translate: -4.139vw 33.6vh; } 41.6666% { translate: -4.678vw 35vh; } 43.3334% { translate: -5.262vw 36.4vh; } 45% { translate: -5.893vw 37.8vh; } 46.6666% { translate: -6.572vw 39.2vh; } 48.3334% { translate: -7.302vw 40.6vh; } 50% { translate: -8.083vw 42vh; } 51.6666% { translate: -8.919vw 43.4vh; } 53.3334% { translate: -9.81vw 44.8vh; } 55% { translate: -10.759vw 46.2vh; } 56.6666% { translate: -11.767vw 47.6vh; } 58.3334% { translate: -12.836vw 49vh; } 60% { translate: -13.968vw 50.4vh; } 61.6666% { translate: -15.165vw 51.8vh; } 63.3334% { translate: -16.428vw 53.2vh; } 65% { translate: -17.759vw 54.6vh; } 66.6666% { translate: -19.16vw 56vh; } 68.3334% { translate: -20.634vw 57.4vh; } 70% { translate: -22.181vw 58.8vh; } 71.6666% { translate: -23.803vw 60.2vh; } 73.3334% { translate: -25.503vw 61.6vh; } 75% { translate: -27.281vw 63vh; } 76.6666% { translate: -29.141vw 64.4vh; } 78.3334% { translate: -31.083vw 65.8vh; } 80% { translate: -33.109vw 67.2vh; } 81.6666% { translate: -35.222vw 68.6vh; } 83.3334% { translate: -37.423vw 70vh; } 85% { translate: -39.713vw 71.4vh; } 86.6666% { translate: -42.096vw 72.8vh; } 88.3334% { translate: -44.571vw 74.2vh; } 90% { translate: -47.142vw 75.6vh; } 91.6666% { translate: -49.81vw 77vh; } 93.3334% { translate: -52.577vw 78.4vh; } 95% { translate: -55.444vw 79.8vh; } 96.6666% { translate: -58.413vw 81.2vh; } 98.3334% { translate: -61.487vw 82.6vh; } 100% { translate: -64.667vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-3-d { 0% { translate: 0px 0px; } 18.3334% { translate: -0.452vw 15.4vh; } 21.6666% { translate: -0.746vw 18.2vh; } 25% { translate: -1.146vw 21vh; } 28.3334% { translate: -1.668vw 23.8vh; } 31.6666% { translate: -2.329vw 26.6vh; } 33.3334% { translate: -2.716vw 28vh; } 35% { translate: -3.144vw 29.4vh; } 36.6666% { translate: -3.615vw 30.8vh; } 38.3334% { translate: -4.131vw 32.2vh; } 40% { translate: -4.693vw 33.6vh; } 41.6666% { translate: -5.305vw 35vh; } 43.3334% { translate: -5.967vw 36.4vh; } 45% { translate: -6.682vw 37.8vh; } 46.6666% { translate: -7.453vw 39.2vh; } 48.3334% { translate: -8.28vw 40.6vh; } 50% { translate: -9.167vw 42vh; } 51.6666% { translate: -10.114vw 43.4vh; } 53.3334% { translate: -11.125vw 44.8vh; } 55% { translate: -12.201vw 46.2vh; } 56.6666% { translate: -13.344vw 47.6vh; } 58.3334% { translate: -14.556vw 49vh; } 60% { translate: -15.84vw 50.4vh; } 61.6666% { translate: -17.197vw 51.8vh; } 63.3334% { translate: -18.629vw 53.2vh; } 65% { translate: -20.139vw 54.6vh; } 66.6666% { translate: -21.728vw 56vh; } 68.3334% { translate: -23.399vw 57.4vh; } 70% { translate: -25.153vw 58.8vh; } 71.6666% { translate: -26.993vw 60.2vh; } 73.3334% { translate: -28.921vw 61.6vh; } 75% { translate: -30.938vw 63vh; } 76.6666% { translate: -33.046vw 64.4vh; } 78.3334% { translate: -35.249vw 65.8vh; } 80% { translate: -37.547vw 67.2vh; } 81.6666% { translate: -39.942vw 68.6vh; } 83.3334% { translate: -42.438vw 70vh; } 85% { translate: -45.036vw 71.4vh; } 86.6666% { translate: -47.737vw 72.8vh; } 88.3334% { translate: -50.545vw 74.2vh; } 90% { translate: -53.46vw 75.6vh; } 91.6666% { translate: -56.485vw 77vh; } 93.3334% { translate: -59.623vw 78.4vh; } 95% { translate: -62.874vw 79.8vh; } 96.6666% { translate: -66.242vw 81.2vh; } 98.3334% { translate: -69.728vw 82.6vh; } 100% { translate: -73.333vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-3-m { 0% { translate: 0px 0px; } 18.3334% { translate: -0.452vw 15.4vh; } 21.6666% { translate: -0.746vw 18.2vh; } 25% { translate: -1.146vw 21vh; } 28.3334% { translate: -1.668vw 23.8vh; } 31.6666% { translate: -2.329vw 26.6vh; } 33.3334% { translate: -2.716vw 28vh; } 35% { translate: -3.144vw 29.4vh; } 36.6666% { translate: -3.615vw 30.8vh; } 38.3334% { translate: -4.131vw 32.2vh; } 40% { translate: -4.693vw 33.6vh; } 41.6666% { translate: -5.305vw 35vh; } 43.3334% { translate: -5.967vw 36.4vh; } 45% { translate: -6.683vw 37.8vh; } 46.6666% { translate: -7.453vw 39.2vh; } 48.3334% { translate: -8.28vw 40.6vh; } 50% { translate: -9.167vw 42vh; } 51.6666% { translate: -10.114vw 43.4vh; } 53.3334% { translate: -11.125vw 44.8vh; } 55% { translate: -12.201vw 46.2vh; } 56.6666% { translate: -13.344vw 47.6vh; } 58.3334% { translate: -14.556vw 49vh; } 60% { translate: -15.84vw 50.4vh; } 61.6666% { translate: -17.197vw 51.8vh; } 63.3334% { translate: -18.629vw 53.2vh; } 65% { translate: -20.139vw 54.6vh; } 66.6666% { translate: -21.728vw 56vh; } 68.3334% { translate: -23.399vw 57.4vh; } 70% { translate: -25.153vw 58.8vh; } 71.6666% { translate: -26.993vw 60.2vh; } 73.3334% { translate: -28.921vw 61.6vh; } 75% { translate: -30.937vw 63vh; } 76.6666% { translate: -33.046vw 64.4vh; } 78.3334% { translate: -35.249vw 65.8vh; } 80% { translate: -37.547vw 67.2vh; } 81.6666% { translate: -39.942vw 68.6vh; } 83.3334% { translate: -42.438vw 70vh; } 85% { translate: -45.036vw 71.4vh; } 86.6666% { translate: -47.737vw 72.8vh; } 88.3334% { translate: -50.545vw 74.2vh; } 90% { translate: -53.46vw 75.6vh; } 91.6666% { translate: -56.485vw 77vh; } 93.3334% { translate: -59.623vw 78.4vh; } 95% { translate: -62.874vw 79.8vh; } 96.6666% { translate: -66.242vw 81.2vh; } 98.3334% { translate: -69.728vw 82.6vh; } 100% { translate: -73.333vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-4 { 0% { translate: 0px 0px; } 18.3334% { translate: -0.505vw 15.4vh; } 21.6666% { translate: -0.834vw 18.2vh; } 25% { translate: -1.281vw 21vh; } 28.3334% { translate: -1.865vw 23.8vh; } 30% { translate: -2.214vw 25.2vh; } 31.6666% { translate: -2.604vw 26.6vh; } 33.3334% { translate: -3.037vw 28vh; } 35% { translate: -3.516vw 29.4vh; } 36.6666% { translate: -4.042vw 30.8vh; } 38.3334% { translate: -4.619vw 32.2vh; } 40% { translate: -5.248vw 33.6vh; } 41.6666% { translate: -5.932vw 35vh; } 43.3334% { translate: -6.672vw 36.4vh; } 45% { translate: -7.472vw 37.8vh; } 46.6666% { translate: -8.334vw 39.2vh; } 48.3334% { translate: -9.259vw 40.6vh; } 50% { translate: -10.25vw 42vh; } 51.6666% { translate: -11.309vw 43.4vh; } 53.3334% { translate: -12.44vw 44.8vh; } 55% { translate: -13.643vw 46.2vh; } 56.6666% { translate: -14.921vw 47.6vh; } 58.3334% { translate: -16.277vw 49vh; } 60% { translate: -17.712vw 50.4vh; } 61.6666% { translate: -19.229vw 51.8vh; } 63.3334% { translate: -20.831vw 53.2vh; } 65% { translate: -22.519vw 54.6vh; } 66.6666% { translate: -24.296vw 56vh; } 68.3334% { translate: -26.165vw 57.4vh; } 70% { translate: -28.126vw 58.8vh; } 71.6666% { translate: -30.183vw 60.2vh; } 73.3334% { translate: -32.338vw 61.6vh; } 75% { translate: -34.594vw 63vh; } 76.6666% { translate: -36.952vw 64.4vh; } 78.3334% { translate: -39.414vw 65.8vh; } 80% { translate: -41.984vw 67.2vh; } 81.6666% { translate: -44.663vw 68.6vh; } 83.3334% { translate: -47.454vw 70vh; } 85% { translate: -50.358vw 71.4vh; } 86.6666% { translate: -53.379vw 72.8vh; } 88.3334% { translate: -56.518vw 74.2vh; } 90% { translate: -59.778vw 75.6vh; } 91.6666% { translate: -63.161vw 77vh; } 93.3334% { translate: -66.669vw 78.4vh; } 95% { translate: -70.305vw 79.8vh; } 96.6666% { translate: -74.07vw 81.2vh; } 98.3334% { translate: -77.968vw 82.6vh; } 100% { translate: -82vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-5-d { 0% { translate: 0px 0px; } 18.3334% { translate: 0.452vw 15.4vh; } 21.6666% { translate: 0.746vw 18.2vh; } 25% { translate: 1.146vw 21vh; } 28.3334% { translate: 1.668vw 23.8vh; } 31.6666% { translate: 2.329vw 26.6vh; } 33.3334% { translate: 2.716vw 28vh; } 35% { translate: 3.144vw 29.4vh; } 36.6666% { translate: 3.615vw 30.8vh; } 38.3334% { translate: 4.131vw 32.2vh; } 40% { translate: 4.693vw 33.6vh; } 41.6666% { translate: 5.305vw 35vh; } 43.3334% { translate: 5.967vw 36.4vh; } 45% { translate: 6.682vw 37.8vh; } 46.6666% { translate: 7.453vw 39.2vh; } 48.3334% { translate: 8.28vw 40.6vh; } 50% { translate: 9.167vw 42vh; } 51.6666% { translate: 10.114vw 43.4vh; } 53.3334% { translate: 11.125vw 44.8vh; } 55% { translate: 12.201vw 46.2vh; } 56.6666% { translate: 13.344vw 47.6vh; } 58.3334% { translate: 14.556vw 49vh; } 60% { translate: 15.84vw 50.4vh; } 61.6666% { translate: 17.197vw 51.8vh; } 63.3334% { translate: 18.629vw 53.2vh; } 65% { translate: 20.139vw 54.6vh; } 66.6666% { translate: 21.728vw 56vh; } 68.3334% { translate: 23.399vw 57.4vh; } 70% { translate: 25.153vw 58.8vh; } 71.6666% { translate: 26.993vw 60.2vh; } 73.3334% { translate: 28.921vw 61.6vh; } 75% { translate: 30.938vw 63vh; } 76.6666% { translate: 33.046vw 64.4vh; } 78.3334% { translate: 35.249vw 65.8vh; } 80% { translate: 37.547vw 67.2vh; } 81.6666% { translate: 39.942vw 68.6vh; } 83.3334% { translate: 42.438vw 70vh; } 85% { translate: 45.036vw 71.4vh; } 86.6666% { translate: 47.737vw 72.8vh; } 88.3334% { translate: 50.545vw 74.2vh; } 90% { translate: 53.46vw 75.6vh; } 91.6666% { translate: 56.485vw 77vh; } 93.3334% { translate: 59.623vw 78.4vh; } 95% { translate: 62.874vw 79.8vh; } 96.6666% { translate: 66.242vw 81.2vh; } 98.3334% { translate: 69.728vw 82.6vh; } 100% { translate: 73.333vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-5-m { 0% { translate: 0px 0px; } 18.3334% { translate: 0.452vw 15.4vh; } 21.6666% { translate: 0.746vw 18.2vh; } 25% { translate: 1.146vw 21vh; } 28.3334% { translate: 1.668vw 23.8vh; } 31.6666% { translate: 2.329vw 26.6vh; } 33.3334% { translate: 2.716vw 28vh; } 35% { translate: 3.144vw 29.4vh; } 36.6666% { translate: 3.615vw 30.8vh; } 38.3334% { translate: 4.131vw 32.2vh; } 40% { translate: 4.693vw 33.6vh; } 41.6666% { translate: 5.305vw 35vh; } 43.3334% { translate: 5.967vw 36.4vh; } 45% { translate: 6.683vw 37.8vh; } 46.6666% { translate: 7.453vw 39.2vh; } 48.3334% { translate: 8.28vw 40.6vh; } 50% { translate: 9.167vw 42vh; } 51.6666% { translate: 10.114vw 43.4vh; } 53.3334% { translate: 11.125vw 44.8vh; } 55% { translate: 12.201vw 46.2vh; } 56.6666% { translate: 13.344vw 47.6vh; } 58.3334% { translate: 14.556vw 49vh; } 60% { translate: 15.84vw 50.4vh; } 61.6666% { translate: 17.197vw 51.8vh; } 63.3334% { translate: 18.629vw 53.2vh; } 65% { translate: 20.139vw 54.6vh; } 66.6666% { translate: 21.728vw 56vh; } 68.3334% { translate: 23.399vw 57.4vh; } 70% { translate: 25.153vw 58.8vh; } 71.6666% { translate: 26.993vw 60.2vh; } 73.3334% { translate: 28.921vw 61.6vh; } 75% { translate: 30.937vw 63vh; } 76.6666% { translate: 33.046vw 64.4vh; } 78.3334% { translate: 35.249vw 65.8vh; } 80% { translate: 37.547vw 67.2vh; } 81.6666% { translate: 39.942vw 68.6vh; } 83.3334% { translate: 42.438vw 70vh; } 85% { translate: 45.036vw 71.4vh; } 86.6666% { translate: 47.737vw 72.8vh; } 88.3334% { translate: 50.545vw 74.2vh; } 90% { translate: 53.46vw 75.6vh; } 91.6666% { translate: 56.485vw 77vh; } 93.3334% { translate: 59.623vw 78.4vh; } 95% { translate: 62.874vw 79.8vh; } 96.6666% { translate: 66.242vw 81.2vh; } 98.3334% { translate: 69.728vw 82.6vh; } 100% { translate: 73.333vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-6 { 0% { translate: 0px 0px; } 20% { translate: 0.517vw 16.8vh; } 23.3334% { translate: 0.822vw 19.6vh; } 26.6666% { translate: 1.226vw 22.4vh; } 30% { translate: 1.746vw 25.2vh; } 33.3334% { translate: 2.395vw 28vh; } 36.6666% { translate: 3.188vw 30.8vh; } 38.3334% { translate: 3.643vw 32.2vh; } 40% { translate: 4.139vw 33.6vh; } 41.6666% { translate: 4.678vw 35vh; } 43.3334% { translate: 5.262vw 36.4vh; } 45% { translate: 5.893vw 37.8vh; } 46.6666% { translate: 6.572vw 39.2vh; } 48.3334% { translate: 7.302vw 40.6vh; } 50% { translate: 8.083vw 42vh; } 51.6666% { translate: 8.919vw 43.4vh; } 53.3334% { translate: 9.81vw 44.8vh; } 55% { translate: 10.759vw 46.2vh; } 56.6666% { translate: 11.767vw 47.6vh; } 58.3334% { translate: 12.836vw 49vh; } 60% { translate: 13.968vw 50.4vh; } 61.6666% { translate: 15.165vw 51.8vh; } 63.3334% { translate: 16.428vw 53.2vh; } 65% { translate: 17.759vw 54.6vh; } 66.6666% { translate: 19.16vw 56vh; } 68.3334% { translate: 20.634vw 57.4vh; } 70% { translate: 22.181vw 58.8vh; } 71.6666% { translate: 23.803vw 60.2vh; } 73.3334% { translate: 25.503vw 61.6vh; } 75% { translate: 27.281vw 63vh; } 76.6666% { translate: 29.141vw 64.4vh; } 78.3334% { translate: 31.083vw 65.8vh; } 80% { translate: 33.109vw 67.2vh; } 81.6666% { translate: 35.222vw 68.6vh; } 83.3334% { translate: 37.423vw 70vh; } 85% { translate: 39.713vw 71.4vh; } 86.6666% { translate: 42.096vw 72.8vh; } 88.3334% { translate: 44.571vw 74.2vh; } 90% { translate: 47.142vw 75.6vh; } 91.6666% { translate: 49.81vw 77vh; } 93.3334% { translate: 52.577vw 78.4vh; } 95% { translate: 55.444vw 79.8vh; } 96.6666% { translate: 58.413vw 81.2vh; } 98.3334% { translate: 61.487vw 82.6vh; } 100% { translate: 64.667vw 84vh; } }
+@keyframes hero-span-m-mark-glyph-translate-7 { 0% { translate: 0px 0px; } 20% { translate: 0.448vw 16.8vh; } 23.3334% { translate: 0.711vw 19.6vh; } 26.6666% { translate: 1.062vw 22.4vh; } 30% { translate: 1.512vw 25.2vh; } 33.3334% { translate: 2.074vw 28vh; } 36.6666% { translate: 2.761vw 30.8vh; } 40% { translate: 3.584vw 33.6vh; } 43.3334% { translate: 4.557vw 36.4vh; } 45% { translate: 5.103vw 37.8vh; } 46.6666% { translate: 5.691vw 39.2vh; } 48.3334% { translate: 6.323vw 40.6vh; } 50% { translate: 7vw 42vh; } 51.6666% { translate: 7.724vw 43.4vh; } 53.3334% { translate: 8.495vw 44.8vh; } 55% { translate: 9.317vw 46.2vh; } 56.6666% { translate: 10.19vw 47.6vh; } 58.3334% { translate: 11.116vw 49vh; } 60% { translate: 12.096vw 50.4vh; } 61.6666% { translate: 13.132vw 51.8vh; } 63.3334% { translate: 14.226vw 53.2vh; } 65% { translate: 15.379vw 54.6vh; } 66.6666% { translate: 16.593vw 56vh; } 68.3334% { translate: 17.868vw 57.4vh; } 70% { translate: 19.208vw 58.8vh; } 71.6666% { translate: 20.613vw 60.2vh; } 73.3334% { translate: 22.085vw 61.6vh; } 75% { translate: 23.625vw 63vh; } 76.6666% { translate: 25.235vw 64.4vh; } 78.3334% { translate: 26.917vw 65.8vh; } 80% { translate: 28.672vw 67.2vh; } 81.6666% { translate: 30.502vw 68.6vh; } 83.3334% { translate: 32.407vw 70vh; } 85% { translate: 34.391vw 71.4vh; } 86.6666% { translate: 36.454vw 72.8vh; } 88.3334% { translate: 38.598vw 74.2vh; } 90% { translate: 40.824vw 75.6vh; } 91.6666% { translate: 43.134vw 77vh; } 93.3334% { translate: 45.53vw 78.4vh; } 95% { translate: 48.013vw 79.8vh; } 96.6666% { translate: 50.584vw 81.2vh; } 98.3334% { translate: 53.247vw 82.6vh; } 100% { translate: 56vw 84vh; } }
+@keyframes hero-div-hero-push-scale { 0% { scale: 1; } 100% { scale: 1.16; } }
+@media (min-width: 700px) {
+  [data-8b-live] #hero .m-mark > span:nth-of-type(1) { animation-name: hero-span-m-mark-glyph-translate, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(2) { animation-name: hero-span-m-mark-glyph-translate-2, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(3) { animation-name: hero-span-m-mark-glyph-translate-3-d, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(4) { animation-name: hero-span-m-mark-glyph-translate-4, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(5) { animation-name: hero-span-m-mark-glyph-translate-5-d, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(6) { animation-name: hero-span-m-mark-glyph-translate-6, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(7) { animation-name: hero-span-m-mark-glyph-translate-7, hero-span-m-mark-glyph-scale-d, hero-span-m-mark-glyph---mark-streak; }
+}
+@media (max-width: 699px) {
+  [data-8b-live] #hero .m-mark > span:nth-of-type(1) { animation-name: hero-span-m-mark-glyph-translate, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(2) { animation-name: hero-span-m-mark-glyph-translate-2, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(3) { animation-name: hero-span-m-mark-glyph-translate-3-m, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(4) { animation-name: hero-span-m-mark-glyph-translate-4, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(5) { animation-name: hero-span-m-mark-glyph-translate-5-m, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(6) { animation-name: hero-span-m-mark-glyph-translate-6, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+  [data-8b-live] #hero .m-mark > span:nth-of-type(7) { animation-name: hero-span-m-mark-glyph-translate-7, hero-span-m-mark-glyph-scale-m, hero-span-m-mark-glyph---mark-streak; }
+}
+}
+</style>
+<style data-8b-part="scene:manifesto">
+@layer scenes {
+[data-8b-live] { --ease-power1-inout: linear(0, 0.0013, 0.005, 0.0112, 0.02, 0.0313, 0.045, 0.0612, 0.08, 0.1013, 0.125, 0.1512, 0.18, 0.2112, 0.245, 0.2813, 0.32, 0.3613, 0.405, 0.4512, 0.5, 0.5487, 0.595, 0.6388, 0.68, 0.7188, 0.755, 0.7887, 0.82, 0.8488, 0.875, 0.8988, 0.92, 0.9387, 0.955, 0.9688, 0.98, 0.9888, 0.995, 0.9988, 1); }
+[data-8b-live] #manifesto { view-timeline: --manifesto-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #manifesto .manifesto__stack > span:nth-of-type(-n+4) { animation-timeline: --manifesto-t1; animation-timing-function: var(--ease-power1-inout); animation-fill-mode: both; transform: none; }
+[data-8b-live] #manifesto .manifesto__stack > span:nth-of-type(1) { animation-name: manifesto-span-manifesto-line-translate; animation-range: cover 0% cover 72.1443vh; }
+[data-8b-live] #manifesto .manifesto__stack > span:nth-of-type(2) { animation-name: manifesto-span-manifesto-line-translate-2; animation-range: cover 5.9519vh cover 78.0962vh; }
+[data-8b-live] #manifesto .manifesto__stack > span:nth-of-type(3) { animation-name: manifesto-span-manifesto-line-translate; animation-range: cover 11.9038vh cover 84.0481vh; }
+[data-8b-live] #manifesto .manifesto__stack > span:nth-of-type(4) { animation-name: manifesto-span-manifesto-line-translate-2; animation-range: cover 17.8557vh cover 90vh; }
+@keyframes manifesto-span-manifesto-line-translate { 0% { translate: -80% 0px; } 100% { translate: 0px 0px; } }
+@keyframes manifesto-span-manifesto-line-translate-2 { 0% { translate: 80% 0px; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:works">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #works .works__echo { position: absolute; inset: 0; z-index: -1; background: var(--color-2); pointer-events: none; }
+    [data-8b-live] #works .works__echo--2 { background: var(--color-5); }
+  }
+}
+@layer scenes {
+[data-8b-live] #works .m-text-2 { --motion-trail: 0; }
+[data-8b-live] #works .works__bar { top: 52px; }
+[data-8b-live] #works { timeline-scope: --works-t2, --works-t3, --works-t4, --works-t5, --works-t6, --works-t7, --works-t8, --works-t9; view-timeline: --works-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #works .works__grid > li > .works__plate { view-timeline-inset: 0; }
+[data-8b-live] #works .works__grid > li:nth-of-type(1) > .works__plate { view-timeline: --works-t2 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(2) > .works__plate { view-timeline: --works-t3 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(3) > .works__plate { view-timeline: --works-t4 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(4) > .works__plate { view-timeline: --works-t5 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(5) > .works__plate { view-timeline: --works-t6 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(6) > .works__plate { view-timeline: --works-t7 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(8) > .works__plate { view-timeline: --works-t8 block; }
+[data-8b-live] #works .works__grid > li:nth-of-type(7) > .works__plate { view-timeline: --works-t9 block; }
+[data-8b-live] #works .works__grid > li > .works__plate > span:nth-child(-n+2) { animation-range: cover 0% cover 50%; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #works .works__grid > li:nth-of-type(1) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t2; }
+[data-8b-live] #works .works__grid > li:nth-of-type(2) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t3; }
+[data-8b-live] #works .works__grid > li:nth-of-type(3) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t4; }
+[data-8b-live] #works .works__grid > li:nth-of-type(4) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t5; }
+[data-8b-live] #works .works__grid > li:nth-of-type(5) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t6; }
+[data-8b-live] #works .works__grid > li:nth-of-type(6) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t7; }
+[data-8b-live] #works .works__grid > li:nth-of-type(8) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t8; }
+[data-8b-live] #works .works__grid > li:nth-of-type(7) > .works__plate > span:nth-child(-n+2) { animation-timeline: --works-t9; }
+@keyframes works-li-works-card-translate { 0% { translate: 0px 0px; } 100% { translate: 0px -16vh; } }
+@keyframes works-li-works-card-scale { 0% { scale: 1; } 100% { scale: 0.94; } }
+@keyframes works-div-works-plate-span-works-echo-translate-d { 0% { translate: var(--works-div-works-plate-span-works-echo-translate-from, 9.75px) max(-30px, -3.8vh); } 100% { translate: 0px 0px; } }
+@keyframes works-div-works-plate-span-works-echo-translate-m { 0% { translate: 0px max(-30px, -3.8vh); } 100% { translate: 0px 0px; } }
+@keyframes works-div-works-plate-span-works-echo-translate-2-d { 0% { translate: var(--works-div-works-plate-span-works-echo-translate-2-from, 19.5px) max(-60px, -7.6vh); } 100% { translate: 0px 0px; } }
+@keyframes works-div-works-plate-span-works-echo-translate-2-m { 0% { translate: 0px max(-60px, -7.6vh); } 100% { translate: 0px 0px; } }
+@media (min-width: 900px) {
+  [data-8b-live] #works .works__grid > li:nth-of-type(6) { animation-name: works-li-works-card-translate, works-li-works-card-scale; animation-timeline: --works-t1; animation-range: cover calc(100% - 100vh) cover calc(100% - 19.3548vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; transform-origin: 50% 100%; }
+  [data-8b-live] #works .works__grid > li:nth-of-type(7) { animation-name: works-li-works-card-translate, works-li-works-card-scale; animation-timeline: --works-t1; animation-range: cover calc(100% - 90.3226vh) cover calc(100% - 9.6774vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; transform-origin: 50% 100%; }
+  [data-8b-live] #works .works__grid > li:nth-of-type(8) { animation-name: works-li-works-card-translate, works-li-works-card-scale; animation-timeline: --works-t1; animation-range: cover calc(100% - 80.6452vh) cover 100%; animation-timing-function: linear; animation-fill-mode: both; transform: none; transform-origin: 50% 100%; }
+  [data-8b-live] #works .works__grid > li > .works__plate > span:nth-child(2) { animation-name: works-div-works-plate-span-works-echo-translate-d; }
+  [data-8b-live] #works .works__grid > li > .works__plate > span:nth-child(1) { animation-name: works-div-works-plate-span-works-echo-translate-2-d; }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #works .works__grid > li > .works__plate > span:nth-child(2) { animation-name: works-div-works-plate-span-works-echo-translate-m; }
+  [data-8b-live] #works .works__grid > li > .works__plate > span:nth-child(1) { animation-name: works-div-works-plate-span-works-echo-translate-2-m; }
+  [data-8b-live] #works .works__grid > li:last-of-type { animation-name: works-li-works-card-translate, works-li-works-card-scale; animation-timeline: --works-t1; animation-range: cover calc(100% - 100vh) cover 100%; animation-timing-function: linear; animation-fill-mode: both; transform: none; transform-origin: 50% 100%; }
+}
+}
+</style>
+<style data-8b-part="scene:feature">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #feature { height: 190svh; }
+  }
+}
+@layer scenes {
+[data-8b-live] #feature { view-timeline: --feature-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #feature .feature__frame { animation-timeline: --feature-t1; animation-range: cover 0% cover 100vh; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #feature .feature__img { animation-name: feature-img-feature-img-scale, feature-img-feature-img-scale-2; animation-timeline: --feature-t1; animation-range: cover 0% cover 100vh, cover 100vh cover calc(100% - 100vh); animation-timing-function: linear; animation-fill-mode: both, forwards; transform: none; }
+[data-8b-live] #feature .feature__title { animation-name: feature-h2-feature-title-translate; animation-timeline: --feature-t1; animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); animation-fill-mode: both; transform: none; }
+@keyframes feature-div-feature-frame-clippath-d { 0% { clip-path: inset(0% 33.4%); } 99.998% { clip-path: inset(0% 0.0067%); } 100% { clip-path: inset(0%); } }
+@keyframes feature-div-feature-frame-clippath-m { 0% { clip-path: inset(0% 19%); } 99.998% { clip-path: inset(0% 0.0038%); } 100% { clip-path: inset(0%); } }
+@keyframes feature-img-feature-img-scale { 0% { scale: 1.32; } 100% { scale: 1.1; } }
+@keyframes feature-h2-feature-title-translate { 0% { translate: 38% 0px; } 100% { translate: 0px 0px; } }
+@keyframes feature-img-feature-img-scale-2 { 0% { scale: 1.1; } 100% { scale: 1; } }
+@media (min-width: 900px) {
+  [data-8b-live] #feature .feature__frame { animation-name: feature-div-feature-frame-clippath-d; }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #feature .feature__frame { animation-name: feature-div-feature-frame-clippath-m; }
+}
+}
+</style>
+<style data-8b-part="scene:clients">
+@layer scenes {
+[data-8b-live] #clients .clients__track { flex-wrap: nowrap; width: max-content; padding-inline: 0; animation: clients-run 46s linear infinite; }
+[data-8b-live] #clients .clients__row:hover .clients__track,
+[data-8b-live] #clients .clients__row:focus-within .clients__track { animation-play-state: paused; }
+@keyframes clients-run { to { transform: translate3d(-50%, 0, 0); } }
+}
+</style>
+<style data-8b-part="scene:expertise">
+@layer scenes {
+[data-8b-live] #expertise .m-text-2 { --motion-trail: 0; }
+[data-8b-live] #expertise .expertise__rows > li { view-timeline: --expertise-item block; view-timeline-inset: 0; animation-name: expertise-li-expertise-row-opacity; animation-timeline: --expertise-item; animation-range: cover 0% cover 100%; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #expertise .expertise__body { view-timeline: --expertise-t2 block; view-timeline-inset: 0; }
+[data-8b-live] #expertise .expertise__portrait-in { animation-name: expertise-div-expertise-portrait-in-scale, expertise-div-expertise-portrait-in-translate; animation-timeline: --expertise-t2; animation-range: cover 45vh cover calc(100% - 60vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; transform-origin: 62% 38%; }
+@keyframes expertise-li-expertise-row-opacity { 0% { opacity: 0.22; animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0.3333); } 50% { opacity: 1; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); } 100% { opacity: 0.22; } }
+@keyframes expertise-div-expertise-portrait-in-scale { 0% { scale: 1; } 100% { scale: 1.42; } }
+@keyframes expertise-div-expertise-portrait-in-translate { 0% { translate: 0px 0px; } 100% { translate: 0px -6%; } }
+}
+</style>
+<style data-8b-part="scene:method">
+@property --method-pin { syntax: '<number>'; inherits: true; initial-value: 0; }
+@layer scenes {
+[data-8b-live] #method { padding-block: 0; view-timeline: --method-t block; view-timeline-inset: 0; }
+[data-8b-live] #method::after { content: ""; display: block; height: var(--method-distance, 0px); }
+[data-8b-live] #method .method__stage { position: sticky; top: 0; display: flex; flex-direction: column; justify-content: center; min-height: 100svh; padding-block: 76px 28px; }
+[data-8b-live] #method .method__track { display: flex; width: max-content; gap: clamp(20px, 3vw, 44px); margin-top: clamp(22px, 3vh, 40px); animation-name: method-travel; animation-timeline: --method-t; animation-range: cover 100vh cover calc(100vh + max(1px, var(--method-distance, 0px))); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #method .method__frame { width: min(52vw, 92vh); }
+[data-8b-live] #method .method__photo { aspect-ratio: 16 / 9; }
+[data-8b-live] #method .method__stage { animation-name: method-pin; animation-timeline: --method-t; animation-range: cover 100vh cover calc(100vh + max(1px, var(--method-distance, 0px))); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #method .method__photo img { --method-t-in: clamp(0, (var(--method-pin) * var(--method-d, 0) - var(--method-x, 0) + var(--method-w, 1)) / (var(--method-w, 1) / 2), 1); --method-e: calc(1 - (1 - var(--method-t-in)) * (1 - var(--method-t-in))); translate: calc(7% * (1 - var(--method-e))) 0px; scale: calc(1.24 - .24 * var(--method-e)); }
+@keyframes method-travel { 0% { translate: 0px 0px; } 100% { translate: calc(-1 * var(--method-distance, 0px)) 0px; } }
+@keyframes method-pin { 0% { --method-pin: 0; } 100% { --method-pin: 1; } }
+@media (max-width: 860px) {
+  [data-8b-live] #method .method__frame { width: 82vw; }
+}
+}
+</style>
+<style data-8b-part="scene:crew">
+@layer scenes {
+[data-8b-live] #crew .m-text-2 { --motion-trail: 0; }
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #crew .crew__grid { view-timeline: --crew-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #crew .crew__grid > li { animation-timeline: --crew-t1; animation-range: cover calc(18vh + 2.9538vh * var(--i)) cover calc(67.2308vh + 2.9538vh * var(--i)); animation-fill-mode: both; transform: none; }
+@keyframes crew-li-crew-card-translate { 0% { translate: var(--crew-dx, 0px) var(--crew-dy, 0px); } 100% { translate: 0px 0px; } }
+@keyframes crew-li-crew-card-rotate { 0% { rotate: var(--crew-li-crew-card-rotate-from, -3deg); } 100% { rotate: 0deg; } }
+@media (min-width: 861px) {
+  [data-8b-live] #crew .crew__grid > li { animation-name: crew-li-crew-card-translate, crew-li-crew-card-rotate; }
+  [data-8b-live] #crew .crew__grid > li:nth-of-type(1) { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); }
+  [data-8b-live] #crew .crew__grid > li:nth-of-type(2) { animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+  [data-8b-live] #crew .crew__grid > li:is(:nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6)) { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); }
+}
+@media (max-width: 860px) {
+  [data-8b-live] #crew .crew__grid > li { animation-name: crew-li-crew-card-translate, crew-li-crew-card-rotate; animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); }
+}
+}
+</style>
+<style data-8b-part="scene:footer">
+@property --footer-mark-streak { syntax: '<number>'; inherits: true; initial-value: 0; }
+@layer scenes {
+[data-8b-live] #footer { view-timeline: --footer-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #footer .m-mark > span:nth-of-type(-n+7) { animation-timeline: --footer-t1; animation-range: cover 0% cover calc(100% - 100vh); animation-fill-mode: both; transform: none; --mark-streak: var(--footer-mark-streak); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(1) { animation-name: footer-span-m-mark-glyph-translate, footer-span-m-mark-glyph---mark-streak; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(2) { animation-name: footer-span-m-mark-glyph-translate-2, footer-span-m-mark-glyph---mark-streak-2; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(3) { animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(4) { animation-name: footer-span-m-mark-glyph-translate-4, footer-span-m-mark-glyph---mark-streak-4; animation-timing-function: linear, cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(5) { animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(6) { animation-name: footer-span-m-mark-glyph-translate-6, footer-span-m-mark-glyph---mark-streak-2; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #footer .m-mark > span:nth-of-type(7) { animation-name: footer-span-m-mark-glyph-translate-7, footer-span-m-mark-glyph---mark-streak; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+@keyframes footer-span-m-mark-glyph-translate { 0% { translate: -42vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph---mark-streak { 0% { --footer-mark-streak: 2.2; } 100% { --footer-mark-streak: 0; } }
+@keyframes footer-span-m-mark-glyph-translate-2 { 0% { translate: -28vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph---mark-streak-2 { 0% { --footer-mark-streak: 1.866667; } 100% { --footer-mark-streak: 0; } }
+@keyframes footer-span-m-mark-glyph-translate-3-d { 0% { translate: -14vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph-translate-3-m { 0% { translate: -115.902% 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph---mark-streak-3 { 0% { --footer-mark-streak: 1.533333; } 100% { --footer-mark-streak: 0; } }
+@keyframes footer-span-m-mark-glyph-translate-4 { 0% { translate: 0px 0px; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph---mark-streak-4 { 0% { --footer-mark-streak: 1.2; } 100% { --footer-mark-streak: 0; } }
+@keyframes footer-span-m-mark-glyph-translate-5-d { 0% { translate: 14vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph-translate-5-m { 0% { translate: 105.131% 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph-translate-6 { 0% { translate: 28vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes footer-span-m-mark-glyph-translate-7 { 0% { translate: 42vw 0px; } 100% { translate: 0px 0px; } }
+@media (min-width: 861px) {
+  [data-8b-live] #footer .m-mark > span:nth-of-type(3) { animation-name: footer-span-m-mark-glyph-translate-3-d, footer-span-m-mark-glyph---mark-streak-3; }
+  [data-8b-live] #footer .m-mark > span:nth-of-type(5) { animation-name: footer-span-m-mark-glyph-translate-5-d, footer-span-m-mark-glyph---mark-streak-3; }
+}
+@media (max-width: 860px) {
+  [data-8b-live] #footer .m-mark > span:nth-of-type(3) { animation-name: footer-span-m-mark-glyph-translate-3-m, footer-span-m-mark-glyph---mark-streak-3; }
+  [data-8b-live] #footer .m-mark > span:nth-of-type(5) { animation-name: footer-span-m-mark-glyph-translate-5-m, footer-span-m-mark-glyph---mark-streak-3; }
+}
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body class="m-text">
+<!-- navigation: top bar: wordmark, two groups of section links; phone menu overlay with email and phone -->
+<header class="nav" id="navigation" data-8b-section="navigation">
+  <nav class="nav__bar" aria-label="Main">
+    <a class="m-link-2" href="#hero">Sillage</a>
+    <ul class="nav__list">
+      <li><a class="m-link-2" href="#works">Work</a></li>
+      <li><a class="m-link-2" href="#expertise">Expertise</a></li>
+      <li><a class="m-link-2" href="#method">Method</a></li>
+    </ul>
+    <ul class="nav__list nav__list--end">
+      <li><a class="m-link-2" href="#studio">Studio</a></li>
+      <li><a class="m-link-2" href="#crew">People</a></li>
+      <li><a class="m-link-2" href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle m-btn-3" type="button" aria-expanded="false" aria-controls="nav-menu"><span class="m-btn-3__label">Menu</span></button>
+  </nav>
+  <div class="nav__menu" id="nav-menu" hidden>
+    <div class="nav__menu-head">
+      <span class="m-text-3">Sillage</span>
+      <button class="nav__close m-btn-3" type="button"><span class="m-btn-3__label">Close</span></button>
+    </div>
+    <ul class="nav__menu-list">
+      <li><a class="m-link-2" href="#works">Work</a></li>
+      <li><a class="m-link-2" href="#expertise">Expertise</a></li>
+      <li><a class="m-link-2" href="#method">Method</a></li>
+      <li><a class="m-link-2" href="#studio">Studio</a></li>
+      <li><a class="m-link-2" href="#crew">People</a></li>
+      <li><a class="m-link-2" href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__menu-foot">
+      <a data-8b-placeholder="email" class="m-link m-text-3" href="mailto:hello@sillage.example">hello@sillage.example</a>
+      <a data-8b-placeholder="phone" class="m-link m-text-3" href="tel:+33100000000">+33 1 00 00 00 00</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- hero: first screen: width-filling cut wordmark, a ruled info line, a full-bleed campaign photo (demo: SILLAGE) (animation: scene:hero) -->
+<section class="hero" id="hero" data-8b-section="hero">
+  <h1 class="hero__title">
+    <span class="u-hidden">Sillage — creative agency and production house</span>
+    <span class="m-mark" aria-hidden="true" style="--len:7"><span class="m-mark__glyph" style="--hero-i:0"><span class="m-mark__ink" data-glyph="S">S</span></span><span class="m-mark__glyph" style="--hero-i:1"><span class="m-mark__ink" data-glyph="I">I</span></span><span class="m-mark__glyph" style="--hero-i:2"><span class="m-mark__ink" data-glyph="L">L</span></span><span class="m-mark__glyph" style="--hero-i:3"><span class="m-mark__ink" data-glyph="L">L</span></span><span class="m-mark__glyph" style="--hero-i:4"><span class="m-mark__ink" data-glyph="A">A</span></span><span class="m-mark__glyph" style="--hero-i:5"><span class="m-mark__ink" data-glyph="G">G</span></span><span class="m-mark__glyph" style="--hero-i:6"><span class="m-mark__ink" data-glyph="E">E</span></span></span>
+  </h1>
+  <div class="hero__info">
+    <p class="m-text-3">Creative agency + production house</p>
+    <p class="hero__tagline m-text-3">The part of a brand that stays in the room.</p>
+    <a class="hero__go m-link m-text-3" href="#works">See the work</a>
+  </div>
+  <figure class="hero__media">
+    <div class="hero__media-in"><div class="hero__push">
+      <div class="hero__drift">
+        <img src="https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZmFzaGlvbiUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzkxMjA5NDY1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1600" height="1085" alt="A model in a red tailored suit sits with her legs wide against a clear blue sky" fetchpriority="high">
+      </div>
+    </div></div>
+    <figcaption class="hero__caption m-text-3">Halcyon — Red Season, campaign film</figcaption>
+  </figure>
+</section>
+
+<!-- manifesto: four width-filling statement lines, a lead, two paragraphs and a ruled line of six verbs (animation: scene:manifesto) -->
+<section class="manifesto" id="manifesto" data-8b-section="manifesto">
+  <h2 class="manifesto__stack">
+    <span class="manifesto__line m-text-4" style="--len:8">Not what</span>
+    <span class="manifesto__line m-text-4" style="--len:13">a brand says.</span>
+    <span class="manifesto__line m-text-4" style="--len:10">What stays</span>
+    <span class="manifesto__line m-text-4" style="--len:12">in the room.</span>
+  </h2>
+  <div class="manifesto__body">
+    <p class="manifesto__lead m-text-6" data-8b-motion="rise">Sillage is a creative agency and a production house under one roof.</p>
+    <div class="manifesto__copy" data-8b-motion="rise">
+      <p>We write the narrative, cast it, build it, shoot it, finish it and scale it — so the idea that leaves the strategy deck is the same one that reaches every screen, shelf and street.</p>
+      <p>Strategists, producers, editors and retouchers share one floor and one standard of finish. Nothing is lost in a hand-over, because there is almost no hand-over.</p>
+    </div>
+  </div>
+  <p class="manifesto__verbs m-text-3"><span>Write</span><span>Cast</span><span>Build</span><span>Shoot</span><span>Finish</span><span>Scale</span></p>
+</section>
+
+<!-- works: portfolio: a ruled filter bar over an asymmetric grid of eight projects, plus a reel button (animation: scene:works) -->
+<section class="works" id="works" data-8b-section="works">
+  <div class="works__head">
+    <h2 class="m-text-2" data-8b-motion="trail">Selected work</h2>
+    <p class="m-text-7">Eight stories from the last two seasons — campaigns, content factories, films and rooms people walked into.</p>
+  </div>
+  <div class="works__bar" role="group" aria-label="Filter projects by discipline" data-8b-items=":scope > button">
+    <button class="works__cell m-btn-3" type="button" aria-pressed="true" data-filter="all"><span class="m-btn-3__label">All</span></button>
+    <button class="works__cell m-btn-3" type="button" aria-pressed="false" data-filter="campaign"><span class="m-btn-3__label">Campaign</span></button>
+    <button class="works__cell m-btn-3" type="button" aria-pressed="false" data-filter="factory"><span class="m-btn-3__label">Content factory</span></button>
+    <button class="works__cell m-btn-3" type="button" aria-pressed="false" data-filter="film"><span class="m-btn-3__label">Film</span></button>
+    <button class="works__cell m-btn-3" type="button" aria-pressed="false" data-filter="social"><span class="m-btn-3__label">Social</span></button>
+    <button class="works__cell m-btn-3" type="button" aria-pressed="false" data-filter="activation"><span class="m-btn-3__label">Activation</span></button>
+  </div>
+  <p class="works__status u-hidden" aria-live="polite" data-template="Showing {n} of {total} projects"></p>
+  <ul class="works__grid" data-8b-items=":scope > li" data-8b-fixed="8">
+    <li class="works__card" data-tags="campaign" style="--works-div-works-plate-span-works-echo-translate-from: 9.75px; --works-div-works-plate-span-works-echo-translate-2-from: 19.5px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1608721279136-cd41b752fa41?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHBlcmZ1bWUlMjBib3R0bGV8ZW58MXwxfHx8MTc5MTIwOTQ4Mnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2133" alt="A clear perfume bottle glowing blue in front of streaks of pink and violet light" loading="lazy"></div></div>
+      <p class="m-text-3">Campaign</p>
+      <h3 class="m-text-5">Ondine Parfums — Night Bloom</h3>
+    </li>
+    <li class="works__card" data-tags="campaign social" style="--works-div-works-plate-span-works-echo-translate-from: 0px; --works-div-works-plate-span-works-echo-translate-2-from: 0px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1548918901-9b31223c5c3a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c3VuZ2xhc3NlcyUyMGVkaXRvcmlhbHxlbnwxfDF8fHwxNzkxMjA5NTU5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2000" alt="A woman in white cat-eye sunglasses looks up against a teal wall" loading="lazy"></div></div>
+      <p class="m-text-3">Campaign, social</p>
+      <h3 class="m-text-5">Halcyon Eyewear — White Noise</h3>
+    </li>
+    <li class="works__card" data-tags="factory" style="--works-div-works-plate-span-works-echo-translate-from: -9.75px; --works-div-works-plate-span-works-echo-translate-2-from: -19.5px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1611826585949-b0ccabd2c1a4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8YmVhdXR5JTIwbWFrZXVwJTIwcG9ydHJhaXR8ZW58MXwxfHx8MTc5MTIwOTQ4M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2400" alt="Close-up beauty portrait with a graphic winged liner and gloss lips under a black hat" loading="lazy"></div></div>
+      <p class="m-text-3">Content factory</p>
+      <h3 class="m-text-5">Maison Orrel — Hard Line looks</h3>
+    </li>
+    <li class="works__card" data-tags="film" style="--works-div-works-plate-span-works-echo-translate-from: 4.88px; --works-div-works-plate-span-works-echo-translate-2-from: 9.75px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1568251478083-32c27296c2c2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGF1dGUlMjBjb3V0dXJlJTIwbW9kZWx8ZW58MXwwfHx8MTc5MTIwOTQ2NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" width="1600" height="1102" alt="A model with crossed arms in a sculptural black leather dress with huge puffed sleeves" loading="lazy"></div></div>
+      <p class="m-text-3">Film</p>
+      <h3 class="m-text-5">Atelier Vauque — Volume Studies</h3>
+    </li>
+    <li class="works__card" data-tags="activation" style="--works-div-works-plate-span-works-echo-translate-from: -9.75px; --works-div-works-plate-span-works-echo-translate-2-from: -19.5px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1788499584620-0dc091a25743?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8amV3ZWxyeSUyMGVkaXRvcmlhbHxlbnwxfDF8fHwxNzkxMjA5NTAyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2400" alt="A woman covers her face with a hand wearing a large silver beaded ring" loading="lazy"></div></div>
+      <p class="m-text-3">Activation</p>
+      <h3 class="m-text-5">Northe Joaillerie — Ten Rings</h3>
+    </li>
+    <li class="works__card" data-tags="factory" style="--works-div-works-plate-span-works-echo-translate-from: 9.75px; --works-div-works-plate-span-works-echo-translate-2-from: 19.5px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1733660227163-01bc46e0d7d7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8cGVyZnVtZSUyMGJvdHRsZXxlbnwxfDF8fHwxNzkxMjA5NDgyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2843" alt="A round amber perfume bottle with a gold cap resting on folds of champagne satin" loading="lazy"></div></div>
+      <p class="m-text-3">Content factory</p>
+      <h3 class="m-text-5">Lumen &amp; Ash — Gilt</h3>
+    </li>
+    <li class="works__card" data-tags="film campaign" style="--works-div-works-plate-span-works-echo-translate-from: 0px; --works-div-works-plate-span-works-echo-translate-2-from: 0px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1788999423880-6e271d7323d3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGFuZGJhZyUyMHN0dWRpb3xlbnwxfDF8fHwxNzkxMjA5NTAzfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2843" alt="A woman in a brown wool suit sits on a bench against a riveted copper wall holding a dark handbag" loading="lazy"></div></div>
+      <p class="m-text-3">Film, campaign</p>
+      <h3 class="m-text-5">Casa Albar — Copper Line</h3>
+    </li>
+    <li class="works__card" data-tags="social activation" style="--works-div-works-plate-span-works-echo-translate-from: -9.75px; --works-div-works-plate-span-works-echo-translate-2-from: -19.5px">
+      <div class="works__plate"><div class="works__frame"><img src="https://images.unsplash.com/photo-1664076423411-e570cfdfcbed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c3VuZ2xhc3NlcyUyMGVkaXRvcmlhbHxlbnwxfDF8fHwxNzkxMjA5NTU5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2844" alt="A woman in long black gloves adjusts small black sunglasses, red lips and hoop earrings" loading="lazy"></div></div>
+      <p class="m-text-3">Social, activation</p>
+      <h3 class="m-text-5">Kestrel — Hands On</h3>
+    </li>
+  </ul>
+  <div class="works__more"><a data-8b-placeholder="email" class="m-btn" href="mailto:hello@sillage.example?subject=Full%20reel"><span class="m-btn__label">Request the full reel</span></a></div>
+</section>
+
+<!-- feature: one featured project on a full-screen stage: tags, giant title, client line, credits, button (demo: The Amber Hour) (animation: scene:feature) -->
+<section class="feature" id="feature" data-8b-section="feature">
+  <div class="feature__stage">
+    <div class="feature__frame"><img class="feature__img" src="https://images.unsplash.com/photo-1779398261180-9a8568c5a426?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8b3JhbmdlJTIwZmFzaGlvbiUyMGVkaXRvcmlhbHxlbnwxfDB8fHwxNzkxMjA5NTIyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" width="1600" height="1067" alt="Two models lie head to head in warm orange light, faces close, with glowing pink make-up" loading="lazy"></div>
+    <div class="feature__copy">
+      <p class="feature__tags m-text-3">Campaign · Film · Content factory</p>
+      <div class="feature__titlebox"><h2 class="feature__title m-text-4" style="--len:14">The Amber Hour</h2></div>
+      <p class="feature__client m-text-5">Ondine Parfums — a summer fragrance launch told in one warm hour of light</p>
+      <ul class="feature__credits m-text-3" data-8b-items=":scope > li">
+        <li>Narrative, casting and art direction</li>
+        <li>Two shoot days at Studio Sillage</li>
+        <li>212 assets for 14 markets</li>
+        <li>Edit, colour, 3D and retouch in-house</li>
+      </ul>
+      <a data-8b-placeholder="email" class="feature__cta m-btn-2" href="mailto:hello@sillage.example?subject=The%20Amber%20Hour"><span class="m-btn-2__label">Request the case</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- clients: a looping row of client names set in the wordmark face (animation: scene:clients) -->
+<section class="clients" id="clients" data-8b-section="clients">
+  <div class="clients__head">
+    <h2 class="m-text-2" data-8b-motion="trail">Houses we keep company with</h2>
+    <p class="m-text-7">Fragrance, beauty, jewellery, fashion and watchmaking houses — some for one launch, most for years.</p>
+  </div>
+  <div class="clients__row">
+    <ul class="clients__track" aria-label="Clients" data-8b-items=":scope > li" data-row-loop>
+      <li class="clients__name m-text-4">Ondine Parfums</li>
+      <li class="clients__name m-text-4">Halcyon</li>
+      <li class="clients__name m-text-4">Maison Orrel</li>
+      <li class="clients__name m-text-4">Atelier Vauque</li>
+      <li class="clients__name m-text-4">Northe</li>
+      <li class="clients__name m-text-4">Lumen &amp; Ash</li>
+      <li class="clients__name m-text-4">Brunner Genève</li>
+      <li class="clients__name m-text-4">Casa Albar</li>
+      <li class="clients__name m-text-4">Kestrel</li>
+      <li class="clients__name m-text-4">Vellum</li>
+    </ul>
+  </div>
+</section>
+
+<!-- expertise: dark section: a portrait and five ruled service rows, each with a title and tags (animation: scene:expertise) -->
+<section class="expertise" id="expertise" data-8b-section="expertise">
+  <div class="expertise__head">
+    <h2 class="m-text-2" data-8b-motion="trail">Five rooms. One roof.</h2>
+    <p class="m-text-6" data-8b-motion="rise">From the first strategy line to the last retouched frame, every discipline works on the same floor — so nothing is lost between the brief and the screen.</p>
+  </div>
+  <div class="expertise__body">
+    <figure class="expertise__portrait"><div class="expertise__portrait-in"><img src="https://images.unsplash.com/photo-1618566105831-d604c45a7316?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHByb2ZpbGUlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxMjA5NTA0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="1600" height="2133" alt="Black and white profile of a man with curly hair looking up out of deep shadow" loading="lazy"></div></figure>
+    <ol class="expertise__rows" data-8b-items=":scope > li">
+      <li class="expertise__row">
+        <h3 class="m-text-5">Narrative &amp; brand</h3>
+        <ul class="expertise__tags m-text-3"><li>Brand platforms</li><li>Creative strategy</li><li>Campaign concepts</li><li>Launch planning</li><li>Tone of voice</li></ul>
+      </li>
+      <li class="expertise__row">
+        <h3 class="m-text-5">Social &amp; culture</h3>
+        <ul class="expertise__tags m-text-3"><li>Social strategy</li><li>Editorial calendars</li><li>Talent &amp; creators</li><li>Cultural partnerships</li><li>Community content</li></ul>
+      </li>
+      <li class="expertise__row">
+        <h3 class="m-text-5">Production &amp; content factory</h3>
+        <ul class="expertise__tags m-text-3"><li>Film &amp; photo production</li><li>Content factories</li><li>Live production</li><li>AI-assisted workflows</li><li>Casting</li></ul>
+      </li>
+      <li class="expertise__row">
+        <h3 class="m-text-5">Post, 3D &amp; motion</h3>
+        <ul class="expertise__tags m-text-3"><li>Edit &amp; finishing</li><li>3D product imagery</li><li>Motion design</li><li>Colour grading</li><li>Beauty retouch</li></ul>
+      </li>
+      <li class="expertise__row">
+        <h3 class="m-text-5">Studio &amp; set</h3>
+        <ul class="expertise__tags m-text-3"><li>Cyclorama stage</li><li>Set design &amp; build</li><li>Grip &amp; lighting</li><li>Rooftop daylight</li><li>Crew catering</li></ul>
+      </li>
+    </ol>
+  </div>
+  <div class="expertise__more"><a class="m-btn-2" href="#contact"><span class="m-btn-2__label">Brief the house</span></a></div>
+</section>
+
+<!-- method: four numbered process steps as a horizontal storyboard (demo: Write, Build, Shoot, Finish & scale) (animation: scene:method) -->
+<section class="method" id="method" data-8b-section="method">
+  <div class="method__stage">
+    <div class="method__head">
+      <h2 class="m-text-2" data-8b-motion="trail">From first line to last frame</h2>
+      <p class="m-text-7">Four stages, one crew. The people who write the sentence a campaign has to earn are the ones who sign off its last asset.</p>
+    </div>
+    <ol class="method__track" data-8b-items=":scope > li">
+      <li class="method__frame">
+        <figure class="method__photo"><img src="https://images.unsplash.com/photo-1613574558969-4ed93cabbb0a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmFicmljJTIwc3dhdGNoZXMlMjBhdGVsaWVyfGVufDF8MHx8fDE3OTEyMDk1NDF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=780&amp;q=60" width="1600" height="1068" alt="Swatches of black mesh and red ribbed fabric laid on paper in soft daylight" loading="lazy"></figure>
+        <div class="method__text">
+          <p class="method__step m-text-4">1</p>
+          <h3 class="m-text-5">Write</h3>
+          <p class="m-text-7">We start with what should remain: one sentence the whole campaign has to earn. Strategy, concept, casting and the material board are written against it.</p>
+        </div>
+      </li>
+      <li class="method__frame">
+        <figure class="method__photo"><img src="https://images.unsplash.com/photo-1603425013520-e0b30e6e37dc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cGhvdG9ncmFwaHklMjBzdHVkaW8lMjBlbXB0eXxlbnwxfDB8fHwxNzkxMjA5NTQwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=780&amp;q=60" width="1600" height="1067" alt="A studio set with a grey paper backdrop, softboxes and light stands on a wooden floor" loading="lazy"></figure>
+        <div class="method__text">
+          <p class="method__step m-text-4">2</p>
+          <h3 class="m-text-5">Build</h3>
+          <p class="m-text-7">Sets, wardrobe and light are designed in our own workshop, tested on the stage and signed off before a single crew call.</p>
+        </div>
+      </li>
+      <li class="method__frame">
+        <figure class="method__photo"><img src="https://images.unsplash.com/photo-1580746353679-aa5dee1ac3e3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8ZmlsbSUyMHNldCUyMGxpZ2h0aW5nJTIwY3Jld3xlbnwxfDB8fHwxNzkxMjA5NTIzfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=60" width="1600" height="1067" alt="A camera operator carries a stabilised camera through hazy beams of light on set" loading="lazy"></figure>
+        <div class="method__text">
+          <p class="method__step m-text-4">3</p>
+          <h3 class="m-text-5">Shoot</h3>
+          <p class="m-text-7">One crew captures the film, the stills and the social cut-downs on the same days, under the same light, with the same eye.</p>
+        </div>
+      </li>
+      <li class="method__frame">
+        <figure class="method__photo"><img src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8dmlkZW8lMjBlZGl0aW5nJTIwbW9uaXRvciUyMGRhcmt8ZW58MXwwfHx8MTc5MTIwOTU0MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=60" width="1600" height="1067" alt="A colour grading console with four glowing colour wheels in a dark suite" loading="lazy"></figure>
+        <div class="method__text">
+          <p class="method__step m-text-4">4</p>
+          <h3 class="m-text-5">Finish &amp; scale</h3>
+          <p class="m-text-7">Edit, colour, retouch and 3D happen down the corridor; the content factory then adapts every asset for every market, format and shelf.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- studio: a space for hire: large photo, text, five ruled spec rows and a booking button -->
+<section class="studio" id="studio" data-8b-section="studio">
+  <figure class="studio__photo" data-8b-motion="cut"><img src="https://images.unsplash.com/photo-1617463874381-85b513b3e991?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGhvdG9ncmFwaHklMjBzdHVkaW8lMjBlbXB0eXxlbnwxfDB8fHwxNzkxMjA5NTQwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=60" width="1600" height="1067" alt="A white photo studio with an infinity cove, two softboxes on stands and a desk by the window" loading="lazy"></figure>
+  <div class="studio__text">
+    <h2 class="m-text-2" data-8b-motion="trail">Studio Sillage, Montreuil</h2>
+    <p data-8b-motion="rise">Six hundred square metres of stage, workshop and rooftop, ten minutes from Paris. Our own productions shoot here — so can yours.</p>
+    <dl class="studio__specs" data-8b-items=":scope > div">
+      <div class="studio__spec" data-8b-motion="rule"><dt class="m-text-3">Cyclorama</dt><dd class="m-text-7">12 × 8 m infinity cove, 6 m clear height, white or pre-lit colour</dd></div>
+      <div class="studio__spec" data-8b-motion="rule"><dt class="m-text-3">Rooftop</dt><dd class="m-text-7">140 m² of north-facing daylight above the city</dd></div>
+      <div class="studio__spec" data-8b-motion="rule"><dt class="m-text-3">Workshop</dt><dd class="m-text-7">Set build, paint shop and prop storage on the same floor</dd></div>
+      <div class="studio__spec" data-8b-motion="rule"><dt class="m-text-3">Grip &amp; light</dt><dd class="m-text-7">A full house kit with in-house technicians</dd></div>
+      <div class="studio__spec" data-8b-motion="rule"><dt class="m-text-3">Kitchen</dt><dd class="m-text-7">Chef-led catering for crews of up to sixty</dd></div>
+    </dl>
+    <p><a data-8b-placeholder="email" class="m-btn" href="mailto:studio@sillage.example?subject=Studio%20booking"><span class="m-btn__label">Book the studio</span></a></p>
+  </div>
+</section>
+
+<!-- crew: team: six portraits with names and roles, and a hiring line (animation: scene:crew) -->
+<section class="crew" id="crew" data-8b-section="crew">
+  <div class="crew__head">
+    <h2 class="m-text-2" data-8b-motion="trail">The people in the room</h2>
+    <p class="m-text-7">Forty-two strategists, producers, editors and retouchers on one floor. We hire for taste, and for patience.</p>
+  </div>
+  <ul class="crew__grid" data-8b-items=":scope > li" data-8b-fixed="6">
+    <li class="crew__card" style="--crew-li-crew-card-rotate-from: -3deg">
+      <figure class="crew__photo"><img src="https://images.unsplash.com/photo-1681455098628-ba27cc8a1b29?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bW9ub2Nocm9tZSUyMHBvcnRyYWl0JTIwd29tYW58ZW58MXwxfHx8MTc5MTIwOTU1OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;q=60" width="1600" height="2400" alt="Black and white portrait of a woman with shoulder-length hair in a dark coat" loading="lazy"></figure>
+      <h3 class="m-text-5">Élise Marchetti</h3>
+      <p class="m-text-7">Founder, executive creative director</p>
+    </li>
+    <li class="crew__card" style="--crew-li-crew-card-rotate-from: 4.4deg">
+      <figure class="crew__photo"><img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bW9ub2Nocm9tZSUyMHBvcnRyYWl0JTIwbWFufGVufDF8MXx8fDE3OTEyMDk1NTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=420&amp;q=60" width="1600" height="2400" alt="Black and white portrait of a young man with a shaved head in a dark crew-neck" loading="lazy"></figure>
+      <h3 class="m-text-5">Tomasz Wren</h3>
+      <p class="m-text-7">Head of production</p>
+    </li>
+    <li class="crew__card" style="--crew-li-crew-card-rotate-from: -5.8deg">
+      <figure class="crew__photo"><img src="https://images.unsplash.com/photo-1639572495229-92f12489b356?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8bW9ub2Nocm9tZSUyMHBvcnRyYWl0JTIwd29tYW58ZW58MXwxfHx8MTc5MTIwOTU1OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=440&amp;q=60" width="1600" height="2400" alt="Black and white portrait of a woman with an afro looking back over her bare shoulder" loading="lazy"></figure>
+      <h3 class="m-text-5">Adaeze Okafor</h3>
+      <p class="m-text-7">Social &amp; culture director</p>
+    </li>
+    <li class="crew__card" style="--crew-li-crew-card-rotate-from: 7.2deg">
+      <figure class="crew__photo"><img src="https://images.unsplash.com/photo-1701721865389-9935778b40e3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9ub2Nocm9tZSUyMHBvcnRyYWl0JTIwbWFufGVufDF8MXx8fDE3OTEyMDk1NTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=450&amp;q=60" width="1600" height="2400" alt="Black and white portrait of an older man with a white moustache in a work shirt" loading="lazy"></figure>
+      <h3 class="m-text-5">Henri Paz</h3>
+      <p class="m-text-7">Director of photography</p>
+    </li>
+    <li class="crew__card" style="--crew-li-crew-card-rotate-from: -8.6deg">
+      <figure class="crew__photo"><img src="https://images.unsplash.com/photo-1610804860619-b80031503734?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bW9ub2Nocm9tZSUyMHBvcnRyYWl0JTIwd29tYW58ZW58MXwxfHx8MTc5MTIwOTU1OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=460&amp;q=60" width="1600" height="2000" alt="Black and white portrait of a woman with long dark hair turning toward the light" loading="lazy"></figure>
+      <h3 class="m-text-5">Noor Haddad</h3>
+      <p class="m-text-7">Head of post-production &amp; 3D</p>
+    </li>
+    <li class="crew__card" style="--crew-li-crew-card-rotate-from: 10deg">
+      <figure class="crew__photo"><img src="https://images.unsplash.com/photo-1609797623185-9a0d472c827f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bW9ub2Nocm9tZSUyMHBvcnRyYWl0JTIwbWFufGVufDF8MXx8fDE3OTEyMDk1NTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=470&amp;q=60" width="1600" height="2223" alt="Black and white profile of a man in a leather jacket in a dark stairwell" loading="lazy"></figure>
+      <h3 class="m-text-5">Julien Ferreira</h3>
+      <p class="m-text-7">Studio manager</p>
+    </li>
+  </ul>
+  <p class="crew__more m-text-3">We are hiring producers, retouchers and strategists — <a data-8b-placeholder="email" class="m-link" href="mailto:jobs@sillage.example">jobs@sillage.example</a></p>
+</section>
+
+<!-- contact: contact: the main email as a width-filling line, four ruled desks with names, emails, phones, addresses -->
+<section class="contact" id="contact" data-8b-section="contact">
+  <h2 class="m-text-2" data-8b-motion="trail">Tell us what should stay</h2>
+  <p class="contact__mailbox" data-8b-motion="rise"><a data-8b-placeholder="email" class="contact__mail m-text-4 m-link" href="mailto:hello@sillage.example" style="--len:21">hello@sillage.example</a></p>
+  <div class="contact__desks" data-8b-items=":scope > div">
+    <div class="contact__desk" data-8b-motion="rule">
+      <h3 class="m-text-3">New business</h3>
+      <p>Clara Vidal, managing partner</p>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:hello@sillage.example">hello@sillage.example</a>
+      <a data-8b-placeholder="phone" class="m-link" href="tel:+33100000000">+33 1 00 00 00 00</a>
+    </div>
+    <div class="contact__desk" data-8b-motion="rule">
+      <h3 class="m-text-3">Studio bookings</h3>
+      <p>Julien Ferreira, studio manager</p>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:studio@sillage.example">studio@sillage.example</a>
+      <a data-8b-placeholder="phone" class="m-link" href="tel:+33100000001">+33 1 00 00 00 01</a>
+    </div>
+    <div class="contact__desk" data-8b-motion="rule">
+      <h3 class="m-text-3">Careers &amp; press</h3>
+      <p>Portfolios and press requests are read every Friday.</p>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:jobs@sillage.example">jobs@sillage.example</a>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:press@sillage.example">press@sillage.example</a>
+    </div>
+    <div class="contact__desk" data-8b-motion="rule">
+      <h3 class="m-text-3">Visit</h3>
+      <p>Office — 1 rue de l’Exemple, 75003 Paris</p>
+      <p>Studio — 2 rue de l’Exemple, 93100 Montreuil</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- footer: the SILLAGE wordmark again, copyright, social links and the Design: 8B credit (animation: scene:footer) -->
+<footer class="footer" id="footer" data-8b-section="footer">
+  <p class="footer__mark">
+    <span class="u-hidden">Sillage</span>
+    <span class="m-mark" aria-hidden="true" style="--len:7"><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="S">S</span></span><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="I">I</span></span><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="L">L</span></span><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="L">L</span></span><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="A">A</span></span><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="G">G</span></span><span class="m-mark__glyph"><span class="m-mark__ink" data-glyph="E">E</span></span></span>
+  </p>
+  <div class="footer__row">
+    <p class="m-text-3">© 2026 Sillage. Paris — Montreuil. · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    <ul class="footer__links m-text-3">
+      <li><a data-8b-placeholder="social" class="m-link" href="https://www.instagram.com/">Instagram</a></li>
+      <li><a data-8b-placeholder="social" class="m-link" href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><a data-8b-placeholder="social" class="m-link" href="https://vimeo.com/">Vimeo</a></li>
+      <li><a class="m-link" href="#hero">Back to top</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:navigation">
+(() => {
+  const root = document.getElementById('navigation');
+  const toggle = root.querySelector('.nav__toggle');
+  const menu = root.querySelector('.nav__menu');
+  const close = root.querySelector('.nav__close');
+  const setOpen = open => {
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.motionKit?.wheel?.stop(); close.focus({ preventScroll: true }); }
+    else { window.motionKit?.wheel?.start(); toggle.focus({ preventScroll: true }); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setOpen(false); });
+  const solid = () => root.toggleAttribute('data-solid', scrollY > 24);
+  addEventListener('scroll', solid, { passive: true });
+  solid();
+})();
+</script>
+<script data-8b-part="section-script:hero">
+(() => {
+  const hero = document.getElementById('hero');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => hero.toggleAttribute('data-paused', !entry.isIntersecting)).observe(hero);
+})();
+</script>
+<script data-8b-part="section-script:works">
+(() => {
+  const section = document.getElementById('works');
+  const cells = [...section.querySelectorAll('.works__cell')];
+  const cards = [...section.querySelectorAll('.works__card')];
+  const status = section.querySelector('.works__status');
+  cells.forEach(cell => cell.addEventListener('click', () => {
+    const key = cell.dataset.filter;
+    let shown = 0;
+    cells.forEach(other => other.setAttribute('aria-pressed', String(other === cell)));
+    cards.forEach(card => {
+      const on = key === 'all' || (card.dataset.tags || '').split(' ').includes(key);
+      card.toggleAttribute('data-muted', !on);
+      if (on) shown += 1;
+    });
+    if (status) status.textContent = (status.dataset.template || '').replace('{n}', shown).replace('{total}', cards.length);
+  }));
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+</script>
+<script data-8b-part="scene-script:works">
+motionKit.scene("works", () => {
+  const make = (tag, attrs, ...children) => { const el = tag.startsWith('svg:') ? document.createElementNS('http://www.w3.org/2000/svg', tag.slice(4)) : document.createElement(tag); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); el.append(...children); return el; };
+  document.querySelector("#works .works__grid > li:nth-of-type(1) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(2) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(3) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(4) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(5) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(6) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(7) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+  document.querySelector("#works .works__grid > li:nth-of-type(8) > .works__plate > .works__frame").before(...Array.from({ length: 2 }, (_, i) => make("span", { class: `works__echo works__echo-${-2 + i}`, "aria-hidden": "true" })));
+});
+</script>
+<script data-8b-part="scene-script:clients">
+motionKit.scene('clients', () => {
+  const track = document.querySelector('#clients [data-row-loop]');
+  if (!track || !track.children.length) throw new Error('clients: row missing');
+  [...track.children].forEach(item => {
+    const copy = item.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    track.append(copy);
+  });
+});
+</script>
+<script data-8b-part="scene-script:method">
+motionKit.scene('method', () => {
+  const section = document.getElementById('method');
+  const track = section.querySelector('.method__track');
+  const frames = [...track.querySelectorAll('.method__frame')];
+  if (!section.querySelector('.method__stage') || !frames.length) throw new Error('method: stage or frames missing');
+  motionKit.measure(() => {
+    const room = section.clientWidth - parseFloat(getComputedStyle(section).paddingLeft) * 2;
+    const distance = Math.max(0, track.scrollWidth - room);
+    motionKit.set(section, { '--method-distance': `${distance}px`, '--method-d': distance, '--method-w': innerWidth });
+    frames.forEach(frame => motionKit.set(frame, { '--method-x': motionKit.box(frame).x }));
+  });
+});
+</script>
+<script data-8b-part="scene-script:crew">
+motionKit.scene('crew', () => {
+  const grid = document.querySelector('#crew .crew__grid');
+  const cards = [...grid.querySelectorAll('.crew__card')];
+  if (!cards.length) throw new Error('crew: cards missing');
+  motionKit.measure(() => {
+    const box = motionKit.box(grid), first = motionKit.box(cards[0]);
+    const x = box.x + box.w / 2, y = first.y + first.h * .45;
+    cards.forEach(card => {
+      const own = motionKit.box(card);
+      motionKit.set(card, { '--crew-dx': `${x - own.x - own.w / 2}px`, '--crew-dy': `${y - own.y - own.h * .45}px` });
+    });
+  });
+});
+</script>
+</body>
+</html>

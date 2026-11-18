@@ -1,0 +1,43 @@
+{
+  "slug": "hopla",
+  "name": "Hopla",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/trampoline-park-website-template",
+  "demo": "https://8b.com/templates/hopla/demo.html",
+  "design_md_url": "https://8b.com/templates/hopla/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "4c467f67e0ebc64762909aca2515a3026c257388",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "de72e851fd0bfb9e91a169af2109dfb57936c9d5",
+    "README.md": "ed03b239db69c4a0b7462129296fe85a1c31f0c1",
+    "AGENTS.md": "13fac6fa0cacafc68bfa639f460f8dd928a29341",
+    "index.html": "db2b5608dcc9a9111c21f049e6ce1f58f2d3e561",
+    "index.gsap.html": "22a0dd34d783741226e93fcffe3d67d6cf619ab7"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "b84c5a559c8625f4b0b973025f0ed17b1044e2bd66f15b327054b3bf31c4d8a3",
+    "README.md": "04afc21d11b384f28610073b5e7938745d5a0bca0a019d5c0fb053700f231fbc",
+    "AGENTS.md": "afe48f81bd65256cf79924008296c03328544c6052c921f61be6e08ef195cb3f",
+    "index.html": "9c3ddea9aaf53849ab69653624ce2c3757f42c63441af551f49a8b196e37f1a2",
+    "index.gsap.html": "5e1c4e6fa45d52b559db635dc6492c0684b4b25b0c7390958d0a84f663cc611a"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

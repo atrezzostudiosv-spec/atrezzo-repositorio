@@ -1,0 +1,44 @@
+{
+  "slug": "okapi",
+  "name": "Okapi Bakehouse",
+  "categories": [
+    "Food and drink",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/bakery-website-template",
+  "demo": "https://8b.com/templates/okapi/demo.html",
+  "design_md_url": "https://8b.com/templates/okapi/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "1b287f8345e80024115f9e741c5fcdcdde2f2523",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "ab47c5482b3c5cd0db0a029edeb55491a9477e9c",
+    "README.md": "c7dda41f5baca5278f8df21bedd11aa9617f48f3",
+    "AGENTS.md": "3deebd36ab5edcbb1c7fe2e39aec00b401e22619",
+    "index.html": "83ff08cce2d02c30385ee729f5a999db90127b42",
+    "index.gsap.html": "2b58622546b5bda42feb1e00ee6df638c8847586"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c5af0672f8861552657f6efce30493320a0bb09a5f53e0055e6bd4a67df97adb",
+    "README.md": "ecd46a5b57461281fd76bfcf874a60c8bb8cb92d9f95368aa7217228b36d5809",
+    "AGENTS.md": "de4a49b2f0b5bb93c2bebc5c1a620a197890e8f367b6af115f648566b79bf78f",
+    "index.html": "676706b871172bc2c71f0956b46df2688dc6eb46359c9fd00143afe705f17d78",
+    "index.gsap.html": "fda15f5d94b34de8e9738ddbe2de7b5f5736a14f2ba0de55ff40fe4d71c631bd"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

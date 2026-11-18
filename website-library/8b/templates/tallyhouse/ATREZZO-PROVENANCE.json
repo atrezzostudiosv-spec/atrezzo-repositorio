@@ -1,0 +1,44 @@
+{
+  "slug": "tallyhouse",
+  "name": "Tallyhouse",
+  "categories": [
+    "Finance",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/accountant-website-template",
+  "demo": "https://8b.com/templates/tallyhouse/demo.html",
+  "design_md_url": "https://8b.com/templates/tallyhouse/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "5eb9700837d44f1b3d2086c64377d708b315afeb",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "8a40a3477efbd37307246e7841f8ae057ce5184c",
+    "README.md": "f7e1656280d9e62f6bf47933a5b31fca7043bac0",
+    "AGENTS.md": "fb20161b013ad5f6752c5fb4a18fbd43eec4475c",
+    "index.html": "ecd976e259b9647517bb1db320c0c3fb875f87b4",
+    "index.gsap.html": "0222b36e9668fe5f4b1c56d8c037b595f07f3482"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "a05fd7a51f04fd906e9d56cf337832df88576747748f2adf53e64c37e9801e56",
+    "README.md": "a5b1c318af4d20ad989abb7d0a2c57cd0ddeaaa524423603a2e7978f82e10e2d",
+    "AGENTS.md": "14c5edc6e76a8cd9f8f3d020f42b3ef4f45b0127709beb643670206af60c5241",
+    "index.html": "130fc4854df507aa2019987df95f02a0fc0418403734442deadb87be8db9940e",
+    "index.gsap.html": "58fc0a472def301312b646077fe25efd471c2f86dc43394ca36e0c86f8a365f8"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

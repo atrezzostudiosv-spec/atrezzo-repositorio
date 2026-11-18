@@ -1,0 +1,43 @@
+{
+  "slug": "dillys",
+  "name": "Dilly's",
+  "categories": [
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/burger-restaurant-website-template",
+  "demo": "https://8b.com/templates/dillys/demo.html",
+  "design_md_url": "https://8b.com/templates/dillys/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "23bdb8c7040c275e650b6ebaf0c9fa1e4fdd1d75",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "0ac058c6cd9d8bd7d33b293f469983265f13c9c7",
+    "README.md": "3b502c6f840fe33091a353b5885ef80a13ddc9c2",
+    "AGENTS.md": "6523f9fea6b1e13452c431807e02800988138964",
+    "index.html": "afdf717a410197e93904d26eb264d0199cc24467",
+    "index.gsap.html": "20e48883c51878028f2ec39ae97d77ff93819737"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "9949dacd7efb19a6bef7bb52136b060514bd40b5ecda457462cd1c069f06572b",
+    "README.md": "07da59cb380be2c5d206ce7775ef00c0943d8d4b463749467998aadf8be25eb3",
+    "AGENTS.md": "fdbc43cc60210149b52f5a6263f8ecb3c2bdceebceb90ca566240c8018419224",
+    "index.html": "a24012d08d2ea19fa2dca4fcb160b63104984555b091878bcb02dec397104577",
+    "index.gsap.html": "88d184285e2023cb56f0a01a3924ebeeb9d74a1b91617ba7b2d0af60a7922428"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

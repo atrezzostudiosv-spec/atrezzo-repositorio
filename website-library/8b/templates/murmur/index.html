@@ -1,0 +1,1478 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/murmur/
+  Source: https://github.com/8bsite/saas-landing-page-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>murmur — one sentence for your shop, every Monday</title>
+<meta name="description" content="murmur listens to your shop's sales, stock, visits and messages all week and sends one plain sentence every Monday: the move worth making. For independent makers and small shops.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="murmur — one sentence for your shop, every Monday">
+<meta property="og:description" content="murmur listens to your shop's sales, stock, visits and messages all week and sends one plain sentence every Monday: the move worth making. For independent makers and small shops.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236e1c1a'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23fee7a6'%3Em%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEVFi3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtmW4XUng.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Gabarito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/gabarito/v9/QGYtz_0dZAGKJJ4t3HtoW4U.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEWli389k.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rethink Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rethinksans/v7/AMOWz4SDuXOMCPfdoglY9JQEVFi3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #6e1c1a;
+  --color-2: #fee7a6;
+  --color-3: #3d2217;
+  --color-4: #8c4f25;
+  --color-5: #bb9657;
+  --color-6: #171616;
+  --font-1: "Gabarito", "Gabarito Fallback", "Arial Black", Arial, sans-serif;
+  --font-2: "Rethink Sans", "Rethink Sans Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 28px;
+  --space-1: clamp(20px, 5vw, 72px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 80.5%; ascent-override: 116.7%; descent-override: 32.3%; line-gap-override: 0%; }
+@font-face { font-family: "Gabarito Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 92.7%; ascent-override: 101.4%; descent-override: 28%; line-gap-override: 0%; }
+@font-face { font-family: "Rethink Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 94.4%; ascent-override: 104.9%; descent-override: 32.8%; line-gap-override: 0%; }
+@font-face { font-family: "Rethink Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 103.3%; ascent-override: 95.8%; descent-override: 30%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-3);
+  font-family: var(--font-2);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  overflow-x: clip;
+}
+h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+strong, b { font-weight: 600; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(38px, 5vw, 76px); font-weight: 800; line-height: 0.98; letter-spacing: -0.025em; text-transform: none; font-style: normal; text-wrap: balance; }
+.m-text-3 { font-family: var(--font-2); font-size: 13px; font-weight: 500; line-height: 1.45; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 26px; font-weight: 700; line-height: 1.12; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-2); font-size: clamp(18px, 1.5vw, 21px); font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 0; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: 0.005em; text-decoration: none; white-space: nowrap; cursor: pointer; transition: color .35s ease; }
+.m-btn::before { content: ""; position: absolute; inset: -2px 0 0; z-index: -1; border-radius: 50% 50% 0 0 / 70% 70% 0 0; background: var(--color-3); transform: translateY(102%); transition: transform .5s cubic-bezier(.2,.7,.2,1), border-radius .5s ease; }
+@media (hover: hover) {
+  .m-btn:hover::before { transform: translateY(0); border-radius: 0; }
+}
+.m-btn:focus-visible { outline: 3px solid var(--color-1); outline-offset: 3px; }
+.m-btn-2 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; border: 0; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: 0.005em; text-decoration: none; white-space: nowrap; cursor: pointer; transition: color .35s ease; }
+.m-btn-2::before { content: ""; position: absolute; inset: -2px 0 0; z-index: -1; border-radius: 50% 50% 0 0 / 70% 70% 0 0; background: var(--color-5); transform: translateY(102%); transition: transform .5s cubic-bezier(.2,.7,.2,1), border-radius .5s ease; }
+@media (hover: hover) {
+  .m-btn-2:hover { color: var(--color-3); }
+  .m-btn-2:hover::before { transform: translateY(0); border-radius: 0; }
+}
+.m-btn-2:focus-visible { outline: 3px solid var(--color-2); outline-offset: 3px; }
+
+.m-link { color: inherit; font-weight: 600; text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-position: 0 100%; background-size: 100% 2px; padding-bottom: 3px; transition: background-size .45s cubic-bezier(.6,0,.2,1), background-position 0s .45s; }
+@media (hover: hover) {
+  .m-link:hover { background-size: 0 2px; background-position: 100% 100%; }
+}
+.m-link:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; border-radius: 4px; }
+
+.m-chip { display: inline-flex; align-items: center; min-height: 38px; padding: 7px 16px; border: 1.5px solid var(--color-3); border-radius: var(--radius-1); background: var(--color-2); color: var(--color-3); font-family: var(--font-2); font-size: 15px; font-weight: 500; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+.m-chip-2 { display: inline-flex; align-items: center; min-height: 38px; padding: 7px 16px; border: 1.5px solid var(--color-1); border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 15px; font-weight: 600; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; white-space: nowrap; }
+
+.m-field { display: block; width: 100%; min-height: 52px; padding: 13px 18px; border: 1.5px solid var(--color-3); border-radius: 18px; background: var(--color-2); color: var(--color-3); font-family: var(--font-2); font-size: 16px; font-weight: 400; line-height: 1.4; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-field:focus-visible { outline: 3px solid var(--color-1); outline-offset: 2px; }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 14px 14px auto; z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 12px; pointer-events: none; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+#navigation[data-hidden] { transform: translateY(calc(-100% - 20px)); }
+#navigation > * { pointer-events: auto; }
+#navigation .nav__brand { border: 2px solid var(--color-2); display: inline-flex; align-items: center; height: 52px; padding: 0 22px; border-radius: var(--radius-1); background: var(--color-1); color: var(--color-2); }
+#navigation .nav__mark { width: 104px; height: auto; }
+#navigation .nav__menu { border: 2px solid var(--color-1); display: flex; align-items: center; gap: 28px; height: 52px; padding: 0 6px 0 28px; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-3); }
+#navigation .nav__links { display: flex; gap: 24px; font-size: 15px; }
+#navigation .nav__menu .m-btn { min-height: 42px; padding: 0 20px; font-size: 15px; }
+#navigation .nav__toggle { display: none; }
+#navigation .nav__overlay { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; justify-content: space-between; padding: 22px 24px 32px; background: var(--color-1); color: var(--color-2); overflow-y: auto; }
+#navigation .nav__overlay[hidden] { display: none; }
+#navigation .nav__overlay-top { display: flex; align-items: center; justify-content: space-between; }
+#navigation .nav__overlay-links { display: grid; gap: 6px; margin: 40px 0; }
+#navigation .nav__overlay-links a { background-size: 100% 4px; font-family: var(--font-1); font-size: 40px; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; text-decoration: none; }
+#navigation .nav__overlay-links a:focus-visible { outline: 3px solid var(--color-2); outline-offset: 4px; border-radius: 6px; }
+@media (max-width: 960px) {
+  #navigation .nav__menu { display: none; }
+  #navigation .nav__toggle { display: inline-flex; }
+  #navigation .nav__brand { height: 48px; padding: 0 18px; }
+  #navigation .nav__mark { width: 88px; }
+  #navigation .nav__toggle { min-height: 48px; border: 2px solid var(--color-1); }
+}
+}
+</style>
+
+<style data-8b-part="section:noise">
+@layer sections {
+#noise { position: relative; z-index: 2; background: var(--color-2); color: var(--color-3); }
+#noise .noise__stage { position: relative; min-height: 100svh; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); grid-template-rows: auto 1fr; gap: 28px 5vw; padding: 15svh var(--space-1) 8svh; background: var(--color-2); overflow: clip; }
+#noise .noise__head { grid-column: 1; grid-row: 1; display: grid; gap: 18px; max-width: 640px; }
+#noise .noise__title { font-size: clamp(36px, 4.4vw, 66px); }
+#noise .noise__lead { max-width: 36em; }
+#noise .noise__field { grid-column: 1; grid-row: 2; align-self: start; display: flex; flex-wrap: wrap; gap: 10px; max-width: 640px; }
+#noise .noise__note { grid-column: 2; grid-row: 1 / span 2; align-self: center; justify-self: end; width: min(100%, 470px); display: grid; gap: 18px; padding: 34px 34px 30px; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); }
+#noise .noise__meta { display: flex; justify-content: space-between; gap: 12px; }
+#noise .noise__sentence { font-size: clamp(28px, 2.7vw, 40px); line-height: 1.04; }
+#noise .noise__reasons { display: grid; gap: 8px; padding-top: 16px; border-top: 1.5px solid currentColor; }
+#noise .noise__reasons li { display: flex; gap: 10px; }
+#noise .noise__reasons li::before { content: ""; flex: none; width: 10px; height: 10px; margin-top: 7px; border-radius: 50%; background: var(--color-2); }
+#noise .noise__actions { display: flex; gap: 8px; }
+#noise .noise__pill { display: inline-flex; align-items: center; min-height: 34px; padding: 0 14px; border-radius: var(--radius-1); border: 1.5px solid currentColor; }
+#noise .noise__pill:first-child { background: var(--color-2); color: var(--color-1); border-color: var(--color-2); }
+@media (max-width: 760px) {
+  #noise .noise__stage { grid-template-columns: 1fr; grid-template-rows: auto auto auto; align-content: start; gap: 10px; padding: 82px 16px 16px; }
+  #noise .noise__head { gap: 8px; }
+  #noise .noise__title { font-size: 26px; }
+  #noise .noise__lead { font-size: 14px; line-height: 1.45; }
+  #noise .noise__field { grid-row: 2; gap: 4px; }
+  #noise .noise__field .m-chip, #noise .noise__field .m-chip-2 { min-height: 25px; padding: 2px 9px; font-size: 11.5px; }
+  #noise .noise__note { grid-column: 1; grid-row: 3; justify-self: stretch; width: auto; gap: 8px; padding: 16px 18px 14px; border-radius: 22px; }
+  #noise .noise__sentence { font-size: 22px; }
+  #noise .noise__reasons { gap: 4px; padding-top: 10px; }
+}
+#noise .noise__head { position: relative; z-index: 1; }
+#noise .noise__cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 26px; margin-top: 6px; }
+@media (max-width: 760px) {
+  #noise .noise__cta { gap: 10px 20px; margin-top: 4px; }
+  #noise .noise__cta .m-btn { min-height: 44px; padding: 0 22px; font-size: 15px; }
+  #noise .noise__cta .m-link { font-size: 14px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #noise .noise__head > * { animation: noise-rise .9s cubic-bezier(.2, .8, .2, 1) backwards; }
+  #noise .noise__head > :nth-child(2) { animation-delay: .1s; }
+  #noise .noise__head > :nth-child(3) { animation-delay: .2s; }
+  #noise .noise__field, #noise .noise__note { animation: noise-fade .6s ease .15s backwards; }
+}
+@keyframes noise-rise { from { transform: translateY(26px); opacity: 0; } }
+@keyframes noise-fade { from { opacity: 0; } }
+}
+</style>
+<style data-8b-part="section:sources">
+@layer sections {
+#sources { position: relative; z-index: 2; background: var(--color-6); color: var(--color-2); }
+#sources .sources__stage { min-height: 100svh; display: grid; grid-template-rows: auto 1fr; }
+#sources .sources__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 48px; padding: 14svh var(--space-1) 4svh; }
+#sources .sources__title { font-size: clamp(36px, 4.4vw, 66px); max-width: 12ch; }
+#sources .sources__lead { max-width: 30em; }
+#sources .sources__cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); min-height: 62svh; }
+#sources .sources__col { position: relative; display: grid; }
+#sources .sources__col[data-sources-key] { z-index: 1; }
+#sources .sources__body { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: 26px 24px 24px; }
+#sources .sources__col:nth-child(1) .sources__body { background: var(--color-5); color: var(--color-3); }
+#sources .sources__col:nth-child(2) .sources__body { background: var(--color-3); color: var(--color-2); }
+#sources .sources__col:nth-child(3) .sources__body { background: var(--color-4); color: var(--color-2); }
+#sources .sources__col:nth-child(4) .sources__body { background: var(--color-1); color: var(--color-2); }
+#sources .sources__col:nth-child(5) .sources__body { background: var(--color-2); color: var(--color-3); }
+#sources .sources__text { font-size: 16px; max-width: 22em; }
+#sources .sources__name { font-size: clamp(28px, 2.6vw, 40px); }
+#sources .sources__heard { margin-top: auto; padding-top: 12px; border-top: 1.5px solid currentColor; max-width: 20em; }
+@media (max-width: 760px) {
+  #sources .sources__head { padding: 12svh 20px 3svh; }
+  #sources .sources__title { font-size: 34px; }
+  #sources .sources__lead { font-size: 15px; }
+  #sources .sources__cols { grid-template-columns: 1fr; grid-template-rows: repeat(5, minmax(0, 1fr)); min-height: 64svh; }
+  #sources .sources__body { flex-direction: column-reverse; justify-content: flex-end; gap: 4px; padding: 14px 20px; }
+  #sources .sources__text { font-size: 14px; line-height: 1.4; }
+  #sources .sources__name { font-size: 24px; }
+  #sources .sources__heard { display: none; }
+}
+}
+</style>
+<style data-8b-part="section:note">
+@layer sections {
+#note { position: relative; z-index: 2; overflow: clip; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); background: var(--color-2); color: var(--color-3); }
+#note .note__panel { position: relative; z-index: 1; background: var(--color-1); color: var(--color-2); }
+#note .note__phone { position: sticky; top: max(24px, calc(50svh - 320px)); width: 300px; height: min(640px, calc(100svh - 48px)); margin: 12svh auto; padding: 11px; border-radius: 48px; background: var(--color-6); color: var(--color-3); }
+#note .note__screen { display: flex; flex-direction: column; gap: 14px; height: 100%; padding: 14px 18px 20px; border-radius: 38px; background: var(--color-2); overflow: hidden; }
+#note .note__status { display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 600; }
+#note .note__island { width: 86px; height: 24px; border-radius: var(--radius-1); background: var(--color-6); }
+#note .note__app { display: flex; align-items: center; justify-content: space-between; padding: 8px 0 4px; color: var(--color-1); }
+#note .note__app svg { width: 74px; height: auto; }
+#note .note__block { border-radius: 20px; padding: 14px 14px 16px; transition: outline-color .4s ease, background-color .4s ease; outline: 3px solid transparent; outline-offset: 3px; }
+#note .note__block--sentence { background: var(--color-1); color: var(--color-2); }
+#note .note__block--reasons { background: var(--color-2); border: 1.5px solid var(--color-3); }
+#note .note__big { font-family: var(--font-1); font-size: 25px; font-weight: 800; line-height: 1.05; letter-spacing: -0.015em; }
+#note .note__label { margin-bottom: 6px; font-size: 12px; font-weight: 600; }
+#note .note__block ul { display: grid; gap: 4px; font-size: 13px; line-height: 1.35; }
+#note .note__buttons { display: flex; gap: 6px; padding: 4px; }
+#note .note__buttons span { flex: 1; display: grid; place-items: center; min-height: 40px; border-radius: var(--radius-1); border: 1.5px solid var(--color-3); font-size: 13px; font-weight: 600; }
+#note .note__buttons span:first-child { background: var(--color-3); color: var(--color-2); }
+#note .note__history { margin-top: auto; font-size: 12px; }
+#note .note__copy { display: flex; flex-direction: column; gap: 22px; padding: 16svh var(--space-1) 12svh; }
+#note .note__title { font-size: clamp(36px, 4.2vw, 62px); max-width: 12ch; }
+#note .note__parts { display: grid; margin-top: 6svh; border-top: 1.5px solid var(--color-3); }
+#note .note__part { display: grid; align-content: center; gap: 10px; min-height: 34svh; padding: 4svh 0; border-bottom: 1.5px solid var(--color-3); }
+#note .note__part p { max-width: 30em; }
+#note .note__fine { max-width: 34em; margin-top: auto; padding-top: 6svh; }
+@media (max-width: 760px) {
+  #note { grid-template-columns: 1fr; }
+  #note .note__panel { padding: 40px 0; }
+  #note .note__phone { position: relative; top: auto; width: 270px; height: 560px; margin: 0 auto; }
+  #note .note__big { font-size: 22px; }
+  #note .note__copy { padding: 56px 20px 64px; }
+  #note .note__title { font-size: 34px; }
+  #note .note__part { min-height: 0; padding: 22px 0; }
+}
+}
+</style>
+<style data-8b-part="section:makers">
+@layer sections {
+#makers { position: relative; background: var(--color-3); color: var(--color-2); }
+#makers .makers__stage { padding: 16svh var(--space-1) 14svh; }
+#makers .makers__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 48px; margin-bottom: 7svh; }
+#makers .makers__title { font-size: clamp(36px, 4.4vw, 66px); max-width: 13ch; }
+#makers .makers__lead { max-width: 30em; }
+#makers .makers__track { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; }
+#makers .makers__card { display: grid; align-content: start; gap: 16px; }
+#makers .makers__arch { aspect-ratio: 5 / 6.4; overflow: hidden; border-radius: 999px 999px 0 0; background: var(--color-4); }
+#makers .makers__arch img { width: 100%; height: 100%; object-fit: cover; }
+#makers .makers__text { display: grid; gap: 4px; }
+#makers .makers__quote { margin-top: 10px; padding-top: 12px; border-top: 1.5px solid currentColor; font-size: 16px; }
+@media (max-width: 760px) {
+  #makers .makers__stage { padding: 72px 20px 72px; }
+  #makers .makers__title { font-size: 34px; }
+  #makers .makers__track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
+  #makers .makers__quote { font-size: 14px; }
+  #makers .makers__card .m-text-4 { font-size: 20px; }
+  #makers .makers__card:last-child:nth-child(odd) { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+}
+}
+</style>
+<style data-8b-part="section:field">
+@layer sections {
+#field { position: relative; background: var(--color-2); color: var(--color-3); }
+#field .field__stage { display: grid; padding: 0 var(--space-1) 14svh; overflow: clip; }
+#field .field__head { display: flex; padding: 15svh var(--space-1) 5svh; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px 48px; }
+#field .field__title { font-size: clamp(36px, 4.4vw, 66px); }
+#field .field__lead { max-width: 30em; }
+#field .field__grid { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; margin-inline: auto; }
+#field .field__cell { position: relative; aspect-ratio: 1; overflow: hidden; }
+#field .field__cell img { width: 100%; height: 100%; object-fit: cover; }
+#field .field__note { display: flex; flex-direction: column; justify-content: space-between; padding: clamp(16px, 2vw, 28px); }
+#field .field__note--gold { background: var(--color-5); color: var(--color-3); }
+#field .field__note--maroon { background: var(--color-1); color: var(--color-2); }
+#field .field__note--rust { background: var(--color-4); color: var(--color-2); }
+#field .field__quote { font-size: clamp(20px, 2.1vw, 30px); }
+@media (max-width: 760px) {
+  #field .field__head { padding: 72px 16px 24px; }
+  #field .field__stage { padding: 0 16px 64px; }
+  #field .field__title { font-size: 34px; }
+  #field .field__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #field .field__quote { font-size: 16px; }
+  #field .field__note { padding: 12px; }
+}
+}
+</style>
+<style data-8b-part="section:manifesto">
+@layer sections {
+#manifesto { position: relative; overflow: clip; padding: 18svh var(--space-1) 16svh; background: var(--color-1); color: var(--color-2); }
+#manifesto .manifesto__lines { display: grid; gap: 0.06em; font-size: 16px; }
+#manifesto .manifesto__line { position: relative; display: block; width: fit-content; font-size: min(15vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.5))); line-height: 1.02; }
+#manifesto .manifesto__line--no { color: var(--color-5); }
+#manifesto .manifesto__line:nth-child(even) { justify-self: end; }
+#manifesto .manifesto__strike { position: absolute; left: -0.05em; right: -0.05em; top: 50%; height: 0.11em; margin-top: -0.04em; border-radius: var(--radius-1); background: var(--color-2); }
+#manifesto .manifesto__after { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 5vw; margin-top: 10svh; padding-top: 28px; border-top: 1.5px solid currentColor; }
+#manifesto .manifesto__after p:last-child { align-self: end; }
+@media (max-width: 760px) {
+  #manifesto { padding: 80px 20px 72px; }
+  #manifesto .manifesto__line { font-size: min(15vw, calc((100vw - 40px) / (var(--len) * 0.5))); }
+  #manifesto .manifesto__after { grid-template-columns: 1fr; margin-top: 48px; }
+}
+}
+</style>
+<style data-8b-part="section:surfaces">
+@layer sections {
+#surfaces { position: relative; padding: 16svh var(--space-1) 14svh; background: var(--color-3); color: var(--color-2); }
+#surfaces .surfaces__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 48px; margin-bottom: 7svh; }
+#surfaces .surfaces__title { font-size: clamp(36px, 4.4vw, 66px); max-width: 12ch; }
+#surfaces .surfaces__lead { max-width: 30em; }
+#surfaces .surfaces__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+#surfaces .surfaces__tile { display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 380px; padding: clamp(22px, 3vw, 40px); border-radius: var(--radius-2); }
+#surfaces .surfaces__tile--maroon { background: var(--color-1); color: var(--color-2); }
+#surfaces .surfaces__tile--butter { background: var(--color-2); color: var(--color-3); }
+#surfaces .surfaces__tile--gold { background: var(--color-5); color: var(--color-3); }
+#surfaces .surfaces__tile--rust { background: var(--color-4); color: var(--color-2); }
+#surfaces .surfaces__mock { margin-block: auto; align-self: center; width: min(100%, 420px); display: grid; gap: 8px; padding: 18px 20px; border-radius: 22px; }
+#surfaces .surfaces__tile--maroon .surfaces__mock { background: var(--color-2); color: var(--color-3); }
+#surfaces .surfaces__tile--butter .surfaces__mock { border: 1.5px solid var(--color-3); }
+#surfaces .surfaces__tile--gold .surfaces__mock { justify-self: end; width: min(100%, 360px); border-radius: 22px 22px 6px 22px; background: var(--color-3); color: var(--color-2); }
+#surfaces .surfaces__tile--rust .surfaces__mock { aspect-ratio: 3 / 2; align-content: space-between; border-radius: 6px; background: var(--color-2); color: var(--color-1); }
+#surfaces .surfaces__mock-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+#surfaces .surfaces__mock svg { width: 64px; height: auto; color: var(--color-1); }
+#surfaces .surfaces__line { font-family: var(--font-1); font-size: 21px; font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+#surfaces .surfaces__tile--rust .surfaces__line { font-size: 26px; }
+#surfaces .surfaces__label { display: flex; justify-content: space-between; gap: 16px; }
+@media (max-width: 760px) {
+  #surfaces { padding: 72px 16px; }
+  #surfaces .surfaces__title { font-size: 34px; }
+  #surfaces .surfaces__grid { grid-template-columns: 1fr; }
+  #surfaces .surfaces__tile { min-height: 300px; gap: 28px; }
+  #surfaces .surfaces__line { font-size: 18px; }
+  #surfaces .surfaces__tile--rust .surfaces__line { font-size: 20px; }
+}
+}
+</style>
+<style data-8b-part="section:pricing">
+@layer sections {
+#pricing { position: relative; overflow: clip; padding: 16svh var(--space-1) 14svh; background: var(--color-6); color: var(--color-2); }
+#pricing .pricing__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 48px; margin-bottom: 7svh; }
+#pricing .pricing__title { font-size: clamp(36px, 4.4vw, 66px); max-width: 13ch; }
+#pricing .pricing__lead { max-width: 30em; }
+#pricing .pricing__plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+#pricing .pricing__plan { display: flex; flex-direction: column; gap: 22px; padding: clamp(28px, 4vw, 56px); }
+#pricing .pricing__plan--studio { background: var(--color-1); color: var(--color-2); }
+#pricing .pricing__plan--collective { background: var(--color-2); color: var(--color-3); }
+#pricing .pricing__price { display: flex; align-items: baseline; gap: 10px; }
+#pricing .pricing__amount { font-family: var(--font-1); font-size: clamp(64px, 7vw, 110px); font-weight: 800; line-height: 0.9; letter-spacing: -0.03em; }
+#pricing .pricing__list { display: grid; gap: 0; border-top: 1.5px solid currentColor; }
+#pricing .pricing__list li { padding: 12px 0; border-bottom: 1.5px solid currentColor; }
+#pricing .pricing__plan .m-btn, #pricing .pricing__plan .m-btn-2 { align-self: start; }
+#pricing .pricing__fine { margin-top: auto; padding-top: 8px; }
+@media (max-width: 760px) {
+  #pricing { padding: 72px 16px; }
+  #pricing .pricing__title { font-size: 34px; }
+  #pricing .pricing__plans { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px 6vw; padding: 16svh var(--space-1) 14svh; background: var(--color-2); color: var(--color-3); }
+#faq .faq__aside { display: grid; align-content: start; gap: 22px; }
+#faq .faq__title { font-size: clamp(36px, 4.4vw, 66px); max-width: 10ch; }
+#faq .faq__photo { width: min(100%, 300px); aspect-ratio: 5 / 6; margin-top: 3svh; overflow: hidden; border-radius: 999px 999px 0 0; background: var(--color-4); }
+#faq .faq__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; }
+#faq .faq__list { border-top: 1.5px solid var(--color-3); }
+#faq .faq__item { border-bottom: 1.5px solid var(--color-3); }
+#faq .faq__item summary { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 6px; cursor: pointer; list-style: none; overflow: hidden; }
+#faq .faq__item summary::-webkit-details-marker { display: none; }
+#faq .faq__item summary::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50% 50% 0 0 / 60% 60% 0 0; background: var(--color-5); transform: translateY(102%); transition: transform .5s cubic-bezier(.2,.7,.2,1), border-radius .5s ease; }
+#faq .faq__item summary::after { content: ""; flex: none; width: 22px; height: 22px; border-radius: 50%; border: 6px solid var(--color-1); transition: border-width .3s ease; }
+#faq .faq__item[open] summary::after { border-width: 11px; }
+@media (hover: hover) {
+  #faq .faq__item summary:hover::before { transform: translateY(0); border-radius: 0; }
+}
+#faq .faq__item summary:focus-visible { outline: 3px solid var(--color-1); outline-offset: -3px; }
+#faq .faq__q { font-size: clamp(19px, 1.6vw, 23px); }
+#faq .faq__a { max-width: 36em; padding: 0 6px 24px; }
+@media (max-width: 760px) {
+  #faq { grid-template-columns: 1fr; padding: 72px 16px; }
+  #faq .faq__title { font-size: 34px; }
+  #faq .faq__photo { width: 200px; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; overflow: clip; padding: 16svh 0 0; background: var(--color-1); color: var(--color-2); }
+#contact .contact__head { display: grid; gap: 18px; padding: 0 var(--space-1); }
+#contact .contact__title { font-size: clamp(36px, 4.4vw, 66px); max-width: 14ch; }
+#contact .contact__email { display: block; width: fit-content; margin: 6svh 0 0; padding: 0 var(--space-1); font-family: var(--font-1); font-weight: 800; font-size: min(14vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.52))); line-height: 1; letter-spacing: -0.025em; text-decoration: none; white-space: nowrap; }
+#contact .contact__half { display: inline-block; }
+#contact .contact__email:focus-visible { outline: 3px solid var(--color-2); outline-offset: 6px; border-radius: 8px; }
+#contact .contact__split { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); margin-top: 8svh; }
+#contact .contact__info { display: grid; align-content: start; gap: 26px; padding: 6svh var(--space-1); }
+#contact .contact__info dl { display: grid; gap: 18px; }
+#contact .contact__info dd { font-size: 19px; }
+#contact .contact__form { display: grid; gap: 18px; padding: 6svh var(--space-1) 8svh; background: var(--color-2); color: var(--color-3); }
+#contact .contact__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+#contact .contact__form label { display: grid; gap: 6px; }
+#contact .contact__form .m-btn { justify-self: start; }
+#contact .contact__message { min-height: 140px; resize: vertical; }
+#contact .contact__done { padding: 18px 20px; border-radius: 18px; background: var(--color-1); color: var(--color-2); }
+#contact .contact__done[hidden] { display: none; }
+@media (max-width: 760px) {
+  #contact { padding-top: 80px; }
+  #contact .contact__head { padding: 0 20px; }
+  #contact .contact__title { font-size: 34px; }
+  #contact .contact__email { padding: 0 20px; font-size: min(14vw, calc((100vw - 40px) / (var(--len) * 0.52))); }
+  #contact .contact__split { grid-template-columns: 1fr; }
+  #contact .contact__info { padding: 40px 20px; }
+  #contact .contact__form { padding: 40px 20px 56px; }
+  #contact .contact__row { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; overflow: clip; background: var(--color-3); color: var(--color-2); padding: 72px var(--space-1) 0; }
+#footer .footer__top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; }
+#footer .footer__links { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+#footer .footer__mark { width: 104%; margin: 40px -2% 0; height: auto; aspect-ratio: 728 / 126; overflow: hidden; color: var(--color-2); }
+#footer .footer__mark svg { width: 100%; height: auto; overflow: visible; }
+#footer .footer__lead { font-family: var(--font-1); font-size: clamp(26px, 2.6vw, 38px); font-weight: 700; line-height: 1.1; max-width: 16ch; }
+#footer .footer__cols { display: flex; flex-wrap: wrap; gap: 28px 64px; }
+#footer .footer__cols ul { display: grid; gap: 8px; }
+#footer .footer__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; margin-top: 56px; padding-top: 18px; border-top: 1.5px solid currentColor; }
+@media (prefers-reduced-motion: no-preference) {
+  #footer .footer__glyph { animation: footer-wave 1.8s ease-in-out infinite alternate; animation-delay: calc(var(--footer-i) * -0.4s); }
+  #footer[data-paused] .footer__glyph { animation-play-state: paused; }
+}
+@keyframes footer-wave { from { transform: translateY(-9px); } to { transform: translateY(9px); } }
+@media (max-width: 760px) {
+  #footer { padding: 56px 20px 0; }
+}
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] [data-8b-motion~="wave"] .w { display: inline-block; --motion-wave-y: calc(105% + sin(var(--i) * 1.1rad) * 25%); animation-name: motion-wave; animation-duration: .95s; animation-delay: calc(var(--i) * .055s); animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="wave"].is-in .w { animation-play-state: running; }
+@keyframes motion-wave { 0% { translate: 0px var(--motion-wave-y); clip-path: inset(calc(var(--motion-wave-y) * -1) 0px var(--motion-wave-y)); } 99.998% { translate: 0px 0px; clip-path: inset(0px); } 100% { translate: 0px 0px; clip-path: none; } }
+[data-8b-live] [data-8b-motion~="arch"] { animation-name: motion-arch-clippath; animation-duration: 1.15s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="arch"].is-in { animation-play-state: running; }
+@keyframes motion-arch-clippath { 0% { clip-path: inset(58% 42% 0% round 999px); } 99.998% { clip-path: inset(0%); } 100% { clip-path: none; } }
+}
+</style>
+<style data-8b-part="scene:noise">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); --ease-power3-out: linear(0, 0.0963, 0.1855, 0.2679, 0.3439, 0.4138, 0.478, 0.5367, 0.5904, 0.6392, 0.6836, 0.7237, 0.7599, 0.7924, 0.8215, 0.8474, 0.8704, 0.8907, 0.9085, 0.924, 0.9375, 0.9491, 0.959, 0.9674, 0.9744, 0.9802, 0.985, 0.9888, 0.9919, 0.9943, 0.9961, 0.9974, 0.9984, 0.9991, 0.9995, 0.9998, 0.9999, 1, 1, 1, 1); }
+[data-8b-live] #noise { height: 300svh; background: var(--color-2); view-timeline: --noise-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #noise .noise__stage { position: sticky; top: 0; height: 100svh; min-height: 0; }
+[data-8b-live] #noise .noise__field > li { animation-name: noise-chip; animation-timeline: --noise-t1; animation-range: cover calc(100vh + (100% - 200vh) * var(--noise-at)) cover calc(100vh + (100% - 200vh) * (var(--noise-at) + 0.5)); animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; transform: none; translate: var(--noise-x) var(--noise-y); rotate: var(--noise-r); scale: var(--noise-s); }
+[data-8b-live] #noise .noise__field > .m-chip-2 { animation-name: noise-chip, noise-chip-lit; animation-range: cover calc(100vh + (100% - 200vh) * var(--noise-at)) cover calc(100vh + (100% - 200vh) * (var(--noise-at) + 0.5)), cover calc(100vh + (100% - 200vh) * var(--noise-lit)) cover calc(100vh + (100% - 200vh) * var(--noise-lit) + 1px); animation-timing-function: var(--ease-power2-inout), linear; }
+[data-8b-live] #noise .noise__note { animation-name: noise-card, noise-fade; animation-duration: auto, .6s; animation-delay: 0s, .15s; animation-timeline: --noise-t1, auto; animation-range: cover 50% cover calc(90% - 80vh), normal; animation-timing-function: var(--ease-power3-out), ease; animation-fill-mode: both, backwards; transform: none; }
+@keyframes noise-chip { 0% { translate: var(--noise-x) var(--noise-y); rotate: var(--noise-r); scale: var(--noise-s); } 100% { translate: 0px 0px; rotate: 0deg; scale: 1; } }
+@keyframes noise-chip-lit { 0% { background-color: var(--color-2); color: var(--color-3); border-color: var(--color-3); } 100% { background-color: var(--color-1); color: var(--color-2); border-color: var(--color-1); } }
+@keyframes noise-card { 0% { scale: 0.08; rotate: -8deg; } 100% { scale: 1; rotate: 0deg; } }
+}
+</style>
+<style data-8b-part="scene:sources">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #sources { height: 290svh; }
+  [data-8b-live] #sources .sources__stage { position: sticky; top: 0; height: 100svh; min-height: 0; overflow: clip; }
+  [data-8b-live] #sources .sources__cols { min-height: 0; }
+}
+}
+@layer scenes {
+[data-8b-live] { --ease-power3-inout: linear(0, 0, 0.0001, 0.0003, 0.0008, 0.0019, 0.004, 0.0075, 0.0128, 0.0205, 0.0313, 0.0457, 0.0648, 0.0892, 0.1201, 0.1582, 0.2048, 0.261, 0.3281, 0.4073, 0.5, 0.5927, 0.672, 0.739, 0.7952, 0.8418, 0.88, 0.9107, 0.9352, 0.9543, 0.9688, 0.9795, 0.9872, 0.9925, 0.996, 0.998, 0.9992, 0.9998, 1, 1, 1); --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #sources { view-timeline: --sources-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #sources .sources__cols > li { animation-name: sources-col-move, sources-col-clip, sources-col-open; animation-timeline: --sources-t1; animation-range: cover calc(8% + 9% * var(--i) + 84vh - 18vh * var(--i)) cover calc(58% + 9% * var(--i) - 16vh - 18vh * var(--i)), cover calc(8% + 9% * var(--i) + 84vh - 18vh * var(--i)) cover calc(58% + 9% * var(--i) - 16vh - 18vh * var(--i)), cover calc(98% - 96vh) cover calc(98% - 96vh + 1px); animation-timing-function: var(--ease-power3-inout), var(--ease-power3-inout), linear; animation-fill-mode: both, both, forwards; transform: none; }
+@keyframes sources-col-move { 0% { translate: var(--sources-x) var(--sources-y); } 100% { translate: 0px 0px; } }
+@keyframes sources-col-clip { 0% { clip-path: var(--sources-clip); } 100% { clip-path: inset(0px); } }
+@keyframes sources-col-open { 0% { clip-path: inset(0px); } 100% { clip-path: none; } }
+[data-8b-live] #sources .sources__cols > li > .sources__body { animation-timeline: --sources-t1; animation-fill-mode: forwards; }
+[data-8b-live] #sources .sources__cols > li:is(:nth-of-type(1), :nth-of-type(2), :nth-of-type(3), :nth-of-type(5)) > .sources__body { animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0); }
+[data-8b-live] #sources .sources__cols > li:nth-of-type(1) > .sources__body { animation-range: cover calc(100% - 100vh) cover calc(100% - 41.6667vh); }
+[data-8b-live] #sources .sources__cols > li:nth-of-type(2) > .sources__body { animation-range: cover calc(100% - 95vh) cover calc(100% - 36.6667vh); }
+[data-8b-live] #sources .sources__cols > li:nth-of-type(3) > .sources__body { animation-range: cover calc(100% - 90vh) cover calc(100% - 31.6667vh); }
+[data-8b-live] #sources .sources__cols > li:nth-of-type(5) > .sources__body { animation-range: cover calc(100% - 85vh) cover calc(100% - 26.6667vh); }
+[data-8b-live] #sources .sources__cols > li:nth-of-type(4) > .sources__body { animation-range: cover calc(100% - 83.3333vh) cover calc(100% - 25vh); transform: none; }
+@keyframes sources-div-sources-body-clippath-d { 0% { clip-path: inset(0%); } 100% { clip-path: inset(0% 0% 100%); } }
+@keyframes sources-div-sources-body-clippath-m { 0% { clip-path: inset(0%); } 100% { clip-path: inset(0% 100% 0% 0%); } }
+@keyframes sources-div-sources-body-clippath-2-d { 0% { clip-path: none; } 0.002% { clip-path: inset(0%); } 100% { clip-path: inset(0% 0% 100%); } }
+@keyframes sources-div-sources-body-clippath-2-m { 0% { clip-path: none; } 0.002% { clip-path: inset(0%); } 100% { clip-path: inset(0% 100% 0% 0%); } }
+@keyframes sources-div-sources-body-translate-d { 0% { translate: 0px 0px; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); } 100% { translate: 0px 0px; } }
+@keyframes sources-div-sources-body-translate-m { 0% { translate: 0px 0px; } 100% { translate: 0px 99.805%; } }
+@media (min-width: 761px) {
+  [data-8b-live] #sources .sources__cols > li:nth-of-type(1) > .sources__body { animation-name: sources-div-sources-body-clippath-d; }
+  [data-8b-live] #sources .sources__cols > li:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(5)) > .sources__body { animation-name: sources-div-sources-body-clippath-2-d; }
+  [data-8b-live] #sources .sources__cols > li:nth-of-type(4) > .sources__body { animation-name: sources-div-sources-body-translate-d; animation-timing-function: linear; }
+}
+@media (max-width: 760px) {
+  [data-8b-live] #sources .sources__cols > li:nth-of-type(1) > .sources__body { animation-name: sources-div-sources-body-clippath-m; }
+  [data-8b-live] #sources .sources__cols > li:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(5)) > .sources__body { animation-name: sources-div-sources-body-clippath-2-m; }
+  [data-8b-live] #sources .sources__cols > li:nth-of-type(4) > .sources__body { animation-name: sources-div-sources-body-translate-m; animation-timing-function: var(--ease-power2-inout); }
+}
+}
+</style>
+<style data-8b-part="scene:note">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #note .note__block[data-on] { outline-color: var(--color-5); }
+[data-8b-live] #note .note__part[data-on] h3 { color: var(--color-1); }
+[data-8b-live] #note { view-timeline: --note-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #note .note__panel, [data-8b-live] #note .note__phone { animation-timeline: --note-t1; animation-range: cover 0% cover 75vh; animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; transform: none; }
+@keyframes note-panel-sweep { 0% { translate: 120% 0px; clip-path: inset(0px 60% 0px 0px); } 99.998% { translate: 0px 0px; clip-path: inset(0px); } 100% { translate: 0px 0px; clip-path: none; } }
+@keyframes note-panel-grow { 0% { clip-path: inset(0px 0px 88%); } 99.998% { clip-path: inset(0px); } 100% { clip-path: none; } }
+@keyframes note-phone-ride { 0% { translate: var(--note-phone-x) 0px; scale: var(--note-phone-scale); } 100% { translate: 0px 0px; scale: 1; } }
+@keyframes note-phone-drop { 0% { translate: 0px var(--note-phone-lift); scale: 0.8; } 100% { translate: 0px 0px; scale: 1; } }
+@media (min-width: 761px) {
+  [data-8b-live] #note .note__panel { animation-name: note-panel-sweep; }
+  [data-8b-live] #note .note__phone { animation-name: note-phone-ride; }
+}
+@media (max-width: 760px) {
+  [data-8b-live] #note .note__panel { animation-name: note-panel-grow; }
+  [data-8b-live] #note .note__phone { animation-name: note-phone-drop; }
+}
+}
+</style>
+<style data-8b-part="scene:makers">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #makers { height: calc(100svh + var(--makers-travel, 0px)); }
+  [data-8b-live] #makers .makers__stage { position: sticky; top: 0; height: 100svh; overflow: clip; display: flex; flex-direction: column; padding-top: 12svh; padding-bottom: 4svh; }
+  [data-8b-live] #makers .makers__head { margin-bottom: auto; }
+  [data-8b-live] #makers .makers__track { display: flex; gap: 3vw; width: max-content; padding-top: 7svh; }
+  [data-8b-live] #makers .makers__title { max-width: 20ch; font-size: clamp(34px, 3.8vw, 56px); }
+  [data-8b-live] #makers .makers__card { width: min(28vw, 380px); grid-template-columns: none; grid-column: auto; }
+  [data-8b-live] #makers .makers__arch { aspect-ratio: auto; height: 40svh; }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  [data-8b-live] #makers .makers__stage { padding-top: 88px; }
+  [data-8b-live] #makers .makers__head { gap: 10px; }
+  [data-8b-live] #makers .makers__lead { font-size: 15px; }
+  [data-8b-live] #makers .makers__track { gap: 5vw; padding-top: 5svh; }
+  [data-8b-live] #makers .makers__card { width: 70vw; }
+  [data-8b-live] #makers .makers__arch { height: 34svh; }
+}
+}
+@layer scenes {
+@property --makers-p { syntax: "<number>"; inherits: true; initial-value: 0; }
+[data-8b-live] #makers { view-timeline: --makers-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #makers .makers__track { animation-name: makers-run; animation-timeline: --makers-t1; animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: linear; animation-fill-mode: both; translate: calc(var(--makers-p) * var(--makers-move) * -1) 0px; transform: none; }
+[data-8b-live] #makers .makers__track > li { translate: 0px calc(-9vh * sin(var(--makers-p) * pi) * (1 + cos(pi * clamp(-1, var(--makers-at) - var(--makers-p) * var(--makers-span), 1))) / 2); transform: none; }
+@keyframes makers-run { 0% { --makers-p: 0; } 100% { --makers-p: 1; } }
+}
+</style>
+<style data-8b-part="scene:field">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #field::after { content: ""; display: block; height: 110svh; }
+  [data-8b-live] #field .field__stage { position: sticky; top: 0; height: 100svh; align-content: center; padding-top: 64px; padding-bottom: 24px; }
+  [data-8b-live] #field .field__grid { width: min(100%, calc((100svh - 100px) * 2)); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  [data-8b-live] #field .field__stage { padding-top: 76px; padding-bottom: 16px; }
+  [data-8b-live] #field .field__grid { width: min(100%, calc((100svh - 100px) / 2)); }
+}
+}
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #field { view-timeline: --field-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #field .field__grid { animation-name: field-zoom; animation-timeline: --field-t1; animation-range: cover calc(100vh + var(--field-top)) cover calc(86% - 72vh + 0.14 * var(--field-top)); animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; transform: none; transform-origin: 0px 0px; }
+@keyframes field-zoom { 0% { translate: var(--field-x) var(--field-y); scale: var(--field-s); } 100% { translate: 0px 0px; scale: 1; } }
+}
+</style>
+<style data-8b-part="scene:manifesto">
+@layer scenes {
+[data-8b-live] { --ease-power3-out: linear(0, 0.0963, 0.1855, 0.2679, 0.3439, 0.4138, 0.478, 0.5367, 0.5904, 0.6392, 0.6836, 0.7237, 0.7599, 0.7924, 0.8215, 0.8474, 0.8704, 0.8907, 0.9085, 0.924, 0.9375, 0.9491, 0.959, 0.9674, 0.9744, 0.9802, 0.985, 0.9888, 0.9919, 0.9943, 0.9961, 0.9974, 0.9984, 0.9991, 0.9995, 0.9998, 0.9999, 1, 1, 1, 1); }
+[data-8b-live] #manifesto { view-timeline: --manifesto-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #manifesto-title > span:nth-of-type(-n+4), [data-8b-live] #manifesto-title > span:nth-of-type(-n+3) > .manifesto__strike { animation-timeline: --manifesto-t1; animation-fill-mode: both; }
+[data-8b-live] #manifesto-title > span:nth-of-type(1) { animation-name: manifesto-span-manifesto-line-translate; animation-range: cover 15vh cover calc(24.7525% + 7.5743vh); animation-timing-function: var(--ease-power3-out); transform: none; }
+[data-8b-live] #manifesto-title > span:nth-of-type(2) { animation-name: manifesto-span-manifesto-line-translate-2; animation-range: cover calc(8.4158% + 12.4752vh) cover calc(33.1683% + 5.0495vh); animation-timing-function: var(--ease-power3-out); transform: none; }
+[data-8b-live] #manifesto-title > span:nth-of-type(1) > .manifesto__strike { animation-name: manifesto-span-manifesto-strike-clippath; animation-range: cover calc(16.8317% + 9.9505vh) cover 50%; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #manifesto-title > span:nth-of-type(3) { animation-name: manifesto-span-manifesto-line-translate; animation-range: cover calc(16.8317% + 9.9505vh) cover calc(41.5842% + 2.5248vh); animation-timing-function: var(--ease-power3-out); transform: none; }
+[data-8b-live] #manifesto-title > span:nth-of-type(2) > .manifesto__strike { animation-name: manifesto-span-manifesto-strike-clippath-2; animation-range: cover calc(25.2475% + 7.4257vh) cover 50%; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #manifesto-title > span:nth-of-type(4) { animation-name: manifesto-span-manifesto-line-translate-2; animation-range: cover calc(25.2475% + 7.4257vh) cover 50%; animation-timing-function: var(--ease-power3-out); transform: none; }
+[data-8b-live] #manifesto-title > span:nth-of-type(3) > .manifesto__strike { animation-name: manifesto-span-manifesto-strike-clippath-3; animation-range: cover calc(33.6634% + 4.901vh) cover 50%; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+@keyframes manifesto-span-manifesto-line-translate { 0% { translate: -38% 0px; } 100% { translate: 0px 0px; } }
+@keyframes manifesto-span-manifesto-line-translate-2 { 0% { translate: 38% 0px; } 100% { translate: 0px 0px; } }
+@keyframes manifesto-span-manifesto-strike-clippath { 0% { clip-path: inset(0% 100% 0% 0% round 999px); } 44.7761% { clip-path: inset(0% round 999px); } 99.998% { clip-path: inset(0% round 999px); } 100% { clip-path: none; } }
+@keyframes manifesto-span-manifesto-strike-clippath-2 { 0% { clip-path: inset(0% 100% 0% 0% round 999px); } 60% { clip-path: inset(0% round 999px); } 99.998% { clip-path: inset(0% round 999px); } 100% { clip-path: none; } }
+@keyframes manifesto-span-manifesto-strike-clippath-3 { 0% { clip-path: inset(0% 100% 0% 0% round 999px); } 90.9091% { clip-path: inset(0% round 999px); } 99.998% { clip-path: inset(0% round 999px); } 100% { clip-path: none; } }
+}
+</style>
+<style data-8b-part="scene:pricing">
+@layer scenes {
+[data-8b-live] #pricing .pricing__plans { view-timeline: --pricing-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #pricing .pricing__plans > .pricing__plan { animation-timeline: --pricing-t1; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #pricing .pricing__plan--studio { animation-range: cover 4vh cover 70.0714vh, cover 4vh cover 78vh; }
+[data-8b-live] #pricing .pricing__plan--collective { animation-range: cover 11.9286vh cover 78vh; }
+@keyframes pricing-article-pricing-plan-translate-d { 0% { translate: 0px var(--pricing-article-pricing-plan-translate-from-2, 20vh); } 100% { translate: 0px 0px; } }
+@keyframes pricing-article-pricing-plan-translate-m { 0% { translate: 0px var(--pricing-article-pricing-plan-translate-from-2-m, 20vh); } 100% { translate: 0px 0px; } }
+@keyframes pricing-article-pricing-plan-clippath-d { 0% { clip-path: inset(0px round var(--pricing-r) var(--pricing-r) 0px 0px); } 89.2857% { clip-path: inset(0px); } 99.998% { clip-path: inset(0px); } 100% { clip-path: none; } }
+@keyframes pricing-article-pricing-plan-clippath-m { 0% { clip-path: inset(0px round var(--pricing-r) var(--pricing-r) 0px 0px); } 89.2857% { clip-path: inset(0px); } 99.998% { clip-path: inset(0px); } 100% { clip-path: none; } }
+@keyframes pricing-article-pricing-plan-clippath-2-d { 0% { clip-path: inset(0px round var(--pricing-r) var(--pricing-r) 0px 0px); } 99.998% { clip-path: inset(0px); } 100% { clip-path: none; } }
+@keyframes pricing-article-pricing-plan-clippath-2-m { 0% { clip-path: inset(0px round var(--pricing-r) var(--pricing-r) 0px 0px); } 99.998% { clip-path: inset(0px); } 100% { clip-path: none; } }
+@media (min-width: 761px) {
+  [data-8b-live] #pricing .pricing__plan--studio { animation-name: pricing-article-pricing-plan-translate-d, pricing-article-pricing-plan-clippath-d; }
+  [data-8b-live] #pricing .pricing__plan--collective { animation-name: pricing-article-pricing-plan-translate-d, pricing-article-pricing-plan-clippath-2-d; }
+}
+@media (max-width: 760px) {
+  [data-8b-live] #pricing .pricing__plan--studio { animation-name: pricing-article-pricing-plan-translate-m, pricing-article-pricing-plan-clippath-m; }
+  [data-8b-live] #pricing .pricing__plan--collective { animation-name: pricing-article-pricing-plan-translate-m, pricing-article-pricing-plan-clippath-2-m; }
+}
+}
+</style>
+<style data-8b-part="scene:contact">
+@layer scenes {
+[data-8b-live] { --ease-power3-out: linear(0, 0.0963, 0.1855, 0.2679, 0.3439, 0.4138, 0.478, 0.5367, 0.5904, 0.6392, 0.6836, 0.7237, 0.7599, 0.7924, 0.8215, 0.8474, 0.8704, 0.8907, 0.9085, 0.924, 0.9375, 0.9491, 0.959, 0.9674, 0.9744, 0.9802, 0.985, 0.9888, 0.9919, 0.9943, 0.9961, 0.9974, 0.9984, 0.9991, 0.9995, 0.9998, 0.9999, 1, 1, 1, 1); }
+[data-8b-live] #contact .contact__email { view-timeline: --contact-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #contact .contact__email > span:nth-of-type(-n+2) { animation-timeline: --contact-t1; animation-range: cover 0% cover 60vh; animation-timing-function: var(--ease-power3-out); animation-fill-mode: both; transform: none; }
+[data-8b-live] #contact .contact__email > span:nth-of-type(1) { animation-name: contact-span-contact-half-translate; }
+[data-8b-live] #contact .contact__email > span:nth-of-type(2) { animation-name: contact-span-contact-half-translate-2; }
+@keyframes contact-span-contact-half-translate { 0% { translate: -90% 0px; } 100% { translate: 0px 0px; } }
+@keyframes contact-span-contact-half-translate-2 { 0% { translate: 60% 0px; } 100% { translate: 0px 0px; } }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<!-- navigation: fixed top bar: drawn wordmark, five section links, Start free button; hides on scroll down; phone menu overlay -->
+<header id="navigation" class="nav" data-8b-section="navigation">
+  <a class="nav__brand" href="#noise" aria-label="murmur, back to the top">
+    <svg class="nav__mark" viewBox="-18 -18 764 176" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round" aria-hidden="true"><path d="M18 122V48a30 30 0 0 1 60 0v74M78 48a30 30 0 0 1 60 0v74"/><path d="M190 18v74a30 30 0 0 0 60 0V18"/><path d="M302 122V48a30 30 0 0 1 30 -30h6"/><path d="M390 122V48a30 30 0 0 1 60 0v74M450 48a30 30 0 0 1 60 0v74"/><path d="M562 18v74a30 30 0 0 0 60 0V18"/><path d="M674 122V48a30 30 0 0 1 30 -30h6"/></svg>
+  </a>
+  <nav class="nav__menu" aria-label="Main">
+    <ul class="nav__links" data-8b-items=":scope > li">
+      <li><a class="m-link" href="#noise">How it works</a></li>
+      <li><a class="m-link" href="#sources">What it reads</a></li>
+      <li><a class="m-link" href="#makers">Makers</a></li>
+      <li><a class="m-link" href="#pricing">Pricing</a></li>
+      <li><a class="m-link" href="#faq">FAQ</a></li>
+    </ul>
+    <a class="m-btn" href="#pricing">Start free</a>
+  </nav>
+  <button class="nav__toggle m-btn-2" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <div class="nav__overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="nav__overlay-top">
+      <svg class="nav__mark" viewBox="-18 -18 764 176" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round" aria-hidden="true"><path d="M18 122V48a30 30 0 0 1 60 0v74M78 48a30 30 0 0 1 60 0v74"/><path d="M190 18v74a30 30 0 0 0 60 0V18"/><path d="M302 122V48a30 30 0 0 1 30 -30h6"/><path d="M390 122V48a30 30 0 0 1 60 0v74M450 48a30 30 0 0 1 60 0v74"/><path d="M562 18v74a30 30 0 0 0 60 0V18"/><path d="M674 122V48a30 30 0 0 1 30 -30h6"/></svg>
+      <button class="nav__close m-btn-2" type="button">Close</button>
+    </div>
+    <ul class="nav__overlay-links" data-8b-items=":scope > li">
+      <li><a class="m-link" href="#noise">How it works</a></li>
+      <li><a class="m-link" href="#sources">What it reads</a></li>
+      <li><a class="m-link" href="#makers">Makers</a></li>
+      <li><a class="m-link" href="#pricing">Pricing</a></li>
+      <li><a class="m-link" href="#faq">FAQ</a></li>
+      <li><a class="m-link" href="#contact">Contact</a></li>
+    </ul>
+    <a class="m-btn-2" href="#pricing">Start free</a>
+  </div>
+</header>
+
+<main>
+
+
+<!-- noise: first screen: heading, lead, two calls to action, a field of 18 signal chips and the Monday note card (animation: scene:noise) -->
+<section id="noise" class="noise" data-8b-section="noise" aria-labelledby="noise-title">
+  <div class="noise__stage">
+    <div class="noise__head">
+      <h1 id="noise-title" class="m-text-2 noise__title">Forty signals a week. One sentence on Monday.</h1>
+      <p class="m-text noise__lead">Dashboards hand you everything at once. murmur reads it all for you, sets the noise aside and keeps only what should change your week.</p>
+      <div class="noise__cta"><a class="m-btn" href="#pricing">Start listening</a><a class="m-link" href="#note">Read a Monday note</a></div>
+    </div>
+    <ul class="noise__field" data-8b-items=":scope > li" aria-label="Signals murmur read this week" data-8b-fixed="18">
+      <li class="m-chip">Tuesday · 41 shop visits</li>
+      <li class="m-chip">3 returns, all size S</li>
+      <li class="m-chip">“Is the glaze food-safe?”</li>
+      <li class="m-chip-2">Small bowls sold out twice</li>
+      <li class="m-chip">Green vase saved 12 times</li>
+      <li class="m-chip">Rain forecast for Friday</li>
+      <li class="m-chip">Wholesale enquiry from Lund</li>
+      <li class="m-chip-2">9 asked when bowls are back</li>
+      <li class="m-chip">Card fees up 0.2%</li>
+      <li class="m-chip">2 carts left at checkout</li>
+      <li class="m-chip">Newsletter opened by 48%</li>
+      <li class="m-chip">Large vase: no views in 10 days</li>
+      <li class="m-chip-2">Saturday market confirmed</li>
+      <li class="m-chip">Kiln booked Thursday</li>
+      <li class="m-chip">Mug handle review: 4 stars</li>
+      <li class="m-chip">Payday on the 25th</li>
+      <li class="m-chip">Instagram reach down 6%</li>
+      <li class="m-chip">Postage price change in May</li>
+    </ul>
+    <article class="noise__note" aria-label="This week's note">
+      <p class="m-text-3 noise__meta"><span>Monday 7:40</span><span>Your note</span></p>
+      <p class="m-text-4 noise__sentence">Restock the small bowls before Saturday’s market.</p>
+      <ul class="m-text-3 noise__reasons" data-8b-items=":scope > li">
+        <li>They sold out twice since Wednesday</li>
+        <li>Nine people asked when they are back</li>
+        <li>Saturday’s market is confirmed</li>
+      </ul>
+      <p class="m-text-3 noise__actions"><span class="noise__pill">Done</span><span class="noise__pill">Later</span><span class="noise__pill">Not for us</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- sources: five coloured columns, one per data source, each with a line of text and a sample "Heard this week" line (animation: scene:sources) -->
+<section id="sources" class="sources" data-8b-section="sources" aria-labelledby="sources-title">
+  <div class="sources__stage">
+    <header class="sources__head">
+      <h2 id="sources-title" class="m-text-2 sources__title">Five things it listens to.</h2>
+      <p class="m-text sources__lead">Read-only, all week long. murmur never posts, sells or changes anything in your shop.</p>
+    </header>
+    <ol class="sources__cols" data-8b-items=":scope > li" data-8b-fixed="5">
+      <li class="sources__col"><div class="sources__body">
+        <p class="m-text sources__text">What sold, when and for how much: online, at the till and at the market stall.</p>
+        <p class="m-text-3 sources__heard">Heard this week: 14 small bowls sold, none left.</p>
+        <h3 class="m-text-4 sources__name">Sales</h3>
+      </div></li>
+      <li class="sources__col"><div class="sources__body">
+        <p class="m-text sources__text">What is left, what moves slowly, what runs out before the weekend.</p>
+        <p class="m-text-3 sources__heard">Heard this week: the large vase has not moved in ten days.</p>
+        <h3 class="m-text-4 sources__name">Stock</h3>
+      </div></li>
+      <li class="sources__col"><div class="sources__body">
+        <p class="m-text sources__text">Who looked, from where, and what they came back to look at twice.</p>
+        <p class="m-text-3 sources__heard">Heard this week: the green vase saved twelve times.</p>
+        <h3 class="m-text-4 sources__name">Visits</h3>
+      </div></li>
+      <li class="sources__col" data-sources-key><div class="sources__body">
+        <p class="m-text sources__text">Questions in your inbox and DMs, grouped by what people are asking for.</p>
+        <p class="m-text-3 sources__heard">Heard this week: nine people asked when the bowls are back.</p>
+        <h3 class="m-text-4 sources__name">Messages</h3>
+      </div></li>
+      <li class="sources__col"><div class="sources__body">
+        <p class="m-text sources__text">Markets, holidays, paydays and weather: the calendar your customers live by.</p>
+        <p class="m-text-3 sources__heard">Heard this week: Saturday’s market confirmed, rain on Friday.</p>
+        <h3 class="m-text-4 sources__name">Seasons</h3>
+      </div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- note: maroon panel with a sticky phone showing the weekly note, beside a heading and three explained parts (animation: scene:note) -->
+<section id="note" class="note" data-8b-section="note" aria-labelledby="note-title">
+  <div class="note__panel">
+    <div class="note__phone" role="img" aria-label="A phone showing murmur's Monday note: restock the small bowls before Saturday's market, with three reasons and the answers Done, Later and Not for us.">
+      <div class="note__screen">
+        <div class="note__status"><span>7:40</span><span class="note__island"></span><span>98%</span></div>
+        <div class="note__app">
+          <svg viewBox="-18 -18 764 176" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round" aria-hidden="true"><path d="M18 122V48a30 30 0 0 1 60 0v74M78 48a30 30 0 0 1 60 0v74"/><path d="M190 18v74a30 30 0 0 0 60 0V18"/><path d="M302 122V48a30 30 0 0 1 30 -30h6"/><path d="M390 122V48a30 30 0 0 1 60 0v74M450 48a30 30 0 0 1 60 0v74"/><path d="M562 18v74a30 30 0 0 0 60 0V18"/><path d="M674 122V48a30 30 0 0 1 30 -30h6"/></svg>
+          <span class="m-text-3">Monday, 13 October</span>
+        </div>
+        <div class="note__block note__block--sentence" data-part="sentence">
+          <p class="note__label">This week</p>
+          <p class="note__big">Restock the small bowls before Saturday’s market.</p>
+        </div>
+        <div class="note__block note__block--reasons" data-part="reasons">
+          <p class="note__label">Because</p>
+          <ul>
+            <li>Sold out twice since Wednesday</li>
+            <li>Nine people asked when they are back</li>
+            <li>Saturday’s market is confirmed</li>
+          </ul>
+        </div>
+        <div class="note__block note__buttons" data-part="buttons"><span>Done</span><span>Later</span><span>Not for us</span></div>
+        <p class="note__history">Last Monday: raise the linen apron to €58. Done.</p>
+      </div>
+    </div>
+  </div>
+  <div class="note__copy">
+    <h2 id="note-title" class="m-text-2 note__title" data-8b-motion="wave" data-8b-split="words">One sentence. Three reasons. One tap.</h2>
+    <p class="m-text-5 note__lead">Every Monday at 7:40, by app, email or text. Nothing else all week, unless something breaks.</p>
+    <ol class="note__parts" data-8b-items=":scope > li">
+      <li class="note__part" data-part="sentence">
+        <h3 class="m-text-4">The sentence</h3>
+        <p class="m-text">The move, in plain words and under twenty of them. No chart to decode, no percentage without a reason.</p>
+      </li>
+      <li class="note__part" data-part="reasons">
+        <h3 class="m-text-4">The reasons</h3>
+        <p class="m-text">The three signals that point to it, each one a tap away from the numbers behind it.</p>
+      </li>
+      <li class="note__part" data-part="buttons">
+        <h3 class="m-text-4">The tap</h3>
+        <p class="m-text">Done, Later or Not for us. murmur learns what matters to your shop from every answer.</p>
+      </li>
+    </ol>
+    <p class="m-text-3 note__fine">Quiet weeks get a quiet note: “Nothing needs you this week.” Notes arrive in your language and your time zone.</p>
+  </div>
+</section>
+
+<!-- makers: five arch portraits of customers with a place and a quote each, on a held horizontal track (animation: scene:makers) -->
+<section id="makers" class="makers" data-8b-section="makers" aria-labelledby="makers-title">
+  <div class="makers__stage">
+    <header class="makers__head">
+      <h2 id="makers-title" class="m-text-2 makers__title" data-8b-motion="wave" data-8b-split="words">Kept by forty-one small studios.</h2>
+      <p class="m-text-5 makers__lead">Potters, jewellers, cobblers, weavers. Each reads one sentence on Monday morning. These were theirs last week.</p>
+    </header>
+    <ul class="makers__track" data-8b-items=":scope > li" data-8b-fixed="5">
+      <li class="makers__card">
+        <figure class="makers__arch"><img src="https://images.unsplash.com/photo-1760894192884-37a7037200ba?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cG90dGVyJTIwd2hlZWwlMjB3b21hbnxlbnwxfDF8fHwxNzkxMjEwNjA1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" width="2000" height="2992" alt="A potter in a sun hat shaping a bowl on the wheel in a warm workshop" loading="lazy"></figure>
+        <div class="makers__text">
+          <h3 class="m-text-4">Ines Valk</h3>
+          <p class="m-text-3">Stoneware, Malmö</p>
+          <blockquote class="m-text makers__quote"><p>“Fire the speckled glaze again. The last batch sold out in four days.”</p></blockquote>
+        </div>
+      </li>
+      <li class="makers__card">
+        <figure class="makers__arch"><img src="https://images.unsplash.com/photo-1772442125564-b9669a6df336?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGpld2VscnklMjBtYWtlciUyMHdvcmtzaG9wfGVufDF8MXx8fDE3OTEyMTA1ODJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" width="2097" height="2796" alt="A jeweller with folded arms standing at her workbench" loading="lazy"></figure>
+        <div class="makers__text">
+          <h3 class="m-text-4">Ada Lindqvist</h3>
+          <p class="m-text-3">Silver rings, Gothenburg</p>
+          <blockquote class="m-text makers__quote"><p>“Offer half sizes on the band rings. Six people asked this month.”</p></blockquote>
+        </div>
+      </li>
+      <li class="makers__card">
+        <figure class="makers__arch"><img src="https://images.unsplash.com/photo-1661447133325-a4a73386b9e4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dGFpbG9yJTIwd29ya3Nob3AlMjBwb3J0cmFpdHxlbnwxfDF8fHwxNzkxMjEwNTgyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" width="3648" height="5472" alt="A cobbler smiling in front of a wall of hanging tools" loading="lazy"></figure>
+        <div class="makers__text">
+          <h3 class="m-text-4">Tomas Berg</h3>
+          <p class="m-text-3">Shoe repair, Uppsala</p>
+          <blockquote class="m-text makers__quote"><p>“Open on Monday mornings. That is when the winter boots come in.”</p></blockquote>
+        </div>
+      </li>
+      <li class="makers__card">
+        <figure class="makers__arch"><img src="https://images.unsplash.com/photo-1606681246594-372e9e133ac1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d2VhdmVyJTIwbG9vbSUyMHBvcnRyYWl0fGVufDF8MXx8fDE3OTEyMTA1ODR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" width="8167" height="12533" alt="A weaver in red working a patterned runner on a wooden loom" loading="lazy"></figure>
+        <div class="makers__text">
+          <h3 class="m-text-4">Mira Kaur</h3>
+          <p class="m-text-3">Hand-loomed textiles, Lund</p>
+          <blockquote class="m-text makers__quote"><p>“Photograph the red runner in daylight. It gets saved, not bought.”</p></blockquote>
+        </div>
+      </li>
+      <li class="makers__card">
+        <figure class="makers__arch"><img src="https://images.unsplash.com/photo-1513872900980-460ea4c87668?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8YXJ0aXNhbiUyMHBvcnRyYWl0JTIwcHJvZmlsZXxlbnwxfDF8fHwxNzkxMjEwNTYxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" width="3744" height="5616" alt="A leather worker in a denim apron smiling in his studio" loading="lazy"></figure>
+        <div class="makers__text">
+          <h3 class="m-text-4">Samuel Okoro</h3>
+          <p class="m-text-3">Leather goods, Stockholm</p>
+          <blockquote class="m-text makers__quote"><p>“Bundle the card wallet with the key fob before December orders start.”</p></blockquote>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- field: a gutterless moodboard of 8 tiles: 5 photos and 3 coloured note tiles (animation: scene:field) -->
+<section id="field" class="field" data-8b-section="field" aria-labelledby="field-title">
+  <header class="field__head">
+      <h2 id="field-title" class="m-text-2 field__title">Field notes.</h2>
+      <p class="m-text-5 field__lead">A week of Mondays across the studios: what murmur noticed, and what the makers did about it.</p>
+  </header>
+  <div class="field__stage">
+    <div class="field__grid" data-8b-items=":scope > .field__cell" data-8b-fixed="8">
+      <figure class="field__cell"><img src="https://images.unsplash.com/photo-1789250208749-4719b9c262d7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGhhbmRzJTIwcHJlc3NpbmclMjBjbGF5JTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzkxMjEwNjkzfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=780&amp;q=60" width="7146" height="5716" alt="Hands with a gold bangle kneading a lump of grey clay" loading="lazy"></figure>
+      <article class="field__cell field__note field__note--gold">
+        <p class="m-text-3">Ines, stoneware</p>
+        <p class="m-text-4 field__quote">“Wedge two extra bags on Thursday.”</p>
+        <p class="m-text-3">Three wholesale orders landed at once</p>
+      </article>
+      <figure class="field__cell"><img src="https://images.unsplash.com/photo-1745636885619-5234bade5295?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cmVkJTIwZmFicmljJTIwZmxvd2luZ3xlbnwxfDJ8fHwxNzkxMjEwNjIxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=620&amp;q=60" width="3857" height="4000" alt="A woman in a flowing red dress turning in a dark room" loading="lazy"></figure>
+      <figure class="field__cell"><img src="https://images.unsplash.com/photo-1670905934075-0c3cb559e977?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGluZW4lMjB0ZXh0aWxlJTIwZm9sZGVkfGVufDF8Mnx8fDE3OTEyMTA2MjJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=620&amp;q=60" width="3301" height="3379" alt="A stack of folded wool sweaters in grey, brown and oxblood" loading="lazy"></figure>
+      <figure class="field__cell"><img src="https://images.unsplash.com/photo-1565619601015-e57cced38f39?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8amV3ZWxyeSUyMHJpbmdzJTIwd2FybSUyMGxpZ2h0fGVufDF8MHx8fDE3OTEyMTA2OTR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=60" width="4374" height="2848" alt="A hammered silver ring standing on a wooden beam in amber light" loading="lazy"></figure>
+      <article class="field__cell field__note field__note--maroon" data-field-zoom>
+        <p class="m-text-3">Mira, textiles</p>
+        <p class="m-text-4 field__quote">“Move the stall next to the bakery.”</p>
+        <p class="m-text-3">Saturday mornings start there</p>
+      </article>
+      <figure class="field__cell"><img src="https://images.unsplash.com/photo-1690541478715-898f26cbc28d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8dGVycmFjb3R0YSUyMHBvdHRlcnklMjBoYW5kc3xlbnwxfDB8fHwxNzkxMjEwNjkzfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=830&amp;q=60" width="3648" height="2736" alt="Clay-covered hands shaping a yellow bowl on a potter's wheel" loading="lazy"></figure>
+      <article class="field__cell field__note field__note--rust">
+        <p class="m-text-3">Samuel, leather</p>
+        <p class="m-text-4 field__quote">“Answer the dye question in the listing.”</p>
+        <p class="m-text-3">Asked eleven times in two weeks</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- manifesto: four large lines, three struck out, and two short paragraphs (animation: scene:manifesto) -->
+<section id="manifesto" class="manifesto" data-8b-section="manifesto" aria-labelledby="manifesto-title">
+  <h2 id="manifesto-title" class="m-text-2 manifesto__lines">
+    <span class="manifesto__line manifesto__line--no" style="--len:14">No dashboards.<span class="manifesto__strike" aria-hidden="true"></span></span>
+    <span class="manifesto__line manifesto__line--no" style="--len:11">No streaks.<span class="manifesto__strike" aria-hidden="true"></span></span>
+    <span class="manifesto__line manifesto__line--no" style="--len:22">No charts at midnight.<span class="manifesto__strike" aria-hidden="true"></span></span>
+    <span class="manifesto__line" style="--len:23">One sentence on Monday.</span>
+  </h2>
+  <div class="manifesto__after">
+    <p class="m-text-5">We built murmur for people who would rather be at the wheel, the bench or the loom than inside a spreadsheet. It reads the numbers so you can get back to the work.</p>
+    <p class="m-text-3">No ads, no data sold, no notifications after six in the evening. Delete your account and everything goes with it the same day.</p>
+  </div>
+</section>
+
+<!-- surfaces: four coloured tiles showing the same note on a lock screen, an inbox, a text message and a printed card -->
+<section id="surfaces" class="surfaces" data-8b-section="surfaces" aria-labelledby="surfaces-title">
+  <header class="surfaces__head">
+    <h2 id="surfaces-title" class="m-text-2 surfaces__title" data-8b-motion="wave" data-8b-split="words">Wherever Monday finds you.</h2>
+    <p class="m-text-5 surfaces__lead">The same sentence on any surface. Pick one, or let it follow you from the phone to the workshop wall.</p>
+  </header>
+  <ul class="surfaces__grid" data-8b-items=":scope > li">
+    <li class="surfaces__tile surfaces__tile--maroon" data-8b-motion="arch" data-8b-enter="90%">
+      <div class="surfaces__mock">
+        <div class="surfaces__mock-top m-text-3">
+          <svg viewBox="-18 -18 764 176" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round" aria-hidden="true"><path d="M18 122V48a30 30 0 0 1 60 0v74M78 48a30 30 0 0 1 60 0v74"/><path d="M190 18v74a30 30 0 0 0 60 0V18"/><path d="M302 122V48a30 30 0 0 1 30 -30h6"/><path d="M390 122V48a30 30 0 0 1 60 0v74M450 48a30 30 0 0 1 60 0v74"/><path d="M562 18v74a30 30 0 0 0 60 0V18"/><path d="M674 122V48a30 30 0 0 1 30 -30h6"/></svg>
+          <span>now</span>
+        </div>
+        <p class="surfaces__line">Restock the small bowls before Saturday’s market.</p>
+      </div>
+      <p class="m-text-3 surfaces__label"><strong>Lock screen</strong><span>Monday, 7:40</span></p>
+    </li>
+    <li class="surfaces__tile surfaces__tile--butter" data-8b-motion="arch" data-8b-enter="90%">
+      <div class="surfaces__mock">
+        <div class="surfaces__mock-top m-text-3"><strong>murmur</strong><span>07:40</span></div>
+        <p class="m-text-3"><strong>Your Monday note</strong></p>
+        <p class="surfaces__line">Restock the small bowls before Saturday’s market.</p>
+      </div>
+      <p class="m-text-3 surfaces__label"><strong>Inbox</strong><span>One email, no newsletter</span></p>
+    </li>
+    <li class="surfaces__tile surfaces__tile--gold" data-8b-motion="arch" data-8b-enter="90%">
+      <div class="surfaces__mock">
+        <p class="surfaces__line">Restock the small bowls before Saturday’s market.</p>
+        <p class="m-text-3">murmur · reply DONE or LATER</p>
+      </div>
+      <p class="m-text-3 surfaces__label"><strong>Text message</strong><span>For days at the stall</span></p>
+    </li>
+    <li class="surfaces__tile surfaces__tile--rust" data-8b-motion="arch" data-8b-enter="90%">
+      <div class="surfaces__mock">
+        <div class="surfaces__mock-top m-text-3">
+          <svg viewBox="-18 -18 764 176" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round" aria-hidden="true"><path d="M18 122V48a30 30 0 0 1 60 0v74M78 48a30 30 0 0 1 60 0v74"/><path d="M190 18v74a30 30 0 0 0 60 0V18"/><path d="M302 122V48a30 30 0 0 1 30 -30h6"/><path d="M390 122V48a30 30 0 0 1 60 0v74M450 48a30 30 0 0 1 60 0v74"/><path d="M562 18v74a30 30 0 0 0 60 0V18"/><path d="M674 122V48a30 30 0 0 1 30 -30h6"/></svg>
+          <span>Week 42</span>
+        </div>
+        <p class="surfaces__line">Restock the small bowls before Saturday’s market.</p>
+      </div>
+      <p class="m-text-3 surfaces__label"><strong>Printed card</strong><span>Posted weekly on Collective</span></p>
+    </li>
+  </ul>
+</section>
+
+<!-- pricing: two plans side by side: Studio and Collective, with price, list and button (animation: scene:pricing) -->
+<section id="pricing" class="pricing" data-8b-section="pricing" aria-labelledby="pricing-title">
+  <header class="pricing__head">
+    <h2 id="pricing-title" class="m-text-2 pricing__title">Four Mondays free. Then one small price.</h2>
+    <p class="m-text-5 pricing__lead">Try it for a month with everything switched on. No card needed until your fifth note.</p>
+  </header>
+  <div class="pricing__plans" data-8b-items=":scope > .pricing__plan" data-8b-fixed="2">
+    <article class="pricing__plan pricing__plan--studio" style="--pricing-article-pricing-plan-translate-from-2: 20vh; --pricing-article-pricing-plan-translate-from-2-m: 20vh">
+      <h3 class="m-text-4">Studio</h3>
+      <p class="pricing__price"><span class="pricing__amount">€9</span><span class="m-text">a month</span></p>
+      <p class="m-text">For one shop and the person who runs it.</p>
+      <ul class="pricing__list m-text" data-8b-items=":scope > li">
+        <li>One note every Monday</li>
+        <li>All five sources, read-only</li>
+        <li>App, email or text</li>
+        <li>Learns from every answer</li>
+        <li>Cancel in two taps</li>
+      </ul>
+      <a class="m-btn-2" href="#contact">Start four free weeks</a>
+      <p class="m-text-3 pricing__fine">Prices include VAT. Billed monthly.</p>
+    </article>
+    <article class="pricing__plan pricing__plan--collective" style="--pricing-article-pricing-plan-translate-from-2: 36vh; --pricing-article-pricing-plan-translate-from-2-m: 36vh">
+      <h3 class="m-text-4">Collective</h3>
+      <p class="pricing__price"><span class="pricing__amount">€24</span><span class="m-text">a month</span></p>
+      <p class="m-text">For shared studios and small teams, up to five shops.</p>
+      <ul class="pricing__list m-text" data-8b-items=":scope > li">
+        <li>A note per shop, plus one shared</li>
+        <li>Up to eight people</li>
+        <li>A Thursday check-in when something moves</li>
+        <li>A printed card for the wall, posted weekly</li>
+        <li>Replies from a person within a day</li>
+      </ul>
+      <a class="m-btn" href="#contact">Start four free weeks</a>
+      <p class="m-text-3 pricing__fine">Prices include VAT. Billed monthly or yearly.</p>
+    </article>
+  </div>
+</section>
+
+<!-- faq: six questions in native details elements beside a heading, an email line and an arch photo -->
+<section id="faq" class="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <div class="faq__aside">
+    <h2 id="faq-title" class="m-text-2 faq__title" data-8b-motion="wave" data-8b-split="words">Questions, answered plainly.</h2>
+    <p class="m-text">Still unsure? Write to <a data-8b-placeholder="email" class="m-link" href="mailto:hello@murmur.example">hello@murmur.example</a> and a person replies within a day.</p>
+    <figure class="faq__photo" data-8b-motion="arch" data-8b-enter="90%"><img src="https://images.unsplash.com/photo-1677715156712-68fd84957185?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8d29tYW4lMjBwb3J0cmFpdCUyMHRlcnJhY290dGF8ZW58MXwxfHx8MTc5MTIxMDU2MXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=330&amp;q=60" width="3111" height="3889" alt="A woman in a rust dress with her hands resting on her head" loading="lazy"></figure>
+  </div>
+  <div class="faq__list" data-8b-items=":scope > details">
+    <details class="faq__item">
+      <summary><span class="m-text-4 faq__q">What does murmur need access to?</span></summary>
+      <p class="m-text faq__a">Read-only access to your shop, your card reader and the inbox labels you choose. It cannot post, sell, refund or change a price.</p>
+    </details>
+    <details class="faq__item">
+      <summary><span class="m-text-4 faq__q">Why only one sentence?</span></summary>
+      <p class="m-text faq__a">Because a small shop has time for one change a week. murmur ranks everything it noticed and sends the move most likely to matter; the rest is one tap away if you are curious.</p>
+    </details>
+    <details class="faq__item">
+      <summary><span class="m-text-4 faq__q">What if I disagree with the note?</span></summary>
+      <p class="m-text faq__a">Tap Not for us. murmur asks nothing more, remembers the answer and weighs that kind of advice less next time.</p>
+    </details>
+    <details class="faq__item">
+      <summary><span class="m-text-4 faq__q">Which shops and tills does it work with?</span></summary>
+      <p class="m-text faq__a">The common online shop platforms and card readers connect in a few minutes. Market sales can be added from a photo of your notebook or a spreadsheet.</p>
+    </details>
+    <details class="faq__item">
+      <summary><span class="m-text-4 faq__q">Is my data sold or shared?</span></summary>
+      <p class="m-text faq__a">Never. Your numbers are used only to write your notes, stored in the EU, and deleted the day you close your account.</p>
+    </details>
+    <details class="faq__item">
+      <summary><span class="m-text-4 faq__q">Can I pause it for the holidays?</span></summary>
+      <p class="m-text faq__a">Yes. Pause for up to eight weeks and you are not billed; murmur keeps listening quietly and sends one catch-up note when you return.</p>
+    </details>
+  </div>
+</section>
+
+<!-- contact: large email address in two halves, phone, studio address and hours, and a form (animation: scene:contact) -->
+<section id="contact" class="contact" data-8b-section="contact" aria-labelledby="contact-title">
+  <header class="contact__head">
+    <h2 id="contact-title" class="m-text-2 contact__title">Say something. We answer by the next Monday.</h2>
+  </header>
+  <a data-8b-placeholder="email" class="contact__email" href="mailto:hello@murmur.example" style="--len:20"><span class="contact__half">hello@</span><span class="contact__half">murmur.example</span></a>
+  <div class="contact__split">
+    <div class="contact__info">
+      <dl class="m-text-3">
+        <div><dt>Phone</dt><dd><a data-8b-placeholder="phone" class="m-link" href="tel:+46800000000">+46 8 000 000 00</a></dd></div>
+        <div><dt>Studio</dt><dd>Example Street 1, 100 00 Stockholm</dd></div>
+        <div><dt>Hours</dt><dd>Monday to Thursday, 9:00 to 16:00</dd></div>
+      </dl>
+    </div>
+    <form data-8b-placeholder="form" class="contact__form" action="#" method="post" novalidate>
+      <div class="contact__row">
+        <label class="m-text-3">Your name<input class="m-field" type="text" name="name" autocomplete="name" required></label>
+        <label class="m-text-3">Email<input class="m-field" type="email" name="email" autocomplete="email" required></label>
+      </div>
+      <label class="m-text-3">Your shop’s link<input class="m-field" type="url" name="shop" placeholder="https://" autocomplete="url"></label>
+      <label class="m-text-3">Message<textarea class="m-field contact__message" name="message" rows="5"></textarea></label>
+      <button class="m-btn" type="submit">Send it</button>
+      <p class="m-text contact__done" role="status" hidden>Thank you. A person will reply before next Monday, in one sentence if we can.</p>
+      <p class="m-text-3 contact__error" role="alert" hidden>Please add your name and a working email so we can reply.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- footer: footer: lead line, two link columns, copyright with the Design: 8B credit, back-to-top link and a large drawn wordmark -->
+<footer id="footer" class="footer" data-8b-section="footer">
+  <div class="footer__top">
+    <p class="footer__lead">One sentence, every Monday. The rest of the week is yours.</p>
+    <div class="footer__cols m-text-3">
+      <ul data-8b-items=":scope > li">
+        <li><a class="m-link" href="#noise">How it works</a></li>
+        <li><a class="m-link" href="#sources">What it reads</a></li>
+        <li><a class="m-link" href="#makers">Makers</a></li>
+      </ul>
+      <ul data-8b-items=":scope > li">
+        <li><a class="m-link" href="#pricing">Pricing</a></li>
+        <li><a class="m-link" href="#faq">FAQ</a></li>
+        <li><a class="m-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__base m-text-3">
+    <p>© 2026 murmur AB, Stockholm · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    <a class="m-link" href="#noise">Back to the top</a>
+  </div>
+  <div class="footer__mark" aria-hidden="true">
+    <svg viewBox="0 -14 728 154" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round"><path class="footer__glyph" style="--footer-i:0" d="M18 122V48a30 30 0 0 1 60 0v74M78 48a30 30 0 0 1 60 0v74"/><path class="footer__glyph" style="--footer-i:1" d="M190 18v74a30 30 0 0 0 60 0V18"/><path class="footer__glyph" style="--footer-i:2" d="M302 122V48a30 30 0 0 1 30 -30h6"/><path class="footer__glyph" style="--footer-i:3" d="M390 122V48a30 30 0 0 1 60 0v74M450 48a30 30 0 0 1 60 0v74"/><path class="footer__glyph" style="--footer-i:4" d="M562 18v74a30 30 0 0 0 60 0V18"/><path class="footer__glyph" style="--footer-i:5" d="M674 122V48a30 30 0 0 1 30 -30h6"/></svg>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const toggle = nav.querySelector('.nav__toggle');
+  const overlay = nav.querySelector('.nav__overlay');
+  const close = nav.querySelector('.nav__close');
+  const setOpen = open => {
+    overlay.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) { window.motionKit?.wheel?.stop(); close.focus(); } else { window.motionKit?.wheel?.start(); toggle.focus(); }
+  };
+  toggle.addEventListener('click', () => setOpen(true));
+  close.addEventListener('click', () => setOpen(false));
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) { overlay.hidden = true; toggle.setAttribute('aria-expanded', 'false'); window.motionKit?.wheel?.start(); } });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) setOpen(false); });
+  let last = scrollY, travel = 0, dir = 0;
+  addEventListener('scroll', () => {
+    const y = scrollY, delta = y - last; last = y;
+    if (!delta) return;
+    const d = Math.sign(delta);
+    if (d !== dir) { dir = d; travel = 0; }
+    travel += Math.abs(delta);
+    if (dir > 0 && y > 160 && travel > 6) nav.setAttribute('data-hidden', '');
+    else if (dir < 0 && travel > 6) nav.removeAttribute('data-hidden');
+    if (y < 160) nav.removeAttribute('data-hidden');
+  }, { passive: true });
+  nav.addEventListener('focusin', () => nav.removeAttribute('data-hidden'));
+})();
+</script>
+
+
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  if (!form) return;
+  const done = form.querySelector('.contact__done');
+  const error = form.querySelector('.contact__error');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const name = form.elements.namedItem('name');
+    const email = form.elements.namedItem('email');
+    const ok = name.value.trim() !== '' && email.value.trim() !== '' && email.validity.valid;
+    error.hidden = ok;
+    done.hidden = !ok;
+    if (ok) form.reset(); else (name.value.trim() ? email : name).focus();
+  });
+})();
+</script>
+<script data-8b-part="section-script:footer">
+(() => {
+  const footer = document.getElementById('footer');
+  if (!footer || !('IntersectionObserver' in window)) return;
+  footer.setAttribute('data-paused', '');
+  new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) footer.removeAttribute('data-paused'); else footer.setAttribute('data-paused', '');
+  }).observe(footer);
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('.line{display:block;overflow:clip;padding-block:.12em;margin-block:-.12em}.line:not(:last-child){margin-bottom:0}.line+.line{margin-top:-.24em}.line+.line>.line__in{text-indent:0}:where(h1,h2,h3,h4,h5,h6,p,div,blockquote,figcaption,dd,dt):where([data-8b-split="lines"]:has(>.line)){display:flow-root}.line__in{display:block}.kit-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const sources = new WeakMap(), widths = new WeakMap();
+const graphemes = typeof Intl.Segmenter === 'function'
+? text => [...new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(text)].map(part => part.segment)
+: text => [...text];
+const span = (className, text) => { const element = document.createElement('span'); element.className = className; if (text != null) element.textContent = text; return element; };
+const split = element => {
+const mode = element.getAttribute('data-8b-split');
+if (sources.has(element)) element.innerHTML = sources.get(element); else sources.set(element, element.innerHTML);
+const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT), texts = [];
+while (walker.nextNode()) texts.push(walker.currentNode);
+let index = 0;
+for (const node of texts) {
+const fragment = document.createDocumentFragment();
+for (const piece of node.data.split(/(\s+)/)) {
+if (!piece) continue;
+if (/^\s+$/.test(piece)) { fragment.append(piece); continue; }
+const word = span('w');
+if (mode === 'chars') {
+word.setAttribute('aria-hidden', 'true');
+for (const character of graphemes(piece)) { const c = span('c', character); c.style.setProperty('--i', index++); word.append(c); }
+} else {
+word.textContent = piece;
+if (mode === 'words') word.style.setProperty('--i', index++);
+}
+fragment.append(word);
+}
+node.replaceWith(fragment);
+}
+if (mode === 'chars') element.append(span('kit-sr', element.textContent.replace(/\s+/g, ' ').trim()));
+if (mode === 'lines') {
+const lines = [];
+let top = null;
+for (const child of [...element.childNodes]) {
+const probe = child.nodeType === 1 ? child : null;
+const at = probe ? probe.getBoundingClientRect().top : top;
+if (probe && (top === null || Math.abs(at - top) > 2)) { lines.push([]); top = at; }
+if (!lines.length) lines.push([]);
+lines.at(-1).push(child);
+}
+lines.forEach((nodes, i) => {
+const line = span('line'), inner = span('line__in');
+line.style.setProperty('--i', i);
+nodes[0].before(line);
+inner.append(...nodes);
+line.append(inner);
+});
+index = lines.length;
+widths.set(element, element.clientWidth);
+}
+element.style.setProperty('--n', index);
+};
+const pending = [];
+let busy = false;
+const drain = () => {
+if (busy) return;
+const element = pending.shift();
+if (!element) return;
+busy = true;
+setTimeout(() => { try { split(element); } catch (error) { console.error('[motion-kit] split failed', error); } busy = false; drain(); }, 0);
+};
+const near = new IntersectionObserver(entries => entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+near.unobserve(entry.target);
+pending.push(entry.target);
+drain();
+}), { rootMargin: '100% 0px 100% 0px' });
+(document.fonts?.ready ?? Promise.resolve()).then(() => document.querySelectorAll('[data-8b-split]').forEach(element => near.observe(element)));
+kit.measure(() => document.querySelectorAll('[data-8b-split="lines"]').forEach(element => {
+if (sources.has(element) && widths.get(element) !== element.clientWidth) { pending.push(element); drain(); }
+}));
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+(() => {
+const kit = window.motionKit;
+kit.track = () => {};
+if (!kit.live) return;
+const named = { top: 0, center: 0.5, bottom: 1 };
+const point = text => text.trim().split(/\s+/).map(word => named[word] ?? parseFloat(word) / 100);
+kit.track = (element, start, end, fn) => {
+const [s0, v0] = point(start), [s1, v1] = point(end);
+let queued = false;
+const run = () => {
+queued = false;
+const box = element.getBoundingClientRect(), vh = innerHeight;
+const d0 = box.top + box.height * s0 - vh * v0, d1 = box.top + box.height * s1 - vh * v1;
+fn(d1 === d0 ? (d0 <= 0 ? 1 : 0) : Math.min(1, Math.max(0, -d0 / (d1 - d0))));
+};
+addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(run); } }, { passive: true });
+kit.measure(run);
+};
+})();
+</script>
+<script data-8b-part="scene-script:noise">
+motionKit.scene('noise', () => {
+  const noise = document.getElementById('noise');
+  const stage = noise.querySelector('.noise__stage');
+  const head = noise.querySelector('.noise__head');
+  const chips = [...noise.querySelectorAll('.noise__field > li')];
+  let seed = 7;
+  const rand = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+  const chaos = chips.map(() => ({ x: rand(), y: rand(), r: rand(), s: rand() }));
+  chips.forEach((chip, i) => motionKit.set(chip, { '--noise-r': `${(chaos[i].r - 0.5) * 70}deg`, '--noise-s': 1.15 + chaos[i].s * 0.45, '--noise-at': 0.06 + chaos[i].s * 0.16 }));
+  chips.filter(chip => chip.classList.contains('m-chip-2')).forEach((chip, i) => motionKit.set(chip, { '--noise-lit': 0.68 + i * 0.05 }));
+  const layoutBox = element => {
+    let x = 0, y = 0, node = element;
+    while (node && node !== stage) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+    return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+  };
+  motionKit.measure(() => {
+    const sw = stage.offsetWidth, sh = stage.offsetHeight, h = layoutBox(head), headBottom = h.y + h.h;
+    chips.forEach((chip, i) => {
+      const c = layoutBox(chip), tx = sw * (0.07 + chaos[i].x * 0.86);
+      let ty = sh * (0.12 + chaos[i].y * 0.78);
+      if (tx < h.x + h.w + 40 && ty < headBottom + 80) ty = headBottom + 80 + chaos[i].y * (sh - headBottom - 120);
+      motionKit.set(chip, { '--noise-x': `${tx - (c.x + c.w / 2)}px`, '--noise-y': `${ty - (c.y + c.h / 2)}px` });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:sources">
+motionKit.scene('sources', () => {
+  const list = document.querySelector('#sources .sources__cols');
+  const cols = [...list.children];
+  motionKit.measure(() => {
+    const box = list.getBoundingClientRect(), n = cols.length;
+    const inRow = n > 1 && Math.abs(cols[0].offsetTop - cols[1].offsetTop) < 2;
+    cols.forEach((col, i) => {
+      const style = getComputedStyle(col), w = parseFloat(style.width), h = parseFloat(style.height);
+      const left = col.offsetLeft - list.offsetLeft, top = col.offsetTop - list.offsetTop;
+      if (inRow) {
+        const sw = Math.min(box.width * 0.46, 620), sh = box.height * 0.42;
+        const sx = (box.width - sw) / 2 + (sw / n) * i, sy = (box.height - sh) / 2;
+        motionKit.set(col, { '--sources-x': `${sx - left}px`, '--sources-y': `${sy + sh - top - h}px`, '--sources-clip': `inset(${h - sh}px ${w - sw / n}px 0px 0px)` });
+      } else {
+        const sw = box.width * 0.72, sh = Math.min(box.height * 0.5, n * 46);
+        const sx = (box.width - sw) / 2, sy = (box.height - sh) / 2 + (sh / n) * i;
+        motionKit.set(col, { '--sources-x': `${sx - left}px`, '--sources-y': `${sy - top}px`, '--sources-clip': `inset(0px ${w - sw}px ${h - sh / n}px 0px)` });
+      }
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:note">
+motionKit.scene('note', () => {
+  const note = document.getElementById('note');
+  const panel = note.querySelector('.note__panel');
+  const phone = note.querySelector('.note__phone');
+  motionKit.measure(() => {
+    const w = note.offsetWidth;
+    motionKit.set(note, { '--note-phone-x': `${(w / 5 - w / 2) / 2}px`, '--note-phone-scale': Math.min(1, (w / 5 - 28) / phone.offsetWidth), '--note-phone-lift': `${-panel.offsetHeight * 0.25}px` });
+  });
+  note.querySelectorAll('.note__part').forEach(part => {
+    const block = phone.querySelector(`.note__block[data-part="${part.dataset.part}"]`);
+    motionKit.track(part, 'top 62%', 'bottom 62%', progress => {
+      const on = progress > 0 && progress < 1;
+      part.toggleAttribute('data-on', on);
+      block?.toggleAttribute('data-on', on);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:makers">
+motionKit.scene('makers', () => {
+  const makers = document.getElementById('makers');
+  const stage = makers.querySelector('.makers__stage');
+  const track = makers.querySelector('.makers__track');
+  motionKit.measure(() => {
+    const pad = parseFloat(getComputedStyle(stage).paddingLeft) || 0, half = stage.clientWidth / 2;
+    const travel = Math.max(0, track.scrollWidth - (stage.clientWidth - 2 * pad));
+    motionKit.set(makers, { '--makers-travel': `${Math.round(travel)}px`, '--makers-move': `${travel}px`, '--makers-span': travel / half });
+    [...track.children].forEach(card => motionKit.set(card, { '--makers-at': (card.offsetLeft + card.offsetWidth / 2 - half) / half }));
+  });
+});
+</script>
+<script data-8b-part="scene-script:field">
+motionKit.scene('field', () => {
+  const field = document.getElementById('field');
+  const stage = field.querySelector('.field__stage');
+  const grid = field.querySelector('.field__grid');
+  const tile = grid.querySelector('[data-field-zoom]');
+  const above = stage.previousElementSibling;
+  motionKit.measure(() => {
+    const tw = tile.offsetWidth, th = tile.offsetHeight;
+    const s = Math.min(stage.clientWidth * 0.86 / tw, stage.clientHeight * 0.9 / th);
+    const cx = tile.offsetLeft + tw / 2, cy = tile.offsetTop + th / 2;
+    motionKit.set(field, { '--field-top': `${above.offsetTop + above.offsetHeight}px`, '--field-x': `${stage.clientWidth / 2 - grid.offsetLeft - s * cx}px`, '--field-y': `${stage.clientHeight / 2 - grid.offsetTop - s * cy}px`, '--field-s': s });
+  });
+});
+</script>
+<script data-8b-part="scene-script:pricing">
+motionKit.scene('pricing', () => {
+  const plans = document.querySelectorAll('#pricing .pricing__plan');
+  motionKit.measure(() => plans.forEach(plan => motionKit.set(plan, { '--pricing-r': `${plan.offsetWidth / 2}px` })));
+});
+</script>
+</body>
+</html>

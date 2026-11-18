@@ -1,0 +1,43 @@
+{
+  "slug": "burrow",
+  "name": "Burrow",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/veterinary-website-template",
+  "demo": "https://8b.com/templates/burrow/demo.html",
+  "design_md_url": "https://8b.com/templates/burrow/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "3463e1d20078fad326e2a220bad0e581234d7607",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "e0bb5db4cb9fc778dce4c5cea27454236a839aac",
+    "README.md": "bd064076013411a16dcd1b97b5836d2fde86bcdb",
+    "AGENTS.md": "70acbbd93fe5780c734f2884ce14f256dea5a51c",
+    "index.html": "ab932f79393a3086cf21d99078bd4fe0facf5ddf",
+    "index.gsap.html": "74aeb5a1fdaf8d9e8a37cae51fa15d8bde4950a5"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "192fe04cf38f5bb8a07842d8b88910fdebab12bbfc2ef5948b9a085bc70d37b8",
+    "README.md": "f9eb68448f2bec8023976272cf97eb9d5fab0e863c944da1ef8018003df5fd22",
+    "AGENTS.md": "4abdc25636517a7492742993f9de48ae78b4adcb1e2246cc09a28cbcf39bf526",
+    "index.html": "c449a958cbb737879fcd485fcea8d25cdf1bf4462b8899070618ae50e48520d3",
+    "index.gsap.html": "105f630edaf3192419a56fc331bc09cb5b7ba8d26ebf0b768aef109ea3455860"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

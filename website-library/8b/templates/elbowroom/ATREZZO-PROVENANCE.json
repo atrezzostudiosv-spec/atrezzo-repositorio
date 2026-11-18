@@ -1,0 +1,43 @@
+{
+  "slug": "elbowroom",
+  "name": "Elbowroom Storage",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/self-storage-website-template",
+  "demo": "https://8b.com/templates/elbowroom/demo.html",
+  "design_md_url": "https://8b.com/templates/elbowroom/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "dbb70d48ab184f66956d7dff9427c03e02860564",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "d0aa1c0c5e7ca04a4297fcbffc187a9a88e369dd",
+    "README.md": "988066e3c12cf1c19a175007e9a84f5e7d6a0c9e",
+    "AGENTS.md": "41c0934cfeebdb014c09f464de12ca9f3c9e6e72",
+    "index.html": "ccdf7bae05641f4c123774bc6a040d84f5cc3223",
+    "index.gsap.html": "77dc1062566b9e230b03ebb58608c47a4710e248"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "b7ad40c073433f4218f43775435fd8c7882339cf3833918ebbff501cfd093800",
+    "README.md": "ddd03aeb598ff0dba1a56482c0f276758417c730f2a02b5f011c026677843664",
+    "AGENTS.md": "6cf32bdc0a4f371e3fb8e6bd581c637744d1717a9ef6aa244101e39abc0494df",
+    "index.html": "a0a67119502dfe8c4dd1daad67f960650859d6bb89458fd6e1213ea6aca947e6",
+    "index.gsap.html": "d0242d93bf89384eaa75307d1616c18a6d0a868d4ca24c3015f5d87bb9a897f9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

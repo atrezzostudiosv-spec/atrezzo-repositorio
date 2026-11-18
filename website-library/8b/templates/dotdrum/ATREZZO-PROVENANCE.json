@@ -1,0 +1,44 @@
+{
+  "slug": "dotdrum",
+  "name": "Dotdrum",
+  "categories": [
+    "Agency and studio",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/print-studio-website-template",
+  "demo": "https://8b.com/templates/dotdrum/demo.html",
+  "design_md_url": "https://8b.com/templates/dotdrum/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b46d94bf52b75112c29139a43206e4901d7dfc70",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a24e63df69c56cac835bb6ba118a38c169adda64",
+    "README.md": "27b04a4f18b98d215390080e4a5f8396379b0fc5",
+    "AGENTS.md": "68c5fb53ef6540276ad0b97031a72976f6c10d13",
+    "index.html": "36727ea05721faaeefd34b6cb0c47bd73665e307",
+    "index.gsap.html": "f51216c5623252028e36cf1fe8d4387fe4a21315"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "41f2409c95dce598e147d35eab2d9d3c36c2f0811199879fcff053ed7d4df66e",
+    "README.md": "1635928efeee7e1c5ae6c20b9e1a2d28c010180019e46224595007251aee7bed",
+    "AGENTS.md": "f087d731f9c43a155d7b47bb0d6b3b44922c5eeeb60c1eef47c79727d1985e84",
+    "index.html": "8ce0672a70182f7208bd7bd69e938c4bed8e6e2927344b1c9dfb14538b42b496",
+    "index.gsap.html": "cb0516f12ca9dcbc28cc8873d1dbce60d9581625600d402a9bcd4bf83753f0a8"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

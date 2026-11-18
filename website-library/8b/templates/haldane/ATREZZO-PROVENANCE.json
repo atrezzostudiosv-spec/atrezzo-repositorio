@@ -1,0 +1,44 @@
+{
+  "slug": "haldane",
+  "name": "Haldane",
+  "categories": [
+    "Shop",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/tailor-website-template",
+  "demo": "https://8b.com/templates/haldane/demo.html",
+  "design_md_url": "https://8b.com/templates/haldane/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "1fd2b23af71d4c34e7dcdf2416c3b75271ae386d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "1c35b651a9b9931ff24b58b339de3f92de49fb4e",
+    "README.md": "b8d40c90ec9c1008b8227de309144158d9e8c83d",
+    "AGENTS.md": "4b5f49aaf05ead8e77e3b9de096bd5be866d295a",
+    "index.html": "5daf52457f84fe8a6457589de79824d148b0a0b9",
+    "index.gsap.html": "86ba32bfb8a5ddc337745aef5d46b105a10d63d2"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "9e69f6f1704a54e95900a2139e942427c6709955fb8d325bad0cf16fd610baa8",
+    "README.md": "68d4a94df70612af11a92291696964501fe9c848c45834bf065e77c431778ccc",
+    "AGENTS.md": "bac421afa39ff45ae03feb5c9d25495a8140320e5751c8227ebdd9251aeb7ec7",
+    "index.html": "4ee7e12bab5980c1e8183cf13c29e6bc1bf69e6f89fe97cb23784ab6af8f4658",
+    "index.gsap.html": "afba9eea23f0f84f25740c8eb85673dea3e6b84bd31c41c587ce63cb1e401a81"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

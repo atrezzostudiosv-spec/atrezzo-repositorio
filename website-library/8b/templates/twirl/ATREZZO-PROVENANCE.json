@@ -1,0 +1,44 @@
+{
+  "slug": "twirl",
+  "name": "Twirl",
+  "categories": [
+    "Sport and fitness",
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/dance-studio-website-template",
+  "demo": "https://8b.com/templates/twirl/demo.html",
+  "design_md_url": "https://8b.com/templates/twirl/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "084658a7d2d124f3473f26af5ac91f962b6cc3fc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "3c903002f4044be3ea5154e0da5ba9728ab33a4c",
+    "README.md": "633f7ebf459053e7fa779059f354e26803361811",
+    "AGENTS.md": "5488b5068723e9d6a6e4b42e68d77207606d4cc1",
+    "index.html": "23e46019678c3c99c14e98674b1e97638f8ba992",
+    "index.gsap.html": "25b40fcf2e743e93d0cfdf1c4252548bfd41f3b5"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8ef3a7d83a155a8b37e65a8b14c63668c2a004cbdab02c8f8b31769ffed2df1b",
+    "README.md": "ce870be5e9bccb34a911c35d84d1ffba744b22bb4c85b202016460721ee01fe5",
+    "AGENTS.md": "d49c60b891140065cd05422ba461ff49186082e28c74c556efbae3bb2a3b5c4d",
+    "index.html": "30192d001685376352eee6dc2d319e42cdf79f86e306cd1d7d50d07eba039cdf",
+    "index.gsap.html": "c3ef1a877a5d8965964f8b2519737c20c26bf48f85db8576e093c1b185ce374a"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

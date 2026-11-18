@@ -1,0 +1,44 @@
+{
+  "slug": "cut-short",
+  "name": "Cut Short",
+  "categories": [
+    "Event",
+    "Culture"
+  ],
+  "upstream": "https://github.com/8bsite/film-festival-website-template",
+  "demo": "https://8b.com/templates/cut-short/demo.html",
+  "design_md_url": "https://8b.com/templates/cut-short/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "ebc5b7ef7dc7a5f12aeb29df54e6a6d5da1f9fc2",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a1aba7f146a8dd595a4cba35513ca1d6b593cfc3",
+    "README.md": "a6e91a1643131ab8f47af7a89bb7aa92896f3666",
+    "AGENTS.md": "feff842a7d56a1c38cc90c1f1336bfc38f71af2c",
+    "index.html": "a695ec41fa8290206f8672dcd62ce34e673cf96c",
+    "index.gsap.html": "950e69c293cafc175d57f854fbe37502cb4ab61b"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "092984933489caa5709661914a98817fd259c40f15491409de40cf31cbd6926c",
+    "README.md": "438ed46e92fe68a6536d315f4c6eb0c27189aab83be52877c1affff101509633",
+    "AGENTS.md": "b16e4e3e4e2a2e082127314829cf14ae6cf44644e4673ec882139b2c2f16b3eb",
+    "index.html": "8cf89338ac7a6a3d2c3b0d7263c133ea7c9dc7677709441ece9d14f7b3549550",
+    "index.gsap.html": "fce605772a0f764f55e663f77c67473ccae5048917eea43eca1b0738e3b8a2e9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}
