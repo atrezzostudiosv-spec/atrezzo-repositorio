@@ -1,0 +1,42 @@
+name: Originales — GSAP Vault Collection 01 QA
+on:
+  push:
+    branches: ['lab/gsap-vault-collection-01']
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps chromium
+      - run: sudo apt-get install -y -qq ffmpeg
+      - run: node tests/gsap-vault-source-contract.mjs
+      - run: node scripts/prepare-gsap-vault.mjs
+      - run: node tests/gsap-vault-public.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gsap-vault-public-qa
+          path: qa-gsap-vault/
+      - name: Register actual screenshots and recordings
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
+          const run='https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID;
+          const r=read('registry/components.json'),p='catalog/previews/manifest.json',v=read(p);
+          for(const e of r.source_approved_entries.filter(e=>e.source_collection==='gsap-vault')){e.catalog_qa_status='passed_internal';e.catalog_qa_run=run;const m=read(e.package_manifest);m.catalog_qa_status='passed_internal';m.catalog_qa_run=run;write(e.package_manifest,m);v.entries[e.id]={poster:'previews/'+e.id+'.webp',video:'previews/'+e.id+'.webm',source:e.preview,viewport:'1120x700',interaction:e.discovery_trigger,validation_run:run};}
+          write('registry/components.json',r);write(p,v);
+          const i=read('registry/intake.json'),x=i.packages.find(p=>p.package_name==='GSAP Vault — Collection 01');x.status='ingested_internal_validated';x.ids=r.source_approved_entries.filter(e=>e.source_collection==='gsap-vault').map(e=>e.id);x.validation_run=run;write('registry/intake.json',i);
+          JS
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/components.json registry/intake.json components/originales/gsap-vault/ catalog/previews/
+          git commit -m "QA verified: GSAP Vault originals with actual preview media"
+          git push origin HEAD:lab/gsap-vault-collection-01
