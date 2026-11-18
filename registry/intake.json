@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16",
+  "updated_at": "2026-11-18",
   "status": "in_progress",
   "packages": [
     {
@@ -287,6 +287,17 @@
       "source": "components/originales/trionn/ATZ-SEC-014/",
       "note": "Usuario aprobó la preview privada. Módulos originales 36526, 53477 y 62749; sólo seis literales de identidad parametrizados. CSS exacto. Runtime oficial MIT. Comparación privada en cuatro anchos, nueve fases. QA pública pendiente.",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43898186856"
+    },
+    {
+      "package_name": "GSAP Vault — Collection 01",
+      "category": "motion-ui",
+      "status": "source_ingested_pending_qa",
+      "candidate_variants": 10,
+      "source": "sources/gsap-vault-collection-01/",
+      "manifest": "sources/gsap-vault-collection-01/manifest.json",
+      "preview": "sources/gsap-vault-collection-01/index.html",
+      "source_commit": "72bf2f26a306a711c1793222fa982f829099a58b",
+      "note": "63 blobs originales verificados contra upstream. Autorización de incorporación de fuente; no se han ejecutado pruebas de navegador ni admisión al catálogo aprobado. Medios de demo y dependencias sujetos a verificación independiente."
     }
   ]
 }
