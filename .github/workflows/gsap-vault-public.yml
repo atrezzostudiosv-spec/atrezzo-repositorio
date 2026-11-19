@@ -15,7 +15,7 @@ jobs:
           node-version: '22'
       - run: npm install --no-save playwright
       - run: npx playwright install --with-deps chromium
-      - run: sudo apt-get install -y -qq ffmpeg
+      - run: command -v ffmpeg || sudo apt-get install -y -qq ffmpeg
       - run: node tests/gsap-vault-source-contract.mjs
       - run: node scripts/prepare-gsap-vault.mjs
       - run: node tests/gsap-vault-public.mjs
