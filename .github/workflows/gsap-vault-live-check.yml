@@ -1,0 +1,61 @@
+name: GSAP Vault live Pages verification
+on:
+  push:
+    branches: ['lab/gsap-vault-live-check']
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps --only-shell chromium
+      - name: Verify deployed catalog and all actual media
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import {chromium} from 'playwright';
+          import fs from 'node:fs';
+          const site='https://atrezzostudiosv-spec.github.io/atrezzo-repositorio/';
+          const browser=await chromium.launch();
+          try{
+            const page=await browser.newPage({viewport:{width:1440,height:900}});
+            const errors=[];page.on('pageerror',e=>errors.push(e.message));
+            const response=await page.goto(site+'catalog/?v=29cfacce#originales',{waitUntil:'domcontentloaded'});
+            assert(response?.ok(),'public catalog HTTP response');
+            await page.waitForSelector('#original-grid [data-id="ATZ-GSV-001"]',{timeout:45000});
+            await page.locator('#query').fill('GSAP Vault');
+            const cards=page.locator('#original-grid .card');
+            assert.equal(await cards.count(),10);
+            const results=[];
+            for(let i=1;i<=10;i++){
+              const id='ATZ-GSV-'+String(i).padStart(3,'0'),card=page.locator('[data-id="'+id+'"]');
+              await card.scrollIntoViewIfNeeded();
+              await card.locator('img').evaluate(img=>img.decode());
+              assert(await card.locator('img').evaluate(img=>img.naturalWidth>0));
+              const href=await card.locator('a').getAttribute('href');
+              const demo=await page.request.get(new URL(href,site+'catalog/').href);assert(demo.ok(),id+' public demo');
+              await card.locator('[data-play]').click();
+              await page.waitForFunction(id=>{const v=document.querySelector('[data-id="'+id+'"] video');return v&&v.readyState>=2&&v.currentTime>0},id,{timeout:20000});
+              await card.locator('[data-play]').click();
+              results.push({id,poster:'loaded',video:'playing',demo:'HTTP OK'});
+            }
+            assert.deepEqual(errors,[]);
+            await page.locator('#original-grid').scrollIntoViewIfNeeded();
+            await page.screenshot({path:'gsap-vault-live.png'});
+            fs.writeFileSync('gsap-vault-live.json',JSON.stringify(results,null,2));
+            console.log('PASS live GitHub Pages: ten integrated cards, ten posters, ten playable recordings, ten demo URLs.',JSON.stringify(results));
+          }finally{await browser.close();}
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gsap-vault-live-verification
+          path: |
+            gsap-vault-live.png
+            gsap-vault-live.json
