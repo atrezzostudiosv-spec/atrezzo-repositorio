@@ -1,0 +1,328 @@
+/* ============================================
+   IMAGE CLIP REVEAL: DEMO STYLES
+
+   An editorial photo feature on a light grey ground: one ink, hairlines,
+   Mona Sans, and one red accent for the caption mark, the prompt dot, the
+   focus ring and selection. The photographs supply the rest of the colour.
+
+   Rules the effect depends on are marked "contract" below. Everything else
+   is the demo's page and can be replaced with your own design.
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+
+    --page: #ececeb;
+    --surface: #f7f7f6;
+    --surface-sunk: #e2e2e0;
+    --ink: #141412;
+    --ink-dim: rgba(20, 20, 18, 0.72);
+    --ink-faint: rgba(20, 20, 18, 0.64);
+    --rule: rgba(20, 20, 18, 0.14);
+    --rule-strong: rgba(20, 20, 18, 0.3);
+
+    --font-sans: 'Mona Sans', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+    --accent: #e5322d;          /* red: the caption mark, the focus ring, ::selection */
+    --accent-ink: #ffffff;
+
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+html,
+body {
+    min-height: 100%;
+    background: var(--page);
+}
+
+html {
+    scroll-behavior: auto;
+    overflow-x: clip;
+}
+
+body {
+    min-height: 100svh;
+    overflow-x: clip;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    display: block;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--accent-ink);
+}
+
+/* ============================================
+   PAGE SHELL
+   ============================================ */
+.feature {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+    padding: clamp(0.9rem, 2vw, 1.25rem) clamp(1rem, 3vw, 2rem) clamp(2rem, 6vw, 4rem);
+}
+
+.feature-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 2.25rem;
+    margin-bottom: clamp(0.75rem, 1.6vw, 1rem);
+}
+
+.prompt {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--ink-faint);
+    font-size: 0.8125rem;
+    line-height: 1.35;
+}
+
+.prompt strong {
+    color: var(--ink);
+    font-weight: 500;
+}
+
+.prompt-dot {
+    flex: 0 0 auto;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 0.9rem;
+    font: inherit;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    border: 1px solid var(--rule-strong);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background-color 0.2s var(--ease-out-quart);
+}
+
+.btn:hover {
+    background: var(--surface-sunk);
+}
+
+.btn:focus-visible {
+    background: var(--surface-sunk);
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   PHOTOGRAPH
+   ============================================ */
+.photo {
+    margin: 0;
+}
+
+.photo--second {
+    margin-top: clamp(2rem, 6vw, 4rem);
+}
+
+/* CONTRACT: the wrapper must clip. The polygon reveals the wrapper, and the
+   inner image starts scaled up, so anything that overflows would show
+   around the aperture. The neutral plate shows until the image has loaded. */
+.photo-media {
+    position: relative;
+    width: 100%;
+    height: min(62svh, 620px);
+    min-height: 260px;
+    overflow: hidden;
+    background: var(--surface-sunk);
+    isolation: isolate;
+}
+
+/* CONTRACT: the closed aperture, one per direction, gated under .has-js so
+   the photograph is visible without JavaScript. The six points match the
+   open polygon in script.js point for point, which keeps the interpolation
+   stable. */
+.has-js [data-clip-reveal] {
+    clip-path: polygon(0% 100%, 42% 100%, 50% 94%, 58% 100%, 100% 100%, 0% 100%);
+}
+
+.has-js [data-clip-reveal][data-reveal-direction='down'] {
+    clip-path: polygon(0% 0%, 42% 0%, 50% 6%, 58% 0%, 100% 0%, 0% 0%);
+}
+
+.has-js [data-clip-reveal][data-reveal-direction='left'] {
+    clip-path: polygon(100% 0%, 100% 42%, 94% 50%, 100% 58%, 100% 100%, 100% 0%);
+}
+
+.has-js [data-clip-reveal][data-reveal-direction='right'] {
+    clip-path: polygon(0% 0%, 0% 42%, 6% 50%, 0% 58%, 0% 100%, 0% 0%);
+}
+
+.photo-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
+    transform-origin: center 55%;
+}
+
+/* CONTRACT: the Ken Burns start state. script.js tweens scale from 1.14 to
+   1; without this the first frame would paint at 1 and jump. */
+.has-js [data-clip-reveal] img {
+    transform: scale(1.14);
+    will-change: transform;
+}
+
+/* ============================================
+   CAPTION
+   ============================================ */
+.photo-caption {
+    display: grid;
+    grid-template-columns: minmax(7rem, 0.9fr) minmax(14rem, 2.4fr) minmax(9rem, 1fr);
+    gap: 0.35rem clamp(1rem, 3vw, 2.5rem);
+    align-items: start;
+    padding-top: 0.9rem;
+}
+
+/* The accent mark: a short bar that draws in ahead of the caption copy. */
+.caption-mark {
+    grid-column: 1 / -1;
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-bottom: 0.35rem;
+    background: var(--accent);
+}
+
+.has-js .caption-mark {
+    transform: scaleX(0);
+    transform-origin: left center;
+}
+
+/* CONTRACT: each caption line rises through an overflow mask, so the mask
+   must clip and the inner span must be a block. */
+.caption-mask {
+    display: block;
+    overflow: hidden;
+}
+
+.caption-mask > span {
+    display: block;
+}
+
+.has-js .caption-mask > span {
+    opacity: 0;
+    transform: translateY(115%);
+}
+
+.caption-place,
+.caption-note {
+    color: var(--ink-faint);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    padding-top: 0.2rem;
+}
+
+.caption-title {
+    font-size: clamp(1.05rem, 1.9vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+.caption-note {
+    justify-self: end;
+    text-align: right;
+}
+
+/* ============================================
+   BODY COPY
+   ============================================ */
+.passage {
+    width: min(100%, 40rem);
+    margin: clamp(2rem, 6vw, 4rem) auto 0;
+    color: var(--ink-dim);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 700px) {
+    .feature-bar {
+        align-items: flex-start;
+    }
+
+    .prompt span:last-child {
+        display: none;
+    }
+
+    .photo-media {
+        height: auto;
+        aspect-ratio: 4 / 5;
+        max-height: 60svh;
+    }
+
+    .photo-caption {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+
+    .caption-title {
+        font-size: clamp(1.1rem, 5.5vw, 1.4rem);
+    }
+
+    .caption-note {
+        justify-self: start;
+        text-align: left;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   CONTRACT: every start state above is undone here, so the page is complete
+   without a single tween. script.js also skips the timelines.
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    [data-clip-reveal],
+    [data-clip-reveal][data-reveal-direction] {
+        clip-path: none !important;
+    }
+
+    [data-clip-reveal] img,
+    [data-reveal-copy],
+    [data-reveal-rule] {
+        opacity: 1 !important;
+        transform: none !important;
+        will-change: auto !important;
+    }
+}

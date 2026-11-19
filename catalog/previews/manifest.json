@@ -571,6 +571,86 @@
       "viewport": "1120x700",
       "interaction": "original preloader auto sequence",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43898186856"
+    },
+    "ATZ-GSV-001": {
+      "poster": "previews/ATZ-GSV-001.webp",
+      "video": "previews/ATZ-GSV-001.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-001/index.html",
+      "viewport": "1120x700",
+      "interaction": "mixed",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-002": {
+      "poster": "previews/ATZ-GSV-002.webp",
+      "video": "previews/ATZ-GSV-002.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-002/index.html",
+      "viewport": "1120x700",
+      "interaction": "mixed",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-003": {
+      "poster": "previews/ATZ-GSV-003.webp",
+      "video": "previews/ATZ-GSV-003.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-003/index.html",
+      "viewport": "1120x700",
+      "interaction": "scroll-entry",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-004": {
+      "poster": "previews/ATZ-GSV-004.webp",
+      "video": "previews/ATZ-GSV-004.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-004/index.html",
+      "viewport": "1120x700",
+      "interaction": "hover",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-005": {
+      "poster": "previews/ATZ-GSV-005.webp",
+      "video": "previews/ATZ-GSV-005.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-005/index.html",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-006": {
+      "poster": "previews/ATZ-GSV-006.webp",
+      "video": "previews/ATZ-GSV-006.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-006/index.html",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-007": {
+      "poster": "previews/ATZ-GSV-007.webp",
+      "video": "previews/ATZ-GSV-007.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-007/index.html",
+      "viewport": "1120x700",
+      "interaction": "scroll",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-008": {
+      "poster": "previews/ATZ-GSV-008.webp",
+      "video": "previews/ATZ-GSV-008.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-008/index.html",
+      "viewport": "1120x700",
+      "interaction": "click",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-009": {
+      "poster": "previews/ATZ-GSV-009.webp",
+      "video": "previews/ATZ-GSV-009.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-009/index.html",
+      "viewport": "1120x700",
+      "interaction": "time",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    "ATZ-GSV-010": {
+      "poster": "previews/ATZ-GSV-010.webp",
+      "video": "previews/ATZ-GSV-010.webm",
+      "source": "components/originales/gsap-vault/ATZ-GSV-010/index.html",
+      "viewport": "1120x700",
+      "interaction": "mixed",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
     }
   },
   "editorialRepair": "phase04-v1",

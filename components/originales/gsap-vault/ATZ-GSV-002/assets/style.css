@@ -1,0 +1,261 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+	/* Cool grey ground, the site's ink, one violet accent. The three card
+	   stocks exist only to tell the cards apart: two neutral greys and one
+	   accent face, never a warm/beige stock. */
+	--page: #ececeb;
+	--surface: #f7f7f6;
+	--ink: #141412;
+	--chalk: #f1efea;
+	--muted: rgba(20, 20, 18, 0.66); /* 4.8:1 on the deepest stock */
+	--rule: rgba(20, 20, 18, 0.14);
+	--stock-a: var(--surface); /* light grey stock */
+	--stock-c: #ccced4;    /* deeper cool grey stock */
+	--accent: #6d4cff;
+	--accent-ink: #ffffff; /* 5.0:1 on the accent */
+	--accent-lift: #a48cff; /* accent legible on the ink back face */
+	color-scheme: light;
+}
+
+html, body { min-height: 100%; }
+html { background: var(--page); }
+body {
+	background: var(--page);
+	color: var(--ink);
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+/* Full-bleed ground. The three cards and the one trigger hint, nothing else. */
+.stage {
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	gap: clamp(28px, 4vh, 40px);
+	width: 100%;
+	min-height: 100svh;
+	padding: clamp(24px, 5vh, 56px) clamp(22px, 4vw, 58px);
+}
+
+.prompt {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+	/* Clear of the cards: on a tall viewport the row grows until the cue sits
+	   against their bottom edge, which check:composition reads as ink touching
+	   a border. */
+	margin-top: 28px;
+	font-size: 13px;
+}
+.prompt strong { font-weight: 500; }
+.prompt span { color: var(--muted); }
+
+.roster {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	align-items: center;
+	gap: clamp(14px, 2.6vw, 34px);
+	width: min(100%, 1040px);
+	perspective: 1800px;
+}
+
+.flip-card {
+	--card-accent: var(--stock-a);
+	--card-face-ink: var(--ink);
+	--card-face-muted: var(--muted);
+	position: relative;
+	width: 100%;
+	max-width: 326px;
+	aspect-ratio: .76;
+	padding: 0;
+	border: 0;
+	border-radius: 18px;
+	background: transparent;
+	color: var(--card-face-ink);
+	font: inherit;
+	text-align: left;
+	cursor: pointer;
+	perspective: 1400px;
+	transform-origin: center bottom;
+	-webkit-tap-highlight-color: transparent;
+}
+.flip-card--violet {
+	--card-accent: var(--accent);
+	--card-face-ink: var(--accent-ink);
+	--card-face-muted: rgba(255, 255, 255, 0.96); /* 4.7:1 on the accent */
+}
+.flip-card--lime { --card-accent: var(--stock-c); }
+
+.card-shadow {
+	position: absolute;
+	z-index: -1;
+	inset: 8% 6% -5%;
+	border-radius: 18px;
+	background: #000;
+	filter: blur(24px);
+	opacity: .34;
+	transform: translateX(18px) scale(.95);
+}
+
+.flip-card-inner {
+	position: absolute;
+	inset: 0;
+	transform-style: preserve-3d;
+	will-change: transform;
+}
+
+.card-edge {
+	position: absolute;
+	z-index: 1;
+	inset: 7px -3px;
+	border: 1px solid color-mix(in srgb, var(--accent) 70%, white);
+	border-radius: 17px;
+	opacity: .3;
+	transform: translateZ(-9px) translateX(5px);
+	box-shadow: 0 0 16px color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: clamp(18px, 2.2vw, 28px);
+	border: 1px solid var(--rule);
+	border-radius: 12px;
+	background: var(--card-accent);
+	color: var(--card-face-ink);
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	box-shadow: 0 1px 2px rgba(20,20,18,.06);
+	transform: rotateY(0deg) translateZ(1px);
+}
+
+/* The dossier side inverts: ink face, chalk type. Deliberate contrast with
+   the stock front, and it makes the flip read at a glance. */
+.flip-card-back {
+	background: var(--ink);
+	border-color: rgba(241,239,234,.18);
+	color: var(--chalk);
+	transform: rotateY(180deg) translateZ(1px);
+	box-shadow: 0 1px 2px rgba(20,20,18,.14);
+}
+
+.face-light {
+	position: absolute;
+	inset: -25%;
+	pointer-events: none;
+	background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,.9) 49%, transparent 67%);
+	mix-blend-mode: soft-light;
+	opacity: .3;
+	transform: translateX(25%);
+}
+.flip-card-back .face-light { opacity: .08; }
+
+.card-topline,
+.project-meta {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	font-size: clamp(10px, .95vw, 12px);
+	font-weight: 500;
+	color: var(--card-face-muted);
+}
+
+.card-monogram {
+	position: relative;
+	z-index: 1;
+	align-self: center;
+	font-weight: 600;
+	font-size: clamp(64px, 8vw, 112px);
+	font-weight: 800;
+	letter-spacing: -.1em;
+	line-height: .75;
+	transform: translateX(-.05em);
+}
+
+.card-identity { position: relative; z-index: 1; display: grid; gap: 2px; }
+.card-identity strong {
+	font-weight: 600;
+	font-size: clamp(22px, 2.35vw, 34px);
+	line-height: 1;
+	letter-spacing: -.055em;
+}
+.card-identity span, .project-type {
+	font-size: clamp(10px, .95vw, 12px);
+	color: var(--card-face-muted);
+}
+
+.project-type { position: relative; z-index: 1; color: var(--accent-lift); }
+.project-title {
+	position: relative;
+	z-index: 1;
+	font-weight: 600;
+	font-size: clamp(38px, 4.3vw, 60px);
+	font-weight: 700;
+	line-height: .86;
+	letter-spacing: -.07em;
+}
+.project-meta { gap: 8px; color: rgba(241, 239, 234, 0.6); font-size: clamp(7px, .68vw, 9px); }
+
+.flip-card-back .card-topline { color: rgba(241, 239, 234, 0.62); }
+
+.flip-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+
+/* No-JS and programmatic class fallback; GSAP takes over these transforms when available. */
+.flip-card-inner { transition: transform .82s cubic-bezier(.77, 0, .175, 1); }
+.has-js .flip-card-inner { transition: none; }
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+
+@media (max-width: 640px) {
+	.stage {
+		align-content: start;
+		gap: 18px;
+		padding: 22px 18px;
+	}
+	.roster {
+		grid-template-columns: 1fr;
+		gap: 11px;
+	}
+	.flip-card {
+		max-width: none;
+		aspect-ratio: 2.15;
+		min-height: 142px;
+	}
+	.flip-card-front, .flip-card-back { padding: 16px 18px; border-radius: 14px; }
+	.card-edge { border-radius: 14px; }
+	.card-monogram { position: absolute; right: 22px; top: 50%; font-size: 62px; transform: translateY(-50%); }
+	.card-identity strong { font-size: 24px; }
+	.project-title { font-size: 36px; }
+	.project-title br { display: none; }
+	.project-type { position: absolute; top: 48%; transform: translateY(-50%); }
+	.project-meta { font-size: 7px; }
+}
+
+@media (max-width: 640px) and (max-height: 700px) {
+	.stage { gap: 14px; padding: 16px 18px; }
+	.roster { gap: 8px; min-height: 0; }
+	.flip-card { height: 132px; min-height: 0; aspect-ratio: auto; }
+	.flip-card-front, .flip-card-back { padding: 12px 16px; }
+	.card-identity strong { font-size: 21px; }
+	.project-title { font-size: 30px; }
+}
+
+@media (max-height: 700px) and (min-width: 641px) {
+	.stage { gap: 18px; padding: 20px clamp(22px, 4vw, 58px); }
+	.roster { width: min(86%, 920px); gap: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+	.flip-card-inner { transition: none; }
+	.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+}

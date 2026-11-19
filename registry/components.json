@@ -3542,6 +3542,723 @@
         ]
       },
       "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/43898186856"
+    },
+    {
+      "id": "ATZ-GSV-001",
+      "title": "Spotlight Background",
+      "category": "fondos-interactivos",
+      "family": "gsap-vault-collection-01",
+      "variant": "spotlight-background",
+      "selector": "[data-spotlight]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Dos focos teatrales en WebGL iluminan el titular y siguen el puntero con inercia.",
+      "recommended_for": "Estudios creativos y marcas tecnológicas.",
+      "avoid_when": "Verificar GPU y fallback; evitar en sitios de acceso urgente.",
+      "level": "M3",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "GSAP Vault",
+        "spotlight-background",
+        "fondos-interactivos"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-001/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-001/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-001/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-001/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-001/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-001/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-001/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-001/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0",
+        "three@0.180.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. WebGL; dos focos teatrales reactivos al puntero; comprobar GPU, fallback y movimiento reducido.",
+      "visual": {
+        "views": [
+          "Heroes",
+          "Motion e interacciones"
+        ],
+        "roles": [
+          "Hero",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality"
+        ],
+        "motion": 3,
+        "search_aliases": [
+          "GSAP Vault",
+          "Spotlight Background",
+          "spotlight-background"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-002",
+      "title": "3D Card Flip Gallery",
+      "category": "tarjetas",
+      "family": "gsap-vault-collection-01",
+      "variant": "3d-card-flip",
+      "selector": ".flip-card",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Tarjetas 3D que giran mediante hover, foco o toque, con sombras y luces reactivas.",
+      "recommended_for": "Servicios, productos y proyectos.",
+      "avoid_when": "Mantener alternativas accesibles y no ocultar información esencial.",
+      "level": "M2",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "GSAP Vault",
+        "3d-card-flip",
+        "tarjetas"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-002/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-002/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-002/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-002/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-002/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-002/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-002/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-002/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0",
+        "ScrollTrigger"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Giro 3D interactivo; comprobar teclado, touch y cierre de grupo.",
+      "visual": {
+        "views": [
+          "Galerías y proyectos",
+          "Elementos funcionales"
+        ],
+        "roles": [
+          "Galería",
+          "Servicios",
+          "Producto"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "comercio"
+        ],
+        "motion": 2,
+        "search_aliases": [
+          "GSAP Vault",
+          "3D Card Flip Gallery",
+          "3d-card-flip"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-003",
+      "title": "Image Clip Reveal",
+      "category": "galerias",
+      "family": "gsap-vault-collection-01",
+      "variant": "image-clip-reveal",
+      "selector": "[data-clip-reveal]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Máscara direccional de seis puntos que revela la fotografía con escala cinematográfica y entrada de leyenda.",
+      "recommended_for": "Fotografía editorial, arquitectura y portfolios.",
+      "avoid_when": "No imponer Lenis en cliente; sustituir imágenes de demo por medios autorizados.",
+      "level": "M2",
+      "discovery_group": "galerias",
+      "discovery_trigger": "scroll-entry",
+      "discovery_tags": [
+        "GSAP Vault",
+        "image-clip-reveal",
+        "galerias"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-003/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-003/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-003/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-003/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-003/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-003/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-003/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-003/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0",
+        "ScrollTrigger",
+        "lenis@1.3.17 (demo)"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Revelado por máscara; no instalar Lenis global en clientes; medios de muestra no certificados.",
+      "visual": {
+        "views": [
+          "Galerías y proyectos",
+          "Experiencias de scroll"
+        ],
+        "roles": [
+          "Galería",
+          "Presentación",
+          "Proyectos"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "comercio"
+        ],
+        "motion": 2,
+        "search_aliases": [
+          "GSAP Vault",
+          "Image Clip Reveal",
+          "image-clip-reveal"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-004",
+      "title": "Hover Underline",
+      "category": "microinteracciones",
+      "family": "gsap-vault-collection-01",
+      "variant": "hover-underline",
+      "selector": "[data-underline]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Cuatro subrayados originales para enlaces: línea, marcador y dos ondas animadas.",
+      "recommended_for": "Navegación, enlaces editoriales y CTA.",
+      "avoid_when": "Mantener foco visible y contraste.",
+      "level": "M1",
+      "discovery_group": "microinteracciones",
+      "discovery_trigger": "hover",
+      "discovery_tags": [
+        "GSAP Vault",
+        "hover-underline",
+        "microinteracciones"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-004/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-004/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-004/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-004/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-004/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-004/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-004/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-004/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Cuatro subrayados animados; comprobar foco y hover.",
+      "visual": {
+        "views": [
+          "Motion e interacciones",
+          "Navegación y transiciones"
+        ],
+        "roles": [
+          "Navegación",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "Hover Underline",
+          "hover-underline"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-005",
+      "title": "Animated Tabs",
+      "category": "ui",
+      "family": "gsap-vault-collection-01",
+      "variant": "sliding-indicator-tabs",
+      "selector": "[data-tabs]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Pestañas con indicador elástico, paneles direccionales y altura animada.",
+      "recommended_for": "Comparación de servicios y productos.",
+      "avoid_when": "Conservar roles ARIA y teclado.",
+      "level": "M1",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "click",
+      "discovery_tags": [
+        "GSAP Vault",
+        "sliding-indicator-tabs",
+        "ui"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-005/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-005/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-005/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-005/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-005/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-005/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-005/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-005/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Pestañas con indicador y altura animada; comprobar navegación de teclado.",
+      "visual": {
+        "views": [
+          "Elementos funcionales",
+          "Secciones"
+        ],
+        "roles": [
+          "Servicios",
+          "Producto",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "Animated Tabs",
+          "sliding-indicator-tabs"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-006",
+      "title": "FAQ Accordion",
+      "category": "ui",
+      "family": "gsap-vault-collection-01",
+      "variant": "faq-disclosure-accordion",
+      "selector": "[data-accordion]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Preguntas frecuentes con altura natural, transición de icono, apertura múltiple y enlaces profundos.",
+      "recommended_for": "Servicios, FAQ y soporte.",
+      "avoid_when": "Mantener respuestas accesibles y fallback.",
+      "level": "M1",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "click",
+      "discovery_tags": [
+        "GSAP Vault",
+        "faq-disclosure-accordion",
+        "ui"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-006/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-006/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-006/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-006/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-006/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-006/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-006/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-006/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Acordeón accesible; comprobar apertura, cierre, enlaces profundos y no-JS.",
+      "visual": {
+        "views": [
+          "Elementos funcionales",
+          "Secciones"
+        ],
+        "roles": [
+          "Servicios",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "FAQ Accordion",
+          "faq-disclosure-accordion"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-007",
+      "title": "Scroll Progress Indicator",
+      "category": "navegacion",
+      "family": "gsap-vault-collection-01",
+      "variant": "scroll-progress",
+      "selector": "[data-progress-style]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Cuatro indicadores de progreso de lectura: barra, anillo, rail y porcentaje.",
+      "recommended_for": "Artículos, guías y páginas largas.",
+      "avoid_when": "Evitar duplicar indicadores en la misma página.",
+      "level": "M1",
+      "discovery_group": "navegacion",
+      "discovery_trigger": "scroll",
+      "discovery_tags": [
+        "GSAP Vault",
+        "scroll-progress",
+        "navegacion"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-007/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-007/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-007/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-007/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-007/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-007/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-007/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-007/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0",
+        "ScrollTrigger"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Cuatro indicadores de lectura; comprobar scroll inverso.",
+      "visual": {
+        "views": [
+          "Experiencias de scroll",
+          "Navegación y transiciones"
+        ],
+        "roles": [
+          "Navegación",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "Scroll Progress Indicator",
+          "scroll-progress"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-008",
+      "title": "Progress Stepper",
+      "category": "conversion",
+      "family": "gsap-vault-collection-01",
+      "variant": "step-progress-indicator",
+      "selector": ".step-node",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Indicador de etapas con recorrido animado y marcas de pasos completados.",
+      "recommended_for": "Formularios, presupuestos y onboarding.",
+      "avoid_when": "Conectar estados reales del proceso; no simular avance.",
+      "level": "M1",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "click",
+      "discovery_tags": [
+        "GSAP Vault",
+        "step-progress-indicator",
+        "conversion"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-008/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-008/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-008/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-008/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-008/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-008/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-008/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-008/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Indicador de pasos; comprobar estado, teclado y límites.",
+      "visual": {
+        "views": [
+          "Elementos funcionales",
+          "Motion e interacciones"
+        ],
+        "roles": [
+          "Proceso",
+          "Contacto"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "Progress Stepper",
+          "step-progress-indicator"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-009",
+      "title": "Skeleton Loader",
+      "category": "ui",
+      "family": "gsap-vault-collection-01",
+      "variant": "skeleton-to-content-reveal",
+      "selector": "#skFeed",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Marcadores de carga con shimmer y transición progresiva al contenido.",
+      "recommended_for": "Contenido dinámico y paneles de datos.",
+      "avoid_when": "Vincular al estado real de carga, error y éxito.",
+      "level": "M1",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "time",
+      "discovery_tags": [
+        "GSAP Vault",
+        "skeleton-to-content-reveal",
+        "ui"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-009/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-009/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-009/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-009/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-009/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-009/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-009/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-009/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Transición de carga; comprobar estados de éxito, fallo y movimiento reducido.",
+      "visual": {
+        "views": [
+          "Elementos funcionales",
+          "Motion e interacciones"
+        ],
+        "roles": [
+          "Producto",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "Skeleton Loader",
+          "skeleton-to-content-reveal"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+      "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+    },
+    {
+      "id": "ATZ-GSV-010",
+      "title": "Announcement Bar",
+      "category": "marketing",
+      "family": "gsap-vault-collection-01",
+      "variant": "announcement-banner-bar",
+      "selector": "[data-announcement-bar]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Barra de anuncios con cambio de mensaje, navegación y cierre animado.",
+      "recommended_for": "Promociones y avisos de servicio.",
+      "avoid_when": "No inventar promociones; conservar contenido accesible y cierre.",
+      "level": "M1",
+      "discovery_group": "navegacion",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "GSAP Vault",
+        "announcement-banner-bar",
+        "marketing"
+      ],
+      "preview": "components/originales/gsap-vault/ATZ-GSV-010/index.html",
+      "technical_guide": "components/originales/gsap-vault/ATZ-GSV-010/ATREZZO-INTEGRATION.md",
+      "component_html": "components/originales/gsap-vault/ATZ-GSV-010/index.html",
+      "component_css": "components/originales/gsap-vault/ATZ-GSV-010/assets/style.css",
+      "component_js": "components/originales/gsap-vault/ATZ-GSV-010/assets/script.js",
+      "component_runtime": "components/originales/gsap-vault/ATZ-GSV-010/assets/script.min.js",
+      "package_manifest": "components/originales/gsap-vault/ATZ-GSV-010/manifest.json",
+      "package_directory": "components/originales/gsap-vault/ATZ-GSV-010/",
+      "source_collection": "gsap-vault",
+      "dependencies": [
+        "gsap@3.15.0"
+      ],
+      "licensing": "GSAP Vault source MIT; preserve LICENSE. Dependencies and demo media subject to independent rights checks.",
+      "integration": "Fuente GSAP Vault, MIT; conservar LICENSE y leer START-HERE-AI.md y README.md originales. Usar index.html como demo autónoma por HTTP. Integrar solo la estructura y los archivos de este ID. El código ejecutado es assets/script.js; assets/script.min.js es alternativa de producción, no cargar ambos. Reutilizar GSAP del proyecto si es compatible, aislar CSS, registrar solo plugins necesarios y desmontar listeners/animaciones. No imponer Lenis global. Las imágenes y fuentes de muestra no quedan certificadas para proyectos de cliente. Mantener tiempos, easing y DOM originales.",
+      "visual_contract": "Preservar la animación y el diseño original. Barra de anuncios; comprobar rotación, cierre y no solapar contenido.",
+      "visual": {
+        "views": [
+          "Elementos funcionales",
+          "Navegación y transiciones"
+        ],
+        "roles": [
+          "Navegación",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno"
+        ],
+        "industries": [
+          "creativo",
+          "tecnologia",
+          "salud",
+          "arquitectura",
+          "realestate",
+          "construccion",
+          "bienestar",
+          "hospitality",
+          "urgente",
+          "comercio"
+        ],
+        "motion": 1,
+        "search_aliases": [
+          "GSAP Vault",
+          "Announcement Bar",
+          "announcement-banner-bar"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
     }
   ],
   "originals_integration_contract": {

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const registryPath=join(root,"registry/components.json");
-const allowedId=/^ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC|CTR)-\d{3}$/;
+const allowedId=/^ATZ-(SCR|TRN|NAV|STK|SEC|MOT|PGT|SVC|MIC|CTR|GSV)-\d{3}$/;
 const allowedFiles=/^components\/(scroll|transiciones|navegacion|secciones|motion|page-transitions|servicios|runtime|typography|microinteractions|creative-transitions)\/[A-Za-z0-9-]+\.(html|css|js)$/;
 
 const allowedAsset=/^components\/servicios\/illustration-0[1-5]\.svg$/;
