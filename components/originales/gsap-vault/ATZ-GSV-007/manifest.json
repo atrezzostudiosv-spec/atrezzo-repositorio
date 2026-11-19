@@ -1,0 +1,64 @@
+{
+  "id": "ATZ-GSV-007",
+  "title": "Scroll Progress Indicator",
+  "source_collection": "gsap-vault",
+  "source_commit": "72bf2f26a306a711c1793222fa982f829099a58b",
+  "source_slug": "scroll-progress",
+  "source_visual_approved": true,
+  "catalog_qa_status": "passed_internal",
+  "client_ready": false,
+  "files": [
+    "README.md",
+    "START-HERE-AI.md",
+    "assets/script.js",
+    "assets/script.min.js",
+    "assets/style.css",
+    "index.html",
+    "LICENSE",
+    "ATREZZO-INTEGRATION.md",
+    "manifest.json"
+  ],
+  "dependencies": [
+    "gsap@3.15.0",
+    "ScrollTrigger"
+  ],
+  "source_blobs": [
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "bfe0fa6f22c2f0a6ad603d853a29f3276137486e",
+      "size": 1083
+    },
+    {
+      "path": "scroll-progress/README.md",
+      "git_blob_sha": "5d86d22c96381ddbce268447de9d142436a1b9df",
+      "size": 5191
+    },
+    {
+      "path": "scroll-progress/START-HERE-AI.md",
+      "git_blob_sha": "73e6eef366fbf2df259b31ea5d6eca555f75f087",
+      "size": 3303
+    },
+    {
+      "path": "scroll-progress/assets/script.js",
+      "git_blob_sha": "0cdbc43460fe10cf0ce347e0bc919b857708e215",
+      "size": 4453
+    },
+    {
+      "path": "scroll-progress/assets/script.min.js",
+      "git_blob_sha": "74436b26ed72538848e359f884ff2a717dce8b72",
+      "size": 2591
+    },
+    {
+      "path": "scroll-progress/assets/style.css",
+      "git_blob_sha": "e93d9674c83fffa933cc628a4f6a429bc733bf31",
+      "size": 7330
+    },
+    {
+      "path": "scroll-progress/index.html",
+      "git_blob_sha": "e360a9339bf6f79864e6a028503e0a822d9dfc3d",
+      "size": 6647
+    }
+  ],
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368",
+  "individual_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44314213564"
+}

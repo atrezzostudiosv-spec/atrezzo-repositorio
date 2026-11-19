@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scroll Progress Indicator Demo | GSAP Vault</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-mode="all">
+	<!-- The four indicators. Each one is independent: keep the ones you want,
+	     delete the rest. -->
+	<div class="progress-bar" data-progress-style="bar" data-progress-position="top" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<div class="progress-bar__fill"></div>
+	</div>
+
+	<div class="progress-rail progress-rail--left" data-progress-style="rail" data-progress-position="left" role="progressbar" aria-label="Reading progress rail" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<div class="progress-rail__fill"></div>
+	</div>
+
+	<div class="progress-circle" data-progress-style="circle" data-progress-position="bottom-right" role="progressbar" aria-label="Circular reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<svg class="progress-circle__svg" viewBox="0 0 120 120" aria-hidden="true">
+			<circle class="progress-circle__bg" cx="60" cy="60" r="52"/>
+			<circle class="progress-circle__fill" cx="60" cy="60" r="52"/>
+		</svg>
+		<span class="progress-circle__text">0%</span>
+	</div>
+
+	<div class="progress-counter" data-progress-style="counter" data-progress-position="bottom-left" role="progressbar" aria-label="Numeric reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+		<span class="progress-counter__value">000</span>
+		<span class="progress-counter__symbol">%</span>
+	</div>
+
+	<header class="showcase-toolbar">
+		<p class="showcase-prompt"><span aria-hidden="true">&darr;</span> Scroll to read</p>
+		<div class="mode-switcher" role="group" aria-label="Progress indicator shown">
+			<button type="button" data-mode-button="all" aria-pressed="true">All</button>
+			<button type="button" data-mode-button="bar" aria-pressed="false">Bar</button>
+			<button type="button" data-mode-button="circle" aria-pressed="false">Ring</button>
+			<button type="button" data-mode-button="rail" aria-pressed="false">Rail</button>
+			<button type="button" data-mode-button="counter" aria-pressed="false">%</button>
+		</div>
+	</header>
+
+	<main class="page">
+		<article class="article" data-thumbnail-target>
+			<p class="eyebrow">Typography &middot; 6 min read</p>
+			<h1>Writing pages that people finish</h1>
+			<p class="standfirst">Most long articles are abandoned in the first screen and a half. Very little of that is the writing. Most of it is the page.</p>
+
+			<p>A reader arriving on a long page makes one decision before they make any other: is this worth the next few minutes? They answer it without reading a word, from the shape of the thing. Line length, the size of the gaps, how far the scrollbar suggests they have to go. Design the page badly and the best paragraph you have ever written never gets looked at.</p>
+
+			<h2>Give the reader a sense of distance</h2>
+			<p>People are happy to commit to a long walk if they can see where it ends. The same is true of an article. A reading-progress indicator is the cheapest way to answer the question, and it keeps answering it as they go: a quarter of the way, halfway, nearly there.</p>
+			<p>It works because it is honest. The bar moves with the scroll position and nothing else, so it never promises a short read and then delivers a long one. If your page has a comment thread or a footer full of related links, end the measured range at the end of the article rather than the end of the document, or the last paragraph will sit at seventy per cent and feel like a lie.</p>
+
+			<h2>Set the measure before the typeface</h2>
+			<p>Line length does more work than the font choice. Somewhere between sixty and seventy-five characters, the eye finds the start of the next line without effort. Push past ninety and readers start losing their place; drop below forty-five and they get seasick from the return sweep.</p>
+			<p>Once the measure is right, the leading follows from it. Longer lines need more space between them. On a phone, where the measure is short by force, tight leading reads fine and saves the reader a great deal of scrolling.</p>
+
+			<h2>Break the wall</h2>
+			<p>A subheading every three or four paragraphs is not a stylistic flourish. It is a resting point, and it gives the skimmer a way to decide whether the next section is for them. Readers who skim and then come back are worth more than readers who bounce.</p>
+			<p>The same goes for paragraph length. Four lines is comfortable, eight is a wall. When a paragraph runs long, it is almost always because it is doing two jobs; splitting it usually improves the argument as well as the page.</p>
+
+			<h2>Let the page be quiet</h2>
+			<p>Everything that moves competes with the sentence being read. This is the argument against most of what gets bolted onto article pages: the sticky share bar that eats a fifth of a phone screen, the newsletter modal at thirty per cent, the related-posts carousel that autoplays in the margin.</p>
+			<p>A progress indicator survives that test because it is peripheral. Three pixels along the top edge, or a small ring in a corner, is legible at a glance and invisible the rest of the time. If yours needs a label to explain it, it is too loud.</p>
+
+			<h2>Respect the reader's settings</h2>
+			<p>Some readers have asked their operating system for less motion, and a progress indicator is a good example of a thing that should still work for them. The information is useful; only the easing is decorative. Keep the number accurate and drop the smoothing.</p>
+			<p>The same applies to screen readers. A progress element with a role, a label and a value that updates is a small amount of markup and it turns an ornament into something that actually reports position.</p>
+
+			<h2>Finish at the end</h2>
+			<p>An indicator that stops at ninety-seven per cent is worse than none at all, because the reader notices and stops trusting it. Clamp the last fraction so the page lands on an exact hundred at the bottom, and let the final paragraph have the room to be the last thing on the screen.</p>
+			<p>That is the whole trick, really. Tell the reader how far they have come, tell them the truth, and then get out of the way.</p>
+		</article>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+	<script src="assets/script.js"></script>
+</body>
+</html>

@@ -291,13 +291,26 @@
     {
       "package_name": "GSAP Vault — Collection 01",
       "category": "motion-ui",
-      "status": "source_ingested_pending_qa",
+      "status": "ingested_internal_validated",
       "candidate_variants": 10,
       "source": "sources/gsap-vault-collection-01/",
       "manifest": "sources/gsap-vault-collection-01/manifest.json",
       "preview": "sources/gsap-vault-collection-01/index.html",
       "source_commit": "72bf2f26a306a711c1793222fa982f829099a58b",
-      "note": "63 blobs originales verificados contra upstream. Autorización de incorporación de fuente; no se han ejecutado pruebas de navegador ni admisión al catálogo aprobado. Medios de demo y dependencias sujetos a verificación independiente."
+      "note": "Nine source-identical components completed individual QA in run 44314213564; this run validates announcement on four widths and captures/validates all ten previews, favorites, board and clipboard. No client QA.",
+      "ids": [
+        "ATZ-GSV-001",
+        "ATZ-GSV-002",
+        "ATZ-GSV-003",
+        "ATZ-GSV-004",
+        "ATZ-GSV-005",
+        "ATZ-GSV-006",
+        "ATZ-GSV-007",
+        "ATZ-GSV-008",
+        "ATZ-GSV-009",
+        "ATZ-GSV-010"
+      ],
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
     }
   ]
 }

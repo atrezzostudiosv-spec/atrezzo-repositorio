@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Paper and ink, plus three printer's colours. The three exist only so the
+       three underline materials can be told apart at a glance. */
+    --page: #f4f2ec;
+    --ink: #17171a;
+    --muted: rgba(23, 23, 26, 0.63);
+    --ink-blue: #2f5bd7;
+    --terracotta: #b8532a;
+    --moss: #37675a;
+    --plum: #6d4a7e;
+    --accent: var(--ink-blue);
+    color-scheme: light;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+html {
+    background: var(--page);
+    scroll-behavior: auto;
+}
+
+body {
+    min-height: 100svh;
+    overflow-x: hidden;
+    background: var(--page);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: var(--accent);
+    color: #fff;
+}
+
+/* Full-bleed ground, three links, one cue line. */
+.stage {
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    min-height: 100svh;
+    padding: clamp(1.5rem, 7vw, 5rem);
+}
+
+.cue {
+    margin-bottom: clamp(1.4rem, 4vh, 2.6rem);
+    color: var(--muted);
+    font-size: clamp(0.78rem, 1vw, 0.9rem);
+}
+
+.links {
+    display: grid;
+    justify-items: start;
+    gap: clamp(0.9rem, 3.2vh, 2rem);
+}
+
+.links > a {
+    --hu-color: var(--ink-blue);
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    color: var(--ink);
+    font-size: clamp(2.6rem, 8.6vw, 6.5rem);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    /* The static underline is the no-JS state; the script removes it via
+       .hu-ready once the animated decoration is in place. */
+    text-decoration-color: var(--hu-color);
+    text-decoration-thickness: 0.07em;
+    text-underline-offset: 0.14em;
+    white-space: nowrap;
+    isolation: isolate;
+}
+
+.links > a:nth-child(2) {
+    --hu-color: var(--terracotta);
+}
+
+.links > a:nth-child(3) {
+    --hu-color: var(--moss);
+}
+
+.links > a:nth-child(4) {
+    --hu-color: var(--plum);
+}
+
+.links > a.hu-ready {
+    text-decoration: none;
+}
+
+.links > a:focus-visible {
+    outline: 2px solid var(--hu-color);
+    outline-offset: 0.2em;
+}
+
+/* Injected decoration. Each sits on the link's own box, so the three
+   materials share one geometry and differ only in how they animate. */
+.hu-line,
+.hu-fill,
+.hu-wave,
+.hu-travel {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: var(--hu-color);
+    pointer-events: none;
+}
+
+.hu-line {
+    bottom: -0.04em;
+    height: 0.075em;
+    overflow: hidden;
+}
+
+.hu-line__track {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--hu-color);
+}
+
+.hu-fill {
+    bottom: -0.07em;
+    height: 0.19em;
+    z-index: 0;
+    background: var(--hu-color);
+    clip-path: polygon(0 25%, 7% 12%, 19% 24%, 34% 8%, 49% 22%, 63% 10%, 79% 20%, 91% 5%, 100% 22%, 99% 88%, 84% 74%, 67% 93%, 52% 77%, 36% 91%, 18% 76%, 0 90%);
+}
+
+.hu-wave {
+    bottom: -0.105em;
+    height: 0.13em;
+    min-height: 8px;
+    overflow: visible;
+}
+
+/* The travelling wave is drawn wider than the link and slides sideways
+   forever, so the rail has to clip it: that clip is what hides the seam. */
+.hu-travel {
+    bottom: -0.115em;
+    height: 0.15em;
+    min-height: 9px;
+    overflow: hidden;
+}
+
+.hu-travel svg {
+    display: block;
+    overflow: visible;
+}
+
+@media (max-width: 600px) {
+    .links > a {
+        font-size: clamp(2.4rem, 13vw, 3.6rem);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    a[data-underline] {
+        color: var(--ink);
+        text-decoration-line: underline;
+        text-decoration-color: var(--hu-color, var(--ink-blue));
+        text-decoration-thickness: 0.07em;
+        text-underline-offset: 0.14em;
+        transform: none !important;
+    }
+
+    .hu-line,
+    .hu-fill,
+    .hu-wave,
+    .hu-travel {
+        display: none !important;
+    }
+}

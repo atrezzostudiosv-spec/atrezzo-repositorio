@@ -1,0 +1,296 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	/* A reading page, because that is where a reading-progress indicator
+	   lives. One accent, used only by the indicators. */
+	--page: #f5f4f0;
+	--ink: #17171a;
+	--muted: rgba(23, 23, 26, 0.62);
+	--line: rgba(23, 23, 26, 0.14);
+	--accent: #2f5f6b;
+	--track: rgba(23, 23, 26, 0.1);
+	color-scheme: light;
+}
+
+html {
+	scroll-behavior: auto;
+	scrollbar-color: rgba(23, 23, 26, 0.28) var(--page);
+	scrollbar-width: thin;
+}
+
+body {
+	min-width: 320px;
+	background: var(--page);
+	color: var(--ink);
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: clip;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--page); }
+::-webkit-scrollbar-thumb { background: rgba(23, 23, 26, 0.28); }
+
+::selection {
+	background: var(--accent);
+	color: #fff;
+}
+
+button { font: inherit; }
+
+/* Page furniture: one prompt line and the switcher that shows the four styles. */
+.showcase-toolbar {
+	position: sticky;
+	top: 0;
+	z-index: 40;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	height: 48px;
+	padding: 0 clamp(1rem, 4vw, 2.25rem);
+	border-bottom: 1px solid var(--line);
+	background: rgba(245, 244, 240, 0.94);
+	backdrop-filter: blur(14px);
+}
+
+.showcase-prompt {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--muted);
+	font-size: 0.8rem;
+	white-space: nowrap;
+}
+
+.showcase-prompt span { color: var(--accent); }
+
+.mode-switcher {
+	display: flex;
+	gap: 0.15rem;
+	padding: 0.2rem;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+}
+
+.mode-switcher button {
+	min-width: 2.6rem;
+	padding: 0.3rem 0.6rem;
+	border: 0;
+	border-radius: 4px;
+	background: transparent;
+	color: var(--muted);
+	font-size: 0.78rem;
+	cursor: pointer;
+}
+
+.mode-switcher button:hover { color: var(--ink); }
+.mode-switcher button:focus-visible { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+.mode-switcher button[aria-pressed='true'] {
+	background: var(--accent);
+	color: #fff;
+}
+
+/* Plausible page content: the article the indicators are measuring. */
+.page {
+	padding: clamp(2.5rem, 7vw, 5rem) clamp(1.15rem, 5vw, 2.5rem) clamp(5rem, 12vh, 9rem);
+}
+
+.article {
+	width: min(100%, 40rem);
+	margin: 0 auto;
+}
+
+.eyebrow {
+	color: var(--muted);
+	font-size: 0.82rem;
+}
+
+.article h1 {
+	margin: 0.75rem 0 1.1rem;
+	font-size: clamp(2.1rem, 6vw, 3.4rem);
+	font-weight: 650;
+	line-height: 1.04;
+	letter-spacing: -0.035em;
+	text-wrap: balance;
+}
+
+.standfirst {
+	margin-bottom: 2.4rem;
+	padding-bottom: 2.4rem;
+	border-bottom: 1px solid var(--line);
+	color: var(--muted);
+	font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+	line-height: 1.55;
+}
+
+.article h2 {
+	margin: 2.9rem 0 1rem;
+	font-size: clamp(1.35rem, 3vw, 1.75rem);
+	font-weight: 620;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+}
+
+.article p + p { margin-top: 1.15rem; }
+
+.article > p {
+	font-size: clamp(1rem, 1.4vw, 1.09rem);
+	line-height: 1.68;
+}
+
+/* Buyer API: top/bottom bar */
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 3px;
+	background: var(--track);
+	transition: opacity 160ms linear;
+}
+
+.progress-bar--bottom { top: auto; bottom: 0; }
+.progress-bar--thick { height: 5px; }
+.progress-bar__fill {
+	width: 100%;
+	height: 100%;
+	background: var(--accent);
+	transform: scaleX(0);
+	transform-origin: left center;
+	will-change: transform;
+}
+
+/* Buyer API: circular ring */
+.progress-circle {
+	position: fixed;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	z-index: 30;
+	width: 74px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: var(--page);
+	transition: opacity 160ms linear;
+}
+
+.progress-circle--top-right { top: 1.5rem; bottom: auto; }
+.progress-circle--top-left { top: 1.5rem; right: auto; bottom: auto; left: 1.5rem; }
+.progress-circle--bottom-left { right: auto; left: 1.5rem; }
+.progress-circle__svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.progress-circle__bg,
+.progress-circle__fill { fill: none; }
+.progress-circle__bg { stroke: var(--track); stroke-width: 3; }
+.progress-circle__fill {
+	stroke: var(--accent);
+	stroke-width: 3;
+	stroke-linecap: butt;
+	stroke-dashoffset: 327;
+	will-change: stroke-dashoffset;
+}
+.progress-circle__text {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	/* Mono keeps the digits from shuffling sideways as the number changes. */
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 0.78rem;
+	color: var(--ink);
+}
+
+/* Buyer API: side rail */
+.progress-rail {
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* Above the demo's sticky toolbar, so the rail reads full height. */
+	z-index: 50;
+	width: 4px;
+	height: 100vh;
+	height: 100svh;
+	background: var(--track);
+	transition: opacity 160ms linear;
+}
+.progress-rail--left { right: auto; left: 0; }
+.progress-rail--right { right: 0; left: auto; }
+.progress-rail__fill {
+	width: 100%;
+	height: 100%;
+	background: var(--accent);
+	transform: scaleY(0);
+	transform-origin: center top;
+	will-change: transform;
+}
+
+/* Buyer API: percentage counter */
+.progress-counter {
+	position: fixed;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	z-index: 30;
+	display: flex;
+	align-items: baseline;
+	gap: 0.08em;
+	/* A paper chip so the number stays legible over the text it floats above. */
+	padding: 0.35rem 0.6rem;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	background: var(--page);
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	transition: opacity 160ms linear;
+}
+.progress-counter--top-left { top: 1.5rem; bottom: auto; }
+.progress-counter--top-right { top: 1.5rem; right: 1.5rem; bottom: auto; left: auto; }
+.progress-counter--bottom-right { right: 1.5rem; left: auto; }
+.progress-counter__symbol { color: var(--muted); font-size: 1rem; line-height: 1; }
+.progress-counter__value {
+	min-width: 3ch;
+	color: var(--accent);
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1;
+	text-align: right;
+}
+
+/* The switcher fades the other three back rather than removing them, so their
+   placement on the page stays visible while one is being looked at. */
+body:not([data-mode='all']) .progress-bar,
+body:not([data-mode='all']) .progress-rail,
+body:not([data-mode='all']) .progress-circle,
+body:not([data-mode='all']) .progress-counter { opacity: 0.12; }
+body[data-mode='bar'] .progress-bar,
+body[data-mode='circle'] .progress-circle,
+body[data-mode='rail'] .progress-rail,
+body[data-mode='counter'] .progress-counter { opacity: 1; }
+
+@media (max-width: 760px) {
+	.showcase-toolbar { height: 44px; gap: 0.5rem; padding: 0 0.75rem; }
+	.showcase-prompt { font-size: 0.72rem; }
+	.mode-switcher button { min-width: 2rem; padding-inline: 0.4rem; font-size: 0.72rem; }
+	.progress-circle { right: 1rem; bottom: 1rem; width: 62px; }
+	.progress-counter { bottom: 1rem; left: 1rem; }
+	.progress-counter__value { font-size: 1.3rem; }
+	/* The article ends above the fixed corner indicators. */
+	.page { padding-bottom: 7rem; }
+}
+
+@media (max-width: 400px) {
+	.mode-switcher { gap: 0; }
+	.mode-switcher button { min-width: 1.7rem; padding-inline: 0.3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
