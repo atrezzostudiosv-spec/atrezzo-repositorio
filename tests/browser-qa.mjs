@@ -5,6 +5,8 @@ import { resolve, extname, join, sep } from "node:path";
 import { chromium } from "playwright";
 
 const root=process.cwd();
+const catalogRevision=(await fs.readFile(join(root,"catalog/app.js"),"utf8")).match(/const catalogRevision="([^"]+)"/)?.[1];
+assert(catalogRevision,"Catalog revision must be declared");
 const registry=JSON.parse(await fs.readFile(join(root,"registry/components.json"),"utf8"));
 const motionEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-SCR-")||e.id.startsWith("ATZ-TRN-"));
 const stickyEntries=registry.entries.filter(e=>e.id.startsWith("ATZ-STK-"));
@@ -431,7 +433,7 @@ try {
  for(const width of [375,768,1024,1440]){
    for(const entry of microEntries){
      const page=await browser.newPage({viewport:{width,height:900}});await setup(page);const errors=[];page.on("pageerror",e=>errors.push(e.message));
-     await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
+     await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v="+catalogRevision,{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
      const scene=page.locator(".atz-mi");assert.equal(await scene.getAttribute("data-atz-id"),entry.id);assert.equal(await scene.getAttribute("data-mi-ready"),"true");
      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
      assert.equal(await page.locator("#pre-approval").textContent(),"Aprobado por ATREZZO · Disponible para integrar por ID.");
@@ -445,7 +447,7 @@ try {
  }
  for(const entry of microEntries){
    for(const opts of [{reducedMotion:"reduce"},{hasTouch:true,isMobile:true}]){
-     const page=await browser.newPage({viewport:{width:375,height:812},...opts});await setup(page);await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});const scene=page.locator(".atz-mi");assert.equal(await scene.isVisible(),true);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
+     const page=await browser.newPage({viewport:{width:375,height:812},...opts});await setup(page);await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v="+catalogRevision,{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});const scene=page.locator(".atz-mi");assert.equal(await scene.isVisible(),true);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
      if(opts.reducedMotion)assert.equal(await scene.getAttribute("data-mi-motion"),"off");
      if(entry.id==="ATZ-MIC-002")assert.equal(await scene.locator(".mi-cursor-bubble").count(),0);
      if(entry.id==="ATZ-MIC-004"){assert.equal(await scene.locator(".mi-hover-preview").count(),0);assert.equal(await scene.locator(".mi-art").first().isVisible(),true);}
@@ -454,12 +456,12 @@ try {
    }
    const nojs=await browser.newPage({viewport:{width:375,height:812},javaScriptEnabled:false});await nojs.goto(origin+"/__micro_nojs?id="+entry.id);const scene=nojs.locator(".atz-mi");assert.equal(await scene.isVisible(),true);if(entry.id==="ATZ-MIC-005"){assert.equal(await scene.locator("[data-hold]").isVisible(),false);await scene.locator("[data-hold-direct]").click();assert.equal(await nojs.evaluate(()=>location.hash),"#mi-result");}await nojs.close();
  }
- const holdKeyboard=await browser.newPage({viewport:{width:1440,height:900}});await setup(holdKeyboard);await holdKeyboard.goto(origin+"/catalog/preview.html?id=ATZ-MIC-005&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await holdKeyboard.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));await holdKeyboard.locator("[data-hold]").focus();await holdKeyboard.keyboard.down("Space");await holdKeyboard.waitForTimeout(1400);await holdKeyboard.keyboard.up("Space");assert.equal(await holdKeyboard.locator("[data-hold]").getAttribute("data-mi-done"),"true");await holdKeyboard.close();
+ const holdKeyboard=await browser.newPage({viewport:{width:1440,height:900}});await setup(holdKeyboard);await holdKeyboard.goto(origin+"/catalog/preview.html?id=ATZ-MIC-005&v="+catalogRevision,{waitUntil:"domcontentloaded"});await holdKeyboard.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance));await holdKeyboard.locator("[data-hold]").focus();await holdKeyboard.keyboard.down("Space");await holdKeyboard.waitForTimeout(1400);await holdKeyboard.keyboard.up("Space");assert.equal(await holdKeyboard.locator("[data-hold]").getAttribute("data-mi-done"),"true");await holdKeyboard.close();
  // Creative Transitions: exact isolated modules loaded through real catalog previews.
  const ctRatio=page=>page.locator(".atz-ct").evaluate(el=>{const rgb=s=>s.match(/[\d.]+/g).slice(0,3).map(Number),lum=rgb=>rgb.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((s,v,i)=>s+v*[.2126,.7152,.0722][i],0);const s=getComputedStyle(el),a=lum(rgb(s.backgroundColor)),b=lum(rgb(s.color));return (Math.max(a,b)+.05)/(Math.min(a,b)+.05);});
  const ctScroll=async(page,sel,offset=0)=>{await page.locator(sel).evaluate((el,o)=>scrollTo(0,scrollY+el.getBoundingClientRect().top+o),offset);await page.waitForTimeout(90);};
  const ctLayout=async(page)=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),true);
- const ctOpen=async(entry,width,height=900,opts={})=>{const page=await browser.newPage({viewport:{width,height},...opts});await setup(page);const errors=[];page.on("pageerror",e=>errors.push(e.message));await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v=20261114-catalog-r5",{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});return {page,errors};};
+ const ctOpen=async(entry,width,height=900,opts={})=>{const page=await browser.newPage({viewport:{width,height},...opts});await setup(page);const errors=[];page.on("pageerror",e=>errors.push(e.message));await page.goto(origin+"/catalog/preview.html?id="+entry.id+"&v="+catalogRevision,{waitUntil:"domcontentloaded"});await page.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});return {page,errors};};
  for(const width of [375,768,1024,1440]){
    for(const entry of creativeEntries){
      const {page,errors}=await ctOpen(entry,width);const scene=page.locator(".atz-ct");assert.equal(await scene.getAttribute("data-atz-id"),entry.id);assert.equal(await scene.getAttribute("data-ct-ready"),"true");await ctLayout(page);
@@ -689,13 +691,13 @@ try {
  })));
  assert.equal(routes.length,registry.entries.length,"Every component has a catalog card");
  for(const route of routes){
-   const target="preview.html?id="+route.id+"&v=20261114-catalog-r5";
+   const target="preview.html?id="+route.id+"&v="+catalogRevision;
    assert.equal(route.visual,target,route.id+" visual link must open its own preview");
    assert.equal(route.action,target,route.id+" action link must open its own preview");
  }
  // Verify the actual versioned Typography link, not only direct unversioned routes.
  await index.locator('#component-grid [data-id="ATZ-MOT-013"] .card-action').click();
- await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v=20261114-catalog-r5",{timeout:12000});
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-013&v="+catalogRevision,{timeout:12000});
  await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
  assert.equal(await index.locator(".atz-ty").getAttribute("data-atz-id"),"ATZ-MOT-013");
  assert.equal(await index.getByRole("button",{name:"Repetir efecto"}).count(),1);
@@ -710,7 +712,7 @@ try {
  assert.equal(await index.locator(".component-card").count(),1,"Transition filter");
  await index.locator(".filter[data-category='all']").click();
  await index.locator('#component-grid [data-id="ATZ-MOT-006"] .card-action').click();
- await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006&v=20261114-catalog-r5",{timeout:12000});
+ await index.waitForURL("**/catalog/preview.html?id=ATZ-MOT-006&v="+catalogRevision,{timeout:12000});
  await index.waitForFunction(()=>Boolean(window.__atrezzoPreviewInstance),{timeout:12000});
  assert.equal(await index.locator(".atz-motion-v1").getAttribute("data-atz-id"),"ATZ-MOT-006","Editorial Journey card must open the actual motion");
 
