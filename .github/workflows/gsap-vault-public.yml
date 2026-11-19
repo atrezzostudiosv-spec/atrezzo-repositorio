@@ -22,7 +22,10 @@ jobs:
         if: always()
         with:
           name: gsap-vault-public-qa
-          path: qa-gsap-vault/
+          path: |
+            qa-gsap-vault/
+            catalog/previews/ATZ-GSV-*.webp
+            catalog/previews/ATZ-GSV-*.webm
       - name: Register actual screenshots and recordings
         run: |
           node --input-type=module <<'JS'
