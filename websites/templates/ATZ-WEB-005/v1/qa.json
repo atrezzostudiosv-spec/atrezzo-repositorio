@@ -1,0 +1,302 @@
+[
+  {
+    "file": "index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "about-us/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "specials/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/chain-link-fences/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/driveway-gates/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/fence-repairs/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/fence-staining/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/gate-operators/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/ornamental-iron-fences/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/ranch-style-fences/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/vinyl-fences/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services/wood-privacy-fences/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "about-us/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "specials/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/chain-link-fences/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/driveway-gates/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/fence-repairs/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/fence-staining/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/gate-operators/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/ornamental-iron-fences/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/ranch-style-fences/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/vinyl-fences/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services/wood-privacy-fences/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "about-us/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "specials/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/chain-link-fences/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/driveway-gates/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/fence-repairs/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/fence-staining/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/gate-operators/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/ornamental-iron-fences/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/ranch-style-fences/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/vinyl-fences/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services/wood-privacy-fences/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "about-us/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "specials/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/chain-link-fences/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/driveway-gates/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/fence-repairs/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/fence-staining/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/gate-operators/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/ornamental-iron-fences/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/ranch-style-fences/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/vinyl-fences/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services/wood-privacy-fences/index.html",
+    "width": 1440,
+    "pass": true
+  }
+]
