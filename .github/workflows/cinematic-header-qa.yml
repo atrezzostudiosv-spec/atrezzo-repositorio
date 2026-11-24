@@ -13,9 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm install --no-save playwright
+      - run: npm install --no-save playwright @ffmpeg-installer/ffmpeg
       - run: npx playwright install --only-shell chromium
-      - run: command -v ffmpeg
       - run: node scripts/prepare-header-demo-media.mjs
       - run: npm test
       - run: node tests/cinematic-header-browser.mjs
