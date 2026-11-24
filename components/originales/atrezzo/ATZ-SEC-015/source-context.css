@@ -1,3 +1,4 @@
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url('assets/dm-sans-600.ttf') format('truetype')}
 /* Original global prerequisites extracted from site.css and luxury.css, preserving source cascade. */
 @font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url('assets/dm-sans-400.ttf') format('truetype')}
 @font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url('assets/dm-sans-500.ttf') format('truetype')}
@@ -71,6 +72,8 @@ h1,h2,h3,h4{line-height:1.16;letter-spacing:-.035em;text-wrap:balance}
 .collection-overlay h3{font-size:27px;line-height:1.2}
 .collection-intro>p{font-size:13px}
 }
+:root{--paper:#fff;--white:#fff;--ink:#111;--dark:#080808;--muted:#666;--line:#dedede;--gold:#a88b56;--red:#b40117;--gutter:clamp(24px,5vw,92px)}
+body{background:#fff;color:#111;font-size:16px}h1,h2,h3,h4{font-family:var(--sans);font-weight:400;letter-spacing:-.05em;line-height:1.08}h1 em,h2 em,h3 em{font-family:inherit;font-style:normal;letter-spacing:inherit;color:inherit}p{line-height:1.75}.eyebrow{font-size:11px;letter-spacing:.18em;font-weight:600;color:var(--gold)}.line-link{font-size:13px;gap:32px;padding-bottom:12px;min-height:42px}
 .collection-intro{padding-top:20px;padding-bottom:48px}
 .collection-intro h2{font-size:clamp(38px,4vw,60px);line-height:1.08;margin-top:20px}
 .collection-intro>p{font-size:15px;max-width:310px}
@@ -102,3 +105,5 @@ h1,h2,h3,h4{line-height:1.16;letter-spacing:-.035em;text-wrap:balance}
 .collection-tab small{font-size:8px}
 .collection-tab .num{display:none}
 }
+
+@media(max-width:767px){body{font-size:15px}}
