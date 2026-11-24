@@ -1,0 +1,46 @@
+name: ATZ-WEB-001 website template build and QA
+on:
+  push:
+    branches: ['lab/website-template-001']
+permissions:
+  contents: write
+jobs:
+  template:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --only-shell chromium
+      - name: Get immutable original source
+        run: |
+          git clone --no-checkout https://github.com/atrezzostudiosv-spec/pronto-air.git /tmp/pronto-air-source
+          git -C /tmp/pronto-air-source checkout 95a7b80579e4354eba98c2762c13ad1f444f9b83
+      - run: node scripts/build-website-template-001.mjs /tmp/pronto-air-source
+      - run: npm test
+      - run: node tests/website-template-001-browser.mjs
+      - name: Package and record QA
+        run: |
+          python3 - <<'PY'
+          import zipfile,pathlib,json
+          root=pathlib.Path('websites/templates/ATZ-WEB-001/v1/')
+          with zipfile.ZipFile(root/'ATZ-WEB-001-v1.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted((root/'site').rglob('*')):
+                  if p.is_file(): z.write(p,p.relative_to(root/'site'))
+              for n in ['README.md','template-config.json']: z.write(root/n,n)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add websites/templates/ATZ-WEB-001/v1/
+          git commit -m "Validate source-derived ATZ-WEB-001 and publish downloadable master"
+          git push origin HEAD:lab/website-template-001
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-template-001-evidence
+          path: |
+            websites/templates/ATZ-WEB-001/v1/qa.json
+            websites/templates/ATZ-WEB-001/v1/poster.webp
