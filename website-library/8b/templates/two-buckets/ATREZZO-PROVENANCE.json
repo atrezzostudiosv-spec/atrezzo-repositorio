@@ -1,0 +1,43 @@
+{
+  "slug": "two-buckets",
+  "name": "Two Buckets",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/car-wash-website-template",
+  "demo": "https://8b.com/templates/two-buckets/demo.html",
+  "design_md_url": "https://8b.com/templates/two-buckets/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "afc7a25e95cdfc15a9d09c534e0c3f15abeffa03",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "6c1210bfbe5f01ce9af863ad4bb933dadda5b181",
+    "README.md": "bdc576f26359db9f5a38098ce648f4f2f1036cb0",
+    "AGENTS.md": "1147b5c81760198a12379d81461a858d19d576dd",
+    "index.html": "ca8e74e65fcb66eeeefee4ec450884d091a778fe",
+    "index.gsap.html": "cba111a0983abd9c021102e9cc6d7fd6d059a31d"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "3057c4c92f9520542441c5e9bdec45a149eaabc190118efb1e2eecf03b017e54",
+    "README.md": "ca6a97d24515615483904746fc4adb8a9b885969c71db0ad74ab952d8560206e",
+    "AGENTS.md": "c145a095228143b6e6bd868f727360a13c4ecdcc2097174f73f8ee0970ea53c9",
+    "index.html": "49bec2caf449d9d87353c4fc33db97b5d50e58f6cde6f6c4f042492372357820",
+    "index.gsap.html": "59e33237352a6fcabaf983e7cf2752e0e3117ca09d2ecd5097b2957585677052"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

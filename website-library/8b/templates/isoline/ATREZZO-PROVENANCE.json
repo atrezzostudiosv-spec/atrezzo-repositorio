@@ -1,0 +1,43 @@
+{
+  "slug": "isoline",
+  "name": "Isoline",
+  "categories": [
+    "Community"
+  ],
+  "upstream": "https://github.com/8bsite/coworking-website-template",
+  "demo": "https://8b.com/templates/isoline/demo.html",
+  "design_md_url": "https://8b.com/templates/isoline/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "0752bf6f336bea06c2ebf6c4b6a6dd1df36835be",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "f406c7fb932e07716d2c323225b53b10880690e6",
+    "README.md": "a3210373fe755f76fe0854cac903cbd1e2cb50ca",
+    "AGENTS.md": "e3b1272ceb936d47b1c97b0fdc754fc562661dbd",
+    "index.html": "1b3a367532f8cf2ea3d8748fbbb2f23a43b55039",
+    "index.gsap.html": "59b2a6028c5d24f37fe34e0af651776c1d0363df"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "e043fb752fba0edcb4f5c0951f68c67cb58f95d4dec2839f65b8a89b030e15e9",
+    "README.md": "c909f75b7c77dda92e3998988497ed089c1b65fc4abe09602e2d887c77df48e9",
+    "AGENTS.md": "21f4e6b3cd7ca14b9104827ca002e46e9d77488c0b61cb556e9e277824941f2c",
+    "index.html": "4b92cde0d86d6e01c733f1ff867d24b56386f6a4aa3aa97ca1afe7a1a2528e27",
+    "index.gsap.html": "6c5d0806565a87b1234f638fda06f3b96ca9846b6e067c81d8162c2d2af5ee67"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

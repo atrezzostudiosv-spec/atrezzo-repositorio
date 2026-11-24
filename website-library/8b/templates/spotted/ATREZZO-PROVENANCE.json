@@ -1,0 +1,43 @@
+{
+  "slug": "spotted",
+  "name": "Spotted",
+  "categories": [
+    "Agency and studio"
+  ],
+  "upstream": "https://github.com/8bsite/modeling-agency-website-template",
+  "demo": "https://8b.com/templates/spotted/demo.html",
+  "design_md_url": "https://8b.com/templates/spotted/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "6feb2d19061f17c645d8a43b9cb6f7b0e3699f01",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "1e906f9e2c683cd2daab2476c34b7131d1828d04",
+    "README.md": "e377e870063c3ebca7ef8068f88e53f889f72de9",
+    "AGENTS.md": "05a41038f7b462fad964ca4141d8c8098e8f0744",
+    "index.html": "ae6acb21a2d2fbcf76911f24bb92e641beed6120",
+    "index.gsap.html": "00a2fb20bf9609ec2a50d42d2020e7770df9f63f"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "4f62cf79afaef54e0ae7911abf6087e57b4833e8366982760e1e1bba4849bdd8",
+    "README.md": "c6ad9d14d627a062b4521dae0e9b1c957bf3c1e4f2b3914bf14ce4e61b72365c",
+    "AGENTS.md": "1e4695652845e1804217819eb9b1efe6edaf20b645847008859e7cf099aa2824",
+    "index.html": "c14855e6207f8f9444a4a4ef47d0b082c911ae46be3894a029b876c354a4ab1d",
+    "index.gsap.html": "52c9c3f538a744dd851c205716386a7c88db7b07349877c9baf236839d19420d"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

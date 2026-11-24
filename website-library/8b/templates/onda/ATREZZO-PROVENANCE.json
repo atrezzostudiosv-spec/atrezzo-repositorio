@@ -1,0 +1,21 @@
+{
+  "slug": "onda",
+  "upstream": "https://github.com/8bsite/design-studio-website-template",
+  "commit": "cc3d6b00732640e4a29d4eaf35eaee35866061ac",
+  "demo": "https://8b.com/templates/onda/",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "CREDITS.md",
+    "README.md",
+    "AGENTS.md",
+    "index.html"
+  ],
+  "excluded": [
+    "previews/",
+    "index.gsap.html (embedded JPEG, separate asset/license review required)"
+  ],
+  "third_party": "Remote demo photos and fonts not covered by MIT. Replace with authorized client assets; GSAP license separate. Do not republish screenshots or demo media without clearance.",
+  "status": "source-imported-not-qa-approved",
+  "client_ready": false
+}

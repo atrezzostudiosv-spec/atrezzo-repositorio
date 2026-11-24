@@ -1,0 +1,43 @@
+{
+  "slug": "small-talk",
+  "name": "Small Talk",
+  "categories": [
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/language-course-website-template",
+  "demo": "https://8b.com/templates/small-talk/demo.html",
+  "design_md_url": "https://8b.com/templates/small-talk/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "209e48051c1d1d3c2bbd92ee2d7a1cc0bd429568",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "d4fc541af6a7b5b5e9f379bae32fd6b97d99b01c",
+    "README.md": "c6e00f393b631751c63e7161e86857922f46ff44",
+    "AGENTS.md": "c7344c48a4fdb6b65cb5e1f1559bd60e04822639",
+    "index.html": "a3f0cea13ddc9b1aac9f422cb2e31a71c079cd59",
+    "index.gsap.html": "fa6e61ec769ca05cea4b4427ad8e94f653e2ad25"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "6c988a77c24ec7aefe2255f73f547272ba55918fc04e9cc780f8e715ba529c90",
+    "README.md": "b645cd88b92d85d928b6627c9bbcd616f021e1e934cfcddf94d389f41ac0129b",
+    "AGENTS.md": "4cf58cd87a73500f5c6feb3f9c6e097672f33b88d0c4e3c80cf2ed7b3d553490",
+    "index.html": "494c0b13203906f924a95886549a6d5efbb0eae67c7b1cc3131d6048610e8375",
+    "index.gsap.html": "ebe9009f6e676b2048f52e28b8c925628bc1d2110e72335be2343ec0a8bef185"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

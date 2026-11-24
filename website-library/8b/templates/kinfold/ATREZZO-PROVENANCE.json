@@ -1,0 +1,43 @@
+{
+  "slug": "kinfold",
+  "name": "Kinfold",
+  "categories": [
+    "Professional services"
+  ],
+  "upstream": "https://github.com/8bsite/genealogy-website-template",
+  "demo": "https://8b.com/templates/kinfold/demo.html",
+  "design_md_url": "https://8b.com/templates/kinfold/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "3cd42969b6a11593995630102618d2463158c95a",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "76f9152fb553faa50e1ed34af674e9eb7b6dbda5",
+    "README.md": "786d4991fa2a9e17af4feba94cedc5a7532888ea",
+    "AGENTS.md": "1a48013d0a599296f06ba3de242817fbecf51981",
+    "index.html": "0c258f1fccf5a159f2d22b970e70eb42e5854056",
+    "index.gsap.html": "e6a55ef3e72f585c526502da4caeec5077fcbd5a"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "b9c07447429fd8104c463d71954e650fb32c638ade6b7e72e283a12a1ebd93c0",
+    "README.md": "0ea1d2a2f0479ebe77e99db942abd2ecee4dd18eade68542923f6e59e5ecda03",
+    "AGENTS.md": "417ebfa1d01b8d347b1903d2377c42f7a4d29e7b79c9bd37cb01da0e17113b5e",
+    "index.html": "09d35ee6639e58985f6e3eb3571f1f723c14c4496fda0e17f842884f32c48538",
+    "index.gsap.html": "4d5b72660908025a0422f185d8bd771543d60dce3c242b23fbaeeaa379a81b43"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "resin-cabinet",
+  "name": "The Resin Cabinet",
+  "categories": [
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/perfumery-website-template",
+  "demo": "https://8b.com/templates/resin-cabinet/demo.html",
+  "design_md_url": "https://8b.com/templates/resin-cabinet/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "3471d5e222006bc22f04b35a7d26016dfc9020fb",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "107ad42496b942ef9d6018f31f71ecc255a3f3ce",
+    "README.md": "c1a0e485149673f1369a9fbc8789031c3a36e715",
+    "AGENTS.md": "211cce2eb98efd0f6982fd14aa0281d1003d596e",
+    "index.html": "bd586d919fa09b4b0d86edaff3bdb033eabdb303",
+    "index.gsap.html": "139a9dcce0a96ba683a10e89481ab65570b86d50"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "d51666ac619c7a4cfcc906dc35725fe4041980245f7ca8b438bd652c0f483749",
+    "README.md": "6db718bbb025a09e447b29234060b31576f96e6ac1f45859af595a09ec48507b",
+    "AGENTS.md": "975f3ab0c359cc5e0c7d731c26c0795531cd534757e9970356ea320db8357559",
+    "index.html": "4ca932d3e26262e86b9c1cd9a5ae6f561e386cfc0f8d5e12211fcf36b3dcd434",
+    "index.gsap.html": "bd84ff66e5acf79dd93ddff5b4d4e0cf7fda61f4b01d17d7c761a59b0ac4f510"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

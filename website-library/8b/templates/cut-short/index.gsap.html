@@ -1,0 +1,1182 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/cut-short/
+  Source: https://github.com/8bsite/film-festival-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cut Short — International Short Film Festival, Glasgow, 11–17 November 2026</title>
+<meta name="description" content="Cut Short is an international festival of films under twenty minutes: seven nights, three cinemas and forty-two films in competition in Glasgow, 11–17 November 2026.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cut Short — International Short Film Festival, Glasgow, 11–17 November 2026">
+<meta property="og:description" content="Cut Short is an international festival of films under twenty minutes: seven nights, three cinemas and forty-two films in competition in Glasgow, 11–17 November 2026.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23000000'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ff5b1f'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/stacksansheadline/v1/1Ptyg9jZXvmMnkLnuURbaukKZJTyrDV38aevGw.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/stacksansnotch/v5/TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2eEmY.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1Ptyg9jZXvmMnkLnuURbaukKZJTyrDV38amvG4w-.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Headline';
+  font-style: normal;
+  font-weight: 500 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansheadline/v1/1Ptyg9jZXvmMnkLnuURbaukKZJTyrDV38aevGw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Notch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansnotch/v5/TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2QEmbKBw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Notch';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksansnotch/v5/TwMY-JcVXlQd3ooGEx9EbUzgioTr5BY5lEpidqlSR8fQuS2eEmY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnBLy4NY8.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Stack Sans Text';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/stacksanstext/v1/kJErBuAJ-Q0hiGPmzHEu345X1JJnCry4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --color-3: #0f0f0f;
+  --color-4: #a8a8a8;
+  --color-5: #4f4f4f;
+  --color-6: #272727;
+  --color-7: #ff5b1f;
+  --font-1: "Stack Sans Headline", "Stack Sans Headline Fallback", Arial, sans-serif;
+  --font-2: "Stack Sans Text", "Stack Sans Text Fallback", Arial, sans-serif;
+  --font-3: "Stack Sans Notch", "Stack Sans Notch Fallback", Arial, sans-serif;
+  --radius-1: 8px;
+  --radius-2: 999px;
+  --space-1: clamp(16px, 2.2vw, 28px);
+  --space-2: clamp(96px, 12vw, 176px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Stack Sans Headline Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 99.9%; ascent-override: 100.1%; descent-override: 30%; line-gap-override: 0%; }
+@font-face { font-family: "Stack Sans Headline Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 104.2%; ascent-override: 96%; descent-override: 28.8%; line-gap-override: 0%; }
+@font-face { font-family: "Stack Sans Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 111.5%; ascent-override: 89.7%; descent-override: 26.9%; line-gap-override: 0%; }
+@font-face { font-family: "Stack Sans Notch Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 94.8%; ascent-override: 105.5%; descent-override: 31.7%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; background: var(--color-1); }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+[data-lenis-prevent] { overscroll-behavior: contain; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; line-height: 1.5; font-weight: 400; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3, p, ul, ol, figure, blockquote, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--color-7); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-size: 16px; line-height: 1.5; font-weight: 400; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-2); font-size: clamp(18px, 1.5vw, 21px); line-height: 1.35; font-weight: 500; letter-spacing: -0.01em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-3); font-size: 12.5px; line-height: 1.35; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: 120px; line-height: 0.86; font-weight: 600; letter-spacing: -0.045em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(34px, 4.6vw, 68px); line-height: 1; font-weight: 500; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(22px, 2vw, 28px); line-height: 1.08; font-weight: 500; letter-spacing: -0.02em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: 200px; line-height: 0.9; font-weight: 600; letter-spacing: -0.05em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 22px; border-radius: var(--radius-2); background: var(--color-2); color: var(--color-1); overflow: hidden; }
+.m-btn__label { font-family: var(--font-3); font-size: 12.5px; line-height: 1; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; font-style: normal; white-space: nowrap; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-7); clip-path: inset(50% 0 50% 0); transition: clip-path .45s cubic-bezier(.2, .7, .1, 1); }
+.m-btn-2 { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 0 18px; border-radius: var(--radius-2); border: 1px solid var(--color-4); color: var(--color-2); overflow: hidden; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); clip-path: inset(50% 0 50% 0); transition: clip-path .45s cubic-bezier(.2, .7, .1, 1); }
+.m-btn-2 .m-btn__label { transition: color .3s; }
+.m-btn-2[aria-pressed="true"] { background: var(--color-2); color: var(--color-1); border-color: var(--color-2); }
+.m-link { position: relative; display: inline-block; padding-bottom: 3px; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; transform-origin: left; }
+.m-icon { display: inline-grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: var(--radius-1); background: var(--color-2); color: var(--color-1); overflow: hidden; }
+.m-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.m-surface { background: var(--color-3); color: var(--color-2); border-radius: var(--radius-1); }
+@media (hover: hover) {
+  .m-btn:hover::before, .m-btn-2:hover::before { clip-path: inset(0 0 0 0); }
+  .m-btn-2:hover { color: var(--color-1); }
+  .m-link:hover::after { animation: m-link-cut .6s cubic-bezier(.6, 0, .2, 1); }
+  .m-icon:hover svg { animation: m-icon-cut .55s cubic-bezier(.6, 0, .2, 1); }
+}
+@keyframes m-link-cut { 0% { transform: scaleX(1); transform-origin: right; } 49% { transform: scaleX(0); transform-origin: right; } 51% { transform: scaleX(0); transform-origin: left; } 100% { transform: scaleX(1); transform-origin: left; } }
+@keyframes m-icon-cut { 0% { transform: translateX(0); } 45% { transform: translateX(140%); } 46% { transform: translateX(-140%); } 100% { transform: translateX(0); } }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { padding-inline: var(--space-1); }
+.ruled { position: relative; }
+.ruled::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-6); transform-origin: left; transform: scaleX(var(--rule, 1)); }
+}
+</style>
+<style data-8b-part="section:site-nav">
+@layer sections {
+#site-nav { position: fixed; z-index: 50; inset: 0 0 auto 0; display: flex; align-items: center; gap: 24px; height: 68px; padding-inline: var(--space-1); transition: transform .5s cubic-bezier(.2, .7, .1, 1), background-color .4s; }
+#site-nav.is-scrolled { background: color-mix(in srgb, var(--color-1) 92%, transparent); }
+#site-nav.is-hidden:not(.is-open):not(:focus-within) { transform: translateY(-105%); }
+#site-nav > nav { flex: 1; }
+#site-nav .nav__logo { font-family: var(--font-1); font-size: 22px; font-weight: 600; letter-spacing: -0.04em; line-height: 1; white-space: nowrap; }
+#site-nav .nav__list { display: flex; flex: 1; justify-content: center; gap: clamp(18px, 3.4vw, 52px); }
+#site-nav .nav__item a { padding-block: 6px; }
+#site-nav .nav__menu { display: none; }
+@media (max-width: 900px) {
+  #site-nav .nav__menu { display: inline-flex; margin-left: auto; position: relative; z-index: 2; }
+  #site-nav .nav__cta { display: none; }
+  #site-nav .nav__logo { position: relative; z-index: 2; }
+  #site-nav .nav__list { position: fixed; inset: 0; z-index: 1; display: none; flex-direction: column; justify-content: center; gap: 6px; padding: 88px var(--space-1) 40px; background: var(--color-1); }
+  #site-nav.is-open .nav__list { display: flex; }
+  #site-nav .nav__item a { font-family: var(--font-1); font-size: clamp(40px, 12vw, 64px); font-weight: 600; letter-spacing: -0.04em; text-transform: none; line-height: 1.05; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; }
+#opening .op__stage { position: relative; height: 100svh; min-height: 560px; overflow: clip; }
+#opening .op__first { position: relative; height: 100%; display: flex; flex-direction: column; padding: 96px var(--space-1) 40px; }
+#opening .op__title { font-size: min(24vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.455))); white-space: nowrap; }
+#opening .op-cut, #opening .op-window { display: inline-block; vertical-align: top; }
+#opening .op-window { clip-path: inset(2px 2px 2px 2px); }
+#opening .op-window__film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transform: scaleX(-1) scale(1.08); }
+#opening .op-window__in { display: block; }
+#opening .op-cut { padding-block: 0.06em 0.08em; }
+#opening .op-window__word { display: block; position: relative; padding: 0.06em 0.04em 0.08em; background: var(--color-1); color: var(--color-2); outline: 3px solid var(--color-1); mix-blend-mode: darken; }
+#opening .op__info { margin-top: auto; display: grid; grid-template-columns: 2.2fr 2fr 4fr 1.4fr; gap: 24px; align-items: start; }
+#opening .op__where { display: flex; gap: 10px; align-items: center; white-space: nowrap; }
+#opening .op__where svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+#opening .op__strands li + li { margin-top: 8px; }
+#opening .op__intro { display: grid; gap: 18px; max-width: 440px; }
+#opening .op__intro .m-text { color: var(--color-4); }
+#opening .op__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin-top: 6px; }
+#opening .op__edition { justify-self: end; text-align: right; }
+#opening .op__second { position: relative; height: 100svh; min-height: 560px; overflow: clip; display: flex; align-items: flex-end; }
+#opening .op__film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transform: scaleX(-1) scale(1.08); }
+#opening .op__second::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, transparent 30%, color-mix(in srgb, var(--color-1) 45%, transparent) 62%, color-mix(in srgb, var(--color-1) 82%, transparent) 100%); }
+#opening .op__second-inner { position: relative; z-index: 2; width: 100%; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 32px; padding: 0 var(--space-1) 44px; }
+#opening .op__statement { max-width: 11.5em; }
+#opening .op__card { border-radius: var(--radius-1); color: var(--color-2); display: grid; grid-template-columns: 1fr auto; gap: 18px 20px; width: min(420px, 100%); padding: 18px; background: color-mix(in srgb, var(--color-3) 88%, transparent); }
+#opening .op__card .m-text { color: var(--color-4); grid-column: 1 / -1; }
+#opening .op__card-title { display: grid; gap: 8px; }
+#opening .op__card-title .m-text-3 { color: var(--color-4); }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .op-cut__in { display: inline-block; animation: op-from-left .95s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op-window__in { animation: op-gate .85s cubic-bezier(.25, .7, .2, 1) backwards; }
+  #opening .op-window__film { animation: op-drift 6.5s ease-in-out infinite alternate; }
+  #opening .op__info > * { animation: op-rise .6s cubic-bezier(.2, .7, .1, 1) backwards; }
+  #opening .op__info > :nth-child(1) { animation-delay: .3s; }
+  #opening .op__info > :nth-child(2) { animation-delay: .38s; }
+  #opening .op__info > :nth-child(3) { animation-delay: .46s; }
+  #opening .op__info > :nth-child(4) { animation-delay: .54s; }
+  #opening.is-off .op-window__film { animation-play-state: paused; }
+}
+@keyframes op-from-left { from { transform: translateX(-9%); } }
+@keyframes op-gate { from { clip-path: inset(46% 0 46% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes op-rise { from { transform: translateY(16px); opacity: 0; } }
+@keyframes op-drift { from { transform: scaleX(-1) scale(1.08) translate3d(-3.5%, 1.5%, 0); } to { transform: scaleX(-1) scale(1.16) translate3d(3.5%, -2%, 0); } }
+@media (max-width: 760px) {
+  #opening .op__first { padding: 84px var(--space-1) 28px; }
+  #opening .op__title { white-space: normal; font-size: min(36vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.29))); line-height: 0.88; }
+  #opening .op-cut { display: block; }
+  #opening .op__info { grid-template-columns: 1fr 1fr; gap: 20px 16px; }
+  #opening .op__intro { grid-column: 1 / -1; grid-row: 2; }
+  #opening .op__strands { grid-row: 3; grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+  #opening .op__strands li + li { margin-top: 0; }
+  #opening .op__second-inner { grid-template-columns: 1fr; padding-bottom: 28px; }
+}
+@media (max-height: 760px) and (min-width: 761px) {
+  #opening .op__title { font-size: min(24vw, 36svh, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.455))); }
+}
+}
+</style>
+<style data-8b-part="section:manifesto">
+@layer sections {
+#manifesto { padding-block: var(--space-2); }
+#manifesto .mf__grid { display: grid; grid-template-columns: minmax(160px, 1fr) 4fr; gap: 24px; padding-top: 18px; border-top: 1px solid var(--color-6); }
+#manifesto .mf__note { padding-top: 0.7em; color: var(--color-4); }
+#manifesto .mf__statement { max-width: 20em; }
+#manifesto .mf__aside { display: grid; grid-template-columns: minmax(160px, 1fr) 1.6fr 1.6fr 0.8fr; gap: 24px; margin-top: clamp(48px, 6vw, 88px); align-items: start; }
+#manifesto .mf__photo { grid-column: 1; aspect-ratio: 3 / 4; border-radius: var(--radius-1); overflow: hidden; max-width: 220px; }
+#manifesto .mf__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 72% 30%; }
+#manifesto .mf__copy { display: grid; gap: 20px; justify-items: start; color: var(--color-4); }
+#manifesto .mf__sign { display: grid; gap: 4px; color: var(--color-2); }
+@media (max-width: 760px) {
+  #manifesto .mf__grid { grid-template-columns: 1fr; gap: 14px; }
+  #manifesto .mf__note { padding-top: 0; }
+  #manifesto .mf__aside { grid-template-columns: 1fr; gap: 28px; }
+  #manifesto .mf__photo { max-width: 150px; }
+}
+}
+</style>
+<style data-8b-part="section:selection">
+@layer sections {
+#selection { padding-bottom: var(--space-2); }
+#selection .sel__head { display: grid; gap: 24px; padding-bottom: clamp(32px, 4vw, 56px); }
+#selection .sel__title { font-size: min(13vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.53))); }
+#selection .sel__headnote { display: grid; grid-template-columns: minmax(160px, 1fr) 2fr 1fr; gap: 24px; color: var(--color-4); }
+#selection .sel__headnote .m-text { max-width: 34em; }
+#selection .sel__row { display: grid; grid-template-columns: 5fr 7fr; gap: 24px; padding-block: 16px; border-top: 1px solid var(--color-6); }
+#selection .sel__meta { position: sticky; top: 92px; align-self: start; display: grid; gap: 12px; padding-top: 4px; }
+#selection .sel__meta-top { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+#selection .sel__runtime, #selection .sel__by, #selection .sel__when { color: var(--color-4); }
+#selection .sel__logline { max-width: 26em; color: var(--color-4); }
+#selection .sel__bar { position: relative; height: 2px; background: var(--color-6); overflow: hidden; margin-top: 8px; }
+#selection .sel__fill { position: absolute; inset: 0; background: var(--color-7); transform-origin: left; }
+#selection .sel__frame { aspect-ratio: 3 / 2; clip-path: inset(0 round var(--radius-1)); overflow: hidden; }
+#selection .sel__frame img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 760px) {
+  #selection .sel__headnote { grid-template-columns: 1fr; gap: 10px; }
+  #selection .sel__row { grid-template-columns: 1fr; gap: 16px; padding-block: 16px 28px; }
+  #selection .sel__meta { position: static; }
+}
+}
+</style>
+<style data-8b-part="section:strands">
+@layer sections {
+#strands { padding-bottom: var(--space-2); }
+#strands .st__panel { padding: clamp(24px, 3vw, 40px) clamp(18px, 2.4vw, 32px) clamp(48px, 6vw, 88px); }
+#strands .st__head { display: grid; grid-template-columns: minmax(140px, 1fr) 2fr 1fr; gap: 24px; align-items: start; padding-bottom: clamp(40px, 6vw, 88px); }
+#strands .st__lead { max-width: 24em; }
+#strands .st__note { justify-self: end; color: var(--color-4); }
+#strands .st__list { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.3em; row-gap: 0.16em; font-family: var(--font-1); font-size: clamp(40px, 6.1vw, 92px); font-weight: 500; letter-spacing: -0.045em; line-height: 1.02; color: var(--color-4); }
+#strands .st__item { display: inline-flex; align-items: flex-start; gap: 0.12em; }
+#strands .st__item + .st__item::before { content: "/"; margin-right: 0.22em; color: var(--color-5); }
+#strands .st__cut { position: relative; display: inline-block; white-space: nowrap; }
+#strands .st__days { font-size: 11px; letter-spacing: 0.05em; margin-top: 0.6em; color: var(--color-4); white-space: nowrap; }
+@media (max-width: 760px) {
+  #strands .st__head { grid-template-columns: 1fr; gap: 12px; }
+  #strands .st__note { justify-self: start; }
+  #strands .st__list { display: grid; font-size: clamp(30px, 8.6vw, 44px); row-gap: 0.28em; }
+  #strands .st__item + .st__item::before { content: none; }
+  #strands .st__cut { white-space: normal; }
+}
+}
+</style>
+<style data-8b-part="section:premiere">
+@layer sections {
+#premiere .pr__stage { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; gap: 24px; padding-block: 72px 32px; }
+#premiere .pr__screen { position: relative; }
+#premiere .pr__title { position: absolute; z-index: 2; left: 0; right: 0; top: 50%; transform: translateY(-50%); display: flex; justify-content: space-between; padding-inline: clamp(16px, 3vw, 48px); pointer-events: none; font-family: var(--font-1); font-size: clamp(52px, 9.4vw, 140px); font-weight: 600; letter-spacing: -0.05em; line-height: 0.9; text-transform: uppercase; }
+#premiere .pr__word { display: inline-block; }
+#premiere .pr__frame { position: relative; aspect-ratio: 2.15 / 1; max-height: 62svh; width: 100%; clip-path: inset(0 round var(--radius-1)); overflow: hidden; }
+#premiere .pr__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+#premiere .pr__frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--color-1) 72%, transparent) 0%, color-mix(in srgb, var(--color-1) 20%, transparent) 32%, color-mix(in srgb, var(--color-1) 20%, transparent) 68%, color-mix(in srgb, var(--color-1) 72%, transparent) 100%); }
+#premiere .pr__info { display: grid; grid-template-columns: minmax(160px, 1fr) 2.4fr auto; gap: 24px; align-items: start; }
+#premiere .pr__when { color: var(--color-4); padding-top: 6px; }
+#premiere .pr__film { display: grid; gap: 8px; max-width: 40em; }
+#premiere .pr__film .m-text { color: var(--color-4); }
+@media (max-width: 760px) {
+  #premiere .pr__stage { gap: 18px; padding-block: 76px 28px; }
+  #premiere .pr__title { position: static; transform: none; padding: 0 0 14px; font-size: clamp(42px, 13.4vw, 64px); }
+  #premiere .pr__frame { aspect-ratio: 4 / 5; max-height: 48svh; }
+  #premiere .pr__frame::after { content: none; }
+  #premiere .pr__info { grid-template-columns: 1fr; gap: 12px; }
+}
+}
+</style>
+<style data-8b-part="section:jury">
+@layer sections {
+#jury { padding-block: var(--space-2); }
+#jury .jr__head { display: grid; gap: 24px; padding-bottom: clamp(32px, 4vw, 56px); }
+#jury .jr__title { font-size: min(13vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.58))); }
+#jury .jr__lead { max-width: 30em; margin-left: calc(25% + 6px); }
+#jury .jr__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px 20px; }
+#jury .jr__card { display: grid; gap: 8px; align-content: start; }
+#jury .jr__photo { aspect-ratio: 3 / 4; border-radius: var(--radius-1); overflow: hidden; margin-bottom: 8px; background: var(--color-3); }
+#jury .jr__photo img { width: 100%; height: 100%; object-fit: cover; }
+#jury .jr__role { color: var(--color-4); }
+#jury .jr__quote { color: var(--color-4); max-width: 22em; }
+@media (max-width: 900px) { #jury .jr__grid { grid-template-columns: repeat(2, 1fr); } #jury .jr__lead { margin-left: 0; } }
+}
+</style>
+<style data-8b-part="section:submit">
+@layer sections {
+#submit { padding-bottom: var(--space-2); }
+#submit .sb__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: end; padding-top: 18px; border-top: 1px solid var(--color-6); }
+#submit .sb__lead { display: grid; gap: 22px; justify-items: start; }
+#submit .sb__lead .m-text { max-width: 30em; color: var(--color-4); }
+#submit .sb__photo { aspect-ratio: 4 / 3; border-radius: var(--radius-1); overflow: hidden; }
+#submit .sb__photo img { width: 100%; height: 100%; object-fit: cover; }
+#submit .sb__steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: clamp(40px, 5vw, 72px); }
+#submit .sb__step { display: grid; gap: 10px; align-content: start; padding-top: 18px; }
+#submit .sb__num { color: var(--color-7); }
+#submit .sb__step .m-text { color: var(--color-4); }
+@media (max-width: 760px) {
+  #submit .sb__grid { grid-template-columns: 1fr; }
+  #submit .sb__steps { grid-template-columns: 1fr; gap: 28px; }
+}
+}
+</style>
+<style data-8b-part="section:venues">
+@layer sections {
+#venues { padding-bottom: var(--space-2); }
+#venues .vn__stage { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 48px); overflow-x: clip; }
+#venues .vn__head { display: grid; grid-template-columns: auto 1fr; gap: 24px 40px; align-items: end; }
+#venues .vn__title { font-size: min(13vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 1.2))); }
+#venues .vn__lead { max-width: 22em; justify-self: end; padding-bottom: 0.4em; }
+#venues .vn__track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding-inline: var(--space-1); }
+#venues .vn__panel { display: grid; gap: 16px; align-content: start; }
+#venues .vn__photo { aspect-ratio: 16 / 10; border-radius: var(--radius-1); overflow: hidden; }
+#venues .vn__photo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.14); }
+#venues .vn__text { display: grid; gap: 8px; }
+#venues .vn__text .m-text-3, #venues .vn__text .m-text { color: var(--color-4); }
+#venues .vn__text .m-text { max-width: 30em; }
+@media (max-width: 760px) {
+  #venues .vn__head { grid-template-columns: 1fr; }
+  #venues .vn__lead { justify-self: start; }
+  #venues .vn__track { grid-template-columns: 1fr; gap: 32px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { padding-bottom: var(--space-2); }
+#faq .fq__title { font-size: min(14vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.58))); padding-bottom: clamp(28px, 4vw, 48px); }
+#faq .fq__body { display: grid; grid-template-columns: minmax(160px, 1fr) 3fr; gap: 24px; }
+#faq .fq__note { color: var(--color-4); padding-top: 22px; }
+#faq .fq__item { padding-block: 4px; }
+#faq .fq__item:last-child { border-bottom: 1px solid var(--color-6); }
+#faq .fq__q { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 18px 0; cursor: pointer; list-style: none; }
+#faq .fq__q::-webkit-details-marker { display: none; }
+#faq .fq__q::after { content: "+"; font-family: var(--font-1); font-size: 32px; line-height: 1; transition: transform .35s cubic-bezier(.2, .7, .1, 1); }
+#faq .fq__item[open] .fq__q::after { transform: rotate(45deg); }
+#faq .fq__a { max-width: 40em; padding-bottom: 22px; color: var(--color-4); }
+@media (max-width: 760px) { #faq .fq__body { grid-template-columns: 1fr; gap: 0; } #faq .fq__note { padding-top: 0; } }
+}
+</style>
+<style data-8b-part="section:passes">
+@layer sections {
+#passes { padding-bottom: var(--space-2); }
+#passes .ps__head { display: grid; grid-template-columns: auto 1fr; gap: 24px 48px; align-items: end; padding-bottom: clamp(32px, 4vw, 56px); }
+#passes .ps__title { font-size: min(13vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 1.2))); }
+#passes .ps__side { display: grid; gap: 18px; justify-items: end; text-align: right; padding-bottom: 0.4em; }
+#passes .ps__lead { max-width: 26em; color: var(--color-4); }
+#passes .ps__switch { display: flex; gap: 8px; }
+#passes .ps__list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+#passes .ps__ticket { display: grid; grid-template-rows: 1fr auto; }
+#passes .ps__body { display: grid; gap: 12px; align-content: start; padding: 24px 24px 28px; }
+#passes .ps__span { color: var(--color-4); }
+#passes .ps__incl { display: grid; gap: 6px; margin-top: 8px; color: var(--color-4); }
+#passes .ps__incl li { padding-left: 18px; position: relative; }
+#passes .ps__incl li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 8px; height: 1px; background: var(--color-7); }
+#passes .ps__stub { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; border-top: 1px dashed var(--color-5); }
+#passes .ps__price { font-family: var(--font-1); font-size: clamp(44px, 5vw, 72px); font-weight: 600; letter-spacing: -0.05em; line-height: 1; }
+@media (max-width: 760px) {
+  #passes .ps__head { grid-template-columns: 1fr; }
+  #passes .ps__side { justify-items: start; text-align: left; }
+  #passes .ps__list { grid-template-columns: 1fr; }
+  #passes .ps__stub { flex-wrap: wrap; }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { padding-bottom: clamp(48px, 6vw, 88px); }
+#contact .ct__panel { padding: clamp(28px, 4vw, 56px) clamp(18px, 2.4vw, 32px); }
+#contact .ct__title { font-size: min(13vw, calc((100vw - 2 * var(--space-1) - 2 * clamp(18px, 2.4vw, 32px)) / (var(--len) * 0.5))); padding-bottom: clamp(28px, 4vw, 56px); border-bottom: 1px solid var(--color-6); }
+#contact .ct__grid { display: grid; grid-template-columns: 1.4fr 2fr; gap: 24px 48px; padding-top: 24px; }
+#contact .ct__line { max-width: 18em; }
+#contact .ct__list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+#contact .ct__list dt { color: var(--color-4); margin-bottom: 6px; }
+#contact .ct__list dd { margin: 0; }
+#contact .ct__list .m-text { color: var(--color-4); }
+@media (max-width: 760px) { #contact .ct__grid, #contact .ct__list { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:site-footer">
+@layer sections {
+#site-footer { padding: 72px var(--space-1) 28px; }
+#site-footer .ft__top { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px 48px; }
+#site-footer .ft__mark { grid-column: 1 / -1; }
+#site-footer .ft__mark { font-size: min(24vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.455))); padding-bottom: 0.04em; }
+#site-footer .ft__line { margin-top: 0; }
+#site-footer .ft__mail { display: inline-block; margin-top: 10px; font-family: var(--font-1); font-size: clamp(28px, 3.4vw, 48px); font-weight: 500; letter-spacing: -0.035em; line-height: 1.1; }
+#site-footer .ft__nav li { padding: 14px 0 12px; }
+#site-footer .ft__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-top: 56px; color: var(--color-4); }
+#site-footer .ft__social { display: flex; flex-wrap: wrap; gap: 18px; }
+@media (max-width: 760px) { #site-footer .ft__top { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #opening.is-staged .op__stage { position: sticky; top: 0; }
+  #opening.is-staged .op__film { visibility: hidden; }
+}
+}
+</style>
+<style data-8b-part="scene-style:strands">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #strands .st__low { position: absolute; left: 0; top: 0; clip-path: inset(50% 0 0 0); }
+}
+}
+</style>
+<style data-8b-part="scene-style:premiere">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #premiere.is-staged { height: 200svh; }
+  #premiere.is-staged .pr__stage { position: sticky; top: 0; height: 100svh; min-height: 0; }
+}
+}
+</style>
+<style data-8b-part="scene-style:venues">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #venues.is-staged .vn__stage { min-height: 100svh; align-content: center; padding-block: 72px 24px; }
+  #venues.is-staged .vn__track { display: flex; width: max-content; gap: 20px; }
+  #venues.is-staged .vn__panel { width: min(50vw, 720px); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 760px) {
+  #venues.is-staged .vn__panel { width: 80vw; }
+}
+}
+</style>
+</head>
+<body>
+<!-- navigation: fixed top bar: wordmark, five section links, Get a pass button; hides on scroll down; full-screen phone menu -->
+<header id="site-nav" class="nav" data-8b-section="navigation">
+  <a class="nav__logo" href="#opening">Cut Short</a>
+  <nav aria-label="Main">
+    <ul class="nav__list" id="nav-list">
+      <li class="nav__item"><a class="m-link m-text-3" href="#selection">Programme</a></li>
+      <li class="nav__item"><a class="m-link m-text-3" href="#strands">Strands</a></li>
+      <li class="nav__item"><a class="m-link m-text-3" href="#jury">Jury</a></li>
+      <li class="nav__item"><a class="m-link m-text-3" href="#venues">Venues</a></li>
+      <li class="nav__item"><a class="m-link m-text-3" href="#submit">Submit</a></li>
+    </ul>
+  </nav>
+  <a class="m-btn nav__cta" href="#passes"><span class="m-btn__label">Get a pass</span></a>
+  <button class="m-btn-2 nav__menu" type="button" aria-expanded="false" aria-controls="nav-list"><span class="m-btn__label" data-open-label="Close">Menu</span></button>
+</header>
+<main>
+<!-- opening: two screens: the festival name with a film still showing through the second word, an info row and a pass button; then the still full screen with a statement and a submissions card (animation: scene:opening) -->
+<section id="opening" class="op" data-8b-section="opening">
+  <div class="op__stage">
+    <div class="op__first">
+      <h1 class="op__title m-text-7" style="--len:9"><span class="op-cut"><span class="op-cut__in">Cut</span></span> <span class="op-window"><span class="op-window__in"><img style="background:#260c0c" class="op-window__film" src="https://images.unsplash.com/photo-1570392428579-082dfb1c4d66?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bWFuJTIwb3JhbmdlJTIwbGlnaHQlMjBzbW9rZSUyMGRhcmt8ZW58MXwwfHx8MTc5MTQ2NjcxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="" width="1600" height="1068" fetchpriority="high"><span class="op-window__word">Short</span></span></span></h1>
+      <div class="op__info">
+        <p class="op__where m-text-3"><span>Glasgow</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg><span>11–17 Nov 2026</span></p>
+        <ul class="op__strands m-text-3" aria-label="Strands">
+          <li>International Competition</li>
+          <li>Scottish Shorts</li>
+          <li>Animation</li>
+          <li>Documentary</li>
+          <li>After Dark</li>
+        </ul>
+        <div class="op__intro">
+          <p class="m-text-2">An international festival of films under twenty minutes: seven nights in three Glasgow cinemas, forty-two films in competition.</p>
+          <p class="m-text">We open the doors to stories that know when to stop, from first-time filmmakers and old hands alike.</p>
+          <div class="op__actions">
+            <a class="m-btn" href="#passes"><span class="m-btn__label">Get a festival pass</span></a>
+            <a class="m-link m-text-3" href="#selection">See the programme</a>
+          </div>
+        </div>
+        <p class="op__edition m-text-3">[14th edition]</p>
+      </div>
+    </div>
+  </div>
+  <div class="op__second">
+    <img style="background:#260c0c" class="op__film" src="https://images.unsplash.com/photo-1570392428579-082dfb1c4d66?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8bWFuJTIwb3JhbmdlJTIwbGlnaHQlMjBzbW9rZSUyMGRhcmt8ZW58MXwwfHx8MTc5MTQ2NjcxN3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="A figure half hidden in a cloud of orange smoke, lit like a film still" width="1600" height="1068">
+    <div class="op__second-inner">
+      <p class="op__statement m-text-5">Every film here ends a moment before you are ready for it to.</p>
+      <aside class="op__card" aria-label="Submissions">
+        <div class="op__card-title">
+          <p class="m-text-3">[Submissions for 2027]</p>
+          <p class="m-text-6">Made something under twenty minutes?</p>
+        </div>
+        <a class="m-icon" href="#submit" aria-label="How to submit a film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></a>
+        <p class="m-text">Entries open on 1 March. Every film is watched to its last frame by two programmers.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- manifesto: a two-sentence statement lit word by word, a portrait and two short paragraphs signed by the festival director (animation: scene:manifesto) -->
+<section id="manifesto" class="mf wrap" data-8b-section="manifesto">
+  <div class="mf__grid">
+    <p class="mf__note m-text-3">[Every November since 2013]</p>
+    <p class="mf__statement m-text-5">We programme films the way you tell a secret: quickly, in the dark, to a room that leans in. Twenty minutes is enough to break a heart, start an argument or change a mind.</p>
+  </div>
+  <div class="mf__aside">
+    <figure class="mf__photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1637059880830-59a90102de77?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cG9ydHJhaXQlMjBtYW4lMjBzaGFkb3clMjBkcmFtYXRpY3xlbnwxfDF8fHwxNzkxNDY2NzUzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=250&q=60" alt="Ruaridh Bell, the festival director, looking up in the dark" width="1600" height="2133" loading="lazy"></figure>
+    <div class="mf__copy">
+      <p class="m-text">Cut Short began as one night in a borrowed church hall with a bedsheet for a screen. Fourteen years on it fills three cinemas, but the rule hasn't changed: nothing over twenty minutes, and every film gets a full house.</p>
+      <p class="m-text mf__sign"><span class="m-text-6">Ruaridh Bell</span><span class="m-text-3">Festival director</span></p>
+    </div>
+    <div class="mf__copy">
+      <p class="m-text">We watch every submission to its last frame. What reaches the screen is the work that made us forget to check the time.</p>
+      <a class="m-link m-text-3" href="#submit">How films are chosen</a>
+    </div>
+  </div>
+</section>
+
+<!-- selection: four featured competition films, each with runtime, director, logline, screening slot and a still (demo: Last Orders at the Lucky Star, Whiteout, Hold Your Breath, The Long Way from Fintry) (animation: scene:selection) -->
+<section id="selection" class="sel wrap" data-8b-section="selection">
+  <div class="sel__head">
+    <h2 class="sel__title m-text-4" style="--len:14" data-8b-motion="cut">In competition</h2>
+    <div class="sel__headnote">
+      <p class="m-text-3">[Four of forty-two]</p>
+      <p class="m-text">Forty-two films from twenty-six countries compete for the Cut Short Prize. These are four the selection committee still argues about.</p>
+    </div>
+  </div>
+  <ol class="sel__list">
+    <li class="sel__row">
+      <div class="sel__meta">
+        <div class="sel__meta-top"><h3 class="m-text-6">Last Orders at the Lucky Star</h3><p class="sel__runtime m-text-3">14 min</p></div>
+        <p class="sel__by m-text-3">Dir. Niamh Kearney · Ireland</p>
+        <p class="sel__logline m-text">A night-shift waitress has one hour to decide whether the man at table six is the father who left.</p>
+        <div class="sel__bar" aria-hidden="true"><span class="sel__fill"></span></div>
+        <p class="sel__when m-text-3">[Wed 12 Nov · 20:15 · The Grand Hall]</p>
+      </div>
+      <figure class="sel__frame"><img style="background:#262626" src="https://images.unsplash.com/photo-1775750219279-87ffff280d72?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bmlnaHQlMjBkaW5lciUyMG5lb24lMjB3aW5kb3d8ZW58MXwwfHx8MTc5MTQ2NjcxOXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60" alt="A roadside diner glowing under its neon sign at night" width="1600" height="1067" loading="lazy"></figure>
+    </li>
+    <li class="sel__row">
+      <div class="sel__meta">
+        <div class="sel__meta-top"><h3 class="m-text-6">Whiteout</h3><p class="sel__runtime m-text-3">9 min</p></div>
+        <p class="sel__by m-text-3">Dir. Jonas Aaltonen · Finland</p>
+        <p class="sel__logline m-text">A ski patroller follows a line of footprints that stops in the middle of an empty field.</p>
+        <div class="sel__bar" aria-hidden="true"><span class="sel__fill"></span></div>
+        <p class="sel__when m-text-3">[Thu 13 Nov · 18:00 · The Dome]</p>
+      </div>
+      <figure class="sel__frame"><img style="background:#d9d9f3" src="https://images.unsplash.com/photo-1733361749222-434ac367c652?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8ZmlndXJlJTIwcmVkJTIwY29hdCUyMHNub3clMjBmaWVsZHxlbnwxfDB8fHwxNzkxNDY2NzI0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60" alt="A small figure in a red jacket crossing a white snowfield" width="1600" height="1067" loading="lazy"></figure>
+    </li>
+    <li class="sel__row">
+      <div class="sel__meta">
+        <div class="sel__meta-top"><h3 class="m-text-6">Hold Your Breath</h3><p class="sel__runtime m-text-3">18 min</p></div>
+        <p class="sel__by m-text-3">Dir. Carmen Ruiz · Spain, Mexico</p>
+        <p class="sel__logline m-text">Two sisters train for the free-diving record their mother never came back up from.</p>
+        <div class="sel__bar" aria-hidden="true"><span class="sel__fill"></span></div>
+        <p class="sel__when m-text-3">[Fri 14 Nov · 21:00 · The Grand Hall]</p>
+      </div>
+      <figure class="sel__frame"><img style="background:#0c408c" src="https://images.unsplash.com/photo-1636924592256-0b917bc6c894?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8c3dpbW1lciUyMHBvb2wlMjBuaWdodCUyMGxpZ2h0fGVufDF8MHx8fDE3OTE0NjY3MjN8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60" alt="Two hands reaching up through blue water towards the light" width="1600" height="1168" loading="lazy"></figure>
+    </li>
+    <li class="sel__row">
+      <div class="sel__meta">
+        <div class="sel__meta-top"><h3 class="m-text-6">The Long Way from Fintry</h3><p class="sel__runtime m-text-3">12 min</p></div>
+        <p class="sel__by m-text-3">Dir. Calum Reid · Scotland</p>
+        <p class="sel__logline m-text">A driving instructor and his last pupil take the back road home one more time, in fog.</p>
+        <div class="sel__bar" aria-hidden="true"><span class="sel__fill"></span></div>
+        <p class="sel__when m-text-3">[Sat 15 Nov · 16:30 · Trongate Night Cinema]</p>
+      </div>
+      <figure class="sel__frame"><img style="background:#262626" src="https://images.unsplash.com/photo-1668166893230-bab2db9e4343?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2FyJTIwaGVhZGxpZ2h0cyUyMGVtcHR5JTIwcm9hZCUyMG5pZ2h0fGVufDF8MHx8fDE3OTE0NjY3MjF8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=700&q=60" alt="A country road disappearing into fog under a single street light" width="1600" height="1067" loading="lazy"></figure>
+    </li>
+  </ol>
+</section>
+
+<!-- strands: a panel with the eight programme strands as large names with their days in brackets (animation: scene:strands) -->
+<section id="strands" class="st wrap" data-8b-section="strands">
+  <div class="st__panel m-surface">
+    <div class="st__head">
+      <h2 class="st__title m-text-3">Strands</h2>
+      <p class="st__lead m-text-2">Eight ways into the programme, one rule for all of them: nothing over twenty minutes.</p>
+      <p class="st__note m-text-3">[Pick a night, or all of them]</p>
+    </div>
+    <ul class="st__list">
+      <li class="st__item"><span class="st__cut"><span class="st__name">International Competition</span></span><span class="st__days m-text-3">[Tue–Sun]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">Scottish Shorts</span></span><span class="st__days m-text-3">[Wed, Fri]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">Animation</span></span><span class="st__days m-text-3">[Thu, Sun]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">Documentary</span></span><span class="st__days m-text-3">[Wed–Sat]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">After Dark</span></span><span class="st__days m-text-3">[Fri, Sat · 23:00]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">First Films</span></span><span class="st__days m-text-3">[Sun]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">Music Video</span></span><span class="st__days m-text-3">[Sat]</span></li>
+      <li class="st__item"><span class="st__cut"><span class="st__name">Rescued Reels</span></span><span class="st__days m-text-3">[Sun matinee]</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- premiere: opening night as a pinned screen: a small pill of a still widens to the full frame while the words Opening and Night travel to the edges, then the film's details (animation: scene:premiere) -->
+<section id="premiere" class="pr" data-8b-section="premiere">
+  <div class="pr__stage wrap">
+    <div class="pr__screen">
+      <h2 class="pr__title"><span class="pr__word pr__word--a">Opening</span> <span class="pr__word pr__word--b">Night</span></h2>
+      <figure class="pr__frame"><img style="background:#260c0c" src="https://images.unsplash.com/photo-1764016888040-727244f8db7d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8d29tYW4lMjByZWQlMjBsaWdodCUyMGNpbmVtYXRpYyUyMHBvcnRyYWl0fGVufDF8MHx8fDE3OTE0NjY3MTZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1230&q=60" alt="A woman looks up into red stage light, a still from Red Hour" width="1600" height="1067" loading="lazy"></figure>
+    </div>
+    <div class="pr__info">
+      <p class="pr__when m-text-3">[Tue 11 Nov · 19:30 · The Grand Hall]</p>
+      <div class="pr__film">
+        <p class="m-text-6">Red Hour</p>
+        <p class="m-text">Dir. Amaya Ortiz · UK, Spain · 17 min. A lighting technician spends the hour before a premiere searching the theatre for the star who has stopped answering. Followed by a conversation with the director and the festival party until late.</p>
+      </div>
+      <a class="m-btn" href="#passes"><span class="m-btn__label">Book opening night</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- jury: four jurors as portraits with name, role and city, and a quote each; portraits develop from negative to positive (animation: scene:jury) -->
+<section id="jury" class="jr wrap" data-8b-section="jury">
+  <div class="jr__head">
+    <h2 class="jr__title m-text-4" style="--len:8" data-8b-motion="cut">The jury</h2>
+    <p class="jr__lead m-text-2">Four people who make films for a living will watch all forty-two and give one prize: £5,000 and the closing-night slot.</p>
+  </div>
+  <ul class="jr__grid">
+    <li class="jr__card">
+      <figure class="jr__photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1636208640803-6a443f9676d4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHBvcnRyYWl0JTIwd29tYW4lMjBkYXJrJTIwYmFja2dyb3VuZCUyMGZpbG18ZW58MXwxfHx8MTc5MTQ2Njc1Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Saoirse Dunne, with long red hair, a hand at her temple" width="1600" height="2133" loading="lazy"></figure>
+      <p class="m-text-6">Saoirse Dunne</p>
+      <p class="jr__role m-text-3">Editor · Dublin</p>
+      <p class="jr__quote m-text">“I look for the cut nobody else would have dared to make.”</p>
+    </li>
+    <li class="jr__card">
+      <figure class="jr__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1778050786388-2b30a3ac79cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cG9ydHJhaXQlMjBtYW4lMjBzaGFkb3clMjBkcmFtYXRpY3xlbnwxfDF8fHwxNzkxNDY2NzUzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Tomasz Wilk in black and white, looking up into a hard light" width="1600" height="2400" loading="lazy"></figure>
+      <p class="m-text-6">Tomasz Wilk</p>
+      <p class="jr__role m-text-3">Cinematographer · Łódź</p>
+      <p class="jr__quote m-text">“Light that tells me something the script forgot to.”</p>
+    </li>
+    <li class="jr__card">
+      <figure class="jr__photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1675726205553-4e348f24da2c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8cG9ydHJhaXQlMjB3b21hbiUyMGRhcmslMjBiYWNrZ3JvdW5kJTIwZmlsbXxlbnwxfDF8fHwxNzkxNDY2NzUyfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Leila Haddad in a dark shawl, looking straight into the camera" width="1600" height="2400" loading="lazy"></figure>
+      <p class="m-text-6">Leila Haddad</p>
+      <p class="jr__role m-text-3">Director · Marseille</p>
+      <p class="jr__quote m-text">“A first frame that dares me to look away, and I can’t.”</p>
+    </li>
+    <li class="jr__card">
+      <figure class="jr__photo"><img style="background:#262640" src="https://images.unsplash.com/photo-1770896686915-140095250023?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cG9ydHJhaXQlMjBtYW4lMjBzaGFkb3clMjBkcmFtYXRpY3xlbnwxfDF8fHwxNzkxNDY2NzUzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Daniel Mensah standing in red light against a dark wall" width="1600" height="2137" loading="lazy"></figure>
+      <p class="m-text-6">Daniel Mensah</p>
+      <p class="jr__role m-text-3">Programmer · Accra</p>
+      <p class="jr__quote m-text">“An ending that arrives one second before I want it to.”</p>
+    </li>
+  </ul>
+</section>
+
+<!-- submit: call for entries: statement, rules, a Submit button, a photo and three numbered steps with dates -->
+<section id="submit" class="sb wrap" data-8b-section="submit">
+  <div class="sb__grid">
+    <div class="sb__lead">
+      <h2 class="sb__title m-text-5" data-8b-motion="cut">Made something under twenty minutes? Send it to us.</h2>
+      <p class="m-text">Fiction, documentary, animation and everything in between, finished after 1 January 2026. Entry is free for students and first-time filmmakers.</p>
+      <a data-8b-placeholder="email" class="m-btn" href="mailto:films@cutshort.example?subject=Film%20submission"><span class="m-btn__label">Submit a film</span></a>
+    </div>
+    <figure class="sb__photo" data-8b-motion="gate"><img style="background:#260c0c" src="https://images.unsplash.com/photo-1605501492805-f5699f0718d5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8ZmlsbSUyMGNyZXclMjBjYW1lcmElMjBzZXQlMjBuaWdodHxlbnwxfDB8fHwxNzkxNDY2NzU1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=680&q=60" alt="A small film crew in silhouette, filming under red light" width="1600" height="1067" loading="lazy"></figure>
+  </div>
+  <ol class="sb__steps">
+    <li class="sb__step ruled" data-8b-motion="rule">
+      <p class="sb__num m-text-3">Step 1 · by 1 August</p>
+      <h3 class="m-text-6">Send a private link</h3>
+      <p class="m-text">A password-protected link, one still and a two-line synopsis. English subtitles for any other language.</p>
+    </li>
+    <li class="sb__step ruled" data-8b-motion="rule">
+      <p class="sb__num m-text-3">Step 2 · August</p>
+      <h3 class="m-text-6">Watched to the last frame</h3>
+      <p class="m-text">Two programmers watch every film from the first second to the end credits. Nobody skips to the middle.</p>
+    </li>
+    <li class="sb__step ruled" data-8b-motion="rule">
+      <p class="sb__num m-text-3">Step 3 · by 15 September</p>
+      <h3 class="m-text-6">Hear back from us</h3>
+      <p class="m-text">Everyone gets an answer. Selected filmmakers get a pass, two nights in Glasgow and a seat at the awards.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- venues: three cinemas as panels with photo, name, address and what plays there; a pinned row that slides sideways (demo: The Grand Hall, The Dome, Trongate Night Cinema) (animation: scene:venues) -->
+<section id="venues" class="vn" data-8b-section="venues">
+  <div class="vn__stage">
+    <div class="vn__head wrap">
+      <h2 class="vn__title m-text-4" style="--len:6" data-8b-motion="cut">Venues</h2>
+      <p class="vn__lead m-text-2">Seven nights, three rooms, all within a ten-minute walk of each other in the city centre.</p>
+    </div>
+    <ul class="vn__track">
+      <li class="vn__panel">
+        <figure class="vn__photo"><img style="background:#26260c" src="https://images.unsplash.com/photo-1783503502938-de922b9c467d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8b2xkJTIwY2luZW1hJTIwcmVkJTIwc2VhdHMlMjBlbXB0eXxlbnwxfDB8fHwxNzkxNDY2NzQ5fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60" alt="Rows of red velvet seats in a warmly lit auditorium" width="1600" height="1067" loading="lazy"></figure>
+        <div class="vn__text">
+          <h3 class="m-text-6">The Grand Hall</h3>
+          <p class="m-text-3">2 Example Street, G2 0ZZ</p>
+          <p class="m-text">Opening and closing nights and the International Competition, in 640 red velvet seats under a painted ceiling.</p>
+        </div>
+      </li>
+      <li class="vn__panel">
+        <figure class="vn__photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1714244467641-ff76306894a6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fGNpbmVtYSUyMGF1ZGllbmNlJTIwZGFyayUyMHNjcmVlbiUyMGxpZ2h0fGVufDF8MHx8fDE3OTE0NjY3NDd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60" alt="An audience sitting under a curved dome screen" width="1600" height="1067" loading="lazy"></figure>
+        <div class="vn__text">
+          <h3 class="m-text-6">The Dome</h3>
+          <p class="m-text-3">3 Example Street, G51 0ZZ</p>
+          <p class="m-text">Animation and Rescued Reels on a curved screen that hangs right over your head.</p>
+        </div>
+      </li>
+      <li class="vn__panel">
+        <figure class="vn__photo"><img style="background:#260c0c" src="https://images.unsplash.com/photo-1627133805103-ce2d34ccdd37?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Y2luZW1hJTIwYXVkaWVuY2UlMjBkYXJrJTIwc2NyZWVuJTIwbGlnaHR8ZW58MXwwfHx8MTc5MTQ2Njc0N3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=650&q=60" alt="A cinema front with its sign lit above the street at night" width="1600" height="1067" loading="lazy"></figure>
+        <div class="vn__text">
+          <h3 class="m-text-6">Trongate Night Cinema</h3>
+          <p class="m-text-3">4 Example Street, G1 0ZZ</p>
+          <p class="m-text">After Dark, Music Video and the festival bar, which stays open until two in the morning.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- faq: five questions in native details elements -->
+<section id="faq" class="fq wrap" data-8b-section="faq">
+  <h2 class="fq__title m-text-4" style="--len:9" data-8b-motion="cut">Questions</h2>
+  <div class="fq__body">
+    <p class="fq__note m-text-3">[Before you come]</p>
+    <div class="fq__list">
+      <details class="fq__item ruled" data-8b-motion="rule">
+        <summary class="fq__q"><span class="m-text-6">Are the screenings accessible?</span></summary>
+        <p class="fq__a m-text">All three venues have step-free access and hearing loops. Every programme has one captioned screening, and the Thursday matinees are relaxed screenings with the lights half up.</p>
+      </details>
+      <details class="fq__item ruled" data-8b-motion="rule">
+        <summary class="fq__q"><span class="m-text-6">Is there an age limit?</span></summary>
+        <p class="fq__a m-text">Most programmes are for 15 and over. After Dark is 18 and over, and Sunday morning Animation is open to anyone aged eight or older.</p>
+      </details>
+      <details class="fq__item ruled" data-8b-motion="rule">
+        <summary class="fq__q"><span class="m-text-6">Are films subtitled?</span></summary>
+        <p class="fq__a m-text">Every film not in English has English subtitles. Captioned screenings are marked in the printed programme and on each ticket.</p>
+      </details>
+      <details class="fq__item ruled" data-8b-motion="rule">
+        <summary class="fq__q"><span class="m-text-6">Can I get a refund?</span></summary>
+        <p class="fq__a m-text">Passes can be refunded until 1 November. Day tickets can be moved to another day up to an hour before the first screening.</p>
+      </details>
+      <details class="fq__item ruled" data-8b-motion="rule">
+        <summary class="fq__q"><span class="m-text-6">Will the filmmakers be there?</span></summary>
+        <p class="fq__a m-text">Most screenings end with a short conversation with the people who made the films, and the festival bar at Trongate is where everyone ends up afterwards.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- passes: two ticket cards (Festival pass, Day ticket) with a Standard and Concession price switch (animation: scene:passes) -->
+<section id="passes" class="ps wrap" data-8b-section="passes">
+  <div class="ps__head">
+    <h2 class="ps__title m-text-4" style="--len:6" data-8b-motion="cut">Passes</h2>
+    <div class="ps__side">
+      <p class="ps__lead m-text">Concessions for students, under-25s, over-65s, job seekers and carers. No booking fees, ever.</p>
+      <div class="ps__switch" role="group" aria-label="Price type">
+        <button class="m-btn-2" type="button" aria-pressed="true" data-tier="standard"><span class="m-btn__label">Standard</span></button>
+        <button class="m-btn-2" type="button" aria-pressed="false" data-tier="concession"><span class="m-btn__label">Concession</span></button>
+      </div>
+    </div>
+  </div>
+  <ul class="ps__list">
+    <li class="ps__ticket">
+      <div class="ps__body m-surface">
+        <p class="ps__span m-text-3">[All seven nights]</p>
+        <h3 class="m-text-6">Festival pass</h3>
+        <ul class="ps__incl m-text">
+          <li>Every screening in all three venues</li>
+          <li>Opening and closing nights</li>
+          <li>A seat held until five minutes before each film</li>
+          <li>The printed festival catalogue</li>
+        </ul>
+      </div>
+      <div class="ps__stub m-surface">
+        <p class="ps__price"><span data-tier="standard">£68</span><span data-tier="concession" hidden>£45</span></p>
+        <a data-8b-placeholder="email" class="m-btn" href="mailto:boxoffice@cutshort.example?subject=Festival%20pass"><span class="m-btn__label">Buy a festival pass</span></a>
+      </div>
+    </li>
+    <li class="ps__ticket">
+      <div class="ps__body m-surface">
+        <p class="ps__span m-text-3">[Any one day]</p>
+        <h3 class="m-text-6">Day ticket</h3>
+        <ul class="ps__incl m-text">
+          <li>Every screening on the day you choose</li>
+          <li>All three venues, first come first seated</li>
+          <li>Late entry to the festival bar</li>
+        </ul>
+      </div>
+      <div class="ps__stub m-surface">
+        <p class="ps__price"><span data-tier="standard">£16</span><span data-tier="concession" hidden>£11</span></p>
+        <a data-8b-placeholder="email" class="m-btn" href="mailto:boxoffice@cutshort.example?subject=Day%20ticket"><span class="m-btn__label">Buy a day ticket</span></a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- contact: a panel with four contact lines: tickets, submissions, press and partners, office (all placeholders) -->
+<section id="contact" class="ct wrap" data-8b-section="contact">
+  <div class="ct__panel m-surface" data-8b-motion="gate">
+    <h2 class="ct__title m-text-4" style="--len:11" data-8b-motion="cut">Write to us</h2>
+    <div class="ct__grid">
+      <p class="ct__line m-text-2">Got something short to say? We read everything, usually within two days.</p>
+      <dl class="ct__list">
+        <div><dt class="m-text-3">Tickets</dt><dd><a data-8b-placeholder="email" class="m-link" href="mailto:boxoffice@cutshort.example">boxoffice@cutshort.example</a></dd></div>
+        <div><dt class="m-text-3">Submissions</dt><dd><a data-8b-placeholder="email" class="m-link" href="mailto:films@cutshort.example">films@cutshort.example</a></dd></div>
+        <div><dt class="m-text-3">Press and partners</dt><dd><a data-8b-placeholder="email" class="m-link" href="mailto:press@cutshort.example">press@cutshort.example</a></dd></div>
+        <div><dt class="m-text-3">Office</dt><dd class="m-text">1 Example Street, Glasgow G1 0ZZ<br><a data-8b-placeholder="phone" class="m-link" href="tel:+441410000000">+44 141 000 0000</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+<!-- footer: wordmark across the width, a closing line with the main email, footer links, social links and the copyright line -->
+<footer id="site-footer" class="ft" data-8b-section="footer">
+  <div class="ft__top">
+    <p class="ft__mark m-text-7" style="--len:9" data-8b-motion="gate">Cut Short</p>
+    <div>
+      <p class="ft__line m-text-2">See you in the dark.</p>
+      <a data-8b-placeholder="email" class="ft__mail m-link" href="mailto:hello@cutshort.example">hello@cutshort.example</a>
+    </div>
+    <nav class="ft__nav" aria-label="Footer">
+      <ul class="m-text-3">
+        <li class="ruled" data-8b-motion="rule"><a href="#selection" class="m-link">Programme</a></li>
+        <li class="ruled" data-8b-motion="rule"><a href="#strands" class="m-link">Strands</a></li>
+        <li class="ruled" data-8b-motion="rule"><a href="#passes" class="m-link">Passes</a></li>
+        <li class="ruled" data-8b-motion="rule"><a href="#contact" class="m-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="ft__bottom m-text-3">
+    <ul class="ft__social">
+      <li><a data-8b-placeholder="social" class="m-link" href="https://www.instagram.com/">Instagram</a></li>
+      <li><a class="m-link" href="https://letterboxd.com/">Letterboxd</a></li>
+      <li><a data-8b-placeholder="social" class="m-link" href="https://vimeo.com/">Vimeo</a></li>
+    </ul>
+    <p>© 2026 Cut Short Festival · Glasgow · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+  </div>
+</footer>
+<script data-8b-part="section-script:site-nav">
+(() => {
+  const nav = document.getElementById('site-nav');
+  const toggle = nav.querySelector('.nav__menu');
+  const label = toggle.querySelector('.m-btn__label');
+  const openText = label.dataset.openLabel, closedText = label.textContent;
+  const setOpen = open => {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    label.textContent = open ? openText : closedText;
+    if (open) window.lenis?.stop(); else window.lenis?.start();
+  };
+  toggle.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
+  nav.querySelectorAll('.nav__list a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  addEventListener('keydown', event => { if (event.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); toggle.focus(); } });
+  let last = scrollY, travel = 0;
+  const onScroll = () => {
+    const y = scrollY, delta = y - last;
+    last = y;
+    if (delta && Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    nav.classList.toggle('is-scrolled', y > 40);
+    if (y < 120) nav.classList.remove('is-hidden');
+    else if (travel > 40) nav.classList.add('is-hidden');
+    else if (travel < -40) nav.classList.remove('is-hidden');
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const opening = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => opening.classList.toggle('is-off', !entry.isIntersecting)).observe(opening);
+})();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function navHeight() { const nav = document.getElementById('site-nav'); return nav ? nav.offsetHeight : 0; }
+function refreshScroll() { ScrollTrigger.sort(); ScrollTrigger.refresh(); }
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.085, anchors: { offset: -navHeight() } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+let resizeTimer;
+addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(refreshScroll, 200); });
+</script>
+<script data-8b-part="motion">
+const effects = {
+  gate(element) {
+    return gsap.fromTo(element, { clipPath: 'inset(50% 0% 50% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.1, ease: 'expo.out', clearProps: 'clipPath' });
+  },
+  cut(element) {
+    return gsap.fromTo(element, { clipPath: 'inset(-20% 100% -20% 0%)', x: -48 }, { clipPath: 'inset(-20% 0% -20% 0%)', x: 0, duration: 1.15, ease: 'power4.out', clearProps: 'clipPath,transform' });
+  },
+  rule(element) {
+    return gsap.fromTo(element, { '--rule': 0 }, { '--rule': 1, duration: 1.2, ease: 'power3.out' });
+  }
+};
+const effectStarts = { gate: 'top 88%', cut: 'top 90%', rule: 'top 95%' };
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: effectStarts[name], once: true, animation: effects[name](element) }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const stage = section.querySelector('.op__stage');
+    const win = section.querySelector('.op-window');
+    const word = section.querySelector('.op-window__word');
+    const cut = section.querySelector('.op-cut');
+    const info = section.querySelector('.op__info');
+    section.classList.add('is-staged');
+    const box = () => {
+      const s = stage.getBoundingClientRect(), w = win.getBoundingClientRect();
+      return { top: w.top - s.top, right: s.right - w.right, bottom: s.bottom - w.bottom, left: w.left - s.left };
+    };
+    const open = () => { const b = box(); return `inset(${-b.top}px ${-b.right}px ${-b.bottom}px ${-b.left}px)`; };
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: () => `+=${stage.offsetHeight}`, scrub: 0.6, invalidateOnRefresh: true }
+    });
+    timeline
+      .fromTo(win, { clipPath: 'inset(2px 2px 2px 2px)' }, { clipPath: open, duration: 0.62, ease: 'power2.inOut' }, 0.04)
+      .fromTo(word, { scale: 1 }, { scale: 3.4, duration: 0.6, ease: 'power2.in', transformOrigin: '33% 58%' }, 0.02)
+      .fromTo(word, { opacity: 1 }, { opacity: 0, duration: 0.3, ease: 'power1.in' }, 0.3)
+      .fromTo(cut, { xPercent: 0, opacity: 1 }, { xPercent: -60, opacity: 0, duration: 0.4, ease: 'power2.in' }, 0)
+      .fromTo(info, { y: 0, opacity: 1 }, { y: () => 0.08 * innerHeight, opacity: 0, duration: 0.24, ease: 'power1.in' }, 0)
+      .to({}, { duration: 0.34 }, 0.66);
+    return () => section.classList.remove('is-staged');
+  });
+}, { first: true, id: 'scene:opening' });
+</script>
+<script data-8b-part="scene:manifesto">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('manifesto');
+    const statement = section.querySelector('.mf__statement');
+    const split = SplitText.create(statement, { type: 'words', wordsClass: 'mf__word' });
+    const styles = getComputedStyle(document.documentElement);
+    const dim = styles.getPropertyValue('--color-5').trim();
+    const ember = styles.getPropertyValue('--color-7').trim();
+    const lit = styles.getPropertyValue('--color-2').trim();
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'manifesto', trigger: statement, start: 'top 80%', end: 'bottom 64%', scrub: 0.4 } });
+    split.words.forEach((word, index) => {
+      timeline.fromTo(word, { color: dim }, { color: ember, duration: 0.5 }, index * 0.3).to(word, { color: lit, duration: 0.8 }, index * 0.3 + 0.5);
+    });
+    return () => split.revert();
+  });
+}, { near: document.getElementById('manifesto') });
+</script>
+<script data-8b-part="scene:selection">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('selection');
+    section.querySelectorAll('.sel__row').forEach((row, index) => {
+      const frame = row.querySelector('.sel__frame');
+      const image = frame.querySelector('img');
+      const fill = row.querySelector('.sel__fill');
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `selection:row-${index}`, trigger: row, start: 'top bottom', end: 'center 58%', scrub: 0.5 } })
+        .fromTo(frame, { clipPath: 'inset(22% 0% 22% 0% round 8px)' }, { clipPath: 'inset(0% 0% 0% 0% round 8px)' }, 0)
+        .fromTo(image, { scale: 1.2 }, { scale: 1 }, 0);
+      gsap.fromTo(fill, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { id: `selection:bar-${index}`, trigger: row, start: 'top 72%', end: () => (innerWidth < 761 ? 'top 12%' : 'bottom 45%'), scrub: true, invalidateOnRefresh: true } });
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:strands">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('strands');
+    const copies = [];
+    section.querySelectorAll('.st__item').forEach((item, index) => {
+      const cut = item.querySelector('.st__cut');
+      const name = cut.querySelector('.st__name');
+      const low = name.cloneNode(true);
+      low.classList.add('st__low');
+      low.setAttribute('aria-hidden', 'true');
+      cut.append(low);
+      copies.push(low);
+      const direction = index % 2 ? 1 : -1;
+      const shift = () => Math.min(innerWidth * 0.09, 120) * direction;
+      gsap.set(name, { clipPath: 'inset(0% 0% 50% 0%)' });
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `strands:line-${index}`, trigger: item, start: 'top 98%', end: 'center 52%', scrub: 0.5, invalidateOnRefresh: true } })
+        .fromTo(name, { x: shift }, { x: 0, duration: 0.94, ease: 'power1.out' }, 0)
+        .fromTo(low, { x: () => -shift() }, { x: 0, duration: 0.94, ease: 'power1.out' }, 0)
+        .to(name, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.06 }, 0.94)
+        .to(low, { autoAlpha: 0, duration: 0.06 }, 0.94);
+    });
+    return () => copies.forEach(copy => copy.remove());
+  });
+}, { near: document.getElementById('strands') });
+</script>
+<script data-8b-part="scene:premiere">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('premiere');
+    const frame = section.querySelector('.pr__frame');
+    const image = frame.querySelector('img');
+    const [first, second] = section.querySelectorAll('.pr__word');
+    const info = section.querySelector('.pr__info');
+    section.classList.add('is-staged');
+    const pill = () => {
+      const width = frame.offsetWidth, height = frame.offsetHeight;
+      const pillWidth = Math.min(width * 0.22, 230), pillHeight = Math.min(pillWidth * 0.46, height * 0.5);
+      return { width, height, pillWidth, pillHeight };
+    };
+    const centre = () => { const rect = frame.getBoundingClientRect(); return rect.left + rect.width / 2; };
+    const left = word => word.getBoundingClientRect().left - gsap.getProperty(word, 'x');
+    const travelFirst = () => Math.max(0, centre() - pill().pillWidth / 2 - 18 - (left(first) + first.offsetWidth));
+    const travelSecond = () => Math.min(0, centre() + pill().pillWidth / 2 + 18 - left(second));
+    const closed = () => { const p = pill(); const y = (p.height - p.pillHeight) / 2, x = (p.width - p.pillWidth) / 2; return `inset(${y}px ${x}px ${y}px ${x}px round 999px)`; };
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'premiere', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.6, invalidateOnRefresh: true } })
+      .fromTo(frame, { clipPath: closed }, { clipPath: 'inset(0px 0px 0px 0px round 8px)', duration: 0.72, ease: 'power2.inOut' }, 0)
+      .fromTo(image, { scale: 1.45 }, { scale: 1, duration: 0.72, ease: 'power1.out' }, 0)
+      .fromTo(first, { x: travelFirst }, { x: 0, duration: 0.7, ease: 'power2.inOut' }, 0.02)
+      .fromTo(second, { x: travelSecond }, { x: 0, duration: 0.7, ease: 'power2.inOut' }, 0.02)
+      .fromTo(info, { y: 40, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.24, ease: 'power2.out' }, 0.66)
+      .to({}, { duration: 0.1 }, 0.9);
+    return () => section.classList.remove('is-staged');
+  });
+});
+</script>
+<script data-8b-part="scene:jury">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('jury');
+    const grid = section.querySelector('.jr__grid');
+    const timeline = gsap.timeline({ defaults: { ease: 'power1.inOut' }, scrollTrigger: { id: 'jury', trigger: grid, start: 'top 88%', end: 'bottom 72%', scrub: 0.5 } });
+    grid.querySelectorAll('.jr__photo img').forEach((image, index) => {
+      timeline.fromTo(image, { filter: 'invert(1) grayscale(1) contrast(1.15)' }, { filter: 'invert(0) grayscale(0) contrast(1)', duration: 1 }, index * 0.38);
+    });
+  });
+});
+</script>
+<script data-8b-part="scene:venues">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('venues');
+    const stage = section.querySelector('.vn__stage');
+    const track = section.querySelector('.vn__track');
+    section.classList.add('is-staged');
+    const travel = () => Math.max(0, track.scrollWidth - document.documentElement.clientWidth);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: 'venues', trigger: stage, start: 'top top', end: () => `+=${travel()}`, pin: true, scrub: 0.5, invalidateOnRefresh: true } });
+    timeline.to(track, { x: () => -travel() }, 0);
+    track.querySelectorAll('.vn__photo img').forEach(image => timeline.fromTo(image, { xPercent: -6 }, { xPercent: 6 }, 0));
+    return () => section.classList.remove('is-staged');
+  });
+});
+</script>
+<script data-8b-part="scene:passes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('passes');
+    section.querySelectorAll('.ps__ticket').forEach((ticket, index) => {
+      const stub = ticket.querySelector('.ps__stub');
+      const direction = index % 2 ? 1 : -1;
+      gsap.fromTo(stub, { y: 34, rotation: -7 * direction, transformOrigin: direction < 0 ? 'right top' : 'left top' }, { y: 0, rotation: 0, ease: 'power1.inOut', scrollTrigger: { id: `passes:stub-${index}`, trigger: ticket, start: 'bottom 106%', end: 'bottom 70%', scrub: 0.5 } });
+    });
+  });
+});
+</script>
+<script data-8b-part="section-script:passes">
+(() => {
+  const section = document.getElementById('passes');
+  const buttons = section.querySelectorAll('.ps__switch [data-tier]');
+  buttons.forEach(button => button.addEventListener('click', () => {
+    buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+    section.querySelectorAll('.ps__price [data-tier]').forEach(price => { price.hidden = price.dataset.tier !== button.dataset.tier; });
+  }));
+})();
+</script>
+</body>
+</html>

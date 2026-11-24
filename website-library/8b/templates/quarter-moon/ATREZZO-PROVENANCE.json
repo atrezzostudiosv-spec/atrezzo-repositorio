@@ -1,0 +1,44 @@
+{
+  "slug": "quarter-moon",
+  "name": "Quarter Moon",
+  "categories": [
+    "Food and drink",
+    "Event"
+  ],
+  "upstream": "https://github.com/8bsite/arcade-bar-website-template",
+  "demo": "https://8b.com/templates/quarter-moon/demo.html",
+  "design_md_url": "https://8b.com/templates/quarter-moon/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "062f08f0ba893d1d291dd09a5d06fd53203df325",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "35236bece0d39ccf13ecef8a616ab43a130655d5",
+    "README.md": "3f5bba44942af61e4e1f00ad8b1f265b3d240db9",
+    "AGENTS.md": "4e5e5862e3f007f6ff3016bfd6df86d21bca6653",
+    "index.html": "177a40617719ea68872c4975e48e4ddb51e2dc1d",
+    "index.gsap.html": "b4aad039848a44ecaeadea7a1569bc59e043bcde"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "136bb859dd06d06793c1887d9cc10fefe43b4ca269d33af93b8800236aac725f",
+    "README.md": "7c75b17fa41023936e00bf5291f60acc5978383050fa221176a504bfeba217e6",
+    "AGENTS.md": "2b580c406db775641ab5965ea50517f2c0c0f542ef028b20800ca1cbb9eccb55",
+    "index.html": "cc39444301f753235656de5241b540b6f4dd613755d2a158e5aad4571097a511",
+    "index.gsap.html": "a94ddd71fbc4955df714e3f98dda9d97134559213e015ff529a73dc9a73c44bb"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "refactor",
+  "name": "Refactor",
+  "categories": [
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/coding-school-website-template",
+  "demo": "https://8b.com/templates/refactor/demo.html",
+  "design_md_url": "https://8b.com/templates/refactor/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "eebb34bccc3c4fa50019ac306b32b06088fbb3fd",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "4ecc843d85e99b10067d48b9e1b43e1a8f04b3c5",
+    "README.md": "4e50a3fe2c95c3f6a7325a583c3907b98eaa5c7b",
+    "AGENTS.md": "344a747b9599f7965b4edf108c143b9af26ab3e5",
+    "index.html": "896240819fe247ea533bf17735ece7b5e51a3c8c",
+    "index.gsap.html": "d34b712ddf593270461b7549582368592a750ba7"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "acb63b8928c9c023736144375d21a8bad0c744d5ed94c8e9f09031fc186fb1f3",
+    "README.md": "126e79728537d439ccfc4811304868b45d272a5a07036d3ad58d438191ec19a2",
+    "AGENTS.md": "a53c40593ac288020ef6f110d9e6109c1f3ce14cd9f62c59f1d12c130a30fab3",
+    "index.html": "b0c2e5da68c07cef36927824edec1e4d6804b9ed5885a3e57ff50206e9d44255",
+    "index.gsap.html": "fb051df560e532b40c86ecaf6c34d4bbe9f52fdcc861dd9240c84eb3de6d16d5"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

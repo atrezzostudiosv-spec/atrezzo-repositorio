@@ -1,0 +1,44 @@
+{
+  "slug": "pipit",
+  "name": "Pipit",
+  "categories": [
+    "Health",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/speech-therapist-website-template",
+  "demo": "https://8b.com/templates/pipit/demo.html",
+  "design_md_url": "https://8b.com/templates/pipit/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "ca765224d2dcb4f3409fcf4e4641f8c006df36ba",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "970e5ddc62d9293891daabfd766df280c212478c",
+    "README.md": "53a8bd31460953193b4633674fc89ac0faa87185",
+    "AGENTS.md": "215695ec93197d1bfa436febbec6009e630353fc",
+    "index.html": "2e5c8f18ff6d5806793d5ca3ef7acdeb31d8b51b",
+    "index.gsap.html": "b237d25a28122f6120bb45ba9d79b2f2ea71c5ff"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "01bc87eb30f9c89d3cf5f97b04aaddb0d65479227ed12815bbeb9a35c819d811",
+    "README.md": "505a83bc4fd7e889295fd254958bae92c317e47deb7a63e9f2a98d11df35d06a",
+    "AGENTS.md": "3b03183fe9a7913977577667276cd8e50c12f6b03d9163f06e524831f894796f",
+    "index.html": "670b3e9a4f11008ff1dae05c71eae7ff993e46d55ece89abe064294b84a48455",
+    "index.gsap.html": "456ab15a0dbf7e8e715e342f910030f57edc2f26a770b841a97bc9a5ff260721"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

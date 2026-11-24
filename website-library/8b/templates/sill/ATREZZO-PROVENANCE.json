@@ -1,0 +1,43 @@
+{
+  "slug": "sill",
+  "name": "Sill",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/pet-boarding-website-template",
+  "demo": "https://8b.com/templates/sill/demo.html",
+  "design_md_url": "https://8b.com/templates/sill/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "9db074e9ce252f4c07ea7d2ae476473ca16c72ef",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "5b252e98e3a3fe10bb11465d281ec56ccdf190de",
+    "README.md": "ba310795cfec33d733d0dc4ff459465af1459abf",
+    "AGENTS.md": "9af81c9c95456b65d0563cd9367eda1dba4c556e",
+    "index.html": "e6c4e47f7f794f1aa8d4b33656c97f713a58dfe7",
+    "index.gsap.html": "e42065692a36fc2b0fb53533dbefa66aaf11c669"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "e8ac38ca1f18713aaa181c1672ceed9603b2c59b7493bb3c9b2411ae0fe39274",
+    "README.md": "f23e77a38966849c45a447809fb86212b5eeae9b2d2ec7b4c3a73bfb5c9ce697",
+    "AGENTS.md": "8779c62f5843d74e05276efbddf2d309f48eee7017ee875d5699021d281f96a8",
+    "index.html": "bc13198dde235b4a7cf3510b024c6fd54ea329855118ad398b3a165674a2de34",
+    "index.gsap.html": "47a4414e55626765f10c35d8df8fa0c667399195935e66a31ca706a2e7e943c2"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "midblock",
+  "name": "Midblock",
+  "categories": [
+    "Architecture and building"
+  ],
+  "upstream": "https://github.com/8bsite/architecture-website-template",
+  "demo": "https://8b.com/templates/midblock/demo.html",
+  "design_md_url": "https://8b.com/templates/midblock/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "7ec5c2f4f1ca2e22ab17c95c1f3e9d2bf3035cca",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "f76054d0462f2cfff500c05adbc9437b8af1d09c",
+    "README.md": "ad20d69def0fb2bfe8cc5a205b748173c2620ce3",
+    "AGENTS.md": "6ae0a293f5dc8f26c2b7848ef405d412f8730faf",
+    "index.html": "4a0dc6c9619d864d441106b6e5344407d9206107",
+    "index.gsap.html": "608f3ba5621552eca11b7a75d509bda942c41820"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "c27353aa3e66c4373cf3b8e2dd70cfedca458e73b0498394deab598d7b37f97c",
+    "README.md": "eb75d4e5f08b499cedb2d846f5bdc0bfb75aef016c4b7ce7b34ea55dafc3f2d2",
+    "AGENTS.md": "4c6ca07ee1c207555df43c9261d1f76d5fed02b95ee3adfd74f86fa067441b2c",
+    "index.html": "6726a3d52ebb0c159634f9d11dd2f9c1be91c613693b3be7b7edf8c020d1b994",
+    "index.gsap.html": "c0c516b52eb9332e4ca0b5f13fff53fe74d72750c990a976495d2485912fd0be"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

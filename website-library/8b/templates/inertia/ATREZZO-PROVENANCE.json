@@ -1,0 +1,43 @@
+{
+  "slug": "inertia",
+  "name": "Inertia",
+  "categories": [
+    "Agency and studio"
+  ],
+  "upstream": "https://github.com/8bsite/motion-design-studio-website-template",
+  "demo": "https://8b.com/templates/inertia/demo.html",
+  "design_md_url": "https://8b.com/templates/inertia/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "ad4872c5d0744ca07867da2a0e44bd4ecfd114da",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "a269200d501c8f0e5bd0ec88a0d8ef002071358c",
+    "README.md": "7c5fbb0b6ebceff6cc83750633fc9a119dfaa732",
+    "AGENTS.md": "498e57a8a5ac3eda3e08d1117e00ac021d2d212d",
+    "index.html": "9374fdf274667a84c9e06ce80e97fbdcdcfe6d61",
+    "index.gsap.html": "b8651de1a23dcada608f1be3bade742bf795d6a7"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "615ca2986d06d264677ac1d10e19337ac2c0a875feb11394481d6e6e864b12c0",
+    "README.md": "af3898d79542c812a31d8f7287a12ef99595678b461d47499546dc8c51c4a27f",
+    "AGENTS.md": "5348a0290541740ce5a80631e2c0b5914ac30b998e75ac9ebaea140d6aff45b2",
+    "index.html": "41f23d788decb0dc2791ed5cfcbe8428eacc478e7a78189992c637cdf2d1b3df",
+    "index.gsap.html": "c8ea5da78572e9875df9f0fcfb7431ef2a981eb6ee082d6040c3dd1bec0e5ca1"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "kilnfield",
+  "name": "Kilnfield Colts FC",
+  "categories": [
+    "Sport and fitness",
+    "Community"
+  ],
+  "upstream": "https://github.com/8bsite/football-club-website-template",
+  "demo": "https://8b.com/templates/kilnfield/demo.html",
+  "design_md_url": "https://8b.com/templates/kilnfield/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "8d8c79c2357a23336be1bb349f41eae6d8b0114a",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "082e38d587a537d72dbb6bfc56a14a83756dd915",
+    "README.md": "9cafba16c406743b5ed7cb979b51e1c64fe27d7a",
+    "AGENTS.md": "e05bb255be97da085b580a13deb7109b8c9e4177",
+    "index.html": "1d5508ca21e724496799b1eafc77e012e8dd7f0a",
+    "index.gsap.html": "6fc018db4402b765f2303c53ae7739c6a1e81406"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8758248c29a71388401990c2df25e5f896498cad886f9292340ebe2a7e076cba",
+    "README.md": "b6995207eeba262e83107a52b394fb3b0883e7dbf7efb731e3c06898acd0b704",
+    "AGENTS.md": "2bd1d0d2d3e79b41cbb96dfeee98b6b1862a1e194bb1fd4f11d98cbf310da0cd",
+    "index.html": "271403703785215ebe1f14a8ad0399a7b23bdb9e47563c35fcc71cbb7fc94510",
+    "index.gsap.html": "95c2890feaf6687f1cf9a276e68201d70798bfe18e95824cefab6a6818d4df3e"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

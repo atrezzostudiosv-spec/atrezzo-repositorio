@@ -1,0 +1,44 @@
+{
+  "slug": "glim",
+  "name": "Glim",
+  "categories": [
+    "Shop",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/lighting-store-website-template",
+  "demo": "https://8b.com/templates/glim/demo.html",
+  "design_md_url": "https://8b.com/templates/glim/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "213766d2f94c270fe0a8ad79795b62ac6c1284f3",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "8598efeb25f9001a5e562c1d18487f59f0d26888",
+    "README.md": "30278c7e9b970ea872d761f63f84c601d39d75ef",
+    "AGENTS.md": "00f69fee850ce76d518887fd6feb29c0702802b5",
+    "index.html": "b8c01a8749bcfa3beb706da86b61b81bae26f1e9",
+    "index.gsap.html": "9d5913b1e63f749eb7329c3a31e97d0abf195340"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7ca77426365eed2e11fdb947a743fc9ee1a95c51ffdb787f6b26c47ac62eee1b",
+    "README.md": "1c7295071a82985da49fc33449ef5b0d1fb1c3ff0138730454cffd1a31cb4f0b",
+    "AGENTS.md": "0543a9b0bd46c2daa93f77c35a8d9cedce26b9e3e37676f7e99402981492836e",
+    "index.html": "b40cb8f31887190ec8fd9eec8fdf5881491932ec55a5af0fd1a4b90bf0ca07a6",
+    "index.gsap.html": "af0f31f7dd9901e6a808c9ebbc095167222fe21cdeb6ad85b78e98f2e1d1ee9b"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

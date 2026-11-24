@@ -1,0 +1,44 @@
+{
+  "slug": "footnote",
+  "name": "Footnote Podiatry",
+  "categories": [
+    "Health",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/podiatrist-website-template",
+  "demo": "https://8b.com/templates/footnote/demo.html",
+  "design_md_url": "https://8b.com/templates/footnote/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "37847c2a1f84822b6fc52873bae2912fb2d49abc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "d98aabd75f1236c06a87a32cb8857766e8addde4",
+    "README.md": "963a8a0b795cdd06fe233b11bdc90f40dbcf6299",
+    "AGENTS.md": "3f62a8c858d3cac7c56a72b143c78314cb56366d",
+    "index.html": "5d1ba2ab94caad8614999cbc6b7026db8586eba4",
+    "index.gsap.html": "ca8d16fd4ed1b44e6e6a21c6f73f8e7e2c774584"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "644e7c7219c97fe3cf0e84fa4fbe63311d75d7cdcd700eb07c6329097b014a67",
+    "README.md": "87a068d38d4bc59f1d454e945812246658498511a0e2c37caca8c6c6626d50eb",
+    "AGENTS.md": "72caa0c2cfea8eba32d4684ccf7cdbcc82af9e55ebff7921ecf7c35d2b7f7d31",
+    "index.html": "3daf52e4e703ec433bf9638e91ad15e8cb000c9c66018595b4a287d7eb2186bb",
+    "index.gsap.html": "c34a1a34b49886ddad3c122deeec34b10809c4318d412f97039d4e902744806a"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

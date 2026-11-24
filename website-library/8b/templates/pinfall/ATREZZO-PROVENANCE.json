@@ -1,0 +1,44 @@
+{
+  "slug": "pinfall",
+  "name": "Pinfall Lanes",
+  "categories": [
+    "Sport and fitness",
+    "Event"
+  ],
+  "upstream": "https://github.com/8bsite/bowling-alley-website-template",
+  "demo": "https://8b.com/templates/pinfall/demo.html",
+  "design_md_url": "https://8b.com/templates/pinfall/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "4d50d39742f55cbde7100d5b84c863e81f37bf4f",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "b73a54b64d27b3f8f1a5c46efabcb2633621d4a8",
+    "README.md": "18a1e99e16096d17c3d608f73aba676c63f8dc37",
+    "AGENTS.md": "c1865776720e81d68877822d8dac1949316c071f",
+    "index.html": "48540e81e80ff48a261ceacf32178dbb465265c1",
+    "index.gsap.html": "29424fc590fb1f50139a45c7b16301053b077222"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "29514feaf618fdd683e127693aad9f82c17c0a999358f2e181b83ca8afbf5049",
+    "README.md": "688e8d823bef1b9f542a2ee5ee9cf5e5d1c0632b12d9a911beabc9645b6c21d0",
+    "AGENTS.md": "f2de7ac7c6f4efdee6eb3093943f24875c23f113a56af06b56621c57e90365a5",
+    "index.html": "cafebbca294d2cac89a3ea0fc224e80e86212575e32d9ba864093630d30a72c8",
+    "index.gsap.html": "797252888c97a490d74b2646c95b400f95236e1ac6ed35f4c0dc81e67849f02c"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

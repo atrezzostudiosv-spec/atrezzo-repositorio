@@ -1,0 +1,44 @@
+{
+  "slug": "spinway",
+  "name": "Spinway Roller Rink",
+  "categories": [
+    "Sport and fitness",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/roller-rink-website-template",
+  "demo": "https://8b.com/templates/spinway/demo.html",
+  "design_md_url": "https://8b.com/templates/spinway/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "1bae9a3c1e8f94999fbdf57edcebc5d47259e682",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "32278c35c0a5013cd679cc0d827cce765cf41e96",
+    "README.md": "d6832e3d2dd7ea6b38f7a9bb23dec41e5d325eb9",
+    "AGENTS.md": "0b89ac8627753d54e8f2e821ed3ed721262668d6",
+    "index.html": "15d33f61b2f9fd7a58a7617bd29adae14da6ab33",
+    "index.gsap.html": "65675f184ce6a565a7da9f4e519d581ec9f91c2b"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "5ab75de13feeeb8b02d148df821b91fa99fe37f15ebc1e87dd0de33be5e8a851",
+    "README.md": "c756d7db9ee35a6e96a12ab6cc611596e3e3ad7e9e91787002642beda83f136b",
+    "AGENTS.md": "5773b55bbf9e632195dddf63b5bb51fe3474e8f0f89941a71036b6c455431bd7",
+    "index.html": "b94a6d9895d57f96caed519181e8364251a44800745f3e5d3c49c9e2046bba92",
+    "index.gsap.html": "d52352129b6972e784ceda7ac7498da224efad23c6e3498aa3094ce975c0011d"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

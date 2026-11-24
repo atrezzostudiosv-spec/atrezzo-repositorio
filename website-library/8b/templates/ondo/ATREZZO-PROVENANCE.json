@@ -1,0 +1,43 @@
+{
+  "slug": "ondo",
+  "name": "ONDO",
+  "categories": [
+    "Event"
+  ],
+  "upstream": "https://github.com/8bsite/event-website-template",
+  "demo": "https://8b.com/templates/ondo/demo.html",
+  "design_md_url": "https://8b.com/templates/ondo/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "690d121da6b94082eb6f42729bf3e0070309487a",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "afa772768df869fad21243d0e62bb2ffd81eb411",
+    "README.md": "10903439d488e0d610b327d7b0d06bb55c95b32d",
+    "AGENTS.md": "2df3facd916787a475fab4ff8d08cdb10d6ca9c3",
+    "index.html": "34f30b69c25e6365b980ece6873d88e8ff1f2d10",
+    "index.gsap.html": "29272aa9b72f1fb4fe1467d2a91b0fd07107e167"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "bd158ba9cdb1beadc7b4b387d786522a2ffb7e60c8eff3fc2eae95020bdcd5e4",
+    "README.md": "5ec9476d9458dc3e0c91af4b277c41fa9a5f0ede8579a087ea085217ceeb6dbc",
+    "AGENTS.md": "660ab51f5dde5529e615f06067d9053b455b4716d2123e3517846569798c9d91",
+    "index.html": "876272dcb7254bb8e5df68278300777b8e29776a181607bf1e4d2b27261adb5e",
+    "index.gsap.html": "c3951a14c15d674b18af3157531e8184d48fd98c6dbb3dd16cc9d7018069f677"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

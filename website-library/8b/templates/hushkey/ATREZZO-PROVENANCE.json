@@ -1,0 +1,43 @@
+{
+  "slug": "hushkey",
+  "name": "Hushkey",
+  "categories": [
+    "Product and app"
+  ],
+  "upstream": "https://github.com/8bsite/product-landing-page-template",
+  "demo": "https://8b.com/templates/hushkey/demo.html",
+  "design_md_url": "https://8b.com/templates/hushkey/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "45ad9bda20050d0ce3368e92297119538db24ab8",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "0f9193034903f8b4d6905ed8f2d07474b2fe46d5",
+    "README.md": "d8d95f29247a10dc5dbe205854409ef599a3f76b",
+    "AGENTS.md": "ce99e1e665cff0595f876fec5036e74c93a43663",
+    "index.html": "e3076dc1f5a03556a661f6d1d078356897f241b7",
+    "index.gsap.html": "bde360255f678a365eb2830c29d69e40710acc31"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7cbe05757a71555d34787b7e33059f6ea6f51f5b58425bede01e5b10b6205c4b",
+    "README.md": "7dd9a8c656d1455cfbb28d04401d8c914821cf03815f86aabbdc039caa42ccd6",
+    "AGENTS.md": "f93a67a82dffa3f1383446fb961caae295ec28cf37a2340c48d48ebb56851ee9",
+    "index.html": "d2da0102532c7fdda8a16ad0990f5835b96630c8ea3c3dbca4a1c4d37aab8b26",
+    "index.gsap.html": "b89011e57ebdceaedc80a025698a44bfca08bba3b78cec0d9ab9fe4c50336597"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

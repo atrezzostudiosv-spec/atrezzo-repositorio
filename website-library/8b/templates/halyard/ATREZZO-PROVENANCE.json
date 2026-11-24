@@ -1,0 +1,43 @@
+{
+  "slug": "halyard",
+  "name": "Halyard",
+  "categories": [
+    "Agency and studio"
+  ],
+  "upstream": "https://github.com/8bsite/marketing-agency-website-template",
+  "demo": "https://8b.com/templates/halyard/demo.html",
+  "design_md_url": "https://8b.com/templates/halyard/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "22a042779536357040225c6caf4cf73365e13d6d",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "21639f8ce3e4f739a741ef3487baeedc4d878253",
+    "README.md": "c6b30eac0b80b3b8763d4c78448716f19406be1b",
+    "AGENTS.md": "f868488dc82c9fdc633e5eb408e133c9bcfa121f",
+    "index.html": "20aec7e392e96996b75228f5b1c8fa45d8d9f1e5",
+    "index.gsap.html": "c2601e77cad7192f4b59ce40497012f80c586278"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "2eee931676a604d71810d2ce01c4a14f541ea507b2983b2a8de3a764e04c7413",
+    "README.md": "fb14a09f90198498e240b157ac7ab9eef26586665cd616f0c171959e29532383",
+    "AGENTS.md": "5c8f71021a5874ca413d8543e894a47796f149cfa6459e34d2f843d7bfdd2a34",
+    "index.html": "ce2868ed6480107e24a91c3e00cfd75a5b1da45b99c2bdfcbfec53fb92ee42c4",
+    "index.gsap.html": "4a77abcd9c69a50cbab2c9298363f16a76329f27b00e15fe556fd1bbfcc8d794"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

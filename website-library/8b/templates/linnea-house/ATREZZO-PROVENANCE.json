@@ -1,0 +1,43 @@
+{
+  "slug": "linnea-house",
+  "name": "Linnea Birth House",
+  "categories": [
+    "Health"
+  ],
+  "upstream": "https://github.com/8bsite/birth-center-website-template",
+  "demo": "https://8b.com/templates/linnea-house/demo.html",
+  "design_md_url": "https://8b.com/templates/linnea-house/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "2db78c320e1c75eb2de4dfc47b07e88d8c294df5",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "db12235f23e87094ef82733663c7109f08a08edb",
+    "README.md": "827a732b385082bc230908e5e7e5621e291d835f",
+    "AGENTS.md": "2ac73fa6762f26d59900aaf8b2f2fe216fc85865",
+    "index.html": "92d7e4ea63e34049949972958c3d4d4545a1800d",
+    "index.gsap.html": "3e3c1ce1d5ade2f12170cf9e087bc0cad261d011"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "e40c1965cc40ec2f597d138a3ee1d894e573b484e16f2bf5b5ae170c96501876",
+    "README.md": "0f47cbd2098f39945d4381773ada7bf261e256671de42177c05cb145715c4437",
+    "AGENTS.md": "4f9ad0295bc623beb2f42ae3e41a26d28816749ede8a24f78c02e859ffe8bc1d",
+    "index.html": "61cb2d2f06414f85dd35c7bbdb2d9de0d57e0efe1ad4f54d7ee8568a3209a2b5",
+    "index.gsap.html": "741ed36e8b1a925f09547cfbf8f2e943c157a618fd40f37d2119e4201fe118f3"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

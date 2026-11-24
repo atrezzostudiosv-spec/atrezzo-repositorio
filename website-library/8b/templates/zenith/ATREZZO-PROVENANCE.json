@@ -1,0 +1,44 @@
+{
+  "slug": "zenith",
+  "name": "Zenith Planetarium",
+  "categories": [
+    "Culture",
+    "Education"
+  ],
+  "upstream": "https://github.com/8bsite/planetarium-website-template",
+  "demo": "https://8b.com/templates/zenith/demo.html",
+  "design_md_url": "https://8b.com/templates/zenith/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "8c03fe581584a1f390bada22b6fff5f2300ed454",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "73efe9521a1a82916847494fdcb2cc9cc378b044",
+    "README.md": "b8afbb77edba48c510080d6d6ba09bf1ff33e1ae",
+    "AGENTS.md": "bc714471c154e12605dfc313b8c8b2cf9c9d0ad8",
+    "index.html": "ea865c6907f45551420f88654d1e9a058b1d2030",
+    "index.gsap.html": "0b8fbf63d7dcffa3219eb258e97abf5ee9d35b7e"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "a3b2e130b0ecedc0da52a5865c41a89e245093f00377e6686cdc3a0686e7253d",
+    "README.md": "8fdfbd8b6933cc7871057be424e61b2eacc22a407e475d05c1bc805c050d89dc",
+    "AGENTS.md": "8c989334eccae661fefece260796c95ee9398768847b560be753702397acae44",
+    "index.html": "c163d2a4cea0d3952cf0d964c7905a7ff7584a40c37aa66bfbcd8f30da28d6f3",
+    "index.gsap.html": "8bbd721cdd6e69fd7f776f376530f3fff191a36a39a620d54e403ea182ab8c46"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

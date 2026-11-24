@@ -1,0 +1,1333 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/sixpenny/
+  Source: https://github.com/8bsite/hardware-store-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  GSAP build (GSAP, ScrollTrigger, Lenis). The main file, index.html, is the same design without libraries.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sixpenny Hardware — the small parts that hold a home together</title>
+<meta name="description" content="Sixpenny Hardware on Example Road, Northfield: screws sold by the one, keys cut while you wait, paint mixed to any chip, tool hire by the weekend and Saturday fix-it classes. Open seven days.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sixpenny Hardware — the small parts that hold a home together">
+<meta property="og:description" content="Sixpenny Hardware on Example Road, Northfield: screws sold by the one, keys cut while you wait, paint mixed to any chip, tool hire by the weekend and Saturday fix-it classes. Open seven days.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%231a1a1a'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3ES%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZqljm0U0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Host Grotesk';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/hostgrotesk/v5/co3BmWBnlCJ3U42vbbfdwMjZpFjm.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f1eee9;
+  --color-2: #211d1e;
+  --color-3: #ffffff;
+  --color-4: #e4e17a;
+  --color-5: #0e2c29;
+  --color-6: #ef6a44;
+  --color-7: #b8cda1;
+  --color-8: #ceb58c;
+  --color-9: #93abc9;
+  --color-10: #66605b;
+  --color-11: #e5e1d9;
+  --font-1: "Host Grotesk", "Host Grotesk Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 16px;
+  --shadow-1: 0 0 0 5px var(--color-3);
+  --shadow-2: 0 26px 50px -26px color-mix(in srgb, var(--color-2) 55%, transparent);
+  --space-1: clamp(16px, 2.6vw, 36px);
+  --space-2: clamp(96px, 12vw, 176px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Host Grotesk Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.6%; ascent-override: 99.4%; descent-override: 31.2%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+  .lenis.lenis-stopped { overflow: clip; }
+  .lenis.lenis-smooth iframe { pointer-events: none; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+  h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; text-decoration: none; }
+  button, input { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; box-shadow: var(--shadow-1); }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: clamp(16px, 1.15vw, 17px); font-weight: 400; line-height: 1.5; letter-spacing: -0.005em; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(44px, 6.6vw, 96px); font-weight: 400; line-height: 0.98; letter-spacing: -0.05em; text-transform: none; font-style: normal; text-wrap: balance; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(36px, 4.8vw, 68px); font-weight: 400; line-height: 1.02; letter-spacing: -0.045em; text-transform: none; font-style: normal; text-wrap: balance; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(28px, 3.6vw, 52px); font-weight: 400; line-height: 1.08; letter-spacing: -0.04em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: clamp(34px, 5.4vw, 84px); font-weight: 400; line-height: 1; letter-spacing: -0.05em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 27px); font-weight: 400; line-height: 1.16; letter-spacing: -0.025em; text-transform: none; font-style: normal; }
+.m-text-8 { font-family: var(--font-1); font-size: 14px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-10); }
+
+.m-btn, .m-btn-2 { display: inline-flex; align-items: stretch; gap: 3px; height: 46px; font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-2); cursor: pointer; border: 0; padding: 0; background: none; }
+.m-btn__dot, .m-btn__label { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; background: var(--color-3); border-radius: var(--radius-1); transition: color .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__dot { width: 46px; }
+.m-btn__dot::after { content: ""; width: 9px; height: 9px; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; transform: translateX(-2px) rotate(45deg); }
+.m-btn__label { padding: 0 22px; }
+.m-btn__dot::before, .m-btn__label::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label::before { transition-delay: .05s; }
+@media (hover: hover) {
+  .m-btn:hover .m-btn__dot, .m-btn:hover .m-btn__label { color: var(--color-3); }
+  .m-btn:hover .m-btn__dot::before, .m-btn:hover .m-btn__label::before, .m-btn-2:hover .m-btn__dot::before, .m-btn-2:hover .m-btn__label::before { transform: scaleY(1); }
+  .m-btn-2:hover .m-btn__dot, .m-btn-2:hover .m-btn__label { color: var(--color-2); }
+}
+.m-btn-2 .m-btn__dot, .m-btn-2 .m-btn__label { background: var(--color-2); color: var(--color-3); }
+.m-btn-2 .m-btn__dot::before, .m-btn-2 .m-btn__label::before { background: var(--color-4); }
+.m-btn-3 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; height: 38px; padding: 0 16px; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 12px; font-weight: 500; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; border: 0; cursor: pointer; transition: color .45s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-3::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-btn-3:hover { color: var(--color-3); }
+  .m-btn-3:hover::before { transform: scaleY(1); }
+}
+.m-link { font-weight: 500; background-image: linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 100% 1px; background-position: 0 100%; padding-bottom: 2px; }
+@media (hover: hover) {
+  .m-link:hover { animation: m-link-redraw .6s cubic-bezier(.7, 0, .2, 1); }
+}
+@keyframes m-link-redraw {
+  0% { background-size: 100% 1px; background-position: 100% 100%; }
+  45% { background-size: 0% 1px; background-position: 100% 100%; }
+  55% { background-size: 0% 1px; background-position: 0 100%; }
+  100% { background-size: 100% 1px; background-position: 0 100%; }
+}
+.m-round { position: relative; isolation: isolate; overflow: hidden; display: inline-grid; place-items: center; width: 44px; height: 44px; flex: none; border-radius: 50%; border: 0; padding: 0; background: var(--color-3); color: var(--color-2); cursor: pointer; transition: color .4s cubic-bezier(.7, 0, .2, 1); }
+.m-round::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50%; background: var(--color-2); transform: scale(0); transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+.m-round__icon { position: relative; width: 14px; height: 14px; }
+.m-round__icon::before, .m-round__icon::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; margin-top: -0.75px; background: currentColor; transition: transform .4s cubic-bezier(.7, 0, .2, 1); }
+.m-round__icon::after { transform: rotate(90deg); }
+@media (hover: hover) {
+  .m-round:hover { color: var(--color-3); }
+  .m-round:hover::before { transform: scale(1); }
+}
+.m-badge { display: inline-flex; align-items: center; gap: 7px; height: 30px; padding: 0 13px 0 11px; border-radius: var(--radius-1); background: var(--layout-tone, var(--color-11)); color: var(--color-2); font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1; letter-spacing: 0.01em; white-space: nowrap; }
+.m-badge__chip { width: 8px; height: 8px; background: currentColor; }
+.m-surface { background: var(--color-3); color: var(--color-2); border-radius: var(--radius-2); box-shadow: var(--shadow-2); }
+.m-field { display: block; }
+.m-field__label { display: block; margin-bottom: 8px; font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: 0.01em; }
+.m-field__input { display: block; width: 100%; height: 54px; padding: 0 22px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 16px; }
+.m-field__input::placeholder { color: var(--color-10); }
+.m-tile { display: block; position: relative; overflow: hidden; background: color-mix(in oklab, var(--layout-tone, var(--color-11)) 62%, var(--color-3)); }
+.m-tile__img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  [data-tone="1"] { --layout-tone: var(--color-6); }
+  [data-tone="2"] { --layout-tone: var(--color-7); }
+  [data-tone="3"] { --layout-tone: var(--color-4); }
+  [data-tone="4"] { --layout-tone: var(--color-8); }
+  [data-tone="5"] { --layout-tone: var(--color-9); }
+  .wrap { width: 100%; max-width: 1720px; margin-inline: auto; padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+  #navigation { position: fixed; inset: 0 0 auto 0; z-index: 40; display: flex; align-items: center; gap: 12px; padding: 16px var(--space-1); pointer-events: none; transition: transform .55s cubic-bezier(.6, 0, .2, 1); }
+  #navigation > * { pointer-events: auto; }
+  #navigation.is-hidden { transform: translateY(-120%); }
+  #navigation .nav__logo { display: inline-flex; align-items: flex-start; gap: 5px; margin-right: auto; color: var(--color-2); transition: color .35s; }
+  #navigation.is-on-dark .nav__logo { color: var(--color-3); }
+  #navigation .nav__word { font-family: var(--font-1); font-size: 27px; font-weight: 500; line-height: 1; letter-spacing: -0.055em; }
+  #navigation .nav__mark { display: inline-grid; place-items: center; width: 19px; height: 19px; margin-top: -2px; border: 1.5px solid currentColor; border-radius: 50%; font-family: var(--font-1); font-size: 8.5px; font-weight: 500; letter-spacing: -0.02em; }
+  #navigation .nav__links { display: flex; gap: 3px; }
+  #navigation .nav__status { gap: 8px; }
+  #navigation .nav__status::after { content: ""; order: -1; width: 8px; height: 8px; border-radius: 50%; background: var(--color-6); }
+  #navigation .nav__menu { display: none; }
+  #navigation .menu { position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; padding: 16px var(--space-1) 32px; background: var(--color-2); color: var(--color-3); }
+  #navigation .menu[hidden] { display: none; }
+  #navigation .menu__top { display: flex; justify-content: space-between; align-items: center; }
+  #navigation .menu__list { display: grid; gap: 4px; }
+  #navigation .menu__list a { display: block; padding: 4px 0; }
+  #navigation .menu__foot { display: grid; gap: 6px; }
+  #navigation .menu__close .m-round__icon { transform: rotate(45deg); }
+  @media (max-width: 899px) {
+    #navigation .nav__links, #navigation .nav__status { display: none; }
+    #navigation .nav__menu { display: inline-flex; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; --opening-kx: 1.55; --opening-ky: 1; --opening-size: 1; }
+  #opening .opening__stage { position: relative; z-index: 0; height: 100svh; min-height: 620px; overflow: clip; display: grid; place-items: center; }
+  #opening .opening__space { position: absolute; inset: 0; perspective: 800px; perspective-origin: 50% 50%; pointer-events: none; }
+  #opening .opening__field { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
+  #opening .opening__star { position: absolute; left: 0; top: 0; width: calc(var(--w) * var(--opening-size)); height: calc(var(--h) * var(--opening-size)); margin: calc(var(--h) * var(--opening-size) / -2) 0 0 calc(var(--w) * var(--opening-size) / -2); transform: translate3d(calc(var(--x) * var(--opening-kx)), calc(var(--y) * var(--opening-ky)), calc(-2400px + 2933px * var(--phase))); opacity: clamp(0, calc(var(--phase) * 2.6 - 1), 1); backface-visibility: hidden; }
+  #opening .opening__star .m-tile { width: 100%; height: 100%; }
+  #opening .opening__fog { position: absolute; left: 50%; top: 50%; width: min(980px, 92vw); height: 460px; transform: translate(-50%, -50%); background: radial-gradient(closest-side, var(--color-1) 0 48%, color-mix(in srgb, var(--color-1) 70%, transparent) 70%, transparent 100%); }
+  #opening .opening__copy { position: relative; z-index: 1; display: grid; justify-items: center; gap: 34px; padding: 0 var(--space-1); text-align: center; }
+  #opening .opening__title { max-width: 11.5em; }
+  #opening .opening__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  #opening .opening__promise { position: relative; z-index: 1; min-height: 100svh; display: grid; align-content: center; padding-block: 140px 96px; }
+  #opening .opening__promise-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3.2fr); gap: 32px var(--space-1); align-items: start; }
+  #opening .opening__since { padding-top: 14px; border-top: 1px solid var(--color-2); }
+  #opening .opening__words { display: grid; gap: 36px; justify-items: start; }
+  #opening .opening__statement { max-width: 19em; }
+  #opening .opening__inline { display: inline-block; width: 1.7em; height: 2.1em; margin-right: 0.2em; vertical-align: -0.12em; overflow: hidden; border-radius: 4px; }
+  #opening .opening__inline img { width: 100%; height: 100%; object-fit: cover; }
+  #opening .opening__next { font-size: 15px; }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .opening__star { animation: opening-fly 16s linear var(--delay) infinite; }
+    #opening .opening__stage.is-paused .opening__star { animation-play-state: paused; }
+    #opening .opening__title-in { animation: opening-title-in 1s cubic-bezier(.2, .7, .1, 1) backwards; }
+    #opening .opening__actions { animation: opening-actions-in .8s cubic-bezier(.2, .7, .1, 1) .25s backwards; }
+  }
+  @keyframes opening-fly {
+    0% { transform: translate3d(calc(var(--x) * var(--opening-kx)), calc(var(--y) * var(--opening-ky)), -2400px); opacity: 0; }
+    45% { opacity: .18; }
+    80% { opacity: 1; }
+    100% { transform: translate3d(calc(var(--x) * var(--opening-kx)), calc(var(--y) * var(--opening-ky)), 533px); opacity: 1; }
+  }
+  @keyframes opening-title-in { from { transform: translateY(34px); clip-path: inset(0 0 42% 0); } to { transform: none; clip-path: inset(0 0 -20% 0); } }
+  @keyframes opening-actions-in { from { transform: translateY(18px); opacity: 0; } }
+  @media (max-width: 759px) {
+    #opening { --opening-kx: .5; --opening-ky: 1.12; --opening-size: .62; }
+    #opening .opening__copy { gap: 28px; }
+    #opening .opening__promise { padding-block: 112px 72px; }
+    #opening .opening__promise-inner { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:opening">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #opening.is-staged .opening__stage { position: sticky; top: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:departments">
+@layer sections {
+  #departments { position: relative; background: var(--color-2); color: var(--color-3); }
+  #departments .dept { position: relative; isolation: isolate; min-height: 100svh; overflow: clip; }
+  #departments .dept__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #departments .dept::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in srgb, var(--color-2) 46%, transparent) 0%, color-mix(in srgb, var(--color-2) 58%, transparent) 50%, color-mix(in srgb, var(--color-2) 72%, transparent) 100%); }
+  #departments .dept__body { position: relative; z-index: 1; min-height: 100svh; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3.4fr); grid-template-rows: 0.9fr auto auto 1.1fr; column-gap: var(--space-1); padding-block: 110px 170px; }
+  #departments .dept__rule { grid-column: 1 / -1; grid-row: 2; height: 1px; margin-bottom: 20px; background: color-mix(in srgb, var(--color-3) 60%, transparent); }
+  #departments .dept__aisle { grid-column: 1; grid-row: 3; }
+  #departments .dept__copy { grid-column: 2; grid-row: 3; display: grid; gap: 24px; justify-items: start; }
+  #departments .dept__title { max-width: 13.5em; }
+  #departments .dept__guide { position: absolute; right: var(--space-1); bottom: 28px; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) 88px; gap: 16px; width: min(340px, calc(100% - 2 * var(--space-1))); padding: 14px; }
+  #departments .dept__guide-text { display: grid; align-content: space-between; gap: 18px; padding: 4px 0 2px 4px; }
+  #departments .dept__guide-title { font-size: 19px; }
+  #departments .dept__cover { display: grid; align-items: end; width: 88px; aspect-ratio: 3 / 4; padding: 0 8px 4px; border-radius: 6px; background: var(--layout-tone); font-family: var(--font-1); font-size: 64px; font-weight: 500; line-height: 1; letter-spacing: -0.06em; }
+  #departments :focus-visible { outline-color: var(--color-3); box-shadow: none; }
+  #departments .dept__guide :focus-visible { outline-color: var(--color-2); }
+  @media (max-width: 759px) {
+    #departments .dept__body { grid-template-columns: minmax(0, 1fr); grid-template-rows: 1fr auto auto auto; padding-block: 96px 200px; }
+    #departments .dept__aisle { grid-column: 1; grid-row: 3; margin-bottom: 14px; }
+    #departments .dept__copy { grid-column: 1; grid-row: 4; gap: 20px; }
+    #departments .dept__guide { left: var(--space-1); right: var(--space-1); width: auto; bottom: 18px; grid-template-columns: minmax(0, 1fr) 64px; }
+    #departments .dept__cover { width: 64px; font-size: 46px; }
+  }
+}
+</style>
+<style data-8b-part="scene-style:departments">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    #departments.is-stacked { height: calc(var(--departments-count) * 100svh); }
+    #departments.is-stacked .departments__stage { position: sticky; top: 0; height: 100svh; overflow: clip; }
+    #departments.is-stacked .dept { position: absolute; inset: 0; }
+  }
+}
+</style>
+<style data-8b-part="section:counter">
+@layer sections {
+  #counter { padding-block: var(--space-2); }
+  #counter .counter__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(48px, 6vw, 88px) var(--space-1); }
+  #counter .counter__head { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 24px var(--space-1); align-items: end; }
+  #counter .counter__lead { max-width: 28em; }
+  #counter .counter__list { grid-column: 1; align-self: start; border-bottom: 1px solid var(--color-2); }
+  #counter .counter__row { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name price" "name time"; column-gap: 24px; row-gap: 2px; align-items: end; padding-block: 22px 24px; background: linear-gradient(var(--color-2), var(--color-2)) 0 0 / 100% 1px no-repeat; }
+  #counter .counter__name { grid-area: name; font-size: clamp(30px, 3.5vw, 52px); }
+  #counter .counter__price { grid-area: price; text-align: right; }
+  #counter .counter__time { grid-area: time; text-align: right; }
+  #counter .counter__photos { grid-column: 2; display: grid; gap: 16px; align-content: start; }
+  #counter .counter__photo { overflow: hidden; border-radius: var(--radius-2); background: var(--layout-tone); aspect-ratio: 4 / 5; }
+  #counter .counter__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #counter .counter__photo--b { width: 70%; justify-self: end; aspect-ratio: 3 / 4; }
+  @media (max-width: 899px) {
+    #counter .counter__grid, #counter .counter__head { grid-template-columns: minmax(0, 1fr); }
+    #counter .counter__photos { grid-column: 1; grid-row: 2; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; }
+    #counter .counter__photo--b { width: auto; }
+  }
+  @media (max-width: 479px) {
+    #counter .counter__row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name name" "time price"; row-gap: 10px; }
+    #counter .counter__time { text-align: left; }
+  }
+}
+</style>
+<style data-8b-part="section:aisles">
+@layer sections {
+  #aisles { padding-block: clamp(56px, 7vw, 112px) var(--space-2); overflow: clip; text-align: center; }
+  #aisles .aisles__title { margin-bottom: clamp(40px, 6vw, 72px); }
+  #aisles .aisles__list { display: grid; gap: clamp(12px, 2vw, 24px); justify-items: center; }
+  #aisles .aisles__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(10px, 1.3vw, 18px); }
+  #aisles .aisles__chip { width: clamp(14px, 1.3vw, 20px); aspect-ratio: 1; background: var(--layout-tone); }
+  #aisles .aisles__tile { width: clamp(54px, 6.6vw, 100px); aspect-ratio: 3 / 4; }
+  #aisles .aisles__row:nth-child(even) .aisles__chip { order: -2; }
+  #aisles .aisles__row:nth-child(even) .aisles__tile { order: -1; }
+  #aisles .aisles__count { color: var(--color-10); }
+  #aisles .aisles__foot { display: grid; justify-items: center; gap: 22px; margin-top: clamp(56px, 7vw, 96px); }
+  #aisles .aisles__note { max-width: 26em; }
+  @media (max-width: 759px) {
+    #aisles .aisles__row .m-text-5 { font-size: clamp(30px, 9vw, 42px); }
+  }
+}
+</style>
+<style data-8b-part="section:brought">
+@layer sections {
+  #brought { padding-block: var(--space-2); overflow: clip; }
+  #brought .brought__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px var(--space-1); align-items: end; margin-bottom: clamp(64px, 9vw, 128px); }
+  #brought .brought__lead { max-width: 30em; }
+  #brought .brought__list { display: grid; gap: clamp(88px, 12vw, 176px); }
+  #brought .brought__pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: min(100%, 960px); margin-inline: auto; }
+  #brought .brought__item { display: grid; gap: 16px; align-content: start; }
+  #brought .brought__photo { aspect-ratio: 4 / 5; overflow: hidden; background: var(--color-11); }
+  #brought .brought__item--in .brought__photo { border-radius: var(--radius-2) 0 0 var(--radius-2); }
+  #brought .brought__item--out .brought__photo { border-radius: 0 var(--radius-2) var(--radius-2) 0; }
+  #brought .brought__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #brought .brought__caption { display: grid; gap: 6px; padding-right: 28px; }
+  #brought .brought__item--out .brought__caption { padding-left: 20px; }
+  @media (max-width: 759px) {
+    #brought .brought__head { grid-template-columns: minmax(0, 1fr); }
+    #brought .brought__pair { grid-template-columns: minmax(0, 1fr); }
+    #brought .brought__item--in .brought__caption { order: -1; padding-bottom: 4px; }
+    #brought .brought__item--out .brought__caption { padding-left: 0; padding-top: 4px; }
+    #brought .brought__item--in .brought__photo { border-radius: var(--radius-2) var(--radius-2) 0 0; aspect-ratio: 4 / 3; }
+    #brought .brought__item--out .brought__photo { border-radius: 0 0 var(--radius-2) var(--radius-2); aspect-ratio: 4 / 3; }
+  }
+}
+</style>
+<style data-8b-part="section:owner">
+@layer sections {
+  #owner { background: var(--color-5); color: var(--color-3); padding-block: clamp(64px, 8vw, 112px); }
+  #owner .owner__grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, 2fr); grid-template-areas: "person text shop" "quote quote shop"; gap: 48px var(--space-1); }
+  #owner .owner__person { grid-area: person; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; align-items: start; }
+  #owner .owner__portrait { width: 112px; aspect-ratio: 1; object-fit: cover; }
+  #owner .owner__who { display: grid; gap: 4px; }
+  #owner .owner__role { color: var(--color-4); }
+  #owner .owner__text { grid-area: text; display: grid; gap: 14px; align-content: start; }
+  #owner .owner__text p { font-size: 15px; }
+  #owner .owner__quote { grid-area: quote; align-self: end; display: grid; gap: 22px; justify-items: start; color: var(--color-4); }
+  #owner .owner__quote p { max-width: 15em; }
+  #owner .owner__shop { grid-area: shop; display: grid; gap: 12px; align-content: start; }
+  #owner .owner__frame { aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-2); background: var(--layout-tone); }
+  #owner .owner__frame img { width: 100%; height: 100%; object-fit: cover; }
+  #owner :focus-visible { outline-color: var(--color-4); box-shadow: none; }
+  @media (max-width: 899px) {
+    #owner .owner__grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "person" "text" "quote" "shop"; }
+  }
+}
+</style>
+<style data-8b-part="section:classes">
+@layer sections {
+  #classes { padding-block: var(--space-2); overflow: clip; }
+  #classes .classes__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px var(--space-1); align-items: end; margin-bottom: clamp(48px, 6vw, 80px); }
+  #classes .classes__lead { max-width: 30em; }
+  #classes .classes__deck { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  #classes .classes__card { position: relative; display: grid; gap: 12px; align-content: start; justify-items: start; padding: 12px 12px 22px; }
+  #classes .classes__photo { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 10px; background: var(--layout-tone); margin-bottom: 6px; }
+  #classes .classes__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #classes .classes__card > :not(.classes__photo) { margin-inline: 6px; }
+  #classes .classes__foot { margin-top: 40px; }
+  @media (max-width: 1099px) { #classes .classes__deck { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 759px) { #classes .classes__head { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 599px) { #classes .classes__deck { grid-template-columns: minmax(0, 1fr); } }
+}
+</style>
+<style data-8b-part="section:hire">
+@layer sections {
+  #hire { padding-block: var(--space-2); }
+  #hire .hire__grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 48px var(--space-1); align-items: start; }
+  #hire .hire__intro { position: sticky; top: 96px; display: grid; gap: 22px; }
+  #hire .hire__photo { aspect-ratio: 5 / 4; overflow: hidden; border-radius: var(--radius-2); background: var(--color-11); }
+  #hire .hire__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #hire .hire__list { border-bottom: 1px solid var(--color-2); }
+  #hire .hire__row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: 10px 28px; padding-block: 20px; background: linear-gradient(var(--color-2), var(--color-2)) 0 0 / 100% 1px no-repeat; }
+  #hire .hire__tool { font-size: clamp(28px, 3.2vw, 48px); }
+  #hire .hire__tag { perspective: 700px; }
+  #hire .hire__flip { display: grid; transform-style: preserve-3d; }
+  #hire .hire__face { grid-area: 1 / 1; display: grid; align-content: center; justify-items: start; gap: 2px; width: 150px; height: 68px; padding: 0 18px; border-radius: 12px; backface-visibility: hidden; }
+  #hire .hire__face--front { background: var(--color-4); color: var(--color-2); }
+  #hire .hire__face--back { visibility: hidden; background: var(--color-2); color: var(--color-3); transform: rotateX(180deg); }
+  #hire .hire__note { margin-top: 28px; }
+  @media (max-width: 899px) {
+    #hire .hire__grid { grid-template-columns: minmax(0, 1fr); }
+    #hire .hire__intro { position: static; }
+  }
+  @media (max-width: 559px) {
+    #hire .hire__row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "tool tool" "deposit tag"; }
+    #hire .hire__tool { grid-area: tool; }
+    #hire .hire__deposit { grid-area: deposit; }
+    #hire .hire__tag { grid-area: tag; }
+    #hire .hire__face { width: 132px; height: 60px; padding: 0 14px; }
+  }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+  #visit { position: relative; overflow: clip; }
+  #visit .visit__photo { position: absolute; inset: 0; clip-path: inset(0 50% 0 0); }
+  #visit .visit__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; }
+  #visit .visit__caption { position: absolute; left: var(--space-1); bottom: 24px; padding: 9px 14px; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); }
+  #visit .visit__info { position: relative; margin-left: 50%; min-height: 100svh; display: grid; gap: 34px; align-content: center; padding: var(--space-2) var(--space-1) var(--space-2) clamp(32px, 5vw, 88px); }
+  #visit .visit__hours { display: grid; border-bottom: 1px solid var(--color-2); }
+  #visit .visit__hours > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 12px; border-top: 1px solid var(--color-2); }
+  #visit .visit__contact { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+  #visit .visit__form { display: grid; gap: 14px; padding: 24px; border-radius: var(--radius-2); background: var(--color-11); }
+  #visit .visit__fields { display: grid; gap: 16px; justify-items: start; }
+  #visit .visit__fields .m-field { width: 100%; }
+  @media (max-width: 899px) {
+    #visit .visit__photo { position: relative; inset: auto; clip-path: none; aspect-ratio: 4 / 3; overflow: hidden; }
+    #visit .visit__info { margin-left: 0; min-height: 0; padding: 48px var(--space-1) var(--space-2); }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { padding-block: var(--space-2); }
+  #faq .faq__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 48px var(--space-1); align-items: start; }
+  #faq .faq__main { display: grid; gap: clamp(36px, 5vw, 64px); }
+  #faq .faq__list { border-bottom: 1px solid var(--color-2); }
+  #faq .faq__item { background: linear-gradient(var(--color-2), var(--color-2)) 0 0 / 100% 1px no-repeat; }
+  #faq .faq__q { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 22px; cursor: pointer; list-style: none; }
+  #faq .faq__q::-webkit-details-marker { display: none; }
+  #faq .faq__mark { position: relative; width: 40px; height: 40px; flex: none; border-radius: 50%; background: var(--color-3); transition: background-color .3s; }
+  #faq .faq__mark::before, #faq .faq__mark::after { content: ""; position: absolute; left: 13px; right: 13px; top: 50%; height: 1.5px; margin-top: -0.75px; background: var(--color-2); transition: transform .35s cubic-bezier(.7, 0, .2, 1); }
+  #faq .faq__mark::after { transform: rotate(90deg); }
+  #faq .faq__item[open] .faq__mark::after { transform: rotate(0deg); }
+  #faq .faq__a { max-width: 36em; padding-bottom: 26px; }
+  #faq .faq__photo { position: sticky; top: 96px; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--radius-2); background: var(--layout-tone); }
+  #faq .faq__photo img { width: 100%; height: 100%; object-fit: cover; }
+  @media (hover: hover) { #faq .faq__q:hover .faq__mark { background: var(--color-4); } }
+  @media (max-width: 899px) {
+    #faq .faq__grid { grid-template-columns: minmax(0, 1fr); }
+    #faq .faq__photo { position: relative; top: auto; aspect-ratio: 16 / 10; }
+  }
+}
+</style>
+
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { background: var(--color-4); color: var(--color-2); padding-block: 88px 28px; overflow: clip; }
+  #footer .footer__word { display: block; font-family: var(--font-1); font-weight: 500; line-height: .8; letter-spacing: -0.065em; font-size: min(30vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * 0.53))); margin-left: -0.04em; }
+  #footer .footer__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px var(--space-1); margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--color-2); }
+  #footer .footer__col { display: grid; gap: 10px; align-content: start; }
+  #footer .footer__list { display: grid; gap: 6px; }
+  #footer .footer__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; margin-top: 64px; }
+  @media (max-width: 899px) { #footer .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 479px) { #footer .footer__grid { grid-template-columns: 1fr; } }
+}
+</style>
+</head>
+<body class="m-text">
+<a class="sr-only" href="#main">Skip to the content</a>
+<!-- navigation: a logo mark, five section links and an Open 7 days link; a menu button opens a full-screen menu -->
+<header id="navigation" data-8b-section="navigation">
+  <a class="nav__logo" href="#opening" aria-label="Sixpenny Hardware, back to the top"><span class="nav__word">Sixpenny</span><span class="nav__mark" aria-hidden="true">6d</span></a>
+  <nav aria-label="Main">
+    <ul class="nav__links">
+      <li><a class="m-btn-3" href="#departments"><span class="m-btn-3__label">Departments</span></a></li>
+      <li><a class="m-btn-3" href="#counter"><span class="m-btn-3__label">Counter</span></a></li>
+      <li><a class="m-btn-3" href="#classes"><span class="m-btn-3__label">Classes</span></a></li>
+      <li><a class="m-btn-3" href="#hire"><span class="m-btn-3__label">Tool hire</span></a></li>
+      <li><a class="m-btn-3" href="#visit"><span class="m-btn-3__label">Visit</span></a></li>
+    </ul>
+  </nav>
+  <a class="m-btn-3 nav__status" href="#visit"><span class="m-btn-3__label">Open 7 days</span></a>
+  <button class="m-btn-3 nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-btn-3__label">Menu</span></button>
+  <div id="menu" class="menu" hidden data-lenis-prevent>
+    <div class="menu__top">
+      <span class="m-text-7">Sixpenny Hardware</span>
+      <button class="m-round menu__close" type="button" aria-label="Close the menu"><span class="m-round__icon" aria-hidden="true"></span></button>
+    </div>
+    <ul class="menu__list m-text-3">
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#counter">At the counter</a></li>
+      <li><a href="#classes">Saturday classes</a></li>
+      <li><a href="#hire">Tool hire</a></li>
+      <li><a href="#visit">Visit the shop</a></li>
+    </ul>
+    <div class="menu__foot m-text">
+      <a data-8b-placeholder="phone" class="m-link" href="tel:01130000000">0113 000 0000</a>
+      <span>1 Example Road, Northfield</span>
+    </div>
+  </div>
+</header>
+<main id="main">
+<!-- opening: a cloud of product tiles flying past under the heading, then a promise screen with a highlighted sentence (animation: scene:opening) -->
+<section id="opening" data-8b-section="opening" aria-labelledby="opening-title">
+  <div class="opening__stage">
+    <div class="opening__space" aria-hidden="true">
+      <div class="opening__field">
+<span class="opening__star" style="--x:348px;--y:-44px;--w:112px;--h:112px;--delay:-0.09s;--phase:0.006"><span class="m-tile" data-tone="1"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1555877765-925768ce7109?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2NyZXdzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMTd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=110&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:335px;--y:57px;--w:112px;--h:146px;--delay:-6.94s;--phase:0.434"><span class="m-tile" data-tone="2"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1555877765-05acc97df582?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2NyZXdzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMTd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:357px;--y:169px;--w:146px;--h:112px;--delay:-13.78s;--phase:0.861"><span class="m-tile" data-tone="3"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1633099158408-15e250bd7c6c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b2xkJTIwa2V5JTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMTl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=210&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:258px;--y:233px;--w:112px;--h:112px;--delay:-4.51s;--phase:0.282"><span class="m-tile" data-tone="4"><img fetchpriority="high" style="background:#c0c0c0" class="m-tile__img" src="https://images.unsplash.com/photo-1688846413539-ad1e4a67f392?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGFpbnQlMjBicnVzaCUyMGlzb2xhdGVkfGVufDF8MHx8fDE3OTE0NDAyMjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=240&amp;q=60" alt="" width="480" height="318" decoding="async"></span></span>
+<span class="opening__star" style="--x:128px;--y:222px;--w:95px;--h:129px;--delay:-11.2s;--phase:0.700"><span class="m-tile" data-tone="5"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1636286484290-cfde2456af97?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cGFpbnQlMjBicnVzaCUyMGlzb2xhdGVkfGVufDF8MHx8fDE3OTE0NDAyMjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=160&amp;q=60" alt="" width="480" height="276" decoding="async"></span></span>
+<span class="opening__star" style="--x:74px;--y:230px;--w:140px;--h:106px;--delay:-1.86s;--phase:0.116"><span class="m-tile" data-tone="1"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1634225103276-aafa6ca5f51c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHRhcGUlMjBtZWFzdXJlJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=130&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:17px;--y:223px;--w:112px;--h:112px;--delay:-8.91s;--phase:0.557"><span class="m-tile" data-tone="2"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1575908393823-8e6ee16403d8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFtbWVyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=80&amp;q=60" alt="" width="480" height="360" decoding="async"></span></span>
+<span class="opening__star" style="--x:-45px;--y:225px;--w:112px;--h:146px;--delay:-15.55s;--phase:0.972"><span class="m-tile" data-tone="3"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1715498869410-b0fb19ef6fe2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aGFtbWVyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=480&amp;q=60" alt="" width="480" height="270" decoding="async"></span></span>
+<span class="opening__star" style="--x:-118px;--y:233px;--w:146px;--h:112px;--delay:-6.36s;--phase:0.397"><span class="m-tile" data-tone="4"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1769447386115-d83f1c26b97a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGlnaHQlMjBidWxiJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjN8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="" width="480" height="253" decoding="async"></span></span>
+<span class="opening__star" style="--x:-176px;--y:244px;--w:112px;--h:112px;--delay:-13.21s;--phase:0.826"><span class="m-tile" data-tone="5"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1587195399841-fc7174360a86?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGFkbG9jayUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxNDQwMjI0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=180&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-240px;--y:226px;--w:95px;--h:129px;--delay:-3.96s;--phase:0.248"><span class="m-tile" data-tone="1"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1592744254966-58c65cfd2e69?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGFkbG9jayUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxNDQwMjI0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=70&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-311px;--y:180px;--w:140px;--h:106px;--delay:-10.56s;--phase:0.660"><span class="m-tile" data-tone="2"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1591195852446-b206db137197?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cm9wZSUyMGNvaWwlMjBpc29sYXRlZHxlbnwxfDB8fHwxNzkxNDQwMjI1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=110&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-306px;--y:81px;--w:112px;--h:112px;--delay:-1.53s;--phase:0.096"><span class="m-tile" data-tone="3"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1590482972055-81396275b11c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cm9wZSUyMGNvaWwlMjBpc29sYXRlZHxlbnwxfDB8fHwxNzkxNDQwMjI1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=50&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-335px;--y:-5px;--w:112px;--h:146px;--delay:-8.28s;--phase:0.518"><span class="m-tile" data-tone="4"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1786341594807-6e3f1d6e5acd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3Bpcml0JTIwbGV2ZWwlMjB0b29sfGVufDF8MHx8fDE3OTE0NDAyMjZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=110&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-323px;--y:-43px;--w:146px;--h:112px;--delay:-14.95s;--phase:0.934"><span class="m-tile" data-tone="5"><img style="background:#a6a6a6" class="m-tile__img" src="https://images.unsplash.com/photo-1734094151911-803ee718a921?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZG9vciUyMGhhbmRsZSUyMGJyYXNzfGVufDF8MHx8fDE3OTE0NDAyMjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=300&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-314px;--y:-166px;--w:112px;--h:112px;--delay:-5.6s;--phase:0.350"><span class="m-tile" data-tone="1"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1664452381331-e8c12ecfba9d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGFpbnQlMjB0aW4lMjBpc29sYXRlZHxlbnwxfDB8fHwxNzkxNDQwMjMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=80&amp;q=60" alt="" width="480" height="270" decoding="async"></span></span>
+<span class="opening__star" style="--x:-195px;--y:-212px;--w:95px;--h:129px;--delay:-12.42s;--phase:0.777"><span class="m-tile" data-tone="2"><img style="background:#c0c0c0" class="m-tile__img" src="https://images.unsplash.com/photo-1666873901703-29ed5d8fd878?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cGFpbnQlMjB0aW4lMjBpc29sYXRlZHxlbnwxfDB8fHwxNzkxNDQwMjMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=160&amp;q=60" alt="" width="480" height="360" decoding="async"></span></span>
+<span class="opening__star" style="--x:-172px;--y:-229px;--w:140px;--h:106px;--delay:-3.37s;--phase:0.211"><span class="m-tile" data-tone="3"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1663025290843-5ba43b8fb725?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bGlnaHQlMjBidWxiJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjN8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=60&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-78px;--y:-209px;--w:112px;--h:112px;--delay:-9.98s;--phase:0.623"><span class="m-tile" data-tone="5"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1555877765-925768ce7109?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2NyZXdzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMTd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=110&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:-42px;--y:-237px;--w:112px;--h:146px;--delay:-0.75s;--phase:0.047"><span class="m-tile" data-tone="1"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1555877765-05acc97df582?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2NyZXdzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMTd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:18px;--y:-226px;--w:146px;--h:112px;--delay:-7.58s;--phase:0.474"><span class="m-tile" data-tone="2"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1633099158408-15e250bd7c6c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8b2xkJTIwa2V5JTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMTl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=210&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:74px;--y:-244px;--w:112px;--h:112px;--delay:-14.3s;--phase:0.894"><span class="m-tile" data-tone="3"><img style="background:#c0c0c0" class="m-tile__img" src="https://images.unsplash.com/photo-1688846413539-ad1e4a67f392?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGFpbnQlMjBicnVzaCUyMGlzb2xhdGVkfGVufDF8MHx8fDE3OTE0NDAyMjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=240&amp;q=60" alt="" width="480" height="318" decoding="async"></span></span>
+<span class="opening__star" style="--x:201px;--y:-241px;--w:95px;--h:129px;--delay:-5.13s;--phase:0.320"><span class="m-tile" data-tone="4"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1636286484290-cfde2456af97?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cGFpbnQlMjBicnVzaCUyMGlzb2xhdGVkfGVufDF8MHx8fDE3OTE0NDAyMjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=160&amp;q=60" alt="" width="480" height="276" decoding="async"></span></span>
+<span class="opening__star" style="--x:252px;--y:-221px;--w:140px;--h:106px;--delay:-11.91s;--phase:0.745"><span class="m-tile" data-tone="5"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1634225103276-aafa6ca5f51c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fHRhcGUlMjBtZWFzdXJlJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=130&amp;q=60" alt="" width="480" height="320" decoding="async"></span></span>
+<span class="opening__star" style="--x:313px;--y:-122px;--w:112px;--h:112px;--delay:-2.69s;--phase:0.168"><span class="m-tile" data-tone="1"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1575908393823-8e6ee16403d8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFtbWVyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=80&amp;q=60" alt="" width="480" height="360" decoding="async"></span></span>
+<span class="opening__star" style="--x:325px;--y:-102px;--w:112px;--h:146px;--delay:-9.34s;--phase:0.584"><span class="m-tile" data-tone="2"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1715498869410-b0fb19ef6fe2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aGFtbWVyJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8MHx8fDE3OTE0NDAyMjJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=480&amp;q=60" alt="" width="480" height="270" decoding="async"></span></span>
+      </div>
+      <div class="opening__fog"></div>
+    </div>
+    <div class="opening__copy">
+      <div class="opening__title-in"><h1 class="m-text-2 opening__title" id="opening-title">The small parts that hold a home together.</h1></div>
+      <div class="opening__actions">
+        <a class="m-btn-2" href="#departments"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">Find your aisle</span></a>
+        <a class="m-btn-3" href="#visit"><span class="m-btn-3__label">Open today 8–6</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="opening__promise">
+    <div class="opening__promise-inner wrap">
+      <p class="m-text-6 opening__since">Sixpenny Hardware<br>Example Road, since 1968</p>
+      <div class="opening__words">
+        <p class="m-text-4 opening__statement"><span class="opening__inline"><img loading="lazy" style="background:#260c0c" src="https://images.unsplash.com/photo-1679973297346-83bf2d311796?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8aGFuZCUyMGhvbGRpbmclMjBzY3Jld3xlbnwxfDB8fHwxNzkxNDQwMzIwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=150&amp;q=60" width="7008" height="4672" alt="A brass cup hook held between finger and thumb"></span>We sell screws by the one, cut keys while you wait, mix paint to the chip in your pocket, and tell you straight when a job needs a tradesperson rather than a trolley.</p>
+        <a class="m-link opening__next" href="#counter">What the counter does</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- departments: five departments held on one screen, each next panel wiping up over the last, with a guide link and a big letter (animation: scene:departments) -->
+<section id="departments" data-8b-section="departments" data-ground="dark" aria-labelledby="departments-title">
+  <h2 class="sr-only" id="departments-title">Departments</h2>
+  <div class="departments__stage">
+    <article class="dept" data-tone="1" aria-labelledby="dept-fixings">
+      <img loading="lazy" style="background:#404040" class="dept__photo" src="https://images.unsplash.com/photo-1562936291-bfe45093d49c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c2NyZXdzJTIwaW4lMjBkcmF3ZXJ8ZW58MXwwfHx8MTc5MTQ0MDI2NHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=60" width="8256" height="5504" alt="A heap of zinc-plated wood screws">
+      <div class="dept__body wrap">
+        <div class="dept__rule" aria-hidden="true"></div>
+        <p class="m-text-6 dept__aisle">Aisles 1–3</p>
+        <div class="dept__copy">
+          <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Fixings</span></span>
+          <h3 class="m-text-3 dept__title" id="dept-fixings">Screws, plugs, nails and bolts, sold by the one or by the box.</h3>
+          <a class="m-btn" href="#aisles"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">See fixings</span></a>
+        </div>
+      </div>
+      <aside class="m-surface dept__guide" aria-label="Fixings guide">
+        <div class="dept__guide-text">
+          <p class="m-text-7 dept__guide-title">Which fixing for which wall?</p>
+          <a class="m-link m-text-6" href="#faq">Read the guide</a>
+        </div>
+        <span class="dept__cover" aria-hidden="true">F</span>
+      </aside>
+    </article>
+    <article class="dept" data-tone="2" aria-labelledby="dept-tools">
+      <img loading="lazy" style="background:#a67326" class="dept__photo" src="https://images.unsplash.com/photo-1669582389450-67a661bccde0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTR8fGNhcnBlbnRlciUyMHdvcmtiZW5jaCUyMHRvb2xzfGVufDF8MHx8fDE3OTE0NDAyNjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=60" width="6000" height="4000" alt="Hand tools hung in rows on a pine wall above a workbench">
+      <div class="dept__body wrap">
+        <div class="dept__rule" aria-hidden="true"></div>
+        <p class="m-text-6 dept__aisle">Aisles 4–6</p>
+        <div class="dept__copy">
+          <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Tools</span></span>
+          <h3 class="m-text-3 dept__title" id="dept-tools">Hand tools that outlast the job, power tools you can try at the counter.</h3>
+          <a class="m-btn" href="#hire"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">See tools</span></a>
+        </div>
+      </div>
+      <aside class="m-surface dept__guide" aria-label="Tools guide">
+        <div class="dept__guide-text">
+          <p class="m-text-7 dept__guide-title">The twelve tools every flat needs</p>
+          <a class="m-link m-text-6" href="#faq">Read the list</a>
+        </div>
+        <span class="dept__cover" aria-hidden="true">T</span>
+      </aside>
+    </article>
+    <article class="dept" data-tone="3" aria-labelledby="dept-paint">
+      <img loading="lazy" style="background:#d9d9d9" class="dept__photo" src="https://images.unsplash.com/photo-1631127887321-0a2cf902a002?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGFpbnQlMjBjb2xvciUyMHN3YXRjaGVzfGVufDF8MHx8fDE3OTE0NDAyNjh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=60" width="5472" height="3648" alt="Hands spreading fans of paint colour cards across a table">
+      <div class="dept__body wrap">
+        <div class="dept__rule" aria-hidden="true"></div>
+        <p class="m-text-6 dept__aisle">Aisles 7–8</p>
+        <div class="dept__copy">
+          <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Paint</span></span>
+          <h3 class="m-text-3 dept__title" id="dept-paint">Mixed to any chip, fan deck or flake of old wall you bring in.</h3>
+          <a class="m-btn" href="#counter"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">See paint</span></a>
+        </div>
+      </div>
+      <aside class="m-surface dept__guide" aria-label="Paint guide">
+        <div class="dept__guide-text">
+          <p class="m-text-7 dept__guide-title">How much paint for one room?</p>
+          <a class="m-link m-text-6" href="#faq">Work it out</a>
+        </div>
+        <span class="dept__cover" aria-hidden="true">P</span>
+      </aside>
+    </article>
+    <article class="dept" data-tone="4" aria-labelledby="dept-garden">
+      <img loading="lazy" style="background:#260c0c" class="dept__photo" src="https://images.unsplash.com/photo-1573561368183-fd88bdb4503d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z2FyZGVuJTIwdG9vbHMlMjBzaGVkfGVufDF8MHx8fDE3OTE0NDAyNjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=60" width="2928" height="2024" alt="A yellow shovel, rakes and a fork lined up against a dark wall">
+      <div class="dept__body wrap">
+        <div class="dept__rule" aria-hidden="true"></div>
+        <p class="m-text-6 dept__aisle">The yard and aisle 9</p>
+        <div class="dept__copy">
+          <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Garden</span></span>
+          <h3 class="m-text-3 dept__title" id="dept-garden">Seeds, compost, hose fittings and the small parts sheds are made of.</h3>
+          <a class="m-btn" href="#aisles"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">See garden</span></a>
+        </div>
+      </div>
+      <aside class="m-surface dept__guide" aria-label="Garden guide">
+        <div class="dept__guide-text">
+          <p class="m-text-7 dept__guide-title">What to sow this month</p>
+          <a class="m-link m-text-6" href="#faq">See the list</a>
+        </div>
+        <span class="dept__cover" aria-hidden="true">G</span>
+      </aside>
+    </article>
+    <article class="dept" data-tone="5" aria-labelledby="dept-keys">
+      <img loading="lazy" style="background:#262626" class="dept__photo" src="https://images.unsplash.com/photo-1635237393049-55046279ebb8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGtleSUyMGN1dHRpbmd8ZW58MXwwfHx8MTc5MTQ0MDI3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=60" width="4784" height="3194" alt="Rows of uncut key blanks on a dark blue ground">
+      <div class="dept__body wrap">
+        <div class="dept__rule" aria-hidden="true"></div>
+        <p class="m-text-6 dept__aisle">At the counter</p>
+        <div class="dept__copy">
+          <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Keys and locks</span></span>
+          <h3 class="m-text-3 dept__title" id="dept-keys">Keys cut while you wait, locks fitted to the doors you already have.</h3>
+          <a class="m-btn" href="#counter"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">See keys</span></a>
+        </div>
+      </div>
+      <aside class="m-surface dept__guide" aria-label="Keys guide">
+        <div class="dept__guide-text">
+          <p class="m-text-7 dept__guide-title">Which keys we cut on the spot</p>
+          <a class="m-link m-text-6" href="#faq">Check yours</a>
+        </div>
+        <span class="dept__cover" aria-hidden="true">K</span>
+      </aside>
+    </article>
+  </div>
+</section>
+
+<!-- counter: six jobs done while you wait, each with a price and a time, beside two photos -->
+<section id="counter" data-8b-section="counter" aria-labelledby="counter-title">
+  <div class="wrap counter__grid">
+    <div class="counter__head">
+      <h2 class="m-text-3" id="counter-title" data-8b-motion="rise">Done while you wait</h2>
+      <p class="m-text counter__lead" data-8b-motion="rise">Bring the job to the counter. Most of it is finished before a cup of tea would have gone cold, and you see every cut being made.</p>
+    </div>
+    <ul class="counter__list">
+      <li class="counter__row" data-8b-motion="rule">
+        <span class="m-text-5 counter__name">Keys cut</span>
+        <span class="m-text-7 counter__price">from £4.50</span>
+        <span class="m-text-8 counter__time">about 3 minutes</span>
+      </li>
+      <li class="counter__row" data-8b-motion="rule">
+        <span class="m-text-5 counter__name">Paint mixed to a sample</span>
+        <span class="m-text-7 counter__price">from £14 a litre</span>
+        <span class="m-text-8 counter__time">about 10 minutes</span>
+      </li>
+      <li class="counter__row" data-8b-motion="rule">
+        <span class="m-text-5 counter__name">Timber cut to size</span>
+        <span class="m-text-7 counter__price">50p a cut</span>
+        <span class="m-text-8 counter__time">about 5 minutes</span>
+      </li>
+      <li class="counter__row" data-8b-motion="rule">
+        <span class="m-text-5 counter__name">Glass and acrylic cut</span>
+        <span class="m-text-7 counter__price">by the sheet</span>
+        <span class="m-text-8 counter__time">about 15 minutes</span>
+      </li>
+      <li class="counter__row" data-8b-motion="rule">
+        <span class="m-text-5 counter__name">Blades and chisels sharpened</span>
+        <span class="m-text-7 counter__price">from £5</span>
+        <span class="m-text-8 counter__time">ready next morning</span>
+      </li>
+      <li class="counter__row" data-8b-motion="rule">
+        <span class="m-text-5 counter__name">Lamps rewired</span>
+        <span class="m-text-7 counter__price">from £18</span>
+        <span class="m-text-8 counter__time">ready in two days</span>
+      </li>
+    </ul>
+    <div class="counter__photos">
+      <figure class="counter__photo" data-tone="5" data-8b-motion="tint"><img style="background:#260c0c" src="https://images.unsplash.com/photo-1710129477453-6de47269341b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8a2V5JTIwZHVwbGljYXRpbmclMjBtYWNoaW5lfGVufDF8MHx8fDE3OTE0NDAzMDd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=810&amp;q=60" width="4192" height="2795" alt="The red key-cutting machine behind the counter, its guide wheel close up" loading="lazy"></figure>
+      <figure class="counter__photo counter__photo--b" data-tone="2" data-8b-motion="tint"><img style="background:#262626" src="https://images.unsplash.com/photo-1685022515804-af2e8b3b75e0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTd8fHNhbmRpbmclMjB3b29kJTIwd29ya3Nob3B8ZW58MXwwfHx8MTc5MTQ0MDMwOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=610&amp;q=60" width="4365" height="2905" alt="A length of timber being cut to size on the saw at the back" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- aisles: an index of six aisle names that grow to full size as each reaches the middle of the screen, each with a photo tile and a stock count (animation: scene:aisles) -->
+<section id="aisles" data-8b-section="aisles" aria-labelledby="aisles-title">
+  <div class="wrap">
+    <h2 class="m-text-6 aisles__title" id="aisles-title">Every aisle, front to back</h2>
+    <ul class="aisles__list">
+      <li class="aisles__row" data-tone="1">
+        <span class="aisles__chip" aria-hidden="true"></span>
+        <span class="m-text-5 aisles__name">Fixings</span>
+        <span class="m-tile aisles__tile"><img style="background:#f3f3f3" class="m-tile__img" src="https://images.unsplash.com/photo-1641937725629-2adda0f55251?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXNzb3J0ZWQlMjBzY3Jld3MlMjBhbmQlMjBib2x0c3xlbnwxfDB8fHwxNzkxNDQwMjY1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="Screws, bolts and washers on white" loading="lazy"></span>
+        <span class="m-text-5 aisles__count">(1,240<span class="sr-only"> lines in stock</span>)</span>
+      </li>
+      <li class="aisles__row" data-tone="2">
+        <span class="aisles__chip" aria-hidden="true"></span>
+        <span class="m-text-5 aisles__name">Tools</span>
+        <span class="m-tile aisles__tile"><img style="background:#8c7340" class="m-tile__img" src="https://images.unsplash.com/photo-1617048530929-0edab8608369?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNhcnBlbnRlciUyMHdvcmtiZW5jaCUyMHRvb2xzfGVufDF8MHx8fDE3OTE0NDAyNjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="Pliers, a square and drill bits on a wooden bench" loading="lazy"></span>
+        <span class="m-text-5 aisles__count">(860<span class="sr-only"> lines in stock</span>)</span>
+      </li>
+      <li class="aisles__row" data-tone="3">
+        <span class="aisles__chip" aria-hidden="true"></span>
+        <span class="m-text-5 aisles__name">Paint</span>
+        <span class="m-tile aisles__tile"><img style="background:#c0a673" class="m-tile__img" src="https://images.unsplash.com/photo-1622250544703-997d69d856e3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHBhaW50JTIwY29sb3IlMjBzd2F0Y2hlc3xlbnwxfDB8fHwxNzkxNDQwMjY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="A paintbrush resting on a fan of colour cards" loading="lazy"></span>
+        <span class="m-text-5 aisles__count">(410<span class="sr-only"> lines in stock</span>)</span>
+      </li>
+      <li class="aisles__row" data-tone="5">
+        <span class="aisles__chip" aria-hidden="true"></span>
+        <span class="m-text-5 aisles__name">Electrical</span>
+        <span class="m-tile aisles__tile"><img style="background:#d9d9d9" class="m-tile__img" src="https://images.unsplash.com/photo-1761507321319-2d59343016f6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZWxlY3RyaWNhbCUyMHdpcmVzJTIwY2FibGV8ZW58MXwwfHx8MTc5MTQ0MDMxNXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="A loose bundle of coloured wires on white" loading="lazy"></span>
+        <span class="m-text-5 aisles__count">(330<span class="sr-only"> lines in stock</span>)</span>
+      </li>
+      <li class="aisles__row" data-tone="2">
+        <span class="aisles__chip" aria-hidden="true"></span>
+        <span class="m-text-5 aisles__name">Plumbing</span>
+        <span class="m-tile aisles__tile"><img style="background:#a6a6a6" class="m-tile__img" src="https://images.unsplash.com/photo-1560883123-04646fef95df?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29wcGVyJTIwcGlwZSUyMGZpdHRpbmdzfGVufDF8MHx8fDE3OTE0NDAzMTR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="A copper pipe with a joint running down a stone wall" loading="lazy"></span>
+        <span class="m-text-5 aisles__count">(290<span class="sr-only"> lines in stock</span>)</span>
+      </li>
+      <li class="aisles__row" data-tone="4">
+        <span class="aisles__chip" aria-hidden="true"></span>
+        <span class="m-text-5 aisles__name">Garden</span>
+        <span class="m-tile aisles__tile"><img style="background:#8c400c" class="m-tile__img" src="https://images.unsplash.com/photo-1647553756926-21a62021b9d2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8cG90dGluZyUyMHNoZWQlMjBzZWVkc3xlbnwxfDB8fHwxNzkxNDQwMjcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=90&amp;q=60" alt="Packets of vegetable seeds laid out in rows" loading="lazy"></span>
+        <span class="m-text-5 aisles__count">(520<span class="sr-only"> lines in stock</span>)</span>
+      </li>
+    </ul>
+    <div class="aisles__foot">
+      <p class="m-text aisles__note">Not on the shelf? If it is still made, we can usually have it here by Thursday.</p>
+      <a data-8b-placeholder="phone" class="m-btn-2" href="tel:01130000000"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">Call the counter</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- brought: three pairs: a part brought in and the match, sliding together as they rise (animation: scene:brought) -->
+<section id="brought" data-8b-section="brought" aria-labelledby="brought-title">
+  <div class="wrap brought__head">
+    <h2 class="m-text-3" id="brought-title">Bring the old one in</h2>
+    <p class="m-text brought__lead">Half a hinge, a washer worn flat, a key snapped in the lock: put it on the counter and we will find its match, or tell you who still makes it.</p>
+  </div>
+  <ol class="wrap brought__list">
+    <li class="brought__pair">
+      <figure class="brought__item brought__item--in">
+        <div class="brought__photo"><img style="background:#262626" src="https://images.unsplash.com/photo-1560673429-b9b9338a360a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Zml4aW5nJTIwbGVha2luZyUyMHRhcHxlbnwxfDB8fHwxNzkxNDQwMzE2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" width="4444" height="2963" alt="A chrome tap with a drop of water hanging from it" loading="lazy"></div>
+        <figcaption class="brought__caption"><span class="m-text-6">Brought in</span><span class="m-text-7">An outside tap that would not stop dripping</span></figcaption>
+      </figure>
+      <figure class="brought__item brought__item--out">
+        <div class="brought__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1589870446935-ce8bc41685b8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y29wcGVyJTIwcGlwZSUyMGZpdHRpbmdzfGVufDF8MHx8fDE3OTE0NDAzMTR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" width="4032" height="3024" alt="Brass tap fittings standing on a white ground" loading="lazy"></div>
+        <figcaption class="brought__caption"><span class="m-text-6">Matched</span><span class="m-text-7">A half-inch washer and a new brass jumper, £3.40</span></figcaption>
+      </figure>
+    </li>
+    <li class="brought__pair">
+      <figure class="brought__item brought__item--in">
+        <div class="brought__photo"><img style="background:#260c0c" src="https://images.unsplash.com/photo-1590280986931-d675a2cf9b2e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fGJyb2tlbiUyMGtleXxlbnwxfDB8fHwxNzkxNDQwMzEyfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" width="3872" height="2592" alt="An old brass key in the lock of a wooden door" loading="lazy"></div>
+        <figcaption class="brought__caption"><span class="m-text-6">Brought in</span><span class="m-text-7">Half a shed key, the other half still in the lock</span></figcaption>
+      </figure>
+      <figure class="brought__item brought__item--out">
+        <div class="brought__photo"><img style="background:#a68c73" src="https://images.unsplash.com/photo-1643804926339-e94f0a655185?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8a2V5JTIwY3V0dGluZ3xlbnwxfDB8fHwxNzkxNDQwMjczfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" width="6000" height="3376" alt="A bunch of newly cut keys on a wooden table" loading="lazy"></div>
+        <figcaption class="brought__caption"><span class="m-text-6">Matched</span><span class="m-text-7">Two new keys cut from the half, six minutes</span></figcaption>
+      </figure>
+    </li>
+    <li class="brought__pair">
+      <figure class="brought__item brought__item--in">
+        <div class="brought__photo"><img style="background:#8c7373" src="https://images.unsplash.com/photo-1648804740396-378a48bd01a3?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bmV3JTIwaGluZ2VzJTIwaGFyZHdhcmV8ZW58MXwwfHx8MTc5MTQ0MDM2MXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" width="6000" height="4000" alt="A strap hinge rusted into the boards of a gate" loading="lazy"></div>
+        <figcaption class="brought__caption"><span class="m-text-6">Brought in</span><span class="m-text-7">A gate hinge rusted through at the knuckle</span></figcaption>
+      </figure>
+      <figure class="brought__item brought__item--out">
+        <div class="brought__photo"><img style="background:#a6c0c0" src="https://images.unsplash.com/photo-1593801626871-246f5957620a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c3RhaW5sZXNzJTIwc3RlZWwlMjBoaW5nZXxlbnwxfDB8fHwxNzkxNDQwMzU5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" width="6000" height="4000" alt="A small galvanised hinge fitted to a pale grey door" loading="lazy"></div>
+        <figcaption class="brought__caption"><span class="m-text-6">Matched</span><span class="m-text-7">A galvanised one with the same screw holes, £6.80</span></figcaption>
+      </figure>
+    </li>
+  </ol>
+</section>
+
+<!-- owner: a portrait of the owner with a short history, a quote and a photo of the small-parts shelves, on a dark ground -->
+<section id="owner" data-8b-section="owner" data-ground="dark" aria-labelledby="owner-title">
+  <div class="wrap owner__grid">
+    <div class="owner__person">
+      <img style="background:#8c8c8c" class="owner__portrait" src="https://images.unsplash.com/photo-1772470091578-534d72103823?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8b2xkZXIlMjBtYW4lMjBhcHJvbiUyMHBvcnRyYWl0JTIwd29ya3Nob3B8ZW58MXwwfHx8MTc5MTQ0MDMxOXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=280&amp;q=60" width="3984" height="2656" alt="Len Hollis in his apron, magnifying glasses pushed up on his forehead" loading="lazy">
+      <div class="owner__who">
+        <h2 class="m-text-7" id="owner-title">Len Hollis</h2>
+        <p class="m-text-6 owner__role">Third owner, behind the counter since 2004</p>
+      </div>
+    </div>
+    <div class="owner__text">
+      <p class="m-text">Len bought Sixpenny from the Ashworths, who had it from the man who named it after the two-inch nail he sold most of in 1968.</p>
+      <p class="m-text">Nothing has been moved much since. The drawers still run from small to large, and someone who knows what is in them is always on the floor.</p>
+    </div>
+    <blockquote class="owner__quote">
+      <p class="m-text-4" data-8b-motion="rise">“I would rather sell you one screw that fits than a box of fifty that don’t.”</p>
+      <a class="m-link" href="#visit">Come and say hello</a>
+    </blockquote>
+    <figure class="owner__shop">
+      <div class="owner__frame" data-tone="3" data-8b-motion="tint"><img style="background:#737359" src="https://images.unsplash.com/photo-1631856954913-c751a44490ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8aGFyZHdhcmUlMjBzaG9wJTIwc2hlbHZlc3xlbnwxfDB8fHwxNzkxNDQwMjc0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=60" width="7571" height="5050" alt="Shelves of small parts in packets, priced and labelled, running down an aisle" loading="lazy"></div>
+      <figcaption class="m-text-6">Aisle 2, small parts from floor to ceiling</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- classes: four Saturday workshop cards dealt out of a stack, each with date, price, places left and a phone link (animation: scene:classes) -->
+<section id="classes" data-8b-section="classes" aria-labelledby="classes-title">
+  <div class="wrap classes__head">
+    <h2 class="m-text-3" id="classes-title">Fix-it Saturdays</h2>
+    <p class="m-text classes__lead">Ninety minutes, one job, eight people round the big bench at the back. The tools and parts are ours, the tea is free, and you take home what you made.</p>
+  </div>
+  <ul class="wrap classes__deck">
+    <li class="m-surface classes__card" data-tone="5">
+      <div class="classes__photo"><img style="background:#f3f3f3" src="https://images.unsplash.com/photo-1553265381-674034b34554?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Zml4aW5nJTIwbGVha2luZyUyMHRhcHxlbnwxfDB8fHwxNzkxNDQwMzE2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" width="6932" height="4104" alt="Hands working on a running chrome tap over a white basin" loading="lazy"></div>
+      <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Plumbing</span></span>
+      <p class="m-text-6">Saturday 18 October · 10:00–11:30</p>
+      <h3 class="m-text-7">Stop a dripping tap</h3>
+      <p class="m-text-8">£15 with the washers · 3 places left</p>
+      <a data-8b-placeholder="phone" class="m-link m-text-6" href="tel:01130000000">Book by phone</a>
+    </li>
+    <li class="m-surface classes__card" data-tone="2">
+      <div class="classes__photo"><img style="background:#d9d9d9" src="https://images.unsplash.com/photo-1602516793068-35b73edf3368?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8ZHJpbGxpbmclMjB3YWxsJTIwc2hlbGZ8ZW58MXwwfHx8MTc5MTQ0MDMxN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" width="5717" height="4000" alt="A white shelf on wooden brackets holding a plant and a framed print" loading="lazy"></div>
+      <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Fixings</span></span>
+      <p class="m-text-6">Saturday 25 October · 10:00–11:30</p>
+      <h3 class="m-text-7">Hang a shelf that stays up</h3>
+      <p class="m-text-8">£15 with plugs and screws · 5 places left</p>
+      <a data-8b-placeholder="phone" class="m-link m-text-6" href="tel:01130000000">Book by phone</a>
+    </li>
+    <li class="m-surface classes__card" data-tone="3">
+      <div class="classes__photo"><img style="background:#d9d9d9" src="https://images.unsplash.com/photo-1693985120993-e9b203ce7631?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGFpbnQlMjByb2xsZXIlMjB3YWxsfGVufDF8MHx8fDE3OTE0NDAzMTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=530&amp;q=60" width="4032" height="3024" alt="A paint roller on a pole laying a fresh coat on a wall" loading="lazy"></div>
+      <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Paint</span></span>
+      <p class="m-text-6">Saturday 1 November · 10:00–12:00</p>
+      <h3 class="m-text-7">Fill, sand and paint a wall</h3>
+      <p class="m-text-8">£20 with filler and paint · 6 places left</p>
+      <a data-8b-placeholder="phone" class="m-link m-text-6" href="tel:01130000000">Book by phone</a>
+    </li>
+    <li class="m-surface classes__card" data-tone="4">
+      <div class="classes__photo"><img style="background:#26260c" src="https://images.unsplash.com/photo-1679797878543-66c1e502d413?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTV8fHNhbmRpbmclMjB3b29kJTIwd29ya3Nob3B8ZW58MXwwfHx8MTc5MTQ0MDMwOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=590&amp;q=60" width="4240" height="2832" alt="A man smoothing a block of timber with a power sander" loading="lazy"></div>
+      <span class="m-badge"><span class="m-badge__chip" aria-hidden="true"></span><span class="m-badge__label">Tools</span></span>
+      <p class="m-text-6">Saturday 8 November · 10:00–11:30</p>
+      <h3 class="m-text-7">Sand and oil a tabletop</h3>
+      <p class="m-text-8">£18 with the oil · 4 places left</p>
+      <a data-8b-placeholder="phone" class="m-link m-text-6" href="tel:01130000000">Book by phone</a>
+    </li>
+  </ul>
+  <p class="wrap m-text-8 classes__foot">Under-16s come with a grown-up. Places are held for a week after you call.</p>
+</section>
+
+<!-- hire: six hire rows; each tag turns over from the buy-new price to the weekend price (animation: scene:hire) -->
+<section id="hire" data-8b-section="hire" aria-labelledby="hire-title">
+  <div class="wrap hire__grid">
+    <div class="hire__intro">
+      <h2 class="m-text-3" id="hire-title">Borrow it for the weekend</h2>
+      <p class="m-text">A tile cutter you will use once costs more than the tiles. Collect on Friday from three, bring it back by ten on Monday; a deposit and photo ID at the counter.</p>
+      <figure class="hire__photo"><img style="background:#73400c" src="https://images.unsplash.com/photo-1683115099191-51e617fc5ff1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGNhcnBlbnRlciUyMHdvcmtiZW5jaCUyMHRvb2xzfGVufDF8MHx8fDE3OTE0NDAyNjd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;q=60" width="4928" height="3264" alt="Drills, saws and sanders hung on the hire wall" loading="lazy"></figure>
+    </div>
+    <div>
+      <ul class="hire__list">
+        <li class="hire__row" data-8b-motion="rule">
+          <span class="m-text-5 hire__tool">Tile cutter</span>
+          <span class="m-text-8 hire__deposit">£40 deposit</span>
+          <span class="hire__tag"><span class="hire__flip"><span class="hire__face hire__face--front"><span class="m-text-7">£12</span><span class="m-text-6">a weekend<span class="sr-only">, £180 to buy new</span></span></span><span class="hire__face hire__face--back" aria-hidden="true"><span class="m-text-7">£180</span><span class="m-text-6">to buy new</span></span></span></span>
+        </li>
+        <li class="hire__row" data-8b-motion="rule">
+          <span class="m-text-5 hire__tool">Wallpaper steamer</span>
+          <span class="m-text-8 hire__deposit">£30 deposit</span>
+          <span class="hire__tag"><span class="hire__flip"><span class="hire__face hire__face--front"><span class="m-text-7">£10</span><span class="m-text-6">a weekend<span class="sr-only">, £70 to buy new</span></span></span><span class="hire__face hire__face--back" aria-hidden="true"><span class="m-text-7">£70</span><span class="m-text-6">to buy new</span></span></span></span>
+        </li>
+        <li class="hire__row" data-8b-motion="rule">
+          <span class="m-text-5 hire__tool">Hammer drill</span>
+          <span class="m-text-8 hire__deposit">£50 deposit</span>
+          <span class="hire__tag"><span class="hire__flip"><span class="hire__face hire__face--front"><span class="m-text-7">£15</span><span class="m-text-6">a weekend<span class="sr-only">, £160 to buy new</span></span></span><span class="hire__face hire__face--back" aria-hidden="true"><span class="m-text-7">£160</span><span class="m-text-6">to buy new</span></span></span></span>
+        </li>
+        <li class="hire__row" data-8b-motion="rule">
+          <span class="m-text-5 hire__tool">Carpet cleaner</span>
+          <span class="m-text-8 hire__deposit">£60 deposit</span>
+          <span class="hire__tag"><span class="hire__flip"><span class="hire__face hire__face--front"><span class="m-text-7">£18</span><span class="m-text-6">a weekend<span class="sr-only">, £240 to buy new</span></span></span><span class="hire__face hire__face--back" aria-hidden="true"><span class="m-text-7">£240</span><span class="m-text-6">to buy new</span></span></span></span>
+        </li>
+        <li class="hire__row" data-8b-motion="rule">
+          <span class="m-text-5 hire__tool">Ladder, 3.5 metres</span>
+          <span class="m-text-8 hire__deposit">£30 deposit</span>
+          <span class="hire__tag"><span class="hire__flip"><span class="hire__face hire__face--front"><span class="m-text-7">£9</span><span class="m-text-6">a weekend<span class="sr-only">, £130 to buy new</span></span></span><span class="hire__face hire__face--back" aria-hidden="true"><span class="m-text-7">£130</span><span class="m-text-6">to buy new</span></span></span></span>
+        </li>
+        <li class="hire__row" data-8b-motion="rule">
+          <span class="m-text-5 hire__tool">Hedge trimmer</span>
+          <span class="m-text-8 hire__deposit">£40 deposit</span>
+          <span class="hire__tag"><span class="hire__flip"><span class="hire__face hire__face--front"><span class="m-text-7">£12</span><span class="m-text-6">a weekend<span class="sr-only">, £110 to buy new</span></span></span><span class="hire__face hire__face--back" aria-hidden="true"><span class="m-text-7">£110</span><span class="m-text-6">to buy new</span></span></span></span>
+        </li>
+      </ul>
+      <a data-8b-placeholder="phone" class="m-btn-2 hire__note" href="tel:01130000000"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">Reserve by phone</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- visit: a shop-front photo that steps back into its half while hours, address, phone, email and a newsletter form come in (animation: scene:visit) -->
+<section id="visit" data-8b-section="visit" aria-labelledby="visit-title">
+  <figure class="visit__photo">
+    <img style="background:#0c2626" src="https://images.unsplash.com/photo-1768180316485-2c7306ab38ff?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c2hvcCUyMGRvb3J3YXklMjBvcGVufGVufDF8MHx8fDE3OTE0NDE2OTR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1610&amp;q=60" width="5541" height="3694" alt="The open shop door on Example Road, plants on the step and the window full of stock" loading="lazy">
+    <figcaption class="m-text-6 visit__caption">1 Example Road, Northfield</figcaption>
+  </figure>
+  <div class="visit__info">
+    <h2 class="m-text-3" id="visit-title">Come in, the kettle is on</h2>
+    <dl class="visit__hours">
+      <div><dt class="m-text-6">Monday to Friday</dt><dd class="m-text-7">8:00–18:00</dd></div>
+      <div><dt class="m-text-6">Saturday</dt><dd class="m-text-7">8:00–17:00</dd></div>
+      <div><dt class="m-text-6">Sunday</dt><dd class="m-text-7">10:00–16:00</dd></div>
+    </dl>
+    <p class="m-text">1 Example Road, Northfield NF4 0ZZ. Two loading bays at the back for timber and sheets; the 14 and 22 buses stop outside the door.</p>
+    <div class="visit__contact m-text">
+      <a data-8b-placeholder="phone" class="m-link" href="tel:01130000000">0113 000 0000</a>
+      <a data-8b-placeholder="email" class="m-link" href="mailto:counter@sixpenny.example">counter@sixpenny.example</a>
+    </div>
+    <form data-8b-placeholder="form" class="visit__form" action="#visit" method="post">
+      <p class="m-text-7">The Saturday note</p>
+      <p class="m-text-8">One email a month: what came in, what is on at the bench, nothing else.</p>
+      <div class="visit__fields">
+        <label class="m-field"><span class="m-field__label">Your email</span><input class="m-field__input" type="email" name="email" autocomplete="email" required></label>
+        <button class="m-btn-2" type="submit"><span class="m-btn__dot" aria-hidden="true"></span><span class="m-btn__label">Sign me up</span></button>
+      </div>
+      <p class="m-text visit__done" role="status" hidden>Thank you. The next note goes out on the first Saturday of the month.</p>
+    </form>
+  </div>
+</section>
+
+<!-- faq: six questions as native <details> beside a photo of the parts cabinet -->
+<section id="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <div class="wrap faq__grid">
+    <div class="faq__main">
+      <h2 class="m-text-3" id="faq-title" data-8b-motion="rise">Asked at the counter</h2>
+      <div class="faq__list">
+        <details class="faq__item" data-8b-motion="rule">
+          <summary class="faq__q"><span class="m-text-7">Do you really sell screws one at a time?</span><span class="faq__mark" aria-hidden="true"></span></summary>
+          <p class="m-text faq__a">Yes. Every drawer in aisle 2 is priced by the one, by the ten and by the box, so you buy what the job needs and not a tin of spares for the shed.</p>
+        </details>
+        <details class="faq__item" data-8b-motion="rule">
+          <summary class="faq__q"><span class="m-text-7">Can you match a paint colour from a chip?</span><span class="faq__mark" aria-hidden="true"></span></summary>
+          <p class="m-text faq__a">Bring a flake the size of a fingernail. The scanner reads it and we mix it in about ten minutes, in any finish from flat matt to full gloss.</p>
+        </details>
+        <details class="faq__item" data-8b-motion="rule">
+          <summary class="faq__q"><span class="m-text-7">Do you deliver?</span><span class="faq__mark" aria-hidden="true"></span></summary>
+          <p class="m-text faq__a">Within three miles on Tuesdays and Fridays. It costs £5 and is free over £60, timber and sheet materials included.</p>
+        </details>
+        <details class="faq__item" data-8b-motion="rule">
+          <summary class="faq__q"><span class="m-text-7">How does tool hire work?</span><span class="faq__mark" aria-hidden="true"></span></summary>
+          <p class="m-text faq__a">Reserve by phone, collect from three on Friday and return by ten on Monday. We take a refundable deposit and photo ID, and show you how the tool works before it leaves.</p>
+        </details>
+        <details class="faq__item" data-8b-motion="rule">
+          <summary class="faq__q"><span class="m-text-7">Can I bring things back?</span><span class="faq__mark" aria-hidden="true"></span></summary>
+          <p class="m-text faq__a">Unused and in its packet, within 30 days, with the receipt. Cut keys, mixed paint and cut timber are made for you, so they stay with you.</p>
+        </details>
+        <details class="faq__item" data-8b-motion="rule">
+          <summary class="faq__q"><span class="m-text-7">Which keys can you cut?</span><span class="faq__mark" aria-hidden="true"></span></summary>
+          <p class="m-text faq__a">Most house, shed and padlock keys while you wait. Security and car keys are ordered in and take three to five days.</p>
+        </details>
+      </div>
+    </div>
+    <figure class="faq__photo" data-tone="1" data-8b-motion="tint"><img style="background:#595959" src="https://images.unsplash.com/photo-1573870360817-6099745b491d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c2NyZXdzJTIwaW4lMjBkcmF3ZXJ8ZW58MXwwfHx8MTc5MTQ0MDI2NHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=810&amp;q=60" width="5184" height="3456" alt="Clear plastic drawers of nails in the parts cabinet" loading="lazy"></figure>
+  </div>
+</section>
+</main>
+<!-- footer: a huge wordmark, the shop's address and hours, contact links, page links and small print -->
+<footer id="footer" data-8b-section="footer">
+  <div class="wrap">
+    <span class="footer__word" style="--len:8" aria-hidden="true" data-8b-motion="rise">Sixpenny</span>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="m-text-6">The shop</p>
+        <p class="m-text">1 Example Road<br>Northfield NF4 0ZZ</p>
+      </div>
+      <div class="footer__col">
+        <p class="m-text-6">Hours</p>
+        <p class="m-text">Mon–Fri 8:00–18:00<br>Saturday 8:00–17:00<br>Sunday 10:00–16:00</p>
+      </div>
+      <div class="footer__col">
+        <p class="m-text-6">Ask us</p>
+        <ul class="footer__list m-text">
+          <li><a data-8b-placeholder="phone" class="m-link" href="tel:01130000000">0113 000 0000</a></li>
+          <li><a data-8b-placeholder="email" class="m-link" href="mailto:counter@sixpenny.example">counter@sixpenny.example</a></li>
+        </ul>
+      </div>
+      <nav class="footer__col" aria-label="Footer">
+        <p class="m-text-6">On this page</p>
+        <ul class="footer__list m-text">
+          <li><a class="m-link" href="#departments">Departments</a></li>
+          <li><a class="m-link" href="#counter">At the counter</a></li>
+          <li><a class="m-link" href="#classes">Saturday classes</a></li>
+          <li><a class="m-link" href="#hire">Tool hire</a></li>
+          <li><a class="m-link" href="#faq">Questions</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__base m-text-8">
+      <span>© 2026 Sixpenny Hardware Ltd. Northfield. · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></span>
+      <span>Prices include VAT. Hire terms at the counter.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const menu = document.getElementById('menu');
+  const openButton = nav.querySelector('.nav__menu');
+  const closeButton = menu.querySelector('.menu__close');
+  let last = scrollY, ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = scrollY, delta = y - last;
+    if (Math.abs(delta) > 3) {
+      nav.classList.toggle('is-hidden', delta > 0 && y > 160);
+      last = y;
+    }
+    const probe = nav.getBoundingClientRect().height / 2;
+    const dark = [...document.querySelectorAll('[data-ground="dark"]')].some(el => {
+      const r = el.getBoundingClientRect();
+      return r.top <= probe && r.bottom >= probe;
+    });
+    nav.classList.toggle('is-on-dark', dark);
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+  const setMenu = open => {
+    menu.hidden = !open;
+    openButton.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeButton.focus(); } else { window.lenis?.start(); openButton.focus(); }
+  };
+  openButton.addEventListener('click', () => setMenu(true));
+  closeButton.addEventListener('click', () => setMenu(false));
+  menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape' && !menu.hidden) setMenu(false); });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const stage = document.querySelector('#opening .opening__stage');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => stage.classList.toggle('is-paused', !entry.isIntersecting)).observe(stage);
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .visit__form');
+  if (!form) return;
+  const fields = form.querySelector('.visit__fields');
+  const done = form.querySelector('.visit__done');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    fields.hidden = true;
+    done.hidden = false;
+  });
+})();
+</script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0, firstCount = 0;
+  window.motionReady = ready();
+  parsed.then(() => { if (firstCount && !tail) firsts.then(refresh); });
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) { firstCount++; firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); }); }
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() {
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const lenis = window.lenis = new Lenis({ lerp: 0.09, anchors: { offset: 0 } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  rise(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element,
+      { yPercent: 28, clipPath: 'inset(0% 0% 100% 0%)' },
+      { yPercent: 0, clipPath: 'inset(0% 0% -25% 0%)', duration: 1, ease: 'power3.out', clearProps: 'clipPath,transform' });
+  },
+  rule(element, vars = {}) {
+    return gsap.timeline(vars)
+      .fromTo(element, { backgroundSize: '0% 1px' }, { backgroundSize: '100% 1px', duration: 1, ease: 'power2.inOut', clearProps: 'backgroundSize' }, 0)
+      .fromTo(element.children, { y: 22, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: 'power2.out', stagger: 0.07, clearProps: 'transform,opacity' }, 0.25);
+  },
+  tint(element, vars = {}) {
+    const image = element.querySelector('img');
+    return gsap.timeline(vars).fromTo(image,
+      { clipPath: 'inset(100% 0% 0% 0%)', scale: 1.16 },
+      { clipPath: 'inset(0% 0% 0% 0%)', scale: 1, duration: 1.2, ease: 'power3.out', clearProps: 'clipPath,transform' });
+  }
+};
+const effectStarts = { rise: 'top 88%', rule: 'top 92%', tint: 'top 86%' };
+document.querySelectorAll('[data-8b-section]').forEach(section => {
+  Object.keys(effects).forEach(name => {
+    const elements = section.querySelectorAll(`[data-8b-motion~="${name}"]`);
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => {
+        ScrollTrigger.create({ id: `${id}:${index}`, trigger: element, start: effectStarts[name], once: true, animation: effects[name](element, { paused: true }) });
+      });
+    }), section.getBoundingClientRect().top < innerHeight ? { first: true, id } : { near: section, id });
+  });
+});
+</script>
+<script data-8b-part="scene:opening">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('opening');
+    const space = section.querySelector('.opening__space');
+    const field = section.querySelector('.opening__field');
+    const copy = section.querySelector('.opening__copy');
+    const statement = section.querySelector('.opening__statement');
+    const inline = section.querySelector('.opening__inline');
+    section.classList.add('is-staged');
+    const split = SplitText.create(statement, { type: 'words', wordsClass: 'opening__word' });
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'opening', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.7, invalidateOnRefresh: true }
+    });
+    timeline
+      .to(field, { z: () => (innerWidth < 760 ? 1700 : 2400), scale: 1.3, duration: 0.6, ease: 'power1.in' }, 0)
+      .to(space, { opacity: 0, duration: 0.18 }, 0.42)
+      .to(copy, { yPercent: -40, scale: 0.84, duration: 0.46, ease: 'power1.in' }, 0)
+      .to(copy, { opacity: 0, duration: 0.3 }, 0.16)
+      .fromTo(inline, { clipPath: 'inset(0% 50% 0% 50%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.3 }, 0.32);
+    const step = 0.5 / split.words.length;
+    split.words.forEach((word, index) => timeline.fromTo(word, { opacity: 0.14 }, { opacity: 1, duration: 0.08 }, 0.36 + index * step));
+    return () => { split.revert(); section.classList.remove('is-staged'); };
+  });
+}, { first: true });
+</script>
+<script data-8b-part="scene:departments">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('departments');
+    const panels = gsap.utils.toArray(section.querySelectorAll('.dept'));
+    if (panels.length < 2) return;
+    section.style.setProperty('--departments-count', panels.length);
+    section.classList.add('is-stacked');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'departments', trigger: section, start: 'top top', end: 'bottom bottom', scrub: 0.6 }
+    });
+    panels.forEach((panel, index) => {
+      if (!index) return;
+      const previous = panels[index - 1];
+      const at = index - 1 + 0.12;
+      timeline
+        .fromTo(panel, { visibility: 'hidden' }, { visibility: 'visible', duration: 0.001 }, at)
+        .fromTo(previous, { visibility: 'visible' }, { visibility: 'hidden', duration: 0.001, immediateRender: false }, at + 0.72)
+        .fromTo(panel, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.72, ease: 'power1.inOut' }, at)
+        .fromTo(panel.querySelector('.dept__photo'), { yPercent: 14, scale: 1.14 }, { yPercent: 0, scale: 1, duration: 0.72, ease: 'power1.out' }, at)
+        .to(previous.querySelector('.dept__photo'), { yPercent: -7, duration: 0.72, ease: 'power1.inOut' }, at)
+        .to(previous.querySelectorAll('.dept__copy, .dept__aisle'), { y: -56, opacity: 0, duration: 0.32, ease: 'power1.in' }, at)
+        .fromTo(panel.querySelectorAll('.dept__copy, .dept__aisle'), { y: 80 }, { y: 0, duration: 0.5, ease: 'power2.out' }, at + 0.26);
+    });
+    timeline.to({}, { duration: 0.16 });
+    return () => { section.classList.remove('is-stacked'); section.style.removeProperty('--departments-count'); };
+  });
+});
+</script>
+<script data-8b-part="scene:aisles">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('aisles');
+    section.querySelectorAll('.aisles__row').forEach((row, index) => {
+      const tile = row.querySelector('.aisles__tile');
+      const timeline = gsap.timeline({
+        defaults: { ease: 'none' },
+        scrollTrigger: { id: `aisles:row-${index}`, trigger: row, start: 'top bottom', end: 'bottom top', scrub: 0.4 }
+      });
+      timeline
+        .fromTo(row, { scale: 0.7, opacity: 0.3 }, { scale: 1, opacity: 1, duration: 0.36, ease: 'power1.out' }, 0)
+        .to(row, { scale: 1, duration: 0.28 }, 0.36)
+        .to(row, { scale: 0.7, opacity: 0.3, duration: 0.36, ease: 'power1.in' }, 0.64);
+      if (tile) {
+        timeline
+          .fromTo(tile, { scale: 0.15, rotation: -10 }, { scale: 1, rotation: 0, duration: 0.36, ease: 'power1.out' }, 0)
+          .to(tile, { scale: 0.15, rotation: 10, duration: 0.36, ease: 'power1.in' }, 0.64);
+      }
+    });
+  });
+}, { near: document.getElementById('aisles') });
+</script>
+<script data-8b-part="scene:brought">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 760px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 759px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const wide = context.conditions.wide;
+    const section = document.getElementById('brought');
+    const travel = () => (wide ? Math.min(innerWidth * 0.26, 380) : innerWidth * 0.6);
+    section.querySelectorAll('.brought__pair').forEach((pair, index) => {
+      const brought = pair.querySelector('.brought__item--in');
+      const matched = pair.querySelector('.brought__item--out');
+      gsap.timeline({
+        defaults: { ease: 'power2.out' },
+        scrollTrigger: { id: `brought:pair-${index}`, trigger: pair, start: 'top bottom', end: wide ? 'center 58%' : 'center 64%', scrub: 0.5, invalidateOnRefresh: true }
+      })
+        .fromTo(brought, { x: () => -travel(), rotation: -7 }, { x: 0, rotation: 0 }, 0)
+        .fromTo(matched, { x: () => travel(), rotation: 7 }, { x: 0, rotation: 0 }, 0);
+    });
+  });
+}, { near: document.getElementById('brought') });
+</script>
+<script data-8b-part="scene:classes">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 600px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 599px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const section = document.getElementById('classes');
+    const deck = section.querySelector('.classes__deck');
+    const cards = gsap.utils.toArray(deck.querySelectorAll('.classes__card'));
+    const turns = [-8, 5, -3, 7, -5, 3];
+    if (context.conditions.wide) {
+      const dx = card => deck.clientWidth / 2 - (card.offsetLeft + card.offsetWidth / 2);
+      const dy = card => deck.clientHeight / 2 - (card.offsetTop + card.offsetHeight / 2);
+      const timeline = gsap.timeline({
+        defaults: { ease: 'power2.inOut' },
+        scrollTrigger: { id: 'classes', trigger: deck, start: 'top 88%', end: 'center 52%', scrub: 0.6, invalidateOnRefresh: true }
+      });
+      cards.forEach((card, index) => {
+        gsap.set(card, { zIndex: cards.length - index });
+        timeline.fromTo(card, { x: () => dx(card), y: () => dy(card) - index * 8, rotation: turns[index % turns.length] }, { x: 0, y: 0, rotation: 0, duration: 1 }, index * 0.14);
+      });
+    } else {
+      cards.forEach((card, index) => {
+        const side = index % 2 ? 1 : -1;
+        gsap.fromTo(card, { x: () => side * innerWidth * 0.55, rotation: side * 7 }, {
+          x: 0, rotation: 0, ease: 'power2.out',
+          scrollTrigger: { id: `classes:card-${index}`, trigger: card, start: 'top bottom', end: 'top 58%', scrub: 0.5, invalidateOnRefresh: true }
+        });
+      });
+    }
+  });
+}, { near: document.getElementById('classes') });
+</script>
+<script data-8b-part="scene:hire">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const section = document.getElementById('hire');
+    section.querySelectorAll('.hire__row').forEach((row, index) => {
+      const flip = row.querySelector('.hire__flip');
+      const back = row.querySelector('.hire__face--back');
+      if (!flip || !back) return;
+      gsap.timeline({ scrollTrigger: { id: `hire:row-${index}`, trigger: row, start: 'top 78%', end: 'top 46%', scrub: 0.5 } })
+        .fromTo(flip, { rotationX: -180 }, { rotationX: 0, ease: 'power2.inOut', duration: 1 }, 0)
+        .fromTo(back, { visibility: 'visible' }, { visibility: 'hidden', duration: 0.001 }, 0.999);
+    });
+  });
+}, { near: document.getElementById('hire') });
+</script>
+<script data-8b-part="scene:visit">
+queueMotion(() => {
+  gsap.matchMedia().add({ wide: '(min-width: 900px) and (prefers-reduced-motion: no-preference)', narrow: '(max-width: 899px) and (prefers-reduced-motion: no-preference)' }, context => {
+    const section = document.getElementById('visit');
+    const photo = section.querySelector('.visit__photo');
+    const image = photo.querySelector('img');
+    const info = section.querySelector('.visit__info');
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
+      scrollTrigger: { id: 'visit', trigger: section, start: 'top 80%', end: 'top 2%', scrub: 0.6 }
+    });
+    if (context.conditions.wide) {
+      timeline
+        .fromTo(photo, { clipPath: 'inset(0% 0% 0% 0%)' }, { clipPath: 'inset(0% 50% 0% 0%)', duration: 0.9, ease: 'power1.inOut' }, 0.1)
+        .fromTo(image, { scale: 1.12 }, { scale: 1, duration: 1.15 }, 0)
+        .fromTo(info, { x: 90, opacity: 0 }, { x: 0, opacity: 1, duration: 0.45, ease: 'power2.out' }, 0.85);
+    } else {
+      timeline
+        .fromTo(image, { scale: 1.35 }, { scale: 1, duration: 1 }, 0)
+        .fromTo(info, { y: 70 }, { y: 0, duration: 0.8, ease: 'power2.out' }, 0.2);
+    }
+  });
+}, { near: document.getElementById('visit') });
+</script>
+</body>
+</html>

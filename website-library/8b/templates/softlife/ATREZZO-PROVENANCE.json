@@ -1,0 +1,41 @@
+{
+  "slug": "softlife",
+  "name": "softlife",
+  "categories": [
+    "Community"
+  ],
+  "upstream": "https://github.com/8bsite/community-website-template",
+  "demo": "https://8b.com/templates/softlife/demo.html",
+  "design_md_url": "https://8b.com/templates/softlife/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "195733a2c58c24a9234350044fc663b7c060fbcc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "211da0f930c9ab2c34d984bb79b764ad3a32a335",
+    "README.md": "0fb0f1b7f79dc2ab0f530c6cb07df222e7c6fd5f",
+    "AGENTS.md": "35821fb8b9fd01fa9e2613338a105adfc2d14ca3",
+    "index.html": "3de4674933394d87c7c560ff667635d49caa8c6a"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "d47a63932e7c3082609c5ac310617c7a8045cbda649aa573f938502d28bc75f6",
+    "README.md": "e55df9b026d91bc84affc13b34ad4e11747ec2e0e1f50dd814abf65c1619c3ef",
+    "AGENTS.md": "c716899b6b7f75becdc061f14d273d809f11a08f5292c301b6afb3f39549b6b1",
+    "index.html": "69ef2cad039bbd5e5ed35bf5883afe07ba0e8f76aa267c95a61a1a27b3519e30"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)",
+    "index.gsap.html: embedded binary media; manual rights review"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

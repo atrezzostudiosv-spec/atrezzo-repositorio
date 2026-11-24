@@ -1,0 +1,43 @@
+{
+  "slug": "ombrelle",
+  "name": "Ombrelle",
+  "categories": [
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/restaurant-website-template",
+  "demo": "https://8b.com/templates/ombrelle/demo.html",
+  "design_md_url": "https://8b.com/templates/ombrelle/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "33636ae9f743aa64604f79e8de3f7cc2528e2a45",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "76ed449677f5b10a6250db9bf74428cac7d977da",
+    "README.md": "e61781dff88bfedcb964568331e78900d246c35d",
+    "AGENTS.md": "5f081fffce30f8492f06cca3177dd93e730afc38",
+    "index.html": "fe35ea4f4d86221a0fd533293b4356e7c228e3d4",
+    "index.gsap.html": "d0ea122eadc74cdf97195628cf3b14019c91a961"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8912b843967ef6cf970fdbc0fce5cb1963cf2bdfddd88e65dc9aebf90c74f3cb",
+    "README.md": "5e2fe4e19a442507b5bea7c43ffd7617c62764083bdae4af16ea498126db5860",
+    "AGENTS.md": "096cad15a292e9b321e0fe7b95e3d506237cc9861c9f03cde5bcd2310a258d80",
+    "index.html": "7c64aef34173e475f7f066cb02246cf3cd7c43de00dbcc89b246bcf458b551fb",
+    "index.gsap.html": "e67ff57e8e1d7a16c2a02d421310ed6942439e6fb457b56fa819df28d242204d"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

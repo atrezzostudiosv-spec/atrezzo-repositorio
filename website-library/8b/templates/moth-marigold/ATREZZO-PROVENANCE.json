@@ -1,0 +1,44 @@
+{
+  "slug": "moth-marigold",
+  "name": "Moth & Marigold",
+  "categories": [
+    "Shop",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/florist-website-template",
+  "demo": "https://8b.com/templates/moth-marigold/demo.html",
+  "design_md_url": "https://8b.com/templates/moth-marigold/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "e4e077893418f6efc43a4a9e9f18ca5c0c209bcf",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "e97cdfb0bdaf2da03edd477919a3e2951be86179",
+    "README.md": "6e57c6632e4142c3c6f7d604480f3d9c94822ef5",
+    "AGENTS.md": "c81c959eb1e95c7731d501a75ab6c4ce525403e2",
+    "index.html": "8f0fefe2118f1eb45ae6f645cfdf14dc50ad8d19",
+    "index.gsap.html": "6d5e77bfd8d1c9cbfe8224f7520494cbb79ee5fc"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "ae98d8ba2019db30b08cb526badcfda684021180619f2c5305d0cec011c5828a",
+    "README.md": "b2c86b2758b3a439224b6c734e5e78d7ccea9b80f4ee2a7b454bb9ffe311bcdf",
+    "AGENTS.md": "ce7c1b19d4322fc4ba75f6f320765a4b71d70c4c10241e1e68f92bce955b62c3",
+    "index.html": "f166d1aee7f848ed9f7a4c59de489bbf2e3266e6a92eccab68806276154fea54",
+    "index.gsap.html": "fdcef55391235796c379b27951675b8baa1b5c7a5ad0a7b7e220c91245407fc2"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

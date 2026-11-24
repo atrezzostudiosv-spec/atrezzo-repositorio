@@ -1,0 +1,44 @@
+{
+  "slug": "bankermark",
+  "name": "Bankermark",
+  "categories": [
+    "Architecture and building",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/stonemason-website-template",
+  "demo": "https://8b.com/templates/bankermark/demo.html",
+  "design_md_url": "https://8b.com/templates/bankermark/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "03ac470e21bc961f73439b10bc90d049ced7b5b6",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "ac9351577682bc88cb5ad5eac53a0c7e0d6cbda0",
+    "README.md": "c9ed3504a9fb1344b2acefcc13adca622f602812",
+    "AGENTS.md": "52b94e44c54800dc79cfd64d7bb2062d2970028a",
+    "index.html": "96a182465979edcf0d0a18831bdc3ded8c0bcf34",
+    "index.gsap.html": "9bd6750f2911709a616c202882604bdd5680676d"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "4829477607807a954f3273acc27c41f077eda59b7e1f61e79cb01f2b7f6d961a",
+    "README.md": "c93eae562bbbee27728e0fa1932086b7eca6915427139c821dd338f02b2a718b",
+    "AGENTS.md": "4c318edad1ee175284f46d9d00e1dc164e5d226f81ad79e02c7d73f31005e2fa",
+    "index.html": "3f67db822ef04085686c34f50d29dbd63589a5aa22494dfe2a1873dce7d1b6b2",
+    "index.gsap.html": "4088046abe37268e9326dae88994c1422b7d4ad6d76e2eb5e3df70f2d81cc983"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

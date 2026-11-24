@@ -1,0 +1,1454 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/affina/
+  Source: https://github.com/8bsite/cheese-shop-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Affina. — Cheesemonger and maturing cellar on Example Street, York</title>
+<meta name="description" content="Farmhouse cheese from seven makers, finished in the cellar under our shop on Example Street, York, and cut to order at the counter. Tastings, a monthly cellar club and next-day delivery.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Affina. — Cheesemonger and maturing cellar on Example Street, York">
+<meta property="og:description" content="Farmhouse cheese from seven makers, finished in the cellar under our shop on Example Street, York, and cut to order at the counter. Tastings, a monthly cellar club and next-day delivery.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%230e0e0e'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23f3f3f3'%3EA%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwYGFWfOw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwTGFWfOw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwSGFWfOw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/geist/v5/gyByhwUxId8gMEwcGFU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #f3f3f3;
+  --color-2: #0e0e0e;
+  --color-3: #5c5c5c;
+  --color-4: #d3d3d3;
+  --color-5: #ffffff;
+  --color-6: #a5a5a5;
+  --color-7: #2e2e2e;
+  --font-1: "Geist", "Geist Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --space-1: clamp(20px, 4.6vw, 72px);
+  --space-2: clamp(96px, 12vw, 180px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+@font-face { font-family: "Geist Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 101.8%; ascent-override: 99.2%; descent-override: 29.5%; line-gap-override: 0%; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-family: var(--font-1);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, h4, p, dl, dd, figure, ol, ul { margin: 0; }
+a { color: inherit; }
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.skip-link { position: fixed; left: 12px; top: 12px; z-index: 100; padding: 10px 16px; background: var(--color-2); color: var(--color-5); border-radius: var(--radius-1); transform: translateY(-160%); }
+.skip-link:focus-visible { transform: none; outline-color: var(--color-2); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-2 { font-family: var(--font-1); font-size: clamp(56px, 8.6vw, 156px); font-weight: 300; line-height: .92; letter-spacing: -.055em; text-transform: none; font-style: normal; }
+
+.m-text-3 { font-family: var(--font-1); font-size: clamp(38px, 5.2vw, 88px); font-weight: 300; line-height: 1; letter-spacing: -.045em; text-transform: none; font-style: normal; }
+
+.m-text-4 { font-family: var(--font-1); font-size: 13px; font-weight: 400; line-height: 1.35; letter-spacing: 0; text-transform: none; font-style: normal; }
+
+.m-text-5 { font-family: var(--font-1); font-size: clamp(17px, 1.45vw, 20px); font-weight: 400; line-height: 1.5; letter-spacing: -.005em; text-transform: none; font-style: normal; color: var(--color-3); }
+
+.m-text-6 { font-family: var(--font-1); font-size: 12vw; font-weight: 300; line-height: .8; letter-spacing: -.06em; text-transform: none; font-style: normal; }
+
+.m-text-7 { font-family: var(--font-1); font-size: clamp(21px, 1.9vw, 28px); font-weight: 400; line-height: 1.15; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+
+.m-text-8 { font-family: var(--font-1); font-size: clamp(17px, 1.35vw, 19px); font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-6); }
+
+.m-btn { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 28px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.m-btn::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn__label { transition: color .35s ease; }
+@media (hover: hover) {
+  .m-btn:hover::before { transform: scaleY(1); }
+  .m-btn:hover .m-btn__label { color: var(--color-1); }
+}
+
+.m-btn-2 { position: relative; isolation: isolate; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 28px; border: 1px solid var(--color-5); border-radius: var(--radius-1); background: transparent; color: var(--color-5); font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1; letter-spacing: 0; text-decoration: none; white-space: nowrap; cursor: pointer; }
+.m-btn-2::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-5); transform: scaleY(0); transform-origin: 50% 100%; transition: transform .5s cubic-bezier(.7, 0, .2, 1); }
+.m-btn-2__label { transition: color .35s ease; }
+@media (hover: hover) {
+  .m-btn-2:hover::before { transform: scaleY(1); }
+  .m-btn-2:hover .m-btn-2__label { color: var(--color-2); }
+}
+
+.m-link { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 0 0 12px; color: inherit; font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.3; letter-spacing: 0; text-decoration: none; }
+.m-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: currentColor; opacity: .45; transform-origin: 100% 50%; }
+.m-link__icon { display: inline-block; font-size: 15px; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-link:hover::after { animation: m-link-redraw .8s cubic-bezier(.7, 0, .2, 1); }
+  .m-link:hover .m-link__icon { transform: translate(3px, -3px); }
+}
+@keyframes m-link-redraw {
+  0% { transform: scaleX(1); transform-origin: 100% 50%; }
+  45% { transform: scaleX(0); transform-origin: 100% 50%; }
+  46% { transform: scaleX(0); transform-origin: 0 50%; }
+  100% { transform: scaleX(1); transform-origin: 0 50%; }
+}
+
+.m-link-2 { position: relative; display: inline-block; padding: 6px 0; color: inherit; font-family: var(--font-1); font-size: 15px; font-weight: 400; line-height: 1.2; letter-spacing: 0; text-transform: none; font-style: normal; text-decoration: none; }
+.m-link-2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: 100% 50%; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+.m-link-2[aria-current]::after { transform: scaleX(1); }
+@media (hover: hover) {
+  .m-link-2:hover::after { transform: scaleX(1); transform-origin: 0 50%; }
+}
+
+.m-icon-btn { position: relative; display: inline-grid; place-content: center; gap: 6px; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; }
+.m-icon-btn__line { display: block; width: 26px; height: 1.5px; background: currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+@media (hover: hover) {
+  .m-icon-btn:hover .m-icon-btn__line:first-child { transform: translateY(-2.5px); }
+  .m-icon-btn:hover .m-icon-btn__line:nth-child(2) { transform: translateY(2.5px); }
+}
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__line:first-child { transform: translateY(3.75px) rotate(45deg); }
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__line:nth-child(2) { transform: translateY(-3.75px) rotate(-45deg); }
+
+.m-label { display: grid; grid-template-columns: 1fr auto; align-items: baseline; column-gap: 14px; row-gap: 8px; padding: 12px 16px 15px; background: var(--color-2); color: var(--color-5); }
+.m-label__meta { font-family: var(--font-1); font-size: 12px; font-weight: 400; line-height: 1.3; letter-spacing: 0; color: var(--color-6); }
+.m-label__meta + .m-label__meta { text-align: right; }
+.m-label__name { display: flex; align-items: baseline; gap: 14px; min-width: 0; font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.2; letter-spacing: -.01em; }
+.m-label__name::after { content: ""; flex: 1 1 24px; min-width: 24px; height: 1px; background: var(--color-7); transform: translateY(-.3em); }
+.m-label__price { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.2; letter-spacing: -.01em; white-space: nowrap; }
+
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 13px; font-weight: 400; line-height: 1.35; letter-spacing: 0; color: var(--color-6); }
+.m-field__input { width: 100%; min-height: 44px; padding: 8px 0; border: 0; border-bottom: 1px solid var(--color-6); border-radius: 0; background: transparent; color: var(--color-5); font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.4; resize: vertical; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-5); outline-offset: 4px; border-bottom-color: var(--color-5); }
+}
+</style>
+<style data-8b-part="section:navigation">
+@layer sections {
+#navigation { position: fixed; inset: 0 0 auto; z-index: 50; color: var(--color-2); transition: transform .5s cubic-bezier(.7, 0, .2, 1), background-color .35s ease; }
+#navigation.is-scrolled { background: var(--color-1); }
+#navigation.is-hidden { transform: translateY(-100%); }
+#navigation .nav__bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 76px; padding: 0 var(--space-1); }
+#navigation .nav__brand { justify-self: start; font-family: var(--font-1); font-size: 20px; font-weight: 500; letter-spacing: -.03em; line-height: 1; text-decoration: none; color: inherit; }
+#navigation .nav__links { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; }
+#navigation .nav__menu-btn { justify-self: end; margin-right: -10px; }
+#navigation .nav__overlay { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; background: var(--color-2); color: var(--color-5); overflow-y: auto; }
+#navigation .nav__overlay[hidden] { display: none; }
+#navigation .nav__overlay-top { display: flex; align-items: center; justify-content: space-between; height: 76px; padding: 0 var(--space-1); }
+#navigation .nav__overlay-top .m-icon-btn { margin-right: -10px; }
+#navigation .nav__overlay-links { list-style: none; margin: 0; padding: 4vh var(--space-1); display: grid; align-content: center; gap: 4px; }
+#navigation .nav__overlay-links a { display: inline-block; padding: 4px 0; color: inherit; text-decoration: none; }
+#navigation .nav__overlay-links a .m-text-3 { display: inline-block; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+#navigation .nav__overlay-foot { display: flex; flex-wrap: wrap; gap: 8px 40px; padding: 24px var(--space-1) 32px; border-top: 1px solid var(--color-7); color: var(--color-6); }
+#navigation .nav__overlay-foot a { color: var(--color-5); }
+@media (hover: hover) {
+  #navigation .nav__overlay-links a:hover .m-text-3 { transform: translateX(18px); }
+}
+@media (max-width: 759.98px) {
+  #navigation .nav__bar { grid-template-columns: 1fr auto; height: 64px; }
+  #navigation .nav__bar > nav { display: none; }
+  #navigation .nav__overlay-top { height: 64px; }
+}
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+#opening { position: relative; isolation: isolate; overflow-x: clip; background: var(--color-1); }
+#opening .opening__first { position: relative; height: 100svh; min-height: 620px; }
+#opening .opening__grid { position: absolute; inset: 0; pointer-events: none; }
+#opening .opening__grid span { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--color-4); }
+#opening .opening__grid span:first-child { left: 36%; }
+#opening .opening__grid span:last-child { left: 93%; }
+#opening .opening__flood { position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: var(--color-2); transform: scale(.21, .3); transform-origin: 0 100%; }
+#opening .opening__ghost { position: absolute; left: -1.6vw; top: 14.5%; z-index: 0; pointer-events: none; transform-origin: 20% 50%; }
+#opening .opening__ghost-in { display: block; width: max-content; }
+#opening .opening__ghost-in::before { content: attr(data-word); display: block; font-family: var(--font-1); font-size: 13.5vw; font-weight: 300; line-height: .8; letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1px var(--color-4); }
+#opening .opening__text { position: absolute; inset: 0 0 auto; z-index: 4; display: grid; grid-template-columns: 43.7vw 33vw; padding: 23svh 0 0 7.6vw; }
+#opening .opening__title { display: grid; justify-items: start; }
+#opening .opening__line { display: block; white-space: nowrap; }
+#opening .opening__line-in { display: inline-flex; align-items: center; }
+#opening .opening__line:nth-child(2) { padding-left: .62em; }
+#opening .opening__pill { position: relative; display: inline-block; width: 1.18em; height: .44em; margin-left: .22em; border: max(2px, .02em) solid currentColor; border-radius: var(--radius-1); transform: translateY(.06em); }
+#opening .opening__pill::before { content: ""; position: absolute; inset: .07em; border: max(2px, .02em) solid currentColor; border-radius: var(--radius-1); }
+#opening .opening__actions { margin-top: clamp(28px, 4.2vw, 64px); padding-left: .5vw; }
+#opening .opening__aside { display: grid; gap: 26px; align-content: start; padding-top: 2.6svh; }
+#opening .opening__product { position: absolute; left: 21vw; width: 43.5vw; top: 59%; bottom: 0; z-index: 3; }
+#opening .opening__product-in { display: flex; flex-direction: column; height: 100%; }
+#opening .opening__product-photo { position: relative; flex: 1; min-height: 0; overflow: hidden; }
+#opening .opening__product-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#opening .opening__cellar { position: absolute; left: 50vw; right: 0; top: 53%; bottom: -100svh; z-index: 2; clip-path: inset(0% 0% 0% 32%); }
+#opening .opening__cellar-in { position: absolute; inset: 0; overflow: hidden; background: var(--color-2); }
+#opening .opening__cellar-in img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); }
+#opening .opening__cellar-in::after { content: ""; position: absolute; inset: 0 0 auto; height: 46%; background: linear-gradient(color-mix(in srgb, var(--color-2) 78%, transparent), transparent); }
+#opening .opening__word { position: absolute; left: calc(32% + 2.2vw); top: 5.5svh; z-index: 1; font-size: 11vw; color: var(--color-5); }
+#opening .opening__second { position: relative; min-height: 100svh; background: var(--color-2); color: var(--color-5); padding: 15svh 0 12svh 7.6vw; }
+#opening .opening__copy { position: relative; z-index: 4; display: grid; gap: 30px; width: min(38vw, 620px); }
+#opening .opening__copy .m-text-3 { max-width: 11em; }
+#opening .opening__facts { display: grid; grid-template-columns: auto 1fr; border-top: 1px solid var(--color-7); }
+#opening .opening__facts dt, #opening .opening__facts dd { padding: 12px 0; border-bottom: 1px solid var(--color-7); }
+#opening .opening__facts dt { color: var(--color-6); padding-right: 32px; }
+#opening .opening__copy .m-link { max-width: 360px; }
+@media (prefers-reduced-motion: no-preference) {
+  #opening .opening__line-in { animation: opening-rise .9s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #opening .opening__line:nth-child(2) .opening__line-in { animation-delay: .08s; }
+  #opening .opening__product-in { animation: opening-open .95s cubic-bezier(.3, .7, .2, 1) .12s backwards; }
+  #opening .opening__cellar-in { animation: opening-open 1s cubic-bezier(.3, .7, .2, 1) backwards; }
+  #opening .opening__ghost-in { animation: opening-drift 7s ease-in-out infinite alternate; }
+  #opening .opening__cellar-in img { animation: opening-pan 6s ease-in-out infinite alternate; }
+}
+@keyframes opening-rise { from { transform: translateY(26px); } }
+@keyframes opening-open { from { clip-path: inset(100% 0% 0% 0%); } }
+@keyframes opening-drift { from { transform: translateX(0); } to { transform: translateX(110px); } }
+@keyframes opening-pan { from { transform: scale(1.12) translate(0, 0); } to { transform: scale(1.12) translate(-2.5%, -5.5%); } }
+@media (max-width: 759.98px) {
+  #opening .opening__first { min-height: 740px; }
+  #opening .opening__grid span:first-child { left: 18vw; }
+  #opening .opening__grid span:last-child { left: 66vw; }
+  #opening .opening__flood { transform: scale(.18, .26); }
+  #opening .opening__ghost { left: -4vw; top: 82px; }
+  #opening .opening__ghost-in::before { font-size: 34vw; }
+  #opening .opening__text { display: flex; flex-direction: column; gap: 20px; padding: 100px var(--space-1) 0; }
+  #opening .opening__title { font-size: 15.4vw; }
+  #opening .opening__actions { margin-top: 20px; padding-left: 0; }
+  #opening .opening__aside { gap: 18px; padding-top: 0; }
+  #opening .opening__aside .m-text-5 { font-size: 15px; max-width: 34em; }
+  #opening .opening__product { left: 18vw; width: 46vw; top: 64%; }
+  #opening .opening__product .m-label { padding: 9px 10px 11px; column-gap: 8px; }
+  #opening .opening__product .m-label__name, #opening .opening__product .m-label__price { font-size: 13px; }
+  #opening .opening__product .m-label__name { grid-column: 1 / -1; }
+  #opening .opening__product .m-label__name::after { display: none; }
+  #opening .opening__product .m-label__price { justify-self: start; }
+  #opening .opening__product .m-label__meta { font-size: 11px; }
+  #opening .opening__cellar { left: 50vw; top: 59%; bottom: -26svh; }
+  #opening .opening__word { left: calc(32% + 10px); top: 18px; font-size: 13vw; }
+  #opening .opening__second { padding: 34svh var(--space-1) 12svh; }
+  #opening .opening__copy { width: 100%; gap: 24px; }
+}
+@media (min-width: 760px) and (max-width: 1099.98px) {
+  #opening .opening__text { grid-template-columns: 46vw 38vw; padding-left: var(--space-1); }
+  #opening .opening__product .m-label__name, #opening .opening__product .m-label__price { font-size: 15px; }
+}
+}
+</style>
+<style data-8b-part="section:counter">
+@layer sections {
+#counter { background: var(--color-1); padding: var(--space-2) 0 0; }
+#counter .counter__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 40px 6vw; align-items: end; padding: 0 var(--space-1); margin-bottom: clamp(48px, 6vw, 96px); }
+#counter .counter__head .m-text-3 { max-width: 9em; }
+#counter .counter__intro { display: grid; gap: 26px; }
+#counter .counter__row { display: flex; align-items: flex-end; gap: .5vw; height: min(80svh, 780px); min-height: 520px; margin: 0; padding: 0; list-style: none; overflow: clip; }
+#counter .counter__item { flex: 1 1 0; min-width: 0; height: calc(var(--h) * 100%); display: flex; flex-direction: column; }
+#counter .counter__photo { position: relative; flex: 1; min-height: 120px; margin: 0; overflow: hidden; background: var(--color-2); }
+#counter .counter__photo img { position: absolute; inset: -6% 0; width: 100%; height: 112%; object-fit: cover; }
+#counter .counter__item .m-label__name { grid-column: 1 / -1; }
+#counter .counter__item .m-label__price { justify-self: start; }
+@media (max-width: 1099.98px) {
+  #counter .counter__item .m-label__name, #counter .counter__item .m-label__price { font-size: 15px; }
+}
+@media (max-width: 759.98px) {
+  #counter .counter__head { grid-template-columns: 1fr; }
+  #counter .counter__row { flex-direction: column; align-items: flex-start; gap: 8px; height: auto; min-height: 0; }
+  #counter .counter__item { flex: none; width: calc(var(--w) * 100%); height: auto; }
+  #counter .counter__photo { flex: none; height: 168px; }
+}
+}
+</style>
+<style data-8b-part="section:cellar">
+@layer sections {
+#cellar { background: var(--color-2); color: var(--color-5); padding: var(--space-2) var(--space-1); }
+#cellar .cellar__head { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 6vw; align-items: end; margin-bottom: clamp(56px, 7vw, 112px); }
+#cellar .cellar__wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; }
+#cellar .cellar__frame-col { position: relative; }
+#cellar .cellar__frame { position: sticky; top: calc(50svh - min(19vw, 34svh)); width: min(38vw, 68svh); aspect-ratio: 1; }
+#cellar .cellar__turn { position: absolute; inset: 0; overflow: hidden; background: var(--color-7); }
+#cellar .cellar__still { position: absolute; inset: -21%; }
+#cellar .cellar__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#cellar .cellar__photo:not(:first-child) { opacity: 0; }
+#cellar .cellar__steps { margin: 0; padding: 0; list-style: none; }
+#cellar .cellar__step { position: relative; display: grid; grid-template-columns: 72px 1fr; align-content: start; gap: 14px 24px; min-height: 46svh; padding: 26px 0 64px; }
+#cellar .cellar__step:last-child { min-height: 0; }
+#cellar .cellar__rule { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--color-7); }
+#cellar .cellar__fill { position: absolute; inset: 0; background: var(--color-5); transform-origin: 0 50%; }
+#cellar .cellar__num { color: var(--color-6); padding-top: 6px; }
+#cellar .cellar__step .m-text-8 { grid-column: 2; max-width: 30em; }
+@media (max-width: 759.98px) {
+  #cellar .cellar__head, #cellar .cellar__wrap { grid-template-columns: 1fr; }
+  #cellar .cellar__wrap { gap: 28px; }
+  #cellar .cellar__frame-col { position: sticky; top: 64px; z-index: 2; padding: 10vw 0; background: var(--color-2); }
+  #cellar .cellar__frame { position: relative; top: 0; width: 46vw; margin: 0 auto; }
+  #cellar .cellar__step { grid-template-columns: 44px 1fr; min-height: 34svh; }
+}
+}
+</style>
+<style data-8b-part="section:milks">
+@layer sections {
+#milks { background: var(--color-1); padding: var(--space-2) 0; }
+#milks .milks__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 32px 6vw; align-items: end; padding: 0 var(--space-1); margin-bottom: clamp(48px, 6vw, 96px); }
+#milks .milks__rows { display: grid; gap: .5vw; }
+#milks .milks__row { position: relative; display: grid; grid-template-columns: 40% 1fr; height: min(74svh, 680px); min-height: 460px; overflow: clip; }
+#milks .milks__row--flip { grid-template-columns: 1fr 40%; }
+#milks .milks__photo { position: absolute; inset: 0; margin: 0; overflow: hidden; }
+#milks .milks__photo img { width: 100%; height: 100%; object-fit: cover; }
+#milks .milks__field { position: relative; z-index: 1; grid-column: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 24px; padding: clamp(24px, 2.6vw, 44px); color: var(--color-5); }
+#milks .milks__row--flip .milks__field { grid-column: 2; }
+#milks .milks__field-bg { position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform-origin: 0 50%; }
+#milks .milks__row--flip .milks__field-bg { transform-origin: 100% 50%; }
+#milks .milks__word { font-size: min(19vw, calc(34vw / (var(--len) * .62))); margin-left: -.04em; }
+#milks .milks__copy { display: grid; gap: 14px; max-width: 30em; }
+#milks .milks__list { color: var(--color-6); }
+@media (max-width: 759.98px) {
+  #milks .milks__head { grid-template-columns: 1fr; }
+  #milks .milks__row, #milks .milks__row--flip { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  #milks .milks__field, #milks .milks__row--flip .milks__field { grid-column: 1; grid-row: 1; }
+  #milks .milks__photo { grid-row: 2; }
+  #milks .milks__field { padding: 24px var(--space-1) 28px; gap: 40px; }
+  #milks .milks__field-bg, #milks .milks__row--flip .milks__field-bg { transform-origin: 50% 0; }
+  #milks .milks__photo { position: relative; inset: auto; height: 44svh; min-height: 280px; }
+  #milks .milks__word { font-size: min(40vw, calc(86vw / (var(--len) * .62))); }
+}
+}
+</style>
+<style data-8b-part="section:cut">
+@layer sections {
+#cut { background: var(--color-1); padding: var(--space-2) var(--space-1); }
+#cut .cut__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 6vw; align-items: start; }
+#cut .cut__photo { position: relative; aspect-ratio: 4 / 5; margin: 0; overflow: hidden; background: var(--color-4); }
+#cut .cut__photo img { width: 100%; height: 100%; object-fit: cover; }
+#cut .cut__text { display: grid; gap: 28px; padding-top: 4vw; }
+#cut .cut__text .m-text-3 { max-width: 9em; }
+#cut .cut__list { margin: 20px 0 0; padding: 0; list-style: none; }
+#cut .cut__item { position: relative; display: grid; grid-template-columns: minmax(140px, 1fr) 2fr; gap: 8px 24px; padding: 18px 0 20px; }
+#cut .cut__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+#cut .cut__item dt { color: var(--color-3); }
+@media (max-width: 759.98px) {
+  #cut .cut__grid { grid-template-columns: 1fr; }
+  #cut .cut__text { padding-top: 0; }
+  #cut .cut__item { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:farms">
+@layer sections {
+#farms { position: relative; background: var(--color-2); color: var(--color-5); padding: var(--space-2) 0; }
+#farms .farms__track { padding: 0 var(--space-1); }
+#farms .farms__intro { display: grid; gap: 26px; align-content: start; max-width: 520px; margin-bottom: 56px; }
+#farms .farms__list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 48px 2vw; margin: 0; padding: 0; list-style: none; }
+#farms .farms__panel { display: grid; gap: 10px; align-content: start; }
+#farms .farms__photo { position: relative; aspect-ratio: 4 / 5; margin: 0 0 8px; overflow: hidden; background: var(--color-7); }
+#farms .farms__photo img { position: absolute; top: 0; left: -10%; width: 120%; max-width: none; height: 100%; object-fit: cover; }
+#farms .farms__meta { display: flex; justify-content: space-between; gap: 12px; padding-top: 10px; border-top: 1px solid var(--color-7); color: var(--color-6); }
+}
+</style>
+<style data-8b-part="section:tastings">
+@layer sections {
+#tastings { background: var(--color-1); padding: var(--space-2) var(--space-1); }
+#tastings .tastings__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 32px 6vw; align-items: end; margin-bottom: clamp(48px, 5vw, 80px); }
+#tastings .tastings__photo { position: relative; aspect-ratio: 21 / 8; margin: 0 0 clamp(40px, 5vw, 72px); overflow: hidden; background: var(--color-4); }
+#tastings .tastings__photo img { width: 100%; height: 100%; object-fit: cover; }
+#tastings .tastings__list { margin: 0; padding: 0; list-style: none; }
+#tastings .tastings__row { position: relative; display: grid; grid-template-columns: 12% minmax(0, 1fr) 11% 8% auto; gap: 12px 3vw; align-items: baseline; padding: 24px 0 26px; }
+#tastings .tastings__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+#tastings .tastings__date { font-size: clamp(21px, 1.9vw, 28px); font-weight: 300; letter-spacing: -.03em; }
+#tastings .tastings__what { display: grid; gap: 6px; }
+#tastings .tastings__what .m-text { color: var(--color-3); }
+#tastings .tastings__seats { color: var(--color-3); }
+#tastings .tastings__row .m-link { min-width: 150px; }
+@media (max-width: 899.98px) {
+  #tastings .tastings__head { grid-template-columns: 1fr; }
+  #tastings .tastings__photo { aspect-ratio: 4 / 3; }
+  #tastings .tastings__row { grid-template-columns: auto 1fr; }
+  #tastings .tastings__what { grid-column: 1 / -1; grid-row: 2; }
+  #tastings .tastings__seats { grid-row: 3; }
+  #tastings .tastings__price { grid-row: 3; justify-self: end; }
+  #tastings .tastings__row .m-link { grid-column: 1 / -1; grid-row: 4; }
+}
+}
+</style>
+<style data-8b-part="section:club">
+@layer sections {
+#club { background: var(--color-2); color: var(--color-5); padding: var(--space-2) var(--space-1); overflow-x: clip; }
+#club .club__head { display: grid; grid-template-columns: 1fr minmax(280px, 33vw); gap: 32px 6vw; align-items: end; margin-bottom: clamp(48px, 6vw, 96px); }
+#club .club__parcels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2vw; margin: 0; padding: 0; list-style: none; }
+#club .club__parcel { position: relative; display: grid; grid-template-rows: auto 1fr; background: var(--color-7); }
+#club .club__photo { position: relative; aspect-ratio: 4 / 4.4; margin: 0; overflow: hidden; }
+#club .club__photo img { width: 100%; height: 100%; object-fit: cover; }
+#club .club__body { display: grid; gap: 14px; align-content: start; padding: 24px 24px 28px; }
+#club .club__name { font-size: clamp(34px, 3.4vw, 56px); }
+#club .club__price { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0 6px; border-top: 1px solid var(--color-6); }
+#club .club__price strong { font-weight: 400; font-size: 21px; letter-spacing: -.02em; }
+#club .club__body .m-btn-2 { justify-self: start; margin-top: 8px; }
+#club .club__note { margin-top: 32px; max-width: 46em; }
+@media (max-width: 899.98px) {
+  #club .club__head { grid-template-columns: 1fr; }
+  #club .club__parcels { grid-template-columns: 1fr; gap: 20px; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { background: var(--color-1); padding: var(--space-2) var(--space-1); }
+#faq .faq__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px 6vw; }
+#faq .faq__head { display: grid; gap: 24px; align-content: start; }
+#faq .faq__list { margin: 0; padding: 0; list-style: none; }
+#faq .faq__item { position: relative; }
+#faq .faq__rule { position: absolute; left: 0; right: 0; top: 0; height: 1px; background: var(--color-4); }
+#faq details summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; }
+#faq details summary::-webkit-details-marker { display: none; }
+#faq .faq__sign { position: relative; flex: none; width: 18px; height: 18px; }
+#faq .faq__sign::before, #faq .faq__sign::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1.5px; background: currentColor; transition: transform .45s cubic-bezier(.7, 0, .2, 1); }
+#faq .faq__sign::after { transform: rotate(90deg); }
+#faq details[open] .faq__sign::after { transform: rotate(0deg); }
+#faq details p { padding: 0 0 26px; max-width: 38em; color: var(--color-3); }
+@media (max-width: 759.98px) {
+  #faq .faq__grid { grid-template-columns: 1fr; }
+}
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+#visit { background: var(--color-2); color: var(--color-5); padding: var(--space-2) var(--space-1); }
+#visit .visit__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 56px 6vw; align-items: start; }
+#visit .visit__text { display: grid; gap: 30px; }
+#visit .visit__facts { display: grid; grid-template-columns: minmax(96px, auto) 1fr; border-top: 1px solid var(--color-7); }
+#visit .visit__facts dt, #visit .visit__facts dd { padding: 14px 0; border-bottom: 1px solid var(--color-7); }
+#visit .visit__facts dt { color: var(--color-6); padding-right: 28px; }
+#visit .visit__facts dd a { color: inherit; }
+#visit .visit__form { display: grid; gap: 22px; margin-top: 18px; }
+#visit .visit__form .m-btn-2 { justify-self: start; }
+#visit .visit__status { color: var(--color-5); }
+#visit .visit__photo { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); aspect-ratio: 4 / 5; margin: 0; }
+#visit .visit__col { position: relative; overflow: hidden; background: var(--color-7); }
+#visit .visit__col img { position: absolute; top: 0; height: 100%; width: 300%; max-width: none; object-fit: cover; }
+#visit .visit__col:nth-child(1) img { left: 0; }
+#visit .visit__col:nth-child(2) img { left: -100%; }
+#visit .visit__col:nth-child(3) img { left: -200%; }
+@media (max-width: 899.98px) {
+  #visit .visit__grid { grid-template-columns: 1fr; }
+  #visit .visit__photo { order: -1; aspect-ratio: 4 / 3.4; }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { background: var(--color-1); color: var(--color-2); padding: clamp(64px, 8vw, 120px) var(--space-1) 28px; }
+#footer .footer__cols { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px 6vw; padding-bottom: clamp(48px, 6vw, 96px); }
+#footer .footer__cols ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; align-content: start; }
+#footer .footer__lead { max-width: 24em; }
+#footer .footer__mark { display: block; font-family: var(--font-1); font-weight: 300; font-size: min(40vw, calc((100vw - 2 * var(--space-1)) / (var(--len) * .345))); line-height: .78; letter-spacing: -.065em; margin-left: -.03em; padding-bottom: .04em; }
+#footer .footer__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 32px; padding-top: 22px; margin-top: 18px; border-top: 1px solid var(--color-4); color: var(--color-3); }
+@media (max-width: 759.98px) {
+  #footer .footer__cols { grid-template-columns: 1fr 1fr; }
+  #footer .footer__lead { grid-column: 1 / -1; }
+}
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-power3-out: linear(0, 0.0963, 0.1855, 0.2679, 0.3439, 0.4138, 0.478, 0.5367, 0.5904, 0.6392, 0.6836, 0.7237, 0.7599, 0.7924, 0.8215, 0.8474, 0.8704, 0.8907, 0.9085, 0.924, 0.9375, 0.9491, 0.959, 0.9674, 0.9744, 0.9802, 0.985, 0.9888, 0.9919, 0.9943, 0.9961, 0.9974, 0.9984, 0.9991, 0.9995, 0.9998, 0.9999, 1, 1, 1, 1); --ease-power3-inout: linear(0, 0, 0.0001, 0.0003, 0.0008, 0.0019, 0.004, 0.0075, 0.0128, 0.0205, 0.0313, 0.0457, 0.0648, 0.0892, 0.1201, 0.1582, 0.2048, 0.261, 0.3281, 0.4073, 0.5, 0.5927, 0.672, 0.739, 0.7952, 0.8418, 0.88, 0.9107, 0.9352, 0.9543, 0.9688, 0.9795, 0.9872, 0.9925, 0.996, 0.998, 0.9992, 0.9998, 1, 1, 1); }
+[data-8b-live] [data-8b-motion~="step"] { animation-name: motion-step-clippath; animation-duration: 1.15s; animation-delay: 0s; animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="step"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rise"] .line__in { animation-name: motion-rise-line-in-translate; animation-duration: 0.95s; animation-delay: calc(0s + 0.09s * var(--i)); animation-timing-function: var(--ease-power3-out); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="rise"].is-in .line__in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="rule"] { animation-name: motion-rule-scale; animation-duration: 1.1s; animation-delay: calc(0s + var(--rule-delay, 0s)); animation-timing-function: var(--ease-power3-inout); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="rule"].is-in { animation-play-state: running; }
+@keyframes motion-step-clippath { 0% { clip-path: inset(100% 0% 0%); } 99.998% { clip-path: inset(0%); } 100% { clip-path: none; } }
+@keyframes motion-rise-line-in-translate { 0% { translate: 0px calc(105% + 0.126em); } 100% { translate: 0px 0px; } }
+@keyframes motion-rule-scale { 0% { scale: 0 1; } 100% { scale: 1; } }
+}
+</style>
+<style data-8b-part="scene:opening">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #opening { view-timeline: --opening-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #opening .opening__flood, [data-8b-live] #opening .opening__ghost, [data-8b-live] #opening .opening__actions, [data-8b-live] #opening .opening__aside, [data-8b-live] #opening .opening__product, [data-8b-live] #opening-title > span:nth-of-type(-n+2), [data-8b-live] #opening .opening__cellar, [data-8b-live] #opening .m-text-6, [data-8b-live] #opening .m-text-3, [data-8b-live] #opening .m-text-8, [data-8b-live] #opening .opening__facts, [data-8b-live] #opening .opening__copy > .m-link { animation-timeline: --opening-t1; animation-fill-mode: both; }
+[data-8b-live] #opening .opening__flood { animation-range: cover 100vh cover calc(76.087% - 52.1739vh); animation-timing-function: linear; transform: none; }
+[data-8b-live] #opening .opening__ghost { animation-name: opening-div-opening-ghost-scale, opening-div-opening-ghost-opacity; animation-range: cover 100vh cover calc(48.913% + 2.1739vh); animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0.3333); transform: none; }
+[data-8b-live] #opening .opening__actions, [data-8b-live] #opening .opening__aside { animation-name: opening-div-opening-actions-translate, opening-div-opening-ghost-opacity; }
+[data-8b-live] #opening .opening__actions { animation-range: cover 100vh cover calc(36.9565% + 26.087vh); animation-timing-function: linear; transform: none; }
+[data-8b-live] #opening .opening__aside { animation-range: cover calc(4.3478% + 91.3043vh) cover calc(41.3043% + 17.3913vh); animation-timing-function: linear; transform: none; }
+[data-8b-live] #opening .opening__product { animation-name: opening-div-opening-product-translate; animation-range: cover calc(2.1739% + 95.6522vh) cover calc(69.5652% - 39.1304vh); animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0); transform: none; }
+[data-8b-live] #opening-title > span:nth-of-type(-n+2) { animation-range: cover calc(4.3478% + 91.3043vh) cover calc(69.5652% - 39.1304vh), cover calc(28.2609% + 43.4783vh) cover calc(43.4783% + 13.0435vh); animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0), linear; }
+[data-8b-live] #opening-title > span:nth-of-type(1) { animation-name: opening-span-opening-line-translate, opening-span-opening-line-color; transform: none; }
+[data-8b-live] #opening-title > span:nth-of-type(2) { animation-name: opening-span-opening-line-translate-2, opening-span-opening-line-color; transform: none; }
+[data-8b-live] #opening .opening__cellar, [data-8b-live] #opening .m-text-6 { animation-range: cover calc(21.7391% + 56.5217vh) cover calc(81.5217% - 63.0435vh); }
+[data-8b-live] #opening .opening__cellar { animation-name: opening-div-opening-cellar-clippath; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .m-text-6 { transform: none; transform-origin: 0% 0%; }
+[data-8b-live] #opening .m-text-3, [data-8b-live] #opening .m-text-8, [data-8b-live] #opening .opening__facts, [data-8b-live] #opening .opening__copy > .m-link { animation-name: opening-h2-m-text-3-translate, opening-h2-m-text-3-opacity; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #opening .m-text-3 { animation-range: cover calc(47.8261% + 4.3478vh) cover calc(80.4348% - 60.8696vh); transform: none; }
+[data-8b-live] #opening .m-text-8 { animation-range: cover calc(54.3478% - 8.6957vh) cover calc(86.9565% - 73.913vh); transform: none; }
+[data-8b-live] #opening .opening__facts { animation-range: cover calc(60.8696% - 21.7391vh) cover calc(93.4783% - 86.9565vh); transform: none; }
+[data-8b-live] #opening .opening__copy > .m-link { animation-range: cover calc(67.3913% - 34.7826vh) cover calc(100% - 100vh); transform: none; }
+@keyframes opening-div-opening-flood-scale-d { 0% { scale: 0.21 0.3; } 0.0143% { scale: 0.21 0.3; } 2.1904% { scale: 0.21 0.3007; } 2.8429% { scale: 0.21 0.3011; } 2.8571% { scale: 0.21 0.3011; } 2.8714% { scale: 0.21 0.3012; } 4.381% { scale: 0.2101 0.3027; } 5.7% { scale: 0.2103 0.3045; } 5.7143% { scale: 0.2103 0.3046; } 5.7286% { scale: 0.2103 0.3046; } 6.5714% { scale: 0.2105 0.306; } 8.7619% { scale: 0.2111 0.3107; } 10.9524% { scale: 0.2121 0.3168; } 13.1429% { scale: 0.2137 0.3242; } 15.3333% { scale: 0.2159 0.3329; } 17.5239% { scale: 0.2188 0.343; } 19.7143% { scale: 0.2225 0.3544; } 21.9047% { scale: 0.2271 0.3672; } 24.0953% { scale: 0.2328 0.3813; } 26.2857% { scale: 0.2396 0.3967; } 28.4761% { scale: 0.2476 0.4135; } 28.5571% { scale: 0.2479 0.4142; } 28.5714% { scale: 0.248 0.4143; } 28.5857% { scale: 0.248 0.4144; } 30.6667% { scale: 0.257 0.4317; } 32.8571% { scale: 0.2678 0.4511; } 35.0476% { scale: 0.2801 0.472; } 37.1286% { scale: 0.2934 0.493; } 37.1429% { scale: 0.2935 0.4931; } 37.1571% { scale: 0.2936 0.4933; } 37.2381% { scale: 0.2941 0.4941; } 39.4286% { scale: 0.3098 0.5176; } 41.619% { scale: 0.3274 0.5425; } 43.8096% { scale: 0.3469 0.5687; } 46% { scale: 0.3685 0.5962; } 48.1904% { scale: 0.3923 0.6251; } 48.5571% { scale: 0.3965 0.6301; } 48.5714% { scale: 0.3966 0.6303; } 48.5857% { scale: 0.3968 0.6305; } 50.381% { scale: 0.4183 0.6553; } 52.5714% { scale: 0.4466 0.6851; } 54.2714% { scale: 0.4703 0.7072; } 54.2857% { scale: 0.4705 0.7074; } 54.3% { scale: 0.4708 0.7076; } 54.7619% { scale: 0.4775 0.7135; } 56.9524% { scale: 0.5109 0.7406; } 57.1286% { scale: 0.5137 0.7427; } 57.1429% { scale: 0.5139 0.7429; } 57.1571% { scale: 0.5141 0.743; } 59.1429% { scale: 0.5469 0.7663; } 61.3333% { scale: 0.5858 0.7907; } 62.8429% { scale: 0.6142 0.8067; } 62.8571% { scale: 0.6145 0.8069; } 62.8714% { scale: 0.6148 0.807; } 63.5239% { scale: 0.6275 0.8137; } 64.2714% { scale: 0.6424 0.8213; } 64.2857% { scale: 0.6427 0.8214; } 64.3% { scale: 0.643 0.8216; } 65.7143% { scale: 0.6722 0.8354; } 67.9047% { scale: 0.72 0.8558; } 70.0953% { scale: 0.7709 0.8748; } 71.4143% { scale: 0.8032 0.8856; } 71.4286% { scale: 0.8035 0.8857; } 71.4429% { scale: 0.8039 0.8858; } 72.2857% { scale: 0.8252 0.8925; } 74.4761% { scale: 0.8828 0.9088; } 76.6667% { scale: 0.9439 0.9238; } 78.5571% { scale: 0.9996 0.9356; } 78.5714% { scale: 1 0.9357; } 78.5857% { scale: 1 0.9358; } 78.8571% { scale: 1 0.9374; } 79.9857% { scale: 1 0.9439; } 80% { scale: 1 0.944; } 80.0143% { scale: 1 0.9441; } 81.0476% { scale: 1 0.9497; } 83.2381% { scale: 1 0.9607; } 85.4286% { scale: 1 0.9703; } 87.619% { scale: 1 0.9785; } 88.5571% { scale: 1 0.9817; } 88.5714% { scale: 1 0.9817; } 88.5857% { scale: 1 0.9818; } 89.8096% { scale: 1 0.9855; } 91.4143% { scale: 1 0.9897; } 91.4286% { scale: 1 0.9897; } 91.4429% { scale: 1 0.9897; } 92% { scale: 1 0.991; } 94.1904% { scale: 1 0.9953; } 96.381% { scale: 1 0.9982; } 98.5714% { scale: 1 0.9997; } 99.9857% { scale: 1; } 100% { scale: 1; } }
+@keyframes opening-div-opening-flood-scale-m { 0% { scale: 0.18 0.26; } 0.0143% { scale: 0.18 0.26; } 2.1904% { scale: 0.18 0.2607; } 2.8429% { scale: 0.18 0.2612; } 2.8571% { scale: 0.18 0.2612; } 2.8714% { scale: 0.18 0.2612; } 4.381% { scale: 0.1801 0.2628; } 5.7% { scale: 0.1803 0.2648; } 5.7143% { scale: 0.1803 0.2648; } 5.7286% { scale: 0.1803 0.2649; } 6.5714% { scale: 0.1805 0.2664; } 8.7619% { scale: 0.1811 0.2714; } 10.9524% { scale: 0.1822 0.2778; } 13.1429% { scale: 0.1838 0.2856; } 15.3333% { scale: 0.1861 0.2948; } 17.5239% { scale: 0.1891 0.3054; } 19.7143% { scale: 0.193 0.3175; } 21.9047% { scale: 0.1978 0.331; } 24.0953% { scale: 0.2036 0.3459; } 26.2857% { scale: 0.2107 0.3623; } 28.4761% { scale: 0.219 0.38; } 28.5571% { scale: 0.2194 0.3807; } 28.5714% { scale: 0.2194 0.3808; } 28.5857% { scale: 0.2195 0.3809; } 30.6667% { scale: 0.2288 0.3992; } 32.8571% { scale: 0.24 0.4198; } 35.0476% { scale: 0.2528 0.4418; } 37.1286% { scale: 0.2665 0.464; } 37.1429% { scale: 0.2666 0.4642; } 37.1571% { scale: 0.2667 0.4643; } 37.2381% { scale: 0.2673 0.4652; } 39.4286% { scale: 0.2836 0.4901; } 41.619% { scale: 0.3019 0.5164; } 43.8096% { scale: 0.3221 0.5441; } 46% { scale: 0.3445 0.5732; } 48.1904% { scale: 0.3692 0.6037; } 48.5571% { scale: 0.3735 0.609; } 48.5714% { scale: 0.3737 0.6092; } 48.5857% { scale: 0.3739 0.6094; } 50.381% { scale: 0.3962 0.6356; } 52.5714% { scale: 0.4256 0.6671; } 54.2714% { scale: 0.4502 0.6905; } 54.2857% { scale: 0.4504 0.6907; } 54.3% { scale: 0.4507 0.6909; } 54.7619% { scale: 0.4576 0.6971; } 56.9524% { scale: 0.4923 0.7257; } 57.1286% { scale: 0.4952 0.728; } 57.1429% { scale: 0.4954 0.7282; } 57.1571% { scale: 0.4957 0.7283; } 59.1429% { scale: 0.5297 0.7529; } 61.3333% { scale: 0.57 0.7787; } 62.8429% { scale: 0.5996 0.7957; } 62.8571% { scale: 0.5998 0.7958; } 62.8714% { scale: 0.6001 0.796; } 63.5239% { scale: 0.6133 0.8031; } 64.2714% { scale: 0.6288 0.8111; } 64.2857% { scale: 0.6291 0.8112; } 64.3% { scale: 0.6294 0.8114; } 65.7143% { scale: 0.6597 0.826; } 67.9047% { scale: 0.7093 0.8475; } 70.0953% { scale: 0.7622 0.8676; } 71.4143% { scale: 0.7957 0.8791; } 71.4286% { scale: 0.7961 0.8792; } 71.4429% { scale: 0.7964 0.8793; } 72.2857% { scale: 0.8185 0.8863; } 74.4761% { scale: 0.8783 0.9036; } 76.6667% { scale: 0.9418 0.9194; } 78.5571% { scale: 0.9996 0.932; } 78.5714% { scale: 1 0.932; } 78.5857% { scale: 1 0.9321; } 78.8571% { scale: 1 0.9338; } 79.9857% { scale: 1 0.9407; } 80% { scale: 1 0.9408; } 80.0143% { scale: 1 0.9409; } 81.0476% { scale: 1 0.9468; } 83.2381% { scale: 1 0.9584; } 85.4286% { scale: 1 0.9686; } 87.619% { scale: 1 0.9773; } 88.5571% { scale: 1 0.9806; } 88.5714% { scale: 1 0.9807; } 88.5857% { scale: 1 0.9807; } 89.8096% { scale: 1 0.9846; } 91.4143% { scale: 1 0.9891; } 91.4286% { scale: 1 0.9891; } 91.4429% { scale: 1 0.9892; } 92% { scale: 1 0.9905; } 94.1904% { scale: 1 0.995; } 96.381% { scale: 1 0.9981; } 98.5714% { scale: 1 0.9997; } 99.9857% { scale: 1; } 100% { scale: 1; } }
+@keyframes opening-div-opening-ghost-scale { 0% { scale: 1; } 100% { scale: 1.7; } }
+@keyframes opening-div-opening-ghost-opacity { 0% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes opening-div-opening-actions-translate { 0% { translate: 0px 0px; } 100% { translate: 0px -22vh; } }
+@keyframes opening-div-opening-product-translate { 0% { translate: 0px 0px; } 100% { translate: 0px -80vh; } }
+@keyframes opening-span-opening-line-translate { 0% { translate: 0px 0px; } 100% { translate: -55vw 0px; } }
+@keyframes opening-span-opening-line-color { 0% { color: var(--color-2); } 100% { color: var(--color-5); } }
+@keyframes opening-span-opening-line-translate-2 { 0% { translate: 0px 0px; } 100% { translate: 50vw 0px; } }
+@keyframes opening-div-opening-cellar-clippath { 0% { clip-path: inset(0% 0% 0% 32%); } 100% { clip-path: inset(0%); } }
+@keyframes opening-span-m-text-6-translate-d { 0% { translate: 0px 0px; } 100% { translate: -16vw 0px; } }
+@keyframes opening-span-m-text-6-translate-m { 0% { translate: 0px 0px; } 100% { translate: -16.043vw 0px; } }
+@keyframes opening-span-m-text-6-scale { 0% { scale: 1; } 100% { scale: 1.18; } }
+@keyframes opening-h2-m-text-3-translate { 0% { translate: 12vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes opening-h2-m-text-3-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@media (min-width: 760px) {
+  [data-8b-live] #opening .opening__flood { animation-name: opening-div-opening-flood-scale-d; }
+  [data-8b-live] #opening .m-text-6 { animation-name: opening-span-m-text-6-translate-d, opening-span-m-text-6-scale; animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); }
+}
+@media (max-width: 759px) {
+  [data-8b-live] #opening .opening__flood { animation-name: opening-div-opening-flood-scale-m; }
+  [data-8b-live] #opening .m-text-6 { animation-name: opening-span-m-text-6-translate-m, opening-span-m-text-6-scale; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+}
+}
+</style>
+<style data-8b-part="scene:counter">
+@layer scenes {
+[data-8b-live] #counter .counter__row { view-timeline: --counter-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #counter .counter__row > .counter__item { --counter-sin: sin(1.7 * var(--i) + .6); --counter-depth: calc(.55 + .35 * max(var(--counter-sin), -1 * var(--counter-sin))); animation-timeline: --counter-t1; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #counter .counter__row > .counter__item > .counter__photo > img { animation-timeline: --counter-t1; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); animation-fill-mode: both; transform: none; }
+@keyframes counter-item-rise { 0% { translate: 0px calc(100% * var(--counter-depth) + 40px); } 100% { translate: 0px 0px; } }
+@keyframes counter-item-slide { 0% { translate: calc(-100% * var(--counter-depth) - 20px) 0px; } 100% { translate: 0px 0px; } }
+@keyframes counter-figure-counter-photo-img-translate-d { 0% { translate: 0px 9%; } 100% { translate: 0px 0px; } }
+@keyframes counter-figure-counter-photo-img-translate-m { 0% { translate: -6% 0px; } 100% { translate: 0px 0px; } }
+@media (min-width: 760px) {
+  [data-8b-live] #counter .counter__row > .counter__item { animation-name: counter-item-rise; animation-range: cover calc(8vh - 9.931vh * var(--i) + 9.1954% * var(--i)) cover calc(57.4713% + 9.1954% * var(--i) - 54.069vh - 9.931vh * var(--i)); }
+  [data-8b-live] #counter .counter__row > .counter__item > .counter__photo > img { animation-name: counter-figure-counter-photo-img-translate-d; animation-range: cover calc(8vh - 9.931vh * var(--i) + 9.1954% * var(--i)) cover calc(63.2184% + 9.1954% * var(--i) - 60.2759vh - 9.931vh * var(--i)); }
+}
+@media (max-width: 759px) {
+  [data-8b-live] #counter .counter__row > .counter__item { animation-name: counter-item-slide; animation-range: cover calc(15vh - 8.2759vh * var(--i) + 9.1954% * var(--i)) cover calc(57.4713% + 9.1954% * var(--i) - 36.7241vh - 8.2759vh * var(--i)); }
+  [data-8b-live] #counter .counter__row > .counter__item > .counter__photo > img { animation-name: counter-figure-counter-photo-img-translate-m; animation-range: cover calc(15vh - 8.2759vh * var(--i) + 9.1954% * var(--i)) cover calc(63.2184% + 9.1954% * var(--i) - 41.8966vh - 8.2758vh * var(--i)); }
+}
+}
+</style>
+<style data-8b-part="scene:cellar">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #cellar { timeline-scope: --cellar-t1; }
+[data-8b-live] #cellar .cellar__steps { view-timeline: --cellar-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #cellar .cellar__steps > .cellar__step { view-timeline: --cellar-item block; view-timeline-inset: 0; }
+[data-8b-live] #cellar .cellar__turn { animation-name: cellar-div-cellar-turn-rotate; animation-timeline: --cellar-t1; animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; transform: none; }
+[data-8b-live] #cellar .cellar__still { animation-name: cellar-div-cellar-still-rotate; animation-timeline: --cellar-t1; animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; transform: none; }
+[data-8b-live] #cellar .cellar__still > img:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5)) { animation-name: cellar-img-cellar-photo-opacity; animation-timeline: --cellar-t1; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #cellar .cellar__steps > .cellar__step > .cellar__rule > .cellar__fill { animation-name: cellar-span-cellar-fill-scale; animation-timeline: --cellar-item; animation-range: cover 25vh cover 55vh; animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+@keyframes cellar-div-cellar-turn-rotate { 0% { rotate: 0deg; } 20% { rotate: 90deg; } 26.6667% { rotate: 90deg; } 46.6667% { rotate: 180deg; } 53.3333% { rotate: 180deg; } 73.3333% { rotate: 270deg; } 80% { rotate: 270deg; } 100% { rotate: 360deg; } }
+@keyframes cellar-div-cellar-still-rotate { 0% { rotate: 0deg; } 20% { rotate: -90deg; } 26.6667% { rotate: -90deg; } 46.6667% { rotate: -180deg; } 53.3333% { rotate: -180deg; } 73.3333% { rotate: -270deg; } 80% { rotate: -270deg; } 100% { rotate: -360deg; } }
+@keyframes cellar-img-cellar-photo-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes cellar-span-cellar-fill-scale { 0% { scale: 0 1; } 100% { scale: 1; } }
+[data-8b-live] #cellar .cellar__turn, [data-8b-live] #cellar .cellar__still { animation-range: cover calc(45vh + var(--cellar-length) * .25 / 4.25) cover calc(45vh + var(--cellar-length) * 4 / 4.25); }
+[data-8b-live] #cellar .cellar__still > img:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5)) { animation-range: cover calc(45vh + var(--cellar-length) * (var(--i) - .47) / 4.25) cover calc(45vh + var(--cellar-length) * (var(--i) - .27) / 4.25); }
+}
+</style>
+<style data-8b-part="scene:milks">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #milks .milks__rows > .milks__row { view-timeline: --milks-item block; view-timeline-inset: 0; }
+[data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .milks__field-bg { animation-timeline: --milks-item; animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; transform: none; }
+[data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .m-text-6 { animation-timeline: --milks-item; animation-fill-mode: both; transform: none; }
+[data-8b-live] #milks .milks__rows > .milks__row > .milks__photo > img { animation-name: milks-figure-milks-photo-img-scale; animation-timeline: --milks-item; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .milks__copy { animation-name: milks-div-milks-copy-translate, milks-div-milks-copy-opacity; animation-timeline: --milks-item; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+@keyframes milks-span-milks-field-bg-scale-d { 0% { scale: 2.5 1; } 100% { scale: 1; } }
+@keyframes milks-span-milks-field-bg-scale-m { 0% { scale: 1 var(--milks-span-milks-field-bg-scale-from-2, 2.1053); } 100% { scale: 1; } }
+@keyframes milks-h3-m-text-6-translate-d { 0% { translate: 60vw 0px; } 5.5% { translate: 59.96vw 0px; } 9.1667% { translate: 59.815vw 0px; } 11% { translate: 59.681vw 0px; } 12.8333% { translate: 59.493vw 0px; } 14.6667% { translate: 59.243vw 0px; } 16.5% { translate: 58.922vw 0px; } 18.3333% { translate: 58.521vw 0px; } 20.1667% { translate: 58.032vw 0px; } 22% { translate: 57.444vw 0px; } 23.8333% { translate: 56.751vw 0px; } 25.6667% { translate: 55.942vw 0px; } 27.5% { translate: 55.009vw 0px; } 29.3333% { translate: 53.942vw 0px; } 31.1667% { translate: 52.734vw 0px; } 33% { translate: 51.375vw 0px; } 34.8333% { translate: 49.856vw 0px; } 36.6667% { translate: 48.169vw 0px; } 38.5% { translate: 46.304vw 0px; } 40.3333% { translate: 44.253vw 0px; } 42.1667% { translate: 42.006vw 0px; } 44% { translate: 39.556vw 0px; } 45.8333% { translate: 36.892vw 0px; } 47.6667% { translate: 34.007vw 0px; } 49.5% { translate: 30.891vw 0px; } 51.3333% { translate: 27.663vw 0px; } 53.1667% { translate: 24.653vw 0px; } 55% { translate: 21.87vw 0px; } 56.8333% { translate: 19.304vw 0px; } 58.6667% { translate: 16.948vw 0px; } 60.5% { translate: 14.791vw 0px; } 62.3333% { translate: 12.826vw 0px; } 64.1667% { translate: 11.043vw 0px; } 66% { translate: 9.433vw 0px; } 67.8333% { translate: 7.988vw 0px; } 69.6667% { translate: 6.698vw 0px; } 71.5% { translate: 5.556vw 0px; } 73.3333% { translate: 4.551vw 0px; } 75.1667% { translate: 3.675vw 0px; } 77% { translate: 2.92vw 0px; } 78.8333% { translate: 2.276vw 0px; } 80.6667% { translate: 1.734vw 0px; } 82.5% { translate: 1.286vw 0px; } 84.3333% { translate: 0.923vw 0px; } 86.1667% { translate: 0.635vw 0px; } 88% { translate: 0.415vw 0px; } 89.8333% { translate: 0.252vw 0px; } 93.5% { translate: 0.066vw 0px; } 97.1667% { translate: 0.005vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes milks-h3-m-text-6-translate-m { 0% { translate: 50vw 0px; } 100% { translate: 0px 0px; } }
+@keyframes milks-figure-milks-photo-img-scale { 0% { scale: 1.3; } 100% { scale: 1; } }
+@keyframes milks-div-milks-copy-translate { 0% { translate: 0px 36px; } 100% { translate: 0px 0px; } }
+@keyframes milks-div-milks-copy-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes milks-h3-m-text-6-translate-2 { 0% { translate: -60vw 0px; } 5.5% { translate: -59.96vw 0px; } 9.1667% { translate: -59.815vw 0px; } 11% { translate: -59.681vw 0px; } 12.8333% { translate: -59.493vw 0px; } 14.6667% { translate: -59.243vw 0px; } 16.5% { translate: -58.922vw 0px; } 18.3333% { translate: -58.521vw 0px; } 20.1667% { translate: -58.032vw 0px; } 22% { translate: -57.444vw 0px; } 23.8333% { translate: -56.751vw 0px; } 25.6667% { translate: -55.942vw 0px; } 27.5% { translate: -55.009vw 0px; } 29.3333% { translate: -53.942vw 0px; } 31.1667% { translate: -52.734vw 0px; } 33% { translate: -51.375vw 0px; } 34.8333% { translate: -49.856vw 0px; } 36.6667% { translate: -48.169vw 0px; } 38.5% { translate: -46.304vw 0px; } 40.3333% { translate: -44.253vw 0px; } 42.1667% { translate: -42.006vw 0px; } 44% { translate: -39.556vw 0px; } 45.8333% { translate: -36.892vw 0px; } 47.6667% { translate: -34.007vw 0px; } 49.5% { translate: -30.891vw 0px; } 51.3333% { translate: -27.663vw 0px; } 53.1667% { translate: -24.653vw 0px; } 55% { translate: -21.87vw 0px; } 56.8333% { translate: -19.304vw 0px; } 58.6667% { translate: -16.948vw 0px; } 60.5% { translate: -14.791vw 0px; } 62.3333% { translate: -12.826vw 0px; } 64.1667% { translate: -11.043vw 0px; } 66% { translate: -9.433vw 0px; } 67.8333% { translate: -7.988vw 0px; } 69.6667% { translate: -6.698vw 0px; } 71.5% { translate: -5.556vw 0px; } 73.3333% { translate: -4.551vw 0px; } 75.1667% { translate: -3.675vw 0px; } 77% { translate: -2.92vw 0px; } 78.8333% { translate: -2.276vw 0px; } 80.6667% { translate: -1.734vw 0px; } 82.5% { translate: -1.286vw 0px; } 84.3333% { translate: -0.923vw 0px; } 86.1667% { translate: -0.635vw 0px; } 88% { translate: -0.415vw 0px; } 89.8333% { translate: -0.252vw 0px; } 93.5% { translate: -0.066vw 0px; } 97.1667% { translate: -0.005vw 0px; } 100% { translate: 0px 0px; } }
+@media (min-width: 760px) {
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .milks__field-bg { animation-name: milks-span-milks-field-bg-scale-d; animation-range: cover 8vh cover calc(45.4545% - 1.0909vh); }
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .m-text-6 { animation-range: cover 8vh cover calc(45.4545% - 1.0909vh); animation-timing-function: linear; }
+  [data-8b-live] #milks .milks__rows > article:nth-of-type(1) > .milks__field > .m-text-6 { animation-name: milks-h3-m-text-6-translate-d; }
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__photo > img { animation-range: cover 8vh cover calc(50% - 2vh); }
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .milks__copy { animation-range: cover calc(28.1818% + 2.3636vh) cover calc(46.3636% - 1.2727vh); }
+  [data-8b-live] #milks .milks__row--flip > .milks__field > .m-text-6 { animation-name: milks-h3-m-text-6-translate-2; }
+  [data-8b-live] #milks .milks__rows > article:nth-of-type(3) > .milks__field > .m-text-6 { animation-name: milks-h3-m-text-6-translate-d; }
+}
+@media (max-width: 759px) {
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .milks__field-bg { animation-name: milks-span-milks-field-bg-scale-m; animation-range: cover 8vh cover calc(90.9091% - 72vh); }
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .m-text-6 { animation-name: milks-h3-m-text-6-translate-m; animation-range: cover 8vh cover calc(90.9091% - 72vh); animation-timing-function: var(--ease-power2-inout); }
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__photo > img { animation-range: cover 8vh cover calc(100% - 80vh); }
+  [data-8b-live] #milks .milks__rows > .milks__row > .milks__field > .milks__copy { animation-range: cover calc(56.3636% - 41.6vh) cover calc(92.7273% - 73.6vh); }
+}
+}
+</style>
+<style data-8b-part="scene:farms">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #farms { height: calc(100svh + var(--farms-travel, 0px)); padding: 0; }
+  [data-8b-live] #farms .farms__stage { position: sticky; top: 0; height: 100svh; overflow: clip; display: flex; align-items: center; }
+  [data-8b-live] #farms .farms__track { display: flex; align-items: center; gap: 2vw; width: max-content; padding: 0 var(--space-1); }
+  [data-8b-live] #farms .farms__intro { flex: none; width: min(34vw, 520px); margin: 0 4vw 0 0; }
+  [data-8b-live] #farms .farms__list { display: flex; gap: 2vw; }
+  [data-8b-live] #farms .farms__panel { flex: none; width: min(24vw, 46svh); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 759.98px) {
+  [data-8b-live] #farms .farms__intro { width: 80vw; margin-right: 6vw; }
+  [data-8b-live] #farms .farms__panel { width: min(70vw, 44svh); }
+}
+}
+@layer scenes {
+[data-8b-live] #farms { view-timeline: --farms-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #farms .farms__track, [data-8b-live] #farms .farms__photo img { animation-timeline: --farms-t1; animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] #farms .farms__track { animation-name: farms-track-slide; animation-range: contain 0% contain 100%; }
+[data-8b-live] #farms .farms__photo img { animation-name: farms-photo-drift; animation-range: contain var(--farms-photo-start) contain var(--farms-photo-end); }
+@keyframes farms-track-slide { 0% { translate: 0px 0px; } 100% { translate: calc(-1 * var(--farms-travel)) 0px; } }
+@keyframes farms-photo-drift { 0% { translate: var(--farms-photo-from) 0px; } 100% { translate: var(--farms-photo-to) 0px; } }
+}
+</style>
+<style data-8b-part="scene:club">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #club .club__parcels > .club__parcel { animation-fill-mode: both; transform: none; }
+@keyframes club-li-club-parcel-translate-3 { 0% { translate: var(--club-li-club-parcel-translate-3-from, 106.928%) var(--club-li-club-parcel-translate-3-from-2, 0px); } 100% { translate: 0px 0px; } }
+@keyframes club-li-club-parcel-rotate-3 { 0% { rotate: var(--club-li-club-parcel-rotate-3-from, -7deg); } 100% { rotate: 0deg; } }
+@keyframes club-li-club-parcel-translate { 0% { translate: var(--club-li-club-parcel-translate-from, -60vw) 0px; } 100% { translate: 0px 0px; } }
+@keyframes club-li-club-parcel-rotate { 0% { rotate: var(--club-li-club-parcel-rotate-from, -9.8deg); } 100% { rotate: 0deg; } }
+@media (min-width: 900px) {
+  [data-8b-live] #club .club__parcels { view-timeline: --club-t1 block; view-timeline-inset: 0; }
+  [data-8b-live] #club .club__parcels > li:nth-of-type(3) { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); }
+  [data-8b-live] #club .club__parcels > li:nth-of-type(2) { animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+  [data-8b-live] #club .club__parcels > .club__parcel { animation-name: club-li-club-parcel-translate-3, club-li-club-parcel-rotate-3; animation-timeline: --club-t1; animation-range: cover calc(24.7742vh - 6.3871vh * var(--i)) cover calc(78vh - 6.3871vh * var(--i)); }
+  [data-8b-live] #club .club__parcels > li:nth-of-type(1) { animation-timing-function: var(--ease-power2-inout), cubic-bezier(0.65, 0, 0.35, 1); }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #club .club__parcels > .club__parcel { view-timeline: --club-item block; view-timeline-inset: 0; animation-name: club-li-club-parcel-translate, club-li-club-parcel-rotate; animation-timeline: --club-item; animation-range: cover 2vh cover 38vh; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+}
+}
+</style>
+<style data-8b-part="scene:visit">
+@layer scenes {
+[data-8b-live] #visit .visit__photo { view-timeline: --visit-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #visit .visit__photo > div:nth-of-type(-n+3) { animation-timeline: --visit-t1; animation-range: cover 0% cover calc(50% - 5vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+@keyframes visit-div-visit-col-translate-d { 0% { translate: 0px 34.015%; } 100% { translate: 0px 0px; } }
+@keyframes visit-div-visit-col-translate-m { 0% { translate: 0px 34.03%; } 100% { translate: 0px 0px; } }
+@keyframes visit-div-visit-col-translate-2-d { 0% { translate: 0px -22.009%; } 100% { translate: 0px 0px; } }
+@keyframes visit-div-visit-col-translate-2-m { 0% { translate: 0px -22.019%; } 100% { translate: 0px 0px; } }
+@keyframes visit-div-visit-col-translate-3-d { 0% { translate: 0px 50.022%; } 100% { translate: 0px 0px; } }
+@keyframes visit-div-visit-col-translate-3-m { 0% { translate: 0px 50.044%; } 100% { translate: 0px 0px; } }
+@media (min-width: 900px) {
+  [data-8b-live] #visit .visit__photo > div:nth-of-type(1) { animation-name: visit-div-visit-col-translate-d; }
+  [data-8b-live] #visit .visit__photo > div:nth-of-type(2) { animation-name: visit-div-visit-col-translate-2-d; }
+  [data-8b-live] #visit .visit__photo > div:nth-of-type(3) { animation-name: visit-div-visit-col-translate-3-d; }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #visit .visit__photo > div:nth-of-type(1) { animation-name: visit-div-visit-col-translate-m; }
+  [data-8b-live] #visit .visit__photo > div:nth-of-type(2) { animation-name: visit-div-visit-col-translate-2-m; }
+  [data-8b-live] #visit .visit__photo > div:nth-of-type(3) { animation-name: visit-div-visit-col-translate-3-m; }
+}
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- navigation: bar with the wordmark, four links and a menu button; full-screen overlay with seven links, address, phone and email -->
+<header id="navigation" data-8b-section="navigation">
+  <div class="nav__bar">
+    <a class="nav__brand" href="#opening">Affina.</a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a class="m-link-2" href="#opening" aria-current="page">Home</a></li>
+        <li><a class="m-link-2" href="#counter">Cheeses</a></li>
+        <li><a class="m-link-2" href="#cellar">Cellar</a></li>
+        <li><a class="m-link-2" href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <button class="m-icon-btn nav__menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="m-icon-btn__line"></span><span class="m-icon-btn__line"></span><span class="visually-hidden">Menu</span></button>
+  </div>
+  <div class="nav__overlay" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="nav__overlay-top">
+      <a class="nav__brand" href="#opening">Affina.</a>
+      <button class="m-icon-btn nav__close" type="button" aria-expanded="true" aria-controls="menu"><span class="m-icon-btn__line"></span><span class="m-icon-btn__line"></span><span class="visually-hidden">Close menu</span></button>
+    </div>
+    <ul class="nav__overlay-links">
+      <li><a href="#counter"><span class="m-text-3">On the counter</span></a></li>
+      <li><a href="#cellar"><span class="m-text-3">The cellar</span></a></li>
+      <li><a href="#milks"><span class="m-text-3">Three milks</span></a></li>
+      <li><a href="#farms"><span class="m-text-3">Our farms</span></a></li>
+      <li><a href="#tastings"><span class="m-text-3">Tastings</span></a></li>
+      <li><a href="#club"><span class="m-text-3">Cellar club</span></a></li>
+      <li><a href="#visit"><span class="m-text-3">Visit</span></a></li>
+    </ul>
+    <div class="nav__overlay-foot m-text-4">
+      <span>1 Example Street, York YO1 0ZZ</span>
+      <a data-8b-placeholder="phone" href="tel:+441904000000">01904 000 000</a>
+      <a data-8b-placeholder="email" href="mailto:hello@affina.example">hello@affina.example</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- opening: two screens: a two-line headline with a small pill, a product label panel, a framed cellar photo, then the dark cellar with three facts (animation: scene:opening) -->
+  <section id="opening" data-8b-section="opening" aria-labelledby="opening-title">
+    <div class="opening__first">
+      <div class="opening__grid" aria-hidden="true"><span></span><span></span></div>
+      <div class="opening__flood" aria-hidden="true"></div>
+      <div class="opening__ghost" aria-hidden="true"><span class="opening__ghost-in" data-word="Rind" data-loop></span></div>
+      <div class="opening__text">
+        <div class="opening__head">
+          <h1 class="m-text-2 opening__title" id="opening-title">
+            <span class="opening__line"><span class="opening__line-in">Ripened<span class="opening__pill" aria-hidden="true"></span></span></span>
+            <span class="opening__line"><span class="opening__line-in">down here</span></span>
+          </h1>
+          <div class="opening__actions">
+            <a class="m-btn" href="#visit"><span class="m-btn__label">Visit the shop</span></a>
+          </div>
+        </div>
+        <div class="opening__aside">
+          <p class="m-text-5">Farmhouse cheese from seven makers in Yorkshire, Somerset and the Jura, finished in the cellar under our shop and cut to order at the counter on Example Street.</p>
+          <a class="m-link" href="#counter"><span class="m-link__label">This week’s wheels</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="opening__product">
+        <div class="opening__product-in">
+          <div class="m-label">
+            <span class="m-label__meta">Cow · raw milk</span><span class="m-label__meta">22 months</span>
+            <span class="m-label__name">Fossdyke Cloth Cheddar</span><span class="m-label__price">£38.40 / kg</span>
+          </div>
+          <figure class="opening__product-photo">
+            <img src="https://images.unsplash.com/photo-1788601988339-3741cdab6fe9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=560&amp;q=60" alt="Three large wheels of hard cheese cut into wedges on the counter" width="3867" height="2415">
+          </figure>
+        </div>
+      </div>
+      <div class="opening__cellar">
+        <div class="opening__cellar-in">
+          <img fetchpriority="high" srcset="https://images.unsplash.com/photo-1786284999895-e77d099fb1ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwYWdpbmclMjBjZWxsYXJ8ZW58MXwxfHx8MTc5MTQxMTgwOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=760&amp;q=60 760w, https://images.unsplash.com/photo-1786284999895-e77d099fb1ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwYWdpbmclMjBjZWxsYXJ8ZW58MXwxfHx8MTc5MTQxMTgwOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=990&amp;q=60 990w" sizes="(max-width: 767px) 253px, 77vw" src="https://images.unsplash.com/photo-1786284999895-e77d099fb1ec?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwYWdpbmclMjBjZWxsYXJ8ZW58MXwxfHx8MTc5MTQxMTgwOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=990&amp;q=60" alt="Blocks of cheese resting on wooden shelves in a dark stone cellar" width="3888" height="5184" data-loop>
+        </div>
+        <span class="m-text-6 opening__word" aria-hidden="true">Cave</span>
+      </div>
+    </div>
+    <div class="opening__second">
+      <div class="opening__copy">
+        <h2 class="m-text-3">Eleven degrees and a lot of patience</h2>
+        <p class="m-text-8">Young wheels come straight from the farms and go downstairs. We wash the rinds, brush them, turn every wheel by hand and taste each one with an iron until it is ready: three weeks for a goat’s log, two years for a cloth-bound Cheddar.</p>
+        <dl class="opening__facts m-text">
+          <dt class="m-text-4">Temperature</dt><dd>11 °C, all year</dd>
+          <dt class="m-text-4">Humidity</dt><dd>92 per cent</dd>
+          <dt class="m-text-4">Turned</dt><dd>Every Thursday, by hand</dd>
+        </dl>
+        <a class="m-link" href="#cellar"><span class="m-link__label">How the cellar works</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- counter: five cheeses on a stepped skyline of tall panels, each with a label of milk, age, name and price (animation: scene:counter) -->
+  <section id="counter" data-8b-section="counter" aria-labelledby="counter-title">
+    <div class="counter__head">
+      <h2 class="m-text-3" id="counter-title">On the counter this week</h2>
+      <div class="counter__intro">
+        <p class="m-text-5">Everything is cut from the whole wheel while you wait, from 100 g. Prices are per kilo; ask for a taste of anything before you buy.</p>
+        <a class="m-link" href="#visit"><span class="m-link__label">Order for collection</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <ul class="counter__row" data-8b-items=":scope > .counter__item">
+      <li class="counter__item" style="--h:.8;--w:1">
+        <div class="m-label">
+          <span class="m-label__meta">Cow · raw milk</span><span class="m-label__meta">22 months</span>
+          <span class="m-label__name">Fossdyke Cloth Cheddar</span><span class="m-label__price">£38.40 / kg</span>
+        </div>
+        <figure class="counter__photo"><img src="https://images.unsplash.com/photo-1654184735305-c4d304006f15?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2xvdGhib3VuZCUyMGNoZWRkYXJ8ZW58MXwxfHx8MTc5MTQxMTgzNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=620&amp;q=60" alt="Crumbly pieces of cloth-bound cheese on a dark wooden board" width="3648" height="5472" loading="lazy"></figure>
+      </li>
+      <li class="counter__item" style="--h:.62;--w:.86">
+        <div class="m-label">
+          <span class="m-label__meta">Cow · pasteurised</span><span class="m-label__meta">14 weeks</span>
+          <span class="m-label__name">Hartside Blue</span><span class="m-label__price">£34.00 / kg</span>
+        </div>
+        <figure class="counter__photo"><img src="https://images.unsplash.com/photo-1595404640725-f179aff5ab1c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Ymx1ZSUyMGNoZWVzZXxlbnwxfDF8fHwxNzkxNDExODM0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=540&amp;q=60" alt="A wedge of creamy blue cheese on a plate beside honey" width="3361" height="5041" loading="lazy"></figure>
+      </li>
+      <li class="counter__item" style="--h:1;--w:.94">
+        <div class="m-label">
+          <span class="m-label__meta">Cow · raw milk</span><span class="m-label__meta">24 months</span>
+          <span class="m-label__name">Comté, Mont Vachère</span><span class="m-label__price">£42.00 / kg</span>
+        </div>
+        <figure class="counter__photo"><img src="https://images.unsplash.com/photo-1607474485810-259c5552ba7d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2xvdGhib3VuZCUyMGNoZWRkYXJ8ZW58MXwxfHx8MTc5MTQxMTgzNHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=590&amp;q=60" alt="The rind of a large alpine wheel with its stamped label" width="3709" height="5563" loading="lazy"></figure>
+      </li>
+      <li class="counter__item" style="--h:.72;--w:.78">
+        <div class="m-label">
+          <span class="m-label__meta">Goat · raw milk</span><span class="m-label__meta">3 weeks</span>
+          <span class="m-label__name">Ashgrove Crottin</span><span class="m-label__price">£4.20 each</span>
+        </div>
+        <figure class="counter__photo"><img src="https://images.unsplash.com/photo-1568092219855-24d322238fbd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Z29hdCUyMGNoZWVzZSUyMGxvZ3xlbnwxfDF8fHwxNzkxNDExODM1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=490&amp;q=60" alt="Small fresh goat’s cheeses topped with berries on a tray" width="3024" height="4032" loading="lazy"></figure>
+      </li>
+      <li class="counter__item" style="--h:.54;--w:.9">
+        <div class="m-label">
+          <span class="m-label__meta">Ewe · raw milk</span><span class="m-label__meta">6 months</span>
+          <span class="m-label__name">Wensley Ewe</span><span class="m-label__price">£44.00 / kg</span>
+        </div>
+        <figure class="counter__photo"><img src="https://images.unsplash.com/photo-1655662844300-e59c3d2e7587?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c2hlZXAlMjBtaWxrJTIwY2hlZXNlfGVufDF8MXx8fDE3OTE0MTE4Mzd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=560&amp;q=60" alt="A wedge of pale hard sheep’s cheese on a wooden board" width="2214" height="3936" loading="lazy"></figure>
+      </li>
+    </ul>
+  </section>
+
+  <!-- cellar: five steps of the maturing process beside a held square frame that turns a quarter turn per step and changes photo (animation: scene:cellar) -->
+  <section id="cellar" data-8b-section="cellar" aria-labelledby="cellar-title">
+    <div class="cellar__head">
+      <h2 class="m-text-3" id="cellar-title">What the cellar does</h2>
+      <p class="m-text-8">Cheese leaves the farm young. The last weeks or months decide how it tastes, and they happen forty steps below the shop.</p>
+    </div>
+    <div class="cellar__wrap">
+      <div class="cellar__frame-col">
+        <div class="cellar__frame">
+          <div class="cellar__turn">
+            <div class="cellar__still" data-8b-items=":scope > .cellar__photo" data-8b-fixed="5">
+              <img class="cellar__photo" src="https://images.unsplash.com/photo-1624806992221-12d8062c35e5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y2hlZXNlbWFrZXIlMjB0dXJuaW5nJTIwY2hlZXNlJTIwd2hlZWxzfGVufDF8MHx8fDE3OTE0MTE4MTB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Rows of young white cheeses resting on a tray" width="4000" height="2667" loading="lazy">
+              <img class="cellar__photo" src="https://images.unsplash.com/photo-1635714173187-b92c28706491?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2hlZXNlJTIwcmluZCUyMGNsb3NldXB8ZW58MXwwfHx8MTc5MTQxMTgxMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Close-up of a mottled orange rind on a cellar rack" width="4752" height="3168" loading="lazy">
+              <img class="cellar__photo" src="https://images.unsplash.com/photo-1642702614835-4e2e8058edcc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2hlZXNlbWFrZXIlMjB0dXJuaW5nJTIwY2hlZXNlJTIwd2hlZWxzfGVufDF8MHx8fDE3OTE0MTE4MTB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Hands lifting a round cheese off a cellar shelf" width="4288" height="2848" loading="lazy">
+              <img class="cellar__photo" src="https://images.unsplash.com/photo-1709629605706-37445ecf6ebd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3V0JTIwY2hlZXNlJTIwd2hlZWwlMjB0ZXh0dXJlfGVufDF8MHx8fDE3OTE0MTE3OTB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=930&amp;q=60" alt="Two stacked wheels with rough grey rinds, seen up close" width="12032" height="9024" loading="lazy">
+              <img class="cellar__photo" src="https://images.unsplash.com/photo-1650969788858-3e19f17072e0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8Y2hlZXNlbWFrZXIlMjB0dXJuaW5nJTIwY2hlZXNlJTIwd2hlZWxzfGVufDF8MHx8fDE3OTE0MTE4MTB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1230&amp;q=60" alt="Large cheese wheels on wooden shelves in a maturing room" width="4032" height="2268" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <ol class="cellar__steps" data-8b-items=":scope > .cellar__step">
+        <li class="cellar__step">
+          <span class="cellar__rule" aria-hidden="true"><span class="cellar__fill"></span></span>
+          <span class="m-text-4 cellar__num">Step 1</span>
+          <h3 class="m-text-7">Arrive</h3>
+          <p class="m-text-8">Wheels come in from the makers at a few weeks old and rest for a day before anyone touches them.</p>
+        </li>
+        <li class="cellar__step">
+          <span class="cellar__rule" aria-hidden="true"><span class="cellar__fill"></span></span>
+          <span class="m-text-4 cellar__num">Step 2</span>
+          <h3 class="m-text-7">Wash and brush</h3>
+          <p class="m-text-8">Washed rinds get a brine wipe twice a week; natural rinds are brushed so the moulds stay even.</p>
+        </li>
+        <li class="cellar__step">
+          <span class="cellar__rule" aria-hidden="true"><span class="cellar__fill"></span></span>
+          <span class="m-text-4 cellar__num">Step 3</span>
+          <h3 class="m-text-7">Turn</h3>
+          <p class="m-text-8">Every Thursday each wheel is turned by hand, so the moisture stays even through the paste.</p>
+        </li>
+        <li class="cellar__step">
+          <span class="cellar__rule" aria-hidden="true"><span class="cellar__fill"></span></span>
+          <span class="m-text-4 cellar__num">Step 4</span>
+          <h3 class="m-text-7">Taste with an iron</h3>
+          <p class="m-text-8">We pull a core with a cheese iron, taste it and put the plug back. Nothing goes upstairs before it’s right.</p>
+        </li>
+        <li class="cellar__step">
+          <span class="cellar__rule" aria-hidden="true"><span class="cellar__fill"></span></span>
+          <span class="m-text-4 cellar__num">Step 5</span>
+          <h3 class="m-text-7">Bring it up</h3>
+          <p class="m-text-8">Ready wheels go up to the counter, where they are cut to order and wrapped in waxed paper.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- milks: three bands (cow, ewe, goat), each with a photo of the animals, a black field with a giant word and a short text (animation: scene:milks) -->
+  <section id="milks" data-8b-section="milks" aria-labelledby="milks-title">
+    <div class="milks__head">
+      <h2 class="m-text-3" id="milks-title">Three milks, three tempers</h2>
+      <p class="m-text-5">The milk sets a cheese’s character long before the cellar does. Ask at the counter and we’ll cut you a sliver of each.</p>
+    </div>
+    <div class="milks__rows" data-8b-items=":scope > .milks__row" data-8b-fixed="3">
+      <article class="milks__row" style="--milks-span-milks-field-bg-scale-from-2: 2.1053">
+        <figure class="milks__photo"><img src="https://images.unsplash.com/photo-1637906212803-5878175b5376?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZGFpcnklMjBjb3clMjBwb3J0cmFpdHxlbnwxfDB8fHwxNzkxNDExODYwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="A brown Jersey cow standing in a green field" width="6000" height="4000" loading="lazy"></figure>
+        <div class="milks__field">
+          <span class="milks__field-bg" aria-hidden="true"></span>
+          <h3 class="m-text-6 milks__word" style="--len:3">Cow</h3>
+          <div class="milks__copy">
+            <p class="m-text">The long keepers. Cloth-bound Cheddars, alpine wheels and the blues: sweet, savoury and built to age for years.</p>
+            <p class="m-text-4 milks__list">Fossdyke Cloth Cheddar · Comté · Hartside Blue</p>
+          </div>
+        </div>
+      </article>
+      <article class="milks__row milks__row--flip" style="--milks-span-milks-field-bg-scale-from-2: 2.1053">
+        <figure class="milks__photo"><img src="https://images.unsplash.com/photo-1763105997556-03e857b94923?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c2hlZXAlMjBmbG9jayUyMGhpbGxzaWRlfGVufDF8MHx8fDE3OTE0MTE4NjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="Sheep grazing on a green hillside under a blue sky" width="4592" height="3448" loading="lazy"></figure>
+        <div class="milks__field">
+          <span class="milks__field-bg" aria-hidden="true"></span>
+          <h3 class="m-text-6 milks__word" style="--len:3">Ewe</h3>
+          <div class="milks__copy">
+            <p class="m-text">Richer and nuttier, with more fat and a sweetness that turns to caramel as the wheel ages.</p>
+            <p class="m-text-4 milks__list">Wensley Ewe · Coombe Tomme · Old Ewe Pecorino</p>
+          </div>
+        </div>
+      </article>
+      <article class="milks__row" style="--milks-span-milks-field-bg-scale-from-2: 2.1629">
+        <figure class="milks__photo"><img src="https://images.unsplash.com/photo-1568924352485-cc50a5b7f53b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Z29hdCUyMGhlcmQlMjBtb3VudGFpbnxlbnwxfDB8fHwxNzkxNDExODYxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="Goats grazing on a mountain pasture" width="7952" height="5304" loading="lazy"></figure>
+        <div class="milks__field">
+          <span class="milks__field-bg" aria-hidden="true"></span>
+          <h3 class="m-text-6 milks__word" style="--len:4">Goat</h3>
+          <div class="milks__copy">
+            <p class="m-text">Bright, lemony and best young: ash-dusted logs, crottins and the odd round wrapped in a chestnut leaf.</p>
+            <p class="m-text-4 milks__list">Ashgrove Crottin · Ashgrove Log · Leaf-wrapped round</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- cut: a photo of a wheel being cut beside a heading and four ruled tips -->
+  <section id="cut" data-8b-section="cut" aria-labelledby="cut-title">
+    <div class="cut__grid">
+      <figure class="cut__photo" data-8b-motion="step"><img src="https://images.unsplash.com/photo-1590672173485-27900f8f3082?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y3V0dGluZyUyMGNoZWVzZSUyMHdoZWVsJTIwa25pZmV8ZW58MXwwfHx8MTc5MTQxMTgzOHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="A cheesemonger cutting into a large wheel of hard cheese" width="7360" height="4912" loading="lazy"></figure>
+      <div class="cut__text">
+        <h2 class="m-text-3" id="cut-title" data-8b-motion="rise" data-8b-split="lines">Cut to order, wrapped in paper</h2>
+        <p class="m-text-5">We cut from the wheel while you watch, weigh it in front of you and wrap it in waxed paper. Cling film suffocates a rind; paper lets it breathe.</p>
+        <dl class="cut__list m-text" data-8b-items=":scope > .cut__item">
+          <div class="cut__item"><span class="cut__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0s"></span><dt>For a board</dt><dd>Around 100 g a person, across three cheeses.</dd></div>
+          <div class="cut__item"><span class="cut__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.08s"></span><dt>As the main event</dt><dd>150 g a person, with bread and something sharp.</dd></div>
+          <div class="cut__item"><span class="cut__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.16s"></span><dt>At home</dt><dd>In its paper, in the salad drawer, for up to two weeks.</dd></div>
+          <div class="cut__item"><span class="cut__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.24s"></span><dt>Before eating</dt><dd>Out of the fridge an hour ahead, still wrapped.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- farms: seven farms on a horizontal track that slides sideways while the page scrolls down (animation: scene:farms) -->
+  <section id="farms" data-8b-section="farms" aria-labelledby="farms-title">
+    <div class="farms__stage">
+      <div class="farms__track">
+        <div class="farms__intro">
+          <h2 class="m-text-3" id="farms-title">Seven farms we buy from</h2>
+          <p class="m-text-8">We buy whole wheels straight from the people who make them, and visit every farm at least once a year to taste in their own cellars.</p>
+        </div>
+        <ul class="farms__list" data-8b-items=":scope > .farms__panel">
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1575497749278-5f6b0c41ba3b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8eW9ya3NoaXJlJTIwZGFsZXMlMjBmYXJtfGVufDF8MHx8fDE3OTE0MTE5MzB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Green fields under a grey sky in the Dales" width="6016" height="4016" loading="lazy"></figure>
+            <h3 class="m-text-7">Fossdyke Farm</h3>
+            <p class="m-text-8">Swaledale, North Yorkshire</p>
+            <p class="m-text-4 farms__meta"><span>Cow</span><span>Cloth-bound Cheddar</span></p>
+          </li>
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1745394496911-af9423da537a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZGFpcnklMjBmYXJtJTIwbW9ybmluZyUyMG1pc3R8ZW58MXwwfHx8MTc5MTQxMTkzN3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Cows grazing in a foggy pasture at dawn" width="2750" height="1833" loading="lazy"></figure>
+            <h3 class="m-text-7">Hartside Dairy</h3>
+            <p class="m-text-8">Teesdale, County Durham</p>
+            <p class="m-text-4 farms__meta"><span>Cow</span><span>Hartside Blue</span></p>
+          </li>
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1758716147204-5397d5e1dacb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Z29hdCUyMGhlcmQlMjBtb3VudGFpbnxlbnwxfDB8fHwxNzkxNDExODYxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="A herd of white goats grazing in a dry field" width="6000" height="4000" loading="lazy"></figure>
+            <h3 class="m-text-7">Ashgrove Goats</h3>
+            <p class="m-text-8">The Mendips, Somerset</p>
+            <p class="m-text-4 farms__meta"><span>Goat</span><span>Crottins and logs</span></p>
+          </li>
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1735806366224-4aa27f160cf0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8ZmFybWVyJTIwbWlsa2luZ3xlbnwxfDB8fHwxNzkxNDExOTM0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="A farmer kneeling beside a cow in a field" width="6000" height="4000" loading="lazy"></figure>
+            <h3 class="m-text-7">Fruitière de Mont Vachère</h3>
+            <p class="m-text-8">Haut-Jura, France</p>
+            <p class="m-text-4 farms__meta"><span>Cow</span><span>Comté</span></p>
+          </li>
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1760900383891-cc486f692bdd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c2hlZXAlMjBmbG9jayUyMGhpbGxzaWRlfGVufDF8MHx8fDE3OTE0MTE4NjB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Sheep walking along a grassy mountain slope" width="6000" height="4000" loading="lazy"></figure>
+            <h3 class="m-text-7">Wensley Fold</h3>
+            <p class="m-text-8">Wensleydale, North Yorkshire</p>
+            <p class="m-text-4 farms__meta"><span>Ewe</span><span>Wensley Ewe</span></p>
+          </li>
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1761837861354-e56e58805645?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c3RvbmUlMjBiYXJuJTIwY291bnRyeXNpZGV8ZW58MXwwfHx8MTc5MTQxMTkzMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=920&amp;q=60" alt="A stone farmhouse on a snow-dusted hillside" width="3648" height="2736" loading="lazy"></figure>
+            <h3 class="m-text-7">High Lathe</h3>
+            <p class="m-text-8">Nidderdale, North Yorkshire</p>
+            <p class="m-text-4 farms__meta"><span>Cow</span><span>Washed-rind rounds</span></p>
+          </li>
+          <li class="farms__panel">
+            <figure class="farms__photo"><img src="https://images.unsplash.com/photo-1572289502196-06c5e48872e8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8eW9ya3NoaXJlJTIwZGFsZXMlMjBmYXJtfGVufDF8MHx8fDE3OTE0MTE5MzB8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1040&amp;q=60" alt="Green hills and trees under heavy cloud" width="6016" height="4016" loading="lazy"></figure>
+            <h3 class="m-text-7">Coombe Bottom</h3>
+            <p class="m-text-8">The Quantocks, Somerset</p>
+            <p class="m-text-4 farms__meta"><span>Ewe</span><span>Coombe Tomme</span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- tastings: a heading, a photo of a laid table and four dated tasting rows with seats, price and a Book a seat link -->
+  <section id="tastings" data-8b-section="tastings" aria-labelledby="tastings-title">
+    <div class="tastings__head">
+      <h2 class="m-text-3" id="tastings-title" data-8b-motion="rise" data-8b-split="lines">Thursdays in the cellar</h2>
+      <p class="m-text-5">Once a month we set a long table between the shelves and taste our way through one idea. Bread, pickles and a matched glass are included.</p>
+    </div>
+    <figure class="tastings__photo" data-8b-motion="step"><img src="https://images.unsplash.com/photo-1707037489765-1a12e1f90164?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8Y2hlZXNlJTIwdGFzdGluZyUyMGV2ZW5pbmclMjB3aW5lfGVufDF8MHx8fDE3OTE0MTE4NjR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=60" alt="A candle-lit table laid with cheeses and wine" width="5867" height="3934" loading="lazy"></figure>
+    <ul class="tastings__list" data-8b-items=":scope > .tastings__row">
+      <li class="tastings__row">
+        <span class="tastings__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0s"></span>
+        <time class="tastings__date" datetime="2026-11-05">5 Nov</time>
+        <div class="tastings__what"><h3 class="m-text-7">Alpine wheels, young to old</h3><p class="m-text">Four Comtés, from eight to thirty months.</p></div>
+        <span class="m-text-4 tastings__seats">14 seats</span>
+        <span class="m-text tastings__price">£38</span>
+        <a data-8b-placeholder="email" class="m-link" href="mailto:hello@affina.example?subject=Alpine%20wheels%2C%205%20November"><span class="m-link__label">Book a seat</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+      </li>
+      <li class="tastings__row">
+        <span class="tastings__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.08s"></span>
+        <time class="tastings__date" datetime="2026-12-03">3 Dec</time>
+        <div class="tastings__what"><h3 class="m-text-7">Blue, three ways</h3><p class="m-text">A cow’s blue, a sheep’s blue and a soft goat’s blue.</p></div>
+        <span class="m-text-4 tastings__seats">14 seats</span>
+        <span class="m-text tastings__price">£36</span>
+        <a data-8b-placeholder="email" class="m-link" href="mailto:hello@affina.example?subject=Blue%2C%20three%20ways%2C%203%20December"><span class="m-link__label">Book a seat</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+      </li>
+      <li class="tastings__row">
+        <span class="tastings__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.16s"></span>
+        <time class="tastings__date" datetime="2027-01-07">7 Jan</time>
+        <div class="tastings__what"><h3 class="m-text-7">Cloth and wax</h3><p class="m-text">Why a cloth-bound Cheddar tastes the way it does.</p></div>
+        <span class="m-text-4 tastings__seats">14 seats</span>
+        <span class="m-text tastings__price">£36</span>
+        <a data-8b-placeholder="email" class="m-link" href="mailto:hello@affina.example?subject=Cloth%20and%20wax%2C%207%20January"><span class="m-link__label">Book a seat</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+      </li>
+      <li class="tastings__row">
+        <span class="tastings__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.24s"></span>
+        <time class="tastings__date" datetime="2027-02-04">4 Feb</time>
+        <div class="tastings__what"><h3 class="m-text-7">Goats in winter</h3><p class="m-text">Late-season goat’s milk and what the cellar does with it.</p></div>
+        <span class="m-text-4 tastings__seats">14 seats</span>
+        <span class="m-text tastings__price">£34</span>
+        <a data-8b-placeholder="email" class="m-link" href="mailto:hello@affina.example?subject=Goats%20in%20winter%2C%204%20February"><span class="m-link__label">Book a seat</span><span class="m-link__icon" aria-hidden="true">↗</span></a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- club: three monthly parcels (Pair, Board, Cellar) with photos, prices and join buttons, dealt out of one stack (animation: scene:club) -->
+  <section id="club" data-8b-section="club" aria-labelledby="club-title">
+    <div class="club__head">
+      <h2 class="m-text-3" id="club-title">The cellar club</h2>
+      <p class="m-text-8">A parcel on the first Friday of every month: whatever is best in the cellar right now, cut that morning, with notes from whoever turned it.</p>
+    </div>
+    <ul class="club__parcels" data-8b-items=":scope > .club__parcel" data-8b-fixed="3">
+      <li class="club__parcel" style="--club-li-club-parcel-translate-3-from: 106.928%; --club-li-club-parcel-translate-3-from-2: 0px; --club-li-club-parcel-rotate-3-from: -7deg; --club-li-club-parcel-translate-from: -60vw; --club-li-club-parcel-rotate-from: -9.8deg">
+        <figure class="club__photo"><img src="https://images.unsplash.com/photo-1775203308520-b44f5ff4492c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Ymx1ZSUyMGNoZWVzZXxlbnwxfDF8fHwxNzkxNDExODM0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=650&amp;q=60" alt="Three cheeses with figs and jam on a dark board" width="2362" height="3463" loading="lazy"></figure>
+        <div class="club__body">
+          <h3 class="m-text-3 club__name">Pair</h3>
+          <p class="m-text-8">Two cheeses, about 400 g, one hard and one soft.</p>
+          <p class="club__price m-text-4"><span>Every month</span><strong>£24</strong></p>
+          <a data-8b-placeholder="email" class="m-btn-2" href="mailto:hello@affina.example?subject=Cellar%20club%3A%20Pair"><span class="m-btn-2__label">Join with Pair</span></a>
+        </div>
+      </li>
+      <li class="club__parcel" style="--club-li-club-parcel-translate-3-from: 0px; --club-li-club-parcel-translate-3-from-2: 14px; --club-li-club-parcel-rotate-3-from: 5deg; --club-li-club-parcel-translate-from: 60vw; --club-li-club-parcel-rotate-from: 7deg">
+        <figure class="club__photo"><img src="https://images.unsplash.com/photo-1700760933443-84ef4f5feac4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwYm9hcmQlMjB3b29kZW58ZW58MXwxfHx8MTc5MTQxMTkzNXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=630&amp;q=60" alt="A wooden board of cut cheeses, grapes and nuts" width="4480" height="5600" loading="lazy"></figure>
+        <div class="club__body">
+          <h3 class="m-text-3 club__name">Board</h3>
+          <p class="m-text-8">Three cheeses, about 750 g, with oatcakes and a jar of chutney.</p>
+          <p class="club__price m-text-4"><span>Every month</span><strong>£39</strong></p>
+          <a data-8b-placeholder="email" class="m-btn-2" href="mailto:hello@affina.example?subject=Cellar%20club%3A%20Board"><span class="m-btn-2__label">Join with Board</span></a>
+        </div>
+      </li>
+      <li class="club__parcel" style="--club-li-club-parcel-translate-3-from: -106.928%; --club-li-club-parcel-translate-3-from-2: 28px; --club-li-club-parcel-rotate-3-from: -3deg; --club-li-club-parcel-translate-from: -60vw; --club-li-club-parcel-rotate-from: -4.2deg">
+        <figure class="club__photo"><img src="https://images.unsplash.com/photo-1654184750621-1110fe5afcdc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c2hlZXAlMjBtaWxrJTIwY2hlZXNlfGVufDF8MXx8fDE3OTE0MTE4Mzd8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=60" alt="Halves of large cheese wheels stacked on a wooden table" width="3648" height="5472" loading="lazy"></figure>
+        <div class="club__body">
+          <h3 class="m-text-3 club__name">Cellar</h3>
+          <p class="m-text-8">Five cheeses, about 1.2 kg, always including one small whole wheel.</p>
+          <p class="club__price m-text-4"><span>Every month</span><strong>£62</strong></p>
+          <a data-8b-placeholder="email" class="m-btn-2" href="mailto:hello@affina.example?subject=Cellar%20club%3A%20Cellar"><span class="m-btn-2__label">Join with Cellar</span></a>
+        </div>
+      </li>
+    </ul>
+    <p class="m-text-8 club__note">Pause or cancel any month. Free delivery in York; £6.50 by next-day courier anywhere else in mainland UK.</p>
+  </section>
+
+  <!-- faq: six questions in native details elements with hairlines, beside a heading -->
+  <section id="faq" data-8b-section="faq" aria-labelledby="faq-title">
+    <div class="faq__grid">
+      <div class="faq__head">
+        <h2 class="m-text-3" id="faq-title" data-8b-motion="rise" data-8b-split="lines">Questions at the counter</h2>
+        <p class="m-text-5">Anything else, ask us in the shop or by email.</p>
+      </div>
+      <ul class="faq__list" data-8b-items=":scope > .faq__item">
+        <li class="faq__item"><span class="faq__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0s"></span><details><summary class="m-text-7">Do you post cheese?<span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">Yes: Tuesday to Thursday, by next-day courier in insulated boxes, anywhere in mainland UK. We don’t post on Fridays, so nothing sits in a depot over the weekend.</p></details></li>
+        <li class="faq__item"><span class="faq__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.08s"></span><details><summary class="m-text-7">How long will it keep?<span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">Hard cheeses keep two to three weeks in their paper in the salad drawer; soft and fresh cheeses about a week. Re-wrap in fresh paper if the old one turns greasy.</p></details></li>
+        <li class="faq__item"><span class="faq__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.16s"></span><details><summary class="m-text-7">Can you cut a whole wheel for a wedding?<span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">Gladly: stacked wheels, whole cheeses and long boards for any number of guests. Give us two weeks’ notice for the big wheels.</p></details></li>
+        <li class="faq__item"><span class="faq__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.24s"></span><details><summary class="m-text-7">Is it all raw-milk cheese?<span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">Most of it, and every label says which. If you’re pregnant or avoiding raw milk, ask and we’ll point you to the pasteurised ones.</p></details></li>
+        <li class="faq__item"><span class="faq__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.32s"></span><details><summary class="m-text-7">Do you have vegetarian cheeses?<span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">About half the counter uses vegetarian rennet, and the label strip says so.</p></details></li>
+        <li class="faq__item"><span class="faq__rule" aria-hidden="true" data-8b-motion="rule" style="--rule-delay: 0.4s"></span><details><summary class="m-text-7">Can I bring my own containers?<span class="faq__sign" aria-hidden="true"></span></summary><p class="m-text">Yes. We weigh your box first and cut straight into it.</p></details></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- visit: a text column with address, hours, phone, email and a message form, beside a shop photo cut into three sliding columns (animation: scene:visit) -->
+  <section id="visit" data-8b-section="visit" aria-labelledby="visit-title">
+    <div class="visit__grid">
+      <div class="visit__text">
+        <h2 class="m-text-3" id="visit-title">Come downstairs</h2>
+        <p class="m-text-8">The shop is on Example Street, a few doors from the river. On Saturdays the cellar is open for a look: just ask at the counter.</p>
+        <dl class="visit__facts m-text">
+          <dt class="m-text-4">Address</dt><dd>1 Example Street, York YO1 0ZZ</dd>
+          <dt class="m-text-4">Hours</dt><dd>Tuesday to Friday 9.30–18.00<br>Saturday 9.00–17.30<br>Sunday 10.00–16.00, closed Monday</dd>
+          <dt class="m-text-4">Phone</dt><dd><a data-8b-placeholder="phone" href="tel:+441904000000">01904 000 000</a></dd>
+          <dt class="m-text-4">Email</dt><dd><a data-8b-placeholder="email" href="mailto:hello@affina.example">hello@affina.example</a></dd>
+        </dl>
+        <form data-8b-placeholder="form" class="visit__form" action="#" method="post" novalidate>
+          <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__input" name="name" type="text" autocomplete="name" required></label>
+          <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__input" name="email" type="email" autocomplete="email" required></label>
+          <label class="m-field"><span class="m-field__label">What can we cut for you?</span><textarea class="m-field__input" name="message" rows="3"></textarea></label>
+          <button class="m-btn-2" type="submit"><span class="m-btn-2__label">Send to the shop</span></button>
+          <p class="m-text visit__status" role="status" aria-live="polite" data-sent="Thank you. We’ll reply within a day, usually before the shop opens." data-invalid="Please add your name and a valid email address."></p>
+        </form>
+      </div>
+      <figure class="visit__photo">
+        <div class="visit__col"><img src="https://images.unsplash.com/photo-1786340716601-01497c49f2bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=930&amp;q=60" alt="Wheels of cheese in wooden crates on the shop’s shelves" width="6000" height="4000" loading="lazy"></div>
+        <div class="visit__col" aria-hidden="true"><img src="https://images.unsplash.com/photo-1786340716601-01497c49f2bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=930&amp;q=60" alt="" width="6000" height="4000" loading="lazy"></div>
+        <div class="visit__col" aria-hidden="true"><img src="https://images.unsplash.com/photo-1786340716601-01497c49f2bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Y2hlZXNlJTIwc2hvcCUyMGNvdW50ZXJ8ZW58MXwwfHx8MTc5MTQxMTgxMXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=930&amp;q=60" alt="" width="6000" height="4000" loading="lazy"></div>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<!-- footer: footer with a one-line description, two link lists, a very wide wordmark and a base line -->
+<footer id="footer" data-8b-section="footer">
+  <div class="footer__cols">
+    <p class="m-text-5 footer__lead">Cheesemonger and maturing cellar. Farmhouse cheese, finished below the shop and cut to order.</p>
+    <ul>
+      <li><a class="m-link-2" href="#counter">Cheeses</a></li>
+      <li><a class="m-link-2" href="#cellar">Cellar</a></li>
+      <li><a class="m-link-2" href="#club">Cellar club</a></li>
+      <li><a class="m-link-2" href="#visit">Visit</a></li>
+    </ul>
+    <ul>
+      <li><a data-8b-placeholder="phone" class="m-link-2" href="tel:+441904000000">01904 000 000</a></li>
+      <li><a data-8b-placeholder="email" class="m-link-2" href="mailto:hello@affina.example">Email us</a></li>
+      <li><a class="m-link-2" href="#tastings">Tastings</a></li>
+      <li><a class="m-link-2" href="#faq">Questions</a></li>
+    </ul>
+  </div>
+  <p class="footer__mark" style="--len:7">Affina.</p>
+  <div class="footer__base m-text-4">
+    <span>© 2026 Affina Cheese Ltd, 1 Example Street, York YO1 0ZZ · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></span>
+    <span>Tuesday to Sunday</span>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:navigation">
+(() => {
+  const nav = document.getElementById('navigation');
+  const openBtn = nav.querySelector('.nav__menu-btn');
+  const closeBtn = nav.querySelector('.nav__close');
+  const overlay = nav.querySelector('.nav__overlay');
+  let last = window.scrollY, travel = 0;
+  const onScroll = () => {
+    const y = window.scrollY, delta = y - last;
+    last = y;
+    nav.classList.toggle('is-scrolled', y > 8);
+    if (!overlay.hidden) return;
+    if (delta !== 0 && Math.sign(delta) !== Math.sign(travel)) travel = 0;
+    travel += delta;
+    if (y < 120 || travel < -24) nav.classList.remove('is-hidden');
+    else if (travel > 48) nav.classList.add('is-hidden');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const open = () => {
+    nav.classList.remove('is-hidden');
+    overlay.hidden = false;
+    openBtn.setAttribute('aria-expanded', 'true');
+    window.motionKit?.wheel?.stop();
+    closeBtn.focus();
+  };
+  const close = (focusBack = true) => {
+    overlay.hidden = true;
+    openBtn.setAttribute('aria-expanded', 'false');
+    window.motionKit?.wheel?.start();
+    if (focusBack) openBtn.focus();
+  };
+  openBtn.addEventListener('click', open);
+  closeBtn.addEventListener('click', () => close());
+  overlay.addEventListener('click', event => { if (event.target.closest('a')) close(false); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !overlay.hidden) close(); });
+})();
+</script>
+<script data-8b-part="section-script:visit">
+(() => {
+  const form = document.querySelector('#visit .visit__form');
+  const status = form.querySelector('.visit__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const valid = form.elements.name.value.trim() && form.elements.email.checkValidity() && form.elements.email.value.trim();
+    status.textContent = valid ? status.dataset.sent : status.dataset.invalid;
+    if (valid) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = document.fonts.ready.then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = parseFloat(element.getAttribute('data-8b-enter'));
+return own >= 0 && own <= 100 ? own / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-split=lines]>.line{display:block;overflow:clip;padding-block:.12em;margin-block:-.12em}[data-8b-split=lines]>.line:not(:last-child){margin-bottom:0}[data-8b-split=lines]>.line+.line{margin-top:-.24em}.line+.line>.line__in{text-indent:0}:where(h1,h2,h3,h4,h5,h6,p,div,blockquote,figcaption,dd,dt):where([data-8b-split="lines"]:has(>.line)){display:flow-root}.line__in{display:block}.kit-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const sources = new WeakMap(), widths = new WeakMap();
+const graphemes = text => [...new Intl.Segmenter(undefined, { granularity: 'grapheme' }).segment(text)].map(part => part.segment);
+const span = (className, text) => { const element = document.createElement('span'); element.className = className; if (text != null) element.textContent = text; return element; };
+const split = element => {
+const mode = element.getAttribute('data-8b-split'), again = sources.has(element);
+if (again) element.innerHTML = sources.get(element); else sources.set(element, element.innerHTML);
+const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT), texts = [];
+while (walker.nextNode()) texts.push(walker.currentNode);
+let index = 0;
+for (const node of texts) {
+const fragment = document.createDocumentFragment();
+for (const piece of node.data.split(/(\s+)/)) {
+if (!piece) continue;
+if (/^\s+$/.test(piece)) { fragment.append(piece); continue; }
+const word = span('w');
+if (mode === 'chars') {
+word.setAttribute('aria-hidden', 'true');
+for (const character of graphemes(piece)) { const c = span('c', character); c.style.setProperty('--i', index++); word.append(c); }
+} else {
+word.textContent = piece;
+if (mode === 'words') word.style.setProperty('--i', index++);
+}
+fragment.append(word);
+}
+node.replaceWith(fragment);
+}
+if (mode === 'chars') element.append(span('kit-sr', element.textContent.replace(/\s+/g, ' ').trim()));
+if (mode === 'lines') {
+const lines = [];
+let top = null;
+for (const child of [...element.childNodes]) {
+const probe = child.nodeType === 1 ? child : null;
+const at = probe ? probe.getBoundingClientRect().top : top;
+if (probe && (top === null || Math.abs(at - top) > 2)) { lines.push([]); top = at; }
+if (!lines.length) lines.push([]);
+lines.at(-1).push(child);
+}
+lines.forEach((nodes, i) => {
+const line = span('line'), inner = span('line__in');
+line.style.setProperty('--i', i);
+nodes[0].before(line);
+inner.append(...nodes);
+line.append(inner);
+});
+index = lines.length;
+widths.set(element, element.clientWidth);
+}
+element.style.setProperty('--n', index);
+if (again) element.getAnimations({ subtree: true }).forEach(animation => { if (animation.timeline === document.timeline) try { animation.finish(); } catch {} });
+};
+const pending = [];
+let busy = false;
+const drain = () => {
+if (busy) return;
+const element = pending.shift();
+if (!element) return;
+busy = true;
+setTimeout(() => { try { split(element); } catch (error) { console.error('[motion-kit] split failed', error); } busy = false; drain(); }, 0);
+};
+const near = new IntersectionObserver(entries => entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+near.unobserve(entry.target);
+pending.push(entry.target);
+drain();
+}), { rootMargin: '100% 0px' });
+document.fonts.ready.then(() => document.querySelectorAll('[data-8b-split]').forEach(element => near.observe(element)));
+kit.measure(() => document.querySelectorAll('[data-8b-split="lines"]').forEach(element => {
+if (sources.has(element) && widths.get(element) !== element.clientWidth) { pending.push(element); drain(); }
+}));
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const seen = new Set(), loops = new Map();
+const watch = new IntersectionObserver(entries => {
+entries.forEach(entry => entry.isIntersecting ? seen.add(entry.target) : seen.delete(entry.target));
+loops.forEach((section, element) => element.toggleAttribute('data-8b-off', !seen.has(element) && !seen.has(section)));
+});
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || loops.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+const section = element.closest('section,header,footer') || element;
+loops.set(element, section);
+watch.observe(element);
+watch.observe(section);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+</script>
+<script data-8b-part="scene-script:cellar">
+motionKit.scene('cellar', () => {
+  const section = document.getElementById('cellar');
+  const photos = section.querySelectorAll('.cellar__photo');
+  const steps = section.querySelectorAll('.cellar__step');
+  const last = steps[Math.min(photos.length, steps.length) - 1];
+  motionKit.measure(() => motionKit.set(section, { '--cellar-length': `${Math.max(1, last.offsetTop - steps[0].offsetTop)}px` }));
+});
+</script>
+<script data-8b-part="scene-script:farms">
+motionKit.scene('farms', () => {
+  const section = document.getElementById('farms');
+  const stage = section.querySelector('.farms__stage');
+  const track = section.querySelector('.farms__track');
+  const photos = [...section.querySelectorAll('.farms__photo img')];
+  motionKit.measure(() => {
+    const width = stage.clientWidth;
+    const travel = Math.max(1, track.scrollWidth - width);
+    motionKit.set(section, { '--farms-travel': `${travel}px` });
+    const x = motionKit.box(stage).x;
+    photos.forEach(photo => {
+      const frame = motionKit.box(photo.parentElement);
+      const enter = frame.x - x - width, leave = frame.x - x + frame.w;
+      const at = position => -7 + 14 * (position - enter) / (leave - enter);
+      const start = Math.min(travel - 1, Math.max(0, enter)), end = Math.max(start + 1, Math.min(travel, leave));
+      motionKit.set(photo, { '--farms-photo-start': `${start}px`, '--farms-photo-end': `${end}px`, '--farms-photo-from': `${at(start)}%`, '--farms-photo-to': `${at(end)}%` });
+    });
+  });
+});
+</script>
+</body>
+</html>

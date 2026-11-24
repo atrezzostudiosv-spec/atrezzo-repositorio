@@ -1,0 +1,44 @@
+{
+  "slug": "oriel",
+  "name": "Oriel",
+  "categories": [
+    "Shop",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/jewelry-website-template",
+  "demo": "https://8b.com/templates/oriel/demo.html",
+  "design_md_url": "https://8b.com/templates/oriel/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "93cc7f6892140b1d16633895fc35416228e8226a",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "8068e779cf04fde9e07b04b5b5aa23c48645b837",
+    "README.md": "9076c0ae5a7a5d47c39d2b019b25cd7fb996284d",
+    "AGENTS.md": "b787b9702c5c4aa45001974db2f105293bcf8fa7",
+    "index.html": "ea9d9f25eb386fc05aabf7d03cbb2989f5e412b1",
+    "index.gsap.html": "ba6c0bd5d25dea19937b7e0353f8f4a1449faa6d"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "4a9a8d7ba73a62084c8d8981bdc9ef7a780aaf00cca4c9c2f12c243756097f1d",
+    "README.md": "8d8bcaeb05df5e0eb8333970f7ccf9a70d2ac1489dac164f91cce01fe8d3a8b2",
+    "AGENTS.md": "b48b6dcd88604835cd5b8799730eb842cf4143585c199ed7a7c32309052074ee",
+    "index.html": "6f2e64eac4c3586b08d11a40f4e2cbcee9761c0263e9e722324c8cc29a2ac0ec",
+    "index.gsap.html": "36ec44233e569ea89adc90e0b257af30373eeda9c0690c74b8e09fc350999a09"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

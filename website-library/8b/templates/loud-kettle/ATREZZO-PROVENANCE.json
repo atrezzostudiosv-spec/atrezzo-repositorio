@@ -1,0 +1,43 @@
+{
+  "slug": "loud-kettle",
+  "name": "Loud Kettle",
+  "categories": [
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/brewery-website-template",
+  "demo": "https://8b.com/templates/loud-kettle/demo.html",
+  "design_md_url": "https://8b.com/templates/loud-kettle/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "b0c333327d79f31163ee419df409053223bd7efc",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "f094610fb02518b615ca6c465b6bf004eeae7722",
+    "README.md": "f3d6f954a4ad899c05e6f4f992a414d262695736",
+    "AGENTS.md": "6c266f01014df50b9d872e5f8a0324546515623a",
+    "index.html": "5ab53ec324254ab0b52fa1bf5bfa5cd9e4aa6d6e",
+    "index.gsap.html": "2e17f8b54fcf067b8db9f3fea3ee0819c19e8195"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "8648799ac88da2ef7a8c29ed633681209cae231ab2e3b42fbac4949be1c48230",
+    "README.md": "9ae5573d28038c40a9747cde29c184ffb03eea160d566b83e27078e3d0cfe718",
+    "AGENTS.md": "22fa721c3ca6caba4b46ab95c70318e882be00d4dc77847e41101624374b2538",
+    "index.html": "e259327f47a814eced496af5c0dc3e1dcb07ba8081f6bd94faf5b021b614628c",
+    "index.gsap.html": "ec4d15d41ad0ee098a2b6f4da8cd508310bf71345bdd66ab19b653872024123c"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "ohmstead",
+  "name": "Ohmstead",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/electrician-website-template",
+  "demo": "https://8b.com/templates/ohmstead/demo.html",
+  "design_md_url": "https://8b.com/templates/ohmstead/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "300fb35f59c99912ea861b05409f86d5595fd3e5",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "1ee257c60c1fa28c1635051b926b4843f774c7ef",
+    "README.md": "bbd2ec57d855f195f912e7185db07306bf3f5c9d",
+    "AGENTS.md": "004bc185a5b0e3c63707db5f9bd61c90dc970180",
+    "index.html": "08ae144768bc6d8fa2e6ca6ebabf648015a8e87a",
+    "index.gsap.html": "9bb1b0a556b0c94024c9fa553af4f613a9ec8075"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "aacabb729329fda50a216a6aad7063ef540e47c9fe5908d612f521e2a64fe25e",
+    "README.md": "6d367552cc895c6c123027b6bf99b197f36eddb685f659e4c8ac24c8aa676e97",
+    "AGENTS.md": "50e7fe759bf38e2cf24a524a4be0ca600af7ff40c0810f21aa4701c263987f4f",
+    "index.html": "2cbb13a0774ad0212455ac2cd3e446c114af7ee1848be6942581eb67985f6dbe",
+    "index.gsap.html": "e694d07a21bfbab5530f1b9173c6f47294f6c137cbb6eed8b5015ac04bf942cd"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

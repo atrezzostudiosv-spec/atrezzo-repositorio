@@ -1,0 +1,43 @@
+{
+  "slug": "undertone",
+  "name": "Undertone",
+  "categories": [
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/hair-salon-website-template",
+  "demo": "https://8b.com/templates/undertone/demo.html",
+  "design_md_url": "https://8b.com/templates/undertone/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "370d2b3aef4dba5ee36351a411e31582e29b3eda",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "356268d17e6dddffe082977e5c1804f1da7e77c1",
+    "README.md": "ef129046557ccddbbf8891738b57634035a9c24f",
+    "AGENTS.md": "984c01cc42d6ee726e1c4d1fb171dcaba7900814",
+    "index.html": "72998a0e01a72986b729c79cd50bf43cb91edf03",
+    "index.gsap.html": "8fbeb6b5e1aac5c93ffa2907a71f08015bfad151"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "984b4556b66584b6dad10a8a3e03c14e64a467bd00ccd29328607533e0b97509",
+    "README.md": "e4f685b1ef4186ba71eed49993b53c740558798a16583d64fde7f9a668626c80",
+    "AGENTS.md": "50fb1b5e62fc1e7e1dc8f83e71080a8bfbf5051f7b112909526317751cf567b4",
+    "index.html": "3504bdd3e3ca6756e9a41d4bf463a53afe70acb0fbd7b16a498bbcff28d3b7d3",
+    "index.gsap.html": "4fcc5a7ce49f0e8a6bcf0dea24856a4d7d30d1afcd7296a33c6a77c0d6cfc983"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

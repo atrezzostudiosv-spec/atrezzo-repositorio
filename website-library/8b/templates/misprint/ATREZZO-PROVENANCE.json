@@ -1,0 +1,44 @@
+{
+  "slug": "misprint",
+  "name": "Misprint",
+  "categories": [
+    "Agency and studio",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/graphic-design-studio-website-template",
+  "demo": "https://8b.com/templates/misprint/demo.html",
+  "design_md_url": "https://8b.com/templates/misprint/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "2a819f00fb0eb940a1e12c3f21da826a1a195966",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "9931c28ed7db2d3a95d295b07465122273d1bb28",
+    "README.md": "2877145ebec24915069a9446ffd4fbb7c9183f51",
+    "AGENTS.md": "9eee0422babbe46409fc2eebf89186167d9ff2b3",
+    "index.html": "37ea171327f18530b2d35d148b24d25bcbc69fec",
+    "index.gsap.html": "b38cab87048c4a4238bacbe06488dc660a137e0e"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "3cd79a8e88bf2d4db34a5ae2e13c0c197c6a5ff57f7132aad4013800d75bc23a",
+    "README.md": "31c5aab51d6370eaa8460c3fc53913b77b75232353e2932227a276657071befe",
+    "AGENTS.md": "04b072ded5de343d23ad26298a1b35d28a4346f3f8cfa0e30996d6ea0073753f",
+    "index.html": "7d000bf7c41229fee3689e64a1c1cf70fb0a5aa60b2ec44ec2c8a1b06534bd0a",
+    "index.gsap.html": "5678f0eaaf8fb6192d20bea64f776c50d729c90775489f70ab8dc9d5d01799b1"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

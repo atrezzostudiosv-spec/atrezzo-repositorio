@@ -1,0 +1,43 @@
+{
+  "slug": "monella",
+  "name": "Monella",
+  "categories": [
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/pizzeria-website-template",
+  "demo": "https://8b.com/templates/monella/demo.html",
+  "design_md_url": "https://8b.com/templates/monella/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "a5cf14f4bb43affdae808031e12866463ed6c988",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "535c26d1241b9f1464f90a5385dbeea61054bd41",
+    "README.md": "70629712a51c8344c518b5fd16b2b96a94b01a26",
+    "AGENTS.md": "1bb0f1904eb1dc76eb679744db7af9661f8503ca",
+    "index.html": "68e17297783a61506fd8be17f303758396259d6f",
+    "index.gsap.html": "fee76302b107fe34839990f248395e40edaef2fb"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7ecbfe3d90746ed04aca48f8204d962e315e845b3a7e0976edb93fd9979eb4bf",
+    "README.md": "7419cf6c1cc0da0f292ce7b5070e3f438f813d8fe7858b914e8271113235d184",
+    "AGENTS.md": "f6873376b79d70e659490581d7b572ac3fe31506df4879089ee5ec7555fd7d0e",
+    "index.html": "161d589401b4ffdeb8cb9b0bffe883b21c1f248a91a5890ca5f5c6869b00d09e",
+    "index.gsap.html": "dec1825fd0f13dab6dfbad96c0ed5e3de853c2c1d34a88236a597a67c2027b80"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

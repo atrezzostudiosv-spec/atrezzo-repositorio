@@ -1,0 +1,1348 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/cannonball/
+  Source: https://github.com/8bsite/water-park-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cannonball — the water park in Leeds</title>
+<meta name="description" content="Cannonball is a water park on Weir Road, Leeds: twenty-two slides, a wave pool and a lazy river under one roof, open every day. One wristband, unlimited drops.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cannonball — the water park in Leeds">
+<meta property="og:description" content="Cannonball is a water park on Weir Road, Leeds: twenty-two slides, a wave pool and a lazy river under one roof, open every day. One wristband, unlimited drops.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%230a0a0b'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23ff4400'%3EC%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhjvOytM_sLzi-TFWAW88llxWEtY.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* math */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhjvOytM_sLzi-TFWAW88llwqEtYCkA.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhjvOytM_sLzi-TFWAW88llxYEtYCkA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Kalnia';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kalnia/v6/11hqGpPCwUbbYwZZP0RBuDY62BQZhjvOytM_sLzi-TFWAW88llxWEtY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Reddit Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNke5av2g.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Reddit Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNle5av2g.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Reddit Sans';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/redditsans/v6/EYq3maFOxq1T_-ETdN7EKQNre5Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ffffff;
+  --color-2: #0a0a0b;
+  --color-3: #ff4400;
+  --color-4: #006bb8;
+  --color-5: #66666d;
+  --color-6: #f1f2f4;
+  --color-7: #a3a3ab;
+  --color-8: #0b1e3a;
+  --color-9: #e2e3e7;
+  --color-10: #29292e;
+  --font-1: "Reddit Sans", "Reddit Sans Fallback", Arial, sans-serif;
+  --font-2: "Kalnia", "Kalnia Fallback", Georgia, serif;
+  --radius-1: 999px;
+  --shadow-1: inset 0 0 0 2px var(--color-3);
+  --space-1: clamp(16px, 3.2vw, 40px);
+  --space-2: clamp(96px, 12vw, 168px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Reddit Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 94.9%; ascent-override: 106.4%; descent-override: 30.5%; line-gap-override: 0%; }
+  @font-face { font-family: "Reddit Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 100.6%; ascent-override: 100.4%; descent-override: 28.8%; line-gap-override: 0%; }
+  @font-face { font-family: "Reddit Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 84.6%; ascent-override: 119.4%; descent-override: 34.3%; line-gap-override: 0%; }
+  @font-face { font-family: "Kalnia Fallback"; src: local("Georgia"); font-weight: 100 549; size-adjust: 111%; ascent-override: 94.6%; descent-override: 27%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; background: var(--color-1); color: var(--color-2); overflow-x: clip; }
+  h1, h2, h3, p, figure, blockquote, dl, dd { margin: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  sup { font-size: .32em; vertical-align: top; position: relative; top: .2em; margin-left: .06em; letter-spacing: 0; }
+  :focus-visible { outline: 2px solid var(--color-3); outline-offset: 3px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: -.005em; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: clamp(54px, 9vw, 136px); font-weight: 800; line-height: .9; letter-spacing: -.05em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-1); font-size: clamp(34px, 4.4vw, 60px); font-weight: 600; line-height: 1.02; letter-spacing: -.035em; text-transform: none; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-size: clamp(30px, 3.6vw, 52px); font-weight: 300; line-height: .98; letter-spacing: -.01em; text-transform: none; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-size: 13px; font-weight: 600; line-height: 1.25; letter-spacing: .06em; text-transform: uppercase; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(22px, 2.5vw, 34px); font-weight: 500; line-height: 1.14; letter-spacing: -.025em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: clamp(20px, 1.8vw, 26px); font-weight: 600; line-height: 1.18; letter-spacing: -.02em; text-transform: none; font-style: normal; }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px; border: 0; border-radius: var(--radius-1); background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 16px; font-weight: 700; line-height: 1; letter-spacing: -.01em; text-decoration: none; white-space: nowrap; cursor: pointer; overflow: hidden; isolation: isolate; transition: color .35s ease, box-shadow .35s ease; }
+.m-btn::before { content: ""; position: absolute; inset: -2px; z-index: -1; background: var(--color-2); border-radius: 46% 54% 0 0 / 22% 22% 0 0; transform: translateY(104%); transition: transform .55s cubic-bezier(.2, .8, .2, 1), border-radius .55s ease; }
+.m-btn__label { position: relative; }
+@media (hover: hover) {
+  .m-btn:hover { color: var(--color-3); box-shadow: var(--shadow-1); }
+  .m-btn:hover::before { transform: translateY(0); border-radius: 0; }
+}
+
+.m-link { position: relative; display: inline-block; padding-bottom: 5px; color: inherit; font-family: var(--font-1); font-size: 17px; font-weight: 500; line-height: 1.25; letter-spacing: -.015em; text-decoration: none; }
+.m-link::before, .m-link::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; background: var(--color-3); }
+.m-link::before { width: .6em; }
+.m-link::after { width: 100%; transform: scaleX(0); transform-origin: 0 50%; transition: transform .55s cubic-bezier(.2, .8, .2, 1); }
+@media (hover: hover) { .m-link:hover::after { transform: scaleX(1); } }
+
+.m-link-2 { position: relative; display: inline-flex; align-items: center; min-height: 34px; padding: 0 11px 1px; background: var(--color-2); color: var(--color-3); font-family: var(--font-1); font-size: 13px; font-weight: 700; line-height: 1; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; }
+.m-link-2::before, .m-link-2::after { content: ""; position: absolute; left: 11px; bottom: 7px; height: 2px; background: var(--color-3); }
+.m-link-2::before { width: .55em; }
+.m-link-2::after { right: 11px; transform: scaleX(0); transform-origin: 0 50%; transition: transform .5s cubic-bezier(.2, .8, .2, 1); }
+@media (hover: hover) { .m-link-2:hover::after { transform: scaleX(1); } }
+
+.m-icon-btn { position: relative; display: inline-grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 0; border-radius: 0; background: var(--color-2); color: var(--color-3); cursor: pointer; }
+.m-icon-btn__lines { position: relative; display: block; width: 26px; height: 10px; }
+.m-icon-btn__lines::before, .m-icon-btn__lines::after { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: currentColor; transition: transform .45s cubic-bezier(.3, 1.6, .5, 1); }
+.m-icon-btn__lines::before { top: 0; }
+.m-icon-btn__lines::after { bottom: 0; }
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__lines::before { transform: translateY(4px) rotate(45deg); }
+.m-icon-btn[aria-expanded="true"] .m-icon-btn__lines::after { transform: translateY(-4px) rotate(-45deg); }
+@media (hover: hover) {
+  .m-icon-btn:hover .m-icon-btn__lines::before { transform: translateY(3px); }
+  .m-icon-btn:hover .m-icon-btn__lines::after { transform: translateY(3px); }
+}
+.m-field { display: grid; gap: 8px; }
+.m-field__label { font-family: var(--font-1); font-size: 13px; font-weight: 600; line-height: 1.25; letter-spacing: .06em; text-transform: uppercase; }
+.m-field__input { width: 100%; min-height: 52px; padding: 0 16px; border: 1px solid var(--color-5); border-radius: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-1); font-size: 17px; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-3); outline-offset: 2px; border-color: var(--color-2); }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+  .wrap { width: 100%; max-width: 1440px; margin-inline: auto; padding-inline: var(--space-1); }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+  #nav { position: fixed; inset: 0 0 auto 0; z-index: 40; pointer-events: none; }
+  #nav .nav__bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding: 14px var(--space-1); }
+  #nav .nav__bar > * { pointer-events: auto; }
+  #nav .nav__social { display: flex; gap: 4px; }
+  #nav .nav__logo { justify-self: center; display: block; padding: .1em .14em .06em; background: var(--color-2); color: var(--color-3); font-family: var(--font-1); font-size: 26px; font-weight: 800; line-height: .8; letter-spacing: -.055em; text-decoration: none; white-space: nowrap; transition: opacity .2s linear; }
+  #nav[data-logo="off"] .nav__logo { visibility: hidden; opacity: 0; transition: none; }
+  #nav .nav__end { justify-self: end; display: flex; align-items: center; gap: 6px; }
+  #nav .nav__cta { min-height: 48px; padding: 0 20px; border-radius: 0; }
+  #nav .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; background: var(--color-2); color: var(--color-1); pointer-events: auto; overflow-y: auto; }
+  #nav .menu[hidden] { display: none; }
+  #nav .menu__top { display: flex; justify-content: flex-end; padding: 14px var(--space-1); }
+  #nav .menu__close .m-icon-btn__lines::before { transform: translateY(4px) rotate(45deg); }
+  #nav .menu__close .m-icon-btn__lines::after { transform: translateY(-4px) rotate(-45deg); }
+  @media (hover: hover) {
+    #nav .menu__close:hover .m-icon-btn__lines::before { transform: translateY(4px) rotate(135deg); }
+    #nav .menu__close:hover .m-icon-btn__lines::after { transform: translateY(-4px) rotate(45deg); }
+  }
+  #nav .menu__list { align-self: center; padding: 0 var(--space-1); display: grid; gap: clamp(2px, .6vw, 8px); }
+  #nav .menu__list a { font-size: clamp(36px, 6.4vw, 92px); font-weight: 800; letter-spacing: -.05em; line-height: .98; padding-bottom: 8px; }
+  #nav .menu__foot { display: flex; flex-wrap: wrap; gap: 12px 32px; padding: 24px var(--space-1) 28px; color: var(--color-7); }
+  @media (max-width: 760px) {
+    #nav .nav__bar { grid-template-columns: auto 1fr; padding: 12px 16px; }
+    #nav .nav__social { display: none; }
+    #nav .nav__logo { justify-self: start; font-size: 24px; }
+    #nav .nav__cta { padding: 0 16px; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; background: var(--color-2); color: var(--color-1); }
+  #opening .opening__first { position: relative; height: 100svh; min-height: 620px; overflow: clip; }
+  #opening .opening__photo { position: absolute; inset: 0 0 48px 0; overflow: hidden; --dim: 0; }
+  #opening .opening__photo::before, #opening .opening__photo::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+  #opening .opening__photo::before { z-index: 1; background: linear-gradient(98deg, color-mix(in srgb, var(--color-2) 76%, transparent) 0%, color-mix(in srgb, var(--color-2) 52%, transparent) 34%, color-mix(in srgb, var(--color-2) 18%, transparent) 50%, transparent 62%), radial-gradient(ellipse 34% 40% at 92% 30%, color-mix(in srgb, var(--color-2) 58%, transparent) 0%, transparent 100%); }
+  #opening .opening__photo::after { z-index: 2; background: var(--color-2); opacity: var(--dim); }
+  #opening .opening__photo-intro, #opening .opening__img { width: 100%; height: 100%; }
+  #opening .opening__img { object-fit: cover; object-position: 50% 26%; }
+  #opening .opening__copy { position: absolute; z-index: 2; left: var(--space-1); top: clamp(104px, 17svh, 156px); max-width: 600px; display: grid; gap: 26px; }
+  #opening .opening__title { font-size: clamp(38px, 3.9vw, 56px); max-width: 13ch; }
+  #opening .opening__lead { display: flex; gap: 16px; max-width: 30ch; font-size: 20px; font-weight: 500; line-height: 1.3; }
+  #opening .opening__ring { flex: none; width: 22px; height: 22px; margin-top: 2px; border: 5px solid var(--color-3); border-radius: 50%; }
+  #opening .opening__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; }
+  #opening .opening__serif { position: absolute; z-index: 2; right: var(--space-1); top: clamp(150px, 25svh, 230px); text-align: right; font-size: clamp(40px, 4.6vw, 70px); }
+  #opening .opening__mark { position: absolute; z-index: 3; inset: 0 0 auto 0; height: 100svh; min-height: 620px; pointer-events: none; }
+  #opening .opening__mark-pin { position: absolute; inset: 0; display: flex; align-items: flex-end; overflow: visible; }
+  #opening .opening__word { --trim: 0px; width: 100%; font-family: var(--font-1); font-size: min(27svh, calc((100vw - 2 * var(--space-1)) / (var(--len) * .46))); font-weight: 800; line-height: .8; letter-spacing: -.055em; color: var(--color-3); transform-origin: 0 0; clip-path: inset(-60px var(--trim) -60px var(--trim)); }
+  #opening .opening__float { display: block; padding: .1em .14em .06em; background: var(--color-2); text-align: center; white-space: nowrap; }
+  #opening .opening__word-text { display: inline-block; }
+  #opening .opening__second { position: relative; height: 100svh; min-height: 620px; display: grid; place-items: center; overflow: clip; }
+  #opening .opening__window { position: absolute; inset: 12svh 10vw; overflow: hidden; }
+  #opening .opening__window::after { content: ""; position: absolute; inset: 0; background: color-mix(in srgb, var(--color-2) 42%, transparent); }
+  #opening .opening__window img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+  #opening .opening__statement { position: relative; z-index: 2; max-width: 11.5ch; padding-inline: var(--space-1); text-align: center; font-size: clamp(46px, 7vw, 104px); }
+  #opening .opening__cards { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+  #opening .opening__card { position: absolute; width: clamp(120px, 14vw, 200px); }
+  #opening .opening__card-in { aspect-ratio: 3 / 4; overflow: hidden; }
+  #opening .opening__card img { width: 100%; height: 100%; object-fit: cover; }
+  #opening .opening__card:nth-child(1) { left: 3vw; top: 15svh; }
+  #opening .opening__card:nth-child(2) { left: 15vw; bottom: 5svh; width: clamp(110px, 12vw, 170px); }
+  #opening .opening__card:nth-child(3) { right: 3.5vw; top: 8svh; }
+  #opening .opening__card:nth-child(4) { right: 15vw; bottom: 9svh; width: clamp(100px, 11vw, 150px); }
+  #opening .opening__card:nth-child(5) { left: 21vw; top: 5svh; width: clamp(90px, 8.5vw, 124px); }
+  #opening .opening__card:nth-child(5) .opening__card-in { aspect-ratio: 1; }
+  @media (max-width: 760px) {
+    #opening .opening__copy { top: auto; bottom: calc(min(27svh, (100vw - 2 * var(--space-1)) / 5.06) + 64px); right: var(--space-1); gap: 20px; }
+    #opening .opening__photo::before { background: linear-gradient(0deg, color-mix(in srgb, var(--color-2) 74%, transparent) 0%, color-mix(in srgb, var(--color-2) 40%, transparent) 46%, transparent 70%), linear-gradient(180deg, color-mix(in srgb, var(--color-2) 52%, transparent) 0%, transparent 28%); }
+    #opening .opening__title { font-size: clamp(34px, 9.6vw, 44px); }
+    #opening .opening__lead { font-size: 18px; }
+    #opening .opening__serif { top: 84px; right: var(--space-1); font-size: clamp(34px, 10vw, 46px); }
+    #opening .opening__window { inset: 17svh 6vw 15svh; }
+    #opening .opening__statement { font-size: clamp(38px, 11vw, 56px); }
+    #opening .opening__card { width: 27vw; }
+    #opening .opening__card:nth-child(1) { left: 3vw; top: 5svh; }
+    #opening .opening__card:nth-child(2) { left: 9vw; bottom: 3svh; width: 24vw; }
+    #opening .opening__card:nth-child(3) { right: 3vw; top: 7svh; }
+    #opening .opening__card:nth-child(4) { right: 8vw; bottom: 5svh; width: 23vw; }
+    #opening .opening__card:nth-child(5) { display: none; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .opening__photo-intro { animation: opening-photo 1.1s cubic-bezier(.2, .7, .2, 1) backwards; }
+    #opening .opening__word-text { animation: opening-lift .9s cubic-bezier(.2, .8, .2, 1) .05s backwards; }
+    #opening .opening__copy > *, #opening .opening__serif { animation: opening-rise .8s cubic-bezier(.2, .8, .2, 1) backwards; }
+    #opening .opening__copy > :nth-child(2) { animation-delay: .08s; }
+    #opening .opening__copy > :nth-child(3) { animation-delay: .16s; }
+    #opening .opening__serif { animation-delay: .22s; }
+    #opening .opening__float { animation: opening-bob 4.4s ease-in-out .9s infinite; }
+    #opening .opening__img { animation: opening-swell 9s ease-in-out infinite alternate; }
+    #opening.is-away .opening__float, #opening.is-away .opening__img { animation-play-state: paused; }
+  }
+  @keyframes opening-photo { from { transform: scale(1.08); } }
+  @keyframes opening-lift { from { transform: translateY(24%); } }
+  @keyframes opening-rise { from { transform: translateY(20px); } }
+  @keyframes opening-bob { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-28px) rotate(-.5deg); } }
+  @keyframes opening-swell { from { transform: scale(1) translateY(0); } to { transform: scale(1.09) translateY(-2.5%); } }
+}
+</style>
+<style data-8b-part="section:rides">
+@layer sections {
+  #rides { background: var(--color-2); color: var(--color-1); }
+  #rides .rides__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); align-items: end; gap: 20px 48px; padding-block: var(--space-2) clamp(40px, 5vw, 72px); }
+  #rides .rides__intro { color: var(--color-7); }
+  #rides .rides__item { position: sticky; top: 0; height: 100svh; min-height: 560px; }
+  #rides .rides__item:not(:last-child) { margin-bottom: 36svh; }
+  #rides .rides__sheet { --shade: 0; position: relative; height: 100%; overflow: hidden; background: var(--color-2); transform-origin: 50% 0; }
+  #rides .rides__photo { position: absolute; inset: 0; overflow: hidden; }
+  #rides .rides__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #rides .rides__sheet::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, color-mix(in srgb, var(--color-2) 80%, transparent) 0%, color-mix(in srgb, var(--color-2) 58%, transparent) 26%, color-mix(in srgb, var(--color-2) 24%, transparent) 42%, transparent 54%, transparent 58%, color-mix(in srgb, var(--color-2) 76%, transparent) 100%); }
+  #rides .rides__sheet::after { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; background: var(--color-2); opacity: var(--shade); }
+  #rides .rides__meta { position: absolute; z-index: 2; inset: clamp(92px, 14svh, 128px) 0 auto 0; display: grid; grid-template-columns: auto minmax(40px, 1fr) auto; align-items: center; gap: 14px 28px; }
+  #rides .rides__name { font-size: clamp(48px, 6.6vw, 104px); }
+  #rides .rides__rule { height: 1px; background: color-mix(in srgb, var(--color-1) 60%, transparent); }
+  #rides .rides__spec { grid-column: 1 / -1; }
+  #rides .rides__line { position: absolute; z-index: 2; left: var(--space-1); bottom: clamp(32px, 7svh, 64px); max-width: 36ch; font-size: 20px; line-height: 1.38; }
+  @media (max-width: 760px) {
+    #rides .rides__head { grid-template-columns: 1fr; }
+    #rides .rides__meta { grid-template-columns: minmax(32px, 1fr) auto; }
+    #rides .rides__name { grid-column: 1 / -1; }
+    #rides .rides__line { right: var(--space-1); font-size: 18px; }
+  }
+}
+</style>
+<style data-8b-part="section:zones">
+@layer sections {
+  #zones { background: var(--color-1); color: var(--color-2); }
+  #zones .zones__head { position: relative; }
+  #zones .zones__water, #zones .zones__dry { padding-block: clamp(120px, 15vw, 210px) clamp(40px, 4.6vw, 68px); }
+  #zones .zones__water { --l: 0%; --r: 0%; position: relative; z-index: 1; background: var(--color-4); color: var(--color-1); clip-path: polygon(0 var(--l), 100% var(--r), 100% 100%, 0 100%); }
+  #zones .zones__dry { position: absolute; inset: 0; color: var(--color-2); }
+  #zones .zones__title { font-size: min(12vw, calc((min(100vw, 1440px) - 2 * var(--space-1)) / (var(--len) * .42))); line-height: .86; letter-spacing: -.055em; white-space: nowrap; }
+  #zones .zones__body { padding-block: clamp(48px, 6vw, 88px) var(--space-2); }
+  #zones .zones__lead { color: var(--color-5); max-width: 26ch; }
+  #zones .zones__list { margin-top: clamp(56px, 7vw, 104px); border-bottom: 1px solid var(--color-9); }
+  #zones .zones__row { position: relative; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr) minmax(0, .8fr); gap: 20px 40px; padding-block: 34px 44px; }
+  #zones .zones__rule { position: absolute; inset: 0 0 auto 0; height: 1px; background: var(--color-9); }
+  #zones .zones__name { font-size: clamp(30px, 3vw, 44px); }
+  #zones .zones__text { color: var(--color-5); max-width: 40ch; }
+  #zones .zones__rides { display: grid; gap: 4px; justify-items: end; text-align: right; }
+  #zones .zones__cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px 28px; margin-top: clamp(64px, 8vw, 120px); }
+  #zones .zones__cta .m-text-4 { color: var(--color-5); }
+  #zones .zones__divider { width: 1px; height: 48px; background: var(--color-9); }
+  @media (max-width: 760px) {
+    #zones .zones__title { white-space: normal; font-size: 19vw; }
+    #zones .zones__row { grid-template-columns: 1fr; }
+    #zones .zones__rides { grid-template-columns: 1fr 1fr; justify-items: start; text-align: left; }
+    #zones .zones__divider { display: none; }
+    #zones .zones__cta { justify-content: flex-start; }
+  }
+}
+</style>
+<style data-8b-part="section:band">
+@layer sections {
+  #band { background: var(--color-2); color: var(--color-1); padding-top: var(--space-2); overflow: clip; }
+  #band .band__stage { display: flex; flex-direction: column; }
+  #band .band__intro { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px 56px; align-items: end; padding-bottom: clamp(48px, 6vw, 88px); }
+  #band .band__text { color: var(--color-7); max-width: 46ch; }
+  #band .band__run { padding-bottom: var(--space-2); }
+  #band .band__strap { background: var(--color-3); color: var(--color-2); padding-block: clamp(28px, 3vw, 44px); transform-origin: 50% 50%; }
+  #band .band__track { display: flex; flex-wrap: wrap; padding-inline: var(--space-1); row-gap: 32px; }
+  #band .band__perk { flex: 1 1 300px; display: grid; align-content: space-between; gap: 40px; min-height: clamp(300px, 40svh, 440px); padding: 4px 28px 4px 24px; border-left: 2px solid var(--color-2); }
+  #band .band__title { font-size: clamp(40px, 4.2vw, 64px); line-height: .9; max-width: 8ch; }
+  #band .band__perk .m-text { max-width: 30ch; }
+  #band .band__photo { flex: 1 1 260px; display: flex; padding-inline: 0 24px; }
+  #band .band__photo img { width: 100%; height: 100%; min-height: clamp(300px, 40svh, 440px); object-fit: cover; }
+  @media (max-width: 760px) {
+    #band .band__intro { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="section:after-dark">
+@layer sections {
+  #after-dark { background: var(--color-8); color: var(--color-1); padding-block: var(--space-2); }
+  #after-dark .dark__stage { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: 40px clamp(32px, 5vw, 72px); align-items: start; }
+  #after-dark .dark__head { display: grid; gap: 22px; justify-items: start; align-content: start; }
+  #after-dark .dark__serif { color: var(--color-7); }
+  #after-dark .dark__title { font-size: clamp(56px, 7.4vw, 116px); }
+  #after-dark .dark__text { color: var(--color-7); max-width: 34ch; }
+  #after-dark .dark__hours { display: grid; gap: clamp(40px, 5vw, 72px); }
+  #after-dark .dark__hour { display: grid; gap: 18px; }
+  #after-dark .dark__photo { --cut: 0%; aspect-ratio: 16 / 10; overflow: hidden; clip-path: inset(0 0 var(--cut) 0); }
+  #after-dark .dark__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #after-dark .dark__copy { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 6px 20px; align-items: baseline; }
+  #after-dark .dark__time { color: var(--color-3); }
+  #after-dark .dark__copy .m-text { grid-column: 2; color: var(--color-7); }
+  @media (max-width: 899px) { #after-dark .dark__stage { grid-template-columns: 1fr; } }
+}
+</style>
+<style data-8b-part="section:passes">
+@layer sections {
+  #passes { background: var(--color-1); color: var(--color-2); padding-block: var(--space-2); }
+  #passes .passes__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 20px 48px; align-items: end; padding-bottom: clamp(40px, 5vw, 72px); }
+  #passes .passes__text { color: var(--color-5); }
+  #passes .passes__card { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 2fr); background: var(--color-6); }
+  #passes .passes__photo { position: relative; min-height: 420px; overflow: hidden; }
+  #passes .passes__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #passes .passes__main { display: grid; gap: 30px; align-content: start; padding: clamp(24px, 4vw, 56px); }
+  #passes .passes__switch { display: inline-flex; justify-self: start; gap: 4px; padding: 4px; border-radius: var(--radius-1); background: var(--color-1); }
+  #passes .passes__tab { position: relative; min-height: 44px; padding: 0 20px; border: 0; border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-size: 15px; font-weight: 600; cursor: pointer; overflow: hidden; isolation: isolate; transition: color .35s ease; }
+  #passes .passes__tab::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--color-2); transform: translateY(104%); transition: transform .5s cubic-bezier(.2, .8, .2, 1); }
+  #passes .passes__tab[aria-selected="true"] { color: var(--color-1); }
+  #passes .passes__tab[aria-selected="true"]::before { transform: translateY(0); }
+  @media (hover: hover) { #passes .passes__tab:hover { color: var(--color-1); } #passes .passes__tab:hover::before { transform: translateY(0); } }
+  #passes .passes__panels { display: grid; }
+  #passes .passes__panel { grid-area: 1 / 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px 48px; }
+  #passes .passes__panel[hidden] { display: grid; visibility: hidden; }
+  #passes .passes__offer { display: grid; gap: 18px; align-content: start; }
+  #passes .passes__price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+  #passes .passes__amount { font-size: clamp(72px, 8.4vw, 128px); font-weight: 800; line-height: .82; letter-spacing: -.05em; }
+  #passes .passes__note { color: var(--color-5); }
+  #passes .passes__list li { position: relative; padding: 12px 0 12px 30px; border-top: 1px solid var(--color-9); }
+  #passes .passes__list li::before { content: ""; position: absolute; left: 0; top: 18px; width: 14px; height: 14px; border: 3px solid var(--color-3); border-radius: 50%; }
+  #passes .passes__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; }
+  @media (max-width: 900px) {
+    #passes .passes__head, #passes .passes__card, #passes .passes__panel { grid-template-columns: 1fr; }
+    #passes .passes__photo { min-height: 0; aspect-ratio: 4 / 3; }
+  }
+}
+</style>
+<style data-8b-part="section:lessons">
+@layer sections {
+  #lessons { background: var(--color-4); color: var(--color-1); padding-block: var(--space-2); overflow: clip; }
+  #lessons .lessons__head { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 360px); gap: 24px 48px; align-items: end; padding-bottom: clamp(48px, 6vw, 80px); }
+  #lessons .lessons__lead { max-width: 18ch; }
+  #lessons :focus-visible { outline-color: var(--color-1); }
+  #lessons .lessons__aside { display: grid; gap: 20px; justify-items: start; }
+  #lessons .lessons__lane { position: relative; display: grid; grid-template-columns: 72px minmax(0, 1fr); align-items: center; gap: 16px; min-height: clamp(150px, 19svh, 190px); padding-block: 26px 20px; }
+  #lessons .lessons__lane::before, #lessons .lessons__lane:last-child::after { content: ""; position: absolute; left: 0; right: 0; height: 6px; background: repeating-linear-gradient(90deg, var(--color-3) 0 18px, var(--color-1) 18px 36px); }
+  #lessons .lessons__lane::before { top: 0; }
+  #lessons .lessons__lane:last-child::after { bottom: -6px; }
+  #lessons .lessons__num { display: grid; place-items: center; width: 56px; height: 56px; border: 2px solid var(--color-3); border-radius: 50%; background: var(--color-3); color: var(--color-2); font-size: 24px; font-weight: 800; line-height: 1; }
+  #lessons .lessons__swimmer { justify-self: end; display: grid; grid-template-columns: clamp(96px, 10vw, 140px) minmax(0, 1fr); gap: 22px; align-items: center; width: min(600px, 100%); }
+  #lessons .lessons__photo { aspect-ratio: 4 / 3; overflow: hidden; }
+  #lessons .lessons__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #lessons .lessons__copy { display: grid; gap: 6px; }
+  #lessons .lessons__copy h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  @media (max-width: 900px) {
+    #lessons .lessons__head { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    #lessons .lessons__lane { grid-template-columns: 1fr; gap: 14px; }
+    #lessons .lessons__num { width: 44px; height: 44px; font-size: 20px; }
+    #lessons .lessons__swimmer { width: 80%; grid-template-columns: 64px minmax(0, 1fr); gap: 14px; align-items: start; }
+    #lessons .lessons__copy .m-text { font-size: 15px; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { background: var(--color-1); color: var(--color-2); padding-block: var(--space-2); }
+  #faq .faq__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 420px); gap: 20px 48px; align-items: end; padding-bottom: clamp(40px, 5vw, 72px); }
+  #faq .faq__text { color: var(--color-5); }
+  #faq .faq__body { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr); gap: 48px clamp(32px, 5vw, 80px); align-items: start; }
+  #faq .faq__list { border-bottom: 1px solid var(--color-9); }
+  #faq .faq__item { border-top: 1px solid var(--color-9); }
+  #faq .faq__item summary { display: grid; grid-template-columns: minmax(0, 1fr) 30px; gap: 24px; align-items: center; padding: 24px 0; list-style: none; cursor: pointer; }
+  #faq .faq__item summary::-webkit-details-marker { display: none; }
+  #faq .faq__icon { position: relative; width: 28px; height: 10px; }
+  #faq .faq__icon::before, #faq .faq__icon::after { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: var(--color-3); transition: transform .45s cubic-bezier(.3, 1.6, .5, 1); }
+  #faq .faq__icon::before { top: 0; }
+  #faq .faq__icon::after { bottom: 0; }
+  #faq .faq__item[open] .faq__icon::before { transform: translateY(4px); }
+  #faq .faq__item[open] .faq__icon::after { transform: translateY(-4px); }
+  @media (hover: hover) { #faq .faq__item:not([open]) summary:hover .faq__icon::before, #faq .faq__item:not([open]) summary:hover .faq__icon::after { transform: translateY(3px); } }
+  #faq .faq__answer { max-width: 62ch; padding: 0 54px 28px 0; color: var(--color-5); }
+  #faq .faq__aside { display: grid; gap: 20px; }
+  #faq .faq__photo { aspect-ratio: 4 / 5; overflow: hidden; }
+  #faq .faq__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #faq .faq__aside .m-text { color: var(--color-5); }
+  @media (max-width: 900px) { #faq .faq__head, #faq .faq__body { grid-template-columns: 1fr; } #faq .faq__photo { aspect-ratio: 16 / 10; } }
+}
+</style>
+<style data-8b-part="section:crew">
+@layer sections {
+  #crew { background: var(--color-2); color: var(--color-1); padding-block: var(--space-2); }
+  #crew .crew__head { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 20px 56px; align-items: end; padding-bottom: clamp(48px, 6vw, 88px); }
+  #crew .crew__head .m-text { color: var(--color-7); }
+  #crew .crew__row { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 44px 20px; }
+  #crew .crew__photo { aspect-ratio: 3 / 4; overflow: hidden; margin-bottom: 18px; }
+  #crew .crew__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #crew .crew__role { margin-top: 6px; color: var(--color-3); }
+  #crew .crew__note { margin-top: 10px; color: var(--color-7); font-size: 15px; }
+  #crew .crew__frame { position: absolute; left: 0; top: 0; z-index: 2; border: 4px solid var(--color-3); pointer-events: none; }
+  @media (max-width: 900px) { #crew .crew__head { grid-template-columns: 1fr; } #crew .crew__row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+}
+</style>
+<style data-8b-part="section:visit">
+@layer sections {
+  #visit { background: var(--color-1); color: var(--color-2); padding-block: var(--space-2); }
+  #visit .visit__title { font-size: clamp(54px, 10vw, 150px); padding-bottom: clamp(40px, 5vw, 72px); }
+  #visit .visit__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1.05fr); gap: 40px clamp(28px, 4vw, 56px); align-items: start; }
+  #visit .visit__photo { aspect-ratio: 4 / 5; overflow: hidden; }
+  #visit .visit__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #visit .visit__info { display: grid; gap: 36px; }
+  #visit .visit__block { display: grid; gap: 10px; justify-items: start; }
+  #visit .visit__block h3 { color: var(--color-5); }
+  #visit .visit__block address { font-style: normal; }
+  #visit .visit__block .m-text { color: var(--color-5); }
+  #visit .visit__hours { justify-self: stretch; }
+  #visit .visit__hours div { display: flex; justify-content: space-between; gap: 16px; padding-block: 9px; border-bottom: 1px solid var(--color-9); }
+  #visit .visit__hours dd { font-weight: 600; white-space: nowrap; }
+  #visit .visit__form { display: grid; gap: 18px; padding: clamp(24px, 3vw, 40px); background: var(--color-6); }
+  #visit .visit__form .m-text { color: var(--color-5); }
+  #visit .visit__form .m-btn { justify-self: start; }
+  @media (max-width: 1000px) { #visit .visit__grid { grid-template-columns: 1fr 1fr; } #visit .visit__form { grid-column: 1 / -1; } }
+  @media (max-width: 640px) { #visit .visit__grid { grid-template-columns: 1fr; } #visit .visit__photo { aspect-ratio: 4 / 3; } }
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+  #footer { background: var(--color-2); color: var(--color-1); padding-top: clamp(72px, 9vw, 128px); }
+  #footer .footer__word { font-size: min(30vw, calc((min(100vw, 1440px) - 2 * var(--space-1)) / (var(--len) * .46))); font-weight: 800; line-height: .8; letter-spacing: -.055em; color: var(--color-3); white-space: nowrap; }
+  #footer .footer__grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px 32px; padding-block: clamp(48px, 6vw, 80px); border-bottom: 1px solid var(--color-10); }
+  #footer .footer__serif { color: var(--color-1); }
+  #footer .footer__links { display: grid; gap: 10px; align-content: start; }
+  #footer .footer__label { color: var(--color-7); margin-bottom: 6px; }
+  #footer .footer__hours { color: var(--color-7); }
+  #footer .footer__hours strong { display: block; color: var(--color-1); font-weight: 600; }
+  #footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; padding-block: 28px 36px; color: var(--color-7); font-size: 15px; }
+  @media (max-width: 900px) { #footer .footer__grid { grid-template-columns: 1fr 1fr; } #footer .footer__serif { grid-column: 1 / -1; } }
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] { --ease-1ae169: linear(0, 0.1135, 0.2193, 0.3176, 0.4087, 0.4928, 0.5701, 0.641, 0.7056, 0.7643, 0.8172, 0.8647, 0.9069, 0.9442, 0.9768, 1.0049, 1.0288, 1.0488, 1.065, 1.0779, 1.0875, 1.0942, 1.0982, 1.0998, 1.0992, 1.0967, 1.0925, 1.0869, 1.0801, 1.0724, 1.0641, 1.0553, 1.0464, 1.0376, 1.0291, 1.0213, 1.0143, 1.0084, 1.0039, 1.001, 1); --ease-expo-out: linear(0, 0.1587, 0.2915, 0.403, 0.4969, 0.576, 0.6429, 0.6996, 0.7476, 0.7883, 0.8229, 0.8523, 0.8772, 0.8983, 0.9162, 0.9312, 0.9438, 0.9544, 0.9632, 0.9705, 0.9766, 0.9815, 0.9855, 0.9887, 0.9913, 0.9933, 0.9949, 0.9962, 0.9971, 0.9979, 0.9984, 0.9989, 0.9992, 0.9994, 0.9996, 0.9997, 0.9998, 0.9999, 0.9999, 1, 1); }
+[data-8b-live] [data-8b-motion~="surface"] { animation-name: motion-surface-translate, motion-surface-opacity; animation-duration: 0.95s; animation-delay: 0s; animation-timing-function: var(--ease-1ae169); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="surface"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="ripple"] { animation-name: motion-ripple-scale; animation-duration: 1.2s; animation-delay: 0s; animation-timing-function: var(--ease-expo-out); animation-fill-mode: both; animation-play-state: paused; transform: none; }
+[data-8b-live] [data-8b-motion~="ripple"].is-in { animation-play-state: running; }
+[data-8b-live] [data-8b-motion~="settle"] { view-timeline: --motion-settle block; view-timeline-inset: 0; }
+[data-8b-live] [data-8b-motion~="settle"] img { animation-name: motion-settle-img-scale, motion-settle-img-translate; animation-timeline: --motion-settle; animation-range: cover 0% cover calc(50% - 5vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+@keyframes motion-surface-translate { 0% { translate: 0px 46px; } 100% { translate: 0px 0px; } }
+@keyframes motion-surface-opacity { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes motion-ripple-scale { 0% { scale: 0 1; } 100% { scale: 1; } }
+@keyframes motion-settle-img-scale { 0% { scale: 1.18; } 100% { scale: 1; } }
+@keyframes motion-settle-img-translate { 0% { translate: 0px 7%; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:opening">
+@property --opening-trim { syntax: '<length>'; inherits: true; initial-value: 0px; }
+@property --opening-dim { syntax: '<number>'; inherits: true; initial-value: 0.62; }
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #opening .opening__mark { height: 100%; }
+    [data-8b-live] #opening .opening__mark-pin { position: sticky; top: 0; bottom: auto; height: 100svh; min-height: 620px; }
+    [data-8b-live] #opening .opening__word { will-change: transform; }
+  }
+}
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #opening { view-timeline: --opening-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #opening .opening__word, [data-8b-live] #opening .opening__photo, [data-8b-live] #opening .opening__cards > li, [data-8b-live] #opening .opening__window, [data-8b-live] #opening .opening__window > img, [data-8b-live] #opening .m-text-2, [data-8b-live] #opening .opening__cards > li > .opening__card-in { animation-timeline: --opening-t1; animation-fill-mode: both; transform: none; }
+[data-8b-live] #opening .opening__word { animation-name: opening-p-opening-word-translate, opening-p-opening-word-scale, opening-p-opening-word---trim; animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: var(--ease-power2-inout); --trim: var(--opening-trim); }
+[data-8b-live] #opening .opening__photo { animation-name: opening-div-opening-photo-translate, opening-div-opening-photo-scale, opening-div-opening-photo---dim; animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: linear; --dim: var(--opening-dim); }
+[data-8b-live] #opening .opening__cards > li { animation-name: opening-li-opening-card-translate; animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); }
+[data-8b-live] #opening .opening__window, [data-8b-live] #opening .opening__window > img, [data-8b-live] #opening .m-text-2 { animation-range: cover calc(28% + 44vh) cover calc(100% - 100vh); }
+[data-8b-live] #opening .opening__window { animation-name: opening-div-opening-window-scale; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #opening .opening__window > img { animation-name: opening-div-opening-window-img-scale; animation-timing-function: linear; }
+[data-8b-live] #opening .m-text-2 { animation-name: opening-h2-m-text-2-translate; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+[data-8b-live] #opening .opening__cards > li > .opening__card-in { animation-name: opening-figure-opening-card-in-translate; animation-range: cover calc(100% - 100vh) cover 100%; animation-timing-function: linear; }
+@keyframes opening-p-opening-word-translate { 0% { translate: 0px 0px; } 100% { translate: var(--opening-x, 0px) var(--opening-y, 0px); } }
+@keyframes opening-p-opening-word-scale { 0% { scale: 1; } 100% { scale: var(--opening-scale, 1); } }
+@keyframes opening-p-opening-word---trim { 0% { --opening-trim: 0px; } 100% { --opening-trim: var(--opening-inset, 0px); } }
+@keyframes opening-div-opening-photo-translate { 0% { translate: 0px 0px; } 100% { translate: 0px 16%; } }
+@keyframes opening-div-opening-photo-scale { 0% { scale: 1; } 100% { scale: 1.06; } }
+@keyframes opening-div-opening-photo---dim { 0% { --opening-dim: 0; } 100% { --opening-dim: 0.62; } }
+@keyframes opening-li-opening-card-translate { 0% { translate: 0px var(--opening-li-opening-card-translate-from-2, 62vh); } 100% { translate: 0px 0px; } }
+@keyframes opening-div-opening-window-scale { 0% { scale: 1.34; } 100% { scale: 1; } }
+@keyframes opening-div-opening-window-img-scale { 0% { scale: 1.3; } 100% { scale: 1; } }
+@keyframes opening-h2-m-text-2-translate { 0% { translate: 0px 16vh; } 100% { translate: 0px 0px; } }
+@keyframes opening-figure-opening-card-in-translate { 0% { translate: 0px 0px; } 100% { translate: 0px var(--opening-figure-opening-card-in-translate-to-2, -34vh); } }
+}
+</style>
+<style data-8b-part="scene:rides">
+@property --rides-shade { syntax: '<number>'; inherits: true; initial-value: 0.62; }
+@layer scenes {
+[data-8b-live] #rides .rides__list { view-timeline: --rides-t1 block; view-timeline-inset: 0; --rides-step: calc(max(100svh, 560px) + 36svh); }
+[data-8b-live] #rides .rides__list > li > .rides__sheet > .rides__photo > img { animation-name: rides-figure-rides-photo-img-scale; animation-timeline: --rides-t1; animation-range: cover calc(var(--rides-step) * var(--i)) cover calc(100vh + var(--rides-step) * var(--i)); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] #rides .rides__list > li:not(:last-child) > .rides__sheet { animation-name: rides-article-rides-sheet-scale, rides-article-rides-sheet-borderradius, rides-article-rides-sheet---shade; animation-timeline: --rides-t1; animation-range: cover calc(var(--rides-step) * (var(--i) + 1)) cover calc(100vh + var(--rides-step) * (var(--i) + 1)); animation-timing-function: linear; animation-fill-mode: both; transform: none; --shade: var(--rides-shade); }
+@keyframes rides-figure-rides-photo-img-scale { 0% { scale: 1.2; } 100% { scale: 1; } }
+@keyframes rides-article-rides-sheet-scale { 0% { scale: 1; } 100% { scale: 0.88; } }
+@keyframes rides-article-rides-sheet-borderradius { 0% { border-radius: 0px; } 100% { border-radius: 32px; } }
+@keyframes rides-article-rides-sheet---shade { 0% { --rides-shade: 0; } 100% { --rides-shade: 0.62; } }
+}
+</style>
+<style data-8b-part="scene:zones">
+@property --zones-l { syntax: '<percentage>'; inherits: true; initial-value: 0%; }
+@property --zones-r { syntax: '<percentage>'; inherits: true; initial-value: 0%; }
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #zones .zones__water { will-change: clip-path; }
+  }
+}
+@layer scenes {
+[data-8b-live] #zones .zones__head { view-timeline: --zones-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #zones .zones__water, [data-8b-live] #zones .zones__water > h2:nth-of-type(1) { animation-timeline: --zones-t1; animation-range: cover 15vh cover calc(100% - 60vh); animation-fill-mode: both; }
+[data-8b-live] #zones .zones__water { animation-name: zones-div-zones-water---l, zones-div-zones-water---r; animation-timing-function: linear; --l: var(--zones-l); --r: var(--zones-r); }
+[data-8b-live] #zones .zones__water > h2:nth-of-type(1) { animation-name: zones-h2-m-text-2-translate; animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); transform: none; }
+@keyframes zones-div-zones-water---l { 0% { --zones-l: 100%; animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0.3333); } 50% { --zones-l: 46.0216%; } 50.002% { --zones-l: 45.9724%; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 100% { --zones-l: 0%; } }
+@keyframes zones-div-zones-water---r { 0% { --zones-r: 100%; animation-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0.3333); } 50% { --zones-r: 70%; animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); } 100% { --zones-r: 0%; } }
+@keyframes zones-h2-m-text-2-translate { 0% { translate: 0px 22px; } 100% { translate: 0px 0px; } }
+}
+</style>
+<style data-8b-part="scene:band">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #band { padding-top: 0; }
+    [data-8b-live] #band .band__run { height: calc(100svh + var(--travel, 0px)); padding-bottom: 0; }
+    [data-8b-live] #band .band__stage { position: sticky; top: 0; height: 100svh; min-height: 600px; justify-content: center; padding-top: 56px; }
+    [data-8b-live] #band .band__intro { padding-bottom: clamp(28px, 4svh, 48px); }
+    [data-8b-live] #band .band__strap { width: 100%; }
+    [data-8b-live] #band .band__track { flex-wrap: nowrap; width: max-content; }
+    [data-8b-live] #band .band__perk { flex: 0 0 clamp(290px, 30vw, 420px); }
+    [data-8b-live] #band .band__photo { flex: 0 0 clamp(220px, 22vw, 320px); }
+    [data-8b-live] #band .band__photo img { min-height: 0; height: clamp(300px, 40svh, 440px); }
+  }
+}
+@layer scenes {
+[data-8b-live] #band .band__run { view-timeline: --band-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #band .band__track, [data-8b-live] #band .band__strap { animation-timeline: --band-t1; animation-fill-mode: both; transform: none; }
+[data-8b-live] #band .band__track { animation-name: band-ul-band-track-translate; animation-range: cover 100vh cover calc(100% - 100vh); animation-timing-function: linear; }
+[data-8b-live] #band .band__strap { animation-name: band-div-band-strap-rotate; animation-range: cover 100vh cover calc(20% + 60vh); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); }
+@keyframes band-ul-band-track-translate { 0% { translate: 0px 0px; } 100% { translate: calc(-1 * var(--travel, 0px)) 0px; } }
+@keyframes band-div-band-strap-rotate { 0% { rotate: -4deg; } 100% { rotate: 0deg; } }
+}
+</style>
+<style data-8b-part="scene:after-dark">
+@property --after-dark-cut { syntax: '<percentage>'; inherits: true; initial-value: 0%; }
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) and (min-width: 900px) {
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark { padding-block: 0; }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__run { height: 400svh; }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__stage { position: sticky; top: 0; height: 100svh; min-height: 640px; align-items: center; padding-top: 64px; }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__hours { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px 22px; }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__hour { display: contents; }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__photo { grid-row: 1; grid-column: 1 / -1; aspect-ratio: auto; height: min(50svh, 30vw); }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__copy { grid-row: 2; grid-template-columns: 1fr; }
+    }
+    @media (min-width: 900px) {
+    [data-8b-live] #after-dark .dark__copy .m-text { grid-column: 1; font-size: 15px; }
+    }
+  }
+}
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #after-dark { animation-name: after-dark-after-dark-backgroundcolor; animation-timeline: --after-dark-t1; animation-timing-function: linear; animation-fill-mode: both; }
+@keyframes after-dark-after-dark-backgroundcolor { 0% { background-color: var(--color-8); } 100% { background-color: var(--color-2); } }
+@keyframes after-dark-figure-dark-photo---cut { 0% { --after-dark-cut: 100%; } 100% { --after-dark-cut: 0%; } }
+@keyframes after-dark-figure-dark-photo-img-scale { 0% { scale: 1.12; } 100% { scale: 1; } }
+@keyframes after-dark-div-dark-copy-opacity { 0% { opacity: 0.32; } 100% { opacity: 1; } }
+@media (min-width: 900px) {
+  [data-8b-live] #after-dark { timeline-scope: --after-dark-t1; animation-range: cover 100vh cover calc(95.2381% - 90.4762vh); }
+  [data-8b-live] #after-dark .dark__run { view-timeline: --after-dark-t1 block; view-timeline-inset: 0; }
+  [data-8b-live] #after-dark .dark__hours > li:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) > .dark__photo, [data-8b-live] #after-dark .dark__hours > li:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) > .dark__photo > img, [data-8b-live] #after-dark .dark__hours > li:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) > .dark__copy { animation-timeline: --after-dark-t1; animation-fill-mode: both; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(2) > .dark__photo { animation-name: after-dark-figure-dark-photo---cut; animation-range: cover calc(4.7619% + 90.4762vh) cover calc(26.9841% + 46.0317vh); animation-timing-function: var(--ease-power2-inout); --cut: var(--after-dark-cut); }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(2) > .dark__photo > img { animation-name: after-dark-figure-dark-photo-img-scale; animation-range: cover calc(4.7619% + 90.4762vh) cover calc(36.5079% + 26.9841vh); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); transform: none; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(2) > .dark__copy { animation-name: after-dark-div-dark-copy-opacity; animation-range: cover calc(17.4603% + 65.0794vh) cover calc(26.9841% + 46.0317vh); animation-timing-function: linear; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(3) > .dark__photo { animation-name: after-dark-figure-dark-photo---cut; animation-range: cover calc(36.5079% + 26.9841vh) cover calc(58.7302% - 17.4603vh); animation-timing-function: var(--ease-power2-inout); --cut: var(--after-dark-cut); }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(3) > .dark__photo > img { animation-name: after-dark-figure-dark-photo-img-scale; animation-range: cover calc(36.5079% + 26.9841vh) cover calc(68.254% - 36.5079vh); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); transform: none; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(3) > .dark__copy { animation-name: after-dark-div-dark-copy-opacity; animation-range: cover calc(49.2063% + 1.5873vh) cover calc(58.7302% - 17.4603vh); animation-timing-function: linear; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(4) > .dark__photo { animation-name: after-dark-figure-dark-photo---cut; animation-range: cover calc(68.254% - 36.5079vh) cover calc(90.4762% - 80.9524vh); animation-timing-function: var(--ease-power2-inout); --cut: var(--after-dark-cut); }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(4) > .dark__photo > img { animation-name: after-dark-figure-dark-photo-img-scale; animation-range: cover calc(68.254% - 36.5079vh) cover calc(100% - 100vh); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); transform: none; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(4) > .dark__copy { animation-name: after-dark-div-dark-copy-opacity; animation-range: cover calc(80.9524% - 61.9048vh) cover calc(90.4762% - 80.9524vh); animation-timing-function: linear; }
+}
+@media (max-width: 899px) {
+  [data-8b-live] #after-dark { view-timeline: --after-dark-t1 block; view-timeline-inset: 0; animation-range: cover 40vh cover calc(100% - 100vh); }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(2) > .dark__photo { view-timeline: --after-dark-t3 block; animation-timeline: --after-dark-t3; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(3) > .dark__photo { view-timeline: --after-dark-t4 block; animation-timeline: --after-dark-t4; }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(4) > .dark__photo { view-timeline: --after-dark-t5 block; animation-timeline: --after-dark-t5; }
+  [data-8b-live] #after-dark .dark__hours > li > .dark__photo { view-timeline-inset: 0; animation-name: after-dark-figure-dark-photo---cut; animation-range: cover 12vh cover 60vh; animation-timing-function: var(--ease-power2-inout); animation-fill-mode: both; --cut: var(--after-dark-cut); }
+  [data-8b-live] #after-dark .dark__hours > li:nth-of-type(1) > .dark__photo { view-timeline: --after-dark-t2 block; animation-timeline: --after-dark-t2; }
+}
+}
+</style>
+<style data-8b-part="scene:lessons">
+@layer scenes {
+[data-8b-live] { --ease-power1-inout: linear(0, 0.0013, 0.005, 0.0112, 0.02, 0.0313, 0.045, 0.0612, 0.08, 0.1013, 0.125, 0.1512, 0.18, 0.2112, 0.245, 0.2813, 0.32, 0.3613, 0.405, 0.4512, 0.5, 0.5487, 0.595, 0.6388, 0.68, 0.7188, 0.755, 0.7887, 0.82, 0.8488, 0.875, 0.8988, 0.92, 0.9387, 0.955, 0.9688, 0.98, 0.9888, 0.995, 0.9988, 1); }
+[data-8b-live] #lessons .lessons__lanes { view-timeline: --lessons-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #lessons .lessons__lanes > li > .lessons__swimmer { animation-name: lessons-div-lessons-swimmer-translate; animation-timing-function: var(--ease-power1-inout); animation-timeline: --lessons-t1; animation-range: cover 18vh cover calc(55% + 15% * var(--i) - 31.5vh - 13.5vh * var(--i)); animation-fill-mode: both; transform: none; }
+[data-8b-live] #lessons .lessons__lanes > li > .lessons__num { animation-name: lessons-span-lessons-num-fill; animation-timeline: --lessons-t1; animation-range: cover calc(54% + 15% * var(--i) - 30.6vh - 13.5vh * var(--i)) cover calc(54.2% + 15% * var(--i) - 30.78vh - 13.5vh * var(--i)); animation-timing-function: linear; animation-fill-mode: both; }
+@keyframes lessons-div-lessons-swimmer-translate { 0% { translate: var(--lessons-from, 0px) 0px; } 100% { translate: 0px 0px; } }
+@keyframes lessons-span-lessons-num-fill { 0% { background-color: transparent; border-color: var(--color-1); color: var(--color-1); } 100% { background-color: var(--color-3); border-color: var(--color-3); color: var(--color-2); } }
+}
+</style>
+<style data-8b-part="scene:crew">
+@layer scenes {
+[data-8b-live] { --ease-power2-inout: linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); }
+[data-8b-live] #crew { timeline-scope: --crew-t1; }
+[data-8b-live] #crew .crew__row { view-timeline: --crew-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #crew .crew__row .crew__frame { animation-name: crew-ul-crew-row-span-crew-frame-translate, crew-ul-crew-row-span-crew-frame-opacity; animation-timeline: --crew-t1; animation-range: cover 26vh cover calc(71.4286% - 29.7143vh), cover 26vh cover calc(100% - 52vh); animation-timing-function: var(--ease-power2-inout), linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] #crew .crew__row > li > .crew__photo > img, [data-8b-live] #crew .crew__row > li > .m-text-7, [data-8b-live] #crew .crew__row > li > .m-text-5 { animation-range: cover calc(26vh - 18.5714vh * var(--i) + 23.8095% * var(--i)) cover calc(8.3333% + 23.8096% * var(--i) + 19.5vh - 18.5714vh * var(--i)); animation-timing-function: linear; }
+[data-8b-live] #crew .crew__row > li > .crew__photo > img { animation-name: crew-figure-crew-photo-img-filter; animation-timeline: --crew-t1; animation-fill-mode: both; }
+[data-8b-live] #crew .crew__row > li > .m-text-7, [data-8b-live] #crew .crew__row > li > .m-text-5 { animation-name: crew-h3-m-text-7-translate, crew-h3-m-text-7-opacity; animation-timeline: --crew-t1; animation-fill-mode: both; transform: none; }
+@keyframes crew-ul-crew-row-span-crew-frame-translate { 0%, 15% { translate: var(--crew-x0, 0px) var(--crew-y0, 0px); } 33.3333%, 48.3333% { translate: var(--crew-x1, 0px) var(--crew-y1, 0px); } 66.6667%, 81.6667% { translate: var(--crew-x2, 0px) var(--crew-y2, 0px); } 100% { translate: var(--crew-x3, 0px) var(--crew-y3, 0px); } }
+@keyframes crew-ul-crew-row-span-crew-frame-opacity { 0% { opacity: 1; } 92.8571% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes crew-figure-crew-photo-img-filter { 0% { filter: grayscale(1) brightness(0.72); } 100% { filter: grayscale(0) brightness(1); } }
+@keyframes crew-h3-m-text-7-translate { 0% { translate: 0px 18px; } 100% { translate: 0px 0px; } }
+@keyframes crew-h3-m-text-7-opacity { 0% { opacity: 0.3; } 100% { opacity: 1; } }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body class="m-text">
+<!-- navigation: top bar: four small black social tags, the Cannonball logo tab (appears after the first section), a Tickets button and a menu button; full-screen menu overlay -->
+<header id="nav" data-8b-section="navigation" data-logo="off">
+  <nav class="nav__bar" aria-label="Main">
+    <ul class="nav__social">
+      <li><a data-8b-placeholder="social" class="m-link-2" href="https://www.instagram.com/" aria-label="Instagram">IG</a></li>
+      <li><a data-8b-placeholder="social" class="m-link-2" href="https://www.tiktok.com/" aria-label="TikTok">TT</a></li>
+      <li><a data-8b-placeholder="social" class="m-link-2" href="https://www.youtube.com/" aria-label="YouTube">YT</a></li>
+      <li><a data-8b-placeholder="email" class="m-link-2" href="mailto:hello@cannonball.example">Email</a></li>
+    </ul>
+    <a class="nav__logo" href="#opening" aria-label="Cannonball, back to the top"><span class="nav__logo-text">Cannonball<sup>®</sup></span></a>
+    <div class="nav__end">
+      <a class="m-btn nav__cta" href="#passes"><span class="m-btn__label">Tickets</span></a>
+      <button class="m-icon-btn nav__menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="m-icon-btn__lines" aria-hidden="true"></span><span class="sr">Open the menu</span></button>
+    </div>
+  </nav>
+  <div class="menu" id="menu" hidden role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu__top"><button class="m-icon-btn menu__close" type="button"><span class="m-icon-btn__lines" aria-hidden="true"></span><span class="sr">Close the menu</span></button></div>
+    <ul class="menu__list">
+      <li><a class="m-link" href="#rides">The rides</a></li>
+      <li><a class="m-link" href="#zones">Zones</a></li>
+      <li><a class="m-link" href="#band">Season band</a></li>
+      <li><a class="m-link" href="#after-dark">After Dark</a></li>
+      <li><a class="m-link" href="#passes">Prices</a></li>
+      <li><a class="m-link" href="#lessons">Swim school</a></li>
+      <li><a class="m-link" href="#visit">Getting here</a></li>
+    </ul>
+    <p class="menu__foot m-text">Open every day from 10:00 · Weir Road, Leeds</p>
+  </div>
+</header>
+
+<main>
+<!-- opening: two screens: a full-bleed underwater photo with headline, lead, buttons and a serif tagline over a giant orange wordmark strap, then a black screen with a framed photo, a statement and five floating photo cards (four on phones) (animation: scene:opening) -->
+<section id="opening" data-8b-section="opening">
+  <div class="opening__first">
+    <div class="opening__photo"><div class="opening__photo-intro"><img class="opening__img" src="https://images.unsplash.com/photo-1627207534894-badea2f0d1a7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8c3dpbW1pbmclMjBnb2dnbGVzJTIwdW5kZXJ3YXRlcnxlbnwxfDB8fHwxNzkxNDcxMzc5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="A girl in a purple dive mask underwater, her hair floating and bubbles rising past her face" width="1600" height="1200" fetchpriority="high"></div></div>
+    <div class="opening__copy">
+      <h1 class="m-text-3 opening__title">One wristband, unlimited drops.</h1>
+      <p class="opening__lead"><span class="opening__ring" aria-hidden="true"></span><span>Twenty-two slides, a wave pool and a lazy river under one roof, warm all year.</span></p>
+      <div class="opening__actions">
+        <a class="m-btn" href="#passes"><span class="m-btn__label">Get a wristband</span></a>
+        <a class="m-link" href="#visit">Plan your visit</a>
+      </div>
+    </div>
+    <p class="m-text-4 opening__serif">The Water<br>Park—</p>
+  </div>
+  <div class="opening__mark">
+    <div class="opening__mark-pin">
+      <p class="opening__word" style="--len:11"><span class="opening__float"><span class="opening__word-text">Cannonball<sup>®</sup></span></span></p>
+    </div>
+  </div>
+  <div class="opening__second">
+    <div class="opening__window"><img src="https://images.unsplash.com/photo-1601142398465-a22358129044?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8cG9vbCUyMGp1bXAlMjBzcGxhc2h8ZW58MXwwfHx8MTc5MTQ3MTM3OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="Seen from underwater, a swimmer in red shorts hits the pool in a cannonball, wrapped in white bubbles" width="1600" height="1067"></div>
+    <h2 class="m-text-2 opening__statement">Scream on the way down, float all the way home.</h2>
+    <ul class="opening__cards" data-8b-items=":scope > li">
+      <li class="opening__card" style="--opening-li-opening-card-translate-from-2: 62vh; --opening-figure-opening-card-in-translate-to-2: -34vh"><figure class="opening__card-in"><img src="https://images.unsplash.com/photo-1778557403328-24ccdcc2a820?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHBvb2wlMjBmbG9hdCUyMHN1bW1lcnxlbnwxfDF8fHwxNzkxNDcxNTY0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=180&amp;q=60" alt="An orange-slice float drifting on bright blue water" width="1600" height="2400" loading="lazy"></figure></li>
+      <li class="opening__card" style="--opening-li-opening-card-translate-from-2: 92vh; --opening-figure-opening-card-in-translate-to-2: -20vh"><figure class="opening__card-in"><img src="https://images.unsplash.com/photo-1597552816368-19555394e9b9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8Y2hpbGQlMjBqdW1waW5nJTIwaW50byUyMHBvb2x8ZW58MXwwfHx8MTc5MTQ3MTM3Nnww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=270&amp;q=60" alt="A boy flipping upside down above the pool" width="1600" height="1247" loading="lazy"></figure></li>
+      <li class="opening__card" style="--opening-li-opening-card-translate-from-2: 50vh; --opening-figure-opening-card-in-translate-to-2: -44vh"><figure class="opening__card-in"><img src="https://images.unsplash.com/photo-1660873124561-96bab816549d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGNoaWxkJTIwanVtcGluZyUyMGludG8lMjBwb29sfGVufDF8MHx8fDE3OTE0NzEzNzZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;q=60" alt="A swimmer in a red costume diving head first into blue water" width="1600" height="1115" loading="lazy"></figure></li>
+      <li class="opening__card" style="--opening-li-opening-card-translate-from-2: 106vh; --opening-figure-opening-card-in-translate-to-2: -14vh"><figure class="opening__card-in"><img src="https://images.unsplash.com/photo-1762590796637-42a73cc558e9?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjB8fHBvb2wlMjBmbG9hdCUyMHN1bW1lcnxlbnwxfDF8fHwxNzkxNDcxNTY0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=150&amp;q=60" alt="Two people stretched out on striped floats" width="1600" height="2844" loading="lazy"></figure></li>
+      <li class="opening__card" style="--opening-li-opening-card-translate-from-2: 78vh; --opening-figure-opening-card-in-translate-to-2: -28vh"><figure class="opening__card-in"><img src="https://images.unsplash.com/photo-1626313680130-d18000ed7303?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTJ8fGNoaWxkJTIwanVtcGluZyUyMGludG8lMjBwb29sfGVufDF8MHx8fDE3OTE0NzEzNzZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;q=60" alt="A girl holding a pink ring and reaching for a beach ball" width="1600" height="1067" loading="lazy"></figure></li>
+    </ul>
+  </div>
+</section>
+<!-- rides: four full-screen ride sheets that stack as you scroll, each with a photo, name, zone, spec and one line (animation: scene:rides) -->
+<section id="rides" data-8b-section="rides">
+  <div class="rides__head wrap">
+    <h2 class="m-text-3" data-8b-motion="surface" data-8b-enter="90%">The big four</h2>
+    <p class="m-text rides__intro" data-8b-motion="surface" data-8b-enter="90%">Twenty-two slides in the park. These four are the ones with a queue, and the queue is worth it.</p>
+  </div>
+  <ol class="rides__list" data-8b-items=":scope > li">
+    <li class="rides__item">
+      <article class="rides__sheet">
+        <figure class="rides__photo"><img src="https://images.unsplash.com/photo-1691293882027-177e51726845?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8d2F0ZXIlMjBzbGlkZXxlbnwxfDB8fHwxNzkxNDcxNTE2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="Looking up a red open slide from the splash pool to the platform under a cloudy sky" width="1600" height="1088" loading="lazy"></figure>
+        <div class="rides__meta wrap">
+          <h3 class="m-text-2 rides__name">The Kraken</h3>
+          <span class="rides__rule" aria-hidden="true"></span>
+          <p class="m-text-7 rides__zone">Thrill Tower</p>
+          <p class="m-text-5 rides__spec">Trapdoor drop · 18 metres · from 1.3 m tall</p>
+        </div>
+        <p class="rides__line">Stand on the trapdoor, hear the countdown, lose the floor. Two seconds of nothing, then the longest scream in Leeds.</p>
+      </article>
+    </li>
+    <li class="rides__item">
+      <article class="rides__sheet">
+        <figure class="rides__photo"><img src="https://images.unsplash.com/photo-1603971226634-399526e508f5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d2F0ZXIlMjBzbGlkZXxlbnwxfDB8fHwxNzkxNDcxNTE2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="Clear blue and orange spiral tubes wound around a white tower against a blue sky" width="1600" height="1067" loading="lazy"></figure>
+        <div class="rides__meta wrap">
+          <h3 class="m-text-2 rides__name">Corkscrew</h3>
+          <span class="rides__rule" aria-hidden="true"></span>
+          <p class="m-text-7 rides__zone">Thrill Tower</p>
+          <p class="m-text-5 rides__spec">Twin spiral tubes · 140 metres · from 1.2 m tall</p>
+        </div>
+        <p class="rides__line">Two clear tubes wound round each other. Race a friend, watch them through the wall, lose by a splash.</p>
+      </article>
+    </li>
+    <li class="rides__item">
+      <article class="rides__sheet">
+        <figure class="rides__photo"><img src="https://images.unsplash.com/photo-1775807319100-caeac311698f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGF6eSUyMHJpdmVyfGVufDF8MHx8fDE3OTE0NzE1MTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="From above, rings of swimmers drifting down a turquoise lazy river between palms" width="1600" height="1067" loading="lazy"></figure>
+        <div class="rides__meta wrap">
+          <h3 class="m-text-2 rides__name">The Long Way Round</h3>
+          <span class="rides__rule" aria-hidden="true"></span>
+          <p class="m-text-7 rides__zone">The Lagoon</p>
+          <p class="m-text-5 rides__spec">Lazy river · 400 metres · all ages</p>
+        </div>
+        <p class="rides__line">Grab a ring and let the current do the rest: under the bridge, past the palms and round again.</p>
+      </article>
+    </li>
+    <li class="rides__item">
+      <article class="rides__sheet">
+        <figure class="rides__photo"><img src="https://images.unsplash.com/photo-1597097141677-2483d4ad83a2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHdhdmUlMjBwb29sfGVufDF8MHx8fDE3OTE0NzE1MTl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=60" alt="A young surfer in a yellow helmet carving inside a curling wave" width="1600" height="1008" loading="lazy"></figure>
+        <div class="rides__meta wrap">
+          <h3 class="m-text-2 rides__name">Big Swell</h3>
+          <span class="rides__rule" aria-hidden="true"></span>
+          <p class="m-text-7 rides__zone">The Lagoon</p>
+          <p class="m-text-5 rides__spec">Wave pool · waves up to 1.8 m · board sessions</p>
+        </div>
+        <p class="rides__line">Every ten minutes the horn goes and the deep end stands up. Board sessions on weekday evenings.</p>
+      </article>
+    </li>
+  </ol>
+</section>
+
+<!-- zones: a huge lowercase heading that pool-blue water rises through, a lead, three zone rows with ride lists and a closing serif line with two links (animation: scene:zones) -->
+<section id="zones" data-8b-section="zones">
+  <div class="zones__head">
+    <div class="zones__water"><h2 class="m-text-2 zones__title wrap" style="--len:19">what's in the water</h2></div>
+  </div>
+  <div class="zones__body wrap">
+    <p class="m-text-6 zones__lead" data-8b-motion="surface" data-8b-enter="90%">Three zones and one current running through all of them, from a nine-storey drop to a pool you can stand up in.</p>
+    <ul class="zones__list" data-8b-items=":scope > li">
+      <li class="zones__row" data-8b-motion="surface" data-8b-enter="90%">
+        <span class="zones__rule" aria-hidden="true" data-8b-motion="ripple" data-8b-enter="90%"></span>
+        <h3 class="m-text-3 zones__name">Thrill Tower —</h3>
+        <p class="m-text zones__text">Nine storeys of tube and trapdoor. Clear the height sign at the bottom of the stairs and you can ride every one.</p>
+        <ul class="zones__rides m-text" data-8b-items=":scope > li"><li>The Kraken</li><li>Corkscrew</li><li>Black Hole</li><li>Free Fall</li><li>Twin Racer</li><li>The Boomerang</li></ul>
+      </li>
+      <li class="zones__row" data-8b-motion="surface" data-8b-enter="90%">
+        <span class="zones__rule" aria-hidden="true" data-8b-motion="ripple" data-8b-enter="90%"></span>
+        <h3 class="m-text-3 zones__name">The Lagoon —</h3>
+        <p class="m-text zones__text">A wave pool, a lazy river and a heated beach of real sand, with a hot pool for the in-between.</p>
+        <ul class="zones__rides m-text" data-8b-items=":scope > li"><li>Big Swell</li><li>The Long Way Round</li><li>Rapids Run</li><li>Hot Pool</li><li>Sandbank Beach</li><li>Cabanas</li></ul>
+      </li>
+      <li class="zones__row" data-8b-motion="surface" data-8b-enter="90%">
+        <span class="zones__rule" aria-hidden="true" data-8b-motion="ripple" data-8b-enter="90%"></span>
+        <h3 class="m-text-3 zones__name">Shallows —</h3>
+        <p class="m-text zones__text">Knee-deep water, small slides and a giant tipping bucket, built for anyone under 1.2 metres and their grown-ups.</p>
+        <ul class="zones__rides m-text" data-8b-items=":scope > li"><li>Tipping Bucket</li><li>Little Kraken</li><li>Splash Pad</li><li>Toddler Cove</li><li>Duck Race</li><li>Baby Slides</li></ul>
+      </li>
+    </ul>
+    <div class="zones__cta" data-8b-motion="surface" data-8b-enter="90%">
+      <p class="m-text-4">Ready to get wet?</p>
+      <span class="zones__divider" aria-hidden="true"></span>
+      <a class="m-link" href="#passes">buy a band</a>
+      <a class="m-link" href="#visit">plan the trip</a>
+    </div>
+  </div>
+</section>
+
+<!-- wristband: black section: heading and text above one long orange strap holding six perks and three photos that travels sideways while the stage is held (animation: scene:band) -->
+<section id="band" data-8b-section="wristband">
+  <div class="band__run">
+    <div class="band__stage">
+      <div class="band__intro wrap">
+        <h2 class="m-text-3" data-8b-motion="surface" data-8b-enter="90%">One band. Every slide, all season.</h2>
+        <p class="m-text band__text" data-8b-motion="surface" data-8b-enter="90%">The season wristband is a membership you wear. Tap it at the gate, on a locker and at the café till, from the first weekend of March to the last of October.</p>
+      </div>
+      <div class="band__strap">
+        <ul class="band__track" data-8b-items=":scope > li">
+          <li class="band__perk"><h3 class="m-text-2 band__title">Every slide, every day</h3><p class="m-text">The Kraken at ten, the lazy river at four, the Kraken again at five to close.</p></li>
+          <li class="band__photo"><img src="https://images.unsplash.com/photo-1706843540963-ae52d784de62?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d2F0ZXIlMjBzbGlkZXxlbnwxfDB8fHwxNzkxNDcxNTE2fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=860&amp;q=60" alt="A grinning boy in goggles shooting out of an orange tube slide" width="1600" height="1067" loading="lazy"></li>
+          <li class="band__perk"><h3 class="m-text-2 band__title">First in</h3><p class="m-text">Band holders get the tower to themselves for the half hour before the gates open.</p></li>
+          <li class="band__perk"><h3 class="m-text-2 band__title">Locker on us</h3><p class="m-text">Tap any free locker and it is yours until you tap it again.</p></li>
+          <li class="band__photo"><img src="https://images.unsplash.com/photo-1790699593513-c3aacec2b8a2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHdhdGVyJTIwcGFyayUyMHNsaWRlJTIwdHViZXxlbnwxfDB8fHwxNzkxNDcxNTE3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=860&amp;q=60" alt="Two riders in a yellow ring coming down a red and white slide into the pool" width="1600" height="1067" loading="lazy"></li>
+          <li class="band__perk"><h3 class="m-text-2 band__title">Plus-one Tuesdays</h3><p class="m-text">Bring a friend every Tuesday in term time. They swim free; you look generous.</p></li>
+          <li class="band__perk"><h3 class="m-text-2 band__title">Chips on the wrist</h3><p class="m-text">Pay at the café with a tap and settle up at the gate on the way out.</p></li>
+          <li class="band__photo"><img src="https://images.unsplash.com/photo-1790699592497-0cefe74cc31d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHdhdGVyJTIwcGFyayUyMHNsaWRlJTIwdHViZXxlbnwxfDB8fHwxNzkxNDcxNTE3fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=860&amp;q=60" alt="Swimmers in life vests floating on white and yellow rings in a wide blue pool" width="1600" height="1067" loading="lazy"></li>
+          <li class="band__perk"><h3 class="m-text-2 band__title">Pause any time</h3><p class="m-text">Broken arm, new baby, exams: freeze the band for up to eight weeks a season.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- after-dark: Friday night session: head with a serif line, text and button beside four hours (19:00 to 22:30), each with a photo, title and sentence (animation: scene:after-dark) -->
+<section id="after-dark" data-8b-section="after-dark">
+  <div class="dark__run">
+    <div class="dark__stage wrap">
+      <div class="dark__head">
+        <p class="m-text-4 dark__serif">Fridays—</p>
+        <h2 class="m-text-2 dark__title">After Dark</h2>
+        <p class="m-text dark__text">Seven till eleven, over-18s only. The roof slides open, the lights go down and the slides glow from the inside.</p>
+        <a class="m-btn" href="#visit"><span class="m-btn__label">Book a Friday</span></a>
+      </div>
+      <ol class="dark__hours" data-8b-items=":scope > li" data-8b-fixed="4">
+        <li class="dark__hour">
+          <figure class="dark__photo"><img src="https://images.unsplash.com/photo-1632533269739-68d109b5900c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bmlnaHQlMjBzd2ltfGVufDF8MHx8fDE3OTE0NzE1MzV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=720&amp;q=60" alt="Two swimmers with orange and yellow floats in deep blue water at dusk" width="1600" height="1067" loading="lazy"></figure>
+          <div class="dark__copy"><p class="m-text-5 dark__time"><time datetime="19:00">19:00</time></p><h3 class="m-text-7">Doors at dusk</h3><p class="m-text">The lagoon turns the colour of the sky and the floats come out.</p></div>
+        </li>
+        <li class="dark__hour">
+          <figure class="dark__photo"><img src="https://images.unsplash.com/photo-1722599324357-749ede5411c5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cG9vbCUyMHBhcnR5JTIwbmlnaHQlMjBuZW9ufGVufDF8MHx8fDE3OTE0NzE1MzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=810&amp;q=60" alt="A long outdoor pool at nightfall with red and green lights scattered over the deck" width="1600" height="1200" loading="lazy"></figure>
+          <div class="dark__copy"><p class="m-text-5 dark__time"><time datetime="20:00">20:00</time></p><h3 class="m-text-7">Lights over the lagoon</h3><p class="m-text">Lamps around the deck, waves every ten minutes, a DJ in the lifeguard tower.</p></div>
+        </li>
+        <li class="dark__hour">
+          <figure class="dark__photo"><img src="https://images.unsplash.com/photo-1696104282336-b9f5341c4a33?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHN3aW1taW5nJTIwcG9vbCUyMG5pZ2h0JTIwbGlnaHRzfGVufDF8MHx8fDE3OTE0NzE1MzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=810&amp;q=60" alt="Looping slide tubes lit warm orange against the night sky" width="1600" height="1068" loading="lazy"></figure>
+          <div class="dark__copy"><p class="m-text-5 dark__time"><time datetime="21:00">21:00</time></p><h3 class="m-text-7">Slides lit from inside</h3><p class="m-text">Every tube on the tower glows, and the Kraken runs in the dark.</p></div>
+        </li>
+        <li class="dark__hour">
+          <figure class="dark__photo"><img src="https://images.unsplash.com/photo-1631831216148-e5d8472dc51c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fG5pZ2h0JTIwc3dpbXxlbnwxfDB8fHwxNzkxNDcxNTM1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=810&amp;q=60" alt="A woman floating on her back in dark, still water" width="1600" height="1063" loading="lazy"></figure>
+          <div class="dark__copy"><p class="m-text-5 dark__time"><time datetime="22:30">22:30</time></p><h3 class="m-text-7">Last float</h3><p class="m-text">Music off, lights low, one slow loop of the lazy river before the doors.</p></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- passes: one ticket card with a Day ticket / Season band tab switch, price, what is included and two actions beside a tall photo -->
+<section id="passes" data-8b-section="passes">
+  <div class="wrap">
+    <div class="passes__head">
+      <h2 class="m-text-3" data-8b-motion="surface" data-8b-enter="90%">Pick your band</h2>
+      <p class="m-text passes__text" data-8b-motion="surface" data-8b-enter="90%">Kids under three swim free. Every ticket includes a locker, and towels are a pound at the desk.</p>
+    </div>
+    <div class="passes__card" data-8b-motion="surface" data-8b-enter="90%">
+      <figure class="passes__photo" data-8b-motion="settle"><img src="https://images.unsplash.com/photo-1766157722714-c1b199b57ad4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTh8fHBvb2wlMjBmbG9hdCUyMHN1bW1lcnxlbnwxfDF8fHwxNzkxNDcxNTY0fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" alt="An amber swim ring floating at the edge of a tiled pool" width="1600" height="2133" loading="lazy"></figure>
+      <div class="passes__main">
+        <div class="passes__switch" role="tablist" aria-label="Ticket type">
+          <button class="passes__tab" type="button" role="tab" id="pass-tab-day" aria-controls="pass-day" aria-selected="true">Day ticket</button>
+          <button class="passes__tab" type="button" role="tab" id="pass-tab-season" aria-controls="pass-season" aria-selected="false" tabindex="-1">Season band</button>
+        </div>
+        <div class="passes__panels">
+          <div class="passes__panel" id="pass-day" role="tabpanel" aria-labelledby="pass-tab-day">
+            <div class="passes__offer">
+              <p class="m-text-6">Every slide from open to close, for one day.</p>
+              <p class="passes__price"><span class="passes__amount">£24</span><span class="m-text-5">per person</span></p>
+              <p class="m-text passes__note">Under-12s £18 · family of four £78</p>
+            </div>
+            <ul class="passes__list m-text" data-8b-items=":scope > li"><li>All twenty-two slides and the wave pool</li><li>A locker for the day</li><li>Lazy river, hot pool and the beach</li><li>Out and back in until 16:00</li></ul>
+          </div>
+          <div class="passes__panel" id="pass-season" role="tabpanel" aria-labelledby="pass-tab-season" hidden>
+            <div class="passes__offer">
+              <p class="m-text-6">Every slide, every day, March to October.</p>
+              <p class="passes__price"><span class="passes__amount">£89</span><span class="m-text-5">per season</span></p>
+              <p class="m-text passes__note">Under-12s £64 · or £12 a month</p>
+            </div>
+            <ul class="passes__list m-text" data-8b-items=":scope > li"><li>The tower to yourself before the gates open</li><li>Your own locker every visit</li><li>A friend free on Tuesdays in term time</li><li>Pause for up to eight weeks</li></ul>
+          </div>
+        </div>
+        <div class="passes__actions">
+          <a class="m-btn" href="#visit"><span class="m-btn__label">Buy online</span></a>
+          <a data-8b-placeholder="phone" class="m-link" href="tel:+441130000000">Call the desk</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- swim-school: pool-blue section with heading, lead and a Book a trial button above four swimming lanes, each with a number, photo, class name, ages and sentence (animation: scene:lessons) -->
+<section id="lessons" data-8b-section="swim-school">
+  <div class="wrap">
+    <div class="lessons__head">
+      <h2 class="m-text-3" data-8b-motion="surface" data-8b-enter="90%">Swim school</h2>
+      <p class="m-text-6 lessons__lead" data-8b-motion="surface" data-8b-enter="90%">From first float to fifty metres in ten Saturdays.</p>
+      <div class="lessons__aside" data-8b-motion="surface" data-8b-enter="90%">
+        <p class="m-text">Classes of six with two teachers in the water, on Saturday mornings before the park opens.</p>
+        <a class="m-btn" href="#visit"><span class="m-btn__label">Book a trial</span></a>
+      </div>
+    </div>
+    <ol class="lessons__lanes" data-8b-items=":scope > li">
+      <li class="lessons__lane">
+        <span class="lessons__num">1</span>
+        <div class="lessons__swimmer">
+          <figure class="lessons__photo"><img src="https://images.unsplash.com/photo-1726800820564-2eaecaa66b37?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjF8fHN3aW0lMjBpbnN0cnVjdG9yfGVufDF8MHx8fDE3OTE0NTQzNzF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=150&amp;q=60" alt="A mother holding her toddler on a yellow noodle in the pool" width="1600" height="1071" loading="lazy"></figure>
+          <div class="lessons__copy"><h3 class="m-text-7">Bubbles <span class="m-text-5">Ages 3–5</span></h3><p class="m-text">Faces in, blow out, giggle. A grown-up stays in the water for the first four weeks.</p></div>
+        </div>
+      </li>
+      <li class="lessons__lane">
+        <span class="lessons__num">2</span>
+        <div class="lessons__swimmer">
+          <figure class="lessons__photo"><img src="https://images.unsplash.com/photo-1542497299-99d5862669b4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c3dpbW1pbmclMjBsZXNzb24lMjBjaGlsZHxlbnwxfDB8fHwxNzkxNDU0MzY5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=150&amp;q=60" alt="A smiling boy lying on a bodyboard in sunlit water" width="1600" height="1067" loading="lazy"></figure>
+          <div class="lessons__copy"><h3 class="m-text-7">Floats <span class="m-text-5">Ages 4–6</span></h3><p class="m-text">Star shapes on the back, then on the front, then a few kicks holding a board.</p></div>
+        </div>
+      </li>
+      <li class="lessons__lane">
+        <span class="lessons__num">3</span>
+        <div class="lessons__swimmer">
+          <figure class="lessons__photo"><img src="https://images.unsplash.com/photo-1651614158095-b98b6c1da74b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c3dpbW1pbmclMjBsZXNzb24lMjBjaGlsZHxlbnwxfDB8fHwxNzkxNDU0MzY5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=150&amp;q=60" alt="A class of children kicking across the pool on pink kickboards" width="1600" height="1065" loading="lazy"></figure>
+          <div class="lessons__copy"><h3 class="m-text-7">Kicks <span class="m-text-5">Ages 5–8</span></h3><p class="m-text">Kickboards down the lane and back, breathing to the side, first strokes without help.</p></div>
+        </div>
+      </li>
+      <li class="lessons__lane">
+        <span class="lessons__num">4</span>
+        <div class="lessons__swimmer">
+          <figure class="lessons__photo"><img src="https://images.unsplash.com/photo-1630049038179-afaaebb62fe2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fHN3aW0lMjBpbnN0cnVjdG9yfGVufDF8MHx8fDE3OTE0NTQzNzF8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=160&amp;q=60" alt="A swimmer in a blue cap mid-stroke between lane ropes, spray flying" width="1600" height="1004" loading="lazy"></figure>
+          <div class="lessons__copy"><h3 class="m-text-7">Lengths <span class="m-text-5">Ages 7+</span></h3><p class="m-text">Twenty-five metres of front crawl without touching the rope, then fifty for the badge.</p></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- faq: six questions in native details elements beside a lifeguard photo and a Still unsure? block with the desk number -->
+<section id="faq" data-8b-section="faq">
+  <div class="wrap">
+    <div class="faq__head">
+      <h2 class="m-text-3" data-8b-motion="surface" data-8b-enter="90%">Before you jump</h2>
+      <p class="m-text faq__text" data-8b-motion="surface" data-8b-enter="90%">The questions the front desk hears most, answered once and properly.</p>
+    </div>
+    <div class="faq__body">
+      <div class="faq__list" data-8b-items=":scope > details">
+        <details class="faq__item"><summary><span class="m-text-7">How tall do I need to be for the big slides?</span><span class="faq__icon" aria-hidden="true"></span></summary><p class="m-text faq__answer">The Kraken and Corkscrew need 1.3 metres, most other tower slides 1.2. There is a measuring post at the bottom of every staircase, and staff at the top check again.</p></details>
+        <details class="faq__item"><summary><span class="m-text-7">Can we bring our own food?</span><span class="faq__icon" aria-hidden="true"></span></summary><p class="m-text faq__answer">Yes. Picnics are welcome on the terrace and in the family area; please leave glass at home. The café does hot food and coffee from 10:00.</p></details>
+        <details class="faq__item"><summary><span class="m-text-7">Do children need an adult in the water?</span><span class="faq__icon" aria-hidden="true"></span></summary><p class="m-text faq__answer">Under-eights need one adult in the water for every two children. Under-twelves can swim on their own as long as an adult is in the building.</p></details>
+        <details class="faq__item"><summary><span class="m-text-7">Can I pause my season band?</span><span class="faq__icon" aria-hidden="true"></span></summary><p class="m-text faq__answer">Yes. Injury, illness, exams or a new baby: email the desk and we freeze it for up to eight weeks a season.</p></details>
+        <details class="faq__item"><summary><span class="m-text-7">How warm is the water?</span><span class="faq__icon" aria-hidden="true"></span></summary><p class="m-text faq__answer">The lagoon and the slide pools sit at 30 °C, the hot pool at 34 °C. The roof opens on warm days and closes when it rains.</p></details>
+        <details class="faq__item"><summary><span class="m-text-7">Is the park step-free?</span><span class="faq__icon" aria-hidden="true"></span></summary><p class="m-text faq__answer">From the car park to the poolside, yes, with a pool hoist, a changing places room and free entry for carers.</p></details>
+      </div>
+      <aside class="faq__aside" data-8b-motion="surface" data-8b-enter="90%">
+        <figure class="faq__photo" data-8b-motion="settle"><img src="https://images.unsplash.com/photo-1563131934-4e62c674f28e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8bGlmZWd1YXJkfGVufDF8MXx8fDE3OTE0NzE1NjJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=670&amp;q=60" alt="A lifeguard on a tall chair under a red and white umbrella watching a busy outdoor pool" width="1600" height="2395" loading="lazy"></figure>
+        <p class="m-text-4">Still unsure?</p>
+        <p class="m-text">The desk picks up from 9:00 every day.</p>
+        <a data-8b-placeholder="phone" class="m-link" href="tel:+441130000000">0113 000 0000</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- lifeguards: black section: heading and text above four lifeguard portraits with name, role and note; an orange frame walks the row (animation: scene:crew) -->
+<section id="crew" data-8b-section="lifeguards">
+  <div class="wrap">
+    <div class="crew__head">
+      <h2 class="m-text-3" data-8b-motion="surface" data-8b-enter="90%">Forty lifeguards. Eyes on every lane.</h2>
+      <p class="m-text" data-8b-motion="surface" data-8b-enter="90%">There is a guard at the bottom of every slide and two on the wave pool at all times. The water is tested every hour, and the numbers go up on the board by the gate.</p>
+    </div>
+    <ul class="crew__row" data-8b-items=":scope > li">
+      <li class="crew__person"><figure class="crew__photo"><img src="https://images.unsplash.com/photo-1669151030267-7e7f82c3b2a2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c3dpbW1lciUyMHBvcnRyYWl0JTIwd2V0JTIwaGFpcnxlbnwxfDF8fHwxNzkxNDcxNTkwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=290&amp;q=60" alt="A weathered man in a wetsuit laughing on the beach, hair blown back" width="1600" height="2240" loading="lazy"></figure><h3 class="m-text-7">Dougie Reid</h3><p class="m-text-5 crew__role">Head lifeguard</p><p class="m-text crew__note">Twenty-two summers on the stand. Spots a tired swimmer from across the wave pool.</p></li>
+      <li class="crew__person"><figure class="crew__photo"><img src="https://images.unsplash.com/photo-1564564321441-e96763888581?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTF8fHN3aW0lMjBjb2FjaCUyMHBvcnRyYWl0fGVufDF8MHx8fDE3OTE0NzE1ODl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=580&amp;q=60" alt="A smiling woman in a red cap by the water" width="1600" height="1060" loading="lazy"></figure><h3 class="m-text-7">Hana Kovač</h3><p class="m-text-5 crew__role">Slide marshal</p><p class="m-text crew__note">Runs the top of the tower: one rider at a time, no exceptions, plenty of jokes.</p></li>
+      <li class="crew__person"><figure class="crew__photo"><img src="https://images.unsplash.com/photo-1586730621413-82bd62409eed?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8c3dpbSUyMGNvYWNoJTIwcG9ydHJhaXR8ZW58MXwwfHx8MTc5MTQ3MTU4OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=570&amp;q=60" alt="A bearded swimmer in a pink cap and goggles leaning on the pool edge, smiling" width="1600" height="1067" loading="lazy"></figure><h3 class="m-text-7">Tomás Ferreira</h3><p class="m-text-5 crew__role">Swim school lead</p><p class="m-text crew__note">Has taught three thousand children to float, and a few of their parents.</p></li>
+      <li class="crew__person"><figure class="crew__photo"><img src="https://images.unsplash.com/photo-1581232158426-db5b62736d3e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8c3dpbSUyMGNvYWNoJTIwcG9ydHJhaXR8ZW58MXwwfHx8MTc5MTQ3MTU4OXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=430&amp;q=60" alt="A woman resting her arms on the edge of a bright blue pool" width="1600" height="1434" loading="lazy"></figure><h3 class="m-text-7">Jill Hartley</h3><p class="m-text-5 crew__role">Water quality</p><p class="m-text crew__note">Tests every pool on the hour and writes the numbers on the board by the gate.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- visit: Find the deep end: aerial photo, where, when and talk-to-us blocks, and a party booking form -->
+<section id="visit" data-8b-section="visit">
+  <div class="wrap">
+    <h2 class="m-text-2 visit__title" data-8b-motion="surface" data-8b-enter="90%">Find the deep end</h2>
+    <div class="visit__grid">
+      <figure class="visit__photo" data-8b-motion="settle"><img src="https://images.unsplash.com/photo-1580889024581-1b25ac95156a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGF6eSUyMHJpdmVyfGVufDF8MHx8fDE3OTE0NzE1MTh8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=740&amp;q=60" alt="An aerial view of curving pools, a lazy river, palms and rows of white cabanas" width="1600" height="1200" loading="lazy"></figure>
+      <div class="visit__info">
+        <div class="visit__block" data-8b-motion="surface" data-8b-enter="90%">
+          <h3 class="m-text-5">Where</h3>
+          <address class="m-text-6">1 Example Road<br>Leeds LS11 0ZZ</address>
+          <p class="m-text">The 42 bus stops at the gate, ten minutes from Leeds station. Six hundred free parking spaces.</p>
+        </div>
+        <div class="visit__block" data-8b-motion="surface" data-8b-enter="90%">
+          <h3 class="m-text-5">When</h3>
+          <dl class="visit__hours m-text">
+            <div><dt>Monday to Thursday</dt><dd>10:00–19:00</dd></div>
+            <div><dt>Friday</dt><dd>10:00–23:00</dd></div>
+            <div><dt>Weekends and holidays</dt><dd>09:00–20:00</dd></div>
+          </dl>
+        </div>
+        <div class="visit__block" data-8b-motion="surface" data-8b-enter="90%">
+          <h3 class="m-text-5">Talk to us</h3>
+          <a data-8b-placeholder="phone" class="m-link" href="tel:+441130000000">0113 000 0000</a>
+          <a data-8b-placeholder="email" class="m-link" href="mailto:hello@cannonball.example">hello@cannonball.example</a>
+        </div>
+      </div>
+      <form data-8b-placeholder="form" class="visit__form" action="#" method="post" data-8b-motion="surface" data-8b-enter="90%">
+        <h3 class="m-text-7">Book a party</h3>
+        <p class="m-text">Birthdays for up to twenty: a cabana, an hour on the slides and pizza. Tell us the date and we will call you back.</p>
+        <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__input" name="name" type="text" autocomplete="name" required></label>
+        <label class="m-field"><span class="m-field__label">Email</span><input class="m-field__input" name="email" type="email" autocomplete="email" required></label>
+        <label class="m-field"><span class="m-field__label">Date</span><input class="m-field__input" name="date" type="date"></label>
+        <label class="m-field"><span class="m-field__label">Guests</span><input class="m-field__input" name="guests" type="number" min="1" max="20" inputmode="numeric"></label>
+        <button class="m-btn" type="submit"><span class="m-btn__label">Ask for a date</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- footer: black footer: giant orange wordmark, serif line, two link lists, opening hours and legal line -->
+<footer id="footer" data-8b-section="footer">
+  <div class="wrap">
+    <p class="footer__word" style="--len:11" data-8b-motion="surface" data-8b-enter="90%">Cannonball<sup>®</sup></p>
+    <div class="footer__grid">
+      <p class="m-text-4 footer__serif" data-8b-motion="surface" data-8b-enter="90%">The Water<br>Park—</p>
+      <ul class="footer__links">
+        <li class="m-text-5 footer__label">The park</li>
+        <li><a class="m-link" href="#rides">The rides</a></li>
+        <li><a class="m-link" href="#zones">Zones</a></li>
+        <li><a class="m-link" href="#after-dark">After Dark</a></li>
+        <li><a class="m-link" href="#lessons">Swim school</a></li>
+      </ul>
+      <ul class="footer__links">
+        <li class="m-text-5 footer__label">Follow</li>
+        <li><a data-8b-placeholder="social" class="m-link" href="https://www.instagram.com/">Instagram</a></li>
+        <li><a data-8b-placeholder="social" class="m-link" href="https://www.tiktok.com/">TikTok</a></li>
+        <li><a data-8b-placeholder="social" class="m-link" href="https://www.youtube.com/">YouTube</a></li>
+      </ul>
+      <div class="footer__hours">
+        <p class="m-text-5 footer__label">Hours</p>
+        <p><strong>Every day from 10:00</strong>Fridays till 23:00 for After Dark. Closed 25 December.</p>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>© 2026 Cannonball Water Park Ltd · 1 Example Road, Leeds LS11 0ZZ · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+      <a class="m-link" href="#opening">Back to the top</a>
+    </div>
+  </div>
+</footer>
+
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const button = nav.querySelector('.nav__menu-btn');
+  const menu = nav.querySelector('.menu');
+  const close = nav.querySelector('.menu__close');
+  const first = document.querySelector('main > section');
+  const setLogo = () => {
+    const shown = !first || first.getBoundingClientRect().bottom <= innerHeight + 2;
+    nav.dataset.logo = shown ? 'on' : 'off';
+  };
+  let ticking = false;
+  const onScroll = () => { if (ticking) return; ticking = true; requestAnimationFrame(() => { ticking = false; setLogo(); }); };
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', onScroll);
+  setLogo();
+  const open = () => {
+    menu.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
+    window.motionKit?.wheel?.stop();
+    menu.querySelector('a')?.focus();
+  };
+  const shut = (restore = true) => {
+    if (menu.hidden) return;
+    menu.hidden = true;
+    button.setAttribute('aria-expanded', 'false');
+    window.motionKit?.wheel?.start();
+    if (restore) button.focus();
+  };
+  button.addEventListener('click', () => (menu.hidden ? open() : shut()));
+  close.addEventListener('click', () => shut());
+  menu.addEventListener('click', event => { if (event.target.closest('a')) shut(false); });
+  addEventListener('keydown', event => { if (event.key === 'Escape') shut(); });
+})();
+</script>
+<script data-8b-part="section-script:opening">
+(() => {
+  const section = document.getElementById('opening');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => section.classList.toggle('is-away', !entry.isIntersecting)).observe(section);
+})();
+</script>
+<script data-8b-part="section-script:passes">
+(() => {
+  const section = document.getElementById('passes');
+  const tabs = [...section.querySelectorAll('[role="tab"]')];
+  const select = tab => tabs.forEach(item => {
+    const on = item === tab;
+    item.setAttribute('aria-selected', String(on));
+    item.tabIndex = on ? 0 : -1;
+    const panel = document.getElementById(item.getAttribute('aria-controls'));
+    if (panel) panel.hidden = !on;
+  });
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(tab));
+    tab.addEventListener('keydown', event => {
+      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+      event.preventDefault();
+      const next = tabs[(index + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      select(next);
+      next.focus();
+    });
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+</script>
+<script data-8b-part="scene-script:opening">
+motionKit.scene("opening", () => {
+  const word = document.querySelector("#opening .opening__word");
+  const text = word.querySelector(".opening__word-text");
+  const logo = document.querySelector('[data-8b-section="navigation"] .nav__logo');
+  motionKit.measure(() => {
+    const chip = text.offsetWidth + .28 * parseFloat(getComputedStyle(word).fontSize);
+    const inset = Math.max(0, (word.offsetWidth - chip) / 2);
+    const target = logo.getBoundingClientRect();
+    const scale = target.width / chip;
+    motionKit.set(word, {
+      "--opening-x": `${target.left - word.offsetLeft - scale * inset}px`,
+      "--opening-y": `${target.top - word.offsetTop}px`,
+      "--opening-scale": String(scale),
+      "--opening-inset": `${inset}px`
+    });
+  });
+});
+</script>
+<script data-8b-part="scene-script:zones">
+motionKit.scene("zones", () => {
+  const make = (tag, attrs, ...children) => { const el = tag.startsWith('svg:') ? document.createElementNS('http://www.w3.org/2000/svg', tag.slice(4)) : document.createElement(tag); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); el.append(...children); return el; };
+  const copy = (element, deep, attrs = {}) => { const el = element.cloneNode(deep); for (const [k, v] of Object.entries(attrs)) v == null ? el.removeAttribute(k) : el.setAttribute(k, v); return el; };
+  document.querySelector("#zones .zones__water").before(make("div", { class: "zones__dry", "aria-hidden": "true" }, copy(document.querySelector("#zones .zones__water > h2:nth-of-type(1)"), true, { "style": "--len:19" })));
+});
+</script>
+<script data-8b-part="scene-script:band">
+motionKit.scene("band", () => {
+  const run = document.querySelector("#band .band__run");
+  const track = run.querySelector(".band__track");
+  motionKit.measure(() => motionKit.set(run, { "--travel": `${Math.max(0, track.scrollWidth - document.documentElement.clientWidth)}px` }));
+});
+</script>
+<script data-8b-part="scene-script:lessons">
+motionKit.scene("lessons", () => {
+  const lanes = [...document.querySelectorAll("#lessons .lessons__lane")].map(lane => [lane.querySelector(".lessons__swimmer"), lane.querySelector(".lessons__num")]);
+  motionKit.measure(() => lanes.forEach(([swimmer, number]) => {
+    const start = number.offsetTop + number.offsetHeight <= swimmer.offsetTop ? 0 : number.offsetLeft + number.offsetWidth + 24;
+    motionKit.set(swimmer, { "--lessons-from": `${start - swimmer.offsetLeft}px` });
+  }));
+});
+</script>
+<script data-8b-part="scene-script:crew">
+motionKit.scene("crew", () => {
+  const row = document.querySelector("#crew .crew__row");
+  const photos = [...row.querySelectorAll(".crew__photo")];
+  const frame = document.createElement("span");
+  frame.className = "crew__frame";
+  frame.setAttribute("aria-hidden", "true");
+  row.append(frame);
+  motionKit.measure(() => {
+    const vars = { width: `${photos[0].offsetWidth}px`, height: `${photos[0].offsetHeight}px` };
+    photos.forEach((photo, index) => {
+      vars[`--crew-x${index}`] = `${photo.offsetLeft}px`;
+      vars[`--crew-y${index}`] = `${photo.offsetTop}px`;
+    });
+    motionKit.set(frame, vars);
+  });
+});
+</script>
+</body>
+</html>

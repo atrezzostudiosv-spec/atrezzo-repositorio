@@ -1,0 +1,43 @@
+{
+  "slug": "spare-hour",
+  "name": "Spare Hour",
+  "categories": [
+    "Community"
+  ],
+  "upstream": "https://github.com/8bsite/nonprofit-website-template",
+  "demo": "https://8b.com/templates/spare-hour/demo.html",
+  "design_md_url": "https://8b.com/templates/spare-hour/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "eb0188ac071f909db6e4c58f9612c79786eca682",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "b023c3149c8513417ab3b59fade3920b0c8f775d",
+    "README.md": "bc7088f3bf1ae866830db9b3648f43c8b9f30300",
+    "AGENTS.md": "85f6e166857479431c033204e3ecac095c61f54f",
+    "index.html": "2abc0676ed69eaed0969f06caa4154badd588134",
+    "index.gsap.html": "3ad92704eb7f9f693f87893f52fe65ac4bed1720"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "06da8fd27440116d4d7d0d53e41f0dec3928d70911490db8ca44383902609b3e",
+    "README.md": "e7e801ae49e252f8327aac1c1de4b2387c62c7872040fe56be4211a222881dcf",
+    "AGENTS.md": "64bd256315802ace6db9bc6575c7d5ddca66484cfb3d2583f93bfb7ac373618a",
+    "index.html": "9d474f7ff84e19bb97b2a6d51be3bc34bafa310de986ca303b2bf9062e44dbe3",
+    "index.gsap.html": "d3ee9c33c3906d797118352af447d3cb57369f73d908d549c2f864a01fad30e9"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

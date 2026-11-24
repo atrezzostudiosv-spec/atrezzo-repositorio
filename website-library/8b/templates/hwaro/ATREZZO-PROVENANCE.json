@@ -1,0 +1,43 @@
+{
+  "slug": "hwaro",
+  "name": "Hwaro",
+  "categories": [
+    "Food and drink"
+  ],
+  "upstream": "https://github.com/8bsite/korean-restaurant-website-template",
+  "demo": "https://8b.com/templates/hwaro/demo.html",
+  "design_md_url": "https://8b.com/templates/hwaro/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "bb30f8d9bf767b0077f002e83274b367e5f863c1",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "66fd1d19ab538ae5bb11ca1ef27e1611cc473afb",
+    "README.md": "7edea88bf4a7ba65ad7af2b2274654e1838a04e2",
+    "AGENTS.md": "24761e5b7c3e2b6c1b96aeb2ccbee09704b0cd79",
+    "index.html": "6139821e4051beb033b1883e23cba14de971df75",
+    "index.gsap.html": "bf897209b662cc41ad2ec9494a5c208ab1406c4e"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "7dd7f5c3ee2d2cf798490dab2b17b4e04d297930a9c2e3b6d00944e636aa9a7f",
+    "README.md": "fba353c9293a0b2da7d72dd37c19df7e7418a2f4f2c4ed23b8c4fd53fc28a9b6",
+    "AGENTS.md": "39329ee73eb0d266249f491c347c22cfbb478591a28d24aaa227346cd43b7975",
+    "index.html": "c3dd9e7d5254cb2f29f2d650540678ac199d0cd76a0231974951a340ce1f397e",
+    "index.gsap.html": "31424488404818cebc2f0f01e1ac4e97525c5c10eab3bc44c43a20102b3ac153"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

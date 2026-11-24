@@ -1,0 +1,44 @@
+{
+  "slug": "merge",
+  "name": "merge",
+  "categories": [
+    "Education",
+    "Local business"
+  ],
+  "upstream": "https://github.com/8bsite/driving-school-website-template",
+  "demo": "https://8b.com/templates/merge/demo.html",
+  "design_md_url": "https://8b.com/templates/merge/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "9d8dcda4723021f961323827aeb656d7d5a028a1",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "584749e6d57538f44834dcf802e00129b272420b",
+    "README.md": "91a275c20ae194cb13758f5a1c18542bce1efdc2",
+    "AGENTS.md": "a1606292ae5815f28133f1d5fa4b031ce05c9a9f",
+    "index.html": "38e74bd7a7fa863de4a4555d27407949f4fe5946",
+    "index.gsap.html": "b11d332b72a8d377055d84366a033fe21be72834"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "f34f7b14fae453f8af2f0d70b278cc5915fe3d0d1a3a8155bab57b7b06b85b9a",
+    "README.md": "deb685d9413b69cf993327ad8fbde86f60e426b05fab964042d2f53d1b2e4748",
+    "AGENTS.md": "6d517a575615ee5fd03973600feb2c1af87cdfec59a086cdc606f152d111d96c",
+    "index.html": "c36cfbe116b088c2fa7af4098e71486be16f8f181f7668c430cb446c4c689fcd",
+    "index.gsap.html": "1fcee231f23f78bd4f737807042f0746a040ffc0be4c0e57fe0350dab5b9fd76"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

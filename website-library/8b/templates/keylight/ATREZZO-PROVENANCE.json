@@ -1,0 +1,44 @@
+{
+  "slug": "keylight",
+  "name": "Keylight Mortgages",
+  "categories": [
+    "Finance",
+    "Professional services"
+  ],
+  "upstream": "https://github.com/8bsite/mortgage-broker-website-template",
+  "demo": "https://8b.com/templates/keylight/demo.html",
+  "design_md_url": "https://8b.com/templates/keylight/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "05002d8f554d428c185f28880569131cfb195e3b",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "31c1f0c6ca642a8e71a6149436166fa26c21f495",
+    "README.md": "0e4fbea6f294d0e6f00a23969242082e957349b9",
+    "AGENTS.md": "fe4b567b90d2eda32be419a1d660e65e504dd33e",
+    "index.html": "5ea148d6a60f82efe88ea08e96e6984c62aa7f43",
+    "index.gsap.html": "0d27b970e298dde94618c370b306ccce7721f8af"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "1d65a549937e866b5f1252b79dc0237c85db19880a1db7066ef39508b7d153af",
+    "README.md": "89c0ea3c3ddda731656400b0d63a4527f0bc37df0f4d4b5ac5affdedceae01d7",
+    "AGENTS.md": "5292a91ca5f3f9ab709ff8b0ad083456b3c634a542ff065b89cfa05680a3d5c7",
+    "index.html": "ddf89828a5281c3c0e2a5191eeee5bc4f2f0ddd34e1aa19a71a2fc9dcd88671c",
+    "index.gsap.html": "b922c5d1caa8db90c442b43b5165efbab91d9cc4661de903c977f788220e6723"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

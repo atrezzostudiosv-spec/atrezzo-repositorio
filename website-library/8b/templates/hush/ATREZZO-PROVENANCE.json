@@ -1,0 +1,44 @@
+{
+  "slug": "hush",
+  "name": "Hush",
+  "categories": [
+    "Product and app",
+    "Shop"
+  ],
+  "upstream": "https://github.com/8bsite/electric-scooter-website-template",
+  "demo": "https://8b.com/templates/hush/demo.html",
+  "design_md_url": "https://8b.com/templates/hush/DESIGN.md",
+  "license": "MIT",
+  "client_ready": false,
+  "visual_qa": "pending",
+  "commit": "0c0f7655108a6c68f53ddd935fc049efd6802572",
+  "status": "source-imported-not-qa-approved",
+  "files": [
+    "AGENTS.md",
+    "CREDITS.md",
+    "LICENSE",
+    "README.md",
+    "index.gsap.html",
+    "index.html"
+  ],
+  "blob_sha1": {
+    "LICENSE": "f88bd5f31f9c756b28d741478845dd7d189c1efe",
+    "CREDITS.md": "fd2ce99eb11429e33819e5a94953a0b4d9a2be83",
+    "README.md": "add1f05bc2c7143a8629e6571eb29c1dbbfd470c",
+    "AGENTS.md": "869ef4135a990acfa09857443b1b2d908bd0d429",
+    "index.html": "2fbddc277076a35f6cdd40534d2e369c863312a3",
+    "index.gsap.html": "53d8efed67ef3f091e44512a223db6cfe852be7a"
+  },
+  "sha256": {
+    "LICENSE": "bf6dc1ef87d6f84fe3962bf6a46179cd9bbeb4c713a6caf024add08be792578b",
+    "CREDITS.md": "b3f80ac7e1658f337124d38f1ba7854eba45081a5b7ef1a802d8277357e03086",
+    "README.md": "296759594a08d5e4e55e367579b91300d1b5a720d1e898983d77c19b4065ecd3",
+    "AGENTS.md": "3d3b9ca6657874f47767e4cc1a1154cf1e29efc14a017eb078a060362359f1e5",
+    "index.html": "3eabe372ab417245f1e1532acf8487189fbec9339fb2d6136f79f8ae0936cec4",
+    "index.gsap.html": "edee53fd0d463813da0b88785f4cf2f69842fc67e6de47b8aa209ae1b2c135ea"
+  },
+  "excluded": [
+    "previews/ (binary media and screenshots not copied)"
+  ],
+  "third_party": "Remote demo assets remain third-party. No external media downloaded. Replace photos, brand, example data and contacts before client use; check CREDITS and separate GSAP/Lenis/font terms."
+}

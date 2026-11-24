@@ -1,0 +1,1411 @@
+<!doctype html>
+<!--
+  Free website template by 8B: https://8b.com/templates/elbowroom/
+  Source: https://github.com/8bsite/self-storage-website-template
+  MIT License (code) https://8b.com/ · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+  Scroll motion: CSS scroll-driven animations and an inline script, no libraries. A GSAP build of this page: index.gsap.html.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elbowroom Storage — self storage in Salford, open 24/7</title>
+<meta name="description" content="Elbowroom keeps what you are not using yet: 612 dry, lit and alarmed storage units in Salford, from a locker to a garage. Book in four minutes, pay by the month, leave whenever you like.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elbowroom Storage — self storage in Salford, open 24/7">
+<meta property="og:description" content="Elbowroom keeps what you are not using yet: 612 dry, lit and alarmed storage units in Salford, from a locker to a garage. Book in four minutes, pay by the month, leave whenever you like.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23ffd21a'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23121212'%3EE%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFo1Dp.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1YmV.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.1.woff2) format('woff2');
+  unicode-range: U+200d, U+2620, U+26a7, U+fe0f, U+1f308, U+1f38c, U+1f3c1, U+1f3f3-1f3f4, U+1f6a9, U+e0062-e0063, U+e0065, U+e0067, U+e006c, U+e006e, U+e0073-e0074, U+e0077, U+e007f;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.2.woff2) format('woff2');
+  unicode-range: U+23, U+2a, U+30-39, U+a9, U+ae, U+200d, U+203c, U+2049, U+20e3, U+2122, U+2139, U+2194-2199, U+21a9-21aa, U+23cf, U+23e9-23ef, U+23f8-23fa, U+24c2, U+25aa-25ab, U+25b6, U+25c0, U+25fb-25fe, U+2611, U+2622-2623, U+2626, U+262a, U+262e-262f, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663, U+2665-2666, U+2668, U+267b, U+267e-267f, U+2695, U+269b-269c, U+26a0, U+26a7, U+26aa-26ab, U+26ce, U+26d4, U+2705, U+2714, U+2716, U+271d, U+2721, U+2733-2734, U+2747, U+274c, U+274e, U+2753-2755, U+2757, U+2764, U+2795-2797, U+27a1, U+27b0, U+27bf, U+2934-2935, U+2b05-2b07, U+2b1b-2b1c, U+2b55, U+3030, U+303d, U+3297, U+3299, U+fe0f, U+1f170-1f171, U+1f17e-1f17f, U+1f18e, U+1f191-1f19a, U+1f201-1f202, U+1f21a, U+1f22f, U+1f232-1f23a, U+1f250-1f251, U+1f310, U+1f3a6, U+1f3b5-1f3b6, U+1f3bc, U+1f3e7, U+1f441, U+1f499-1f49c, U+1f49f-1f4a0, U+1f4a2, U+1f4ac-1f4ad, U+1f4b1-1f4b2, U+1f4b9, U+1f4db, U+1f4f2-1f4f6, U+1f500-1f50a, U+1f515, U+1f518-1f524, U+1f52f-1f53d, U+1f549, U+1f54e, U+1f5a4, U+1f5e8, U+1f5ef, U+1f6ab, U+1f6ad-1f6b1, U+1f6b3, U+1f6b7-1f6bc, U+1f6be, U+1f6c2-1f6c5, U+1f6d0-1f6d1, U+1f6d7, U+1f6dc, U+1f7e0-1f7eb, U+1f7f0, U+1f90d-1f90e, U+1f9e1, U+1fa75-1fa77, U+1faaf;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.3.woff2) format('woff2');
+  unicode-range: U+231a-231b, U+2328, U+23f0-23f3, U+2602, U+260e, U+2692, U+2694, U+2696-2697, U+2699, U+26b0-26b1, U+26cf, U+26d1, U+26d3, U+2702, U+2709, U+270f, U+2712, U+fe0f, U+1f302, U+1f321, U+1f392-1f393, U+1f3a9, U+1f3bd, U+1f3ee, U+1f3f7, U+1f3fa, U+1f451-1f462, U+1f484, U+1f489-1f48a, U+1f48c-1f48e, U+1f4a1, U+1f4a3, U+1f4b0, U+1f4b3-1f4b8, U+1f4bb-1f4da, U+1f4dc-1f4f1, U+1f4ff, U+1f50b-1f514, U+1f516-1f517, U+1f526-1f529, U+1f52c-1f52e, U+1f550-1f567, U+1f56f-1f570, U+1f576, U+1f587, U+1f58a-1f58d, U+1f5a5, U+1f5a8, U+1f5b1-1f5b2, U+1f5c2-1f5c4, U+1f5d1-1f5d3, U+1f5dc-1f5de, U+1f5e1, U+1f5f3, U+1f6aa, U+1f6ac, U+1f6bd, U+1f6bf, U+1f6c1, U+1f6cb, U+1f6cd-1f6cf, U+1f6d2, U+1f6e0-1f6e1, U+1f6f0, U+1f97b-1f97f, U+1f9af, U+1f9ba, U+1f9e2-1f9e6, U+1f9ea-1f9ec, U+1f9ee-1f9f4, U+1f9f7-1f9ff, U+1fa71-1fa74, U+1fa79-1fa7b, U+1fa86, U+1fa91-1fa93, U+1fa96, U+1fa99-1faa0, U+1faa2-1faa7, U+1faaa-1faae;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.4.woff2) format('woff2');
+  unicode-range: U+265f, U+26bd-26be, U+26f3, U+26f8, U+fe0f, U+1f004, U+1f0cf, U+1f380-1f384, U+1f386-1f38b, U+1f38d-1f391, U+1f396-1f397, U+1f399-1f39b, U+1f39e-1f39f, U+1f3a3-1f3a5, U+1f3a7-1f3a9, U+1f3ab-1f3b4, U+1f3b7-1f3bb, U+1f3bd-1f3c0, U+1f3c5-1f3c6, U+1f3c8-1f3c9, U+1f3cf-1f3d3, U+1f3f8-1f3f9, U+1f47e, U+1f4e2, U+1f4f7-1f4fd, U+1f52b, U+1f579, U+1f58c-1f58d, U+1f5bc, U+1f6f7, U+1f6f9, U+1f6fc, U+1f93f, U+1f941, U+1f945, U+1f947-1f94f, U+1f9e7-1f9e9, U+1f9f5-1f9f6, U+1fa70-1fa71, U+1fa80-1fa81, U+1fa83-1fa85, U+1fa87-1fa88, U+1fa94-1fa95, U+1fa97-1fa98, U+1faa1, U+1faa9;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.5.woff2) format('woff2');
+  unicode-range: U+2693, U+26e9-26ea, U+26f1-26f2, U+26f4-26f5, U+26fa, U+26fd, U+2708, U+fe0f, U+1f301, U+1f303, U+1f306-1f307, U+1f309, U+1f310, U+1f3a0-1f3a2, U+1f3aa, U+1f3cd-1f3ce, U+1f3d5, U+1f3d7-1f3db, U+1f3df-1f3e6, U+1f3e8-1f3ed, U+1f3ef-1f3f0, U+1f488, U+1f492, U+1f4ba, U+1f54b-1f54d, U+1f5fa-1f5ff, U+1f680-1f6a2, U+1f6a4-1f6a8, U+1f6b2, U+1f6d1, U+1f6d5-1f6d6, U+1f6dd-1f6df, U+1f6e2-1f6e5, U+1f6e9, U+1f6eb-1f6ec, U+1f6f3-1f6f6, U+1f6f8, U+1f6fa-1f6fb, U+1f9bc-1f9bd, U+1f9ed, U+1f9f3, U+1fa7c;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.6.woff2) format('woff2');
+  unicode-range: U+2615, U+fe0f, U+1f32d-1f330, U+1f336, U+1f33d, U+1f345-1f37f, U+1f382, U+1f52a, U+1f942-1f944, U+1f950-1f96f, U+1f99e, U+1f9aa, U+1f9c0-1f9cb, U+1fad0-1fadb;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.7.woff2) format('woff2');
+  unicode-range: U+200d, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26a1, U+26c4-26c5, U+26c8, U+26f0, U+2728, U+2744, U+2b1b, U+2b50, U+fe0f, U+1f300, U+1f304-1f305, U+1f308, U+1f30a-1f30f, U+1f311-1f321, U+1f324-1f32c, U+1f331-1f335, U+1f337-1f33c, U+1f33e-1f344, U+1f3d4, U+1f3d6, U+1f3dc-1f3de, U+1f3f5, U+1f400-1f43f, U+1f490, U+1f4a7, U+1f4ab, U+1f4ae, U+1f525, U+1f54a, U+1f573, U+1f577-1f578, U+1f648-1f64a, U+1f940, U+1f980-1f9ae, U+1f9ba, U+1fa90, U+1faa8, U+1fab0-1fabd, U+1fabf, U+1face-1facf, U+1fae7;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.8.woff2) format('woff2');
+  unicode-range: U+200d, U+2640, U+2642, U+2695-2696, U+26f7, U+26f9, U+2708, U+2764, U+fe0f, U+1f33e, U+1f373, U+1f37c, U+1f384-1f385, U+1f393, U+1f3a4, U+1f3a8, U+1f3c2-1f3c4, U+1f3c7, U+1f3ca-1f3cc, U+1f3eb, U+1f3ed, U+1f3fb-1f3ff, U+1f466-1f478, U+1f47c, U+1f481-1f483, U+1f486-1f487, U+1f48b, U+1f48f, U+1f491, U+1f4bb-1f4bc, U+1f527, U+1f52c, U+1f574-1f575, U+1f57a, U+1f645-1f647, U+1f64b, U+1f64d-1f64e, U+1f680, U+1f692, U+1f6a3, U+1f6b4-1f6b6, U+1f6c0, U+1f6cc, U+1f91d, U+1f926, U+1f930-1f931, U+1f934-1f93a, U+1f93c-1f93e, U+1f977, U+1f9af-1f9b3, U+1f9b8-1f9b9, U+1f9bc-1f9bd, U+1f9cc-1f9cf, U+1f9d1-1f9df, U+1fa82, U+1fac3-1fac5;
+}
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c8NTkAviSjcK1OSSywi.9.woff2) format('woff2');
+  unicode-range: U+200d, U+261d, U+2620, U+2639-263a, U+2665, U+270a-270d, U+2728, U+2763-2764, U+2b50, U+fe0f, U+1f31a-1f31f, U+1f32b, U+1f383, U+1f389, U+1f3fb-1f3ff, U+1f440-1f450, U+1f463-1f465, U+1f479-1f47b, U+1f47d-1f480, U+1f485, U+1f48b-1f48c, U+1f493-1f49f, U+1f4a4-1f4a6, U+1f4a8-1f4ab, U+1f4af, U+1f525, U+1f573, U+1f590, U+1f595-1f596, U+1f5a4, U+1f5e3, U+1f600-1f644, U+1f648-1f64a, U+1f64c, U+1f64f, U+1f90c-1f925, U+1f927-1f92f, U+1f932-1f933, U+1f970-1f976, U+1f978-1f97a, U+1f9a0, U+1f9b4-1f9b7, U+1f9bb, U+1f9be-1f9bf, U+1f9d0, U+1f9e0-1f9e1, U+1fa75-1fa79, U+1fac0-1fac2, U+1fae0-1fae6, U+1fae8, U+1faf0-1faf8;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QSIjuyw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89SCIjuyw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TyIjuyw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89MCIjuyw.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QyIjuyw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89QiIjuyw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playpen Sans';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playpensans/v22/dg4i_pj1p6gXP0gzAZgm4c89TCIj.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFrlDpITI.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFp1DpITI.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFoFDpITI.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFrFDpITI.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFrVDpITI.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'TikTok Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70kbu7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhggMrrmAvSNAHtMV7v5PpBL2J5Rgbj-Bo7oebFo1Dp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #ebebeb;
+  --color-2: #121212;
+  --color-3: #f8f8f7;
+  --color-4: #565656;
+  --color-5: #848484;
+  --color-6: #ffd21a;
+  --color-7: #c6c6c6;
+  --font-1: "Instrument Sans", "Instrument Sans Fallback", "Helvetica Neue", Arial, sans-serif;
+  --font-2: "TikTok Sans", "TikTok Sans Fallback", "Arial Narrow", Arial, sans-serif;
+  --font-3: "Playpen Sans", "Playpen Sans Fallback", "Comic Sans MS", Arial, cursive;
+  --radius-1: 999px;
+  --shadow-1: 0 0 22px 5px color-mix(in srgb, var(--color-3) 90%, transparent), 0 0 2px 1px var(--color-3);
+  --shadow-2: 0 40px 60px -40px color-mix(in srgb, var(--color-2) 45%, transparent);
+  --space-1: clamp(16px, 3.2vw, 44px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+  @font-face { font-family: "Instrument Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 102.1%; ascent-override: 95%; descent-override: 24.5%; line-gap-override: 0%; }
+  @font-face { font-family: "Instrument Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 97.5%; ascent-override: 99.5%; descent-override: 25.6%; line-gap-override: 0%; }
+  @font-face { font-family: "TikTok Sans Fallback"; src: local("Arial Black"), local("Arial-Black"), local("Arial Bold"); font-weight: 800 1000; size-adjust: 76.8%; ascent-override: 130.2%; descent-override: 39.1%; line-gap-override: 0%; }
+  @font-face { font-family: "Playpen Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 106%; ascent-override: 110.4%; descent-override: 32.1%; line-gap-override: 0%; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--color-1);
+    color: var(--color-2);
+    font-family: var(--font-1);
+    font-size: 17px;
+    line-height: 1.45;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  strong, b { font-weight: 600; }
+  h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  a { color: inherit; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--color-2); outline-offset: 3px; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-1); font-size: 17px; font-weight: 400; line-height: 1.45; letter-spacing: -0.003em; text-transform: none; font-style: normal; }
+.m-text-2 { font-family: var(--font-1); font-size: 13px; font-weight: 500; line-height: 1.25; letter-spacing: 0.005em; text-transform: none; font-style: normal; }
+.m-text-3 { font-family: var(--font-2); font-size: clamp(54px, 8.4vw, 136px); font-weight: 900; font-stretch: 75%; line-height: 0.84; letter-spacing: -0.005em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-1); font-size: clamp(42px, 7.6vw, 112px); font-weight: 500; line-height: 0.94; letter-spacing: -0.03em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-3); font-size: 19px; font-weight: 400; line-height: 1.3; letter-spacing: 0; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-size: clamp(34px, 4.4vw, 62px); font-weight: 500; line-height: 1.0; letter-spacing: -0.035em; text-transform: none; font-style: normal; }
+.m-text-7 { font-family: var(--font-1); font-size: 12px; font-weight: 600; line-height: 1.2; letter-spacing: 0.05em; text-transform: uppercase; font-style: normal; }
+.m-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border: 1px solid var(--color-2); border-radius: var(--radius-1); background: var(--color-6); color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: none; text-decoration: none; cursor: pointer; perspective: 300px; }
+.m-btn-2 { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border: 1px dashed var(--color-2); border-radius: var(--radius-1); background: transparent; color: var(--color-2); font-family: var(--font-1); font-size: 15px; font-weight: 600; line-height: 1; letter-spacing: 0; text-transform: none; text-decoration: none; cursor: pointer; perspective: 300px; }
+.m-btn__label { display: block; position: relative; transform-style: preserve-3d; transform-origin: 50% 50% -0.62em; }
+.m-btn__echo { position: absolute; inset: 0; transform: rotateX(-90deg); transform-origin: 50% 50% -0.62em; backface-visibility: hidden; }
+.is-rollable .m-btn__label { transition: transform 0.5s cubic-bezier(0.6, 0, 0.2, 1); }
+.m-btn, .m-btn-2 { transition: background-color 0.4s, color 0.4s; }
+@media (hover: hover) {
+  .is-rollable.m-btn:hover .m-btn__label, .is-rollable.m-btn-2:hover .m-btn__label { transform: rotateX(90deg); }
+  .m-btn:hover { background: var(--color-2); color: var(--color-3); }
+  .m-btn-2:hover { background: var(--color-6); }
+}
+.m-link { color: inherit; text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-position: 0 100%; background-size: 100% 1px; padding-bottom: 2px; transition: background-size 0.35s cubic-bezier(0.6, 0, 0.2, 1); }
+@media (hover: hover) {
+  .m-link:hover { background-size: 100% 0.5em; background-image: linear-gradient(var(--color-6), var(--color-6)); }
+}
+.m-field { display: grid; gap: 6px; }
+.m-field__label { font-family: var(--font-1); font-size: 13px; font-weight: 600; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; font-style: normal; }
+.m-field__input { width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid var(--color-2); border-radius: 0; background: var(--color-3); color: var(--color-2); font-family: var(--font-1); font-size: 16px; font-weight: 400; line-height: 1.2; }
+.m-field__input:focus-visible { outline: 2px solid var(--color-2); outline-offset: 2px; background: var(--color-1); }
+.m-surface { position: relative; isolation: isolate; background: var(--color-3); color: var(--color-2); box-shadow: var(--shadow-2); }
+.m-surface--paper::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='640' height='640'><filter id='p' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.007 0.011' numOctaves='4' seed='11' stitchTiles='stitch'/><feDiffuseLighting surfaceScale='4.5' diffuseConstant='1.05'><feDistantLight azimuth='225' elevation='58'/></feDiffuseLighting></filter><rect width='100%25' height='100%25' filter='url(%23p)'/></svg>") 50% 50% / cover no-repeat; opacity: 0.7; mix-blend-mode: multiply; pointer-events: none; }
+.m-surface-2 { background: var(--color-2); color: var(--color-3); }
+.m-oval { position: relative; display: inline-block; }
+.m-oval__ring { position: absolute; left: -0.22em; right: -0.22em; top: -0.1em; bottom: -0.12em; width: calc(100% + 0.44em); height: calc(100% + 0.22em); overflow: visible; pointer-events: none; fill: none; stroke: currentColor; stroke-width: 1.6; }
+}
+</style>
+<style data-8b-part="section:site-nav">
+@layer sections {
+  #site-nav { position: fixed; z-index: 50; top: 0; left: 0; right: 0; display: grid; grid-template-columns: 1fr 1fr auto 1fr 1fr; align-items: start; gap: 16px; padding: 18px var(--space-1) 0; pointer-events: none; }
+  #site-nav > * { pointer-events: auto; }
+  #site-nav .nav__brand { text-decoration: none; }
+  #site-nav .nav__cap { white-space: nowrap; }
+  #site-nav .nav__cap:nth-child(2), #site-nav .nav__cap:nth-child(4) { justify-self: center; }
+  #site-nav .nav__cap--loc { justify-self: end; display: inline-flex; align-items: center; gap: 6px; }
+  #site-nav .nav__cap--loc::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--color-6); border: 1px solid var(--color-2); }
+  #site-nav .nav__pill { display: flex; gap: 2px; padding: 4px; border: 1px dashed var(--color-2); border-radius: var(--radius-1); background: var(--color-3); }
+  #site-nav .nav__pill a { padding: 7px 14px; border-radius: var(--radius-1); font-size: 13px; font-weight: 600; text-decoration: none; letter-spacing: 0.01em; transition: background-color 0.25s; }
+  @media (hover: hover) {
+    #site-nav .nav__pill a:hover { background: var(--color-1); }
+  }
+  @media (max-width: 900px) {
+    #site-nav { grid-template-columns: 1fr; justify-items: center; padding-top: 12px; }
+    #site-nav .nav__brand, #site-nav .nav__cap { display: none; }
+  }
+}
+</style>
+<style data-8b-part="section:opening">
+@layer sections {
+  #opening { position: relative; }
+  #opening .op__screen--1 { min-height: 100svh; display: flex; flex-direction: column; padding-top: 104px; }
+  #opening .op__intro { max-width: 44em; margin: 0 auto; padding: 0 var(--space-1); text-align: center; font-size: clamp(16px, 1.45vw, 19px); line-height: 1.3; font-weight: 500; letter-spacing: -0.01em; }
+  #opening .op__bars { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(14px, 2.4vw, 32px); margin: clamp(22px, 3.4vh, 36px) var(--space-1) clamp(22px, 3.6vh, 40px); }
+  #opening .op__bar { position: relative; height: 5px; border-radius: var(--radius-1); background: var(--color-3); box-shadow: var(--shadow-1); overflow: hidden; }
+  #opening .op__glint { position: absolute; top: 0; bottom: 0; left: 0; width: 22%; background: linear-gradient(90deg, transparent, var(--color-6), transparent); opacity: 0.85; transform: translateX(-120%); }
+  #opening .op__poster { margin: 0 var(--space-1); }
+  #opening .op__poster--1 { flex: 1 0 auto; min-height: 430px; display: flex; }
+  #opening .op__face { flex: 1; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: auto 1fr auto; column-gap: 20px; row-gap: 18px; padding: clamp(18px, 2.6vw, 34px) clamp(18px, 3vw, 40px) clamp(20px, 3vw, 40px); }
+  #opening .op__cap { grid-column: 1 / 4; }
+  #opening .op__addr { grid-column: 5 / 8; }
+  #opening .op__note { grid-column: 9 / 13; justify-self: end; text-align: right; color: var(--color-4); }
+  #opening .op__main { grid-column: 1 / 8; grid-row: 2; align-self: center; display: flex; flex-direction: column; gap: clamp(14px, 2vh, 24px); }
+  #opening .op__title { font-size: clamp(44px, 7.4vw, 118px); }
+  #opening .op__title span { display: block; }
+  #opening .op__brand { font-family: var(--font-1); font-size: clamp(22px, 2.3vw, 32px); font-weight: 500; letter-spacing: -0.02em; padding-left: 0.3em; }
+  #opening .op__brand .m-oval__ring { stroke-width: 2; }
+  #opening .op__foot { grid-column: 1 / 8; grid-row: 3; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 18px 28px; }
+  #opening .op__lede { max-width: 25em; }
+  #opening .op__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  #opening .op__stack { grid-column: 8 / 13; grid-row: 2 / 4; align-self: center; justify-self: end; display: flex; flex-direction: column; gap: clamp(10px, 1.6vh, 18px); text-align: center; }
+  #opening .op__stack p { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  #opening .op__stack .m-text-3 { font-size: clamp(56px, 8.2vw, 132px); }
+  #opening .op__screen--2 { position: relative; }
+  #opening .op__poster--2 { min-height: 100svh; container-type: inline-size; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; padding: clamp(28px, 4vw, 56px) clamp(18px, 3vw, 40px) clamp(28px, 4vw, 48px); }
+  #opening .op__manifesto { font-size: 1em; }
+  #opening .op__mline { display: block; white-space: nowrap; font-size: min(150px, 100cqi / (var(--len) * 0.645)); line-height: 0.98; text-align: justify; text-align-last: justify; }
+  #opening .op__mline .m-oval__ring { stroke-width: 2.4; }
+  #opening .op__mark { background: var(--color-6); padding: 0 0.06em; }
+  #opening .op__after { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 20px; row-gap: 16px; align-items: end; }
+  #opening .op__after .m-text { grid-column: 1 / 6; max-width: 30em; }
+  #opening .op__after .m-text-5 { grid-column: 8 / 13; justify-self: end; transform: rotate(-3deg); max-width: 15em; }
+  @media (max-width: 900px) {
+    #opening .op__screen--1 { padding-top: 80px; }
+    #opening .op__bars { gap: 10px; }
+    #opening .op__face { grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: 12px; row-gap: 14px; }
+    #opening .op__cap { grid-column: 1 / 4; }
+    #opening .op__addr { grid-column: 4 / 7; justify-self: end; text-align: right; }
+    #opening .op__note { display: none; }
+    #opening .op__main { grid-column: 1 / -1; }
+    #opening .op__foot { grid-column: 1 / -1; }
+    #opening .op__stack { grid-column: 1 / -1; grid-row: auto; justify-self: stretch; flex-direction: row; justify-content: space-between; }
+    #opening .op__stack .m-text-3 { font-size: clamp(26px, 8vw, 52px); }
+    #opening .op__stack .m-text-7 { display: none; }
+    #opening .op__after .m-text, #opening .op__after .m-text-5 { grid-column: 1 / -1; justify-self: start; }
+    #opening .op__poster--2 { justify-content: center; gap: 56px; }
+  }
+  @media (max-width: 560px) {
+    #opening .op__intro { font-size: 15px; }
+    #opening .op__title { font-size: clamp(38px, 11.6vw, 60px); }
+    #opening .op__lede { font-size: 15px; }
+    #opening .op__poster--1 { min-height: 0; }
+    #opening .op__face { padding: 16px 16px 18px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #opening .op__intro { animation: op-rise 0.8s cubic-bezier(0.2, 0.7, 0.1, 1) 0.05s backwards; }
+    #opening .op__bars { animation: op-flicker 0.7s ease-in-out backwards; }
+    #opening .op__face { animation: op-paste 0.9s cubic-bezier(0.2, 0.7, 0.1, 1) backwards; transform-origin: 50% 0; }
+    #opening .op__glint { animation: op-glint 3.4s cubic-bezier(0.45, 0, 0.3, 1) infinite; }
+    #opening .op__bar:nth-child(2) .op__glint { animation-delay: 0.45s; }
+    #opening .op__bar:nth-child(3) .op__glint { animation-delay: 0.9s; }
+    #opening .op__bar:nth-child(4) .op__glint { animation-delay: 1.35s; }
+    #opening .op__brand .m-oval__ring { animation: op-tilt 5.5s ease-in-out infinite alternate; transform-origin: 50% 50%; }
+  }
+  @keyframes op-rise { from { transform: translateY(18px); } }
+  @keyframes op-flicker { 0% { opacity: 0.15; } 30% { opacity: 1; } 45% { opacity: 0.35; } 60% { opacity: 1; } }
+  @keyframes op-paste { from { transform: translateY(26px) scaleY(1.035) skewY(-0.8deg); } }
+  @keyframes op-glint { 0% { transform: translateX(-120%); } 70%, 100% { transform: translateX(560%); } }
+  @keyframes op-tilt { from { transform: rotate(-7deg) scale(0.96); } to { transform: rotate(6deg) scale(1.05); } }
+}
+</style>
+<style data-8b-part="section:promises">
+@layer sections {
+  #promises { position: relative; padding: clamp(80px, 12vh, 140px) 0; }
+  #promises .pr__track { display: grid; gap: clamp(48px, 8vh, 96px); padding: 0 var(--space-1); }
+  #promises .pr__intro { max-width: 34em; display: flex; flex-direction: column; gap: 20px; }
+  #promises .pr__promise { position: relative; container-type: inline-size; display: grid; grid-template-columns: minmax(0, 27em) minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 40px; row-gap: 24px; align-items: end; }
+  #promises .pr__ghost { grid-column: 1 / -1; color: var(--color-5); font-size: min(380px, 100cqi / (var(--len) * 0.68)); line-height: 0.78; white-space: nowrap; }
+  #promises .pr__body { display: flex; flex-direction: column; gap: 12px; }
+  #promises .pr__num { color: var(--color-4); }
+  #promises .pr__note { justify-self: start; align-self: end; max-width: 13em; transform: rotate(-3deg); }
+  #promises .pr__pill { width: min(100%, 760px); aspect-ratio: 13 / 10; clip-path: inset(0% 0% 0% 0% round 999px); overflow: hidden; }
+  #promises .pr__pill img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+  #promises .pr__corridor { width: min(100%, 520px); aspect-ratio: 3 / 4; overflow: hidden; }
+  #promises .pr__corridor img { width: 116%; max-width: none; height: 100%; margin-left: -8%; object-fit: cover; }
+  @media (max-width: 900px) {
+    #promises .pr__promise { grid-template-columns: 1fr; }
+    #promises .pr__note { font-size: 17px; }
+  }
+}
+</style>
+<style data-8b-part="section:clear-room">
+@layer sections {
+  #clear-room { padding: clamp(80px, 14vh, 170px) var(--space-1); }
+  #clear-room .cr__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr) minmax(0, 1fr); gap: clamp(20px, 2.6vw, 40px); align-items: end; }
+  #clear-room .cr__col { display: flex; flex-direction: column; gap: 18px; }
+  #clear-room .cr__col--b { padding-bottom: 6px; }
+  #clear-room .cr__col--b .m-text-5 { transform: rotate(-3deg); transform-origin: 0 100%; }
+  #clear-room .cr__col--b .m-link { align-self: start; font-weight: 600; }
+  #clear-room .cr__photo { height: min(76svh, 720px); overflow: hidden; clip-path: inset(0% 0% 0% 0%); }
+  #clear-room .cr__photo img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 900px) {
+    #clear-room .cr__grid { grid-template-columns: 1fr; gap: 28px; }
+    #clear-room .cr__photo { height: 58svh; }
+  }
+}
+</style>
+<style data-8b-part="section:units">
+@layer sections {
+  #units { padding: clamp(80px, 11vh, 130px) var(--space-1); }
+  #units .un__stage { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; column-gap: 24px; row-gap: clamp(28px, 4vh, 44px); }
+  #units .un__side--a { justify-self: start; }
+  #units .un__title { grid-column: 2; text-align: center; }
+  #units .un__side--b { justify-self: end; text-align: right; }
+  #units .un__faces { position: relative; grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+  #units .un__face { position: relative; aspect-ratio: 4 / 5.3; overflow: hidden; background: var(--color-2); }
+  #units .un__face img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #units .un__label { position: absolute; left: 10px; right: 10px; bottom: 10px; display: flex; flex-direction: column; gap: 5px; padding: 12px 14px 13px; background: var(--color-3); border: 1px solid var(--color-2); }
+  #units .un__name { font-size: clamp(30px, 2.9vw, 44px); }
+  #units .un__fits { font-size: 14px; line-height: 1.3; }
+  #units .un__price { font-size: 15px; line-height: 1.2; }
+  #units .un__price strong { background: var(--color-6); padding: 0 4px; }
+  #units .un__foot { grid-column: 1 / -1; text-align: center; color: var(--color-4); }
+  @media (max-width: 900px) {
+    #units .un__stage { grid-template-columns: 1fr 1fr; }
+    #units .un__title { grid-column: 1 / -1; grid-row: 1; }
+    #units .un__side--a, #units .un__side--b { grid-row: 2; }
+    #units .un__faces { grid-template-columns: 1fr; gap: 14px; }
+    #units .un__face { aspect-ratio: 4 / 3.6; }
+  }
+}
+</style>
+<style data-8b-part="section:conditions">
+@layer sections {
+  #conditions { padding: clamp(60px, 9vh, 110px) var(--space-1); }
+  #conditions .cd__label { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); border: 1.5px solid var(--color-2); }
+  #conditions .cd__head { grid-column: 1; display: flex; flex-direction: column; gap: 14px; padding: clamp(22px, 3vw, 36px); background: var(--color-6); border-bottom: 1.5px solid var(--color-2); }
+  #conditions .cd__rows { grid-column: 1; }
+  #conditions .cd__row { display: grid; grid-template-columns: minmax(7em, 0.32fr) minmax(0, 1fr); border-bottom: 1px solid var(--color-2); }
+  #conditions .cd__row:last-child { border-bottom: 0; }
+  #conditions .cd__row dt { padding: 19px clamp(14px, 2vw, 24px) 16px; border-right: 1px solid var(--color-2); }
+  #conditions .cd__row dd { padding: 14px clamp(14px, 2vw, 24px); }
+  #conditions .cd__photo { grid-column: 2; grid-row: 1 / 3; position: relative; min-height: 320px; border-left: 1.5px solid var(--color-2); overflow: hidden; }
+  #conditions .cd__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 900px) {
+    #conditions .cd__label { grid-template-columns: 1fr; }
+    #conditions .cd__photo { grid-column: 1; grid-row: auto; min-height: 260px; border-left: 0; border-top: 1.5px solid var(--color-2); }
+    #conditions .cd__row { grid-template-columns: 1fr; }
+    #conditions .cd__row dt { border-right: 0; padding-bottom: 0; }
+    #conditions .cd__row dd { padding-top: 6px; }
+  }
+}
+</style>
+<style data-8b-part="section:move-in">
+@layer sections {
+  #move-in { padding: clamp(80px, 11vh, 130px) var(--space-1); }
+  #move-in .mv__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 40px; align-items: end; margin-bottom: clamp(32px, 5vh, 56px); }
+  #move-in .mv__head .m-text { max-width: 26em; justify-self: end; }
+  #move-in .mv__wall { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  #move-in .mv__sheet { display: flex; flex-direction: column; gap: 12px; padding: 14px 14px 18px; }
+  #move-in .mv__photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  #move-in .mv__name { font-size: clamp(46px, 4.8vw, 76px); }
+  #move-in .mv__sheet .m-text { font-size: 15px; line-height: 1.38; }
+  @media (max-width: 900px) {
+    #move-in .mv__head { grid-template-columns: 1fr; }
+    #move-in .mv__head .m-text { justify-self: start; }
+    #move-in .mv__wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    #move-in .mv__sheet { gap: 8px; padding: 9px 9px 12px; }
+    #move-in .mv__name { font-size: 34px; }
+    #move-in .mv__sheet .m-text { font-size: 13.5px; line-height: 1.32; }
+  }
+}
+</style>
+<style data-8b-part="section:neighbours">
+@layer sections {
+  #neighbours { padding: clamp(80px, 12vh, 140px) var(--space-1); }
+  #neighbours .nb__head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 40px; align-items: end; margin-bottom: clamp(40px, 7vh, 72px); }
+  #neighbours .nb__head .m-text { max-width: 26em; justify-self: end; }
+  #neighbours .nb__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: clamp(40px, 7vh, 72px); align-items: start; }
+  #neighbours .nb__item { display: flex; flex-direction: column; gap: 14px; }
+  #neighbours .nb__item--a { grid-column: 1 / 6; }
+  #neighbours .nb__item--b { grid-column: 7 / 10; margin-top: clamp(40px, 12vh, 120px); }
+  #neighbours .nb__item--c { grid-column: 10 / 13; }
+  #neighbours .nb__item--d { grid-column: 2 / 5; }
+  #neighbours .nb__item--e { grid-column: 6 / 12; margin-top: clamp(30px, 9vh, 90px); }
+  #neighbours .nb__door { font-size: clamp(54px, 5.6vw, 92px); padding-left: 0.12em; }
+  #neighbours .nb__door .m-oval__ring { stroke-width: 2.6; }
+  #neighbours .nb__photo { overflow: hidden; aspect-ratio: 3 / 2; }
+  #neighbours .nb__item--b .nb__photo, #neighbours .nb__item--c .nb__photo, #neighbours .nb__item--d .nb__photo { aspect-ratio: 3 / 4; }
+  #neighbours .nb__photo img { width: 100%; height: 100%; object-fit: cover; }
+  #neighbours .nb__item .m-text { max-width: 22em; }
+  @media (max-width: 900px) {
+    #neighbours .nb__head { grid-template-columns: 1fr; }
+    #neighbours .nb__head .m-text { justify-self: start; }
+    #neighbours .nb__grid { grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: 12px; }
+    #neighbours .nb__item--a, #neighbours .nb__item--e { grid-column: 1 / 7; margin-top: 0; }
+    #neighbours .nb__item--b { grid-column: 1 / 4; margin-top: 0; }
+    #neighbours .nb__item--c { grid-column: 4 / 7; margin-top: 60px; }
+    #neighbours .nb__item--d { grid-column: 2 / 6; }
+    #neighbours .nb__item .m-text { font-size: 15px; }
+  }
+}
+</style>
+<style data-8b-part="section:extras">
+@layer sections {
+  #extras { position: relative; overflow: hidden; clip-path: inset(0% 0% 0% 0%); }
+  #extras .ex__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.22; }
+  #extras .ex__stage { position: relative; min-height: 100svh; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 32px 48px; align-items: center; padding: clamp(80px, 11vh, 120px) var(--space-1); }
+  #extras .ex__head { align-self: start; display: flex; flex-direction: column; gap: 18px; max-width: 24em; }
+  #extras .ex__drum { position: relative; display: flex; flex-direction: column; }
+  #extras .ex__item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 15em); align-items: center; gap: 4px 24px; padding: 4px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-7) 30%, transparent); }
+  #extras .ex__word { font-size: clamp(40px, 4.6vw, 66px); line-height: 1; }
+  #extras .ex__desc { color: var(--color-3); }
+  @media (max-width: 900px) {
+    #extras .ex__stage { grid-template-columns: 1fr; align-content: center; gap: 22px; padding-top: 72px; padding-bottom: 56px; }
+    #extras .ex__head .m-text { display: none; }
+    #extras .ex__item { grid-template-columns: 1fr; gap: 2px; padding: 3px 0 5px; }
+    #extras .ex__word { font-size: 34px; }
+    #extras .ex__desc { font-size: 12px; }
+  }
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+  #faq { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr); gap: 32px clamp(32px, 5vw, 80px); padding: clamp(80px, 12vh, 140px) var(--space-1); }
+  #faq .fq__aside { position: sticky; top: 96px; align-self: start; display: flex; flex-direction: column; gap: 18px; }
+  #faq .fq__item { border-top: 1px solid var(--color-2); }
+  #faq .fq__item:last-child { border-bottom: 1px solid var(--color-2); }
+  #faq .fq__q { position: relative; display: block; padding: 22px 56px 22px 0; cursor: pointer; list-style: none; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.15; }
+  #faq .fq__q::-webkit-details-marker { display: none; }
+  #faq .fq__q::after { content: ""; position: absolute; right: 6px; top: 50%; width: 30px; height: 30px; margin-top: -15px; border: 1px solid var(--color-2); border-radius: 50%; background: linear-gradient(var(--color-2), var(--color-2)) center / 12px 1.5px no-repeat, linear-gradient(var(--color-2), var(--color-2)) center / 1.5px 12px no-repeat; transition: transform 0.4s cubic-bezier(0.6, 0, 0.2, 1), background-color 0.3s; }
+  #faq .fq__item[open] .fq__q::after { transform: rotate(135deg); background-color: var(--color-6); }
+  #faq .fq__item .m-text { max-width: 34em; padding: 0 56px 24px 0; }
+  @media (hover: hover) {
+    #faq .fq__q:hover::after { background-color: var(--color-6); }
+  }
+  @media (max-width: 900px) {
+    #faq { grid-template-columns: 1fr; }
+    #faq .fq__aside { position: static; }
+  }
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+  #contact { padding: clamp(70px, 10vh, 120px) var(--space-1) clamp(60px, 9vh, 100px); container-type: inline-size; }
+  #contact .ct__giant { --dot: 44%; display: block; text-align: center; font-family: var(--font-1); font-weight: 600; font-size: min(34vw, 100cqi / (var(--len) * 0.635)); line-height: 0.82; letter-spacing: -0.04em; text-transform: uppercase; white-space: nowrap; }
+  #contact .ct__giant span { display: inline-block; color: transparent; background: radial-gradient(circle, var(--color-2) var(--dot), transparent calc(var(--dot) + 6%)) 0 0 / 0.06em 0.06em; -webkit-background-clip: text; background-clip: text; }
+  #contact .ct__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px clamp(32px, 6vw, 96px); align-items: start; margin-top: clamp(36px, 6vh, 64px); }
+  #contact .ct__info { display: flex; flex-direction: column; gap: 20px; max-width: 30em; }
+  #contact .ct__address { font-style: normal; }
+  #contact .ct__lines { display: flex; flex-direction: column; align-items: start; gap: 6px; font-weight: 600; }
+  #contact .ct__note { transform: rotate(-2.5deg); transform-origin: 0 50%; }
+  #contact .ct__form { display: grid; gap: 16px; padding: clamp(20px, 3vw, 32px); border: 1px solid var(--color-2); }
+  #contact .ct__form .m-btn { justify-self: start; margin-top: 6px; }
+  #contact .ct__status { min-height: 1.3em; }
+  @media (max-width: 900px) {
+    #contact .ct__grid { grid-template-columns: 1fr; }
+  }
+}
+</style>
+<style data-8b-part="section:site-footer">
+@layer sections {
+  #site-footer { padding: 24px var(--space-1) 28px; container-type: inline-size; }
+  #site-footer .ft__mark { font-size: min(36vw, 100cqi / (var(--len) * 0.665)); line-height: 0.8; text-align: center; white-space: nowrap; }
+  #site-footer .ft__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--color-2); }
+  #site-footer .ft__nav { display: flex; flex-direction: column; align-items: start; gap: 4px; }
+  @media (max-width: 900px) {
+    #site-footer .ft__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+}
+</style>
+<style data-8b-part="motion">
+@layer scenes {
+[data-8b-live] [data-8b-motion~="oval"] ellipse { animation-name: motion-oval-ellipse-strokedashoffset, motion-oval-ellipse-strokedasharray; animation-duration: 0.9s; animation-delay: calc(0s + var(--oval-delay, 0s)); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1), linear; animation-fill-mode: both; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="oval"].is-in ellipse { animation-play-state: running; }
+@keyframes motion-oval-ellipse-strokedashoffset { 0% { stroke-dashoffset: 1px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes motion-oval-ellipse-strokedasharray { 0% { stroke-dasharray: 1px; animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); } 100% { stroke-dasharray: 1px; } }
+
+[data-8b-live] [data-8b-motion~="roll"] { transform-origin: 50% 0%; animation-name: motion-roll; animation-duration: 0.9s; animation-delay: var(--roll-delay, 0s); animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: backwards; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="roll"].is-in { animation-play-state: running; }
+@keyframes motion-roll { 0% { transform: perspective(700px) translate(0%, 18%) rotateX(-72deg); } 100% { transform: perspective(700px) translate(0%, 0%) rotateX(0deg); } }
+[data-8b-live] [data-8b-motion~="paste"] { transform-origin: 50% 0%; animation-name: motion-paste; animation-duration: 1.05s; animation-delay: var(--paste-delay, 0s); animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: backwards; animation-play-state: paused; }
+[data-8b-live] [data-8b-motion~="paste"].is-in { animation-play-state: running; }
+@keyframes motion-paste { 0% { clip-path: inset(0% 0% 100% 0%); transform: skewY(2.5deg) scaleY(1.06); } 100% { clip-path: inset(0% 0% 0% 0%); transform: skewY(0deg) scaleY(1); } }
+}
+</style>
+<style data-8b-part="scene:site-nav-caps">
+@layer scenes {
+[data-8b-live] #site-nav .nav__cap { transition: translate 0.35s cubic-bezier(0.3333, 1, 0.6667, 1), opacity 0.35s cubic-bezier(0.3333, 1, 0.6667, 1), visibility 0.35s; transition-delay: calc((var(--n) - 1 - var(--i)) * 0.03s); }
+[data-8b-live] #site-nav[data-caps-off] .nav__cap { translate: 0 -160%; opacity: 0; visibility: hidden; transition-timing-function: cubic-bezier(0.3333, 0, 0.6667, 0), cubic-bezier(0.3333, 0, 0.6667, 0), linear; transition-delay: calc(var(--i) * 0.03s); }
+}
+</style>
+<style data-8b-part="scene:opening-roll">
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #opening .op__screen--1 { perspective: 1500px; perspective-origin: 50% 100%; }
+    [data-8b-live] #opening .op__screen--2 { perspective: 1500px; perspective-origin: 50% 0; }
+    [data-8b-live] #opening .op__poster--1 { transform-origin: 50% 100%; backface-visibility: hidden; }
+    [data-8b-live] #opening .op__poster--2 { transform-origin: 50% 0; backface-visibility: hidden; overflow: hidden; }
+  }
+}
+@layer scenes {
+@property --opening-u { syntax: '<number>'; inherits: true; initial-value: 691; }
+@property --opening-glint { syntax: '<number>'; inherits: false; initial-value: -120; }
+[data-8b-live] #opening .op__glint { animation-name: opening-glint; transform: translateX(calc(clamp(-99.5, var(--opening-glint), 454) * 1%)); }
+@keyframes opening-glint { 0% { --opening-glint: -120; } 70%, 100% { --opening-glint: 560; } }
+[data-8b-live] #opening { view-timeline: --opening-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #opening .op__poster--1 { animation-name: opening-article-op-poster-rotatex; animation-timeline: --opening-t1; animation-range: exit-crossing 0% exit-crossing calc(var(--opening-u) * 1px); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+[data-8b-live] #opening .op__poster--2 { animation-name: opening-div-op-poster-rotatex; animation-timeline: --opening-t1; animation-range: exit-crossing 0% exit-crossing calc(var(--opening-u) * 1px); animation-timing-function: cubic-bezier(0.3333, 0.6667, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #opening .op__mline { animation-name: opening-span-op-mline-translate; animation-timeline: --opening-t1; animation-range: exit-crossing calc((0.22 + 0.025 * var(--i)) * var(--opening-u) * 1px) exit-crossing calc((0.84 + 0.025 * var(--i)) * var(--opening-u) * 1px); animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); animation-fill-mode: both; transform: none; }
+[data-8b-live] #opening .op__mline .m-oval__ring ellipse { animation-name: opening-svg-m-oval-ring-ellipse-strokedashoffset, opening-svg-m-oval-ring-ellipse-strokedasharray; animation-timeline: --opening-t1; animation-range: exit-crossing calc(0.84 * var(--opening-u) * 1px) exit-crossing calc(var(--opening-u) * 1px); animation-timing-function: linear; animation-fill-mode: both; }
+@keyframes opening-article-op-poster-rotatex { 0% { rotate: x 0deg; } 100% { rotate: x 86deg; } }
+@keyframes opening-div-op-poster-rotatex { 0% { rotate: x -86deg; } 100% { rotate: x 0deg; } }
+@keyframes opening-span-op-mline-translate { 0% { translate: calc((1 - 2 * mod(var(--i), 2)) * min(42vw, 520px)) 0px; } 100% { translate: 0px 0px; } }
+@keyframes opening-svg-m-oval-ring-ellipse-strokedashoffset { 0% { stroke-dashoffset: 1px; } 99.998% { stroke-dashoffset: 0.0006px; } 100% { stroke-dashoffset: 0px; } }
+@keyframes opening-svg-m-oval-ring-ellipse-strokedasharray { 0% { stroke-dasharray: 1px; } 100% { stroke-dasharray: 1px; } }
+}
+</style>
+<style data-8b-part="scene:promises-track">
+@layer scenes {
+@property --promises-travel { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --promises-d { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --promises-room { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --promises-w { syntax: '<number>'; inherits: true; initial-value: 1; }
+[data-8b-live] #promises { height: 100svh; padding: 0; overflow: clip; display: flex; align-items: center; margin-bottom: calc(var(--promises-room) * 1px); view-timeline: --promises-t block; view-timeline-inset: calc(var(--promises-d) * -1px) 0; animation-name: promises-pin, promises-slide; animation-timeline: --promises-t; animation-range: exit-crossing calc(var(--promises-d) * -1px) exit-crossing 0%; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #promises .pr__track { display: flex; flex-wrap: nowrap; align-items: center; gap: 6vw; width: max-content; height: 100%; padding: 0 6vw; translate: calc(var(--promises-travel) * -1px) 0; }
+[data-8b-live] #promises .pr__intro { width: 32vw; flex: none; }
+[data-8b-live] #promises .pr__promise { width: 66vw; height: 80svh; flex: none; grid-template-rows: 1fr auto; }
+[data-8b-live] #promises .pr__ghost { align-self: start; --promises-p: clamp(0, calc((var(--promises-travel) - var(--promises-left) + var(--promises-w)) / (var(--promises-w) * 0.7)), 1); translate: calc(22vw * (1 - var(--promises-p)) * (1 - var(--promises-p))) 0; }
+[data-8b-live] #promises .pr__note { --promises-q: calc(clamp(0, calc((var(--promises-travel) - var(--promises-left) + var(--promises-w) * 0.75) / (var(--promises-w) * 0.43)), 1) - 1); --promises-e: calc(1 + var(--promises-q) * var(--promises-q) * (2.6 * var(--promises-q) + 1.6)); transform: translateY(calc(40% * (1 - var(--promises-e)))) rotate(calc((-16 + 13 * var(--promises-e)) * 1deg)); }
+[data-8b-live] #promises .pr__pill { width: 58vw; height: 58svh; aspect-ratio: auto; flex: none; --promises-p: clamp(0, calc((var(--promises-travel) - var(--promises-left) + var(--promises-w)) / ((var(--promises-width) + var(--promises-w)) * 0.5)), 1); clip-path: inset(0% calc(37% * (1 - var(--promises-p))) 0% calc(37% * (1 - var(--promises-p))) round 999px); }
+[data-8b-live] #promises .pr__pill img { scale: calc(1.3 - 0.3 * var(--promises-p)); }
+[data-8b-live] #promises .pr__corridor { width: 30vw; height: 76svh; aspect-ratio: auto; flex: none; }
+[data-8b-live] #promises .pr__corridor img { translate: calc(-6% + 12% * clamp(0, calc((var(--promises-travel) - var(--promises-left) + var(--promises-w)) / (var(--promises-w) + var(--promises-width))), 1)) 0; }
+@media (max-width: 900px) {
+  [data-8b-live] #promises .pr__track { gap: 10vw; padding: 0 7vw; }
+  [data-8b-live] #promises .pr__intro { width: 84vw; }
+  [data-8b-live] #promises .pr__promise { width: 86vw; height: 78svh; }
+  [data-8b-live] #promises .pr__pill { width: 84vw; height: 46svh; }
+  [data-8b-live] #promises .pr__corridor { width: 72vw; height: 66svh; }
+}
+@keyframes promises-pin { 0% { translate: 0px 0px; } 100% { translate: 0px calc(var(--promises-d) * 1px); } }
+@keyframes promises-slide { 0% { --promises-travel: 0; } 100% { --promises-travel: var(--promises-d); } }
+}
+</style>
+<style data-8b-part="scene:clear-room-open">
+@layer scenes {
+[data-8b-live] #clear-room { view-timeline: --clear-room-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #clear-room .cr__photo, [data-8b-live] #clear-room .cr__photo > img, [data-8b-live] #clear-room .cr__col--b { animation-timeline: --clear-room-t1; animation-range: cover 28vh cover calc(50% - 2vh); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #clear-room .cr__photo > img { animation-name: clear-room-figure-cr-photo-img-scale; transform: none; }
+[data-8b-live] #clear-room .cr__col--b { transform: none; }
+@keyframes clear-room-figure-cr-photo-clippath-d { 0% { clip-path: inset(0% 41%); } 99.998% { clip-path: inset(0% 0.0082%); } 100% { clip-path: inset(0%); } }
+@keyframes clear-room-figure-cr-photo-clippath-m { 0% { clip-path: inset(0% 38%); } 99.998% { clip-path: inset(0% 0.0076%); } 100% { clip-path: inset(0%); } }
+@keyframes clear-room-figure-cr-photo-img-scale { 0% { scale: 1.28; } 100% { scale: 1; } }
+@keyframes clear-room-div-cr-col-translate-d { 0% { translate: 84.063% 0px; } 100% { translate: 0px 0px; } }
+@keyframes clear-room-div-cr-col-translate-m { 0% { translate: 0px -80px; } 100% { translate: 0px 0px; } }
+@keyframes clear-room-div-cr-col-translate-2 { 0% { translate: -84.058% 0px; } 100% { translate: 0px 0px; } }
+@media (min-width: 901px) {
+  [data-8b-live] #clear-room .cr__photo { animation-name: clear-room-figure-cr-photo-clippath-d; }
+  [data-8b-live] #clear-room .cr__col--a { animation-name: clear-room-div-cr-col-translate-d; animation-timeline: --clear-room-t1; animation-range: cover 28vh cover calc(50% - 2vh); animation-timing-function: linear; animation-fill-mode: both; transform: none; }
+  [data-8b-live] #clear-room .cr__col--b { animation-name: clear-room-div-cr-col-translate-2; }
+}
+@media (max-width: 900px) {
+  [data-8b-live] #clear-room .cr__photo { animation-name: clear-room-figure-cr-photo-clippath-m; }
+  [data-8b-live] #clear-room .cr__col--b { animation-name: clear-room-div-cr-col-translate-m; }
+}
+}
+</style>
+<style data-8b-part="scene:units-block">
+@layer scenes {
+@property --units-turn { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --units-open { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --units-room { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --units-d { syntax: '<number>'; inherits: true; initial-value: 0; }
+[data-8b-live] #units { overflow-x: clip; margin-bottom: calc(var(--units-room) * 1px); view-timeline: --units-t block; view-timeline-inset: calc(var(--units-d) * -1px) 0; animation-name: units-pin, units-turn, units-open; animation-timeline: --units-t; animation-range: exit-crossing calc(var(--units-d) * -1px) exit-crossing 0%, exit-crossing calc(var(--units-d) * -1px + 1px) exit-crossing calc(var(--units-d) * -0.28px), exit-crossing calc(var(--units-d) * -0.22px) exit-crossing 0%; animation-timing-function: linear, linear, linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1); animation-fill-mode: both; }
+[data-8b-live] #units .un__faces { perspective: 1900px; transform-style: preserve-3d; }
+[data-8b-live] #units .un__face { backface-visibility: hidden; will-change: transform;
+  --units-a: calc(mod(var(--i) * 90 - var(--units-turn) + 180, 360) - 180);
+  --units-rad: calc(var(--units-a) * 1deg);
+  --units-keep: calc(1 - var(--units-open));
+  transform: translate3d(
+      calc((var(--units-dx) + var(--units-radius) * sin(var(--units-rad))) * var(--units-keep) * 1px),
+      calc(var(--units-dy) * var(--units-keep) * 1px),
+      calc((var(--units-radius) * (cos(var(--units-rad)) - 1) * var(--units-keep) - hypot(var(--units-dx), var(--units-dy)) * 0.9 * sin(pi * var(--units-open))) * 1px))
+    rotateY(calc(var(--units-a) * var(--units-keep) * 1deg))
+    scale(calc(1 + (var(--units-scale) - 1) * var(--units-keep))); }
+[data-8b-live] #units .un__foot { opacity: var(--units-open); }
+@keyframes units-pin { 0% { translate: 0px 0px; } 100% { translate: 0px calc(var(--units-d) * 1px); } }
+@keyframes units-turn { 0% { --units-turn: 0; } 100% { --units-turn: 270; } }
+@keyframes units-open { 0% { --units-open: 0; } 100% { --units-open: 1; } }
+}
+</style>
+<style data-8b-part="scene:move-in-deal">
+@layer scenes {
+@property --move-in-local { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --move-in-room { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --move-in-d { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --move-in-from { syntax: '<number>'; inherits: true; initial-value: 0; }
+[data-8b-live] #move-in { view-timeline: --move-in-t block; view-timeline-inset: 0; }
+[data-8b-live] #move-in .mv__wall { margin-bottom: calc(var(--move-in-room) * 1px); animation-name: move-in-pin; animation-timeline: --move-in-t; animation-range: exit-crossing calc(var(--move-in-from) * 1px) exit-crossing calc((var(--move-in-from) + var(--move-in-d)) * 1px); animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #move-in .mv__sheet { will-change: transform;
+  animation-name: move-in-deal, move-in-layer; animation-timeline: --move-in-t;
+  animation-range: exit-crossing calc((var(--move-in-from) + (0.06 + 0.215 * var(--i)) * var(--move-in-d)) * 1px) exit-crossing calc((var(--move-in-from) + (0.31 + 0.215 * var(--i)) * var(--move-in-d)) * 1px);
+  animation-timing-function: linear(0, 0, 0.0001, 0.0003, 0.0008, 0.002, 0.004, 0.0075, 0.0128, 0.0205, 0.0313, 0.0458, 0.0648, 0.0893, 0.12, 0.1582, 0.2048, 0.261, 0.3281, 0.4073, 0.5, 0.5927, 0.672, 0.739, 0.7952, 0.8418, 0.88, 0.9107, 0.9352, 0.9542, 0.9688, 0.9795, 0.9872, 0.9925, 0.996, 0.998, 0.9992, 0.9997, 1, 1, 1), linear; animation-fill-mode: both;
+  --move-in-keep: calc(1 - var(--move-in-local));
+  --move-in-lift: sin(pi * var(--move-in-local));
+  transform: translate(calc(var(--move-in-x) * var(--move-in-keep) * 1px), calc((var(--move-in-y) * var(--move-in-keep) - var(--move-in-lift) * 26) * 1px))
+    rotate(calc((var(--move-in-tilt) * var(--move-in-keep) + var(--move-in-lift) * 3) * 1deg))
+    scale(calc(1 + var(--move-in-lift) * 0.05)); }
+@keyframes move-in-pin { 0% { translate: 0px 0px; } 100% { translate: 0px calc(var(--move-in-d) * 1px); } }
+@keyframes move-in-deal { 0% { --move-in-local: 0; } 100% { --move-in-local: 1; } }
+@keyframes move-in-layer { 0% { z-index: calc(10 - var(--i)); } 0.01% { z-index: 20; } 99.99% { z-index: 20; } 100% { z-index: 1; } }
+}
+</style>
+<style data-8b-part="scene:extras-drum">
+@layer scenes {
+@property --extras-spin { syntax: '<number>'; inherits: true; initial-value: -0.5; }
+@property --extras-flat { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --extras-room { syntax: '<number>'; inherits: true; initial-value: 0; }
+@property --extras-d { syntax: '<number>'; inherits: true; initial-value: 0; }
+[data-8b-live] #extras { margin-bottom: calc(var(--extras-room) * 1px); view-timeline: --extras-t1 block; view-timeline-inset: calc(var(--extras-d) * -1px) 0; animation-name: extras-pin, extras-spin, extras-flat, extras-extras-clippath; animation-timeline: --extras-t1; animation-range: exit-crossing calc(var(--extras-d) * -1px) exit-crossing 0%, exit-crossing calc(var(--extras-d) * -1px) exit-crossing calc(var(--extras-d) * -0.26px), exit-crossing calc(var(--extras-d) * -0.2px) exit-crossing 0%, cover calc(100% - 70vh) cover calc(100% - 5vh); animation-timing-function: linear, linear, linear(0, 0.0001, 0.0005, 0.0017, 0.004, 0.0078, 0.0135, 0.0214, 0.032, 0.0456, 0.0625, 0.0832, 0.108, 0.1373, 0.1715, 0.2109, 0.256, 0.3071, 0.3645, 0.4287, 0.5, 0.5713, 0.6355, 0.6929, 0.744, 0.7891, 0.8285, 0.8627, 0.892, 0.9168, 0.9375, 0.9544, 0.968, 0.9786, 0.9865, 0.9922, 0.996, 0.9983, 0.9995, 0.9999, 1), cubic-bezier(0.3333, 0, 0.6667, 0.3333); animation-fill-mode: both; }
+[data-8b-live] #extras .ex__drum { perspective: 1300px; transform-style: preserve-3d; }
+[data-8b-live] #extras .ex__item { backface-visibility: hidden; will-change: transform, opacity;
+  --extras-a: calc((var(--i) - (var(--n) - 1) / 2 - var(--extras-spin) * (var(--n) - 1)) * var(--extras-step));
+  --extras-keep: calc(1 - var(--extras-flat));
+  --extras-fade: calc(clamp(0, cos(var(--extras-a)) * 100000, 1) * (0.25 + 0.75 * cos(var(--extras-a))));
+  transform: translate3d(0px, calc((var(--extras-mid) + var(--extras-r) * sin(var(--extras-a))) * var(--extras-keep) * 1px), calc(var(--extras-r) * (cos(var(--extras-a)) - 1) * var(--extras-keep) * 1px)) rotateX(calc(var(--extras-a) * var(--extras-keep) * -1rad));
+  opacity: calc(var(--extras-fade) + (1 - var(--extras-fade)) * var(--extras-flat)); }
+@keyframes extras-pin { 0% { translate: 0px 0px; } 100% { translate: 0px calc(var(--extras-d) * 1px); } }
+@keyframes extras-spin { 0% { --extras-spin: -0.5; } 100% { --extras-spin: 0.5; } }
+@keyframes extras-flat { 0% { --extras-flat: 0; } 100% { --extras-flat: 1; } }
+@keyframes extras-extras-clippath { 0% { clip-path: inset(0%); } 100% { clip-path: inset(0% 47%); } }
+}
+</style>
+<style data-8b-part="scene:contact-develop">
+@property --contact-dot { syntax: '<percentage>'; inherits: true; initial-value: 44%; }
+@layer scenes {
+[data-8b-live] #contact { view-timeline: --contact-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #contact .ct__giant, [data-8b-live] #contact .ct__giant > span:nth-of-type(-n+6) { animation-timeline: --contact-t1; animation-fill-mode: both; }
+[data-8b-live] #contact .ct__giant { animation-name: contact-p-ct-giant---dot; animation-range: cover 12vh cover 78vh; animation-timing-function: linear; --dot: var(--contact-dot); }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(-n+6) { animation-timing-function: cubic-bezier(0.3333, 1, 0.6667, 1); transform: none; }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(1) { animation-name: contact-p-ct-giant-span-translate, contact-p-ct-giant-span-rotate; animation-range: cover 15.3vh cover 61.5vh; }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(2) { animation-name: contact-p-ct-giant-span-translate-2, contact-p-ct-giant-span-rotate-2; animation-range: cover 17.61vh cover 63.81vh; }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(3) { animation-name: contact-p-ct-giant-span-translate-3, contact-p-ct-giant-span-rotate; animation-range: cover 19.92vh cover 66.12vh; }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(4) { animation-name: contact-p-ct-giant-span-translate-4, contact-p-ct-giant-span-rotate-2; animation-range: cover 22.23vh cover 68.43vh; }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(5) { animation-name: contact-p-ct-giant-span-translate-5, contact-p-ct-giant-span-rotate; animation-range: cover 24.54vh cover 70.74vh; }
+[data-8b-live] #contact .ct__giant > span:nth-of-type(6) { animation-name: contact-p-ct-giant-span-translate-6, contact-p-ct-giant-span-rotate-2; animation-range: cover 26.85vh cover 73.05vh; }
+@keyframes contact-p-ct-giant---dot { 0% { --contact-dot: 12%; } 100% { --contact-dot: 44%; } }
+@keyframes contact-p-ct-giant-span-translate { 0% { translate: 0px -28%; } 100% { translate: 0px 0px; } }
+@keyframes contact-p-ct-giant-span-rotate { 0% { rotate: 7deg; } 100% { rotate: 0deg; } }
+@keyframes contact-p-ct-giant-span-translate-2 { 0% { translate: 0px 38%; } 100% { translate: 0px 0px; } }
+@keyframes contact-p-ct-giant-span-rotate-2 { 0% { rotate: -7deg; } 100% { rotate: 0deg; } }
+@keyframes contact-p-ct-giant-span-translate-3 { 0% { translate: 0px -48%; } 100% { translate: 0px 0px; } }
+@keyframes contact-p-ct-giant-span-translate-4 { 0% { translate: 0px 28%; } 100% { translate: 0px 0px; } }
+@keyframes contact-p-ct-giant-span-translate-5 { 0% { translate: 0px -38%; } 100% { translate: 0px 0px; } }
+@keyframes contact-p-ct-giant-span-translate-6 { 0% { translate: 0px 48%; } 100% { translate: 0px 0px; } }
+}
+</style>
+<script data-8b-part="motion-gate">
+if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
+</script>
+</head>
+<body>
+<!-- navigation: top bar of small captions: a brand caption, Self_storage, a pill with three links, Open_24/7 and the district (animation: scene:site-nav-caps) -->
+<header id="site-nav" data-8b-section="navigation" data-8b-items=":scope > .nav__cap">
+  <a class="nav__brand nav__cap m-text-2" href="#opening">Elbowroom Storage<br>We keep<br>Your extra</a>
+  <span class="nav__cap m-text-2">Self_storage</span>
+  <nav class="nav__pill" aria-label="Main">
+    <a href="#units">Units</a>
+    <a href="#move-in">Move in</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <span class="nav__cap m-text-2">Open_24/7</span>
+  <span class="nav__cap nav__cap--loc m-text-2">Salford, M5</span>
+</header>
+<main>
+  <!-- opening: two screens: a paper poster with the headline, an oval word, address, actions and three keep/clear/breathe lines, then a second poster with a justified manifesto (animation: scene:opening-roll) -->
+  <section id="opening" data-8b-section="opening" data-loops>
+    <div class="op__screen op__screen--1">
+      <p class="op__intro">Elbowroom is self storage for homes and shops that ran out of corners. We keep what you are not using yet, dry and lit and alarmed, a few minutes from the M602, so the rooms you live and work in can breathe again.</p>
+      <div class="op__bars" aria-hidden="true">
+        <span class="op__bar"><span class="op__glint"></span></span>
+        <span class="op__bar"><span class="op__glint"></span></span>
+        <span class="op__bar"><span class="op__glint"></span></span>
+        <span class="op__bar"><span class="op__glint"></span></span>
+      </div>
+      <article class="op__poster op__poster--1 m-surface m-surface--paper">
+        <div class="op__face">
+          <p class="op__cap m-text-2">Elbowroom Storage<br>We keep<br>Your extra</p>
+          <p class="op__addr m-text-2">Example Wharf, Unit 4<br>Example Road<br>Salford M5 0AA</p>
+          <p class="op__note m-text-2">Open every hour of every day.<br>Staffed 7:00–21:00.</p>
+          <div class="op__main">
+            <h1 class="op__title m-text-4"><span>Make room.</span> <span>Keep it all.</span></h1>
+            <p class="op__brand"><span class="m-oval">Elbowroom<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span></p>
+          </div>
+          <div class="op__foot">
+            <p class="op__lede m-text">612 dry, lit and alarmed units, from a locker to a garage. Book in four minutes, move in tomorrow, leave whenever you like.</p>
+            <div class="op__actions">
+              <a class="m-btn" href="#contact"><span class="m-btn__label">Book a unit</span></a>
+              <a class="m-btn-2" href="#units"><span class="m-btn__label">See the sizes</span></a>
+            </div>
+          </div>
+          <div class="op__stack">
+            <p><span class="m-text-3">Keep.</span><span class="m-text-7">Twenty boxes or a whole flat</span></p>
+            <p><span class="m-text-3">Clear.</span><span class="m-text-7">Get the spare room back</span></p>
+            <p><span class="m-text-3">Breathe.</span><span class="m-text-7">No contract, no deposit</span></p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="op__screen op__screen--2">
+      <div class="op__poster op__poster--2 m-surface m-surface--paper">
+        <h2 class="op__manifesto m-text-4" data-8b-items=":scope > .op__mline">
+          <span class="op__mline" style="--len:16">We keep what you</span>
+          <span class="op__mline" style="--len:17">are not using yet</span>
+          <span class="op__mline" style="--len:16">so the rooms you</span>
+          <span class="op__mline" style="--len:16">live in <span class="m-oval">breathe<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span>.</span>
+          <span class="op__mline" style="--len:18">the bike, the cot,</span>
+          <span class="op__mline" style="--len:18">the boxed letters,</span>
+          <span class="op__mline" style="--len:17">the sofa for your</span>
+          <span class="op__mline" style="--len:18">new flat, kept dry</span>
+          <span class="op__mline" style="--len:16">and lit till you</span>
+          <span class="op__mline" style="--len:17">want it all <span class="op__mark">back.</span></span>
+        </h2>
+        <div class="op__after">
+          <p class="m-text">Elbowroom works by the month: no contract, no deposit, no admin fee, and fourteen days' notice when you are done. Change size whenever life changes and we move your things across for free.</p>
+          <p class="m-text-5">Still unsure? Come and stand in one before you book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- promises: pinned sideways track of three promises with giant pale words, a pill-shaped photo and a corridor photo (animation: scene:promises-track) -->
+  <section id="promises" data-8b-section="promises">
+    <div class="pr__track">
+      <div class="pr__panel pr__intro">
+        <h2 class="pr__title m-text-6">Three promises, written into the agreement you sign</h2>
+        <p class="m-text">Not on a poster in reception: in the contract. If we break one of them, your next month is free.</p>
+      </div>
+      <article class="pr__panel pr__promise">
+        <p class="pr__ghost m-text-3" aria-hidden="true" style="--len:4">Room</p>
+        <div class="pr__body">
+          <p class="pr__num m-text-7">(1)</p>
+          <h3 class="pr__name m-text-6">Room</h3>
+          <p class="m-text">From a 15 sq ft locker to a 150 sq ft garage, every unit 2.4 m high and swept clean. Outgrow yours or shrink it and we move everything across for free, the same week.</p>
+        </div>
+        <p class="pr__note m-text-5">Most people book one size too big. Ask us first.</p>
+      </article>
+      <figure class="pr__panel pr__pill">
+        <img src="https://images.unsplash.com/photo-1748282291775-22810ba98512?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8cGVyc29uJTIwY2FycnlpbmclMjBib3h8ZW58MXwxfHx8MTc5MTQ0MzY5OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=970&q=60" alt="A man standing among moving boxes with a cardboard box over his head" width="1600" height="2400" loading="lazy">
+      </figure>
+      <article class="pr__panel pr__promise">
+        <p class="pr__ghost m-text-3" aria-hidden="true" style="--len:5">Reach</p>
+        <div class="pr__body">
+          <p class="pr__num m-text-7">(2)</p>
+          <h3 class="pr__name m-text-6">Reach</h3>
+          <p class="m-text">Open every hour of every day. Your phone opens the gate, the lift and your own door. Drive-up bays sit beside the loading doors, with flat trolleys waiting.</p>
+        </div>
+        <p class="pr__note m-text-5">Kerb to unit in four minutes. We timed it with a sofa.</p>
+      </article>
+      <figure class="pr__panel pr__corridor">
+        <img src="https://images.unsplash.com/photo-1770720086655-22f3d1205dc2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8c3RvcmFnZSUyMHVuaXR8ZW58MXwwfHx8MTc5MTQ0MzY5OXww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1330&q=60" alt="A long, brightly lit corridor of yellow storage unit doors" width="1600" height="1067" loading="lazy">
+      </figure>
+      <article class="pr__panel pr__promise">
+        <p class="pr__ghost m-text-3" aria-hidden="true" style="--len:6">Return</p>
+        <div class="pr__body">
+          <p class="pr__num m-text-7">(3)</p>
+          <h3 class="pr__name m-text-6">Return</h3>
+          <p class="m-text">Pay by the month and leave with fourteen days' notice. No deposit, no admin fee, and your last month is charged to the day you hand back access.</p>
+        </div>
+        <p class="pr__note m-text-5">Most people stay eight months. Some stay eight years.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- clear-room: an empty room photo with a text column on each side (animation: scene:clear-room-open) -->
+  <section id="clear-room" data-8b-section="clear-room">
+    <div class="cr__grid">
+      <div class="cr__col cr__col--a">
+        <h2 class="m-text-6">The room you get back</h2>
+        <p class="m-text">Most of what fills a home is waiting for a later that comes once a year: the camping kit, the Christmas boxes, the cot between babies. Move it here and the spare room is a room again.</p>
+      </div>
+      <figure class="cr__photo">
+        <img src="https://images.unsplash.com/photo-1659284994817-1524ba392ce0?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTZ8fGVtcHR5JTIwd2hpdGUlMjByb29tJTIwc3VubGlnaHR8ZW58MXwwfHx8MTc5MTQ0MzY5Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=1490&q=60" alt="An empty white room with afternoon sun falling across the walls in stripes" width="1600" height="1067" loading="lazy">
+      </figure>
+      <div class="cr__col cr__col--b">
+        <p class="m-text-5">A desk. A guest bed. A floor for the jigsaw.</p>
+        <p class="m-text">Our customers clear about nine square metres at home on average, the size of a box room. Bring it in one trip; we lend the trolley and the van.</p>
+        <a class="m-link m-text" href="#units">Find the size that fits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- units: four unit sizes as faces of a block that turns and then opens flat into a row (a column on phones) (animation: scene:units-block) -->
+  <section id="units" data-8b-section="units">
+    <div class="un__stage">
+      <p class="un__side un__side--a m-text-7">Unit sizes</p>
+      <h2 class="un__title m-text-6">Four sizes, one key</h2>
+      <p class="un__side un__side--b m-text-7">Locker—Box room—Spare room—Garage</p>
+      <ul class="un__faces" data-8b-items=":scope > .un__face" data-8b-fixed="4">
+        <li class="un__face">
+          <img src="https://images.unsplash.com/photo-1659729751444-dd8e40685a4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y2FyZGJvYXJkJTIwYm94ZXMlMjBzdGFja2VkfGVufDF8MXx8fDE3OTE0NDM2OTV8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=570&q=60" alt="A neat stack of white storage boxes on a table" width="1600" height="2205" loading="lazy">
+          <div class="un__label">
+            <h3 class="un__name m-text-3">Locker</h3>
+            <p class="m-text-7">15 sq ft · 1.4 m² · 2.4 m high</p>
+            <p class="un__fits m-text">Twenty boxes, two suitcases and the winter coats.</p>
+            <p class="un__price m-text">From <strong>£8</strong> a week</p>
+          </div>
+        </li>
+        <li class="un__face">
+          <img src="https://images.unsplash.com/photo-1612611823244-20a40a6e734b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8YmljeWNsZSUyMGFnYWluc3QlMjB3aGl0ZSUyMHdhbGx8ZW58MXwxfHx8MTc5MTQ0MzcwMHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=360&q=60" alt="A blue city bicycle hung on a white wall" width="1600" height="2401" loading="lazy">
+          <div class="un__label">
+            <h3 class="un__name m-text-3">Box room</h3>
+            <p class="m-text-7">35 sq ft · 3.3 m² · 2.4 m high</p>
+            <p class="un__fits m-text">Two bikes, a mattress and thirty boxes.</p>
+            <p class="un__price m-text">From <strong>£15</strong> a week</p>
+          </div>
+        </li>
+        <li class="un__face">
+          <img src="https://images.unsplash.com/photo-1730154838368-c37b1fdebcf6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8bW92aW5nJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTQ0MzY5NHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=660&q=60" alt="A bright room filled with packed boxes and house plants" width="1600" height="1060" loading="lazy">
+          <div class="un__label">
+            <h3 class="un__name m-text-3">Spare room</h3>
+            <p class="m-text-7">75 sq ft · 7 m² · 2.4 m high</p>
+            <p class="un__fits m-text">A one-bed flat: sofa, bed, table and forty boxes.</p>
+            <p class="un__price m-text">From <strong>£27</strong> a week</p>
+          </div>
+        </li>
+        <li class="un__face">
+          <img src="https://images.unsplash.com/photo-1591528287446-43c9c0e1075e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjJ8fG1vdmluZyUyMGJveGVzfGVufDF8MHx8fDE3OTE0NDM2OTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=720&q=60" alt="A red-walled room packed to the window with cardboard boxes" width="1600" height="1200" loading="lazy">
+          <div class="un__label">
+            <h3 class="un__name m-text-3">Garage</h3>
+            <p class="m-text-7">150 sq ft · 14 m² · 2.4 m high</p>
+            <p class="un__fits m-text">A three-bed house, or a shop's stock between seasons.</p>
+            <p class="un__price m-text">From <strong>£46</strong> a week</p>
+          </div>
+        </li>
+      </ul>
+      <p class="un__foot m-text-2">Prices for a 4-week month, VAT included. Your first month is half price when you book online.</p>
+    </div>
+  </section>
+
+  <!-- conditions: a building specification label: six rows of conditions and a corridor photo -->
+  <section id="conditions" data-8b-section="conditions">
+    <div class="cd__label m-surface m-surface--paper">
+      <div class="cd__head">
+        <h2 class="m-text-6" data-8b-motion="roll">Kept dry, lit and watched</h2>
+        <p class="m-text-7">Building specification · Example Wharf, floors 0–3</p>
+      </div>
+      <dl class="cd__rows" data-8b-items=":scope > .cd__row">
+        <div class="cd__row" data-8b-motion="roll" style="--roll-delay: 0.08s"><dt class="m-text-7">Temperature</dt><dd class="m-text">Held between 16 and 20 °C on the climate floor, all year round.</dd></div>
+        <div class="cd__row" data-8b-motion="roll" style="--roll-delay: 0.16s"><dt class="m-text-7">Air</dt><dd class="m-text">Humidity under 55%, read every ten minutes, so damp never reaches a box.</dd></div>
+        <div class="cd__row" data-8b-motion="roll"><dt class="m-text-7">Doors</dt><dd class="m-text">Every unit alarmed on its own and opened only by your phone.</dd></div>
+        <div class="cd__row" data-8b-motion="roll" style="--roll-delay: 0.08s"><dt class="m-text-7">Cameras</dt><dd class="m-text">On every corridor, lift and the yard, recordings kept for thirty days.</dd></div>
+        <div class="cd__row" data-8b-motion="roll" style="--roll-delay: 0.16s"><dt class="m-text-7">People</dt><dd class="m-text">Staff on site from 7:00 to 21:00 and a guard walking the floors at night.</dd></div>
+        <div class="cd__row" data-8b-motion="roll"><dt class="m-text-7">Cover</dt><dd class="m-text">Contents insured up to £2,000 in the price; more from £1 a week.</dd></div>
+      </dl>
+      <figure class="cd__photo" data-8b-motion="paste">
+        <img src="https://images.unsplash.com/photo-1786306781460-3d2171115b5d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTN8fHN0b3JhZ2UlMjB1bml0fGVufDF8MHx8fDE3OTE0NDM2OTl8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1030&q=60" alt="A long corridor of green metal unit doors, each with its own padlock" width="1600" height="1067" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- move-in: four tilted step sheets that start as one pile and are dealt onto the wall (animation: scene:move-in-deal) -->
+  <section id="move-in" data-8b-section="move-in">
+    <div class="mv__head">
+      <h2 class="m-text-6">Moving in takes one morning</h2>
+      <p class="m-text">Four steps, and the first one happens on your sofa. Everything after it we can do for you.</p>
+    </div>
+    <ol class="mv__wall" data-8b-items=":scope > .mv__sheet" data-8b-fixed="4">
+      <li class="mv__sheet m-surface" style="--move-in-tilt: -5">
+        <p class="mv__step m-text-7">Step 1</p>
+        <img class="mv__photo" src="https://images.unsplash.com/photo-1758523671413-cd178a883d6a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MjV8fG1vdmluZyUyMGJveGVzfGVufDF8MHx8fDE3OTE0NDM2OTR8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=390&q=60" alt="A couple sitting among moving boxes, looking at a tablet together" width="1600" height="900" loading="lazy">
+        <h3 class="mv__name m-text-3">Book</h3>
+        <p class="m-text">Choose a size and a date online. It takes four minutes and asks for no deposit.</p>
+      </li>
+      <li class="mv__sheet m-surface" style="--move-in-tilt: 4">
+        <p class="mv__step m-text-7">Step 2</p>
+        <img class="mv__photo" src="https://images.unsplash.com/photo-1694715669993-ea0022b470f7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8dmFuJTIwbG9hZGluZyUyMGJveGVzfGVufDF8MHx8fDE3OTE0NDM3NDh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60" alt="A man wheeling stacked boxes from a white van" width="1600" height="1060" loading="lazy">
+        <h3 class="mv__name m-text-3">Load</h3>
+        <p class="m-text">Our van and two movers come to you from £49 inside the M60, or bring your own car.</p>
+      </li>
+      <li class="mv__sheet m-surface" style="--move-in-tilt: -2.5">
+        <p class="mv__step m-text-7">Step 3</p>
+        <img class="mv__photo" src="https://images.unsplash.com/photo-1642756457381-930fdc1e2e2e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8dmFuJTIwbG9hZGluZyUyMGJveGVzfGVufDF8MHx8fDE3OTE0NDM3NDh8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=330&q=60" alt="A man pushing a hand cart piled high with boxes" width="1600" height="1008" loading="lazy">
+        <h3 class="mv__name m-text-3">Roll</h3>
+        <p class="m-text">Drive-up bays, flat trolleys and a goods lift to every floor. No stairs, no queue.</p>
+      </li>
+      <li class="mv__sheet m-surface" style="--move-in-tilt: 6.5">
+        <p class="mv__step m-text-7">Step 4</p>
+        <img class="mv__photo" src="https://images.unsplash.com/photo-1729855637715-99192904aac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8a2V5cyUyMGhhbmR8ZW58MXwxfHx8MTc5MTQ0Mzc1Mnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=280&q=60" alt="A hand holding up a green key on a ring" width="1600" height="2240" loading="lazy">
+        <h3 class="mv__name m-text-3">Lock</h3>
+        <p class="m-text">Your phone opens the gate and your door. Bring a padlock, or take one of ours for free.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- neighbours: five door numbers in ovals, each with a photo and a line about what is kept behind it -->
+  <section id="neighbours" data-8b-section="neighbours">
+    <div class="nb__head">
+      <h2 class="m-text-6" data-8b-motion="roll">Behind 612 doors</h2>
+      <p class="m-text" data-8b-motion="roll" style="--roll-delay: 0.08s">We never open a unit, but people tell us what is inside. A few of them, shared with permission.</p>
+    </div>
+    <ul class="nb__grid" data-8b-items=":scope > .nb__item">
+      <li class="nb__item nb__item--a">
+        <p class="nb__door m-text-3" data-8b-motion="oval" style="--oval-delay: 0s"><span class="m-oval">118<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span></p>
+        <figure class="nb__photo" data-8b-motion="paste"><img src="https://images.unsplash.com/photo-1572875527690-ea43631132f4?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8a2F5YWslMjBoYW5naW5nJTIwd2FsbHxlbnwxfDB8fHwxNzkxNDQzNzQ0fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=640&q=60" alt="A red canoe hung on a pale blue wall" width="1600" height="1067" loading="lazy"></figure>
+        <p class="m-text">A red canoe that comes out every August, and the paddles that go with it.</p>
+      </li>
+      <li class="nb__item nb__item--b">
+        <p class="nb__door m-text-3" data-8b-motion="oval" style="--oval-delay: 0.08s"><span class="m-oval">207<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span></p>
+        <figure class="nb__photo" data-8b-motion="paste" style="--paste-delay: 0.08s"><img src="https://images.unsplash.com/photo-1668996415041-8a6a1602a3a7?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8d2VkZGluZyUyMGRyZXNzJTIwaGFuZ2luZ3xlbnwxfDF8fHwxNzkxNDQzNzQ1fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="A white wedding dress on a hanger under a skylight" width="1600" height="2248" loading="lazy"></figure>
+        <p class="m-text">A wedding dress, kept for a daughter who is nine.</p>
+      </li>
+      <li class="nb__item nb__item--c">
+        <p class="nb__door m-text-3" data-8b-motion="oval" style="--oval-delay: 0.16s"><span class="m-oval">033<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span></p>
+        <figure class="nb__photo" data-8b-motion="paste" style="--paste-delay: 0.16s"><img src="https://images.unsplash.com/photo-1786418288750-f3724c3f3320?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8dmlueWwlMjByZWNvcmRzJTIwY3JhdGV8ZW58MXwxfHx8MTc5MTQ0Mzc0M3ww&ixlib=rb-4.1.0&auto=format&fit=crop&w=290&q=60" alt="A hand flicking through vinyl records in a black crate" width="1600" height="2406" loading="lazy"></figure>
+        <p class="m-text">Fourteen hundred records in alphabetical order, visited on Sunday mornings.</p>
+      </li>
+      <li class="nb__item nb__item--d">
+        <p class="nb__door m-text-3" data-8b-motion="oval" style="--oval-delay: 0s"><span class="m-oval">311<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span></p>
+        <figure class="nb__photo" data-8b-motion="paste"><img src="https://images.unsplash.com/photo-1783345234038-abc1d201d305?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8Zmxvd2VyJTIwYnVja2V0cyUyMHNob3B8ZW58MXwxfHx8MTc5MTQ0Mzc0Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=380&q=60" alt="Yellow chrysanthemums in a white florist's bucket on a blue chair" width="1600" height="2400" loading="lazy"></figure>
+        <p class="m-text">A florist's buckets, vases and ribbon, swapped over with the seasons.</p>
+      </li>
+      <li class="nb__item nb__item--e">
+        <p class="nb__door m-text-3" data-8b-motion="oval" style="--oval-delay: 0.08s"><span class="m-oval">420<svg class="m-oval__ring" viewBox="0 0 200 64" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="100" cy="32" rx="97" ry="29" pathLength="1"/></svg></span></p>
+        <figure class="nb__photo" data-8b-motion="paste" style="--paste-delay: 0.08s"><img src="https://images.unsplash.com/photo-1762627105132-f6ed848a23bf?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8YXJjaGl2ZSUyMGJveGVzJTIwc2hlbHZlc3xlbnwxfDB8fHwxNzkxNDQzNzUxfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=790&q=60" alt="Rows of white archive boxes on wooden shelves" width="1600" height="900" loading="lazy"></figure>
+        <p class="m-text">Nine years of a dental practice's paper files, in date order.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- extras: a dark panel with a drum of nine extra services that spins and unrolls into a list over a corridor photo (animation: scene:extras-drum) -->
+  <section id="extras" class="m-surface-2" data-8b-section="extras">
+    <img class="ex__bg" src="https://images.unsplash.com/photo-1586251695359-0739256d25c2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8ZW1wdHklMjBoYWxsd2F5JTIwZmx1b3Jlc2NlbnQlMjBsaWdodHxlbnwxfDB8fHwxNzkxNDQzNzUzfDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=1600&q=60" alt="" width="1600" height="1060" loading="lazy">
+    <div class="ex__stage">
+      <div class="ex__head">
+        <h2 class="m-text-6">Everything besides the room</h2>
+        <p class="m-text">“Ask at the desk. If we don't do it, we know who does.”</p>
+      </div>
+      <ul class="ex__drum" data-8b-items=":scope > .ex__item">
+        <li class="ex__item"><span class="ex__word m-text-4">Boxes</span><span class="ex__desc m-text-2">Five sizes, sold singly. Unused ones bought back.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Wrap</span><span class="ex__desc m-text-2">Bubble wrap, paper, mattress bags and sofa covers.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Van</span><span class="ex__desc m-text-2">A van and two movers, from £49 inside the M60.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Parcels</span><span class="ex__desc m-text-2">We sign for deliveries and put them in your unit.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Shelving</span><span class="ex__desc m-text-2">Racking fitted inside your unit in a day, from £35.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Students</span><span class="ex__desc m-text-2">Summer storage collected from halls in June.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Stock</span><span class="ex__desc m-text-2">Stock rooms for traders, invoiced, by the loading bay.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Cover</span><span class="ex__desc m-text-2">Contents insurance up to £50,000, from £1 a week.</span></li>
+        <li class="ex__item"><span class="ex__word m-text-4">Locks</span><span class="ex__desc m-text-2">Disc padlocks at the desk. We never keep a key.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- faq: six questions as native <details> beside a heading with a phone link -->
+  <section id="faq" data-8b-section="faq">
+    <div class="fq__aside">
+      <h2 class="m-text-6" data-8b-motion="roll">Questions people ask at the desk</h2>
+      <p class="m-text" data-8b-motion="roll" style="--roll-delay: 0.08s">Something else? Call <a data-8b-placeholder="phone" class="m-link" href="tel:+441610000000">0161 000 0000</a> any day from 7:00 to 21:00.</p>
+    </div>
+    <div class="fq__list" data-8b-items=":scope > .fq__item">
+      <details class="fq__item" data-8b-motion="roll" style="--roll-delay: 0.16s"><summary class="fq__q">What can't I store?</summary><p class="m-text">Anything alive, perishable, flammable or illegal: food, paint thinners, gas bottles, fuel and cash. Everything else is fine, from a piano to a sock drawer.</p></details>
+      <details class="fq__item" data-8b-motion="roll"><summary class="fq__q">Do I need my own insurance?</summary><p class="m-text">No. Contents cover up to £2,000 is in the price. Raise it to £50,000 from £1 a week, or use your home policy if it covers items in storage.</p></details>
+      <details class="fq__item" data-8b-motion="roll" style="--roll-delay: 0.08s"><summary class="fq__q">Can someone else visit my unit?</summary><p class="m-text">Yes. Share access in the app with anyone you like and take it back whenever you want. Every visit is logged.</p></details>
+      <details class="fq__item" data-8b-motion="roll" style="--roll-delay: 0.16s"><summary class="fq__q">How do I pay?</summary><p class="m-text">By card or direct debit, monthly in advance. Business customers get VAT invoices.</p></details>
+      <details class="fq__item" data-8b-motion="roll"><summary class="fq__q">What if I need a bigger unit?</summary><p class="m-text">Tell us in the app or at the desk. If one is free we move your things across the same week, at no cost.</p></details>
+      <details class="fq__item" data-8b-motion="roll" style="--roll-delay: 0.08s"><summary class="fq__q">How do I leave?</summary><p class="m-text">Give fourteen days' notice, empty the unit and sweep it out. We charge to the day you hand back access, not to the end of the month.</p></details>
+    </div>
+  </section>
+
+  <!-- contact: a giant halftone COME BY, then address, phone, email and a reservation form (animation: scene:contact-develop) -->
+  <section id="contact" data-8b-section="contact">
+    <p class="ct__giant" aria-hidden="true" style="--len:7"><span>C</span><span>o</span><span>m</span><span>e</span> <span>b</span><span>y</span></p>
+    <div class="ct__grid">
+      <div class="ct__info">
+        <h2 class="m-text-6">Come and stand in a unit</h2>
+        <p class="m-text">Walk in any day between 7:00 and 21:00 and we will show you three sizes in ten minutes. Or reserve one here and we hold it for a week, free.</p>
+        <address class="ct__address m-text">Example Wharf, Unit 4<br>Example Road, Salford M5 0AA</address>
+        <p class="ct__lines m-text"><a data-8b-placeholder="phone" class="m-link" href="tel:+441610000000">0161 000 0000</a><a data-8b-placeholder="email" class="m-link" href="mailto:hello@elbowroom.example">hello@elbowroom.example</a></p>
+        <p class="m-text-5 ct__note">Free parking by the loading doors.</p>
+      </div>
+      <form data-8b-placeholder="form" class="ct__form m-surface" action="#" method="post" novalidate>
+        <h3 class="ct__formtitle m-text-6">Reserve a unit</h3>
+        <label class="m-field"><span class="m-field__label">Your name</span><input class="m-field__input" name="name" autocomplete="name" required></label>
+        <label class="m-field"><span class="m-field__label">Phone or email</span><input class="m-field__input" name="contact" autocomplete="email" required></label>
+        <label class="m-field"><span class="m-field__label">Size</span>
+          <select class="m-field__input" name="size">
+            <option>Locker, 15 sq ft</option>
+            <option>Box room, 35 sq ft</option>
+            <option selected>Spare room, 75 sq ft</option>
+            <option>Garage, 150 sq ft</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label class="m-field"><span class="m-field__label">Move-in date</span><input class="m-field__input" type="date" name="date"></label>
+        <button class="m-btn" type="submit"><span class="m-btn__label">Hold it for a week</span></button>
+        <p class="ct__status m-text-2" role="status" aria-live="polite" data-done="Thank you. We will call you within the hour to confirm your unit." data-missing="Please add your name and a phone number or email."></p>
+      </form>
+    </div>
+  </section>
+</main>
+<!-- footer: footer on the grey ground: a large wordmark over address, hours, four links and the company line -->
+<footer id="site-footer" data-8b-section="footer">
+  <p class="ft__mark m-text-3" style="--len:9">Elbowroom</p>
+  <div class="ft__cols">
+    <p class="m-text-2">Elbowroom Storage<br>Example Wharf, Unit 4<br>Example Road, Salford M5 0AA</p>
+    <p class="m-text-2">Open 24/7 by app<br>Desk 7:00–21:00 daily<br>Christmas Day by app only</p>
+    <nav class="ft__nav m-text-2" aria-label="Footer">
+      <a class="m-link" href="#units">Unit sizes</a>
+      <a class="m-link" href="#move-in">Moving in</a>
+      <a class="m-link" href="#faq">Questions</a>
+      <a class="m-link" href="#contact">Reserve</a>
+    </nav>
+    <p class="m-text-2">© 2026 Elbowroom Storage Ltd · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a><br>Registered in England, no. 00000000<br><a class="m-link" href="/privacy">Privacy and terms</a></p>
+  </div>
+</footer>
+<script data-8b-part="atom-script:m-btn">
+document.querySelectorAll('.m-btn, .m-btn-2').forEach(button => {
+  const label = button.querySelector('.m-btn__label');
+  if (!label || label.querySelector('.m-btn__echo')) return;
+  const echo = document.createElement('span');
+  echo.className = 'm-btn__echo';
+  echo.setAttribute('aria-hidden', 'true');
+  echo.textContent = label.textContent;
+  label.append(echo);
+  button.classList.add('is-rollable');
+});
+</script>
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .ct__form');
+  if (!form) return;
+  const status = form.querySelector('.ct__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const name = form.elements.name.value.trim();
+    const contact = form.elements.contact.value.trim();
+    const done = Boolean(name && contact);
+    status.textContent = done ? status.dataset.done : status.dataset.missing;
+    if (done) form.reset();
+  });
+})();
+</script>
+<script data-8b-part="motion-kit">
+(() => {
+const live = document.documentElement.hasAttribute('data-8b-live');
+const measures = new Set();
+let queued = false;
+const run = fn => { try { fn(); } catch (error) { console.error('[motion-kit] measure failed', error); } };
+const remeasure = () => {
+if (queued) return;
+queued = true;
+requestAnimationFrame(() => { queued = false; measures.forEach(run); realign(); });
+};
+const realign = () => document.getAnimations().forEach(animation => {
+if (animation.timeline && animation.timeline !== document.timeline && animation.playState === 'running') { animation.pause(); animation.play(); }
+});
+window.motionKit = {
+live,
+box(element) {
+if (!(element instanceof HTMLElement)) { const r = element.getBoundingClientRect(); return { x: r.left + scrollX, y: r.top + scrollY, w: r.width, h: r.height }; }
+let x = 0, y = 0, node = element;
+while (node) { x += node.offsetLeft; y += node.offsetTop; node = node.offsetParent; }
+return { x, y, w: element.offsetWidth, h: element.offsetHeight };
+},
+set(element, vars) { for (const [name, value] of Object.entries(vars)) element.style.setProperty(name, String(value)); },
+measure(fn) { if (!live) return; measures.add(fn); run(fn); },
+scene(id, fn) {
+if (!live) return;
+try { fn(); } catch (error) {
+console.error(`[motion-kit] scene ${id} failed; its section stays static`, error);
+document.querySelector(`style[data-8b-part="scene:${id}"]`)?.setAttribute('media', 'not all');
+}
+}
+};
+if (!live) { window.motionReady = Promise.resolve(); return; }
+const number = () => document.querySelectorAll('[data-8b-items]').forEach(group => {
+let items;
+try { items = [...group.querySelectorAll(group.getAttribute('data-8b-items'))]; } catch { return; }
+items.forEach((item, index) => { item.style.setProperty('--i', index); item.style.setProperty('--n', items.length); });
+});
+number();
+measures.add(number);
+requestAnimationFrame(realign);
+new ResizeObserver(remeasure).observe(document.body);
+document.fonts?.ready.then(remeasure);
+addEventListener('load', remeasure);
+window.motionReady = (document.fonts?.ready ?? Promise.resolve()).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live || !matchMedia('(pointer: fine)').matches) return;
+let target = scrollY, current = scrollY, last = 0, running = false, paused = false;
+const inner = (node, dy) => {
+for (; node && node !== document.body && node !== document.documentElement; node = node.parentElement) {
+if (!/(auto|scroll)/.test(getComputedStyle(node).overflowY) || node.scrollHeight <= node.clientHeight) continue;
+if (dy > 0 ? node.scrollTop + node.clientHeight < node.scrollHeight - 1 : node.scrollTop > 0) return true;
+}
+return false;
+};
+const step = now => {
+current += (target - current) * (1 - Math.exp(-5.3 * Math.min(0.05, (now - last) / 1000)));
+last = now;
+if (Math.abs(target - current) < 0.5) current = target;
+scrollTo({ top: current, behavior: 'instant' });
+if (current !== target) requestAnimationFrame(step); else running = false;
+};
+addEventListener('wheel', event => {
+if (paused || event.ctrlKey || Math.abs(event.deltaX) > Math.abs(event.deltaY) || inner(event.target, event.deltaY)) return;
+event.preventDefault();
+if (!running) target = current = scrollY;
+const unit = event.deltaMode === 1 ? 40 : event.deltaMode === 2 ? innerHeight : 1;
+target = Math.max(0, Math.min(document.documentElement.scrollHeight - innerHeight, target + event.deltaY * unit * 0.95));
+if (!running) { running = true; last = performance.now(); requestAnimationFrame(step); }
+}, { passive: false });
+kit.wheel = { stop() { paused = true; }, start() { paused = false; } };
+})();
+(() => {
+const kit = window.motionKit;
+if (!kit.live) return;
+const at = element => {
+const own = /^(\d{1,3}(?:\.\d+)?)%$/.exec((element.getAttribute('data-8b-enter') || '').trim());
+return own && +own[1] <= 100 ? own[1] / 100 : 0.88;
+};
+let pending = [...document.querySelectorAll('[data-8b-motion]')].map(element => ({ element, y: 0, at: at(element) }));
+let queued = false;
+const check = () => {
+queued = false;
+pending = pending.filter(item => {
+if (item.y > scrollY + innerHeight * item.at) return true;
+item.element.classList.add('is-in');
+return false;
+});
+};
+const queue = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+kit.measure(() => { pending.forEach(item => { item.y = kit.box(item.element).y; }); queue(); });
+addEventListener('scroll', queue, { passive: true });
+})();
+(() => {
+if (!window.motionKit.live) return;
+const sheet = new CSSStyleSheet();
+sheet.replaceSync('[data-8b-off],[data-8b-off]::before,[data-8b-off]::after{animation-play-state:paused!important}');
+document.adoptedStyleSheets = [...document.adoptedStyleSheets, sheet];
+const watch = new IntersectionObserver(entries => entries.forEach(entry => entry.target.toggleAttribute('data-8b-off', !entry.isIntersecting)));
+const watched = new WeakSet();
+const scan = () => document.getAnimations().forEach(animation => {
+const element = animation.effect?.target;
+if (!element || watched.has(element) || animation.effect.getTiming().iterations !== Infinity || animation.timeline !== document.timeline) return;
+watched.add(element);
+watch.observe(element);
+});
+scan();
+addEventListener('load', scan);
+document.addEventListener('animationstart', scan, true);
+})();
+(() => {
+const kit = window.motionKit;
+kit.track = () => {};
+if (!kit.live) return;
+const named = { top: 0, center: 0.5, bottom: 1 };
+const point = text => text.trim().split(/\s+/).map(word => named[word] ?? parseFloat(word) / 100);
+kit.track = (element, start, end, fn) => {
+const [s0, v0] = point(start), [s1, v1] = point(end);
+let queued = false;
+const run = () => {
+queued = false;
+const box = element.getBoundingClientRect(), vh = innerHeight;
+const d0 = box.top + box.height * s0 - vh * v0, d1 = box.top + box.height * s1 - vh * v1;
+fn(d1 === d0 ? (d0 <= 0 ? 1 : 0) : Math.min(1, Math.max(0, -d0 / (d1 - d0))));
+};
+addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(run); } }, { passive: true });
+kit.measure(run);
+};
+})();
+</script>
+<script data-8b-part="scene-script:site-nav-caps">
+motionKit.scene('site-nav-caps', () => {
+  const nav = document.getElementById('site-nav');
+  motionKit.track(document.documentElement, 'top 0%', 'bottom 100%', () => nav.toggleAttribute('data-caps-off', scrollY > 90 && scrollY < document.documentElement.scrollHeight - innerHeight - 1));
+});
+</script>
+<script data-8b-part="scene-script:opening-roll">
+motionKit.scene('opening-roll', () => {
+  const section = document.getElementById('opening');
+  const screen = section.querySelector('.op__screen--1');
+  const lines = section.querySelectorAll('.op__mline');
+  motionKit.measure(() => motionKit.set(section, { '--opening-u': Math.round(screen.offsetHeight * 0.92) / Math.max(1, 0.84 + 0.025 * (lines.length - 1)) }));
+});
+</script>
+<script data-8b-part="scene-script:promises-track">
+motionKit.scene('promises-track', () => {
+  const section = document.getElementById('promises');
+  const track = section.querySelector('.pr__track');
+  const panels = [...track.querySelectorAll('.pr__panel')];
+  motionKit.measure(() => {
+    const origin = track.getBoundingClientRect().left;
+    let reach = track.offsetWidth;
+    panels.forEach(panel => {
+      const box = panel.getBoundingClientRect();
+      const left = box.left - origin;
+      motionKit.set(panel, { '--promises-left': left, '--promises-width': box.width });
+      const ghost = panel.querySelector('.pr__ghost');
+      if (ghost) reach = Math.max(reach, left + ghost.offsetLeft + ghost.getBoundingClientRect().width + innerWidth * 0.22);
+    });
+    const distance = Math.max(0, Math.round(reach) - innerWidth);
+    const height = section.getBoundingClientRect().height;
+    motionKit.set(section, { '--promises-d': distance, '--promises-room': distance + Math.round(height) - height, '--promises-w': innerWidth });
+  });
+});
+</script>
+<script data-8b-part="scene-script:units-block">
+motionKit.scene('units-block', () => {
+  const section = document.getElementById('units');
+  const list = section.querySelector('.un__faces');
+  const faces = [...list.querySelectorAll('.un__face')];
+  motionKit.measure(() => {
+    const face = faces[0];
+    const scale = innerWidth > 900 ? Math.min(1.5, (innerHeight * 0.6) / face.offsetHeight, (innerWidth * 0.34) / face.offsetWidth) : 1;
+    const listTop = list.getBoundingClientRect().top - section.getBoundingClientRect().top;
+    const distance = Math.round(innerHeight * 2.6);
+    const height = section.getBoundingClientRect().height;
+    motionKit.set(section, { '--units-d': distance, '--units-room': distance + Math.round(height) - height, '--units-scale': scale, '--units-radius': scale * face.offsetWidth / 2 });
+    faces.forEach(item => motionKit.set(item, {
+      '--units-dx': list.offsetWidth / 2 - item.offsetLeft - item.offsetWidth / 2,
+      '--units-dy': innerHeight * 0.56 - listTop - item.offsetTop - item.offsetHeight / 2
+    }));
+  });
+});
+</script>
+<script data-8b-part="scene-script:move-in-deal">
+motionKit.scene('move-in-deal', () => {
+  const section = document.getElementById('move-in');
+  const wall = section.querySelector('.mv__wall');
+  const sheets = [...wall.querySelectorAll('.mv__sheet')];
+  motionKit.measure(() => {
+    const distance = Math.round(innerHeight * 1.6);
+    const wallBox = wall.getBoundingClientRect();
+    const sectionTop = section.getBoundingClientRect().top;
+    const held = parseFloat(getComputedStyle(wall).translate.split(' ')[1]) || 0;
+    const from = Math.round(sectionTop + scrollY + wallBox.top - sectionTop - held + wallBox.height / 2 - innerHeight * 0.54);
+    const height = wallBox.height;
+    motionKit.set(section, { '--move-in-d': distance, '--move-in-room': distance + Math.round(height) - height, '--move-in-from': from - sectionTop - scrollY });
+    sheets.forEach(sheet => motionKit.set(sheet, {
+      '--move-in-x': wall.offsetWidth / 2 - sheet.offsetLeft - sheet.offsetWidth / 2,
+      '--move-in-y': wall.offsetHeight / 2 - sheet.offsetTop - sheet.offsetHeight / 2
+    }));
+  });
+});
+</script>
+<script data-8b-part="scene-script:extras-drum">
+motionKit.scene('extras-drum', () => {
+  const section = document.getElementById('extras');
+  const drum = section.querySelector('.ex__drum');
+  const items = [...drum.querySelectorAll('.ex__item')];
+  motionKit.measure(() => {
+    const pitch = items.length > 1 ? items[1].offsetTop - items[0].offsetTop : items[0].offsetHeight;
+    const radius = innerWidth > 900 ? 190 : 150;
+    const distance = Math.round(innerHeight * 2.2);
+    const height = section.getBoundingClientRect().height;
+    motionKit.set(section, { '--extras-d': distance, '--extras-room': distance + Math.round(height) - height, '--extras-r': radius, '--extras-step': pitch / radius });
+    items.forEach(item => motionKit.set(item, { '--extras-mid': drum.offsetHeight / 2 - item.offsetTop - item.offsetHeight / 2 }));
+  });
+});
+</script>
+</body>
+</html>
