@@ -42,3 +42,10 @@
 @media(max-width:620px){.bar{padding:12px 16px;gap:5px}.bar nav{gap:12px;font-size:11px}.bar nav a{min-height:25px;display:inline-flex;align-items:center}.intro{display:flex;padding:17px 0 12px;gap:8px}.intro h1{font-size:32px}.intro .kicker{font-size:8px;letter-spacing:.12em}.intro p:not(.kicker){font-size:12px;max-width:240px}.stat{margin:0;display:block;text-align:right;width:77px;flex-shrink:0}.stat strong{font-size:33px;display:block}.stat span{font-size:10px;line-height:1.2;display:block}.filter-panel{margin:12px 0 8px}.search-row .search{font-size:11px}.search-row .search input{font-size:14px;padding:9px 10px}.search-row button{font-size:12px;padding:8px}.chips{margin:9px 0 4px}.quick-filters{gap:8px}.filter-panel .filters label{font-size:11px}.filter-panel select{font-size:13px}.result-controls{gap:6px}.result-controls #count{font-size:10px}.result-controls button{font-size:11px;padding:5px 7px}.section-title h2#results-title{font-size:20px}.recommend-row .recommend-thumb{width:80px;height:50px}}
 
 .source-group-heading{grid-column:1/-1;margin:14px 0 0;font-size:16px;letter-spacing:.045em;color:var(--muted,#aab5c7);font-weight:600}
+
+/* Library navigation: returns on upward scroll; component demos untouched. */
+:root{--library-nav-height:72px;scroll-padding-top:calc(var(--library-nav-height) + 12px)}
+body>.bar{position:sticky;top:0;z-index:20;background:var(--bg);transition:transform 180ms ease-out;will-change:transform}
+body>.bar.nav-hidden:not(:focus-within){transform:translateY(calc(-100% - 2px))}
+body>.bar:focus-within{transform:none}
+@media(prefers-reduced-motion:reduce){body>.bar{transition:none}}
