@@ -1,0 +1,122 @@
+[
+  {
+    "file": "index.html",
+    "width": 375,
+    "targets": 12,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 375,
+    "targets": 3,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 375,
+    "targets": 4,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 375,
+    "targets": 7,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 375,
+    "targets": 0,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "targets": 12,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 768,
+    "targets": 3,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 768,
+    "targets": 4,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 768,
+    "targets": 7,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 768,
+    "targets": 0,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "targets": 12,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 1024,
+    "targets": 3,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 1024,
+    "targets": 4,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 1024,
+    "targets": 7,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 1024,
+    "targets": 0,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "targets": 12,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 1440,
+    "targets": 3,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 1440,
+    "targets": 4,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 1440,
+    "targets": 7,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 1440,
+    "targets": 0,
+    "pass": true
+  }
+]

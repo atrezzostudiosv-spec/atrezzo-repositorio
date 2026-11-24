@@ -124,26 +124,26 @@
 @media (min-width:768px) and (max-width:959px) {
  body[data-page="home"] .tl-home-process-head{flex-direction:column;align-items:flex-start;gap:12px}
  body[data-page="home"] .tl-home-process-head>a{margin-top:0}
- body[data-page="home"] > div:first-of-type a[href="contact.html"]{display:none}
+ body[data-page="home"] > div:first-of-type a[data-demo-office="b"]{display:none}
 }
 @media (min-width:768px) and (max-width:819px) {
  body[data-page="home"] > header .tl-header-logo{width:132px}
  body[data-page="home"] > header button[onclick="openInquiryModal()"]{padding-inline:12px;font-size:15px}
 }
-</style><link rel="stylesheet" href="assets/css/tailwind-runtime-home.css"/><link rel="stylesheet" href="assets/css/accessibility.css?v=1"/></head><body class="flex flex-col min-h-screen antialiased" data-page="home"><div role="note" style="background:#171B1E;color:white;text-align:center;padding:7px 12px;font:600 12px/1.4 system-ui">ATREZZO WEBSITE TEMPLATE · Illustrative content and images · No real business or data delivery</div><div class="bg-brand-charcoal text-white text-xs py-2 px-4 border-b border-brand-slate/40 text-center sm:text-left">
+</style><link rel="stylesheet" href="assets/css/tailwind-runtime-home.css"/><link rel="stylesheet" href="assets/css/accessibility.css?v=1"/></head><body class="flex flex-col min-h-screen antialiased" data-page="home"><div class="bg-brand-charcoal text-white text-xs py-2 px-4 border-b border-brand-slate/40 text-center sm:text-left">
 <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
 <div class="flex items-center space-x-2">
 <span class="inline-block w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
 <span class="tracking-wider text-stone-300 font-medium">SERVING Service Region &amp; SURROUNDING REGIONS</span>
 </div>
 <div class="flex items-center space-x-6 text-stone-300 font-medium">
-<a class="hover:text-brand-orange transition-colors flex items-center gap-1.5" href="contact.html">
+<a class="hover:text-brand-orange transition-colors flex items-center gap-1.5" href="contact.html" data-demo-office="a">
 <i class="fa-solid fa-phone text-brand-orange text-2xl sm:text-xs"></i> Region A: [Phone]
                 </a>
-<a class="hidden md:inline hover:text-brand-orange transition-colors" href="contact.html">
+<a class="hidden md:inline hover:text-brand-orange transition-colors" href="contact.html" data-demo-office="b">
                     Region B: [Phone]
                 </a>
-<a class="hidden lg:inline hover:text-brand-orange transition-colors" href="contact.html">
+<a class="hidden lg:inline hover:text-brand-orange transition-colors" href="contact.html" data-demo-office="c">
                     Region C: [Phone]
                 </a>
 </div>
@@ -191,7 +191,7 @@
 <button class="w-full bg-brand-orange text-white font-display text-lg py-3 rounded text-center font-bold" onclick="openInquiryModal(); closeMobileMenu();">
                     REQUEST A FREE INSPECTION
                 </button>
-<a class="text-stone-300 text-center text-sm font-semibold flex items-center justify-center gap-2 py-2" href="contact.html">
+<a class="text-stone-300 text-center text-sm font-semibold flex items-center justify-center gap-2 py-2" href="contact.html" data-demo-office="a">
 <i class="fa-solid fa-phone text-brand-orange"></i> Call Region A: [Phone]
                 </a>
 </div>
@@ -469,15 +469,15 @@
 <div>
 <span class="font-bold text-white block">Region A / Headquarters</span>
 <p class="text-stone-400">PO Box 1199, Argyle, Region 76226</p>
-<a class="text-brand-orange font-bold hover:underline" href="contact.html">[Phone]</a>
+<a class="text-brand-orange font-bold hover:underline" href="contact.html" data-demo-office="a">[Phone]</a>
 </div>
 <div>
 <span class="font-bold text-white block">Region B Office</span>
-<a class="text-brand-orange font-bold hover:underline" href="contact.html">[Phone]</a>
+<a class="text-brand-orange font-bold hover:underline" href="contact.html" data-demo-office="b">[Phone]</a>
 </div>
 <div class="sm:col-span-2 pt-2 border-t border-brand-slate/50">
 <span class="font-bold text-white block">Region C Office</span>
-<a class="text-brand-orange font-bold hover:underline" href="contact.html">[Phone]</a>
+<a class="text-brand-orange font-bold hover:underline" href="contact.html" data-demo-office="c">[Phone]</a>
 </div>
 </div>
 </div>
@@ -492,7 +492,7 @@
 </div>
 </div>
 </div>
-</footer><div aria-label="Image Lightbox" aria-modal="true" class="fixed inset-0 z-50 bg-brand-charcoal/95 backdrop-blur-md hidden flex flex-col justify-between p-4 sm:p-8" id="gallery-lightbox" role="dialog">
+<div role="note" style="background:#171B1E;color:white;text-align:center;padding:7px 12px;font:600 12px/1.4 system-ui">ATREZZO WEBSITE TEMPLATE · Illustrative content and images · No real business or data delivery</div></footer><div aria-label="Image Lightbox" aria-modal="true" class="fixed inset-0 z-50 bg-brand-charcoal/95 backdrop-blur-md hidden flex flex-col justify-between p-4 sm:p-8" id="gallery-lightbox" role="dialog">
 <div class="flex justify-between items-center text-white max-w-7xl mx-auto w-full">
 <span class="font-mono text-sm text-brand-orange font-bold" id="lightbox-counter">1 / 6</span>
 <button aria-label="Close Lightbox" class="text-stone-300 hover:text-white text-3xl focus:outline-none p-2" onclick="closeLightbox()">
