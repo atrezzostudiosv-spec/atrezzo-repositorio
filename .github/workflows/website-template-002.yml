@@ -1,0 +1,46 @@
+name: ATZ-WEB-002 website template build and QA
+on:
+  push:
+    branches: ['lab/website-template-002']
+permissions:
+  contents: write
+jobs:
+  template:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --only-shell chromium
+      - name: Get immutable original source
+        run: |
+          git clone --no-checkout https://github.com/atrezzostudiosv-spec/tri-lane-roofing.git /tmp/trilane-source
+          git -C /tmp/trilane-source checkout a36c0019f9fb653bd970f2c6ab5777fda37a1ba2
+      - run: node scripts/build-website-template-002.mjs /tmp/trilane-source
+      - run: npm test
+      - run: node tests/website-template-002-browser.mjs
+      - name: Package and record QA
+        run: |
+          python3 - <<'PY'
+          import zipfile,pathlib
+          root=pathlib.Path('websites/templates/ATZ-WEB-002/v1/')
+          with zipfile.ZipFile(root/'ATZ-WEB-002-v1.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted((root/'site').rglob('*')):
+                  if p.is_file(): z.write(p,p.relative_to(root/'site'))
+              for n in ['README.md','template-config.json']: z.write(root/n,n)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add websites/templates/ATZ-WEB-002/v1/
+          git commit -m "Validate source-derived ATZ-WEB-002 and package master"
+          git push origin HEAD:lab/website-template-002
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-template-002-evidence
+          path: |
+            websites/templates/ATZ-WEB-002/v1/qa.json
+            websites/templates/ATZ-WEB-002/v1/poster.webp
