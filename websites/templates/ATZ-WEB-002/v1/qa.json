@@ -1,0 +1,102 @@
+[
+  {
+    "file": "index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "about.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "services.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "gallery.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "contact.html",
+    "width": 1440,
+    "pass": true
+  }
+]
