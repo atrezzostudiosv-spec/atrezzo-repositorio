@@ -1,0 +1,37 @@
+{
+  "id": "ATZ-SEC-015",
+  "title": "Cinematic Collection Chapters",
+  "source_repo": "atrezzostudiosv-spec/Team-Hodnett",
+  "source_commit": "98d354c5b1349d1457af0f1cbc5d12256a011f1b",
+  "source_paths": [
+    "scripts/home.mjs",
+    "public/src/ui.js",
+    "public/src/collection-cinema.css",
+    "public/src/site.css",
+    "public/src/luxury.css",
+    "scripts/templates.mjs"
+  ],
+  "source_css_blob": "835956afd7c453774bd4bd06712a1d14ccff7595",
+  "source_visual_approved": true,
+  "catalog_qa_status": "pending",
+  "client_ready": false,
+  "files": [
+    "index.html",
+    "component.css",
+    "source-context.css",
+    "engine.original.js",
+    "component.js",
+    "source-template.mjs",
+    "README.md",
+    "manifest.json",
+    "assets/scene-1.svg",
+    "assets/scene-2.svg",
+    "assets/scene-3.svg",
+    "assets/dm-sans-400.ttf",
+    "assets/dm-sans-500.ttf",
+    "assets/DM-Sans-OFL.txt",
+    "assets/dm-sans-600.ttf"
+  ],
+  "dependencies": [],
+  "media": "ATREZZO neutral illustrations; no Hodnett property photos"
+}
