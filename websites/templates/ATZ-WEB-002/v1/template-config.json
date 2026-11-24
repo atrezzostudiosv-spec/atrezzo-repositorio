@@ -1,0 +1,40 @@
+{
+  "template_id": "ATZ-WEB-002",
+  "version": "1.0.0",
+  "source_commit": "a36c0019f9fb653bd970f2c6ab5777fda37a1ba2",
+  "mode": "demo_only",
+  "business": {
+    "name": null,
+    "logo": null,
+    "offices": [],
+    "phone": null,
+    "email": null,
+    "service_areas": [],
+    "verified_services": [],
+    "verified_claims": [],
+    "approved_testimonials": []
+  },
+  "media": {
+    "approved": false,
+    "replace_all_placeholders": true
+  },
+  "forms": {
+    "enabled": false,
+    "endpoint": null,
+    "recipient": null,
+    "receipt_verified": false
+  },
+  "wizard": {
+    "enabled_for_demo": true,
+    "delivery": false
+  },
+  "seo": {
+    "indexing": false,
+    "canonical_domain": null
+  },
+  "legal": {
+    "privacy_approved": false,
+    "consent_approved": false
+  },
+  "production_ready": false
+}

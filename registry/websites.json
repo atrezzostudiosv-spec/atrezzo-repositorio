@@ -36,6 +36,39 @@
       "guide": "websites/templates/ATZ-WEB-001/v1/README.md",
       "status": "validated_template",
       "client_ready": false
+    },
+    {
+      "id": "ATZ-WEB-002",
+      "version": "1.0.0",
+      "title": "Roofing & Exterior Services",
+      "source_name": "Tri-Lane Roofing",
+      "source_repo": "atrezzostudiosv-spec/tri-lane-roofing",
+      "source_commit": "a36c0019f9fb653bd970f2c6ab5777fda37a1ba2",
+      "sector": "Roofing / exteriores",
+      "tags": [
+        "roofing",
+        "construction",
+        "exteriores",
+        "roof",
+        "gallery",
+        "wizard",
+        "multipágina"
+      ],
+      "description": "Arquitectura original de cinco páginas, bento de servicios, proceso editorial, galería con visor y formulario guiado de cuatro pasos. Datos ilustrativos; envíos desactivados.",
+      "pages": [
+        "index.html",
+        "about.html",
+        "services.html",
+        "gallery.html",
+        "contact.html"
+      ],
+      "preview": "websites/templates/ATZ-WEB-002/v1/site/index.html",
+      "original_preview": "https://atrezzostudiosv-spec.github.io/tri-lane-roofing/",
+      "poster": "websites/templates/ATZ-WEB-002/v1/poster.webp",
+      "package": "websites/templates/ATZ-WEB-002/v1/ATZ-WEB-002-v1.zip",
+      "guide": "websites/templates/ATZ-WEB-002/v1/README.md",
+      "status": "validated_template",
+      "client_ready": false
     }
   ]
 }
