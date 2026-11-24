@@ -1,0 +1,132 @@
+/* ATREZZO / McBride — SERVICE GALLERY 1.0 (overview only)
+   Editorial 3x2 desktop, 2x3 tablet, 1x6 portrait; no horizontal scrolling.
+   Photos are illustrative and must never be described as customer work. */
+html[data-page="services"] .at-service-gallery-section{
+  background:#F5F7F4;color:#202827;padding:clamp(82px,8.7vw,140px) 0 clamp(84px,9vw,140px);
+  overflow-x:clip; font-family:Manrope,system-ui,sans-serif;
+}
+html[data-page="services"] .at-gallery-shell{
+  width:min(1350px,calc(100% - 96px));margin-inline:auto;min-width:0;
+}
+html[data-page="services"] .at-gallery-intro{
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(250px,.65fr);
+  gap:clamp(26px,5vw,90px);align-items:end;margin-bottom:clamp(40px,5vw,70px);
+}
+html[data-page="services"] .at-gallery-eyebrow,html[data-page="services"] .at-gallery-kicker{
+  color:#297651;font-weight:800;font-size:11px;letter-spacing:.16em;line-height:1.5;
+}
+html[data-page="services"] .at-gallery-intro h2{
+  font-size:clamp(44px,5.1vw,78px);font-weight:800;letter-spacing:-.065em;
+  line-height:1.05;margin:17px 0 0;color:#202827;
+}
+html[data-page="services"] .at-gallery-intro h2 em{font-style:normal;color:#287852}
+html[data-page="services"] .at-gallery-intro>p{
+  font-size:clamp(15px,1.3vw,17px);line-height:1.85;color:#58695D;
+  max-width:390px;margin:0 0 4px;
+}
+html[data-page="services"] .at-gallery-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(18px,2.4vw,32px);align-items:stretch;
+}
+html[data-page="services"] .at-gallery-card{
+  margin:0;min-width:0;position:relative;background:#FFFFFF;
+  border:1px solid #DBE4DC;border-radius:3px;overflow:hidden;
+}
+html[data-page="services"] .at-gallery-card>a{
+  display:flex;flex-direction:column;height:100%;min-width:0;
+  color:inherit;text-decoration:none;outline-offset:-4px;
+}
+html[data-page="services"] .at-gallery-card>a:focus-visible{
+  outline:3px solid #26734F;outline-offset:-4px;
+}
+html[data-page="services"] .at-gallery-media{
+  position:relative;overflow:hidden;isolation:isolate;
+  width:100%;aspect-ratio:5/4;background:#20312A;
+}
+html[data-page="services"] .at-gallery-media:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(7,18,13,.30),transparent 38%,rgba(7,18,13,.10));
+}
+html[data-page="services"] .at-gallery-media img{
+  display:block;width:100%;height:100%;object-fit:cover;
+  object-position:var(--at-gallery-image-position,center);
+  transform:scale(var(--at-gallery-scroll-zoom,1.035));
+  transition:transform .9s cubic-bezier(.19,1,.22,1);
+  will-change:auto;
+}
+html[data-page="services"] .at-gallery-number{
+  position:absolute;top:23px;left:23px;z-index:1;
+  color:#fff;font-weight:800;font-size:10px;letter-spacing:.18em;
+  text-shadow:0 1px 7px rgba(0,0,0,.5);
+}
+html[data-page="services"] .at-gallery-content{
+  display:flex;flex-direction:column;flex:1;min-width:0;align-items:start;
+  padding:clamp(25px,2.6vw,37px);
+}
+html[data-page="services"] .at-gallery-content h3{
+  margin:15px 0 17px;font-size:clamp(24px,2.1vw,31px);
+  font-weight:800;letter-spacing:-.052em;line-height:1.14;color:#222B26;
+}
+html[data-page="services"] .at-gallery-content p{
+  margin:0 0 32px;color:#536358;line-height:1.8;font-size:14px;
+}
+html[data-page="services"] .at-gallery-cta{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:20px;width:100%;margin-top:auto;padding-top:18px;
+  border-top:1px solid #DFE7E0;font-size:13px;font-weight:800;
+  color:#236B49;line-height:1.45;
+}
+html[data-page="services"] .at-gallery-cta>span{
+  font-size:19px;font-weight:500;transition:transform .35s ease;
+}
+html[data-page="services"] .at-gallery-card:hover .at-gallery-cta>span,
+html[data-page="services"] .at-gallery-card:focus-within .at-gallery-cta>span{
+  transform:translate(3px,-3px);
+}
+@media(hover:hover) and (min-width:768px) and (prefers-reduced-motion:no-preference){
+ html[data-page="services"] .at-gallery-card:hover .at-gallery-media img{
+   transform:scale(1.09);
+ }
+}
+html[data-page="services"] .at-gallery-disclaimer{
+  font-size:11px;line-height:1.7;color:#64746B;margin:24px 0 0;
+}
+@media(max-width:1100px){
+ html[data-page="services"] .at-gallery-grid{
+   grid-template-columns:repeat(2,minmax(0,1fr));
+ }
+ html[data-page="services"] .at-gallery-shell{width:calc(100% - 64px)}
+ html[data-page="services"] .at-gallery-intro{grid-template-columns:1fr;gap:20px}
+ html[data-page="services"] .at-gallery-intro>p{max-width:650px}
+}
+@media(max-width:767px){
+ html[data-page="services"] .at-service-gallery-section{padding:70px 0 88px}
+ html[data-page="services"] .at-gallery-shell{width:calc(100% - 36px)}
+ html[data-page="services"] .at-gallery-intro{margin-bottom:34px}
+ html[data-page="services"] .at-gallery-intro h2{font-size:clamp(38px,9vw,53px)}
+ html[data-page="services"] .at-gallery-grid{grid-template-columns:minmax(0,1fr);gap:25px}
+ html[data-page="services"] .at-gallery-card{
+   transition:transform .75s cubic-bezier(.19,.73,.21,1),opacity .65s ease;
+   transform:translate3d(0,0,0);opacity:1;
+ }
+ html[data-page="services"] .at-gallery-grid.at-gallery-motion-ready .at-gallery-card:not(.is-visible){
+   opacity:.17;transform:translate3d(58px,0,0);
+ }
+ html[data-page="services"] .at-gallery-media{aspect-ratio:5/4}
+ html[data-page="services"] .at-gallery-media img{
+   transform:scale(var(--at-gallery-scroll-zoom,1.035));
+   transition:none;
+ }
+ html[data-page="services"] .at-gallery-content{padding:27px 25px 29px}
+ html[data-page="services"] .at-gallery-content h3{font-size:clamp(25px,7vw,31px)}
+ html[data-page="services"] .at-gallery-content p{margin-bottom:26px}
+}
+@media(prefers-reduced-motion:reduce){
+ html[data-page="services"] .at-gallery-card{
+   transform:none!important;opacity:1!important;transition:none!important;
+ }
+ html[data-page="services"] .at-gallery-media img{
+   transform:none!important;transition:none!important;
+ }
+ html[data-page="services"] .at-gallery-cta>span{transition:none}
+}

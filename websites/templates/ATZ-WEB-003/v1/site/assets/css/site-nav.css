@@ -1,0 +1,206 @@
+/* ATREZZO McBride — shared navigation v1.0 — 2026-10-28
+   Consistent active page, accessible hover/focus/click service dropdown.
+   Home retains its approved artwork and desktop smart sticky behavior.
+   Interior pages get the same header without importing Home's global CSS. */
+.at-site-nav{position:sticky;top:0;z-index:60}
+.at-site-nav a{text-decoration:none}
+.at-site-nav .at-services-menu{position:relative;display:flex;align-items:center;gap:1px}
+.at-site-nav .at-services-menu>.at-services-parent{display:block}
+.at-site-nav .at-services-menu>.at-services-toggle{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:38px;padding:0;margin-left:1px;flex:none;border:0;
+  background:transparent;color:inherit;border-radius:4px;cursor:pointer;
+}
+.at-site-nav .desktop-nav .at-services-toggle{color:#F2F7F3}
+.at-site-nav .at-services-toggle svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.2;transition:transform .25s ease}
+.at-site-nav .at-services-menu:is(:hover,:focus-within,.is-open)>.at-services-toggle svg{transform:rotate(180deg)}
+.at-site-nav .at-services-panel{
+  position:absolute;top:100%;right:-150px;z-index:65;
+  width:min(540px,calc(100vw - 34px));padding:23px;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;
+  background:#F9FBF9;color:#202827;border:1px solid #DDE8DF;
+  box-shadow:0 22px 52px rgba(8,22,15,.24);border-radius:0 0 9px 9px;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transform:translate3d(0,8px,0);transition:opacity .24s ease,transform .24s ease,visibility .24s;
+}
+.at-site-nav .at-services-menu.is-open>.at-services-panel{
+  opacity:1;visibility:visible;pointer-events:auto;transform:none;
+}
+.at-site-nav .at-services-menu.is-dismissed>.at-services-panel{
+  opacity:0;visibility:hidden;pointer-events:none;transform:translate3d(0,8px,0);
+}
+.at-site-nav .at-services-panel .at-panel-label{
+  grid-column:1/-1;color:#4D795E;letter-spacing:.15em;text-transform:uppercase;
+  font:800 10px/1.5 Manrope,system-ui,sans-serif;margin-bottom:6px;
+}
+.at-site-nav .at-services-panel a{
+  display:flex;align-items:center;min-height:43px;
+  padding:11px 12px!important;margin:0!important;border:0!important;
+  border-radius:4px;color:#24302A!important;font:750 12px/1.45 Manrope,system-ui,sans-serif;
+  white-space:normal;letter-spacing:0;position:relative;text-transform:none;
+  background:transparent;transition:background-color .2s,color .2s;
+}
+.at-site-nav .at-services-panel a:hover,.at-site-nav .at-services-panel a:focus-visible,
+.at-site-nav .at-services-panel a[aria-current="page"]{
+  color:#1A6642!important;background:#EAF3EC;
+}
+.at-site-nav .at-services-panel a:after{content:none!important;display:none!important}
+.at-site-nav .at-services-panel .at-all-services{
+  grid-column:1/-1;background:#EAF3EC;font-weight:850;
+}
+.at-site-nav .desktop-nav .at-services-menu[data-active-section="services"]>.at-services-parent{
+  color:#A5E2B8;
+}
+.at-site-nav .desktop-nav .at-services-menu[data-active-section="services"]>.at-services-parent:after{
+  content:"";position:absolute;left:0;right:0;bottom:22px;height:2px;background:#77C992;
+}
+.at-site-nav .desktop-nav .at-services-menu[data-active-section="services"]>.at-services-toggle{color:#A5E2B8}
+/* Repeat the approved brighter-green announcement ribbon on internal pages. */
+.at-internal-announcement{background:#307953!important;color:#FFF}
+.at-internal-announcement .text-gray-200,
+.at-internal-announcement .text-emerald-100\/80{color:#F3FBF4}
+.at-internal-announcement .text-emerald-300,
+.at-internal-announcement .text-emerald-400{color:#D5F5DF}
+/* Interior pages: same charcoal/nav/brand architecture, no Home CSS. */
+.at-site-nav.at-nav-internal{
+  background:#1A1E1F;color:#FFF;border-bottom:1px solid rgba(255,255,255,.13);
+  box-shadow:0 8px 25px rgba(0,0,0,.10);
+  font:500 14px/1.5 Manrope,system-ui,sans-serif;
+}
+.at-nav-internal .nav-inner{
+  width:min(calc(100% - 80px),1250px);margin-inline:auto;
+  min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.at-nav-internal .brand{display:flex;align-items:center;flex:none}
+.at-nav-internal .brand img{
+  display:block;width:164px;height:59px;object-fit:contain;object-position:left center;
+  filter:brightness(0) saturate(100%) invert(71%) sepia(20%) saturate(778%) hue-rotate(88deg) brightness(90%) contrast(91%);
+}
+.at-nav-internal .desktop-nav{display:flex;align-items:center;gap:28px}
+.at-nav-internal .desktop-nav>a,.at-nav-internal .desktop-nav .at-services-parent{
+  display:block;position:relative;padding:34px 0;color:#F2F7F3;font:700 13px/1.5 Manrope,system-ui,sans-serif;
+}
+.at-nav-internal .desktop-nav>a:hover,
+.at-nav-internal .desktop-nav>a[aria-current="page"],
+.at-nav-internal .desktop-nav .at-services-parent:hover{color:#A5E2B8}
+.at-nav-internal .desktop-nav>a[aria-current="page"]::after{
+  content:"";position:absolute;left:0;right:0;bottom:22px;height:2px;background:#77C992;
+}
+.at-nav-internal .nav-call{
+  flex:none;display:inline-flex;align-items:center;gap:9px;
+  min-height:48px;padding:12px 18px;border-radius:5px;
+  background:#287850;color:#FFF;font:800 13px/1.4 Manrope,system-ui,sans-serif;
+}
+.at-nav-internal .nav-call:hover{background:#349361}
+.at-nav-internal .nav-call svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9}
+.at-nav-internal .nav-call-number{color:#ECF7EF;font-weight:600}
+.at-nav-internal .mobile-menu-toggle{
+  display:none;align-items:center;justify-content:center;
+  width:46px;height:46px;background:transparent;border:1px solid rgba(255,255,255,.35);
+  border-radius:4px;color:#FFF;
+}
+.at-nav-internal .menu-lines,.at-nav-internal .menu-lines::before,.at-nav-internal .menu-lines::after{
+  display:block;position:relative;width:20px;height:2px;background:#FFF;
+}
+.at-nav-internal .menu-lines::before,.at-nav-internal .menu-lines::after{
+  position:absolute;left:0;content:"";
+}
+.at-nav-internal .menu-lines::before{top:-6px}
+.at-nav-internal .menu-lines::after{top:6px}
+.at-nav-internal .mobile-nav{padding:12px 25px 25px;background:#1A1E1F}
+.at-site-nav .mobile-nav.hidden{display:none!important}
+.at-site-nav .mobile-nav a{display:block;padding:13px 8px;border-bottom:1px solid rgba(255,255,255,.16);color:#F2F7F3;font-weight:700}
+.at-site-nav .mobile-nav a:hover,.at-site-nav .mobile-nav a[aria-current="page"]{color:#A5E2B8}
+.at-site-nav .at-mobile-services-head{display:grid;grid-template-columns:1fr 45px;align-items:center}
+.at-site-nav .at-mobile-services-head a{min-width:0}
+.at-site-nav .at-mobile-services-toggle{
+  display:grid;place-items:center;min-height:44px;border:0;border-bottom:1px solid rgba(255,255,255,.16);
+  background:transparent;color:#FFF;font-size:25px;line-height:1;cursor:pointer;
+}
+.at-site-nav .at-mobile-services-toggle[aria-expanded="true"]{color:#A5E2B8}
+.at-site-nav .at-mobile-services-list{padding:5px 0 15px 15px;background:#202727}
+.at-site-nav .at-mobile-services-list[hidden]{display:none!important}
+.at-site-nav .at-mobile-services-list a{padding:12px 14px;font-size:12px;color:#E7F0E9}
+.at-site-nav .mobile-nav .mobile-nav-call{
+  margin-top:18px;text-align:center;background:#287850;color:white;border:0;border-radius:4px;padding:14px 18px;
+}
+.at-site-nav .mobile-nav .mobile-nav-call:hover{background:#349361;color:#FFF}
+.at-site-nav a:focus-visible,.at-site-nav button:focus-visible{outline:3px solid #B6E8C3;outline-offset:3px}
+@media(max-width:1150px){
+  .at-nav-internal .nav-inner{width:min(calc(100% - 52px),1250px)}
+  .at-nav-internal .desktop-nav{gap:20px}
+  .at-nav-internal .nav-call-number{display:none}
+  .at-site-nav .at-services-panel{right:-85px}
+}
+@media(max-width:900px){
+  .at-site-nav .desktop-nav{display:none}
+  .at-site-nav .nav-call{margin-left:auto}
+  .at-site-nav .mobile-menu-toggle{display:flex}
+  .at-nav-internal .nav-inner{min-height:74px;width:min(calc(100% - 40px),1250px)}
+  .at-nav-internal .brand img{width:145px;height:53px}
+}
+@media(max-width:640px){
+  .at-nav-internal .nav-inner{min-height:71px;width:min(calc(100% - 36px),1250px)}
+  .at-nav-internal .brand img{width:126px;height:48px}
+  .at-nav-internal .nav-call{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .at-site-nav .at-services-panel,.at-site-nav .at-services-toggle svg{transition:none}
+}
+
+
+/* 2026-10-28 — Service ribbon on phones/tablets.
+   Keep the desktop announcement and every other site's page untouched.
+   One centered emergency badge; hide repeated announcement, family label and
+   telephone only in this TOP ribbon (the sticky mobile call bar remains). */
+@media(max-width:1023px){
+  html:is([data-page="services"],[data-page="service-detail"]) .at-internal-announcement{
+    padding:8px 14px!important;
+  }
+  html:is([data-page="services"],[data-page="service-detail"]) .at-internal-announcement>div{
+    display:flex!important;flex-direction:row!important;justify-content:center!important;
+    align-items:center!important;gap:0!important;width:100%;max-width:none;
+    margin:0 auto;text-align:center!important;
+  }
+  html:is([data-page="services"],[data-page="service-detail"]) .at-internal-announcement>div>div:first-child{
+    display:flex!important;flex-direction:row!important;justify-content:center!important;
+    align-items:center!important;gap:0!important;max-width:100%;width:100%;
+  }
+  html:is([data-page="services"],[data-page="service-detail"]) .at-internal-announcement>div>div:first-child>span:nth-child(2),
+  html:is([data-page="services"],[data-page="service-detail"]) .at-internal-announcement>div>div:nth-child(2){
+    display:none!important;
+  }
+  html:is([data-page="services"],[data-page="service-detail"]) .at-internal-announcement>div>div:first-child>span:first-child{
+    display:inline-flex!important;align-items:center;justify-content:center;gap:8px;
+    padding:5px 13px!important;max-width:100%;white-space:nowrap;
+    border-radius:999px;font-size:11px;line-height:1.4;
+    text-align:center;letter-spacing:.055em;
+  }
+}
+
+
+/* 2026-11-09: Services label is a full-width disclosure, not a redirect. */
+.at-site-nav .desktop-nav .at-services-parent {
+  appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:48px;padding:22px 0;margin:0;background:transparent;border:0;
+  color:#f2f7f3;font:700 13px/1.5 Manrope,system-ui,sans-serif;
+  text-align:left;cursor:pointer;white-space:nowrap;
+}
+.at-site-nav .at-services-parent svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;transition:transform .2s ease}
+.at-site-nav .at-services-menu:is(:hover,:focus-within,.is-open)>.at-services-parent svg{transform:rotate(180deg)}
+.at-site-nav .at-services-parent[aria-expanded=true]{color:#a5e2b8}
+.at-site-nav .desktop-nav .at-services-menu[data-active-section=services]>.at-services-parent{color:#a5e2b8}
+.at-site-nav .at-services-panel{right:min(0px,calc((540px - 100vw)/2 + 24px))}
+.at-site-nav .at-services-menu.is-open>.at-services-panel{opacity:1;visibility:visible;pointer-events:auto;transform:none}
+.at-site-nav .at-mobile-services-head{display:block}
+.at-site-nav .at-mobile-services-toggle{
+  appearance:none;display:flex;width:100%;min-height:48px;align-items:center;justify-content:space-between;
+  padding:13px 8px;border:0;border-bottom:1px solid rgba(255,255,255,.16);
+  background:transparent;color:#f2f7f3;font:700 14px/1.5 Manrope,system-ui,sans-serif;
+  text-align:left;cursor:pointer;
+}
+.at-site-nav .at-mobile-services-toggle svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;transition:transform .2s ease}
+.at-site-nav .at-mobile-services-toggle[aria-expanded=true] svg{transform:rotate(180deg)}
+.at-site-nav .at-mobile-services-list{padding-top:8px}
+.at-site-nav .at-mobile-services-list .at-mobile-view-all{font-weight:800;color:#c1e9ca;background:#27372f}
+@media(prefers-reduced-motion:reduce){.at-site-nav .at-services-parent svg,.at-site-nav .at-mobile-services-toggle svg{transition:none}}

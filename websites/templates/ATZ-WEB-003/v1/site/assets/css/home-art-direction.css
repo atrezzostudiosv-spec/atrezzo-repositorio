@@ -1,0 +1,223 @@
+/* ATREZZO / MCBRIDE HOME ART DIRECTION 1.1 — 28 Oct 2026
+   Palette approved: softer charcoal header, white menu, original green logo with
+   boosted on-dark legibility, bright green announcement band, neutral light
+   content surfaces, charcoal photographic overlays, green only as accent.
+   Home-only style layer, placed after home.css and home-experience.css.
+   Changes COLOR only: does not modify scroll geometry, image IDs or copy. */
+:root{
+  --forest:#206B4C;--deep:#161A1B;--ink:#202727;--body:#49534D;
+  --cream:#F8FAF8;--paper:#FFFFFF;--sage:#F2F6F3;--line:#DEE5DF;
+  --citrus:#BDE7C9;--gold:#BDE7C9;
+  --at-carbon:#141819;--at-accent:#26734F;--at-bright:#AFE8C0;
+}
+.site-announcement{background:#307953;color:#FFFFFF}
+.site-announcement a{color:#FFFFFF}
+.site-announcement .announcement-dot{background:#E1F7E6;box-shadow:0 0 0 3px rgba(255,255,255,.16)}
+.site-header{background:#1A1E1F;border-bottom:1px solid rgba(255,255,255,.13);box-shadow:0 7px 25px rgba(0,0,0,.12)}
+.site-header .brand img{
+  width:164px;
+  height:59px;
+  object-fit:contain;
+  object-position:left center;
+  filter:brightness(0) saturate(100%) invert(71%) sepia(20%) saturate(778%) hue-rotate(88deg) brightness(90%) contrast(91%);
+  opacity:1;
+}
+.site-header .desktop-nav a{color:#F2F7F3}
+.site-header .desktop-nav a:hover,.site-header .desktop-nav a[aria-current]{color:#AFE8C0}
+.site-header .desktop-nav a[aria-current]::after{background:#77C992}
+.site-header .nav-call,.site-header .mobile-nav .mobile-nav-call{background:#287850;color:#FFFFFF}
+.site-header .nav-call:hover,.site-header .mobile-nav .mobile-nav-call:hover{background:#349361}
+.site-header .nav-call-number{color:#ECF7EF}
+.site-header .mobile-menu-toggle{background:transparent;border-color:rgba(255,255,255,.36)}
+.site-header .menu-lines,.site-header .menu-lines::before,.site-header .menu-lines::after{background:#FFFFFF}
+.site-header .mobile-nav{background:#1A1E1F;color:#FFFFFF;box-shadow:0 18px 30px rgba(0,0,0,.22)}
+.site-header .mobile-nav a{color:#F3F7F4;border-bottom-color:rgba(255,255,255,.16)}
+.site-header .mobile-nav a:hover,.site-header .mobile-nav a[aria-current]{color:#AFE8C0}
+/* Human cinematic hero: image retains its real hues. */
+.hero{background:#151919;color:#FFFFFF}
+.hero::before{filter:brightness(1.055) contrast(1.035) saturate(1.02)}
+.hero::after{
+  background:linear-gradient(90deg,rgba(10,12,13,.84) 0%,rgba(10,12,13,.68) 34%,rgba(10,12,13,.25) 70%,rgba(10,12,13,.10) 100%),
+  linear-gradient(0deg,rgba(10,12,13,.23),transparent 39%,rgba(10,12,13,.10));
+}
+.hero .eyebrow.light{color:#B5E8C3}
+.hero h1 em{color:#B7E6C3}
+.hero .hero-description{color:#EDF2EE}
+.hero .hero-heritage{border-top-color:rgba(255,255,255,.30)}
+.hero .hero-heritage span{color:#CDD9D0}
+.hero .avatar-row img{border-color:#252B2C}
+.hero .button-warm,.hero .button-primary,.hero .form-submit{background:#287850;color:#FFFFFF}
+.hero .button-warm:hover,.hero .button-primary:hover,.hero .form-submit:hover{background:#348F63}
+.hero .hero-form-link{color:#FFFFFF;border-bottom-color:#90D6A9}
+.hero .form-outer{background:#FBFDFC;color:#202727;box-shadow:0 25px 62px rgba(0,0,0,.24)}
+.hero .form-kicker{color:#26734F}
+.hero .form-field input,.hero .form-field select{background:#FFFFFF;border-color:#DBE5DD;color:#202727}
+/* Open, crisp light sections: no repeated pale green backdrop. */
+.proof .proof-grid{background:#FFFFFF;border-color:#E3E9E4;box-shadow:0 14px 31px rgba(18,25,23,.09)}
+.proof .proof-card{color:#202727}
+.proof .proof-card:not(:last-child){border-right-color:#E1E7E2}
+.proof .proof-rating{background:#FCFDFC}
+.proof .proof-legacy{background:#F5F8F5}
+.proof .proof-legacy-portraits img{border-color:#F5F8F5}
+.proof .proof-emergency{background:#252C2D;color:#FFFFFF}
+.proof .proof-emergency:hover{background:#343D3E}
+.proof .proof-emergency .proof-kicker,.proof .proof-emergency .proof-action{color:#B9ECC7}
+.proof .proof-emergency .proof-description{color:#E1E9E2}
+.proof .proof-emergency-head svg{stroke:#B9ECC7}
+.proof .proof-rating-number,.proof .proof-number{color:#202727}
+.proof .proof-action{color:#26734F}
+.intro.section{background:#FFFFFF}
+.intro .intro-copy{border-color:#DEE5DF}
+.intro h2,.section-heading h2,.family h2,.reviews-heading h2,.end-cta h2{color:#202727}
+.intro h2 span,.section-heading h2 span,.family h2 span,
+.reviews-heading h2 span,.end-cta h2 span{color:#26734F}
+.eyebrow.dark,.text-link{color:#26734F}
+.text-link{border-bottom-color:#49544D}
+.intro .intro-copy p,.section-heading p,.family .family-heading-copy p,.reviews-introduction,.end-cta p{color:#53605A}
+/* Full-width Services: no emerald/forest scrim, keep original zoom/scroll. */
+.services.section{background:#F8FAF8}
+.services .services-journey-cue{color:#5E6A63}
+.services .services-journey-rule{background:#86B297}
+.services .services-journey-down{color:#26734F}
+.services .service-scene{background:#1A1E1F}
+.services .service-scene-photo{filter:none}
+.services .service-scene.is-scene-current .service-scene-photo,
+.services .service-scene:hover .service-scene-photo,
+.services .service-scene:focus-visible .service-scene-photo{filter:none}
+.services .service-scene-shade{
+  background:linear-gradient(90deg,rgba(12,14,15,.43) 0%,rgba(12,14,15,.10) 69%,transparent 100%),
+  linear-gradient(180deg,rgba(10,12,13,.33),transparent 32%,rgba(11,13,14,.36) 61%,rgba(8,10,11,.91) 100%);
+}
+.services .service-scene-index{color:#E3F1E6}
+.services .service-scene-description,.services .service-scene:nth-child(n+2) .service-scene-description{color:#F2F5F2}
+.services .service-scene-action,.services .service-scene:nth-child(n+2) .service-scene-action{background:#FFFFFF;color:#206B4C}
+.services .service-scene-progress span{background:#B1E5C0}
+/* Family story: color comes from real portraits rather than tinted surfaces. */
+.family.section{background:#FFFFFF}
+.family .family-journey-label{color:#26734F}
+.family .family-journey-line{background:#C6DACB}
+.family .family-person figcaption{color:#202727}
+.family .family-person figcaption span{color:#26734F}
+.family .family-person.is-family-current figcaption span{background:#26734F;border-color:#26734F;color:#FFFFFF}
+.family .family-end{border-top-color:#E0E7E1}
+/* Green editorial OUR APPROACH intro/outro; neutral carbon on moving photos (no green tint). */
+.approach.approach-cinema{background:#205B43}
+.approach-cinema .approach-cinema-intro h2 em{color:#ADE5BC}
+.approach-cinema .approach-cinema-intro>p{color:#DFEAE1}
+.approach-cinema .approach-cinema-cue{color:#C4E6CE}
+.approach-cinema .approach-story.is-cinema-ready .approach-stage,
+.approach-cinema .approach-stage,.approach-cinema .approach-scene{background:#171B1C}
+.approach-cinema .approach-scene-photo{filter:none}
+.approach-cinema .approach-scene-shade{
+  background:linear-gradient(90deg,rgba(10,12,13,.87) 0%,rgba(10,12,13,.65) 35%,rgba(10,12,13,.21) 76%,rgba(10,12,13,.12) 100%),
+  linear-gradient(180deg,rgba(10,12,13,.29),transparent 30%,rgba(9,11,12,.63) 100%);
+}
+.approach-cinema .approach-scene-index{color:#EAF1EB}
+.approach-cinema .approach-scene-eyebrow{color:#B7EAC5}
+.approach-cinema .approach-scene-content p{color:#F1F5F1}
+.approach-cinema .approach-scene-progress span{background:#B0E2BC}
+.approach-cinema .approach-illustration-note{color:#D0DAD2}
+.approach-cinema .approach-cinema-benefits{border-top-color:rgba(255,255,255,.25)}
+.approach-cinema .approach-cinema-benefits strong{color:#FFFFFF}
+.approach-cinema .approach-cinema-benefits p{color:#DCE6DE}
+/* Reviews and CTA: bright interlude, footer returns to the brand forest. */
+.reviews-section{background:#F8FAF8;border-top-color:#E2E8E3}
+.reviews-score{border-color:#D9E1DB}
+.reviews-score-number{color:#202727}
+.review-quote{background:#FFFFFF;border-color:#DEE6DF}
+.review-quote blockquote,.review-quote figcaption strong{color:#202727}
+.review-quotation-mark{color:#DFEAE2}
+.reviews-google-link,.end-cta .button-dark{background:#26734F;color:#FFFFFF}
+.reviews-google-link:hover,.end-cta .button-dark:hover{background:#348F63}
+.end-cta{background:#F3F7F4}
+.site-footer{background:#174532;color:#FFFFFF}
+.footer-grid strong{color:#C4E9CD}
+.footer-grid p,.footer-contact span{color:#D4DED6}
+.footer-grid a{color:#F5F8F5}
+.footer-bottom{border-top-color:rgba(255,255,255,.23);color:#C3D1C6}
+/* Slightly smaller header logo at tablet/mobile without changing header spacing. */
+@media(max-width:900px){
+  .site-header .brand img{width:145px;height:53px}
+}
+@media(max-width:640px){
+  .site-header .brand img{width:126px;height:48px}
+}
+/* Device-specific neutral overlays preserve text contrast in narrow scenes. */
+@media(max-width:1023px){
+  .hero::after{background:linear-gradient(180deg,rgba(10,12,13,.66),rgba(10,12,13,.70) 40%,rgba(10,12,13,.80) 73%,rgba(10,12,13,.87))}
+}
+@media(max-width:640px){
+  .hero::after{background:linear-gradient(180deg,rgba(10,12,13,.71),rgba(10,12,13,.67) 38%,rgba(10,12,13,.80) 75%,rgba(10,12,13,.89))}
+  .services .service-scene-shade{background:linear-gradient(180deg,rgba(10,12,13,.46),rgba(10,12,13,.06) 26%,rgba(10,12,13,.44) 52%,rgba(8,10,11,.94))}
+  .approach-cinema .approach-scene-shade{background:linear-gradient(180deg,rgba(10,12,13,.50),rgba(10,12,13,.18) 28%,rgba(10,12,13,.55) 57%,rgba(8,10,11,.92))}
+}
+
+/* ATREZZO SMART STICKY HEADER 1.0 — HOME DESKTOP ONLY
+   Natural downward scroll hides nav; upward scroll reveals it.
+   Tablet/mobile unchanged. Menu focus/hover and reduced motion keep it visible. */
+@media(min-width:1024px) and (prefers-reduced-motion:no-preference){
+  .site-header{
+    transition:transform 320ms cubic-bezier(.22,.73,.24,1);
+  }
+  .site-header.is-scroll-hidden{
+    transform:translate3d(0,calc(-100% - 2px),0);
+    pointer-events:none;
+  }
+  .site-header.is-scroll-hidden:focus-within{
+    transform:none;
+    pointer-events:auto;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .site-header.is-scroll-hidden{transform:none!important;pointer-events:auto!important}
+}
+
+/* ATREZZO CINEMA STICKY OFFSET 1.0 — desktop Home only.
+   Smart header hiding is a transform; it must also release the reserved 104px
+   sticky offset in BOTH scrolling scenes. Preserve ordinary vertical scrolling.
+   Keep scene height stable between hide/show to avoid layout shifts and
+   accumulated jumps across the six sticky Services chapters. */
+@media(min-width:1024px) and (prefers-reduced-motion:no-preference){
+  html{--at-cinema-sticky-top:104px}
+  html.at-cinema-header-hidden{--at-cinema-sticky-top:0px}
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3),
+  .services .service-scene:nth-child(6){
+    top:var(--at-cinema-sticky-top);
+    transition:top 320ms cubic-bezier(.22,.73,.24,1);
+  }
+  .approach-cinema .approach-story.is-cinema-ready .approach-stage{
+    top:var(--at-cinema-sticky-top);
+    transition:top 320ms cubic-bezier(.22,.73,.24,1);
+  }
+}
+@media(min-width:1024px) and (min-height:601px) and (prefers-reduced-motion:no-preference){
+  /* Full viewport photo at either header state, without dynamic reflow. */
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3),
+  .services .service-scene:nth-child(6){height:100svh}
+  .approach-cinema .approach-story.is-cinema-ready .approach-stage{height:100svh}
+}
+
+/* MCBRIDE SIX SCENES — MOBILE PHOTO FOCAL 1.0
+   Each uploaded panorama keeps the technician/action visible on portrait
+   devices. No changes to existing scroll, zoom, text or stage geometry. */
+@media(max-width:640px){
+  .services .service-scene-photo{
+    object-position:var(--scene-mobile-position,var(--scene-position,center));
+  }
+}
+
+/* No layout/scroll changes and no modification to reduced-motion behavior. */
+
+/* OUR APPROACH: four user-supplied horizontal WebP photos; mobile focal positions
+   preserve the subject without touching existing animation, shade or geometry. */
+@media(max-width:767px){
+  .approach-cinema .approach-scene-photo{
+    object-position:var(--approach-mobile-position,var(--approach-image-position,center));
+  }
+}

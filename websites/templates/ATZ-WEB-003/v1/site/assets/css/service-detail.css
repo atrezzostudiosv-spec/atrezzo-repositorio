@@ -1,0 +1,44 @@
+/* ATREZZO | service detail pages, scoped and non-invasive */
+.detail-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#102d26 0%,#173f35 72%,#235d4e 100%);color:#fff}
+.detail-hero::after{content:"";position:absolute;right:-8%;top:-22%;width:42vw;height:42vw;border:1px solid rgba(255,255,255,.14);border-radius:50%;pointer-events:none}
+.detail-hero::before{content:"";position:absolute;right:8%;bottom:-42%;width:22vw;height:22vw;border:1px solid rgba(255,255,255,.12);border-radius:50%;pointer-events:none}
+.detail-tag{color:#b5dcc6;letter-spacing:.17em;text-transform:uppercase;font-size:.7rem;font-weight:800}
+.detail-kicker{font-size:clamp(4rem,12vw,10rem);line-height:.85;font-weight:800;letter-spacing:-.09em;color:rgba(255,255,255,.10)}
+.detail-title{font-size:clamp(2.55rem,5.7vw,5.8rem);line-height:1.06;letter-spacing:-.065em;font-weight:800;max-width:900px}
+.detail-lead{font-size:clamp(1rem,1.7vw,1.24rem);line-height:1.7;color:#d7e7dc;max-width:690px}
+.detail-btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;border-radius:.75rem;font-weight:800;padding:1rem 1.35rem;min-height:48px;transition:transform .2s,background .2s,border-color .2s}
+.detail-btn:hover{transform:translateY(-2px)}
+.detail-panel{border:1px solid #d9e4dc;background:#fff;border-radius:1.25rem}
+.detail-rule{height:1px;background:#d9e4dc}
+.detail-quote{border-left:4px solid #1e6a4b;padding-left:1.4rem}
+.detail-other a{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0;border-bottom:1px solid #d9e4dc;font-size:.92rem;font-weight:700}
+.detail-other a:hover{color:#17744f}
+@media(prefers-reduced-motion:reduce){.detail-btn{transition:none}.detail-btn:hover{transform:none}}
+
+/* Contact forms in plumbing service heroes — shared with Services overview */
+.service-hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem;align-items:center}
+.service-hero-copy{min-width:0}
+.hero-contact-panel{position:relative;z-index:2;width:100%;min-width:0;background:#fdfdfa;color:#173f35;border:1px solid #e8ece7;border-radius:18px;box-shadow:0 24px 64px rgba(5,23,16,.23);padding:clamp(1.25rem,2.6vw,2.15rem)}
+.hero-contact-eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#2c7457}
+.hero-contact-heading{font-family:Manrope,system-ui,sans-serif;font-size:clamp(1.5rem,2.3vw,2rem);letter-spacing:-.055em;line-height:1.17;font-weight:800;margin:.6rem 0 .45rem}
+.hero-contact-intro{font-size:.84rem;line-height:1.6;color:#56695e;margin:0 0 1.15rem}
+.hero-form-stack{display:grid;gap:.85rem}
+.hero-form-field{display:flex;flex-direction:column;gap:.38rem}
+.hero-form-field label{font-size:.76rem;line-height:1.5;font-weight:800;color:#173f35}
+.hero-form-field input,.hero-form-field select,.hero-form-field textarea{font:inherit;width:100%;max-width:100%;border:1px solid #ccd7d0;border-radius:8px;color:#173f35;background:#fff;padding:.78rem .9rem;min-height:46px;outline-offset:3px;font-size:.88rem}
+.hero-form-field textarea{min-height:66px;resize:vertical}
+.hero-form-field input:focus-visible,.hero-form-field select:focus-visible,.hero-form-field textarea:focus-visible{outline:3px solid #75ad85;border-color:#173f35}
+.hero-form-service{border:1px solid #d5e1d8;border-radius:8px;padding:.72rem .85rem;background:#eef4ed;font-size:.83rem;font-weight:700;color:#235644}
+.hero-form-consent{display:flex;align-items:flex-start;gap:.58rem;font-size:.81rem;line-height:1.5;color:#56695e;cursor:pointer}
+.hero-form-consent input{flex:0 0 18px;width:18px;height:18px;margin-top:2px;accent-color:#17543f}
+.hero-form-submit{display:flex;align-items:center;justify-content:space-between;gap:.75rem;width:100%;min-height:49px;border:0;border-radius:8px;background:#173f35;color:#fff;font:inherit;font-size:.86rem;font-weight:800;padding:.85rem 1rem;cursor:pointer;transition:background .2s ease,transform .2s ease}
+.hero-form-submit:hover{background:#265e4b;transform:translateY(-1px)}
+.hero-form-submit:focus-visible{outline:3px solid #75ad85;outline-offset:3px}
+.hero-form-submit:disabled{opacity:.7;cursor:wait}
+.hero-form-status{font-size:.81rem;line-height:1.5;color:#56695e;margin:0}
+.hero-form-status.text-red-700{color:#a61d1d}
+.hero-form-status.text-green-800{color:#12633f}
+.hero-form-honeypot{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%);border:0}
+@media(min-width:1024px){.service-hero-grid{grid-template-columns:minmax(0,1.35fr) minmax(340px,1fr);gap:clamp(2rem,5vw,5.5rem)}.service-hero-copy .detail-title{font-size:clamp(2.7rem,4.6vw,5.15rem)}}
+@media(max-width:480px){.hero-contact-panel{padding:1.2rem}.service-hero-grid{gap:1.7rem}.hero-contact-heading{font-size:1.6rem}}
+@media(prefers-reduced-motion:reduce){.hero-form-submit{transition:none}.hero-form-submit:hover{transform:none}}

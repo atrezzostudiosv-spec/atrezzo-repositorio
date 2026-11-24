@@ -1,0 +1,71 @@
+/* ATREZZO — SHARED SERVICE FORM DIALOG 2.0
+   Desktop, tablet and phone share the same dialog and Request Service trigger.
+   Progressive enhancement keeps the original inline form without JavaScript. */
+.at-service-popup-trigger[hidden]{display:none!important}
+.at-service-popup-trigger{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:50px;padding:1rem 1.35rem;border:1px solid rgba(255,255,255,.75);
+  border-radius:.75rem;color:#fff;background:rgba(255,255,255,.08);
+  font:800 .9rem/1.4 Manrope,system-ui,sans-serif;cursor:pointer;
+  transition:background .2s ease,border-color .2s ease;
+}
+.at-service-popup-trigger:hover{background:rgba(255,255,255,.19)}
+.at-service-popup-trigger:focus-visible,.at-service-form-dialog button:focus-visible{
+  outline:3px solid #a9e1be;outline-offset:3px;
+}
+.at-service-form-dialog{
+  position:fixed;inset:0;margin:auto;border:0;
+  width:min(540px,calc(100vw - 24px));
+  max-width:calc(100vw - 24px);
+  max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);
+  overflow-y:auto;overscroll-behavior:contain;
+  background:#fdfdfa;color:#173f35;border-radius:16px;padding:0;
+  box-shadow:0 26px 85px rgba(0,0,0,.38);
+  -webkit-overflow-scrolling:touch;
+}
+.at-service-form-dialog::backdrop{background:rgba(4,15,12,.82)}
+.at-service-form-dialog-toolbar{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  position:sticky;top:0;z-index:5;
+  min-height:62px;padding:12px 18px 12px 24px;
+  border-bottom:1px solid #dbe5dd;background:#fdfdfa;
+}
+.at-service-form-dialog-toolbar strong{
+  font:800 12px/1.4 Manrope,system-ui,sans-serif;
+  letter-spacing:.13em;color:#2c7457;text-transform:uppercase;
+}
+.at-service-form-dialog-close{
+  display:inline-flex;justify-content:center;align-items:center;
+  width:42px;height:42px;flex:none;border:1px solid #d3ddd4;
+  border-radius:50%;background:#f3f7f3;color:#1b3e30;
+  font:500 28px/1 Manrope,system-ui,sans-serif;cursor:pointer;
+}
+.at-service-form-dialog-close:hover{background:#e4ece5}
+.at-service-form-dialog>.hero-contact-panel{
+  width:100%;max-width:none;margin:0;padding:clamp(20px,5vw,30px);
+  border:0;border-radius:0;box-shadow:none;background:#fdfdfa;
+}
+/* Once enhanced: the hero becomes a single, cinematic text column at any width.
+   The same existing form panel lives only in the native modal. */
+html.at-service-popup-ready .service-hero-copy .at-service-original-contact{display:none!important}
+html.at-service-popup-ready .service-hero-grid{
+  grid-template-columns:minmax(0,1fr)!important;gap:0!important;
+}
+html.at-service-popup-ready .service-hero-copy{
+  width:100%;max-width:980px;padding-block:clamp(18px,4vw,76px);
+}
+html.at-service-popup-ready .service-hero-copy .at-service-popup-trigger:not([hidden]){
+  display:inline-flex!important;
+}
+html.at-service-dialog-open,html.at-service-dialog-open body{overflow:hidden}
+.at-service-form-dialog .hero-contact-heading{font-size:clamp(23px,3vw,30px)}
+@media(max-width:767px){
+  html.at-service-popup-ready .service-hero-copy{padding-block:0}
+}
+@media(max-width:400px){
+  .at-service-popup-trigger{width:100%}
+  .at-service-form-dialog-toolbar{padding-left:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  .at-service-popup-trigger{transition:none}
+}

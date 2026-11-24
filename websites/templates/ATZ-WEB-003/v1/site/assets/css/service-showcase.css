@@ -1,0 +1,97 @@
+/* ATREZZO McBride — verified service content, editorial template v1.
+   Shared across service overview and six existing individual service pages.
+   Imagery is illustrative stock already used by Home, not actual company work. */
+html[data-page="services"],html[data-page="service-detail"]{
+  background:#F8FAF8;color:#202727;
+}
+html[data-page="services"] .detail-hero,
+html[data-page="service-detail"] .detail-hero{
+  background:#1A1E1F;color:#FFF;isolation:isolate;
+}
+html[data-page="services"] .detail-hero::before,
+html[data-page="service-detail"] .detail-hero::before{
+  content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;
+  width:100%;height:100%;border:none;border-radius:0;
+  background-image:var(--at-service-image,none);
+  background-size:cover;background-position:var(--at-service-photo-position,center);
+  filter:contrast(1.05) saturate(.98);
+}
+html[data-page="services"] .detail-hero::after,
+html[data-page="service-detail"] .detail-hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  width:100%;height:100%;border:none;border-radius:0;
+  background:linear-gradient(90deg,rgba(11,13,14,.91),rgba(11,13,14,.75) 40%,rgba(11,13,14,.48) 100%),
+    linear-gradient(180deg,rgba(11,13,14,.19),rgba(11,13,14,.66));
+}
+html[data-page="services"] .detail-hero>div,
+html[data-page="service-detail"] .detail-hero>div{position:relative;z-index:1}
+html[data-page="services"] .detail-title,
+html[data-page="service-detail"] .detail-title{font-weight:800;letter-spacing:-.064em}
+html[data-page="services"] .detail-lead,
+html[data-page="service-detail"] .detail-lead{color:#F2F5F2}
+html[data-page="services"] .detail-tag,
+html[data-page="service-detail"] .detail-tag{color:#B1E7C0}
+html[data-page="services"] .detail-btn.bg-emerald-400,
+html[data-page="service-detail"] .detail-btn.bg-emerald-400,
+html[data-page="service-detail"] .detail-btn.bg-emerald-400:hover{
+  background:#288153;color:#FFF;border-radius:5px;
+}
+html[data-page="services"] .detail-btn.bg-emerald-400:hover{background:#329467}
+html[data-page="services"] .hero-contact-panel,
+html[data-page="service-detail"] .hero-contact-panel{
+  border-radius:8px;background:#FCFDFC;box-shadow:0 25px 65px rgba(0,0,0,.27);
+}
+html[data-page="services"] .hero-contact-panel .hero-form-submit,
+html[data-page="service-detail"] .hero-contact-panel .hero-form-submit{background:#27744F}
+html[data-page="service-detail"] .detail-panel{border-radius:8px;border-color:#E0E8E0}
+html[data-page="service-detail"] .detail-other a:hover{color:#24754F}
+.at-service-photo-note{
+  color:#D6E2D9;font-size:11px;line-height:1.65;margin:18px 0 0;
+  max-width:480px;
+}
+html[data-page="services"] .at-service-directory-card{
+  border:1px solid #E0E8E2;border-radius:9px;background:#FFF;
+  box-shadow:0 12px 32px rgba(21,35,27,.05);
+  padding:19px;
+  display:grid;grid-template-columns:minmax(180px,260px) minmax(0,1fr) auto;
+  gap:clamp(20px,2.5vw,40px);align-items:center;
+}
+html[data-page="services"] .at-service-directory-card>div{grid-column:auto!important}
+html[data-page="services"] .at-directory-image{
+  width:100%;height:184px;object-fit:cover;object-position:center;
+  border-radius:5px;filter:saturate(.97);
+}
+html[data-page="services"] .at-service-directory-card h2{
+  color:#202727;font-size:clamp(23px,2.3vw,32px);
+  letter-spacing:-.045em;line-height:1.15;
+}
+html[data-page="services"] .at-service-directory-card p{color:#52625A;font-size:14px;line-height:1.75}
+html[data-page="services"] .at-service-directory-card a[href*="/index.html"]{
+  background:#26734F;color:#FFF;border-radius:5px;
+  display:inline-flex;justify-content:center;white-space:nowrap;
+}
+html[data-page="services"] .at-service-directory-card a[href*="/index.html"]:hover{background:#318B60}
+html[data-page="services"] .at-directory-disclaimer{
+  font-size:11px;color:#64746B;line-height:1.7;margin:20px 0 0;
+}
+@media(max-width:1023px){
+  html[data-page="services"] .at-service-directory-card{
+    grid-template-columns:minmax(160px,.7fr) minmax(0,1.3fr);
+  }
+  html[data-page="services"] .at-service-directory-card>div:last-child{grid-column:2!important;text-align:left}
+}
+@media(max-width:640px){
+  html[data-page="services"] .at-service-directory-card{grid-template-columns:1fr;padding:15px;gap:18px}
+  html[data-page="services"] .at-directory-image{height:auto;aspect-ratio:16/9}
+  html[data-page="services"] .at-service-directory-card>div,
+  html[data-page="services"] .at-service-directory-card>div:last-child{grid-column:1!important}
+  html[data-page="services"] .at-service-directory-card>div:last-child{text-align:left}
+  html[data-page="services"] .at-service-directory-card a[href*="/index.html"]{width:100%}
+  html[data-page="services"] .detail-hero::after,
+  html[data-page="service-detail"] .detail-hero::after{
+    background:linear-gradient(180deg,rgba(11,13,14,.80),rgba(11,13,14,.80) 48%,rgba(11,13,14,.9));
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  html[data-page="services"] .at-service-directory-card a{transition:none}
+}

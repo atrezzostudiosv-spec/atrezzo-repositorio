@@ -1,0 +1,57 @@
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F7F7F3;
+            color: #111816;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Custom Editorial Enhancements */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(23, 63, 53, 0.08);
+        }
+
+        .glass-dark {
+            background: rgba(23, 63, 53, 0.92);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .editorial-border-b {
+            border-bottom: 1px solid rgba(23, 63, 53, 0.12);
+        }
+
+        .editorial-border-t {
+            border-top: 1px solid rgba(23, 63, 53, 0.12);
+        }
+
+        .family-photo-shadow {
+            box-shadow: 0 20px 40px -15px rgba(23, 63, 53, 0.25);
+        }
+
+        
+
+        /* Floating interaction focus styles */
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #173F35 !important;
+            box-shadow: 0 0 0 3px rgba(23, 63, 53, 0.12) !important;
+        }
+    
+/* Split into real pages; styles shared across every route. */
+html { scroll-behavior: smooth; }
+section[id], div[id^="drain-"] { scroll-margin-top: 7rem; }
+a:focus-visible, button:focus-visible { outline: 3px solid #D4A359; outline-offset: 3px; }
+button:disabled { cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) {
+  html {scroll-behavior: auto !important;}
+  *, *::before, *::after {animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important;}
+}
+
+/* Authentic brand and family photography — approved user assets */
+.mcbride-logo-link { display: inline-flex; align-items: center; flex-shrink: 0; min-width: 0; }
+.mcbride-brand-logo { display:block; width: clamp(134px, 15vw, 182px); height: 72px; max-width: 100%; object-fit: contain; object-position: left center; }
+.mcbride-family-portrait { display:block; width:100%; height:100%; object-fit:cover; object-position:center top; }
+@media (max-width: 430px) { .mcbride-brand-logo { width: 142px; height: 67px; } }

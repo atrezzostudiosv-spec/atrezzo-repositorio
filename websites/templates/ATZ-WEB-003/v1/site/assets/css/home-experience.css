@@ -1,0 +1,1097 @@
+/* ATREZZO | McBride & Sons — HOME EXPERIENCE 1.0
+   Scope: Introduction, Services, Family Legacy, Approach only.
+   Existing Hero, trust rail, reviews, contact modal and footer are preserved.
+   No animation is required to reach an actual service or call the business. */
+
+:root{
+  --experience-dark:#173f35;
+  --experience-cream:#f3f5ef;
+  --experience-accent:#9abc9f;
+}
+
+/* 01 — Smooth typographic handoff from the proof rail */
+.intro.section{
+  padding-block:clamp(74px,9vw,130px);
+}
+.intro .intro-grid{align-items:start}
+.intro .intro-copy{border-left:1px solid #dbe4dc;padding-left:clamp(20px,3vw,42px)}
+.intro .intro-copy .text-link{margin-top:11px}
+
+/* 02 — One authentic purpose: explore six real linked services.
+   An illustrative stock photograph is present but never described as McBride work. */
+.services.section{padding-block:clamp(76px,8vw,126px);background:#f6f7f2}
+.services .section-heading{margin-bottom:clamp(32px,4vw,56px)}
+.services-experience{
+  display:grid;
+  grid-template-columns:minmax(280px,.77fr) minmax(0,1.23fr);
+  gap:clamp(28px,4.5vw,76px);
+  align-items:start;
+}
+.services-visual{
+  position:sticky;
+  top:105px;
+  display:block;
+  min-width:0;
+  margin:0;
+}
+.services-visual-frame{
+  position:relative;
+  overflow:hidden;
+  min-height:430px;
+  height:min(62vh,590px);
+  isolation:isolate;
+  background:#203d33;
+  border-radius:3px;
+}
+.services-visual-frame::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg,transparent 45%,rgba(7,26,21,.78) 100%);
+  z-index:1;
+}
+.services-visual-frame picture{display:block;width:100%;height:100%}
+.services-visual-photo{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 45%;
+  transform:scale(1.045);
+  transition:transform 1.25s cubic-bezier(.2,.7,.2,1);
+}
+.services-visual.is-visible .services-visual-photo{transform:scale(1)}
+.services-visual-copy{
+  position:absolute;
+  inset:auto 0 0;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  padding:clamp(22px,3vw,40px);
+  color:#fff;
+  pointer-events:none;
+}
+.services-visual-counter{
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.18em;
+  color:#cce1cf;
+  font-variant-numeric:tabular-nums;
+}
+.services-visual-copy strong{
+  font-size:clamp(26px,2.75vw,39px);
+  letter-spacing:-.055em;
+  line-height:1.16;
+  text-wrap:balance;
+}
+.services-visual-instruction{
+  margin-top:6px;
+  font-size:10px;
+  letter-spacing:.14em;
+  font-weight:800;
+  color:#ecf1e9;
+}
+.services-visual figcaption{
+  margin-top:11px;
+  max-width:420px;
+  font-size:11px;
+  line-height:1.5;
+  color:#61746b;
+}
+.services-experience .services-list{border-top:1px solid #b9cbbd;min-width:0}
+.services-experience .service-line{
+  position:relative;
+  grid-template-columns:27px minmax(0,1fr) 30px;
+  gap:clamp(12px,1.75vw,22px);
+  min-height:103px;
+  padding:17px 13px 17px 0;
+  background:transparent;
+  border-bottom:1px solid #c8d5c8;
+  transition:background .28s ease,padding .28s ease;
+}
+.services-experience .service-line .service-num{align-self:start;padding-top:9px}
+.services-experience .service-title{
+  display:block;
+  grid-column:2;
+  grid-row:1;
+  align-self:start;
+  font-size:clamp(20px,2vw,27px);
+  line-height:1.24;
+  letter-spacing:-.045em;
+}
+.services-experience .service-desc{
+  grid-column:2;
+  grid-row:2;
+  max-width:460px;
+  font-size:12px;
+  line-height:1.6;
+  margin-top:-9px;
+  padding-right:3px;
+}
+.services-experience .service-arrow{grid-column:3;grid-row:1;align-self:start;margin-top:3px}
+.services-experience .service-line[data-active="true"]{background:rgba(218,229,217,.52);padding-left:13px}
+.services-experience .service-line:hover{background:rgba(218,229,217,.78);padding-left:13px}
+.services-experience .service-line:focus-visible{outline:3px solid #8cad98;outline-offset:-3px}
+.services-experience .services-list .service-line .service-arrow{transition:transform .2s ease,background .2s ease}
+.services-experience .service-line:hover .service-arrow,
+.services-experience .service-line:focus-visible .service-arrow{transform:translate(2px,-2px);background:#ccdfcf}
+.services .services-footer{margin-top:30px}
+.services .services-footer span{color:#68796e}
+
+/* 03 — The three authentic family portraits tell one uninterrupted story.
+   Connector is an editorial ornament, not an implied additional fact. */
+.family.section{padding-block:clamp(80px,9vw,136px);background:linear-gradient(180deg,#fff 0%,#f5f7f2 100%)}
+.family .family-heading-row{align-items:end}
+.family .family-heading-copy{max-width:475px}
+.family-journey-label{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:17px;
+  width:100%;
+  margin:47px 0 27px;
+  color:#4f775e;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.11em;
+}
+.family-journey-line{
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg,#adc7ae,#d3e1d4);
+}
+.family .family-person{
+  position:relative;
+  transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);
+}
+.family .family-image{position:relative;border-radius:2px;box-shadow:0 16px 34px rgba(19,46,29,.075)}
+.family .family-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border:1px solid rgba(255,255,255,.25);
+  pointer-events:none;
+}
+.family .family-person figcaption{
+  justify-content:flex-start;
+  gap:14px;
+  padding-top:7px;
+}
+.family .family-person figcaption span{
+  display:inline-grid;
+  place-items:center;
+  width:30px;
+  height:30px;
+  border:1px solid #a9c4ae;
+  border-radius:50%;
+  color:#2b6147;
+  font-size:11px;
+  font-variant-numeric:tabular-nums;
+}
+.family .family-person.is-family-current figcaption span{background:#234c39;color:white;border-color:#234c39}
+.family .family-person.is-family-current .family-image{box-shadow:0 25px 42px rgba(19,46,29,.11)}
+.family .family-end{border-top:1px solid #cbd9ce;padding-top:25px}
+
+/* ATREZZO FAMILY LEGACY 2.0 — three genuine portraits, one visual baseline.
+   Reset prior stepped layout even when legacy Home CSS is loaded first.
+   Reveal classes are activated only when JS and IntersectionObserver are available.
+   Without JS, every portrait remains fully visible. */
+.family .family-gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(12px,1.7vw,24px);
+  align-items:start;
+}
+.family .family-gallery .family-person,
+.family .family-gallery .person-first,
+.family .family-gallery .person-second,
+.family .family-gallery .person-third{
+  padding-top:0;
+  align-self:start;
+  margin:0;
+  min-width:0;
+}
+.family .family-gallery .family-image,
+.family .family-gallery .person-first .family-image{
+  width:100%;
+  height:clamp(310px,30vw,420px);
+  aspect-ratio:auto;
+  overflow:hidden;
+  border-radius:3px;
+  box-shadow:0 12px 28px rgba(19,46,29,.065);
+}
+.family .family-gallery .family-person img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 18%;
+}
+.family .family-gallery .family-person figcaption{
+  margin-top:17px;
+  padding-top:0;
+  min-height:34px;
+  align-items:center;
+}
+@media(min-width:641px){
+  .family .family-gallery.family-reveal-ready .family-person{
+    opacity:0;
+    transform:translate3d(0,28px,0);
+    transition:
+      opacity 1.25s cubic-bezier(.22,.7,.2,1) var(--family-delay,0ms),
+      transform 1.25s cubic-bezier(.22,.7,.2,1) var(--family-delay,0ms);
+  }
+  .family .family-gallery.family-reveal-ready.is-family-revealed .family-person{
+    opacity:1;
+    transform:translate3d(0,0,0);
+  }
+  .family .family-person:nth-child(1){--family-delay:0ms}
+  .family .family-person:nth-child(2){--family-delay:440ms}
+  .family .family-person:nth-child(3){--family-delay:880ms}
+}
+@media(max-width:640px){
+  .family .family-gallery{grid-template-columns:1fr;gap:28px}
+  .family .family-gallery .family-image,
+  .family .family-gallery .person-first .family-image{
+    height:auto;
+    aspect-ratio:4/3;
+    max-height:340px;
+  }
+  .family .family-gallery.family-reveal-ready .family-person{
+    opacity:0;
+    transform:translate3d(0,24px,0);
+    transition:opacity 1.15s cubic-bezier(.22,.7,.2,1),transform 1.15s cubic-bezier(.22,.7,.2,1);
+  }
+  .family .family-gallery.family-reveal-ready .family-person.is-family-revealed{
+    opacity:1;
+    transform:translate3d(0,0,0);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .family .family-gallery.family-reveal-ready .family-person,
+  .family .family-gallery.family-reveal-ready.is-family-revealed .family-person,
+  .family .family-gallery.family-reveal-ready .family-person.is-family-revealed{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
+}
+
+/* ATREZZO OUR APPROACH 3.1 — independent cinematographic scroll sequence.
+   Responsive ordinary blocks are the no-JS and reduced-motion fallback.
+   JS enables a pinned stage only >=768px with motion permitted.
+   Scrolling remains vertical, native, and interruptible. */
+.approach.approach-cinema{
+  padding:0;
+  position:relative;
+  overflow:visible;
+  color:#fff;
+  background:#0e2e24;
+}
+.approach-cinema .approach-cinema-intro{
+  padding-top:clamp(78px,9vw,132px);
+  padding-bottom:clamp(42px,5.2vw,76px);
+}
+.approach-cinema .approach-cinema-intro h2{
+  max-width:920px;
+  font-size:clamp(43px,5.5vw,78px);
+  letter-spacing:-.062em;
+  line-height:1.09;
+  margin-top:23px;
+  color:#fff;
+}
+.approach-cinema .approach-cinema-intro h2 em{color:#a7ceb0;font-style:normal}
+.approach-cinema .approach-cinema-intro>p{
+  color:#b7cdbf;
+  font-size:clamp(13px,1.15vw,16px);
+  margin:24px 0 0;
+}
+.approach-cinema .approach-cinema-cue{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:40px;
+  color:#c1dcc5;
+  font-size:10px;
+  font-weight:800;
+  line-height:1.5;
+  letter-spacing:.16em;
+}
+.approach-cinema .approach-cinema-rule{width:34px;height:1px;background:#a8ceb0;flex:none}
+.approach-cinema .approach-cinema-cue>span:last-child{font-size:16px;font-weight:500}
+.approach-cinema .approach-story,
+.approach-cinema .approach-stage{position:relative;min-width:0}
+.approach-cinema .approach-stage{overflow:hidden}
+.approach-cinema .approach-scene{
+  display:block;
+  position:relative;
+  isolation:isolate;
+  width:100%;
+  min-width:0;
+  height:clamp(440px,74svh,780px);
+  overflow:hidden;
+  background:#102b24;
+  color:#fff;
+  border:0;
+}
+.approach-cinema .approach-scene+.approach-scene{border-top:2px solid #0f332a}
+.approach-cinema .approach-scene-photo{
+  display:block;
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  object-position:var(--approach-image-position,center);
+  filter:saturate(.76);
+  transform:scale(var(--approach-scale,1.075));
+  transform-origin:center center;
+  transition:transform .18s linear,filter .5s ease;
+}
+.approach-cinema .approach-scene-shade{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(6,27,19,.9) 0%,rgba(8,30,21,.70) 34%,rgba(11,37,26,.22) 76%,rgba(6,25,18,.2) 100%),
+    linear-gradient(180deg,rgba(2,18,14,.3) 0%,transparent 27%,rgba(5,25,17,.65) 100%);
+}
+.approach-cinema .approach-scene-index{
+  position:absolute;
+  z-index:2;
+  top:clamp(24px,3.5vw,55px);
+  left:max(26px,calc((100vw - 1250px)/2));
+  right:max(26px,calc((100vw - 1250px)/2));
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.17em;
+  color:#d9e9d9;
+}
+.approach-cinema .approach-scene-content{
+  position:absolute;
+  left:max(26px,calc((100vw - 1250px)/2));
+  bottom:clamp(41px,7vw,112px);
+  width:min(750px,calc(100vw - 52px));
+  z-index:2;
+}
+.approach-cinema .approach-scene-eyebrow{
+  display:block;
+  margin-bottom:18px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.16em;
+  color:#c1dbc2;
+}
+.approach-cinema .approach-scene h3{
+  margin:0 0 21px;
+  max-width:730px;
+  color:white;
+  font-size:clamp(37px,5.7vw,78px);
+  font-weight:800;
+  letter-spacing:-.063em;
+  line-height:1.06;
+  text-wrap:balance;
+}
+.approach-cinema .approach-scene-content p{
+  color:#e5f0e7;
+  font-size:clamp(13px,1.15vw,16px);
+  line-height:1.7;
+  max-width:570px;
+  margin:0;
+}
+.approach-cinema .approach-scene-progress{
+  height:2px;
+  width:min(330px,65%);
+  background:rgba(255,255,255,.32);
+  margin-top:30px;
+}
+.approach-cinema .approach-scene-progress span{
+  display:block;
+  height:100%;
+  background:#bfd6b6;
+}
+.approach-cinema .approach-cinema-end{
+  padding-top:clamp(35px,4.5vw,62px);
+  padding-bottom:clamp(74px,8vw,112px);
+}
+.approach-cinema .approach-illustration-note{
+  color:#a8c4af;
+  font-size:11px;
+  line-height:1.7;
+  margin:0 0 30px;
+  max-width:710px;
+}
+.approach-cinema .approach-cinema-benefits{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(26px,4vw,62px);
+  padding-top:29px;
+  border-top:1px solid rgba(167,203,176,.3);
+}
+.approach-cinema .approach-cinema-benefits>div{max-width:500px}
+.approach-cinema .approach-cinema-benefits strong{
+  color:#e9f3eb;
+  font-size:clamp(15px,1.3vw,18px);
+}
+.approach-cinema .approach-cinema-benefits p{
+  margin:11px 0 0;
+  color:#b9cfc0;
+  font-size:13px;
+  line-height:1.75;
+}
+/* Pinned, layered scene. Each new chapter slides from right to left,
+   with scroll progress controlling translation and a subtle photo zoom. */
+@media(min-width:768px){
+  .approach-cinema .approach-story.is-cinema-ready{
+    height:calc(400svh - 416px);
+    min-height:1700px;
+  }
+  .approach-cinema .approach-story.is-cinema-ready .approach-stage{
+    position:sticky;
+    top:104px;
+    height:max(420px,calc(100svh - 104px));
+    overflow:hidden;
+    isolation:isolate;
+    background:#0e2e24;
+  }
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene{
+    position:absolute;
+    inset:0;
+    height:100%;
+    border:0;
+    transform:translate3d(var(--approach-x,100%),0,0);
+    transition:none;
+    will-change:transform;
+  }
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene:first-child{
+    --approach-x:0%;
+  }
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene:nth-child(1){z-index:1}
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene:nth-child(2){z-index:2}
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene:nth-child(3){z-index:3}
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene:nth-child(4){z-index:4}
+}
+@media(min-width:768px) and (max-width:1023px){
+  .approach-cinema .approach-story.is-cinema-ready{height:calc(400svh - 352px)}
+  .approach-cinema .approach-story.is-cinema-ready .approach-stage{
+    top:88px;height:max(420px,calc(100svh - 88px))
+  }
+  .approach-cinema .approach-scene h3{font-size:clamp(40px,6.4vw,68px)}
+  .approach-cinema .approach-scene-content{bottom:clamp(36px,5vw,76px)}
+}
+/* Narrow screens preserve natural vertical reading, with a modest entrance
+   tied to scroll from right to left; no viewport pinning. */
+@media(max-width:767px){
+  .approach-cinema .approach-cinema-intro{
+    padding-top:72px;
+    padding-bottom:36px;
+  }
+  .approach-cinema .approach-cinema-intro h2{font-size:clamp(34px,7vw,52px)}
+  .approach-cinema .approach-cinema-cue{display:none}
+  .approach-cinema .approach-scene{
+    height:clamp(430px,77svh,630px);
+  }
+  .approach-cinema .approach-scene-index{left:22px;right:22px;top:26px;font-size:9px}
+  .approach-cinema .approach-scene-content{
+    bottom:38px;left:22px;
+    width:calc(100% - 44px);
+  }
+  .approach-cinema .approach-scene h3{
+    font-size:clamp(35px,7.4vw,56px);
+    line-height:1.1;
+    margin-bottom:16px;
+  }
+  .approach-cinema .approach-scene-content p{font-size:13px;line-height:1.7}
+  .approach-cinema .approach-scene-progress{margin-top:25px}
+  .approach-cinema .approach-cinema-benefits{grid-template-columns:1fr;gap:30px}
+  /* Mobile scene moves in from the right as actual vertical scroll advances.
+     JS supplies pixel offsets; without JS, panels remain static and readable. */
+  .approach-cinema .approach-scene.is-mobile-scroll-ready{
+    transform:translate3d(var(--approach-mobile-x,0px),0,0);
+    transition:none;
+  }
+  .approach-cinema .approach-scene.is-mobile-scroll-ready .approach-scene-photo{
+    transform:scale(var(--approach-mobile-scale,1.02));
+    transition:none;
+  }
+}
+@media(max-width:390px){
+  .approach-cinema .approach-scene{height:max(440px,76svh)}
+  .approach-cinema .approach-scene h3{font-size:clamp(32px,8.6vw,39px)}
+  .approach-cinema .approach-scene-content{bottom:28px}
+  .approach-cinema .approach-scene-progress{margin-top:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  .approach-cinema .approach-story.is-cinema-ready{height:auto;min-height:0}
+  .approach-cinema .approach-story.is-cinema-ready .approach-stage{position:relative;top:auto;height:auto;overflow:visible}
+  .approach-cinema .approach-story.is-cinema-ready .approach-scene{position:relative;inset:auto;height:clamp(440px,72svh,760px);transform:none;will-change:auto}
+  .approach-cinema .approach-scene,
+  .approach-cinema .approach-scene-photo,
+  .approach-cinema .approach-scene.is-mobile-scroll-ready{opacity:1;transform:none;transition:none;filter:none}
+}
+
+/* Layout first, effects second: tablet/mobile must remain vertical. */
+@media(max-width:1100px){
+  .services-experience{grid-template-columns:minmax(250px,.78fr) minmax(0,1.22fr);gap:30px}
+  .services-experience .service-title{font-size:20px}
+}
+@media(max-width:1023px){
+  .services-experience{grid-template-columns:1fr;gap:30px}
+  .services-visual{position:relative;top:auto}
+  .services-visual-frame{min-height:0;height:auto;aspect-ratio:16/9;max-height:410px}
+  .services-visual-photo{object-position:center 48%}
+  .services-experience .service-line{grid-template-columns:34px minmax(0,1fr) 33px}
+  .approach .approach-left{position:static}
+}
+@media(max-width:900px){
+  .intro .intro-copy{padding-left:25px}
+  .family-journey-label{margin-top:36px}
+}
+@media(max-width:640px){
+  .intro.section{padding-block:70px}
+  .intro .intro-copy{border-left:none;border-top:1px solid #dbe4dc;padding:20px 0 0}
+  .services.section{padding-block:76px}
+  .services-visual-frame{aspect-ratio:4/3;max-height:320px}
+  .services-visual-copy{padding:22px}
+  .services-visual-copy strong{font-size:25px}
+  .services-visual-instruction{font-size:9px}
+  .services-experience{gap:24px}
+  .services-experience .service-line{
+    grid-template-columns:25px minmax(0,1fr) 30px;
+    gap:8px;
+    padding:19px 4px 18px 0;
+    min-height:0;
+  }
+  .services-experience .service-line[data-active="true"],
+  .services-experience .service-line:hover{padding-left:5px}
+  .services-experience .service-title{font-size:20px}
+  .services-experience .service-desc{margin-top:-3px;font-size:12px}
+  .services-experience .service-arrow{margin-top:1px}
+  .family.section{padding-block:75px}
+  .family-journey-label{margin:28px 0 21px}
+  .family .family-person figcaption span{width:28px;height:28px}
+  .approach .value-line{padding:23px 13px;grid-template-columns:29px minmax(0,1fr);gap:10px}
+  .approach .value-line h3{font-size:18px}
+  .approach .value-line p{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .services-visual-photo,.services-experience .service-line,.services-experience .service-arrow,
+  .family .family-person,.family .family-image img,.approach .value-line,
+  .approach .value-line::before{transform:none!important;transition:none!important}
+}
+
+
+
+/* ATREZZO SERVICE SCENES 2.0 — Tri-Lane photographic bento meets
+   Ranchman-style natural-scroll chapters. Replaces the earlier text list.
+   No scroll locking, no forced swipes, no fake client portfolio. */
+.services .services-story{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  grid-auto-rows:clamp(190px,18vw,242px);
+  gap:14px;
+  position:relative;
+}
+.services .service-scene{
+  position:relative;
+  grid-column:span 4;
+  display:block;
+  min-width:0;
+  min-height:0;
+  border-radius:8px;
+  overflow:hidden;
+  isolation:isolate;
+  background:#173c33;
+  color:white;
+  text-decoration:none;
+  box-shadow:0 12px 30px rgba(9,36,23,.08);
+  transition:box-shadow .36s ease,outline-color .2s ease;
+}
+.services .service-scene:nth-child(1){grid-column:span 7;grid-row:span 2}
+.services .service-scene:nth-child(2),
+.services .service-scene:nth-child(3){grid-column:span 5}
+.services .service-scene:hover{box-shadow:0 20px 42px rgba(9,36,23,.2)}
+.services .service-scene:focus-visible{outline:3px solid #dbc48c;outline-offset:3px}
+.services .service-scene-photo{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:var(--scene-position,center);
+  transform:scale(1.075);
+  transition:transform .95s cubic-bezier(.2,.7,.2,1),filter .65s ease;
+  filter:saturate(.77);
+  will-change:auto;
+}
+.services .service-scene:hover .service-scene-photo,
+.services .service-scene.is-scene-current .service-scene-photo{transform:scale(1.01);filter:saturate(.95)}
+.services .service-scene-shade{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(4,21,16,.42),rgba(8,27,21,.07) 30%,rgba(5,28,21,.86) 100%);
+}
+.services .service-scene-top{
+  position:absolute;
+  z-index:2;
+  inset:20px 22px auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.13em;
+  color:#f1f3e9;
+  text-shadow:0 1px 9px rgba(0,0,0,.35);
+}
+.services .service-scene-body{
+  position:absolute;
+  z-index:2;
+  inset:auto 0 0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  padding:clamp(22px,2.5vw,34px);
+  color:#fff;
+}
+.services .service-scene-index{
+  display:block;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.16em;
+  color:#d2e2d4;
+}
+.services .service-scene-title{
+  display:block;
+  max-width:95%;
+  font-size:clamp(24px,2.35vw,37px);
+  font-weight:800;
+  letter-spacing:-.054em;
+  line-height:1.12;
+  text-wrap:balance;
+  color:#fff;
+  margin:0;
+}
+.services .service-scene-feature .service-scene-title{font-size:clamp(36px,4.05vw,62px);max-width:580px}
+.services .service-scene-description{
+  display:block;
+  max-width:450px;
+  color:#e4eee6;
+  font-size:12px;
+  line-height:1.65;
+  font-weight:550;
+}
+.services .service-scene-action{
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:17px;
+  margin-top:9px;
+  padding:12px 16px;
+  border-radius:3px;
+  background:#e5ebe2;
+  color:#173d30;
+  font-size:10px;
+  font-weight:850;
+  line-height:1;
+  letter-spacing:.06em;
+  white-space:nowrap;
+  transition:background .2s ease,transform .2s ease;
+}
+.services .service-scene-action span{font-size:17px;line-height:1}
+.services .service-scene:hover .service-scene-action{background:#fff;transform:translateY(-2px)}
+.services .service-scene-progress{display:none}
+.services .services-illustration-note{
+  margin:18px 0 0;
+  font-size:11px;
+  line-height:1.5;
+  color:#637669;
+}
+.services .services-footer{position:relative;margin-top:8px}
+.services .services-footer span{color:#697a6d}
+
+@media(max-width:640px){
+  .services.section{
+    padding-top:clamp(76px,13svh,116px);
+    padding-bottom:clamp(70px,9svh,105px);
+  }
+  .services .section-heading{margin-bottom:32px}
+  .services .services-story{
+    display:block;
+    position:relative;
+    isolation:isolate;
+    width:min(calc(100% - 36px),1250px);
+    margin-inline:auto;
+    padding-bottom:2px;
+    overflow:visible;
+  }
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3){
+    display:block;
+    grid-column:auto;
+    grid-row:auto;
+    position:-webkit-sticky;
+    position:sticky;
+    top:78px;
+    width:100%;
+    height:clamp(375px,calc(100svh - 167px),700px);
+    min-height:0;
+    margin:0 0 clamp(80px,17svh,155px);
+    border-radius:9px;
+    box-shadow:0 14px 32px rgba(5,31,23,.19);
+  }
+  .services .service-scene:nth-child(1){z-index:1}
+  .services .service-scene:nth-child(2){z-index:2}
+  .services .service-scene:nth-child(3){z-index:3}
+  .services .service-scene:nth-child(4){z-index:4}
+  .services .service-scene:nth-child(5){z-index:5}
+  .services .service-scene:nth-child(6){z-index:6;margin-bottom:10px}
+  .services .service-scene-photo{
+    transform:scale(1.045);
+    filter:saturate(.77);
+  }
+  .services .service-scene.is-scene-current .service-scene-photo{
+    transform:scale(1);
+    filter:saturate(1);
+  }
+  .services .service-scene-shade{
+    background:linear-gradient(180deg,rgba(4,19,13,.5),rgba(7,26,19,.03) 27%,rgba(7,30,22,.5) 50%,rgba(6,25,19,.93) 100%);
+  }
+  .services .service-scene-top{inset:22px 21px auto;font-size:10px}
+  .services .service-scene-body{
+    inset:auto 0 0;
+    padding:clamp(23px,6vw,33px) 23px 32px;
+    gap:10px;
+  }
+  .services .service-scene-title,
+  .services .service-scene-feature .service-scene-title{
+    font-size:clamp(30px,8.5vw,42px);
+    max-width:100%;
+    line-height:1.08;
+  }
+  .services .service-scene-description{
+    max-width:380px;
+    font-size:12px;
+    line-height:1.7;
+    color:#e4ede4;
+  }
+  .services .service-scene-action{
+    padding:13px 15px;
+    margin-top:13px;
+    background:#eaf0e9;
+    color:#194033;
+    font-size:10px;
+    font-weight:800;
+  }
+  .services .service-scene-progress{
+    display:block;
+    position:absolute;
+    z-index:2;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:rgba(255,255,255,.3);
+  }
+  .services .service-scene-progress span{
+    display:block;
+    height:100%;
+    background:#bfcaac;
+    box-shadow:0 0 10px rgba(255,255,255,.3);
+  }
+  .services .services-illustration-note{
+    position:relative;
+    z-index:7;
+    margin:10px 0 0;
+  }
+  .services .services-footer{
+    position:relative;
+    z-index:7;
+    padding-top:20px;
+    margin-top:10px;
+  }
+}
+@media(max-width:375px){
+  .services .service-scene-body{padding:18px 19px 28px;gap:7px}
+  .services .service-scene-title,
+  .services .service-scene-feature .service-scene-title{font-size:clamp(27px,8.5vw,34px)}
+  .services .service-scene-description{font-size:11px;line-height:1.55}
+  .services .service-scene-action{padding:11px 12px;margin-top:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  .services .service-scene,
+  .services .service-scene-photo,
+  .services .service-scene-action{transition:none!important;transform:none!important}
+}
+@media (prefers-reduced-motion:reduce) and (max-width:640px){
+  .services .service-scene{position:relative;top:auto;margin-bottom:16px}
+}
+
+
+
+/* ATREZZO SERVICES JOURNEY 4.1 — full-bleed desktop/tablet
+   DESKTOP/TABLET >=641px ONLY. Mobile <=640px retains the approved
+   stacked-photo service experience in the preceding media rules.
+   Each large chapter sticks naturally; the next rises over it.
+   No scroll hijacking, no autonomous slide switching or horizontal rail. */
+.services .services-carousel-nav{display:none}
+.services .services-journey-cue{display:none}
+@media(min-width:641px){
+  .services.section{
+    position:relative;
+    overflow:visible;
+    scroll-margin-top:104px;
+    padding-top:clamp(75px,7.6vw,118px);
+    padding-bottom:clamp(75px,8vw,110px);
+    background:#f5f6f1;
+  }
+  .services .section-heading{
+    margin-bottom:22px;
+    padding-bottom:24px;
+  }
+  .services .services-journey-cue{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:0 0 23px;
+    font-size:10px;
+    font-weight:800;
+    line-height:1.5;
+    letter-spacing:.17em;
+    color:#638072;
+  }
+  .services .services-journey-rule{
+    width:36px;
+    height:1px;
+    flex:none;
+    background:#8caa92;
+  }
+  .services .services-journey-down{
+    display:inline-block;
+    font-size:18px;
+    font-weight:400;
+    line-height:1;
+    color:#2b6049;
+  }
+  .services .services-story{
+    display:block;
+    position:relative;
+    isolation:isolate;
+    overflow:visible;
+    width:100%;
+    padding:0;
+    margin:0;
+    background:transparent;
+    scroll-snap-type:none;
+    overscroll-behavior:auto;
+  }
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3),
+  .services .service-scene:nth-child(6){
+    position:sticky;
+    top:104px;
+    display:block;
+    flex:none;
+    grid-column:auto;
+    grid-row:auto;
+    width:100%;
+    min-width:0;
+    height:clamp(420px,calc(100svh - 104px),900px);
+    min-height:0;
+    max-height:none;
+    margin:0 0 clamp(190px,35svh,345px);
+    border-radius:0;
+    overflow:hidden;
+    background:#143b31;
+    box-shadow:none;
+    scroll-snap-align:none;
+    scroll-snap-stop:normal;
+    outline-offset:4px;
+  }
+  .services .service-scene:nth-child(1){z-index:1}
+  .services .service-scene:nth-child(2){z-index:2}
+  .services .service-scene:nth-child(3){z-index:3}
+  .services .service-scene:nth-child(4){z-index:4}
+  .services .service-scene:nth-child(5){z-index:5}
+  .services .service-scene:nth-child(6){z-index:6;margin-bottom:12px}
+  .services .service-scene-photo{
+    transform:scale(1.055);
+    filter:saturate(.82);
+    transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .8s ease;
+  }
+  .services .service-scene.is-scene-current .service-scene-photo,
+  .services .service-scene:hover .service-scene-photo,
+  .services .service-scene:focus-visible .service-scene-photo{
+    transform:scale(1);
+    filter:saturate(1);
+  }
+  .services .service-scene-shade{
+    background:
+      linear-gradient(90deg,rgba(8,26,18,.46) 0%,rgba(7,25,19,.14) 66%,transparent 100%),
+      linear-gradient(180deg,rgba(5,24,17,.35) 0%,transparent 35%,rgba(6,26,20,.30) 58%,rgba(4,25,18,.89) 100%);
+  }
+  .services .service-scene-top,
+  .services .service-scene:nth-child(n+2) .service-scene-top{
+    inset:clamp(23px,2.7vw,37px) max(40px,calc((100vw - 1250px)/2)) auto;
+    font-size:clamp(10px,.85vw,12px);
+    letter-spacing:.16em;
+    z-index:3;
+  }
+  .services .service-scene-body,
+  .services .service-scene:nth-child(n+2) .service-scene-body{
+    position:absolute;
+    inset:auto 0 0;
+    z-index:3;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:clamp(9px,1.3vw,14px);
+    padding:38px max(40px,calc((100vw - 1250px)/2)) clamp(35px,4.5vw,58px);
+    max-width:min(890px,92%);
+    color:#fff;
+  }
+  .services .service-scene-index{
+    color:#dcead8;
+    font-size:11px;
+    letter-spacing:.16em;
+  }
+  .services .service-scene-title,
+  .services .service-scene-feature .service-scene-title,
+  .services .service-scene:nth-child(n+2) .service-scene-title{
+    max-width:700px;
+    margin:0;
+    font-size:clamp(38px,5vw,76px);
+    line-height:1.05;
+    letter-spacing:-.06em;
+    text-wrap:balance;
+    font-weight:800;
+    color:#fff;
+  }
+  .services .service-scene-description,
+  .services .service-scene:nth-child(n+2) .service-scene-description{
+    display:block;
+    overflow:visible;
+    -webkit-line-clamp:unset;
+    line-clamp:unset;
+    max-width:570px;
+    font-size:clamp(13px,1.12vw,16px);
+    line-height:1.68;
+    font-weight:550;
+    color:#ecf4ed;
+  }
+  .services .service-scene-action,
+  .services .service-scene:nth-child(n+2) .service-scene-action{
+    margin-top:11px;
+    padding:14px 18px;
+    font-size:11px;
+    letter-spacing:.07em;
+    background:#eff3ea;
+    color:#173d31;
+    transform:none;
+  }
+  .services .service-scene:hover .service-scene-action,
+  .services .service-scene:focus-visible .service-scene-action{
+    background:#fff;
+    transform:translateY(-2px);
+  }
+  .services .service-scene-progress{
+    display:block;
+    position:absolute;
+    z-index:3;
+    bottom:0;
+    inset-inline:0;
+    height:3px;
+    background:rgba(255,255,255,.32);
+  }
+  .services .service-scene-progress span{
+    display:block;
+    height:100%;
+    background:#c0d5b5;
+  }
+  .services .services-illustration-note{
+    position:relative;
+    z-index:7;
+    margin-top:20px;
+    max-width:680px;
+    font-size:11px;
+    line-height:1.6;
+  }
+  .services .services-footer{
+    position:relative;
+    z-index:7;
+    margin-top:16px;
+  }
+}
+@media(min-width:641px) and (max-width:1023px){
+  .services.section{scroll-margin-top:88px}
+  .services .service-scene-top,
+  .services .service-scene:nth-child(n+2) .service-scene-top{inset-inline:28px}
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3),
+  .services .service-scene:nth-child(6){
+    top:88px;
+    height:clamp(420px,calc(100svh - 88px),820px);
+    margin-bottom:clamp(155px,30svh,270px);
+  }
+  .services .service-scene:nth-child(6){margin-bottom:12px}
+  .services .service-scene-title,
+  .services .service-scene-feature .service-scene-title,
+  .services .service-scene:nth-child(n+2) .service-scene-title{
+    font-size:clamp(37px,5.7vw,57px);
+  }
+  .services .service-scene-body,
+  .services .service-scene:nth-child(n+2) .service-scene-body{
+    padding:34px 28px 38px;
+    max-width:min(700px,96%);
+  }
+  .services .service-scene-description,
+  .services .service-scene:nth-child(n+2) .service-scene-description{font-size:13px;line-height:1.65}
+}
+@media(min-width:641px) and (max-height:600px){
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3),
+  .services .service-scene:nth-child(6){
+    top:82px;
+    height:clamp(335px,calc(100svh - 112px),460px);
+    margin-bottom:170px;
+  }
+  .services .service-scene:nth-child(6){margin-bottom:12px}
+  .services .service-scene-title,
+  .services .service-scene-feature .service-scene-title,
+  .services .service-scene:nth-child(n+2) .service-scene-title{font-size:clamp(30px,3.9vw,48px)}
+  .services .service-scene-body,
+  .services .service-scene:nth-child(n+2) .service-scene-body{padding:20px 26px 26px;gap:6px}
+  .services .service-scene-action,
+  .services .service-scene:nth-child(n+2) .service-scene-action{margin-top:3px}
+}
+@media(min-width:641px) and (prefers-reduced-motion:reduce){
+  .services .service-scene,
+  .services .service-scene:nth-child(1),
+  .services .service-scene:nth-child(2),
+  .services .service-scene:nth-child(3),
+  .services .service-scene:nth-child(6){
+    position:relative;
+    top:auto;
+    margin-bottom:22px;
+  }
+  .services .service-scene-photo,
+  .services .service-scene-action{transform:none!important;transition:none!important}
+}
