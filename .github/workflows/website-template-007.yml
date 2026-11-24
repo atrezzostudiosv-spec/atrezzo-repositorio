@@ -1,0 +1,38 @@
+name: ATZ-WEB-007 full website build and QA
+on:
+  push:
+    branches: ['lab/website-template-007']
+permissions:
+  contents: write
+jobs:
+  template:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --only-shell chromium
+      - run: python3 -m pip install Pillow --break-system-packages
+      - run: |
+          git clone --no-checkout https://github.com/atrezzostudiosv-spec/Team-Hodnett.git /tmp/hodnett-source
+          git -C /tmp/hodnett-source checkout 98d354c5b1349d1457af0f1cbc5d12256a011f1b
+      - run: node scripts/build-website-template-007.mjs /tmp/hodnett-source
+      - run: npm test
+      - run: mkdir -p /tmp/atz-web-007-host && ln -s "$PWD" /tmp/atz-web-007-host/atrezzo-repositorio
+      - run: node tests/website-template-007-browser.mjs /tmp/hodnett-source
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/websites.json websites/templates/ATZ-WEB-007/v1/
+          git commit -m "Validate and package ATZ-WEB-007"
+          git push origin HEAD:lab/website-template-007
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-template-007-evidence
+          path: |
+            websites/templates/ATZ-WEB-007/v1/qa.json
+            websites/templates/ATZ-WEB-007/v1/poster.webp
