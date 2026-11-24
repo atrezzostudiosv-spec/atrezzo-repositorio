@@ -1,0 +1,198 @@
+/* ATREZZO · One cinematic Meet Sharon chapter, historical recognition,
+   and the restored full-screen pinned Team scene. No third-party video embed. */
+
+.sharon-awards{
+ background:#f7f6f3;color:#1a1a19;
+ padding:clamp(70px,8vw,130px) 0 clamp(48px,5vw,80px);
+ overflow:hidden;position:relative;isolation:isolate;
+}
+.sharon-awards__intro{
+ display:flex;align-items:end;justify-content:space-between;gap:42px;
+ padding-bottom:clamp(34px,5vw,65px);
+}
+.sharon-awards__intro .eyebrow{display:block;color:#8d7952;margin-bottom:23px}
+.sharon-awards__intro h2{
+ margin:0;font:400 clamp(43px,5vw,82px)/1.07 var(--sans,Arial,sans-serif);
+ letter-spacing:-.057em;
+}
+.sharon-awards__aside{max-width:335px;align-self:end}
+.sharon-awards__aside p{font-size:14px;line-height:1.75;color:#6b6a67;margin-bottom:24px}
+.sharon-awards__aside .line-link{font-size:12px;color:#222}
+.sharon-awards__window{
+ overflow:hidden;
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);
+ mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);
+}
+.sharon-awards__track{
+ width:max-content;display:flex;gap:0;
+ animation:sharon-awards-travel 48s linear infinite;
+}
+.sharon-awards__set{display:flex;flex:none;gap:18px;padding-right:18px}
+.sharon-award{
+ width:clamp(182px,18vw,255px);height:184px;flex:none;
+ margin:0;padding:24px 18px 20px;
+ background:#fff;border:1px solid rgba(0,0,0,.07);
+ display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;
+}
+.sharon-award img{display:block;width:100%;height:94px;object-fit:contain}
+.sharon-award figcaption{
+ width:100%;height:32px;overflow:hidden;
+ font:500 10px/1.55 var(--sans,Arial,sans-serif);letter-spacing:.015em;
+ color:#77726c;text-align:center;
+}
+@keyframes sharon-awards-travel{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.sharon-awards__window:hover .sharon-awards__track,
+.sharon-awards__window:focus-within .sharon-awards__track{animation-play-state:paused}
+.sharon-awards__note{font-size:10px;color:#85817b;margin-top:22px;letter-spacing:.035em}
+
+/* Restore the original full-bleed pinned chapter instead of a static split screen.
+   Scroll drives a restrained zoom, with editorial copy above a photo scrim. */
+.team-scroll-story{position:relative;isolation:isolate;background:#08090b;z-index:2}
+.team-scroll-story .connection-team{
+ margin-top:0;
+ height:195svh;
+ min-height:calc(680px + 95svh);
+ background:#08090b;
+}
+.team-scroll-story .connection-team .connection-viewport{
+ position:sticky;top:0;height:100svh;min-height:680px;
+}
+.team-scroll-story .connection-photo--team{
+ opacity:1!important;
+ transform:scale(var(--team-scale,1));
+ will-change:transform;
+}
+.team-scroll-story .connection-shade{
+ background:linear-gradient(90deg,rgba(0,0,0,.04) 0%,rgba(0,0,0,.19) 37%,rgba(0,0,0,.64) 64%,rgba(0,0,0,.84) 100%);
+}
+.team-scroll-story.is-enhanced .connection-reveal{
+ opacity:0;transform:translateY(18px);
+ transition:opacity .8s ease,transform 1s cubic-bezier(.2,.7,.2,1);
+}
+.team-scroll-story.is-enhanced .is-copy-ready .connection-reveal{opacity:1;transform:none}
+.team-scroll-story .connection-copy>.connection-reveal:nth-child(1){transition-delay:.08s}
+.team-scroll-story .connection-copy>.connection-reveal:nth-child(2){transition-delay:.24s}
+.team-scroll-story .connection-copy>.connection-reveal:nth-child(3){transition-delay:.42s}
+.team-scroll-story .connection-copy>.connection-reveal:nth-child(4){transition-delay:.60s}
+.team-scroll-story+.collection-section{padding-top:85px;background:#fff}
+
+@media(max-width:767px){
+ .connection-film .connection-shade{background:linear-gradient(0deg,rgba(2,3,4,.95) 0%,rgba(2,3,4,.73) 37%,rgba(2,3,4,.1) 82%)}
+ .connection-film__motion{display:none}
+ .sharon-awards{padding:66px 0 48px}
+ .sharon-awards__intro{display:block;padding-bottom:35px}
+ .sharon-awards__intro h2{font-size:clamp(42px,10vw,56px)}
+ .sharon-awards__aside{margin-top:24px}
+ .sharon-awards__aside p{font-size:13px;margin-bottom:13px}
+ .sharon-awards__window{
+  overflow-x:auto;overscroll-behavior-x:contain;
+  -webkit-mask-image:none;mask-image:none;
+  scroll-snap-type:x proximity;scrollbar-width:thin;
+  padding:0 24px 15px;
+ }
+ .sharon-awards__track{animation:none}
+ .sharon-awards__set{gap:12px;padding-right:0}
+ .sharon-awards__set[aria-hidden=true]{display:none}
+ .sharon-award{width:190px;height:164px;scroll-snap-align:start}
+ .sharon-award img{height:80px}
+ .team-scroll-story .connection-team{margin-top:0;min-height:calc(780px + 95svh)}
+ .team-scroll-story .connection-team .connection-viewport{min-height:780px}
+ .team-scroll-story .connection-shade{background:linear-gradient(0deg,rgba(2,3,4,.94) 0%,rgba(2,3,4,.75) 33%,rgba(2,3,4,.12) 77%)}
+ .team-scroll-story+.collection-section{padding-top:58px}
+}
+@media(prefers-reduced-motion:reduce){
+ .connection-film__motion{display:none}
+ .sharon-awards__track{animation:none}
+ .sharon-awards__window{overflow-x:auto}
+}
+body.reduced-motion .connection-film__motion{display:none}
+body.reduced-motion .sharon-awards__track{animation:none}
+body.reduced-motion .sharon-awards__window{overflow-x:auto}
+
+/* Short displays keep the original chapter accessible and free from overflow. */
+@media(max-height:700px){
+ .team-scroll-story .connection-team{height:100svh;min-height:680px}
+ .team-scroll-story .connection-team .connection-viewport{position:relative;height:100%;min-height:inherit}
+}
+@media(max-width:767px) and (max-height:740px){
+ .team-scroll-story .connection-team{height:780px;min-height:780px}
+ .team-scroll-story .connection-team .connection-viewport{position:relative;height:100%;min-height:780px}
+}
+@media(prefers-reduced-motion:reduce){
+ .team-scroll-story .connection-team{height:100svh;min-height:680px}
+ .team-scroll-story .connection-team .connection-viewport{position:relative;height:100%;min-height:inherit}
+ .team-scroll-story .connection-photo--team{transform:none!important;will-change:auto}
+ .team-scroll-story.is-enhanced .connection-reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
+body.reduced-motion .team-scroll-story .connection-team{height:100svh;min-height:680px}
+body.reduced-motion .team-scroll-story .connection-team .connection-viewport{position:relative;height:100%;min-height:inherit}
+body.reduced-motion .team-scroll-story .connection-photo--team{transform:none!important;will-change:auto}
+body.reduced-motion .team-scroll-story.is-enhanced .connection-reveal{opacity:1!important;transform:none!important;transition:none!important}
+
+/* The Meet Sharon chapter holds its original portrait while the next story emerges.
+   One image, one CTA, no YouTube embed or duplicate presentation. */
+body.home .connection-story{
+ height:142svh;
+ min-height:900px;
+ position:relative;
+ isolation:isolate;
+ background:#08090b;
+}
+body.home .connection-story .connection-sharon{
+ position:sticky;
+ top:0;
+ height:100svh;
+ min-height:680px;
+}
+body.home .connection-sharon .connection-copy h2{
+ font-size:clamp(40px,4.45vw,70px);
+ max-width:670px;
+ text-wrap:balance;
+}
+body.home .connection-sharon .connection-copy p{
+ max-width:540px;
+ line-height:1.85;
+}
+body.home .connection-sharon .connection-shade{
+ background:linear-gradient(90deg,rgba(3,5,7,0) 0%,rgba(3,5,7,.07) 32%,rgba(3,5,7,.56) 55%,rgba(3,5,7,.85) 100%);
+}
+@media(max-width:767px){
+ body.home .connection-story{height:127svh;min-height:850px}
+ body.home .connection-story .connection-sharon{min-height:780px}
+ body.home .connection-sharon .connection-copy h2{font-size:clamp(35px,8.2vw,49px)}
+ body.home .connection-sharon .connection-shade{
+  background:linear-gradient(0deg,rgba(3,5,7,.96) 0%,rgba(3,5,7,.79) 34%,rgba(3,5,7,.13) 78%);
+ }
+}
+@media(max-height:700px), (prefers-reduced-motion:reduce){
+ body.home .connection-story{height:auto;min-height:0}
+ body.home .connection-story .connection-sharon{position:relative;min-height:680px}
+}
+@media(max-width:767px) and (max-height:740px){
+ body.home .connection-story .connection-sharon{min-height:780px}
+}
+body.reduced-motion.home .connection-story{height:auto;min-height:0}
+body.reduced-motion.home .connection-story .connection-sharon{position:relative;min-height:680px}
+
+
+/* AWARDS — one intentionally composed viewport on desktop.
+   Preserve the horizontal original-logo showcase and its slow motion. */
+@media(min-width:768px) and (min-height:700px){
+ .sharon-awards{
+  min-height:100svh;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-top:clamp(50px,6svh,100px);
+  padding-bottom:clamp(42px,5svh,90px);
+ }
+ .sharon-awards__intro,.sharon-awards__note{width:100%;box-sizing:border-box}
+ .sharon-awards__intro{padding-bottom:clamp(25px,5svh,62px)}
+ .sharon-awards__window{width:100%}
+}
+/* Animated figures retain fixed-width numerals and their archived labels. */
+.performance-section [data-performance-count]{
+ font-variant-numeric:tabular-nums lining-nums;
+ font-feature-settings:"tnum" 1,"lnum" 1;
+}

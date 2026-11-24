@@ -1,0 +1,302 @@
+[
+  {
+    "route": "",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "homes/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "properties/demo-01/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/southlake/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "about/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "sellers/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "home-valuation/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "blog/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "vlog/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "testimonials/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "awards/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "contact/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "client-login/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "terms-and-conditions/",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "homes/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "properties/demo-01/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/southlake/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "about/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "sellers/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "home-valuation/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "blog/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "vlog/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "testimonials/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "awards/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "contact/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "client-login/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "terms-and-conditions/",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "homes/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "properties/demo-01/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/southlake/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "about/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "sellers/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "home-valuation/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "blog/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "vlog/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "testimonials/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "awards/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "contact/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "client-login/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "terms-and-conditions/",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "homes/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "properties/demo-01/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "neighborhoods/southlake/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "about/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "sellers/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "home-valuation/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "blog/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "vlog/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "testimonials/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "awards/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "contact/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "client-login/",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "terms-and-conditions/",
+    "width": 1440,
+    "pass": true
+  }
+]
