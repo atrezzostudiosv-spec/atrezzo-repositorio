@@ -4259,6 +4259,86 @@
         ]
       },
       "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/44498389368"
+    },
+    {
+      "id": "ATZ-SEC-015",
+      "title": "Cinematic Collection Chapters — Selected Homes",
+      "category": "scroll",
+      "family": "atrezzo-project-extraction",
+      "variant": "cinematic-collection-chapters",
+      "selector": "[data-collection-stage]",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "passed_internal",
+      "client_ready": false,
+      "description": "Escenario sticky a pantalla completa con tres capítulos fotográficos, zoom cinematográfico y fundidos controlados por scroll. Contador, barras de progreso y CTA sincronizados; navegación directa y scroll reversible.",
+      "recommended_for": "Portfolios, arquitectura, inmobiliaria, hoteles, productos y colecciones premium.",
+      "avoid_when": "Evitar otro pin dentro del escenario; mantener fallback apilado y textos breves. Una instancia por documento.",
+      "level": "M3",
+      "discovery_group": "narrativa",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "Selected Homes",
+        "Team Hodnett",
+        "cinematic",
+        "scroll",
+        "sticky",
+        "crossfade",
+        "zoom",
+        "progress tabs",
+        "capítulos",
+        "fotografías",
+        "portfolio"
+      ],
+      "preview": "components/originales/atrezzo/ATZ-SEC-015/index.html",
+      "technical_guide": "components/originales/atrezzo/ATZ-SEC-015/README.md",
+      "component_html": "components/originales/atrezzo/ATZ-SEC-015/index.html",
+      "component_css": "components/originales/atrezzo/ATZ-SEC-015/component.css",
+      "component_js": "components/originales/atrezzo/ATZ-SEC-015/component.js",
+      "component_runtime": "components/originales/atrezzo/ATZ-SEC-015/engine.original.js",
+      "package_manifest": "components/originales/atrezzo/ATZ-SEC-015/manifest.json",
+      "package_directory": "components/originales/atrezzo/ATZ-SEC-015/",
+      "source_collection": "atrezzo",
+      "dependencies": [],
+      "licensing": "Código original ATREZZO. DM Sans OFL. Ilustraciones neutras de biblioteca; no incluye fotos de clientes.",
+      "integration": "Exportar paquete completo. Motor initCollection() literal y CSS original. Mantener source-context.css antes de component.css, tres capítulos, DOM, datos, CTA, track y escala; adaptar solo contenido y rutas autorizadas. No montar varias instancias ni imponer librerías de scroll. Verificar aislamiento y ciclo de vida en destino.",
+      "visual_contract": "Conservar track de 430svh, sticky de 100svh, smoothstep y fundido original, escalas 1.025 + .052/.060, barras individuales, contador y CTA sincronizado, composición y offsets exactos, navegación por tabs y teclado, reversibilidad y fallback con altura <700 o reduced motion.",
+      "visual": {
+        "views": [
+          "Experiencias de scroll",
+          "Galerías y proyectos"
+        ],
+        "roles": [
+          "Proyectos",
+          "Galería",
+          "Producto",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "cinematográfico",
+          "inmersivo"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality",
+          "comercio"
+        ],
+        "motion": 3,
+        "search_aliases": [
+          "selected homes",
+          "Team Hodnett",
+          "scroll chapters",
+          "cinematic collection",
+          "carrusel por scroll",
+          "fundido",
+          "zoom fotográfico",
+          "progreso"
+        ]
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45358027784"
     }
   ],
   "originals_integration_contract": {

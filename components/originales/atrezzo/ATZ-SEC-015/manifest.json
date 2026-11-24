@@ -13,7 +13,7 @@
   ],
   "source_css_blob": "835956afd7c453774bd4bd06712a1d14ccff7595",
   "source_visual_approved": true,
-  "catalog_qa_status": "pending",
+  "catalog_qa_status": "passed_internal",
   "client_ready": false,
   "files": [
     "index.html",
@@ -33,5 +33,17 @@
     "assets/dm-sans-600.ttf"
   ],
   "dependencies": [],
-  "media": "ATREZZO neutral illustrations; no Hodnett property photos"
+  "media": "ATREZZO neutral illustrations; no Hodnett property photos",
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45358027784",
+  "source_comparison": {
+    "viewport_widths": [
+      375,
+      768,
+      1024,
+      1440
+    ],
+    "states_per_width": 6,
+    "media": "same neutral demo assets in both source and extracted stage",
+    "run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45358027784"
+  }
 }
