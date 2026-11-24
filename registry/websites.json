@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "ATZ-WEB-001",
+      "version": "1.0.0",
+      "title": "HVAC & Home Services",
+      "source_name": "Pronto Air",
+      "source_repo": "atrezzostudiosv-spec/pronto-air",
+      "source_commit": "95a7b80579e4354eba98c2762c13ad1f444f9b83",
+      "sector": "HVAC / servicios residenciales",
+      "tags": [
+        "HVAC",
+        "heating",
+        "cooling",
+        "climatización",
+        "servicios",
+        "home services",
+        "multipágina"
+      ],
+      "description": "Arquitectura original Pronto Air de ocho páginas. Diseño responsive, navegación, servicios, FAQ, formularios en modo prueba y asistente guiado local. Contenido y medios de ejemplo; conexiones externas desactivadas.",
+      "pages": [
+        "index.html",
+        "residential-cooling.html",
+        "residential-heating.html",
+        "mobile-homes.html",
+        "light-commercial.html",
+        "contact-us.html",
+        "service-agreement-faqs.html",
+        "privacy-policy.html"
+      ],
+      "preview": "websites/templates/ATZ-WEB-001/v1/site/index.html",
+      "original_preview": "https://atrezzostudiosv-spec.github.io/pronto-air/",
+      "poster": "websites/templates/ATZ-WEB-001/v1/poster.webp",
+      "package": "websites/templates/ATZ-WEB-001/v1/ATZ-WEB-001-v1.zip",
+      "guide": "websites/templates/ATZ-WEB-001/v1/README.md",
+      "status": "validated_template",
+      "client_ready": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# ATZ-WEB-001 — HVAC & Home Services v1.0.0
+
+Source: [Pronto Air](https://github.com/atrezzostudiosv-spec/pronto-air/tree/95a7b80579e4354eba98c2762c13ad1f444f9b83). Original repository remains unchanged. The template is a derivative preserving the original page structure, layout, CSS and native interaction code, with explicitly illustrative content, neutral library illustrations (client media excluded), and disabled external delivery. The original branded site remains available as a separate reference.
+
+## Use
+1. Download ATZ-WEB-001-v1.zip and extract into a NEW directory/repository. Never overwrite this master or Pronto Air. Run `python3 -m http.server 8000` inside the extracted site; open localhost:8000.
+2. Complete template-config.json (business, verified services, coverage, hours, contact, credentials, authorized images, legal and SEO details); use it as a review checklist, not a runtime text substitution engine. Adapt all eight pages, including inline serviceData, logo, text, SEO, legal and visual assets. No fictional claims may remain. The existing CSS filenames/selectors intentionally retain internal pronto names to preserve the original layout.
+3. Forms are local demonstrations: no fetch, no actual send, no saved data; replace with explicitly authorized delivery and verify acceptance AND real receipt. The assistant retains original UI and guided interaction, with a neutral local response adapter; no live AI or lead delivery. For future AI, consult original assistant-worker code at the pinned source revision, configure a NEW worker/knowledge/allowed origins, protect PII, test both languages and consent. Do not reuse original endpoints/inbox. Dependencies: local CSS/JS and external Inter/Font Awesome styles from original; verify licenses and self-host if needed.
+4. CSP blocks form submission and network connections by default. Do not remove guard or noindex until production activation is approved, privacy/consent verified, links and service coverage checked, and new domain/SEO configured. Do not represent demo as a real business.
+5. Test 375/768/1024/1440, keyboard, reduced motion, mobile nav, service selector, forms, assistant, all eight routes, performance and independent destination QA. `client_ready:false` until signed off.
+
+## Source vs master
+The original branded Pronto Air is NOT a production-approved client site. Use the original preview only to compare composition. Neutral sample visuals are illustrative placeholders; no source photography or client brand copied. The ZIP contains the standalone site, this guide and checklist; it does not include a deployable backend. New projects created in the library preserve template ID/version and website URL in the local project board and its export.
