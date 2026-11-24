@@ -1,0 +1,1 @@
+window.prontoSubmitInline=async function(form,status){if(!form||!status)return;status.classList.remove("hidden");status.classList.add("block");status.setAttribute("role","status");status.textContent="Demo validation complete. No information was sent or stored.";form.reset();};

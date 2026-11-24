@@ -1,0 +1,162 @@
+[
+  {
+    "file": "index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "residential-cooling.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "residential-heating.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "mobile-homes.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "light-commercial.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "contact-us.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "service-agreement-faqs.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "privacy-policy.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "residential-cooling.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "residential-heating.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "mobile-homes.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "light-commercial.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "contact-us.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "service-agreement-faqs.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "privacy-policy.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "residential-cooling.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "residential-heating.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "mobile-homes.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "light-commercial.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "contact-us.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "service-agreement-faqs.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "privacy-policy.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "residential-cooling.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "residential-heating.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "mobile-homes.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "light-commercial.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "contact-us.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "service-agreement-faqs.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "privacy-policy.html",
+    "width": 1440,
+    "pass": true
+  }
+]
