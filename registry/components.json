@@ -4339,6 +4339,82 @@
         ]
       },
       "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45358027784"
+    },
+    {
+      "id": "ATZ-SEC-016",
+      "title": "Cinematic Header & Video Hero — Team Hodnett",
+      "category": "motion",
+      "family": "atrezzo-project-extraction",
+      "variant": "cinematic-header-video-hero",
+      "selector": ".hero-film",
+      "status": "validation",
+      "source_visual_approved": true,
+      "catalog_qa_status": "pending",
+      "client_ready": false,
+      "description": "Hero cinematográfico a pantalla completa con vídeo, titular editorial, CTA y control de reproducción. Header transparente sobre el vídeo, cristal oscuro al desplazarse, aparición al subir, desplegables y menú móvil.",
+      "recommended_for": "Arquitectura, inmobiliaria, hospitality, marcas premium, portfolios y estudios creativos.",
+      "avoid_when": "Evitar vídeos pesados sin poster ni alternativa accesible; no duplicar headers ni navegación global.",
+      "level": "M2",
+      "discovery_group": "heroes",
+      "discovery_trigger": "mixed",
+      "discovery_tags": [
+        "Team Hodnett",
+        "hero video",
+        "header",
+        "smoked glass",
+        "dropdown",
+        "menu mobile",
+        "scroll direction",
+        "cinematic"
+      ],
+      "preview": "components/originales/atrezzo/ATZ-SEC-016/index.html",
+      "technical_guide": "components/originales/atrezzo/ATZ-SEC-016/README.md",
+      "component_html": "components/originales/atrezzo/ATZ-SEC-016/index.html",
+      "component_css": "components/originales/atrezzo/ATZ-SEC-016/component.css",
+      "component_js": "components/originales/atrezzo/ATZ-SEC-016/component.js",
+      "component_runtime": "components/originales/atrezzo/ATZ-SEC-016/engine.original.js",
+      "package_manifest": "components/originales/atrezzo/ATZ-SEC-016/manifest.json",
+      "package_directory": "components/originales/atrezzo/ATZ-SEC-016/",
+      "source_collection": "atrezzo",
+      "dependencies": [],
+      "licensing": "Código original ATREZZO; DM Sans OFL; material audiovisual ilustrativo propio, no incluye medios de cliente.",
+      "integration": "Exportar paquete completo. Conservar initHeader e initFilm literales, CSS en orden source-context + component, estructura header/hero/menu, vídeo responsive y poster, sin duplicar navegación ni motor de transiciones; adaptar exclusivamente contenido y rutas. Una instancia por documento; QA destino.",
+      "visual_contract": "Mantener geometría y estilos del hero original, transparencia sobre vídeo y cristal oscuro a partir de 65px, acumulación de scroll +18/-12, menú nativo desktop y modal móvil ≤1180px, pausa/reproducción y reduced motion. No añadir Ask Hodnett ni alterar los motores.",
+      "visual": {
+        "views": [
+          "Heroes",
+          "Navegación y transiciones",
+          "Motion e interacciones"
+        ],
+        "roles": [
+          "Hero",
+          "Navegación",
+          "Presentación"
+        ],
+        "styles": [
+          "editorial",
+          "moderno",
+          "cinematográfico"
+        ],
+        "industries": [
+          "creativo",
+          "arquitectura",
+          "realestate",
+          "hospitality",
+          "comercio"
+        ],
+        "motion": 2,
+        "search_aliases": [
+          "video hero",
+          "header hero",
+          "cabecera transparente",
+          "menu desplegable",
+          "header aparece al subir",
+          "Team Hodnett",
+          "cristal oscuro",
+          "hero cinematográfico"
+        ]
+      }
     }
   ],
   "originals_integration_contract": {
