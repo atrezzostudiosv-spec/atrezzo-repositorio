@@ -1,0 +1,45 @@
+name: ATZ-WEB-006 website template build and QA
+on:
+  push:
+    branches: ['lab/website-template-006']
+permissions:
+  contents: write
+jobs:
+  template:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --only-shell chromium
+      - run: |
+          git clone --no-checkout https://github.com/atrezzostudiosv-spec/elegant-Massage.git /tmp/elegant-source
+          git -C /tmp/elegant-source checkout 09bfb01c1e21c058bf1faf0f02e836ffb3c67889
+      - run: node scripts/build-website-template-006.mjs /tmp/elegant-source
+      - run: npm test
+      - run: node tests/website-template-006-browser.mjs /tmp/elegant-source
+      - run: |
+          python3 - <<'PY'
+          import zipfile,pathlib
+          root=pathlib.Path('websites/templates/ATZ-WEB-006/v1/')
+          with zipfile.ZipFile(root/'ATZ-WEB-006-v1.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted((root/'site').rglob('*')):
+                  if p.is_file(): z.write(p,p.relative_to(root/'site'))
+              for n in ['README.md','template-config.json']: z.write(root/n,n)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/websites.json websites/templates/ATZ-WEB-006/v1/
+          git commit -m "Validate and package ATZ-WEB-006"
+          git push origin HEAD:lab/website-template-006
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-template-006-evidence
+          path: |
+            websites/templates/ATZ-WEB-006/v1/qa.json
+            websites/templates/ATZ-WEB-006/v1/motion-qa.json
+            websites/templates/ATZ-WEB-006/v1/poster.webp
