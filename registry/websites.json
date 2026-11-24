@@ -54,7 +54,7 @@
         "wizard",
         "multipágina"
       ],
-      "description": "Arquitectura original de cinco páginas, bento de servicios, proceso editorial, galería con visor y formulario guiado de cuatro pasos. Datos ilustrativos; envíos desactivados.",
+      "description": "Arquitectura original de cinco páginas, bento, proceso editorial, galería con visor y formulario guiado de cuatro pasos. Imágenes conceptuales originales; datos ilustrativos y envíos desactivados.",
       "pages": [
         "index.html",
         "about.html",
@@ -68,7 +68,8 @@
       "package": "websites/templates/ATZ-WEB-002/v1/ATZ-WEB-002-v1.zip",
       "guide": "websites/templates/ATZ-WEB-002/v1/README.md",
       "status": "validated_template",
-      "client_ready": false
+      "client_ready": false,
+      "fidelity_revision": "motion-and-source-media"
     }
   ]
 }

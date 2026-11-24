@@ -1,7 +1,7 @@
 name: ATZ-WEB-002 website template build and QA
 on:
   push:
-    branches: ['lab/website-template-002']
+    branches: ['lab/website-template-002-fidelity']
 permissions:
   contents: write
 jobs:
@@ -21,7 +21,7 @@ jobs:
           git -C /tmp/trilane-source checkout a36c0019f9fb653bd970f2c6ab5777fda37a1ba2
       - run: node scripts/build-website-template-002.mjs /tmp/trilane-source
       - run: npm test
-      - run: node tests/website-template-002-browser.mjs
+      - run: node tests/website-template-002-browser.mjs /tmp/trilane-source
       - name: Package and record QA
         run: |
           python3 - <<'PY'
@@ -36,11 +36,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add websites/templates/ATZ-WEB-002/v1/
           git commit -m "Validate source-derived ATZ-WEB-002 and package master"
-          git push origin HEAD:lab/website-template-002
+          git push origin HEAD:lab/website-template-002-fidelity
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: website-template-002-evidence
           path: |
             websites/templates/ATZ-WEB-002/v1/qa.json
+            websites/templates/ATZ-WEB-002/v1/motion-qa.json
             websites/templates/ATZ-WEB-002/v1/poster.webp
