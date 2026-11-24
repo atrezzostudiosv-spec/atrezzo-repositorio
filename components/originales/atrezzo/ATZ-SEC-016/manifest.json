@@ -38,7 +38,7 @@
     }
   ],
   "source_visual_approved": true,
-  "catalog_qa_status": "pending",
+  "catalog_qa_status": "passed_internal",
   "client_ready": false,
   "dependencies": [],
   "media": "Neutral ATREZZO logo, illustrations and generated sample film; no client media",
@@ -62,5 +62,16 @@
     "assets/film.webm",
     "assets/film.mp4",
     "assets/film-mobile.mp4"
-  ]
+  ],
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45362477698",
+  "source_comparison": {
+    "viewport_widths": [
+      375,
+      768,
+      1024,
+      1440
+    ],
+    "media": "neutral demo assets, original layout",
+    "run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45362477698"
+  }
 }

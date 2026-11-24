@@ -4349,7 +4349,7 @@
       "selector": ".hero-film",
       "status": "validation",
       "source_visual_approved": true,
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "description": "Hero cinematográfico a pantalla completa con vídeo, titular editorial, CTA y control de reproducción. Header transparente sobre el vídeo, cristal oscuro al desplazarse, aparición al subir, desplegables y menú móvil.",
       "recommended_for": "Arquitectura, inmobiliaria, hospitality, marcas premium, portfolios y estudios creativos.",
@@ -4414,7 +4414,8 @@
           "cristal oscuro",
           "hero cinematográfico"
         ]
-      }
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45362477698"
     }
   ],
   "originals_integration_contract": {

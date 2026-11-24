@@ -659,6 +659,14 @@
       "viewport": "1440x900",
       "interaction": "scroll",
       "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45358027784"
+    },
+    "ATZ-SEC-016": {
+      "poster": "previews/ATZ-SEC-016.webp",
+      "video": "previews/ATZ-SEC-016.webm",
+      "source": "components/originales/atrezzo/ATZ-SEC-016/index.html",
+      "viewport": "1440x900",
+      "interaction": "mixed",
+      "validation_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45362477698"
     }
   },
   "editorialRepair": "phase04-v1",
