@@ -4269,7 +4269,7 @@
       "selector": "[data-collection-stage]",
       "status": "validation",
       "source_visual_approved": true,
-      "catalog_qa_status": "pending",
+      "catalog_qa_status": "passed_internal",
       "client_ready": false,
       "description": "Escenario sticky a pantalla completa con tres capítulos fotográficos, zoom cinematográfico y fundidos controlados por scroll. Contador, barras de progreso y CTA sincronizados; navegación directa y scroll reversible.",
       "recommended_for": "Portfolios, arquitectura, inmobiliaria, hoteles, productos y colecciones premium.",
@@ -4337,7 +4337,8 @@
           "zoom fotográfico",
           "progreso"
         ]
-      }
+      },
+      "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45358027784"
     }
   ],
   "originals_integration_contract": {
