@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-400.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/playfair-display-400.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.touch-home .at-grid .content__button { display: none; }
+/* Sticky Grid Scroll, Theo Plawinski (MIT): geometry scoped to Home.
+   One source rem equals 100vw / 1440; the site's root font stays untouched. */
+@media (min-height: 540px) and (prefers-reduced-motion: no-preference) {
+  .at-grid-active .touch-home .at-grid {
+    --grid-unit: calc(100vw / 1440);
+    height: 425vh;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    color: #254460;
+  }
+  .at-grid-active .touch-home .at-grid__wrapper {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 0 calc(24 * var(--grid-unit));
+    display: block;
+    overflow: hidden;
+    will-change: transform;
+  }
+  .at-grid-active .touch-home .at-grid__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    height: 100vh;
+    min-height: 0;
+    padding: 0;
+    gap: 0;
+    text-align: center;
+    pointer-events: none;
+  }
+  .at-grid-active .touch-home .at-grid__content::before { content: none; }
+  .at-grid-active .touch-home .at-grid__title {
+    width: calc(924 * var(--grid-unit));
+    max-width: none;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: calc(104 * var(--grid-unit));
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -.02em;
+  }
+  .at-grid-active .touch-home .at-grid__description {
+    width: calc(455 * var(--grid-unit));
+    max-width: none;
+    margin: calc(24 * var(--grid-unit)) 0 0;
+    color: inherit;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: calc(14 * var(--grid-unit));
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+  .at-grid-active .touch-home .content__button {
+    display: block;
+    margin-top: calc(32 * var(--grid-unit));
+    padding: 0;
+    border: 0;
+    font-size: calc(14 * var(--grid-unit));
+    text-transform: uppercase;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .at-grid-active .touch-home .at-grid__gallery {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: calc(736 * var(--grid-unit));
+    max-width: none;
+    margin: 0;
+    opacity: 1;
+    pointer-events: none;
+  }
+  .at-grid-active .touch-home .at-grid__images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: calc(32 * var(--grid-unit));
+    row-gap: calc(40 * var(--grid-unit));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    will-change: transform;
+  }
+  .at-grid-active .touch-home .at-grid__item,
+  .at-grid-active .touch-home .at-grid__item:nth-child(n+7) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    will-change: transform;
+  }
+  .at-grid-active .touch-home .at-grid__image {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+  }
+}

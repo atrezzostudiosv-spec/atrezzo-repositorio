@@ -1,0 +1,86 @@
+/* Elegant Massage / Massage Menu — Atrezzo Core approved Focus Stage integration.
+   Overrides are scoped to the menu page. Original Core behavior untouched.
+   Original photo assets remain illustrative, never attributed to the actual studio. */
+body[data-page="menu"] .em-menu-focus.atz-service-showcase{--atz-bg:#f6f5f0;--atz-ink:#254460;--atz-accent:#b9d8c3;--atz-font:'Playfair Display',Georgia,serif;--atz-sans:'Open Sans',Arial,sans-serif;background:#f6f5f0;color:#254460}
+body[data-page="menu"] .em-menu-focus .atz-shell{width:min(calc(100% - 2 * var(--gutter,clamp(20px,5vw,90px))),1500px)}
+body[data-page="menu"] .em-menu-focus .atz-focus{padding:0 0 clamp(85px,9vw,155px);background:transparent;color:#254460}
+body[data-page="menu"] .em-menu-focus .atz-section-lead{padding:clamp(80px,10vw,140px) 0 34px}
+body[data-page="menu"] .em-menu-focus .atz-section-lead h2{font:400 clamp(3.7rem,8.5vw,9rem)/.94 'Playfair Display',Georgia,serif;letter-spacing:-.055em;max-width:13ch;margin:15px 0 22px;color:#254460}
+body[data-page="menu"] .em-menu-focus .atz-section-lead h2 i{color:#448b90;font-style:italic}
+body[data-page="menu"] .em-menu-focus .em-menu-intro{max-width:660px;color:#435b65;font:400 clamp(1rem,1.25vw,1.14rem)/1.75 'Open Sans',Arial,sans-serif}
+body[data-page="menu"] .em-menu-focus .atz-lead-footer{display:flex;justify-content:space-between;gap:20px;padding:17px 0 18px;border-top:1px solid #b8c9c6;color:#40616a;font:.7rem/1.5 'Open Sans',Arial,sans-serif;letter-spacing:.13em}
+body[data-page="menu"] .em-menu-focus .atz-focus-stage{height:min(85svh,860px);min-height:680px;background:#173b44}
+body[data-page="menu"] .em-menu-focus .atz-focus-shade{background:linear-gradient(90deg,rgba(8,26,30,.91),rgba(9,31,33,.74) 48%,rgba(7,25,24,.16) 100%),linear-gradient(0deg,rgba(5,17,20,.52),transparent 58%)}
+body[data-page="menu"] .em-menu-focus .atz-focus-inside{grid-template-columns:minmax(200px,.37fr) minmax(0,1fr);gap:clamp(30px,5vw,90px);padding:clamp(28px,4.6vw,80px)}
+body[data-page="menu"] .em-menu-focus .atz-focus-choice{max-width:320px;gap:0}
+body[data-page="menu"] .em-menu-focus .atz-focus-choice>span{margin:0 0 17px;font-size:.66rem;letter-spacing:.15em}
+body[data-page="menu"] .em-menu-focus .atz-focus-choice button{min-height:50px;gap:16px;padding:11px 0 12px}
+body[data-page="menu"] .em-menu-focus .atz-focus-choice button span:last-child{font-size:clamp(.9rem,1.2vw,1.07rem);line-height:1.3}
+body[data-page="menu"] .em-menu-focus .atz-focus-details{min-height:380px}
+body[data-page="menu"] .em-menu-focus .atz-focus-detail h3{font:400 clamp(4.5rem,8.7vw,9.4rem)/.88 'Playfair Display',Georgia,serif;letter-spacing:-.065em;max-width:790px;margin-bottom:21px}
+body[data-page="menu"] .em-menu-focus .atz-focus-detail h3 em{color:#c7eddf}
+body[data-page="menu"] .em-menu-focus .atz-focus-detail p{max-width:480px;font-size:clamp(.96rem,1.22vw,1.12rem);line-height:1.72;margin-bottom:14px}
+body[data-page="menu"] .em-menu-focus .em-menu-length{color:#cbe8df!important;font-size:.79rem!important;line-height:1.5!important;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:21px!important}
+body[data-page="menu"] .em-menu-focus .em-menu-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:21px}
+body[data-page="menu"] .em-menu-focus .em-menu-links a{font:.73rem/1.35 'Open Sans',Arial,sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:white;text-decoration:none;border-bottom:1px solid #bfe1d5;padding:13px 0 11px}
+body[data-page="menu"] .em-menu-focus .em-menu-links a:first-child{background:#53cbd9;color:#123a4a;border:1px solid #53cbd9;border-radius:100px;padding:14px 23px;transition:background .2s}
+body[data-page="menu"] .em-menu-focus .em-menu-links a:first-child:hover{background:#b7e8df}
+body[data-page="menu"] .em-menu-focus .em-menu-links a:focus-visible{outline:2px solid white;outline-offset:4px}
+body[data-page="menu"] .em-menu-focus .atz-focus-index{font-weight:700}
+body[data-page="menu"] .em-menu-focus .em-menu-note{border-bottom:1px solid #bdcdca;padding:30px 0 25px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+body[data-page="menu"] .em-menu-focus .em-menu-note p{font-size:.85rem;color:#46606a;line-height:1.7;max-width:650px}
+body[data-page="menu"] .em-menu-focus .em-menu-note a{flex-shrink:0;color:#254460;text-decoration:underline;text-underline-offset:6px;font-size:.77rem;font-weight:700}
+body[data-page="menu"] .em-menu-focus .em-menu-extra{padding-top:45px;display:grid;grid-template-columns:1fr 1.5fr;align-items:start;gap:30px}
+body[data-page="menu"] .em-menu-focus .em-menu-extra h3{font:400 clamp(2.3rem,4vw,4.4rem)/1 'Playfair Display',Georgia,serif;color:#254460;margin:8px 0 15px}
+body[data-page="menu"] .em-menu-focus .em-menu-extra p{color:#48606a;font-size:.98rem;line-height:1.75;max-width:56ch}
+body[data-page="menu"] .em-menu-focus .em-menu-extra .em-menu-extra__cta{display:inline-flex;margin-top:20px;color:#254460;border-bottom:1px solid #254460;padding-bottom:8px;font-weight:700;font-size:.78rem;text-decoration:none}
+@media(max-width:1000px){
+ body[data-page="menu"] .em-menu-focus .atz-focus-stage{min-height:760px;height:810px}
+ body[data-page="menu"] .em-menu-focus .atz-focus-inside{grid-template-columns:minmax(170px,.35fr) minmax(0,1fr)}
+ body[data-page="menu"] .em-menu-focus .atz-focus-detail h3{font-size:clamp(4.3rem,8.5vw,7.5rem)}
+}
+@media(max-width:767px){
+ body[data-page="menu"] .em-menu-focus .atz-shell{width:calc(100% - 40px)}
+ body[data-page="menu"] .em-menu-focus .atz-focus{padding-bottom:95px}
+ body[data-page="menu"] .em-menu-focus .atz-section-lead{padding:85px 0 28px}
+ body[data-page="menu"] .em-menu-focus .atz-section-lead h2{font-size:clamp(3.65rem,12vw,6rem);line-height:.98}
+ body[data-page="menu"] .em-menu-focus .atz-lead-footer{font-size:.58rem}
+ body[data-page="menu"] .em-menu-focus .atz-focus-stage{height:820px;min-height:0}
+ body[data-page="menu"] .em-menu-focus .atz-focus-inside{padding:24px;display:flex;flex-direction:column;justify-content:flex-end;gap:18px}
+ body[data-page="menu"] .em-menu-focus .atz-focus-choice{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 13px;width:100%;max-width:none}
+ body[data-page="menu"] .em-menu-focus .atz-focus-choice>span{grid-column:1/-1;font-size:.61rem;margin-bottom:0}
+ body[data-page="menu"] .em-menu-focus .atz-focus-choice button{min-height:38px;padding:7px 0;display:flex;align-items:baseline;gap:8px}
+ body[data-page="menu"] .em-menu-focus .atz-focus-choice button span:first-child{font-size:.72rem;margin-bottom:0}
+ body[data-page="menu"] .em-menu-focus .atz-focus-choice button span:last-child{font-size:.78rem;line-height:1.25}
+ body[data-page="menu"] .em-menu-focus .atz-focus-details{min-height:315px;align-items:end}
+ body[data-page="menu"] .em-menu-focus .atz-focus-detail h3{font-size:clamp(3.5rem,12vw,5.5rem);margin-bottom:17px}
+ body[data-page="menu"] .em-menu-focus .atz-focus-detail p{font-size:.93rem;line-height:1.57}
+ body[data-page="menu"] .em-menu-focus .em-menu-length{font-size:.69rem!important}
+ body[data-page="menu"] .em-menu-focus .em-menu-links{gap:14px;margin-top:12px}
+ body[data-page="menu"] .em-menu-focus .em-menu-links a{font-size:.66rem}
+ body[data-page="menu"] .em-menu-focus .em-menu-links a:first-child{padding:12px 17px}
+ body[data-page="menu"] .em-menu-focus .em-menu-note{display:block}
+ body[data-page="menu"] .em-menu-focus .em-menu-note a{display:inline-block;margin-top:17px}
+ body[data-page="menu"] .em-menu-focus .em-menu-extra{grid-template-columns:1fr;gap:12px;padding-top:45px}
+}
+@media(max-width:390px){
+ body[data-page="menu"] .em-menu-focus .atz-focus-stage{height:870px}
+ body[data-page="menu"] .em-menu-focus .atz-focus-inside{padding:19px}
+ body[data-page="menu"] .em-menu-focus .atz-focus-detail h3{font-size:clamp(3.1rem,12vw,4.4rem)}
+}
+@media(prefers-reduced-motion:reduce){
+ body[data-page="menu"] .em-menu-focus .atz-focus-photo,
+ body[data-page="menu"] .em-menu-focus .atz-focus-detail{transition:none!important}
+}
+
+/* Progressive enhancement: if JS does not initialize, every treatment stays
+   readable and its real booking/treatment links remain accessible. */
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-stage{height:auto;min-height:0}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-inside{position:relative;display:block;min-height:680px}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-choice{display:none}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-details{display:block;min-height:0;max-width:850px}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-detail{position:relative;display:block;opacity:1;visibility:visible;transform:none;border-bottom:1px solid #ffffff45;padding:28px 0}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-detail h3{font-size:clamp(3.2rem,6vw,6rem)}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-photo{opacity:0}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-photo:first-child{opacity:1;clip-path:none}
+body[data-page="menu"] .em-menu-focus:not(.has-js) .atz-focus-index{display:none}

@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap');
+:root{--forest:#294638;--sage:#718673;--ivory:#f6f1e9;--linen:#e5dace;--ink:#2b302b;--amber:#af865d;--gutter:clamp(1.3rem,5vw,6rem)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--ivory);color:var(--ink);font:16px/1.67 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit;cursor:pointer}img,video{display:block;max-width:100%}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:400;letter-spacing:-.035em;line-height:1.05}h1{font-size:clamp(4rem,10vw,10rem)}h2{font-size:clamp(3.1rem,6.3vw,7rem)}h3{font-size:clamp(2rem,3.5vw,4rem)}.eyebrow{font-size:.69rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700}.lede{font-size:clamp(1.08rem,1.65vw,1.4rem);line-height:1.58;max-width:59ch}.container{max-width:1540px;margin-inline:auto;padding-inline:var(--gutter)}.section{padding:clamp(5rem,9vw,10rem) 0}.section--white{background:#fffcf7}.section--dark{background:var(--forest);color:#f6f1e9}.button{display:inline-flex;justify-content:center;align-items:center;min-height:53px;padding:.8rem 1.5rem;background:var(--forest);color:white;text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.07em;font-size:.75rem;border:1px solid var(--forest);transition:.25s}.button:hover{background:#41634e;transform:translateY(-2px)}.button--light{background:var(--ivory);color:var(--forest);border-color:var(--ivory)}.button--outline{background:none;color:var(--ivory);border-color:#d9e2d8}.button--outline:hover{background:var(--ivory);color:var(--forest)}.text-link{font-size:.75rem;font-weight:700;text-decoration:none;text-transform:uppercase;letter-spacing:.11em;border-bottom:1px solid currentColor;padding-bottom:.5rem}.actions{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-top:2rem}.split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(2rem,7vw,8rem)}.wide{max-width:750px}.center{text-align:center}.center .lede{margin-inline:auto}.site-header{position:fixed;top:0;left:0;right:0;z-index:50;color:white;transition:.35s}.site-header.scrolled,.site-header.menu-open{color:var(--forest);background:#f6f1e9f7;box-shadow:0 1px 0 #29463830;backdrop-filter:blur(16px)}.header-row{display:flex;align-items:center;justify-content:space-between;padding:0 var(--gutter);gap:1.3rem;min-height:86px}.brand{text-decoration:none;font:400 clamp(1.5rem,2vw,2.15rem)/.9 Newsreader,serif;white-space:nowrap}.brand small{display:block;font:600 .48rem/2 "DM Sans",sans-serif;letter-spacing:.22em;text-transform:uppercase}.navigation{display:flex;align-items:center;gap:clamp(1rem,1.9vw,2rem)}.navigation>a,.navigation summary{font-size:.73rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;text-decoration:none;cursor:pointer}.navigation a:hover,.navigation summary:hover{color:var(--amber)}.navigation summary{list-style:none}.navigation summary::-webkit-details-marker{display:none}.navigation details{position:relative}.dropdown{position:absolute;top:2rem;left:-1rem;background:#fffcf7;color:var(--forest);min-width:260px;padding:.6rem;box-shadow:0 25px 50px #15261c33}.dropdown a{display:block;padding:.55rem;font-size:.75rem;text-decoration:none}.dropdown a:hover{background:var(--ivory)}.header-cta{text-decoration:none;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;border:1px solid currentColor;padding:.68rem 1rem;white-space:nowrap}.toggle{display:none;background:transparent;color:inherit;border:0;font-size:1rem}.hero{min-height:78svh;position:relative;isolation:isolate;display:flex;align-items:flex-end;color:#f6f1e9;padding:clamp(10rem,16vh,15rem) var(--gutter) clamp(4rem,10vh,9rem);background:#284334;overflow:hidden}.hero--home{min-height:100svh}.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#10221ad9,#10221a78 58%,#10221a29),linear-gradient(0deg,#0c1e19ad,transparent 60%)}.hero__background,.hero__film{position:absolute;z-index:-2;inset:0;width:100%;height:100%;object-fit:cover}.hero__background{background:linear-gradient(135deg,#223c2d,#948a6d);background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp');background-size:cover;background-position:center}.hero__copy{max-width:900px;position:relative;z-index:2}.hero h1{max-width:11ch;margin:.6rem 0 1.15rem}.hero .lede{color:#f5efe8}.small-note{font-size:.72rem;color:#778a7b}.intro{text-align:center}.intro h2{max-width:15ch;margin:1.3rem auto}.intro p{max-width:65ch;margin:0 auto 2rem}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:4rem;margin-bottom:4rem}.section-heading h2{max-width:12ch}.section-heading p{max-width:34ch}.service-row{display:grid;grid-template-columns:4rem 1fr minmax(210px,.65fr);align-items:center;gap:clamp(1.3rem,4vw,5rem);padding:2rem 0;border-bottom:1px solid #29463845;text-decoration:none}.service-row:first-child{border-top:1px solid #29463845}.service-row h3{margin:.4rem 0;font-size:clamp(2.5rem,4.4vw,5rem)}.service-row p{color:#677569;max-width:38ch}.service-row .number{font-size:.75rem;color:var(--sage)}.scene{background-size:cover;background-position:center;background-color:#566b57;position:relative;min-height:410px}.scene--massage{background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.scene--room{background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.scene--detail{background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.scene--linen{background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.scene--portrait{aspect-ratio:3/4}.media-qualifier{font-size:.69rem;color:#718673;line-height:1.4;margin-top:.65rem}.sensory{background:#1d3226;color:#f6f1e9}.sensory header{padding:clamp(5rem,9vw,10rem) 0}.sensory header h2{max-width:10ch}.sensory-grid{display:grid;grid-template-columns:repeat(3,1fr)}.sensory-panel{min-height:72svh;padding:3rem;display:flex;align-items:end;position:relative;isolation:isolate;background-size:cover;background-position:center}.sensory-panel::before{content:"";z-index:-1;position:absolute;inset:0;background:linear-gradient(0deg,#0d261bbf,#0d261b1a)}.sensory-panel:nth-child(1){background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.sensory-panel:nth-child(2){background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.sensory-panel:nth-child(3){background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}.sensory-panel h3{font-size:clamp(2.4rem,4vw,4.3rem);margin-bottom:.25rem}.sensory-panel p{max-width:29ch}.booking{background:var(--linen)}.booking h2{max-width:11ch}.closing{background:#183022;color:#f6f1e9;min-height:70svh;display:flex;align-items:center;position:relative;isolation:isolate}.closing::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#102419e8,#10241970),url('../images/elegant-massage-cinematic-hero-atrezzo.webp') center/cover}.closing h2{max-width:10ch}.content-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:7vw}.content-layout aside{align-self:start;position:sticky;top:120px}.content-layout article{padding:1.7rem 0 2rem;border-top:1px solid #2946383d}.content-layout article h3{max-width:17ch}.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem 6rem}.price-item{border-top:1px solid #2946384d;padding:1.5rem 0}.price-item h3{font-size:3.3rem}.price-item strong{font-size:.8rem;text-transform:uppercase;color:var(--sage);letter-spacing:.09em}.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.3rem}.gallery-grid .scene{aspect-ratio:4/3}.contact-lines div{padding:1.4rem 0;border-bottom:1px solid #29463845}.contact-lines strong{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.14em}.site-footer{background:#172e22;color:#e7ebdf;padding:5rem 0 2rem}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:5rem}.footer-grid h3{font-size:2.7rem}.footer-grid a{display:block;text-decoration:none;margin:.6rem 0}.footer-bottom{padding-top:1.5rem;border-top:1px solid #ffffff38;display:flex;justify-content:space-between;font-size:.75rem;color:#b7c9b9}.skip{position:fixed;top:-100px;left:10px;z-index:100;background:#fff;color:black;padding:10px}.skip:focus{top:10px}:focus-visible{outline:3px solid #b99167;outline-offset:3px}.reveal{opacity:1;transform:none}.enhanced .reveal{opacity:0;transform:translateY(24px);transition:opacity .85s ease,transform .85s ease}.enhanced .reveal.visible{opacity:1;transform:none}
+@media(max-width:1040px){.navigation{gap:.9rem}.navigation>a,.navigation summary{font-size:.64rem}.service-row{grid-template-columns:2rem 1fr 200px}.header-cta{font-size:.62rem}}
+@media(max-width:870px){:root{--gutter:1.4rem}.header-row{min-height:74px}.toggle{display:block}.navigation{display:none;position:absolute;top:74px;left:0;right:0;padding:1.5rem var(--gutter) 2rem;background:var(--ivory);color:var(--forest);flex-direction:column;align-items:stretch;max-height:calc(100svh - 74px);overflow:auto}.menu-open .navigation{display:flex}.navigation>a,.navigation summary{font-size:.88rem;padding:.4rem 0}.dropdown{position:static;box-shadow:none;background:var(--linen);padding:1rem}.split,.content-layout{grid-template-columns:1fr}.content-layout aside{position:static}.sensory-grid{grid-template-columns:1fr}.sensory-panel{min-height:60svh}.section-heading{display:block}.service-row{grid-template-columns:2rem 1fr}.service-row .scene{grid-column:2;min-height:270px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){h1{font-size:clamp(3.8rem,16vw,6rem)}h2{font-size:clamp(3rem,12vw,4.5rem)}.hero--home{min-height:100svh}.hero{padding:10rem var(--gutter) 4rem}.actions{align-items:stretch}.actions .button{width:100%}.header-cta{font-size:.57rem;padding:.7rem .55rem}.brand{font-size:1.55rem}.price-grid,.gallery-grid,.footer-grid{grid-template-columns:1fr}.scene{min-height:330px}.section{padding:5.4rem 0}.footer-bottom{display:block}.footer-bottom span{display:block;margin-bottom:.7rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.enhanced .reveal{opacity:1!important;transform:none!important}}
+/* Atrezzo: single editorial scroll sequence, no wheel interception */
+@media(min-width:1000px) and (prefers-reduced-motion:no-preference){
+.sensory-grid{display:block;position:relative}
+.sensory-panel{position:sticky;top:0;height:100svh;min-height:0;padding:clamp(4rem,8vw,10rem);background-attachment:scroll;background-position:center;background-size:cover;z-index:1}
+.sensory-panel:nth-child(2){z-index:2}
+.sensory-panel:nth-child(3){z-index:3}
+.sensory-panel>div{max-width:560px;position:relative;z-index:1}
+.sensory-panel::before{background:linear-gradient(90deg,#102519be,#10251924),linear-gradient(0deg,#1025198a,transparent 58%)}
+}
+@supports (animation-timeline:view()){
+@media(min-width:1000px) and (prefers-reduced-motion:no-preference){
+.sensory-panel{animation:scene-settle linear both;animation-timeline:view();animation-range:entry 0% entry 80%}
+@keyframes scene-settle{from{background-size:auto 113%}to{background-size:auto 100%}}
+}}
+
+/* Home cinematic media — local approved poster; illustrative remote fallback */
+.hero--home .hero__background{background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp'),url('../images/elegant-massage-cinematic-hero-atrezzo.webp')}
+.hero--home .hero__film{object-position:55% center}
+.hero__film[hidden]{display:none}
+@media(max-width:640px){.hero--home .hero__background{background-position:60% center}}
+/* Contact form, demo only — no medical details requested */
+.contact-form-section{background:var(--ivory)}
+.contact-form-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start;gap:clamp(2rem,7vw,8rem)}
+.contact-form-grid h2{max-width:12ch}
+.contact-form{background:#fffcf7;padding:clamp(1.5rem,4vw,3.5rem);box-shadow:0 18px 65px #1b332016}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}
+.form-field{margin-bottom:1.3rem}
+.form-field label{display:block;font-size:.77rem;font-weight:700;letter-spacing:.04em;margin-bottom:.45rem}
+.form-field input,.form-field select,.form-field textarea{width:100%;background:#f6f1e9;border:1px solid #435e494b;border-radius:0;padding:.92rem 1rem;color:var(--ink);font:inherit;min-height:50px;transition:border-color .18s,box-shadow .18s}
+.form-field textarea{min-height:150px;resize:vertical}
+.form-field :is(input,select,textarea):focus{border-color:var(--forest);box-shadow:0 0 0 2px #71867345;outline:none}
+.form-consent{display:flex;align-items:flex-start;gap:.75rem;line-height:1.45;font-size:.82rem;margin:.8rem 0 1.65rem;cursor:pointer}
+.form-consent input{margin-top:.3rem;width:18px;height:18px;accent-color:var(--forest);flex:none}
+.form-submit{min-width:230px}
+.form-footnote{font-size:.72rem;color:#5a6b5b;margin:1.1rem 0 0}
+.contact-form-disclaimer{margin:1.8rem 0;background:#e9e0d4;border-left:3px solid var(--sage);padding:1rem 1.15rem;font-size:.84rem;line-height:1.55}
+.form-honeypot{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;left:-9999px}
+@media(max-width:900px){.contact-form-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr;gap:0}.contact-form{padding:1.3rem}.form-submit{width:100%}}
+
+/* Atrezzo Studios: cinematic photo system—original illustrations + actual location */
+.hero__background,.hero--home .hero__background{background-image:url('../images/elegant-massage-cinematic-hero-atrezzo.webp');background-size:cover;background-position:center}
+.scene--massage{background-image:url('../images/elegant-massage-body-massage-cinematic.webp')}
+.scene--detail{background-image:url('../images/elegant-massage-massage-touch-detail.webp')}
+.scene--linen{background-image:url('../images/elegant-massage-warm-oil-cinematic.webp')}
+.scene--room{background-image:url('../images/elegant-massage-flower-mound-reception-desk.webp')}
+a.service-row[href*="body-massage"] .scene{background-image:url('../images/elegant-massage-body-massage-cinematic.webp')}
+a.service-row[href*="foot-reflexology"] .scene{background-image:url('../images/elegant-massage-foot-reflexology-atrezzo.webp')}
+a.service-row[href*="combination-massage"] .scene{background-image:url('../images/elegant-massage-combination-massage-atrezzo.webp')}
+a.service-row[href*="chair-massage"] .scene{background-image:url('../images/elegant-massage-chair-massage-atrezzo.webp')}
+a.service-row[href*="couples-massage"] .scene{background-image:url('../images/elegant-massage-couples-massage-atrezzo.webp')}
+a.service-row[href*="four-hands-massage"] .scene{background-image:url('../images/elegant-massage-four-hands-massage-atrezzo.webp')}
+a.service-row[href*="specialty-techniques"] .scene{background-image:url('../images/elegant-massage-warm-oil-cinematic.webp')}
+.sensory-panel:nth-child(1){background-image:url('../images/elegant-massage-massage-touch-detail.webp')}
+.sensory-panel:nth-child(2){background-image:url('../images/elegant-massage-warm-oil-cinematic.webp')}
+.sensory-panel:nth-child(3){background-image:url('../images/elegant-massage-relaxation-atmosphere-cinematic.webp')}
+.closing::before{background:linear-gradient(90deg,#102419e8,#10241970),url('../images/elegant-massage-massage-moment-cinematic.webp') center/cover}
+.gallery-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;background:#e5dace}
+@media(max-width:640px){
+.hero--home .hero__background{background-image:url('../images/elegant-massage-cinematic-hero-mobile-atrezzo.webp');background-position:center 46%}
+.hero--home::before{background:linear-gradient(0deg,rgba(11,27,19,.86),rgba(11,27,19,.42) 70%,rgba(11,27,19,.1))}
+}
+
+/* Distinct service hero image art direction */
+body[data-page="services"] .hero__background{background-image:url('../images/elegant-massage-massage-touch-detail.webp')}
+body[data-page="body"] .hero__background{background-image:url('../images/elegant-massage-body-massage-cinematic.webp')}
+body[data-page="foot"] .hero__background{background-image:url('../images/elegant-massage-foot-reflexology-atrezzo.webp')}
+body[data-page="combo"] .hero__background{background-image:url('../images/elegant-massage-combination-massage-atrezzo.webp')}
+body[data-page="chair"] .hero__background{background-image:url('../images/elegant-massage-chair-massage-atrezzo.webp')}
+body[data-page="couples"] .hero__background{background-image:url('../images/elegant-massage-couples-massage-atrezzo.webp')}
+
+body[data-page="four"] .hero__background{background-image:url('../images/elegant-massage-four-hands-massage-atrezzo.webp')}
+body[data-page="specialty"] .hero__background{background-image:url('../images/elegant-massage-warm-oil-cinematic.webp')}
+body[data-page="menu"] .hero__background{background-image:url('../images/elegant-massage-massage-moment-cinematic.webp')}
+body[data-page="about"] .hero__background{background-image:url('../images/elegant-massage-flower-mound-reception-desk.webp')}
+body[data-page="gallery"] .hero__background{background-image:url('../images/elegant-massage-flower-mound-treatment-area.webp')}
+body[data-page="contact"] .hero__background{background-image:url('../images/elegant-massage-flower-mound-storefront-exterior.webp')}
+
+/* QA correction: portrait source + background-size zoom caused repeated photo tiles.
+   Keep full-bleed scene composition at all widths; allow sticky narrative without scroll-jacking. */
+@media(min-width:1000px){
+ .sensory-panel{
+  animation:none!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+ }
+ .sensory-panel:nth-child(1){
+  background-image:url('../images/elegant-massage-body-massage-cinematic.webp');
+ }
+}
+
+/* ATREZZO RELAX LUXURY — editorial composition adapted from approved reference, not salon content */
+.atrezzo-opening{background:#f4f0e8;overflow:hidden}
+.atrezzo-opening__layout{grid-template-columns:minmax(0,1fr) minmax(0,.96fr);gap:clamp(3rem,8vw,9rem)}
+.atrezzo-opening h2{max-width:13ch}
+.atrezzo-opening__photo{position:relative}
+.atrezzo-opening__photo>.scene{min-height:580px;background-position:62% center;filter:saturate(.85)}
+.image-index{display:block;font-size:.66rem;letter-spacing:.14em;color:#6c7e6c;text-transform:uppercase;margin-top:.8rem}
+.atrezzo-opening__layout p:not(.lede){max-width:62ch}
+.facts-ribbon{background:#334d38;color:#efece2;padding:2rem 0}
+.facts-ribbon__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+.facts-ribbon__grid>div:not(:first-child){border-left:1px solid #ffffff42;padding-left:2rem}
+.facts-ribbon__grid p{font-family:Newsreader,Georgia,serif;font-size:clamp(1.4rem,2.2vw,2rem);line-height:1.1;margin:.35rem 0 0}
+.facts-ribbon__grid .eyebrow{color:#c7d2bd}
+.service-row .scene{border-radius:2px;box-shadow:0 13px 44px #13261912}
+@media(min-width:950px){.section--white .service-row:nth-of-type(even) .scene{transform:translateY(9px)}}
+@media(max-width:870px){.atrezzo-opening__layout{grid-template-columns:1fr}.atrezzo-opening__photo>.scene{min-height:420px}.facts-ribbon__grid{gap:1.2rem}}
+@media(max-width:600px){.facts-ribbon__grid{grid-template-columns:1fr}.facts-ribbon__grid>div:not(:first-child){border-left:0;border-top:1px solid #ffffff42;padding:1rem 0 0}.atrezzo-opening__photo>.scene{min-height:350px}.atrezzo-opening h2{font-size:clamp(2.9rem,12vw,5rem)}}
+
+
+/* ATREZZO FASE 4 — validated service photo mappings; Home and real Gallery untouched.
+   Images depict treatments illustratively, not employees/rooms of Elegant Massage.
+   Portrait sources use art-directed WebP, plus desktop/mob crop below. */
+body[data-page="foot"] .hero__background{
+  background-image:url('../images/elegant-massage-foot-reflexology-editorial-desktop.webp');
+  background-position:58% center;
+}
+body[data-page="foot"] .scene--detail.scene--portrait{
+  background-image:url('../images/elegant-massage-foot-reflexology-editorial-mobile.webp');
+  background-position:50% 50%;
+}
+body[data-page="couples"] .hero__background{
+  background-image:url('../images/elegant-massage-couples-batch02-desktop.webp');
+  background-position:58% 48%;
+}
+body[data-page="couples"] .scene--detail.scene--portrait{
+  background-image:url('../images/elegant-massage-couples-batch02-mobile.webp');
+  background-position:50% 50%;
+}
+body[data-page="four"] .hero__background{
+  background-image:url('../images/elegant-massage-four-hands-batch02-desktop.webp');
+  background-position:60% center;
+}
+body[data-page="four"] .scene--detail.scene--portrait{
+  background-image:url('../images/elegant-massage-four-hands-batch02-mobile.webp');
+  background-position:50% 48%;
+}
+body[data-page="combo"] .hero__background{
+  background-image:url('../images/elegant-massage-combination-batch02-desktop.webp');
+  background-position:60% 50%;
+}
+body[data-page="combo"] .scene--detail.scene--portrait{
+  background-image:url('../images/elegant-massage-combination-batch02-mobile.webp');
+  background-position:center center;
+}
+@media(max-width:640px){
+  body[data-page="foot"] .hero__background{
+    background-image:url('../images/elegant-massage-foot-reflexology-editorial-mobile.webp');
+    background-position:center 50%;
+  }
+  body[data-page="couples"] .hero__background{
+    background-image:url('../images/elegant-massage-couples-batch02-mobile.webp');
+    background-position:center 45%;
+  }
+  body[data-page="four"] .hero__background{
+    background-image:url('../images/elegant-massage-four-hands-batch02-mobile.webp');
+    background-position:center 42%;
+  }
+  body[data-page="combo"] .hero__background{
+    background-image:url('../images/elegant-massage-combination-batch02-mobile.webp');
+    background-position:center 42%;
+  }
+}
+
+
+/* ATREZZO FASE 4 — Chair Massage cinematic illustration.
+   Activate ONLY when both referenced WebP files are committed to this branch.
+   Not a photograph of the business, its employees, or its premises. */
+body[data-page="chair"] .hero__background{
+  background-image:url('../images/elegant-massage-chair-massage-cinematic-desktop.webp');
+  background-position:55% center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+body[data-page="chair"] .scene--detail.scene--portrait{
+  background-image:url('../images/elegant-massage-chair-massage-cinematic-mobile.webp');
+  background-position:55% center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+@media(max-width:640px){
+  body[data-page="chair"] .hero__background{
+    background-image:url('../images/elegant-massage-chair-massage-cinematic-mobile.webp');
+    background-position:55% center;
+  }
+}

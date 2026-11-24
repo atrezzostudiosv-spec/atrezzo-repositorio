@@ -1,0 +1,213 @@
+/* Elegant Massage / Body Massage, cinematic scroll study — 2026-11-04.
+   Scoped to ONE internal treatment route. Original approved header, Home,
+   navigation hover, site content/Setmore and other services are untouched. */
+body[data-page="body"] .em-body{
+  --em-paper:var(--agate-white);--em-ink:var(--agate-ocean);--em-action:var(--agate-aqua);--em-action-hover:var(--agate-mint);
+  overflow:clip;background:var(--em-paper);
+  font-family:var(--sans,'Open Sans',Arial,sans-serif);
+}
+body[data-page="body"] .em-body :is(h1,h2,h3){
+  font-family:var(--serif,'Playfair Display',Georgia,serif);font-weight:400;
+  text-transform:none;letter-spacing:-.045em;
+}
+body[data-page="body"] .em-body :is(h1,h2,h3) em{font-style:italic;font-weight:400}
+body[data-page="body"] .em-body .em-kicker{
+  font:600 .69rem/1.45 var(--sans,'Open Sans',Arial,sans-serif);letter-spacing:.17em;
+  text-transform:uppercase;
+}
+body[data-page="body"] .em-body a:focus-visible,
+body[data-page="body"] .em-body button:focus-visible{
+  outline:2px solid var(--agate-aqua);outline-offset:4px;
+}
+body[data-page="body"] .em-body .em-book{
+  display:inline-flex;justify-content:center;align-items:center;gap:2.3rem;
+  min-height:54px;padding:15px 23px;text-decoration:none;
+  background:var(--em-action);border:1px solid var(--em-action);color:var(--em-ink);
+  font:600 .75rem/1.4 var(--sans,'Open Sans',Arial,sans-serif);letter-spacing:.07em;
+  text-transform:uppercase;transition:background .2s,border-color .2s;
+}
+body[data-page="body"] .em-body .em-book:hover{
+  background:var(--em-action-hover);border-color:var(--em-action-hover);color:var(--em-ink);
+}
+body[data-page="body"] .em-body .em-book--ghost{
+  background:transparent;color:#fff;border-color:rgba(255,255,255,.7);
+}
+body[data-page="body"] .em-body .em-book--ghost:hover{
+  background:rgba(255,255,255,.12);
+}
+.em-body-hero{
+  position:relative;isolation:isolate;min-height:100svh;overflow:hidden;
+  display:flex;align-items:flex-end;
+  padding:clamp(150px,19vh,210px) var(--gutter) clamp(78px,11vh,122px);
+  background:var(--em-ink);color:#fff;
+}
+.em-body-hero__image,.em-body-hero__shade{
+  position:absolute;inset:0;width:100%;height:100%;z-index:-2;
+}
+.em-body-hero__image{object-fit:cover;object-position:58% center}
+.em-body-hero__shade{z-index:-1;background:
+  linear-gradient(90deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.33) 46%,rgba(0,0,0,.03) 88%),
+  linear-gradient(0deg,rgba(0,0,0,.28),transparent 50%)}
+.em-body-hero__inner{max-width:1100px;width:100%}
+.em-body-hero h1{
+  color:#fff;font-size:clamp(4.8rem,9.6vw,9.8rem);
+  max-width:10ch;line-height:.92;margin:23px 0;
+}
+.em-body-hero h1 em{color:var(--agate-mint)}
+.em-body-hero .em-body-hero__lead{
+  color:rgba(255,255,255,.9);font-size:clamp(1.02rem,1.35vw,1.2rem);
+  line-height:1.7;max-width:42ch;
+}
+.em-body-hero__actions{display:flex;flex-wrap:wrap;gap:19px;align-items:center;margin:34px 0 0}
+.em-body-hero__sub{font-size:.7rem;color:var(--agate-mint);opacity:1;letter-spacing:.03em;margin-top:35px}
+.em-body-intro{
+  padding:clamp(90px,12vw,175px) max(var(--gutter),6vw);
+  background:var(--em-paper);color:var(--em-ink);
+  min-height:58svh;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;
+}
+.em-body-intro .em-kicker{color:var(--agate-ocean)}
+.em-body-intro h2{
+  font-size:clamp(3.8rem,7.1vw,8rem);max-width:16ch;
+  line-height:.99;margin:23px 0 20px;
+}
+.em-body-intro p:not(.em-kicker){
+  max-width:61ch;color:var(--agate-ocean);font-size:clamp(1rem,1.3vw,1.17rem);
+  line-height:1.85;
+}
+/* Body: same full-bleed chapter-wipe system as the approved Home. */
+.em-journey{position:relative;isolation:isolate;background:var(--em-ink);color:#fff}
+.em-journey__canvas{display:none}
+.em-journey__chapters{position:relative;isolation:isolate}
+.em-journey__chapter{position:sticky;top:0;height:100svh;min-height:620px;display:flex;align-items:flex-end;overflow:hidden;padding:125px var(--gutter) clamp(80px,11vh,130px);scroll-margin-top:90px;isolation:isolate;color:#fff}
+.em-journey__chapter:nth-child(1){z-index:1}
+.em-journey__chapter:nth-child(2){z-index:2}
+.em-journey__chapter:nth-child(3){z-index:3}
+.em-journey__chapter::before{content:'';position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center;transform:scale(var(--em-slide-zoom,1.025));pointer-events:none}
+.em-journey__chapter:nth-child(1)::before{background-image:url('../images/martes/body-detail.webp')}
+.em-journey__chapter:nth-child(2)::before{background-image:url('../images/elegant-massage-warm-oil-cinematic.webp')}
+.em-journey__chapter:nth-child(3)::before{background-image:url('../images/elegant-massage-relaxation-atmosphere-cinematic.webp')}
+.em-journey__chapter::after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.69),rgba(0,0,0,.3) 55%,rgba(0,0,0,.07)),linear-gradient(0deg,rgba(0,0,0,.34),transparent 65%)}
+.em-journey__chapter-inner{width:min(620px,100%);color:#fff}
+.em-journey__chapter:nth-child(2) .em-journey__chapter-inner{margin-left:0;margin-right:auto}
+.em-journey__chapter .em-kicker{color:var(--agate-mint)}
+.em-journey__chapter h2{font-size:clamp(4.7rem,8.6vw,9.25rem);line-height:.94;max-width:12ch;margin:23px 0 22px;color:#fff}
+.em-journey__chapter h2 em{color:var(--agate-mint)}
+.em-journey__chapter p:not(.em-kicker){max-width:43ch;color:rgba(255,255,255,.91);font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.78}
+.em-journey__more{display:inline-flex;align-items:center;gap:30px;margin-top:32px;padding:13px 0 11px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.65);color:#fff;text-decoration:none;cursor:pointer;font:600 .75rem/1.4 var(--sans,'Open Sans',Arial,sans-serif);letter-spacing:.08em;text-transform:uppercase}
+.em-journey__more:hover{color:var(--agate-mint);border-color:var(--agate-mint)}
+.em-journey__mobile-photo{display:none}
+.em-journey__counter{position:absolute;bottom:clamp(30px,5vw,65px);right:var(--gutter);color:rgba(255,255,255,.8);font:500 .72rem/1.4 var(--sans,'Open Sans',Arial,sans-serif);letter-spacing:.12em}
+@media (min-width:871px) and (min-height:650px) and (prefers-reduced-motion:no-preference){.em-journey.is-cinematic .em-journey__chapter:not(:first-child){clip-path:inset(calc(var(--em-slide-wipe,0)*100%) 0 0 0)}}
+.em-body-cta{
+  position:relative;height:185svh;background:var(--em-ink);color:#fff;
+}
+.em-body-cta__sticky{
+  position:sticky;top:0;height:100svh;isolation:isolate;
+  display:flex;align-items:center;overflow:hidden;
+  padding:100px var(--gutter);
+}
+.em-body-cta__photo{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:center;transform:scale(var(--em-body-cta-zoom,1.025));
+  z-index:-2;will-change:transform;
+}
+.em-body-cta__shade{
+  position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(0,0,0,.66),rgba(0,0,0,.09) 85%),
+  linear-gradient(0deg,rgba(0,0,0,.20),transparent 45%);
+}
+.em-body-cta__inner{width:100%;max-width:850px}
+.em-body-cta .em-kicker,.em-body-cta h2 em{color:var(--agate-mint)}
+.em-body-cta h2{color:#fff;font-size:clamp(4.9rem,8vw,9rem);line-height:.93;max-width:12ch;margin:20px 0}
+.em-body-cta p:not(.em-kicker){font-size:clamp(1.03rem,1.35vw,1.19rem);color:var(--agate-white);line-height:1.7;max-width:43ch}
+.em-body-cta__actions{display:flex;gap:15px;flex-wrap:wrap;margin-top:36px}
+/* Native dialog: accessible keyboard/focus containment, Escape, scrollable mobile. */
+.em-body-modal{
+  position:fixed;inset:0;
+  width:min(1000px,calc(100% - 32px));max-width:1000px;
+  max-height:min(90svh,810px);margin:auto;padding:0;overflow:auto;
+  border:1px solid rgba(255,255,255,.16);background:var(--agate-white);color:var(--agate-ocean);
+  box-shadow:0 35px 100px rgba(0,0,0,.52);
+}
+.em-body-modal::backdrop{background:rgba(4,11,14,.82);backdrop-filter:blur(9px)}
+.em-body-modal__layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.em-body-modal__media{position:relative;min-height:590px;background:var(--agate-ocean)}
+.em-body-modal__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.em-body-modal__info{padding:clamp(34px,5.5vw,80px);display:flex;flex-direction:column;justify-content:center}
+.em-body-modal .em-kicker{color:var(--agate-ocean)}
+.em-body-modal h2{color:var(--agate-ocean);font:400 clamp(3.4rem,5vw,5.4rem)/1 var(--serif,'Playfair Display',Georgia,serif);letter-spacing:-.04em;margin:16px 0 20px}
+.em-body-modal__info>p{line-height:1.75;color:var(--agate-ocean);font-size:1rem}
+.em-body-modal__meta{border-top:1px solid var(--agate-sage);border-bottom:1px solid var(--agate-sage);margin:24px 0;padding:18px 0;display:grid;gap:13px}
+.em-body-modal__meta dt{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--agate-ocean)}
+.em-body-modal__meta dd{margin:4px 0 0;font-size:.98rem;color:var(--agate-ocean)}
+.em-body-modal__note{font-size:.78rem!important;color:var(--agate-ocean)}
+.em-body-modal__book{display:inline-flex;justify-content:center;padding:14px 21px;margin-top:10px;align-items:center;min-height:52px;
+  text-decoration:none;background:var(--agate-aqua);color:var(--agate-ocean);font:600 .75rem var(--sans,'Open Sans',Arial,sans-serif);letter-spacing:.12em}
+.em-body-modal__book:hover{background:var(--agate-mint);color:var(--agate-ocean)}
+.em-body-modal__close{
+  position:absolute;z-index:3;top:17px;right:17px;
+  border:1px solid var(--agate-sage);border-radius:50%;width:42px;height:42px;
+  display:grid;place-items:center;background:var(--agate-white);color:var(--agate-ocean);
+  font-size:1.35rem;cursor:pointer;
+}
+.em-body-modal__close:hover{background:var(--agate-lime)}
+@media(max-width:870px){
+  .em-body-hero{min-height:82svh;padding:155px var(--gutter) 85px}
+  .em-body-hero h1{font-size:clamp(4.2rem,10.4vw,7rem)}
+  .em-journey__chapter{position:relative;top:auto;height:auto;min-height:85svh;clip-path:none!important;padding:clamp(120px,21vh,185px) var(--gutter) 80px}
+  .em-journey__chapter::before{transform:none}
+  .em-journey__chapter:nth-child(2) .em-journey__chapter-inner{margin:0}
+  .em-journey__chapter h2{font-size:clamp(4.1rem,9vw,6.4rem)}
+  .em-body-cta{height:auto}
+  .em-body-cta__sticky{position:relative;min-height:90svh;height:auto;padding:120px var(--gutter)}
+  .em-body-cta__photo{transform:none!important;will-change:auto}
+}
+@media(max-width:650px){
+  .em-body-hero{min-height:90svh;padding:145px 23px 85px}
+  .em-body-hero__image{object-position:69% center}
+  .em-body-hero h1{font-size:clamp(4.1rem,13.2vw,5.6rem);max-width:9ch}
+  .em-body-hero .em-book{width:100%;max-width:260px}
+  .em-body-intro{padding:88px 23px;min-height:0}
+  .em-body-intro h2{font-size:clamp(3.4rem,12vw,5.8rem)}
+  .em-journey__chapter{min-height:90svh;padding:126px 23px 100px}
+  .em-journey__chapter h2{font-size:clamp(4.15rem,12.3vw,6rem)}
+  .em-journey__counter{right:23px;bottom:32px}
+  .em-body-cta__sticky{min-height:91svh;padding:120px 23px}
+  .em-body-cta h2{font-size:clamp(4.5rem,12.5vw,6.5rem)}
+  .em-body-cta__actions .em-book{width:100%}
+  .em-body-modal{width:calc(100% - 18px);max-height:94svh}
+  .em-body-modal__layout{display:block}
+  .em-body-modal__media{min-height:0;aspect-ratio:16/8}
+  .em-body-modal__info{padding:26px 26px 32px}
+  .em-body-modal h2{font-size:clamp(3rem,10vw,4rem)}
+}
+@media(prefers-reduced-motion:reduce){
+  .em-journey__chapter{position:relative;top:auto;height:auto;min-height:90svh;clip-path:none!important}
+  .em-journey__chapter::before{transform:none!important}
+  .em-body-cta__photo{transform:none!important;will-change:auto}
+  .em-body .em-book{transition:none!important}
+}
+
+
+/* Short viewports cannot safely hold an immersive pinned scene. */
+@media (min-width:871px) and (max-height:649px){
+  .em-journey__chapter{position:relative;top:auto;height:auto;min-height:100svh;clip-path:none!important}
+  .em-journey__chapter::before{transform:none}
+}
+
+/* Final chapter reading pause: Hot Stone Therapy remains pinned for another
+   80svh of native scroll, then releases naturally into the closing booking scene.
+   No JS scroll lock and no additional visual slide. */
+@media (min-width:871px) and (min-height:650px) and (prefers-reduced-motion:no-preference){
+  .em-journey__chapters::after{
+    content:'';display:block;height:80svh;pointer-events:none;
+  }
+}
+
+/* Reading hold for 02 / 03 THE FLOW. The second slide remains sticky
+   for 80svh after it fully arrives; only then does slide 03 wipe over it.
+   Native scroll, no wheel interception. Mobile/reduced motion unchanged. */
+@media (min-width:871px) and (min-height:650px) and (prefers-reduced-motion:no-preference){
+  .em-journey__chapter:nth-child(2){margin-bottom:80svh}
+}

@@ -234,7 +234,7 @@
       "poster": "websites/templates/ATZ-WEB-006/v1/poster.webp",
       "package": "websites/templates/ATZ-WEB-006/v1/ATZ-WEB-006-v1.zip",
       "guide": "websites/templates/ATZ-WEB-006/v1/README.md",
-      "status": "validation_pending",
+      "status": "validated_template",
       "client_ready": false
     },
     {

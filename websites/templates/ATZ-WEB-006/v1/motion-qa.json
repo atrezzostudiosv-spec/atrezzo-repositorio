@@ -1,0 +1,302 @@
+[
+  {
+    "width": 375,
+    "scene": 0,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 375,
+    "scene": 1,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 375,
+    "scene": 2,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 375,
+    "scene": 3,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 375,
+    "scene": 4,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "scene": 0,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "scene": 1,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "scene": 2,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "scene": 3,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 768,
+    "scene": 4,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "scene": 0,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "scene": 1,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "scene": 2,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "scene": 3,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1024,
+    "scene": 4,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "scene": 0,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "scene": 1,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "scene": 2,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "scene": 3,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "scene": 4,
+    "source": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "template": {
+      "opacity": 1,
+      "zoom": 1.0272,
+      "transform": "translate3d(0px, 0px, 0px)"
+    },
+    "pass": true
+  }
+]

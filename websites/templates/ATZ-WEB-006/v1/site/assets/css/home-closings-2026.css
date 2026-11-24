@@ -1,0 +1,261 @@
+/* Elegant Massage | Home sections 04–06 only.
+   Preserves all styles and motions of Hero, Sticky Grid and the five chapters.
+   The menu photograph is an existing illustrative site asset; replace later
+   only when the approved light-background photograph is uploaded. */
+.touch-home .menu-pause {
+  position:relative;
+  isolation:isolate;
+  display:grid;
+  align-items:center;
+  min-height:clamp(560px,76svh,830px);
+  padding:clamp(90px,11vw,155px) 0 48px;
+  overflow:hidden;
+  background:#fff;
+  color:var(--agate-ocean);
+}
+.touch-home .menu-pause__photo,
+.touch-home .menu-pause__veil {
+  position:absolute;inset:0;width:100%;height:100%;pointer-events:none;
+}
+.touch-home .menu-pause__photo {z-index:-3;overflow:hidden}
+.touch-home .menu-pause__photo img {
+  display:block;width:100%;height:100%;object-fit:cover;
+  object-position:center 47%;transform:scale(1.015);
+  transform-origin:60% 50%;will-change:transform;
+}
+.touch-home .menu-pause__veil {
+  z-index:-2;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.94) 39%,rgba(255,255,255,.81) 61%,rgba(255,255,255,.46) 100%),
+    linear-gradient(180deg,rgba(255,255,255,.24),rgba(255,255,255,.48));
+}
+.touch-home .menu-pause__body {position:relative;z-index:1}
+.touch-home .menu-pause__eyebrow {
+  font:700 .71rem/1.5 var(--sans);letter-spacing:.20em;
+  text-transform:uppercase;color:var(--agate-ocean);
+}
+.touch-home .menu-pause__layout {
+  display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);
+  align-items:end;gap:clamp(40px,7vw,125px);margin-top:clamp(26px,4.8vw,67px);
+}
+.touch-home .menu-pause h2 {
+  font-family:var(--serif);
+  font-size:clamp(4rem,8.5vw,8.1rem);
+  font-weight:400;line-height:1.06;letter-spacing:-.056em;
+  text-wrap:balance;max-width:850px;
+}
+.touch-home .menu-pause h2 em {font-weight:400;white-space:nowrap}
+.touch-home .menu-pause__copy {
+  justify-self:end;max-width:370px;
+  padding-bottom:clamp(6px,1.9vw,28px);
+}
+.touch-home .menu-pause__copy p {
+  font-size:clamp(.96rem,1.12vw,1.12rem);line-height:1.7;
+  color:var(--agate-ocean);margin:0 0 30px;
+}
+.touch-home .menu-pause__cta {
+  min-height:53px;display:inline-flex;align-items:center;justify-content:space-between;
+  gap:30px;padding:15px 23px;background:var(--agate-aqua);
+  border:1px solid var(--agate-aqua);border-radius:3px;
+  color:var(--agate-ocean);font:.88rem/1.4 var(--sans);font-weight:700;
+  transition:background .25s ease,color .25s ease,border-color .25s ease;
+}
+.touch-home .menu-pause__cta:hover {background:var(--agate-mint);border-color:var(--agate-mint)}
+.touch-home .menu-pause__cta span {font-size:1.2em}
+.touch-home .menu-pause__footer {
+  display:flex;justify-content:space-between;gap:20px;align-items:center;
+  padding-top:23px;margin-top:clamp(65px,8vw,130px);
+  border-top:1px solid rgba(37,68,96,.27);
+  font:.64rem/1.7 var(--sans);letter-spacing:.12em;text-transform:uppercase;
+}
+.touch-home .menu-pause__footer span:last-child {white-space:nowrap}
+
+/* Authentic Flower Mound storefront is a single full-bleed editorial scene. */
+.touch-home .real-place--cinematic {
+  position:relative;isolation:isolate;display:grid;align-items:center;
+  min-height:clamp(620px,82svh,950px);padding:clamp(105px,11vw,160px) 0 75px;
+  overflow:hidden;background-color:var(--agate-lime);color:#fff;
+}
+.touch-home .real-place--cinematic .real-place__scene,
+.touch-home .real-place--cinematic .real-place__scrim {
+  position:absolute;inset:0;width:100%;height:100%;pointer-events:none;
+}
+.touch-home .real-place--cinematic .real-place__scene {z-index:-3;overflow:hidden}
+.touch-home .real-place--cinematic .real-place__scene img {
+  display:block;width:100%;height:100%;
+  object-fit:cover;object-position:center 55%;
+  transform:scale(1.015);transform-origin:center;
+  will-change:transform;
+}
+.touch-home .real-place--cinematic .real-place__scrim {
+  z-index:-2;
+  background:linear-gradient(90deg,rgba(0,0,0,.79) 0%,rgba(0,0,0,.58) 47%,rgba(0,0,0,.25) 100%),
+             linear-gradient(0deg,rgba(0,0,0,.50),transparent 40%);
+}
+.touch-home .real-place--cinematic .real-place__inner {position:relative;z-index:1}
+.touch-home .real-place--cinematic .eyebrow {color:var(--agate-mint)}
+.touch-home .real-place--cinematic h2 {
+  font-family:var(--serif);font-size:clamp(4.25rem,9.2vw,9.8rem);
+  line-height:1.04;letter-spacing:-.055em;
+  max-width:920px;margin:clamp(18px,3vw,42px) 0 23px;
+  color:#fff;
+}
+.touch-home .real-place--cinematic .real-place__description {
+  max-width:510px;color:#fff;font-size:clamp(.99rem,1.2vw,1.18rem);
+  line-height:1.65;text-shadow:0 1px 12px rgba(0,0,0,.35);
+}
+.touch-home .real-place--cinematic .real-place__actions {
+  display:flex;gap:14px;flex-wrap:wrap;margin-top:clamp(28px,3.5vw,48px);
+}
+.touch-home .real-place--cinematic .real-place__action {
+  min-height:52px;display:inline-flex;gap:40px;align-items:center;
+  justify-content:space-between;padding:13px 20px;
+  font:.85rem/1.35 var(--sans);font-weight:700;
+  color:#fff;border:1px solid rgba(255,255,255,.78);border-radius:3px;
+  transition:background .25s ease,color .25s ease,border-color .25s ease;
+}
+.touch-home .real-place--cinematic .real-place__action--primary {
+  background:var(--agate-aqua);border-color:var(--agate-aqua);
+  color:var(--agate-ocean);
+}
+.touch-home .real-place--cinematic .real-place__action:hover {
+  background:var(--agate-mint);border-color:var(--agate-mint);color:var(--agate-ocean);
+}
+.touch-home .real-place--cinematic .real-place__action span {font-size:1.15rem}
+.touch-home .real-place--cinematic .real-place__source {
+  margin-top:clamp(54px,9vw,135px);
+  max-width:600px;color:rgba(255,255,255,.83);
+  font:.7rem/1.6 var(--sans);letter-spacing:.02em;
+}
+
+/* Visit Us: purposeful conversion composition with a real Maps iframe. */
+.touch-home .visit--mapped {
+  background:#fff;color:var(--agate-ocean);
+  padding:clamp(96px,10vw,145px) 0 clamp(93px,10vw,140px);
+}
+.touch-home .visit--mapped .visit__grid {
+  display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:stretch;gap:clamp(35px,5vw,90px);
+}
+.touch-home .visit--mapped .visit__details {padding-top:0;display:flex;flex-direction:column;align-items:flex-start}
+.touch-home .visit--mapped .visit__heading h2 {
+  max-width:650px;margin:clamp(17px,2.5vw,28px) 0 clamp(30px,4vw,58px);
+  font-family:var(--serif);font-size:clamp(4.1rem,6.8vw,8rem);
+  line-height:1.04;letter-spacing:-.055em;
+}
+.touch-home .visit--mapped .visit__business {
+  margin-bottom:18px;color:var(--agate-ocean);
+  font-size:.70rem;letter-spacing:.19em;
+}
+.touch-home .visit--mapped address {
+  max-width:460px;font-family:var(--serif);
+  font-style:normal;font-size:clamp(1.7rem,2.4vw,2.45rem);
+  line-height:1.23;
+}
+.touch-home .visit--mapped .visit__phone {
+  display:inline-block;margin-top:22px;color:var(--agate-ocean);
+  font-family:var(--serif);font-size:clamp(1.6rem,2.35vw,2.4rem);
+  line-height:1.3;border-bottom:1px solid rgba(37,68,96,.6);
+}
+.touch-home .visit--mapped .visit__actions {
+  display:flex;align-items:center;flex-wrap:wrap;gap:12px;
+  margin-top:clamp(28px,3.2vw,44px);
+}
+.touch-home .visit--mapped .visit__actions .button,
+.touch-home .visit--mapped .visit__actions .visit__book {
+  display:inline-flex;align-items:center;justify-content:space-between;
+  gap:20px;min-height:51px;padding:13px 19px;margin:0;
+  border-radius:3px;font:.83rem/1.3 var(--sans);font-weight:700;
+  text-decoration:none;
+}
+.touch-home .visit--mapped .visit__actions .button--ink {
+  color:#fff;background:var(--agate-ocean);border:1px solid var(--agate-ocean);
+}
+.touch-home .visit--mapped .visit__actions .visit__book {
+  background:var(--agate-aqua);border:1px solid var(--agate-aqua);color:var(--agate-ocean);
+}
+.touch-home .visit--mapped .visit__actions .button--outline-ink {
+  background:transparent;border:1px solid rgba(37,68,96,.55);
+  color:var(--agate-ocean);
+}
+.touch-home .visit--mapped .visit__actions a:hover {
+  background:var(--agate-mint);color:var(--agate-ocean);border-color:var(--agate-mint);
+}
+.touch-home .visit--mapped .visit__map-column {
+  align-self:stretch;display:flex;flex-direction:column;
+  min-width:0;
+}
+.touch-home .visit--mapped .visit__map-frame {
+  position:relative;flex:1;overflow:hidden;
+  min-height:clamp(410px,47vw,620px);
+  border:1px solid rgba(37,68,96,.2);border-radius:7px;
+  background:var(--agate-lime);
+}
+.touch-home .visit--mapped iframe {
+  display:block;width:100%;height:100%;min-height:inherit;
+  border:0;filter:saturate(.82);
+}
+.touch-home .visit--mapped .visit__map-footer {
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  gap:10px 20px;padding-top:15px;
+  font:.73rem/1.5 var(--sans);color:var(--agate-ocean);
+}
+.touch-home .visit--mapped .visit__map-footer a {
+  font-weight:700;text-decoration:underline;
+  text-underline-offset:4px;text-decoration-color:var(--agate-aqua);
+}
+.touch-home .visit--mapped .visit__map-footer a:hover {color:#177082}
+
+@media (max-width:1023px){
+  .touch-home .menu-pause__layout {grid-template-columns:1fr .84fr;gap:36px}
+  .touch-home .menu-pause h2 {font-size:clamp(4rem,8.8vw,6.4rem)}
+  .touch-home .visit--mapped .visit__grid {grid-template-columns:1fr 1.07fr;gap:27px}
+  .touch-home .visit--mapped .visit__heading h2 {font-size:clamp(3.8rem,7vw,5.5rem)}
+}
+@media (max-width:767px) {
+  .touch-home .menu-pause {min-height:620px;padding:90px 0 35px}
+  .touch-home .menu-pause__photo img {object-position:62% center}
+  .touch-home .menu-pause__veil {
+    background:linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.95) 45%,rgba(255,255,255,.73) 100%);
+  }
+  .touch-home .menu-pause__layout {grid-template-columns:1fr;gap:24px;margin-top:28px}
+  .touch-home .menu-pause h2 {font-size:clamp(3.75rem,11.8vw,5.75rem);max-width:650px}
+  .touch-home .menu-pause__copy {justify-self:start;max-width:470px;padding-bottom:0}
+  .touch-home .menu-pause__copy p {margin-bottom:22px}
+  .touch-home .menu-pause__footer {margin-top:65px;flex-wrap:wrap;gap:10px}
+  .touch-home .menu-pause__footer span:last-child {white-space:normal}
+  .touch-home .real-place--cinematic {min-height:670px;padding:95px 0 45px}
+  .touch-home .real-place--cinematic .real-place__scene img {object-position:54% center}
+  .touch-home .real-place--cinematic .real-place__scrim {
+    background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.53)),
+               linear-gradient(0deg,rgba(0,0,0,.40),transparent 45%);
+  }
+  .touch-home .real-place--cinematic h2 {font-size:clamp(3.65rem,11.3vw,6.25rem)}
+  .touch-home .real-place--cinematic .real-place__source {margin-top:73px}
+  .touch-home .visit--mapped {padding:89px 0 90px}
+  .touch-home .visit--mapped .visit__grid {grid-template-columns:1fr;gap:44px}
+  .touch-home .visit--mapped .visit__heading h2 {
+    font-size:clamp(3.8rem,11.3vw,6rem);margin-bottom:31px;
+  }
+  .touch-home .visit--mapped .visit__map-frame {min-height:340px;height:340px}
+}
+@media (max-width:430px) {
+  .touch-home .menu-pause h2 {font-size:clamp(3.4rem,11.5vw,4.5rem)}
+  .touch-home .menu-pause__cta {width:100%}
+  .touch-home .menu-pause__footer {font-size:.57rem}
+  .touch-home .real-place--cinematic h2 {font-size:clamp(3.4rem,11vw,4.3rem)}
+  .touch-home .real-place--cinematic .real-place__actions {display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .touch-home .real-place--cinematic .real-place__action {gap:8px;padding:14px 12px;min-height:52px;font-size:.78rem}
+  .touch-home .visit--mapped .visit__heading h2 {font-size:clamp(3.6rem,11vw,4.5rem)}
+  .touch-home .visit--mapped .visit__actions {display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .touch-home .visit--mapped .visit__actions .button,
+  .touch-home .visit--mapped .visit__actions .visit__book {width:100%;min-width:0;font-size:.77rem;padding:12px}
+  .touch-home .visit--mapped .visit__actions .button--outline-ink {grid-column:1/3}
+  .touch-home .visit--mapped .visit__map-frame {height:315px;min-height:315px}
+}
+@media (prefers-reduced-motion:reduce) {
+  .touch-home .menu-pause__photo img,
+  .touch-home .real-place--cinematic .real-place__scene img {
+    transform:none!important;will-change:auto;
+  }
+}

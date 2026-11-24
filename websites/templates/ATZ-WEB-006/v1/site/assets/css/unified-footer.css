@@ -1,0 +1,34 @@
+/* One footer design across Home and every internal route. */
+.em-footer{
+  color:var(--agate-white,#fff);
+  background:var(--agate-ocean,#254460);
+  font-family:"Open Sans",system-ui,sans-serif;
+  padding:clamp(4rem,7vw,7.5rem) 0 1.8rem;
+}
+.em-footer__inner{width:min(100% - 2 * clamp(22px,4.5vw,72px),1440px);margin-inline:auto}
+.em-footer__masthead{display:flex;align-items:end;justify-content:space-between;gap:2rem;padding-bottom:clamp(2.6rem,5vw,5rem);border-bottom:1px solid #ffffff45}
+.em-footer__brand{font:400 clamp(3.2rem,6.2vw,7.4rem)/.9 "Playfair Display",Georgia,serif;letter-spacing:-.055em;text-decoration:none;color:inherit}
+.em-footer__brand em{font-weight:400}
+.em-footer__brand small{display:block;margin-top:1.2rem;font:600 .58rem/1.4 "Open Sans",system-ui,sans-serif;letter-spacing:.22em;color:var(--agate-mint,#ccecc7)}
+.em-footer__book{display:inline-flex;align-items:center;gap:2.3rem;white-space:nowrap;border-bottom:1px solid var(--agate-aqua,#53cbd9);padding-bottom:.75rem;text-decoration:none;color:var(--agate-aqua,#53cbd9);font-size:.86rem;font-weight:700}
+.em-footer__book span{font-size:1.4rem;font-weight:400;line-height:1;transition:transform .25s}
+.em-footer__book:hover span{transform:translate(3px,-3px)}
+.em-footer__body{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(150px,.7fr) minmax(220px,1fr);gap:clamp(2rem,6vw,7rem);padding:clamp(2.5rem,5vw,4.8rem) 0 clamp(3.5rem,6vw,6rem)}
+.em-footer__intro p{max-width:31ch;margin:0;color:#e0ebed;font-size:clamp(.88rem,1vw,1rem);line-height:1.75}
+.em-footer__label{display:block;margin:0 0 1.4rem;color:var(--agate-mint,#ccecc7);font-size:.64rem;font-weight:700;letter-spacing:.2em}
+.em-footer__nav,.em-footer__contact{display:flex;flex-direction:column;align-items:flex-start;gap:.78rem}
+.em-footer__nav a,.em-footer__contact a{font-size:.85rem;line-height:1.5;color:#fff;text-decoration:none;transition:color .2s}
+.em-footer__nav a:hover,.em-footer__contact a:hover{color:var(--agate-aqua,#53cbd9)}
+.em-footer__contact p{margin:.5rem 0 0;color:#d9e9e7;font-size:.8rem;line-height:1.7}
+.em-footer__bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid #ffffff3b;padding-top:1.25rem;color:var(--agate-mint,#ccecc7);font-size:.68rem;line-height:1.5}
+@media(max-width:760px){
+  .em-footer__masthead{align-items:start;flex-direction:column;gap:2rem}
+  .em-footer__body{grid-template-columns:1fr 1fr;gap:2.6rem 1.7rem}
+  .em-footer__intro{grid-column:1/-1}
+  .em-footer__brand{font-size:clamp(3.3rem,10vw,5.8rem)}
+}
+@media(max-width:470px){
+  .em-footer__body{grid-template-columns:1fr 1fr;gap:2.5rem 1rem}
+  .em-footer__nav a,.em-footer__contact a{font-size:.78rem;overflow-wrap:anywhere}
+  .em-footer__bottom{flex-direction:column}
+}

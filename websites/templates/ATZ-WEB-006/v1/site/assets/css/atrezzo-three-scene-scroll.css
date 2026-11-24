@@ -1,0 +1,205 @@
+/* ATREZZO / Elegant Massage — THREE ACT TREATMENT SCROLL
+   Three distinct full-bleed photographs. Progressive enhancement only.
+   Desktop: a 3-scene vertical drop / subtle photographic zoom using native scroll.
+   Third scene must finish its zoom before sticky exits.
+   Mobile / reduced motion / no JS: full-bleed normal-flow scenes, no scroll hijacking.
+*/
+.em-cinema{position:relative;background:#15251b}
+.em-cinema__stage{position:relative}
+.em-cinema .em-treatment-feature{
+  position:relative;
+  display:flex !important;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start !important;
+  box-sizing:border-box;
+  width:100%;
+  min-height:100svh !important;
+  padding:clamp(6.5rem,13vh,10rem) var(--gutter) clamp(5.5rem,12vh,9rem) !important;
+  isolation:isolate;
+  overflow:hidden;
+  color:#fff;
+  background:#17281f;
+}
+.em-cinema .em-treatment-feature__image{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  display:block;
+  z-index:-2;
+  background-repeat:no-repeat;
+  background-size:cover;
+  transform-origin:center center;
+  transform:scale(var(--em-zoom,1.02));
+  filter:saturate(.91) contrast(1.035);
+  will-change:auto;
+}
+.em-cinema .em-treatment-feature:before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.77) 0%,rgba(0,0,0,.47) 42%,rgba(0,0,0,.09) 85%),
+    linear-gradient(0deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.15) 54%,transparent 87%),
+    linear-gradient(180deg,rgba(0,0,0,.18),transparent 30%);
+}
+.em-cinema .em-treatment-feature .em-treatment-feature__copy{
+  position:relative;
+  z-index:3;
+  width:min(100%,740px);
+  max-width:740px;
+  align-self:initial !important;
+  margin:0 !important;
+  padding:0 !important;
+  color:#fff !important;
+}
+.em-cinema .em-treatment-feature .em-treatment-feature__index{
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.17em;
+  color:#f1e9dd;
+  margin-bottom:clamp(1.1rem,2.8vh,2rem);
+}
+.em-cinema .em-treatment-feature h3{
+  color:#fff !important;
+  font-size:clamp(3.75rem,5.6vw,6.15rem);
+  letter-spacing:-.043em;
+  line-height:1.01;
+  max-width:14ch;
+  margin:0 0 1.25rem;
+}
+.em-cinema .em-treatment-feature__copy p{
+  color:#f3f1eb !important;
+  font-size:clamp(1rem,1.22vw,1.11rem);
+  line-height:1.75;
+  max-width:49ch;
+  margin-bottom:1.35rem;
+}
+.em-cinema .em-treatment-feature .em-photo-link{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.72);
+}
+.em-cinema .em-treatment-feature--body .em-treatment-feature__image{
+  background-image:url('../images/elegant-massage-body-massage-cinematic.webp');
+  background-position:58% 50%;
+}
+.em-cinema .em-treatment-feature--foot .em-treatment-feature__image{
+  background-image:url('../images/elegant-massage-foot-reflexology-editorial-desktop.webp');
+  background-position:57% 53%;
+}
+.em-cinema .em-treatment-feature--combination .em-treatment-feature__image{
+  /* Exactly ONE licensed photographic scene; not a collage / diptych. */
+  background-image:url('../images/elegant-massage-combination-single-desktop.webp');
+  background-position:54% 48%;
+}
+.em-cinema .em-treatment-feature--foot{
+  background:#142b21;
+}
+.em-cinema .em-treatment-feature--foot .em-treatment-feature__copy p{color:#f3f1eb}
+.em-cinema .em-treatment-feature--combination .em-treatment-feature__copy{padding-bottom:0 !important}
+.em-cinema__progress{display:none}
+/* One photo per full viewport, without sticky locking on small screens */
+@media(max-width:1023px), (max-height:649px){
+  .em-cinema .em-treatment-feature{min-height:100svh !important;}
+  .em-cinema .em-treatment-feature__image{transform:scale(1.02)!important}
+}
+@media(max-width:640px){
+  .em-cinema .em-treatment-feature{
+    min-height:100svh !important;
+    padding:clamp(9rem,15vh,11rem) var(--gutter) clamp(6.6rem,14vh,9rem) !important;
+    justify-content:flex-end;
+  }
+  .em-cinema .em-treatment-feature h3{font-size:clamp(3rem,10vw,4.4rem);line-height:1.04}
+  .em-cinema .em-treatment-feature__copy p{font-size:.98rem;line-height:1.64;max-width:43ch}
+  .em-cinema .em-treatment-feature:before{
+    background:linear-gradient(0deg,rgba(0,0,0,.87) 0%,rgba(0,0,0,.62) 47%,rgba(0,0,0,.17) 90%),
+               linear-gradient(180deg,rgba(0,0,0,.3),transparent 25%);
+  }
+  .em-cinema .em-treatment-feature--foot .em-treatment-feature__image{
+    background-image:url('../images/elegant-massage-foot-reflexology-editorial-mobile.webp');
+    background-position:50% center;
+  }
+  .em-cinema .em-treatment-feature--combination .em-treatment-feature__image{
+    background-image:url('../images/elegant-massage-combination-single-mobile.webp');
+    background-position:54% center;
+  }
+}
+/* Desktop coreography: progress is actual scroll distance, not intercepted input. */
+@media(min-width:1024px) and (min-height:650px) and (prefers-reduced-motion:no-preference){
+  .em-cinema.is-immersive{
+    height:440svh;
+    min-height:0;
+    overflow:visible;
+  }
+  .em-cinema.is-immersive .em-cinema__stage{
+    position:sticky;
+    top:0;
+    height:100svh;
+    min-height:0;
+    overflow:hidden;
+    isolation:isolate;
+    background:#14231a;
+  }
+  .em-cinema.is-immersive .em-treatment-feature{
+    position:absolute !important;
+    inset:0;
+    height:100svh !important;
+    min-height:0 !important;
+    margin:0 !important;
+    display:flex !important;
+    justify-content:flex-end !important;
+    padding:clamp(7rem,15vh,11rem) var(--gutter) clamp(6rem,13vh,9rem) !important;
+    transform:translate3d(0,var(--em-slide,0%),0);
+    pointer-events:none;
+    contain:paint;
+  }
+  .em-cinema.is-immersive .em-treatment-feature:nth-child(1){z-index:1}
+  .em-cinema.is-immersive .em-treatment-feature:nth-child(2){z-index:2;--em-slide:-100%}
+  .em-cinema.is-immersive .em-treatment-feature:nth-child(3){z-index:3;--em-slide:-100%}
+  .em-cinema.is-immersive .em-treatment-feature.is-current{pointer-events:auto}
+  .em-cinema.is-immersive .em-treatment-feature__image{
+    transform:scale(var(--em-zoom,1.018)) !important;
+    will-change:transform;
+  }
+  .em-cinema.is-immersive .em-treatment-feature .em-treatment-feature__copy{
+    opacity:var(--em-copy-opacity,1);
+    transform:translate3d(0,var(--em-copy-y,0px),0);
+  }
+  .em-cinema.is-immersive .em-cinema__progress{
+    position:absolute;
+    right:var(--gutter);
+    bottom:clamp(2rem,6svh,4rem);
+    z-index:5;
+    display:flex;
+    align-items:center;
+    gap:1.25rem;
+    color:#fff;
+    pointer-events:none;
+    font:600 .66rem/1 "DM Sans",sans-serif;
+    letter-spacing:.13em;
+    text-shadow:0 1px 10px #000a;
+  }
+  .em-cinema__bars{display:flex;gap:5px;align-items:center}
+  .em-cinema__bars span{display:block;width:26px;height:2px;background:rgba(255,255,255,.34);transition:background .15s}
+  .em-cinema__bars span.is-on{background:#e4c9a1}
+}
+@media(min-width:1024px) and (max-width:1150px) and (min-height:650px){
+  .em-cinema .em-treatment-feature h3{font-size:clamp(3.5rem,6vw,5rem)}
+  .em-cinema.is-immersive .em-treatment-feature{padding-bottom:clamp(6rem,12vh,7.5rem)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .em-cinema{height:auto !important;overflow:visible}
+  .em-cinema__stage{position:static !important;height:auto !important}
+  .em-cinema .em-treatment-feature{
+    position:relative !important;
+    transform:none !important;
+    opacity:1 !important;
+    pointer-events:auto !important;
+  }
+  .em-cinema .em-treatment-feature__image{transform:scale(1)!important;will-change:auto!important}
+  .em-cinema__progress{display:none!important}
+}

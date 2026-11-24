@@ -1,0 +1,258 @@
+/* ATREZZO / ELEGANT MASSAGE — INTERNAL PAGES ONLY, 2026-11-06.
+   The Home intentionally does not import this stylesheet.
+   Source-specific content and the prior approved navigation remain unchanged. */
+body[data-page] .em-editorial-section--calm{padding:clamp(4.5rem,7vw,8rem) 0;background:#f3f6f2;color:#254460}
+.em-editorial-pair{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,6vw,7rem);align-items:center}
+.em-editorial-copy{max-width:580px}
+.em-editorial-copy .eyebrow{color:#4a6869;letter-spacing:.15em;font-size:.7rem}
+.em-editorial-copy h2{font-family:"Playfair Display",Georgia,serif;font-weight:400;letter-spacing:-.035em;font-size:clamp(2.9rem,5vw,5.7rem);line-height:1.08;margin:1rem 0 1.5rem}
+.em-editorial-copy>p:last-child{font-family:"Open Sans",system-ui,sans-serif;font-size:clamp(1rem,1.2vw,1.13rem);line-height:1.85;color:#3d5566;max-width:46ch}
+.em-editorial-photo{margin:0;min-width:0}
+.em-editorial-photo img{width:100%;height:clamp(400px,48vw,640px);object-fit:cover;object-position:center 44%;background:#dce8df}
+.em-editorial-photo figcaption{margin-top:1rem;font:500 .72rem/1.5 "Open Sans",system-ui,sans-serif;color:#4f6870}
+body[data-page] .em-location{position:relative;z-index:1;background:#f5f7f4;color:#254460;padding:clamp(3.7rem,7vw,7.5rem) 0}
+.em-location__shell{width:min(1440px,calc(100% - 2 * clamp(20px,5vw,76px)));margin:auto;display:grid;grid-template-columns:minmax(280px,.74fr) minmax(0,1.26fr);gap:clamp(2rem,5vw,6rem);align-items:center}
+.em-location__details{max-width:525px}
+.em-location__kicker{font:700 .7rem/1.5 "Open Sans",system-ui,sans-serif;letter-spacing:.15em;color:#546e70;margin:0 0 1.5rem}
+.em-location h2{font:400 clamp(2.9rem,5vw,5.3rem)/1.07 "Playfair Display",Georgia,serif;letter-spacing:-.035em;margin:0 0 1.8rem;max-width:13ch}
+.em-location h2 em{font-weight:400}
+.em-location address{font:400 clamp(1rem,1.35vw,1.18rem)/1.75 "Open Sans",system-ui,sans-serif;font-style:normal;margin:0 0 1.7rem}
+.em-location__directions{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;min-height:52px;padding:0 1.4rem;text-decoration:none;background:#254460;color:white;font:700 .8rem/1.2 "Open Sans",system-ui,sans-serif;transition:background .2s}
+.em-location__directions:hover{background:#1c354d}
+.em-location__directions:focus-visible,.em-location__map-fallback:focus-visible,.em-contact-close__link:focus-visible{outline:3px solid #53cbd9;outline-offset:4px}
+.em-location__note{font:400 .75rem/1.6 "Open Sans",system-ui,sans-serif;color:#60767a;margin:1.5rem 0 0}
+.em-location__map{min-width:0;display:flex;flex-direction:column;background:#d9e2dc;box-shadow:0 12px 40px #25446012}
+.em-location__map iframe{width:100%;height:clamp(340px,33vw,490px);display:block;border:0}
+.em-location__map-fallback{display:inline-flex;justify-content:flex-end;padding:.85rem 1rem;background:#e1e9e3;color:#254460;font:600 .76rem/1.4 "Open Sans",system-ui,sans-serif;text-decoration:underline;text-underline-offset:3px}
+.em-contact-close{background:#254460;color:white;padding:clamp(4.5rem,8vw,8rem) clamp(20px,6vw,90px)}
+.em-contact-close__inner{width:min(900px,100%);margin:auto;text-align:center}
+.em-contact-close .eyebrow{color:#ccecc7}
+.em-contact-close h2{font:400 clamp(3rem,6vw,6rem)/1.1 "Playfair Display",Georgia,serif;margin:1rem 0}
+.em-contact-close p:not(.eyebrow){max-width:56ch;margin:0 auto;font:400 1.08rem/1.75 "Open Sans",system-ui,sans-serif}
+.em-contact-close__actions{display:flex;gap:1.5rem;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:2.25rem}
+.em-contact-close__link{color:white;text-underline-offset:.4rem}
+body[data-page="about"] .hero__background{background-image:url('../images/elegant-massage-flower-mound-reception-desk.webp')}
+body[data-page="gallery"] .hero__background{background-image:url('../images/elegant-massage-flower-mound-private-massage-room.webp')}
+body[data-page="menu"] .hero__background,body[data-page="services"] .hero__background{background-image:url('../images/martes/body-editorial.webp')}
+body[data-page="chair"] .hero__background{background-image:url('../images/martes/chair-editorial.webp')}
+body[data-page="combo"] .hero__background{background-image:url('../images/martes/foot-editorial.webp')}
+body[data-page="couples"] .hero__background{background-image:url('../images/martes/couples-editorial.webp')}
+body[data-page="foot"] .hero__background{background-image:url('../images/martes/foot-editorial.webp')}
+body[data-page="four"] .hero__background{background-image:url('../images/martes/four-hands-detail.webp')}
+body[data-page="specialty"] .hero__background{background-image:url('../images/elegant-massage-flower-mound-treatment-area.webp')}
+@media(max-width:900px){.em-editorial-pair{grid-template-columns:1fr}.em-editorial-photo img{height:min(68svh,520px)}.em-location__shell{grid-template-columns:1fr}.em-location__details{max-width:760px}.em-location h2{max-width:17ch}.em-location__map iframe{height:390px}}
+@media(max-width:520px){.em-editorial-photo img{height:370px}.em-location__shell{width:calc(100% - 40px)}.em-location__map iframe{height:320px}.em-location__map-fallback{justify-content:flex-start}.em-contact-close__actions{align-items:stretch;flex-direction:column}.em-contact-close__actions>*{width:100%;text-align:center;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.em-location__directions{transition:none}}
+
+/* 2026-11-06 / Atrezzo interaction system: pills + smoked glass.
+   Internal pages ONLY; no selectors without body[data-page].
+   One pill primary action and one understated typographic secondary action.
+   User approved examples: fully rounded capsule, no rectangular CTA. */
+body[data-page]{
+  --at-pill-ink:rgba(18,40,53,.78);
+  --at-pill-ink-strong:rgba(18,41,53,.90);
+  --at-pill-white:rgba(255,255,255,.91);
+  --at-pill-edge:rgba(248,253,250,.49);
+  --at-pill-shadow:0 12px 32px rgba(9,25,33,.21),inset 0 1px 0 rgba(255,255,255,.13);
+}
+/* Apply to actionable CTA surfaces, not informational cards or navigation text. */
+body[data-page] .button:not(.button--outline),
+body[data-page] .site-header .header-cta,
+body[data-page] .em-body .em-book:not(.em-book--ghost),
+body[data-page] .em-body-modal__book,
+body[data-page] .contact-action--primary,
+body[data-page] .em-location__directions,
+body[data-page] .em-mobile-booking {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:clamp(16px,2vw,32px);
+  min-height:56px;
+  padding:14px clamp(24px,2.75vw,38px);
+  border:1px solid var(--at-pill-edge);
+  border-radius:999px;
+  background:var(--at-pill-ink);
+  color:#fff;
+  box-shadow:var(--at-pill-shadow);
+  -webkit-backdrop-filter:blur(18px) saturate(120%);
+  backdrop-filter:blur(18px) saturate(120%);
+  font-family:"Open Sans",Arial,sans-serif;
+  font-size:clamp(.72rem,.83vw,.83rem);
+  font-weight:700;
+  line-height:1.4;
+  letter-spacing:.075em;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:background-color .25s,border-color .25s,transform .25s,box-shadow .25s;
+}
+/* Hero/closing photo surfaces should transmit more of the image through the glass. */
+body[data-page] .hero .button:not(.button--outline),
+body[data-page] .closing .button:not(.button--outline),
+body[data-page] .em-body-hero .em-book:not(.em-book--ghost),
+body[data-page] .em-body-cta .em-book:not(.em-book--ghost),
+body[data-page] .em-contact-close .button:not(.button--outline){
+  background:rgba(19,42,53,.61);
+}
+body[data-page] .button:not(.button--outline):hover,
+body[data-page] .site-header .header-cta:hover,
+body[data-page] .em-body .em-book:not(.em-book--ghost):hover,
+body[data-page] .em-body-modal__book:hover,
+body[data-page] .contact-action--primary:hover,
+body[data-page] .em-location__directions:hover,
+body[data-page] .em-mobile-booking:hover {
+  background:var(--at-pill-ink-strong);
+  color:#fff;
+  border-color:rgba(255,255,255,.76);
+  box-shadow:0 17px 36px rgba(9,25,33,.25),inset 0 1px 0 rgba(255,255,255,.18);
+  transform:translateY(-2px);
+}
+/* Header capsule belongs inside an already smoky navigation surface. */
+body[data-page] .site-header .header-cta{
+  min-height:43px;
+  padding:10px 21px;
+  background:rgba(255,255,255,.16);
+  border-color:rgba(255,255,255,.44);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.17);
+  font-size:.72rem;
+  letter-spacing:.045em;
+}
+body[data-page] .site-header .header-cta:hover{background:rgba(255,255,255,.23)}
+/* One secondary action is a text link (never another outlined box). */
+body[data-page] .actions .button--outline,
+body[data-page] .em-body .em-book--ghost,
+body[data-page] .hero .text-link,
+body[data-page] .contact-hero .contact-action--text,
+body[data-page] .em-contact-close__link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:clamp(18px,2.6vw,42px);
+  width:auto;
+  max-width:100%;
+  min-height:0;
+  padding:9px 0 12px;
+  background:transparent;
+  border:0;
+  border-bottom:1px solid currentColor;
+  border-radius:0;
+  box-shadow:none;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  color:#fff;
+  font-family:"Open Sans",Arial,sans-serif;
+  font-size:clamp(.75rem,.89vw,.9rem);
+  font-weight:700;
+  letter-spacing:.095em;
+  line-height:1.4;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:color .25s,border-color .25s;
+}
+body[data-page] .contact-hero .contact-action--text{color:var(--agate-ocean)}
+body[data-page] .actions .button--outline:hover,
+body[data-page] .em-body .em-book--ghost:hover,
+body[data-page] .hero .text-link:hover,
+body[data-page] .em-contact-close__link:hover {
+  background:transparent;
+  color:var(--agate-mint);
+  border-bottom-color:var(--agate-mint);
+  box-shadow:none;
+  transform:none;
+}
+body[data-page] .contact-hero .contact-action--text:hover{color:#1c354d;border-bottom-color:#1c354d}
+/* Text link under the primary CTA is intentionally NOT expanded to a button on mobile. */
+@media(max-width:870px){
+  body[data-page] .em-mobile-booking{
+    min-height:62px;
+    padding:15px 25px;
+    border-radius:999px;
+    background:linear-gradient(115deg,rgba(19,40,53,.85),rgba(28,53,68,.80));
+    color:#fff;
+    justify-content:space-between;
+  }
+  body[data-page] .em-mobile-booking:hover{
+    background:linear-gradient(115deg,rgba(19,40,53,.91),rgba(28,53,68,.86));
+  }
+}
+@media(max-width:650px){
+  body[data-page] .em-body-hero .em-book:not(.em-book--ghost),
+  body[data-page] .em-body-cta__actions .em-book:not(.em-book--ghost){
+    width:auto;
+    max-width:100%;
+  }
+  body[data-page] .em-body-hero .em-book--ghost,
+  body[data-page] .em-body-cta__actions .em-book--ghost{
+    width:auto;
+    max-width:100%;
+    justify-content:space-between;
+  }
+  body[data-page] .hero .actions,
+  body[data-page] .closing .actions,
+  body[data-page] .em-body-hero__actions,
+  body[data-page] .em-body-cta__actions{
+    align-items:flex-start;
+    gap:20px 28px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  body[data-page] .button:not(.button--outline),
+  body[data-page] .site-header .header-cta,
+  body[data-page] .em-body .em-book,
+  body[data-page] .contact-action--primary,
+  body[data-page] .em-location__directions,
+  body[data-page] .em-mobile-booking{transition:none}
+}
+
+/* 2026-11-06 / Final booking composition — left aligned, not centred.
+   A flex child with intrinsic width had been visually centred by .container
+   auto margins. Give it full row width and deliberate editorial left inset.
+   The photo, height, copy, CTA destinations and Home stay unchanged. */
+body[data-page] .closing > .container{
+  box-sizing:border-box;
+  flex:0 0 100%;
+  width:100%;
+  max-width:none;
+  margin-inline:0;
+  padding-inline:clamp(24px,6.8vw,136px);
+  text-align:left;
+}
+body[data-page] .closing > .container > :is(.eyebrow,h2,.lede,.actions){
+  margin-left:0;
+  margin-right:0;
+}
+body[data-page] .closing > .container > h2{
+  max-width:12ch;
+  text-wrap:balance;
+}
+body[data-page] .closing > .container > .lede{
+  max-width:48ch;
+}
+/* Contact's final CTA follows the same left-led editorial composition. */
+body[data-page="contact"] .em-contact-close__inner{
+  width:100%;
+  max-width:900px;
+  margin:0;
+  text-align:left;
+}
+body[data-page="contact"] .em-contact-close__inner > p:not(.eyebrow){
+  margin-left:0;
+  margin-right:0;
+}
+body[data-page="contact"] .em-contact-close__actions{
+  justify-content:flex-start;
+}
+/* Body Massage already starts at the left gutter; lock that intent. */
+body[data-page="body"] .em-body-cta__inner{
+  margin-inline:0;
+  text-align:left;
+}
+@media(max-width:870px){
+  body[data-page] .closing > .container{
+    padding-inline:var(--gutter);
+  }
+}
+@media(max-width:560px){
+  body[data-page] .closing > .container > h2{
+    text-wrap:wrap;
+  }
+}

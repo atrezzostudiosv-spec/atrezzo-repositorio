@@ -1,0 +1,63 @@
+/* Elegant Massage | Editorial Contact Sheet, 2026.
+   Scoped gallery experience, based on the supplied Atrezzo Contact Sheet direction.
+   All photography depicts the original Elegant Massage location. No emoji icons. */
+body[data-page="gallery"] .em-gallery{
+  --eg-ink:#192923;--eg-ivory:#f4f1e9;--eg-muted:#b8ccc1;--eg-hair:rgba(235,243,236,.23);
+  background:var(--eg-ink);color:var(--eg-ivory);padding:clamp(100px,11vw,170px) clamp(20px,5.1vw,92px) clamp(95px,11vw,165px);
+  isolation:isolate;
+}
+body[data-page="gallery"] .em-gallery *{box-sizing:border-box}
+body[data-page="gallery"] .em-gallery__shell{width:min(100%,1450px);margin-inline:auto}
+body[data-page="gallery"] .em-gallery__top{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid var(--eg-hair);padding-top:19px}
+body[data-page="gallery"] .em-gallery__eyebrow{font:700 .72rem/1.5 'Open Sans',Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--eg-muted);margin:0}
+body[data-page="gallery"] .em-gallery__step{font-size:.72rem;letter-spacing:.16em;color:var(--eg-muted);margin:0}
+body[data-page="gallery"] .em-gallery__heading{font:400 clamp(5rem,10.2vw,10rem)/.85 'Playfair Display',Georgia,serif;letter-spacing:-.075em;margin:clamp(35px,5vw,75px) 0 32px;max-width:850px;color:#f4f1e9}
+body[data-page="gallery"] .em-gallery__heading em{font-weight:400;color:#bddfc8}
+body[data-page="gallery"] .em-gallery__intro{font:400 clamp(1rem,1.3vw,1.18rem)/1.8 'Open Sans',Arial,sans-serif;color:#d8e2db;max-width:650px;margin:0 0 clamp(52px,7vw,95px)}
+body[data-page="gallery"] .em-gallery__layout{display:grid;grid-template-columns:minmax(0,.52fr) minmax(0,1.48fr);gap:clamp(23px,3.5vw,60px);align-items:start}
+body[data-page="gallery"] .em-gallery__sheet{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;align-content:start}
+body[data-page="gallery"] .em-gallery__item{position:relative;display:block;min-width:0;aspect-ratio:1.1;border:0;background:#31443b;padding:0;overflow:hidden;cursor:pointer;border-radius:0}
+body[data-page="gallery"] .em-gallery__item:nth-child(3){grid-column:span 2;aspect-ratio:2.32}
+body[data-page="gallery"] .em-gallery__item img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.77);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .4s}
+body[data-page="gallery"] .em-gallery__item:hover img,body[data-page="gallery"] .em-gallery__item[aria-pressed="true"] img{filter:saturate(1);transform:scale(1.055)}
+body[data-page="gallery"] .em-gallery__item::after{content:"";position:absolute;inset:0;border:0 solid #e2f2e5;pointer-events:none;transition:border-width .25s}
+body[data-page="gallery"] .em-gallery__item[aria-pressed="true"]::after,body[data-page="gallery"] .em-gallery__item:focus-visible::after{border-width:3px}
+body[data-page="gallery"] .em-gallery__item:focus-visible{outline:2px solid #bde1c7;outline-offset:4px}
+body[data-page="gallery"] .em-gallery__number{position:absolute;bottom:12px;left:12px;background:rgba(10,27,22,.78);color:#fff;padding:6px 9px;font:600 .68rem/1 'Open Sans',Arial,sans-serif;letter-spacing:.1em}
+body[data-page="gallery"] .em-gallery__stage{min-width:0}
+body[data-page="gallery"] .em-gallery__frame{position:relative;overflow:hidden;background:#25362f;aspect-ratio:1.28;min-height:430px}
+body[data-page="gallery"] .em-gallery__main-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:opacity .26s ease,transform .7s ease;transform:scale(1)}
+body[data-page="gallery"] .em-gallery__frame.is-changing .em-gallery__main-image{opacity:.2;transform:scale(1.025)}
+body[data-page="gallery"] .em-gallery__frame::after{content:"";position:absolute;inset:62% 0 0;pointer-events:none;background:linear-gradient(transparent,rgba(0,0,0,.45))}
+body[data-page="gallery"] .em-gallery__overlay{position:absolute;bottom:23px;left:25px;right:25px;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:15px;color:#fff;font:600 .65rem/1.5 'Open Sans',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+body[data-page="gallery"] .em-gallery__meta{border-bottom:1px solid var(--eg-hair);display:flex;justify-content:space-between;gap:20px;padding:22px 0 23px;align-items:start}
+body[data-page="gallery"] .em-gallery__caption{font:400 clamp(1.85rem,2.8vw,3rem)/1.1 'Playfair Display',Georgia,serif;margin:0;color:#f3f4ed}
+body[data-page="gallery"] .em-gallery__description{margin:10px 0 0;max-width:50ch;line-height:1.6;color:#c9d6cd;font-size:.91rem}
+body[data-page="gallery"] .em-gallery__controls{display:flex;gap:9px;flex-shrink:0}
+body[data-page="gallery"] .em-gallery__control{border:1px solid #b7c6ba;background:transparent;color:#f0f5ed;padding:11px 15px;min-height:44px;cursor:pointer;font:600 .73rem 'Open Sans',Arial,sans-serif;letter-spacing:.05em}
+body[data-page="gallery"] .em-gallery__control:hover{background:#e7f1e6;color:#152b20}
+body[data-page="gallery"] .em-gallery__control:focus-visible{outline:2px solid #e1f2e4;outline-offset:3px}
+body[data-page="gallery"] .em-gallery__foot{margin:22px 0 0;color:#c9d6cd;font-size:.78rem;line-height:1.7}
+body[data-page="gallery"] .em-gallery__foot strong{color:#e7f2e8}
+@media(max-width:1000px){
+  body[data-page="gallery"] .em-gallery__layout{grid-template-columns:1fr;gap:25px}
+  body[data-page="gallery"] .em-gallery__stage{order:-1}
+  body[data-page="gallery"] .em-gallery__frame{min-height:0;aspect-ratio:1.45}
+  body[data-page="gallery"] .em-gallery__sheet{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+  body[data-page="gallery"] .em-gallery__item:nth-child(3){grid-column:auto;aspect-ratio:1.1}
+}
+@media(max-width:600px){
+  body[data-page="gallery"] .em-gallery{padding:100px 20px 95px}
+  body[data-page="gallery"] .em-gallery__top{align-items:start}
+  body[data-page="gallery"] .em-gallery__heading{font-size:clamp(4.8rem,15vw,7rem);margin:36px 0 24px;max-width:100%}
+  body[data-page="gallery"] .em-gallery__intro{font-size:.98rem;margin-bottom:44px}
+  body[data-page="gallery"] .em-gallery__frame{aspect-ratio:4/5}
+  body[data-page="gallery"] .em-gallery__overlay{left:14px;right:14px;bottom:15px;font-size:.58rem}
+  body[data-page="gallery"] .em-gallery__meta{display:block;padding:18px 0}
+  body[data-page="gallery"] .em-gallery__caption{font-size:2rem}
+  body[data-page="gallery"] .em-gallery__controls{margin-top:17px}
+  body[data-page="gallery"] .em-gallery__control{flex:1}
+  body[data-page="gallery"] .em-gallery__sheet{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  body[data-page="gallery"] .em-gallery__number{left:6px;bottom:6px;padding:4px 5px;font-size:.57rem}
+}
+@media(prefers-reduced-motion:reduce){body[data-page="gallery"] .em-gallery__item img,body[data-page="gallery"] .em-gallery__main-image{transition:none!important;transform:none!important}}

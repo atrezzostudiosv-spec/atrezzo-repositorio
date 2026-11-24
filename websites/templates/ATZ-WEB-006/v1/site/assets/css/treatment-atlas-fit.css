@@ -1,0 +1,26 @@
+/* Elegant Massage adaptation of ATREZZO Service Showcase 01, Atlas pattern. */
+.em-treatment-atlas{
+  --atz-bg:#254460;
+  --atz-ink:#f8fbfa;
+  --atz-muted:#d5e5e5;
+  --atz-border:#ffffff44;
+  --atz-accent:#53cbd9;
+  --atz-font:"Playfair Display",Georgia,serif;
+  --atz-sans:"Open Sans",system-ui,sans-serif;
+}
+.em-treatment-atlas .atz-section-lead h2 i,
+.em-treatment-atlas .atz-atlas-item h3 span{color:#ccecc7}
+.em-treatment-atlas .atz-atlas-item{min-height:67vh}
+.em-treatment-atlas .atz-atlas-item h3{max-width:12ch;font-size:clamp(3.3rem,5.5vw,6.6rem);overflow-wrap:normal}
+.em-treatment-atlas .atz-atlas-item p{color:#dce9eb}
+.em-treatment-atlas .atz-atlas-stage{background:#173249}
+.em-treatment-atlas .atz-atlas-stage>img{filter:saturate(.9)}
+.em-treatment-atlas .atz-atlas-stage::after{background:linear-gradient(180deg,transparent 44%,#0a1b28b0 100%)}
+.em-treatment-atlas .atz-atlas-stage-meta{color:white}
+.em-treatment-atlas .atz-outline-link{color:#87e0e8}
+.em-treatment-atlas__note{width:min(100% - 8vw,1660px);margin:1.5rem auto 0!important;color:#d5e5e5;font-size:.74rem;line-height:1.6}
+@media(max-width:767px){
+  .em-treatment-atlas .atz-atlas-item{min-height:0}
+  .em-treatment-atlas .atz-atlas-item h3{font-size:clamp(3.1rem,12vw,5.2rem)}
+  .em-treatment-atlas__note{width:min(100% - 38px,660px)}
+}

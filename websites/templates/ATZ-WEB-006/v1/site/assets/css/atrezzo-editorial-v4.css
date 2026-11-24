@@ -1,0 +1,199 @@
+/*
+ATREZZO STUDIOS / ELEGANT MASSAGE — V4 ART DIRECTION REFINEMENT
+2026-10-29
+Second-pass audit: de-escalate typography, create deliberate negative space,
+remove redundant cinematic stack, preserve verified service claims and contrast.
+Own identity: forest / warm ivory / brushed bronze / restrained deep-black scrims.
+Loaded AFTER v3 to keep a reversible, reviewable QA checkpoint.
+*/
+:root{--em-type-dark:#1f2d24;--em-type-subtle:#657369;--em-paper-warm:#f8f5ee;--em-line:#c9c9bd80}
+body{color:var(--em-type-dark)}
+body .eyebrow{font-size:.62rem;letter-spacing:.15em;font-weight:700}
+body .lede{font-size:clamp(1.04rem,1.25vw,1.23rem);line-height:1.7}
+body h1,body h2,body h3{letter-spacing:-.038em}
+body .button{font-size:.69rem;font-weight:600;letter-spacing:.085em;min-height:51px;padding:.8rem 1.5rem;box-shadow:none}
+body .em-link,body .em-photo-link{font-size:.69rem;font-weight:600;letter-spacing:.10em;gap:1.7rem;padding:.75rem 0 .62rem}
+body .em-link:hover,body .em-photo-link:hover{gap:2rem}
+.site-header .brand{font-size:clamp(1.55rem,1.8vw,2.05rem)}
+.site-header .brand small{font-size:.43rem;letter-spacing:.17em}
+.site-header .navigation>a,.site-header .navigation summary{font-size:.71rem;font-weight:600}
+.site-header .header-cta{font-size:.65rem;letter-spacing:.08em;min-height:41px;padding:.55rem 1.15rem}
+body .site-header:not(.scrolled):not(.menu-open){background:linear-gradient(180deg,rgba(5,12,8,.58),rgba(5,12,8,.14));backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+body .header-row{min-height:80px}
+/* TYPE RHYTHM: no competing 11vw h1 or 9vw h2 in the same viewport */
+.elegant-home .hero h1{font-size:clamp(4.1rem,7.15vw,7.3rem);letter-spacing:-.055em;line-height:.98;margin:1.25rem 0 1.1rem;max-width:11ch}
+.elegant-home .hero--home{padding-top:clamp(9rem,14vh,12rem);padding-bottom:clamp(6rem,11vh,9rem)}
+.elegant-home .hero .lede{font-size:clamp(1.03rem,1.32vw,1.2rem);max-width:44ch;line-height:1.66}
+.elegant-home .hero .actions{margin-top:1.7rem}
+.elegant-home .hero__footnote{font-size:.59rem;letter-spacing:.145em}
+.elegant-home .hero--home:before{background:linear-gradient(90deg,rgba(0,0,0,.69) 0%,rgba(0,0,0,.42) 45%,rgba(0,0,0,.05) 82%),linear-gradient(0deg,rgba(0,0,0,.57),transparent 40%),linear-gradient(180deg,rgba(0,0,0,.35),transparent 26%)}
+/* INTRO: one real photograph (not the hero image again), balanced negative space */
+.em-intro{padding:clamp(5.2rem,7.8vw,8rem) 0;background:var(--em-paper-warm)}
+.em-intro__grid{grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr);gap:clamp(3rem,7vw,7rem);align-items:center}
+.em-intro__copy{max-width:620px}
+.em-intro h2{font-size:clamp(3.2rem,5.15vw,5.75rem);line-height:1.02;margin:1.5rem 0 2rem;max-width:12ch}
+.em-intro__copy>p:not(.eyebrow){max-width:53ch;font-size:.97rem;line-height:1.81;color:#55665b;margin-bottom:1.2rem}
+.em-intro__copy>p.lede{font-size:clamp(1.14rem,1.55vw,1.34rem);color:#2c4032;line-height:1.58;margin-bottom:1.5rem}
+.em-intro__copy .em-link{margin-top:.7rem;color:#304e3b}
+.em-intro__visual{margin:0}
+.em-intro__image{height:clamp(450px,50vw,690px);background-image:url('../images/elegant-massage-warm-oil-cinematic.webp');background-position:center 48%;background-size:cover;filter:saturate(.78) contrast(1.035);border-radius:1px}
+.em-intro__visual:after{display:none}
+.em-intro__visual figcaption{letter-spacing:.115em;font-size:.6rem;color:#7a8277}
+/* Collection head: tight hierarchy, deliberate baseline */
+.em-treatments{padding-top:clamp(5rem,7.5vw,8rem)}
+.em-section-head{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(3rem,8vw,9rem);align-items:end;margin-bottom:clamp(3.6rem,6vw,6rem)}
+.em-section-head h2{font-size:clamp(3.9rem,6.35vw,6.8rem);line-height:1.01;margin:.8rem 0 0;max-width:12ch}
+.em-section-head>p{font-size:clamp(1rem,1.3vw,1.13rem);line-height:1.72;max-width:33ch;margin:0 0 .4rem;color:#647268}
+.em-treatment-feature--body,.em-treatment-feature--combination{min-height:clamp(590px,73svh,820px);padding:clamp(4.2rem,8.5vw,8rem) var(--gutter)}
+.em-treatment-feature h3{font-size:clamp(3.6rem,5.6vw,6.7rem);letter-spacing:-.042em;line-height:1.02;margin:0 0 1.4rem;max-width:13ch}
+.em-treatment-feature__index{font-size:.64rem;letter-spacing:.16em;margin-bottom:clamp(1.1rem,2.5vw,2.1rem)}
+.em-treatment-feature__copy p{font-size:clamp(.99rem,1.23vw,1.13rem);line-height:1.75;max-width:43ch;color:#f1eee7}
+.em-treatment-feature--body:before,.em-treatment-feature--combination:before{background:linear-gradient(90deg,rgba(0,0,0,.72),rgba(0,0,0,.37) 52%,rgba(0,0,0,.06) 92%),linear-gradient(0deg,rgba(0,0,0,.45),transparent 57%)}
+.em-treatment-feature--body .em-treatment-feature__image{background-position:58% 52%}
+.em-treatment-feature--foot{grid-template-columns:49% 51%;min-height:clamp(530px,69svh,760px);background:#eeeae1}
+.em-treatment-feature--foot .em-treatment-feature__copy{padding:clamp(3rem,5.6vw,6.5rem) clamp(2rem,5.6vw,6rem) clamp(3rem,5.6vw,6rem) var(--gutter)}
+.em-treatment-feature--foot h3{font-size:clamp(3.3rem,5.1vw,5.9rem)}
+.em-treatment-feature--foot .em-treatment-feature__image{min-height:530px;filter:saturate(.82)}
+.em-treatment-feature--foot .em-treatment-feature__copy p{color:#546355}
+.em-treatment-feature--combination{min-height:clamp(555px,67svh,770px)}
+.em-treatment-feature--combination .em-treatment-feature__copy{padding-bottom:1.7rem}
+/* Short editorial service index, no oversized list of pseudo-heroes */
+.em-other-treatments{padding:clamp(5rem,7vw,7rem) 0;background:#20352a}
+.em-other-treatments__head{margin-bottom:clamp(2.4rem,4vw,4rem);gap:3rem}
+.em-other-treatments__head h3{font-size:clamp(3rem,4.5vw,5.4rem);line-height:1.02;margin:.8rem 0 0;max-width:15ch}
+.em-other-treatments__head>p{font-size:1rem;max-width:31ch;color:#cad4c9;line-height:1.72}
+.em-other-treatment{grid-template-columns:2.7rem minmax(0,1.2fr) minmax(0,1fr) 126px 1.5rem;min-height:132px;padding:.9rem 0;gap:clamp(.8rem,2.5vw,2.4rem)}
+.em-other-treatment__name{font-size:clamp(2rem,3vw,3.45rem);letter-spacing:-.035em}
+.em-other-treatment__description{font-size:.81rem;line-height:1.5}
+.em-other-treatment__image{height:94px;filter:saturate(.84)}
+.em-other-treatment__arrow{font-size:1.35rem}
+.em-other-treatments__footer{margin-top:2.1rem}
+/* One calm editorial selection guide replaces 3 giant, repeated photo chapters */
+.em-pause{background:#e9e9e0;color:#23372a;padding:clamp(5rem,8vw,8rem) 0}
+.em-pause__layout{display:grid;grid-template-columns:minmax(0,.93fr) minmax(0,1.07fr);gap:clamp(3rem,7.3vw,8rem);align-items:center}
+.em-pause__photo{min-height:clamp(520px,49vw,720px);background:#425547 url('../images/elegant-massage-relaxation-atmosphere-cinematic.webp') center/cover no-repeat;filter:saturate(.75);position:relative}
+.em-pause__content{max-width:615px}
+.em-pause__heading h2{font-size:clamp(3.2rem,5vw,5.4rem);line-height:1.04;margin:1rem 0 1.5rem}
+.em-pause__heading>p:not(.eyebrow){font-size:1rem;line-height:1.73;max-width:45ch;color:#5e6b60;margin:0 0 2.4rem}
+.em-pause__steps{border-top:1px solid #526b5940}
+.em-pause__step{display:grid;grid-template-columns:2.4rem 1fr;gap:1.4rem;border-bottom:1px solid #526b5940;padding:1.25rem 0}
+.em-pause__number{font-size:.68rem;font-weight:600;letter-spacing:.14em;color:#718677;padding-top:.34rem}
+.em-pause__step h3{font-size:clamp(1.6rem,2.2vw,2.1rem);line-height:1.1;letter-spacing:-.025em;margin:0 0 .35rem}
+.em-pause__step p{font-size:.88rem;line-height:1.62;margin:0;max-width:49ch;color:#607065}
+.em-pause__content>.em-link{margin-top:2rem}
+/* Substantiated location: keep real photographic proof, not an invented luxury spa */
+.em-place{min-height:clamp(560px,70svh,760px);grid-template-columns:52% 48%;background:#294235}
+.em-place__photograph{min-height:550px;background-position:center 47%;filter:saturate(.87)}
+.em-place__content{padding:clamp(3rem,5vw,6rem)}
+.em-place h2{font-size:clamp(3.25rem,4.7vw,5.6rem);line-height:1.04;margin:1.15rem 0}
+.em-place p:not(.eyebrow){font-size:.97rem;line-height:1.75}
+.em-place .em-place__source{opacity:.72}
+/* Questions: visual hierarchy through borders rather than inflated typography */
+.em-practical{padding:clamp(5rem,8vw,8rem) 0}
+.em-practical__grid{grid-template-columns:.83fr 1.17fr;gap:clamp(2.8rem,7vw,7rem)}
+.em-practical h2{font-size:clamp(3.2rem,4.6vw,5.4rem);line-height:1.05}
+.em-practical__questions details{padding:1.4rem 0}
+.em-practical__questions summary{font-size:clamp(1.26rem,1.85vw,1.75rem);line-height:1.23}
+.em-practical__questions details p{font-size:.95rem}
+/* A single well-scaled conversion scene */
+.em-final-booking{min-height:clamp(550px,67svh,730px)}
+.em-final-booking h2{font-size:clamp(3.8rem,6.1vw,6.8rem);line-height:1.01}
+.em-final-booking p:not(.eyebrow){font-size:1.04rem;line-height:1.68}
+/* Service pages: tone down overscaled h1/h2 and avoid a cliff between sections */
+body[data-page] .hero:not(.hero--home){min-height:clamp(570px,73svh,760px);padding-top:clamp(9rem,15vh,12rem);padding-bottom:clamp(3.5rem,7vh,6rem)}
+body[data-page] .hero:not(.hero--home) h1{font-size:clamp(3.45rem,5.55vw,6.2rem);line-height:1.035;max-width:14ch;letter-spacing:-.045em}
+body[data-page] .hero .lede{font-size:clamp(1rem,1.26vw,1.18rem);line-height:1.67;max-width:49ch}
+body[data-page] .section{padding:clamp(4.6rem,7vw,7rem) 0}
+body[data-page] .section.section--white>.container.split h2{font-size:clamp(3rem,4.5vw,5.15rem);line-height:1.045}
+body[data-page] .content-layout aside h2{font-size:clamp(2.7rem,3.65vw,4.3rem);line-height:1.07}
+body[data-page] .content-layout article{padding:clamp(2rem,3.3vw,3.1rem) 0}
+body[data-page] .content-layout article h3{font-size:clamp(2.2rem,3vw,3.5rem);line-height:1.085}
+body[data-page] .content-layout article .lede{font-size:1.01rem;line-height:1.78}
+body[data-page] .scene--portrait{min-height:480px}
+body[data-page] .closing{min-height:clamp(480px,60svh,670px)}
+body[data-page] .closing h2{font-size:clamp(3.5rem,5.5vw,6rem)}
+/* CONTACT: reality-based storefront lettering competes with H1, so soften only background */
+body[data-page="contact"] .hero:before{background:linear-gradient(90deg,rgba(0,0,0,.79),rgba(0,0,0,.48) 58%,rgba(0,0,0,.13)),linear-gradient(0deg,rgba(0,0,0,.64),transparent 50%)}
+@media(max-width:1024px){
+ .em-intro__grid{gap:clamp(2.5rem,5vw,5rem)}
+ .em-other-treatment{grid-template-columns:2.2rem minmax(0,1.1fr) minmax(0,.7fr) 95px 1.3rem}
+ .em-other-treatment__image{height:78px}
+ .em-pause__layout{gap:3.2rem}
+}
+@media(max-width:870px){
+ .em-intro__grid,.em-pause__layout{grid-template-columns:1fr;gap:3rem}
+ .em-intro__copy,.em-pause__content{max-width:690px}
+ .em-intro__image{height:min(65svh,570px)}
+ .em-pause__photo{order:2;min-height:400px;max-height:500px}
+ .em-pause__content{order:1}
+ .em-section-head{grid-template-columns:1fr;gap:1.1rem}
+ .em-section-head>p{max-width:46ch}
+ .em-treatment-feature--foot{grid-template-columns:1fr;min-height:0}
+ .em-treatment-feature--foot .em-treatment-feature__copy{padding:4rem var(--gutter)}
+ .em-treatment-feature--foot .em-treatment-feature__image{min-height:57svh}
+ .em-other-treatment{grid-template-columns:2rem 1fr 104px 1.5rem;gap:1.2rem}
+ .em-other-treatment__description{display:none}
+ .em-place{grid-template-columns:1fr}
+ .em-place__photograph{min-height:57svh}
+ .em-place__content{padding:4rem var(--gutter)}
+ .em-practical__grid{grid-template-columns:1fr}
+ body[data-page] .section.section--white>.container.split{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ body .header-row{min-height:74px}
+ .site-header .brand{font-size:1.48rem}
+ .site-header .header-cta{min-height:36px;padding:.42rem .65rem;font-size:.58rem}
+ .elegant-home .hero--home{padding-top:9rem;padding-bottom:6rem;align-items:flex-end}
+ .elegant-home .hero h1{font-size:clamp(3.55rem,12.25vw,4.85rem);line-height:1.015;letter-spacing:-.05em;margin:.85rem 0 1rem}
+ .elegant-home .hero .lede{font-size:1.02rem;line-height:1.65}
+ .elegant-home .hero .actions{margin-top:1.35rem}
+ .em-intro{padding:4.4rem 0 4.8rem}
+ .em-intro h2{font-size:clamp(3.0rem,9.5vw,4.4rem);line-height:1.06;margin:1rem 0 1.5rem}
+ .em-intro__image{height:460px}
+ .em-treatments{padding-top:4.6rem}
+ .em-section-head{margin-bottom:3rem}
+ .em-section-head h2{font-size:clamp(3.3rem,10.5vw,4.8rem)}
+ .em-treatment-feature--body,.em-treatment-feature--combination{min-height:clamp(610px,76svh,780px);padding:4.5rem var(--gutter)}
+ .em-treatment-feature h3{font-size:clamp(3.05rem,9.5vw,4.7rem);line-height:1.055}
+ .em-treatment-feature__copy p{font-size:1rem;line-height:1.68}
+ .em-treatment-feature--foot .em-treatment-feature__copy{padding:4rem var(--gutter)}
+ .em-treatment-feature--foot .em-treatment-feature__image{min-height:58svh}
+ .em-treatment-feature--combination .em-treatment-feature__image{background-position:54% center}
+ .em-other-treatments{padding:4.4rem 0}
+ .em-other-treatments__head{margin-bottom:2.3rem}
+ .em-other-treatments__head h3{font-size:clamp(2.95rem,8.8vw,4rem)}
+ .em-other-treatment{min-height:108px;padding:1rem 0}
+ .em-other-treatment__name{font-size:clamp(1.92rem,7.3vw,2.7rem)}
+ .em-pause{padding:4.6rem 0}
+ .em-pause__heading h2{font-size:clamp(3rem,9.3vw,4.2rem)}
+ .em-pause__photo{min-height:350px}
+ .em-pause__step{padding:1.2rem 0;gap:1rem;grid-template-columns:1.8rem 1fr}
+ .em-pause__step h3{font-size:1.65rem}
+ .em-place__photograph{min-height:47svh}
+ .em-place__content{padding:4rem var(--gutter)}
+ .em-place h2{font-size:clamp(3rem,9.4vw,4.45rem)}
+ .em-practical{padding:4.5rem 0}
+ .em-practical h2{font-size:clamp(3rem,9.3vw,4.4rem)}
+ .em-practical__questions summary{font-size:1.4rem}
+ .em-final-booking{min-height:70svh}
+ .em-final-booking h2{font-size:clamp(3.5rem,10.2vw,4.8rem)}
+ body[data-page] .hero:not(.hero--home){min-height:clamp(530px,75svh,740px);padding:9rem var(--gutter) 4.5rem}
+ body[data-page] .hero:not(.hero--home) h1{font-size:clamp(2.8rem,10.4vw,4.15rem);max-width:12ch}
+ body[data-page] .section.section--white>.container.split h2{font-size:clamp(2.8rem,9vw,4rem)}
+ body[data-page] .content-layout article h3{font-size:clamp(2rem,7.8vw,3.25rem)}
+ body[data-page] .scene--portrait{min-height:390px}
+}
+@media(prefers-reduced-motion:reduce){
+ .em-pause__photo{filter:saturate(.75)}
+}
+
+/* Documentary and illustrative photo roles deliberately differ between hero and detail.
+   Prevent adjacent identical images on About and Body Massage. */
+body[data-page="about"] .scene--room.scene--portrait{
+  background-image:url('../images/elegant-massage-flower-mound-waiting-area.webp');
+  background-position:54% center;
+}
+body[data-page="body"] .scene--massage.scene--portrait{
+  background-image:url('../images/elegant-massage-warm-oil-cinematic.webp');
+  background-position:center;
+}

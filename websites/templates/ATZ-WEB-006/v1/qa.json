@@ -1,0 +1,262 @@
+[
+  {
+    "file": "index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "about/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-menu/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/body-massage/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/chair-massage/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/combination-massage/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/couples-massage/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/foot-reflexology/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/four-hands-massage/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "massage-services/specialty-techniques/index.html",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "about/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-menu/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/body-massage/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/chair-massage/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/combination-massage/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/couples-massage/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/foot-reflexology/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/four-hands-massage/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "massage-services/specialty-techniques/index.html",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "about/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-menu/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/body-massage/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/chair-massage/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/combination-massage/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/couples-massage/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/foot-reflexology/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/four-hands-massage/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "massage-services/specialty-techniques/index.html",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "about/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "contact/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "gallery/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-menu/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/body-massage/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/chair-massage/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/combination-massage/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/couples-massage/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/foot-reflexology/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/four-hands-massage/index.html",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "file": "massage-services/specialty-techniques/index.html",
+    "width": 1440,
+    "pass": true
+  }
+]

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+/* ATREZZO / Elegant Massage — Agate colour system · 2026-11-03
+   Sampled from the client's supplied agate palette. Keep photography truthful;
+   theme changes only UI surfaces, text, controls, rules and overlays.
+   Palette: Ocean #254460 / Aqua #53CBD9 / Lime #DDEBC8 /
+            Mint #CCECC7 / Sage #93BA9D / White #FFFFFF.
+   WCAG: White/Ocean 10.12:1; Ocean/Aqua 5.26:1; Ocean/Sage 4.70:1.
+*/
+:root {
+  --agate-ocean: #254460;
+  --agate-aqua: #53CBD9;
+  --agate-lime: #DDEBC8;
+  --agate-mint: #CCECC7;
+  --agate-sage: #93BA9D;
+  --agate-white: #FFFFFF;
+  /* Home semantic tokens, retained names to avoid replacing layout CSS. */
+  --paper: var(--agate-white);
+  --ink: var(--agate-ocean);
+  --garnet: var(--agate-ocean);
+  --garnet-deep: #1C354D;
+  --stone: var(--agate-lime);
+  --rose: var(--agate-aqua);
+  /* Existing internal pages keep their markup and page-specific photography. */
+  --forest: var(--agate-ocean);
+  --sage: var(--agate-ocean);
+  --ivory: var(--agate-white);
+  --linen: var(--agate-mint);
+  --amber: var(--agate-aqua);
+  --em-night: #1C354D;
+  --em-black: #152D42;
+  --em-forest: var(--agate-ocean);
+  --em-ivory: var(--agate-white);
+  --em-paper: var(--agate-white);
+  --em-bronze: var(--agate-aqua);
+  --em-muted: var(--agate-ocean);
+  --em-edge: var(--agate-sage);
+  --em-type-dark: var(--agate-ocean);
+  --em-type-subtle: var(--agate-ocean);
+  --em-paper-warm: var(--agate-lime);
+  --em-line: #93BA9D80;
+}
+
+/* Shared focus visibility and legibility. Never place white text on Aqua. */
+a:focus-visible, button:focus-visible, select:focus-visible,
+summary:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--agate-ocean);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px var(--agate-aqua);
+}
+
+/* HOME — keep all approved photography, structure and Codrops motion. */
+.touch-home {background:var(--agate-white);color:var(--agate-ocean)}
+.touch-home .glass-header {
+  background:rgba(23,48,71,.83);color:var(--agate-white);
+  border-color:rgba(204,236,199,.29);
+  -webkit-backdrop-filter:blur(21px) saturate(115%);
+  backdrop-filter:blur(21px) saturate(115%);
+}
+.touch-home .glass-header.is-scrolled {background:rgba(24,53,77,.93)}
+.touch-home .wordmark small {color:var(--agate-mint)}
+.touch-home .main-nav a {color:var(--agate-white)}
+.touch-home .main-nav a:hover {color:var(--agate-aqua)}
+.touch-home .glass-header__book,
+.touch-home .button--garnet,
+.touch-home .chapter__book {
+  background:var(--agate-aqua);
+  border-color:var(--agate-aqua);
+  color:var(--agate-ocean);
+}
+.touch-home .glass-header__book:hover,
+.touch-home .button--garnet:hover,
+.touch-home .chapter__book:hover {background:var(--agate-mint);border-color:var(--agate-mint);color:var(--agate-ocean)}
+.touch-home .intro {background:var(--agate-ocean)}
+.touch-home .intro__scrim {
+  background:linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.37) 58%,rgba(0,0,0,.22)),
+             linear-gradient(0deg,rgba(0,0,0,.68),transparent 29%,transparent 69%,rgba(0,0,0,.32));
+}
+.touch-home .eyebrow--light {color:var(--agate-mint)}
+.touch-home .intro__content > p:not(.eyebrow) {color:var(--agate-white)}
+.touch-home .intro__label {color:var(--agate-mint)}
+.touch-home .intro__film video {background-color:var(--agate-ocean)}
+.touch-home .intro__film {background-color:var(--agate-ocean)}
+.touch-home .eyebrow,
+.touch-home .chapter-jump label,
+.touch-home .price-editorial__head,
+.touch-home .price-editorial__external,
+.touch-home .text-arrow {color:var(--agate-ocean)}
+.touch-home .text-arrow {border-bottom-color:var(--agate-aqua)}
+.touch-home .treatments,
+.touch-home .price-editorial,
+.touch-home .visit,
+.touch-home .at-grid {background:var(--agate-white);color:var(--agate-ocean)}
+.touch-home .treatments__opening>p:not(.eyebrow),
+.touch-home .price-editorial__intro>p:not(.eyebrow),
+.touch-home .price-editorial__note,
+.touch-home .real-place__header>div:last-child p,
+.touch-home .real-place__source,
+.touch-home .real-place__gallery:after {color:var(--agate-ocean)}
+.touch-home .chapter-jump>span {color:var(--agate-ocean)}
+.touch-home .chapter__index,
+.touch-home .chapter__duration span {color:var(--agate-mint)}
+/* Natural photographic colour: true neutral-black shading, never ocean-blue. */
+.touch-home .chapter__shade {
+  background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.42) 62%,rgba(0,0,0,.09)),
+             linear-gradient(0deg,rgba(0,0,0,.68),transparent 70%);
+}
+.touch-home .chapter--chair .chapter__shade {
+  background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.44) 62%,rgba(0,0,0,.09)),
+             linear-gradient(0deg,rgba(0,0,0,.68),transparent 70%);
+}
+.touch-home .real-place {background:var(--agate-lime)}
+.touch-home .real-place__photo {background:var(--agate-sage)}
+.touch-home .real-place__photo figcaption {background:rgba(30,55,78,.87);color:var(--agate-white)}
+.touch-home .footer {background:var(--agate-ocean);color:var(--agate-white)}
+.touch-home .footer__book,
+.touch-home .footer__nav a:hover,
+.touch-home .footer__contact a:hover {color:var(--agate-aqua)}
+.touch-home .footer__book {border-bottom-color:var(--agate-aqua)}
+.touch-home .footer__body p,
+.touch-home .footer__contact span,
+.touch-home .footer__bottom {color:var(--agate-mint)}
+.touch-home .at-grid__item {background:var(--agate-lime)}
+.touch-home .at-mask-stage {background:var(--agate-ocean)}
+.touch-home .at-mask-progress__fill {background:var(--agate-aqua)}
+/* On narrow screens, a white translucent legibility zone follows moving photos. */
+@media (max-width:1023px) and (min-height:540px) and (prefers-reduced-motion:no-preference) {
+  .touch-home .at-grid-active .at-grid__content::before {
+    content:"";position:absolute;z-index:-1;inset:22% -12px;
+    background:radial-gradient(ellipse 76% 59% at 50% 50%,
+      rgba(255,255,255,.96) 0%,rgba(255,255,255,.89) 53%,rgba(255,255,255,0) 100%);
+    pointer-events:none;
+  }
+}
+
+/* EXISTING INTERNAL PAGES — retheme without changing their composition or media. */
+body:not(.touch-home) {background:var(--agate-white);color:var(--agate-ocean)}
+body:not(.touch-home) .section--white,
+body:not(.touch-home) .em-treatments,
+body:not(.touch-home) .em-practical {background:var(--agate-white);color:var(--agate-ocean)}
+body:not(.touch-home) .em-intro,
+body:not(.touch-home) .em-pause {background:var(--agate-lime);color:var(--agate-ocean)}
+body:not(.touch-home) .contact-form-section {background:var(--agate-mint)}
+body:not(.touch-home) .contact-form {background:var(--agate-white);border:1px solid var(--agate-sage)}
+body:not(.touch-home) .contact-form-disclaimer {background:var(--agate-lime);border-left-color:var(--agate-ocean)}
+body:not(.touch-home) .section--dark,
+body:not(.touch-home) .em-other-treatments,
+body:not(.touch-home) .em-place,
+body:not(.touch-home) .closing,
+body:not(.touch-home) .site-footer {background:var(--agate-ocean);color:var(--agate-white)}
+body:not(.touch-home) .facts-ribbon {background:var(--agate-sage);color:var(--agate-ocean)}
+body:not(.touch-home) .facts-ribbon__grid .eyebrow {color:var(--agate-ocean)}
+body:not(.touch-home) .hero {background-color:var(--agate-ocean)}
+/* INTERNAL HERO SYSTEM: neutral-black photographic veil, never ocean-blue.
+   One legible composition across Services, treatments, Menu, About, Gallery, Contact. */
+body:not(.touch-home) .hero::before,
+body:not(.touch-home) .hero:not(.hero--home)::before {
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.55) 47%,rgba(0,0,0,.17) 100%),
+    linear-gradient(0deg,rgba(0,0,0,.64),transparent 52%),
+    linear-gradient(180deg,rgba(0,0,0,.24),transparent 32%);
+}
+body:not(.touch-home) .hero .lede {color:var(--agate-white)}
+body:not(.touch-home) .site-header,
+body:not(.touch-home) .site-header.scrolled,
+body:not(.touch-home) .site-header.menu-open,
+body:not(.touch-home) .site-header:not(.scrolled):not(.menu-open) {
+  background:rgba(23,48,71,.9);color:var(--agate-white);
+  border-bottom-color:rgba(204,236,199,.3);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+}
+body:not(.touch-home) .site-header .brand,
+body:not(.touch-home) .site-header .navigation>a,
+body:not(.touch-home) .site-header .navigation summary {color:var(--agate-white)}
+body:not(.touch-home) .site-header .brand small {color:var(--agate-mint)}
+body:not(.touch-home) .site-header .navigation>a:hover,
+body:not(.touch-home) .site-header .navigation summary:hover {color:var(--agate-aqua)}
+body:not(.touch-home) .site-header .header-cta,
+body:not(.touch-home) .site-header.scrolled .header-cta,
+body:not(.touch-home) .site-header.menu-open .header-cta {
+  background:var(--agate-aqua);color:var(--agate-ocean);
+  border-color:var(--agate-aqua);
+}
+body:not(.touch-home) .site-header .header-cta:hover,
+body:not(.touch-home) .site-header.scrolled .header-cta:hover,
+body:not(.touch-home) .site-header.menu-open .header-cta:hover {
+  background:var(--agate-mint);border-color:var(--agate-mint);color:var(--agate-ocean);
+}
+body:not(.touch-home) .dropdown {background:var(--agate-white);color:var(--agate-ocean);border-color:var(--agate-sage)}
+body:not(.touch-home) .dropdown a {color:var(--agate-ocean)}
+body:not(.touch-home) .dropdown a:hover {background:var(--agate-lime);color:var(--agate-ocean)}
+body:not(.touch-home) .button {background:var(--agate-ocean);border-color:var(--agate-ocean);color:var(--agate-white)}
+body:not(.touch-home) .button:hover {background:#1C354D;border-color:#1C354D;color:var(--agate-white)}
+body:not(.touch-home) .button--light {background:var(--agate-aqua);border-color:var(--agate-aqua);color:var(--agate-ocean)}
+body:not(.touch-home) .button--light:hover {background:var(--agate-mint);border-color:var(--agate-mint);color:var(--agate-ocean)}
+body:not(.touch-home) .button--outline {background:transparent;border-color:var(--agate-white);color:var(--agate-white)}
+body:not(.touch-home) .button--outline:hover {background:var(--agate-white);color:var(--agate-ocean)}
+body:not(.touch-home) .em-mobile-booking {background:var(--agate-ocean);color:var(--agate-white)}
+body:not(.touch-home) .em-mobile-booking span {color:var(--agate-aqua)}
+body:not(.touch-home) .em-link,
+body:not(.touch-home) .em-practical__questions a,
+body:not(.touch-home) .em-pause__step h3,
+body:not(.touch-home) .em-pause__number,
+body:not(.touch-home) .em-section-head h2,
+body:not(.touch-home) .content-layout article h3,
+body:not(.touch-home) .price-item strong {color:var(--agate-ocean)}
+body:not(.touch-home) .em-other-treatment__number,
+body:not(.touch-home) .em-other-treatment__arrow,
+body:not(.touch-home) .site-footer a:hover {color:var(--agate-aqua)}
+body:not(.touch-home) .em-other-treatment__description,
+body:not(.touch-home) .em-other-treatments__head>p,
+body:not(.touch-home) .em-place p:not(.eyebrow),
+body:not(.touch-home) .em-place .em-place__source,
+body:not(.touch-home) .footer-bottom {color:var(--agate-mint)}
+body:not(.touch-home) .em-pause__heading>p:not(.eyebrow),
+body:not(.touch-home) .em-pause__step p,
+body:not(.touch-home) .em-intro__copy>p:not(.eyebrow),
+body:not(.touch-home) .em-intro__copy>p.lede,
+body:not(.touch-home) .content-layout article .lede,
+body:not(.touch-home) .em-section-head>p {color:var(--agate-ocean)}
+body:not(.touch-home) .price-item {border-top-color:var(--agate-sage)}
+body:not(.touch-home) .em-practical__questions details {border-color:var(--agate-sage)}
+body:not(.touch-home) .em-place__photograph {background-color:var(--agate-sage)}
+body:not(.touch-home) .em-treatment-feature--foot {background:var(--agate-lime);color:var(--agate-ocean)}
+body:not(.touch-home) .em-treatment-feature--foot .em-treatment-feature__copy p {color:var(--agate-ocean)}
+body:not(.touch-home) .gallery-photo img {background-color:var(--agate-lime)}
+body:not(.touch-home) .site-footer .footer-grid h3 {color:var(--agate-white)}
+body:not(.touch-home) .em-other-treatments .em-link,
+body:not(.touch-home) .em-place .em-link {color:var(--agate-aqua)}
+/* Visual stacking fix: when returning to scrollY=0, the incoming Sticky Grid
+   must not bleed over the introductory film before its section begins. */
+.touch-home .intro {z-index:3}
+
+/* Shared typography adapted from the Thai Massage visual specification. */
+:root{--serif:'Playfair Display',Georgia,serif;--sans:'Open Sans',Arial,Helvetica,sans-serif}
+.touch-home,body:not(.touch-home){font-family:var(--sans)}
+.touch-home :is(h1,h2,h3,.wordmark span,.footer__brand,.at-grid__title){font-family:var(--serif)}
+body:not(.touch-home) :is(h1,h2,h3,.brand,.footer-brand,.site-footer h3){font-family:var(--serif)}
+.touch-home .intro h1{font-size:clamp(3.15rem,9vw,9rem);line-height:.96;letter-spacing:-.055em}
+.touch-home .at-grid__title{letter-spacing:-.055em;line-height:1.05}
+.touch-home .wordmark span{font-size:clamp(1.45rem,2vw,1.85rem);font-style:italic}
+@media(max-width:700px){.touch-home .intro h1{font-size:clamp(3.05rem,11.2vw,4.8rem)}}
+
+/* Internal pages only — unified reading rhythm from hero to real content.
+   No sticky/pinned scroll, no page-snap and no animations added to approved Home. */
+body[data-page] .hero:not(.hero--home) .hero__background{
+  transform:scale(var(--at-subpage-hero-scale,1.015));
+  transform-origin:50% 52%;
+  will-change:transform;
+}
+body[data-page] .hero:not(.hero--home) .hero__copy{
+  max-width:min(920px,100%);
+}
+body[data-page] .content-layout aside{
+  scroll-margin-top:115px;
+}
+body[data-page] :is(.section,.closing,.service-row,.price-item){
+  scroll-margin-top:clamp(90px,12vh,118px);
+}
+body[data-page] .em-scene-enter{
+  opacity:.88;
+  transform:translate3d(0,17px,0) scale(.992);
+  transition:opacity .9s cubic-bezier(.22,1,.36,1),
+             transform .95s cubic-bezier(.22,1,.36,1);
+}
+body[data-page] .em-scene-enter.em-scene-visible{
+  opacity:1;
+  transform:translate3d(0,0,0) scale(1);
+}
+body[data-page="services"] a.service-row{
+  transition:background .25s ease,padding-left .3s ease;
+}
+body[data-page="services"] a.service-row:hover,
+body[data-page="services"] a.service-row:focus-visible{
+  background:rgba(221,235,200,.27);
+}
+@media (max-width:870px){
+  body[data-page] .content-layout aside{
+    position:static;
+  }
+}
+@media (max-width:700px){
+  body:not(.touch-home) .hero:not(.hero--home)::before{
+    background:
+      linear-gradient(0deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.65) 45%,rgba(0,0,0,.34) 100%),
+      linear-gradient(90deg,rgba(0,0,0,.26),transparent 85%);
+  }
+  body[data-page] .hero:not(.hero--home) .hero__background{
+    transform:scale(var(--at-subpage-hero-scale,1.01));
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  body[data-page] .hero:not(.hero--home) .hero__background{
+    transform:none!important;will-change:auto;
+  }
+  body[data-page] .em-scene-enter{
+    transition:none!important;transform:none!important;opacity:1!important;
+  }
+}
+
+/* Small-screen internal header: preserve all three controls without
+   clipping the Menu label. The icon-only button retains its aria-label. */
+@media(max-width:430px){
+  body[data-page] .site-header .header-row{
+    padding-inline:clamp(12px,3.2vw,16px);
+    gap:clamp(6px,1.65vw,10px);
+  }
+  body[data-page] .site-header .brand{
+    font-size:clamp(1.19rem,5.65vw,1.38rem);
+    flex:0 1 auto;min-width:0;
+  }
+  body[data-page] .site-header .brand small{
+    font-size:.40rem;letter-spacing:.14em;
+  }
+  body[data-page] .site-header .header-cta{
+    min-height:37px;padding:.43rem .57rem;
+    font-size:.55rem;letter-spacing:.05em;
+    flex:0 0 auto;
+  }
+  body[data-page] .site-header .toggle{
+    width:37px;height:39px;min-width:37px;
+    padding:0;display:inline-flex;align-items:center;justify-content:center;
+    flex:0 0 37px;gap:0;font-size:0;letter-spacing:0;
+    color:#fff;
+  }
+  body[data-page] .site-header .toggle::before{
+    width:19px;height:13px;flex:0 0 19px;
+    border-top:2px solid currentColor;border-bottom:2px solid currentColor;
+  }
+}

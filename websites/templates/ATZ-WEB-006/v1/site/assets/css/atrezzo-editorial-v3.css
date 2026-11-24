@@ -1,0 +1,267 @@
+/* ATREZZO STUDIOS — ELEGANT MASSAGE / EDITORIAL EXPERIENCE V3
+   Own identity: forest / charcoal / warm ivory / restrained bronze.
+   Uses Ranchman/Thaissage motion principles, NOT their typography, colors,
+   services or 6-chapter template. Native scrolling and reduced-motion preserved.
+   Sources: actual Elegant Massage site + Setmore; no fabricated reviews/staff.
+*/
+:root{--em-night:#101b16;--em-black:#090f0c;--em-forest:#294638;--em-ivory:#f6f1e9;--em-paper:#fffcf7;--em-bronze:#b7966b;--em-muted:#657168;--em-edge:#c9c6bc}
+body{background:var(--em-ivory);color:#28342b}
+body h1,body h2,body h3{letter-spacing:-.048em}
+body h2 em,body h3 em{font-weight:300;font-style:italic}
+body .eyebrow{letter-spacing:.19em;font-size:.67rem}
+body .button{border-radius:999px;min-height:54px;padding:.85rem 1.75rem;gap:1.15rem;font-size:.7rem;letter-spacing:.105em;transition:transform .3s ease,background .3s ease,color .3s ease,box-shadow .3s ease}
+body .button:hover{transform:translateY(-2px);box-shadow:0 12px 35px #00000020}
+body .button--light:hover{color:var(--em-black);background:#fff}
+body .button:focus-visible,body .em-link:focus-visible,body .em-photo-link:focus-visible{outline:3px solid var(--em-bronze);outline-offset:4px}
+.site-header{background:linear-gradient(180deg,rgba(8,16,12,.62),rgba(8,16,12,.05));border-bottom:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.site-header.scrolled,.site-header.menu-open{background:rgba(246,241,233,.97);border-bottom-color:#29463827;color:var(--em-night);box-shadow:0 8px 35px #081a1017}
+.header-row{min-height:90px}
+.site-header .brand{font-size:clamp(1.65rem,2vw,2.25rem);letter-spacing:-.02em}
+.site-header .brand small{letter-spacing:.18em;opacity:.82}
+.site-header .navigation{gap:clamp(.9rem,1.5vw,1.75rem)}
+.site-header .navigation>a,.site-header .navigation summary{font-size:.7rem;letter-spacing:.105em}
+.site-header .navigation a:hover,.site-header .navigation summary:hover{color:var(--em-bronze)}
+.site-header .header-cta{border:1px solid rgba(255,255,255,.75);border-radius:999px;min-height:43px;display:inline-flex;align-items:center;padding:.6rem 1.25rem;transition:background .25s ease,color .25s ease,border-color .25s ease}
+.site-header .header-cta:hover{background:#f6f1e9;color:#102419}
+.site-header.scrolled .header-cta,.site-header.menu-open .header-cta{border-color:var(--em-forest)}
+.site-header.scrolled .header-cta:hover,.site-header.menu-open .header-cta:hover{background:var(--em-forest);color:#fff}
+.dropdown{border-radius:10px;box-shadow:0 25px 80px #0f231c2c;border:1px solid #29463820;padding:.8rem}
+.dropdown a{border-radius:5px}
+@media(min-width:871px) and (prefers-reduced-motion:no-preference){
+.site-header{transition:transform .48s cubic-bezier(.2,.8,.2,1),background .35s,color .35s,border-color .35s}
+.site-header.em-header-hidden{transform:translateY(-110%)}
+}
+@media(max-width:870px){
+.site-header{background:rgba(18,36,26,.65)}
+.site-header.menu-open{background:rgba(246,241,233,.99)}
+.header-row{min-height:74px}
+.site-header .navigation{gap:.75rem}
+.site-header .header-cta{font-size:.6rem;min-height:38px;padding:.45rem .75rem}
+.site-header .toggle{display:inline-flex;align-items:center;gap:.5rem;font-size:.67rem;letter-spacing:.1em;font-weight:700;text-transform:uppercase}
+.site-header .toggle::before{content:"";width:17px;height:12px;border-top:2px solid currentColor;border-bottom:2px solid currentColor;display:inline-block}
+.site-header .navigation{top:74px}
+}
+.em-mobile-booking{display:none}
+@media(max-width:720px){
+body{padding-bottom:66px}
+.em-mobile-booking{position:fixed;display:flex;align-items:center;justify-content:space-between;bottom:0;left:0;right:0;z-index:70;min-height:66px;padding:10px 24px;background:#14291f;color:#fff;text-decoration:none;box-shadow:0 -12px 38px #0b191638;letter-spacing:.105em;font-size:.73rem;text-transform:uppercase;font-weight:700;gap:1.5rem}
+.em-mobile-booking span{color:#cfb68d;font-size:1.3rem}
+.em-mobile-booking:focus-visible{outline:3px solid #eac993;outline-offset:-4px}
+}
+/* Hero architecture—clear black gradients, real photography, never framed. */
+.hero{background:#192c21}
+.hero::before{background:linear-gradient(90deg,rgba(0,0,0,.81) 0%,rgba(0,0,0,.55) 42%,rgba(0,0,0,.17) 75%,rgba(0,0,0,.12) 100%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 44%),linear-gradient(180deg,rgba(0,0,0,.30),transparent 28%)}
+.hero .hero__copy{max-width:850px}
+.hero:not(.hero--home){min-height:78svh;padding-bottom:clamp(4.4rem,9vh,8rem)}
+.hero:not(.hero--home) h1{font-size:clamp(4rem,8vw,9rem);line-height:.96;max-width:13ch;text-wrap:balance}
+.hero:not(.hero--home) .lede{max-width:48ch}
+.hero__background{background-size:cover;background-repeat:no-repeat}
+.hero .text-link{border-color:rgba(255,255,255,.67);color:var(--em-paper)}
+.hero .text-link:hover{border-color:var(--em-bronze);color:#e3ccab}
+/* Elegant home: alternating editorial compositions, unlike Thaissage chapters */
+.elegant-home .hero--home{min-height:100svh;align-items:center;padding:clamp(9rem,17vh,14rem) var(--gutter) clamp(5rem,12vh,8rem)}
+.elegant-home .hero__copy{max-width:880px}
+.elegant-home .hero h1{font-size:clamp(5rem,11vw,11rem);line-height:.91;max-width:9ch;letter-spacing:-.063em;margin:1.6rem 0 1.35rem;text-wrap:balance}
+.elegant-home .hero .lede{max-width:47ch;color:rgba(255,252,247,.91);font-size:clamp(1.05rem,1.65vw,1.3rem)}
+.elegant-home .hero__footnote{display:flex;align-items:center;justify-content:space-between;position:absolute;left:var(--gutter);right:var(--gutter);bottom:clamp(2rem,5vh,4.2rem);font-size:.61rem;letter-spacing:.2em;color:rgba(255,255,255,.85);z-index:3}
+.elegant-home .hero__footnote span:first-child:before{content:"";display:inline-block;width:30px;margin-right:12px;vertical-align:middle;border-top:1px solid #c8b391}
+.elegant-home .hero--home::before{background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.52) 46%,rgba(0,0,0,.15) 82%),linear-gradient(0deg,rgba(0,0,0,.7),transparent 39%),linear-gradient(180deg,rgba(0,0,0,.37),transparent 32%)}
+.em-link,.em-photo-link{display:inline-flex;align-items:center;justify-content:space-between;gap:2.5rem;border-bottom:1px solid currentColor;padding:.85rem 0 .7rem;text-decoration:none;font-size:.72rem;letter-spacing:.13em;font-weight:700;text-transform:uppercase;transition:gap .25s ease,opacity .25s ease}
+.em-link:hover,.em-photo-link:hover{gap:3.1rem;opacity:.78}
+.em-photo-link{color:#fff}
+.em-photo-link span,.em-link span{font-size:1.05rem}
+/* Intro: typography left, portrait editorial detail right, asynchronous asymmetry */
+.em-intro{background:var(--em-ivory);padding:clamp(6rem,11vw,11rem) 0}
+.em-intro__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(3rem,10vw,10rem);align-items:center}
+.em-intro__copy{max-width:605px}
+.em-intro .eyebrow{color:#667d6e}
+.em-intro h2{font-size:clamp(4rem,7.6vw,8.6rem);line-height:.96;margin:2rem 0}
+.em-intro__copy>p:not(.eyebrow){max-width:56ch;color:#5d675e}
+.em-intro__copy>p.lede{color:#293a30}
+.em-intro__visual{margin:0;position:relative}
+.em-intro__image{height:clamp(530px,57vw,850px);background:#28382b url('../images/elegant-massage-massage-touch-detail.webp') center / cover no-repeat;overflow:hidden}
+.em-intro__visual:after{content:"";position:absolute;top:-4%;right:-4%;width:30%;height:22%;border-top:1px solid #b89b71;border-right:1px solid #b89b71;pointer-events:none;opacity:.45}
+.em-intro__visual figcaption{font-size:.62rem;letter-spacing:.16em;color:#637168;text-transform:uppercase;margin-top:1rem}
+/* 3 headline treatments; image is architecture, never 3 identical cards */
+.em-treatments{background:var(--em-paper);padding-top:clamp(6rem,10vw,10rem)}
+.em-section-head{display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:5vw;margin-bottom:clamp(4rem,8vw,8rem)}
+.em-section-head .eyebrow{color:#718673}
+.em-section-head h2{font-size:clamp(4.2rem,9vw,10rem);margin:1.2rem 0 0;line-height:.92}
+.em-section-head>p{max-width:34ch;font-size:clamp(1rem,1.55vw,1.25rem);color:#637067;margin:0 0 .8rem}
+.em-treatment-feature{position:relative;overflow:hidden}
+.em-treatment-feature__index{font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;font-weight:700;display:block;margin-bottom:clamp(1.4rem,3vw,3rem)}
+.em-treatment-feature__copy{position:relative;z-index:2}
+.em-treatment-feature h3{font-size:clamp(4rem,7.7vw,8.5rem);line-height:.91;margin:0 0 1.4rem;letter-spacing:-.055em}
+.em-treatment-feature__copy p{font-size:clamp(1rem,1.35vw,1.16rem);line-height:1.75;max-width:45ch;margin-bottom:1.3rem}
+.em-treatment-feature--body,.em-treatment-feature--combination{min-height:clamp(680px,90svh,1040px);display:flex;align-items:center;padding:clamp(5rem,11vw,10rem) var(--gutter);color:#fff;isolation:isolate;background:var(--em-night)}
+.em-treatment-feature--body .em-treatment-feature__image,.em-treatment-feature--combination .em-treatment-feature__image{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center;transform:scale(var(--em-photo-scale,1.02));will-change:transform}
+.em-treatment-feature--body .em-treatment-feature__image{background-image:url('../images/elegant-massage-body-massage-cinematic.webp');background-position:58% center}
+.em-treatment-feature--combination .em-treatment-feature__image{background-image:url('../images/elegant-massage-combination-batch02-desktop.webp');background-position:center}
+.em-treatment-feature--body:before,.em-treatment-feature--combination:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.79),rgba(0,0,0,.49) 44%,rgba(0,0,0,.12) 83%),linear-gradient(0deg,rgba(0,0,0,.55),transparent 55%)}
+.em-treatment-feature--body .em-treatment-feature__copy,.em-treatment-feature--combination .em-treatment-feature__copy{max-width:775px}
+.em-treatment-feature--foot{display:grid;grid-template-columns:47% 53%;min-height:clamp(640px,78svh,940px);background:#e7e1d6;color:#1a2c22}
+.em-treatment-feature--foot .em-treatment-feature__copy{align-self:center;padding:clamp(3rem,8vw,9rem) clamp(2rem,6vw,8rem) clamp(3rem,7vw,8rem) var(--gutter)}
+.em-treatment-feature--foot h3{font-size:clamp(3.7rem,6.5vw,7.9rem)}
+.em-treatment-feature--foot p{color:#55675a}
+.em-treatment-feature--foot .em-treatment-feature__image{min-height:640px;background:#38483e url('../images/elegant-massage-foot-reflexology-editorial-desktop.webp') center / cover no-repeat}
+.em-treatment-feature--combination{min-height:clamp(680px,87svh,940px);align-items:end}
+.em-treatment-feature--combination .em-treatment-feature__copy{padding-bottom:clamp(1rem,4vh,5rem)}
+/* small service index uses typography, real photographs as restrained thumbnails */
+.em-other-treatments{padding:clamp(6rem,10vw,11rem) 0;background:#16281f;color:#f3f0e8}
+.em-other-treatments__head{display:flex;align-items:end;justify-content:space-between;gap:5rem;margin-bottom:4.5rem}
+.em-other-treatments__head h3{font-size:clamp(3.6rem,7vw,7.4rem);line-height:1;margin:1rem 0 0;max-width:12ch}
+.em-other-treatments__head>p{max-width:30ch;color:#b9c6b8}
+.em-other-treatment{display:grid;grid-template-columns:3rem minmax(0,1.3fr) minmax(0,1fr) 142px 2rem;gap:clamp(1rem,2.4vw,3rem);align-items:center;border-top:1px solid #ffffff4a;min-height:180px;padding:1.25rem 0;text-decoration:none;color:inherit;transition:padding .3s ease,background .3s ease}
+.em-other-treatment:last-of-type{border-bottom:1px solid #ffffff4a}
+.em-other-treatment:hover{padding-left:.5rem;background:rgba(255,255,255,.035)}
+.em-other-treatment__number{font-size:.73rem;color:var(--em-bronze)}
+.em-other-treatment__name{font:400 clamp(2.3rem,4.5vw,5rem)/1.04 Newsreader,Georgia,serif;letter-spacing:-.045em}
+.em-other-treatment__description{font-size:.86rem;color:#b7c5b9;max-width:23ch}
+.em-other-treatment__image{height:126px;display:block;background-size:cover;background-position:center;filter:saturate(.8);transition:filter .4s ease,transform .4s ease}
+.em-other-treatment:hover .em-other-treatment__image{filter:saturate(1);transform:scale(1.025)}
+.em-other-treatment__image--chair{background-image:url('../images/elegant-massage-chair-massage-atrezzo.webp')}
+.em-other-treatment__image--couples{background-image:url('../images/elegant-massage-couples-batch02-desktop.webp')}
+.em-other-treatment__image--four{background-image:url('../images/elegant-massage-four-hands-batch02-desktop.webp')}
+.em-other-treatment__arrow{font-size:1.7rem;color:var(--em-bronze)}
+.em-other-treatments__footer{display:flex;gap:clamp(1.5rem,5vw,6rem);flex-wrap:wrap;margin-top:3rem}
+/* One signature immersive section = 3 short native-scroll chapters, not copied Thai 6-scene slider */
+.elegant-home .em-ritual{background:#10231a;color:#fff}
+.em-ritual>header{padding:clamp(5rem,9vw,9rem) var(--gutter)}
+.em-ritual>header h2{font-size:clamp(4rem,8vw,9rem);line-height:.94;max-width:13ch}
+.em-ritual>header .lede{color:#d3dbd1}
+.em-ritual .sensory-panel{padding:clamp(4rem,8vw,9rem) var(--gutter);background-size:cover;background-repeat:no-repeat;min-height:82svh;align-items:end}
+.em-ritual .sensory-panel h3{font-size:clamp(4.3rem,8vw,8.9rem);margin:.7rem 0 1.1rem;max-width:10ch;line-height:.95}
+.em-ritual .sensory-panel p{font-size:clamp(1rem,1.5vw,1.2rem);max-width:40ch}
+.em-ritual .sensory-panel>div{max-width:730px}
+.em-ritual .sensory-panel::before{background:linear-gradient(90deg,rgba(0,0,0,.76),rgba(0,0,0,.30) 65%,rgba(0,0,0,.07)),linear-gradient(0deg,rgba(0,0,0,.75),transparent 45%)}
+.em-ritual .sensory-panel:nth-child(1){background-image:url('../images/elegant-massage-body-massage-cinematic.webp')}
+.em-ritual .sensory-panel:nth-child(2){background-image:url('../images/elegant-massage-foot-reflexology-editorial-desktop.webp')}
+.em-ritual .sensory-panel:nth-child(3){background-image:url('../images/elegant-massage-relaxation-atmosphere-cinematic.webp')}
+@media(min-width:1000px) and (prefers-reduced-motion:no-preference){
+.em-ritual .sensory-grid{display:block}
+.em-ritual .sensory-panel{position:sticky;top:0;height:100svh;min-height:0;background-size:cover!important;animation:none!important}
+}
+/* Real local, not generated spa interiors */
+.em-place{display:grid;grid-template-columns:54% 46%;min-height:clamp(700px,85svh,1000px);color:#fff;background:#223b2b}
+.em-place__photograph{background:#344b3c url('../images/elegant-massage-flower-mound-reception-desk.webp') center / cover no-repeat;min-height:580px}
+.em-place__content{align-self:center;padding:clamp(4rem,7.5vw,8rem);max-width:720px}
+.em-place h2{font-size:clamp(3.9rem,6.1vw,7rem);line-height:.94;margin:1.6rem 0}
+.em-place p:not(.eyebrow){max-width:46ch;color:#dbe6d9}
+.em-place .em-place__source{font-size:.65rem!important;letter-spacing:.09em;opacity:.6;margin:2rem 0 0}
+.em-place .actions{align-items:flex-start}
+.em-place .button--light{color:#233b2a}
+/* FAQ: practical, accessible, restrained—not another image carousel */
+.em-practical{background:var(--em-paper);padding:clamp(6rem,10vw,11rem) 0}
+.em-practical__grid{display:grid;grid-template-columns:.83fr 1.17fr;gap:clamp(3rem,8vw,9rem)}
+.em-practical h2{font-size:clamp(3.8rem,6.3vw,7rem);line-height:.94;margin:1.5rem 0}
+.em-practical__grid>div:first-child>p:last-child{max-width:27ch;color:var(--em-muted)}
+.em-practical__questions{border-top:1px solid #4c604744}
+.em-practical__questions details{border-bottom:1px solid #4c604744;padding:1.5rem 0}
+.em-practical__questions summary{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;cursor:pointer;list-style:none;font:400 clamp(1.35rem,2.15vw,2rem)/1.18 Newsreader,Georgia,serif;letter-spacing:-.03em}
+.em-practical__questions summary::-webkit-details-marker{display:none}
+.em-practical__questions summary span{font:300 1.5rem/1 "DM Sans",sans-serif;color:#738c76;transition:transform .2s ease}
+.em-practical__questions details[open] summary span{transform:rotate(45deg)}
+.em-practical__questions details p{max-width:61ch;color:#5b6d60;margin:1.4rem 0 0}
+.em-practical__questions a{color:#1d4930;text-underline-offset:.2em}
+/* Final single panoramic conversion */
+.em-final-booking{min-height:clamp(630px,83svh,900px);display:flex;align-items:center;position:relative;isolation:isolate;padding:clamp(6rem,10vw,9rem) 0;color:#fff;background:#17231b}
+.em-final-booking:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.48) 52%,rgba(0,0,0,.15)),linear-gradient(0deg,rgba(0,0,0,.62),transparent 45%),url('../images/elegant-massage-massage-moment-cinematic.webp') center / cover no-repeat}
+.em-final-booking h2{font-size:clamp(4.4rem,9vw,9.8rem);line-height:.93;margin:1.4rem 0}
+.em-final-booking .container{width:100%}
+.em-final-booking p:not(.eyebrow){max-width:47ch;color:#e9eee7}
+.site-footer{background:#101e16}
+.site-footer .footer-grid{border-bottom:0}
+.site-footer h3{font-size:clamp(2.4rem,3vw,3.5rem)}
+.site-footer a{transition:color .2s}
+.site-footer a:hover{color:#c7af8d}
+/* Subpages: no cloned Home; one image hero, editorial intro and grounded guide. */
+body[data-page] .hero::before{background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.38) 58%,rgba(0,0,0,.12)),linear-gradient(0deg,rgba(0,0,0,.68),transparent 43%)}
+body[data-page] .hero .hero__copy{max-width:900px}
+body[data-page] .section.section--white>.container.split{gap:clamp(3rem,8vw,10rem);grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+body[data-page] .section.section--white>.container.split h2{font-size:clamp(3.2rem,5.7vw,6.5rem);line-height:.96}
+body[data-page] .scene--portrait{aspect-ratio:4/5;min-height:550px}
+body[data-page] .content-layout{grid-template-columns:minmax(0,.65fr) minmax(0,1.35fr);gap:clamp(3rem,8vw,10rem)}
+body[data-page] .content-layout aside h2{font-size:clamp(3rem,4.4vw,5.2rem)}
+body[data-page] .content-layout article{padding:clamp(2.5rem,4vw,4.5rem) 0;border-top:1px solid #2946383d}
+body[data-page] .content-layout article h3{font-size:clamp(2.5rem,4.1vw,4.7rem);max-width:22ch;margin:1rem 0}
+body[data-page] .content-layout article .lede{color:#576b5c;max-width:58ch}
+body[data-page] .closing{min-height:66svh;padding:6rem 0}
+body[data-page] .closing::before{background:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.30)),url('../images/elegant-massage-massage-moment-cinematic.webp') center / cover no-repeat}
+body[data-page] .closing h2{font-size:clamp(4rem,7.2vw,8rem)}
+body[data-page] .contact-form{border-radius:8px;box-shadow:0 24px 70px #152b181c}
+body[data-page] .price-item{padding:2.5rem 0}
+body[data-page] .gallery-grid{gap:clamp(1rem,2vw,2rem)}
+/* Responsive: no forced desktop sticky and no image text collision */
+@media(max-width:1024px){
+.em-treatment-feature--foot{grid-template-columns:44% 56%}
+.em-other-treatment{grid-template-columns:2rem minmax(0,1.1fr) minmax(0,.8fr) 115px 2rem}
+.em-other-treatment__image{height:105px}
+}
+@media(max-width:870px){
+.em-intro__grid{grid-template-columns:1fr}
+.em-intro__copy{max-width:710px}
+.em-intro__visual{max-width:780px}
+.em-intro__image{height:600px}
+.em-section-head{grid-template-columns:1fr;gap:1.5rem}
+.em-treatment-feature--foot{grid-template-columns:1fr}
+.em-treatment-feature--foot .em-treatment-feature__copy{padding:5rem var(--gutter);max-width:710px}
+.em-treatment-feature--foot .em-treatment-feature__image{min-height:65svh}
+.em-other-treatment{grid-template-columns:2rem 1fr 120px 1.5rem;gap:1.4rem}
+.em-other-treatment__description{display:none}
+.em-place{grid-template-columns:1fr}
+.em-place__photograph{min-height:60svh}
+.em-place__content{padding:clamp(4rem,8vw,6rem) var(--gutter)}
+.em-practical__grid{grid-template-columns:1fr}
+body[data-page] .content-layout{grid-template-columns:1fr}
+body[data-page] .section.section--white>.container.split{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+.elegant-home .hero--home{padding:11rem var(--gutter) 7rem;align-items:flex-end}
+.elegant-home .hero h1{font-size:clamp(4.15rem,15vw,6.5rem);line-height:.94;max-width:9ch}
+.elegant-home .hero__footnote{font-size:.51rem;bottom:2.1rem;gap:1.5rem}
+.elegant-home .hero__footnote span:first-child{display:none}
+.elegant-home .hero--home::before{background:linear-gradient(0deg,rgba(0,0,0,.88),rgba(0,0,0,.50) 65%,rgba(0,0,0,.19))}
+.em-intro{padding:5.5rem 0}
+.em-intro h2{font-size:clamp(3.8rem,12vw,5.5rem)}
+.em-intro__image{height:470px}
+.em-treatments{padding-top:5.4rem}
+.em-section-head{margin-bottom:3.5rem}
+.em-section-head h2{font-size:clamp(4rem,12vw,6rem)}
+.em-treatment-feature--body,.em-treatment-feature--combination{min-height:78svh;padding:6rem var(--gutter)}
+.em-treatment-feature h3{font-size:clamp(3.8rem,12vw,5.5rem)}
+.em-treatment-feature--body:before,.em-treatment-feature--combination:before{background:linear-gradient(0deg,rgba(0,0,0,.84),rgba(0,0,0,.55) 55%,rgba(0,0,0,.2))}
+.em-treatment-feature--body .em-treatment-feature__image{background-position:59% center}
+.em-treatment-feature--foot .em-treatment-feature__copy{padding:5rem var(--gutter)}
+.em-treatment-feature--foot .em-treatment-feature__image{background-image:url('../images/elegant-massage-foot-reflexology-editorial-mobile.webp');background-position:center;min-height:66svh}
+.em-treatment-feature--combination .em-treatment-feature__image{background-image:url('../images/elegant-massage-combination-batch02-mobile.webp');background-position:center}
+.em-other-treatments{padding:5.5rem 0}
+.em-other-treatments__head{display:block;margin-bottom:3.5rem}
+.em-other-treatments__head h3{font-size:clamp(3.5rem,11vw,5.3rem)}
+.em-other-treatment{grid-template-columns:1.5rem minmax(0,1fr) 1.5rem;min-height:145px;gap:.8rem}
+.em-other-treatment__image{display:none}
+.em-other-treatment__name{font-size:clamp(2.3rem,8vw,3.5rem)}
+.em-other-treatments__footer{display:grid;gap:1rem}
+.em-ritual>header{padding:5rem var(--gutter)}
+.em-ritual>header h2{font-size:clamp(4rem,12vw,6rem)}
+.em-ritual .sensory-panel{min-height:76svh;padding:4rem var(--gutter)}
+.em-ritual .sensory-panel h3{font-size:clamp(3.6rem,10vw,5rem)}
+.em-ritual .sensory-panel:nth-child(2){background-image:url('../images/elegant-massage-foot-reflexology-editorial-mobile.webp');background-position:center}
+.em-place__photograph{min-height:54svh}
+.em-place__content h2{font-size:clamp(3.7rem,11vw,5.8rem)}
+.em-practical{padding:5rem 0}
+.em-practical h2{font-size:clamp(3.6rem,11vw,5.6rem)}
+.em-final-booking{min-height:77svh}
+.em-final-booking h2{font-size:clamp(4rem,12vw,6rem)}
+body[data-page] .hero:not(.hero--home){min-height:78svh;padding:11rem var(--gutter) 5rem}
+body[data-page] .hero:not(.hero--home) h1{font-size:clamp(3.55rem,11.5vw,5.2rem)}
+body[data-page] .scene--portrait{min-height:410px}
+body[data-page] .content-layout article h3{font-size:clamp(2.35rem,8.5vw,3.7rem)}
+}
+@media(prefers-reduced-motion:reduce){
+.em-treatment-feature__image,.em-intro__image{transform:none!important}
+.em-other-treatment,.em-other-treatment__image,.site-header{transition:none!important}
+.em-ritual .sensory-panel{position:relative!important;height:auto!important;min-height:70svh!important}
+}
+
+/* Responsive regression: prevent the offset editorial hairline from protruding past the tablet viewport. */
+@media(max-width:870px){.em-intro__visual:after{right:0}}
