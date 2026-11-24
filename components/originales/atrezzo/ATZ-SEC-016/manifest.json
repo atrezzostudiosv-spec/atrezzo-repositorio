@@ -1,0 +1,77 @@
+{
+  "id": "ATZ-SEC-016",
+  "title": "Cinematic Header & Video Hero",
+  "source_repo": "atrezzostudiosv-spec/Team-Hodnett",
+  "source_commit": "98d354c5b1349d1457af0f1cbc5d12256a011f1b",
+  "source_paths": [
+    {
+      "path": "scripts/templates.mjs",
+      "blob": "cd92d196e6481e4d52902e3f14c6a6e52434c1e3"
+    },
+    {
+      "path": "scripts/home.mjs",
+      "blob": "dfd3b7db5b84333afe04276995b72110f67d500a"
+    },
+    {
+      "path": "public/src/ui.js",
+      "blob": "057b16252558123f582a1724236a95d4eec89107"
+    },
+    {
+      "path": "public/src/luxury.js",
+      "blob": "ba041b256e68408fe4675c55a634c832a415c022"
+    },
+    {
+      "path": "public/src/site.css",
+      "blob": "02a61122291d55d325a49aeb0ecf7ba0d87d7ee2"
+    },
+    {
+      "path": "public/src/luxury.css",
+      "blob": "8c25ba11200c6665af11683e06a7ea72a8e0cbcd"
+    },
+    {
+      "path": "public/src/connection.css",
+      "blob": "8b3d9ba8c5bc5ecf1e5af35357d1f5475bb1ac84"
+    },
+    {
+      "path": "public/src/header-nav.css",
+      "blob": "cd15f556a0e0a97756c9848c9bf3efb04146353d"
+    }
+  ],
+  "source_visual_approved": true,
+  "catalog_qa_status": "passed_internal",
+  "client_ready": false,
+  "dependencies": [],
+  "media": "Neutral ATREZZO logo, illustrations and generated sample film; no client media",
+  "files": [
+    "index.html",
+    "component.css",
+    "source-context.css",
+    "engine.original.js",
+    "component.js",
+    "README.md",
+    "manifest.json",
+    "assets/logo-light.svg",
+    "assets/logo-dark.svg",
+    "assets/scene-1.svg",
+    "assets/scene-2.svg",
+    "assets/DM-Sans-OFL.txt",
+    "assets/dm-sans-400.ttf",
+    "assets/dm-sans-500.ttf",
+    "assets/dm-sans-600.ttf",
+    "assets/poster.jpg",
+    "assets/film.webm",
+    "assets/film.mp4",
+    "assets/film-mobile.mp4"
+  ],
+  "catalog_qa_run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45362477698",
+  "source_comparison": {
+    "viewport_widths": [
+      375,
+      768,
+      1024,
+      1440
+    ],
+    "media": "neutral demo assets, original layout",
+    "run": "https://github.com/atrezzostudiosv-spec/atrezzo-repositorio/actions/runs/45362477698"
+  }
+}
