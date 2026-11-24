@@ -111,6 +111,46 @@
       "client_ready": false
     },
     {
+      "id": "ATZ-WEB-004",
+      "version": "1.0.0",
+      "title": "Construction & Project Portfolio",
+      "source_name": "308 Construction",
+      "source_repo": "atrezzostudiosv-spec/308-Construction",
+      "source_commit": "89dc53f5474a6dc95c10cc89bb5642fdd24e8495",
+      "sector": "Commercial construction / gestión de proyectos",
+      "tags": [
+        "construction",
+        "remodeling",
+        "portfolio",
+        "video",
+        "sticky",
+        "scroll",
+        "careers",
+        "SPA"
+      ],
+      "description": "Once vistas SPA originales, hero audiovisual, capítulos sticky de servicios, portfolio editorial, cuatro fichas de proyectos, carreras con archivos locales y asistente guiado. Datos comerciales y envíos neutralizados.",
+      "pages": [
+        "index.html",
+        "index.html?view=services",
+        "index.html?view=projects",
+        "index.html?view=unt",
+        "index.html?view=twu",
+        "index.html?view=plano",
+        "index.html?view=mep",
+        "index.html?view=about",
+        "index.html?view=careers",
+        "index.html?view=contact",
+        "index.html?view=policy"
+      ],
+      "preview": "websites/templates/ATZ-WEB-004/v1/site/index.html",
+      "original_preview": "https://atrezzostudiosv-spec.github.io/308-Construction/",
+      "poster": "websites/templates/ATZ-WEB-004/v1/poster.webp",
+      "package": "websites/templates/ATZ-WEB-004/v1/ATZ-WEB-004-v1.zip",
+      "guide": "websites/templates/ATZ-WEB-004/v1/README.md",
+      "status": "validation_pending",
+      "client_ready": false
+    },
+    {
       "id": "ATZ-WEB-007",
       "version": "1.0.0",
       "title": "Luxury Real Estate & Editorial Experiences",

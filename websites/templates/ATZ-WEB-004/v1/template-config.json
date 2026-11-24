@@ -1,0 +1,34 @@
+{
+  "template_id": "ATZ-WEB-004",
+  "version": "1.0.0",
+  "source_commit": "89dc53f5474a6dc95c10cc89bb5642fdd24e8495",
+  "mode": "demo_only",
+  "business": {
+    "name": null,
+    "logo": null,
+    "contact": null,
+    "verified_claims": [],
+    "clients": [],
+    "projects": [],
+    "vacancies": []
+  },
+  "media": {
+    "approved": false,
+    "external_dependencies": true
+  },
+  "forms": {
+    "contact_enabled": false,
+    "careers_enabled": false
+  },
+  "assistant": {
+    "scripted_local": true
+  },
+  "seo": {
+    "indexing": false,
+    "domain": null
+  },
+  "legal": {
+    "approved": false
+  },
+  "production_ready": false
+}
