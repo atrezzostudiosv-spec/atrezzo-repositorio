@@ -5,7 +5,7 @@ await (async function build(){
  fs.rmSync(site,{recursive:true,force:true});fs.mkdirSync(site,{recursive:true});fs.cpSync(src+'/assets',site+'/assets',{recursive:true});
  const read=p=>fs.readFileSync(src+'/'+p,'utf8'),write=(p,v)=>fs.writeFileSync(site+'/'+p,v);
  const neutral=s=>s.replace(/308 Construction(?:'s|’s)?/gi,m=>/['’]s$/i.test(m)?'Construction Studio’s':m===m.toUpperCase()?'CONSTRUCTION STUDIO':'Construction Studio')
- .replace(/(?:Main@308gc\.com|atrezzostudiosv@gmail\.com)/gi,'contact@example.invalid').replace(/940[- .]?387[- .]?4002/g,'[Phone]')
+ .replace(/(?:Main@308gc\.com|atrezzostudiosv@gmail\.com)/gi,'[Email]').replace(/940[- .]?387[- .]?4002/g,'[Phone]')
  .replace(/11835\s+Hilltop\s+Rd\.?/gi,'[Office address]').replace(/Argyle,\s*(?:TX\s*76226|Texas|TX)/gi,'[Service area]')
  .replace(/https:\/\/(?:www\.)?308gc\.com(?:\/[a-z-]*)?/gi,'#').replace(/308gc\.com(?:\/careers)?/gi,'company careers page')
  .replace(/UNT MATTHEWS(?:<br><span>|\s+)HALL/gi,m=>m.includes('<br>')?'ACADEMIC RENOVATION<br><span>EXAMPLE':'ACADEMIC RENOVATION')
@@ -66,7 +66,7 @@ await (async function build(){
   form.reset();status.textContent='Demo validation complete. No information was sent or stored.';status.dataset.state='success';
  });
 }\n`+js.slice(dd);
- js=js.replace(/FormSubmit/gi,'local demo').replace(/atrezzostudiosv@gmail\.com/gi,'contact@example.invalid');
+ js=js.replace(/FormSubmit/gi,'local demo').replace(/atrezzostudiosv@gmail\.com/gi,'[Email]');
  write('assets/js/app.js',js);write('robots.txt','User-agent: *\nDisallow: /\n');
  assert(!/formsubmit\.co|9403874002|940-387-4002|Main@308gc\.com|atrezzostudiosv@gmail\.com|static\.wixstatic\.com/i.test(h+js));assert(!/\bfetch\s*\(/.test(js));
  const reg=JSON.parse(fs.readFileSync('registry/websites.json'));reg.entries.find(x=>x.id==='ATZ-WEB-004').status='validated_template';fs.writeFileSync('registry/websites.json',JSON.stringify(reg,null,2)+'\n');

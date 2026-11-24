@@ -14,7 +14,7 @@ await (async function qa(){
   await p.goto(url,{waitUntil:'domcontentloaded',timeout:60000});await o.goto(original,{waitUntil:'domcontentloaded',timeout:60000});await p.evaluate(()=>document.fonts.ready);await o.evaluate(()=>document.fonts.ready);
   for(const route of routes){
    await p.evaluate(r=>navigateTo(r),route);await o.evaluate(r=>navigateTo(r),route);const view=p.locator('#page-'+route);
-   assert(await view.locator('h1').isVisible(),route+' heading');assert.equal(await p.locator('.page-view:not(.hidden-page)').count(),1);assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+3),route+' overflow '+width);
+   assert(await view.locator('h1').isVisible(),route+' heading');assert.equal(await p.locator('.page-view:not(.hidden-page)').count(),1);const overflow=await p.evaluate(()=>({width:document.documentElement.scrollWidth,inner:innerWidth,offenders:[...document.querySelectorAll('.page-view:not(.hidden-page) *')].filter(e=>{const r=e.getBoundingClientRect();return r.width&&r.right>innerWidth+3&&getComputedStyle(e).position!=='absolute'}).slice(0,12).map(e=>[e.tagName,e.className,e.getBoundingClientRect().right])}));assert(overflow.width<=overflow.inner+3,route+' overflow '+width+' '+JSON.stringify(overflow));
    const sels=['[data-reveal]','[data-premium-reveal]','[data-scene]','[data-sv-scene]','details','picture'];
    const count=page=>page.evaluate(({route,sels})=>sels.map(s=>document.getElementById('page-'+route).querySelectorAll(s).length),{route,sels});assert.deepEqual(await count(p),await count(o),route+' source targets');
    if(route==='home'||route==='services'){
