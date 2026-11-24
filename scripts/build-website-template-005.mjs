@@ -38,6 +38,7 @@ await (async function build(){
 }\n`+js.slice(b);
  js=js.replace(`action="https://formsubmit.co/'+DESTINATION+'"`,`action="#quote-form"`).replace(/href="tel:\+19403913338"/g,'href="#quote-form"');
  js=neutral(js).replace(/<p class="quote-preview-notice">[\s\S]*?<\/p>/,'<p class="quote-preview-notice">Demonstration only. No quote is issued and no message is sent.</p>').replace(/Send test enquiry/g,'Check enquiry');
+ js=js.replace("const slug=location.pathname.split('/').filter(Boolean).pop();","const slug=location.pathname.replace(/\\/index\\.html$/,'/').split('/').filter(Boolean).pop();");
  write('assets/refinements.js',js);
  // Make neutral schematic fence artwork at precisely the original dimensions, without drawing any source pixels.
  const browser=await chromium.launch();try{const page=await browser.newPage();for(const [i,n] of fs.readdirSync(src+'/assets/images').entries()){

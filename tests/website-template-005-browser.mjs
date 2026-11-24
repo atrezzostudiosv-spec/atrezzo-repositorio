@@ -4,7 +4,7 @@ await (async function qa(){
  const t=JSON.parse(fs.readFileSync('registry/websites.json')).entries.find(x=>x.id==='ATZ-WEB-005'),hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
  for(const n of ['styles.css','inner.css','refinements.css','app.js','inner.js'])assert.equal(hash(src+'/assets/'+n),hash(site+'/assets/'+n),n);
  for(const n of fs.readdirSync(src+'/assets/images'))if(/\.(webp|png)$/.test(n))assert.notEqual(hash(src+'/assets/images/'+n),hash(site+'/assets/images/'+n),n+' client image leaked');
- const old=fs.readFileSync(src+'/assets/refinements.js','utf8'),copy=fs.readFileSync(site+'/assets/refinements.js','utf8');assert(copy.includes(old.slice(old.indexOf("document.querySelectorAll('form.quote-form')"))));
+ const old=fs.readFileSync(src+'/assets/refinements.js','utf8'),copy=fs.readFileSync(site+'/assets/refinements.js','utf8');assert(copy.includes(old.slice(old.indexOf("document.querySelectorAll('form.quote-form')")).replace("const slug=location.pathname.split('/').filter(Boolean).pop();","const slug=location.pathname.replace(/\\/index\\.html$/,'/').split('/').filter(Boolean).pop();")));
  let browser;const report=[],motion=[];
  try{await new Promise(r=>setTimeout(r,700));browser=await chromium.launch();
  for(const width of [375,768,1024,1440]){
