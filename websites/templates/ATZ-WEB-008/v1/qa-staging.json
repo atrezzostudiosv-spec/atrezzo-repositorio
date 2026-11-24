@@ -1,0 +1,36 @@
+{
+  "status": "staged_static_check_only",
+  "source_commit": "134301927739a334d881c6c37e245126077989d7",
+  "checked_commit": "46922848ffbe0a0196eefbcb13cbc9eb97a89090",
+  "pages": [
+    "index.html",
+    "about/index.html",
+    "services/index.html",
+    "gallery/index.html",
+    "contact/index.html"
+  ],
+  "site_files": 28,
+  "source_identical_assets_previously_verified": 23,
+  "local_html_attribute_references_checked": 175,
+  "missing_local_references": [],
+  "absolute_root_references": [],
+  "form_tags": [
+    "<form method=\"dialog\" aria-labelledby=\"inquiry-form-title\" aria-describedby=\"contact-disclosure\">"
+  ],
+  "external_urls_not_runtime_tested": [
+    "https://images.unsplash.com",
+    "https://images.unsplash.com/photo-1757589227072-0dd17af42433",
+    "https://images.unsplash.com/photo-1775126964424-913480443772",
+    "https://images.unsplash.com/photo-1769812343775-85a27e6a076c",
+    "https://images.unsplash.com/photo-1779308936221-89739e035a53",
+    "https://images.unsplash.com/photo-1769812344099-8e52466aea8e",
+    "https://images.unsplash.com/photo-1773370812331-4e534dcf0ce1",
+    "https://images.unsplash.com/photo-1769230366356-beca3c698fe0",
+    "https://images.unsplash.com/photo-1769230387364-8b0c2b63e18b",
+    "https://images.unsplash.com/photo-1707333515825-c07061a97e5a"
+  ],
+  "browser_qa": "pending",
+  "hero_video": "withheld: commercial redistribution rights unverified; placeholder poster only",
+  "package": "pending",
+  "registry": "not published"
+}
