@@ -1,0 +1,222 @@
+[
+  {
+    "route": "home",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "services",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "projects",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "unt",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "twu",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "plano",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "mep",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "about",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "careers",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "contact",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "policy",
+    "width": 375,
+    "pass": true
+  },
+  {
+    "route": "home",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "services",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "projects",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "unt",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "twu",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "plano",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "mep",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "about",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "careers",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "contact",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "policy",
+    "width": 768,
+    "pass": true
+  },
+  {
+    "route": "home",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "services",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "projects",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "unt",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "twu",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "plano",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "mep",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "about",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "careers",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "contact",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "policy",
+    "width": 1024,
+    "pass": true
+  },
+  {
+    "route": "home",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "services",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "projects",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "unt",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "twu",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "plano",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "mep",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "about",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "careers",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "contact",
+    "width": 1440,
+    "pass": true
+  },
+  {
+    "route": "policy",
+    "width": 1440,
+    "pass": true
+  }
+]

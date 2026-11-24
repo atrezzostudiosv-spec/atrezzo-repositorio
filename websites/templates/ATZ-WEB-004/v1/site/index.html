@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.pexels.com https://images.unsplash.com; media-src 'self' https://videos.pexels.com; connect-src 'none'; form-action 'none'; object-src 'none'; frame-src 'none'">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+    <title>Construction Studio — Turn-Key Construction Solutions with Accuracy</title>
+    <meta name="description" content="Construction Studio provides preconstruction planning, construction and construction management in the DFW Metroplex and for clients across the country."/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="theme-color" content="#151A1D"/>
+    
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Construction Studio — Independent Design Concept"/>
+    <meta property="og:title" content="Construction Studio | Planning, Construction & Management"/>
+    <meta property="og:description" content="Explore a design preview of Construction Studio’s published services and selected projects in the DFW Metroplex."/>
+    
+    <meta property="og:image" content="https://images.pexels.com/photos/32716845/pexels-photo-32716845.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1200&amp;h=630"/>
+    <meta property="og:image:secure_url" content="https://images.pexels.com/photos/32716845/pexels-photo-32716845.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1200&amp;h=630"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Illustrative construction photograph — independent Construction Studio website concept"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Construction Studio | Planning, Construction & Management"/>
+    <meta name="twitter:description" content="Independent design preview showcasing Construction Studio services and selected projects."/>
+    <meta name="twitter:image" content="https://images.pexels.com/photos/32716845/pexels-photo-32716845.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;w=1200&amp;h=630"/>
+    <meta name="twitter:image:alt" content="Illustrative commercial construction scene"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Barlow Condensed"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#157C88',
+                            dark: '#151A1D',
+                            gray: '#555656',
+                            light: '#F3F2EF',
+                            accent: '#1ba3b3',
+                            border: 'rgba(255,255,255,0.08)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/styles.css?v=20261026-site-audit-02"/>
+<link rel="stylesheet" href="./assets/css/template-compat.css"/></head>
+<body class="antialiased selection:bg-brand-teal selection:text-white">
+
+    <!-- MAIN HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-40 px-4 md:px-10 py-4 bg-brand-dark/90 backdrop-blur-md border-b border-white/10 flex items-center justify-between transition-all" id="siteHeader">
+        <!-- Brand Logo -->
+        <a href="./" onclick="navigateTo('home'); return false;" class="flex items-center gap-3 group">
+            <span class="inline-flex items-center bg-brand-light px-3 py-2 rounded-sm"><img src="./assets/template-logo.svg" alt="Construction Studio — official logo" class="w-[176px] sm:w-[210px] h-auto" width="210" height="41"/></span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-wider uppercase text-gray-300">
+            <a href="./" onclick="navigateTo('home'); return false;" class="nav-link hover:text-brand-teal transition-colors" data-page="home">Home</a>
+            <a href="?view=services" onclick="navigateTo('services'); return false;" class="nav-link hover:text-brand-teal transition-colors" data-page="services">Services</a>
+            
+            <!-- Projects Dropdown Anchor -->
+            <div class="projects-nav-group relative group" id="projectsNavGroup">
+                <a href="?view=projects" onclick="navigateTo('projects'); return false;" class="nav-link hover:text-brand-teal transition-colors inline-flex items-center gap-1" data-page="projects">
+                    Projects
+                </a>
+                <button type="button" id="projectsNavToggle" class="projects-nav-trigger" aria-label="Show project pages" aria-haspopup="true" aria-controls="projectsSubmenu" aria-expanded="false"><i data-lucide="chevron-down" class="w-3 h-3"></i></button>
+                <div id="projectsSubmenu" class="projects-dropdown absolute top-full left-0 w-72 bg-brand-dark border border-white/15 rounded-lg shadow-2xl p-2 opacity-0 pointer-events-none transition-all transform translate-y-2" aria-label="Individual project pages">
+                    <a href="?view=unt" onclick="navigateTo('unt'); return false;" class="block p-2.5 text-xs rounded hover:bg-brand-teal/20 hover:text-white text-gray-300">ACADEMIC RENOVATION</a>
+                    <a href="?view=twu" onclick="navigateTo('twu'); return false;" class="block p-2.5 text-xs rounded hover:bg-brand-teal/20 hover:text-white text-gray-300">Heritage Restoration Skylight</a>
+                    <a href="?view=plano" onclick="navigateTo('plano'); return false;" class="block p-2.5 text-xs rounded hover:bg-brand-teal/20 hover:text-white text-gray-300">Athletic Facility Example</a>
+                    <a href="?view=mep" onclick="navigateTo('mep'); return false;" class="block p-2.5 text-xs rounded hover:bg-brand-teal/20 hover:text-white text-gray-300">MEP Technical Projects</a>
+                </div>
+            </div>
+
+            <a href="?view=about" onclick="navigateTo('about'); return false;" class="nav-link hover:text-brand-teal transition-colors" data-page="about">About</a>
+            <a href="?view=careers" onclick="navigateTo('careers'); return false;" class="nav-link hover:text-brand-teal transition-colors" data-page="careers">Careers</a>
+            <a href="?view=contact" onclick="navigateTo('contact'); return false;" class="nav-link hover:text-brand-teal transition-colors" data-page="contact">Contact</a>
+        </nav>
+
+        <!-- Action CTAs -->
+        <div class="flex items-center gap-3">
+            <a href="?view=contact" onclick="navigateTo('contact');return false;" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded border border-white/15 text-xs font-mono text-gray-300 hover:border-brand-teal hover:text-brand-teal transition-colors">
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-teal"></i>
+                [Phone]
+            </a>
+            <button onclick="navigateTo('contact')" class="hidden md:inline-flex px-5 py-2 rounded bg-brand-teal hover:bg-brand-accent text-white font-display font-semibold text-sm uppercase tracking-wider transition-colors shadow-md">
+                Inquire Project
+            </button>
+            <button type="button" id="mobileMenuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded bg-brand-dark border border-white/10 text-white hover:border-brand-teal transition-colors">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION OVERLAY -->
+    <div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation" class="fixed inset-0 z-50 bg-brand-dark/98 backdrop-blur-2xl hidden flex-col justify-between p-6 overflow-y-auto">
+        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <span class="font-display font-bold text-xl tracking-wider text-white">STUDIO NAVIGATION</span>
+            <button type="button" aria-label="Close navigation" onclick="toggleMobileMenu()" class="p-2 rounded border border-white/10 text-gray-300">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col gap-4 my-8 text-lg font-display uppercase tracking-widest">
+            <a href="./" onclick="navigateTo('home'); toggleMobileMenu(); return false;" class="py-2 border-b border-white/5 hover:text-brand-teal">01 / Home</a>
+            <a href="?view=services" onclick="navigateTo('services'); toggleMobileMenu(); return false;" class="py-2 border-b border-white/5 hover:text-brand-teal">02 / Services</a>
+            <a href="?view=projects" onclick="navigateTo('projects'); toggleMobileMenu(); return false;" class="py-2 border-b border-white/5 hover:text-brand-teal">03 / Projects Portfolio</a>
+            <div class="pl-4 space-y-2 text-xs font-sans capitalize text-gray-400">
+                <a href="?view=unt" onclick="navigateTo('unt'); toggleMobileMenu(); return false;" class="block py-1 hover:text-white">• ACADEMIC RENOVATION</a>
+                <a href="?view=twu" onclick="navigateTo('twu'); toggleMobileMenu(); return false;" class="block py-1 hover:text-white">• Heritage Restoration</a>
+                <a href="?view=plano" onclick="navigateTo('plano'); toggleMobileMenu(); return false;" class="block py-1 hover:text-white">• Athletic Facility Example</a>
+                <a href="?view=mep" onclick="navigateTo('mep'); toggleMobileMenu(); return false;" class="block py-1 hover:text-white">• MEP Projects</a>
+            </div>
+            <a href="?view=about" onclick="navigateTo('about'); toggleMobileMenu(); return false;" class="py-2 border-b border-white/5 hover:text-brand-teal">04 / About Firm</a>
+            <a href="?view=careers" onclick="navigateTo('careers'); toggleMobileMenu(); return false;" class="py-2 border-b border-white/5 hover:text-brand-teal">05 / Careers</a>
+            <a href="?view=contact" onclick="navigateTo('contact'); toggleMobileMenu(); return false;" class="py-2 hover:text-brand-teal">06 / Contact Us</a>
+        </nav>
+
+        <div class="border-t border-white/10 pt-4 flex flex-col gap-3 text-xs font-mono text-gray-400">
+            <div>[Service area] • [Office address]</div>
+            <a href="?view=contact" onclick="navigateTo('contact');return false;" class="text-brand-teal">[Email]</a>
+            <a href="?view=contact" onclick="navigateTo('contact');return false;" class="text-white font-bold">[Phone]</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER FOR ALL 10 PAGES -->
+    <main id="appContainer" class="min-h-screen">
+
+        <!-- =================================================================== -->
+        <!-- 01 — HOME PAGE -->
+        <!-- =================================================================== -->
+
+<section id="page-home" class="page-view home-v2">
+  <div class="cinematic-hero">
+    <div class="hero-photo" aria-hidden="true">
+      <img class="hero-fallback-image" src="https://images.pexels.com/photos/32716845/pexels-photo-32716845.jpeg?auto=compress&cs=tinysrgb&w=2200" alt="" fetchpriority="high" decoding="async"/>
+      <video class="hero-bg-video" autoplay muted loop playsinline preload="none" disablepictureinpicture tabindex="-1" aria-hidden="true">
+        <source data-src="https://videos.pexels.com/video-files/853867/853867-hd_1920_1080_25fps.mp4" type="video/mp4"/>
+      </video>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="cinematic-hero-content">
+      <div class="hero-strap fine-label" data-reveal><span>CONSTRUCTION STUDIO / [Service area]</span><span>PLANNING · CONSTRUCTION · MANAGEMENT</span></div>
+      <div class="hero-center">
+        <span class="fine-label accent-label" data-reveal>GENERAL CONTRACTOR / DFW METROPLEX</span>
+        <h1 class="font-display cinematic-title" data-reveal>TURN-KEY<br>CONSTRUCTION<br><em>SOLUTIONS</em><br><strong>WITH ACCURACY.</strong></h1>
+        <p class="hero-description" data-reveal>Preconstruction planning, construction and construction management for clients across the DFW Metroplex and the country.</p>
+        <div class="hero-buttons" data-reveal>
+          <button type="button" onclick="navigateTo('projects')" class="architectural-button button-accent">EXPLORE PROJECTS <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+          <button type="button" onclick="navigateTo('contact')" class="architectural-button button-outline">DISCUSS YOUR PROJECT <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="hero-foot fine-label" data-reveal><span>AN UNOFFICIAL DESIGN CONCEPT</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </div>
+  </div>
+  <div class="editorial-intro pale-panel">
+    <div class="wide-frame intro-grid">
+      <div data-reveal>
+        <span class="fine-label teal-label">01 / ABOUT THE COMPANY</span>
+        <h2 class="font-display large-editorial-title">BUILT AROUND<br>THE <span>PROJECT.</span></h2>
+        <p class="editorial-copy">Construction Studio serves the DFW Metroplex and clients across the country. Its published markets include higher education, tenant development, residential, hospitals and data centers.</p>
+        <p class="editorial-copy">The company describes solutions and customer service as priorities.</p>
+        <button type="button" onclick="navigateTo('about')" class="architectural-link">ABOUT CONSTRUCTION STUDIO <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+      </div>
+      <div class="feature-photo image-mask" data-reveal><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1700&q=82" alt="Illustrative contemporary architectural exterior" loading="lazy" decoding="async"/></div>
+    </div>
+  </div>
+  <div class="editorial-services dark-panel">
+    <div class="wide-frame">
+      <div class="editorial-section-head" data-reveal>
+        <div><span class="fine-label teal-label">02 / WHAT WE DO</span><h2 class="font-display large-editorial-title">THREE CORE<br><span>SERVICES.</span></h2></div>
+        <p class="editorial-copy">Preconstruction planning, construction and construction management.</p>
+      </div>
+    </div>
+    <div class="home-service-sequence" data-scene-sequence role="group" aria-label="Three Construction Studio service chapters">
+ <div class="chapter-row chapter-full chapter-full-1" data-scene="1" aria-label="PRECONSTRUCTION PLANNING">
+  <div class="chapter-background" aria-hidden="true">
+      <picture class="chapter-responsive-picture"><source media="(max-width:767px)" srcset="./assets/images/home/preconstruction-mobile.webp" type="image/webp"/><img src="./assets/images/home/preconstruction-desktop.webp" alt="" loading="lazy" decoding="async" width="2048" height="1152"/></picture>
+      <div class="chapter-background-shade"></div>
+    </div>
+  <div class="chapter-stage" data-reveal>
+    <div class="chapter-copy">
+   <span class="fine-label">01 / PLANNING</span>
+   <h3 class="font-display chapter-heading">PRECONSTRUCTION<br>PLANNING.</h3>
+   <p class="editorial-copy">Design and construction feedback before work begins to help clients develop efficient, functional plans.</p>
+   <button type="button" onclick="navigateTo('services')" class="architectural-link">EXAMINE SERVICE <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+  </div>
+    
+  </div>
+</div>
+ <div class="chapter-row chapter-full chapter-full-2" data-scene="2" aria-label="CONSTRUCTION">
+  <div class="chapter-background" aria-hidden="true">
+      <picture class="chapter-responsive-picture"><source media="(max-width:767px)" srcset="./assets/images/home/construction-mobile.webp" type="image/webp"/><img src="./assets/images/home/construction-desktop.webp" alt="" loading="lazy" decoding="async" width="2048" height="1152"/></picture>
+      <div class="chapter-background-shade"></div>
+    </div>
+  <div class="chapter-stage" data-reveal>
+    <div class="chapter-copy">
+   <span class="fine-label">02 / EXECUTION</span>
+   <h3 class="font-display chapter-heading">CONSTRUCTION.</h3>
+   <p class="editorial-copy">Ground-up construction and renovations for interior and exterior projects, from initial concepts or completed construction documents.</p>
+   <button type="button" onclick="navigateTo('services')" class="architectural-link">EXAMINE SERVICE <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+  </div>
+    
+  </div>
+</div>
+ <div class="chapter-row chapter-full chapter-full-3" data-scene="3" aria-label="CONSTRUCTION MANAGEMENT">
+  <div class="chapter-background" aria-hidden="true">
+      <picture class="chapter-responsive-picture"><source media="(max-width:767px)" srcset="./assets/images/home/management-mobile.webp" type="image/webp"/><img src="./assets/images/home/management-desktop.webp" alt="" loading="lazy" decoding="async" width="2048" height="1152"/></picture>
+      <div class="chapter-background-shade"></div>
+    </div>
+  <div class="chapter-stage" data-reveal>
+    <div class="chapter-copy">
+   <span class="fine-label">03 / COORDINATION</span>
+   <h3 class="font-display chapter-heading">CONSTRUCTION<br>MANAGEMENT.</h3>
+   <p class="editorial-copy">Support with architectural drawings, permitting, labor coordination and the logistics needed to deliver a construction project.</p>
+   <button type="button" onclick="navigateTo('services')" class="architectural-link">EXAMINE SERVICE <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+  </div>
+    
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="editorial-portfolio pale-panel" id="home-portfolio">
+    <div class="wide-frame">
+      <div class="editorial-section-head portfolio-section-head" data-reveal>
+        <div>
+          <span class="fine-label teal-label">03 / SELECTED WORK</span>
+          <h2 class="font-display large-editorial-title">THE PROJECT<br><span>PORTFOLIO.</span></h2>
+        </div>
+        <div class="portfolio-section-intro">
+          <p class="editorial-copy">Four documented projects spanning campus renovations, athletic facilities and technical construction.</p>
+          <a href="?view=projects" onclick="navigateTo('projects');return false;" class="architectural-link">VIEW ALL PROJECTS <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="editorial-project-grid portfolio-grid" aria-label="Selected construction projects">
+        <a href="?view=unt" onclick="navigateTo('unt');return false;" class="editorial-project portfolio-tile portfolio-featured" data-reveal aria-label="Explore ACADEMIC RENOVATION project">
+          <span class="portfolio-tile-media" aria-hidden="true">
+            <img src="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=500 500w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1900 1900w" sizes="(min-width: 1200px) 58vw, (min-width: 768px) 92vw, 100vw" alt="" loading="lazy" decoding="async"/>
+          </span>
+          <span class="portfolio-tile-shade" aria-hidden="true"></span>
+          <span class="portfolio-tile-top">
+            <span class="fine-label">01 / HIGHER EDUCATION</span>
+            <span class="portfolio-tile-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+          </span>
+          <span class="portfolio-tile-content">
+            <h3 class="font-display portfolio-tile-title">ACADEMIC RENOVATION</h3>
+            <span class="portfolio-tile-description">Office, restroom, lighting and finish renovations.</span>
+            <span class="portfolio-tile-cta">VIEW PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a href="?view=twu" onclick="navigateTo('twu');return false;" class="editorial-project portfolio-tile portfolio-secondary" data-reveal aria-label="Explore Heritage Restoration project">
+          <span class="portfolio-tile-media" aria-hidden="true">
+            <img src="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=500 500w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1900 1900w" sizes="(min-width: 1200px) 42vw, (min-width: 768px) 48vw, 100vw" alt="" loading="lazy" decoding="async"/>
+          </span>
+          <span class="portfolio-tile-shade" aria-hidden="true"></span>
+          <span class="portfolio-tile-top">
+            <span class="fine-label">02 / UNIVERSITY REPAIRS</span>
+            <span class="portfolio-tile-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+          </span>
+          <span class="portfolio-tile-content">
+            <h3 class="font-display portfolio-tile-title">Heritage Restoration</h3>
+            <span class="portfolio-tile-description">Plaster repair, painting and skylight glass work.</span>
+            <span class="portfolio-tile-cta">VIEW PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a href="?view=plano" onclick="navigateTo('plano');return false;" class="editorial-project portfolio-tile portfolio-secondary" data-reveal aria-label="Explore ATHLETIC FACILITY project">
+          <span class="portfolio-tile-media" aria-hidden="true">
+            <img src="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=500 500w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1900 1900w" sizes="(min-width: 1200px) 42vw, (min-width: 768px) 48vw, 100vw" alt="" loading="lazy" decoding="async"/>
+          </span>
+          <span class="portfolio-tile-shade" aria-hidden="true"></span>
+          <span class="portfolio-tile-top">
+            <span class="fine-label">03 / ATHLETIC FACILITIES</span>
+            <span class="portfolio-tile-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+          </span>
+          <span class="portfolio-tile-content">
+            <h3 class="font-display portfolio-tile-title">ATHLETIC FACILITY</h3>
+            <span class="portfolio-tile-description">Electrical, concrete paving and bleacher work across six sites.</span>
+            <span class="portfolio-tile-cta">VIEW PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a href="?view=mep" onclick="navigateTo('mep');return false;" class="editorial-project portfolio-tile portfolio-secondary" data-reveal aria-label="Explore MEP PROJECTS project">
+          <span class="portfolio-tile-media" aria-hidden="true">
+            <img src="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=500 500w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1900 1900w" sizes="(min-width: 1200px) 42vw, (min-width: 768px) 48vw, 100vw" alt="" loading="lazy" decoding="async"/>
+          </span>
+          <span class="portfolio-tile-shade" aria-hidden="true"></span>
+          <span class="portfolio-tile-top">
+            <span class="fine-label">04 / MEP & INDUSTRIAL</span>
+            <span class="portfolio-tile-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span>
+          </span>
+          <span class="portfolio-tile-content">
+            <h3 class="font-display portfolio-tile-title">MEP PROJECTS</h3>
+            <span class="portfolio-tile-description">Published work includes generator troubleshooting and data-center drain pans.</span>
+            <span class="portfolio-tile-cta">VIEW PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+      </div>
+      <p class="portfolio-media-note">Photographs are illustrative and do not depict the featured project sites.</p>
+    </div>
+  </div>
+  <div class="editorial-clients dark-panel">
+    <div class="clients-photo" aria-hidden="true"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=82" alt="" loading="lazy" decoding="async"/></div>
+    <div class="wide-frame relative">
+      <div data-reveal><span class="fine-label teal-label">04 / ORIGINAL WEBSITE CLIENT LIST</span><h2 class="font-display large-editorial-title">EXAMPLE<br><span>CLIENTS.</span></h2><p class="editorial-copy">Client identity slots; no actual clients are claimed.</p></div>
+      <div class="client-typographic-grid" data-reveal>
+       <span>Client placeholder</span><span>Client placeholder</span><span>Client placeholder</span><span>Client placeholder</span><span>Client placeholder</span><span>Client placeholder</span>
+      </div>
+    </div>
+  </div>
+  <div class="editorial-last-call">
+    <div class="last-call-photo" aria-hidden="true"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1700&q=82" alt="" loading="lazy" decoding="async"/><div class="last-call-scrim"></div></div>
+    <div class="wide-frame relative" data-reveal>
+      <span class="fine-label teal-label">05 / START A CONVERSATION</span>
+      <h2 class="font-display large-editorial-title">HAVE A PROJECT<br>TO <span>DISCUSS?</span></h2>
+      <p class="editorial-copy">Contact Construction Studio to discuss project planning, construction or construction management.</p>
+      <div class="hero-buttons">
+        <button type="button" onclick="navigateTo('contact')" class="architectural-button button-accent">CONTACT THE OFFICE <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+        <a href="?view=contact" onclick="navigateTo('contact');return false;" class="architectural-button button-outline">[Phone] <i data-lucide="phone" class="w-4 h-4"></i></a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+        <!-- =================================================================== -->
+        <!-- 02 — SERVICES PAGE -->
+        <!-- =================================================================== -->
+        <section id="page-services" class="page-view hidden-page services-v2">
+  <!-- SERVICES / EDITORIAL HERO -->
+  <div class="sv-hero">
+    <div class="sv-hero-media" aria-hidden="true"><img src="https://images.pexels.com/photos/12109677/pexels-photo-12109677.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/12109677/pexels-photo-12109677.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/12109677/pexels-photo-12109677.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/12109677/pexels-photo-12109677.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/12109677/pexels-photo-12109677.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" fetchpriority="low" decoding="async"/><span class="sv-hero-shade"></span></div>
+    <div class="sv-frame sv-hero-content">
+      <div class="sv-hero-topline" data-reveal><span>CONSTRUCTION STUDIO / SERVICES</span><span class="sv-hero-topline-right">PLANNING · CONSTRUCTION · MANAGEMENT</span></div>
+      <div class="sv-hero-main">
+        <span class="sv-overline" data-reveal>01 — 03 / WHAT WE DO</span>
+        <h1 class="font-display sv-hero-title" data-reveal>THE WORK<br><span>BEHIND</span><br>THE WORK.</h1>
+        <p class="sv-hero-lead" data-reveal>From early planning through construction and project coordination, Construction Studio offers three core services.</p>
+        <div class="sv-hero-actions" data-reveal>
+          <a href="#sv-preconstruction" class="sv-btn sv-btn-primary">EXPLORE SERVICES <i data-lucide="arrow-down-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          <button onclick="navigateTo('contact')" type="button" class="sv-btn sv-btn-glass">DISCUSS A PROJECT <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="sv-hero-bottom" data-reveal><span>DFW METROPLEX & CLIENTS ACROSS THE COUNTRY</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </div>
+  </div>
+
+  <!-- EDITORIAL SERVICE INDEX / COMPACT -->
+  <div class="sv-intro">
+    <div class="sv-frame sv-intro-grid">
+      <div class="sv-intro-copy" data-reveal>
+        <span class="sv-overline sv-teal">OUR APPROACH / CONSTRUCTION STUDIO</span>
+        <h2 class="font-display sv-heading">THREE CORE<br><span>SERVICES.</span></h2>
+        <p>Planning feedback, construction for new and renovation projects, and the coordination of architectural drawings, permitting, labor and logistics.</p>
+        <nav class="sv-index" aria-label="Jump to a service">
+          <a href="#sv-preconstruction"><span>01</span> PRECONSTRUCTION PLANNING <i data-lucide="arrow-down-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          <a href="#sv-construction"><span>02</span> CONSTRUCTION <i data-lucide="arrow-down-right" class="w-4 h-4" aria-hidden="true"></i></a>
+          <a href="#sv-management"><span>03</span> CONSTRUCTION MANAGEMENT <i data-lucide="arrow-down-right" class="w-4 h-4" aria-hidden="true"></i></a>
+        </nav>
+      </div>
+      <figure class="sv-intro-visual" data-reveal><img src="./assets/images/services/three-core-services-architecture.webp" width="1374" height="1145" alt="Two construction professionals reviewing architectural plans in a modern commercial interior; illustrative image" loading="lazy" decoding="async"/><figcaption>PLANNING / DESIGN / COORDINATION</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- THREE VERTICAL SCROLL-STACKING SERVICE CHAPTERS -->
+  <div class="sv-service-sequence" data-sv-sequence aria-label="Three construction service chapters">
+    <section id="sv-preconstruction" class="sv-scene sv-scene-planning" data-sv-scene="01" aria-labelledby="sv-h-planning">
+      <div class="sv-scene-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/9405517/pexels-photo-9405517.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/9405517/pexels-photo-9405517.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/9405517/pexels-photo-9405517.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/9405517/pexels-photo-9405517.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/9405517/pexels-photo-9405517.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span class="sv-scene-shade"></span></div>
+      <div class="sv-frame sv-scene-frame">
+        <div class="sv-scene-top"><span>01 / PLANNING</span><span>BEFORE CONSTRUCTION</span></div>
+        <div class="sv-scene-content">
+          <span class="sv-overline">SERVICE 01</span>
+          <h2 id="sv-h-planning" class="font-display sv-scene-title">PRECONSTRUCTION<br><span>PLANNING.</span></h2>
+          <p class="sv-scene-summary">Construction Studio provides design and construction feedback before work begins, helping clients develop efficient, functional construction plans.</p>
+          <div class="sv-scene-points" aria-label="PLANNING scope"><span><em>01</em>DESIGN FEEDBACK</span><span><em>02</em>CONSTRUCTION FEEDBACK</span><span><em>03</em>EFFICIENT, FUNCTIONAL PLANNING</span></div>
+          <button type="button" class="sv-scene-link" onclick="navigateTo('contact')">DISCUSS PRECONSTRUCTION<i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+        </div>
+        <div class="sv-scene-bottom"><span>CONSTRUCTION STUDIO / CORE SERVICES</span><span>01 — 03</span></div>
+      </div>
+    </section>
+    <section id="sv-construction" class="sv-scene sv-scene-construction" data-sv-scene="02" aria-labelledby="sv-h-construction">
+      <div class="sv-scene-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/37244506/pexels-photo-37244506.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span class="sv-scene-shade"></span></div>
+      <div class="sv-frame sv-scene-frame">
+        <div class="sv-scene-top"><span>02 / CONSTRUCTION</span><span>GROUND-UP & RENOVATION</span></div>
+        <div class="sv-scene-content">
+          <span class="sv-overline">SERVICE 02</span>
+          <h2 id="sv-h-construction" class="font-display sv-scene-title">CONSTRUCTION<span>.</span></h2>
+          <p class="sv-scene-summary">Whether starting with a concept or a full set of construction documents, Construction Studio handles ground-up work and interior and exterior renovations, working toward clients’ budget and timeline goals.</p>
+          <div class="sv-scene-points" aria-label="CONSTRUCTION scope"><span><em>01</em>GROUND-UP CONSTRUCTION</span><span><em>02</em>INTERIOR RENOVATIONS</span><span><em>03</em>EXTERIOR RENOVATIONS</span></div>
+          <button type="button" class="sv-scene-link" onclick="navigateTo('contact')">DISCUSS CONSTRUCTION<i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+        </div>
+        <div class="sv-scene-bottom"><span>CONSTRUCTION STUDIO / CORE SERVICES</span><span>02 — 03</span></div>
+      </div>
+    </section>
+    <section id="sv-management" class="sv-scene sv-scene-management" data-sv-scene="03" aria-labelledby="sv-h-management">
+      <div class="sv-scene-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/8961073/pexels-photo-8961073.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/8961073/pexels-photo-8961073.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/8961073/pexels-photo-8961073.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/8961073/pexels-photo-8961073.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/8961073/pexels-photo-8961073.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span class="sv-scene-shade"></span></div>
+      <div class="sv-frame sv-scene-frame">
+        <div class="sv-scene-top"><span>03 / MANAGEMENT</span><span>PROJECT COORDINATION</span></div>
+        <div class="sv-scene-content">
+          <span class="sv-overline">SERVICE 03</span>
+          <h2 id="sv-h-management" class="font-display sv-scene-title">CONSTRUCTION<br><span>MANAGEMENT.</span></h2>
+          <p class="sv-scene-summary">Construction Studio coordinates architectural drawings, permitting, appropriate labor and project logistics to help bring a client’s concept to life.</p>
+          <div class="sv-scene-points" aria-label="MANAGEMENT scope"><span><em>01</em>ARCHITECTURAL DRAWINGS</span><span><em>02</em>PERMITTING</span><span><em>03</em>LABOR COORDINATION</span><span><em>04</em>PROJECT LOGISTICS</span></div>
+          <button type="button" class="sv-scene-link" onclick="navigateTo('contact')">DISCUSS PROJECT MANAGEMENT<i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button>
+        </div>
+        <div class="sv-scene-bottom"><span>CONSTRUCTION STUDIO / CORE SERVICES</span><span>03 — 03</span></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- RELATED PROJECTS / EDITORIAL IMAGE OVERLAY -->
+  <section class="sv-related" aria-labelledby="sv-h-related">
+    <div class="sv-frame">
+      <div class="sv-related-head" data-reveal>
+        <div><span class="sv-overline sv-teal">SELECTED WORK / CONSTRUCTION STUDIO</span><h2 id="sv-h-related" class="font-display sv-heading">SEE THE<br><span>PROJECTS.</span></h2></div>
+        <div><p>Explore documented university renovation and repair projects, or view the full portfolio.</p><button type="button" onclick="navigateTo('projects')" class="sv-related-all">EXPLORE ALL FOUR PROJECTS <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button></div>
+      </div>
+      <div class="sv-related-grid" data-reveal><a class="sv-related-card" href="?view=unt" onclick="navigateTo('unt');return false;" aria-label="Explore ACADEMIC RENOVATION">
+      <span class="sv-related-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 48vw, 100vw" alt="" loading="lazy" decoding="async"/><span class="sv-related-shade"></span></span>
+      <span class="sv-related-cardtop"><small>01 / HIGHER EDUCATION</small><span class="sv-related-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span></span>
+      <span class="sv-related-cardcopy"><strong class="font-display">ACADEMIC RENOVATION</strong><span>Office, restroom, lighting and finish renovations.</span><em>VIEW PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></em></span>
+    </a>
+<a class="sv-related-card" href="?view=twu" onclick="navigateTo('twu');return false;" aria-label="Explore Heritage Restoration">
+      <span class="sv-related-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 48vw, 100vw" alt="" loading="lazy" decoding="async"/><span class="sv-related-shade"></span></span>
+      <span class="sv-related-cardtop"><small>02 / UNIVERSITY REPAIRS</small><span class="sv-related-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span></span>
+      <span class="sv-related-cardcopy"><strong class="font-display">Heritage Restoration</strong><span>Plaster repair, painting and skylight glass work.</span><em>VIEW PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></em></span>
+    </a></div>
+      <p class="sv-media-note">Photographs are illustrative and do not depict Construction Studio project sites or personnel.</p>
+    </div>
+  </section>
+
+  <!-- UNIFIED FINAL CTA -->
+  <section class="sv-end-cta" aria-labelledby="sv-h-contact">
+    <div class="sv-end-media" aria-hidden="true"><img src="https://images.pexels.com/photos/35564145/pexels-photo-35564145.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/35564145/pexels-photo-35564145.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/35564145/pexels-photo-35564145.jpeg?auto=compress&cs=tinysrgb&w=1000 1000w, https://images.pexels.com/photos/35564145/pexels-photo-35564145.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/35564145/pexels-photo-35564145.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span></span></div>
+    <div class="sv-frame sv-end-content" data-reveal>
+      <span class="sv-overline">LET'S CONNECT / CONSTRUCTION STUDIO</span>
+      <h2 id="sv-h-contact" class="font-display sv-heading">LET'S TALK ABOUT<br><span>YOUR PROJECT.</span></h2>
+      <p>Have questions about planning, construction or coordination? Get in touch with Construction Studio.</p>
+      <div class="sv-hero-actions"><button type="button" onclick="navigateTo('contact')" class="sv-btn sv-btn-primary">CONTACT STUDIO <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i></button><a href="?view=contact" onclick="navigateTo('contact');return false;" class="sv-btn sv-btn-glass">[Phone] <i data-lucide="phone" class="w-4 h-4" aria-hidden="true"></i></a></div>
+    </div>
+  </section>
+</section>
+
+        <!-- =================================================================== -->
+        <!-- 03 — PROJECTS PORTFOLIO PAGE -->
+        <!-- =================================================================== -->
+        <section id="page-projects" class="page-view hidden-page portfolio-page">
+  <header class="portfolio-index-hero">
+    <div class="portfolio-frame">
+      <div class="portfolio-index-top"><span>CONSTRUCTION STUDIO / PORTFOLIO</span><span>01 — 04 / SELECTED WORK</span></div>
+      <div class="portfolio-index-main" data-reveal>
+        <span class="portfolio-eyebrow">DOCUMENTED PROJECTS / CONSTRUCTION STUDIO</span>
+        <h1 class="font-display">SELECTED<br><span>WORK.</span></h1>
+        <div class="portfolio-index-bottom"><p>Projects spanning university renovations, athletic facilities and published technical work.</p><span class="portfolio-index-counter">04 <small>PROJECT ENTRIES</small></span></div>
+      </div>
+    </div>
+  </header>
+  <div class="portfolio-index-body">
+    <div class="portfolio-frame">
+      <div class="portfolio-index-intro" data-reveal><span>THE PORTFOLIO / 01—04</span><p>Explore the scope recorded for each project.</p></div>
+      <div class="portfolio-work-grid"><a class="portfolio-work-card portfolio-work-card-1" href="?view=unt" onclick="navigateTo('unt');return false;" aria-label="Explore ACADEMIC RENOVATION">
+    <span class="portfolio-work-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:1200px) 92vw, 100vw" alt="" loading="lazy" decoding="async"/></span>
+    <span class="portfolio-work-wash" aria-hidden="true"></span>
+    <span class="portfolio-work-top"><span>01 / HIGHER EDUCATION</span><span class="portfolio-work-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span></span>
+    <span class="portfolio-work-copy"><strong class="font-display">ACADEMIC RENOVATION</strong><span class="portfolio-work-description">An academic renovation encompassing new offices, ADA restrooms, lighting and finishes.</span><span class="portfolio-work-action">EXPLORE PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span></span>
+  </a>
+<a class="portfolio-work-card portfolio-work-card-2" href="?view=twu" onclick="navigateTo('twu');return false;" aria-label="Explore Heritage Restoration">
+    <span class="portfolio-work-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 46vw, 100vw" alt="" loading="lazy" decoding="async"/></span>
+    <span class="portfolio-work-wash" aria-hidden="true"></span>
+    <span class="portfolio-work-top"><span>02 / UNIVERSITY REPAIRS</span><span class="portfolio-work-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span></span>
+    <span class="portfolio-work-copy"><strong class="font-display">Heritage Restoration</strong><span class="portfolio-work-description">Plaster repair, painting and replacement of skylight glass in Old Main's rotunda.</span><span class="portfolio-work-action">EXPLORE PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span></span>
+  </a>
+<a class="portfolio-work-card portfolio-work-card-3" href="?view=plano" onclick="navigateTo('plano');return false;" aria-label="Explore ATHLETIC FACILITY">
+    <span class="portfolio-work-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 46vw, 100vw" alt="" loading="lazy" decoding="async"/></span>
+    <span class="portfolio-work-wash" aria-hidden="true"></span>
+    <span class="portfolio-work-top"><span>03 / ATHLETIC FACILITIES</span><span class="portfolio-work-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span></span>
+    <span class="portfolio-work-copy"><strong class="font-display">ATHLETIC FACILITY</strong><span class="portfolio-work-description">Electrical, demolition, concrete paving and bleacher work at six athletic job sites.</span><span class="portfolio-work-action">EXPLORE PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span></span>
+  </a>
+<a class="portfolio-work-card portfolio-work-card-4" href="?view=mep" onclick="navigateTo('mep');return false;" aria-label="Explore MEP PROJECTS">
+    <span class="portfolio-work-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:1200px) 92vw, 100vw" alt="" loading="lazy" decoding="async"/></span>
+    <span class="portfolio-work-wash" aria-hidden="true"></span>
+    <span class="portfolio-work-top"><span>04 / MEP & INDUSTRIAL</span><span class="portfolio-work-arrow" aria-hidden="true"><i data-lucide="arrow-up-right"></i></span></span>
+    <span class="portfolio-work-copy"><strong class="font-display">MEP PROJECTS</strong><span class="portfolio-work-description">Published technical work includes generator troubleshooting and data-center drain pan replacement.</span><span class="portfolio-work-action">EXPLORE PROJECT <i data-lucide="arrow-right" aria-hidden="true"></i></span></span>
+  </a></div>
+      <p class="portfolio-photo-note">Photographs are illustrative. They do not depict the named Construction Studio projects.</p>
+    </div>
+  </div>
+  <section class="portfolio-final-cta" aria-labelledby="portfolio-cta-title"><div class="portfolio-frame"><div class="portfolio-cta-label">NEXT / START A CONVERSATION</div><h2 id="portfolio-cta-title" class="font-display">HAVE A PROJECT<br><span>IN MIND?</span></h2><div class="portfolio-cta-row"><p>Get in touch about preconstruction, construction or construction management.</p><button type="button" onclick="navigateTo('contact')" class="portfolio-cta-button">CONTACT STUDIO <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></div></section>
+</section>
+
+<!-- FOUR PROJECTS · VERIFIED PUBLISHED SCOPE / DISTINCT EDITORIAL STORIES -->
+<section id="page-unt" class="page-view hidden-page portfolio-story portfolio-story-unt">
+  <header class="portfolio-story-hero">
+    <div class="portfolio-story-image" aria-hidden="true"><img src="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/></div><div class="portfolio-story-shade" aria-hidden="true"></div>
+    <div class="portfolio-frame portfolio-story-hero-inner">
+      <div class="portfolio-story-navigation"><a href="?view=projects" onclick="navigateTo('projects');return false;"><i data-lucide="arrow-left" aria-hidden="true"></i> ALL PROJECTS</a><span>01 / 04 &nbsp; HIGHER EDUCATION</span></div>
+      <div class="portfolio-story-hero-text"><span class="portfolio-eyebrow">CONSTRUCTION STUDIO / SELECTED WORK</span><h1 class="font-display">ACADEMIC RENOVATION<br><span>EXAMPLE.</span></h1><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      <div class="portfolio-story-hero-bottom"><span>MATTHEWS HALL RENOVATION</span><span>SCROLL TO EXPLORE <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div>
+    </div>
+  </header>
+  <div class="portfolio-story-main">
+    <div class="portfolio-frame">
+      <div class="portfolio-story-overview">
+        <div class="portfolio-story-intro" data-reveal><span class="portfolio-eyebrow">THE PROJECT / 01</span><h2 class="font-display">THE WORK<br><span>IN DETAIL.</span></h2></div>
+        <div class="portfolio-story-overview-copy" data-reveal><p class="portfolio-story-lead">Illustrative project content. Replace with verified project scope and outcomes before publication.</p><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      </div>
+      <div class="portfolio-story-facts" data-reveal><dl><div class="portfolio-fact"><dt>LOCATION</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>PROJECT TYPE</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>PUBLISHED AREA</dt><dd>Pending verification</dd></div></dl></div>
+      <section class="portfolio-story-scope" aria-labelledby="scope-unt">
+        <div class="portfolio-story-scope-head" data-reveal><span class="portfolio-eyebrow">DOCUMENTED SCOPE / 01</span><h2 id="scope-unt" class="font-display">WORK<br><span>INCLUDED.</span></h2></div>
+        <ol class="portfolio-scope-list" data-reveal><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li></ol>
+      </section>
+      <section class="portfolio-story-gallery" aria-labelledby="gallery-unt">
+ <header class="portfolio-story-gallery-head" data-reveal>
+   <div><span class="portfolio-eyebrow">VISUAL STUDY / 01 — 04</span><h2 id="gallery-unt" class="font-display">PROJECT<br><span>IMAGERY.</span></h2></div>
+   <p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+ </header>
+ <div class="portfolio-story-gallery-grid"><figure class="portfolio-gallery-image portfolio-gallery-image-1" data-reveal>
+   <img src="https://images.pexels.com/photos/12512761/pexels-photo-12512761.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/12512761/pexels-photo-12512761.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/12512761/pexels-photo-12512761.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/12512761/pexels-photo-12512761.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/12512761/pexels-photo-12512761.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 61vw, (min-width:768px) 92vw, 100vw" alt="Bright brick-and-window university corridor, illustrative architecture" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-2" data-reveal>
+   <img src="https://images.pexels.com/photos/7534179/pexels-photo-7534179.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/7534179/pexels-photo-7534179.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/7534179/pexels-photo-7534179.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/7534179/pexels-photo-7534179.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/7534179/pexels-photo-7534179.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Modern office hallway with glass partitions, illustrative interior" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-3" data-reveal>
+   <img src="https://images.pexels.com/photos/33072184/pexels-photo-33072184.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/33072184/pexels-photo-33072184.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/33072184/pexels-photo-33072184.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/33072184/pexels-photo-33072184.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/33072184/pexels-photo-33072184.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Accessible restroom entrance, illustrative facility detail" loading="lazy" decoding="async"/>
+ </figure></div>
+ <p class="portfolio-photo-note portfolio-story-note">Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+</section>
+    </div>
+  </div>
+  <section class="portfolio-story-next" aria-label="Continue exploring projects">
+    <div class="portfolio-frame portfolio-story-next-grid">
+      <div><span class="portfolio-eyebrow">NEXT / 02 OF 04</span><h2 class="font-display">CONTINUE<br><span>EXPLORING.</span></h2><a href="?view=projects" onclick="navigateTo('projects');return false;" class="portfolio-story-back">VIEW ALL PROJECTS <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+      <a class="portfolio-story-next-card" href="?view=twu" onclick="navigateTo('twu');return false;" aria-label="Next project: Heritage Restoration"><span class="portfolio-story-next-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 48vw,100vw" alt="" loading="lazy" decoding="async"/></span><span class="portfolio-story-next-wash" aria-hidden="true"></span><span class="portfolio-story-next-copy"><small>02 / UNIVERSITY REPAIRS</small><strong class="font-display">Heritage Restoration</strong><em>VIEW PROJECT <i data-lucide="arrow-up-right" aria-hidden="true"></i></em></span></a>
+    </div>
+  </section>
+  <section class="portfolio-story-contact" aria-label="Contact Construction Studio"><div class="portfolio-frame"><span>HAVE A QUESTION ABOUT CONSTRUCTION SERVICES?</span><button type="button" onclick="navigateTo('contact')">CONTACT CONSTRUCTION STUDIO <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></section>
+</section>
+
+<section id="page-twu" class="page-view hidden-page portfolio-story portfolio-story-twu">
+  <header class="portfolio-story-hero">
+    <div class="portfolio-story-image" aria-hidden="true"><img src="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/31398713/pexels-photo-31398713.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/></div><div class="portfolio-story-shade" aria-hidden="true"></div>
+    <div class="portfolio-frame portfolio-story-hero-inner">
+      <div class="portfolio-story-navigation"><a href="?view=projects" onclick="navigateTo('projects');return false;"><i data-lucide="arrow-left" aria-hidden="true"></i> ALL PROJECTS</a><span>02 / 04 &nbsp; UNIVERSITY REPAIRS</span></div>
+      <div class="portfolio-story-hero-text"><span class="portfolio-eyebrow">CONSTRUCTION STUDIO / SELECTED WORK</span><h1 class="font-display">HERITAGE<br><span>RESTORATION.</span></h1><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      <div class="portfolio-story-hero-bottom"><span>OLD MAIN REPAIRS</span><span>SCROLL TO EXPLORE <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div>
+    </div>
+  </header>
+  <div class="portfolio-story-main">
+    <div class="portfolio-frame">
+      <div class="portfolio-story-overview">
+        <div class="portfolio-story-intro" data-reveal><span class="portfolio-eyebrow">THE PROJECT / 02</span><h2 class="font-display">THE WORK<br><span>IN DETAIL.</span></h2></div>
+        <div class="portfolio-story-overview-copy" data-reveal><p class="portfolio-story-lead">Illustrative project content. Replace with verified project scope and outcomes before publication.</p><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      </div>
+      <div class="portfolio-story-facts" data-reveal><dl><div class="portfolio-fact"><dt>LOCATION</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>PROJECT TYPE</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>FEATURED AREA</dt><dd>Pending verification</dd></div></dl></div>
+      <section class="portfolio-story-scope" aria-labelledby="scope-twu">
+        <div class="portfolio-story-scope-head" data-reveal><span class="portfolio-eyebrow">DOCUMENTED SCOPE / 02</span><h2 id="scope-twu" class="font-display">WORK<br><span>INCLUDED.</span></h2></div>
+        <ol class="portfolio-scope-list" data-reveal><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li></ol>
+      </section>
+      <section class="portfolio-story-gallery" aria-labelledby="gallery-twu">
+ <header class="portfolio-story-gallery-head" data-reveal>
+   <div><span class="portfolio-eyebrow">VISUAL STUDY / 02 — 04</span><h2 id="gallery-twu" class="font-display">PROJECT<br><span>IMAGERY.</span></h2></div>
+   <p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+ </header>
+ <div class="portfolio-story-gallery-grid"><figure class="portfolio-gallery-image portfolio-gallery-image-1" data-reveal>
+   <img src="https://images.pexels.com/photos/27700137/pexels-photo-27700137.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/27700137/pexels-photo-27700137.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/27700137/pexels-photo-27700137.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/27700137/pexels-photo-27700137.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/27700137/pexels-photo-27700137.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 61vw, (min-width:768px) 92vw, 100vw" alt="Historic atrium beneath glass skylight, illustrative architecture" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-2" data-reveal>
+   <img src="https://images.pexels.com/photos/7443763/pexels-photo-7443763.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/7443763/pexels-photo-7443763.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/7443763/pexels-photo-7443763.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/7443763/pexels-photo-7443763.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/7443763/pexels-photo-7443763.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Historic rounded glass dome detail, illustrative interior" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-3" data-reveal>
+   <img src="https://images.pexels.com/photos/34925709/pexels-photo-34925709.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/34925709/pexels-photo-34925709.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/34925709/pexels-photo-34925709.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/34925709/pexels-photo-34925709.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/34925709/pexels-photo-34925709.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Ornate skylight and ceiling, illustrative architectural detail" loading="lazy" decoding="async"/>
+ </figure></div>
+ <p class="portfolio-photo-note portfolio-story-note">Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+</section>
+    </div>
+  </div>
+  <section class="portfolio-story-next" aria-label="Continue exploring projects">
+    <div class="portfolio-frame portfolio-story-next-grid">
+      <div><span class="portfolio-eyebrow">NEXT / 03 OF 04</span><h2 class="font-display">CONTINUE<br><span>EXPLORING.</span></h2><a href="?view=projects" onclick="navigateTo('projects');return false;" class="portfolio-story-back">VIEW ALL PROJECTS <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+      <a class="portfolio-story-next-card" href="?view=plano" onclick="navigateTo('plano');return false;" aria-label="Next project: ATHLETIC FACILITY"><span class="portfolio-story-next-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 48vw,100vw" alt="" loading="lazy" decoding="async"/></span><span class="portfolio-story-next-wash" aria-hidden="true"></span><span class="portfolio-story-next-copy"><small>03 / ATHLETIC FACILITIES</small><strong class="font-display">ATHLETIC FACILITY</strong><em>VIEW PROJECT <i data-lucide="arrow-up-right" aria-hidden="true"></i></em></span></a>
+    </div>
+  </section>
+  <section class="portfolio-story-contact" aria-label="Contact Construction Studio"><div class="portfolio-frame"><span>HAVE A QUESTION ABOUT CONSTRUCTION SERVICES?</span><button type="button" onclick="navigateTo('contact')">CONTACT CONSTRUCTION STUDIO <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></section>
+</section>
+
+<section id="page-plano" class="page-view hidden-page portfolio-story portfolio-story-plano">
+  <header class="portfolio-story-hero">
+    <div class="portfolio-story-image" aria-hidden="true"><img src="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/14663065/pexels-photo-14663065.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/></div><div class="portfolio-story-shade" aria-hidden="true"></div>
+    <div class="portfolio-frame portfolio-story-hero-inner">
+      <div class="portfolio-story-navigation"><a href="?view=projects" onclick="navigateTo('projects');return false;"><i data-lucide="arrow-left" aria-hidden="true"></i> ALL PROJECTS</a><span>03 / 04 &nbsp; ATHLETIC FACILITIES</span></div>
+      <div class="portfolio-story-hero-text"><span class="portfolio-eyebrow">CONSTRUCTION STUDIO / SELECTED WORK</span><h1 class="font-display">ATHLETIC FACILITY<br><span>EXAMPLE.</span></h1><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      <div class="portfolio-story-hero-bottom"><span>BLEACHER & FIELD UPGRADES</span><span>SCROLL TO EXPLORE <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div>
+    </div>
+  </header>
+  <div class="portfolio-story-main">
+    <div class="portfolio-frame">
+      <div class="portfolio-story-overview">
+        <div class="portfolio-story-intro" data-reveal><span class="portfolio-eyebrow">THE PROJECT / 03</span><h2 class="font-display">THE WORK<br><span>IN DETAIL.</span></h2></div>
+        <div class="portfolio-story-overview-copy" data-reveal><p class="portfolio-story-lead">Illustrative project content. Replace with verified project scope and outcomes before publication.</p><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      </div>
+      <div class="portfolio-story-facts" data-reveal><dl><div class="portfolio-fact"><dt>LOCATION</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>PROJECT TYPE</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>PUBLISHED SCOPE</dt><dd>Pending verification</dd></div></dl></div>
+      <section class="portfolio-story-scope" aria-labelledby="scope-plano">
+        <div class="portfolio-story-scope-head" data-reveal><span class="portfolio-eyebrow">DOCUMENTED SCOPE / 03</span><h2 id="scope-plano" class="font-display">WORK<br><span>INCLUDED.</span></h2></div>
+        <ol class="portfolio-scope-list" data-reveal><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li></ol>
+      </section>
+      <section class="portfolio-story-gallery" aria-labelledby="gallery-plano">
+ <header class="portfolio-story-gallery-head" data-reveal>
+   <div><span class="portfolio-eyebrow">VISUAL STUDY / 03 — 04</span><h2 id="gallery-plano" class="font-display">PROJECT<br><span>IMAGERY.</span></h2></div>
+   <p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+ </header>
+ <div class="portfolio-story-gallery-grid"><figure class="portfolio-gallery-image portfolio-gallery-image-1" data-reveal>
+   <img src="https://images.pexels.com/photos/3571569/pexels-photo-3571569.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/3571569/pexels-photo-3571569.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/3571569/pexels-photo-3571569.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/3571569/pexels-photo-3571569.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/3571569/pexels-photo-3571569.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 61vw, (min-width:768px) 92vw, 100vw" alt="Empty stadium with field and bleachers, illustrative sports facility" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-2" data-reveal>
+   <img src="https://images.pexels.com/photos/8941566/pexels-photo-8941566.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/8941566/pexels-photo-8941566.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/8941566/pexels-photo-8941566.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/8941566/pexels-photo-8941566.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/8941566/pexels-photo-8941566.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Open stadium seating and bleachers, illustrative sports facility" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-3" data-reveal>
+   <img src="https://images.pexels.com/photos/20431288/pexels-photo-20431288.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/20431288/pexels-photo-20431288.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/20431288/pexels-photo-20431288.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/20431288/pexels-photo-20431288.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/20431288/pexels-photo-20431288.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Close perspective of grandstand seating, illustrative infrastructure" loading="lazy" decoding="async"/>
+ </figure></div>
+ <p class="portfolio-photo-note portfolio-story-note">Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+</section>
+    </div>
+  </div>
+  <section class="portfolio-story-next" aria-label="Continue exploring projects">
+    <div class="portfolio-frame portfolio-story-next-grid">
+      <div><span class="portfolio-eyebrow">NEXT / 04 OF 04</span><h2 class="font-display">CONTINUE<br><span>EXPLORING.</span></h2><a href="?view=projects" onclick="navigateTo('projects');return false;" class="portfolio-story-back">VIEW ALL PROJECTS <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+      <a class="portfolio-story-next-card" href="?view=mep" onclick="navigateTo('mep');return false;" aria-label="Next project: MEP PROJECTS"><span class="portfolio-story-next-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 48vw,100vw" alt="" loading="lazy" decoding="async"/></span><span class="portfolio-story-next-wash" aria-hidden="true"></span><span class="portfolio-story-next-copy"><small>04 / MEP & INDUSTRIAL</small><strong class="font-display">MEP PROJECTS</strong><em>VIEW PROJECT <i data-lucide="arrow-up-right" aria-hidden="true"></i></em></span></a>
+    </div>
+  </section>
+  <section class="portfolio-story-contact" aria-label="Contact Construction Studio"><div class="portfolio-frame"><span>HAVE A QUESTION ABOUT CONSTRUCTION SERVICES?</span><button type="button" onclick="navigateTo('contact')">CONTACT CONSTRUCTION STUDIO <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></section>
+</section>
+
+<section id="page-mep" class="page-view hidden-page portfolio-story portfolio-story-mep">
+  <header class="portfolio-story-hero">
+    <div class="portfolio-story-image" aria-hidden="true"><img src="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/38217230/pexels-photo-38217230.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/></div><div class="portfolio-story-shade" aria-hidden="true"></div>
+    <div class="portfolio-frame portfolio-story-hero-inner">
+      <div class="portfolio-story-navigation"><a href="?view=projects" onclick="navigateTo('projects');return false;"><i data-lucide="arrow-left" aria-hidden="true"></i> ALL PROJECTS</a><span>04 / 04 &nbsp; MEP & INDUSTRIAL</span></div>
+      <div class="portfolio-story-hero-text"><span class="portfolio-eyebrow">CONSTRUCTION STUDIO / SELECTED WORK</span><h1 class="font-display">MEP<br><span>PROJECTS.</span></h1><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      <div class="portfolio-story-hero-bottom"><span>SELECTED MEP ASSIGNMENTS</span><span>SCROLL TO EXPLORE <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div>
+    </div>
+  </header>
+  <div class="portfolio-story-main">
+    <div class="portfolio-frame">
+      <div class="portfolio-story-overview">
+        <div class="portfolio-story-intro" data-reveal><span class="portfolio-eyebrow">THE PROJECT / 04</span><h2 class="font-display">THE WORK<br><span>IN DETAIL.</span></h2></div>
+        <div class="portfolio-story-overview-copy" data-reveal><p class="portfolio-story-lead">Illustrative project content. Replace with verified project scope and outcomes before publication.</p><p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p></div>
+      </div>
+      <div class="portfolio-story-facts" data-reveal><dl><div class="portfolio-fact"><dt>SECTOR</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>PUBLISHED TASK</dt><dd>Pending verification</dd></div><div class="portfolio-fact"><dt>ADDITIONAL TASK</dt><dd>Pending verification</dd></div></dl></div>
+      <section class="portfolio-story-scope" aria-labelledby="scope-mep">
+        <div class="portfolio-story-scope-head" data-reveal><span class="portfolio-eyebrow">DOCUMENTED SCOPE / 04</span><h2 id="scope-mep" class="font-display">WORK<br><span>INCLUDED.</span></h2></div>
+        <ol class="portfolio-scope-list" data-reveal><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li><li><span>Verified scope item</span><strong>Verified scope item</strong></li></ol>
+      </section>
+      <section class="portfolio-story-gallery" aria-labelledby="gallery-mep">
+ <header class="portfolio-story-gallery-head" data-reveal>
+   <div><span class="portfolio-eyebrow">VISUAL STUDY / 04 — 04</span><h2 id="gallery-mep" class="font-display">PROJECT<br><span>IMAGERY.</span></h2></div>
+   <p>Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+ </header>
+ <div class="portfolio-story-gallery-grid"><figure class="portfolio-gallery-image portfolio-gallery-image-1" data-reveal>
+   <img src="https://images.pexels.com/photos/18816918/pexels-photo-18816918.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/18816918/pexels-photo-18816918.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/18816918/pexels-photo-18816918.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/18816918/pexels-photo-18816918.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/18816918/pexels-photo-18816918.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 61vw, (min-width:768px) 92vw, 100vw" alt="Technicians near a power generator, illustrative technical work" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-2" data-reveal>
+   <img src="https://images.pexels.com/photos/33706880/pexels-photo-33706880.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/33706880/pexels-photo-33706880.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/33706880/pexels-photo-33706880.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/33706880/pexels-photo-33706880.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/33706880/pexels-photo-33706880.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Industrial electrical control panels, illustrative engineering environment" loading="lazy" decoding="async"/>
+ </figure>
+<figure class="portfolio-gallery-image portfolio-gallery-image-3" data-reveal>
+   <img src="https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=1400" srcset="https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=900 900w, https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=1400 1400w, https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=2000 2000w" sizes="(min-width:1024px) 31vw, (min-width:768px) 45vw, 100vw" alt="Server racks inside a data center, illustrative technical infrastructure" loading="lazy" decoding="async"/>
+ </figure></div>
+ <p class="portfolio-photo-note portfolio-story-note">Illustrative project content. Replace with verified project scope and outcomes before publication.</p>
+</section>
+    </div>
+  </div>
+  <section class="portfolio-story-next" aria-label="Continue exploring projects">
+    <div class="portfolio-frame portfolio-story-next-grid">
+      <div><span class="portfolio-eyebrow">NEXT / 01 OF 04</span><h2 class="font-display">CONTINUE<br><span>EXPLORING.</span></h2><a href="?view=projects" onclick="navigateTo('projects');return false;" class="portfolio-story-back">VIEW ALL PROJECTS <i data-lucide="arrow-right" aria-hidden="true"></i></a></div>
+      <a class="portfolio-story-next-card" href="?view=unt" onclick="navigateTo('unt');return false;" aria-label="Next project: ACADEMIC RENOVATION"><span class="portfolio-story-next-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=850 850w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1250 1250w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=1750 1750w, https://images.pexels.com/photos/36363659/pexels-photo-36363659.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 48vw,100vw" alt="" loading="lazy" decoding="async"/></span><span class="portfolio-story-next-wash" aria-hidden="true"></span><span class="portfolio-story-next-copy"><small>01 / HIGHER EDUCATION</small><strong class="font-display">ACADEMIC RENOVATION</strong><em>VIEW PROJECT <i data-lucide="arrow-up-right" aria-hidden="true"></i></em></span></a>
+    </div>
+  </section>
+  <section class="portfolio-story-contact" aria-label="Contact Construction Studio"><div class="portfolio-frame"><span>HAVE A QUESTION ABOUT CONSTRUCTION SERVICES?</span><button type="button" onclick="navigateTo('contact')">CONTACT CONSTRUCTION STUDIO <i data-lucide="arrow-up-right" aria-hidden="true"></i></button></div></section>
+</section>
+<section id="page-about" class="page-view hidden-page about-v3">
+  <!-- Distinctive split hero: photography is illustration, never 308 staff or work -->
+  <header class="ab-hero">
+    <div class="ab-hero-text">
+      <div class="ab-hero-top"><span>CONSTRUCTION STUDIO / ABOUT</span><span>[Service area]</span></div>
+      <div class="ab-hero-core">
+        <span class="ab-overline">GENERAL CONTRACTING / WHO WE ARE</span>
+        <h1 class="font-display">IN THE<br>BUSINESS OF<br><span>SOLUTIONS.</span></h1>
+        <p>Serving the DFW Metroplex and clients across the country, Construction Studio brings together construction, facilities and design experience.</p>
+        <a href="#ab-profile-title" class="ab-hero-link">ABOUT THE COMPANY <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="ab-hero-foot"><span>CONSTRUCTION STUDIO / TEXAS</span><span>SCROLL TO EXPLORE <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div>
+    </div>
+    <figure class="ab-hero-image"><img src="https://images.pexels.com/photos/18381375/pexels-photo-18381375.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/18381375/pexels-photo-18381375.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/18381375/pexels-photo-18381375.jpeg?auto=compress&cs=tinysrgb&w=950 950w, https://images.pexels.com/photos/18381375/pexels-photo-18381375.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/18381375/pexels-photo-18381375.jpeg?auto=compress&cs=tinysrgb&w=2100 2100w" sizes="(min-width:768px) 44vw, 100vw" alt="Contemporary concrete architecture, illustrative photograph" loading="lazy" decoding="async"/><figcaption>ARCHITECTURE / VISUAL REFERENCE</figcaption></figure>
+  </header>
+  <section class="ab-profile" aria-labelledby="ab-profile-title">
+    <div class="ab-frame ab-profile-grid">
+      <div class="ab-profile-intro" data-reveal><span class="ab-overline">01 / THE COMPANY</span><h2 id="ab-profile-title" class="font-display">EXPERIENCE<br><span>ACROSS THE WORK.</span></h2></div>
+      <div class="ab-profile-story" data-reveal>
+        <p class="ab-profile-lead">Construction Studio’s staff has experience to be verified in construction, facilities and design.</p>
+        <p>Its published work covers several types of built environments, alongside three core services: preconstruction planning, construction and construction management.</p>
+        <div class="ab-experience"><span class="ab-experience-number font-display">—<span></span></span><span class="ab-experience-caption">YEARS OF CONSTRUCTION, FACILITIES AND DESIGN EXPERIENCE ACROSS THE STAFF</span></div>
+      </div>
+    </div>
+  </section>
+  <figure class="ab-photographic"><img src="https://images.pexels.com/photos/32967976/pexels-photo-32967976.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/32967976/pexels-photo-32967976.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/32967976/pexels-photo-32967976.jpeg?auto=compress&cs=tinysrgb&w=950 950w, https://images.pexels.com/photos/32967976/pexels-photo-32967976.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/32967976/pexels-photo-32967976.jpeg?auto=compress&cs=tinysrgb&w=2100 2100w" sizes="100vw" alt="Completed modern commercial atrium with glass roof and natural light, illustrative photography" loading="lazy" decoding="async"/><figcaption>FINISHED ARCHITECTURE / VISUAL REFERENCE</figcaption></figure>
+  <section class="ab-markets" aria-labelledby="ab-markets-title">
+    <div class="ab-frame ab-markets-grid">
+      <div class="ab-markets-copy" data-reveal><span class="ab-overline">02 / MARKETS LISTED BY 308</span><h2 id="ab-markets-title" class="font-display">ACROSS<br><span>DIFFERENT</span><br>SPACES.</h2><p>Construction Studio names these markets on its published website.</p>
+        <ol class="ab-markets-list"><li><span>01</span><strong>HIGHER EDUCATION</strong></li>
+<li><span>02</span><strong>TENANT DEVELOPMENT</strong></li>
+<li><span>03</span><strong>RESIDENTIAL</strong></li>
+<li><span>04</span><strong>HOSPITALS</strong></li>
+<li><span>05</span><strong>DATA CENTERS</strong></li></ol>
+      </div>
+      <figure class="ab-markets-photo" data-reveal><img src="https://images.pexels.com/photos/35548971/pexels-photo-35548971.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/35548971/pexels-photo-35548971.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/35548971/pexels-photo-35548971.jpeg?auto=compress&cs=tinysrgb&w=950 950w, https://images.pexels.com/photos/35548971/pexels-photo-35548971.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/35548971/pexels-photo-35548971.jpeg?auto=compress&cs=tinysrgb&w=2100 2100w" sizes="(min-width:800px) 44vw, 100vw" alt="Unfinished concrete structure, illustrative construction photograph" loading="lazy" decoding="async"/><figcaption>CONSTRUCTION / VISUAL REFERENCE</figcaption></figure>
+    </div>
+  </section>
+  <!-- Published original-site figures, not independently audited operational data. -->
+  <section class="ab-statistics" aria-labelledby="ab-statistics-title">
+    <div class="ab-frame">
+      <div class="ab-statistics-top" data-reveal>
+        <span class="ab-overline">03 / FIGURES PUBLISHED BY 308</span>
+        <h2 id="ab-statistics-title" class="font-display">BY THE<br><span>NUMBERS.</span></h2>
+        <p>Figures presented on the original Construction Studio website.</p>
+      </div>
+      <div class="ab-statistics-grid" data-reveal>
+        <div class="ab-stat"><span class="ab-stat-id">01 / REPORTED PROJECTS</span><strong class="font-display" aria-label="Metric pending">—</strong><span class="ab-stat-caption">PROJECTS COMPLETED</span></div>
+        <div class="ab-stat"><span class="ab-stat-id">02 / REPORTED CONTRACTORS</span><strong class="font-display" aria-label="Metric pending">—</strong><span class="ab-stat-caption">CONTRACTORS APPOINTED</span></div>
+      </div>
+      <p class="ab-stats-source">Business metrics pending verification.</p>
+    </div>
+  </section>
+  <section class="ab-clients" aria-labelledby="ab-clients-title">
+    <div class="ab-frame">
+      <div class="ab-clients-head" data-reveal>
+        <div><span class="ab-overline">04 / PUBLISHED CLIENTS</span><h2 id="ab-clients-title" class="font-display">WORKING<br><span>ACROSS COMMUNITIES.</span></h2></div>
+        <p>Organizations listed by Construction Studio on its published website, presented here without suggesting additional endorsements.</p>
+      </div>
+      <div class="ab-clients-list" data-reveal>
+        <div class="ab-client"><span>01</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>02</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>03</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>04</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>05</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>06</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>07</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>08</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>09</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>10</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>11</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>12</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>13</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>14</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>15</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>16</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>17</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>18</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>19</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>20</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>21</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>22</span><strong>Client placeholder</strong></div>
+        <div class="ab-client"><span>23</span><strong>Client placeholder</strong></div>
+      </div>
+      <p class="ab-clients-note">Replace with authorized client names.</p>
+    </div>
+  </section>
+  <section class="ab-statement" aria-labelledby="ab-statement-title">
+    <div class="ab-frame"><span class="ab-overline" data-reveal>05 / OUR APPROACH</span><h2 id="ab-statement-title" class="font-display" data-reveal>CUSTOMER SERVICE<br><span>COMES FIRST.</span></h2><p data-reveal>Construction Studio identifies a high level of customer service as its number one priority.</p></div>
+  </section>
+  <section class="ab-contact" aria-labelledby="ab-contact-title">
+    <div class="ab-contact-media" aria-hidden="true"><img src="https://images.pexels.com/photos/32674962/pexels-photo-32674962.jpeg?auto=compress&cs=tinysrgb&w=1600" srcset="https://images.pexels.com/photos/32674962/pexels-photo-32674962.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/32674962/pexels-photo-32674962.jpeg?auto=compress&cs=tinysrgb&w=1100 1100w, https://images.pexels.com/photos/32674962/pexels-photo-32674962.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w, https://images.pexels.com/photos/32674962/pexels-photo-32674962.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span class="ab-contact-scrim"></span></div>
+    <div class="ab-frame ab-contact-grid">
+      <div data-reveal><span class="ab-overline">06 / CONNECT WITH 308</span><h2 id="ab-contact-title" class="font-display">LET'S TALK<br><span>CONSTRUCTION.</span></h2></div>
+      <div class="ab-contact-side" data-reveal><p>Have a question about planning, construction or management? Get in touch with Construction Studio.</p><div class="ab-contact-actions"><button type="button" onclick="navigateTo('contact')" class="ab-contact-cta">CONTACT STUDIO <i data-lucide="arrow-up-right" aria-hidden="true"></i></button><a href="?view=contact" onclick="navigateTo('contact');return false;" class="ab-contact-phone">[Phone] <i data-lucide="phone" aria-hidden="true"></i></a></div><p class="ab-contact-location">CORPORATE OFFICE / [Office address] · [Service area]</p></div>
+    </div>
+  </section>
+  <p class="ab-media-disclosure">Images on this About page are illustrative stock photographs. They do not show Construction Studio projects, personnel or offices.</p>
+</section>
+
+        <!-- =================================================================== -->
+        <!-- 09 — CAREERS PAGE -->
+        <!-- =================================================================== -->
+        <section id="page-careers" class="page-view hidden-page careers-v3">
+  <!-- Careers fact source: # ; stock media is illustrative -->
+  <header class="career-hero">
+    <div class="career-hero-media" aria-hidden="true"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=960 960w, https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span class="career-hero-scrim"></span></div>
+    <div class="career-frame career-hero-inner">
+      <div class="career-hero-strap"><span>CONSTRUCTION STUDIO / CAREERS</span><span>EMPLOYMENT / [Service area]</span></div>
+      <div class="career-hero-main">
+        <span class="career-eyebrow">CAREER INFORMATION / PUBLISHED OPENINGS</span>
+        <h1 class="font-display">JOIN THE<br><span>TEAM.</span></h1>
+        <p>Explore the positions on the official company careers page Careers page and learn how to submit an employment inquiry.</p>
+        <a class="career-hero-button" href="#career-openings">EXPLORE OPEN POSITIONS <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="career-hero-foot"><span>POSITIONS LISTED BY company careers page</span><span>SCROLL TO EXPLORE <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div>
+    </div>
+  </header>
+  <section class="career-intro" aria-labelledby="career-intro-title">
+    <div class="career-frame career-intro-grid">
+      <div class="career-intro-copy">
+        <span class="career-eyebrow career-ink-eyebrow">01 / CAREER OPPORTUNITIES</span>
+        <h2 id="career-intro-title" class="font-display">FIND YOUR<br><span>NEXT ROLE.</span></h2>
+        <p>The original Careers page lists opportunities in plumbing and administrative support. Review the descriptions and stated requirements before applying.</p>
+        <div class="career-source-note"><span>ABOUT THE ORIGINAL LISTINGS</span><p>The original Careers page uses the name “308 Solutions Group” in its descriptions. The relationship between that name and Construction Studio is not explained there.</p></div>
+      </div>
+      <figure class="career-intro-photo"><img src="https://images.pexels.com/photos/8470033/pexels-photo-8470033.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/8470033/pexels-photo-8470033.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/8470033/pexels-photo-8470033.jpeg?auto=compress&cs=tinysrgb&w=960 960w, https://images.pexels.com/photos/8470033/pexels-photo-8470033.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/8470033/pexels-photo-8470033.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 46vw, 100vw" alt="Construction professionals reviewing architectural plans together, illustrative stock photography" loading="lazy" decoding="async"/><figcaption>CONSTRUCTION WORK / ILLUSTRATIVE PHOTOGRAPHY</figcaption></figure>
+    </div>
+  </section>
+  <section class="career-openings" id="career-openings" aria-labelledby="career-openings-title">
+    <div class="career-frame">
+      <div class="career-openings-head"><div><span class="career-eyebrow career-ink-eyebrow">02 / LISTED OPPORTUNITIES</span><h2 class="font-display" id="career-openings-title">EXAMPLE<br><span>ROLES.</span></h2></div><p>Three roles appear on the original Careers page. Expand a position to read its requirements and the published work description.</p></div>
+      <div class="career-openings-list"><details id="career-plumber" class="career-role"><summary class="career-role-summary"><span class="career-role-index">01</span><span class="career-role-heading"><strong class="font-display">PLUMBER</strong><span class="career-role-category">LICENSED PLUMBING</span></span><span class="career-role-expand" aria-hidden="true"><i data-lucide="plus"></i></span></summary><div class="career-role-detail"><div class="career-role-facts"><div><span>REQUIREMENTS</span><p>Example role. Confirm vacancy and requirements before use.</p></div><div><span>PUBLISHED ROLE DESCRIPTION</span><p>Example role. Confirm vacancy and requirements before use.</p></div></div><div class="career-role-bottom"><span>[Service area]</span><a href="#career-application" class="career-apply-link" data-career-role>APPLY FOR THIS POSITION <i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div></div></details>
+<details id="career-apprentice" class="career-role"><summary class="career-role-summary"><span class="career-role-index">02</span><span class="career-role-heading"><strong class="font-display">APPRENTICE PLUMBER</strong><span class="career-role-category">PLUMBING APPRENTICESHIP</span></span><span class="career-role-expand" aria-hidden="true"><i data-lucide="plus"></i></span></summary><div class="career-role-detail"><div class="career-role-facts"><div><span>REQUIREMENTS</span><p>Example role. Confirm vacancy and requirements before use.</p></div><div><span>PUBLISHED ROLE DESCRIPTION</span><p>Example role. Confirm vacancy and requirements before use.</p></div></div><div class="career-role-bottom"><span>LOCATION NOT LISTED</span><a href="#career-application" class="career-apply-link" data-career-role>APPLY FOR THIS POSITION <i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div></div></details>
+<details id="career-assistant" class="career-role"><summary class="career-role-summary"><span class="career-role-index">03</span><span class="career-role-heading"><strong class="font-display">ADMIN. / PERSONAL ASSISTANT</strong><span class="career-role-category">ADMINISTRATIVE SUPPORT</span></span><span class="career-role-expand" aria-hidden="true"><i data-lucide="plus"></i></span></summary><div class="career-role-detail"><div class="career-role-facts"><div><span>REQUIREMENTS</span><p>Example role. Confirm vacancy and requirements before use.</p></div><div><span>PUBLISHED ROLE DESCRIPTION</span><p>Example role. Confirm vacancy and requirements before use.</p></div></div><div class="career-role-bottom"><span>LOCATION NOT LISTED</span><a href="#career-application" class="career-apply-link" data-career-role>APPLY FOR THIS POSITION <i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div></div></details></div>
+      <div class="career-openings-footer"><span>SOURCE / company careers page</span><a href="#career-application">START YOUR APPLICATION <i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div>
+    </div>
+  </section>
+  <section class="career-application" id="career-application" aria-labelledby="career-application-title">
+    <div class="career-frame">
+      <header class="career-application-heading">
+        <div><span class="career-eyebrow career-ink-eyebrow">03 / APPLY WITH 308</span><h2 id="career-application-title" class="font-display">YOUR NEXT<br><span>STEP.</span></h2></div>
+        <div><p>A dedicated application form, designed for this website. Enter your details, select the position and attach your documents.</p><p class="career-privacy-preview"><i data-lucide="shield-alert" aria-hidden="true"></i> <strong>PREVIEW MODE:</strong> File selection works, but no applicant information or documents will be sent until the company authorizes and connects a secure receiving service.</p></div>
+      </header>
+      <div class="career-application-grid">
+        <form id="career-application-form" class="career-application-form" enctype="multipart/form-data" method="post" data-submission-endpoint="" novalidate>
+          <div class="career-form-head"><span>APPLICATION DETAILS</span><span>* REQUIRED FIELD</span></div>
+          <fieldset class="career-form-group">
+            <legend>01 / PERSONAL INFORMATION</legend>
+            <div class="career-field-row">
+              <label class="career-field" for="career-first"><span>FIRST NAME <b>*</b></span><input id="career-first" name="first_name" type="text" autocomplete="given-name" maxlength="100" placeholder="Your first name" required/></label>
+              <label class="career-field" for="career-last"><span>LAST NAME <b>*</b></span><input id="career-last" name="last_name" type="text" autocomplete="family-name" maxlength="100" placeholder="Your last name" required/></label>
+            </div>
+            <div class="career-field-row">
+              <label class="career-field" for="career-email"><span>EMAIL ADDRESS <b>*</b></span><input id="career-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="name@example.com" required/></label>
+              <label class="career-field" for="career-phone"><span>PHONE NUMBER <b>*</b></span><input id="career-phone" name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="(940) 000-0000" required/></label>
+            </div>
+          </fieldset>
+          <fieldset class="career-form-group">
+            <legend>02 / POSITION & AVAILABILITY</legend>
+            <div class="career-field-row">
+              <label class="career-field" for="career-position"><span>POSITION <b>*</b></span><select id="career-position" name="position" required><option value="" disabled selected>Select a listed position</option><option value="Plumber">Plumber</option><option value="Apprentice Plumber">Apprentice Plumber</option><option value="Admin. / Personal Assistant">Admin. / Personal Assistant</option></select></label>
+              <label class="career-field" for="career-start"><span>AVAILABLE START DATE</span><input id="career-start" name="available_start" type="date"/></label>
+            </div>
+            <div class="career-field-row">
+              <label class="career-field" for="career-location"><span>CITY & STATE</span><input id="career-location" name="location" type="text" maxlength="160" autocomplete="address-level2" placeholder="e.g. Denton, TX"/></label>
+              <label class="career-field" for="career-link"><span>LINKEDIN / CV LINK (OPTIONAL)</span><input id="career-link" name="profile_url" type="url" maxlength="500" placeholder="https://"/></label>
+            </div>
+            <label class="career-field" for="career-message"><span>ADDITIONAL INFORMATION (OPTIONAL)</span><textarea id="career-message" name="message" rows="4" maxlength="1800" placeholder="Tell us briefly about your relevant experience"></textarea></label>
+          </fieldset>
+          <fieldset class="career-form-group">
+            <legend>03 / SUPPORTING DOCUMENTS</legend>
+            <div class="career-form-uploads">
+              <div class="career-file-zone" data-career-dropzone>
+                <input id="career-resume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required aria-describedby="career-resume-help"/>
+                <label for="career-resume"><i data-lucide="file-up" aria-hidden="true"></i><strong>UPLOAD YOUR RÉSUMÉ <b>*</b></strong><span>Choose a file or drag it here</span><small id="career-resume-help">PDF, DOC, DOCX · MAX 10 MB</small></label>
+                <p class="career-file-name" id="career-resume-name" aria-live="polite">NO FILE SELECTED</p>
+              </div>
+              <div class="career-file-zone" data-career-dropzone>
+                <input id="career-letter" name="cover_letter" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" aria-describedby="career-letter-help" required/>
+                <label for="career-letter"><i data-lucide="files" aria-hidden="true"></i><strong>UPLOAD COVER LETTER <b>*</b></strong><span>Choose a file or drag it here</span><small id="career-letter-help">PDF, DOC, DOCX · MAX 10 MB</small></label>
+                <p class="career-file-name" id="career-letter-name" aria-live="polite">NO FILE SELECTED</p>
+              </div>
+            </div>
+            <p class="career-form-warning"><i data-lucide="shield-check" aria-hidden="true"></i> Do not upload photo ID, Social Security numbers, passports or other sensitive identity documents to this preview. Identity documents require a separately approved secure process.</p>
+          </fieldset>
+          <div class="career-form-consent"><label><input type="checkbox" id="career-consent" name="application_consent" value="yes" required/><span>I understand that the application would be sent to the employer only after a secure receiving service is configured and authorized. <b>*</b></span></label></div>
+          <button type="submit" class="career-form-submit" id="career-form-submit"><span>CHECK APPLICATION · PREVIEW ONLY</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></button>
+          <p class="career-form-status" id="career-form-status" aria-live="polite" role="status">This form is not connected to an application receiver. Selecting files does not upload or transmit them.</p>
+        </form>
+        <aside class="career-application-aside">
+          <figure class="career-application-photo">
+            <img src="https://images.pexels.com/photos/8961029/pexels-photo-8961029.jpeg?auto=compress&cs=tinysrgb&w=1500" srcset="https://images.pexels.com/photos/8961029/pexels-photo-8961029.jpeg?auto=compress&cs=tinysrgb&w=600 600w, https://images.pexels.com/photos/8961029/pexels-photo-8961029.jpeg?auto=compress&cs=tinysrgb&w=960 960w, https://images.pexels.com/photos/8961029/pexels-photo-8961029.jpeg?auto=compress&cs=tinysrgb&w=1500 1500w, https://images.pexels.com/photos/8961029/pexels-photo-8961029.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:900px) 37vw, 100vw" alt="Two construction professionals collaborating on plans on a jobsite, illustrative stock photo" loading="lazy" decoding="async"/>
+            <figcaption>PEOPLE & CRAFT / ILLUSTRATIVE IMAGE</figcaption>
+          </figure>
+          <div class="career-aside-info"><span>THE APPLICATION PROCESS</span><p>The company’s original Careers page includes an application form with file uploads. This redesigned form is an independent preview, not an official application channel.</p><p>Once the company approves secure processing, applications and file attachments can be submitted directly here without opening the original site.</p></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <p class="career-photo-disclosure">Careers photographs show illustrative worksite scenes. People pictured are models or unrelated workers, not Construction Studio employees; their nationalities are not verified.</p>
+</section>
+
+        <!-- =================================================================== -->
+        <!-- 10 — CONTACT PAGE -->
+        <!-- =================================================================== -->
+        <section id="page-contact" class="page-view hidden-page contact-v3">
+  <header class="ct-hero" aria-labelledby="ct-hero-title"><div class="ct-hero-photo" aria-hidden="true"><img src="https://images.pexels.com/photos/425232/pexels-photo-425232.jpeg?auto=compress&cs=tinysrgb&w=1700" srcset="https://images.pexels.com/photos/425232/pexels-photo-425232.jpeg?auto=compress&cs=tinysrgb&w=700 700w, https://images.pexels.com/photos/425232/pexels-photo-425232.jpeg?auto=compress&cs=tinysrgb&w=1100 1100w, https://images.pexels.com/photos/425232/pexels-photo-425232.jpeg?auto=compress&cs=tinysrgb&w=1700 1700w, https://images.pexels.com/photos/425232/pexels-photo-425232.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="100vw" alt="" loading="lazy" decoding="async"/><span class="ct-hero-shade"></span></div>
+    <div class="ct-frame ct-hero-inner"><div class="ct-hero-top"><span>CONSTRUCTION STUDIO / CONTACT</span><span>[Service area] / GENERAL CONTRACTING</span></div>
+    <div class="ct-hero-main"><span class="ct-eyebrow">GENERAL INQUIRIES / QUESTIONS</span><h1 id="ct-hero-title" class="font-display">LET'S<br><span>CONNECT.</span></h1><p>Have a construction question or an inquiry? Reach Construction Studio by phone, email or the contact form below.</p><a class="ct-hero-link" href="#ct-inquiry-title">SEND AN INQUIRY <i data-lucide="arrow-down-right" aria-hidden="true"></i></a></div>
+    <div class="ct-hero-bottom"><span>YOUR NEXT STEP STARTS WITH A CONVERSATION</span><span>SCROLL TO CONTACT <i data-lucide="arrow-down-right" aria-hidden="true"></i></span></div></div>
+  </header>
+  <section class="ct-direct" aria-labelledby="ct-direct-title"><div class="ct-frame">
+    <div class="ct-direct-head"><span class="ct-eyebrow ct-eyebrow-dark">01 / REACH 308</span><h2 id="ct-direct-title" class="font-display">DIRECT<br><span>CONTACT.</span></h2><p>For inquiries, questions or commendations, contact the corporate office using these published details.</p></div>
+    <div class="ct-methods">
+      <a class="ct-method" href="?view=contact" onclick="navigateTo('contact');return false;"><span class="ct-method-num">01 / TELEPHONE</span><div><strong>[Phone]</strong><span>CALL THE OFFICE</span></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      <a class="ct-method" href="?view=contact" onclick="navigateTo('contact');return false;"><span class="ct-method-num">02 / EMAIL</span><div><strong>[Email]</strong><span>WRITE AN EMAIL</span></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      <a class="ct-method" href="?view=contact" target="_blank" rel="noopener noreferrer"><span class="ct-method-num">03 / CORPORATE OFFICE</span><div><strong>[Office address]</strong><span>[Service area] / VIEW LOCATION</span></div><i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+    </div>
+  </div></section>
+  <section class="ct-inquiry" aria-labelledby="ct-inquiry-title"><div class="ct-frame ct-inquiry-grid">
+    <div class="ct-inquiry-intro" data-premium-reveal><span class="ct-eyebrow ct-eyebrow-dark">02 / YOUR INQUIRY</span><h2 id="ct-inquiry-title" class="font-display">START THE<br><span>CONVERSATION.</span></h2><p>Demonstration only. Nothing is sent. Use fictional test data.</p>
+      <div class="ct-inquiry-guidance"><span>CONTACT DETAILS</span><a href="?view=contact" onclick="navigateTo('contact');return false;">[Phone] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><a href="?view=contact" onclick="navigateTo('contact');return false;">[Email] <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="ct-form-shell" data-premium-reveal><form id="contact-inquiry-form" class="ct-form" action="#" method="post" data-submission-endpoint="" novalidate><input type="hidden" name="_subject" value="Construction Studio independent demo — contact inquiry"/><input type="hidden" name="_template" value="table"/><input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true"/>
+      <div class="ct-form-heading"><strong>YOUR MESSAGE</strong><span>* REQUIRED</span></div>
+      <div class="ct-form-row"><label class="ct-field" for="ct-name"><span>FULL NAME <b>*</b></span><input id="ct-name" name="name" type="text" autocomplete="name" maxlength="200" placeholder="Your full name" required/></label><label class="ct-field" for="ct-email"><span>EMAIL ADDRESS <b>*</b></span><input id="ct-email" name="email" type="email" autocomplete="email" maxlength="200" placeholder="name@example.com" required/></label></div>
+      <div class="ct-form-row"><label class="ct-field" for="ct-phone"><span>PHONE NUMBER</span><input id="ct-phone" name="phone" type="tel" autocomplete="tel" maxlength="200" placeholder="Phone (optional)"/></label><label class="ct-field" for="ct-subject"><span>SUBJECT</span><input id="ct-subject" name="subject" type="text" autocomplete="off" maxlength="200" placeholder="What is your inquiry about?"/></label></div>
+      <label class="ct-field ct-field-message" for="ct-message"><span>MESSAGE <b>*</b></span><textarea id="ct-message" name="message" rows="6" maxlength="3000" required placeholder="Tell us about your inquiry..."></textarea></label>
+      <div class="ct-form-bottom"><label class="ct-routing-consent"><input type="checkbox" name="demo_route_acknowledged" value="yes" required/><span>I understand this is a demonstration and no information will be sent.</span></label><p id="ct-form-explanation">Local validation only. No message is sent or stored.</p><button type="submit" class="ct-form-button" id="ct-submit"><span>CHECK INQUIRY</span><i data-lucide="arrow-up-right" aria-hidden="true"></i></button><p class="ct-form-status" id="ct-form-status" role="status" aria-live="polite">Complete the required fields. Delivery requires an activated recipient email.</p></div>
+    </form></div>
+  </div></section>
+  <section class="ct-location" aria-labelledby="ct-location-title">
+    <figure class="ct-location-photo"><img src="https://images.pexels.com/photos/33463115/pexels-photo-33463115.jpeg?auto=compress&cs=tinysrgb&w=1700" srcset="https://images.pexels.com/photos/33463115/pexels-photo-33463115.jpeg?auto=compress&cs=tinysrgb&w=700 700w, https://images.pexels.com/photos/33463115/pexels-photo-33463115.jpeg?auto=compress&cs=tinysrgb&w=1100 1100w, https://images.pexels.com/photos/33463115/pexels-photo-33463115.jpeg?auto=compress&cs=tinysrgb&w=1700 1700w, https://images.pexels.com/photos/33463115/pexels-photo-33463115.jpeg?auto=compress&cs=tinysrgb&w=2200 2200w" sizes="(min-width:768px) 52vw,100vw" alt="Finished modern commercial glazed facade, illustrative architectural photograph" loading="lazy" decoding="async"/><figcaption>FINISHED ARCHITECTURE / VISUAL REFERENCE</figcaption></figure>
+    <div class="ct-location-copy"><div class="ct-location-inner"><span class="ct-eyebrow">03 / CORPORATE OFFICE</span><h2 id="ct-location-title" class="font-display">FIND<br><span>US.</span></h2><p>[Office address]<br/>[Service area]</p><a class="ct-directions-link" href="?view=contact" target="_blank" rel="noopener noreferrer">VIEW MAP & DIRECTIONS <i data-lucide="arrow-up-right" aria-hidden="true"></i></a><div class="ct-location-contact"><a href="?view=contact" onclick="navigateTo('contact');return false;">[Phone]</a><a href="?view=contact" onclick="navigateTo('contact');return false;">[Email]</a></div></div></div>
+  </section>
+  <p class="ct-photo-notice">Contact photographs are illustrative stock images. They do not show Construction Studio projects, staff or its office.</p>
+</section>
+
+<!-- 11 / PRIVACY POLICY REFERENCE VIEW -->
+<section id="page-policy" class="page-view hidden-page policy-v1" aria-labelledby="policy-title"><header class="policy-hero"><div class="policy-frame"><div class="policy-hero-line"><span>CONSTRUCTION STUDIO / WEBSITE REFERENCE</span><span>INDEPENDENT DESIGN CONCEPT</span></div><span class="policy-kicker">PRIVACY & DATA HANDLING / REFERENCE</span><h1 id="policy-title" class="font-display">PRIVACY<br><span>POLICY.</span></h1><p>This information describes the current design preview. It is not a company-approved legal policy.</p><div class="policy-draft"><i data-lucide="info" aria-hidden="true"></i><span>REFERENCE DRAFT — PENDING COMPANY REVIEW & APPROVAL</span></div><div class="policy-hero-foot"><span>PREPARED FOR REVIEW / OCTOBER 26, 2026</span><span>SCROLL TO READ</span></div></div></header><div class="policy-body"><div class="policy-frame policy-layout"><nav class="policy-toc" aria-label="Privacy reference contents"><span>ON THIS PAGE</span><a href="#policy-scope">01 / ABOUT THIS REFERENCE</a>
+<a href="#policy-contact">02 / CONTACT FORM</a>
+<a href="#policy-careers">03 / CAREERS & FILES</a>
+<a href="#policy-third-party">04 / EXTERNAL SERVICES</a>
+<a href="#policy-pending">05 / PENDING CONFIRMATION</a>
+<a href="#policy-questions">06 / QUESTIONS & CONTACT</a><p>For this demo only. Not the privacy notice of the original company careers page website.</p></nav><article class="policy-article"><section id="policy-scope" class="policy-chapter"><span class="policy-chapter-number">01 / REFERENCE STATUS</span><h2 class="font-display">ABOUT THIS REFERENCE</h2><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p></section>
+<section id="policy-contact" class="policy-chapter"><span class="policy-chapter-number">02 / CONTACT INQUIRIES</span><h2 class="font-display">CONTACT FORM</h2><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p></section>
+<section id="policy-careers" class="policy-chapter"><span class="policy-chapter-number">03 / EMPLOYMENT APPLICATIONS</span><h2 class="font-display">CAREERS & FILES</h2><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p></section>
+<section id="policy-third-party" class="policy-chapter"><span class="policy-chapter-number">04 / HOSTING & RESOURCES</span><h2 class="font-display">EXTERNAL SERVICES</h2><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p></section>
+<section id="policy-pending" class="policy-chapter"><span class="policy-chapter-number">05 / REQUIRED BEFORE APPROVAL</span><h2 class="font-display">PENDING CONFIRMATION</h2><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><ul><li>Responsible legal entity and privacy contact.</li><li>Purpose and lawful basis for inquiry and recruitment data.</li><li>Recipients, processors, hosting and international transfers.</li><li>Retention, deletion and applicant-document security.</li><li>Cookies, analytics and visitor choices.</li><li>Applicable privacy rights and request procedures.</li><li>Security testing, live form endpoints and final legal approval.</li></ul><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p></section>
+<section id="policy-questions" class="policy-chapter"><span class="policy-chapter-number">06 / PUBLISHED BUSINESS CONTACT</span><h2 class="font-display">QUESTIONS & CONTACT</h2><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p><div class="policy-contact-details"><a href="?view=contact" onclick="navigateTo('contact');return false;">[Email]</a><a href="?view=contact" onclick="navigateTo('contact');return false;">[Phone]</a><p>Template reference only. No information or files are transmitted. Approve the applicable business-specific privacy terms before launch.</p></div><a class="policy-return" href="?view=contact" onclick="navigateTo('contact');return false;">GO TO CONTACT <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></section></article></div></div><div class="policy-end"><div class="policy-frame"><span>REFERENCE DOCUMENT · NOT OFFICIAL COMPANY POLICY</span><a href="?view=home" onclick="navigateTo('home');return false;">RETURN HOME <i data-lucide="arrow-up-right" aria-hidden="true"></i></a></div></div></section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark border-t border-white/10 py-16 px-6 md:px-16 text-gray-400 text-xs"><p class="text-center mb-8">ATREZZO WEBSITE TEMPLATE · Illustrative images, project content, metrics, clients and role examples · No actual inquiries or applications</p>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="inline-flex items-center bg-brand-light px-3 py-2 rounded-sm"><img src="./assets/template-logo.svg" alt="Construction Studio — official logo" class="w-[190px] h-auto" width="190" height="37" loading="lazy"/></span>
+                </div>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Turn-Key Construction Solutions with Accuracy.<br/>
+                    General Contracting & Preconstruction.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-mono text-white uppercase tracking-wider mb-4 text-[11px]">Quick Navigation</h4>
+                <ul class="space-y-2 font-mono text-[11px]">
+                    <li><a href="./" onclick="navigateTo('home'); return false;" class="hover:text-brand-teal">Home</a></li>
+                    <li><a href="?view=services" onclick="navigateTo('services'); return false;" class="hover:text-brand-teal">Services</a></li>
+                    <li><a href="?view=projects" onclick="navigateTo('projects'); return false;" class="hover:text-brand-teal">Projects Portfolio</a></li>
+                    <li><a href="?view=about" onclick="navigateTo('about'); return false;" class="hover:text-brand-teal">About Firm</a></li>
+                    <li><a href="?view=careers" onclick="navigateTo('careers'); return false;" class="hover:text-brand-teal">Careers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-mono text-white uppercase tracking-wider mb-4 text-[11px]">Headquarters</h4>
+                <p class="text-xs text-gray-400 leading-relaxed font-mono">
+                    [Office address]<br/>
+                    [Service area]<br/>
+                    Phone: [Phone]<br/>
+                    Email: [Email]
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-mono text-white uppercase tracking-wider mb-4 text-[11px]">About This Design</h4>
+                <p class="text-[11px] text-gray-500 leading-relaxed">
+                    Independent website design concept, not the official company website. Photography is illustrative.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono">
+            <span>Construction Studio, LLC · Independent design concept</span>
+            <a class="footer-policy-link" href="?view=policy" onclick="navigateTo('policy');return false;">Privacy Policy (Reference)</a>
+            <span>[Service area]</span>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING ASSISTANT CAPSULE ("ASK STUDIO") -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <button onclick="toggleAssistant()" class="flex items-center gap-3 px-5 py-3 rounded-full bg-brand-dark/95 border border-brand-teal/50 text-white shadow-2xl backdrop-blur-md hover:border-brand-teal transition-all hover:scale-105">
+            <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+            <span class="font-display font-bold text-xs uppercase tracking-widest text-brand-teal">ASK STUDIO</span>
+        </button>
+    </div>
+
+    <!-- ASSISTANT PANEL MODAL -->
+    <div id="assistantPanel" class="fixed bottom-20 right-6 z-50 w-[90vw] max-w-sm bg-brand-dark border border-white/20 rounded-2xl p-5 shadow-2xl hidden transition-all duration-300">
+        <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-brand-teal rounded flex items-center justify-center font-display font-bold text-white text-xs">308</div>
+                <span class="font-display font-bold text-sm text-white uppercase tracking-wider">308 Project Assistant</span>
+            </div>
+            <button onclick="toggleAssistant()" class="text-gray-400 hover:text-white">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+        </div>
+
+        <!-- Assistant Quick Navigation Shortcuts -->
+        <div class="grid grid-cols-2 gap-2 mb-4 text-[10px] font-mono">
+            <button onclick="navigateTo('services'); toggleAssistant();" class="p-2 rounded bg-brand-gray/30 border border-white/5 hover:border-brand-teal text-gray-300 text-left">→ Services</button>
+            <button onclick="navigateTo('projects'); toggleAssistant();" class="p-2 rounded bg-brand-gray/30 border border-white/5 hover:border-brand-teal text-gray-300 text-left">→ Projects</button>
+            <button onclick="navigateTo('contact'); toggleAssistant();" class="p-2 rounded bg-brand-gray/30 border border-white/5 hover:border-brand-teal text-gray-300 text-left">→ Contact Us</button>
+            <a href="?view=contact" onclick="navigateTo('contact');return false;" class="p-2 rounded bg-brand-teal/20 border border-brand-teal/40 text-brand-teal text-left font-bold">Call [Phone]</a>
+        </div>
+
+        <!-- Chat Messages Box -->
+        <div id="assistantChat" class="h-48 overflow-y-auto space-y-3 pr-2 text-xs font-sans">
+            <div class="bg-brand-gray/30 p-3 rounded text-gray-300 border border-white/5">
+                Welcome to the project guide preview. Ask about Construction Studio’s listed projects, services or contact details.
+            </div>
+        </div>
+
+        <!-- Question Form -->
+        <form onsubmit="handleAssistantSubmit(event)" class="mt-4 flex gap-2">
+            <input type="text" id="assistantInput" placeholder="Ask about services, projects, phone..." class="flex-1 bg-brand-gray/40 border border-white/15 rounded px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-teal"/>
+            <button type="submit" class="px-3 py-2 bg-brand-teal text-white rounded hover:bg-brand-accent">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC FOR MULTI-PAGE & INTERACTION -->
+    <script src="./assets/js/app.js?v=20261026-site-audit-02" defer></script>
+</body>
+</html>

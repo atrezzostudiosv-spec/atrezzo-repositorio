@@ -1,0 +1,2 @@
+/* Responsive content compatibility only; original motion stylesheet unchanged. */
+@media(max-width:767px){.contact-v3 .ct-inquiry-grid,.contact-v3 .ct-form-row{grid-template-columns:minmax(0,1fr)}.contact-v3 .ct-inquiry-intro,.contact-v3 .ct-form-shell,.contact-v3 .ct-field{min-width:0}.contact-v3 .ct-inquiry-intro h2{font-size:clamp(49px,13vw,65px);overflow-wrap:anywhere}.contact-v3 .ct-form input,.contact-v3 .ct-form textarea{max-width:100%;min-width:0}}

@@ -1,0 +1,50 @@
+[
+  {
+    "width": 375,
+    "route": "home",
+    "source": 1.084,
+    "template": 1.084
+  },
+  {
+    "width": 375,
+    "route": "services",
+    "source": 1.0818,
+    "template": 1.0618
+  },
+  {
+    "width": 768,
+    "route": "home",
+    "source": 1.0867,
+    "template": 1.0867
+  },
+  {
+    "width": 768,
+    "route": "services",
+    "source": 1.0845,
+    "template": 1.0659
+  },
+  {
+    "width": 1024,
+    "route": "home",
+    "source": 1.0868,
+    "template": 1.0868
+  },
+  {
+    "width": 1024,
+    "route": "services",
+    "source": 1.0974,
+    "template": 1.0429
+  },
+  {
+    "width": 1440,
+    "route": "home",
+    "source": 1.0867,
+    "template": 1.0867
+  },
+  {
+    "width": 1440,
+    "route": "services",
+    "source": 1.113,
+    "template": 1.0822
+  }
+]
