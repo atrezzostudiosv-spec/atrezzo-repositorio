@@ -1,0 +1,38 @@
+name: ATZ-SEC-015 original source QA
+on:
+  push:
+    branches: ['lab/atz-sec-015']
+permissions:
+  contents: write
+jobs:
+  original:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps --only-shell chromium
+      - run: node tests/cinematic-collection-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atz-sec-015-evidence
+          path: qa-sec015/
+      - name: Admit validated original and preview
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n'),id='ATZ-SEC-015',run='https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID;
+          const r=read('registry/components.json'),e=r.source_approved_entries.find(x=>x.id===id);e.catalog_qa_status='passed_internal';e.catalog_qa_run=run;
+          const m=read(e.package_manifest);m.catalog_qa_status='passed_internal';m.catalog_qa_run=run;m.source_comparison={viewport_widths:[375,768,1024,1440],states_per_width:6,media:'same neutral demo assets in both source and extracted stage',run};write(e.package_manifest,m);write('registry/components.json',r);
+          const p='catalog/previews/manifest.json',v=read(p);v.entries[id]={poster:'previews/'+id+'.webp',video:'previews/'+id+'.webm',source:e.preview,viewport:'1440x900',interaction:'scroll',validation_run:run};write(p,v);
+          JS
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/components.json components/originales/atrezzo/ATZ-SEC-015/manifest.json catalog/previews/manifest.json catalog/previews/ATZ-SEC-015.webp catalog/previews/ATZ-SEC-015.webm
+          git commit -m "QA verified: original Selected Homes cinematic collection with actual motion preview"
+          git push origin HEAD:lab/atz-sec-015
