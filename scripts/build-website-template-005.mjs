@@ -10,7 +10,7 @@ await (async function build(){
  .replace(/Cliff Davis/gi,'[Owner]').replace(/more than 35 years of (?:personal )?experience/gi,'experience pending verification').replace(/35\+\s*years/gi,'verified experience pending').replace(/>35<span>\+<\/span>/g,'>—<span></span>')
  .replace(/107 North Bell Avenue, Suite 6/gi,'[Office address]').replace(/Denton,\s*TX\s*76201-4729/gi,'[Service area]')
  .replace(/(?:\+?1)?9403913338|940[- ]391[- ]3338/gi,'[Phone]').replace(/\(940\) 000-0000/g,'Phone number')
- .replace(/Denton,\s*(?:Texas|TX)|Denton area|Denton community|Denton and the surrounding area|Denton and surrounding communities|Denton and nearby communities/gi,'[Service area]').replace(/\bDenton\b/g,'Service area')
+ .replace(/Denton,\s*(?:Texas|TX)|Denton area|Denton community|Denton and the surrounding area|Denton and surrounding communities|Denton and nearby communities/gi,'[Service area]').replace(/\b(?:Denton|DENTON)\b/g,'Service area')
  .replace(/My message goes to Atrezzo Studios for testing, not directly to Fence Studio\./gi,'No information is sent or stored.')
  .replace(/Demo messages are routed to Atrezzo Studios for testing[^<]*\./gi,'Demo only: no messages are sent. Use fictional test data.')
  .replace(/<blockquote\b([^>]*)>[\s\S]*?<\/blockquote>/gi,'<blockquote$1>Verified customer feedback goes here. This is not an actual review.</blockquote>')
