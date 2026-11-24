@@ -1,0 +1,47 @@
+name: ATZ-WEB-003 website template build and QA
+on:
+  push:
+    branches: ['lab/website-template-003']
+permissions:
+  contents: write
+jobs:
+  template:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save playwright
+      - run: npx playwright install --only-shell chromium
+      - name: Get immutable original source
+        run: |
+          git clone --no-checkout https://github.com/atrezzostudiosv-spec/mcbride-sons-plumbing.git /tmp/mcbride-source
+          git -C /tmp/mcbride-source checkout d84283f996d8a8020eee5bcdc9deb06f1287bdb9
+      - run: node scripts/build-website-template-003.mjs /tmp/mcbride-source
+      - run: npm test
+      - run: node tests/website-template-003-browser.mjs /tmp/mcbride-source
+      - name: Package and record QA
+        run: |
+          python3 - <<'PY'
+          import zipfile,pathlib
+          root=pathlib.Path('websites/templates/ATZ-WEB-003/v1/')
+          with zipfile.ZipFile(root/'ATZ-WEB-003-v1.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted((root/'site').rglob('*')):
+                  if p.is_file(): z.write(p,p.relative_to(root/'site'))
+              for n in ['README.md','template-config.json']: z.write(root/n,n)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add websites/templates/ATZ-WEB-003/v1/
+          git commit -m "Validate source-derived ATZ-WEB-003 and package master"
+          git push origin HEAD:lab/website-template-003
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-template-003-evidence
+          path: |
+            websites/templates/ATZ-WEB-003/v1/qa.json
+
+            websites/templates/ATZ-WEB-003/v1/poster.webp

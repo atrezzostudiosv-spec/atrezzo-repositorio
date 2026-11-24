@@ -70,6 +70,45 @@
       "status": "validated_template",
       "client_ready": false,
       "fidelity_revision": "motion-and-source-media"
+    },
+    {
+      "id": "ATZ-WEB-003",
+      "version": "1.0.0",
+      "title": "Plumbing & Residential Services",
+      "source_name": "McBride & Sons Plumbing",
+      "source_repo": "atrezzostudiosv-spec/mcbride-sons-plumbing",
+      "source_commit": "d84283f996d8a8020eee5bcdc9deb06f1287bdb9",
+      "sector": "Plumbing / servicios residenciales",
+      "tags": [
+        "plumbing",
+        "servicios",
+        "atlas",
+        "cinema",
+        "video",
+        "scroll",
+        "reveal",
+        "multipágina"
+      ],
+      "description": "Diez rutas originales, hero audiovisual, secuencia editorial, atlas de servicios, tarjetas desplegables y mosaico, carrusel de reseñas y formularios modales. Identidad y afirmaciones pendientes; envíos desactivados.",
+      "pages": [
+        "index.html",
+        "about-us/index.html",
+        "services/index.html",
+        "contact-us/index.html",
+        "services/drain-cleaning/index.html",
+        "services/leak-repair/index.html",
+        "services/hydro-jetting/index.html",
+        "services/water-heaters/index.html",
+        "services/drain-sewer-repair/index.html",
+        "services/bathroom-remodeling/index.html"
+      ],
+      "preview": "websites/templates/ATZ-WEB-003/v1/site/index.html",
+      "original_preview": "https://atrezzostudiosv-spec.github.io/mcbride-sons-plumbing/",
+      "poster": "websites/templates/ATZ-WEB-003/v1/poster.webp",
+      "package": "websites/templates/ATZ-WEB-003/v1/ATZ-WEB-003-v1.zip",
+      "guide": "websites/templates/ATZ-WEB-003/v1/README.md",
+      "status": "validated_template",
+      "client_ready": false
     }
   ]
 }
