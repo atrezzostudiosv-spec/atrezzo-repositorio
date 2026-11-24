@@ -1,0 +1,24 @@
+name: Visual Library 3 workspace QA
+on:
+  push:
+    branches: ['lab/visual-library-3']
+permissions:
+  contents: read
+jobs:
+  workspace:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm install --no-save playwright
+      - run: npx playwright install --with-deps --only-shell chromium
+      - run: node tests/workspace-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: workspace-browser-evidence
+          path: workspace-qa/
