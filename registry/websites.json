@@ -109,6 +109,35 @@
       "guide": "websites/templates/ATZ-WEB-003/v1/README.md",
       "status": "validated_template",
       "client_ready": false
+    },
+    {
+      "id": "ATZ-WEB-007",
+      "version": "1.0.0",
+      "title": "Luxury Real Estate & Editorial Experiences",
+      "source_name": "Team Hodnett",
+      "source_repo": "atrezzostudiosv-spec/Team-Hodnett",
+      "source_commit": "98d354c5b1349d1457af0f1cbc5d12256a011f1b",
+      "sector": "Luxury Real Estate",
+      "tags": [
+        "real estate",
+        "luxury",
+        "cinematic",
+        "video",
+        "scroll",
+        "property",
+        "search",
+        "gallery",
+        "communities"
+      ],
+      "description": "Arquitectura editorial de Team Hodnett: hero, header ahumado, escenas sticky, colección cinematográfica, comunidades, buscador, fichas, favoritos, perfil y concierge local. Datos ficticios y medios de demostración.",
+      "pages": [],
+      "preview": "websites/templates/ATZ-WEB-007/v1/site/index.html",
+      "original_preview": "https://atrezzostudiosv-spec.github.io/Team-Hodnett/",
+      "poster": "websites/templates/ATZ-WEB-007/v1/poster.webp",
+      "package": "websites/templates/ATZ-WEB-007/v1/ATZ-WEB-007-v1.zip",
+      "guide": "websites/templates/ATZ-WEB-007/v1/README.md",
+      "status": "validation_pending",
+      "client_ready": false
     }
   ]
 }
